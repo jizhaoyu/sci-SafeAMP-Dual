@@ -1,0 +1,49 @@
+{
+  "protocol_id": "protocol-mic-01",
+  "protocol_version": 1,
+  "status": "frozen_for_feasibility_audit_only",
+  "task": "binary_prediction_of_escherichia_coli_mic",
+  "target_organism": "Escherichia coli",
+  "assay_endpoint": "minimum inhibitory concentration (MIC)",
+  "raw_measurement_normalization": "linear canonical sequence molecular weight; micromolar to micrograms per milliliter",
+  "label_rule": {
+    "positive_if_upper_bound_ug_ml_lte": 32.0,
+    "negative_if_lower_bound_ug_ml_gte": 128.0,
+    "otherwise": "unknown_excluded_from_binary_training"
+  },
+  "molecule_domain": {
+    "min_length_aa": 10,
+    "max_length_aa": 50,
+    "alphabet": "20 canonical amino acids",
+    "backbone": "linear",
+    "modifications": "none; sequences with unsupported/noncanonical modifications are excluded"
+  },
+  "evidence_requirements": [
+    "primary experimental MIC observation for the declared peptide sequence",
+    "identified Escherichia coli target strain or isolate",
+    "raw value, unit, and traceable primary study reference",
+    "binary label independently re-derived from the raw assay observation"
+  ],
+  "duplicate_policy": "merge exact sequences; opposite derived MIC labels are a blocking unresolved conflict",
+  "similarity": {
+    "algorithm": "global Needleman-Wunsch",
+    "match_score": 2,
+    "mismatch_score": -1,
+    "gap_score": -2,
+    "traceback_tie_break": "diagonal_then_up_then_left",
+    "identity": "number of identical aligned residues divided by number of alignment columns",
+    "gap_columns": "mismatch",
+    "comparison_scope": "all unique molecule pairs",
+    "cutoff": 0.4,
+    "grouping": "transitive connected components; every component remains within one fold"
+  },
+  "validation": {
+    "method": "StratifiedGroupKFold",
+    "folds": 5,
+    "seed": 42,
+    "require_both_classes_in_each_validation_fold": true,
+    "require_both_classes_in_each_training_complement": true,
+    "external_holdout_required": false
+  },
+  "release_gate": "This protocol authorizes only a feasibility audit. Training requires separate review of the completed evidence and fold audit; any failed evidence, class-coverage, or homology gate leaves the study blocked."
+}

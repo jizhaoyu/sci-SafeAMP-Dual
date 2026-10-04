@@ -1,0 +1,966 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/nar/gkaa991",
+  "retrieved_at": "2026-09-28T14:56:07.304917+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T14:20:40Z",
+      "timestamp": 1790518840383,
+      "version": "4.1.0"
+    },
+    "reference-count": 50,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "D1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              11,
+              5
+            ]
+          ],
+          "date-time": "2020-11-05T00:00:00Z",
+          "timestamp": 1604534400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "HHSN316201300006W"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "HHSN316201300006W"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000060",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "HHSN27200002"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "HHSN27200002"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000060",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001744",
+        "name": "International Science and Technology Center",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "G-2102"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "G-2102"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001744",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>The Database of Antimicrobial Activity and Structure of Peptides (DBAASP) is an open-access, comprehensive database containing information on amino acid sequences, chemical modifications, 3D structures, bioactivities and toxicities of peptides that possess antimicrobial properties. DBAASP is updated continuously, and at present, version 3.0 (DBAASP v3) contains &amp;gt;15 700 entries (8000 more than the previous version), including &amp;gt;14 500 monomers and nearly 400 homo- and hetero-multimers. Of the monomeric antimicrobial peptides (AMPs), &amp;gt;12 000 are synthetic, about 2700 are ribosomally synthesized, and about 170 are non-ribosomally synthesized. Approximately 3/4 of the entries were added after the initial release of the database in 2014 reflecting the recent sharp increase in interest in AMPs. Despite the increased interest, adoption of peptide antimicrobials in clinical practice is still limited as a consequence of several factors including side effects, problems with bioavailability and high production costs. To assist in developing and optimizing de novo peptides with desired biological activities, DBAASP offers several tools including a sophisticated multifactor analysis of relevant physicochemical properties. Furthermore, DBAASP has implemented a structure modelling pipeline that automates the setup, execution and upload of molecular dynamics (MD) simulations of database peptides. At present, &amp;gt;3200 peptides have been populated with MD trajectories and related analyses that are both viewable within the web browser and available for download. More than 400 DBAASP entries also have links to experimentally determined structures in the Protein Data Bank. DBAASP v3 is freely accessible at http://dbaasp.org.</jats:p>",
+    "DOI": "10.1093/nar/gkaa991",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2020-10-14T15:24:19Z",
+      "timestamp": 1602689059000
+    },
+    "page": "D288-D297",
+    "source": "Crossref",
+    "is-referenced-by-count": 738,
+    "title": [
+      "DBAASP v3: database of antimicrobial/cytotoxic activity and structure of peptides as a resource for development of new therapeutics"
+    ],
+    "prefix": "10.1093",
+    "volume": "49",
+    "author": [
+      {
+        "given": "Malak",
+        "family": "Pirtskhalava",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi 0160, Georgia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anthony A",
+        "family": "Amstrong",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maia",
+        "family": "Grigolava",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi 0160, Georgia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mindia",
+        "family": "Chubinidze",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi 0160, Georgia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Evgenia",
+        "family": "Alimbarashvili",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi 0160, Georgia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5770-9481",
+        "authenticated-orcid": false,
+        "given": "Boris",
+        "family": "Vishnepolsky",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Ivane Beritashvili Center of Experimental Biomedicine, Tbilisi 0160, Georgia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8392-924X",
+        "authenticated-orcid": false,
+        "given": "Andrei",
+        "family": "Gabrielian",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alex",
+        "family": "Rosenthal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Darrell E",
+        "family": "Hurt",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Tartakovsky",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2021010313133963900_B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0181748",
+        "DOI": "10.1371/journal.pone.0181748",
+        "article-title": "THPdb: Database of FDA approved peptide and protein therapeutics",
+        "volume": "12",
+        "author": "Usmani",
+        "year": "2017",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2021010313133963900_B2",
+        "doi-asserted-by": "crossref",
+        "first-page": "148",
+        "DOI": "10.1038/s41597-019-0154-y",
+        "article-title": "DRAMP 2.0, an updated data repository of antimicrobial peptides",
+        "volume": "6",
+        "author": "Kang",
+        "year": "2019",
+        "journal-title": "Sci. Data"
+      },
+      {
+        "key": "2021010313133963900_B3",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1087",
+        "DOI": "10.1093/nar/gkv1278",
+        "article-title": "APD3: the antimicrobial peptide database as a tool for research and education",
+        "volume": "44",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1094",
+        "DOI": "10.1093/nar/gkv1051",
+        "article-title": "CAMPR3: a database on sequences, structures and signatures of antimicrobial peptides",
+        "volume": "44",
+        "author": "Waghu",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1108",
+        "DOI": "10.1093/nar/gkr1063",
+        "article-title": "DAMPD: a manually curated antimicrobial peptide database",
+        "volume": "40",
+        "author": "Vijayaraghava",
+        "year": "2012",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1016/j.ijantimicag.2011.12.003",
+        "article-title": "YADAMP: yet another database of antimicrobial peptides",
+        "volume": "39",
+        "author": "Piotto",
+        "year": "2012",
+        "journal-title": "Int. J. Antimicrob. Agents."
+      },
+      {
+        "key": "2021010313133963900_B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1104",
+        "DOI": "10.1093/nar/gkv1174",
+        "article-title": "DBAASP v.2: an enhanced database of structure and antimicrobial/cytotoxic activity of natural and synthetic peptides",
+        "volume": "44",
+        "author": "Pirtskhalava",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B8",
+        "doi-asserted-by": "crossref",
+        "first-page": "baaa061",
+        "DOI": "10.1093/database/baaa061",
+        "article-title": "LAMP2: a major update of the database linking antimicrobial peptides",
+        "volume": "2020",
+        "author": "Ye",
+        "year": "2020",
+        "journal-title": "Database"
+      },
+      {
+        "key": "2021010313133963900_B9",
+        "first-page": "475062",
+        "article-title": "A large-scale structural classification of antimicrobial peptides",
+        "volume": "2015",
+        "author": "Lee",
+        "year": "2015",
+        "journal-title": "BioMed Res. Int. Gale OneFile: Health Med."
+      },
+      {
+        "key": "2021010313133963900_B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "D285",
+        "DOI": "10.1093/nar/gky1030",
+        "article-title": "dbAMP: an integrated resource for exploring antimicrobial peptides with functional activities and physicochemical properties on transcriptome and proteome data",
+        "volume": "47",
+        "author": "Chi",
+        "year": "2019",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1119",
+        "DOI": "10.1093/nar/gkv1114",
+        "article-title": "SATPdb: a database of structurally annotated therapeutic peptides",
+        "volume": "44",
+        "author": "Singh",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "63",
+        "DOI": "10.1111/1574-6968.12489",
+        "article-title": "DBAASP: Database of antimicrobial activity and structure of peptides",
+        "volume": "357",
+        "author": "Gogoladze",
+        "year": "2014",
+        "journal-title": "FEMS Microbiol. Lett."
+      },
+      {
+        "key": "2021010313133963900_B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2194",
+        "DOI": "10.1038/s41598-020-59165-2",
+        "article-title": "PlantPepDB: A manually curated plant peptide database",
+        "volume": "10",
+        "author": "Das",
+        "year": "2020",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2021010313133963900_B14",
+        "doi-asserted-by": "crossref",
+        "first-page": "4739",
+        "DOI": "10.1093/bioinformatics/btz260",
+        "article-title": "Graph-based data integration from bioactive peptide databases of pharmaceutical interest: toward an organized collection enabling visual network analysis",
+        "volume": "35",
+        "author": "Aguilera-Mendoza",
+        "year": "2019",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2021010313133963900_B15",
+        "doi-asserted-by": "crossref",
+        "first-page": "e201900512",
+        "DOI": "10.26508/lsa.201900512",
+        "article-title": "ADAPTABLE: a comprehensive web platform of antimicrobial peptides tailored to the user's research",
+        "volume": "2",
+        "author": "Ramos-Martin",
+        "year": "2019",
+        "journal-title": "Life Sci. Alliance"
+      },
+      {
+        "key": "2021010313133963900_B16",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.3390/ph12020082",
+        "article-title": "De Novo design and in vitro testing of antimicrobial peptides against Gram-Negative bacteria",
+        "volume": "12",
+        "author": "Vishnepolsky",
+        "year": "2019",
+        "journal-title": "Pharmaceuticals"
+      },
+      {
+        "key": "2021010313133963900_B17",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.3390/ECMC2019-06359",
+        "article-title": "Development of the model of in silico design of AMPs active against Staphylococcus aureus 25923",
+        "author": "Vishnepolsky",
+        "year": "2019"
+      },
+      {
+        "key": "2021010313133963900_B18",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0212447",
+        "DOI": "10.1371/journal.pone.0212447",
+        "article-title": "Design, antimicrobial activity and mechanism of action of Arg-rich ultra-short cationic lipopeptides",
+        "volume": "14",
+        "author": "Armas",
+        "year": "2019",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2021010313133963900_B19",
+        "doi-asserted-by": "crossref",
+        "first-page": "22847",
+        "DOI": "10.1021/acsomega.0c02088",
+        "article-title": "Generating ampicillin-level antimicrobial peptides with activity-aware generative adversarial networks",
+        "volume": "5",
+        "author": "Tucs",
+        "year": "2020",
+        "journal-title": "ACS Omega"
+      },
+      {
+        "key": "2021010313133963900_B20",
+        "doi-asserted-by": "crossref",
+        "first-page": "E1258",
+        "DOI": "10.3390/molecules24071258",
+        "article-title": "Heterologous machine learning for the identification of antimicrobial activity in Human-Targeted drugs",
+        "volume": "24",
+        "author": "Nava Lara",
+        "year": "2019",
+        "journal-title": "Molecules"
+      },
+      {
+        "key": "2021010313133963900_B21",
+        "doi-asserted-by": "crossref",
+        "first-page": "588",
+        "DOI": "10.1021/acs.jcim.5b00630",
+        "article-title": "First multitarget chemo bioinformatic model to enable the discovery of antibacterial peptides against multiple gram-positive pathogens",
+        "volume": "56",
+        "author": "Speck-Planche",
+        "year": "2016",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "2021010313133963900_B22",
+        "article-title": "AMP0: Species-Specific Prediction of Antimicrobial Peptides using Zero and Few Shot Learning",
+        "author": "Gull",
+        "year": "2019",
+        "journal-title": "IEEA/ACM Trans. Comput. Biol. Bioinform."
+      },
+      {
+        "key": "2021010313133963900_B23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1134",
+        "DOI": "10.1109/TCBB.2019.2903800",
+        "article-title": "Classification of antibacterial peptides using long short-term memory recurrent neural networks",
+        "volume": "17",
+        "author": "Youmans",
+        "year": "2019",
+        "journal-title": "IEEA/ACM Trans. Comput. Biol. Bioinform"
+      },
+      {
+        "key": "2021010313133963900_B24",
+        "doi-asserted-by": "crossref",
+        "first-page": "954",
+        "DOI": "10.3389/fphar.2018.00954",
+        "article-title": "Prediction of antitubercular peptides from sequence information using ensemble classifier and hybrid features",
+        "volume": "9",
+        "author": "Usmani",
+        "year": "2018",
+        "journal-title": "Front. Pharmacol."
+      },
+      {
+        "key": "2021010313133963900_B25",
+        "doi-asserted-by": "crossref",
+        "first-page": "3029",
+        "DOI": "10.1002/1873-3468.13536",
+        "article-title": "Efficient computational model for identification of antitubercular peptides by integrating amino acid patterns and properties",
+        "volume": "593",
+        "author": "Khatun",
+        "year": "2019",
+        "journal-title": "FEBS Letter"
+      },
+      {
+        "key": "2021010313133963900_B26",
+        "doi-asserted-by": "crossref",
+        "first-page": "490",
+        "DOI": "10.1021/acscombsci.6b00063",
+        "article-title": "Enabling the discovery and virtual screening of potent and safe antimicrobial peptides. Simultaneous prediction of antibacterial activity and cytotoxicity",
+        "volume": "18",
+        "author": "Kleandrova",
+        "year": "2016",
+        "journal-title": "ACS Comb. Sci."
+      },
+      {
+        "key": "2021010313133963900_B27",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.4155/fmc-2016-0188",
+        "article-title": "HemoPred: a web server for predicting the hemolytic activity of peptides",
+        "volume": "9",
+        "author": "Win",
+        "year": "2017",
+        "journal-title": "Fut. Med. Chem."
+      },
+      {
+        "key": "2021010313133963900_B28",
+        "doi-asserted-by": "crossref",
+        "first-page": "D444",
+        "DOI": "10.1093/nar/gkt1008",
+        "article-title": "Hemolytik: a database of experimentally determined hemolytic and non-hemolytic peptides",
+        "volume": "42",
+        "author": "Gautam",
+        "year": "2014",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B29",
+        "doi-asserted-by": "crossref",
+        "first-page": "E1964",
+        "DOI": "10.3390/ijms20081964",
+        "article-title": "mACPpred: A support vector machine-based meta-predictor for identification of anticancer peptides",
+        "volume": "20",
+        "author": "Boopathi",
+        "year": "2019",
+        "journal-title": "Int. J. Mol. Sci."
+      },
+      {
+        "key": "2021010313133963900_B30",
+        "doi-asserted-by": "crossref",
+        "first-page": "D6",
+        "DOI": "10.1093/nar/gku1130",
+        "article-title": "Database resources of the National Center for Biotechnology Information",
+        "volume": "43",
+        "author": "NCBI Resource Coordinators",
+        "year": "2015",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "D345",
+        "DOI": "10.1093/nar/gku1214",
+        "article-title": "The RCSB Protein Data Bank: views of structural biology for basic and applied research and education",
+        "volume": "43",
+        "author": "Rose",
+        "year": "2015",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B32",
+        "doi-asserted-by": "crossref",
+        "first-page": "3755",
+        "DOI": "10.1093/bioinformatics/bty419",
+        "article-title": "NGL viewer: web-based molecular graphics for large complexes",
+        "volume": "34",
+        "author": "Rose",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2021010313133963900_B33",
+        "doi-asserted-by": "crossref",
+        "first-page": "1512",
+        "DOI": "10.1021/ci4007003",
+        "article-title": "Prediction of linear cationic antimicrobial peptides based on characteristics responsible for their interaction with the membranes",
+        "volume": "54",
+        "author": "Vishnepolsky",
+        "year": "2014",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "2021010313133963900_B34",
+        "doi-asserted-by": "crossref",
+        "first-page": "608",
+        "DOI": "10.1093/bioinformatics/18.4.608",
+        "article-title": "Amphiphilicity index of polar amino acids as an aid in the characterization of amino acid preference at membrane-water interfaces",
+        "volume": "18",
+        "author": "Mitaku",
+        "year": "2002",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2021010313133963900_B35",
+        "doi-asserted-by": "crossref",
+        "first-page": "934",
+        "DOI": "10.1016/0006-291X(87)90736-4",
+        "article-title": "Third type of secondary structure: noncooperative mobile conformation. Protein Data Bank analysis",
+        "volume": "146",
+        "author": "Adzhubei",
+        "year": "1987",
+        "journal-title": "Biochem. Biophys. Res. Commun."
+      },
+      {
+        "key": "2021010313133963900_B36",
+        "doi-asserted-by": "crossref",
+        "first-page": "1379",
+        "DOI": "10.1002/bip.1968.360060911",
+        "article-title": "New chain conformations of poly(glutamic acid) and polylysine",
+        "volume": "6",
+        "author": "Tiffany",
+        "year": "1968",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "2021010313133963900_B37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1141",
+        "DOI": "10.1021/acs.jcim.8b00118",
+        "article-title": "Predictive model of linear antimicrobial peptides active against gram-negative bacteria",
+        "volume": "58",
+        "author": "Vishnepolsky",
+        "year": "2018",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "2021010313133963900_B38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1605",
+        "DOI": "10.1002/jcc.20084",
+        "article-title": "UCSF Chimera–a visualization system for exploratory research and analysis",
+        "volume": "25",
+        "author": "Pettersen",
+        "year": "2004",
+        "journal-title": "J Comput. Chem."
+      },
+      {
+        "key": "2021010313133963900_B39",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1016/0263-7855(96)00018-5",
+        "article-title": "VMD - Visual molecular dynamics",
+        "volume": "14",
+        "author": "Humphrey",
+        "year": "1996",
+        "journal-title": "J. Mol. Graph."
+      },
+      {
+        "key": "2021010313133963900_B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1781",
+        "DOI": "10.1002/jcc.20289",
+        "article-title": "Scalable molecular dynamics with NAMD",
+        "volume": "26",
+        "author": "Phillips",
+        "year": "2005",
+        "journal-title": "J. Comput. Chem."
+      },
+      {
+        "key": "2021010313133963900_B41",
+        "doi-asserted-by": "crossref",
+        "first-page": "1632",
+        "DOI": "10.1021/ct9000685",
+        "article-title": "ACEMD: Accelerating biomolecular dynamics in the microsecond time scale",
+        "volume": "5",
+        "author": "Harvey",
+        "year": "2009",
+        "journal-title": "J. Chem. Theory Comput."
+      },
+      {
+        "key": "2021010313133963900_B42",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1038/nmeth.4067",
+        "article-title": "CHARMM36m: an improved force field for folded and intrinsically disordered proteins",
+        "volume": "14",
+        "author": "Huang",
+        "year": "2017",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2021010313133963900_B43",
+        "doi-asserted-by": "crossref",
+        "first-page": "D506",
+        "DOI": "10.1093/nar/gky1049",
+        "article-title": "UniProt: a worldwide hub of protein knowledge",
+        "volume": "47",
+        "author": "The UniProt Consortium",
+        "year": "2019",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2021010313133963900_B44",
+        "doi-asserted-by": "crossref",
+        "first-page": "401",
+        "DOI": "10.1107/S0907444906056435",
+        "article-title": "Double-stranded helical twisted beta-sheet channels in crystals of gramicidin S grown in the presence of trifluoroacetic and hydrochloric acids",
+        "volume": "63",
+        "author": "Llamas-Saiz",
+        "year": "2007",
+        "journal-title": "Acta Crystallogr. D. Biol. Crystallogr."
+      },
+      {
+        "key": "2021010313133963900_B45",
+        "doi-asserted-by": "crossref",
+        "first-page": "89",
+        "DOI": "10.1016/S0005-2736(99)00202-3",
+        "article-title": "Lipid-induced conformation and lipid-binding properties of cytolytic and antimicrobial peptides: determination and biological specificity",
+        "volume": "1462",
+        "author": "Blondelle",
+        "year": "1999",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "2021010313133963900_B46",
+        "doi-asserted-by": "crossref",
+        "first-page": "2692",
+        "DOI": "10.1093/bioinformatics/bty1023",
+        "article-title": "Comment on: ‘Empirical comparison of web-based antimicrobial peptide prediction tools’",
+        "volume": "35",
+        "author": "Vishnepolsky",
+        "year": "2019",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2021010313133963900_B47",
+        "doi-asserted-by": "crossref",
+        "first-page": "133",
+        "DOI": "10.1093/femsre/fuv008",
+        "article-title": "Bacterial membrane lipids: diversity in structures and pathways",
+        "volume": "40",
+        "author": "Sohlenkamp",
+        "year": "2016",
+        "journal-title": "FEMS Microbiol. Rev."
+      },
+      {
+        "key": "2021010313133963900_B48",
+        "doi-asserted-by": "crossref",
+        "first-page": "3772",
+        "DOI": "10.1016/j.bpj.2009.02.033",
+        "article-title": "Force field bias in protein folding simulations",
+        "volume": "96",
+        "author": "Freddolino",
+        "year": "2009",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "2021010313133963900_B49",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1016/j.ijantimicag.2011.12.003",
+        "article-title": "YADAMP: yet another database of antimicrobial peptides",
+        "volume": "39",
+        "author": "Piotto",
+        "year": "2012",
+        "journal-title": "Int. J. Antimicrob. Agents."
+      },
+      {
+        "key": "2021010313133963900_B50",
+        "doi-asserted-by": "crossref",
+        "first-page": "e66557",
+        "DOI": "10.1371/journal.pone.0066557",
+        "article-title": "LAMP: A database linking antimicrobial peptides",
+        "volume": "8",
+        "author": "Zhao",
+        "year": "2013",
+        "journal-title": "PLoS One"
+      }
+    ],
+    "container-title": [
+      "Nucleic Acids Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/49/D1/D288/35364613/gkaa991.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/49/D1/D288/35364613/gkaa991.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          15
+        ]
+      ],
+      "date-time": "2024-08-15T18:36:21Z",
+      "timestamp": 1723746981000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/nar/article/49/D1/D288/5957160"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    },
+    "references-count": 50,
+    "journal-issue": {
+      "issue": "D1",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            5
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/nar/gkaa991",
+    "relation": {},
+    "ISSN": [
+      "0305-1048",
+      "1362-4962"
+    ],
+    "issn-type": [
+      {
+        "value": "0305-1048",
+        "type": "print"
+      },
+      {
+        "value": "1362-4962",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          8
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    }
+  }
+}

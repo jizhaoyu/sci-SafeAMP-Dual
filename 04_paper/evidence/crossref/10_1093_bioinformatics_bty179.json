@@ -1,0 +1,824 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/bioinformatics/bty179",
+  "retrieved_at": "2026-09-28T14:31:18.062115+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T05:20:11Z",
+      "timestamp": 1790400011319,
+      "version": "4.1.0"
+    },
+    "reference-count": 58,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "16",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              3,
+              24
+            ]
+          ],
+          "date-time": "2018-03-24T00:00:00Z",
+          "timestamp": 1521849600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000001",
+        "name": "National Science Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "1144106"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "1144106"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000001",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          15
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Motivation</jats:title>\n                    <jats:p>Bacterial resistance to antibiotics is a growing concern. Antimicrobial peptides (AMPs), natural components of innate immunity, are popular targets for developing new drugs. Machine learning methods are now commonly adopted by wet-laboratory researchers to screen for promising candidates.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>In this work, we utilize deep learning to recognize antimicrobial activity. We propose a neural network model with convolutional and recurrent layers that leverage primary sequence composition. Results show that the proposed model outperforms state-of-the-art classification models on a comprehensive dataset. By utilizing the embedding weights, we also present a reduced-alphabet representation and show that reasonable AMP recognition can be maintained using nine amino acid types.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Availability and implementation</jats:title>\n                    <jats:p>Models and datasets are made freely available through the Antimicrobial Peptide Scanner vr.2 web server at www.ampscanner.com.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Supplementary information</jats:title>\n                    <jats:p>Supplementary data are available at Bioinformatics online.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1093/bioinformatics/bty179",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          23
+        ]
+      ],
+      "date-time": "2018-03-23T00:10:48Z",
+      "timestamp": 1521763848000
+    },
+    "page": "2740-2747",
+    "source": "Crossref",
+    "is-referenced-by-count": 595,
+    "title": [
+      "Deep learning improves antimicrobial peptide recognition"
+    ],
+    "prefix": "10.1093",
+    "volume": "34",
+    "author": [
+      {
+        "given": "Daniel",
+        "family": "Veltri",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Bioinformatics and Computational Biosciences Branch, Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases, U.S. National Institutes of Health, Rockville, MD, USA"
+          },
+          {
+            "name": "Medical Science & Computing, LLC, Rockville, MD, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Uday",
+        "family": "Kamath",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Digital Reasoning, McLean, VA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amarda",
+        "family": "Shehu",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science, George Mason University, Fairfax, VA, USA"
+          },
+          {
+            "name": "Department of Bioengineering, George Mason University, Fairfax, VA, USA"
+          },
+          {
+            "name": "School of Systems Biology, George Mason University, Manassas, VA, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          24
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2023012712590862200_bty179-B1",
+        "volume-title": "Proceedings of the 12th USENIX Symposium on Operating Systems Design and Implementation (OSDI)",
+        "author": "Abadi",
+        "year": "2016"
+      },
+      {
+        "key": "2023012712590862200_bty179-B2",
+        "author": "Bahdanau",
+        "year": "2014"
+      },
+      {
+        "key": "2023012712590862200_bty179-B3",
+        "first-page": "291",
+        "volume-title": "Bioinformatics for Geneticists",
+        "author": "Betts",
+        "year": "2003"
+      },
+      {
+        "key": "2023012712590862200_bty179-B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0117394.",
+        "DOI": "10.1371/journal.pone.0117394",
+        "article-title": "Bioprospecting the american alligator (Alligator mississippiensis) host defense peptidome",
+        "volume": "10",
+        "author": "Bishop",
+        "year": "2015",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "2023012712590862200_bty179-B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1046/j.1365-2796.2003.01228.x",
+        "article-title": "Antibacterial peptides: basic facts and emerging concepts",
+        "volume": "254",
+        "author": "Boman",
+        "year": "2003",
+        "journal-title": "J. Intern. Med"
+      },
+      {
+        "key": "2023012712590862200_bty179-B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1034",
+        "DOI": "10.3390/91201034",
+        "article-title": "Application of ’inductive’ QSAR descriptors for quantification of antibacterial activity of cationic polypeptides",
+        "volume": "9",
+        "author": "Cherkasov",
+        "year": "2004",
+        "journal-title": "Molecules"
+      },
+      {
+        "key": "2023012712590862200_bty179-B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "246",
+        "DOI": "10.1002/prot.1035",
+        "article-title": "Prediction of protein cellular attributes using pseudo-amino acid composition",
+        "volume": "43",
+        "author": "Chou",
+        "year": "2001",
+        "journal-title": "Proteins"
+      },
+      {
+        "key": "2023012712590862200_bty179-B8",
+        "author": "Chung",
+        "year": "2014"
+      },
+      {
+        "key": "2023012712590862200_bty179-B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "343",
+        "DOI": "10.1007/BF01386329",
+        "article-title": "The norm of the Schur product operation",
+        "volume": "4",
+        "author": "Davis",
+        "year": "1962",
+        "journal-title": "Numerische Math"
+      },
+      {
+        "key": "2023012712590862200_bty179-B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "980",
+        "DOI": "10.1016/j.bbamem.2015.10.018",
+        "article-title": "Molecular mechanisms of membrane targeting antibiotics",
+        "volume": "1858",
+        "author": "Epand",
+        "year": "2016",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "2023012712590862200_bty179-B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "280",
+        "DOI": "10.1002/bip.22066",
+        "article-title": "Prediction of antimicrobial peptides based on the adaptive neuro-fuzzy inference system application",
+        "volume": "98",
+        "author": "Fernandes",
+        "year": "2012",
+        "journal-title": "Peptide Sci"
+      },
+      {
+        "key": "2023012712590862200_bty179-B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "1148",
+        "DOI": "10.1093/bioinformatics/btm068",
+        "article-title": "AMPer: a database and an automated discovery tool for antimicrobial peptides",
+        "volume": "23",
+        "author": "Fjell",
+        "year": "2007",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023012712590862200_bty179-B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2006",
+        "DOI": "10.1021/jm8015365",
+        "article-title": "Identification of novel antibacterial peptides by chemoinformatics and machine learning",
+        "volume": "52",
+        "author": "Fjell",
+        "year": "2009",
+        "journal-title": "J. Med. Chem"
+      },
+      {
+        "key": "2023012712590862200_bty179-B14",
+        "doi-asserted-by": "crossref",
+        "first-page": "2451",
+        "DOI": "10.1162/089976600300015015",
+        "article-title": "Learning to forget: continual prediction with LSTM",
+        "volume": "12",
+        "author": "Gers",
+        "year": "2000",
+        "journal-title": "Neural Comput"
+      },
+      {
+        "key": "2023012712590862200_bty179-B15",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1003711.",
+        "DOI": "10.1371/journal.pcbi.1003711",
+        "article-title": "Enhanced regulartory sequence prediction using gapped k-mer features",
+        "volume": "10",
+        "author": "Ghandi",
+        "year": "2014",
+        "journal-title": "PLoS Comput. Biol"
+      },
+      {
+        "key": "2023012712590862200_bty179-B16",
+        "first-page": "2672",
+        "volume-title": "Advances in Neural Information Processing Systems 27",
+        "author": "Goodfellow",
+        "year": "2014"
+      },
+      {
+        "key": "2023012712590862200_bty179-B17",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1109/ASRU.2013.6707742",
+        "volume-title": "2013 IEEE Workshop on Automatic Speech Recognition and Understanding (ASRU)",
+        "author": "Graves",
+        "year": "2013"
+      },
+      {
+        "key": "2023012712590862200_bty179-B18",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1148/radiology.143.1.7063747",
+        "article-title": "The meaning and use of the area under a receiver operating characteristic (ROC) curve",
+        "volume": "143",
+        "author": "Hanley",
+        "year": "1982",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "2023012712590862200_bty179-B19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1735",
+        "DOI": "10.1162/neco.1997.9.8.1735",
+        "article-title": "Long short-term memory",
+        "volume": "9",
+        "author": "Hochreiter",
+        "year": "1997",
+        "journal-title": "Neural Comput"
+      },
+      {
+        "key": "2023012712590862200_bty179-B20",
+        "doi-asserted-by": "crossref",
+        "first-page": "680",
+        "DOI": "10.1093/bioinformatics/btq003",
+        "article-title": "CD-HIT suite: a web server for clustering and comparing biological sequences",
+        "volume": "26",
+        "author": "Huang",
+        "year": "2010",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023012712590862200_bty179-B21",
+        "doi-asserted-by": "crossref",
+        "first-page": "90",
+        "DOI": "10.1109/MCSE.2007.55",
+        "article-title": "Matplotlib: a 2D graphics environment",
+        "volume": "9",
+        "author": "Hunter",
+        "year": "2007",
+        "journal-title": "Comput. Sci. Eng"
+      },
+      {
+        "key": "2023012712590862200_bty179-B22",
+        "doi-asserted-by": "crossref",
+        "first-page": "17573.",
+        "DOI": "10.1038/srep17573",
+        "article-title": "Improving protein fold recognition by deep learning networks",
+        "volume": "5",
+        "author": "Jo",
+        "year": "2015",
+        "journal-title": "Sci. Rep"
+      },
+      {
+        "key": "2023012712590862200_bty179-B23",
+        "doi-asserted-by": "crossref",
+        "first-page": "e99982.",
+        "DOI": "10.1371/journal.pone.0099982",
+        "article-title": "Effective automated feature construction and selection for classification of biological sequences",
+        "volume": "9",
+        "author": "Kamath",
+        "year": "2014",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2023012712590862200_bty179-B24",
+        "first-page": "656",
+        "article-title": "BLAT - the BLAST-like alignment tool",
+        "volume": "12",
+        "author": "Kent",
+        "year": "2002",
+        "journal-title": "Genome Res"
+      },
+      {
+        "key": "2023012712590862200_bty179-B25",
+        "first-page": "1",
+        "author": "Kingma",
+        "year": "2014"
+      },
+      {
+        "key": "2023012712590862200_bty179-B26",
+        "first-page": "1378",
+        "volume-title": "International Conference on Machine Learn Res (MLR)",
+        "author": "Kumar",
+        "year": "2016"
+      },
+      {
+        "key": "2023012712590862200_bty179-B27",
+        "doi-asserted-by": "crossref",
+        "first-page": "263",
+        "DOI": "10.1186/1471-2105-8-263",
+        "article-title": "Analysis and prediction of antibacterial peptides",
+        "volume": "8",
+        "author": "Lata",
+        "year": "2007",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2023012712590862200_bty179-B28",
+        "doi-asserted-by": "crossref",
+        "first-page": "S19.",
+        "DOI": "10.1186/1471-2105-11-S1-S19",
+        "article-title": "AntiBP2: improved version of antibacterial peptide prediction",
+        "volume": "11",
+        "author": "Lata",
+        "year": "2010",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2023012712590862200_bty179-B29",
+        "doi-asserted-by": "crossref",
+        "first-page": "436",
+        "DOI": "10.1038/nature14539",
+        "article-title": "Deep learning",
+        "volume": "521",
+        "author": "LeCun",
+        "year": "2015",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2023012712590862200_bty179-B30",
+        "doi-asserted-by": "crossref",
+        "first-page": "13588",
+        "DOI": "10.1073/pnas.1609893113",
+        "article-title": "Mapping membrane activity in undiscovered peptide sequence space using machine learning",
+        "volume": "113",
+        "author": "Lee",
+        "year": "2016",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "2023012712590862200_bty179-B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "129",
+        "DOI": "10.1109/TIT.1982.1056489",
+        "article-title": "Least squares quantization in pcm",
+        "volume": "28",
+        "author": "Lloyd",
+        "year": "1982",
+        "journal-title": "IEEE Trans. Inf. Theory"
+      },
+      {
+        "key": "2023012712590862200_bty179-B32",
+        "doi-asserted-by": "crossref",
+        "first-page": "bar009.",
+        "DOI": "10.1093/database/bar009",
+        "article-title": "UniProt knowledgebase: a hub of integrated protein data",
+        "volume": "2011",
+        "author": "Magrane",
+        "year": "2011",
+        "journal-title": "Database"
+      },
+      {
+        "key": "2023012712590862200_bty179-B33",
+        "doi-asserted-by": "crossref",
+        "first-page": "42362.",
+        "DOI": "10.1038/srep42362",
+        "article-title": "Predicting antimicrobial peptides with improved accuracy by incorporating the compositional, physico-chemical and structural features into Chou’s general PseAAC",
+        "volume": "7",
+        "author": "Meher",
+        "year": "2017",
+        "journal-title": "Sci. Rep"
+      },
+      {
+        "key": "2023012712590862200_bty179-B34",
+        "first-page": "01",
+        "article-title": "Convolutional LSTM networks for subcellular localization of proteins",
+        "volume": "25",
+        "author": "Nielsen",
+        "year": "2016",
+        "journal-title": "Mach. Learn"
+      },
+      {
+        "key": "2023012712590862200_bty179-B35",
+        "first-page": "2825",
+        "article-title": "Scikit-learn: machine learning in python",
+        "volume": "12(Oct)",
+        "author": "Pedregosa",
+        "year": "2011",
+        "journal-title": "J. Mach. Learn. Res"
+      },
+      {
+        "key": "2023012712590862200_bty179-B36",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1128/mBio.00305-11",
+        "article-title": "Staphylococcus aureus CC398: host adaptation and emergence of methicillin resistance in livestock",
+        "volume": "3",
+        "author": "Price",
+        "year": "2012",
+        "journal-title": "MBio"
+      },
+      {
+        "key": "2023012712590862200_bty179-B37",
+        "volume-title": "R: A Language and Environment for Statistical Computing",
+        "author": "R Core Team",
+        "year": "2015"
+      },
+      {
+        "key": "2023012712590862200_bty179-B38",
+        "first-page": "76",
+        "author": "Randou",
+        "year": "2013"
+      },
+      {
+        "key": "2023012712590862200_bty179-B39",
+        "doi-asserted-by": "crossref",
+        "first-page": "77.",
+        "DOI": "10.1186/1471-2105-12-77",
+        "article-title": "Proc: an open-source package for R and S+ to analyze and compare roc curves",
+        "volume": "12",
+        "author": "Robin",
+        "year": "2011",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2023012712590862200_bty179-B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "85",
+        "DOI": "10.1016/j.neunet.2014.09.003",
+        "article-title": "Deep learning in neural networks: an overview",
+        "volume": "61",
+        "author": "Schmidhuber",
+        "year": "2015",
+        "journal-title": "Neural Netw"
+      },
+      {
+        "key": "2023012712590862200_bty179-B41",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1109/TCBB.2014.2343960",
+        "article-title": "A deep learning network approach to ab initio protein secondary structure prediction",
+        "volume": "12",
+        "author": "Spencer",
+        "year": "2015",
+        "journal-title": "IEEE/ACM Trans. Comput. Biol. Bioinform"
+      },
+      {
+        "key": "2023012712590862200_bty179-B42",
+        "first-page": "1929",
+        "article-title": "Dropout: a simple way to prevent neural networks from overfitting",
+        "volume": "15",
+        "author": "Srivastava",
+        "year": "2014",
+        "journal-title": "J. Mach. Learn. Res"
+      },
+      {
+        "key": "2023012712590862200_bty179-B43",
+        "first-page": "D774",
+        "article-title": "CAMP: a useful resource for research on antimicrobial peptides",
+        "volume": "38(suppl. 1)",
+        "author": "Thomas",
+        "year": "2009",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "key": "2023012712590862200_bty179-B44",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1007/BF02289263",
+        "article-title": "Who belongs in the family?",
+        "volume": "18",
+        "author": "Thorndike",
+        "year": "1953",
+        "journal-title": "Psychometrika"
+      },
+      {
+        "key": "2023012712590862200_bty179-B45",
+        "doi-asserted-by": "crossref",
+        "first-page": "e16968.",
+        "DOI": "10.1371/journal.pone.0016968",
+        "article-title": "Connecting peptide physicochemical and antimicrobial properties by a rational prediction model",
+        "volume": "6",
+        "author": "Torrent",
+        "year": "2011",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2023012712590862200_bty179-B46",
+        "volume-title": "Antibiotic Resistance Threats in the United States",
+        "author": "U.S. Department of Health and Human Services",
+        "year": "2013"
+      },
+      {
+        "key": "2023012712590862200_bty179-B47",
+        "first-page": "2579",
+        "article-title": "Visualizing data using t-SNE",
+        "volume": "9(Nov)",
+        "author": "Van der Maaten",
+        "year": "2008",
+        "journal-title": "J. Mach. Learn. Res"
+      },
+      {
+        "key": "2023012712590862200_bty179-B48",
+        "author": "Veltri",
+        "year": "2015"
+      },
+      {
+        "key": "2023012712590862200_bty179-B49",
+        "first-page": "371",
+        "author": "Veltri",
+        "year": "2014"
+      },
+      {
+        "key": "2023012712590862200_bty179-B50",
+        "doi-asserted-by": "crossref",
+        "first-page": "300",
+        "DOI": "10.1109/TCBB.2015.2462364",
+        "article-title": "Improving recognition of antimicrobial peptides and target selectivity through machine learning and genetic programming",
+        "volume": "14",
+        "author": "Veltri",
+        "year": "2017",
+        "journal-title": "Trans. Comput. Biol. Bioinform"
+      },
+      {
+        "key": "2023012712590862200_bty179-B51",
+        "first-page": "2773",
+        "author": "Vinyals",
+        "year": "2015"
+      },
+      {
+        "key": "2023012712590862200_bty179-B52",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1079/9781845936570.0000",
+        "volume-title": "Antimicrobial Peptides: Discovery, Design and Novel Therapeutic Strategies",
+        "author": "Wang",
+        "year": "2010"
+      },
+      {
+        "key": "2023012712590862200_bty179-B53",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1087",
+        "DOI": "10.1093/nar/gkv1278",
+        "article-title": "APD3: the antimicrobial peptide database as a tool for research and education",
+        "volume": "44",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "key": "2023012712590862200_bty179-B54",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1007/s00232-011-9343-0",
+        "article-title": "Antimicrobial peptides: successes, challenges and unanswered questions",
+        "volume": "239",
+        "author": "Wimley",
+        "year": "2011",
+        "journal-title": "J. Membr. Biol"
+      },
+      {
+        "key": "2023012712590862200_bty179-B55",
+        "volume-title": "Antimicrobial Resistance: Global Report on Surveillance 2014",
+        "author": "World Health Organization",
+        "year": "2014"
+      },
+      {
+        "key": "2023012712590862200_bty179-B56",
+        "doi-asserted-by": "crossref",
+        "first-page": "168",
+        "DOI": "10.1016/j.ab.2013.01.019",
+        "article-title": "iAMP-2L: a two-level multi-label classifier for identifying antimicrobial peptides and their functional types",
+        "volume": "436",
+        "author": "Xiao",
+        "year": "2013",
+        "journal-title": "Anal. Biochem"
+      },
+      {
+        "key": "2023012712590862200_bty179-B57",
+        "first-page": "802",
+        "author": "Xingjian",
+        "year": "2015"
+      },
+      {
+        "key": "2023012712590862200_bty179-B58",
+        "doi-asserted-by": "crossref",
+        "first-page": "19861",
+        "DOI": "10.1074/jbc.M511108200",
+        "article-title": "Evolution of the primate cathelicidin",
+        "volume": "281",
+        "author": "Zelezetsky",
+        "year": "2006",
+        "journal-title": "J. Biol. Chem"
+      }
+    ],
+    "container-title": [
+      "Bioinformatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/34/16/2740/48917791/bioinformatics_34_16_2740.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/34/16/2740/48917791/bioinformatics_34_16_2740.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          1,
+          27
+        ]
+      ],
+      "date-time": "2023-01-27T08:48:06Z",
+      "timestamp": 1674809286000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/bioinformatics/article/34/16/2740/4953367"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "John",
+        "family": "Hancock",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          24
+        ]
+      ]
+    },
+    "references-count": 58,
+    "journal-issue": {
+      "issue": "16",
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            8,
+            15
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/bioinformatics/bty179",
+    "relation": {},
+    "ISSN": [
+      "1367-4803",
+      "1367-4811"
+    ],
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1367-4811",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2018,
+          8,
+          15
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          3,
+          24
+        ]
+      ]
+    }
+  }
+}

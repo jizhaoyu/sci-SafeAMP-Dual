@@ -1,0 +1,25 @@
+﻿sample_id,record_id,assay_index,reported_target,reported_mic,reported_unit,corrected_study_ids,decision,approved_label,expanded_cohort_training_release
+0bad315d1aa3eae62114431b,DBAASP:18062,0,Escherichia coli NBRC 12734,>128,µg/ml,dbaasp_article:21399|pmid:33790103,existing_15_evidence_passed,0.0,False
+cf6ae302bad088280f27436e,DBAASP:18063,0,Escherichia coli NBRC 12734,>128,µg/ml,dbaasp_article:21398|pmid:33790103,existing_15_evidence_passed,0.0,False
+3e656d2ae8d48ae33078fcd4,DBAASP:18059,0,Escherichia coli NBRC 12734,>128,µg/ml,dbaasp_article:21402|pmid:33790103,existing_15_evidence_passed,0.0,False
+ed685c495abdd9ecc7e33057,PMID32344933:EtCec3-OH,0,Escherichia coli D31,>1024,µg/mL,doi:10.3390/microorganisms8050626|pmid:32344933,existing_15_evidence_passed,0.0,False
+ed685c495abdd9ecc7e33057,PMID32344933:EtCec3-OH,1,Escherichia coli ATCC 25922,>1024,µg/mL,doi:10.3390/microorganisms8050626|pmid:32344933,existing_15_evidence_passed,0.0,False
+16032d07b187aa447eea3ada,PMID35735615:Api801,0,Escherichia coli Rosetta DE3 pLysS,2,µg/mL,doi:10.3390/cimb44060174|pmid:35735615,existing_15_evidence_passed,1.0,False
+8a7ea548dccd036db56d8c94,PMID35735615:Api805,0,Escherichia coli Rosetta DE3 pLysS,4,µg/mL,doi:10.3390/cimb44060174|pmid:35735615,existing_15_evidence_passed,1.0,False
+f74052fb265151ecb406d09f,PMID35735615:Api810,0,Escherichia coli Rosetta DE3 pLysS,128,µg/mL,doi:10.3390/cimb44060174|pmid:35735615,existing_15_evidence_passed,0.0,False
+f74052fb265151ecb406d09f,PMID35735615:Api810,1,Escherichia coli Rosetta DE3 pLysS,>128,µg/mL,doi:10.3390/cimb44060174|pmid:35735615,existing_15_evidence_passed,0.0,False
+30d336eea06d769ed6f05aad,DOI10.1016.j.bbamem.2010.11.025:Aurein2.3-COOH,0,Escherichia coli K12 UB1005,>128,µg/mL,doi:10.1016/j.bbamem.2010.11.025,existing_15_evidence_passed,0.0,False
+d109526ef5b890b80697cd3c,KIT1000012217:MAP-COOH,0,Escherichia coli DSM 1103,>128,µg/mL,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,existing_15_evidence_passed,0.0,False
+d109526ef5b890b80697cd3c,KIT1000012217:MAP-COOH,1,Escherichia coli DH 5alpha,>128,µg/mL,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,existing_15_evidence_passed,0.0,False
+e76bde35dfd8fa7886701176,KIT1000012217:MSI-103-COOH,0,Escherichia coli DSM 1103,8,µg/mL,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,existing_15_evidence_passed,1.0,False
+e76bde35dfd8fa7886701176,KIT1000012217:MSI-103-COOH,1,Escherichia coli DH 5alpha,16,µg/mL,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,existing_15_evidence_passed,1.0,False
+b6caa1581eac8732cdb884da,KIT1000012217:PGLa-COOH,0,Escherichia coli DSM 1103,>128,µg/mL,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,existing_15_evidence_passed,0.0,False
+b6caa1581eac8732cdb884da,KIT1000012217:PGLa-COOH,1,Escherichia coli DH 5alpha,>128,µg/mL,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,existing_15_evidence_passed,0.0,False
+22092d5d5213faf8a6e05acc,"PMC8203924:2, G3(RW)3K5",0,Escherichia coli ATCC 8739,>215.6,µM,doi:10.3389/fmicb.2021.624465|pmid:34140932,existing_15_evidence_passed,0.0,False
+2b0ec81407d11aecb6cba260,PMC3782441:Tritrpticin,0,Escherichia coli BL21λD3,3.12,µM,doi:10.1371/journal.pone.0075582|pmid:24086578,existing_15_evidence_passed,1.0,False
+2b0ec81407d11aecb6cba260,PMC3782441:Tritrpticin,1,Escherichia coli ATCC 25922,3.12,µM,doi:10.1371/journal.pone.0075582|pmid:24086578,existing_15_evidence_passed,1.0,False
+c40ac96f1bb92d284d5fb9fc,"PMC8203924:1, G3K5(RW)3",0,Escherichia coli ATCC 8739,>215.6,µM,doi:10.3389/fmicb.2021.624465|pmid:34140932,existing_15_evidence_passed,0.0,False
+d8c1766a857b483a3880c7df,PMC3782441:12PhD1,0,Escherichia coli BL21λD3,400,µM,doi:10.1371/journal.pone.0075582|pmid:24086578,existing_15_evidence_passed,0.0,False
+d8c1766a857b483a3880c7df,PMC3782441:12PhD1,1,Escherichia coli ATCC 25922,400,µM,doi:10.1371/journal.pone.0075582|pmid:24086578,existing_15_evidence_passed,0.0,False
+4e1914c54d14afece198fd5d,chekmenev2006:p1-COO-,0,Escherichia coli ATCC 25922,2-10,µM,doi:10.1016/j.bbamem.2006.03.034|pmid:16815244|NHMFL_Publication-3172,withheld_complete_release_review,,False
+5445b7b645f69b6d7f8abdf3,bmap2025:BMAP-27B,0,Escherichia coli (CREC6 / clinical isolates & ATCC 25922),1.563-6.250,µg/ml,doi:10.1002/mlf2.70020|pmid:40600060|pmcid:PMC12207908,withheld_aggregate_target_endpoint,,False

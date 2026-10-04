@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-02T09:00:51.704276+00:00",
+  "status": "passed",
+  "checks": [
+    {
+      "entrypoint": "source_review",
+      "refused": true,
+      "sha256_unchanged": true
+    },
+    {
+      "entrypoint": "cohort",
+      "refused": true,
+      "sha256_unchanged": true
+    },
+    {
+      "entrypoint": "readiness",
+      "refused": true,
+      "sha256_unchanged": true
+    }
+  ]
+}

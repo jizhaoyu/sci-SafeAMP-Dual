@@ -1,0 +1,11 @@
+{
+  "protocol_id": "protocol-mic-07",
+  "frozen_at": "2026-10-02T09:52:10.461851+00:00",
+  "protocol_file_sha256": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+  "training_entry_sha256": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+  "evidence_release_manifest_sha256": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+  "model_training_started": false,
+  "model_performance_used_to_choose_design": false,
+  "supersedes_implementation_freeze": "protocol_mic_07_freeze_20261002_v1.json",
+  "implementation_revision_reason": "Compare complete raw observation records after sorting by evidence keys; source release table is grouped by molecule, candidate table has a different row order. No evidence, cohort, label, model or scientific protocol changed."
+}

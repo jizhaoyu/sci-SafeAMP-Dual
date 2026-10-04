@@ -1,0 +1,15 @@
+{
+  "status": "blocked",
+  "created_at": "2026-09-28T14:38:25.629949+00:00",
+  "records_sha256": "57ce763d21c55bdc397e72d3b2932d3a35c5ace4e9c86403b1b1623c3c559618",
+  "cutoff": 0.4,
+  "identity_definition": "global NW +2/-1/-2, diagonal-first ties, matches/min(lengths)",
+  "folds": 5,
+  "seed": 42,
+  "aligned_pairs": 67014,
+  "above_cutoff_pairs": 22481,
+  "groups": 1,
+  "sample_count": 417,
+  "largest_cluster": 417,
+  "reason": "A separately sourced external cohort is required."
+}

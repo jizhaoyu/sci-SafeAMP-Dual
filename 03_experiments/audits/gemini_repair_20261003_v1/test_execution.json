@@ -1,0 +1,20 @@
+{
+  "started_at": "2026-10-03T03:54:28.144259+00:00",
+  "completed_at": "2026-10-03T03:54:32.696891+00:00",
+  "working_directory": "D:\\桌面文件\\sci\\02_code",
+  "command": [
+    "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "tests/test_evidence_gate_repair.py",
+    "tests/test_protocol_contract.py",
+    "tests/test_isolation_diagnostics.py",
+    "-q",
+    "--junitxml=D:\\桌面文件\\sci\\03_experiments\\audits\\gemini_repair_20261003_v1\\regression_results.xml"
+  ],
+  "exit_code": 0,
+  "stdout": "......................................                                   [100%]\n- generated xml file: D:\\桌面文件\\sci\\03_experiments\\audits\\gemini_repair_20261003_v1\\regression_results.xml -\n38 passed in 3.13s\n",
+  "stderr": ""
+}

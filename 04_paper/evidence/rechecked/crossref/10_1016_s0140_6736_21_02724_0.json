@@ -1,0 +1,2981 @@
+{
+  "url": "https://api.crossref.org/works/10.1016/s0140-6736%2821%2902724-0",
+  "retrieved_at": "2026-09-28T14:55:49.245923+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2026-09-28T02:48:34Z",
+      "timestamp": 1790563714430,
+      "version": "4.1.0"
+    },
+    "reference-count": 61,
+    "publisher": "Elsevier BV",
+    "issue": "10325",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2022-02-01T00:00:00Z",
+          "timestamp": 1643673600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              1
+            ]
+          ],
+          "date-time": "2022-02-01T00:00:00Z",
+          "timestamp": 1643673600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2021,
+              11,
+              30
+            ]
+          ],
+          "date-time": "2021-11-30T00:00:00Z",
+          "timestamp": 1638230400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000865",
+        "name": "Bill and Melinda Gates Foundation",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "OPP1176062"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "OPP1176062"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000865",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100010269",
+        "name": "Wellcome Trust",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "A126042"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "A126042"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100010269",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "clinicalkey.com",
+        "clinicalkey.com.au",
+        "clinicalkey.es",
+        "clinicalkey.fr",
+        "clinicalkey.jp",
+        "em-consulte.com",
+        "thelancet.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "The Lancet"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    },
+    "DOI": "10.1016/s0140-6736(21)02724-0",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          1,
+          19
+        ]
+      ],
+      "date-time": "2022-01-19T19:36:57Z",
+      "timestamp": 1642621017000
+    },
+    "page": "629-655",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 14645,
+    "title": [
+      "Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis"
+    ],
+    "prefix": "10.1016",
+    "volume": "399",
+    "author": [
+      {
+        "given": "Christopher J L",
+        "family": "Murray",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kevin Shunji",
+        "family": "Ikuta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fablina",
+        "family": "Sharara",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lucien",
+        "family": "Swetschinski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gisela",
+        "family": "Robles Aguilar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Authia",
+        "family": "Gray",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chieh",
+        "family": "Han",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Catherine",
+        "family": "Bisignano",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Puja",
+        "family": "Rao",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eve",
+        "family": "Wool",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sarah C",
+        "family": "Johnson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Annie J",
+        "family": "Browne",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael Give",
+        "family": "Chipeta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Frederick",
+        "family": "Fell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sean",
+        "family": "Hackett",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Georgina",
+        "family": "Haines-Woodhouse",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bahar H",
+        "family": "Kashef Hamadani",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Emmanuelle A P",
+        "family": "Kumaran",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Barney",
+        "family": "McManigal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sureeruk",
+        "family": "Achalapong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ramesh",
+        "family": "Agarwal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samuel",
+        "family": "Akech",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samuel",
+        "family": "Albertson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John",
+        "family": "Amuasi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jason",
+        "family": "Andrews",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aleskandr",
+        "family": "Aravkin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elizabeth",
+        "family": "Ashley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "François-Xavier",
+        "family": "Babin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Freddie",
+        "family": "Bailey",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Stephen",
+        "family": "Baker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Buddha",
+        "family": "Basnyat",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adrie",
+        "family": "Bekker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rose",
+        "family": "Bender",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James A",
+        "family": "Berkley",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adhisivam",
+        "family": "Bethou",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Julia",
+        "family": "Bielicki",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Suppawat",
+        "family": "Boonkasidecha",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "James",
+        "family": "Bukosia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cristina",
+        "family": "Carvalheiro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlos",
+        "family": "Castañeda-Orjuela",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vilada",
+        "family": "Chansamouth",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Suman",
+        "family": "Chaurasia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sara",
+        "family": "Chiurchiù",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fazle",
+        "family": "Chowdhury",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rafai",
+        "family": "Clotaire Donatien",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Aislinn J",
+        "family": "Cook",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ben",
+        "family": "Cooper",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tim R",
+        "family": "Cressey",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elia",
+        "family": "Criollo-Mora",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Matthew",
+        "family": "Cunningham",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Saffiatou",
+        "family": "Darboe",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas P J",
+        "family": "Day",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maia",
+        "family": "De Luca",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Klara",
+        "family": "Dokova",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Angela",
+        "family": "Dramowski",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Susanna J",
+        "family": "Dunachie",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thuy",
+        "family": "Duong Bich",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tim",
+        "family": "Eckmanns",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel",
+        "family": "Eibach",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amir",
+        "family": "Emami",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicholas",
+        "family": "Feasey",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Natasha",
+        "family": "Fisher-Pearson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Karen",
+        "family": "Forrest",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Coralith",
+        "family": "Garcia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Denise",
+        "family": "Garrett",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Petra",
+        "family": "Gastmeier",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ababi Zergaw",
+        "family": "Giref",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rachel Claire",
+        "family": "Greer",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vikas",
+        "family": "Gupta",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sebastian",
+        "family": "Haller",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrea",
+        "family": "Haselbeck",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Simon I",
+        "family": "Hay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marianne",
+        "family": "Holm",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Susan",
+        "family": "Hopkins",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yingfen",
+        "family": "Hsia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kenneth C",
+        "family": "Iregbu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jan",
+        "family": "Jacobs",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Daniel",
+        "family": "Jarovsky",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fatemeh",
+        "family": "Javanmardi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adam W J",
+        "family": "Jenney",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Meera",
+        "family": "Khorana",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Suwimon",
+        "family": "Khusuwan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Niranjan",
+        "family": "Kissoon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elsa",
+        "family": "Kobeissi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tomislav",
+        "family": "Kostyanev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fiorella",
+        "family": "Krapp",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ralf",
+        "family": "Krumkamp",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ajay",
+        "family": "Kumar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hmwe Hmwe",
+        "family": "Kyu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Cherry",
+        "family": "Lim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kruy",
+        "family": "Lim",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Direk",
+        "family": "Limmathurotsakul",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael James",
+        "family": "Loftus",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Miles",
+        "family": "Lunn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jianing",
+        "family": "Ma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anand",
+        "family": "Manoharan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Florian",
+        "family": "Marks",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jürgen",
+        "family": "May",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mayfong",
+        "family": "Mayxay",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Neema",
+        "family": "Mturi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tatiana",
+        "family": "Munera-Huertas",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Patrick",
+        "family": "Musicha",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lilian A",
+        "family": "Musila",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marisa Marcia",
+        "family": "Mussi-Pinhata",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ravi Narayan",
+        "family": "Naidu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tomoka",
+        "family": "Nakamura",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ruchi",
+        "family": "Nanavati",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sushma",
+        "family": "Nangia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Newton",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chanpheaktra",
+        "family": "Ngoun",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amanda",
+        "family": "Novotney",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Davis",
+        "family": "Nwakanma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christina W",
+        "family": "Obiero",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Theresa J",
+        "family": "Ochoa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Antonio",
+        "family": "Olivas-Martinez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Piero",
+        "family": "Olliaro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ednah",
+        "family": "Ooko",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Edgar",
+        "family": "Ortiz-Brizuela",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pradthana",
+        "family": "Ounchanum",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gideok D",
+        "family": "Pak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jose Luis",
+        "family": "Paredes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anton Yariv",
+        "family": "Peleg",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Carlo",
+        "family": "Perrone",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thong",
+        "family": "Phe",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Koukeo",
+        "family": "Phommasone",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nishad",
+        "family": "Plakkal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alfredo",
+        "family": "Ponce-de-Leon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mathieu",
+        "family": "Raad",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tanusha",
+        "family": "Ramdin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sayaphet",
+        "family": "Rattanavong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amy",
+        "family": "Riddell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tamalee",
+        "family": "Roberts",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Julie Victoria",
+        "family": "Robotham",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Anna",
+        "family": "Roca",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Victor Daniel",
+        "family": "Rosenthal",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kristina E",
+        "family": "Rudd",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Neal",
+        "family": "Russell",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Helio S",
+        "family": "Sader",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Weerawut",
+        "family": "Saengchan",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jesse",
+        "family": "Schnall",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "John Anthony Gerard",
+        "family": "Scott",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Samroeng",
+        "family": "Seekaew",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mike",
+        "family": "Sharland",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Madhusudhan",
+        "family": "Shivamallappa",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jose",
+        "family": "Sifuentes-Osornio",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew J",
+        "family": "Simpson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nicolas",
+        "family": "Steenkeste",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew James",
+        "family": "Stewardson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Temenuga",
+        "family": "Stoeva",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Nidanuch",
+        "family": "Tasak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Areerat",
+        "family": "Thaiprakong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Guy",
+        "family": "Thwaites",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Caroline",
+        "family": "Tigoi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Claudia",
+        "family": "Turner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Paul",
+        "family": "Turner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "H Rogier",
+        "family": "van Doorn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sithembiso",
+        "family": "Velaphi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Avina",
+        "family": "Vongpradith",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Manivanh",
+        "family": "Vongsouvath",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Huong",
+        "family": "Vu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Timothy",
+        "family": "Walsh",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Judd L",
+        "family": "Walson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Seymour",
+        "family": "Waner",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tri",
+        "family": "Wangrangsimakul",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Prapass",
+        "family": "Wannapinij",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Teresa",
+        "family": "Wozniak",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tracey E M W",
+        "family": "Young Sharma",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kalvin C",
+        "family": "Yu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Peng",
+        "family": "Zheng",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Benn",
+        "family": "Sartorius",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alan D",
+        "family": "Lopez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andy",
+        "family": "Stergachis",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Catrin",
+        "family": "Moore",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Christiane",
+        "family": "Dolecek",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mohsen",
+        "family": "Naghavi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib1",
+        "series-title": "Tackling drug-resistant infections globally: final report and recommendations",
+        "author": "O'Neill",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib2",
+        "series-title": "Antimicrobial resistance: tackling a crisis for the health and wealth of nations",
+        "author": "O'Neill",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib3",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pmed.1002184",
+        "article-title": "Will 10 million people die a year due to antimicrobial resistance by 2050?",
+        "volume": "13",
+        "author": "de Kraker",
+        "year": "2016",
+        "journal-title": "PLoS Med"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib4",
+        "series-title": "NOAH response to final O'Neill AMR review report July 2016",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib6",
+        "series-title": "Antibiotic resistance threats in the United States, 2019",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "309",
+        "DOI": "10.1179/2047773215Y.0000000030",
+        "article-title": "Antimicrobial resistance: a global multifaceted phenomenon",
+        "volume": "109",
+        "author": "Prestinaci",
+        "year": "2015",
+        "journal-title": "Pathog Glob Health"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib8",
+        "series-title": "Global action plan on antimicrobial resistance",
+        "year": "2015"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1186/s13756-018-0336-y",
+        "article-title": "Estimating the burden of antimicrobial resistance: a systematic literature review",
+        "volume": "7",
+        "author": "Naylor",
+        "year": "2018",
+        "journal-title": "Antimicrob Resist Infect Control"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "56",
+        "DOI": "10.1016/S1473-3099(18)30605-4",
+        "article-title": "Attributable deaths and disability-adjusted life-years caused by infections with antibiotic-resistant bacteria in the EU and the European Economic Area in 2015: a population-level modelling analysis",
+        "volume": "19",
+        "author": "Cassini",
+        "year": "2019",
+        "journal-title": "Lancet Infect Dis"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.7554/eLife.18082",
+        "article-title": "Epidemiology and burden of multidrug-resistant bacterial infection in a developing country",
+        "volume": "5",
+        "author": "Lim",
+        "year": "2016",
+        "journal-title": "eLife"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "e969",
+        "DOI": "10.1016/S2214-109X(18)30278-X",
+        "article-title": "Estimating the number of infections caused by antibiotic-resistant Escherichia coli and Klebsiella pneumoniae in 2014: a modelling study",
+        "volume": "6",
+        "author": "Temkin",
+        "year": "2018",
+        "journal-title": "Lancet Glob Health"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib13",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/epirev/mxab001",
+        "article-title": "Burden of antimicrobial resistance: compared to what?",
+        "author": "de Kraker",
+        "year": "2021",
+        "journal-title": "Epidemiol Rev"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "1204",
+        "DOI": "10.1016/S0140-6736(20)30925-9",
+        "article-title": "Global burden of 369 diseases and injuries in 204 countries and territories, 1990-2019: a systematic analysis for the Global Burden of Disease Study 2019",
+        "volume": "396",
+        "author": "Vos",
+        "year": "2020",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "78",
+        "DOI": "10.1186/s12916-018-1073-z",
+        "article-title": "Measuring and mapping the global burden of antimicrobial resistance",
+        "volume": "16",
+        "author": "Hay",
+        "year": "2018",
+        "journal-title": "BMC Med"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "2063",
+        "DOI": "10.1016/S0140-6736(12)61899-6",
+        "article-title": "GBD 2010: design, definitions, and metrics",
+        "volume": "380",
+        "author": "Murray",
+        "year": "2012",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1016/j.mib.2020.09.013",
+        "article-title": "The challenges of estimating the human global burden of disease of antimicrobial resistant bacteria",
+        "volume": "57",
+        "author": "Dunachie",
+        "year": "2020",
+        "journal-title": "Curr Opin Microbiol"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "e392",
+        "DOI": "10.1016/S1473-3099(19)30276-2",
+        "article-title": "Improving the estimation of the global burden of antimicrobial resistant infections",
+        "volume": "19",
+        "author": "Limmathurotsakul",
+        "year": "2019",
+        "journal-title": "Lancet Infect Dis"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "1737",
+        "DOI": "10.1093/jac/dky026",
+        "article-title": "An inventory of supranational antimicrobial resistance surveillance networks involving low- and middle-income countries since 2000",
+        "volume": "73",
+        "author": "Ashley",
+        "year": "2018",
+        "journal-title": "J Antimicrob Chemother"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "2236",
+        "DOI": "10.1016/S0140-6736(18)30994-2",
+        "article-title": "Measuring performance on the Healthcare Access and Quality Index for 195 countries and territories and selected subnational locations: a systematic analysis from the Global Burden of Disease Study 2016",
+        "volume": "391",
+        "author": "Fullman",
+        "year": "2018",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib22",
+        "article-title": "Global antibiotic consumption in humans, 2000 to 2018: a spatial modelling study",
+        "author": "Browne",
+        "year": "2021",
+        "journal-title": "Lancet Planet Health"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "801",
+        "DOI": "10.1001/jama.2016.0287",
+        "article-title": "The third international consensus definitions for sepsis and septic shock (sepsis-3)",
+        "volume": "315",
+        "author": "Singer",
+        "year": "2016",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib24",
+        "doi-asserted-by": "crossref",
+        "first-page": "200",
+        "DOI": "10.1016/S0140-6736(19)32989-7",
+        "article-title": "Global, regional, and national sepsis incidence and mortality, 1990-2017: analysis for the Global Burden of Disease Study",
+        "volume": "395",
+        "author": "Rudd",
+        "year": "2020",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib25",
+        "series-title": "Global report on the epidemiology and burden of sepsis: current evidence, identifying gaps and future directions",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "1303",
+        "DOI": "10.1097/00003246-200107000-00002",
+        "article-title": "Epidemiology of severe sepsis in the United States: analysis of incidence, outcome, and associated costs of care",
+        "volume": "29",
+        "author": "Angus",
+        "year": "2001",
+        "journal-title": "Crit Care Med"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "1546",
+        "DOI": "10.1056/NEJMoa022139",
+        "article-title": "The epidemiology of sepsis in the United States from 1979 through 2000",
+        "volume": "348",
+        "author": "Martin",
+        "year": "2003",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1241",
+        "DOI": "10.1001/jama.2017.13836",
+        "article-title": "Incidence and trends of sepsis in US hospitals using clinical vs claims data, 2009–2014",
+        "volume": "318",
+        "author": "Rhee",
+        "year": "2017",
+        "journal-title": "JAMA"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib29",
+        "first-page": "1",
+        "article-title": "Trimmed constrained mixed effects models: formulations and algorithms",
+        "volume": "0",
+        "author": "Zheng",
+        "year": "2021",
+        "journal-title": "J Comput Graph Stat"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib30",
+        "series-title": "Antimicrobial resistance global report on surveillance 2014",
+        "year": "2014"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1223",
+        "DOI": "10.1016/S0140-6736(20)30752-2",
+        "article-title": "Global burden of 87 risk factors in 204 countries and territories, 1990-2019: a systematic analysis for the Global Burden of Disease Study 2019",
+        "volume": "396",
+        "author": "Murray",
+        "year": "2020",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib33",
+        "series-title": "COVID-19 emergency declaration blanket waivers for health care providers",
+        "year": "2021"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib35",
+        "series-title": "Interagency Coordination Group on Antimicrobial Resistance",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib37",
+        "series-title": "Pneumococcal conjugate vaccines in infants and children under 5 years of age: WHO position paper—February 2019",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib39",
+        "series-title": "Indicator 3.d.2: percentage of bloodstream infections due to selected antimicrobial-resistant organisms",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib40",
+        "series-title": "Report of the Inter-Agency and Expert Group on Sustainable Development Goal indicators",
+        "year": "2020"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib41",
+        "series-title": "The selection and use of essential medicines: report of the WHO Expert Committee, 2017 (including the 20th WHO Model List of Essential Medicines and the 6th WHO Model List of Essential Medicines for Children)",
+        "year": "2017"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "252",
+        "DOI": "10.1016/S2213-2600(17)30090-5",
+        "article-title": "Tuberculosis missing from WHO bacteria list",
+        "volume": "5",
+        "author": "Burki",
+        "year": "2017",
+        "journal-title": "Lancet Respir Med"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib43",
+        "author": "Castro"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib44",
+        "series-title": "Antimicrobial resistance: tackling the burden in the European Union. Briefing note for EU/EEA countries",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib45",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1038/nm.4465",
+        "article-title": "The role of vaccines in preventing bacterial antimicrobial resistance",
+        "volume": "24",
+        "author": "Jansen",
+        "year": "2018",
+        "journal-title": "Nat Med"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib46",
+        "doi-asserted-by": "crossref",
+        "first-page": "12896",
+        "DOI": "10.1073/pnas.1721095115",
+        "article-title": "Impact of existing vaccines in reducing antibiotic resistance: primary and secondary effects",
+        "volume": "115",
+        "author": "Klugman",
+        "year": "2018",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib47",
+        "doi-asserted-by": "crossref",
+        "first-page": "e316",
+        "DOI": "10.1016/S2542-5196(17)30141-9",
+        "article-title": "Restricting the use of antibiotics in food-producing animals and its associations with antibiotic resistance in food-producing animals and human beings: a systematic review and meta-analysis",
+        "volume": "1",
+        "author": "Tang",
+        "year": "2017",
+        "journal-title": "Lancet Planet Health"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib48",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1126/science.aaw1944",
+        "article-title": "Global trends in antimicrobial resistance in animals in low- and middle-income countries",
+        "volume": "365",
+        "author": "Van Boeckel",
+        "year": "2019",
+        "journal-title": "Science"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib49",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/femsle/fnw210",
+        "article-title": "The risk of low concentrations of antibiotics in agriculture for resistance in human health care",
+        "volume": "363",
+        "author": "Ter Kuile",
+        "year": "2016",
+        "journal-title": "FEMS Microbiol Lett"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib50",
+        "article-title": "Comparative analysis of ESBL-positive Escherichia coli isolates from animals and humans from the UK, the Netherlands and Germany",
+        "volume": "8",
+        "author": "Wu",
+        "year": "2013",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "1514",
+        "DOI": "10.1126/science.1240578",
+        "article-title": "Distinguishable epidemics of multidrug-resistant Salmonella Typhimurium DT104 in different hosts",
+        "volume": "341",
+        "author": "Mather",
+        "year": "2013",
+        "journal-title": "Science"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib52",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1016/S0140-6736(15)00473-0",
+        "article-title": "Understanding the mechanisms and drivers of antimicrobial resistance",
+        "volume": "387",
+        "author": "Holmes",
+        "year": "2016",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib53",
+        "doi-asserted-by": "crossref",
+        "first-page": "812",
+        "DOI": "10.1016/j.cmi.2017.07.010",
+        "article-title": "Antibiotic stewardship in low- and middle-income countries: the same but different?",
+        "volume": "23",
+        "author": "Cox",
+        "year": "2017",
+        "journal-title": "Clin Microbiol Infect"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib54",
+        "doi-asserted-by": "crossref",
+        "first-page": "60",
+        "DOI": "10.1186/s13756-021-00929-4",
+        "article-title": "Barriers to implementing antimicrobial stewardship programs in three low- and middle-income country tertiary care settings: findings from a multi-site qualitative study",
+        "volume": "10",
+        "author": "Rolfe",
+        "year": "2021",
+        "journal-title": "Antimicrob Resist Infect Control"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib55",
+        "series-title": "2019 antibacterial agents in clinical development: an analysis of the antibacterial clinical development pipeline",
+        "year": "2019"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib56",
+        "series-title": "WHO sepsis technical expert meeting—meeting report",
+        "year": "2018"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib57",
+        "doi-asserted-by": "crossref",
+        "first-page": "692",
+        "DOI": "10.1016/S1473-3099(11)70054-8",
+        "article-title": "Non-prescription antimicrobial use worldwide: a systematic review",
+        "volume": "11",
+        "author": "Morgan",
+        "year": "2011",
+        "journal-title": "Lancet Infect Dis"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib58",
+        "doi-asserted-by": "crossref",
+        "first-page": "1057",
+        "DOI": "10.1016/S1473-3099(13)70318-9",
+        "article-title": "Antibiotic resistance—the need for global solutions",
+        "volume": "13",
+        "author": "Laxminarayan",
+        "year": "2013",
+        "journal-title": "Lancet Infect Dis"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib59",
+        "doi-asserted-by": "crossref",
+        "first-page": "443",
+        "DOI": "10.1128/CMR.00072-14",
+        "article-title": "Substandard/counterfeit antimicrobial drugs",
+        "volume": "28",
+        "author": "Kelesidis",
+        "year": "2015",
+        "journal-title": "Clin Microbiol Rev"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib60",
+        "doi-asserted-by": "crossref",
+        "first-page": "e398",
+        "DOI": "10.1016/S2542-5196(18)30186-4",
+        "article-title": "Anthropological and socioeconomic factors contributing to global antimicrobial resistance: a univariate and multivariable analysis",
+        "volume": "2",
+        "author": "Collignon",
+        "year": "2018",
+        "journal-title": "Lancet Planet Health"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib61",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1038/s41598-020-70741-4",
+        "article-title": "Antibiotic use and hygiene interact to influence the distribution of antimicrobial-resistant bacteria in low-income communities in Guatemala",
+        "volume": "10",
+        "author": "Ramay",
+        "year": "2020",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib62",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1038/s41467-019-08853-3",
+        "article-title": "Global monitoring of antimicrobial resistance based on metagenomics analyses of urban sewage",
+        "volume": "10",
+        "author": "Hendriksen",
+        "year": "2019",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib63",
+        "doi-asserted-by": "crossref",
+        "first-page": "321",
+        "DOI": "10.1089/mdr.2010.0193",
+        "article-title": "Increasing role of Staphylococcus aureus and community-acquired methicillin-resistant Staphylococcus aureus infections in the United States: a 10-year trend of replacement and expansion",
+        "volume": "17",
+        "author": "Mera",
+        "year": "2011",
+        "journal-title": "Microb Drug Resist"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib64",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1016/j.ijid.2016.11.405",
+        "article-title": "A longitudinal analysis of methicillin-resistant and sensitive Staphylococcus aureus incidence in respect to specimen source, patient location, and temperature variation",
+        "volume": "54",
+        "author": "Delorme",
+        "year": "2017",
+        "journal-title": "Int J Infect Dis"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib65",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1073/pnas.2013515118",
+        "article-title": "Filling the gaps in the global prevalence map of clinical antimicrobial resistance",
+        "volume": "118",
+        "author": "Oldenkamp",
+        "year": "2021",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib66",
+        "doi-asserted-by": "crossref",
+        "first-page": "e248",
+        "DOI": "10.1016/S1473-3099(18)30093-8",
+        "article-title": "Clinical bacteriology in low-resource settings: today's solutions",
+        "volume": "18",
+        "author": "Ombelet",
+        "year": "2018",
+        "journal-title": "Lancet Infect Dis"
+      },
+      {
+        "key": "10.1016/S0140-6736(21)02724-0_bib67",
+        "doi-asserted-by": "crossref",
+        "first-page": "e00203",
+        "DOI": "10.1128/JCM.00203-19",
+        "article-title": "Understanding and addressing CLSI breakpoint revisions: a primer for clinical laboratories",
+        "volume": "57",
+        "author": "Humphries",
+        "year": "2019",
+        "journal-title": "J Clin Microbiol"
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.1016/s0140-6736(21)02653-2",
+        "type": "erratum",
+        "label": "Erratum",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2022,
+              10,
+              1
+            ]
+          ],
+          "date-time": "2022-10-01T00:00:00Z",
+          "timestamp": 1664582400000
+        }
+      }
+    ],
+    "container-title": [
+      "The Lancet"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0140673621027240?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0140673621027240?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          5,
+          13
+        ]
+      ],
+      "date-time": "2026-05-13T09:49:33Z",
+      "timestamp": 1778665773000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0140673621027240"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    },
+    "references-count": 61,
+    "journal-issue": {
+      "issue": "10325",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            2
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0140673621027240"
+    ],
+    "URL": "https://doi.org/10.1016/s0140-6736(21)02724-0",
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741484056.793591294",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741484056.793591681",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741484056.793595452",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.3410/f.741484056.793594758",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "0140-6736"
+    ],
+    "issn-type": [
+      {
+        "value": "0140-6736",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          2
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Global burden of bacterial antimicrobial resistance in 2019: a systematic analysis",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "The Lancet",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/S0140-6736(21)02724-0",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "https://doi.org/10.1016/S0140-6736(22)00087-3",
+        "name": "associatedlink",
+        "label": "CrossRef DOI link to the associated document"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2021 The Author(s). Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

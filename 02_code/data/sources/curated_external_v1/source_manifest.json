@@ -1,0 +1,11 @@
+{
+  "status": "curated",
+  "created_at": "2026-09-29T15:08:02.142173+00:00",
+  "total_curated_records": 2,
+  "amp_positive": 1,
+  "amp_negative": 1,
+  "hemo_positive": 1,
+  "hemo_negative": 1,
+  "rejections": 45,
+  "records_sha256": "2ac695e7d0dabb485b6f9e896d811402913da19d759fb618617cfff4746ec716"
+}

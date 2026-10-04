@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-10-04T03:22:58.040840+00:00",
+  "files": {
+    "README.md": "0814731a8563962b39329b7d990a8c0a3093055c458acaa0e365101798fe04a0",
+    "docs/REMEDIATION_STATUS.md": "ca360d815b29e46a84a6b9a5e7918ca7c46cc7bd27b09fea1162cfd846338a9d",
+    "docs/DOCUMENTATION_INDEX.md": "de115b080f2285a30a76fc41e4a3d09e5e9638fd5df93aa632fe6dec4ce3fa72",
+    "docs/handoff/TASK_STATE.md": "c8a73e3e0c3350f039668fe114352e8a004d6c8af050e248ebe205dd108b1b8e",
+    "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md": "0db5d16bf9f5463e2bc23f4a5fde41e1e4f43356c5452a23f212d4b33a88a93c"
+  }
+}

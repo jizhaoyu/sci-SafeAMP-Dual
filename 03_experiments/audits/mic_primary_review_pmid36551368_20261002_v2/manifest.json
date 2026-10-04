@@ -1,0 +1,28 @@
+{
+  "status": "blocked_primary_review_in_progress",
+  "generated_at": "2026-10-02T02:02:03.370433+00:00",
+  "paper": {
+    "pmid": "36551368",
+    "doi": "10.3390/antibiotics11121710",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9774241/",
+    "supplement_url": "https://mdpi-res.com/d_attachment/antibiotics/antibiotics-11-01710/article_deploy/antibiotics-11-01710-s001.zip",
+    "xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9774241/fullTextXML"
+  },
+  "script_sha256": "03ad80f59f0aa8072f192afcf06c98d1609026434511847864c8d0e08ff0cda2",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_pmid36551368_20261002_v1\\raw\\antibiotics-2036844-supplementary.pdf": "49b4fb96c8f64655bbcd2a702005680bbb0347044bf07d9d74106f84ccbcb7ed",
+    "03_experiments\\audits\\mic_primary_review_pmid36551368_20261002_v1\\raw\\PMC9774241_fullTextXML.xml": "db20925d3f0e561177be3be756b132005dce61e9fdec5896fb79528e3df7d74f"
+  },
+  "review": {
+    "records": 7,
+    "sequence_and_mic_matches": 7,
+    "multiple_pmid_records": 1,
+    "records_released_for_training": 0
+  },
+  "outputs": {
+    "record_review.csv": "460ffb3d451f3881662972a3a790a610d76d11ab69119437489469b524f1e843",
+    "report.md": "e19f4f4487e86e4cc1b81f2a5a9dfd08f8efd7cb63c70e1229e95c9344707e6d"
+  }
+}

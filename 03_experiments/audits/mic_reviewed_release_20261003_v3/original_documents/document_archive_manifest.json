@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-03T13:54:49.7584187Z",
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "32589b4778ab393880f1514a6a5341342dcc343a9d34859b7b99f852dfbb90ca",
+      "archived_path": "03_experiments/audits/mic_reviewed_release_20261003_v3/original_documents/README.md"
+    },
+    {
+      "path": "docs/REMEDIATION_STATUS.md",
+      "sha256": "4d89ddc8977edfc22f7c36f08bece1e5de44251efd8a133dcf7ac091c12fda90",
+      "archived_path": "03_experiments/audits/mic_reviewed_release_20261003_v3/original_documents/docs/REMEDIATION_STATUS.md"
+    },
+    {
+      "path": "docs/DOCUMENTATION_INDEX.md",
+      "sha256": "8b3f6ac26a593b974095841119d05df5ee910faef8e6edafb420dcef92cf69dc",
+      "archived_path": "03_experiments/audits/mic_reviewed_release_20261003_v3/original_documents/docs/DOCUMENTATION_INDEX.md"
+    },
+    {
+      "path": "docs/handoff/TASK_STATE.md",
+      "sha256": "5620f2e55da8c672281c5cc99126598b286c9af735bae4ce78a7ac87f088eeff",
+      "archived_path": "03_experiments/audits/mic_reviewed_release_20261003_v3/original_documents/docs/handoff/TASK_STATE.md"
+    },
+    {
+      "path": "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md",
+      "sha256": "849cd47c270b93b6e66b10337ca36c73072cfc39eb8f355b6233f843d5594258",
+      "archived_path": "03_experiments/audits/mic_reviewed_release_20261003_v3/original_documents/03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md"
+    }
+  ]
+}

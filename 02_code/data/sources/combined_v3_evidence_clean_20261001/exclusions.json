@@ -1,0 +1,171 @@
+[
+  {
+    "record_id": "EXT_HemoPI-1_HP1_0234",
+    "seq": "FDIMGMIKSIGRAIS",
+    "source_dataset": "Benchmark_HemoPI-1",
+    "source_role": "external",
+    "declared_amp": 1.0,
+    "declared_hemo": 1.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for HemoPI-1.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_APD3_AP00124",
+    "seq": "GFFALIPKIISSPLFKTLLSAVGSALSSSGGQE",
+    "source_dataset": "Benchmark_APD3",
+    "source_role": "external",
+    "declared_amp": 1.0,
+    "declared_hemo": 1.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for APD3.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_APD3_AP00201",
+    "seq": "GLLSVLGSVAKHVLPHVVPVIAEHL",
+    "source_dataset": "Benchmark_APD3",
+    "source_role": "external",
+    "declared_amp": 1.0,
+    "declared_hemo": 1.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for APD3.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P02871",
+    "seq": "MQIFVKTLTGKTITLEVEPSDTIEN",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P60709",
+    "seq": "DEDIAALVVDNGSGMCKAGFAGDDAPRA",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P68082",
+    "seq": "GLSDGEWQQVLNVWGKVEADIAG",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P00695",
+    "seq": "KVFGRCELAAAMKRHGLDNYRGYSL",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P62829",
+    "seq": "MSKRPVTGGLKKVKKVVTTVK",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P02452",
+    "seq": "GPPGPQGPRGDKGETGEQGDRGIK",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_UniProt_P01009",
+    "seq": "EDVHQGFQELLRTLNQPDSQLQ",
+    "source_dataset": "Benchmark_UniProt",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 0.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for UniProt.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_HemoPI-1_HP1_0411",
+    "seq": "AIAFAISFLGVFLFA",
+    "source_dataset": "Benchmark_HemoPI-1",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 1.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for HemoPI-1.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_HemoPI-1_HP1_0901",
+    "seq": "CCCCMTGICC",
+    "source_dataset": "Benchmark_HemoPI-1",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 1.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for HemoPI-1.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  },
+  {
+    "record_id": "EXT_HemoPI-2_HP2_0544",
+    "seq": "AAIAIVFSGFLF",
+    "source_dataset": "Benchmark_HemoPI-2",
+    "source_role": "external",
+    "declared_amp": 0.0,
+    "declared_hemo": 1.0,
+    "raw_path": "02_code/data/sources/combined_v2/raw/external_gold_standard.json",
+    "issues": [
+      "Default fallback DOI (10.1093/nar/gkw1008) cannot serve as primary assay reference for HemoPI-2.",
+      "Record contains handwritten binary labels without underlying experimental assay observations."
+    ]
+  }
+]

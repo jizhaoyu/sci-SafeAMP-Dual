@@ -1,0 +1,6 @@
+fold,n,positive,negative,largest_component_molecules,DBAASP_molecules,DRAMP_molecules,length_median,declared_study_ids
+0,293,210,83,293,293,0,19.0,223
+1,25,12,13,0,24,1,26.0,25
+2,25,11,14,0,25,0,21.0,23
+3,26,12,14,0,23,3,28.5,27
+4,26,12,14,0,26,0,23.0,25

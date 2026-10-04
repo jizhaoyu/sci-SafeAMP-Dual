@@ -1,0 +1,11 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-01T06:05:52.475704+00:00",
+  "prepared_dir": "D:\\桌面文件\\sci\\03_experiments\\prepared\\amd02_evidence_clean_20261001",
+  "blockers": [
+    "Prepared dataset blocked: A separately sourced external cohort is required.",
+    "Missing required prepared files: ['dataset.csv', 'partition_audit.json']"
+  ],
+  "warnings": [],
+  "checks": {}
+}

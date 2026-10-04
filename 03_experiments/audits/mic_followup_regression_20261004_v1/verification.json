@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-10-04T03:03:01.510902+00:00",
+  "completed_at": "2026-10-04T03:03:10.243222+00:00",
+  "duration_seconds": 8.73399999999674,
+  "command": [
+    "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "tests/test_mic_followup_release.py",
+    "tests/test_mic_reviewed_training.py",
+    "tests/test_evidence_gate_repair.py",
+    "tests/test_protocol_contract.py",
+    "tests/test_isolation_diagnostics.py",
+    "-q",
+    "--junitxml=D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v1\\regression_results.xml"
+  ],
+  "exit_code": 1,
+  "stdout": ".............................F......................                     [100%]\n================================== FAILURES ===================================\n______________________ test_all_current_documents_agree _______________________\n\n    def test_all_current_documents_agree():\n>       status.validate_documents(read_json(status.DEFAULT_STATE))\n\ntests\\test_evidence_gate_repair.py:151: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nstate = {'audit_protocol_id': 'protocol-mic-08', 'blockers': ['Expanded cohort has no complete release manifest bound by a pro...cular forms have not completed primary-source release.'], 'candidate_molecules': 17, 'candidate_observations': 24, ...}\n\n    def validate_documents(state: dict) -> None:\n        expected = render_current_status(state)\n        for name in DOCS:\n            content = (ROOT / name).read_text(encoding=\"utf-8\")\n            if content.count(START) != 1 or content.count(END) != 1:\n                raise ValueError(f\"Current state block is missing/duplicated: {name}\")\n            actual = content[content.index(START):content.index(END) + len(END)]\n            if actual != expected:\n>               raise ValueError(f\"Current state facts differ from machine state: {name}\")\nE               ValueError: Current state facts differ from machine state: README.md\n\npublish_mic_repair_status.py:147: ValueError\n- generated xml file: D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v1\\regression_results.xml -\n=========================== short test summary info ===========================\nFAILED tests\\test_evidence_gate_repair.py::test_all_current_documents_agree\n1 failed, 51 passed in 6.84s\n",
+  "stderr": "",
+  "xml_sha256": "f721a56ee2d4a49c4b3677e9ed4b13f471230399a6ac0ebd1e1718d2d1eb790b"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "generated_at": "2026-09-28T15:49:28.792467+00:00",
+  "sequence_count": 417,
+  "total_possible_edges": 86736,
+  "reference_nw_discrepancies": 0,
+  "filter_false_negatives": 0,
+  "current_rule_edges_at_0.40": 22487,
+  "graph_density_at_0.40": 0.2593,
+  "max_degree": 313,
+  "mean_degree": 107.85,
+  "median_degree": 94.0,
+  "components_at_0.40_min": 1,
+  "largest_component_at_0.40_min": 417,
+  "components_at_0.40_max": 64,
+  "largest_component_at_0.40_max": 346
+}

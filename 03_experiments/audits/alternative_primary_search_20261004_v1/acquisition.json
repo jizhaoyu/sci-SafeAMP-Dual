@@ -1,0 +1,68 @@
+[
+  {
+    "source_id": "pandinin2014",
+    "pmcid": "PMC4096598",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4096598/fullTextXML",
+    "started_at": "2026-10-04T04:42:28.500840+00:00",
+    "content_type": "application/xml",
+    "bytes": 136605,
+    "sha256": "17b0c321f30cf54ba844f121da21fc16ec914ab69c4bc1d7e676e4d2b1d87b9c",
+    "valid_article": true,
+    "title": "Characterization of Antibacterial and Hemolytic Activity of Synthetic Pandinin 2 Variants and Their Inhibition against  Mycobacterium tuberculosis \n",
+    "identifiers": {
+      "pmcid": "PMC4096598",
+      "pmcaid": "4096598",
+      "pmcaiid": "4096598",
+      "pmid": "25019413",
+      "doi": "10.1371/journal.pone.0101742"
+    },
+    "license": [
+      "This is an open-access article distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are properly credited."
+    ],
+    "finished_at": "2026-10-04T04:42:32.234634+00:00"
+  },
+  {
+    "source_id": "corvus2023",
+    "pmcid": "PMC10618271",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10618271/fullTextXML",
+    "started_at": "2026-10-04T04:42:28.501840+00:00",
+    "content_type": "application/xml",
+    "bytes": 240493,
+    "sha256": "b22f6aac7facdb38a63e66c26192c49a5fcb98954c5e34c67de8da21d5453a3a",
+    "valid_article": true,
+    "title": "Transcriptome analysis of  Corvus splendens  reveals a repertoire of antimicrobial peptides",
+    "identifiers": {
+      "pmcid": "PMC10618271",
+      "pmcaid": "10618271",
+      "pmcaiid": "10618271",
+      "pmid": "37907616",
+      "doi": "10.1038/s41598-023-45875-w"
+    },
+    "license": [
+      "Open Access  This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material in this article are included in the article's Creative Commons licence, unless indicated otherwise in a credit line to the material. If material is not included in the article's Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit  http://creativecommons.org/licenses/by/4.0/ ."
+    ],
+    "finished_at": "2026-10-04T04:42:32.499725+00:00"
+  },
+  {
+    "source_id": "chmap2018",
+    "pmcid": "PMC6308165",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6308165/fullTextXML",
+    "started_at": "2026-10-04T04:42:28.503839+00:00",
+    "content_type": "application/xml",
+    "bytes": 113716,
+    "sha256": "6f5bce7937ecf5ba9c71149132fcc384def606124ee26533f5aed639ca96c0cd",
+    "valid_article": true,
+    "title": "Anticancer Activity of the Goat Antimicrobial Peptide ChMAP-28",
+    "identifiers": {
+      "pmcid": "PMC6308165",
+      "pmcaid": "6308165",
+      "pmcaiid": "6308165",
+      "pmid": "30622471",
+      "doi": "10.3389/fphar.2018.01501"
+    },
+    "license": [
+      "This is an open-access article distributed under the terms of the Creative Commons Attribution License (CC BY). The use, distribution or reproduction in other forums is permitted, provided the original author(s) and the copyright owner(s) are credited and that the original publication in this journal is cited, in accordance with accepted academic practice. No use, distribution or reproduction is permitted which does not comply with these terms."
+    ],
+    "finished_at": "2026-10-04T04:42:31.563523+00:00"
+  }
+]

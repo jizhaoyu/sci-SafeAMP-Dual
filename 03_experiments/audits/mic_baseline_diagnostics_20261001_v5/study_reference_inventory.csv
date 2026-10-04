@@ -1,0 +1,297 @@
+study_id,titles,years,source_datasets,record_count,record_ids
+doi:10.1002/advs.202507457,Controllable Generation of Pathogen-Specific Antimicrobial Peptides Through Knowledge-Aware Prompt Diffusion Model,2025,DBAASP,1,DBAASP:24451
+doi:10.1002/advs.202516470,Mechanism-Driven Screening of Membrane-Targeting and Pore-Forming Antimicrobial Peptides,2025,DBAASP,1,DBAASP:24870
+doi:10.1002/psc.3661,Identification and synthesis of a long-chain antimicrobial peptide from the venom of the Liocheles australasiae scorpion,2024,DBAASP,1,DBAASP:23022
+doi:10.1007/s12602-024-10250-2,Cathelicidin AS-12W Derived from the Alligator sinensis and Its Antimicrobial Activity Against Drug-Resistant Gram-Negative Bacteria In Vitro and In Vivo,2024,DBAASP,3,DBAASP:22218|DBAASP:22219|DBAASP:22220
+doi:10.1016/j.abb.2004.05.013,,,DRAMP,1,DRAMP:DRAMP21455
+doi:10.1016/j.bcp.2024.116708,Novel-designed antimicrobial peptides with dual antimicrobial and anti-inflammatory actions against Cutibacterium acnes for acne vulgaris therapy,2024,DBAASP,1,DBAASP:23414
+doi:10.1038/s42256-026-01237-5,A generative artificial intelligence approach for peptide antibiotic optimization,2026,DBAASP,10,DBAASP:25450|DBAASP:25453|DBAASP:25470|DBAASP:25491|DBAASP:25497|DBAASP:25504|DBAASP:25508|DBAASP:25512|DBAASP:25545|DBAASP:25563
+doi:10.1038/s44319-024-00277-5,"Activity, structure, and diversity of Type II proline-rich antimicrobial peptides from insects",2024,DBAASP,2,DBAASP:22887|DBAASP:22888
+doi:10.1074/jbc.m111.338970,Novel Cyclotides and Uncyclotides with Highly Shortened Precursors from Chassalia chartacea and Effects of Methionine Oxidation on Bioactivities,2012,DRAMP,3,DRAMP:DRAMP00336|DRAMP:DRAMP00337|DRAMP:DRAMP00338
+doi:10.1101/2020.06.16.155705,AMPlify: attentive deep learning model for discovery of novel antimicrobial peptides effective against WHO priority pathogens,2020,DBAASP,1,DBAASP:16636
+doi:10.1101/2021.04.07.438720,PepVAE3: variational autoencoder framework for antimicrobial peptide generation and activity prediction,2021,DBAASP,2,DBAASP:17392|DBAASP:5522
+doi:10.1101/2024.02.12.580024,The discovery of antimicrobial peptides from the gut microbiome of cockroach Blattella germanica using deep learning pipeline,2024,DBAASP,1,DBAASP:21998
+doi:10.21203/rs.3.rs-3491947/v1,Study of the Membrane Activity of the Synthetic Peptide  ∆M3 against Extended-Spectrum β-Lactamase Escherichia coli Isolates,2023,DBAASP,1,DBAASP:21504
+doi:10.21203/rs.3.rs-3535234/v1,Novel antimicrobial peptides against Cutibacterium acnes designed by deep learning,2023,DBAASP,1,DBAASP:21638
+doi:10.21203/rs.3.rs-578319/v1,Rare by Natural Selection: Tunable Disulfide-bonded Supramolecular Antimicrobials Peptides,2021,DBAASP,1,DBAASP:144
+doi:10.3390/toxins11010050,Mass Spectrometry Analysis and Biological Characterization of the Predatory Ant Odontomachus monticola Venom and Venom Sac Components,2019,DRAMP,1,DRAMP:DRAMP21455
+pmid:10085049,Biological properties of structurally related alpha-helical cationic antimicrobial peptides,1999,DBAASP,3,DBAASP:166|DBAASP:170|DBAASP:173
+pmid:10195440,Structure-activity relationship study: short antimicrobial peptides.,1999,DBAASP,1,DBAASP:9479
+pmid:10387056,Influence of proline residues on the antibacterial and synergistic activities of alpha-helical peptides.,1999,DBAASP,1,DBAASP:5522
+pmid:10477123,Antimicrobial peptides from the Brazilian frog Phyllomedusa distincta.,1999,DBAASP,3,DBAASP:3194|DBAASP:3195|DBAASP:3196
+pmid:10660589,Structure-activity relationship study of antimicrobial dermaseptin S4 showing the consequences of peptide oligomerization on selective cytotoxicity,2000,DBAASP,1,DBAASP:609
+pmid:10679204,Antimicrobial peptide of korean native goat lactoferrin and identification of the part essential for this activity.,2000,DBAASP,1,DBAASP:4849
+pmid:10768969,Bactericidal activity of mammalian cathelicidin-derived peptides.,2000,DBAASP,4,DBAASP:2030|DBAASP:2031|DBAASP:2032|DBAASP:2038
+pmid:10795591,Evaluation of the inactivation of infectious Herpes simplex virus by host-defense peptides.,2000,DBAASP,2,DBAASP:2004|DBAASP:5419
+pmid:10890923,"Structure-activity analysis of buforin II, a histone H2A-derived antimicrobial peptide: the proline hinge is responsible for the cell-penetrating ability of buforin II.",2000,DBAASP,2,DBAASP:876|DBAASP:887
+pmid:10973820,"CRAMP analogues having potent antibiotic activity against bacterial, fungal, and tumor cells without hemolytic activity",2000,DBAASP,3,DBAASP:2028|DBAASP:3074|DBAASP:3077
+pmid:11179998,Anti-microbial activity and cell binding are controlled by sequence determinants in the anti-microbial peptide PR-39.,2001,DBAASP,1,DBAASP:12372
+pmid:11384964,Kinetic and thermodynamic analysis of the interactions of 23-residue peptides with endotoxin.,2001,DBAASP,1,DBAASP:1912
+pmid:11481289,Short antibacterial peptides and erythromycin act synergically against Escherichia coli,2001,DBAASP,2,DBAASP:16526|DBAASP:16528
+pmid:11563967,Characterization of unique amphipathic antimicrobial peptides from venom of the scorpion Pandinus imperator.,2001,DBAASP,1,DBAASP:948
+pmid:11976325,"Oxyopinins, large amphipathic peptides isolated from the venom of the wolf spider Oxyopes kitabensis with cytolytic properties and positive insecticidal cooperativity with spider neurotoxins.",2002,DBAASP,1,DBAASP:948
+pmid:12186559,Position-dependent hydrophobicity of the antimicrobial magainin peptide affects the mode of peptide-lipid interactions and selective toxicity.,2002,DBAASP,1,DBAASP:16470
+pmid:12207877,"Conformation-dependent antibiotic activity of tritrpticin, a cathelicidin-derived antimicrobial peptide",2002,DBAASP,1,DBAASP:3080
+pmid:12450378,Translocating proline-rich peptides from the antimicrobial peptide bactenecin 7.,2002,DBAASP,1,DBAASP:5821
+pmid:12493771,Processing of an antibacterial peptide from hemocyanin of the freshwater crayfish Pacifastacus leniusculus.,2003,DBAASP,1,DBAASP:3756
+pmid:12681513,Selective cytotoxicity following Arg-to-Lys substitution in tritrpticin adopting a unique amphipathic turn structure.,2003,DBAASP,1,DBAASP:953
+pmid:12709067,Antimicrobial peptides from hylid and ranin frogs originated from a 150-million-year-old ancestral precursor with a conserved signal peptide but a hypermutable antimicrobial domain.,2003,DBAASP,1,DBAASP:988
+pmid:14693544,Antimicrobial activity of a chelatable poly(arginyl-histidine) produced by the ergot fungus Verticillium kibiense,2004,DBAASP,1,DBAASP:342
+pmid:14718539,Helix stability confers salt resistance upon helical antimicrobial peptides,2004,DBAASP,3,DBAASP:356|DBAASP:357|DBAASP:358
+pmid:14739294,Systematic peptide engineering and structural characterization to search for the shortest antimicrobial peptide analogue of gaegurin 5,2004,DBAASP,2,DBAASP:637|DBAASP:666
+pmid:14959890,"The effects of shortening lactoferrin derived peptides against tumour cells, bacteria and normal human cells",2004,DBAASP,1,DBAASP:22223
+pmid:15003353,"Antimicrobial properties of the frog skin peptide, ranatuerin-1 and its [Lys-8]-substituted analog.",2004,DBAASP,2,DBAASP:2399|DBAASP:2401
+pmid:15207717,"The ascaphins: a family of antimicrobial peptides from the skin secretions of the most primitive extant frog, Ascaphus truei.",2004,DBAASP,1,DBAASP:2302
+pmid:15222751,"Membrane association, electrostatic sequestration, and cytotoxicity of Gly-Leu-rich peptide orthologs with differing functions.",2004,DBAASP,1,DBAASP:988
+pmid:15246874,,,DRAMP,1,DRAMP:DRAMP21455
+pmid:15572192,Antimicrobial activity of Bac7 fragments against drug-resistant clinical isolates.,2004,DBAASP,1,DBAASP:5252
+pmid:15723172,New antimicrobial activity for the catecholamine release-inhibitory peptide from chromogranin A.,2005,DBAASP,1,DBAASP:5879
+pmid:15980334,Antimicrobial activity of novel dendrimeric peptides obtained by phage display selection and rational modification.,2005,DBAASP,1,DBAASP:1176
+pmid:16008365,Structure-activity relation of human beta-defensin 3: influence of disulfide bonds and cysteine substitution on antimicrobial activity and cytotoxicity.,2005,DBAASP,1,DBAASP:6916
+pmid:1605597,Augmentation of the antibacterial activity of magainin by positive-charge chain extension.,1992,DBAASP,2,DBAASP:5611|DBAASP:5619
+pmid:16087274,"A novel antimicrobial peptide from salivary glands of the hard tick, Ixodes sinensis",2006,DBAASP,1,DBAASP:1562
+pmid:16563706,Design of perfectly symmetric Trp-rich peptides with potent and broad-spectrum antimicrobial activities.,2006,DBAASP,1,DBAASP:953
+pmid:16730859,Isolation and characterization of four antibacterial peptides from bovine hemoglobin.,2006,DBAASP,1,DBAASP:2686
+pmid:16735513,"Latarcins, antimicrobial and cytolytic peptides from the venom of the spider Lachesana tarabaevi (Zodariidae) that exemplify biomolecular diversity.",2006,DBAASP,1,DBAASP:536
+pmid:16817888,"Structure-activity relationships of fowlicidin-1, a cathelicidin antimicrobial peptide in chicken",2006,DBAASP,1,DBAASP:774
+pmid:16859636,"Different modes in antibiotic action of tritrpticin analogs, cathelicidin-derived Trp-rich and Pro/Arg-rich peptides.",2006,DBAASP,1,DBAASP:3080
+pmid:17051220,A linguistic model for the rational design of antimicrobial peptides.,2006,DBAASP,22,DBAASP:3952|DBAASP:3957|DBAASP:3960|DBAASP:3963|DBAASP:3967|DBAASP:3971|DBAASP:3973|DBAASP:3979|DBAASP:3981|DBAASP:3982|DBAASP:3992|DBAASP:3994|DBAASP:3997|DBAASP:3998|DBAASP:4008|DBAASP:4009|DBAASP:4017|DBAASP:4027|DBAASP:4029|DBAASP:4039|DBAASP:4041|DBAASP:4049
+pmid:17141187,Solution structure and membrane interaction mode of an antimicrobial peptide gaegurin 4,2007,DBAASP,1,DBAASP:3084
+pmid:17272268,Anti-infection peptidomics of amphibian skin.,2007,DBAASP,1,DBAASP:1501
+pmid:17485465,Energy depletion protects Candida albicans against antimicrobial peptides by rigidifying its cell membrane,2007,DBAASP,1,DBAASP:566
+pmid:17628627,Antimicrobial peptide from the skin secretion of the frog Leptodactylus syphax.,2007,DBAASP,1,DBAASP:5934
+pmid:17961502,"Amphipathic alpha-helical peptide, HP (2-20), and its analogues derived from Helicobacter pylori: pore formation mechanism in various lipid compositions.",2008,DBAASP,1,DBAASP:4957
+pmid:17981364,"Decoralin, a novel linear cationic alpha-helical peptide from the venom of the solitary eumenine wasp Oreumenes decoratus.",2007,DBAASP,1,DBAASP:3176
+pmid:18342399,Bovine hemoglobin: an attractive source of antibacterial peptides,2008,DBAASP,3,DBAASP:2686|DBAASP:2696|DBAASP:2697
+pmid:18406495,"Structure-activity relations of parasin I, a histone H2A-derived antimicrobial peptide",2008,DBAASP,1,DBAASP:2724
+pmid:18586467,Design and synthesis of cationic antimicrobial peptides with improved activity and selectivity against Vibrio spp.,2008,DBAASP,2,DBAASP:2353|DBAASP:2357
+pmid:18591279,Anti-human immunodeficiency virus type 1 activities of antimicrobial peptides derived from human and bovine cathelicidins,2008,DBAASP,1,DBAASP:144
+pmid:18617323,"Mechanism of anticancer activity of buforin IIb, a histone H2A-derived peptide.",2008,DBAASP,1,DBAASP:887
+pmid:18976634,Post-secretory events alter the peptide content of the skin secretion of Hypsiboas raniceps.,2008,DBAASP,1,DBAASP:4470
+pmid:19028675,Antioxidant peptidomics reveals novel skin antioxidant system.,2009,DBAASP,1,DBAASP:1599
+pmid:19114518,"Targeted engineering of the antibacterial peptide apidaecin, based on an in vivo monitoring assay system.",2009,DBAASP,2,DBAASP:6131|DBAASP:6132
+pmid:19400239,Chemical modifications of short antimicrobial peptides from insects and vertebrates to fight multi-drug resistant bacteria.,2009,DBAASP,1,DBAASP:14426
+pmid:19563807,N-terminal amphipathic helix as a trigger of hemolytic activity in antimicrobial peptides: a case study in latarcins.,2009,DBAASP,1,DBAASP:536
+pmid:19616100,Synthesis and antimicrobial activity of truncated fragments and analogs of citropin 1.1: The solution structure of the SDS micelle-bound citropin-like peptides.,2009,DBAASP,1,DBAASP:4262
+pmid:19950104,Novel antimicrobial peptides identified from an endoparasitic wasp cDNA library.,2010,DBAASP,1,DBAASP:4182
+pmid:20033827,Amino acid substitutions in an alpha-helical antimicrobial arachnid peptide affect its chemical properties and biological activity towards pathogenic bacteria but improves its therapeutic index.,2011,DBAASP,1,DBAASP:948
+pmid:20096726,Functional analysis of four processing products from multiple precursors encoded by a lebocin-related gene from Manduca sexta.,2010,DBAASP,1,DBAASP:4129
+pmid:20109510,Designed low amphipathic peptides with alpha-helical propensity exhibiting antimicrobial activity via a lipid domain formation mechanism.,2010,DBAASP,1,DBAASP:7549
+pmid:20209079,The Alzheimer's disease-associated amyloid beta-protein is an antimicrobial peptide.,2010,DBAASP,2,DBAASP:5145|DBAASP:5148
+pmid:20213310,"Characterization and cDNA cloning of a cecropin-like antimicrobial peptide, papiliocin, from the swallowtail butterfly, Papilio xuthus.",2010,DBAASP,1,DBAASP:4743
+pmid:20350616,"Molecular cloning and antimicrobial activity of bombolitin, a component of bumblebee Bombus ignitus venom",2010,DBAASP,1,DBAASP:12172
+pmid:20375584,"The central kink region of fowlicidin-2, an alpha-helical host defense peptide, is critically involved in bacterial killing and endotoxin neutralization.",2009,DBAASP,1,DBAASP:5859
+pmid:20438753,"Centrocins: isolation and characterization of novel dimeric antimicrobial peptides from the green sea urchin, Strongylocentrotus droebachiensis.",2010,DBAASP,1,DBAASP:7996
+pmid:20576537,Structure-function relationship of king cobra cathelicidin.,2010,DBAASP,1,DBAASP:10343
+pmid:20603106,Novel short antibacterial and antifungal peptides with low cytotoxicity: Efficacy and action mechanisms.,2010,DBAASP,2,DBAASP:5043|DBAASP:5046
+pmid:20656059,Antimicrobial peptides with therapeutic potential from skin secretions of the Marsabit clawed frog Xenopus borealis (Pipidae).,2010,DBAASP,1,DBAASP:3768
+pmid:20865718,Rational design of tryptophan-rich antimicrobial peptides with enhanced antimicrobial activities and specificities.,2010,DBAASP,1,DBAASP:12611
+pmid:20969885,"Vejovine, a new antibiotic from the scorpion venom of Vaejovis mexicanus.",2011,DBAASP,1,DBAASP:4724
+pmid:21176972,Additive effects of orexin B and vasoactive intestinal polypeptide on LL-37-mediated antimicrobial activities.,2011,DBAASP,1,DBAASP:13996
+pmid:21378051,"Isolation of Lactobacillus salivarius 1077 (NRRL B-50053) and characterization of its bacteriocin, including the antimicrobial activity spectrum.",2011,DBAASP,1,DBAASP:5839
+pmid:21762675,Effects of positively charged arginine residues on membrane pore forming activity of Rev-NIS peptide in bacterial cells.,2011,DBAASP,1,DBAASP:4647
+pmid:21912615,Ancient antimicrobial peptides kill antibiotic-resistant pathogens: Australian mammals provide new options.,2011,DBAASP,1,DBAASP:4173
+pmid:22083756,Antibacterial potential of hGlyrichin encoded by a human gene.,2012,DBAASP,1,DBAASP:4106
+pmid:22123629,"Host-defense peptides from skin secretions of the tetraploid frogs Xenopus petersii and Xenopus pygmaeus, and the octoploid frog Xenopus lenduensis (Pipidae).",2012,DBAASP,1,DBAASP:2271
+pmid:22185690,"Structure, dynamics, and antimicrobial and immune modulatory activities of human LL-23 and its single-residue variants mutated on the basis of homologous primate cathelicidins.",2012,DBAASP,1,DBAASP:7840
+pmid:22306477,Mechanism of action and specificity of antimicrobial peptides designed based on buforin IIb,2012,DBAASP,1,DBAASP:887
+pmid:22371493,Novel phenol-soluble modulin derivatives in community-associated methicillin-resistant Staphylococcus aureus identified through imaging mass spectrometry.,2012,DBAASP,1,DBAASP:5354
+pmid:22467870,Novel Cyclotides and Uncyclotides with Highly Shortened Precursors from Chassalia chartacea and Effects of Methionine Oxidation on Bioactivities,2012,DRAMP,3,DRAMP:DRAMP00336|DRAMP:DRAMP00337|DRAMP:DRAMP00338
+pmid:22516177,"Inhibitory and antimicrobial activities of OGTI and HV-BBI peptides, fragments and analogs derived from amphibian skin",2012,DBAASP,1,DBAASP:2828
+pmid:22521196,Prokaryotic selectivity and LPS-neutralizing activity of short antimicrobial peptides designed from the human antimicrobial peptide LL-37,2012,DBAASP,1,DBAASP:2843
+pmid:22659412,Novel cationic antimicrobial peptide GW-H1 induced caspase-dependent apoptosis of hepatocellular carcinoma cell lines.,2012,DBAASP,2,DBAASP:2353|DBAASP:2357
+pmid:22686707,"Rational design of anti-microbial peptides with enhanced activity and low cytotoxicity based on the structure of the arginine/histidine-rich peptide, chensinin-1.",2012,DBAASP,1,DBAASP:7661
+pmid:23093034,Antimicrobial peptides from arachnid venoms and their microbicidal activity in the presence of commercial antibiotics.,2013,DBAASP,1,DBAASP:948
+pmid:23150226,Reduction of helical content by insertion of a disulfide bond leads to an antimicrobial peptide with decreased hemolytic activity.,2013,DBAASP,3,DBAASP:9379|DBAASP:9380|DBAASP:9381
+pmid:23159562,"Esculentin-2CHa: a host-defense peptide with differential cytotoxicity against bacteria, erythrocytes and tumor cells.",2013,DBAASP,1,DBAASP:4388
+pmid:23161023,In Vitro Antiviral Activity of Dermaseptin S(4) and Derivatives From Amphibian Skin Against Herpes Simplex Virus Type 2,2013,DBAASP,1,DBAASP:609
+pmid:23326415,"Structure-activity relationships of the antimicrobial peptide arasin 1 - and mode of action studies of the N-terminal, proline-rich region.",2013,DBAASP,2,DBAASP:7019|DBAASP:7028
+pmid:23403131,Enhanced antimicrobial activity of novel synthetic peptides derived from vejovine and hadrurin.,2013,DBAASP,1,DBAASP:5476
+pmid:23409125,A peptide derived from phage display library exhibits antibacterial activity against E. coli and Pseudomonas aeruginosa.,2013,DBAASP,1,DBAASP:10402
+pmid:23478953,Targeting Mycobacterium tuberculosis and other microbial pathogens using improved synthetic antibacterial peptides.,2013,DBAASP,2,DBAASP:7043|DBAASP:7086
+pmid:23710779,Investigation of the role of tryptophan residues in cationic antimicrobial peptides to determine the mechanism of antimicrobial action.,2013,DBAASP,2,DBAASP:8829|DBAASP:8830
+pmid:23776609,"A cancer specific cell-penetrating peptide, BR2, for the efficient delivery of an scFv into cancer cells.",2013,DBAASP,1,DBAASP:887
+pmid:23894079,Disruption of interactions between hydrophobic residues on nonpolar faces is a key determinant in decreasing hemolysis and increasing antimicrobial activities of α-helical amphipathic peptides.,2013,DBAASP,5,DBAASP:144|DBAASP:17056|DBAASP:17057|DBAASP:17076|DBAASP:17078
+pmid:23925670,Improved protease stability of the antimicrobial peptide Pin2 substituted with D-amino acids.,2013,DBAASP,1,DBAASP:948
+pmid:23935531,Origin and functional diversification of an amphibian defense peptide arsenal.,2013,DBAASP,3,DBAASP:5716|DBAASP:5717|DBAASP:5718
+pmid:23946320,De novo generation of short antimicrobial peptides with enhanced stability and cell specificity.,2014,DBAASP,1,DBAASP:7125
+pmid:24164265,Hydroxyproline substitutions stabilize non-glycosylated drosocin against serum proteases without challenging its antibacterial activity.,2014,DBAASP,1,DBAASP:566
+pmid:24466037,Low structural variation in the host-defense peptide repertoire of the dwarf clawed frog Hymenochirus boettgeri (Pipidae).,2014,DBAASP,1,DBAASP:14150
+pmid:24492362,"In vitro activities of dermaseptins K4S4 and K4K20S4 against Escherichia coli, Staphylococcus aureus, and Pseudomonas aeruginosa planktonic growth and biofilm formation.",2014,DBAASP,1,DBAASP:609
+pmid:24530880,Trichoplaxin - a new membrane-active antimicrobial peptide from placozoan cDNA.,2014,DBAASP,1,DBAASP:9755
+pmid:24723458,Antioxidant properties of a human neuropeptide and its protective effect on free radical-induced DNA damage.,2014,DBAASP,1,DBAASP:5879
+pmid:24755622,Antimicrobial and immunomodulatory activities of PR-39 derived peptides.,2014,DBAASP,1,DBAASP:7028
+pmid:24957834,Structural insights into and activity analysis of the antimicrobial peptide myxinidin.,2014,DBAASP,1,DBAASP:8499
+pmid:25019413,Characterization of antibacterial and hemolytic activity of synthetic pandinin 2 variants and their inhibition against Mycobacterium tuberculosis.,2014,DBAASP,1,DBAASP:948
+pmid:25192319,Rational design of artificial β-strand-forming antimicrobial peptides with biocompatible properties,2014,DBAASP,2,DBAASP:9163|DBAASP:9172
+pmid:25421112,Prokaryotic expression and antimicrobial mechanism of XPF-St7-derived ?-helical peptides.,2015,DBAASP,1,DBAASP:8770
+pmid:25473836,Role of phenylalanine and valine10 residues in the antimicrobial activity and cytotoxicity of piscidin-1.,2014,DBAASP,3,DBAASP:7167|DBAASP:7190|DBAASP:7213
+pmid:25671663,Bioprospecting the American alligator (Alligator mississippiensis) host defense peptidome.,2015,DBAASP,1,DBAASP:8162
+pmid:25815317,Antibacterial activity of synthetic peptides derived from lactoferricin against Escherichia coli ATCC 25922 and Enterococcus faecalis ATCC 29212.,2015,DBAASP,1,DBAASP:10549
+pmid:25849257,Machine learning assisted design of highly active peptides for drug discovery.,2015,DBAASP,1,DBAASP:8215
+pmid:25898805,Influence of hydrophobic residues on the activity of the antimicrobial peptide magainin 2 and its synergy with PGLa.,2015,DBAASP,1,DBAASP:8393
+pmid:25934283,"Variants of self-assembling peptide, KLD-12 that show both rapid fracture healing and antimicrobial properties.",2015,DBAASP,1,DBAASP:16144
+pmid:26107622,Characterization and Biological Activities of Ocellatin Peptides from the Skin Secretion of the Frog Leptodactylus pustulatus.,2015,DBAASP,1,DBAASP:8295
+pmid:26214729,N-Lipidated Peptide Dimers: Effective Antibacterial Agents against Gram-Negative Pathogens through Lipopolysaccharide Permeabilization.,2015,DBAASP,1,DBAASP:8647
+pmid:26444944,"Structural and Antimicrobial Features of Peptides Related to Myticin C, a Special Defense Molecule from the Mediterranean Mussel Mytilus galloprovincialis.",2015,DBAASP,1,DBAASP:12441
+pmid:26450121,"Design and membrane-disruption mechanism of charge-enriched AMPs exhibiting cell selectivity, high-salt resistance, and anti-biofilm properties.",2016,DBAASP,1,DBAASP:10700
+pmid:26897538,"Effective antimicrobial activity of Cbf-14, derived from a cathelin-like domain, against penicillin-resistant bacteria.",2016,DBAASP,1,DBAASP:10450
+pmid:26901176,Antimicrobial Activity and Stability of Short and Long Based Arachnid Synthetic Peptides in the Presence of Commercial Antibiotics.,2016,DBAASP,1,DBAASP:5476
+pmid:27019370,Characterisation of three alpha-helical antimicrobial peptides from the venom of Scorpio maurus palmatus.,2016,DBAASP,1,DBAASP:9595
+pmid:27167617,De Novo Transcriptome Analysis and Detection of Antimicrobial Peptides of the American Cockroach Periplaneta americana (Linnaeus).,2016,DBAASP,1,DBAASP:9129
+pmid:27423268,Selective amino acid substitution reduces cytotoxicity of the antimicrobial peptide mastoparan.,2016,DBAASP,1,DBAASP:9494
+pmid:27439393,The C-terminal sequences of porcine thrombin are active as antimicrobial peptides.,2016,DBAASP,2,DBAASP:9910|DBAASP:9911
+pmid:27463422,Ocellatin-PT Antimicrobial Peptides: High Resolution Microscopy Studies in Antileishmania Models and Interactions with Mimetic Membrane Systems.,2016,DBAASP,1,DBAASP:8295
+pmid:27542832,Peptides from American alligator plasma are antimicrobial against multi-drug resistant bacterial pathogens including Acinetobacter baumannii.,2016,DBAASP,1,DBAASP:8162
+pmid:27554395,"Two isoforms of piscidin from Malabar grouper, Epinephelus malabaricus: Expression and functional characterization.",2016,DBAASP,1,DBAASP:9705
+pmid:27609815,Modulation of anti-endotoxin property of Temporin L by minor amino acid substitution in identified phenylalanine zipper sequence.,2016,DBAASP,1,DBAASP:18177
+pmid:27838615,"Synthesis and Functional Characterization of MAF-1A Peptide Derived From the Larvae of Housefly, Musca domestica (Diptera: Muscidae)",2016,DBAASP,1,DBAASP:19889
+pmid:27999446,Antimicrobial activity and interactions of cationic peptides derived from Galleria mellonella cecropin D-like peptide with model membranes.,2017,DBAASP,1,DBAASP:10398
+pmid:28054660,Antimicrobial and anti-inflammatory activities of three chensinin-1 peptides containing mutation of glycine and histidine residues.,2017,DBAASP,1,DBAASP:9990
+pmid:28105725,Antifungal peptides: a potential new class of antifungals for treating vulvovaginal candidiasis caused by fluconazole-resistant Candida albicans.,2017,DBAASP,1,DBAASP:8647
+pmid:28287172,Killing of Staphylococcus aureus and Salmonella enteritidis and neutralization of lipopolysaccharide by 17-residue bovine lactoferricins: improved activity of Trp/Ala-containing molecules.,2017,DBAASP,1,DBAASP:10154
+pmid:28479275,Effect of tacticity-derived topological constraints in bactericidal peptides.,2017,DBAASP,1,DBAASP:10304
+pmid:28522372,Effective antimicrobial activity of a peptide mutant Cbf-14-2 against penicillin-resistant bacteria based on its unnatural amino acids.,2017,DBAASP,1,DBAASP:10450
+pmid:28829401,"Myticalins: A Novel Multigenic Family of Linear, Cationic Antimicrobial Peptides from Marine Mussels (Mytilus spp.)",2017,DBAASP,2,DBAASP:10715|DBAASP:10717
+pmid:28960954,Structure-Activity and -Toxicity Relationships of the Antimicrobial Peptide Tachyplesin-1.,2017,DBAASP,1,DBAASP:11749
+pmid:29214045,The rumen microbiome: an underexplored resource for novel antimicrobial discovery.,2017,DBAASP,1,DBAASP:10883
+pmid:29259134,Computational antimicrobial peptide design and evaluation against multidrug-resistant clinical isolates of bacteria.,2018,DBAASP,3,DBAASP:13184|DBAASP:13205|DBAASP:13248
+pmid:29361893,Discovery of novel antimicrobial peptides: A transcriptomic study of the sea anemone Cnidopus japonicus.,2018,DBAASP,2,DBAASP:11053|DBAASP:11054
+pmid:29430821,Alanine and Lysine Scans of the LL-37-Derived Peptide Fragment KR-12 Reveal Key Residues for Antimicrobial Activity.,2018,DBAASP,1,DBAASP:15053
+pmid:29463889,"Rational design of syn-safencin, a novel linear antimicrobial peptide derived from the circular bacteriocin safencin AS-48.",2018,DBAASP,2,DBAASP:11117|DBAASP:11118
+pmid:29526712,The Dolphin Proline-Rich Antimicrobial Peptide Tur1A Inhibits Protein Synthesis by Targeting the Bacterial Ribosome.,2018,DBAASP,1,DBAASP:11186
+pmid:29619665,Expression and Purification of the Main Component Contained in Camel Milk and Its Antimicrobial Activities Against Bacterial Plant Pathogens.,2018,DBAASP,1,DBAASP:11733
+pmid:29628917,"Discovery of Distinctin-Like-Peptide-PH (DLP-PH) From the Skin Secretion of Phyllomedusa hypochondrialis, a Prototype of a Novel Family of Antimicrobial Peptide.",2018,DBAASP,2,DBAASP:11213|DBAASP:11215
+pmid:29728914,Prediction and characterization of a novel hemocyanin-derived antimicrobial peptide from shrimp Litopenaeus vannamei.,2018,DBAASP,1,DBAASP:11502
+pmid:29852015,Dissection of the antimicrobial and hemolytic activity of Cap18: Generation of Cap18 derivatives with enhanced specificity.,2018,DBAASP,3,DBAASP:11798|DBAASP:13079|DBAASP:13080
+pmid:29890331,Recombinant production of a chimeric antimicrobial peptide in E. coli and assessment of its activity against some avian clinically isolated pathogens.,2018,DBAASP,1,DBAASP:11733
+pmid:29984452,Antibody-Bactericidal Macrocyclic Peptide Conjugates To Target Gram-Negative Bacteria.,2018,DBAASP,1,DBAASP:12537
+pmid:30032476,"EmPis-1L, an Effective Antimicrobial Peptide Against the Antibiotic-Resistant VBNC State Cells of Pathogenic Bacteria.",2018,DBAASP,1,DBAASP:9705
+pmid:30039186,Identification and Characterization of Novel Antimicrobial Peptide from Hippocampus comes by In Silico and Experimental Studies.,2018,DBAASP,1,DBAASP:11525
+pmid:30120393,Evaluation of LL-37 antimicrobial peptide derivatives alone and in combination with vancomycin against S. aureus.,2018,DBAASP,1,DBAASP:144
+pmid:30121851,Design of antimicrobial peptides from a cuttlefish database.,2018,DBAASP,2,DBAASP:12636|DBAASP:12640
+pmid:30124040,Identification of Novel Cryptic Multifunctional Antimicrobial Peptides from the Human Stomach Enabled by a Computational-Experimental Platform.,2018,DBAASP,1,DBAASP:16846
+pmid:30208331,Heterologous expression of a broad-spectrum chimeric antimicrobial peptide in Lactococcus lactis: Its safety and molecular modeling evaluation,2018,DBAASP,1,DBAASP:11733
+pmid:30245684,The Role of Outer Membrane Proteins and Lipopolysaccharides for the Sensitivity of Escherichia coli to Antimicrobial Peptides,2018,DBAASP,1,DBAASP:11798
+pmid:30323791,Sarconesin: Sarconesiopsis magellanica Blowfly Larval Excretions and Secretions With Antibacterial Properties.,2018,DBAASP,1,DBAASP:11934
+pmid:30325956,"Peptidoglycan potentiates the membrane disrupting effect of the carboxyamidated form of DMS-DA6, a Gram-positive selective antimicrobial peptide isolated from Pachymedusa dacnicolor skin.",2018,DBAASP,1,DBAASP:11935
+pmid:30336202,Structural insight into the mechanism of action of antimicrobial peptide BMAP-28(1-18) and its analogue mutBMAP18.,2018,DBAASP,1,DBAASP:11939
+pmid:30358026,Antibacterial effects of gold nanoparticles functionalized with the extracted peptide from Vespa orientalis wasp venom.,2018,DBAASP,1,DBAASP:12243
+pmid:30384016,DNA/Lysozyme-binding affinity study of novel peptides from TAT (47-57) and BRCA1 (782-786) in vitro by spectroscopic analysis.,2019,DBAASP,2,DBAASP:12522|DBAASP:12524
+pmid:30555455,Combined Antibacterial Effects of Goat Cathelicidins With Different Mechanisms of Action.,2018,DBAASP,1,DBAASP:12306
+pmid:30607494,"Design, expression, and characterization of a novel cecropin A-derived peptide with high antibacterial activity.",2019,DBAASP,1,DBAASP:12232
+pmid:30622471,Anticancer Activity of the Goat Antimicrobial Peptide ChMAP-28.,2018,DBAASP,1,DBAASP:12306
+pmid:30623204,Discovery and identification of antimicrobial peptides in Sichuan pepper (Zanthoxylum bungeanum Maxim) seeds by peptidomics and bioinformatics.,2019,DBAASP,2,DBAASP:12312|DBAASP:12314
+pmid:30658410,Mass Spectrometry Analysis and Biological Characterization of the Predatory Ant Odontomachus monticola Venom and Venom Sac Components,2019,DRAMP,1,DRAMP:DRAMP21455
+pmid:30845708,Characterization and Antimicrobial Activity of Amphiphilic Peptide AP3 and Derivative Sequences.,2019,DBAASP,1,DBAASP:12887
+pmid:31016969,Short Cationic Peptide Derived from Archaea with Dual Antibacterial Properties and Anti-Infective Potential.,2019,DBAASP,1,DBAASP:13929
+pmid:31117348,Helminth Defense Molecules as Design Templates for Membrane Active Antibiotics.,2019,DBAASP,1,DBAASP:13426
+pmid:31145591,"Design, Synthesis, Antibacterial Potential, and Structural Characterization of N-Acylated Derivatives of the Human Autophagy 16 Polypeptide.",2019,DBAASP,1,DBAASP:20620
+pmid:31209863,Identification and elucidation of proline-rich antimicrobial peptides with enhanced potency and delivery.,2019,DBAASP,3,DBAASP:13556|DBAASP:13561|DBAASP:13568
+pmid:31336137,Understanding interactions of Citropin 1.1 analogues with model membranes and their influence on biological activity.,2019,DBAASP,2,DBAASP:13760|DBAASP:13765
+pmid:31355341,Ω76: A designed antimicrobial peptide to combat carbapenem- and tigecycline-resistant Acinetobacter baumannii.,2019,DBAASP,1,DBAASP:18784
+pmid:31359624,Phenol-Soluble-Modulin-Inspired Amphipathic Peptides Have Bactericidal Activity against Multidrug-Resistant Bacteria.,2019,DBAASP,1,DBAASP:5354
+pmid:31437351,Enhancing the antibacterial activity of PMAP-37 by increasing its hydrophobicity.,2019,DBAASP,1,DBAASP:708
+pmid:31572872,Conjugation of Cell-Penetrating Peptides to Antimicrobial Peptides Enhances Antibacterial Activity.,2019,DBAASP,1,DBAASP:14165
+pmid:31608030,Cathelicidin-Derived Synthetic Peptide Improves Therapeutic Potential of Vancomycin Against Pseudomonas aeruginosa.,2019,DBAASP,1,DBAASP:144
+pmid:31692278,"Proline-Rich Peptides With Improved Antimicrobial Activity Against E. Coli, K. Pneumoniae, and A. Baumannii.",2019,DBAASP,4,DBAASP:14458|DBAASP:14471|DBAASP:14480|DBAASP:14484
+pmid:31783657,Increases in Hydrophilicity and Charge on the Polar Face of Alyteserin 1c Helix Change its Selectivity towards Gram-Positive Bacteria.,2019,DBAASP,1,DBAASP:14272
+pmid:31812678,An active domain HF-18 derived from hagfish intestinal peptide effectively inhibited drug-resistant bacteria in vitro/vivo.,2020,DBAASP,1,DBAASP:19126
+pmid:31858653,Antimicrobial Peptide PMAP-37 Analogs: Increasing the Positive Charge to Enhance the Antibacterial Activity of PMAP-37.,2019,DBAASP,2,DBAASP:14867|DBAASP:708
+pmid:31969663,Conversion of Broad-Spectrum Antimicrobial Peptides into Species-Specific Antimicrobials Capable of Precisely Targeting Pathogenic Bacteria.,2020,DBAASP,2,DBAASP:15147|DBAASP:15150
+pmid:32153522,Backbone Cyclization and Dimerization of LL-37-Derived Peptides Enhance Antimicrobial Activity and Proteolytic Stability.,2020,DBAASP,2,DBAASP:15045|DBAASP:15046
+pmid:32153547,Potent Chimeric Antimicrobial Derivatives of the Medicago truncatula NCR247 Symbiotic Peptide.,2020,DBAASP,1,DBAASP:15089
+pmid:32198075,Antimicrobial peptides against drug resistant Mycobacterium abscessus.,2020,DBAASP,1,DBAASP:7043
+pmid:32333997,Antimicrobial peptide selection from Lippia spp leaf transcriptomes,2020,DBAASP,1,DBAASP:15998
+pmid:32566907,Synthetic Antimicrobial Peptide Tuning Permits Membrane Disruption and Interpeptide Synergy.,2020,DBAASP,1,DBAASP:16954
+pmid:32715598,Antimicrobial activity and secondary structure of a novel peptide derived from ovalbumin,2020,DBAASP,3,DBAASP:16119|DBAASP:16123|DBAASP:16126
+pmid:32724213,In silico identification and functional validation of linear cationic ?-helical antimicrobial peptides in the ascidian Ciona intestinalis,2020,DBAASP,1,DBAASP:16140
+pmid:32738898,"Identification and characteristics of a novel cecropin from the armyworm, Mythimna separata.",2020,DBAASP,1,DBAASP:16020
+pmid:32798369,Investigation of the Role of Aromatic Residues in the Antimicrobial Peptide BuCATHL4B.,2021,DBAASP,1,DBAASP:19200
+pmid:33036159,Characterization of Cetacean Proline-Rich Antimicrobial Peptides Displaying Activity against ESKAPE Pathogens.,2020,DBAASP,1,DBAASP:16331
+pmid:33087568,Defining principles that influence antimicrobial peptide activity against capsulated Klebsiella pneumoniae.,2020,DBAASP,1,DBAASP:16872
+pmid:33157098,Interaction of the antimicrobial peptide ∆M3 with the Staphylococcus aureus membrane and molecular models.,2021,DBAASP,1,DBAASP:21504
+pmid:33281785,Synthetic Peptide Libraries Designed From a Minimal Alpha-Helical Domain of AS-48-Bacteriocin Homologs Exhibit Potent Antibacterial Activity.,2020,DBAASP,8,DBAASP:17137|DBAASP:17141|DBAASP:17148|DBAASP:17154|DBAASP:17159|DBAASP:17170|DBAASP:17177|DBAASP:17180
+pmid:33398076,Outer-membrane-acting peptides and lipid II-targeting antibiotics cooperatively kill Gram-negative pathogens.,2021,DBAASP,1,DBAASP:10402
+pmid:33465691,"Generation of antimicrobial peptides Leg1 and Leg2 from chickpea storage protein, active against food spoilage bacteria and foodborne pathogens.",2021,DBAASP,3,DBAASP:17750|DBAASP:17752|DBAASP:17758
+pmid:33484270,Antimicrobial D-amino acid oxidase-derived peptides specify gut microbiota.,2021,DBAASP,1,DBAASP:17621
+pmid:33673498,Peptides from the Intestinal Tract of Breast Milk-Fed Infants Have Antimicrobial and Bifidogenic Activity.,2021,DBAASP,1,DBAASP:17768
+pmid:33790103,Examination of the Antimicrobial Peptide Myticalin A6 Active Site.,2021,DBAASP,3,DBAASP:18059|DBAASP:18062|DBAASP:18063
+pmid:33920239,Antibacterial and Antibiofilm Activities of Novel Antimicrobial Peptides against Multidrug-Resistant Enterotoxigenic Escherichia Coli.,2021,DBAASP,1,DBAASP:18439
+pmid:33972675,"Structure and antimicrobial activity of NCR169, a nodule-specific cysteine-rich peptide of Medicago truncatula.",2021,DBAASP,1,DBAASP:18203
+pmid:34302796,Multipurpose peptides: The venoms of Amazonian stinging ants contain anthelmintic ponericins with diverse predatory and defensive activities.,2021,DBAASP,1,DBAASP:19354
+pmid:34391826,Novel antimicrobial cecropins derived from O. curvicornis and D. satanas dung beetles.,2021,DBAASP,1,DBAASP:18070
+pmid:34484167,"Dodecapeptide Cathelicidins of Cetartiodactyla: Structure, Mechanism of Antimicrobial Action, and Synergistic Interaction With Other Cathelicidins.",2021,DBAASP,1,DBAASP:12306
+pmid:34576320,Membrane Interactions of Latarcins: Antimicrobial Peptides from Spider Venom,2021,DBAASP,1,DBAASP:536
+pmid:35050978,Antimicrobial Activity of Snake B-Defensins and Derived Peptides,2022,DBAASP,1,DBAASP:18622
+pmid:35241840,Identification of antimicrobial peptides from the human gut microbiome using deep learning.,2022,DBAASP,1,DBAASP:19142
+pmid:35289673,A Novel Antimicrobial Peptide Derived from Bony Fish IFN1 Exerts Potent Antimicrobial and Anti-Inflammatory Activity in Mammals,2022,DBAASP,1,DBAASP:19122
+pmid:35470073,"Anisaxins, helical antimicrobial peptides from marine parasites, kill resistant bacteria by lipid extraction and membrane disruption.",2022,DBAASP,1,DBAASP:19204
+pmid:35519960,"Synergistic bactericide and antibiotic effects of dimeric, tetrameric, or palindromic peptides containing the RWQWR motif against Gram-positive and Gram-negative strains",2019,DBAASP,1,DBAASP:14093
+pmid:35694289,Rational Framework for the Design of Trp- and Arg-Rich Peptide Antibiotics Against Multidrug-Resistant Bacteria,2022,DBAASP,4,DBAASP:25210|DBAASP:25211|DBAASP:25212|DBAASP:25215
+pmid:35752018,Characterization of novel antimicrobial peptides designed on the basis of amino acid sequence of peptides from egg white hydrolysate.,2022,DBAASP,1,DBAASP:19434
+pmid:35835842,"Design, characterization and structure-function analysis of novel antimicrobial peptides based on the N-terminal CATH-2 fragment.",2022,DBAASP,1,DBAASP:20122
+pmid:35884206,Mining Amphibian and Insect Transcriptomes for Antimicrobial Peptide Sequences with rAMPage.,2022,DBAASP,1,DBAASP:20336
+pmid:35887325,"Improving the Therapeutic Index of Smp24, a Venom-Derived Antimicrobial Peptide: Increased Activity against Gram-Negative Bacteria",2022,DBAASP,1,DBAASP:23264
+pmid:35892379,Genomewide Analysis and Biological Characterization of Cathelicidins with Potent Antimicrobial Activity and Low Cytotoxicity from Three Bat Species,2022,DBAASP,1,DBAASP:19597
+pmid:35966656,Antibiofilm property and multiple action of peptide PEW300 against Pseudomonas aeruginosa,2022,DBAASP,1,DBAASP:12232
+pmid:36117157,The antimicrobial effect of a novel peptide LL-1 on Escherichia coli by increasing membrane permeability,2022,DBAASP,1,DBAASP:24337
+pmid:36162730,The synthetic antimicrobial peptide IKR18 displays anti-infectious properties in galleria mellonella in vivo model.,2022,DBAASP,1,DBAASP:19776
+pmid:36190276,Antimicrobial and Anti-Inflammatory Activities of MAF-1-Derived Antimicrobial Peptide Mt6 and Its D-Enantiomer D-Mt6 against Acinetobacter baumannii by Targeting Cell Membranes and Lipopolysaccharide Interaction.,2022,DBAASP,1,DBAASP:19889
+pmid:36283984,Hydrophobicity Determines the Bacterial Killing Rate of α-Helical Antimicrobial Peptides and Influences the Bacterial Resistance Development.,2022,DBAASP,1,DBAASP:20004
+pmid:36362111,A Novel Antimicrobial Peptide Spampcin56-86 from Scylla paramamosain Exerting Rapid Bactericidal and Anti-Biofilm Activity In Vitro and Anti-Infection In Vivo.,2022,DBAASP,2,DBAASP:20543|DBAASP:20544
+pmid:36421248,Novel Alligator Cathelicidin As-CATH8 Demonstrates Anti-Infective Activity against Clinically Relevant and Crocodylian Bacterial Pathogens.,2022,DBAASP,1,DBAASP:20166
+pmid:36551368,Associating Biological Activity and Predicted Structure of Antimicrobial Peptides from Amphibians and Insects | Associating Biological Activity and Predicted Structure of Antimicrobial Peptides from Amphibians and Insects.,2022,DBAASP,7,DBAASP:20336|DBAASP:20356|DBAASP:20358|DBAASP:20369|DBAASP:20372|DBAASP:20378|DBAASP:20396
+pmid:36668862,Evaluation of the Synthetic Multifunctional Peptide Hp-MAP3 Derivative of Temporin-PTa.,2023,DBAASP,1,DBAASP:21133
+pmid:36690720,Discovery of structural and functional transition sites for membrane-penetrating activity of sheep myeloid antimicrobial peptide-18.,2023,DBAASP,1,DBAASP:20630
+pmid:36713201,Cecropin D-derived synthetic peptides in the fight against Candida albicans cell filamentation and biofilm formation.,2023,DBAASP,1,DBAASP:21504
+pmid:36892673,Structural and Functional Characteristics of the Proline-Rich Antimicrobial Peptide Minibactenecin from Leukocytes of Domestic Goat Capra hircus,2023,DBAASP,1,DBAASP:25134
+pmid:37228702,Discovery and analysis of a novel antimicrobial peptide B1AW from the skin secretion of Amolops wuyiensis and improving the membrane-binding affinity through the construction of the lysine-introduced analogue.,2023,DBAASP,1,DBAASP:21171
+pmid:37516110,Molecular de-extinction of ancient antimicrobial peptides enabled by machine learning.,2023,DBAASP,1,DBAASP:21285
+pmid:37523405,Novel integrated computational AMP discovery approaches highlight diversity in the helminth AMP repertoire.,2023,DBAASP,2,DBAASP:21460|DBAASP:21464
+pmid:37774026,Gut-targeted nanoparticles deliver specifically targeted antimicrobial peptides against Clostridium perfringens infections,2023,DBAASP,1,DBAASP:25409
+pmid:37855266,Tree Frog-Derived Cathelicidin Protects Mice against Bacterial Infection through Its Antimicrobial and Anti-Inflammatory Activities and Regulatory Effect on Phagocytes.,2023,DBAASP,1,DBAASP:21523
+pmid:37938588,Cell-free biosynthesis combined with deep learning accelerates de novo-development of antimicrobial peptides.,2023,DBAASP,2,DBAASP:21528|DBAASP:21534
+pmid:38181981,Heterologous expression of the novel dimeric antimicrobial peptide LIG in Pichia pastoris,2024,DBAASP,1,DBAASP:25700
+pmid:38266820,Specifically targeted antimicrobial peptides synergize with bacterial-entrapping peptide against systemic MRSA infections.,2022,DBAASP,3,DBAASP:21946|DBAASP:21969|DBAASP:21970
+pmid:38404711,The limits of prediction: Why intrinsically disordered regions challenge our understanding of antimicrobial peptides,2024,DBAASP,3,DBAASP:22269|DBAASP:22271|DBAASP:22273
+pmid:38587584,Cathelicidin AS-12W Derived from the Alligator sinensis and Its Antimicrobial Activity Against Drug-Resistant Gram-Negative Bacteria In Vitro and In Vivo,2024,DBAASP,3,DBAASP:22218|DBAASP:22219|DBAASP:22220
+pmid:38791374,"Blap-6, a Novel Antifungal Peptide from the Chinese Medicinal Beetle Blaps rhynchopetera against Cryptococcus neoformans",2024,DBAASP,2,DBAASP:25161|DBAASP:25162
+pmid:38843834,Discovery of antimicrobial peptides in the global microbiome with machine learning,2024,DBAASP,2,DBAASP:25413|DBAASP:25418
+pmid:38862735,Deep-learning-enabled antibiotic discovery through molecular de-extinction,2024,DBAASP,1,DBAASP:24367
+pmid:38882682,A novel cathelicidin TS-CATH derived from Thamnophis sirtalis combats drug-resistant gram-negative bacteria in vitro and in vivo,2024,DBAASP,2,DBAASP:22344|DBAASP:22345
+pmid:38911757,QSAR Reveals Decreased Lipophilicity of Polar Residues Determines the Selectivity of Antimicrobial Peptide Activity.,2024,DBAASP,2,DBAASP:22475|DBAASP:2271
+pmid:38911764,Rapid Membrane-Penetrating Hybrid Peptides Achieve Efficient Dual Antimicrobial and Antibiofilm Activity through a Triple Bactericidal Mechanism,2024,DBAASP,1,DBAASP:22586
+pmid:38953159,Sequence diversity of apidaecin-like peptides arresting the terminating ribosome,2024,DBAASP,1,DBAASP:22420
+pmid:38988311,De novo synthetic antimicrobial peptide design with a recurrent neural network,2024,DBAASP,3,DBAASP:22682|DBAASP:22689|DBAASP:22690
+pmid:39214978,A Foundation Model Identifies Broad-Spectrum Antimicrobial Peptides against Drug-Resistant Bacterial Infection,2024,DBAASP,3,DBAASP:22765|DBAASP:22768|DBAASP:22772
+pmid:39321596,"A novel antimicrobial peptide WBp-1 from wheat bran: Purification, characterization and antibacterial potential against Listeria monocytogenes",2024,DBAASP,1,DBAASP:22823
+pmid:39414793,Rumicidins are a family of mammalian host-defense peptides plugging the 70S ribosome exit tunnel.,2024,DBAASP,1,DBAASP:24437
+pmid:39415050,"Activity, structure, and diversity of Type II proline-rich antimicrobial peptides from insects",2024,DBAASP,2,DBAASP:22887|DBAASP:22888
+pmid:39427973,"A new temporin with antibacterial activity and cytotoxicity from the skin secretion of Lithobates palmipes (Spix, 1824) (Amphibia: Ranidae) from Brazilian Atlantic Forest",2024,DBAASP,1,DBAASP:22898
+pmid:39472252,Peptides from non-immune proteins target infections through antimicrobial and immunomodulatory properties.,2025,DBAASP,1,DBAASP:24027
+pmid:39489539,Identification and synthesis of a long-chain antimicrobial peptide from the venom of the Liocheles australasiae scorpion,2024,DBAASP,1,DBAASP:23022
+pmid:39598576,Discovery of Novel Thanatin-like Antimicrobial Peptides from Bean Bug Riptortus pedestris,2024,DBAASP,1,DBAASP:23373
+pmid:39662606,Novel-designed antimicrobial peptides with dual antimicrobial and anti-inflammatory actions against Cutibacterium acnes for acne vulgaris therapy,2024,DBAASP,1,DBAASP:23414
+pmid:39667175,Association of idealized amphiphiles and protease inhibitors: Conferring antimicrobial peptides with stable antibacterial activity under physiological conditions to combat multidrug-resistant bacteria,2024,DBAASP,1,DBAASP:23385
+pmid:39756573,Unveiling novel antimicrobial peptides from the ruminant gastrointestinal microbiomes: A deep learning-driven approach yields an anti-MRSA candidate.,2025,DBAASP,2,DBAASP:23706|DBAASP:23708
+pmid:39908380,Artificial intelligence using a latent diffusion model enables the generation of diverse and potent antimicrobial peptides,2025,DBAASP,2,DBAASP:24619|DBAASP:24628
+pmid:40003651,"Protease-Resistant, Broad-Spectrum Antimicrobial Peptides with High Antibacterial and Antifungal Activity",2025,DBAASP,2,DBAASP:21172|DBAASP:23731
+pmid:40073531,The discovery of novel antimicrobial peptides against drug-resistant bacteria based on fragments fusion strategy,2025,DBAASP,2,DBAASP:23880|DBAASP:5419
+pmid:40645962,Computational exploration of global venoms for antimicrobial discovery with Venomics artificial intelligence,2025,DBAASP,5,DBAASP:24269|DBAASP:24274|DBAASP:24290|DBAASP:24292|DBAASP:24303
+pmid:40940628,Painting Peptides With Antimicrobial Potency Through Deep Reinforcement Learning,2025,DBAASP,3,DBAASP:25169|DBAASP:25172|DBAASP:25179
+pmid:40953451,Controllable Generation of Pathogen-Specific Antimicrobial Peptides Through Knowledge-Aware Prompt Diffusion Model,2025,DBAASP,1,DBAASP:24451
+pmid:41136135,Metagenomics reveals potential antimicrobial peptides in Chinese baijiu fermentation.,2026,DBAASP,1,DBAASP:24984
+pmid:41391039,Mechanism-Driven Screening of Membrane-Targeting and Pore-Forming Antimicrobial Peptides,2025,DBAASP,1,DBAASP:24870
+pmid:41485275,LL-37-derived peptide shows promising antimicrobial potential against multidrug-resistance pathogens,2026,DBAASP,2,DBAASP:25377|DBAASP:25379
+pmid:41849223,Biochemical-knowledge-driven machine learning pipeline for generating potent antimicrobial peptides,2026,DBAASP,1,DBAASP:25339
+pmid:42206144,A generative artificial intelligence approach for peptide antibiotic optimization,2026,DBAASP,10,DBAASP:25450|DBAASP:25453|DBAASP:25470|DBAASP:25491|DBAASP:25497|DBAASP:25504|DBAASP:25508|DBAASP:25512|DBAASP:25545|DBAASP:25563
+pmid:42282986,Enhancement of the activity of scorpion short-chain antimicrobial peptides by addition of basic residues at the C-terminus.,2026,DBAASP,1,DBAASP:25592
+pmid:42380318,Deep learning-driven integrated pipeline for de novo design and synthesis of antimicrobial peptides,2026,DBAASP,2,DBAASP:25678|DBAASP:25683
+pmid:42380592,Vector venom: venomics of Aedes albopictus reveals a large enzyme repertoire and novel cecropins with activity against E. coli,2026,DBAASP,1,DBAASP:25675
+pmid:7479693,Generation of analogs having potent antimicrobial and hemolytic activities with minimal changes from an inactive 16-residue peptide corresponding to the helical region of Staphylococcus aureus delta-toxin.,1995,DBAASP,1,DBAASP:5770
+pmid:7737198,"PMAP-37, a novel antibacterial peptide from pig myeloid cells. cDNA cloning, chemical synthesis and activity.",1995,DBAASP,1,DBAASP:708
+pmid:8313956,"Identification and characterization of a primary antibacterial domain in CAP18, a lipopolysaccharide binding protein from rabbit leukocytes",1994,DBAASP,1,DBAASP:129
+pmid:9009216,Identification of the region that plays an important role in determining antibacterial activity of bovine seminalplasmin.,1997,DBAASP,1,DBAASP:821
+pmid:9148921,"Identification of CRAMP, a cathelin-related antimicrobial peptide expressed in the embryonic and adult mouse",1997,DBAASP,1,DBAASP:2028
+pmid:9199465,Effects of pH and salinity on the antimicrobial properties of clavanins.,1997,DBAASP,1,DBAASP:2004

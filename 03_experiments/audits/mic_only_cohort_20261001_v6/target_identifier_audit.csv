@@ -1,0 +1,555 @@
+﻿record_id,source_dataset,assay_index,target,source_note,strain_identifier_status
+DBAASP:2353,DBAASP,0,Escherichia coli BCRC 10675,,identified_provisionally
+DBAASP:20378,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:8295,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:12524,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:13561,DBAASP,0,Escherichia coli JW0013,,identified_provisionally
+DBAASP:24437,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:16872,DBAASP,0,Escherichia coli W3110,,identified_provisionally
+DBAASP:4647,DBAASP,0,Escherichia coli O157,,unresolved_strain_or_isolate
+DBAASP:5611,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22319,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:22319,DBAASP,1,Escherichia coli ATCC 700926,,identified_provisionally
+DBAASP:8393,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:20356,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:9381,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7086,DBAASP,0,Escherichia coli UB1005,,identified_provisionally
+DBAASP:13556,DBAASP,0,Escherichia coli JW0013,,identified_provisionally
+DBAASP:25212,DBAASP,0,Escherichia coli,8 MDR Clinical isolates,unresolved_strain_or_isolate
+DBAASP:23373,DBAASP,0,Escherichia coli ML-35p,also with 300 mM NaCl,identified_provisionally
+DBAASP:23373,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:23373,DBAASP,2,Escherichia coli 1057,MDR clinical isolate,identified_provisionally
+DBAASP:23373,DBAASP,3,Escherichia coli 1057,MDR clinical isolate,identified_provisionally
+DBAASP:23373,DBAASP,4,Escherichia coli,XDR clinical isolate U10,unresolved_strain_or_isolate
+DBAASP:23373,DBAASP,5,Escherichia coli,XDR clinical isolate U10,unresolved_strain_or_isolate
+DBAASP:2696,DBAASP,0,Escherichia coli,None,unresolved_strain_or_isolate
+DBAASP:5252,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:5252,DBAASP,1,Escherichia coli ML-35,,identified_provisionally
+DBAASP:11054,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:4470,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:18177,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7028,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7028,DBAASP,1,Escherichia coli HB101,,identified_provisionally
+DBAASP:4182,DBAASP,0,Escherichia coli CVCC 1570,,identified_provisionally
+DBAASP:23880,DBAASP,0,Escherichia coli,MDR clinical isolate,unresolved_strain_or_isolate
+DBAASP:23880,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7167,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:7167,DBAASP,1,Escherichia coli KCTC 2593,,identified_provisionally
+DBAASP:7167,DBAASP,2,Escherichia coli KCTC 2571,,identified_provisionally
+DBAASP:7167,DBAASP,3,Escherichia coli CCARM 1229,MDR,identified_provisionally
+DBAASP:7167,DBAASP,4,Escherichia coli CCARM 1238,MDR,identified_provisionally
+DBAASP:3973,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:13366,DBAASP,0,Escherichia coli ATCC 2592,,identified_provisionally
+DBAASP:2828,DBAASP,0,Escherichia coli PCM 2057,,identified_provisionally
+DBAASP:14426,DBAASP,0,Escherichia coli BL21AI,,identified_provisionally
+DBAASP:3768,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24619,DBAASP,0,Escherichia coli,Clinical isolate GD004,unresolved_strain_or_isolate
+DBAASP:14165,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:18062,DBAASP,0,Escherichia coli NBRC 12734,,identified_provisionally
+DBAASP:11118,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:15089,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:5476,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:5476,DBAASP,1,Escherichia coli 170,MDR clinical isolate,identified_provisionally
+DBAASP:12537,DBAASP,0,Escherichia coli 1,,identified_provisionally
+DBAASP:12537,DBAASP,1,Escherichia coli,Clinical isolate 2,unresolved_strain_or_isolate
+DBAASP:3196,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:21998,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:18203,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:988,DBAASP,0,Escherichia coli B,,identified_provisionally
+DBAASP:25210,DBAASP,0,Escherichia coli,8 MDR clinical isolates,unresolved_strain_or_isolate
+DBAASP:22018,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:13080,DBAASP,0,Escherichia coli ATCC 25922,Clinical isolate serotype O6,identified_provisionally
+DBAASP:17141,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:23264,DBAASP,0,Escherichia coli JM109,,identified_provisionally
+DBAASP:9990,DBAASP,0,Escherichia coli AS1.349,,identified_provisionally
+DBAASP:25379,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:1562,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:23706,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7043,DBAASP,0,Escherichia coli UB1005,,identified_provisionally
+DBAASP:4008,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:3967,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:11935,DBAASP,0,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:11935,DBAASP,1,Escherichia coli ATCC 35218,,identified_provisionally
+DBAASP:11935,DBAASP,2,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:11935,DBAASP,3,Escherichia coli K-12,,identified_provisionally
+DBAASP:22768,DBAASP,0,Escherichia coli ATCC BAA-1025,,identified_provisionally
+DBAASP:12636,DBAASP,0,Escherichia coli CIP 54.8T,,identified_provisionally
+DBAASP:25215,DBAASP,0,Escherichia coli,8 MDR Clinical isolates,unresolved_strain_or_isolate
+DBAASP:19889,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22765,DBAASP,0,Escherichia coli ATCC BAA-1025,,identified_provisionally
+DBAASP:23414,DBAASP,0,Escherichia coli KCTC 2441,,identified_provisionally
+DBAASP:17057,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3982,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:25162,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:16123,DBAASP,0,Escherichia coli NBRC 3972,,identified_provisionally
+DBAASP:13643,DBAASP,0,Escherichia coli K12 MG1655,,identified_provisionally
+DBAASP:16020,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16020,DBAASP,1,Escherichia coli,Clinical isolate,unresolved_strain_or_isolate
+DBAASP:13765,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:13765,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:4041,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:948,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:948,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2032,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:2032,DBAASP,1,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:2032,DBAASP,2,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:2032,DBAASP,3,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:21133,DBAASP,0,Escherichia coli,Clinical isolate,unresolved_strain_or_isolate
+DBAASP:21133,DBAASP,1,Escherichia coli KpC+34,,identified_provisionally
+DBAASP:22689,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:12553,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:12553,DBAASP,1,Escherichia coli ATCC 700926,,identified_provisionally
+DBAASP:5859,DBAASP,0,Escherichia coli ATCC 25922,With and without 100 mM NaCl,identified_provisionally
+DBAASP:25545,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25545,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25545,DBAASP,2,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:3074,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:14471,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:18439,DBAASP,0,Escherichia coli,MDR ETEC clinical isolate,unresolved_strain_or_isolate
+DBAASP:24337,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24337,DBAASP,1,Escherichia coli,Clinical isolate,unresolved_strain_or_isolate
+DBAASP:16846,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16846,DBAASP,1,Escherichia coli ATCC 35218,,identified_provisionally
+DBAASP:20336,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:9380,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7840,DBAASP,0,Escherichia coli DC2,,identified_provisionally
+DBAASP:11215,DBAASP,0,Escherichia coli NCTC 10418,,identified_provisionally
+DBAASP:4957,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:12372,DBAASP,0,Escherichia coli D21,,identified_provisionally
+DBAASP:19434,DBAASP,0,Escherichia coli NBRC 3301,,identified_provisionally
+DBAASP:5718,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:20350,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:4039,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:21528,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:15046,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:14458,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:25418,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25418,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25418,DBAASP,2,Escherichia coli AIC222,polymyxin/colistin-resistant,identified_provisionally
+DBAASP:24628,DBAASP,0,Escherichia coli,Clinical isolate GD004,unresolved_strain_or_isolate
+DBAASP:24451,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:15150,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:17750,DBAASP,0,Escherichia coli NEB5alpha,,identified_provisionally
+DBAASP:5145,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22682,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:14272,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:17170,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:25504,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:21504,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:21504,DBAASP,1,Escherichia coli ESBL,"HD7, HD8, HD11, BK43028,EB101, EB107, EB127 Isolates",unresolved_strain_or_isolate
+DBAASP:11053,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:25470,DBAASP,0,Escherichia coli AIC222,VRE,identified_provisionally
+DBAASP:20396,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:18070,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:18070,DBAASP,1,Escherichia coli ATCC 35218,,identified_provisionally
+DBAASP:11934,DBAASP,0,Escherichia coli D31,,identified_provisionally
+DBAASP:11934,DBAASP,1,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:12172,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:17154,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:12243,DBAASP,0,Escherichia coli ATCC 35218,,identified_provisionally
+DBAASP:19354,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3979,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:11502,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:3077,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:9705,DBAASP,0,Escherichia coli TOP 10,,identified_provisionally
+DBAASP:25409,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16119,DBAASP,0,Escherichia coli NBRC 3972,,identified_provisionally
+DBAASP:22888,DBAASP,0,Escherichia coli BL21,33% TSB,identified_provisionally
+DBAASP:22888,DBAASP,1,Escherichia coli BL21,with FBS,identified_provisionally
+DBAASP:22898,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:20620,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:22223,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25413,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25413,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25413,DBAASP,2,Escherichia coli AIC222,polymyxin/colistin-resistant,identified_provisionally
+DBAASP:2004,DBAASP,0,Escherichia coli mcr106,,identified_provisionally
+DBAASP:20543,DBAASP,0,Escherichia coli CGMCC 1.2389,,identified_provisionally
+DBAASP:25508,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25508,DBAASP,1,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:18063,DBAASP,0,Escherichia coli NBRC 12734,,identified_provisionally
+DBAASP:20173,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:19492,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:19492,DBAASP,1,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:17180,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:25491,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25491,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25491,DBAASP,2,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:16331,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16331,DBAASP,1,Escherichia coli ATCC 25922,in PBS,identified_provisionally
+DBAASP:16331,DBAASP,2,Escherichia coli BW25113,in PBS,identified_provisionally
+DBAASP:16331,DBAASP,3,Escherichia coli BW25113 ΔsbmA,,identified_provisionally
+DBAASP:16331,DBAASP,4,Escherichia coli BW25113 ΔsbmA,in PBS,identified_provisionally
+DBAASP:356,DBAASP,0,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:356,DBAASP,1,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:13745,DBAASP,0,Escherichia coli UB1005,,identified_provisionally
+DBAASP:12522,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16144,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25700,DBAASP,0,Escherichia coli ATCC 25922,"Also with  150mM NaCl, 4.5mM KCl, 6µM NH4Cl, 8µM ZnCl2",identified_provisionally
+DBAASP:25700,DBAASP,1,Escherichia coli UB1005,,identified_provisionally
+DBAASP:20004,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16126,DBAASP,0,Escherichia coli NBRC 3972,,identified_provisionally
+DBAASP:4173,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:24984,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10450,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10450,DBAASP,1,Escherichia coli,Penicillin resistant clinical isolate,unresolved_strain_or_isolate
+DBAASP:10450,DBAASP,2,Escherichia coli BL21 (DE3)-NDM-1,,identified_provisionally
+DBAASP:10450,DBAASP,3,Escherichia coli BL21(DE3),,identified_provisionally
+DBAASP:13929,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:13929,DBAASP,1,Escherichia coli BL21,,identified_provisionally
+DBAASP:22325,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:23385,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:23385,DBAASP,1,Escherichia coli K88,,unresolved_strain_or_isolate
+DBAASP:25563,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25563,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25563,DBAASP,2,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:566,DBAASP,0,Escherichia coli BL21AI,,identified_provisionally
+DBAASP:566,DBAASP,1,Escherichia coli DSM 10233,,identified_provisionally
+DBAASP:11939,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:22338,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:22338,DBAASP,1,Escherichia coli ATCC 700926,,identified_provisionally
+DBAASP:5716,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16140,DBAASP,0,Escherichia coli NBRC 14237,,identified_provisionally
+DBAASP:24870,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24870,DBAASP,1,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:21946,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2031,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:2031,DBAASP,1,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:2031,DBAASP,2,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:2031,DBAASP,3,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:17392,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:876,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:12312,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:166,DBAASP,0,Escherichia coli UB1005,None,identified_provisionally
+DBAASP:20464,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:5934,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:173,DBAASP,0,Escherichia coli UB1005,None,identified_provisionally
+DBAASP:19204,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:19204,DBAASP,1,Escherichia coli,2 clinical isolates,unresolved_strain_or_isolate
+DBAASP:2038,DBAASP,0,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:2038,DBAASP,1,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:24292,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:24292,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:24292,DBAASP,2,Escherichia coli AIC222,,identified_provisionally
+DBAASP:25172,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7019,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7019,DBAASP,1,Escherichia coli HB101,,identified_provisionally
+DBAASP:10883,DBAASP,0,Escherichia coli,"MDR E. coli M15U114296A, M15U114452A",unresolved_strain_or_isolate
+DBAASP:22271,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:4027,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:22269,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:23731,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25450,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25450,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25450,DBAASP,2,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:21464,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:4724,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:4724,DBAASP,1,Escherichia coli 170,"MDR clinical isolates 170, 4530",identified_provisionally
+DBAASP:21285,DBAASP,0,Escherichia coli MG1655,E. coli phnE_2::FRT and DR pmrA53 phnE_2::FRT,identified_provisionally
+DBAASP:9379,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2030,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:2030,DBAASP,1,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:2030,DBAASP,2,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:2030,DBAASP,3,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:20122,DBAASP,0,Escherichia coli O157:H7,,unresolved_strain_or_isolate
+DBAASP:7661,DBAASP,0,Escherichia coli AS1.349,,identified_provisionally
+DBAASP:19122,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:19122,DBAASP,1,Escherichia coli ATCC 35218,DR,identified_provisionally
+DBAASP:19122,DBAASP,2,Escherichia coli 1103,"MDR 1103,1205 and DR RS218 clinical isolates ",identified_provisionally
+DBAASP:19122,DBAASP,3,Escherichia coli,MDR clinical isolate 1306  and DR extra-intestinal pathogenic E. coli (ExPEC) PCN033,unresolved_strain_or_isolate
+DBAASP:21171,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:25134,DBAASP,0,Escherichia coli 1057,MDR,identified_provisionally
+DBAASP:25134,DBAASP,1,Escherichia coli BW25113,,identified_provisionally
+DBAASP:953,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:887,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:887,DBAASP,1,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:13079,DBAASP,0,Escherichia coli ATCC 25922,Clinical isolate serotype O6,identified_provisionally
+DBAASP:19200,DBAASP,0,Escherichia coli D31,,identified_provisionally
+DBAASP:17056,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3084,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:25211,DBAASP,0,Escherichia coli,8 Clinical isolates,unresolved_strain_or_isolate
+DBAASP:11213,DBAASP,0,Escherichia coli NCTC 10418,,identified_provisionally
+DBAASP:17177,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:16526,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2686,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:22586,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22586,DBAASP,1,Escherichia coli LZ-7,MDR,identified_provisionally
+DBAASP:821,DBAASP,0,Escherichia coli W160-37,,identified_provisionally
+DBAASP:5046,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:5879,DBAASP,0,Escherichia coli D22,,identified_provisionally
+DBAASP:18784,DBAASP,0,Escherichia coli K12 MG1655,,identified_provisionally
+DBAASP:536,DBAASP,0,Escherichia coli DH5alpha,antibacterial action was significantly lower in the presence of 20 mM CaCl2,identified_provisionally
+DBAASP:536,DBAASP,1,Escherichia coli MH1,antibacterial action was significantly lower in the presence of 20 mM CaCl2,identified_provisionally
+DBAASP:536,DBAASP,2,Escherichia coli C600,,identified_provisionally
+DBAASP:536,DBAASP,3,Escherichia coli DSM 1116,,identified_provisionally
+DBAASP:10402,DBAASP,0,Escherichia coli ATCC 700928,,identified_provisionally
+DBAASP:10402,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24367,DBAASP,0,Escherichia coli AIC221,,identified_provisionally
+DBAASP:24367,DBAASP,1,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:22420,DBAASP,0,Escherichia coli BL21,RPMI with Fetal  Bovine  Serum  (FBS),identified_provisionally
+DBAASP:22420,DBAASP,1,Escherichia coli BL21,33% TSB,identified_provisionally
+DBAASP:22420,DBAASP,2,Escherichia coli BL21,,identified_provisionally
+DBAASP:3998,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:8829,DBAASP,0,Escherichia coli AS1.349,,identified_provisionally
+DBAASP:11117,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:17758,DBAASP,0,Escherichia coli NEB5alpha,,identified_provisionally
+DBAASP:7125,DBAASP,0,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:7125,DBAASP,1,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:5522,DBAASP,0,Escherichia coli UB1005,,identified_provisionally
+DBAASP:5522,DBAASP,1,Escherichia coli KF130,,identified_provisionally
+DBAASP:5522,DBAASP,2,Escherichia coli KF111,,identified_provisionally
+DBAASP:5522,DBAASP,3,Escherichia coli K-12,,identified_provisionally
+DBAASP:170,DBAASP,0,Escherichia coli UB1005,None,identified_provisionally
+DBAASP:3971,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:20358,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:774,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25497,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25497,DBAASP,1,Escherichia coli AIC222,CRE,identified_provisionally
+DBAASP:8647,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:12611,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:1501,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:14480,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:22475,DBAASP,0,Escherichia coli NCTC 12923,,identified_provisionally
+DBAASP:9163,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:22887,DBAASP,0,Escherichia coli BL21,33% TSB,identified_provisionally
+DBAASP:22887,DBAASP,1,Escherichia coli BL21,with FBS,identified_provisionally
+DBAASP:5043,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:9910,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:9910,DBAASP,1,Escherichia coli UB1005,,identified_provisionally
+DBAASP:20179,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:4029,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:13996,DBAASP,0,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:2697,DBAASP,0,Escherichia coli,None,unresolved_strain_or_isolate
+DBAASP:3992,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:8499,DBAASP,0,Escherichia coli ATCC 11219,,identified_provisionally
+DBAASP:19776,DBAASP,0,Escherichia coli ATCC 35218,,identified_provisionally
+DBAASP:17076,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:8830,DBAASP,0,Escherichia coli AS1.349,,identified_provisionally
+DBAASP:22345,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22345,DBAASP,1,Escherichia coli,10 clinical isolates (8-MDR),unresolved_strain_or_isolate
+DBAASP:3960,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:10398,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22220,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22220,DBAASP,1,Escherichia coli,4 clinical isolates; also wothin pH 3-11 and up to 400 mM NaCl,unresolved_strain_or_isolate
+DBAASP:19142,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:19142,DBAASP,1,Escherichia coli,"MDR, 3 clinical isolates",unresolved_strain_or_isolate
+DBAASP:17159,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:17752,DBAASP,0,Escherichia coli NEB5alpha,,identified_provisionally
+DBAASP:10304,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:10304,DBAASP,1,Escherichia coli MG1655,,identified_provisionally
+DBAASP:1176,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25683,DBAASP,0,Escherichia coli,wild type,unresolved_strain_or_isolate
+DBAASP:22344,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22344,DBAASP,1,Escherichia coli,10 clinical isolates (8-MDR),unresolved_strain_or_isolate
+DBAASP:5770,DBAASP,0,Escherichia coli W160-37,,identified_provisionally
+DBAASP:15998,DBAASP,0,Escherichia coli ATCC 35218,,identified_provisionally
+DBAASP:15998,DBAASP,1,Escherichia coli ATCC 11229,,identified_provisionally
+DBAASP:10343,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10343,DBAASP,1,Escherichia coli ML-35p,,identified_provisionally
+DBAASP:10343,DBAASP,2,Escherichia coli,"Clinical isolates 1, 2",unresolved_strain_or_isolate
+DBAASP:18059,DBAASP,0,Escherichia coli NBRC 12734,,identified_provisionally
+DBAASP:8983,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10717,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:14867,DBAASP,0,Escherichia coli CICC 10004,,identified_provisionally
+DBAASP:25179,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3756,DBAASP,0,Escherichia coli D21,,identified_provisionally
+DBAASP:24303,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:24303,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:24303,DBAASP,2,Escherichia coli AIC222,,identified_provisionally
+DBAASP:4743,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:3997,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:10154,DBAASP,0,Escherichia coli CVCC 1515,,identified_provisionally
+DBAASP:2401,DBAASP,0,Escherichia coli,None,unresolved_strain_or_isolate
+DBAASP:5354,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:8215,DBAASP,0,Escherichia coli K12 MG1655,,identified_provisionally
+DBAASP:5619,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:5619,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:5619,DBAASP,2,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24027,DBAASP,0,Escherichia coli AIC221,,identified_provisionally
+DBAASP:24027,DBAASP,1,Escherichia coli AIC222,,identified_provisionally
+DBAASP:13373,DBAASP,0,Escherichia coli ATCC 2592,,identified_provisionally
+DBAASP:13248,DBAASP,0,Escherichia coli K12 MG1655,,identified_provisionally
+DBAASP:13426,DBAASP,0,Escherichia coli ATCC 15597,,identified_provisionally
+DBAASP:4849,DBAASP,0,Escherichia coli O111,,unresolved_strain_or_isolate
+DBAASP:25161,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:17137,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:17148,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:5148,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3194,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24274,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:24274,DBAASP,1,Escherichia coli AIC221,,identified_provisionally
+DBAASP:129,DBAASP,0,Escherichia coli ML-35,None,identified_provisionally
+DBAASP:129,DBAASP,1,Escherichia coli ATCC 25922,None,identified_provisionally
+DBAASP:4262,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:5419,DBAASP,0,Escherichia coli,MDR clinical isolate,unresolved_strain_or_isolate
+DBAASP:5419,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:12314,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:12306,DBAASP,0,Escherichia coli C600,,identified_provisionally
+DBAASP:12306,DBAASP,1,Escherichia coli C600,,identified_provisionally
+DBAASP:12306,DBAASP,2,Escherichia coli ML-35p,Also with 150 mM NaCl,identified_provisionally
+DBAASP:12306,DBAASP,3,Escherichia coli 1057,XDR clinical isolate; also with 150 mM NaCl,identified_provisionally
+DBAASP:12306,DBAASP,4,Escherichia coli BL21(DE3),,identified_provisionally
+DBAASP:12306,DBAASP,5,Escherichia coli 214,Clinical isolate,identified_provisionally
+DBAASP:22690,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3957,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:13184,DBAASP,0,Escherichia coli K12 MG1655,,identified_provisionally
+DBAASP:15045,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:144,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7190,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:7190,DBAASP,1,Escherichia coli KCTC 2593,,identified_provisionally
+DBAASP:7190,DBAASP,2,Escherichia coli KCTC 2571,,identified_provisionally
+DBAASP:13760,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:13760,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:12441,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22823,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:9479,DBAASP,0,Escherichia coli ATCC 2592,,identified_provisionally
+DBAASP:19126,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:21969,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:8162,DBAASP,0,Escherichia coli ATCC 51659,MDR,identified_provisionally
+DBAASP:11733,DBAASP,0,Escherichia coli K99,,unresolved_strain_or_isolate
+DBAASP:11733,DBAASP,1,Escherichia coli,Clinical isolate,unresolved_strain_or_isolate
+DBAASP:4009,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:21970,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2843,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:20372,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:18622,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:3963,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:6916,DBAASP,0,Escherichia coli DSM 1103,,identified_provisionally
+DBAASP:14093,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:14093,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:14093,DBAASP,2,Escherichia coli ATCC 43827,,identified_provisionally
+DBAASP:22273,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:23708,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:5717,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25169,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24290,DBAASP,0,Escherichia coli AIC221,,identified_provisionally
+DBAASP:24290,DBAASP,1,Escherichia coli AIC222,,identified_provisionally
+DBAASP:24290,DBAASP,2,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:5821,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10715,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:7549,DBAASP,0,Escherichia coli BL21,,identified_provisionally
+DBAASP:11749,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:15147,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:19597,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:24269,DBAASP,0,Escherichia coli AIC221,,identified_provisionally
+DBAASP:1599,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:8770,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:11525,DBAASP,0,Escherichia coli ATCC 25922,without and with 62-250 mM NaCl,identified_provisionally
+DBAASP:11525,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:11525,DBAASP,2,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:11525,DBAASP,3,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:1912,DBAASP,0,Escherichia coli 55B5,,identified_provisionally
+DBAASP:1912,DBAASP,1,Escherichia coli UB1005,,identified_provisionally
+DBAASP:10549,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:637,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:666,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:20630,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:4017,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:4388,DBAASP,0,Escherichia coli ATCC 25726,,identified_provisionally
+DBAASP:609,DBAASP,0,Escherichia coli MG1655,MDR,identified_provisionally
+DBAASP:13364,DBAASP,0,Escherichia coli ATCC 2592,,identified_provisionally
+DBAASP:9911,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:9911,DBAASP,1,Escherichia coli UB1005,,identified_provisionally
+DBAASP:21534,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:16954,DBAASP,0,Escherichia coli NCTC 12923,,identified_provisionally
+DBAASP:16954,DBAASP,1,Escherichia coli 319238,MDR clinical isolate,identified_provisionally
+DBAASP:16954,DBAASP,2,Escherichia coli LEC 001,MDR clinical isolate,identified_provisionally
+DBAASP:16954,DBAASP,3,Escherichia coli CFI_161_NDM,"MDR clinical isolates CFI_161_NDM, CFI_017_VIM4",identified_provisionally
+DBAASP:16954,DBAASP,4,Escherichia coli CFI_160_KPC2,"MDR clinical isolates CFI_160_KPC2, CFI_033_NDM",identified_provisionally
+DBAASP:13568,DBAASP,0,Escherichia coli JW0013,,identified_provisionally
+DBAASP:12640,DBAASP,0,Escherichia coli CIP 54.8T,,identified_provisionally
+DBAASP:4106,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:14484,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:17078,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:21172,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25592,DBAASP,0,Escherichia coli NBRC 3972,,identified_provisionally
+DBAASP:7996,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25678,DBAASP,0,Escherichia coli,wild type,unresolved_strain_or_isolate
+DBAASP:2724,DBAASP,0,Escherichia coli ATCC 27325,None,identified_provisionally
+DBAASP:3952,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:22218,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22218,DBAASP,1,Escherichia coli,4 clinical isolates,unresolved_strain_or_isolate
+DBAASP:6132,DBAASP,0,Escherichia coli JM109,,identified_provisionally
+DBAASP:6132,DBAASP,1,Escherichia coli BL21(DE3),,identified_provisionally
+DBAASP:20369,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:21638,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2357,DBAASP,0,Escherichia coli BCRC 10675,,identified_provisionally
+DBAASP:9595,DBAASP,0,Escherichia coli JM109,,identified_provisionally
+DBAASP:21460,DBAASP,0,Escherichia coli K-12,,identified_provisionally
+DBAASP:3981,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:13205,DBAASP,0,Escherichia coli K12 MG1655,,identified_provisionally
+DBAASP:9172,DBAASP,0,Escherichia coli DH5alpha,,identified_provisionally
+DBAASP:4129,DBAASP,0,Escherichia coli ATCC 25922,O157:H7 E. coli,identified_provisionally
+DBAASP:16528,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:11186,DBAASP,0,Escherichia coli BW25113,,identified_provisionally
+DBAASP:12887,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:7213,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:7213,DBAASP,1,Escherichia coli KCTC 2593,,identified_provisionally
+DBAASP:7213,DBAASP,2,Escherichia coli KCTC 2571,,identified_provisionally
+DBAASP:7213,DBAASP,3,Escherichia coli CCARM 1229,MDR,identified_provisionally
+DBAASP:7213,DBAASP,4,Escherichia coli CCARM 1238,MDR,identified_provisionally
+DBAASP:2271,DBAASP,0,Escherichia coli NCTC 12923,,identified_provisionally
+DBAASP:2271,DBAASP,1,Escherichia coli LEC001,,identified_provisionally
+DBAASP:19286,DBAASP,0,Escherichia coli NCTC 10418,,identified_provisionally
+DBAASP:3994,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:20544,DBAASP,0,Escherichia coli CGMCC 1.2389,,identified_provisionally
+DBAASP:22219,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:22219,DBAASP,1,Escherichia coli ATCC 25922,4 clinical isolates,identified_provisionally
+DBAASP:2302,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:357,DBAASP,0,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:357,DBAASP,1,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:3176,DBAASP,0,Escherichia coli CCT 1371,,identified_provisionally
+DBAASP:25377,DBAASP,0,Escherichia coli ATCC 8739,,identified_provisionally
+DBAASP:25339,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2028,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:2028,DBAASP,1,Escherichia coli ML-35,,identified_provisionally
+DBAASP:2028,DBAASP,2,Escherichia coli D21,,identified_provisionally
+DBAASP:2028,DBAASP,3,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:9755,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:708,DBAASP,0,Escherichia coli ML-35,,identified_provisionally
+DBAASP:708,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:708,DBAASP,2,Escherichia coli D21,,identified_provisionally
+DBAASP:708,DBAASP,3,Escherichia coli E44813,Enterotoxigenic strain,identified_provisionally
+DBAASP:708,DBAASP,4,Escherichia coli CICC 10004,,identified_provisionally
+DBAASP:17768,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:25512,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:25512,DBAASP,1,Escherichia coli AIC222,VRE,identified_provisionally
+DBAASP:6131,DBAASP,0,Escherichia coli BL21(DE3),,identified_provisionally
+DBAASP:9129,DBAASP,0,Escherichia coli ATCC 11775,,identified_provisionally
+DBAASP:22772,DBAASP,0,Escherichia coli ATCC BAA-1025,,identified_provisionally
+DBAASP:23022,DBAASP,0,Escherichia coli NBRC 3972,,identified_provisionally
+DBAASP:16636,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:16636,DBAASP,1,Escherichia coli NDM,MDR CPO-NDM clinical isolate,unresolved_strain_or_isolate
+DBAASP:342,DBAASP,0,Escherichia coli IFO 3301,,identified_provisionally
+DBAASP:2399,DBAASP,0,Escherichia coli,None,unresolved_strain_or_isolate
+DBAASP:5839,DBAASP,0,Escherichia coli HB101,,identified_provisionally
+DBAASP:5839,DBAASP,1,Escherichia coli O157:H7 Y-63,,identified_provisionally
+DBAASP:5839,DBAASP,2,Escherichia coli O157:H7 G-35,,identified_provisionally
+DBAASP:5839,DBAASP,3,Escherichia coli O157:H7 OD-30,,identified_provisionally
+DBAASP:20166,DBAASP,0,Escherichia coli O157:H7,,unresolved_strain_or_isolate
+DBAASP:21523,DBAASP,0,Escherichia coli ATCC 1780,,identified_provisionally
+DBAASP:11798,DBAASP,0,Escherichia coli ATCC 25922 ΔwaaC,,identified_provisionally
+DBAASP:11798,DBAASP,1,Escherichia coli ATCC 25922 ΔwaaE,,identified_provisionally
+DBAASP:11798,DBAASP,2,Escherichia coli ATCC 25922 ΔwaaF,,identified_provisionally
+DBAASP:12232,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:14150,DBAASP,0,Escherichia coli MG1655,,identified_provisionally
+DBAASP:3195,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:17621,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:358,DBAASP,0,Escherichia coli ATCC 27325,,identified_provisionally
+DBAASP:3080,DBAASP,0,Escherichia coli KCTC 1682,,identified_provisionally
+DBAASP:15053,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25453,DBAASP,0,Escherichia coli AIC221,,identified_provisionally
+DBAASP:25675,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:25675,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:4049,DBAASP,0,Escherichia coli,,unresolved_strain_or_isolate
+DBAASP:9494,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10700,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10700,DBAASP,1,Escherichia coli ATCC 25922,,identified_provisionally
+DBAASP:10700,DBAASP,2,Escherichia coli CCARM 1229,MDR,identified_provisionally
+DBAASP:10700,DBAASP,3,Escherichia coli CCARM 1229,MDR,identified_provisionally
+DBAASP:10700,DBAASP,4,Escherichia coli CCARM 1238,MDR,identified_provisionally
+DBAASP:10700,DBAASP,5,Escherichia coli CCARM 1238,MDR,identified_provisionally
+DBAASP:16470,DBAASP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DRAMP:DRAMP00336,DRAMP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DRAMP:DRAMP00337,DRAMP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DRAMP:DRAMP00338,DRAMP,0,Escherichia coli ATCC 25922,,identified_provisionally
+DRAMP:DRAMP21455,DRAMP,0,Escherichia coli NBRC 14237,,identified_provisionally

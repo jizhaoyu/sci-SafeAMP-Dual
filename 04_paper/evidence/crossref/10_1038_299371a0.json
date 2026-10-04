@@ -1,0 +1,540 @@
+{
+  "url": "https://api.crossref.org/works/10.1038/299371a0",
+  "retrieved_at": "2026-09-28T14:31:32.097308+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T14:49:34Z",
+      "timestamp": 1790434174915,
+      "version": "4.1.0"
+    },
+    "reference-count": 31,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "5881",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1982,
+              9,
+              1
+            ]
+          ],
+          "date-time": "1982-09-01T00:00:00Z",
+          "timestamp": 399686400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nature"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1982,
+          9
+        ]
+      ]
+    },
+    "DOI": "10.1038/299371a0",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          11,
+          17
+        ]
+      ],
+      "date-time": "2004-11-17T16:54:40Z",
+      "timestamp": 1100710480000
+    },
+    "page": "371-374",
+    "source": "Crossref",
+    "is-referenced-by-count": 923,
+    "title": [
+      "The helical hydrophobic moment: a measure of the amphiphilicity of a helix"
+    ],
+    "prefix": "10.1038",
+    "volume": "299",
+    "author": [
+      {
+        "given": "David",
+        "family": "Eisenberg",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert M.",
+        "family": "Weiss",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas C.",
+        "family": "Terwilliger",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "reference": [
+      {
+        "key": "BF299371a0_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "669",
+        "DOI": "10.1016/S0022-2836(65)80134-6",
+        "volume": "13",
+        "author": "MF Perutz",
+        "year": "1965",
+        "unstructured": "Perutz, M. F., Kendrew, J. C. & Watson, H. C. J. molec. Biol. 13, 669–678 (1965).",
+        "journal-title": "J. molec. Biol."
+      },
+      {
+        "key": "BF299371a0_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "121",
+        "DOI": "10.1016/S0006-3495(67)86579-2",
+        "volume": "7",
+        "author": "M Schiffer",
+        "year": "1967",
+        "unstructured": "Schiffer, M. & Edmundson, A. B. Biophys. J. 7, 121–135 (1967).",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "BF299371a0_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "93",
+        "DOI": "10.1016/0304-4157(77)90015-6",
+        "volume": "472",
+        "author": "JD Morrisett",
+        "year": "1977",
+        "unstructured": "Morrisett, J. D., Jackson, R. L. & Gotto, A. M. Jr Biochim. biophys. Acta 472, 93–133 (1977).",
+        "journal-title": "Biochim. biophys. Acta"
+      },
+      {
+        "key": "BF299371a0_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "247",
+        "DOI": "10.1016/0014-5793(74)80064-5",
+        "volume": "38",
+        "author": "JP Segrest",
+        "year": "1974",
+        "unstructured": "Segrest, J. P., Jackson, R. L., Morrisett, J. D. & Gotto, A. M. Jr FEBS Lett. 38, 247–253 (1974).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BF299371a0_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "2053",
+        "DOI": "10.1002/bip.1977.360160916",
+        "volume": "16",
+        "author": "JP Segrest",
+        "year": "1977",
+        "unstructured": "Segrest, J. P. & Feldman, R. J. Biopolymers 16, 2053–2065 (1977).",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "BF299371a0_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "679",
+        "DOI": "10.1021/ja00393a035",
+        "volume": "103",
+        "author": "WF DeGrado",
+        "year": "1981",
+        "unstructured": "DeGrado, W. F., Kezdy, F. J. & Kaiser, E. T. J. Am. chem. Soc. 103, 679–681 (1981).",
+        "journal-title": "J. Am. chem. Soc."
+      },
+      {
+        "key": "BF299371a0_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/0301-4622(75)80033-0",
+        "volume": "3",
+        "author": "OB Ptitsyn",
+        "year": "1975",
+        "unstructured": "Ptitsyn, O. B. & Rashin, A. A. Biophys. Chem. 3, 1–20 (1975).",
+        "journal-title": "A. Biophys. Chem."
+      },
+      {
+        "key": "BF299371a0_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "491",
+        "DOI": "10.1038/277491a0",
+        "volume": "277",
+        "author": "J Janin",
+        "year": "1979",
+        "unstructured": "Janin, J. Nature 277, 491–492 (1979).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BF299371a0_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "849",
+        "DOI": "10.1021/bi00507a030",
+        "volume": "20",
+        "author": "R Wolfenden",
+        "year": "1981",
+        "unstructured": "Wolfenden, R., Andersson, L., Cullis, P. M. & Southgate, C. C. B. Biochemistry 20, 849–855 (1981).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BF299371a0_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "175",
+        "DOI": "10.1111/j.1432-1033.1979.tb13100.x",
+        "volume": "97",
+        "author": "G von Heijne",
+        "year": "1979",
+        "unstructured": "von Heijne, G. & Blomberg, C. Eur. J. Biochem. 97, 175–181 (1979).",
+        "journal-title": "Eur. J. Biochem."
+      },
+      {
+        "key": "BF299371a0_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1016/0022-2836(76)90191-1",
+        "volume": "105",
+        "author": "C Chothia",
+        "year": "1976",
+        "unstructured": "Chothia, C. J. molec. Biol. 105, 1–14 (1976).",
+        "journal-title": "J. molec. Biol."
+      },
+      {
+        "key": "BF299371a0_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "853",
+        "DOI": "10.1016/0022-2836(74)90090-4",
+        "volume": "87",
+        "author": "JP Segrest",
+        "year": "1974",
+        "unstructured": "Segrest, J. P. & Feldman, R. J. J. molec. Biol. 87, 853–858 (1974).",
+        "journal-title": "J. molec. Biol"
+      },
+      {
+        "key": "BF299371a0_CR13",
+        "first-page": "3",
+        "volume": "33",
+        "author": "R Henderson",
+        "year": "1979",
+        "unstructured": "Henderson, R. Soc. gen. Physiol. 33, 3–15 (1979).",
+        "journal-title": "Soc. gen. Physiol"
+      },
+      {
+        "key": "BF299371a0_CR14",
+        "volume-title": "Atlas of Macromolecular Structure on Microfiche",
+        "author": "RJ Feldman",
+        "year": "1976",
+        "unstructured": "Feldman, R. J. Atlas of Macromolecular Structure on Microfiche (Tracer Jitco, Rockville, Maryland, 1976)."
+      },
+      {
+        "key": "BF299371a0_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "314",
+        "DOI": "10.1126/science.177.4046.314",
+        "volume": "177",
+        "author": "E Habermann",
+        "year": "1972",
+        "unstructured": "Habermann, E. Science 177, 314–322 (1972).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "BF299371a0_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "241",
+        "DOI": "10.1016/0014-5793(73)80202-9",
+        "volume": "33",
+        "author": "G Kriel",
+        "year": "1973",
+        "unstructured": "Kriel, G. FEBS Lett. 33, 241–244 (1973).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BF299371a0_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "209",
+        "DOI": "10.1016/0014-5793(80)81170-7",
+        "volume": "115",
+        "author": "JE Fitton",
+        "year": "1980",
+        "unstructured": "Fitton, J. E., Dell, A. & Shaw, W. V. FEBS Lett. 115, 209–212 (1980).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BF299371a0_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "6016",
+        "DOI": "10.1016/S0021-9258(20)65098-0",
+        "volume": "257",
+        "author": "TC Terwilliger",
+        "year": "1982",
+        "unstructured": "Terwilliger, T. C. & Eisenberg, D. J. biol. Chem. 257, 6016–6022 (1982).",
+        "journal-title": "J. biol. Chem."
+      },
+      {
+        "key": "BF299371a0_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "353",
+        "DOI": "10.1016/S0006-3495(82)84683-3",
+        "volume": "37",
+        "author": "TC Terwilliger",
+        "year": "1982",
+        "unstructured": "Terwilliger, T. C., Weissman, L. & Eisenberg, D. Biophys. J. 37, 353–361 (1982).",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "BF299371a0_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "358",
+        "DOI": "10.1016/0006-291X(81)91753-8",
+        "volume": "99",
+        "author": "G Kayser",
+        "year": "1981",
+        "unstructured": "Kayser, G. et al. Biochem. biophys. Res. Commun. 99, 358–363 (1981).",
+        "journal-title": "Biochem. biophys. Res. Commun."
+      },
+      {
+        "key": "BF299371a0_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "2023",
+        "DOI": "10.1073/pnas.77.4.2023",
+        "volume": "77",
+        "author": "DM Engelman",
+        "year": "1980",
+        "unstructured": "Engelman, D. M., Henderson, R., McLachlan, A. D. & Wallace, B. A. Proc. natn. Acad. Sci. U.S.A. 77, 2023–2027 (1980).",
+        "journal-title": "Proc. natn. Acad. Sci. U.S.A."
+      },
+      {
+        "key": "BF299371a0_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "366",
+        "DOI": "10.1038/289366a0",
+        "volume": "289",
+        "author": "IA Wilson",
+        "year": "1981",
+        "unstructured": "Wilson, I. A., Wiley, D. C. & Skehel, J. J. Nature 289, 366–373 (1981).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BF299371a0_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "471",
+        "DOI": "10.1038/282471a0",
+        "volume": "282",
+        "author": "AG Porter",
+        "year": "1979",
+        "unstructured": "Porter, A. G. et al. Nature 282, 471–477 (1979).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BF299371a0_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "362",
+        "DOI": "10.1038/276362a0",
+        "volume": "276",
+        "author": "AC Bloomer",
+        "year": "1978",
+        "unstructured": "Bloomer, A. C., Champness, J. N., Bricogne, G., Staden, R. & Klug, A. Nature 276, 362–368 (1978).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BF299371a0_CR25",
+        "first-page": "D283",
+        "volume-title": "Atlas of Protein Sequence and Structure",
+        "author": "MO Dayhoff",
+        "year": "1972",
+        "unstructured": "Dayhoff, M. O. Atlas of Protein Sequence and Structure Vol. 5, D283 (National Biomedical Research Foundation, Washington DC, 1972)."
+      },
+      {
+        "key": "BF299371a0_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "21",
+        "DOI": "10.1016/0003-9861(78)90139-X",
+        "volume": "185",
+        "author": "H Furthmayr",
+        "year": "1978",
+        "unstructured": "Furthmayr, H., Galardy, R. E., Tomita, M. & Marchesi, V. T. Archs Biochem. Biophys. 185, 21–29 (1978).",
+        "journal-title": "Archs Biochem. Biophys."
+      },
+      {
+        "key": "BF299371a0_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "3884",
+        "DOI": "10.1073/pnas.77.7.3884",
+        "volume": "77",
+        "author": "JK Rose",
+        "year": "1980",
+        "unstructured": "Rose, J. K., Welch, W. J., Sefton, B. M., Esch, F. S. & Ling, N. C. Proc. natn. Acad. Sci. U.S.A. 77, 3884–3888 (1980).",
+        "journal-title": "Proc. natn. Acad. Sci. U.S.A."
+      },
+      {
+        "key": "BF299371a0_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "771",
+        "DOI": "10.1038/286771a0",
+        "volume": "286",
+        "author": "M Verhoeyen",
+        "year": "1980",
+        "unstructured": "Verhoeyen, M. et al. Nature 286, 771–776 (1980).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BF299371a0_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "303",
+        "DOI": "10.1016/0092-8674(80)90616-9",
+        "volume": "20",
+        "author": "J Rogers",
+        "year": "1980",
+        "unstructured": "Rogers, J. et al. Cell 20, 303–312 (1980).",
+        "journal-title": "Cell"
+      },
+      {
+        "key": "BF299371a0_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "183",
+        "DOI": "10.1016/0014-5793(78)81090-4",
+        "volume": "96",
+        "author": "G Frank",
+        "year": "1978",
+        "unstructured": "Frank, G. et al. FEBS Lett. 96, 183–188 (1978).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BF299371a0_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "861",
+        "DOI": "10.1126/science.7001628",
+        "volume": "210",
+        "author": "W Wickner",
+        "year": "1980",
+        "unstructured": "Wickner, W. Science 210, 861–868 (1980).",
+        "journal-title": "Science"
+      }
+    ],
+    "container-title": [
+      "Nature"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/299371a0",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/299371a0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/299371a0.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          16
+        ]
+      ],
+      "date-time": "2023-05-16T21:11:31Z",
+      "timestamp": 1684271491000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/299371a0"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1982,
+          9
+        ]
+      ]
+    },
+    "references-count": 31,
+    "journal-issue": {
+      "issue": "5881",
+      "published-print": {
+        "date-parts": [
+          [
+            1982,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "BF299371a0"
+    ],
+    "URL": "https://doi.org/10.1038/299371a0",
+    "relation": {},
+    "ISSN": [
+      "0028-0836",
+      "1476-4687"
+    ],
+    "issn-type": [
+      {
+        "value": "0028-0836",
+        "type": "print"
+      },
+      {
+        "value": "1476-4687",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1982,
+          9
+        ]
+      ]
+    }
+  }
+}

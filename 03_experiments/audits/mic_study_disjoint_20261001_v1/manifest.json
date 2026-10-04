@@ -1,0 +1,102 @@
+{
+  "status": "feasible_for_training_review",
+  "generated_at": "2026-10-01T09:35:08.412839+00:00",
+  "protocol_id": "protocol-mic-study-01",
+  "protocol_sha256": "6ddb23d9b616581961a9ba269fa4eb787b846a1e371dacf8190d3c66085273d8",
+  "parent_cohort_protocol_id": "protocol-mic-01",
+  "cohort_size": 395,
+  "original_homology_components": 90,
+  "combined_components": 63,
+  "largest_combined_component": 318,
+  "primary_study_identifier_count": 665,
+  "primary_study_count_after_alias_merge": 269,
+  "study_bridges_across_original_homology_components": 17,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 77,
+      "validation_n": 318,
+      "train_positive": 46,
+      "train_negative": 31,
+      "validation_positive": 211,
+      "validation_negative": 107,
+      "shared_components": 0,
+      "shared_primary_studies": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 1,
+      "train_n": 376,
+      "validation_n": 19,
+      "train_positive": 246,
+      "train_negative": 130,
+      "validation_positive": 11,
+      "validation_negative": 8,
+      "shared_components": 0,
+      "shared_primary_studies": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 2,
+      "train_n": 375,
+      "validation_n": 20,
+      "train_positive": 245,
+      "train_negative": 130,
+      "validation_positive": 12,
+      "validation_negative": 8,
+      "shared_components": 0,
+      "shared_primary_studies": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 3,
+      "train_n": 375,
+      "validation_n": 20,
+      "train_positive": 245,
+      "train_negative": 130,
+      "validation_positive": 12,
+      "validation_negative": 8,
+      "shared_components": 0,
+      "shared_primary_studies": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 4,
+      "train_n": 377,
+      "validation_n": 18,
+      "train_positive": 246,
+      "train_negative": 131,
+      "validation_positive": 11,
+      "validation_negative": 7,
+      "shared_components": 0,
+      "shared_primary_studies": 0,
+      "gate_passed": true
+    }
+  ],
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "blockers": [],
+  "warnings": [
+    "Highly imbalanced study-disjoint folds: sizes=[318, 19, 20, 20, 18]; largest combined component=318/395."
+  ],
+  "training_performed": false,
+  "formal_study_status": "blocked_unmodified",
+  "input_sha256": {
+    "03_experiments\\protocols\\protocol-mic-study-01.json": "333a8601d6730968b4468075d33a46d61b845fd473f7779cfd2249b68a6db589",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v3\\manifest.json": "721a6ef9c4b63d77f154501378c84fed20b5488eaeb5cd2fa9d9aa4fee370bf5",
+    "03_experiments\\audits\\mic_baseline_diagnostics_20261001_v8\\manifest.json": "fa585a630ad08a319b365ab950952799f87953001b68061316b90d6282587545",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v3\\molecule_components.csv": "10905d251b82753fbf6d15b7f8b65e79e893e6f43a7f4fd0bb4cbac957825d6a",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v3\\all_member_similarity.csv": "6f5f3e0dd0e895ecf1b0dc15febe98d8f7d9853ddbc14c5f3d4eb50ada9f2bab",
+    "03_experiments\\audits\\mic_baseline_diagnostics_20261001_v8\\assay_observations.csv": "0c940a5618b129825dcd3a2f0c193bc93435aeaff9c94dc01fcd4ebc162e081c",
+    "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+    "03_experiments\\audits\\dramp_verified_ecoli_mic_20261001_v6\\records.csv": "f4fce52de8bfb067e5f6132d49b5a0ba6d0ecf9e37b4e0942c96c9e8c8fbaf83"
+  },
+  "outputs": [
+    "combined_components.csv",
+    "component_summary.csv",
+    "study_aliases.csv",
+    "study_bridges.csv",
+    "fold_assignments.csv",
+    "report.md"
+  ]
+}

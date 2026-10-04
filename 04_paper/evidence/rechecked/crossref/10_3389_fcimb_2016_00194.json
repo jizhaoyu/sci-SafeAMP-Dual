@@ -1,0 +1,1393 @@
+{
+  "url": "https://api.crossref.org/works/10.3389/fcimb.2016.00194",
+  "retrieved_at": "2026-09-28T14:55:54.719637+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T13:26:32Z",
+      "timestamp": 1790515592450,
+      "version": "4.1.0"
+    },
+    "reference-count": 111,
+    "publisher": "Frontiers Media SA",
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Cell. Infect. Microbiol."
+    ],
+    "DOI": "10.3389/fcimb.2016.00194",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          26
+        ]
+      ],
+      "date-time": "2016-12-26T22:46:15Z",
+      "timestamp": 1482792375000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1762,
+    "title": [
+      "Antimicrobial Peptides: An Emerging Category of Therapeutic Agents"
+    ],
+    "prefix": "10.3389",
+    "volume": "6",
+    "author": [
+      {
+        "given": "Margit",
+        "family": "Mahlapuu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joakim",
+        "family": "Håkansson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lovisa",
+        "family": "Ringstad",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Camilla",
+        "family": "Björn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          27
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "publisher",
+        "first-page": "239",
+        "DOI": "10.1385/mb:33:3:239",
+        "article-title": "Methods and protocols of modern solid phase Peptide synthesis",
+        "volume": "33",
+        "author": "Amblard",
+        "year": "2006",
+        "journal-title": "Mol. Biotechnol."
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "43",
+        "DOI": "10.1016/j.drup.2016.04.002",
+        "article-title": "Mechanisms and consequences of bacterial resistance to antimicrobial peptides",
+        "volume": "26",
+        "author": "Andersson",
+        "year": "2016",
+        "journal-title": "Drug Resist. Updat."
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "141",
+        "DOI": "10.1186/rr25",
+        "article-title": "Epithelial antimicrobial peptides in host defense against infection",
+        "volume": "1",
+        "author": "Bals",
+        "year": "2000",
+        "journal-title": "Respir. Res."
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "first-page": "874",
+        "DOI": "10.1172/jci2410",
+        "article-title": "Human beta-defensin 2 is a salt-sensitive peptide antibiotic expressed in human lung",
+        "volume": "102",
+        "author": "Bals",
+        "year": "1998",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1186/2191-0855-2-67",
+        "article-title": "Anti-infectious and anti-inflammatory effects of peptide fragments sequentially derived from the antimicrobial peptide centrocin 1 isolated from the green sea urchin, Strongylocentrotus droebachiensis",
+        "volume": "2",
+        "author": "Björn",
+        "year": "2012",
+        "journal-title": "AMB Express"
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "first-page": "519",
+        "DOI": "10.1016/j.ijantimicag.2014.12.015",
+        "article-title": "Efficacy and safety profile of the novel antimicrobial peptide PXL150 in a mouse model of infected burn wounds",
+        "volume": "45",
+        "author": "Björn",
+        "year": "2015",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "4217",
+        "DOI": "10.1021/acs.langmuir.6b00338",
+        "article-title": "Lipid-based liquid crystals as carriers for antimicrobial peptides: phase behavior and antimicrobial effect",
+        "volume": "32",
+        "author": "Boge",
+        "year": "2016",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "B8",
+        "doi-asserted-by": "publisher",
+        "first-page": "61",
+        "DOI": "10.1146/annurev.iy.13.040195.000425",
+        "article-title": "Peptide antibiotics and their role in innate immunity",
+        "volume": "13",
+        "author": "Boman",
+        "year": "1995",
+        "journal-title": "Annu. Rev. Immunol."
+      },
+      {
+        "key": "B9",
+        "doi-asserted-by": "publisher",
+        "first-page": "161",
+        "DOI": "10.1016/j.jcis.2016.05.002",
+        "article-title": "Membrane interactions of mesoporous silica nanoparticles as carriers of antimicrobial peptides",
+        "volume": "475",
+        "author": "Braun",
+        "year": "2016",
+        "journal-title": "J. Colloid Interface Sci."
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "first-page": "587",
+        "DOI": "10.1038/nrd1133",
+        "article-title": "Large-scale manufacture of peptide therapeutics by chemical synthesis",
+        "volume": "2",
+        "author": "Bray",
+        "year": "2003",
+        "journal-title": "Nat. Rev. Drug Discov."
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "first-page": "377",
+        "DOI": "10.2217/fmb.15.8",
+        "article-title": "Breaking barriers: expansion of the use of endolysins as novel antibacterials against Gram-negative bacteria",
+        "volume": "10",
+        "author": "Briers",
+        "year": "2015",
+        "journal-title": "Fut. Microbiol."
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "3774",
+        "DOI": "10.1128/AAC.02668-14",
+        "article-title": "Art-175 is a highly efficient antibacterial against multidrug-resistant strains and persisters of Pseudomonas aeruginosa",
+        "volume": "58",
+        "author": "Briers",
+        "year": "2014a",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "e01379",
+        "DOI": "10.1128/mBio.01379-14",
+        "article-title": "Engineered endolysin-based “Artilysins” to combat multidrug-resistant gram-negative pathogens",
+        "volume": "5",
+        "author": "Briers",
+        "year": "2014b",
+        "journal-title": "mBio"
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "326",
+        "DOI": "10.1002/(SICI)1097-0215(19991029)83:3326::AID-IJC73.0.CO;2-X",
+        "article-title": "Terminal modifications inhibit proteolytic degradation of an immunogenic MART-127−35 peptide: implications for peptide vaccines",
+        "volume": "83",
+        "author": "Brinckerhoff",
+        "year": "1999",
+        "journal-title": "Int. J. Cancer"
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "238",
+        "DOI": "10.1038/nrmicro1098",
+        "article-title": "Antimicrobial peptides: pore formers or metabolic inhibitors in bacteria?",
+        "volume": "3",
+        "author": "Brogden",
+        "year": "2005",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "46",
+        "DOI": "10.2500/ajra.2009.23.3261",
+        "article-title": "Effects of an LL-37-derived antimicrobial peptide in an animal model of biofilm Pseudomonas sinusitis",
+        "volume": "23",
+        "author": "Chennupati",
+        "year": "2009",
+        "journal-title": "Am. J. Rhinol. Allergy"
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "publisher",
+        "first-page": "2935",
+        "DOI": "10.1074/jbc.271.6.2935",
+        "article-title": "Identification of defensin-1, defensin-2, and CAP37/azurocidin as T-cell chemoattractant proteins released from interleukin-8-stimulated neutrophils",
+        "volume": "271",
+        "author": "Chertov",
+        "year": "1996",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "2845",
+        "DOI": "10.1128/aac.49.7.2845-2850.2005",
+        "article-title": "Antimicrobial and chemoattractant activity, lipopolysaccharide neutralization, cytotoxicity, and inhibition by serum of analogs of human cathelicidin LL-37",
+        "volume": "49",
+        "author": "Ciornei",
+        "year": "2005",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "404",
+        "DOI": "10.1021/la504407v",
+        "article-title": "Effect of divalent cation removal on the structure of gram-negative bacterial outer membrane models",
+        "volume": "31",
+        "author": "Clifton",
+        "year": "2015",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "239",
+        "DOI": "10.1016/s1473-3099(15)00466-1",
+        "article-title": "Alternatives to antibiotics-a pipeline portfolio review",
+        "volume": "16",
+        "author": "Czaplewski",
+        "year": "2016",
+        "journal-title": "Lancet Infect. Dis."
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "717",
+        "DOI": "10.1016/j.colsurfb.2015.08.027",
+        "article-title": "Overcoming barriers in Pseudomonas aeruginosa lung infections: engineered nanoparticles for local delivery of a cationic antimicrobial peptide",
+        "volume": "135",
+        "author": "d'Angelo",
+        "year": "2015",
+        "journal-title": "Colloids Surf. B Biointerf."
+      },
+      {
+        "key": "B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "1146",
+        "DOI": "10.4049/jimmunol.172.2.1146",
+        "article-title": "The cationic antimicrobial peptide LL-37 modulates dendritic cell differentiation and dendritic cell-induced T cell polarization",
+        "volume": "172",
+        "author": "Davidson",
+        "year": "2004",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "3480",
+        "DOI": "10.1128/AAC.00285-16",
+        "article-title": "Efficacy of artilysin Art-175 against resistant and persistent Acinetobacter baumannii",
+        "volume": "60",
+        "author": "Defraine",
+        "year": "2016",
+        "journal-title": "Antimicrob. Chemother."
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "35",
+        "DOI": "10.1096/fj.05-4406com",
+        "article-title": "The mammalian ionic environment dictates microbial susceptibility to antimicrobial defense peptides",
+        "volume": "20",
+        "author": "Dorschner",
+        "year": "2006",
+        "journal-title": "FASEB J."
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.1046/j.1523-1747.2001.01340.x",
+        "article-title": "Cutaneous injury induces the release of cathelicidin anti-microbial peptides active against group A Streptococcus",
+        "volume": "117",
+        "author": "Dorschner",
+        "year": "2001",
+        "journal-title": "J. Invest. Dermatol."
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "iii35",
+        "DOI": "10.1093/jac/dkq302",
+        "article-title": "Complicated skin and soft tissue infection",
+        "volume": "65",
+        "author": "Dryden",
+        "year": "2010",
+        "journal-title": "J. Antimicrob. Chemother."
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "867381",
+        "DOI": "10.1155/2014/867381",
+        "article-title": "Antimicrobial peptides: their role as infection-selective tracers for molecular imaging",
+        "volume": "2014",
+        "author": "Ebenhan",
+        "year": "2014",
+        "journal-title": "BioMed Res. Int."
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "first-page": "635",
+        "DOI": "10.2217/fmb.11.27",
+        "article-title": "Road to clinical efficacy: challenges and novel strategies for antimicrobial peptide development",
+        "volume": "6",
+        "author": "Eckert",
+        "year": "2011",
+        "journal-title": "Fut. Microbiol."
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/03009734.2016.1230157",
+        "article-title": "PXL01 in Sodium Hyaluronate results in increased PRG4 expression: a potential mechanism for anti-adhesion",
+        "author": "Edsfeldt",
+        "year": "2016",
+        "journal-title": "Ups. J. Med. Sci"
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "first-page": "11",
+        "DOI": "10.1016/S0005-2736(99)00198-4",
+        "article-title": "Diversity of antimicrobial peptides and their mechanisms of action",
+        "volume": "1462",
+        "author": "Epand",
+        "year": "1999",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "1333",
+        "DOI": "10.1086/429323",
+        "article-title": "Colistin: the revival of polymyxins for the management of multidrug-resistant gram-negative bacterial infections",
+        "volume": "40",
+        "author": "Falagas",
+        "year": "2005",
+        "journal-title": "Clin. Infect. Dis."
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "R27",
+        "DOI": "10.1186/cc3995",
+        "article-title": "Toxicity of polymyxins: a systematic review of the evidence from old and recent studies",
+        "volume": "10",
+        "author": "Falagas",
+        "year": "2006",
+        "journal-title": "Crit. Care"
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "first-page": "37",
+        "DOI": "10.1038/nrd3591",
+        "article-title": "Designing antimicrobial peptides: form follows function",
+        "volume": "11",
+        "author": "Fjell",
+        "year": "2012",
+        "journal-title": "Nat. Rev. Drug Discov."
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "379",
+        "DOI": "10.1038/nbt.2572",
+        "article-title": "Antimicrobial peptides stage a comeback",
+        "volume": "31",
+        "author": "Fox",
+        "year": "2013",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.2478/s11535-007-0010-5",
+        "article-title": "Antimicrobial peptides: an overview of a promising class of therapeutics",
+        "volume": "2",
+        "author": "Giuliani",
+        "year": "2007",
+        "journal-title": "Cent. Eur. J. Biol."
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "553",
+        "DOI": "10.1016/S0092-8674(00)81895-4",
+        "article-title": "Human β-defensin-1 is a salt-sensitive antibiotic in lung that is inactivated in cystic fibrosis",
+        "volume": "88",
+        "author": "Goldman",
+        "year": "1997",
+        "journal-title": "Cell"
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "first-page": "613",
+        "DOI": "10.1111/wrr.12211",
+        "article-title": "Treatment with LL-37 is safe and effective in enhancing healing of hard-to-heal venous leg ulcers: a randomized, placebo-controlled clinical trial",
+        "volume": "22",
+        "author": "Grönberg",
+        "year": "2014",
+        "journal-title": "Wound Repair Regen."
+      },
+      {
+        "key": "B38",
+        "doi-asserted-by": "publisher",
+        "first-page": "418",
+        "DOI": "10.1016/s0140-6736(97)80051-7",
+        "article-title": "Peptide antibiotics",
+        "volume": "349",
+        "author": "Hancock",
+        "year": "1997",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "B39",
+        "doi-asserted-by": "publisher",
+        "first-page": "1723",
+        "DOI": "10.1517/13543784.9.8.1723",
+        "article-title": "Cationic antimicrobial peptides: towards clinical applications",
+        "volume": "9",
+        "author": "Hancock",
+        "year": "2000",
+        "journal-title": "Expert Opin. Invest. Drugs"
+      },
+      {
+        "key": "B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "1317",
+        "DOI": "10.1128/AAC.43.6.1317",
+        "article-title": "Peptide antibiotics",
+        "volume": "43",
+        "author": "Hancock",
+        "year": "1999",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B41",
+        "doi-asserted-by": "publisher",
+        "first-page": "243",
+        "DOI": "10.1038/nrmicro2745",
+        "article-title": "Modulating immunity as a therapy for bacterial infections",
+        "volume": "10",
+        "author": "Hancock",
+        "year": "2012",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "first-page": "1551",
+        "DOI": "10.1038/nbt1267",
+        "article-title": "Antimicrobial and host-defense peptides as new anti-infective therapeutic strategies",
+        "volume": "24",
+        "author": "Hancock",
+        "year": "2006",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "B43",
+        "doi-asserted-by": "publisher",
+        "first-page": "402",
+        "DOI": "10.1016/S0966-842X(00)01823-0",
+        "article-title": "The role of cationic antimicrobial peptides in innate host defences",
+        "volume": "8",
+        "author": "Hancock",
+        "year": "2000",
+        "journal-title": "Trends Microbiol."
+      },
+      {
+        "key": "B44",
+        "doi-asserted-by": "publisher",
+        "first-page": "723",
+        "DOI": "10.1111/j.1365-2672.2012.05338.x",
+        "article-title": "Natural antimicrobial peptides from bacteria: characteristics and potential applications to fight against antibiotic resistance",
+        "volume": "113",
+        "author": "Hassan",
+        "year": "2012",
+        "journal-title": "J. Appl. Microbiol."
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "first-page": "83",
+        "DOI": "10.1016/S0008-8749(03)00006-6",
+        "article-title": "Lactoferrin down-regulates the LPS-induced cytokine production in monocytic cells via NF-κB",
+        "volume": "220",
+        "author": "Håversen",
+        "year": "2002",
+        "journal-title": "Cell. Immunol."
+      },
+      {
+        "key": "B46",
+        "doi-asserted-by": "publisher",
+        "first-page": "e83836",
+        "DOI": "10.1371/journal.pone.0083836",
+        "article-title": "The effect of lubricin on the gliding resistance of mouse intrasynovial tendon",
+        "volume": "8",
+        "author": "Hayashi",
+        "year": "2013",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "B47",
+        "doi-asserted-by": "publisher",
+        "first-page": "3387",
+        "DOI": "10.1128/aac.49.8.3387-3395.2005",
+        "article-title": "Human lactoferricin is partially folded in aqueous solution and is better stabilized in a membrane mimetic solvent",
+        "volume": "49",
+        "author": "Hunter",
+        "year": "2005",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B48",
+        "doi-asserted-by": "publisher",
+        "first-page": "5729",
+        "DOI": "10.1016/j.biomaterials.2009.07.003",
+        "article-title": "Incorporation of antimicrobial compounds in mesoporous silica film monolith",
+        "volume": "30",
+        "author": "Izquierdo-Barba",
+        "year": "2009",
+        "journal-title": "Biomaterials"
+      },
+      {
+        "key": "B49",
+        "doi-asserted-by": "publisher",
+        "first-page": "491",
+        "DOI": "10.1128/cmr.00056-05",
+        "article-title": "Peptide antimicrobial agents",
+        "volume": "19",
+        "author": "Jenssen",
+        "year": "2006",
+        "journal-title": "Clin. Microbiol. Rev."
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "publisher",
+        "first-page": "689",
+        "DOI": "10.1080/13543776.2016.1176149",
+        "article-title": "Antimicrobial peptides (AMPs) as drug candidates: a patent review (2003-2015)",
+        "volume": "26",
+        "author": "Kosikowska",
+        "year": "2016",
+        "journal-title": "Expert Opin. Ther. Pat."
+      },
+      {
+        "key": "B51",
+        "doi-asserted-by": "publisher",
+        "first-page": "131",
+        "DOI": "10.1016/j.it.2008.12.003",
+        "article-title": "AMPed up immunity: how antimicrobial peptides have multiple roles in immune defense",
+        "volume": "30",
+        "author": "Lai",
+        "year": "2009",
+        "journal-title": "Trends Immunol."
+      },
+      {
+        "key": "B52",
+        "doi-asserted-by": "publisher",
+        "first-page": "1047",
+        "DOI": "10.2165/00003495-199856060-00011",
+        "article-title": "Pexiganan acetate",
+        "volume": "56",
+        "author": "Lamb",
+        "year": "1998",
+        "journal-title": "Drugs"
+      },
+      {
+        "key": "B53",
+        "doi-asserted-by": "publisher",
+        "first-page": "449",
+        "DOI": "10.1128/cmr.00006-08",
+        "article-title": "Polymyxins revisited",
+        "volume": "21",
+        "author": "Landman",
+        "year": "2008",
+        "journal-title": "Clin. Microbiol. Rev."
+      },
+      {
+        "key": "B54",
+        "doi-asserted-by": "publisher",
+        "first-page": "273",
+        "DOI": "10.1016/j.febslet.2007.12.015",
+        "article-title": "F2L, a peptide derived from heme-binding protein, inhibits LL-37-induced cell proliferation and tube formation in human umbilical vein endothelial cells",
+        "volume": "582",
+        "author": "Lee",
+        "year": "2008",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "B55",
+        "doi-asserted-by": "publisher",
+        "first-page": "2549",
+        "DOI": "10.1007/s00018-005-5370-2",
+        "article-title": "Lactoferrin: a modulator of immune and inflammatory responses",
+        "volume": "62",
+        "author": "Legrand",
+        "year": "2005",
+        "journal-title": "Cell. Mol. Life Sci."
+      },
+      {
+        "key": "B56",
+        "doi-asserted-by": "publisher",
+        "first-page": "4255",
+        "DOI": "10.1007/s00253-016-7468-x",
+        "article-title": "Organization and function of anionic phospholipids in bacteria",
+        "volume": "100",
+        "author": "Lin",
+        "year": "2016",
+        "journal-title": "Appl. Microbiol. Biotechnol."
+      },
+      {
+        "key": "B57",
+        "doi-asserted-by": "publisher",
+        "first-page": "1537",
+        "DOI": "10.1086/593185",
+        "article-title": "Topical versus systemic antimicrobial therapy for treating mildly infected diabetic foot ulcers: a randomized, controlled, double-blinded, multicenter trial of pexiganan cream",
+        "volume": "47",
+        "author": "Lipsky",
+        "year": "2008",
+        "journal-title": "Clin. Infect. Dis."
+      },
+      {
+        "key": "B58",
+        "doi-asserted-by": "publisher",
+        "first-page": "e68875",
+        "DOI": "10.1371/journal.pone.0068875",
+        "article-title": "Mechanisms and fitness costs of resistance to antimicrobial peptides LL-37, CNY100HL and wheat germ histones",
+        "volume": "8",
+        "author": "Lofton",
+        "year": "2013",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "B59",
+        "doi-asserted-by": "publisher",
+        "first-page": "6896",
+        "DOI": "10.1128/aac.03628-14",
+        "article-title": "Effective control of Salmonella infections by employing combinations of recombinant antimicrobial human beta-defensins hBD-1 and hBD-2",
+        "volume": "58",
+        "author": "Maiti",
+        "year": "2014",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B60",
+        "doi-asserted-by": "publisher",
+        "first-page": "8725",
+        "DOI": "10.1039/C1SM05809F",
+        "article-title": "Antimicrobial and antiviral hydrogels",
+        "volume": "7",
+        "author": "Malmsten",
+        "year": "2011",
+        "journal-title": "Soft Matter"
+      },
+      {
+        "key": "B61",
+        "doi-asserted-by": "publisher",
+        "first-page": "16",
+        "DOI": "10.2174/1568026615666150703121518",
+        "article-title": "Interactions of antimicrobial peptides with bacterial membranes and membrane components",
+        "volume": "16",
+        "author": "Malmsten",
+        "year": "2016",
+        "journal-title": "Curr. Top. Med. Chem."
+      },
+      {
+        "key": "B62",
+        "doi-asserted-by": "publisher",
+        "first-page": "e16400",
+        "DOI": "10.1371/journal.pone.0016400",
+        "article-title": "Highly selective end-tagged antimicrobial peptides derived from PRELP",
+        "volume": "6",
+        "author": "Malmsten",
+        "year": "2011",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "B63",
+        "doi-asserted-by": "publisher",
+        "first-page": "468",
+        "DOI": "10.1016/j.coph.2006.04.006",
+        "article-title": "Antibacterial peptides for therapeutic use: obstacles and realistic outlook",
+        "volume": "6",
+        "author": "Marr",
+        "year": "2006",
+        "journal-title": "Curr. Opin. Pharmacol."
+      },
+      {
+        "key": "B64",
+        "doi-asserted-by": "publisher",
+        "first-page": "1687",
+        "DOI": "10.1016/j.bbamem.2008.09.013",
+        "article-title": "Control of cell selectivity of antimicrobial peptides",
+        "volume": "1788",
+        "author": "Matsuzaki",
+        "year": "2009",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "B65",
+        "doi-asserted-by": "publisher",
+        "first-page": "257",
+        "DOI": "10.1203/00006450-199608000-00011",
+        "article-title": "Lactoferrin or a fragment thereof inhibits the endotoxin-induced interleukin-6 response in human monocytic cells",
+        "volume": "40",
+        "author": "Mattsby-Baltzer",
+        "year": "1996",
+        "journal-title": "Pediatr. Res."
+      },
+      {
+        "key": "B66",
+        "doi-asserted-by": "publisher",
+        "first-page": "616",
+        "DOI": "10.1016/j.coph.2008.06.002",
+        "article-title": "Discovering and improving novel peptide therapeutics",
+        "volume": "8",
+        "author": "McGregor",
+        "year": "2008",
+        "journal-title": "Curr. Opin. Pharmacol."
+      },
+      {
+        "key": "B67",
+        "doi-asserted-by": "publisher",
+        "first-page": "2455",
+        "DOI": "10.4049/jimmunol.176.4.2455",
+        "article-title": "Modulation of the TLR-mediated inflammatory response by the endogenous human host defense peptide LL-37",
+        "volume": "176",
+        "author": "Mookherjee",
+        "year": "2006",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "B68",
+        "doi-asserted-by": "publisher",
+        "first-page": "975",
+        "DOI": "10.1038/nature04051",
+        "article-title": "Plectasin is a peptide antibiotic with therapeutic potential from a saprophytic fungus",
+        "volume": "437",
+        "author": "Mygind",
+        "year": "2005",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "B69",
+        "doi-asserted-by": "publisher",
+        "first-page": "3085",
+        "DOI": "10.1007/s00253-012-4439-8",
+        "article-title": "The novel antimicrobial peptide PXL150 in the local treatment of skin and soft tissue infections",
+        "volume": "97",
+        "author": "Myhrman",
+        "year": "2013",
+        "journal-title": "Appl. Microbiol. Biotechnol."
+      },
+      {
+        "key": "B70",
+        "doi-asserted-by": "publisher",
+        "first-page": "464",
+        "DOI": "10.1016/j.tibtech.2011.05.001",
+        "article-title": "The expanding scope of antimicrobial peptide structures and their modes of action",
+        "volume": "29",
+        "author": "Nguyen",
+        "year": "2011",
+        "journal-title": "Trends Biotechnol."
+      },
+      {
+        "key": "B71",
+        "doi-asserted-by": "publisher",
+        "first-page": "145",
+        "DOI": "10.1128/aac.03513-14",
+        "article-title": "LTX-109 is a novel agent for nasal decolonization of methicillin-resistant and -sensitive Staphylococcus aureus",
+        "volume": "59",
+        "author": "Nilsson",
+        "year": "2015",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B72",
+        "doi-asserted-by": "publisher",
+        "first-page": "1021",
+        "DOI": "10.1097/SLA.0b013e3181b246a7",
+        "article-title": "A novel polypeptide derived from human lactoferrin in sodium hyaluronate prevents postsurgical adhesion formation in the rat",
+        "volume": "250",
+        "author": "Nilsson",
+        "year": "2009",
+        "journal-title": "Ann. Surg."
+      },
+      {
+        "key": "B73",
+        "doi-asserted-by": "publisher",
+        "first-page": "1776",
+        "DOI": "10.4049/jimmunol.175.3.1776",
+        "article-title": "The human β-defensins (−1, −2, −3, −4) and cathelicidin LL-37 induce IL-18 secretion through p38 and ERK MAPK activation in primary human keratinocytes",
+        "volume": "175",
+        "author": "Niyonsaba",
+        "year": "2005",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "B74",
+        "doi-asserted-by": "publisher",
+        "first-page": "454",
+        "DOI": "10.1038/35106587",
+        "article-title": "Innate antimicrobial peptide protects the skin from invasive bacterial infection",
+        "volume": "414",
+        "author": "Nizet",
+        "year": "2001",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "B75",
+        "doi-asserted-by": "publisher",
+        "first-page": "1151",
+        "DOI": "10.1056/NEJMoa021481",
+        "article-title": "Endogenous antimicrobial peptides and skin infections in atopic dermatitis",
+        "volume": "347",
+        "author": "Ong",
+        "year": "2002",
+        "journal-title": "N. Engl. J. Med."
+      },
+      {
+        "key": "B76",
+        "doi-asserted-by": "publisher",
+        "first-page": "143",
+        "DOI": "10.3109/07388551.2011.594423",
+        "article-title": "Antimicrobial peptides: key components of the innate immune system",
+        "volume": "32",
+        "author": "Pasupuleti",
+        "year": "2012",
+        "journal-title": "Crit. Rev. Biotechnol."
+      },
+      {
+        "key": "B77",
+        "doi-asserted-by": "publisher",
+        "first-page": "529",
+        "DOI": "10.1038/nrmicro1441",
+        "article-title": "The co-evolution of host cationic antimicrobial peptides and microbial resistance",
+        "volume": "4",
+        "author": "Peschel",
+        "year": "2006",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "B78",
+        "doi-asserted-by": "publisher",
+        "first-page": "1681",
+        "DOI": "10.1016/j.peptides.2003.08.023",
+        "article-title": "The relationship between peptide structure and antibacterial activity",
+        "volume": "24",
+        "author": "Powers",
+        "year": "2003",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "B79",
+        "doi-asserted-by": "publisher",
+        "first-page": "2734",
+        "DOI": "10.1128/aac.00205-08",
+        "article-title": "Mechanism and fitness costs of PR-39 resistance in Salmonella enterica serovar Typhimurium LT2",
+        "volume": "52",
+        "author": "Pränting",
+        "year": "2008",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B80",
+        "doi-asserted-by": "publisher",
+        "first-page": "103",
+        "DOI": "10.1007/128_2014_609",
+        "article-title": "Solid phase protein chemical synthesis",
+        "volume": "363",
+        "author": "Raibaut",
+        "year": "2015",
+        "journal-title": "Top. Curr. Chem."
+      },
+      {
+        "key": "B81",
+        "doi-asserted-by": "publisher",
+        "first-page": "536",
+        "DOI": "10.1016/j.ijantimicag.2004.09.005",
+        "article-title": "Antimicrobial peptides: premises and promises",
+        "volume": "24",
+        "author": "Reddy",
+        "year": "2004",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "B82",
+        "doi-asserted-by": "publisher",
+        "first-page": "210",
+        "DOI": "10.1016/j.vascn.2010.02.010",
+        "article-title": "To protect peptide pharmaceuticals against peptidases",
+        "volume": "61",
+        "author": "Rink",
+        "year": "2010",
+        "journal-title": "J. Pharmacol. Toxicol. Methods"
+      },
+      {
+        "key": "B83",
+        "doi-asserted-by": "publisher",
+        "first-page": "143",
+        "DOI": "10.1016/j.ijantimicag.2012.09.015",
+        "article-title": "Activity of LL-37, CRAMP and antimicrobial peptide-derived compounds E2, E6 and CP26 against Mycobacterium tuberculosis",
+        "volume": "41",
+        "author": "Rivas-Santiago",
+        "year": "2013",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "B84",
+        "doi-asserted-by": "publisher",
+        "first-page": "457",
+        "DOI": "10.1111/j.1365-4632.2008.03340.x",
+        "article-title": "LL-37 regulates the overexpression of vascular endothelial growth factor (VEGF) and c-IAP-2 in human keratinocytes",
+        "volume": "47",
+        "author": "Rodríguez-Martínez",
+        "year": "2008",
+        "journal-title": "Int. J. Dermatol."
+      },
+      {
+        "key": "B85",
+        "doi-asserted-by": "publisher",
+        "first-page": "1729",
+        "DOI": "10.2217/nnm-2016-0057",
+        "article-title": "Perspectives on polymeric nanostructures for the therapeutic application of antimicrobial peptides",
+        "volume": "11",
+        "author": "Sandreschi",
+        "year": "2016",
+        "journal-title": "Nanomedicine"
+      },
+      {
+        "key": "B86",
+        "doi-asserted-by": "publisher",
+        "first-page": "3883",
+        "DOI": "10.4049/jimmunol.169.7.3883",
+        "article-title": "The human antimicrobial peptide LL-37 is a multifunctional modulator of innate immune responses",
+        "volume": "169",
+        "author": "Scott",
+        "year": "2002",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "B87",
+        "doi-asserted-by": "publisher",
+        "first-page": "L842",
+        "DOI": "10.1152/ajplung.00286.2004",
+        "article-title": "Human endogenous antibiotic LL-37 stimulates airway epithelial cell proliferation and wound closure",
+        "volume": "289",
+        "author": "Shaykhiev",
+        "year": "2005",
+        "journal-title": "Am. J. Physiol. Lung Cell Mol. Physiol."
+      },
+      {
+        "key": "B88",
+        "doi-asserted-by": "publisher",
+        "first-page": "112",
+        "DOI": "10.1016/j.jconrel.2016.05.064",
+        "article-title": "Delivery of LLKKK18 loaded into self-assembling hyaluronic acid nanogel for tuberculosis treatment",
+        "volume": "235",
+        "author": "Silva",
+        "year": "2016",
+        "journal-title": "J. Control. Release"
+      },
+      {
+        "key": "B89",
+        "doi-asserted-by": "publisher",
+        "first-page": "257",
+        "DOI": "10.1002/jor.20731",
+        "article-title": "Lubricin surface modification improves tendon gliding after tendon repair in a canine model in vitro",
+        "volume": "27",
+        "author": "Taguchi",
+        "year": "2009",
+        "journal-title": "J. Orthop. Res."
+      },
+      {
+        "key": "B90",
+        "doi-asserted-by": "publisher",
+        "first-page": "1236",
+        "DOI": "10.1016/j.biochi.2010.02.023",
+        "article-title": "Structural determinants of host defense peptides for antimicrobial activity and target cell selectivity",
+        "volume": "92",
+        "author": "Takahashi",
+        "year": "2010",
+        "journal-title": "Biochimie"
+      },
+      {
+        "key": "B91",
+        "doi-asserted-by": "publisher",
+        "first-page": "717",
+        "DOI": "10.1002/bip.20286",
+        "article-title": "Antimicrobial peptides: new candidates in the fight against bacterial infections",
+        "volume": "80",
+        "author": "Toke",
+        "year": "2005",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "B92",
+        "doi-asserted-by": "publisher",
+        "first-page": "4662",
+        "DOI": "10.4049/jimmunol.175.7.4662",
+        "article-title": "Induction of keratinocyte migration via transactivation of the epidermal growth factor receptor by the antimicrobial peptide LL-37",
+        "volume": "175",
+        "author": "Tokumaru",
+        "year": "2005",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "B93",
+        "doi-asserted-by": "publisher",
+        "first-page": "100",
+        "DOI": "10.1016/j.ejpb.2016.09.001",
+        "article-title": "Antibacterial action of lipid nanocapsules containing fatty acids or monoglycerides as co-surfactants",
+        "volume": "108",
+        "author": "Umerska",
+        "year": "2016a",
+        "journal-title": "Eur. J. Pharm. Biopharm."
+      },
+      {
+        "key": "B94",
+        "doi-asserted-by": "publisher",
+        "first-page": "191",
+        "DOI": "10.1016/j.ijpharm.2016.04.028",
+        "article-title": "Understanding the adsorption of salmon calcitonin, antimicrobial peptide AP114 and polymyxin B onto lipid nanocapsules",
+        "volume": "506",
+        "author": "Umerska",
+        "year": "2016b",
+        "journal-title": "Int. J. Pharm."
+      },
+      {
+        "key": "B95",
+        "doi-asserted-by": "publisher",
+        "first-page": "7548",
+        "DOI": "10.1002/anie.200604488",
+        "article-title": "Mesoporous materials for drug delivery",
+        "volume": "46",
+        "author": "Vallet-Regí",
+        "year": "2007",
+        "journal-title": "Angew. Chem. Int. Ed. Engl."
+      },
+      {
+        "key": "B96",
+        "doi-asserted-by": "publisher",
+        "first-page": "811",
+        "DOI": "10.1128/aac.00652-09",
+        "article-title": "Antimicrobial peptide hLF1-11 directs granulocyte-macrophage colony-stimulating factor-driven monocyte differentiation toward macrophages with enhanced recognition and clearance of pathogens",
+        "volume": "54",
+        "author": "van der Does",
+        "year": "2010",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B97",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1186/1741-7015-7-44",
+        "article-title": "Safety and tolerability of the antimicrobial peptide human lactoferrin 1-11 (hLF1-11)",
+        "volume": "7",
+        "author": "Velden",
+        "year": "2009",
+        "journal-title": "BMC Med."
+      },
+      {
+        "key": "B98",
+        "doi-asserted-by": "publisher",
+        "first-page": "40",
+        "DOI": "10.1016/j.drudis.2009.10.009",
+        "article-title": "Synthetic therapeutic peptides: science and market",
+        "volume": "15",
+        "author": "Vlieghe",
+        "year": "2010",
+        "journal-title": "Drug Disc. Today"
+      },
+      {
+        "key": "B99",
+        "doi-asserted-by": "publisher",
+        "first-page": "43",
+        "DOI": "10.1007/978-1-4939-2285-7_3",
+        "article-title": "Improved methods for classification, prediction, and design of antimicrobial peptides",
+        "volume": "1268",
+        "author": "Wang",
+        "year": "2015",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "B100",
+        "doi-asserted-by": "publisher",
+        "first-page": "2909",
+        "DOI": "10.4049/jimmunol.173.5.2909",
+        "article-title": "Cutting edge: 1,25-dihydroxyvitamin D3 is a direct inducer of antimicrobial peptide gene expression",
+        "volume": "173",
+        "author": "Wang",
+        "year": "2004",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "B101",
+        "doi-asserted-by": "publisher",
+        "first-page": "1080",
+        "DOI": "10.1111/j.0022-202X.2005.23687.x",
+        "article-title": "Vitamin D induces the antimicrobial protein hCAP18 in human skin",
+        "volume": "124",
+        "author": "Weber",
+        "year": "2005",
+        "journal-title": "J. Invest. Dermatol."
+      },
+      {
+        "key": "B102",
+        "doi-asserted-by": "publisher",
+        "first-page": "e110735",
+        "DOI": "10.1371/journal.pone.0110735",
+        "article-title": "PXL01 in sodium hyaluronate for improvement of hand recovery after flexor tendon repair surgery: randomized controlled trial",
+        "volume": "9",
+        "author": "Wiig",
+        "year": "2014",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "B103",
+        "doi-asserted-by": "publisher",
+        "first-page": "1355",
+        "DOI": "10.1016/j.biotechadv.2015.01.010",
+        "article-title": "Recent advances in topical delivery of proteins and peptides mediated by soft matter nanocarriers",
+        "volume": "33",
+        "author": "Witting",
+        "year": "2015",
+        "journal-title": "Biotechnol. Adv."
+      },
+      {
+        "key": "B104",
+        "doi-asserted-by": "publisher",
+        "first-page": "438",
+        "DOI": "10.4158/ep09101.orr",
+        "article-title": "Vitamin D for treatment and prevention of infectious diseases: a systematic review of randomized controlled trials",
+        "volume": "15",
+        "author": "Yamshchikov",
+        "year": "2009",
+        "journal-title": "Endocr. Pract."
+      },
+      {
+        "key": "B105",
+        "doi-asserted-by": "publisher",
+        "first-page": "27",
+        "DOI": "10.1124/pr.55.1.2",
+        "article-title": "Mechanisms of antimicrobial peptide action and resistance",
+        "volume": "55",
+        "author": "Yeaman",
+        "year": "2003",
+        "journal-title": "Pharmacol. Rev."
+      },
+      {
+        "key": "B106",
+        "doi-asserted-by": "publisher",
+        "first-page": "2161",
+        "DOI": "10.1007/s00018-011-0710-x",
+        "article-title": "Multifunctional cationic host defence peptides and their clinical applications",
+        "volume": "68",
+        "author": "Yeung",
+        "year": "2011",
+        "journal-title": "Cell. Mol. Life Sci."
+      },
+      {
+        "key": "B107",
+        "doi-asserted-by": "publisher",
+        "first-page": "435",
+        "DOI": "10.1002/bip.20543",
+        "article-title": "Advances in antimicrobial peptide immunobiology",
+        "volume": "84",
+        "author": "Yount",
+        "year": "2006",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "B108",
+        "doi-asserted-by": "publisher",
+        "first-page": "389",
+        "DOI": "10.1038/415389a",
+        "article-title": "Antimicrobial peptides of multicellular organisms",
+        "volume": "415",
+        "author": "Zasloff",
+        "year": "2002",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "B109",
+        "doi-asserted-by": "publisher",
+        "first-page": "1206",
+        "DOI": "10.1093/jac/dkm357",
+        "article-title": "Polymyxin B for the treatment of multidrug-resistant pathogens: a critical review",
+        "volume": "60",
+        "author": "Zavascki",
+        "year": "2007",
+        "journal-title": "J. Antimicrob. Chemother."
+      },
+      {
+        "key": "B110",
+        "doi-asserted-by": "publisher",
+        "first-page": "3317",
+        "DOI": "10.1128/AAC.44.12.3317-3321.2000",
+        "article-title": "Interactions of bacterial cationic peptide antibiotics with outer and cytoplasmic membranes of Pseudomonas aeruginosa",
+        "volume": "44",
+        "author": "Zhang",
+        "year": "2000",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "B111",
+        "doi-asserted-by": "publisher",
+        "first-page": "585",
+        "DOI": "10.2174/092986710790416290",
+        "article-title": "Development of nanoparticles for antimicrobial drug delivery",
+        "volume": "17",
+        "author": "Zhang",
+        "year": "2010",
+        "journal-title": "Curr. Med. Chem."
+      }
+    ],
+    "container-title": [
+      "Frontiers in Cellular and Infection Microbiology"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "http://journal.frontiersin.org/article/10.3389/fcimb.2016.00194/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          9,
+          16
+        ]
+      ],
+      "date-time": "2019-09-16T19:58:40Z",
+      "timestamp": 1568663920000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://journal.frontiersin.org/article/10.3389/fcimb.2016.00194/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          27
+        ]
+      ]
+    },
+    "references-count": 111,
+    "URL": "https://doi.org/10.3389/fcimb.2016.00194",
+    "relation": {},
+    "ISSN": [
+      "2235-2988"
+    ],
+    "issn-type": [
+      {
+        "value": "2235-2988",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2016,
+          12,
+          27
+        ]
+      ]
+    }
+  }
+}

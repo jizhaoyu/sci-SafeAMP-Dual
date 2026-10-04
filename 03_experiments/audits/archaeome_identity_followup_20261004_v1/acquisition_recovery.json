@@ -1,0 +1,28 @@
+[
+  {
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM1_ESM.pdf",
+    "path": "raw\\41564_2025_2061_MOESM1_ESM.pdf",
+    "bytes": 434935,
+    "sha256": "635f36cf4a0a79d77d32cd63f93f49237bd0d3b967cf1e1234eaffff07c49919",
+    "file_last_written_at": "2026-10-04T04:26:26.546862+00:00",
+    "acquisition_verified_at": "2026-10-04T04:34:09.607585+00:00",
+    "status": "valid_document"
+  },
+  {
+    "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41564-025-02061-0/MediaObjects/41564_2025_2061_MOESM17_ESM.xlsx",
+    "path": "raw\\41564_2025_2061_MOESM17_ESM.xlsx",
+    "bytes": 3038,
+    "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "file_last_written_at": "2026-10-04T04:26:25.460373+00:00",
+    "acquisition_verified_at": "2026-10-04T04:34:09.607585+00:00",
+    "status": "rejected_html_response"
+  },
+  {
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12408343/supplementaryFiles",
+    "status": "client_stopped_stalled_acquisition",
+    "recorded_at": "2026-10-04T04:34:09.607585+00:00",
+    "reason": "Request still running after more than six minutes; only its identified local process was stopped",
+    "server_failure_claimed": false,
+    "complete_file_received": false
+  }
+]

@@ -1,0 +1,121 @@
+{
+  "status": "feasible_for_training_review",
+  "generated_at": "2026-10-01T12:42:39.989771+00:00",
+  "protocol_id": "protocol-mic-01",
+  "protocol_sha256": "d54227ebb5380039cd07f6ddc979561ef6f99efaecdb7644267e6c7d00dffb97",
+  "protocol_path": "03_experiments\\protocols\\protocol-mic-01.json",
+  "existing_records_path": "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv",
+  "existing_records_sha256": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+  "existing_record_count": 320,
+  "supplement_records_path": "03_experiments\\audits\\dramp_verified_ecoli_mic_20261001_v8\\records.csv",
+  "supplement_records_sha256": "6d2acb0291a6debbe226d2673342a17b0988a381fb486e47a1cc0018bfeb9d00",
+  "supplement_record_count": 4,
+  "combined_evidence_gate": {
+    "status": "passed",
+    "detail": "324 provenance records passed raw-assay validation and label re-derivation."
+  },
+  "target_identifier_gate": {
+    "status": "passed",
+    "unresolved_observations": 0,
+    "affected_records": 0
+  },
+  "eligible_record_count_before_exact_sequence_merge": 324,
+  "unique_labeled_molecule_count": 324,
+  "amp_label_counts": {
+    "0": 107,
+    "1": 217
+  },
+  "primary_study_identifier_count": 252,
+  "source_dataset_record_counts": {
+    "DBAASP": 320,
+    "DRAMP": 4
+  },
+  "homology": {
+    "possible_pairs": 52326,
+    "above_cutoff_pairs": 828,
+    "component_count": 84,
+    "largest_component": 225,
+    "largest_component_fraction": 0.6944444444444444
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_molecules": 99,
+      "validation_molecules": 225,
+      "train_positive": 50,
+      "train_negative": 49,
+      "validation_positive": 167,
+      "validation_negative": 58,
+      "train_components": 83,
+      "validation_components": 1,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 1,
+      "train_molecules": 298,
+      "validation_molecules": 26,
+      "train_positive": 204,
+      "train_negative": 94,
+      "validation_positive": 13,
+      "validation_negative": 13,
+      "train_components": 64,
+      "validation_components": 20,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 2,
+      "train_molecules": 300,
+      "validation_molecules": 24,
+      "train_positive": 205,
+      "train_negative": 95,
+      "validation_positive": 12,
+      "validation_negative": 12,
+      "train_components": 62,
+      "validation_components": 22,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 3,
+      "train_molecules": 300,
+      "validation_molecules": 24,
+      "train_positive": 205,
+      "train_negative": 95,
+      "validation_positive": 12,
+      "validation_negative": 12,
+      "train_components": 62,
+      "validation_components": 22,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 4,
+      "train_molecules": 299,
+      "validation_molecules": 25,
+      "train_positive": 204,
+      "train_negative": 95,
+      "validation_positive": 13,
+      "validation_negative": 12,
+      "train_components": 65,
+      "validation_components": 19,
+      "shared_components": 0,
+      "gate_passed": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Severe fold-size imbalance from an indivisible homology component: largest component=225 of 324 molecules (69.4%); validation fold sizes=[225, 26, 24, 24, 25]. Preserve all-member isolation and review the estimand before model training."
+  ],
+  "training_started": false,
+  "model_results_generated": false,
+  "outputs": {
+    "evidence_inventory": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\evidence_inventory.csv",
+    "target_identifier_audit": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\target_identifier_audit.csv",
+    "exclusions": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\exclusions.csv",
+    "molecule_components": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\molecule_components.csv",
+    "all_member_similarity": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\all_member_similarity.csv",
+    "fold_assignments": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\fold_assignments.csv"
+  }
+}

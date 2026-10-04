@@ -1,0 +1,2 @@
+total_molecules,cutoff,connected_components,largest_component_size,largest_component_pct,aligned_pairs,above_cutoff_pairs
+417,0.4,1,417,100.0,67014,22487

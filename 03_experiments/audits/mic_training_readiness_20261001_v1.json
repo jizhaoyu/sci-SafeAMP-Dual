@@ -1,0 +1,37 @@
+{
+  "status": "ready_for_exploratory_mic_training",
+  "generated_at": "2026-10-01T12:47:33.764019+00:00",
+  "training_protocol_id": "protocol-mic-05",
+  "training_protocol_sha256": "8a3533fc64047e679e72d9e07f59d295f44e8c5905da7e822df27210960df24a",
+  "training_protocol_path": "03_experiments\\protocols\\protocol-mic-05.json",
+  "source_manifest": "03_experiments\\audits\\mic_training_source_20261001_v1\\manifest.json",
+  "source_manifest_sha256": "1b1dccd2c080356dea86dd07584305e0c5ca729b9fdc5b4fecf5f9bae7dac70e",
+  "cohort_manifest": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\manifest.json",
+  "cohort_manifest_sha256": "45a8e72912911c9e80621ca0302ff7d8bbfb06e3c95ebbf67c234bf4e0162f83",
+  "study_manifest": "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\manifest.json",
+  "study_manifest_sha256": "a4851578826e0035972d8b61a8eb70cb244bcd5e7373dc9b3872b2ac20516e0d",
+  "fold_assignments": "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\fold_assignments.csv",
+  "fold_assignments_sha256": "ea5307e848934de3b2fba644f94a4b21c0e3e067d3199283c75c5cf770e16c17",
+  "molecule_count": 324,
+  "class_counts": {
+    "0": 107,
+    "1": 217
+  },
+  "fold_sizes": {
+    "0": 19,
+    "1": 18,
+    "2": 249,
+    "3": 19,
+    "4": 19
+  },
+  "homology_plus_study_components": 60,
+  "largest_component": 249,
+  "warnings": [
+    "Highly imbalanced study-disjoint folds: sizes=[19, 18, 249, 19, 19]; largest combined component=249/324."
+  ],
+  "training_started": false,
+  "formal_dual_task_status": "blocked",
+  "formal_status_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "scope": "MIC-only fixed exploratory baseline; no formal performance or publication claim",
+  "training_command": "python 02_code/train_mic_baselines.py --protocol 03_experiments/protocols/protocol-mic-05.json --output 03_experiments/runs/mic_only_baselines_20261001_v4"
+}

@@ -1,0 +1,53 @@
+{
+  "screen_status": "blocked",
+  "created_at": "2026-10-01",
+  "protocol_id": "protocol-amd-02",
+  "protocol_digest": "6bcf8993a08f8da1ebae4609f4ef9e4ebae7205257d136dfa059a1b93db4bc4c",
+  "development_records": 417,
+  "development_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "identity_definition": "global_nw_match2_mismatch-1_gap-2_canonical_diagonal_first; matches/aligned_columns; gap_columns_are_mismatches",
+  "cutoff": 0.4,
+  "source": {
+    "doi": "10.1016/j.bbrc.2004.05.141",
+    "pmid": "15207717",
+    "retrieval_url": "https://carlosdavidson.org/wp-content/uploads/2023/06/conlon-ascaphin.pdf",
+    "retrieval_note": "Author-hosted copy of the primary article, cited by DOI; paper text and tables checked.",
+    "article_pdf": "conlon_2004_ascaphin_primary_article.pdf",
+    "article_pdf_sha256": "6f5148ef4dab553da6cf67549afba81bb08568d42e386b18ac6958ba6ccd6915",
+    "candidate_observations": "candidate_observations.json",
+    "candidate_observations_sha256": "51b6872468b01962d647edeaaeab252b4feaba7c035e75a0ada3ddb60d2bb61b"
+  },
+  "candidates": [
+    {
+      "record_id": "Conlon2004_Ascaphin3",
+      "sequence": "GFRDVLKGAAKAFVKTVAGHIANI",
+      "n_residues": 24,
+      "modifications": "none; endogenous free-acid form",
+      "study_overlap": ["pmid:15207717", "development:DBAASP:2303", "development:DBAASP:2302"],
+      "max_alignment_identity_to_development": 0.9583333333333334,
+      "nearest_development_record": "DBAASP:2303",
+      "raw_mic": "6 uM",
+      "derived_mic_ug_ml": 14.9037024,
+      "raw_hc50": ">200 uM",
+      "derived_hc50_lower_bound_ug_ml": 496.79008,
+      "screen_disposition": "rejected_source_study_overlap_and_homology"
+    },
+    {
+      "record_id": "Conlon2004_Ascaphin7",
+      "sequence": "GFKDWIKGAAKKLIKTVASAIANQ",
+      "n_residues": 24,
+      "modifications": "none; endogenous free-acid form",
+      "study_overlap": ["pmid:15207717", "development:DBAASP:2303", "development:DBAASP:2302"],
+      "max_alignment_identity_to_development": 0.7083333333333334,
+      "nearest_development_record": "DBAASP:25169",
+      "raw_mic": "3 uM",
+      "derived_mic_ug_ml": 7.6771812,
+      "raw_hc50": ">200 uM",
+      "derived_hc50_lower_bound_ug_ml": 511.81208,
+      "screen_disposition": "rejected_source_study_overlap_and_homology"
+    }
+  ],
+  "eligible_external_records": 0,
+  "formal_integration_performed": false,
+  "blocker": "Both candidate peptides overlap a primary study already represented in development data and exceed the strict all-member 0.40 sequence identity cutoff. No formal external cohort was created."
+}

@@ -1,0 +1,39 @@
+{
+  "status": "blocked_source_reuse_and_censoring_review",
+  "generated_at": "2026-10-02T07:07:48.963862+00:00",
+  "paper": {
+    "pmid": "39367191",
+    "pmcid": "PMC11452689",
+    "doi": "10.1038/s42003-024-06946-4",
+    "license": "CC BY-NC-ND 4.0"
+  },
+  "source_reuse_gate": "pending_review_not_authorized_for_training_or_publication",
+  "original_molecules_reviewed": 17,
+  "positive_free_acid_candidates": 6,
+  "negative_free_acid_candidates_withheld": 1,
+  "excluded_amidated": 8,
+  "excluded_threshold_gap": 2,
+  "full_reviewed_similarity_pairs": 246,
+  "reviewed_similarity_edges_at_0_40": 3,
+  "connected_reviewed_components": [
+    0
+  ],
+  "included_in_candidate_cohort_v3": false,
+  "records_released_for_training": 0,
+  "script_sha256": "43dace53a415d369d0e0de02a0e480cecacb047d2a4cc486d3b399740b022f64",
+  "inputs": {
+    "03_experiments\\audits\\mic_primary_candidate_sources_20261002_v1\\PMC11452689.xml": "eff1d41053121b1be9fda43d693653f70606e5709612528bd24903a4132f6cfc",
+    "03_experiments\\audits\\mic_primary_candidate_sources_20261002_v1\\42003_2024_6946_MOESM1_ESM.pdf": "593b3302bdc5daa3da112e1397181b94efaf24672d9fc3dc613e626de69c9007",
+    "03_experiments\\audits\\mic_primary_candidate_sources_20261002_v1\\42003_2024_6946_table_s1_s2.png": "1ee5c814b1ceefc27558e6088f69d431fa51ffd47d8f4e15cabed5682583b1fb",
+    "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v3\\manifest.json": "eb05124aed1d73db7127f963aa944a81e2572d10ea3d443c9e7f2227546dc7e5",
+    "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v3\\candidate_molecules.csv": "2016c7c54231d57a040e9cb885fc121a5bc3de46417e77b08a37134e51ba0994",
+    "02_code\\audit_mic_primary_hirsch2020.py": "8d9f8e1df33c2b52877536557a4e38deb7351edbf6b531cbd3049e4bd18d9a57",
+    "02_code\\audit_mic_primary_ludwig2022.py": "700dc8222d7e8a22b0e71b2cb1ee20369b1fcd1ed9eea5dceb1e3f67896c5845",
+    "02_code\\research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350"
+  },
+  "outputs": {
+    "record_review.csv": "1c20940ab96ba39bbf23f494801ceacb95a61a2f1f7221a55518f0ac0c9257b0",
+    "similarity_reviewed.csv": "f05540c56bb854a98c6fe930532799a3f5b7e5dc0fc045d7db616100d5989855",
+    "report.md": "bb802f0e20c71bf839069039fed2562bce31f51812ce4af20ca18527675faf0f"
+  }
+}

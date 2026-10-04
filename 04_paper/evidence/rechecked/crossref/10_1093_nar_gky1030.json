@@ -1,0 +1,1305 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/nar/gky1030",
+  "retrieved_at": "2026-09-28T14:56:02.392832+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T02:50:00Z",
+      "timestamp": 1790391000216,
+      "version": "4.1.0"
+    },
+    "reference-count": 91,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "D1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              10,
+              31
+            ]
+          ],
+          "date-time": "2018-10-31T00:00:00Z",
+          "timestamp": 1540944000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004853",
+        "name": "Chinese University of Hong Kong",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100004853",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1093/nar/gky1030",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          24
+        ]
+      ],
+      "date-time": "2018-10-24T22:12:25Z",
+      "timestamp": 1540419145000
+    },
+    "page": "D285-D297",
+    "source": "Crossref",
+    "is-referenced-by-count": 170,
+    "title": [
+      "dbAMP: an integrated resource for exploring antimicrobial peptides with functional activities and physicochemical properties on transcriptome and proteome data"
+    ],
+    "prefix": "10.1093",
+    "volume": "47",
+    "author": [
+      {
+        "given": "Jhih-Hua",
+        "family": "Jhong",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Yuan Ze University, Taoyuan 320, Taiwan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Yu-Hsiang",
+        "family": "Chi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Yuan Ze University, Taoyuan 320, Taiwan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Wen-Chi",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen 518172, China"
+          },
+          {
+            "name": "Warshel Institute for Computational Biology, The Chinese University of Hong Kong, Shenzhen 518172, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tsai-Hsuan",
+        "family": "Lin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Yuan Ze University, Taoyuan 320, Taiwan"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Kai-Yao",
+        "family": "Huang",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen 518172, China"
+          },
+          {
+            "name": "Warshel Institute for Computational Biology, The Chinese University of Hong Kong, Shenzhen 518172, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8475-7868",
+        "authenticated-orcid": false,
+        "given": "Tzong-Yi",
+        "family": "Lee",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Computer Science and Engineering, Yuan Ze University, Taoyuan 320, Taiwan"
+          },
+          {
+            "name": "School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen 518172, China"
+          },
+          {
+            "name": "Warshel Institute for Computational Biology, The Chinese University of Hong Kong, Shenzhen 518172, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "494",
+        "DOI": "10.1016/S0165-6147(02)02105-3",
+        "article-title": "Antimicrobial peptides from animals: focus on invertebrates",
+        "volume": "23",
+        "author": "Vizioli",
+        "year": "2002",
+        "journal-title": "Trends Pharmacol. Sci."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B2",
+        "doi-asserted-by": "crossref",
+        "first-page": "465",
+        "DOI": "10.1016/S0924-8579(03)00180-8",
+        "article-title": "Antimicrobial peptides in animals and their role in host defences",
+        "volume": "22",
+        "author": "Brogden",
+        "year": "2003",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B3",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1016/j.resmic.2011.02.005",
+        "article-title": "Natural roles of antimicrobial peptides in microbes, plants and animals",
+        "volume": "162",
+        "author": "Maroti",
+        "year": "2011",
+        "journal-title": "Res. Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "465",
+        "DOI": "10.1016/S0734-9750(03)00077-6",
+        "article-title": "Ribosomally synthesized peptides with antimicrobial properties: biosynthesis, structure, function, and applications",
+        "volume": "21",
+        "author": "Papagianni",
+        "year": "2003",
+        "journal-title": "Biotechnol.. Adv"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "727",
+        "DOI": "10.2174/1381612023395358",
+        "article-title": "Host-defense antimicrobial peptides: importance of structure for activity",
+        "volume": "8",
+        "author": "Sitaram",
+        "year": "2002",
+        "journal-title": "Curr. Pharm. Des."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1408",
+        "DOI": "10.1016/j.bbamem.2006.03.030",
+        "article-title": "LL-37, the only human member of the cathelicidin family of antimicrobial peptides",
+        "volume": "1758",
+        "author": "Durr",
+        "year": "2006",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1124/pr.55.1.2",
+        "article-title": "Mechanisms of antimicrobial peptide action and resistance",
+        "volume": "55",
+        "author": "Yeaman",
+        "year": "2003",
+        "journal-title": "Pharmacol. Rev."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B8",
+        "doi-asserted-by": "crossref",
+        "first-page": "238",
+        "DOI": "10.1038/nrmicro1098",
+        "article-title": "Antimicrobial peptides: pore formers or metabolic inhibitors in bacteria",
+        "volume": "3",
+        "author": "Brogden",
+        "year": "2005",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0155304",
+        "DOI": "10.1371/journal.pone.0155304",
+        "article-title": "De novo transcriptome analysis and detection of antimicrobial peptides of the American Cockroach Periplaneta americana (Linnaeus)",
+        "volume": "11",
+        "author": "Kim",
+        "year": "2016",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "407",
+        "DOI": "10.1615/CritRevImmunol.v20.i5.40",
+        "article-title": "Cationic antimicrobial peptides and their multifunctional role in the immune system",
+        "volume": "20",
+        "author": "Scott",
+        "year": "2000",
+        "journal-title": "Crit. Rev. Immunol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "233",
+        "DOI": "10.2165/00063030-200317040-00002",
+        "article-title": "Cationic antimicrobial peptides: issues for potential clinical use",
+        "volume": "17",
+        "author": "Bradshaw",
+        "year": "2003",
+        "journal-title": "BioDrugs"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "D590",
+        "DOI": "10.1093/nar/gkh025",
+        "article-title": "APD: the antimicrobial peptide database",
+        "volume": "32",
+        "author": "Wang",
+        "year": "2004",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2255",
+        "DOI": "10.1007/s00018-011-0717-3",
+        "article-title": "Beyond natural antimicrobial peptides: multimeric peptides and other peptidomimetic approaches",
+        "volume": "68",
+        "author": "Giuliani",
+        "year": "2011",
+        "journal-title": "Cell. Mol. Life Sci."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B14",
+        "first-page": "217",
+        "article-title": "Will new generations of modified antimicrobial peptides improve their potential as pharmaceuticals",
+        "volume": "38",
+        "author": "Brogden",
+        "year": "2011",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B15",
+        "doi-asserted-by": "crossref",
+        "first-page": "294",
+        "DOI": "10.3389/fmicb.2013.00294",
+        "article-title": "From antimicrobial to anticancer peptides. A review",
+        "volume": "4",
+        "author": "Gaspar",
+        "year": "2013",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B16",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0126390",
+        "DOI": "10.1371/journal.pone.0126390",
+        "article-title": "Novel antimicrobial peptides with high anticancer activity and selectivity",
+        "volume": "10",
+        "author": "Chu",
+        "year": "2015",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B17",
+        "doi-asserted-by": "crossref",
+        "first-page": "389",
+        "DOI": "10.2165/00003495-200363040-00005",
+        "article-title": "Antimicrobial peptides: current status and therapeutic potential",
+        "volume": "63",
+        "author": "Koczulla",
+        "year": "2003",
+        "journal-title": "Drugs"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1470",
+        "DOI": "10.1021/acs.jproteome.6b00857",
+        "article-title": "Discovery of novel antimicrobial peptides from varanus komodoensis (Komodo Dragon) by large-scale analyses and de-novo-assisted sequencing using electron-transfer dissociation mass spectrometry",
+        "volume": "16",
+        "author": "Bishop",
+        "year": "2017",
+        "journal-title": "J. Proteome Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B19",
+        "doi-asserted-by": "crossref",
+        "first-page": "468",
+        "DOI": "10.1016/j.coph.2006.04.006",
+        "article-title": "Antibacterial peptides for therapeutic use: obstacles and realistic outlook",
+        "volume": "6",
+        "author": "Marr",
+        "year": "2006",
+        "journal-title": "Curr. Opin. Pharmacol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B20",
+        "first-page": "475062",
+        "article-title": "A large-scale structural classification of antimicrobial peptides",
+        "volume": "2015",
+        "author": "Lee",
+        "year": "2015",
+        "journal-title": "Biomed. Res. Int."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B21",
+        "doi-asserted-by": "crossref",
+        "first-page": "283",
+        "DOI": "10.1016/j.dci.2005.04.003",
+        "article-title": "PenBase, the shrimp antimicrobial peptide penaeidin database: sequence-based classification and recommended nomenclature",
+        "volume": "30",
+        "author": "Gueguen",
+        "year": "2006",
+        "journal-title": "Dev. Comp. Immunol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B22",
+        "doi-asserted-by": "crossref",
+        "first-page": "D963",
+        "DOI": "10.1093/nar/gkn655",
+        "article-title": "PhytAMP: a database dedicated to antimicrobial plant peptides",
+        "volume": "37",
+        "author": "Hammami",
+        "year": "2009",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1406",
+        "DOI": "10.1093/bioinformatics/bts141",
+        "article-title": "DADP: the database of anuran defense peptides",
+        "volume": "28",
+        "author": "Novkovic",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B24",
+        "doi-asserted-by": "crossref",
+        "first-page": "22",
+        "DOI": "10.1186/1471-2180-10-22",
+        "article-title": "BACTIBASE second release: a database and tool platform for bacteriocin characterization",
+        "volume": "10",
+        "author": "Hammami",
+        "year": "2010",
+        "journal-title": "BMC Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B25",
+        "doi-asserted-by": "crossref",
+        "first-page": "W278",
+        "DOI": "10.1093/nar/gky383",
+        "article-title": "BAGEL4: a user-friendly web server to thoroughly mine RiPPs and bacteriocins",
+        "volume": "46",
+        "author": "van Heel",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B26",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1016/j.ijantimicag.2011.12.003",
+        "article-title": "YADAMP: yet another database of antimicrobial peptides",
+        "volume": "39",
+        "author": "Piotto",
+        "year": "2012",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B27",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1094",
+        "DOI": "10.1093/nar/gkv1051",
+        "article-title": "CAMPR3: a database on sequences, structures and signatures of antimicrobial peptides",
+        "volume": "44",
+        "author": "Waghu",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B28",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1087",
+        "DOI": "10.1093/nar/gkv1278",
+        "article-title": "APD3: the antimicrobial peptide database as a tool for research and education",
+        "volume": "44",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B29",
+        "doi-asserted-by": "crossref",
+        "first-page": "1148",
+        "DOI": "10.1093/bioinformatics/btm068",
+        "article-title": "AMPer: a database and an automated discovery tool for antimicrobial peptides",
+        "volume": "23",
+        "author": "Fjell",
+        "year": "2007",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B30",
+        "doi-asserted-by": "crossref",
+        "first-page": "e66557",
+        "DOI": "10.1371/journal.pone.0066557",
+        "article-title": "LAMP: A database linking antimicrobial peptides",
+        "volume": "8",
+        "author": "Zhao",
+        "year": "2013",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "430",
+        "DOI": "10.1164/rccm.201610-2006OC",
+        "article-title": "Application of a natural language processing algorithm to asthma ascertainment. An automated chart review",
+        "volume": "196",
+        "author": "Wi",
+        "year": "2017",
+        "journal-title": "Am. J. Respir. Crit. Care Med."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B32",
+        "doi-asserted-by": "crossref",
+        "first-page": "D265",
+        "DOI": "10.1093/nar/gkl866",
+        "article-title": "Defensins knowledgebase: a manually curated database and information source focused on the defensins family of antimicrobial peptides",
+        "volume": "35",
+        "author": "Seebah",
+        "year": "2007",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B33",
+        "doi-asserted-by": "crossref",
+        "first-page": "228",
+        "DOI": "10.1159/000331009",
+        "article-title": "Antimicrobial peptides: promising alternatives to conventional antibiotics",
+        "volume": "20",
+        "author": "Baltzer",
+        "year": "2011",
+        "journal-title": "J. Mol. Microbiol. Biotechnol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B34",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1104",
+        "DOI": "10.1093/nar/gkv1174",
+        "article-title": "DBAASP v.2: an enhanced database of structure and antimicrobial/cytotoxic activity of natural and synthetic peptides",
+        "volume": "44",
+        "author": "Pirtskhalava",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B35",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1002/psc.2947",
+        "article-title": "Computational resources and tools for antimicrobial peptides",
+        "volume": "23",
+        "author": "Liu",
+        "year": "2017",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B36",
+        "doi-asserted-by": "crossref",
+        "first-page": "287",
+        "DOI": "10.1038/nrmicro2088",
+        "article-title": "Application of’next-generation'sequencing technologies to microbial genetics",
+        "volume": "7",
+        "author": "MacLean",
+        "year": "2009",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1931",
+        "DOI": "10.1111/j.1365-294X.2011.05403.x",
+        "article-title": "Who is eating what: diet assessment using next generation sequencing",
+        "volume": "21",
+        "author": "Pompanon",
+        "year": "2012",
+        "journal-title": "Mol. Ecol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B38",
+        "doi-asserted-by": "crossref",
+        "first-page": "1027",
+        "DOI": "10.3389/fmicb.2015.01027",
+        "article-title": "Next-generation sequencing (NGS) for assessment of microbial water quality: current progress, challenges, and future opportunities",
+        "volume": "6",
+        "author": "Tan",
+        "year": "2015",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B39",
+        "doi-asserted-by": "crossref",
+        "first-page": "D7",
+        "DOI": "10.1093/nar/gkv1290",
+        "article-title": "Database resources of the National Center for Biotechnology Information",
+        "volume": "44",
+        "author": "Coordinators",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "2699",
+        "DOI": "10.1093/nar/gky092",
+        "article-title": "UniProt: the universal protein knowledgebase",
+        "volume": "46",
+        "author": "UniProt Consortium, T",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B41",
+        "doi-asserted-by": "crossref",
+        "first-page": "D345",
+        "DOI": "10.1093/nar/gku1214",
+        "article-title": "The RCSB Protein Data Bank: views of structural biology for basic and applied research and education",
+        "volume": "43",
+        "author": "Rose",
+        "year": "2015",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B42",
+        "doi-asserted-by": "crossref",
+        "first-page": "S19",
+        "DOI": "10.1186/1471-2105-11-S1-S19",
+        "article-title": "AntiBP2: improved version of antibacterial peptide prediction",
+        "volume": "11",
+        "author": "Lata",
+        "year": "2010",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B43",
+        "doi-asserted-by": "crossref",
+        "first-page": "412",
+        "DOI": "10.1504/IJDMB.2015.067956",
+        "article-title": "Co-decision matrix framework for name entity recognition in biomedical text",
+        "volume": "11",
+        "author": "Wang",
+        "year": "2015",
+        "journal-title": "Int. J. Data Mining Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B44",
+        "doi-asserted-by": "crossref",
+        "first-page": "D190",
+        "DOI": "10.1093/nar/gkw1107",
+        "article-title": "InterPro in 2017-beyond protein family and domain annotations",
+        "volume": "45",
+        "author": "Finn",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B45",
+        "doi-asserted-by": "crossref",
+        "first-page": "473",
+        "DOI": "10.1038/nrm1960",
+        "article-title": "Reading protein modifications with interaction domains",
+        "volume": "7",
+        "author": "Seet",
+        "year": "2006",
+        "journal-title": "Nat. Rev. Mol. Cell. Biol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B46",
+        "doi-asserted-by": "crossref",
+        "first-page": "D435",
+        "DOI": "10.1093/nar/gkv1240",
+        "article-title": "dbPTM 2016: 10-year anniversary of a resource for post-translational modification of proteins",
+        "volume": "44",
+        "author": "Huang",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B47",
+        "doi-asserted-by": "crossref",
+        "first-page": "e02340-16",
+        "DOI": "10.1128/AAC.02340-16",
+        "article-title": "Intracellular targeting mechanisms by antimicrobial peptides",
+        "volume": "61",
+        "author": "Le",
+        "year": "2017",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B48",
+        "doi-asserted-by": "crossref",
+        "first-page": "6483",
+        "DOI": "10.1111/j.1742-4658.2009.07359.x",
+        "article-title": "Multifunctional host defense peptides: intracellular-targeting antimicrobial peptides",
+        "volume": "276",
+        "author": "Nicolas",
+        "year": "2009",
+        "journal-title": "FEBS J."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B49",
+        "doi-asserted-by": "crossref",
+        "first-page": "3626",
+        "DOI": "10.1039/b607999g",
+        "article-title": "Internally quenched peptides for the study of lysostaphin: An antimicrobial protease that kills Staphylococcus aureus",
+        "volume": "4",
+        "author": "Warfield",
+        "year": "2006",
+        "journal-title": "Org. Biomol. Chem."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B50",
+        "doi-asserted-by": "crossref",
+        "first-page": "1911",
+        "DOI": "10.1101/gad.1440606",
+        "article-title": "Evidence for a novel protease governing regulated intramembrane proteolysis and resistance to antimicrobial peptides in Bacillus subtilis",
+        "volume": "20",
+        "author": "Ellermeier",
+        "year": "2006",
+        "journal-title": "Genes Dev."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B51",
+        "doi-asserted-by": "crossref",
+        "first-page": "425",
+        "DOI": "10.1016/S0045-2068(03)00080-4",
+        "article-title": "Cathelicidin family of antimicrobial peptides: proteolytic processing and protease resistance",
+        "volume": "31",
+        "author": "Shinnar",
+        "year": "2003",
+        "journal-title": "Bioorg. Chem."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B52",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1016/j.jtbi.2017.02.012",
+        "article-title": "Antimicrobial potency of cationic antimicrobial peptides can be predicted from their amino acid composition: application to the detection of “cryptic” antimicrobial peptides",
+        "volume": "419",
+        "author": "Pane",
+        "year": "2017",
+        "journal-title": "J. Theor. Biol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B53",
+        "doi-asserted-by": "crossref",
+        "first-page": "126",
+        "DOI": "10.1186/s12934-015-0302-9",
+        "article-title": "The identification of a novel Sulfolobus islandicus CAMP-like peptide points to archaeal microorganisms as cell factories for the production of antimicrobial molecules",
+        "volume": "14",
+        "author": "Notomista",
+        "year": "2015",
+        "journal-title": "Microb. Cell Fact."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B54",
+        "doi-asserted-by": "crossref",
+        "first-page": "2204",
+        "DOI": "10.1016/j.biomaterials.2010.11.054",
+        "article-title": "Synthetic cationic amphiphilic alpha-helical peptides as antimicrobial agents",
+        "volume": "32",
+        "author": "Wiradharma",
+        "year": "2011",
+        "journal-title": "Biomaterials"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B55",
+        "doi-asserted-by": "crossref",
+        "first-page": "3150",
+        "DOI": "10.1093/bioinformatics/bts565",
+        "article-title": "CD-HIT: accelerated for clustering the next-generation sequencing data",
+        "volume": "28",
+        "author": "Fu",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B56",
+        "doi-asserted-by": "crossref",
+        "first-page": "168",
+        "DOI": "10.1016/j.ab.2013.01.019",
+        "article-title": "iAMP-2L: a two-level multi-label classifier for identifying antimicrobial peptides and their functional types",
+        "volume": "436",
+        "author": "Xiao",
+        "year": "2013",
+        "journal-title": "Anal. Biochem."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B57",
+        "doi-asserted-by": "crossref",
+        "first-page": "e18476",
+        "DOI": "10.1371/journal.pone.0018476",
+        "article-title": "Prediction of antimicrobial peptides based on sequence alignment and feature selection methods",
+        "volume": "6",
+        "author": "Wang",
+        "year": "2011",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B58",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1154",
+        "DOI": "10.1093/nar/gkt1157",
+        "article-title": "CAMP: Collection of sequences and structures of antimicrobial peptides",
+        "volume": "42",
+        "author": "Waghu",
+        "year": "2014",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B59",
+        "doi-asserted-by": "crossref",
+        "first-page": "1697",
+        "DOI": "10.1038/s41598-018-19752-w",
+        "article-title": "AmPEP: Sequence-based prediction of antimicrobial peptides using distribution patterns of amino acid properties and random forest",
+        "volume": "8",
+        "author": "Bhadra",
+        "year": "2018",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B60",
+        "doi-asserted-by": "crossref",
+        "first-page": "66",
+        "DOI": "10.1186/s12859-017-1472-8",
+        "article-title": "Investigation and identification of protein carbonylation sites based on position-specific amino acid composition and physicochemical features",
+        "volume": "18",
+        "author": "Weng",
+        "year": "2017",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B61",
+        "doi-asserted-by": "crossref",
+        "first-page": "W588",
+        "DOI": "10.1093/nar/gkm322",
+        "article-title": "KinasePhos 2.0: a web server for identifying protein kinase-specific phosphorylation sites based on sequences and coupling patterns",
+        "volume": "35",
+        "author": "Wong",
+        "year": "2007",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B62",
+        "doi-asserted-by": "crossref",
+        "first-page": "9",
+        "DOI": "10.1186/s12864-015-2299-1",
+        "article-title": "SOHSite: incorporating evolutionary information and physicochemical properties to identify protein S-sulfenylation sites",
+        "volume": "17",
+        "author": "Bui",
+        "year": "2016",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B63",
+        "doi-asserted-by": "crossref",
+        "first-page": "1908",
+        "DOI": "10.1093/bioinformatics/btu139",
+        "article-title": "An adaptive workflow coupled with Random Forest algorithm to identify intact N-glycopeptides detected from mass spectrometry",
+        "volume": "30",
+        "author": "Liang",
+        "year": "2014",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B64",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.1145/1656274.1656278",
+        "article-title": "The WEKA data mining software: an update",
+        "volume": "11",
+        "author": "Hall",
+        "year": "2009",
+        "journal-title": "ACM SIGKDD Explor. Newslett."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B65",
+        "doi-asserted-by": "crossref",
+        "first-page": "814092",
+        "DOI": "10.1155/2014/814092",
+        "article-title": "Novel bioinformatics approaches for analysis of high-throughput biological data",
+        "volume": "2014",
+        "author": "Weng",
+        "year": "2014",
+        "journal-title": "Biomed. Res. Int."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B66",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1186/s13040-014-0034-0",
+        "article-title": "Performance of genetic programming optimised Bowtie2 on genome comparison and analytic testing (GCAT) benchmarks",
+        "volume": "8",
+        "author": "Langdon",
+        "year": "2015",
+        "journal-title": "BioData Mining"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B67",
+        "doi-asserted-by": "crossref",
+        "first-page": "514",
+        "DOI": "10.1093/bioinformatics/btx554",
+        "article-title": "Dugong: a Docker image, based on Ubuntu Linux, focused on reproducibility and replicability for bioinformatics analyses",
+        "volume": "34",
+        "author": "Menegidio",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B68",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/bioinformatics/bty493",
+        "article-title": "ICBdocker: a Docker image for proteome annotation and visualization",
+        "author": "Bordin",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B69",
+        "doi-asserted-by": "crossref",
+        "first-page": "3136",
+        "DOI": "10.1080/13880209.2016.1190763",
+        "article-title": "Inhibition of methicillin-resistant Staphylococcus aureus (MRSA) by antimicrobial peptides (AMPs) and plant essential oils",
+        "volume": "54",
+        "author": "Zouhir",
+        "year": "2016",
+        "journal-title": "Pharm Biol"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B70",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.3389/fimmu.2012.00221",
+        "article-title": "The importance of amino acid composition in natural AMPs: An evolutional, structural, and functional perspective",
+        "volume": "3",
+        "author": "Mishra",
+        "year": "2012",
+        "journal-title": "Front Immunol"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B71",
+        "doi-asserted-by": "crossref",
+        "first-page": "465",
+        "DOI": "10.1002/(SICI)1097-0282(1998)47:6<465::AID-BIP5>3.0.CO;2-#",
+        "article-title": "Cysteine-rich antimicrobial peptides in invertebrates",
+        "volume": "47",
+        "author": "Dimarcq",
+        "year": "1998",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B72",
+        "doi-asserted-by": "crossref",
+        "first-page": "E4",
+        "DOI": "10.3390/biom8010004",
+        "article-title": "Antimicrobial peptides: diversity, mechanism of action and strategies to improve the activity and biocompatibility in vivo",
+        "volume": "8",
+        "author": "Kumar",
+        "year": "2018",
+        "journal-title": "Biomolecules"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B73",
+        "doi-asserted-by": "crossref",
+        "first-page": "711",
+        "DOI": "10.3390/ph8040711",
+        "article-title": "Antimicrobial Peptides from Plants",
+        "volume": "8",
+        "author": "Tam",
+        "year": "2015",
+        "journal-title": "Pharmaceuticals (Basel)"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B74",
+        "doi-asserted-by": "crossref",
+        "first-page": "781",
+        "DOI": "10.1016/S0145-305X(03)00058-2",
+        "article-title": "Acanthoscurrin: a novel glycine-rich antimicrobial peptide constitutively expressed in the hemocytes of the spider Acanthoscurria gomesiana",
+        "volume": "27",
+        "author": "Lorenzini",
+        "year": "2003",
+        "journal-title": "Dev. Comp. Immunol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B75",
+        "doi-asserted-by": "crossref",
+        "first-page": "2604",
+        "DOI": "10.1016/j.molimm.2009.05.002",
+        "article-title": "Hyastatin, a glycine-rich multi-domain antimicrobial peptide isolated from the spider crab (Hyas araneus) hemocytes",
+        "volume": "46",
+        "author": "Sperstad",
+        "year": "2009",
+        "journal-title": "Mol. Immunol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B76",
+        "doi-asserted-by": "crossref",
+        "first-page": "1484",
+        "DOI": "10.3389/fmicb.2016.01484",
+        "article-title": "Armadillidin H, a Glycine-Rich peptide from the terrestrial crustacean armadillidium vulgare, displays an unexpected wide antimicrobial spectrum with membranolytic activity",
+        "volume": "7",
+        "author": "Verdon",
+        "year": "2016",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B77",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0119490",
+        "DOI": "10.1371/journal.pone.0119490",
+        "article-title": "Analysis and prediction of the critical regions of antimicrobial peptides based on conditional random fields",
+        "volume": "10",
+        "author": "Chang",
+        "year": "2015",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B78",
+        "doi-asserted-by": "crossref",
+        "first-page": "7738",
+        "DOI": "10.1074/jbc.M111.303602",
+        "article-title": "Roles of hydrophobicity and charge distribution of cationic antimicrobial peptides in peptide-membrane interactions",
+        "volume": "287",
+        "author": "Yin",
+        "year": "2012",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B79",
+        "doi-asserted-by": "crossref",
+        "first-page": "369",
+        "DOI": "10.1002/bip.20911",
+        "article-title": "Effects of net charge and the number of positively charged residues on the biological activity of amphipathic alpha-helical cationic antimicrobial peptides",
+        "volume": "90",
+        "author": "Jiang",
+        "year": "2008",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B80",
+        "doi-asserted-by": "crossref",
+        "first-page": "W550",
+        "DOI": "10.1093/nar/gkx273",
+        "article-title": "Programmatic access to bioinformatics tools from EMBL-EBI update: 2017",
+        "volume": "45",
+        "author": "Chojnacki",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B81",
+        "doi-asserted-by": "crossref",
+        "first-page": "1398",
+        "DOI": "10.1128/AAC.00925-06",
+        "article-title": "Role of peptide hydrophobicity in the mechanism of action of alpha-helical antimicrobial peptides",
+        "volume": "51",
+        "author": "Chen",
+        "year": "2007",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B82",
+        "doi-asserted-by": "crossref",
+        "first-page": "2021",
+        "DOI": "10.1074/jbc.272.3.2021",
+        "article-title": "Direct evidence that involucrin is a major early isopeptide cross-linked component of the keratinocyte cornified cell envelope",
+        "volume": "272",
+        "author": "Steinert",
+        "year": "1997",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B83",
+        "doi-asserted-by": "crossref",
+        "first-page": "1308",
+        "DOI": "10.1002/ijc.25125",
+        "article-title": "The protease inhibitor, elafin, induces p53-dependent apoptosis in human melanoma cells",
+        "volume": "127",
+        "author": "Yu",
+        "year": "2010",
+        "journal-title": "Int. J. Cancer"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B84",
+        "doi-asserted-by": "crossref",
+        "first-page": "1352",
+        "DOI": "10.1016/j.bbamem.2015.02.021",
+        "article-title": "Cationic amphipathic peptides KT2 and RT2 are taken up into bacterial cells and kill planktonic and biofilm bacteria",
+        "volume": "1848",
+        "author": "Anunthawan",
+        "year": "2015",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B85",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1038/nprot.2008.211",
+        "article-title": "Systematic and integrative analysis of large gene lists using DAVID bioinformatics resources",
+        "volume": "4",
+        "author": "Huang da",
+        "year": "2009",
+        "journal-title": "Nat. Protoc."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B86",
+        "doi-asserted-by": "crossref",
+        "first-page": "996",
+        "DOI": "10.1038/nmeth.2604",
+        "article-title": "UPARSE: highly accurate OTU sequences from microbial amplicon reads",
+        "volume": "10",
+        "author": "Edgar",
+        "year": "2013",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B87",
+        "doi-asserted-by": "crossref",
+        "first-page": "207",
+        "DOI": "10.1007/978-1-4939-3369-3_13",
+        "article-title": "MG-RAST, a metagenomics service for analysis of microbial community structure and function",
+        "volume": "1399",
+        "author": "Keegan",
+        "year": "2016",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B88",
+        "doi-asserted-by": "crossref",
+        "first-page": "131",
+        "DOI": "10.1186/s12918-017-0503-4",
+        "article-title": "Identification of natural antimicrobial peptides from bacteria through metagenomic and metatranscriptomic analysis of high-throughput transcriptome data of Taiwanese oolong teas",
+        "volume": "11",
+        "author": "Huang",
+        "year": "2017",
+        "journal-title": "BMC Syst. Biol."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B89",
+        "doi-asserted-by": "crossref",
+        "first-page": "255",
+        "DOI": "10.1002/bmb.2006.494034042644",
+        "article-title": "Biomolecules in the computer: Jmol to the rescue",
+        "volume": "34",
+        "author": "Herraez",
+        "year": "2006",
+        "journal-title": "Biochem. Mol. Biol. Educ."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B90",
+        "doi-asserted-by": "crossref",
+        "first-page": "D279",
+        "DOI": "10.1093/nar/gkv1344",
+        "article-title": "The Pfam protein families database: towards a more sustainable future",
+        "volume": "44",
+        "author": "Finn",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "key\n\t\t\t\t2019010803482352100_B91",
+        "doi-asserted-by": "crossref",
+        "first-page": "5971",
+        "DOI": "10.3390/ijms12095971",
+        "article-title": "The role of antimicrobial peptides in preventing multidrug-resistant bacterial infections and biofilm formation",
+        "volume": "12",
+        "author": "Park",
+        "year": "2011",
+        "journal-title": "Int. J. Mol. Sci."
+      }
+    ],
+    "container-title": [
+      "Nucleic Acids Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/47/D1/D285/27437072/gky1030.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          28
+        ]
+      ],
+      "date-time": "2019-10-28T00:52:49Z",
+      "timestamp": 1572223969000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/nar/article/47/D1/D285/5150231"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          31
+        ]
+      ]
+    },
+    "references-count": 91,
+    "journal-issue": {
+      "issue": "D1",
+      "published-online": {
+        "date-parts": [
+          [
+            2018,
+            10,
+            31
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2019,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/nar/gky1030",
+    "relation": {},
+    "ISSN": [
+      "0305-1048",
+      "1362-4962"
+    ],
+    "issn-type": [
+      {
+        "value": "0305-1048",
+        "type": "print"
+      },
+      {
+        "value": "1362-4962",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2019,
+          1,
+          8
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          10,
+          31
+        ]
+      ]
+    }
+  }
+}

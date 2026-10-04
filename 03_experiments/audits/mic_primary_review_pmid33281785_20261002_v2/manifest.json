@@ -1,0 +1,32 @@
+{
+  "status": "blocked_primary_review_in_progress",
+  "generated_at": "2026-10-02T01:51:53.984162+00:00",
+  "paper": {
+    "pmid": "33281785",
+    "doi": "10.3389/fmicb.2020.589666",
+    "article_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.589666/full",
+    "pdf_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2020.589666/pdf",
+    "article_license": "CC BY 4.0 as stated on the publisher article page"
+  },
+  "script_sha256": "b250ec39acd3476dcdb523ea5d8fef03f9bdc0cd1d8bf313e1bc07c0a8cf3efa",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_pmid33281785_20261001_v1\\raw\\ross_2020_frontiers.pdf": "18aea61c38130cba3ad26b2416ce620b94841b1e561cbb52b82ed37cca12f13c"
+  },
+  "review": {
+    "records": 8,
+    "figure_1_sequences_matching": 8,
+    "table_1_bl21_mic_matching": 8,
+    "database_mic_conflicts": 0,
+    "records_released_for_training": 0
+  },
+  "limitations": [
+    "Figure 1 image sequences were transcribed by one reviewer and need independent confirmation.",
+    "The paper-level match does not resolve the frozen cohort's remaining studies or its training gate.",
+    "The study used sheep blood for hemolysis; this is not a human erythrocyte HC50 source."
+  ],
+  "outputs": {
+    "record_review.csv": "093656b39ef89ee5ab1a8d98b8e4ee5c8d4ec4cfedac22435c20d9ec7c40469a"
+  }
+}

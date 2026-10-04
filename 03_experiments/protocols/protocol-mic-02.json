@@ -1,0 +1,39 @@
+{
+  "protocol_id": "protocol-mic-02",
+  "protocol_version": 1,
+  "status": "frozen_exploratory_baseline_training",
+  "parent_audit_protocol": "protocol-mic-01",
+  "parent_audit_protocol_sha256": "d54227ebb5380039cd07f6ddc979561ef6f99efaecdb7644267e6c7d00dffb97",
+  "cohort_manifest": "03_experiments/audits/mic_only_cohort_20261001_v2/manifest.json",
+  "fold_assignments": "03_experiments/audits/mic_only_cohort_20261001_v2/fold_assignments.csv",
+  "task": "exploratory_binary_prediction_of_escherichia_coli_mic",
+  "features": {
+    "implementation": "02_code/feature_extractor.py:extract_handcrafted_features",
+    "version": "handcrafted-44-v1",
+    "dimensions": 44,
+    "feature_groups": ["amino_acid_composition_20", "physicochemical_8", "selected_dipeptide_composition_16"],
+    "scaling": "StandardScaler fit on training partition only for logistic regression and RBF SVM; no scaling for random forest"
+  },
+  "models": [
+    {"id": "logistic_regression", "class": "sklearn.linear_model.LogisticRegression", "parameters": {"C": 1.0, "class_weight": "balanced", "max_iter": 5000, "solver": "lbfgs", "random_state": 42}},
+    {"id": "rbf_svm", "class": "sklearn.svm.SVC", "parameters": {"C": 1.0, "class_weight": "balanced", "gamma": "scale", "kernel": "rbf", "probability": true, "random_state": 42}},
+    {"id": "random_forest", "class": "sklearn.ensemble.RandomForestClassifier", "parameters": {"class_weight": "balanced", "max_depth": null, "min_samples_leaf": 2, "n_estimators": 500, "n_jobs": 1, "random_state": 42}}
+  ],
+  "validation": {
+    "method": "existing immutable StratifiedGroupKFold assignments from protocol-mic-01 audit",
+    "folds": 5,
+    "repartition": false,
+    "hyperparameter_tuning": false,
+    "threshold": 0.5,
+    "primary_metric": "pooled out-of-fold average precision (AUPRC)",
+    "secondary_metrics": ["pooled out-of-fold AUROC", "MCC at fixed threshold 0.5", "balanced accuracy", "fold-specific AUPRC and AUROC"],
+    "reporting": "pooled OOF metrics and every fold metric; fold-wise mean is descriptive only; no confidence interval or formal inferential claim"
+  },
+  "scope_limits": [
+    "exploratory baseline only; not a formal model release or publication-ready result",
+    "the indivisible 293-molecule homology component remains intact in its assigned fold",
+    "no ESM embeddings, external holdout, model selection, threshold selection, calibration, or post-hoc filtering",
+    "results are conditional on the current evidence-screened cohort and its highly imbalanced homology-group fold sizes"
+  ],
+  "release_gate": "This protocol authorizes only the fixed exploratory baseline run. It does not change the blocked status of the original dual-task formal study."
+}

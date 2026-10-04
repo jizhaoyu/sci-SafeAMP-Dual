@@ -1,0 +1,12 @@
+{
+  "status": "literature_audit_completed",
+  "generated_at": "2026-10-03T02:23:27.891091+00:00",
+  "input_sha256": "7b84fc484f2cc7aed9c5a38ac36a167f8dcec86014f288ab3d2625e7bd4aec7e",
+  "development_csv_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "total_audited": 39,
+  "summary": {
+    "provisional_needs_primary_article_audit": 28,
+    "rejected": 6,
+    "eligible_pending_primary_pdf_audit": 5
+  }
+}

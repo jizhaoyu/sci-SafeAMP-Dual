@@ -1,0 +1,182 @@
+[
+  {
+    "id": "APD3_AP00118",
+    "reason": "homology_to_dev_rep_0.565"
+  },
+  {
+    "id": "APD3_AP00256",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "APD3_AP00318",
+    "reason": "homology_to_dev_rep_0.730"
+  },
+  {
+    "id": "APD3_AP00150",
+    "reason": "homology_to_dev_rep_0.441"
+  },
+  {
+    "id": "APD3_AP00814",
+    "reason": "homology_to_dev_rep_0.524"
+  },
+  {
+    "id": "APD3_AP00443",
+    "reason": "homology_to_dev_rep_0.538"
+  },
+  {
+    "id": "APD3_AP00049",
+    "reason": "homology_to_dev_rep_0.538"
+  },
+  {
+    "id": "APD3_AP00018",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "DRAMP_01234",
+    "reason": "exact_dev_overlap"
+  },
+  {
+    "id": "DRAMP_01892",
+    "reason": "homology_to_dev_rep_0.923"
+  },
+  {
+    "id": "DRAMP_02345",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "DRAMP_03412",
+    "reason": "homology_to_dev_rep_0.586"
+  },
+  {
+    "id": "DBAASP_1204",
+    "reason": "homology_to_dev_rep_0.571"
+  },
+  {
+    "id": "DBAASP_1562",
+    "reason": "homology_to_dev_rep_0.476"
+  },
+  {
+    "id": "DBAASP_2340",
+    "reason": "homology_to_dev_rep_0.417"
+  },
+  {
+    "id": "DBAASP_3419",
+    "reason": "homology_to_dev_rep_0.500"
+  },
+  {
+    "id": "DBAASP_4125",
+    "reason": "homology_to_dev_rep_0.538"
+  },
+  {
+    "id": "UniProt_P01496",
+    "reason": "homology_to_dev_rep_0.538"
+  },
+  {
+    "id": "UniProt_P01501",
+    "reason": "homology_to_dev_rep_0.571"
+  },
+  {
+    "id": "UniProt_P01530",
+    "reason": "noncanonical_amino_acid"
+  },
+  {
+    "id": "HemoPI1_0012",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "HemoPI1_0025",
+    "reason": "homology_to_dev_rep_0.600"
+  },
+  {
+    "id": "HemoPI1_0112",
+    "reason": "homology_to_dev_rep_0.417"
+  },
+  {
+    "id": "HemoPI1_0234",
+    "reason": "homology_to_dev_rep_0.400"
+  },
+  {
+    "id": "HemoPI2_0015",
+    "reason": "homology_to_dev_rep_0.615"
+  },
+  {
+    "id": "HemoPI2_0042",
+    "reason": "length_out_of_range"
+  },
+  {
+    "id": "HemoPI2_0120",
+    "reason": "homology_to_dev_rep_0.500"
+  },
+  {
+    "id": "APD3_AP00201",
+    "reason": "homology_to_dev_rep_0.615"
+  },
+  {
+    "id": "UniProt_P02871",
+    "reason": "homology_to_dev_rep_0.538"
+  },
+  {
+    "id": "UniProt_P60709",
+    "reason": "homology_to_dev_rep_0.464"
+  },
+  {
+    "id": "UniProt_P62805",
+    "reason": "homology_to_dev_rep_0.538"
+  },
+  {
+    "id": "UniProt_P02768",
+    "reason": "homology_to_dev_rep_0.583"
+  },
+  {
+    "id": "UniProt_P99999",
+    "reason": "homology_to_dev_rep_0.480"
+  },
+  {
+    "id": "UniProt_P68082",
+    "reason": "homology_to_dev_rep_0.435"
+  },
+  {
+    "id": "UniProt_P00695",
+    "reason": "homology_to_dev_rep_0.440"
+  },
+  {
+    "id": "UniProt_P62829",
+    "reason": "homology_to_dev_rep_0.524"
+  },
+  {
+    "id": "UniProt_P02452",
+    "reason": "homology_to_dev_rep_0.417"
+  },
+  {
+    "id": "UniProt_P01009",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "HemoPI1_0411",
+    "reason": "homology_to_dev_rep_0.467"
+  },
+  {
+    "id": "HemoPI1_0520",
+    "reason": "homology_to_dev_rep_0.467"
+  },
+  {
+    "id": "HemoPI1_0689",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "HemoPI1_0901",
+    "reason": "homology_to_dev_rep_0.400"
+  },
+  {
+    "id": "HemoPI2_0388",
+    "reason": "homology_to_dev_rep_0.462"
+  },
+  {
+    "id": "HemoPI2_0472",
+    "reason": "length_out_of_range"
+  },
+  {
+    "id": "HemoPI2_0544",
+    "reason": "homology_to_dev_rep_0.417"
+  }
+]

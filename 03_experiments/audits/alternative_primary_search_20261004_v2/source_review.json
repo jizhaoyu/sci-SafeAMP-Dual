@@ -1,0 +1,73 @@
+[
+  {
+    "source_id": "pandinin2014",
+    "doi": "10.1371/journal.pone.0101742",
+    "pmid": "25019413",
+    "pmcid": "PMC4096598",
+    "title": "Characterization of Antibacterial and Hemolytic Activity of Synthetic Pandinin 2 Variants and Their Inhibition against Mycobacterium tuberculosis",
+    "formal_dev_identifier_matches": [
+      "DBAASP:948"
+    ],
+    "mic_identifier_matches": [],
+    "status": "blocked_source_overlap_and_intermediate_mic",
+    "admitted_molecules": 0,
+    "admitted_assays": 0,
+    "rationale": "Exact identifier overlap with DBAASP:948 in formal dev set; 5 sequences have homology violations (up to 1.0) with formal dev set. MIC values in Table 3 against E. coli (12.5-25 uM, 32.15-68.16 ug/ml) fall in the intermediate zone (>32 and <128 ug/ml), yielding zero binary labels under protocol rules."
+  },
+  {
+    "source_id": "corvus2023",
+    "doi": "10.1038/s41598-023-45875-w",
+    "pmid": "37907616",
+    "pmcid": "PMC10618271",
+    "title": "Transcriptome analysis of Corvus splendens reveals a repertoire of antimicrobial peptides",
+    "formal_dev_identifier_matches": [],
+    "mic_identifier_matches": [],
+    "status": "excluded_chemical_modification",
+    "admitted_molecules": 0,
+    "admitted_assays": 0,
+    "rationale": "Peptide synthesis in Methods explicitly reports Rink amide resin / C-terminal amidation. Excluded from current unmodified linear peptide domain."
+  },
+  {
+    "source_id": "chmap2018",
+    "doi": "10.3389/fphar.2018.01501",
+    "pmid": "30622471",
+    "pmcid": "PMC6308165",
+    "title": "Anticancer Activity of the Goat Antimicrobial Peptide ChMAP-28",
+    "formal_dev_identifier_matches": [
+      "DBAASP:12306"
+    ],
+    "mic_identifier_matches": [],
+    "status": "blocked_no_ecoli_mic_and_dev_overlap",
+    "admitted_molecules": 0,
+    "admitted_assays": 0,
+    "rationale": "Anticancer study reporting cancer cell line IC50 values; does not contain primary E. coli MIC table. Exact sequence and study overlap with formal dev set DBAASP:12306."
+  },
+  {
+    "source_id": "goat_antibacterial2018",
+    "doi": "10.3389/fmicb.2018.02983",
+    "pmid": "30555455",
+    "pmcid": "PMC6284057",
+    "title": "Combined Antibacterial Effects of Goat Cathelicidins With Different Mechanisms of Action",
+    "formal_dev_identifier_matches": [
+      "DBAASP:12306"
+    ],
+    "mic_identifier_matches": [],
+    "status": "blocked_formal_overlap_and_clustering_constraint",
+    "admitted_molecules": 0,
+    "admitted_assays": 0,
+    "rationale": "Primary citation for formal dev set DBAASP:12306 (cannot serve as independent external validation). For MIC cohort: ChMAP-28 has 0.6071 identity with BMAP-27B (must join component 4), mini-ChBac has 0.6400 identity with component 0 (Bac7 family) and 24 violations against formal dev set. Combination treatments cannot be counted as single-peptide MIC."
+  },
+  {
+    "source_id": "hymenochirin2012",
+    "doi": "10.1016/j.peptides.2012.03.029",
+    "pmid": "22497805",
+    "thesis_repository": "https://edepot.wur.nl/255770 (Chapter 6)",
+    "title": "The hymenochirins: A family of host-defense peptides from the Congo dwarf clawed frog Hymenochirus boettgeri (Pipidae)",
+    "formal_dev_identifier_matches": [],
+    "mic_identifier_matches": [],
+    "status": "blocked_intermediate_mic_and_dev_homology",
+    "admitted_molecules": 0,
+    "admitted_assays": 0,
+    "rationale": "Chapter 6 Table 1: Hymenochirin-1B is C-terminally amidated (-NH2), excluded. Hymenochirin-2B to 5B have E. coli MIC of 20-40 uM (56.35 - 114.43 ug/ml), which falls squarely into the indeterminate/intermediate zone (32 < MIC < 128 ug/ml), yielding zero binary labels. In addition, all five hymenochirins violate the 0.40 homology threshold against formal dev set (identities up to 0.8276 with DBAASP:14150)."
+  }
+]

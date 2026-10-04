@@ -1,0 +1,51 @@
+sample_id,record_id,source_dataset,assay_index,target,medium,method,raw_mic,raw_unit,normalized_low_ug_ml,normalized_high_ug_ml,eligible,derived_label,reference_resolution,assay_study_ids
+9969ca3e3c5d1fb6e0955cd1,DBAASP:25545,DBAASP,0,Escherichia coli ATCC 11775,LBB,,>64,µM,134.62827520000002,inf,True,0,indexed_assay_reference,dbaasp_article:29997|doi:10.1038/s42256-026-01237-5|pmid:42206144
+9969ca3e3c5d1fb6e0955cd1,DBAASP:25545,DBAASP,1,Escherichia coli AIC221,LBB,,>64,µM,134.62827520000002,inf,True,0,indexed_assay_reference,dbaasp_article:29997|doi:10.1038/s42256-026-01237-5|pmid:42206144
+9969ca3e3c5d1fb6e0955cd1,DBAASP:25545,DBAASP,2,Escherichia coli AIC222,LBB,,>64,µM,134.62827520000002,inf,True,0,indexed_assay_reference,dbaasp_article:29997|doi:10.1038/s42256-026-01237-5|pmid:42206144
+06c49b2803f56bd9e3da3902,DBAASP:25504,DBAASP,0,Escherichia coli ATCC 11775,LBB,,>64,µM,168.20999680000003,inf,True,0,indexed_assay_reference,dbaasp_article:29956|doi:10.1038/s42256-026-01237-5|pmid:42206144
+b69432d72bbb81e6b4545bd3,DBAASP:25470,DBAASP,0,Escherichia coli AIC222,LBB,,8,µM,13.505817600000004,13.505817600000004,True,1,indexed_assay_reference,dbaasp_article:29922|doi:10.1038/s42256-026-01237-5|pmid:42206144
+140824d101251e7d916d6fb8,DBAASP:25508,DBAASP,0,Escherichia coli ATCC 11775,LBB,,>64,µM,217.1026688,inf,True,0,indexed_assay_reference,dbaasp_article:29960|doi:10.1038/s42256-026-01237-5|pmid:42206144
+140824d101251e7d916d6fb8,DBAASP:25508,DBAASP,1,Escherichia coli AIC222,LBB,,64,µM,217.1026688,217.1026688,True,0,indexed_assay_reference,dbaasp_article:29960|doi:10.1038/s42256-026-01237-5|pmid:42206144
+e54011da7ddef7d9ef0a781e,DBAASP:25491,DBAASP,0,Escherichia coli ATCC 11775,LBB,,>64,µM,139.18379520000002,inf,True,0,indexed_assay_reference,dbaasp_article:29943|doi:10.1038/s42256-026-01237-5|pmid:42206144
+e54011da7ddef7d9ef0a781e,DBAASP:25491,DBAASP,1,Escherichia coli AIC221,LBB,,>64,µM,139.18379520000002,inf,True,0,indexed_assay_reference,dbaasp_article:29943|doi:10.1038/s42256-026-01237-5|pmid:42206144
+e54011da7ddef7d9ef0a781e,DBAASP:25491,DBAASP,2,Escherichia coli AIC222,LBB,,>64,µM,139.18379520000002,inf,True,0,indexed_assay_reference,dbaasp_article:29943|doi:10.1038/s42256-026-01237-5|pmid:42206144
+743fd48c0fce235f28b31e5b,DBAASP:25563,DBAASP,0,Escherichia coli ATCC 11775,LBB,,>64,µM,243.23386880000004,inf,True,0,indexed_assay_reference,dbaasp_article:30015|doi:10.1038/s42256-026-01237-5|pmid:42206144
+743fd48c0fce235f28b31e5b,DBAASP:25563,DBAASP,1,Escherichia coli AIC221,LBB,,64,µM,243.23386880000004,243.23386880000004,True,0,indexed_assay_reference,dbaasp_article:30015|doi:10.1038/s42256-026-01237-5|pmid:42206144
+743fd48c0fce235f28b31e5b,DBAASP:25563,DBAASP,2,Escherichia coli AIC222,LBB,,>64,µM,243.23386880000004,inf,True,0,indexed_assay_reference,dbaasp_article:30015|doi:10.1038/s42256-026-01237-5|pmid:42206144
+20fc2276b66c1f3cbe4094ff,DBAASP:25450,DBAASP,0,Escherichia coli ATCC 11775,LBB,,8,µM,24.1902016,24.1902016,True,1,indexed_assay_reference,dbaasp_article:29902|doi:10.1038/s42256-026-01237-5|pmid:42206144
+20fc2276b66c1f3cbe4094ff,DBAASP:25450,DBAASP,1,Escherichia coli AIC221,LBB,,4,µM,12.0951008,12.0951008,True,1,indexed_assay_reference,dbaasp_article:29902|doi:10.1038/s42256-026-01237-5|pmid:42206144
+20fc2276b66c1f3cbe4094ff,DBAASP:25450,DBAASP,2,Escherichia coli AIC222,LBB,,4,µM,12.0951008,12.0951008,True,1,indexed_assay_reference,dbaasp_article:29902|doi:10.1038/s42256-026-01237-5|pmid:42206144
+f14e0afc5581b356a795ba27,DBAASP:25497,DBAASP,0,Escherichia coli ATCC 11775,LBB,,>64,µM,145.1396096,inf,True,0,indexed_assay_reference,dbaasp_article:29949|doi:10.1038/s42256-026-01237-5|pmid:42206144
+f14e0afc5581b356a795ba27,DBAASP:25497,DBAASP,1,Escherichia coli AIC222,LBB,,64,µM,145.1396096,145.1396096,True,0,indexed_assay_reference,dbaasp_article:29949|doi:10.1038/s42256-026-01237-5|pmid:42206144
+de82a2a6ab3486601b4242ad,DBAASP:25453,DBAASP,0,Escherichia coli AIC221,LBB,,16,µM,23.61556480000001,23.61556480000001,True,1,indexed_assay_reference,dbaasp_article:29905|doi:10.1038/s42256-026-01237-5|pmid:42206144
+9e5c1c988fe34a0b049e4af3,DBAASP:17141,DBAASP,0,Escherichia coli BL21,MHB,,2,µM,6.165410400000002,6.165410400000002,True,1,indexed_assay_reference,dbaasp_article:20276|pmid:33281785
+b0196f0832d0c6c86adb5235,DBAASP:17170,DBAASP,0,Escherichia coli BL21,MHB,,1,µM,3.0766952000000005,3.0766952000000005,True,1,indexed_assay_reference,dbaasp_article:20247|pmid:33281785
+14485f5ce69d7d0af664b8f3,DBAASP:17154,DBAASP,0,Escherichia coli BL21,MHB,,2,µM,6.061250400000001,6.061250400000001,True,1,indexed_assay_reference,dbaasp_article:20263|pmid:33281785
+65ae378c3f40a462912b59d9,DBAASP:17180,DBAASP,0,Escherichia coli BL21,MHB,,2,µM,6.003330400000001,6.003330400000001,True,1,indexed_assay_reference,dbaasp_article:20237|pmid:33281785
+22bdec7b1a8d89bf2db86e62,DBAASP:17177,DBAASP,0,Escherichia coli BL21,MHB,,2,µM,5.975290400000001,5.975290400000001,True,1,indexed_assay_reference,dbaasp_article:20240|pmid:33281785
+24be5f520067b5d17c2bcb75,DBAASP:17159,DBAASP,0,Escherichia coli BL21,MHB,,2,µM,6.0893304000000015,6.0893304000000015,True,1,indexed_assay_reference,dbaasp_article:20258|pmid:33281785
+b3188427ac2a8e4b34ca4e00,DBAASP:17137,DBAASP,0,Escherichia coli BL21,MHB,,1,µM,3.0987052000000004,3.0987052000000004,True,1,indexed_assay_reference,dbaasp_article:20280|pmid:33281785
+c31dfac73b7d7b1b74a79121,DBAASP:17148,DBAASP,0,Escherichia coli BL21,MHB,,1,µM,3.0406652000000003,3.0406652000000003,True,1,indexed_assay_reference,dbaasp_article:20269|pmid:33281785
+59242a575f558b665f07f2c4,DBAASP:20378,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24107|pmid:36551368
+7cfd51618c8f644ebf6b9fdb,DBAASP:20356,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24083|pmid:36551368
+dba639997f3ac7aa0a460932,DBAASP:20336,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24059|dbaasp_article:24165|pmid:35884206|pmid:36551368
+f6fec918417b40afd4225ee4,DBAASP:20396,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24133|pmid:36551368
+bede7ce6dc6d91bd36ed90be,DBAASP:20358,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24085|pmid:36551368
+2bf7659c88396ffa468f252b,DBAASP:20372,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24101|pmid:36551368
+e22654d022dbe272358842ca,DBAASP:20369,DBAASP,0,Escherichia coli ATCC 25922,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:24098|pmid:36551368
+b5954341f79c286a515abd91,DBAASP:13248,DBAASP,0,Escherichia coli K12 MG1655,MHB,,128,µg/ml,128.0,128.0,True,0,indexed_assay_reference,dbaasp_article:15601|pmid:29259134
+80bec692b0bf9a9c8e3c37f8,DBAASP:13184,DBAASP,0,Escherichia coli K12 MG1655,MHB,,32,µg/ml,32.0,32.0,True,1,indexed_assay_reference,dbaasp_article:15536|pmid:29259134
+83254e4f0b6063e25791668d,DBAASP:13205,DBAASP,0,Escherichia coli K12 MG1655,MHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:15558|pmid:29259134
+0bad315d1aa3eae62114431b,DBAASP:18062,DBAASP,0,Escherichia coli NBRC 12734,CAMHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:21399|pmid:33790103
+cf6ae302bad088280f27436e,DBAASP:18063,DBAASP,0,Escherichia coli NBRC 12734,CAMHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:21398|pmid:33790103
+3e656d2ae8d48ae33078fcd4,DBAASP:18059,DBAASP,0,Escherichia coli NBRC 12734,CAMHB,,>128,µg/ml,128.0,inf,True,0,indexed_assay_reference,dbaasp_article:21402|pmid:33790103
+cb081a19332018e7b72bb3dc,DBAASP:24292,DBAASP,1,Escherichia coli AIC221,LBB,,64,µM,212.61696000000003,212.61696000000003,True,0,indexed_assay_reference,dbaasp_article:28662|pmid:40645962
+4e4425d6ea09b7c247453b20,DBAASP:24274,DBAASP,0,Escherichia coli ATCC 11775,LBB,,16,µM,27.90828160000001,27.90828160000001,True,1,indexed_assay_reference,dbaasp_article:28643|pmid:40645962
+4e4425d6ea09b7c247453b20,DBAASP:24274,DBAASP,1,Escherichia coli AIC221,LBB,,8,µM,13.954140800000005,13.954140800000005,True,1,indexed_assay_reference,dbaasp_article:28643|pmid:40645962
+04967cffedeab5e93f085ee9,DBAASP:24269,DBAASP,0,Escherichia coli AIC221,LBB,,16,µM,23.920198400000004,23.920198400000004,True,1,indexed_assay_reference,dbaasp_article:28639|pmid:40645962
+f623e9e066cf619b398b8e67,DRAMP:DRAMP00336,DRAMP,0,Escherichia coli ATCC 25922,trypticase soy broth,radial diffusion assay,6.4,µM,18.96716544,18.96716544,True,1,raw_primary_reference,doi:10.1074/jbc.m111.338970|pmid:22467870
+07e2678c77046e64108ae252,DRAMP:DRAMP00337,DRAMP,0,Escherichia coli ATCC 25922,trypticase soy broth,radial diffusion assay,6.6,µM,20.41204704,20.41204704,True,1,raw_primary_reference,doi:10.1074/jbc.m111.338970|pmid:22467870
+c2f959043aa12e0f96ae85ab,DRAMP:DRAMP00338,DRAMP,0,Escherichia coli ATCC 25922,trypticase soy broth,radial diffusion assay,8.5,µM,25.641521600000004,25.641521600000004,True,1,raw_primary_reference,doi:10.1074/jbc.m111.338970|pmid:22467870
+cbdc5a5194e53c6bf4dc78ec,DRAMP:DRAMP21455,DRAMP,0,Escherichia coli NBRC 14237,not stated in the screened record,MIC assay (method cited to PMID 15246874),<6.2,µM,0.0,20.856388320000008,True,1,raw_primary_reference,doi:10.3390/toxins11010050|pmid:30658410
+ed685c495abdd9ecc7e33057,PMID32344933:EtCec3-OH,original_primary_article,0,Escherichia coli D31,cation-adjusted Mueller-Hinton broth,"broth MIC, Methods 2.4",>1024,µg/mL,1024.0,inf,True,0,original_article_table_1_2_methods_2_4,doi:10.3390/microorganisms8050626|pmid:32344933
+ed685c495abdd9ecc7e33057,PMID32344933:EtCec3-OH,original_primary_article,1,Escherichia coli ATCC 25922,cation-adjusted Mueller-Hinton broth,"broth MIC, Methods 2.4",>1024,µg/mL,1024.0,inf,True,0,original_article_table_1_2_methods_2_4,doi:10.3390/microorganisms8050626|pmid:32344933

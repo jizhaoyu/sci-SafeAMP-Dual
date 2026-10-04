@@ -1,0 +1,46 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-02T08:49:07.910449+00:00",
+  "audit_protocol_id": "protocol-mic-01",
+  "candidate_molecules": 15,
+  "candidate_observations": 22,
+  "positive_molecules": 4,
+  "negative_molecules": 11,
+  "all_member_pairs": 105,
+  "homology_edges": 11,
+  "combined_components": 6,
+  "positive_bearing_components": 3,
+  "negative_bearing_components": 6,
+  "fold_structure_gate_passed": false,
+  "folds_generated": false,
+  "folds": [],
+  "folds_required": 5,
+  "seed": 42,
+  "cutoff": 0.4,
+  "cross_fold_homology_edges": null,
+  "cross_fold_primary_studies": null,
+  "blockers": [
+    "positive-bearing components: 3 < 5; five validation folds containing both classes are impossible.",
+    "Full evidence release and a new immutable training protocol remain incomplete."
+  ],
+  "records_released_for_training": 0,
+  "training_started": false,
+  "script_sha256": "6c3102cf7452944af8fd7c3db09f9d6485fe124b5a39db5bc439ac1bc2494d12",
+  "inputs": {
+    "03_experiments\\audits\\mic_confirmed_acid_subset_20261002_v1\\manifest.json": "1b8da8889327ee9c58c3d2e50c3d07b7e9a2e12fd4237b57c81f2db2c3fc3009",
+    "03_experiments\\audits\\mic_independent_sources_review_20261002_v1\\manifest.json": "b64d3b0b42bf80927bec737fbba4024b312ce559be78d100615865da95d6094c",
+    "03_experiments\\protocols\\protocol-mic-01.json": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+    "02_code\\public_data.py": "08b51ce8548b0d0a1cdbcaffa59edb59920572b9c649c1324d164beabd5209ea",
+    "02_code\\research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350",
+    "02_code\\audit_mic_reviewed_subset_hirsch.py": "7edf6a2cd9fac48ab682ebe3b11a0a75697cfe85d96498ddc64bcc9f257ff43e",
+    "02_code\\audit_mic_independent_sources.py": "652e09de5619fa535630412332d9fe2f2a32a305d4396ecc8ea3515507f0bb5e"
+  },
+  "outputs": {
+    "all_member_similarity.csv": "3782dc829d5daff75904ade92c81a1a8e5e9a635531c75062ecb027b40de0d35",
+    "candidate_molecules.csv": "d2ad54b302ce677360df3b4a37c26a40f53e01ea6a4ac5e4e441e1461bd0a3a2",
+    "candidate_observations.csv": "7c17b10a2ed2a1e13dcb9f0e5b0e2f5bcee52d01e04b895adafb1dde772a470c",
+    "component_summary.csv": "6b6ec51e48612dde6de0dd7354a1932b495cb778133955a6af05dc7ea0be5f6d",
+    "fold_assignments.csv": "11bb088186ae6a053c644c91f5e45c22409af06f4d5c1bb3b09821c88878f4c9",
+    "report.md": "2d5438deaacc28ae805bed01c46b20f810e2ce2c0423e9418b2c694c09256e2e"
+  }
+}

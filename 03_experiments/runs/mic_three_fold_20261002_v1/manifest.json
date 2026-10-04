@@ -1,0 +1,81 @@
+{
+  "status": "local_exploratory_three_fold_training_completed",
+  "generated_at": "2026-10-02T10:45:30.749810+00:00",
+  "protocol_id": "protocol-mic-07",
+  "protocol_sha256": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+  "cohort_manifest_sha256": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+  "evidence_release_manifest_sha256": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+  "molecules": 15,
+  "observations": 22,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 9,
+      "validation_n": 6,
+      "train_positive": 2,
+      "train_negative": 7,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 1,
+      "train_n": 10,
+      "validation_n": 5,
+      "train_positive": 3,
+      "train_negative": 7,
+      "validation_positive": 1,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 2,
+      "train_n": 11,
+      "validation_n": 4,
+      "train_positive": 3,
+      "train_negative": 8,
+      "validation_positive": 1,
+      "validation_negative": 3,
+      "both_classes": true
+    }
+  ],
+  "oof_rows": 45,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "dummy_prior"
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "training_started": true,
+  "formal_results_available": false,
+  "publication_ready": false,
+  "limitations": [
+    "Only 15 molecules, 4 positives and 6 indivisible components; validation folds contain only 1-2 positives.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ],
+  "script_sha256": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+  "outputs": {
+    "fixed_features.npy": "6766016ca4dac03aec7da45ad943be97dbe0195fe3264c846e5bd17ba06eaf3c",
+    "fold_metrics.csv": "7268c897a9a22bf25eb69e18113a566982e649d7de9b16f5971c6271224a8b46",
+    "fold_models\\dummy_prior_fold0.joblib": "2b5c6c44142bcfbdd63e111a2e9054bd80818f5c8c2374b5b5e94bbffd2c1b02",
+    "fold_models\\dummy_prior_fold1.joblib": "c64f975baa66b1fe97235425dd9de6bab2ec36fdbe23c1dc09f8720c6923458a",
+    "fold_models\\dummy_prior_fold2.joblib": "af8ca968fdf62b13b61689a80c65a1cc22b7f0e10080948291d2e132ab11939b",
+    "fold_models\\logistic_regression_fold0.joblib": "95e69c2f86052cb18c3cac65830f2ce69ffc03449ff3988ae3a99cafdee7c870",
+    "fold_models\\logistic_regression_fold1.joblib": "8a51e0b8bb916a8ce1778133c5ebfe21c48a45ede09e869c67ecdf93f10b67e9",
+    "fold_models\\logistic_regression_fold2.joblib": "372e16420363c3fcbd5093a72a7663e6d3339ed10579c5b99891c3eae9bf2b7d",
+    "fold_models\\random_forest_fold0.joblib": "cc0b84b0ae7bfa15d1cc1e4a8b39303dcd2b3d86aa6f1ab9a2a3a1ebafd69249",
+    "fold_models\\random_forest_fold1.joblib": "cda2c5943169740b26bf84e82dbb8980c85f66a9710080ecf5ae3ebb11bf9b93",
+    "fold_models\\random_forest_fold2.joblib": "d37f09975208b86b9e49b3df57c7e28401c634b9a00e53a3c5300835cf07233f",
+    "oof_predictions.csv": "c99da2df5836b79cf89b174607884d545c54bab0991609cb59a27deb77a7b85b",
+    "pooled_descriptive_metrics.csv": "b0f11fd0e873209e466cfa84827d2c36290c7c036fca6673872161a8127344a7",
+    "report.md": "0fd6f232b3f609931898f9d19661da415fd8e940746ea0f2f1be1a961bf78764"
+  }
+}

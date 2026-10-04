@@ -1,0 +1,41 @@
+{
+  "status": "exploratory_baselines_completed",
+  "generated_at": "2026-10-01T09:22:34.663596+00:00",
+  "protocol_id": "protocol-mic-04",
+  "protocol_sha256": "7847ab1bc5ba47ff20ba4d08e4142a23696ac4a52a03fabed6f838bf2381f7f0",
+  "protocol_path": "03_experiments\\protocols\\protocol-mic-04.json",
+  "audit_protocol_sha256": "d54227ebb5380039cd07f6ddc979561ef6f99efaecdb7644267e6c7d00dffb97",
+  "audit_manifest_sha256": "721a6ef9c4b63d77f154501378c84fed20b5488eaeb5cd2fa9d9aa4fee370bf5",
+  "fold_assignments_sha256": "46bdd34d7f0d140755b848649673aa4bd67fc34a86deb36a1840400383e792a8",
+  "cohort_size": 395,
+  "class_counts": {
+    "0": 138,
+    "1": 257
+  },
+  "fold_sizes": {
+    "0": 293,
+    "1": 25,
+    "2": 25,
+    "3": 26,
+    "4": 26
+  },
+  "feature_dimensions": 44,
+  "models": [
+    "logistic_regression",
+    "rbf_svm",
+    "random_forest"
+  ],
+  "tuning": false,
+  "formal_study_status": "blocked_unmodified",
+  "limitations": [
+    "Exploratory baseline only; not a formal model release or publication-ready result.",
+    "Pooled OOF estimates combine a 293-molecule validation fold and four folds of only 25-26 molecules.",
+    "Metrics are conditional on this evidence-screened cohort and fixed homology components; no inferential CI is reported."
+  ],
+  "outputs": [
+    "oof_predictions.csv",
+    "fold_metrics.csv",
+    "pooled_metrics.csv",
+    "report.md"
+  ]
+}

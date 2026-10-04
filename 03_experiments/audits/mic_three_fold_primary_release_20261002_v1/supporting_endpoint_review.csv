@@ -1,0 +1,3 @@
+﻿source_id,primary_location,target,raw_mic,raw_unit,derived_label,role
+hirsch2020,Table 5 EtCec3-OH without colistin,Escherichia coli ATCC 25922,>1024,µg/mL,0,supporting_same_molecule_consistency_not_additional_training_sample
+hirsch2020,Table 5 EtCec3-OH without colistin,Escherichia coli RKI 131/08,>1024,µg/mL,0,supporting_same_molecule_consistency_not_additional_training_sample

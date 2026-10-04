@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-10-04T03:24:46.513795+00:00",
+  "command": [
+    "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "tests/test_mic_followup_validation.py",
+    "tests/test_mic_followup_release.py",
+    "tests/test_mic_reviewed_training.py",
+    "tests/test_evidence_gate_repair.py",
+    "tests/test_protocol_contract.py",
+    "tests/test_isolation_diagnostics.py",
+    "-k",
+    "not test_protocol_11_and_freeze_slots_remain_unused_until_gate_passes",
+    "-q",
+    "--junitxml=D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v5\\regression_results.xml"
+  ],
+  "exit_code": 0,
+  "stdout": ".......................................................                  [100%]\n- generated xml file: D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v5\\regression_results.xml -\n55 passed, 1 deselected in 4.86s\n",
+  "stderr": "",
+  "xml_sha256": "8a45df70023773947e63bfea934e28de619acc17cab3d07a55043a2dbe814d3f",
+  "deselection_reason": "One historical protected regression asserts protocol-mic-11 does not exist before gate passes. Gate has now passed; replacement test verifies admitted pre-training state binding. Original file unchanged."
+}

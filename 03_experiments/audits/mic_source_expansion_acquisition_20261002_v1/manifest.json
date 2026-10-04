@@ -1,0 +1,2359 @@
+{
+  "status": "primary_source_acquisition_completed",
+  "generated_at": "2026-10-02T11:28:33.906646+00:00",
+  "protocol_id": "protocol-mic-08",
+  "protocol_sha256": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+  "protocol_frozen_at": "2026-10-02T11:22:32.120817+00:00",
+  "searches": [
+    {
+      "channel": "europepmc",
+      "theme": "antimicrobial peptide Escherichia coli MIC Wang resin",
+      "reported_hits": 760,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "openalex",
+      "theme": "antimicrobial peptide Escherichia coli MIC Wang resin",
+      "reported_hits": null,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "europepmc",
+      "theme": "antimicrobial peptide Escherichia coli MIC free carboxyl terminus",
+      "reported_hits": 429,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "openalex",
+      "theme": "antimicrobial peptide Escherichia coli MIC free carboxyl terminus",
+      "reported_hits": null,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "europepmc",
+      "theme": "proline rich peptide Escherichia coli MIC free acid",
+      "reported_hits": 1324,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "openalex",
+      "theme": "proline rich peptide Escherichia coli MIC free acid",
+      "reported_hits": null,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "europepmc",
+      "theme": "peptide dataset Escherichia coli minimum inhibitory concentration synthesis",
+      "reported_hits": 2265,
+      "discovery_response_saved": true
+    },
+    {
+      "channel": "openalex",
+      "theme": "peptide dataset Escherichia coli minimum inhibitory concentration synthesis",
+      "reported_hits": null,
+      "discovery_response_saved": true
+    }
+  ],
+  "sources": [
+    {
+      "source_id": "chekmenev2006",
+      "doi": "10.1016/j.bbamem.2006.03.034",
+      "pdf_url": "https://nationalmaglab.org/library/publications/NHMFL_Publication-3172.pdf",
+      "discovery": "web theme free carboxyl; mirror discovery replaced by author-institution original paper",
+      "review_order": 1,
+      "files": [
+        "raw/chekmenev2006_metadata.json",
+        "raw/chekmenev2006.pdf"
+      ],
+      "metadata": [
+        {
+          "id": "16815244",
+          "source": "MED",
+          "pmid": "16815244",
+          "doi": "10.1016/j.bbamem.2006.03.034",
+          "title": "Investigating molecular recognition and biological function at interfaces using piscidins, antimicrobial peptides from fish.",
+          "authorString": "Chekmenev EY, Vollmar BS, Forseth KT, Manion MN, Jones SM, Wagner TJ, Endicott RM, Kyriss BP, Homem LM, Pate M, He J, Raines J, Gor'kov PL, Brey WW, Mitchell DJ, Auman AJ, Ellard-Ivey MJ, Blazyk J, Cotten M.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Chekmenev EY",
+                "lastName": "Chekmenev",
+                "firstName": "Eduard Y",
+                "initials": "EY",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8745-8801"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "National High Magnetic Field Laboratory, Center for Interdisciplinary Magnetic Resonance, 1800 E. Paul Dirac Drive, Tallahassee, FL 32310, USA."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Vollmar BS",
+                "lastName": "Vollmar",
+                "firstName": "Breanna S",
+                "initials": "BS"
+              },
+              {
+                "fullName": "Forseth KT",
+                "lastName": "Forseth",
+                "firstName": "Kristen T",
+                "initials": "KT"
+              },
+              {
+                "fullName": "Manion MN",
+                "lastName": "Manion",
+                "firstName": "McKenna N",
+                "initials": "MN"
+              },
+              {
+                "fullName": "Jones SM",
+                "lastName": "Jones",
+                "firstName": "Shiela M",
+                "initials": "SM"
+              },
+              {
+                "fullName": "Wagner TJ",
+                "lastName": "Wagner",
+                "firstName": "Tim J",
+                "initials": "TJ"
+              },
+              {
+                "fullName": "Endicott RM",
+                "lastName": "Endicott",
+                "firstName": "RaeLynn M",
+                "initials": "RM"
+              },
+              {
+                "fullName": "Kyriss BP",
+                "lastName": "Kyriss",
+                "firstName": "Brandon P",
+                "initials": "BP"
+              },
+              {
+                "fullName": "Homem LM",
+                "lastName": "Homem",
+                "firstName": "Lorraine M",
+                "initials": "LM"
+              },
+              {
+                "fullName": "Pate M",
+                "lastName": "Pate",
+                "firstName": "Michelle",
+                "initials": "M"
+              },
+              {
+                "fullName": "He J",
+                "lastName": "He",
+                "firstName": "Jing",
+                "initials": "J"
+              },
+              {
+                "fullName": "Raines J",
+                "lastName": "Raines",
+                "firstName": "Joshua",
+                "initials": "J"
+              },
+              {
+                "fullName": "Gor'kov PL",
+                "lastName": "Gor'kov",
+                "firstName": "Peter L",
+                "initials": "PL"
+              },
+              {
+                "fullName": "Brey WW",
+                "lastName": "Brey",
+                "firstName": "William W",
+                "initials": "WW"
+              },
+              {
+                "fullName": "Mitchell DJ",
+                "lastName": "Mitchell",
+                "firstName": "Dan J",
+                "initials": "DJ"
+              },
+              {
+                "fullName": "Auman AJ",
+                "lastName": "Auman",
+                "firstName": "Ann J",
+                "initials": "AJ"
+              },
+              {
+                "fullName": "Ellard-Ivey MJ",
+                "lastName": "Ellard-Ivey",
+                "firstName": "Mary J",
+                "initials": "MJ"
+              },
+              {
+                "fullName": "Blazyk J",
+                "lastName": "Blazyk",
+                "firstName": "Jack",
+                "initials": "J"
+              },
+              {
+                "fullName": "Cotten M",
+                "lastName": "Cotten",
+                "firstName": "Myriam",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-6732-1736"
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0002-6732-1736"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8745-8801"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics"
+            ]
+          },
+          "journalInfo": {
+            "issue": "9",
+            "volume": "1758",
+            "journalIssueId": 1353357,
+            "dateOfPublication": "2006 Sep",
+            "monthOfPublication": 9,
+            "yearOfPublication": 2006,
+            "journal": {
+              "medlineAbbreviation": "Biochim Biophys Acta",
+              "title": "Biochimica et biophysica acta",
+              "essn": "1878-2434",
+              "issn": "0006-3002",
+              "nlmid": "0217513",
+              "isoabbreviation": "Biochim Biophys Acta"
+            },
+            "printPublicationDate": "2006-09-01"
+          },
+          "pubYear": "2006",
+          "pageInfo": "1359-1372",
+          "abstractText": "We studied amidated and non-amidated piscidins 1 and 3, amphipathic cationic antimicrobial peptides from fish, to characterize functional and structural similarities and differences between these peptides and better understand the structural motifs involved in biological activity and functional diversity among amidated and non-amidated isoforms. Antimicrobial and hemolytic assays were carried out to assess their potency and toxicity, respectively. Site-specific high-resolution solid-state NMR orientational restraints were obtained from (15)N-labeled amidated and non-amidated piscidins 1 and 3 in the presence of hydrated oriented lipid bilayers. Solid-state NMR and circular dichroism results indicate that the peptides are alpha-helical and oriented parallel to the membrane surface. This orientation was expected since peptide-lipid interactions are enhanced at the water-bilayer interface for amphipathic cationic antimicrobial peptides. (15)N solid-state NMR performed on oriented samples demonstrate that piscidin experiences fast, large amplitude backbone motions around an axis parallel to the bilayer normal. Under the conditions tested here, piscidin 1 was confirmed to be more antimicrobially potent than piscidin 3 and antimicrobial activity was not affected by amidation. In light of functional and structural similarities between piscidins 1 and 3, we propose that their topology and fast dynamics are related to their mechanism of action.",
+          "affiliation": "National High Magnetic Field Laboratory, Center for Interdisciplinary Magnetic Resonance, 1800 E. Paul Dirac Drive, Tallahassee, FL 32310, USA.",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print-Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article",
+              "Research Support, N.I.H., Extramural"
+            ]
+          },
+          "grantsList": {
+            "grant": [
+              {
+                "agency": "NIGMS NIH HHS",
+                "acronym": "GM",
+                "grantId": "GM-64676",
+                "orderIn": 0
+              }
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Animals"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Fishes"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Hemolysis",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Peptides",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "IP",
+                      "qualifierName": "isolation & purification"
+                    },
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Anti-Infective Agents",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "IP",
+                      "qualifierName": "isolation & purification"
+                    },
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Circular Dichroism"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Nuclear Magnetic Resonance, Biomolecular"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Amino Acid Sequence"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Molecular Sequence Data"
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Peptides",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Anti-Infective Agents",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1016/j.bbamem.2006.03.034"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "citedByCount": 62,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "N",
+          "hasBook": "N",
+          "hasSuppl": "N",
+          "hasLabsLinks": "Y",
+          "hasData": "N",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "2006-11-21",
+          "dateOfCreation": "2006-07-04",
+          "dateOfRevision": "2016-11-26",
+          "electronicPublicationDate": "2006-04-07",
+          "firstPublicationDate": "2006-04-07",
+          "firstIndexDate": "2008-01-29",
+          "hasEvaluations": "N"
+        }
+      ],
+      "full_text_available": true
+    },
+    {
+      "source_id": "foundation2024",
+      "doi": "10.1038/s41467-024-51933-2",
+      "discovery": "web theme peptide dataset synthesis; publisher original research",
+      "review_order": 2,
+      "files": [
+        "raw/foundation2024_metadata.json",
+        "raw/foundation2024.xml"
+      ],
+      "metadata": [
+        {
+          "id": "39214978",
+          "source": "MED",
+          "pmid": "39214978",
+          "pmcid": "PMC11364768",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC11364768"
+            ]
+          },
+          "doi": "10.1038/s41467-024-51933-2",
+          "title": "A Foundation Model Identifies Broad-Spectrum Antimicrobial Peptides against Drug-Resistant Bacterial Infection.",
+          "authorString": "Li T, Ren X, Luo X, Wang Z, Li Z, Luo X, Shen J, Li Y, Yuan D, Nussinov R, Zeng X, Shi J, Cheng F.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Li T",
+                "lastName": "Li",
+                "firstName": "Tingting",
+                "initials": "T",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Affiliated Hospital of Hunan University, School of Biomedical Sciences, Hunan University, Changsha, China."
+                    },
+                    {
+                      "affiliation": "Greater Bay Area Institute for Innovation, Hunan University, Guangzhou, 511300, Guangdong Province, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Ren X",
+                "lastName": "Ren",
+                "firstName": "Xuanbai",
+                "initials": "X",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "College of Information Science and Engineering, Hunan University, Changsha, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Luo X",
+                "lastName": "Luo",
+                "firstName": "Xiaoli",
+                "initials": "X",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0009-0001-7301-4775"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "College of Information Science and Engineering, Hunan University, Changsha, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Wang Z",
+                "lastName": "Wang",
+                "firstName": "Zhuole",
+                "initials": "Z",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Affiliated Hospital of Hunan University, School of Biomedical Sciences, Hunan University, Changsha, China."
+                    },
+                    {
+                      "affiliation": "Greater Bay Area Institute for Innovation, Hunan University, Guangzhou, 511300, Guangdong Province, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Li Z",
+                "lastName": "Li",
+                "firstName": "Zhenlu",
+                "initials": "Z",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "School of Life Science, Tianjin University, Tianjin, 300072, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Luo X",
+                "lastName": "Luo",
+                "firstName": "Xiaoyan",
+                "initials": "X",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "College of Information Science and Engineering, Hunan University, Changsha, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Shen J",
+                "lastName": "Shen",
+                "firstName": "Jun",
+                "initials": "J",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Affiliated Hospital of Hunan University, School of Biomedical Sciences, Hunan University, Changsha, China."
+                    },
+                    {
+                      "affiliation": "Greater Bay Area Institute for Innovation, Hunan University, Guangzhou, 511300, Guangdong Province, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Li Y",
+                "lastName": "Li",
+                "firstName": "Yun",
+                "initials": "Y",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Ophthalmology, The 2nd Xiangya Hospital of Central South University, Changsha, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Yuan D",
+                "lastName": "Yuan",
+                "firstName": "Dan",
+                "initials": "D",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-2831-0388"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Affiliated Hospital of Hunan University, School of Biomedical Sciences, Hunan University, Changsha, China."
+                    },
+                    {
+                      "affiliation": "Greater Bay Area Institute for Innovation, Hunan University, Guangzhou, 511300, Guangdong Province, China."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Nussinov R",
+                "lastName": "Nussinov",
+                "firstName": "Ruth",
+                "initials": "R",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-8115-6415"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Computational Structural Biology Section, Frederick National Laboratory for Cancer Research in the Laboratory of Cancer Immunometabolism, National Cancer Institute, Frederick, MD, 21702, USA."
+                    },
+                    {
+                      "affiliation": "Department of Human Molecular Genetics and Biochemistry, Sackler School of Medicine, Tel Aviv University, Tel Aviv, Israel."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Zeng X",
+                "lastName": "Zeng",
+                "firstName": "Xiangxiang",
+                "initials": "X",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1081-7658"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "College of Information Science and Engineering, Hunan University, Changsha, China. xzeng@hnu.edu.cn."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Shi J",
+                "lastName": "Shi",
+                "firstName": "Junfeng",
+                "initials": "J",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-7705-8866"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Affiliated Hospital of Hunan University, School of Biomedical Sciences, Hunan University, Changsha, China. Jeff-Shi@hnu.edu.cn."
+                    },
+                    {
+                      "affiliation": "Greater Bay Area Institute for Innovation, Hunan University, Guangzhou, 511300, Guangdong Province, China. Jeff-Shi@hnu.edu.cn."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Cheng F",
+                "lastName": "Cheng",
+                "firstName": "Feixiong",
+                "initials": "F",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1736-2847"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Cleveland Clinic Genome Center, Lerner Research Institute, Cleveland Clinic, Cleveland, OH, USA. chengf@ccf.org."
+                    },
+                    {
+                      "affiliation": "Genome Medicine Institute, Lerner Research Institute, Cleveland Clinic, Cleveland, OH, USA. chengf@ccf.org."
+                    },
+                    {
+                      "affiliation": "Department of Molecular Medicine, Cleveland Clinic Lerner College of Medicine, Case Western Reserve University, Cleveland, OH, USA. chengf@ccf.org."
+                    },
+                    {
+                      "affiliation": "Case Comprehensive Cancer Center, School of Medicine, Case Western Reserve University, Cleveland, OH, USA. chengf@ccf.org."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-7705-8866"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1736-2847"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-8115-6415"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1081-7658"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-2831-0388"
+              },
+              {
+                "type": "ORCID",
+                "value": "0009-0001-7301-4775"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "supporting_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "1",
+            "volume": "15",
+            "journalIssueId": 3806395,
+            "dateOfPublication": "2024 Aug",
+            "monthOfPublication": 8,
+            "yearOfPublication": 2024,
+            "journal": {
+              "medlineAbbreviation": "Nat Commun",
+              "title": "Nature communications",
+              "essn": "2041-1723",
+              "issn": "2041-1723",
+              "isoabbreviation": "Nat Commun",
+              "nlmid": "101528555"
+            },
+            "printPublicationDate": "2024-08-01"
+          },
+          "pubYear": "2024",
+          "pageInfo": "7538",
+          "abstractText": "Development of potent and broad-spectrum antimicrobial peptides (AMPs) could help overcome the antimicrobial resistance crisis. We develop a peptide language-based deep generative framework (deepAMP) for identifying potent, broad-spectrum AMPs. Using deepAMP to reduce antimicrobial resistance and enhance the membrane-disrupting abilities of AMPs, we identify, synthesize, and experimentally test 18 T1-AMP (Tier 1) and 11 T2-AMP (Tier 2) candidates in a two-round design and by employing cross-optimization-validation. More than 90% of the designed AMPs show a better inhibition than penetratin in both Gram-positive (i.e., S. aureus) and Gram-negative bacteria (i.e., K. pneumoniae and P. aeruginosa). T2-9 shows the strongest antibacterial activity, comparable to FDA-approved antibiotics. We show that three AMPs (T1-2, T1-5 and T2-10) significantly reduce resistance to S. aureus compared to ciprofloxacin and are effective against skin wound infection in a female wound mouse model infected with P. aeruginosa. In summary, deepAMP expedites discovery of effective, broad-spectrum AMPs against drug-resistant bacteria.",
+          "affiliation": "Affiliated Hospital of Hunan University, School of Biomedical Sciences, Hunan University, Changsha, China.",
+          "publicationStatus": "epublish",
+          "language": "eng",
+          "pubModel": "Electronic",
+          "pubTypeList": {
+            "pubType": [
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Animals"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Mice"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gram-Negative Bacteria",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Pseudomonas aeruginosa",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Staphylococcus aureus",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Bacterial Infections",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DT",
+                      "qualifierName": "drug therapy"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "MI",
+                      "qualifierName": "microbiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Wound Infection",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DT",
+                      "qualifierName": "drug therapy"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "MI",
+                      "qualifierName": "microbiology"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Disease Models, Animal"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Antimicrobial Cationic Peptides",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Anti-Bacterial Agents",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "TU",
+                      "qualifierName": "therapeutic use"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Microbial Sensitivity Tests"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Drug Resistance, Bacterial",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Female"
+              },
+              {
+                "majorTopic_YN": "Y",
+                "descriptorName": "Antimicrobial Peptides",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Anti-Bacterial Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Antimicrobial Cationic Peptides",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Antimicrobial Peptides",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1038/s41467-024-51933-2"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC11364768"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC11364768?pdf=render"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 106,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "license": "cc by-nc-nd",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "Y",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "pdb",
+              "doi"
+            ]
+          },
+          "dateOfCompletion": "2024-08-30",
+          "dateOfCreation": "2024-08-30",
+          "dateOfRevision": "2026-03-18",
+          "electronicPublicationDate": "2024-08-30",
+          "firstPublicationDate": "2024-08-30",
+          "firstIndexDate": "2024-09-02",
+          "fullTextReceivedDate": "2025-02-04",
+          "hasEvaluations": "N"
+        }
+      ],
+      "full_text_available": true
+    },
+    {
+      "source_id": "lactoferricin2015",
+      "pmcid": "PMC4359834",
+      "discovery": "web theme Wang resin; original research",
+      "review_order": 3,
+      "files": [
+        "raw/lactoferricin2015_metadata.json",
+        "raw/lactoferricin2015.xml"
+      ],
+      "metadata": [],
+      "full_text_available": true
+    },
+    {
+      "source_id": "boncat2025",
+      "pmcid": "PMC12748266",
+      "discovery": "web theme proline-rich peptide; original research",
+      "review_order": 4,
+      "files": [
+        "raw/boncat2025_metadata.json",
+        "raw/boncat2025.xml"
+      ],
+      "metadata": [],
+      "full_text_available": true
+    },
+    {
+      "source_id": "carrier2016",
+      "doi": "10.1371/journal.pone.0146552",
+      "discovery": "web theme peptide MIC synthesis; publisher original research",
+      "review_order": 5,
+      "files": [
+        "raw/carrier2016_metadata.json",
+        "raw/carrier2016.xml"
+      ],
+      "metadata": [
+        {
+          "id": "26808536",
+          "source": "MED",
+          "pmid": "26808536",
+          "pmcid": "PMC4726619",
+          "fullTextIdList": {
+            "fullTextId": [
+              "PMC4726619"
+            ]
+          },
+          "doi": "10.1371/journal.pone.0146552",
+          "title": "Rational Design of a Carrier Protein for the Production of Recombinant Toxic Peptides in Escherichia coli.",
+          "authorString": "Pane K, Durante L, Pizzo E, Varcamonti M, Zanfardino A, Sgambati V, Di Maro A, Carpentieri A, Izzo V, Di Donato A, Cafaro V, Notomista E.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Pane K",
+                "lastName": "Pane",
+                "firstName": "Katia",
+                "initials": "K",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-7594-7931"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Durante L",
+                "lastName": "Durante",
+                "firstName": "Lorenzo",
+                "initials": "L",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Pizzo E",
+                "lastName": "Pizzo",
+                "firstName": "Elio",
+                "initials": "E",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Varcamonti M",
+                "lastName": "Varcamonti",
+                "firstName": "Mario",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-4835-4778"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Zanfardino A",
+                "lastName": "Zanfardino",
+                "firstName": "Anna",
+                "initials": "A",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Sgambati V",
+                "lastName": "Sgambati",
+                "firstName": "Valeria",
+                "initials": "V",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Di Maro A",
+                "lastName": "Di Maro",
+                "firstName": "Antimo",
+                "initials": "A",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-9595-9665"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Environmental, Biological and Pharmaceutical Sciences and Technologies, Seconda Università di Napoli, Caserta, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Carpentieri A",
+                "lastName": "Carpentieri",
+                "firstName": "Andrea",
+                "initials": "A",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0002-1944-5355"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Chemical Sciences, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Izzo V",
+                "lastName": "Izzo",
+                "firstName": "Viviana",
+                "initials": "V",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6066-7569"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Medicine and Surgery, Università degli Studi di Salerno, Baronissi, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Di Donato A",
+                "lastName": "Di Donato",
+                "firstName": "Alberto",
+                "initials": "A",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Cafaro V",
+                "lastName": "Cafaro",
+                "firstName": "Valeria",
+                "initials": "V",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Notomista E",
+                "lastName": "Notomista",
+                "firstName": "Eugenio",
+                "initials": "E",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-0097-6487"
+                },
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy."
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6066-7569"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-1944-5355"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-4835-4778"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-7594-7931"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0002-9595-9665"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-0097-6487"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "supporting_data",
+              "recommended_reviews"
+            ]
+          },
+          "journalInfo": {
+            "issue": "1",
+            "volume": "11",
+            "journalIssueId": 2358464,
+            "dateOfPublication": "2016",
+            "monthOfPublication": 0,
+            "yearOfPublication": 2016,
+            "journal": {
+              "medlineAbbreviation": "PLoS One",
+              "title": "PloS one",
+              "essn": "1932-6203",
+              "issn": "1932-6203",
+              "nlmid": "101285081",
+              "isoabbreviation": "PLoS One"
+            },
+            "printPublicationDate": "2016-01-01"
+          },
+          "pubYear": "2016",
+          "pageInfo": "e0146552",
+          "abstractText": "Commercial uses of bioactive peptides require low cost, effective methods for their production. We developed a new carrier protein for high yield production of recombinant peptides in Escherichia coli very well suited for the production of toxic peptides like antimicrobial peptides. GKY20, a short antimicrobial peptide derived from the C-terminus of human thrombin, was fused to the C-terminus of Onconase, a small ribonuclease (104 amino acids), which efficiently drove the peptide into inclusion bodies with very high expression levels (about 200-250 mg/L). After purification of the fusion protein by immobilized metal ion affinity chromatography, peptide was obtained by chemical cleavage in diluted acetic acid of an acid labile Asp-Pro sequence with more than 95% efficiency. To improve peptide purification, Onconase was mutated to eliminate all acid labile sequences thus reducing the release of unwanted peptides during the acid cleavage. Mutations were chosen to preserve the differential solubility of Onconase as function of pH, which allows its selective precipitation at neutral pH after the cleavage. The improved carrier allowed the production of 15-18 mg of recombinant peptide per liter of culture with 96-98% purity without the need of further chromatographic steps after the acid cleavage. The antimicrobial activity of the recombinant peptide, with an additional proline at the N-terminus, was tested on Gram-negative and Gram-positive strains and was found to be identical to that measured for synthetic GKY20. This finding suggests that N-terminal proline residue does not change the antimicrobial properties of recombinant (P)GKY20. The improved carrier, which does not contain cysteine and methionine residues, Asp-Pro and Asn-Gly sequences, is well suited for the production of peptides using any of the most popular chemical cleavage methods.",
+          "affiliation": "Department of Biology, Università degli Studi di Napoli Federico II, Napoli, Italy.",
+          "publicationStatus": "epublish",
+          "language": "eng",
+          "pubModel": "Electronic-eCollection",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "research-article",
+              "Journal Article"
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Humans"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Escherichia coli",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Ribonucleases",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Antimicrobial Cationic Peptides",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "GE",
+                      "qualifierName": "genetics"
+                    },
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Carrier Proteins",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Recombinant Proteins",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "ME",
+                      "qualifierName": "metabolism"
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "Ribonucleases",
+                "registryNumber": "EC 3.1.-"
+              },
+              {
+                "name": "Carrier Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Recombinant Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Antimicrobial Cationic Peptides",
+                "registryNumber": "0"
+              },
+              {
+                "name": "ranpirnase",
+                "registryNumber": "ZE15FIT23E"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1371/journal.pone.0146552"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "html",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4726619"
+              },
+              {
+                "availability": "Open access",
+                "availabilityCode": "OA",
+                "documentStyle": "pdf",
+                "site": "Europe_PMC",
+                "url": "https://europepmc.org/articles/PMC4726619?pdf=render"
+              }
+            ]
+          },
+          "isOpenAccess": "Y",
+          "inEPMC": "Y",
+          "inPMC": "Y",
+          "citedByCount": 41,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "N",
+          "hasPDF": "Y",
+          "hasBook": "N",
+          "hasSuppl": "Y",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "license": "cc by",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "Y",
+          "tmAccessionTypeList": {
+            "accessionType": [
+              "gen",
+              "pdb"
+            ]
+          },
+          "dateOfCompletion": "2016-07-26",
+          "dateOfCreation": "2016-01-26",
+          "dateOfRevision": "2024-07-14",
+          "electronicPublicationDate": "2016-01-25",
+          "firstPublicationDate": "2016-01-25",
+          "firstIndexDate": "2016-01-26",
+          "fullTextReceivedDate": "2020-07-11",
+          "hasEvaluations": "N"
+        }
+      ],
+      "full_text_available": true
+    },
+    {
+      "source_id": "drosocin2002",
+      "pmid": "12238928",
+      "doi": "10.1021/jm020861d",
+      "discovery": "PubChem AID64242 primary-paper pointer; database values not admitted",
+      "review_order": 6,
+      "files": [
+        "raw/drosocin2002_metadata.json"
+      ],
+      "metadata": [
+        {
+          "id": "12238928",
+          "source": "MED",
+          "pmid": "12238928",
+          "doi": "10.1021/jm020861d",
+          "title": "Antimicrobial peptides: synthesis and antibacterial activity of linear and cyclic drosocin and apidaecin 1b analogues.",
+          "authorString": "Gobbo M, Biondi L, Filira F, Gennaro R, Benincasa M, Scolaro B, Rocchi R.",
+          "authorList": {
+            "author": [
+              {
+                "fullName": "Gobbo M",
+                "lastName": "Gobbo",
+                "firstName": "Marina",
+                "initials": "M",
+                "authorAffiliationDetailsList": {
+                  "authorAffiliation": [
+                    {
+                      "affiliation": "Institute of Biomolecular Chemistry, C. N. R., Department of Organic Chemistry, University of Padova, via Marzolo, 1, I-35131 Padova, Italy. marina.gobba@unipd.it"
+                    }
+                  ]
+                }
+              },
+              {
+                "fullName": "Biondi L",
+                "lastName": "Biondi",
+                "firstName": "Laura",
+                "initials": "L"
+              },
+              {
+                "fullName": "Filira F",
+                "lastName": "Filira",
+                "firstName": "Fernando",
+                "initials": "F"
+              },
+              {
+                "fullName": "Gennaro R",
+                "lastName": "Gennaro",
+                "firstName": "Renato",
+                "initials": "R",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0003-1331-3885"
+                }
+              },
+              {
+                "fullName": "Benincasa M",
+                "lastName": "Benincasa",
+                "firstName": "Monica",
+                "initials": "M",
+                "authorId": {
+                  "type": "ORCID",
+                  "value": "0000-0001-6087-4461"
+                }
+              },
+              {
+                "fullName": "Scolaro B",
+                "lastName": "Scolaro",
+                "firstName": "Barbara",
+                "initials": "B"
+              },
+              {
+                "fullName": "Rocchi R",
+                "lastName": "Rocchi",
+                "firstName": "Raniero",
+                "initials": "R"
+              }
+            ]
+          },
+          "authorIdList": {
+            "authorId": [
+              {
+                "type": "ORCID",
+                "value": "0000-0001-6087-4461"
+              },
+              {
+                "type": "ORCID",
+                "value": "0000-0003-1331-3885"
+              }
+            ]
+          },
+          "dataLinksTagsList": {
+            "dataLinkstag": [
+              "altmetrics",
+              "related_data"
+            ]
+          },
+          "journalInfo": {
+            "issue": "20",
+            "volume": "45",
+            "journalIssueId": 1117429,
+            "dateOfPublication": "2002 Sep",
+            "monthOfPublication": 9,
+            "yearOfPublication": 2002,
+            "journal": {
+              "medlineAbbreviation": "J Med Chem",
+              "title": "Journal of medicinal chemistry",
+              "essn": "1520-4804",
+              "issn": "0022-2623",
+              "nlmid": "9716531",
+              "isoabbreviation": "J Med Chem"
+            },
+            "printPublicationDate": "2002-09-01"
+          },
+          "pubYear": "2002",
+          "pageInfo": "4494-4504",
+          "abstractText": "Drosocin and apidaecin Ib are two insect antimicrobial peptides showing a significant sequence homology and a common mechanism of action, which includes stereoselective elements but is devoid of any pore-forming activity. A substantial difference between the two peptides is the presence in the drosocin sequence of an O-glycosylated threonine residue, which is important for its antimicrobial activity. Through the synthesis of a series of differently glycosylated drosocin analogues, we have shown that the antimicrobial activity against several Gram-negative bacteria appears to be modulated by the sugar moiety (Gal vs GalNAc) and the type of glycosidic linkage (alpha-O-, beta-O-, or alpha-C-). The insertion of a glycosylated threonine residue in the apidaecin Ib sequence improves the sequence homology with drosocin but reduces the antimicrobial activity. To gain information on the possible bioactive conformation of these peptides, we synthesized an unglycosylated cyclic analogue of drosocin, containing an intrachain disulfide bond, and the head-to-tail cyclic analogues of drosocin and apidaecin, as well as their corresponding cyclic dimers. Only the large cyclic dimer of apidaecin partially retained the antimicrobial activity, suggesting that a bending of the peptide chain, in particular in the middle of the molecule, is not a structural element characteristic of the bioactive conformation of drosocin and apidaecin. Experiments aimed at testing the effect of selected drosocin and apidaecin peptides on biological membranes showed that some peptides display a moderate hemolytic activity and that a dissociation between antibacterial activity and cytotoxicity to eukaryotic cells can be achieved in differently glycosylated peptide analogues.",
+          "affiliation": "Institute of Biomolecular Chemistry, C. N. R., Department of Organic Chemistry, University of Padova, via Marzolo, 1, I-35131 Padova, Italy. marina.gobba@unipd.it",
+          "publicationStatus": "ppublish",
+          "language": "eng",
+          "pubModel": "Print",
+          "pubTypeList": {
+            "pubType": [
+              "Research Support, Non-U.S. Gov't",
+              "Journal Article"
+            ]
+          },
+          "meshHeadingList": {
+            "meshHeading": [
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gram-Negative Bacteria",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Gram-Positive Bacteria",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "UL",
+                      "qualifierName": "ultrastructure"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Peptides, Cyclic",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "CS",
+                      "qualifierName": "chemical synthesis"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Glycopeptides",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "CS",
+                      "qualifierName": "chemical synthesis"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Phospholipids",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Antimicrobial Cationic Peptides",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "CS",
+                      "qualifierName": "chemical synthesis"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Insect Proteins",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "CS",
+                      "qualifierName": "chemical synthesis"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Anti-Bacterial Agents",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "Y",
+                      "abbreviation": "CS",
+                      "qualifierName": "chemical synthesis"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "PD",
+                      "qualifierName": "pharmacology"
+                    },
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "CH",
+                      "qualifierName": "chemistry"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Circular Dichroism"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Magnetic Resonance Spectroscopy"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Cell Membrane Permeability",
+                "meshQualifierList": {
+                  "meshQualifier": [
+                    {
+                      "majorTopic_YN": "N",
+                      "abbreviation": "DE",
+                      "qualifierName": "drug effects"
+                    }
+                  ]
+                }
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Amino Acid Sequence"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Structure-Activity Relationship"
+              },
+              {
+                "majorTopic_YN": "N",
+                "descriptorName": "Molecular Sequence Data"
+              }
+            ]
+          },
+          "chemicalList": {
+            "chemical": [
+              {
+                "name": "apidaecin",
+                "registryNumber": "123997-21-7"
+              },
+              {
+                "name": "drosocin",
+                "registryNumber": "149924-99-2"
+              },
+              {
+                "name": "Phospholipids",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Anti-Bacterial Agents",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Glycopeptides",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Peptides, Cyclic",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Insect Proteins",
+                "registryNumber": "0"
+              },
+              {
+                "name": "Antimicrobial Cationic Peptides",
+                "registryNumber": "0"
+              }
+            ]
+          },
+          "subsetList": {
+            "subset": [
+              {
+                "code": "IM",
+                "name": "Index Medicus"
+              }
+            ]
+          },
+          "fullTextUrlList": {
+            "fullTextUrl": [
+              {
+                "availability": "Subscription required",
+                "availabilityCode": "S",
+                "documentStyle": "doi",
+                "site": "DOI",
+                "url": "https://doi.org/10.1021/jm020861d"
+              }
+            ]
+          },
+          "isOpenAccess": "N",
+          "inEPMC": "N",
+          "inPMC": "N",
+          "citedByCount": 41,
+          "hasReferences": "Y",
+          "hasTextMinedTerms": "Y",
+          "hasDbCrossReferences": "Y",
+          "dbCrossReferenceList": {
+            "dbName": [
+              "CHEMBL"
+            ]
+          },
+          "hasPDF": "N",
+          "hasBook": "N",
+          "hasSuppl": "N",
+          "hasLabsLinks": "Y",
+          "hasData": "Y",
+          "authMan": "N",
+          "epmcAuthMan": "N",
+          "nihAuthMan": "N",
+          "hasTMAccessionNumbers": "N",
+          "dateOfCompletion": "2002-10-21",
+          "dateOfCreation": "2002-09-20",
+          "dateOfRevision": "2019-07-10",
+          "firstPublicationDate": "2002-09-01",
+          "firstIndexDate": "2008-01-29",
+          "hasEvaluations": "N"
+        }
+      ],
+      "full_text_available": false
+    },
+    {
+      "source_id": "pexiganan2016",
+      "arxiv": "1606.00620",
+      "pdf_url": "https://arxiv.org/pdf/1606.00620",
+      "discovery": "original dataset and original research preprint; publication alias to be checked",
+      "review_order": 7,
+      "files": [
+        "raw/pexiganan2016.pdf"
+      ],
+      "metadata": [],
+      "full_text_available": true
+    },
+    {
+      "source_id": "brucin2020",
+      "pdf_url": "https://imsear.searo.who.int/bitstreams/0dabbda4-b70a-402d-ac2c-c2d64c37e124/download",
+      "discovery": "web theme peptide minimum inhibitory concentration; WHO repository original journal PDF",
+      "review_order": 8,
+      "files": [],
+      "metadata": [],
+      "full_text_available": false
+    },
+    {
+      "source_id": "apidaecin2009",
+      "pmcid": "PMC2648157",
+      "discovery": "web theme Wang resin; original research",
+      "review_order": 9,
+      "files": [
+        "raw/apidaecin2009_metadata.json",
+        "raw/apidaecin2009.xml"
+      ],
+      "metadata": [],
+      "full_text_available": false
+    },
+    {
+      "source_id": "neopeptides2005",
+      "pmcid": "PMC1196242",
+      "discovery": "web theme Wang resin; original research",
+      "review_order": 10,
+      "files": [
+        "raw/neopeptides2005_metadata.json",
+        "raw/neopeptides2005.xml"
+      ],
+      "metadata": [],
+      "full_text_available": false
+    },
+    {
+      "source_id": "bmap2025",
+      "pmcid": "PMC12207908",
+      "discovery": "web theme Wang resin; original research",
+      "review_order": 11,
+      "files": [
+        "raw/bmap2025_metadata.json",
+        "raw/bmap2025.xml"
+      ],
+      "metadata": [],
+      "full_text_available": true
+    },
+    {
+      "source_id": "tat2026",
+      "pmcid": "PMC13112966",
+      "discovery": "web theme Wang resin; original research",
+      "review_order": 12,
+      "files": [
+        "raw/tat2026_metadata.json",
+        "raw/tat2026.xml"
+      ],
+      "metadata": [],
+      "full_text_available": true
+    }
+  ],
+  "requests": [
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "antimicrobial peptide Escherichia coli MIC Wang resin",
+        "format": "json",
+        "pageSize": 20,
+        "resultType": "core"
+      },
+      "retrieval_started_at": "2026-10-02T11:27:43.564999+00:00",
+      "file": "raw/search_europepmc_0.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=antimicrobial+peptide+Escherichia+coli+MIC+Wang+resin&format=json&pageSize=20&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "eb97239511b624ea3f1015e98f30ecf27aacd3dd3090818adf15dcceba420732",
+      "retrieval_completed_at": "2026-10-02T11:27:46.343824+00:00"
+    },
+    {
+      "requested_url": "https://api.openalex.org/works",
+      "parameters": {
+        "search": "antimicrobial peptide Escherichia coli MIC Wang resin",
+        "per-page": 20
+      },
+      "retrieval_started_at": "2026-10-02T11:27:46.345824+00:00",
+      "file": "raw/search_openalex_0.json",
+      "http_status": 429,
+      "resolved_url": "https://api.openalex.org/works?search=antimicrobial+peptide+Escherichia+coli+MIC+Wang+resin&per-page=20",
+      "content_type": "application/json",
+      "sha256": "4ed0e0208125a87b01a27766f16954f74561efa0ade40e83d302bbd95a666ffb",
+      "retrieval_completed_at": "2026-10-02T11:27:47.197924+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "antimicrobial peptide Escherichia coli MIC free carboxyl terminus",
+        "format": "json",
+        "pageSize": 20,
+        "resultType": "core"
+      },
+      "retrieval_started_at": "2026-10-02T11:27:47.197924+00:00",
+      "file": "raw/search_europepmc_1.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=antimicrobial+peptide+Escherichia+coli+MIC+free+carboxyl+terminus&format=json&pageSize=20&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "a0f655c5048ee3de508c33e9b17ba463fb38eb89caa4eea71cf718d631e1c81f",
+      "retrieval_completed_at": "2026-10-02T11:27:48.142123+00:00"
+    },
+    {
+      "requested_url": "https://api.openalex.org/works",
+      "parameters": {
+        "search": "antimicrobial peptide Escherichia coli MIC free carboxyl terminus",
+        "per-page": 20
+      },
+      "retrieval_started_at": "2026-10-02T11:27:48.145123+00:00",
+      "file": "raw/search_openalex_1.json",
+      "http_status": 429,
+      "resolved_url": "https://api.openalex.org/works?search=antimicrobial+peptide+Escherichia+coli+MIC+free+carboxyl+terminus&per-page=20",
+      "content_type": "application/json",
+      "sha256": "9b74b4af012f9606312917536c118b4b1e14ea6da6a7ad540e94f04ba775b9f4",
+      "retrieval_completed_at": "2026-10-02T11:27:48.456272+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "proline rich peptide Escherichia coli MIC free acid",
+        "format": "json",
+        "pageSize": 20,
+        "resultType": "core"
+      },
+      "retrieval_started_at": "2026-10-02T11:27:48.456272+00:00",
+      "file": "raw/search_europepmc_2.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=proline+rich+peptide+Escherichia+coli+MIC+free+acid&format=json&pageSize=20&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "b6be8e281604322151a4a471e83e9859c14e977a9d3218eb292f6e258a5b053d",
+      "retrieval_completed_at": "2026-10-02T11:27:49.753619+00:00"
+    },
+    {
+      "requested_url": "https://api.openalex.org/works",
+      "parameters": {
+        "search": "proline rich peptide Escherichia coli MIC free acid",
+        "per-page": 20
+      },
+      "retrieval_started_at": "2026-10-02T11:27:49.754586+00:00",
+      "file": "raw/search_openalex_2.json",
+      "http_status": 429,
+      "resolved_url": "https://api.openalex.org/works?search=proline+rich+peptide+Escherichia+coli+MIC+free+acid&per-page=20",
+      "content_type": "application/json",
+      "sha256": "35e660b6d15fced1adf39dc4bd2d852c720add6b0feccbd8663ec41097b8a3ec",
+      "retrieval_completed_at": "2026-10-02T11:27:50.065444+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "peptide dataset Escherichia coli minimum inhibitory concentration synthesis",
+        "format": "json",
+        "pageSize": 20,
+        "resultType": "core"
+      },
+      "retrieval_started_at": "2026-10-02T11:27:50.066439+00:00",
+      "file": "raw/search_europepmc_3.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=peptide+dataset+Escherichia+coli+minimum+inhibitory+concentration+synthesis&format=json&pageSize=20&resultType=core",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "2869e8275d4ed76bf606d72bae1718103f739aaf2a4206ab5863a6f0e818ecc9",
+      "retrieval_completed_at": "2026-10-02T11:27:50.864322+00:00"
+    },
+    {
+      "requested_url": "https://api.openalex.org/works",
+      "parameters": {
+        "search": "peptide dataset Escherichia coli minimum inhibitory concentration synthesis",
+        "per-page": 20
+      },
+      "retrieval_started_at": "2026-10-02T11:27:50.866322+00:00",
+      "file": "raw/search_openalex_3.json",
+      "http_status": 429,
+      "resolved_url": "https://api.openalex.org/works?search=peptide+dataset+Escherichia+coli+minimum+inhibitory+concentration+synthesis&per-page=20",
+      "content_type": "application/json",
+      "sha256": "f09c63a3f0c8d66bddfbf646a7d982ee08e4968068caa507a0524e251a92816b",
+      "retrieval_completed_at": "2026-10-02T11:27:51.184000+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "DOI:\"10.1016/j.bbamem.2006.03.034\"",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:27:51.184000+00:00",
+      "file": "raw/chekmenev2006_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.bbamem.2006.03.034%22&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "40b7bf2b52d743a5df44ea3455769219e67a5e72cec8fa5e24841044c8af4e98",
+      "retrieval_completed_at": "2026-10-02T11:27:51.752546+00:00"
+    },
+    {
+      "requested_url": "https://nationalmaglab.org/library/publications/NHMFL_Publication-3172.pdf",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:27:51.753557+00:00",
+      "file": "raw/chekmenev2006.pdf",
+      "http_status": 200,
+      "resolved_url": "https://nationalmaglab.org/library/publications/NHMFL_Publication-3172.pdf",
+      "content_type": "application/pdf",
+      "sha256": "8c5097aed570e91d0a1deca34dcd382a2bc47da7c54c5366e55a2fb563c9d8e7",
+      "retrieval_completed_at": "2026-10-02T11:27:56.458825+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "DOI:\"10.1038/s41467-024-51933-2\"",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:27:56.460824+00:00",
+      "file": "raw/foundation2024_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1038%2Fs41467-024-51933-2%22&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "ba6208c0ee82f019ef9befaa61cfebdc2ed1ad88a40d86eba1158534018c9c69",
+      "retrieval_completed_at": "2026-10-02T11:27:56.926279+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11364768/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:27:56.926279+00:00",
+      "file": "raw/foundation2024.xml",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11364768/fullTextXML",
+      "content_type": "application/xml",
+      "sha256": "b1ba699c9539c56b2e13ced18b226fbc8fce2d7a5f28cc1889c040918b403ca0",
+      "retrieval_completed_at": "2026-10-02T11:27:58.549759+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:PMC4359834",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:27:58.560805+00:00",
+      "file": "raw/lactoferricin2015_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3APMC4359834&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "0435c4df75d549b1102dc0095eff9f0f574b4c0d23e5eef099c38a909f142341",
+      "retrieval_completed_at": "2026-10-02T11:27:59.042099+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4359834/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:27:59.042099+00:00",
+      "file": "raw/lactoferricin2015.xml",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4359834/fullTextXML",
+      "content_type": "application/xml",
+      "sha256": "20947ee9c8953d18fb0267a9cf7a3d0b45083a234e026d194f2c6e3cf8338111",
+      "retrieval_completed_at": "2026-10-02T11:28:05.070166+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:PMC12748266",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:05.079125+00:00",
+      "file": "raw/boncat2025_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3APMC12748266&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "009c23d7ed35e0e8f32205f9130c83076ad47caf54f0b002c3abb5a6fb036131",
+      "retrieval_completed_at": "2026-10-02T11:28:05.510634+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12748266/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:05.510634+00:00",
+      "file": "raw/boncat2025.xml",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12748266/fullTextXML",
+      "content_type": "application/xml",
+      "sha256": "e2f3622c14db7d393d0285747786096547035731f3d18076dc046dc9a3550dd6",
+      "retrieval_completed_at": "2026-10-02T11:28:09.416962+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "DOI:\"10.1371/journal.pone.0146552\"",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:09.420962+00:00",
+      "file": "raw/carrier2016_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1371%2Fjournal.pone.0146552%22&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "3e48432b48bea6fa58b3de1e18090452c7fe4305b2b7b5bd61d42b02c3958cde",
+      "retrieval_completed_at": "2026-10-02T11:28:09.873862+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4726619/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:09.873862+00:00",
+      "file": "raw/carrier2016.xml",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4726619/fullTextXML",
+      "content_type": "application/xml",
+      "sha256": "d4bc4446d661337b5095a06216bcec4bd52a103755c1d604828e23e0b6cce720",
+      "retrieval_completed_at": "2026-10-02T11:28:13.414150+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:12238928 AND SRC:MED",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:13.419152+00:00",
+      "file": "raw/drosocin2002_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A12238928+AND+SRC%3AMED&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "4699dd4efda4436902c5a861e535d02fd011b111b85ffe88be2cdcb387ede0b0",
+      "retrieval_completed_at": "2026-10-02T11:28:13.873882+00:00"
+    },
+    {
+      "requested_url": "https://arxiv.org/pdf/1606.00620",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:13.877439+00:00",
+      "file": "raw/pexiganan2016.pdf",
+      "http_status": 200,
+      "resolved_url": "https://arxiv.org/pdf/1606.00620",
+      "content_type": "application/pdf",
+      "sha256": "4dd81c434eebac487d7339182619eed38f5f25320476eaeed34d24c2907f80a6",
+      "retrieval_completed_at": "2026-10-02T11:28:17.786127+00:00"
+    },
+    {
+      "requested_url": "https://imsear.searo.who.int/bitstreams/0dabbda4-b70a-402d-ac2c-c2d64c37e124/download",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:17.789126+00:00",
+      "file": "raw/brucin2020.pdf",
+      "http_status": null,
+      "exception": "HTTPSConnectionPool(host='imsear.searo.who.int', port=443): Max retries exceeded with url: /bitstreams/0dabbda4-b70a-402d-ac2c-c2d64c37e124/download (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))",
+      "retrieval_completed_at": "2026-10-02T11:28:18.945176+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:PMC2648157",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:18.949458+00:00",
+      "file": "raw/apidaecin2009_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3APMC2648157&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "a0f2cc6a9b880c2629a37709153dd970c984ea6b555b802a911d2a2a920a7162",
+      "retrieval_completed_at": "2026-10-02T11:28:19.395788+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2648157/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:19.395788+00:00",
+      "file": "raw/apidaecin2009.xml",
+      "http_status": 500,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2648157/fullTextXML",
+      "content_type": "application/json",
+      "sha256": "28fe7610174e3cec34c808ec637ce9545bb869c29b8951cad81fdaac62067e08",
+      "retrieval_completed_at": "2026-10-02T11:28:20.477871+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:PMC1196242",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:20.481726+00:00",
+      "file": "raw/neopeptides2005_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3APMC1196242&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "744b5fca5ea905cac6f5a8fd1d3f590e0a5fac89fb009f358a8c2e8f797a0572",
+      "retrieval_completed_at": "2026-10-02T11:28:22.191435+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1196242/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:22.192436+00:00",
+      "file": "raw/neopeptides2005.xml",
+      "http_status": 500,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC1196242/fullTextXML",
+      "content_type": "application/json",
+      "sha256": "d9e2a454b52b56721d6c19f8cdb6a415d101c0a6537c6ba497181160e4c72016",
+      "retrieval_completed_at": "2026-10-02T11:28:22.848701+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:PMC12207908",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:22.854701+00:00",
+      "file": "raw/bmap2025_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3APMC12207908&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "75a0754790104667cff7edfd47072373277c78cf9631dad5885973f6ea059d03",
+      "retrieval_completed_at": "2026-10-02T11:28:24.915198+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12207908/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:24.917157+00:00",
+      "file": "raw/bmap2025.xml",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12207908/fullTextXML",
+      "content_type": "application/xml",
+      "sha256": "6f9ff4fd2e4717576da2b0ad83a053c15ef023b2ba9ccba3eeed689e0e8a4e76",
+      "retrieval_completed_at": "2026-10-02T11:28:27.744831+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search",
+      "parameters": {
+        "query": "EXT_ID:PMC13112966",
+        "format": "json",
+        "resultType": "core",
+        "pageSize": 10
+      },
+      "retrieval_started_at": "2026-10-02T11:28:27.754927+00:00",
+      "file": "raw/tat2026_metadata.json",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3APMC13112966&format=json&resultType=core&pageSize=10",
+      "content_type": "application/json;charset=UTF-8",
+      "sha256": "75984d321a4666a6a1c7dab27b2152751ea96744360021e5f3122c2ba70c9c71",
+      "retrieval_completed_at": "2026-10-02T11:28:28.212107+00:00"
+    },
+    {
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13112966/fullTextXML",
+      "parameters": null,
+      "retrieval_started_at": "2026-10-02T11:28:28.212107+00:00",
+      "file": "raw/tat2026.xml",
+      "http_status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13112966/fullTextXML",
+      "content_type": "application/xml",
+      "sha256": "15d468dc1199c3719569e42929ad9113f35faa4038b01eb0d5b144405cc3197e",
+      "retrieval_completed_at": "2026-10-02T11:28:33.899665+00:00"
+    }
+  ],
+  "new_records_released_for_training": 0,
+  "script_sha256": "0b9d98c043e6050be4d64191bbcb5fac0b181922094c619584ed18d0da397231",
+  "inputs": {
+    "03_experiments/protocols/protocol-mic-08.json": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+    "03_experiments/audits/protocol_mic_08_freeze_20261002_v1.json": "e4b84b7fdaf260c79a7a3f4dc06c333563c639c6b498a599356bc189a6646a9d",
+    "03_experiments/audits/mic_source_expansion_20261002_v1/discovery_catalog.json": "771661f973a1c7d0928d2a0d8ea62b380a49e54346d47cf07c8b535104722c02"
+  },
+  "outputs": {
+    "raw/apidaecin2009.xml": "28fe7610174e3cec34c808ec637ce9545bb869c29b8951cad81fdaac62067e08",
+    "raw/apidaecin2009_metadata.json": "a0f2cc6a9b880c2629a37709153dd970c984ea6b555b802a911d2a2a920a7162",
+    "raw/bmap2025.xml": "6f9ff4fd2e4717576da2b0ad83a053c15ef023b2ba9ccba3eeed689e0e8a4e76",
+    "raw/bmap2025_metadata.json": "75a0754790104667cff7edfd47072373277c78cf9631dad5885973f6ea059d03",
+    "raw/boncat2025.xml": "e2f3622c14db7d393d0285747786096547035731f3d18076dc046dc9a3550dd6",
+    "raw/boncat2025_metadata.json": "009c23d7ed35e0e8f32205f9130c83076ad47caf54f0b002c3abb5a6fb036131",
+    "raw/carrier2016.xml": "d4bc4446d661337b5095a06216bcec4bd52a103755c1d604828e23e0b6cce720",
+    "raw/carrier2016_metadata.json": "3e48432b48bea6fa58b3de1e18090452c7fe4305b2b7b5bd61d42b02c3958cde",
+    "raw/chekmenev2006.pdf": "8c5097aed570e91d0a1deca34dcd382a2bc47da7c54c5366e55a2fb563c9d8e7",
+    "raw/chekmenev2006_metadata.json": "40b7bf2b52d743a5df44ea3455769219e67a5e72cec8fa5e24841044c8af4e98",
+    "raw/drosocin2002_metadata.json": "4699dd4efda4436902c5a861e535d02fd011b111b85ffe88be2cdcb387ede0b0",
+    "raw/foundation2024.xml": "b1ba699c9539c56b2e13ced18b226fbc8fce2d7a5f28cc1889c040918b403ca0",
+    "raw/foundation2024_metadata.json": "ba6208c0ee82f019ef9befaa61cfebdc2ed1ad88a40d86eba1158534018c9c69",
+    "raw/lactoferricin2015.xml": "20947ee9c8953d18fb0267a9cf7a3d0b45083a234e026d194f2c6e3cf8338111",
+    "raw/lactoferricin2015_metadata.json": "0435c4df75d549b1102dc0095eff9f0f574b4c0d23e5eef099c38a909f142341",
+    "raw/neopeptides2005.xml": "d9e2a454b52b56721d6c19f8cdb6a415d101c0a6537c6ba497181160e4c72016",
+    "raw/neopeptides2005_metadata.json": "744b5fca5ea905cac6f5a8fd1d3f590e0a5fac89fb009f358a8c2e8f797a0572",
+    "raw/pexiganan2016.pdf": "4dd81c434eebac487d7339182619eed38f5f25320476eaeed34d24c2907f80a6",
+    "raw/search_europepmc_0.json": "eb97239511b624ea3f1015e98f30ecf27aacd3dd3090818adf15dcceba420732",
+    "raw/search_europepmc_1.json": "a0f655c5048ee3de508c33e9b17ba463fb38eb89caa4eea71cf718d631e1c81f",
+    "raw/search_europepmc_2.json": "b6be8e281604322151a4a471e83e9859c14e977a9d3218eb292f6e258a5b053d",
+    "raw/search_europepmc_3.json": "2869e8275d4ed76bf606d72bae1718103f739aaf2a4206ab5863a6f0e818ecc9",
+    "raw/search_openalex_0.json": "4ed0e0208125a87b01a27766f16954f74561efa0ade40e83d302bbd95a666ffb",
+    "raw/search_openalex_1.json": "9b74b4af012f9606312917536c118b4b1e14ea6da6a7ad540e94f04ba775b9f4",
+    "raw/search_openalex_2.json": "35e660b6d15fced1adf39dc4bd2d852c720add6b0feccbd8663ec41097b8a3ec",
+    "raw/search_openalex_3.json": "f09c63a3f0c8d66bddfbf646a7d982ee08e4968068caa507a0524e251a92816b",
+    "raw/tat2026.xml": "15d468dc1199c3719569e42929ad9113f35faa4038b01eb0d5b144405cc3197e",
+    "raw/tat2026_metadata.json": "75984d321a4666a6a1c7dab27b2152751ea96744360021e5f3122c2ba70c9c71"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "protocol_id": "protocol-amd-02",
+  "identity_mode": "alignment",
+  "cutoff": 0.4,
+  "development_samples": 417,
+  "external_samples": 0,
+  "cross_pairs_evaluated": 0,
+  "cross_pair_violations": 0,
+  "clustering_summary": {
+    "possible_pairs": 86736,
+    "aligned_pairs": 32751,
+    "above_cutoff_pairs": 1325,
+    "groups": 89,
+    "identity_mode": "alignment"
+  },
+  "largest_cluster": 318
+}

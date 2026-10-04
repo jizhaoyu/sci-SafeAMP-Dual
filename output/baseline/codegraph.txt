@@ -1,0 +1,331 @@
+**Exploration: research_feasibility experiment_runner dramp_importer public_data inference_runtime**
+
+Found 35 symbols across 4 files.
+
+**Blast radius 鈥?what depends on these (update/verify before editing)**
+
+- `ResearchDataError` (02_code/research_data.py:24) 鈥?18 callers in `02_code/dataset_manager.py`, `02_code/experiment_runner.py`, `02_code/isolation_diagnostics.py`, `02_code/research_feasibility.py` +1 more; tests: `02_code/tests/test_experiment_runner.py`, `02_code/tests/test_research_data.py`
+- `ResearchRuntime` (02_code/inference_runtime.py:13) 鈥?9 callers in `02_code/agent_tools.py`, `02_code/ai_optimizer.py`, `05_web_server/research_api.py`; tests: `02_code/tests/test_runtime_api.py`
+
+**Source Code**
+
+> The code below is the **verbatim, current on-disk source** of these files 鈥?re-read from disk on this call and line-numbered, byte-for-byte identical to what the Read tool returns. It is NOT a summary, outline, or stale cache. Treat each block as a Read you have already performed: do not Read a file shown here.
+
+**`frontend/src/components/ResearchStudio.tsx`** 鈥?Mode(type_alias), parseSequences(function), ResearchStudio(function), Mode(references), useAppStore(calls), +6 more
+
+```tsx
+2	import { apiClient, errorMessage } from '../api/client';
+3	import { useAppStore } from '../store/useAppStore';
+4	
+5	type Mode = 'screening' | 'evolution' | 'report';
+6	type Residue = { pos: number; aa: string; hydrophobicity: number; charge: number };
+7	type Score = { sequence: string; amp_probability: number; hemo_probability: number; ranking_score: number; residues: Residue[]; provenance: Record<string, unknown> };
+8	type Candidate = { mutation: string; mutated_seq: string; amp_prob: number; hemo_prob: number; tsi: number; rationale: string };
+9	type Report = { standard_markdown_report: string; provenance: Record<string, unknown> };
+10	const titles = { screening: '鍙屼换鍔＄爺绌堕娴?, evolution: '鎺㈢储鎬х獊鍙樻帓搴?, report: '璁＄畻鐮旂┒鎶ュ憡' };
+11	
+12	function parseSequences(input: string): string[] {
+13	  const lines = input.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+14	  if (!lines.some(x => x.startsWith('>'))) return lines;
+15	  const sequences: string[] = []; let current = '';
+16	  for (const line of lines) {
+17	    if (line.startsWith('>')) { if (current) sequences.push(current); current = ''; }
+18	    else current += line;
+19	  }
+20	  if (current) sequences.push(current);
+21	  return sequences;
+22	}
+23	
+24	export default function ResearchStudio({ mode }: { mode: Mode }) {
+25	  const { activeSequence, addToCart } = useAppStore();
+26	  const [input, setInput] = useState(activeSequence);
+27	  const [pending, setPending] = useState(false);
+28	  const [error, setError] = useState('');
+
+... (gap) ...
+
+30	  const [candidates, setCandidates] = useState<Candidate[] | null>(null);
+31	  const [report, setReport] = useState<Report | null>(null);
+32	  const [provenance, setProvenance] = useState<Record<string, unknown> | null>(null);
+33	  async function run() {
+34	    setError(''); setScores([]); setCandidates(null); setReport(null); setProvenance(null);
+35	    const sequences = parseSequences(input);
+36	    if (!sequences.length || (mode !== 'screening' && sequences.length !== 1)) {
+37	      setError(mode === 'screening' ? '璇疯緭鍏ヨ嚦灏戜竴鏉″簭鍒椼€? : '姝ゅ姛鑳芥瘡娆℃帴鏀朵竴鏉″簭鍒椼€?); return;
+38	    }
+39	    setPending(true);
+40	    try {
+41	      if (mode === 'screening') {
+42	        const { data } = await apiClient.post<Score[]>('/api/predict_batch', { sequences });
+43	        setScores(data); setProvenance(data[0]?.provenance ?? null);
+44	      } else if (mode === 'evolution') {
+45	        const { data } = await apiClient.post('/api/ai_optimize', { sequence: sequences[0] });
+46	        setCandidates(data.solutions); setProvenance(data.provenance);
+47	      } else {
+48	        const { data } = await apiClient.post<Report>('/api/ai_report', { sequence: sequences[0] });
+49	        setReport(data); setProvenance(data.provenance);
+50	      }
+51	    } catch (err) { setError(errorMessage(err)); }
+52	    finally { setPending(false); }
+53	  }
+54	  function exportResult() {
+55	    const content = report?.standard_markdown_report ?? JSON.stringify({ scores, candidates, provenance }, null, 2);
+56	    const blob = new Blob([content], { type: report ? 'text/markdown;charset=utf-8' : 'application/json' });
+57	    const url = URL.createObjectURL(blob); const link = document.createElement('a');
+58	    link.href = url; link.download = 'safeamp-research.' + (report ? 'md' : 'json'); link.click(); URL.revokeObjectURL(url);
+59	  }
+60	  return <div className="flex flex-col gap-5">
+61	    <h2 className="text-xl font-bold">{titles[mode]}</h2>
+62	    <div className="lab-panel p-4 text-sm space-y-2">
+```
+
+**`02_code/research_data.py`** 鈥?ResearchDataError(instantiates), require_classes(calls), sha256(calls), write_json(calls), sequence_identity(calls), +20 more
+
+```python
+21	            'source_url', 'evidence_reference', 'label_basis', 'assay_conditions',
+22	            'modifications', 'evidence_type', 'is_synthetic', 'source_role', 'raw_path', 'raw_sha256')
+23	
+24	class ResearchDataError(ValueError):
+25	    pass
+26	
+27	def validate_records(frame, verify_raw=True):
+28	    missing = set(REQUIRED) - set(frame.columns)
+29	    if missing:
+30	        raise ResearchDataError('Missing provenance columns: ' + ', '.join(sorted(missing)))
+31	    df = frame.copy()
+32	    if df.empty or df.record_id.isna().any() or df.record_id.duplicated().any():
+33	        raise ResearchDataError('Record identifiers must be present, unique and nonempty.')
+
+... (gap) ...
+
+41	    if not df.modifications.eq('none').all():
+42	        raise ResearchDataError('Modified peptides need a separately specified representation.')
+43	    if not df.source_role.isin(['development', 'external']).all():
+44	        raise ResearchDataError('Unknown source role.')
+45	    for task in TASKS:
+46	        df[task] = pd.to_numeric(df[task], errors='raise')
+47	        if not df[task].dropna().isin([0, 1]).all():
+
+... (gap) ...
+
+123	        prev, pm = cur, cm
+124	    return pm[-1] / min(n, m)
+125	
+126	def homology_components(sequences, cutoff=0.40):
+127	    if not 0 < cutoff <= 1:
+128	        raise ResearchDataError('Identity cutoff must be in (0, 1].')
+129	    parent = list(range(len(sequences)))
+130	    counts = [Counter(s) for s in sequences]
+131	    def find(i):
+132	        while parent[i] != i:
+133	            parent[i] = parent[parent[i]]
+134	            i = parent[i]
+135	        return i
+136	    checked, edges = 0, 0
+137	    for i, a in enumerate(sequences):
+138	        for j in range(i):
+139	            if sum((counts[i] & counts[j]).values()) / min(len(a), len(sequences[j])) < cutoff:
+140	                continue
+141	            checked += 1
+142	            if sequence_identity(a, sequences[j]) >= cutoff:
+143	                parent[find(i)] = find(j)
+144	                edges += 1
+145	    roots = [find(i) for i in range(len(parent))]
+146	    ids = {v: k for k, v in enumerate(sorted(set(roots)))}
+147	    return np.array([ids[r] for r in roots]), {'aligned_pairs': checked, 'above_cutoff_pairs': edges, 'groups': len(ids)}
+148	
+149	def assert_cross_isolation(left, right, cutoff=0.40):
+150	    for a in left.itertuples():
+151	        ca = Counter(a.seq)
+152	        for b in right.itertuples():
+153	            if sum((ca & Counter(b.seq)).values()) / min(len(a.seq), len(b.seq)) < cutoff:
+154	                continue
+155	            if sequence_identity(a.seq, b.seq) >= cutoff:
+156	                raise ResearchDataError(f'Cross-partition sequence similarity violates {cutoff}: {a.sample_id} / {b.sample_id}')
+157	
+158	def require_classes(df, context):
+159	    for task in TASKS:
+160	        if set(df[task].dropna().unique()) != {0, 1}:
+161	            raise ResearchDataError(f'{context}: both measured classes required for {task}.')
+162	
+163	def partition(df, folds=5, seed=42):
+164	    if df.empty:
+
+... (gap) ...
+
+191	        out.loc[development.iloc[b].index, 'fold'] = fold
+192	    return out
+193	
+194	def validate_partition(df, cutoff=.40):
+195	    if df.loc[df.split.eq('external'),'source_role'].ne('external').any() or df.loc[df.split.ne('external'),'source_role'].ne('development').any():
+196	        raise ResearchDataError('Prepared split changed the declared source role.')
+197	    if set(df.split) != {'development', 'test', 'external'}:
+198	        raise ResearchDataError('Development, test and external partitions are required.')
+199	    if set(df.loc[df.split.eq('development'), 'fold']) != set(range(5)):
+200	        raise ResearchDataError('Exactly five development folds are required.')
+201	    if df.sample_id.duplicated().any() or df.seq.duplicated().any():
+202	        raise ResearchDataError('Duplicate molecule in prepared partitions.')
+203	    groups = [df[df.split.eq(s)] for s in ['development','test','external']]
+204	    for i, a in enumerate(groups):
+205	        require_classes(a, ['development','test','external'][i])
+206	        for b in groups[:i]:
+207	            if set(a.cluster_id) & set(b.cluster_id):
+208	                raise ResearchDataError('Cluster crosses dataset partition.')
+209	            assert_cross_isolation(a,b,cutoff)
+210	    dev=groups[0]
+211	    for fold in range(5):
+212	        a,b=dev[dev.fold.ne(fold)],dev[dev.fold.eq(fold)]
+213	        require_classes(a, f'Fold {fold} training'); require_classes(b, f'Fold {fold} validation')
+214	        if set(a.cluster_id) & set(b.cluster_id):
+215	            raise ResearchDataError('Cluster crosses validation fold.')
+216	        assert_cross_isolation(a,b,cutoff)
+217	
+218	def prepare(records_path, output_dir, cutoff=.40):
+219	    output=Path(output_dir)
+```
+
+**`02_code/experiment_runner.py`** 鈥?sha256(calls), imports(imports), write_json(calls), ResearchDataError(instantiates), seed_all(calls), +51 more
+
+```python
+113	    validate_partition(data,manifest['cutoff'])
+114	    return data,manifest
+115	
+116	def run(dataset_dir,output_dir,config=None):
+117	    config=dict(CONFIG if config is None else config)
+118	    if set(config['models'])!=set(MODELS) or set(config['seeds'])!=set(SEEDS):
+119	        raise ValueError('Formal protocol requires all seven models and three prespecified seeds.')
+120	    output=Path(output_dir)
+121	    if output.exists():raise ValueError('Run directory exists; runs are immutable.')
+122	    output.mkdir(parents=True)
+123	    manifest={'status':'running','created_at':utc_now(),'config':config,'dataset_dir':str(Path(dataset_dir).resolve()),
+124	              'python':platform.python_version(),'software':{n:importlib.metadata.version(n) for n in ['numpy','pandas','scipy','scikit-learn','torch','fair-esm']},
+125	              'code_hashes':{p.name:sha256(p) for p in Path(__file__).parent.glob('*.py')},'publication_ready':False}
+126	    write_json(output/'manifest.json',manifest)
+127	    try:
+128	        data,dm=load_dataset(dataset_dir);manifest['dataset_manifest']=dm
+129	        extractor=ESMFeatureExtractor()
+130	        if not extractor.real_esm_available:raise RuntimeError('Real ESM is mandatory.')
+131	        checkpoint=Path(torch.hub.get_dir())/'checkpoints/esm2_t6_8M_UR50D.pt'
+132	        if extractor.backend!='fair-esm' or not checkpoint.is_file():
+133	            raise RuntimeError('This protocol requires the hashed official fair-esm checkpoint.')
+134	        manifest['features']={'backend':extractor.backend,'version':extractor.feature_version,'esm_sha256':sha256(checkpoint)}
+135	        seed_all(42)
+136	        esms=[];phys=[]
+137	        for seq in data.seq:
+138	            emb,_=extractor.extract_sequence_embedding(seq);esms.append(emb);phys.append(extract_handcrafted_features(seq))
+139	        e,p=np.asarray(esms,dtype='float32'),np.asarray(phys,dtype='float32')
+140	        np.savez_compressed(output/'features.npz',esm=e,phys=p,sample_ids=data.sample_id.to_numpy(dtype=str))
+141	        manifest['features_sha256']=sha256(output/'features.npz')
+142	        dev=np.flatnonzero(data.split.eq('development'));held=np.flatnonzero(data.split.ne('development'))
+143	        y=data[list(TASKS)].to_numpy(dtype='float32');rows=[];checkpoints=[]
+144	        for kind in config['models']:
+145	            for seed in config['seeds']:
+146	                oof=np.full((len(dev),2),np.nan)
+147	                for fold in range(5):
+148	                    mask=data.iloc[dev].fold.to_numpy()==fold;a,b=dev[~mask],dev[mask]
+149	                    pred,_=fit_predict(kind,e[a],p[a],y[a],[(e[b],p[b])],seed,config)
+150	                    oof[mask]=pred[0]
+151	                if not np.isfinite(oof).all():raise ValueError('Incomplete out-of-fold predictions.')
+152	                calibration=[];calibrated=oof.copy()
+153	                for t in range(2):
+154	                    mask=np.isfinite(y[dev,t]);x=logit(np.clip(oof[:,t],1e-6,1-1e-6)).reshape(-1,1)
+155	                    calibrator=LogisticRegression(C=1.,solver='lbfgs',random_state=seed).fit(x[mask],y[dev,t][mask])
+156	                    calibration.append({'coefficient':float(calibrator.coef_[0,0]),'intercept':float(calibrator.intercept_[0])})
+157	                    calibrated[:,t]=calibrator.predict_proba(x)[:,1]
+158	                thresholds=[select_threshold(y[dev,t],calibrated[:,t],config['target_specificity']) for t in range(2)]
+159	                rows.extend(prediction_rows(data.iloc[dev],calibrated,kind,seed,thresholds,'oof_selection',raw=oof))
+160	                pred,fitted=fit_predict(kind,e[dev],p[dev],y[dev],[(e[held],p[held])],seed,config)
+161	                raw_held=pred[0].copy()
+162	                for t,c in enumerate(calibration):
+163	                    pred[0][:,t]=expit(c['coefficient']*logit(np.clip(pred[0][:,t],1e-6,1-1e-6))+c['intercept'])
+164	                rows.extend(prediction_rows(data.iloc[held],pred[0],kind,seed,thresholds,raw=raw_held))
+165	                import joblib
+166	                artifact=output/f'{kind}_seed_{seed}.joblib'
+167	                joblib.dump({'fitted':fitted,'calibration':calibration,'thresholds':thresholds},artifact)
+168	                manifest.setdefault('model_artifacts',[]).append({'path':artifact.name,'sha256':sha256(artifact)})
+169	                if kind=='dual_gated':
+```
+
+**`02_code/inference_runtime.py`** 鈥?ModelUnavailable(instantiates), sha256(calls), load(calls), ModelUnavailable(class), __init__(method), +10 more
+
+```python
+11	    pass
+12	
+13	class ResearchRuntime:
+14	    def __init__(self,run_dir=None):
+15	        self.run_dir=Path(run_dir) if run_dir else None
+16	        self.extractor=None;self.members=[];self.metadata={};self.error=None
+17	
+18	    def load(self):
+19	        if self.members:return self
+20	        try:
+21	            if self.run_dir is None:raise ModelUnavailable('No validated research run configured (SAFEAMP_RUN_DIR).')
+22	            manifest=read_json(self.run_dir/'manifest.json')
+23	            if manifest.get('status')!='completed' or manifest.get('dataset_manifest',{}).get('status')!='validated':
+24	                raise ModelUnavailable('Research run or dataset did not pass validation.')
+25	            if sha256(self.run_dir/'predictions.csv')!=manifest.get('predictions_sha256'):
+26	                raise ModelUnavailable('Prediction artifact checksum mismatch.')
+27	            checkpoints=manifest.get('checkpoints',[])
+28	            if len(checkpoints)!=3 or {c['seed'] for c in checkpoints}!={11,23,42}:
+29	                raise ModelUnavailable('Complete three-seed ensemble required.')
+30	            for c in checkpoints:
+31	                path=(self.run_dir/c['path']).resolve()
+32	                if not path.is_relative_to(self.run_dir.resolve()) or sha256(path)!=c['sha256']:
+33	                    raise ModelUnavailable('Model checkpoint checksum mismatch.')
+34	            for module in ['feature_extractor.py','model_dual_task.py']:
+35	                if manifest.get('code_hashes',{}).get(module)!=sha256(Path(__file__).parent/module):
+36	                    raise ModelUnavailable('Feature or architecture implementation changed since training.')
+37	            extractor=ESMFeatureExtractor()
+38	            feature=manifest['features']
+39	            esm_file=Path(torch.hub.get_dir())/'checkpoints/esm2_t6_8M_UR50D.pt'
+40	            if (not extractor.real_esm_available or extractor.backend!=feature['backend']
+
+... (gap) ...
+
+70	            raise ModelUnavailable(str(exc)) from exc
+71	        return self
+72	
+73	    def status(self):
+74	        try:self.load()
+75	        except ModelUnavailable:pass
+76	        ready=bool(self.members)
+77	        return {'status':'healthy' if ready else 'unavailable','reason':self.error,
+78	                'esm_model':{'name':'ESM-2 8M','backend':self.metadata.get('backend','unavailable'),'status':'Loaded' if ready else 'Unavailable'},
+79	                'dual_task_model':{'name':'SafeAMP-Dual research ensemble','weights_loaded':ready,'status':'Validated' if ready else 'Not validated'},
+80	                'mutation_engine':{'name':'Exploratory scoring','status':'Ready' if ready else 'Disabled'},'provenance':self.metadata}
+81	
+82	    def to(self,device):return self
+83	    def eval(self):return self
+84	
+85	    @torch.no_grad()
+86	    def predict_probabilities(self,x_esm,x_phys):
+87	        self.load()
+88	        e=x_esm.detach().cpu().numpy();p=x_phys.detach().cpu().numpy();values=[]
+89	        for model,ck in self.members:
+90	            es=(e-np.asarray(ck['esm_mean']))/np.asarray(ck['esm_scale'])
+91	            ph=(p-np.asarray(ck['phys_mean']))/np.asarray(ck['phys_scale'])
+92	            a,h,_=model(torch.tensor(es,dtype=torch.float32),torch.tensor(ph,dtype=torch.float32))
+93	            raw=np.column_stack([torch.sigmoid(a).numpy(),torch.sigmoid(h).numpy()])
+94	            for t,c in enumerate(ck['calibration']):
+95	                raw[:,t]=expit(c['coefficient']*logit(np.clip(raw[:,t],1e-6,1-1e-6))+c['intercept'])
+96	            values.append(raw)
+97	        mean=np.mean(values,axis=0)
+98	        return mean[:,0],mean[:,1],mean[:,0]*(1-mean[:,1])
+99	
+```
+
+**Not shown above 鈥?explore these names for their source**
+
+- frontend/src/store/useAppStore.ts: useAppStore:37, addToCart:55, CartPeptide:4, setActivePeptide:49, removeFromCart:68, AppState:16
+- 02_code/research_utils.py: read_json:24, sha256:9, utc_now:16, write_json:19
+- 02_code/evaluation.py: select_threshold:30, validate_coverage:60, ensemble_predictions:76, aggregate_metrics:118, cluster_intervals:89, compare_models:162
+- 02_code/feature_extractor.py: ESMFeatureExtractor:152, extract_sequence_embedding:174, extract_handcrafted_features:140
+- frontend/src/App.tsx: GlobalHeader:30, App:162, evolution:169, report:171, evolution:168, Layout:112, +1 more
+- 02_code/tests/test_research_data.py: test_observed_flags_cannot_hide_known_labels:23, test_cross_set_violation_blocks:54, test_missing_labels_remain_missing:17, test_unsupported_evidence_is_rejected:35, test_conflicts_are_not_silently_voted:38, test_research_data.py:1
+- frontend/src/api/client.ts: apiClient:3, errorMessage:10
+- 05_web_server/research_api.py: runtime:15, engine:33, api_system_status:39, research_api.py:1
+- frontend/src/pages/EvolutionStudio.tsx: EvolutionStudio:2
+- frontend/src/pages/ReportStudio.tsx: ReportStudio:2
+- ... and 16 more files
+
+> Some file sections were trimmed for size. For a specific symbol you still need, run another `codegraph_explore` (or `codegraph_node`) with its exact name 鈥?line-numbered source, cheaper and more complete than Read.

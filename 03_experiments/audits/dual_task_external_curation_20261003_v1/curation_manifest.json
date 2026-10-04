@@ -1,0 +1,19 @@
+{
+  "status": "penetration_curation_completed",
+  "generated_at": "2026-10-03T02:52:31.568116+00:00",
+  "protocol_id": "protocol-amd-03",
+  "primary_audit_input_sha256": "238bcddfa569687b2740314e56476a5b9ae84cdb3e6af97bbd87acaaae98e672",
+  "development_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "total_audited_candidates": 39,
+  "eligible_verified_count": 1,
+  "status_distribution": {
+    "rejected_terminal_amidation": 14,
+    "rejected_or_unverified_primary_conditions": 8,
+    "rejected_fatty_acylation_or_unconfirmed_free_acid": 6,
+    "rejected_terminal_amidation_and_label_diversity": 5,
+    "rejected_nanoparticle_conjugation_or_unquantified_hemo": 4,
+    "rejected_study_overlap_and_non_human_rbc": 1,
+    "eligible_verified_tier1_candidate": 1
+  },
+  "scientific_conclusion": "Exactly 1 candidate (Catesbeianin-1, DRAMP20968, PMID 28258530) has been fully verified as a genuine unamidated free-acid, zero-disulfide monomer peptide with strict homology isolation (<0.40) and simultaneous microdilution E. coli MIC (3.1 ug/mL, amp=1) and human RBC HC50 (300 ug/mL, hemo=0). However, an external evaluation cohort of N=1 cannot support meaningful classification metrics (MCC/AUROC/AUPRC) or balanced positive/negative class coverage across both tasks. Therefore, in strict accordance with protocol-amd-03, research_status.json MUST remain blocked."
+}

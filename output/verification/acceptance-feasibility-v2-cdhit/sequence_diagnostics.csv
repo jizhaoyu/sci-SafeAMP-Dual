@@ -1,0 +1,2 @@
+total_molecules,cutoff,connected_components,largest_component_size,largest_component_pct,aligned_pairs,above_cutoff_pairs,clustering_method
+430,0.4,61,38,8.84,430,38,cdhit

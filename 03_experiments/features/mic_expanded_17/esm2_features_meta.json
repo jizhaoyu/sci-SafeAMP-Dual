@@ -1,0 +1,139 @@
+{
+  "status": "esm2_features_extracted",
+  "generated_at": "2026-10-02T13:37:06.657636+00:00",
+  "model_name": "esm2_t6_8M_UR50D",
+  "model_parameters": 8000000,
+  "representation_layer": 6,
+  "embedding_dimensions": 320,
+  "pooling": "mean_across_residues_excluding_special_tokens",
+  "cohort_source": "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\candidate_molecules.csv",
+  "cohort_csv_sha256": "878d9c0263ddf13d5dba6080dd8efe66b166b1f85e6b25d09c62cde5f6199890",
+  "molecules_count": 17,
+  "feature_shape": [
+    17,
+    320
+  ],
+  "npy_file": "03_experiments\\features\\mic_expanded_17\\esm2_features.npy",
+  "npy_sha256": "74f3fab226325dc2a184ca53e32aac15496d3e5cbd2a17c388e334b1329ae647",
+  "per_sequence_summary": [
+    {
+      "sample_id": "3e656d2ae8d48ae33078fcd4",
+      "seq_len": 23,
+      "vector_mean": -0.010589633136987686,
+      "vector_std": 0.3319484293460846,
+      "vector_norm": 5.941094875335693
+    },
+    {
+      "sample_id": "cf6ae302bad088280f27436e",
+      "seq_len": 11,
+      "vector_mean": -0.010048988275229931,
+      "vector_std": 0.3753393292427063,
+      "vector_norm": 6.716679573059082
+    },
+    {
+      "sample_id": "0bad315d1aa3eae62114431b",
+      "seq_len": 16,
+      "vector_mean": -0.01083368994295597,
+      "vector_std": 0.3611803650856018,
+      "vector_norm": 6.463896751403809
+    },
+    {
+      "sample_id": "ed685c495abdd9ecc7e33057",
+      "seq_len": 41,
+      "vector_mean": -0.010264437645673752,
+      "vector_std": 0.31795522570610046,
+      "vector_norm": 5.690718650817871
+    },
+    {
+      "sample_id": "16032d07b187aa447eea3ada",
+      "seq_len": 18,
+      "vector_mean": -0.009659798815846443,
+      "vector_std": 0.3462684154510498,
+      "vector_norm": 6.196648120880127
+    },
+    {
+      "sample_id": "8a7ea548dccd036db56d8c94",
+      "seq_len": 21,
+      "vector_mean": -0.00969164539128542,
+      "vector_std": 0.34365540742874146,
+      "vector_norm": 6.14993953704834
+    },
+    {
+      "sample_id": "f74052fb265151ecb406d09f",
+      "seq_len": 18,
+      "vector_mean": -0.009812960401177406,
+      "vector_std": 0.3440651297569275,
+      "vector_norm": 6.1573262214660645
+    },
+    {
+      "sample_id": "30d336eea06d769ed6f05aad",
+      "seq_len": 16,
+      "vector_mean": -0.009518045000731945,
+      "vector_std": 0.33002451062202454,
+      "vector_norm": 5.906113147735596
+    },
+    {
+      "sample_id": "d109526ef5b890b80697cd3c",
+      "seq_len": 18,
+      "vector_mean": -0.00989984255284071,
+      "vector_std": 0.3493247926235199,
+      "vector_norm": 6.251420497894287
+    },
+    {
+      "sample_id": "e76bde35dfd8fa7886701176",
+      "seq_len": 21,
+      "vector_mean": -0.011818165890872478,
+      "vector_std": 0.32580241560935974,
+      "vector_norm": 5.831964015960693
+    },
+    {
+      "sample_id": "b6caa1581eac8732cdb884da",
+      "seq_len": 21,
+      "vector_mean": -0.010648932307958603,
+      "vector_std": 0.33270978927612305,
+      "vector_norm": 5.95474100112915
+    },
+    {
+      "sample_id": "22092d5d5213faf8a6e05acc",
+      "seq_len": 14,
+      "vector_mean": -0.011426964774727821,
+      "vector_std": 0.3762805461883545,
+      "vector_norm": 6.734213352203369
+    },
+    {
+      "sample_id": "2b0ec81407d11aecb6cba260",
+      "seq_len": 13,
+      "vector_mean": -0.009238104335963726,
+      "vector_std": 0.36178532242774963,
+      "vector_norm": 6.473922252655029
+    },
+    {
+      "sample_id": "c40ac96f1bb92d284d5fb9fc",
+      "seq_len": 14,
+      "vector_mean": -0.011812042444944382,
+      "vector_std": 0.37722593545913696,
+      "vector_norm": 6.7513298988342285
+    },
+    {
+      "sample_id": "d8c1766a857b483a3880c7df",
+      "seq_len": 12,
+      "vector_mean": -0.009981631301343441,
+      "vector_std": 0.35053977370262146,
+      "vector_norm": 6.27318811416626
+    },
+    {
+      "sample_id": "4e1914c54d14afece198fd5d",
+      "seq_len": 22,
+      "vector_mean": -0.010596404783427715,
+      "vector_std": 0.33197706937789917,
+      "vector_norm": 5.941610336303711
+    },
+    {
+      "sample_id": "5445b7b645f69b6d7f8abdf3",
+      "seq_len": 27,
+      "vector_mean": -0.009739887900650501,
+      "vector_std": 0.3373585641384125,
+      "vector_norm": 6.037367820739746
+    }
+  ]
+}

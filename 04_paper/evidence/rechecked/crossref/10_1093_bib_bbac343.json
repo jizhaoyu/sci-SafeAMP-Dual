@@ -1,0 +1,1119 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/bib/bbac343",
+  "retrieved_at": "2026-09-28T14:56:21.333028+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          24
+        ]
+      ],
+      "date-time": "2026-09-24T09:53:37Z",
+      "timestamp": 1790243617715,
+      "version": "4.1.0"
+    },
+    "reference-count": 59,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              8,
+              22
+            ]
+          ],
+          "date-time": "2022-08-22T00:00:00Z",
+          "timestamp": 1661126400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 1,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004421",
+        "name": "Warsaw University of Technology",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100004421",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "European Union-NextGenerationEU"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          20
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Antimicrobial peptides (AMPs) are a heterogeneous group of short polypeptides that target not only microorganisms but also viruses and cancer cells. Due to their lower selection for resistance compared with traditional antibiotics, AMPs have been attracting the ever-growing attention from researchers, including bioinformaticians. Machine learning represents the most cost-effective method for novel AMP discovery and consequently many computational tools for AMP prediction have been recently developed. In this article, we investigate the impact of negative data sampling on model performance and benchmarking. We generated 660 predictive models using 12 machine learning architectures, a single positive data set and 11 negative data sampling methods; the architectures and methods were defined on the basis of published AMP prediction software. Our results clearly indicate that similar training and benchmark data set, i.e. produced by the same or a similar negative data sampling method, positively affect model performance. Consequently, all the benchmark analyses that have been performed for AMP prediction models are significantly biased and, moreover, we do not know which model is the most accurate. To provide researchers with reliable information about the performance of AMP predictors, we also created a web server AMPBenchmark for fair model benchmarking. AMPBenchmark is available at http://BioGenies.info/AMPBenchmark.</jats:p>",
+    "DOI": "10.1093/bib/bbac343",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          21
+        ]
+      ],
+      "date-time": "2022-08-21T20:27:48Z",
+      "timestamp": 1661113668000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 101,
+    "title": [
+      "Benchmarks in antimicrobial peptide prediction are biased due to the selection of negative data"
+    ],
+    "prefix": "10.1093",
+    "volume": "23",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0001-6576-9054",
+        "authenticated-orcid": false,
+        "given": "Katarzyna",
+        "family": "Sidorczuk",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Wrocław, Faculty of Biotechnology , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-9077-439X",
+        "authenticated-orcid": false,
+        "given": "Przemysław",
+        "family": "Gagat",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Wrocław, Faculty of Biotechnology , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6218-9804",
+        "authenticated-orcid": false,
+        "given": "Filip",
+        "family": "Pietluch",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Wrocław, Faculty of Biotechnology , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-7187-6988",
+        "authenticated-orcid": false,
+        "given": "Jakub",
+        "family": "Kała",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Warsaw University of Technology, Faculty of Mathematics and Information Science , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-0925-1909",
+        "authenticated-orcid": false,
+        "given": "Dominik",
+        "family": "Rafacz",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Warsaw University of Technology, Faculty of Mathematics and Information Science , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-3213-2484",
+        "authenticated-orcid": false,
+        "given": "Laura",
+        "family": "Bąkała",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Warsaw University of Technology, Faculty of Mathematics and Information Science , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-3466-8933",
+        "authenticated-orcid": false,
+        "given": "Jadwiga",
+        "family": "Słowik",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Warsaw University of Technology, Faculty of Mathematics and Information Science , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8145-579X",
+        "authenticated-orcid": false,
+        "given": "Rafał",
+        "family": "Kolenda",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Quadram Institute Biosciences, Norwich Research Park , Norwich , United Kingdom"
+          },
+          {
+            "name": "Wrocław University of Environmental and Life Sciences, Faculty of Veterinary Medicine , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-1441-6512",
+        "authenticated-orcid": false,
+        "given": "Stefan",
+        "family": "Rödiger",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Brandenburg University of Technology Cottbus-Senftenberg, Faculty of Natural Sciences , Germany"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-2482-5336",
+        "authenticated-orcid": false,
+        "given": "Legana C H W",
+        "family": "Fingerhut",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Molecular and Cell Biology, Centre for Tropical Bioinformatics and Molecular Biology, James Cook University , Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6520-1397",
+        "authenticated-orcid": false,
+        "given": "Ira R",
+        "family": "Cooke",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Molecular and Cell Biology, Centre for Tropical Bioinformatics and Molecular Biology, James Cook University , Australia"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4855-497X",
+        "authenticated-orcid": false,
+        "given": "Paweł",
+        "family": "Mackiewicz",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Wrocław, Faculty of Biotechnology , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-8926-582X",
+        "authenticated-orcid": false,
+        "given": "Michał",
+        "family": "Burdukiewicz",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Autonomous University of Barcelona, Institute of Biotechnology and Biomedicine"
+          },
+          {
+            "name": "Medical University of Białystok, Clinical Research Centre , Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          21
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "4",
+        "key": "2022092013224591500_ref1",
+        "doi-asserted-by": "crossref",
+        "first-page": "363",
+        "DOI": "10.1016/j.resmic.2011.02.005",
+        "article-title": "Natural roles of antimicrobial peptides in microbes, plants and animals",
+        "volume": "162",
+        "author": "Maróti",
+        "year": "2011",
+        "journal-title": "Res Microbiol"
+      },
+      {
+        "issue": "10",
+        "key": "2022092013224591500_ref2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1043",
+        "DOI": "10.2174/1381612824666180403123736",
+        "article-title": "Antimicrobial peptides: phylogenic sources and biological activities. First of two parts",
+        "volume": "24",
+        "author": "Magrone",
+        "year": "2018",
+        "journal-title": "Curr Pharm Des"
+      },
+      {
+        "issue": "8",
+        "key": "2022092013224591500_ref3",
+        "doi-asserted-by": "crossref",
+        "first-page": "1097",
+        "DOI": "10.1038/s41591-018-0145-0",
+        "article-title": "Learning from bacterial competition in the host to develop antimicrobials",
+        "volume": "24",
+        "author": "Raffatellu",
+        "year": "2018",
+        "journal-title": "Nat Med"
+      },
+      {
+        "key": "2022092013224591500_ref4",
+        "doi-asserted-by": "crossref",
+        "first-page": "615",
+        "DOI": "10.1007/978-981-13-8315-1_19",
+        "volume-title": "Microbial Diversity in Ecosystem Sustainability and Biotechnological Applications",
+        "author": "Suneja",
+        "year": "2019"
+      },
+      {
+        "issue": "8",
+        "key": "2022092013224591500_ref5",
+        "doi-asserted-by": "crossref",
+        "first-page": "704",
+        "DOI": "10.3390/v11080704",
+        "article-title": "Human antimicrobial peptides as therapeutics for viral infections",
+        "volume": "11",
+        "author": "Ahmed",
+        "year": "2019",
+        "journal-title": "Viruses"
+      },
+      {
+        "issue": "5",
+        "key": "2022092013224591500_ref6",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1038/s41573-019-0058-8",
+        "article-title": "Antimicrobial host defence peptides: functions and clinical potential",
+        "volume": "19",
+        "author": "Mookherjee",
+        "year": "2020",
+        "journal-title": "Nat Rev Drug Discov"
+      },
+      {
+        "key": "2022092013224591500_ref7",
+        "doi-asserted-by": "crossref",
+        "first-page": "73",
+        "DOI": "10.3389/fnins.2017.00073",
+        "article-title": "Membrane active antimicrobial peptides: translating mechanistic insights to design",
+        "volume": "11",
+        "author": "Li",
+        "year": "2017",
+        "journal-title": "Front Neurosci"
+      },
+      {
+        "key": "2022092013224591500_ref8",
+        "doi-asserted-by": "crossref",
+        "first-page": "521",
+        "DOI": "10.1016/j.cis.2017.06.001",
+        "article-title": "The interaction of antimicrobial peptides with membranes",
+        "volume": "247",
+        "author": "Travkova",
+        "year": "2017",
+        "journal-title": "Adv Colloid Interface Sci"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref9",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.3390/biom8010004",
+        "article-title": "Antimicrobial peptides: diversity, mechanism of action and strategies to improve the activity and biocompatibility in vivo",
+        "volume": "8",
+        "author": "Kumar",
+        "year": "2018",
+        "journal-title": "Biomolecules"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref10",
+        "doi-asserted-by": "crossref",
+        "first-page": "e12546",
+        "DOI": "10.1111/jfbc.12546",
+        "article-title": "Recent insights into structure–function relationships of antimicrobial peptides",
+        "volume": "43",
+        "author": "Ahmed",
+        "year": "2019",
+        "journal-title": "J Food Biochem"
+      },
+      {
+        "issue": "4",
+        "key": "2022092013224591500_ref11",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1128/AAC.02340-16",
+        "article-title": "Intracellular targeting mechanisms by antimicrobial peptides",
+        "volume": "61",
+        "author": "Le",
+        "year": "2017",
+        "journal-title": "Antimicrob Agents Chemother"
+      },
+      {
+        "key": "2022092013224591500_ref12",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1016/j.tifs.2021.01.005",
+        "article-title": "The structure-mechanism relationship and mode of actions of antimicrobial peptides: a review",
+        "volume": "109",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "Trends Food Sci Technol"
+      },
+      {
+        "key": "2022092013224591500_ref13",
+        "doi-asserted-by": "crossref",
+        "first-page": "43",
+        "DOI": "10.1016/j.drup.2016.04.002",
+        "article-title": "Mechanisms and consequences of bacterial resistance to antimicrobial peptides",
+        "volume": "26",
+        "author": "Andersson",
+        "year": "2016",
+        "journal-title": "Drug Resist Updat"
+      },
+      {
+        "issue": "6",
+        "key": "2022092013224591500_ref14",
+        "doi-asserted-by": "crossref",
+        "first-page": "718",
+        "DOI": "10.1038/s41564-018-0164-0",
+        "article-title": "Antibiotic-resistant bacteria show widespread collateral sensitivity to antimicrobial peptides",
+        "volume": "3",
+        "author": "Lázár",
+        "year": "2018",
+        "journal-title": "Nat Microbiol"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref15",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1038/s41467-019-12364-6",
+        "article-title": "Integrated evolutionary analysis reveals antimicrobial peptides with limited resistance",
+        "volume": "10",
+        "author": "Spohn",
+        "year": "2019",
+        "journal-title": "Nat Commun"
+      },
+      {
+        "key": "2022092013224591500_ref16",
+        "volume-title": "No time to wait: securing the future from drug-resistant infections",
+        "author": "WHO et al",
+        "year": "2019"
+      },
+      {
+        "issue": "5",
+        "key": "2022092013224591500_ref17",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/bib/bbab083",
+        "article-title": "Comprehensive assessment of machine learning-based methods for predicting antimicrobial peptides",
+        "volume": "22",
+        "author": "Xu",
+        "year": "2021",
+        "journal-title": "Brief. Bioinformatics"
+      },
+      {
+        "issue": "12",
+        "key": "2022092013224591500_ref18",
+        "doi-asserted-by": "crossref",
+        "first-page": "4310",
+        "DOI": "10.3390/ijms21124310",
+        "article-title": "Proteomic screening for prediction and design of antimicrobial peptides with AmpGram",
+        "volume": "21",
+        "author": "Burdukiewicz",
+        "year": "2020",
+        "journal-title": "Int J Mol Sci"
+      },
+      {
+        "issue": "D1",
+        "key": "2022092013224591500_ref19",
+        "doi-asserted-by": "crossref",
+        "first-page": "D288",
+        "DOI": "10.1093/nar/gkaa991",
+        "article-title": "DBAASP v3: database of antimicrobial/cytotoxic activity and structure of peptides as a resource for development of new therapeutics",
+        "volume": "49",
+        "author": "Pirtskhalava",
+        "year": "2021",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "D1",
+        "key": "2022092013224591500_ref20",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1087",
+        "DOI": "10.1093/nar/gkv1278",
+        "article-title": "APD3: the antimicrobial peptide database as a tool for research and education",
+        "volume": "44",
+        "author": "Wang",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "D1",
+        "key": "2022092013224591500_ref21",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1094",
+        "DOI": "10.1093/nar/gkv1051",
+        "article-title": "CAMPR3: a database on sequences, structures and signatures of antimicrobial peptides",
+        "volume": "44",
+        "author": "Waghu",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref22",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1038/s41597-019-0154-y",
+        "article-title": "DRAMP 2.0, an updated data repository of antimicrobial peptides",
+        "volume": "6",
+        "author": "Kang",
+        "year": "2019",
+        "journal-title": "Sci Data"
+      },
+      {
+        "issue": "D1",
+        "key": "2022092013224591500_ref23",
+        "doi-asserted-by": "crossref",
+        "first-page": "D285",
+        "DOI": "10.1093/nar/gky1030",
+        "article-title": "dbAMP: an integrated resource for exploring antimicrobial peptides with functional activities and physicochemical properties on transcriptome and proteome data",
+        "volume": "47",
+        "author": "Jhong",
+        "year": "2019",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "21",
+        "key": "2022092013224591500_ref24",
+        "doi-asserted-by": "crossref",
+        "first-page": "5262",
+        "DOI": "10.1093/bioinformatics/btaa653",
+        "article-title": "Ampir: an R package for fast genome-wide prediction of antimicrobial peptides",
+        "volume": "36",
+        "author": "Fingerhut",
+        "year": "2020",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "13",
+        "key": "2022092013224591500_ref25",
+        "doi-asserted-by": "crossref",
+        "first-page": "1921",
+        "DOI": "10.1093/bioinformatics/btx081",
+        "article-title": "Empirical comparison of web-based antimicrobial peptide prediction tools",
+        "volume": "33",
+        "author": "Gabere",
+        "year": "2017",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "D1",
+        "key": "2022092013224591500_ref26",
+        "doi-asserted-by": "crossref",
+        "first-page": "D480",
+        "DOI": "10.1093/nar/gkaa1100",
+        "article-title": "Uniprot: the universal protein knowledgebase in 2021",
+        "volume": "49",
+        "author": "UniProt Consortium",
+        "year": "2021",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "20",
+        "key": "2022092013224591500_ref27",
+        "doi-asserted-by": "crossref",
+        "first-page": "2640",
+        "DOI": "10.1093/bioinformatics/bts504",
+        "article-title": "Positive-unlabeled learning for disease gene identification",
+        "volume": "28",
+        "author": "Yang",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "12",
+        "key": "2022092013224591500_ref28",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0226115",
+        "DOI": "10.1371/journal.pone.0226115",
+        "article-title": "A novel one-class classification approach to accurately predict disease-gene association in acute myeloid leukemia cancer",
+        "volume": "14",
+        "author": "Vasighizaker",
+        "year": "2019",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "3",
+        "key": "2022092013224591500_ref29",
+        "doi-asserted-by": "crossref",
+        "first-page": "bbaa184",
+        "DOI": "10.1093/bib/bbaa184",
+        "article-title": "Genome-wide discovery of pre-mirnas: comparison of recent approaches based on machine learning",
+        "volume": "22",
+        "author": "Bugnon",
+        "year": "2021",
+        "journal-title": "Brief Bioinformatics"
+      },
+      {
+        "issue": "5",
+        "key": "2022092013224591500_ref30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1596",
+        "DOI": "10.1093/bib/bbz076",
+        "article-title": "Predicting bacterial virulence factors–evaluation of machine learning and negative data strategies",
+        "volume": "21",
+        "author": "Rentzsch",
+        "year": "2020",
+        "journal-title": "Brief. Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref31",
+        "first-page": "1",
+        "article-title": "Choosing negative examples for the prediction of protein-protein interactions",
+        "volume": "7",
+        "author": "Ben-Hur",
+        "year": "2006",
+        "journal-title": "BMC Bioinform"
+      },
+      {
+        "issue": "03",
+        "key": "2022092013224591500_ref32",
+        "doi-asserted-by": "crossref",
+        "first-page": "1541005",
+        "DOI": "10.1142/S021972001541005X",
+        "article-title": "Computationally predicting protein-RNA interactions using only positive and unlabeled examples",
+        "volume": "13",
+        "author": "Cheng",
+        "year": "2015",
+        "journal-title": "J Bioinform Comput Biol"
+      },
+      {
+        "key": "2022092013224591500_ref33",
+        "doi-asserted-by": "crossref",
+        "first-page": "145643",
+        "DOI": "10.1016/j.gene.2021.145643",
+        "article-title": "A sequence-based prediction of kruppel-like factors proteins using xgboost and optimized features",
+        "volume": "787",
+        "author": "Le",
+        "year": "2021",
+        "journal-title": "Gene"
+      },
+      {
+        "issue": "6",
+        "key": "2022092013224591500_ref34",
+        "doi-asserted-by": "crossref",
+        "first-page": "2100264",
+        "DOI": "10.1002/minf.202100264",
+        "article-title": "An ai-based prediction model for drug-drug interactions in osteoporosis and paget’s diseases from smiles",
+        "volume": "41",
+        "author": "Hung",
+        "year": "2022",
+        "journal-title": "Molecular Informatics"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref35",
+        "doi-asserted-by": "crossref",
+        "first-page": "92",
+        "DOI": "10.1016/j.cels.2020.10.007",
+        "article-title": "Inferring protein sequence-function relationships with large-scale positive-unlabeled learning",
+        "volume": "12",
+        "author": "Song",
+        "year": "2021",
+        "journal-title": "Cell Syst"
+      },
+      {
+        "issue": "4",
+        "key": "2022092013224591500_ref36",
+        "doi-asserted-by": "crossref",
+        "first-page": "719",
+        "DOI": "10.1007/s10994-020-05877-5",
+        "article-title": "Learning from positive and unlabeled data: a survey",
+        "volume": "109",
+        "author": "Bekker",
+        "year": "2020",
+        "journal-title": "Mach Learn"
+      },
+      {
+        "key": "2022092013224591500_ref37",
+        "article-title": "Positive-unlabeled learning in bioinformatics and computational biology: a brief review",
+        "author": "Li",
+        "year": "2021",
+        "journal-title": "Brief Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref38",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1093/nar/28.1.235",
+        "article-title": "The protein data bank",
+        "volume": "28",
+        "author": "Berman",
+        "year": "2000",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "issue": "13",
+        "key": "2022092013224591500_ref39",
+        "doi-asserted-by": "crossref",
+        "first-page": "1658",
+        "DOI": "10.1093/bioinformatics/btl158",
+        "article-title": "Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences",
+        "volume": "22",
+        "author": "Li",
+        "year": "2006",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "23",
+        "key": "2022092013224591500_ref40",
+        "doi-asserted-by": "crossref",
+        "first-page": "3150",
+        "DOI": "10.1093/bioinformatics/bts565",
+        "article-title": "CD-HIT: accelerated for clustering the next-generation sequencing data",
+        "volume": "28",
+        "author": "Limin",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "4",
+        "key": "2022092013224591500_ref41",
+        "doi-asserted-by": "crossref",
+        "first-page": "e18476",
+        "DOI": "10.1371/journal.pone.0018476",
+        "article-title": "Prediction of antimicrobial peptides based on sequence alignment and feature selection methods",
+        "volume": "6",
+        "author": "Wang",
+        "year": "2011",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "12",
+        "key": "2022092013224591500_ref42",
+        "doi-asserted-by": "crossref",
+        "first-page": "e51444",
+        "DOI": "10.1371/journal.pone.0051444",
+        "article-title": "CS-AMPPred: an updated SVM model for antimicrobial activity prediction in cysteine-stabilized peptides",
+        "volume": "7",
+        "author": "Porto",
+        "year": "2012",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "2",
+        "key": "2022092013224591500_ref43",
+        "doi-asserted-by": "crossref",
+        "first-page": "168",
+        "DOI": "10.1016/j.ab.2013.01.019",
+        "article-title": "iAMP-2L: a two-level multi-label classifier for identifying antimicrobial peptides and their functional types",
+        "volume": "436",
+        "author": "Xuan Xiao",
+        "year": "2013",
+        "journal-title": "Anal Biochem"
+      },
+      {
+        "key": "2022092013224591500_ref44",
+        "doi-asserted-by": "crossref",
+        "first-page": "172",
+        "DOI": "10.1016/j.compbiomed.2019.02.018",
+        "article-title": "AMAP: hierarchical multi-label prediction of biologically active and antimicrobial peptides",
+        "volume": "107",
+        "author": "Gull",
+        "year": "2019",
+        "journal-title": "Comput Biol Med"
+      },
+      {
+        "issue": "4",
+        "key": "2022092013224591500_ref45",
+        "first-page": "656",
+        "article-title": "BLAT-the BLAST-like alignment tool",
+        "volume": "12",
+        "author": "James Kent",
+        "year": "2002",
+        "journal-title": "Genome Res"
+      },
+      {
+        "issue": "16",
+        "key": "2022092013224591500_ref46",
+        "doi-asserted-by": "crossref",
+        "first-page": "2740",
+        "DOI": "10.1093/bioinformatics/bty179",
+        "article-title": "Deep learning improves antimicrobial peptide recognition",
+        "volume": "34",
+        "author": "Veltri",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2022092013224591500_ref47",
+        "first-page": "692681",
+        "article-title": "Deep learning regression model for antimicrobial peptide design",
+        "author": "Witten",
+        "year": "2019",
+        "journal-title": "BioRxiv"
+      },
+      {
+        "key": "2022092013224591500_ref48",
+        "article-title": "AMPlify: attentive deep learning model for discovery of novel antimicrobial peptides effective against who priority pathogens",
+        "volume": "23",
+        "author": "Li",
+        "year": "2020",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "key": "2022092013224591500_ref49",
+        "doi-asserted-by": "crossref",
+        "first-page": "882",
+        "DOI": "10.1016/j.omtn.2020.05.006",
+        "article-title": "Deep-AmPEP30: improve short antimicrobial peptides prediction with deep learning",
+        "volume": "20",
+        "author": "Yan",
+        "year": "2020",
+        "journal-title": "Mol Ther Nucleic Acids"
+      },
+      {
+        "key": "2022092013224591500_ref50",
+        "doi-asserted-by": "crossref",
+        "first-page": "212715",
+        "DOI": "10.1155/2015/212715",
+        "article-title": "Prediction of antimicrobial peptides based on sequence alignment and support vector machine-pairwise algorithm utilizing LZ-complexity",
+        "volume": "2015",
+        "author": "Ng",
+        "year": "2015",
+        "journal-title": "Biomed Res Int"
+      },
+      {
+        "issue": "24",
+        "key": "2022092013224591500_ref51",
+        "doi-asserted-by": "crossref",
+        "first-page": "3745",
+        "DOI": "10.1093/bioinformatics/btw560",
+        "article-title": "Imbalanced multi-label learning for identifying antimicrobial peptides and their functional types",
+        "volume": "32",
+        "author": "Lin",
+        "year": "2016",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "2022092013224591500_ref52",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1038/s41598-018-19752-w",
+        "article-title": "AmPEP: sequence-based prediction of antimicrobial peptides using distribution patterns of amino acid properties and random forest",
+        "volume": "8",
+        "author": "Bhadra",
+        "year": "2018",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "14",
+        "key": "2022092013224591500_ref53",
+        "doi-asserted-by": "crossref",
+        "first-page": "2058",
+        "DOI": "10.1093/bioinformatics/btaa917",
+        "article-title": "amPEPpy 1.0: a portable and accurate antimicrobial peptide prediction tool",
+        "volume": "37",
+        "author": "Lawrence",
+        "year": "2020",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2022092013224591500_ref54",
+        "doi-asserted-by": "crossref",
+        "first-page": "e10555",
+        "DOI": "10.7717/peerj.10555",
+        "article-title": "MACREL: antimicrobial peptide screening in genomes and metagenomes",
+        "volume": "8",
+        "author": "Santos-Junior",
+        "year": "2020",
+        "journal-title": "PeerJ"
+      },
+      {
+        "issue": "2",
+        "key": "2022092013224591500_ref55",
+        "doi-asserted-by": "crossref",
+        "first-page": "645",
+        "DOI": "10.1007/s00726-012-1388-6",
+        "article-title": "Effect of repetitive lysine-tryptophan motifs on the bactericidal activity of antimicrobial peptides",
+        "volume": "44",
+        "author": "Gopal",
+        "year": "2013",
+        "journal-title": "Amino Acids"
+      },
+      {
+        "issue": "3",
+        "key": "2022092013224591500_ref56",
+        "doi-asserted-by": "crossref",
+        "first-page": "bbac094",
+        "DOI": "10.1093/bib/bbac094",
+        "article-title": "Do deep learning models make a difference in the identification of antimicrobial peptides?",
+        "volume": "23",
+        "author": "García-Jacas",
+        "year": "2022",
+        "journal-title": "Brief Bioinform"
+      },
+      {
+        "issue": "8",
+        "key": "2022092013224591500_ref57",
+        "doi-asserted-by": "crossref",
+        "first-page": "e124",
+        "DOI": "10.1371/journal.pmed.0020124",
+        "article-title": "Why most published research findings are false",
+        "volume": "2",
+        "author": "Ioannidis",
+        "year": "2005",
+        "journal-title": "PLoS Med"
+      },
+      {
+        "issue": "7604",
+        "key": "2022092013224591500_ref58",
+        "doi-asserted-by": "crossref",
+        "first-page": "452",
+        "DOI": "10.1038/533452a",
+        "article-title": "1,500 scientists lift the lid on reproducibility",
+        "volume": "533",
+        "author": "Baker",
+        "year": "2016",
+        "journal-title": "Nature"
+      },
+      {
+        "issue": "10",
+        "key": "2022092013224591500_ref59",
+        "doi-asserted-by": "crossref",
+        "first-page": "1132",
+        "DOI": "10.1038/s41592-021-01256-7",
+        "article-title": "Reproducibility standards for machine learning in the life sciences",
+        "volume": "18",
+        "author": "Heil",
+        "year": "2021",
+        "journal-title": "Nat Methods"
+      }
+    ],
+    "container-title": [
+      "Briefings in Bioinformatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://academic.oup.com/bib/article-pdf/23/5/bbac343/45935232/bbac343.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bib/article-pdf/23/5/bbac343/45935232/bbac343.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          9,
+          20
+        ]
+      ],
+      "date-time": "2022-09-20T14:02:26Z",
+      "timestamp": 1663682546000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/bib/article/doi/10.1093/bib/bbac343/6672903"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          21
+        ]
+      ]
+    },
+    "references-count": 59,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            9,
+            20
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/bib/bbac343",
+    "relation": {
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/2022.05.30.493946",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1467-5463",
+      "1477-4054"
+    ],
+    "issn-type": [
+      {
+        "value": "1467-5463",
+        "type": "print"
+      },
+      {
+        "value": "1477-4054",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2022,
+          9
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          8,
+          21
+        ]
+      ]
+    },
+    "article-number": "bbac343"
+  }
+}

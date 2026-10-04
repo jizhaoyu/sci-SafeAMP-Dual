@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "generated_at": "2026-09-28T15:58:38.471101+00:00",
+  "total_dramp_raw": 6107,
+  "candidates_with_human_hc50": 10,
+  "exact_sequence_overlaps": 0,
+  "literature_overlaps": 2,
+  "dbaasp_crossrefs": 2,
+  "violates_current_0.40_isolation": 10,
+  "violates_standard_max_0.40_isolation": 10,
+  "strictly_eligible_external_records": 0
+}

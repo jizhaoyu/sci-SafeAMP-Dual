@@ -1,0 +1,12 @@
+[
+  {
+    "url": "https://www.science.org/doi/suppl/10.1126/sciadv.ads8932/suppl_file/sciadv.ads8932_sm.pdf",
+    "status": "failed",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "url": "https://pdfs.semanticscholar.org/885e/05fbfddbb21c1ab295b0caad0aaebeedfd20.pdf",
+    "status": "failed",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

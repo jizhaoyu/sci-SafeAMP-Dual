@@ -1,0 +1,2 @@
+﻿dramp_id,sequence,primary_pmid,raw_mic,issue,status
+DRAMP00930,TESYFVFSVGM,19111587,170 µg/mL,Primary paper names E. coli but gives no strain or isolate identifier; protocol-mic-01 evidence requirement is unmet.,excluded_pending_primary_strain_verification

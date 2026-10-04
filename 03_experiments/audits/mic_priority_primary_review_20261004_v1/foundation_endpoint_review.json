@@ -1,0 +1,18 @@
+{
+  "source": "10.1126/sciadv.ads8932",
+  "location": "Supplementary PDF page 5, Figure S4",
+  "visual_review_completed": true,
+  "molecules": [
+    "KW13",
+    "AI18"
+  ],
+  "highest_displayed_peptide_concentration": 1000,
+  "unit": "ug/ml",
+  "reported_hc50_relation": ">",
+  "reported_hc50_bound": 1000,
+  "exact_hc50": null,
+  "raw_numeric_hemolysis_replicates_available_in_pdf": false,
+  "handling": "Preserve censored range; do not set exact HC50 to 1000 or digitize bars as raw replicates",
+  "remaining_condition_issue": "Main methods describe 100 ug/ml procedure; figure shows a dilution series to 1000 ug/ml",
+  "labels_released": 0
+}

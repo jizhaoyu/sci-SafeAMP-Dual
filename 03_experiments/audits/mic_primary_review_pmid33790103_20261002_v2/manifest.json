@@ -1,0 +1,26 @@
+{
+  "status": "blocked_primary_review_in_progress",
+  "generated_at": "2026-10-02T02:26:35.680175+00:00",
+  "paper": {
+    "pmid": "33790103",
+    "doi": "10.1248/bpb.b20-00799",
+    "article_url": "https://www.jstage.jst.go.jp/article/bpb/44/4/44_b20-00799/_article",
+    "pdf_url": "https://www.jstage.jst.go.jp/article/bpb/44/4/44_b20-00799/_pdf"
+  },
+  "script_sha256": "efcf0a1092011a74d8423b7807ce04418eb3c90a25ca02a76a2d190e5e056ae7",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_pmid33790103_20261002_v1\\raw\\44_b20-00799.pdf": "59d827548f7917a6fec690a6161b7438ed3fd16f12ecf2782e6ec7406b7a7299"
+  },
+  "review": {
+    "records": 3,
+    "sequence_and_mic_matches": 3,
+    "negative_observations": 3,
+    "records_released_for_training": 0
+  },
+  "outputs": {
+    "record_review.csv": "f251baf6b827f9825b166ae3146a2c21812c9f8e63a3cdf1d142de2fa0a3d054",
+    "report.md": "5b7f07df7d7110a5b317031a32200bf9aef7528032eba734fa1db0fc807c1ed6"
+  }
+}

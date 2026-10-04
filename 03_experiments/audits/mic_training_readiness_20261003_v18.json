@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "status": "mic_expansion_blocked_existing_baseline_preserved",
+  "generated_at": "2026-10-03T13:49:50.615021+00:00",
+  "state_path": "03_experiments/audits/mic_training_readiness_20261003_v18.json",
+  "supersedes": "03_experiments/audits/mic_training_readiness_20261003_v17.json",
+  "engineering_status": "implemented",
+  "dataset_preparation_status": "blocked",
+  "data_version": "mic_reviewed_release_20261003_v2",
+  "data_dir": "03_experiments/audits/mic_reviewed_release_20261003_v2",
+  "audit_protocol_id": "protocol-mic-08",
+  "training_protocol_id": null,
+  "training_command": null,
+  "candidate_molecules": 17,
+  "candidate_observations": 24,
+  "new_candidates_reviewed": 2,
+  "new_candidates_released": 0,
+  "training_started": false,
+  "training_blocked": true,
+  "records_released_for_training": 22,
+  "existing_baseline": {
+    "cohort_version": "mic_three_fold_20261002_v1",
+    "training_protocol_id": "protocol-mic-07",
+    "molecules_evidence_approved": 15,
+    "observations_evidence_approved": 22,
+    "status": "historical_exploratory_training_completed"
+  },
+  "gates": {
+    "existing_baseline_evidence": "passed",
+    "new_candidate_primary_evidence": "blocked",
+    "updated_all_member_study_isolation": "passed_existing_15_historical_partition_preserved",
+    "training_protocol": "not_created_without_new_released_data"
+  },
+  "existing_baseline_isolation_audit": {
+    "status": "passed_existing_15_historical_partition_preserved",
+    "molecules": 15,
+    "observations": 22,
+    "all_member_pairs_recomputed": 105,
+    "cross_fold_homology_edges": 0,
+    "cross_fold_primary_studies": 0,
+    "fixed_folds_reused": true,
+    "training_performed": false,
+    "blockers": [],
+    "pair_audit_sha256": "900b8608f25f1a25603c69060fbc4bef09cab80ecb15cb379c82eb7fc7ebf2cc"
+  },
+  "formal_dual_task_status": "blocked",
+  "formal_protocol_id": "protocol-amd-02",
+  "formal_state_path": "04_paper/research_status.json",
+  "formal_state_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "formal_run_status": "none",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "blockers": [
+    "The publication separates the structural-study synthesis from the UTSW assay material and reports HPLC purity for the latter; it does not establish that assay specimen's free N terminus. No molecule label is released.",
+    "The stored article reports a range across CRE strains, while the indexed assay target combines CREC6, clinical isolates and ATCC 25922. The figure image and valid supplementary document could not be retrieved; no isolate-specific value is certified."
+  ],
+  "producer": "02_code/mic_reviewed_release.py",
+  "inputs": {
+    "03_experiments/audits/mic_reviewed_release_20261003_v2/manifest.json": "362d4ba4098a4c7fcd16106e865b743a32e60b3bdaeb6c11665b7a3af4533ab5",
+    "03_experiments/audits/mic_reviewed_release_20261003_v2/new_candidate_review.csv": "378b0eab68f8c5fec6af46885c0210a5325a4c24197e9ee0831963619601ed94",
+    "03_experiments/audits/mic_reviewed_release_20261003_v2/existing_15_pair_reaudit.csv": "900b8608f25f1a25603c69060fbc4bef09cab80ecb15cb379c82eb7fc7ebf2cc",
+    "03_experiments/audits/mic_training_readiness_20261003_v16.json": "4a55c3a285895c73b31580f000be8c5c662cb011cff8d3c3cce1b9615354d0ec",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments/protocols/protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "03_experiments/audits/protocol_mic_07_freeze_20261002_v2.json": "8eceeead1ac9e61e380b84082e8799526b3d3f9264e82bec28d6f4ba1a7163af",
+    "02_code/train_mic_three_fold_v2.py": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+    "02_code/mic_reviewed_release.py": "89650c86410416b83417046fb7f83b5aa97895ff2065203af7aab561ab522691",
+    "02_code/train_mic_reviewed_baseline.py": "65fb306f1c9e665c6e280791c3dd8c281d4b41c12e2d210fd493af214c37c78e",
+    "02_code/tests/test_mic_reviewed_training.py": "5a64d7b523726a0789dc61d064d9431a9c1e07cd06410db665389de4822458e9",
+    "docs/superpowers/plans/2026-10-03-mic-evidence-release-and-training.md": "eef11da3aab5c5c0707a363dc1abfec695e21d7c45176ef438076ee39f18fdd5",
+    "02_code\\research_evidence_gate.py": "9ea4c62d006dca98c5bf433bbfc62e78134b088bc2a5cafe8c39ec0b18f21a77"
+  }
+}

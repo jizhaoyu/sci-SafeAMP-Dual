@@ -1,0 +1,12 @@
+{
+  "status": "blocked_no_external_cohort",
+  "created_at": "2026-10-01T05:54:59.400046+00:00",
+  "input_records": "D:\\桌面文件\\sci\\02_code\\data\\sources\\combined_v2\\records.csv",
+  "input_records_sha256": "f448b8af437f3cf6050831a802e2efb15cc54ba2bddbb39eec9d7d79a6c95801",
+  "records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "exclusions_sha256": "f6b6d839d95eba47b2fa5b584ce63025c0f210af462b548782ca8f155f2ce58b",
+  "evidence_audit_sha256": "f965b3a2c5ce4f93269a51e57987004c505c47878997c02870bc7cdc659a5af9",
+  "development_records": 417,
+  "external_records": 0,
+  "excluded_unsupported_external_records": 13
+}

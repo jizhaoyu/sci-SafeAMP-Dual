@@ -1,0 +1,192 @@
+{
+  "withdrawn_historical_training": {
+    "protocol_id": "protocol-mic-05",
+    "protocol_path": "03_experiments\\protocols\\protocol-mic-05.json",
+    "protocol_sha256": "8a3533fc64047e679e72d9e07f59d295f44e8c5905da7e822df27210960df24a",
+    "molecules": 324,
+    "status": "withheld_primary_evidence_incomplete"
+  },
+  "historical_unreleased_candidate_structure": {
+    "manifest": "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v3\\manifest.json",
+    "sha256": "eb05124aed1d73db7127f963aa944a81e2572d10ea3d443c9e7f2227546dc7e5",
+    "molecules": 41,
+    "observations": 54,
+    "structure_status": "passed",
+    "applicable_to_current_cohort": false
+  },
+  "historical_evidence_conflicts": [
+    "Primary-study MIC target verification incomplete for 458 assay observations; protocol-mic-05 is withheld until a new immutable evidence audit and training protocol are approved.",
+    "Primary-paper comparison found 1 conflicting raw DBAASP MIC observation(s); see the versioned activity review.",
+    "Two Pandi source molecules are C-terminally amidated but frozen records omit that chemistry; exclude pending a new molecular identity audit.",
+    "Eight Guan source-data cells use an undocumented 80 code; only four exact numerical matches were considered for the provisional group audit.",
+    "Two Wang MIC values in Table S5 are >400 µM for E. coli GD004, while the paper Methods describe a maximum 200 µM concentration; target annotation and concentration range require original-source resolution."
+  ],
+  "paper_audits": {
+    "33281785": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid33281785_20261002_v2\\manifest.json",
+      "sha256": "02862ee63a4a2970979cb1d59634e056ccfd479129af9245fcbf784b1aa98999",
+      "records_released_for_training": 0
+    },
+    "36551368": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid36551368_20261002_v2\\manifest.json",
+      "sha256": "34f6a8b1fefd9c7927c589c4962b4ce05a173be3c6bd5709cdda6c2abf74c3ee",
+      "records_released_for_training": 0
+    },
+    "29259134": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid29259134_20261002_v2\\manifest.json",
+      "sha256": "c1208d97a2878e4b0f7ae6866e6607e426e9122d1794bd11a1afe75995d356f1",
+      "records_released_for_training": 0
+    },
+    "33790103": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid33790103_20261002_v2\\manifest.json",
+      "sha256": "dfead2f672169cdf77d96c41e9e689cdb31901e9c54ebbf9612ebd48bef3fb25",
+      "records_released_for_training": 0
+    },
+    "37938588": {
+      "status": "excluded_molecular_identity_mismatch",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid37938588_20261002_v2\\manifest.json",
+      "sha256": "f4764eb1a7ca797b9418b91df21174665befb0f99e8ab99d312eab92cb5cae1f",
+      "records_released_for_training": 0
+    },
+    "40645962": {
+      "status": "blocked_source_80_code_unresolved",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid40645962_20261002_v2\\manifest.json",
+      "sha256": "3bdfdc871b64b32ea455e645777cc60f980b20471537bd4923a211c73e3a6369",
+      "records_released_for_training": 0
+    },
+    "39908380": {
+      "status": "blocked_paper_range_and_target_resolution",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid39908380_20261002_v2\\manifest.json",
+      "sha256": "f67f0f391e1dd484c837cb778a8d0aabb4ca952d71c8b3e80e0216bcd2b049e8",
+      "records_released_for_training": 0
+    },
+    "32344933": {
+      "status": "candidate_primary_evidence_verified_not_released",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid32344933_20261002_v2\\manifest.json",
+      "sha256": "6a168c48e65bcc5e4d03ba37486ab0de628d2193f8f7a0d61146c379ecb48fa7",
+      "records_released_for_training": 0
+    },
+    "35735615": {
+      "status": "candidate_primary_evidence_verified_not_released",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid35735615_20261002_v1\\manifest.json",
+      "sha256": "36c341e40fcf1601aaca9e3e89943a5f6d51134d11c287e43687c48e825f5e9c",
+      "records_released_for_training": 0
+    }
+  },
+  "additional_source_reviews": {
+    "primary_articles": 10,
+    "reviewed_records": 70,
+    "new_candidate_molecules": 4,
+    "new_candidate_observations": 6,
+    "manifest": "03_experiments\\audits\\mic_independent_sources_review_20261002_v1\\manifest.json"
+  },
+  "schema_version": 2,
+  "status": "blocked",
+  "generated_at": "2026-10-02T09:20:14.192520+00:00",
+  "supersedes": "03_experiments\\audits\\mic_training_readiness_20261002_v9.json",
+  "scope": "small-sample three-fold MIC-only feasibility; full evidence release incomplete",
+  "audit_protocol_id": "protocol-mic-06",
+  "audit_protocol_path": "03_experiments\\protocols\\protocol-mic-06.json",
+  "audit_protocol_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+  "training_protocol_id": null,
+  "training_protocol_status": "pending_new_immutable_protocol",
+  "candidate_cohort_version": "mic_three_fold_20261002_v1",
+  "candidate_cohort_manifest": "03_experiments\\audits\\mic_three_fold_20261002_v1\\manifest.json",
+  "candidate_cohort_manifest_sha256": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+  "candidate_molecules": 15,
+  "candidate_observations": 22,
+  "candidate_class_counts": {
+    "0": 11,
+    "1": 4
+  },
+  "candidate_all_member_pairs": 105,
+  "candidate_homology_edges": 11,
+  "candidate_combined_components": 6,
+  "candidate_positive_bearing_components": 3,
+  "candidate_negative_bearing_components": 6,
+  "gates": {
+    "candidate_structure": {
+      "status": "passed",
+      "folds_required": 3,
+      "seed": 42,
+      "cutoff": 0.4,
+      "folds_generated": true,
+      "folds": [
+        {
+          "fold": 0,
+          "train_n": 9,
+          "validation_n": 6,
+          "train_positive": 2,
+          "train_negative": 7,
+          "validation_positive": 2,
+          "validation_negative": 4,
+          "both_classes": true
+        },
+        {
+          "fold": 1,
+          "train_n": 10,
+          "validation_n": 5,
+          "train_positive": 3,
+          "train_negative": 7,
+          "validation_positive": 1,
+          "validation_negative": 4,
+          "both_classes": true
+        },
+        {
+          "fold": 2,
+          "train_n": 11,
+          "validation_n": 4,
+          "train_positive": 3,
+          "train_negative": 8,
+          "validation_positive": 1,
+          "validation_negative": 3,
+          "both_classes": true
+        }
+      ],
+      "cross_fold_homology_edges": 0,
+      "cross_fold_primary_studies": 0
+    },
+    "primary_evidence_release": {
+      "status": "blocked",
+      "full_release_review_complete": false,
+      "locally_confirmed_free_acid_molecules": 15,
+      "new_source_review": "03_experiments\\audits\\mic_independent_sources_review_20261002_v1\\manifest.json",
+      "new_source_review_sha256": "b64d3b0b42bf80927bec737fbba4024b312ce559be78d100615865da95d6094c"
+    },
+    "final_admitted_cohort": {
+      "status": "pending_full_release_review"
+    },
+    "training_protocol": {
+      "status": "pending_new_immutable_protocol"
+    }
+  },
+  "historical_five_fold_state": {
+    "state": "03_experiments\\audits\\mic_training_readiness_20261002_v9.json",
+    "sha256": "656704e15e854ef345a73b4815cb298de496f5af390f7b79482a153ab377e56a",
+    "status": "blocked",
+    "applicable_to_three_fold_amendment": false
+  },
+  "blockers": [
+    "Full primary-evidence release is incomplete; no separate frozen training protocol exists."
+  ],
+  "records_released_for_training": 0,
+  "training_started": false,
+  "training_command": null,
+  "formal_dual_task_status": "blocked",
+  "formal_status_generated_at": "2026-10-01T06:31:07.787118+00:00",
+  "formal_status_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "script_sha256": "d08e2dffc3273e4364ffd47c3ecb0526b90afb63c43457cd463c605711d4167b",
+  "inputs": {
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\manifest.json": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+    "03_experiments\\protocols\\protocol-mic-06.json": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+    "03_experiments\\audits\\protocol_mic_06_freeze_20261002_v1.json": "7bb8c2a1e82eede1bb24b13f25d6dbfa4aecc0eb44ae062ac9675e9713a7f67d",
+    "03_experiments\\audits\\mic_training_readiness_20261002_v9.json": "656704e15e854ef345a73b4815cb298de496f5af390f7b79482a153ab377e56a",
+    "04_paper\\research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c"
+  }
+}

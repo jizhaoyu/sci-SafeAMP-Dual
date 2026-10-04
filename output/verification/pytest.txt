@@ -1,0 +1,24 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-7.4.4, pluggy-1.6.0
+rootdir: D:\×ÀÃæÎÄ¼þ\sci
+configfile: pytest.ini
+plugins: anyio-4.12.1, langsmith-0.12.4, asyncio-0.23.8
+asyncio: mode=Mode.STRICT
+collected 101 items
+
+02_code\tests\test_assay_records.py .........                            [  8%]
+02_code\tests\test_audit_logger.py .......                               [ 15%]
+02_code\tests\test_batch_task_manager.py ....                            [ 19%]
+02_code\tests\test_evaluation.py .....                                   [ 24%]
+02_code\tests\test_experiment_runner.py ........                         [ 32%]
+02_code\tests\test_feasibility_gates.py ..                               [ 34%]
+02_code\tests\test_feature_cache.py ........                             [ 42%]
+02_code\tests\test_isolation_diagnostics.py .......                      [ 49%]
+02_code\tests\test_model_contracts.py .........                          [ 58%]
+02_code\tests\test_publication_artifacts.py ......                       [ 64%]
+02_code\tests\test_research_data.py ...................                  [ 83%]
+02_code\tests\test_runtime_api.py .......                                [ 90%]
+02_code\tests\test_source_imports.py ....                                [ 94%]
+02_code\test_helical_wheel.py ......                                     [100%]
+
+============================ 101 passed in 12.02s =============================

@@ -1,0 +1,9 @@
+{
+  "protocol_id": "protocol-mic-07",
+  "frozen_at": "2026-10-02T09:50:37.373466+00:00",
+  "protocol_file_sha256": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+  "training_entry_sha256": "e9bf014615dee6647f6c056ad26509267d28cf24caf8094449b7abad1d7b675d",
+  "evidence_release_manifest_sha256": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+  "model_training_started": false,
+  "model_performance_used_to_choose_design": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "external_primary_evidence_review_blocked",
+  "generated_at": "2026-10-03T03:38:47.679412+00:00",
+  "audit_protocol_id": "protocol-amd-03",
+  "formal_protocol_id": "protocol-amd-02",
+  "total_audited_candidates": 39,
+  "eligible_verified_count": 0,
+  "records_released_for_training": 0,
+  "formal_status": "blocked",
+  "primary_audit_input_sha256": "238bcddfa569687b2740314e56476a5b9ae84cdb3e6af97bbd87acaaae98e672",
+  "development_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "inputs": {
+    "03_experiments\\audits\\dramp_dual_task_primary_audit_20261003_v1\\candidate_primary_audit.csv": "238bcddfa569687b2740314e56476a5b9ae84cdb3e6af97bbd87acaaae98e672",
+    "02_code\\data\\sources\\combined_v3_evidence_clean_20261001\\records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37"
+  },
+  "script_sha256": "1dd4efdd4814f791af90a7818cad2bb967feaff54c0bc6d423885e44c4166ea2",
+  "outputs": {
+    "curated_candidate_evaluations.csv": "039bcc5ffc5ef2be94b27c92724fe59d343d07b8ca9bdd94e9a5029d0e354de9",
+    "report.md": "b0a4a7c013351d8e53673ed72e2149986c2e302be168dd0d90947c9590fcbc25",
+    "verified_eligible_candidates.csv": "072396997a530dc19a2cb97fb875a125ac8b06fdc32773d1a0f261e0663edf12"
+  }
+}

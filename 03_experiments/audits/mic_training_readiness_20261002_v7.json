@@ -1,0 +1,179 @@
+{
+  "schema_version": 2,
+  "status": "blocked",
+  "generated_at": "2026-10-02T06:53:37.739765+00:00",
+  "supersedes": "03_experiments\\audits\\mic_training_readiness_20261002_v6.json",
+  "scope": "MIC-only exploratory candidate cohort; no training release or formal dual-task result",
+  "audit_protocol_id": "protocol-mic-01",
+  "audit_protocol_path": "03_experiments\\protocols\\protocol-mic-01.json",
+  "audit_protocol_sha256": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+  "training_protocol_id": null,
+  "training_protocol_status": "pending_new_immutable_protocol",
+  "withdrawn_historical_training": {
+    "protocol_id": "protocol-mic-05",
+    "protocol_path": "03_experiments\\protocols\\protocol-mic-05.json",
+    "protocol_sha256": "8a3533fc64047e679e72d9e07f59d295f44e8c5905da7e822df27210960df24a",
+    "molecules": 324,
+    "status": "withheld_primary_evidence_incomplete"
+  },
+  "candidate_cohort_version": "mic_reviewed_subset_groups_20261002_v3",
+  "candidate_cohort_manifest": "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v3\\manifest.json",
+  "candidate_cohort_manifest_sha256": "eb05124aed1d73db7127f963aa944a81e2572d10ea3d443c9e7f2227546dc7e5",
+  "candidate_molecules": 41,
+  "candidate_observations": 54,
+  "candidate_class_counts": {
+    "0": 21,
+    "1": 20
+  },
+  "candidate_all_member_pairs": 820,
+  "candidate_combined_components": 8,
+  "candidate_negative_bearing_components": 5,
+  "candidate_positive_bearing_components": 6,
+  "gates": {
+    "candidate_structure": {
+      "status": "passed",
+      "folds": [
+        {
+          "fold": 0,
+          "train_n": 32,
+          "validation_n": 9,
+          "validation_positive": 8,
+          "validation_negative": 1,
+          "both_classes": true
+        },
+        {
+          "fold": 1,
+          "train_n": 33,
+          "validation_n": 8,
+          "validation_positive": 1,
+          "validation_negative": 7,
+          "both_classes": true
+        },
+        {
+          "fold": 2,
+          "train_n": 35,
+          "validation_n": 6,
+          "validation_positive": 4,
+          "validation_negative": 2,
+          "both_classes": true
+        },
+        {
+          "fold": 3,
+          "train_n": 35,
+          "validation_n": 6,
+          "validation_positive": 2,
+          "validation_negative": 4,
+          "both_classes": true
+        },
+        {
+          "fold": 4,
+          "train_n": 29,
+          "validation_n": 12,
+          "validation_positive": 5,
+          "validation_negative": 7,
+          "both_classes": true
+        }
+      ],
+      "cross_fold_homology_edges": 0,
+      "cross_fold_primary_studies": 0
+    },
+    "primary_evidence_release": {
+      "status": "blocked",
+      "locally_confirmed_free_acid_molecules": 7,
+      "pending_primary_molecular_form_molecules": 34,
+      "manifest": "03_experiments\\audits\\mic_candidate_release_review_20261002_v1\\manifest.json",
+      "sha256": "7565220eca4aed1abfee9b75cbfa65ce5d6389acd3787bfd238697fbd8a52d3c"
+    },
+    "final_admitted_cohort": {
+      "status": "pending_evidence_selection_and_reaudit"
+    },
+    "training_protocol": {
+      "status": "pending_new_immutable_protocol"
+    }
+  },
+  "blockers": [
+    "Full primary-paper molecular-identity and observation review remains incomplete.",
+    "Final admitted cohort must be re-audited and bound to a new immutable training protocol."
+  ],
+  "historical_evidence_conflicts": [
+    "Primary-study MIC target verification incomplete for 458 assay observations; protocol-mic-05 is withheld until a new immutable evidence audit and training protocol are approved.",
+    "Primary-paper comparison found 1 conflicting raw DBAASP MIC observation(s); see the versioned activity review.",
+    "Two Pandi source molecules are C-terminally amidated but frozen records omit that chemistry; exclude pending a new molecular identity audit.",
+    "Eight Guan source-data cells use an undocumented 80 code; only four exact numerical matches were considered for the provisional group audit.",
+    "Two Wang MIC values in Table S5 are >400 µM for E. coli GD004, while the paper Methods describe a maximum 200 µM concentration; target annotation and concentration range require original-source resolution."
+  ],
+  "paper_audits": {
+    "33281785": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid33281785_20261002_v2\\manifest.json",
+      "sha256": "02862ee63a4a2970979cb1d59634e056ccfd479129af9245fcbf784b1aa98999",
+      "records_released_for_training": 0
+    },
+    "36551368": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid36551368_20261002_v2\\manifest.json",
+      "sha256": "34f6a8b1fefd9c7927c589c4962b4ce05a173be3c6bd5709cdda6c2abf74c3ee",
+      "records_released_for_training": 0
+    },
+    "29259134": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid29259134_20261002_v2\\manifest.json",
+      "sha256": "c1208d97a2878e4b0f7ae6866e6607e426e9122d1794bd11a1afe75995d356f1",
+      "records_released_for_training": 0
+    },
+    "33790103": {
+      "status": "blocked_primary_review_in_progress",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid33790103_20261002_v2\\manifest.json",
+      "sha256": "dfead2f672169cdf77d96c41e9e689cdb31901e9c54ebbf9612ebd48bef3fb25",
+      "records_released_for_training": 0
+    },
+    "37938588": {
+      "status": "excluded_molecular_identity_mismatch",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid37938588_20261002_v2\\manifest.json",
+      "sha256": "f4764eb1a7ca797b9418b91df21174665befb0f99e8ab99d312eab92cb5cae1f",
+      "records_released_for_training": 0
+    },
+    "40645962": {
+      "status": "blocked_source_80_code_unresolved",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid40645962_20261002_v2\\manifest.json",
+      "sha256": "3bdfdc871b64b32ea455e645777cc60f980b20471537bd4923a211c73e3a6369",
+      "records_released_for_training": 0
+    },
+    "39908380": {
+      "status": "blocked_paper_range_and_target_resolution",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid39908380_20261002_v2\\manifest.json",
+      "sha256": "f67f0f391e1dd484c837cb778a8d0aabb4ca952d71c8b3e80e0216bcd2b049e8",
+      "records_released_for_training": 0
+    },
+    "32344933": {
+      "status": "candidate_primary_evidence_verified_not_released",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid32344933_20261002_v2\\manifest.json",
+      "sha256": "6a168c48e65bcc5e4d03ba37486ab0de628d2193f8f7a0d61146c379ecb48fa7",
+      "records_released_for_training": 0
+    },
+    "35735615": {
+      "status": "candidate_primary_evidence_verified_not_released",
+      "manifest": "03_experiments\\audits\\mic_primary_review_pmid35735615_20261002_v1\\manifest.json",
+      "sha256": "36c341e40fcf1601aaca9e3e89943a5f6d51134d11c287e43687c48e825f5e9c",
+      "records_released_for_training": 0
+    }
+  },
+  "records_released_for_training": 0,
+  "training_started": false,
+  "training_command": null,
+  "formal_dual_task_status": "blocked",
+  "formal_status_generated_at": "2026-10-01T06:31:07.787118+00:00",
+  "formal_status_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "script_sha256": "07e565ca2d92f596ed55e0ca02d9dd0d7c57902f3f3646b1c05e72562d9c7e8b",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_readiness_20261002_v6.json": "08c5a14344d1d71eb77dd97037ba2c46468b260e3a72d0b657b29cfc4a58e9a2",
+    "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v3\\manifest.json": "eb05124aed1d73db7127f963aa944a81e2572d10ea3d443c9e7f2227546dc7e5",
+    "03_experiments\\audits\\mic_candidate_release_review_20261002_v1\\manifest.json": "7565220eca4aed1abfee9b75cbfa65ce5d6389acd3787bfd238697fbd8a52d3c",
+    "03_experiments\\audits\\mic_primary_review_pmid35735615_20261002_v1\\manifest.json": "36c341e40fcf1601aaca9e3e89943a5f6d51134d11c287e43687c48e825f5e9c",
+    "03_experiments\\protocols\\protocol-mic-01.json": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+    "04_paper\\research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "02_code\\audit_mic_reviewed_subset_ludwig.py": "36c113f05f542e113c2de1c1035c16786d00c82b6ca642a77d192d2a5734c2a1"
+  }
+}

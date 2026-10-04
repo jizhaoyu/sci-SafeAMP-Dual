@@ -1,0 +1,36 @@
+{
+  "status": "candidate_screen_only",
+  "generated_at_utc": "2026-10-01T08:09:35.055648+00:00",
+  "source_database": "dbAMP",
+  "source_release": "dbAMP 3.0 (June 2024)",
+  "source_download_url": "https://ycclab.cuhk.edu.cn/dbAMP/download/3.0/dbAMP2024.zip",
+  "source_file": "02_code\\data\\sources\\dbamp_mic_screen_20261001\\raw\\dbAMP2024.zip",
+  "source_sha256": "93a5e03012145ef6fb2a770fc695135b0eece144baa3e618acb01ef444f8134a",
+  "source_member": "dbAMP2024/dbAMP3_pepinfo.xlsx",
+  "source_rows": 35600,
+  "rows_with_ecoli_text": 10346,
+  "rows_with_parsed_ecoli_mic": 8730,
+  "parsed_ecoli_mic_observations": 11205,
+  "unique_candidate_sequences_10_50_canonical": 7031,
+  "development_file": "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv",
+  "development_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "development_unique_sequences": 417,
+  "protocol_id": "protocol-amd-02",
+  "protocol_digest": "6bcf8993a08f8da1ebae4609f4ef9e4ebae7205257d136dfa059a1b93db4bc4c",
+  "cutoff": 0.4,
+  "unique_sequences_exactly_overlapping_development": 271,
+  "unique_sequences_violating_0_40_cutoff": 5680,
+  "unique_sequences_below_0_40_cutoff": 1351,
+  "alignment_engine": "numba-jitted exact mirror of research_data.sequence_identity",
+  "important_gaps": [
+    "Downloaded workbook does not include primary references or assay conditions.",
+    "Downloaded workbook does not specify peptide modifications/chemistry.",
+    "dbAMP record-page evidence and original papers must be reviewed before any record can enter training."
+  ],
+  "label_derivation": "none",
+  "outputs": [
+    "ecoli_mic_observations.csv",
+    "unique_sequence_similarity_audit.csv",
+    "manifest.json"
+  ]
+}

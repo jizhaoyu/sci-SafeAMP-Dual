@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-10-03T13:59:33.395427+00:00",
+  "status": "verified_blocked_expansion_preserved_historical_baseline",
+  "readiness_state": "03_experiments/audits/mic_training_readiness_20261003_v20.json",
+  "readiness_state_sha256": "15d32dafbab6a256f30d3dcecf8d2a9c87292e854bd78e6cb4ef1a9e67efeec7",
+  "readiness_inputs_all_match": true,
+  "documents_consistent": true,
+  "document_archive_manifest_sha256": "8c8509505b0953d2dbf44e673e02e1703dc106a3f8d67cd87f2e0f91b107c245",
+  "documents_archived_and_hash_verified": [
+    "README.md",
+    "docs/REMEDIATION_STATUS.md",
+    "docs/DOCUMENTATION_INDEX.md",
+    "docs/handoff/TASK_STATE.md",
+    "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md"
+  ],
+  "protected_historical_file_count": 99,
+  "reviewed_new_candidates": 2,
+  "released_new_candidates": 0,
+  "released_training_records": 0,
+  "existing_baseline": {
+    "status": "passed_existing_15_historical_partition_preserved",
+    "molecules": 15,
+    "observations": 22,
+    "all_member_pairs_recomputed": 105,
+    "cross_fold_homology_edges": 0,
+    "cross_fold_primary_studies": 0,
+    "fixed_folds_reused": true,
+    "training_performed": false,
+    "blockers": [],
+    "pair_audit_sha256": "900b8608f25f1a25603c69060fbc4bef09cab80ecb15cb379c82eb7fc7ebf2cc"
+  },
+  "all_member_pair_rows": 105,
+  "regression": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "xml_sha256": "06db7d775b224398de7cc2e01c8bc7ed0c240761857f46a4368bbc58ed7b60a9"
+  },
+  "formal_dual_task_status": "blocked",
+  "new_training_started": false,
+  "new_protocol_mic_11_created": false,
+  "final_report_pending": true
+}

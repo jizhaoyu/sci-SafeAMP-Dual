@@ -1,0 +1,372 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/bioinformatics/bts565",
+  "retrieved_at": "2026-09-28T14:56:11.180923+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          28
+        ]
+      ],
+      "date-time": "2026-09-28T01:22:58Z",
+      "timestamp": 1790558578591,
+      "version": "4.1.0"
+    },
+    "reference-count": 11,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "23",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2016,
+              10,
+              2
+            ]
+          ],
+          "date-time": "2016-10-02T00:00:00Z",
+          "timestamp": 1475366400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 1452,
+        "URL": "http://creativecommons.org/licenses/by-nc/3.0"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          12,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>Summary: CD-HIT is a widely used program for clustering biological sequences to reduce sequence redundancy and improve the performance of other sequence analyses. In response to the rapid increase in the amount of sequencing data produced by the next-generation sequencing technologies, we have developed a new CD-HIT program accelerated with a novel parallelization strategy and some other techniques to allow efficient clustering of such datasets. Our tests demonstrated very good speedup derived from the parallelization for up to ∼24 cores and a quasi-linear speedup for up to ∼8 cores. The enhanced CD-HIT is capable of handling very large datasets in much shorter time than previous versions.</jats:p>\n                  <jats:p>Availability:  http://cd-hit.org.</jats:p>\n                  <jats:p>Contact:  liwz@sdsc.edu</jats:p>\n                  <jats:p>Supplementary information:  Supplementary data are available at Bioinformatics online.</jats:p>",
+    "DOI": "10.1093/bioinformatics/bts565",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          11
+        ]
+      ],
+      "date-time": "2012-10-11T20:24:35Z",
+      "timestamp": 1349987075000
+    },
+    "page": "3150-3152",
+    "source": "Crossref",
+    "is-referenced-by-count": 10866,
+    "title": [
+      "CD-HIT: accelerated for clustering the next-generation sequencing data"
+    ],
+    "prefix": "10.1093",
+    "volume": "28",
+    "author": [
+      {
+        "given": "Limin",
+        "family": "Fu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Beifang",
+        "family": "Niu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Zhengwei",
+        "family": "Zhu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Sitao",
+        "family": "Wu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Weizhong",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2023062411491099200_bts565-B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "2460",
+        "DOI": "10.1093/bioinformatics/btq461",
+        "article-title": "Search and clustering orders of magnitude faster than BLAST",
+        "volume": "26",
+        "author": "Edgar",
+        "year": "2010",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023062411491099200_bts565-B2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1658",
+        "DOI": "10.1093/bioinformatics/btl158",
+        "article-title": "Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences",
+        "volume": "22",
+        "author": "Li",
+        "year": "2006",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023062411491099200_bts565-B3",
+        "doi-asserted-by": "crossref",
+        "first-page": "282",
+        "DOI": "10.1093/bioinformatics/17.3.282",
+        "article-title": "Clustering of highly homologous sequences to reduce the size of large protein databases",
+        "volume": "17",
+        "author": "Li",
+        "year": "2001",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023062411491099200_bts565-B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "170",
+        "DOI": "10.1261/rna.223807",
+        "article-title": "Unique folding of precursor microRNAs: quantitative evidence and implications for de novo identification",
+        "volume": "13",
+        "author": "Loong",
+        "year": "2007",
+        "journal-title": "RNA"
+      },
+      {
+        "key": "2023062411491099200_bts565-B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1186/1471-2105-11-187",
+        "article-title": "Artificial and natural duplicates in pyrosequencing reads of metagenomic data",
+        "volume": "11",
+        "author": "Niu",
+        "year": "2010",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2023062411491099200_bts565-B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "59",
+        "DOI": "10.1038/nature08821",
+        "article-title": "A human gut microbial gene catalogue established by metagenomic sequencing",
+        "volume": "464",
+        "author": "Qin",
+        "year": "2010",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2023062411491099200_bts565-B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "498",
+        "DOI": "10.1093/bioinformatics/btm637",
+        "article-title": "Predicting disulfide bond connectivity in proteins by correlated mutations analysis",
+        "volume": "24",
+        "author": "Rubinstein",
+        "year": "2008",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023062411491099200_bts565-B8",
+        "doi-asserted-by": "crossref",
+        "first-page": "D546",
+        "DOI": "10.1093/nar/gkq1102",
+        "article-title": "Community cyberinfrastructure for Advanced Microbial Ecology Research and Analysis: the CAMERA resource",
+        "volume": "39",
+        "author": "Sun",
+        "year": "2011",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2023062411491099200_bts565-B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1282",
+        "DOI": "10.1093/bioinformatics/btm098",
+        "article-title": "UniRef: comprehensive and non-redundant UniProt reference clusters",
+        "volume": "23",
+        "author": "Suzek",
+        "year": "2007",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2023062411491099200_bts565-B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "480",
+        "DOI": "10.1038/nature07540",
+        "article-title": "A core gut microbiome in obese and lean twins",
+        "volume": "457",
+        "author": "Turnbaugh",
+        "year": "2009",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2023062411491099200_bts565-B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "182",
+        "DOI": "10.1186/1471-2105-9-182",
+        "article-title": "Gene identification and protein classification in microbial metagenomic sequence data via incremental clustering",
+        "volume": "9",
+        "author": "Yooseph",
+        "year": "2008",
+        "journal-title": "BMC Bioinformatics"
+      }
+    ],
+    "container-title": [
+      "Bioinformatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/28/23/3150/50695216/bioinformatics_28_23_3150.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/28/23/3150/50695216/bioinformatics_28_23_3150.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          24
+        ]
+      ],
+      "date-time": "2023-06-24T07:49:25Z",
+      "timestamp": 1687592965000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/bioinformatics/article/28/23/3150/192160"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          11
+        ]
+      ]
+    },
+    "references-count": 11,
+    "journal-issue": {
+      "issue": "23",
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            12,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/bioinformatics/bts565",
+    "relation": {
+      "is-referenced-by": [
+        {
+          "id-type": "doi",
+          "id": "10.1007/s12686-025-01401-w",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "1367-4803",
+      "1367-4811"
+    ],
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1367-4811",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2012,
+          12
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2012,
+          10,
+          11
+        ]
+      ]
+    }
+  }
+}

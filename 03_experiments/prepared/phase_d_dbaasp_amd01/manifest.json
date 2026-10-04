@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "status": "blocked",
+  "created_at": "2026-09-29T16:41:48.915985+00:00",
+  "protocol_id": "protocol-amd-01",
+  "protocol_spec": {
+    "protocol_id": "protocol-amd-01",
+    "protocol_version": 2,
+    "clustering_method": "greedy_nw",
+    "membership_identity": "min",
+    "min_length_ratio": 0.5,
+    "cross_identity": "min",
+    "cross_scope": "members_to_representatives",
+    "cutoff": 0.4,
+    "folds": 5,
+    "partition_seed": 42,
+    "alignment": "global_nw_match2_mismatch-1_gap-2_canonical_diagonal_first"
+  },
+  "protocol_digest": "f20bec998789e304b391f2390ddc1ef44360569c4255c0819ab1f6ae13bdc459",
+  "records_input_sha256": "57ce763d21c55bdc397e72d3b2932d3a35c5ace4e9c86403b1b1623c3c559618",
+  "cutoff": 0.4,
+  "identity_definition": "global_nw_match2_mismatch-1_gap-2_canonical_diagonal_first",
+  "folds": 5,
+  "seed": 42,
+  "feasibility_blockers": [
+    "protocol_conflict: cross_scope 'members_to_representatives' vs all-member zero leakage claim and min/max denominator ambiguity require formal scientific protocol sign-off."
+  ],
+  "reason": "protocol_conflict: cross_scope 'members_to_representatives' vs all-member zero leakage claim and min/max denominator ambiguity require formal scientific protocol sign-off."
+}

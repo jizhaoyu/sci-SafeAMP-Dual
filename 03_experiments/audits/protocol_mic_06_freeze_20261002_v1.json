@@ -1,0 +1,9 @@
+{
+  "protocol_id": "protocol-mic-06",
+  "frozen_at": "2026-10-02T09:12:09.005463+00:00",
+  "protocol_file_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+  "amendment_document_sha256": "b472d35297ae3ad84f438302c2e16b7180633c69dd7fbf453762462724d5df3c",
+  "three_fold_audit_started": false,
+  "model_training_started": false,
+  "user_authorized_prospective_revision": true
+}

@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "id": "E001",
+      "kind": "experimental_source_records",
+      "path": "02_code\\data\\sources\\dbaasp_v1\\records.csv",
+      "sha256": "57ce763d21c55bdc397e72d3b2932d3a35c5ace4e9c86403b1b1623c3c559618",
+      "verification_status": "machine_integrity_checked_human_review_pending"
+    },
+    {
+      "id": "E002",
+      "kind": "partition_feasibility",
+      "path": "03_experiments\\prepared\\dbaasp_pilot_v3\\manifest.json",
+      "sha256": "f8beefac467b0cb2842015693c6f63506537df249bfa3765f7fbbf06ac1c5e81",
+      "verification_status": "machine_generated_human_review_pending"
+    }
+  ],
+  "all_verified": false
+}

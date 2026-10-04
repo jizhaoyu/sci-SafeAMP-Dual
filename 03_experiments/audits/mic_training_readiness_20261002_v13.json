@@ -1,0 +1,131 @@
+{
+  "schema_version": 3,
+  "status": "ready_for_local_exploratory_training",
+  "generated_at": "2026-10-02T13:14:49.935258+00:00",
+  "supersedes": "03_experiments\\audits\\mic_training_readiness_20261002_v12.json",
+  "scope": "local small-sample E. coli MIC exploration on 17 molecules; no dual-task, clinical, external-validation, deployment or publication authorization",
+  "audit_protocol_id": "protocol-mic-08",
+  "audit_protocol_sha256": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+  "training_protocol_id": "protocol-mic-09",
+  "training_protocol_sha256": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+  "candidate_cohort_version": "mic_source_expansion_result_20261002_v2",
+  "candidate_cohort_manifest": "03_experiments/audits/mic_source_expansion_result_20261002_v2/manifest.json",
+  "independent_partition_validation": "03_experiments/audits/mic_expanded_cohort_validation_20261002_v1.json",
+  "candidate_molecules": 17,
+  "candidate_observations": 24,
+  "candidate_class_counts": {
+    "0": 11,
+    "1": 6
+  },
+  "candidate_all_member_pairs": 136,
+  "candidate_combined_components": 8,
+  "candidate_positive_bearing_components": 5,
+  "candidate_negative_bearing_components": 6,
+  "gates": {
+    "candidate_structure": {
+      "status": "passed",
+      "folds_required": 3,
+      "seed": 42,
+      "cutoff": 0.4,
+      "folds": [
+        {
+          "fold": 0,
+          "train_n": 11,
+          "validation_n": 6,
+          "train_positive": 4,
+          "train_negative": 7,
+          "validation_positive": 2,
+          "validation_negative": 4,
+          "both_classes": true
+        },
+        {
+          "fold": 1,
+          "train_n": 12,
+          "validation_n": 5,
+          "train_positive": 4,
+          "train_negative": 8,
+          "validation_positive": 2,
+          "validation_negative": 3,
+          "both_classes": true
+        },
+        {
+          "fold": 2,
+          "train_n": 11,
+          "validation_n": 6,
+          "train_positive": 4,
+          "train_negative": 7,
+          "validation_positive": 2,
+          "validation_negative": 4,
+          "both_classes": true
+        }
+      ],
+      "cross_fold_homology_edges": 0,
+      "cross_fold_primary_studies": 0
+    },
+    "primary_evidence_release": {
+      "status": "passed",
+      "full_release_review_complete": true,
+      "molecules_approved": 17,
+      "observations_approved": 24,
+      "independent_human_review_claimed": false
+    },
+    "final_admitted_cohort": {
+      "status": "passed",
+      "same_as_expanded_three_fold_candidate": true
+    },
+    "training_protocol": {
+      "status": "passed",
+      "protocol_id": "protocol-mic-09"
+    },
+    "fixed_features": {
+      "status": "passed",
+      "shape": [
+        17,
+        44
+      ]
+    },
+    "training_entry": {
+      "status": "passed",
+      "model_fitting_performed_by_readiness_check": false
+    }
+  },
+  "blockers": [],
+  "training_blocked": false,
+  "records_released_for_training": 17,
+  "training_started": false,
+  "predeclared_models": [
+    "logistic_regression",
+    "random_forest",
+    "dummy_prior"
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "training_command": "python 02_code/train_mic_three_fold_v3.py --output 03_experiments/runs/mic_three_fold_20261002_v2",
+  "formal_dual_task_status": "blocked",
+  "formal_status_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "limitations": [
+    "Expanded cohort contains 17 molecules, 6 positives and 11 negatives across 8 indivisible components; each validation fold contains strictly 2 positives.",
+    "Piscidin 1 facility synthesis resin at UTSW unreported; Todd Hewitt broth non-standard; condition limitations remain explicit.",
+    "BMAP-27B multiresistant CREC isolate context and heatmap resolution bracket (1.563-6.250 ug/mL) noted as limitations.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ],
+  "script_sha256": "7862736b91db38181e663e15c4fea11999c353121608f0c754703bc6ebc78f60",
+  "inputs": {
+    "03_experiments\\protocols\\protocol-mic-09.json": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+    "03_experiments\\audits\\protocol_mic_09_freeze_20261002_v1.json": "ded4a81f1cdc3d4aafe23b3105e1724ca159d4cba7c238670e0d049f753430b8",
+    "02_code\\train_mic_three_fold_v3.py": "7862736b91db38181e663e15c4fea11999c353121608f0c754703bc6ebc78f60",
+    "03_experiments\\audits\\mic_training_readiness_20261002_v12.json": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+    "04_paper\\research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\manifest.json": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+    "03_experiments\\audits\\mic_expanded_cohort_validation_20261002_v1.json": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5"
+  }
+}

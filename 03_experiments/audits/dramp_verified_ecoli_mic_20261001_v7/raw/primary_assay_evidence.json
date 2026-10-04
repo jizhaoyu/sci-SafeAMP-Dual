@@ -1,0 +1,141 @@
+{
+  "articles": [
+    {
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "title": "Novel Cyclotides and Uncyclotides with Highly Shortened Precursors from Chassalia chartacea and Effects of Methionine Oxidation on Bioactivities",
+      "journal": "Journal of Biological Chemistry",
+      "year": 2012,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3366795/"
+    },
+    {
+      "pmid": "30658410",
+      "doi": "10.3390/toxins11010050",
+      "title": "Mass Spectrometry Analysis and Biological Characterization of the Predatory Ant Odontomachus monticola Venom and Venom Sac Components",
+      "journal": "Toxins",
+      "year": 2019,
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6356579/"
+    },
+    {
+      "pmid": "19111587",
+      "doi": "10.1016/j.peptides.2008.12.001",
+      "title": "Identification and structural insights of three novel antimicrobial peptides isolated from green coconut water",
+      "journal": "Peptides",
+      "year": 2009,
+      "url": "https://doi.org/10.1016/j.peptides.2008.12.001",
+      "author_full_text_url": "https://www.researchgate.net/publication/23708261_Identification_and_structural_insights_of_three_novel_antimicrobial_peptides_isolated_from_green_coconut_water"
+    }
+  ],
+  "records": [
+    {
+      "id": "DRAMP00336",
+      "record_id": "DRAMP:DRAMP00336",
+      "db": "DRAMP",
+      "seq": "IPCGESCVWIPCITAIAGCSCKNKVCYT",
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "paper_location": "primary paper results table",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "6.4",
+          "raw_unit": "µM",
+          "conditions": "Radial diffusion assay; E. coli ATCC 25922 cultured in trypticase soy broth; see PMID 22467870.",
+          "reference": "PMID:22467870; DOI:10.1074/jbc.M111.338970",
+          "assay_method": "radial diffusion assay",
+          "medium": "trypticase soy broth"
+        }
+      ]
+    },
+    {
+      "id": "DRAMP00337",
+      "record_id": "DRAMP:DRAMP00337",
+      "db": "DRAMP",
+      "seq": "AIPCGESCVWIPCISTVIGCSCSNKVCYR",
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "paper_location": "primary paper results table",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "6.6",
+          "raw_unit": "µM",
+          "conditions": "Radial diffusion assay; E. coli ATCC 25922 cultured in trypticase soy broth; see PMID 22467870.",
+          "reference": "PMID:22467870; DOI:10.1074/jbc.M111.338970",
+          "assay_method": "radial diffusion assay",
+          "medium": "trypticase soy broth"
+        }
+      ]
+    },
+    {
+      "id": "DRAMP00338",
+      "record_id": "DRAMP:DRAMP00338",
+      "db": "DRAMP",
+      "seq": "IPCGESCVWIPCISGMFGCSCKDKVCYS",
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "paper_location": "primary paper results table",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "8.5",
+          "raw_unit": "µM",
+          "conditions": "Radial diffusion assay; E. coli ATCC 25922 cultured in trypticase soy broth; see PMID 22467870.",
+          "reference": "PMID:22467870; DOI:10.1074/jbc.M111.338970",
+          "assay_method": "radial diffusion assay",
+          "medium": "trypticase soy broth"
+        }
+      ]
+    },
+    {
+      "id": "DRAMP21455",
+      "record_id": "DRAMP:DRAMP21455",
+      "db": "DRAMP",
+      "seq": "GWGSIFKTVGKMIAKAAVKAAPEAISAMASQNE",
+      "pmid": "30658410",
+      "doi": "10.3390/toxins11010050",
+      "paper_location": "primary paper results table",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli NBRC 14237",
+          "metric_name": "MIC",
+          "raw_value": "<6.2",
+          "raw_unit": "µM",
+          "conditions": "Synthetic PLP2; Table 3 reports E. coli NBRC 14237 MIC. The paper states antimicrobial assays were conducted as described in PMID 15246874.",
+          "reference": "PMID:30658410; DOI:10.3390/toxins11010050; assay-method reference PMID:15246874",
+          "assay_method": "MIC assay (method cited to PMID 15246874)",
+          "medium": "not stated in the screened record"
+        }
+      ]
+    },
+    {
+      "id": "DRAMP00930",
+      "record_id": "DRAMP:DRAMP00930",
+      "db": "DRAMP",
+      "seq": "TESYFVFSVGM",
+      "pmid": "19111587",
+      "doi": "10.1016/j.peptides.2008.12.001",
+      "paper_location": "Methods 2.3; Table 1 MIC; Table 2 sequence",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli (strain not stated)",
+          "metric_name": "MIC",
+          "raw_value": "170",
+          "raw_unit": "µg/mL",
+          "conditions": "Purified Cn-AMP2 (fraction F2); growth-inhibition-zone assay on nutrient-medium plates; paper Methods 2.3 and Table 1. E. coli strain identifier not stated.",
+          "reference": "PMID:19111587; DOI:10.1016/j.peptides.2008.12.001",
+          "assay_method": "growth-inhibition-zone assay",
+          "medium": "nutrient medium (plate); detailed composition not stated"
+        }
+      ]
+    }
+  ]
+}

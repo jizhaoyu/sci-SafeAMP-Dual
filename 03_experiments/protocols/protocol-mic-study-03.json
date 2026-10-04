@@ -1,0 +1,30 @@
+{
+  "protocol_id": "protocol-mic-study-03",
+  "protocol_version": 1,
+  "status": "frozen_for_study_disjoint_feasibility_audit_only",
+  "supersedes": "protocol-mic-study-02",
+  "supersession_reason": "The evidence-qualified MIC-only source excludes records lacking an identified E. coli strain or isolate; previous cohort manifests did not pass this frozen evidence requirement.",
+  "parent_mic_protocol_id": "protocol-mic-01",
+  "parent_mic_protocol_sha256": "d54227ebb5380039cd07f6ddc979561ef6f99efaecdb7644267e6c7d00dffb97",
+  "cohort_manifest": "03_experiments/audits/mic_only_cohort_20261001_v9/manifest.json",
+  "assay_reference_source": "reconstruct assay-linked primary study IDs from validated source records, exact raw DRAMP evidence and DBAASP assay reference numbers using diagnose_mic_baselines.assay_rows",
+  "grouping": {
+    "homology": "retain every protocol-mic-01 all-member global-identity edge at or above 0.40",
+    "study_link": "connect molecules sharing a primary MIC assay paper identifier",
+    "identifier_alias": "treat DOI, PMID, and DBAASP internal article ID in the same declared citation object as aliases; no title-only merging",
+    "method_only_references": "not used as a primary MIC study link",
+    "combined_group": "transitive connected component of homology and primary-study links",
+    "missing_assay_study_id": "blocking"
+  },
+  "validation": {
+    "method": "StratifiedGroupKFold",
+    "folds": 5,
+    "seed": 42,
+    "require_both_classes_in_each_validation_fold": true,
+    "require_both_classes_in_each_training_complement": true,
+    "require_no_shared_homology_component": true,
+    "require_no_shared_primary_study": true,
+    "no_repartition_or_seed_search": true
+  },
+  "release_gate": "Descriptive feasibility audit only. Failed class, homology or primary-study isolation leaves the proposal blocked; no model training or performance reporting is authorized."
+}

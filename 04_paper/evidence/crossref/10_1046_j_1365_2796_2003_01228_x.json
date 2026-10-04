@@ -1,0 +1,848 @@
+{
+  "url": "https://api.crossref.org/works/10.1046/j.1365-2796.2003.01228.x",
+  "retrieved_at": "2026-09-28T14:31:28.681825+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T21:06:44Z",
+      "timestamp": 1790543204172,
+      "version": "4.1.0"
+    },
+    "reference-count": 120,
+    "publisher": "Wiley",
+    "issue": "3",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2003,
+              8,
+              20
+            ]
+          ],
+          "date-time": "2003-08-20T00:00:00Z",
+          "timestamp": 1061337600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Internal Medicine"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:p>\n                    <jats:bold>Abstract. </jats:bold>\n                    Boman HG (Microbiology and Tumor Biology Center, Karolinska Institutet, Stockholm, Sweden). Antibacterial peptides: basic facts and emerging concepts (Review).\n                    <jats:italic>J Intern Med</jats:italic>\n                    2003;\n                    <jats:bold>254:</jats:bold>\n                    197–215.\n                  </jats:p>\n                  <jats:p>Antibacterial peptides are the effector molecules of innate immunity. Generally they contain 15–45 amino acid residues and the net charge is positive. The cecropin type of linear peptides without cysteine were found first in insects, whilst the defensin type with three disulphide bridges were found in rabbit granulocytes. Now a database stores more than 800 sequences of antibacterial peptides and proteins from the animal and plant kingdoms. Generally, each species has 15–40 peptides made from genes, which code for only one precursor. The dominating targets are bacterial membranes and the killing reaction must be faster than the growth rate of the bacteria. Some antibacterial peptides are clearly multifunctional and an attempt to predict this property from the hydrophobicity of all amino acid side chains are given. Gene structures and biosynthesis are known both in the fruit fly Drosophila and several mammals. Humans need two classes of defensins and the cathelicidin‐derived linear peptide LL‐37. Clinical cases show that deficiencies in these peptides give severe symptoms. Examples given are morbus Kostmann and atopic allergy. Several antibacterial peptides are being developed as drugs.</jats:p>",
+    "DOI": "10.1046/j.1365-2796.2003.01228.x",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          20
+        ]
+      ],
+      "date-time": "2003-08-20T04:06:34Z",
+      "timestamp": 1061352394000
+    },
+    "page": "197-215",
+    "source": "Crossref",
+    "is-referenced-by-count": 966,
+    "title": [
+      "Antibacterial peptides: basic facts and emerging concepts"
+    ],
+    "prefix": "10.1111",
+    "volume": "254",
+    "author": [
+      {
+        "given": "H. G.",
+        "family": "Boman",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_16_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.271.8.4038"
+      },
+      {
+        "key": "e_1_2_16_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1203/00006450-200302000-00003"
+      },
+      {
+        "key": "e_1_2_16_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0140-6736(02)11201-3"
+      },
+      {
+        "key": "e_1_2_16_5_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-3083.1998.00407.x"
+      },
+      {
+        "key": "e_1_2_16_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/237232a0"
+      },
+      {
+        "key": "e_1_2_16_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1432-1033.1980.tb05991.x"
+      },
+      {
+        "key": "e_1_2_16_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/292246a0"
+      },
+      {
+        "key": "e_1_2_16_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0021-9258(17)43888-9"
+      },
+      {
+        "key": "e_1_2_16_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/JCI112121"
+      },
+      {
+        "key": "e_1_2_16_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.84.15.5449"
+      },
+      {
+        "key": "e_1_2_16_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0092-8674(91)90154-Q"
+      },
+      {
+        "key": "e_1_2_16_13_2",
+        "volume-title": "Antimicrobial Peptides",
+        "author": "Boman HG",
+        "year": "1991"
+      },
+      {
+        "key": "e_1_2_16_14_2",
+        "unstructured": "Tossi A.http://www.bbcm.univ.trieste.it/tossi/page2.html 2002."
+      },
+      {
+        "key": "e_1_2_16_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0952-7915(02)00005-5"
+      },
+      {
+        "key": "e_1_2_16_16_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "435",
+        "DOI": "10.1002/(SICI)1097-0282(1998)47:6<435::AID-BIP3>3.0.CO;2-8",
+        "article-title": "Antimicrobial peptides from amphibian skin: what do they tell us",
+        "volume": "47",
+        "author": "Simmaco M",
+        "year": "1998",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "e_1_2_16_17_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1096/fasebj.10.11.8836041"
+      },
+      {
+        "key": "e_1_2_16_18_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0952-7915(01)00303-X"
+      },
+      {
+        "key": "e_1_2_16_19_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1203/00006450-199906000-00001"
+      },
+      {
+        "key": "e_1_2_16_20_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/00054725-200102000-00007"
+      },
+      {
+        "key": "e_1_2_16_21_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s00018-002-8412-z"
+      },
+      {
+        "key": "e_1_2_16_22_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.iy.13.040195.000425"
+      },
+      {
+        "key": "e_1_2_16_23_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/(SICI)1097-0282(1998)47:6<415::AID-BIP2>3.0.CO;2-D"
+      },
+      {
+        "key": "e_1_2_16_24_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1523-1747.1998.00361.x"
+      },
+      {
+        "key": "e_1_2_16_25_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/978-3-662-08239-3"
+      },
+      {
+        "key": "e_1_2_16_26_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.286.5439.498"
+      },
+      {
+        "key": "e_1_2_16_27_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.80.21.6475"
+      },
+      {
+        "key": "e_1_2_16_28_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.87.12.4761"
+      },
+      {
+        "key": "e_1_2_16_29_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ja0260871"
+      },
+      {
+        "key": "e_1_2_16_30_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "2978",
+        "DOI": "10.1128/iai.61.7.2978-2984.1993",
+        "article-title": "Mechanisms of action on Escherichia coli of cecropin‐P1 and PR‐39, 2 antibacterial peptides from pig intestine",
+        "volume": "61",
+        "author": "Boman HG",
+        "year": "1993",
+        "journal-title": "Infect Immun"
+      },
+      {
+        "key": "e_1_2_16_31_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0005-2736(88)90069-7"
+      },
+      {
+        "key": "e_1_2_16_32_2",
+        "first-page": "209",
+        "volume-title": "Pore Forming Peptides and Protein Toxins",
+        "author": "Rivas L",
+        "year": "2002"
+      },
+      {
+        "key": "e_1_2_16_33_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/bip.10260"
+      },
+      {
+        "key": "e_1_2_16_34_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/AAC.47.1.1-6.2003"
+      },
+      {
+        "key": "e_1_2_16_35_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0014-5793(92)80377-S"
+      },
+      {
+        "key": "e_1_2_16_36_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.92.8.3449"
+      },
+      {
+        "key": "e_1_2_16_37_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1399-3011.1995.tb00592.x"
+      },
+      {
+        "key": "e_1_2_16_38_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/bi00405a042"
+      },
+      {
+        "key": "e_1_2_16_39_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.M108830200"
+      },
+      {
+        "key": "e_1_2_16_40_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/35106587"
+      },
+      {
+        "key": "e_1_2_16_41_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.82.8.2240"
+      },
+      {
+        "key": "e_1_2_16_42_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.85.19.7327"
+      },
+      {
+        "key": "e_1_2_16_43_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "5852",
+        "DOI": "10.1016/S0021-9258(18)83628-6",
+        "article-title": "Chemical synthesis and enzymic processing of precursor forms of cecropin A and B",
+        "volume": "264",
+        "author": "Boman HG",
+        "year": "1989",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "e_1_2_16_44_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0968-0004(90)90126-V"
+      },
+      {
+        "key": "e_1_2_16_45_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1432-1033.1988.tb13896.x"
+      },
+      {
+        "key": "e_1_2_16_46_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "11510",
+        "DOI": "10.1016/S0021-9258(18)98986-6",
+        "article-title": "The cecropin locus; cloning and expression of a gene cluster encoding three antibacterial peptides in Hyalophora cecropia",
+        "volume": "266",
+        "author": "Gudmundsson GH",
+        "year": "1991",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "e_1_2_16_47_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.97.15.8392"
+      },
+      {
+        "key": "e_1_2_16_48_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/19439"
+      },
+      {
+        "key": "e_1_2_16_49_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0014-5793(99)00582-7"
+      },
+      {
+        "key": "e_1_2_16_50_2",
+        "volume-title": "Guns, Germs and Steel. The Fate of Human Societies",
+        "author": "Diamond J.",
+        "year": "1997"
+      },
+      {
+        "key": "e_1_2_16_51_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.274.37.26249"
+      },
+      {
+        "key": "e_1_2_16_52_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.88.9.3952"
+      },
+      {
+        "key": "e_1_2_16_53_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1165/ajrcmb.20.5.f149"
+      },
+      {
+        "key": "e_1_2_16_54_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.2006422"
+      },
+      {
+        "key": "e_1_2_16_55_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0014-5793(92)80606-H"
+      },
+      {
+        "key": "e_1_2_16_56_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.86.23.9159"
+      },
+      {
+        "key": "e_1_2_16_57_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0165-2427(96)05676-0"
+      },
+      {
+        "key": "e_1_2_16_58_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s000180300051"
+      },
+      {
+        "key": "e_1_2_16_59_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/IAI.67.6.3121-3127.1999"
+      },
+      {
+        "key": "e_1_2_16_60_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/j.1460-2075.1995.tb07150.x"
+      },
+      {
+        "key": "e_1_2_16_61_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.282.5386.121"
+      },
+      {
+        "key": "e_1_2_16_62_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1758",
+        "DOI": "10.4049/jimmunol.161.4.1758",
+        "article-title": "Granulysin‐induced apoptosis. I. Involvement of at least two distinct pathways",
+        "volume": "161",
+        "author": "Gamen S",
+        "year": "1998",
+        "journal-title": "J Immunol"
+      },
+      {
+        "key": "e_1_2_16_63_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nsb1097-793"
+      },
+      {
+        "key": "e_1_2_16_64_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "845",
+        "DOI": "10.1042/bj3440845",
+        "article-title": "Identification of an antimycobacterial domain in NK‐lysin and granulysin",
+        "volume": "344",
+        "author": "Andreu D",
+        "year": "1999",
+        "journal-title": "Biochem J"
+      },
+      {
+        "key": "e_1_2_16_65_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1172/JCI117384"
+      },
+      {
+        "key": "e_1_2_16_66_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1056/NEJMoa021481"
+      },
+      {
+        "key": "e_1_2_16_67_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/ni797"
+      },
+      {
+        "key": "e_1_2_16_68_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0014-5793(98)00994-6"
+      },
+      {
+        "key": "e_1_2_16_69_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature01520"
+      },
+      {
+        "key": "e_1_2_16_70_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.M008557200"
+      },
+      {
+        "key": "e_1_2_16_71_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.220424597"
+      },
+      {
+        "key": "e_1_2_16_72_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4049/jimmunol.168.1.316"
+      },
+      {
+        "key": "e_1_2_16_73_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0014-5793(95)01050-O"
+      },
+      {
+        "key": "e_1_2_16_74_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1097/00062752-200201000-00004"
+      },
+      {
+        "key": "e_1_2_16_75_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2174/1381612023395457"
+      },
+      {
+        "key": "e_1_2_16_76_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.92.15.7085"
+      },
+      {
+        "key": "e_1_2_16_77_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1432-1033.1996.0325z.x"
+      },
+      {
+        "key": "e_1_2_16_78_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0014-5793(95)01237-3"
+      },
+      {
+        "key": "e_1_2_16_79_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.94.15.7698"
+      },
+      {
+        "key": "e_1_2_16_80_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.91.23.11035"
+      },
+      {
+        "key": "e_1_2_16_81_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.93.12.6014"
+      },
+      {
+        "key": "e_1_2_16_82_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/IAI.68.10.5552-5558.2000"
+      },
+      {
+        "key": "e_1_2_16_83_2",
+        "first-page": "46",
+        "article-title": "PR39, a peptide reguator of angiogenesis",
+        "volume": "6",
+        "author": "Li P",
+        "year": "2000",
+        "journal-title": "Nat Med"
+      },
+      {
+        "key": "e_1_2_16_84_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.92.1.195"
+      },
+      {
+        "key": "e_1_2_16_85_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/IAI.63.4.1291-1297.1995"
+      },
+      {
+        "key": "e_1_2_16_86_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0014-5793(95)00634-L"
+      },
+      {
+        "key": "e_1_2_16_87_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-2958.2002.03146.x"
+      },
+      {
+        "key": "e_1_2_16_88_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "3086",
+        "DOI": "10.1182/blood.V96.9.3086",
+        "article-title": "The human antimicrobial and chemotactic peptides LL‐37 and alpha‐defensins are expressed by specific flymphocyte and monocyte populations",
+        "volume": "96",
+        "author": "Agerberth B",
+        "year": "2000",
+        "journal-title": "Blood"
+      },
+      {
+        "key": "e_1_2_16_89_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/IAI.70.2.953-963.2002"
+      },
+      {
+        "key": "e_1_2_16_90_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1093/humrep/17.10.2529"
+      },
+      {
+        "key": "e_1_2_16_91_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.272.24.15258"
+      },
+      {
+        "key": "e_1_2_16_92_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1128/AAC.42.9.2206"
+      },
+      {
+        "key": "e_1_2_16_93_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-2567.2002.01398.x"
+      },
+      {
+        "key": "e_1_2_16_94_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1084/jem.192.7.1069"
+      },
+      {
+        "key": "e_1_2_16_95_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/84627"
+      },
+      {
+        "key": "e_1_2_16_96_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4049/jimmunol.169.7.3883"
+      },
+      {
+        "key": "e_1_2_16_97_2",
+        "first-page": "1",
+        "article-title": "Infantile genetic agranulocytosis (agranulocytosis infantilis hereditaria): a new recessive lethal disease in man",
+        "volume": "56",
+        "author": "Kostmann R.",
+        "year": "1956",
+        "journal-title": "Acta Paediatr Scand"
+      },
+      {
+        "key": "e_1_2_16_98_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1651-2227.2001.tb02801.x"
+      },
+      {
+        "key": "e_1_2_16_99_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/154405910208101210"
+      },
+      {
+        "key": "e_1_2_16_100_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.92.21.9465"
+      },
+      {
+        "key": "e_1_2_16_101_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.93.19.10343"
+      },
+      {
+        "key": "e_1_2_16_102_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1097-2765(00)80392-5"
+      },
+      {
+        "key": "e_1_2_16_103_2",
+        "first-page": "106",
+        "volume-title": "Antimicrobial peptides as effector molecules of mammalian host defense",
+        "author": "Bevins C",
+        "year": "2003"
+      },
+      {
+        "key": "e_1_2_16_104_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1006/bbrc.1995.1477"
+      },
+      {
+        "key": "e_1_2_16_105_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0092-8674(00)80172-5"
+      },
+      {
+        "key": "e_1_2_16_106_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1084/jem.20011788"
+      },
+      {
+        "key": "e_1_2_16_107_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.95.17.10078"
+      },
+      {
+        "key": "e_1_2_16_108_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0378-1119(00)00569-2"
+      },
+      {
+        "key": "e_1_2_16_109_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1073/pnas.042692699"
+      },
+      {
+        "key": "e_1_2_16_110_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1189/jlb.72.5.1003"
+      },
+      {
+        "key": "e_1_2_16_111_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1046/j.1365-3083.1998.00343.x"
+      },
+      {
+        "key": "e_1_2_16_112_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1034/j.1600-065X.2000.917301.x"
+      },
+      {
+        "key": "e_1_2_16_113_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0014-5793(97)01216-7"
+      },
+      {
+        "key": "e_1_2_16_114_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1074/jbc.M007816200"
+      },
+      {
+        "key": "e_1_2_16_115_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1076181"
+      },
+      {
+        "key": "e_1_2_16_116_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1077061"
+      },
+      {
+        "key": "e_1_2_16_117_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1077136"
+      },
+      {
+        "key": "e_1_2_16_118_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0166-6851(00)00387-X"
+      },
+      {
+        "key": "e_1_2_16_119_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.4269/ajtmh.1996.54.214"
+      },
+      {
+        "key": "e_1_2_16_120_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2174/1568005024605855"
+      },
+      {
+        "key": "e_1_2_16_121_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/415389a"
+      }
+    ],
+    "container-title": [
+      "Journal of Internal Medicine"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1046%2Fj.1365-2796.2003.01228.x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1046/j.1365-2796.2003.01228.x",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          14
+        ]
+      ],
+      "date-time": "2023-10-14T16:44:20Z",
+      "timestamp": 1697301860000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1046/j.1365-2796.2003.01228.x"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          20
+        ]
+      ]
+    },
+    "references-count": 120,
+    "journal-issue": {
+      "issue": "3",
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1046/j.1365-2796.2003.01228.x"
+    ],
+    "URL": "https://doi.org/10.1046/j.1365-2796.2003.01228.x",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0954-6820",
+      "1365-2796"
+    ],
+    "issn-type": [
+      {
+        "value": "0954-6820",
+        "type": "print"
+      },
+      {
+        "value": "1365-2796",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          8,
+          20
+        ]
+      ]
+    }
+  }
+}

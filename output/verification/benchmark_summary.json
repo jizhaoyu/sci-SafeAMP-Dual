@@ -1,0 +1,46 @@
+{
+  "phase1_local": {
+    "status": "PASS",
+    "pytest_tests_passed": 132,
+    "fail_closed_gate_verified": true
+  },
+  "phase2_concurrency": {
+    "status": "PASS",
+    "target_url": "http://62.234.141.184",
+    "total_requests": 50,
+    "success_rate_pct": 100.0,
+    "qps": 84.24,
+    "latency_ms": {
+      "min": 76.09,
+      "p50": 95.0,
+      "p90": 146.12,
+      "p99": 169.05,
+      "max": 169.05,
+      "avg": 106.79
+    }
+  },
+  "phase3_deepseek": {
+    "status": "PASS",
+    "llm_source": "deepseek-chat (SEP-2026 规范化深度评估驱动)",
+    "response_time_ms": 14574.32,
+    "text_length": 3985,
+    "sections_verified": 5,
+    "metrics_verified": {
+      "net_charge": 5.0,
+      "mean_kd": 0.27
+    }
+  },
+  "phase4_fuzzing": {
+    "status": "PASS",
+    "total_fuzz_cases": 18,
+    "intercepted_count": 18,
+    "interception_rate_pct": 100.0,
+    "unexpected_500_count": 0
+  },
+  "phase5_audit": {
+    "status": "PASS",
+    "custom_trace_id_verified": "trace-audit-1790689820",
+    "echoed_trace_id": "trace-audit-1790689820",
+    "audit_logging_active": true
+  }
+}

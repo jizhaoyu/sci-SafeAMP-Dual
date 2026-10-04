@@ -1,0 +1,27 @@
+To: cfuente@upenn.edu
+Subject: Clarification of experimental peptide identities and hemolysis source data — s41564-025-02061-0
+
+Dear Professor de la Fuente-Nunez and colleagues,
+
+I am reviewing the public experimental evidence accompanying your article, “Deep learning reveals antibiotics in the archaeal proteome” (doi: 10.1038/s41564-025-02061-0), for a reproducible computational biology analysis.
+
+I obtained the 80 peptide certificates of analysis from Mendeley Data (10.17632/d8yzgtdrcp.3 / .5), as well as the MIC and HC50 source workbooks. To ensure that measurements are associated with the actual tested molecules, could you please provide or point me to the following information?
+
+1. A table explicitly mapping Archaeasin-1 through Archaeasin-80 to the certificate peptide names, sequences, and synthesis batches. I have not assumed a mapping from file or row order.
+
+2. The N-terminal and C-terminal forms of the synthesized peptides, and any other covalent modifications or stereochemical substitutions. The certificates provide sequences and masses but do not explicitly state the terminal forms. A synthesis specification or batch record would be helpful.
+
+3. The original source workbook for Extended Data Fig. 7 (41564_2025_2061_MOESM17_ESM.xlsx), ideally including concentrations, replicate absorbance or hemolysis values, controls, and assay identifiers. The publisher download returned HTML rather than a workbook.
+
+4. Clarification of the final concentrations in the hemolysis wells. The Methods describe 0.78–100 µM peptide solution mixed with an equal volume of RBC suspension, whereas the Extended Data Fig. 7 caption describes 4–64 µM.
+
+5. Clarification of the HC50 calculation and values outside the tested range. Were any values extrapolated? For measurements without an observed 50% crossing, would a lower bound at the highest validated concentration be the appropriate representation?
+
+6. The meaning of blank MIC entries in the Fig. 2 source workbook: not tested, no inhibition at the highest tested concentration, or another status. I have retained these entries as missing.
+
+I only need molecule and assay data, with no donor-identifying information. Please also confirm the applicable reuse license for any additional files.
+
+Thank you for your time and help.
+
+Best regards,
+Rober

@@ -1,0 +1,8 @@
+
+> frontend@0.0.0 lint
+> oxlint
+
+src/components/ui/button.tsx:57:18: warning react(only-export-components): Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components.
+src/components/PeptideCartModal.tsx:2:35: warning eslint(no-unused-vars): Identifier 'ArrowRight' is imported but never used. help: Consider removing this import.
+src/pages/HelicalWheelStudio.tsx:28:27: warning eslint(no-unused-vars): Variable 'activePeptideName' is declared but never used. Unused variables should start with a '_'. help: Consider removing this declaration.
+src/pages/HelicalWheelStudio.tsx:66:7: warning react(set-state-in-effect): Calling setState synchronously within an effect can trigger cascading renders help: Effects should synchronize React with external systems. Calling setState synchronously inside an effect starts another render and is usually unnecessary. Derive the value during render, initialize state directly, or update it from the event that caused the change. Use an effect only when synchronizing with an external system.

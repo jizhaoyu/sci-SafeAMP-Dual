@@ -1,0 +1,11 @@
+﻿record_id,peptide_name,sequence_match,paper_sequence_pdf_pages,database_label,paper_rederived_record_label,paper_label_conflict,database_mic_conflict_targets,review_status
+DBAASP:25450,Equusin-4-9,True,3,1,1,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25453,Mammuthusin-3-1,True,3,1,1,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25470,Arctoterin-1-7,True,3,1,1,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25491,Lophiosin-1-7,True,3,0,0,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25497,Hydrodamin-2-2,True,3,0,0,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25504,Hydrodamin-2-9,True,4,0,0,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25508,Hydrodamin-3-2,True,4,0,0,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25512,Hydrodamin-3-6,True,4,0,0,False,Escherichia coli AIC222,primary_value_conflict
+DBAASP:25545,Hesperelin-3-7,True,4,0,0,False,,primary_values_concordant_pending_chemistry_review
+DBAASP:25563,Free-75diff-5,True,14,0,0,False,,primary_values_concordant_pending_chemistry_review

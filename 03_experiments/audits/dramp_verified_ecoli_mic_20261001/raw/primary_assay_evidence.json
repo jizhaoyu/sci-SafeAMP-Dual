@@ -1,0 +1,75 @@
+{
+  "article": {
+    "pmid": "22467870",
+    "doi": "10.1074/jbc.M111.338970",
+    "title": "Novel Cyclotides and Uncyclotides with Highly Shortened Precursors from Chassalia chartacea and Effects of Methionine Oxidation on Bioactivities",
+    "journal": "Journal of Biological Chemistry",
+    "year": 2012,
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3366795/"
+  },
+  "records": [
+    {
+      "id": "DRAMP00336",
+      "record_id": "DRAMP:DRAMP00336",
+      "db": "DRAMP",
+      "seq": "IPCGESCVWIPCITAIAGCSCKNKVCYT",
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "6.4",
+          "raw_unit": "µM",
+          "conditions": "Radial diffusion assay; E. coli ATCC 25922 cultured in trypticase soy broth; see PMID 22467870.",
+          "reference": "PMID:22467870; DOI:10.1074/jbc.M111.338970",
+          "assay_method": "radial diffusion assay",
+          "medium": "trypticase soy broth"
+        }
+      ]
+    },
+    {
+      "id": "DRAMP00337",
+      "record_id": "DRAMP:DRAMP00337",
+      "db": "DRAMP",
+      "seq": "AIPCGESCVWIPCISTVIGCSCSNKVCYR",
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "6.6",
+          "raw_unit": "µM",
+          "conditions": "Radial diffusion assay; E. coli ATCC 25922 cultured in trypticase soy broth; see PMID 22467870.",
+          "reference": "PMID:22467870; DOI:10.1074/jbc.M111.338970",
+          "assay_method": "radial diffusion assay",
+          "medium": "trypticase soy broth"
+        }
+      ]
+    },
+    {
+      "id": "DRAMP00338",
+      "record_id": "DRAMP:DRAMP00338",
+      "db": "DRAMP",
+      "seq": "IPCGESCVWIPCISGMFGCSCKDKVCYS",
+      "pmid": "22467870",
+      "doi": "10.1074/jbc.M111.338970",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "8.5",
+          "raw_unit": "µM",
+          "conditions": "Radial diffusion assay; E. coli ATCC 25922 cultured in trypticase soy broth; see PMID 22467870.",
+          "reference": "PMID:22467870; DOI:10.1074/jbc.M111.338970",
+          "assay_method": "radial diffusion assay",
+          "medium": "trypticase soy broth"
+        }
+      ]
+    }
+  ]
+}

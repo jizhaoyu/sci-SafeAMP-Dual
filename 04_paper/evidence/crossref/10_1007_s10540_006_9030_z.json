@@ -1,0 +1,3189 @@
+{
+  "url": "https://api.crossref.org/works/10.1007/s10540-006-9030-z",
+  "retrieved_at": "2026-09-28T14:31:37.857620+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T23:15:35Z",
+      "timestamp": 1790464535353,
+      "version": "4.1.0"
+    },
+    "reference-count": 276,
+    "publisher": "Portland Press Ltd.",
+    "issue": "4-5",
+    "content-domain": {
+      "domain": [
+        "portlandpress.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2007,
+          8,
+          6
+        ]
+      ]
+    },
+    "abstract": "<jats:p>Melittin is the principal toxic component in the venom of the European honey bee Apis mellifera and is a cationic, hemolytic peptide. It is a small linear peptide composed of 26 amino acid residues in which the amino-terminal region is predominantly hydrophobic whereas the carboxy-terminal region is hydrophilic due to the presence of a stretch of positively charged amino acids. This amphiphilic property of melittin has resulted in melittin being used as a suitable model peptide for monitoring lipid–protein interactions in membranes. In this review, the solution and membrane properties of melittin are highlighted, with an emphasis on melittin–membrane interaction using biophysical approaches. The recent applications of melittin in various cellular processes are discussed.</jats:p>",
+    "DOI": "10.1007/s10540-006-9030-z",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          11,
+          30
+        ]
+      ],
+      "date-time": "2006-11-30T23:01:14Z",
+      "timestamp": 1164927674000
+    },
+    "page": "189-223",
+    "update-policy": "https://doi.org/10.1042/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 583,
+    "title": [
+      "Melittin: a Membrane-active Peptide with Diverse Functions"
+    ],
+    "prefix": "10.1042",
+    "volume": "27",
+    "author": [
+      {
+        "given": "H.",
+        "family": "Raghuraman",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Centre for Cellular and Molecular Biology, Uppal Road, Hyderabad 500 007, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Amitabha",
+        "family": "Chattopadhyay",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Centre for Cellular and Molecular Biology, Uppal Road, Hyderabad 500 007, India"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "288",
+    "published-online": {
+      "date-parts": [
+        [
+          2007,
+          8,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "9030_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1101",
+        "DOI": "10.1021/bi026932s",
+        "volume": "42",
+        "author": "D Allende",
+        "year": "2003",
+        "unstructured": "Allende D, McIntosh TJ (2003) Lipopolysaccharides in bacterial membranes act like cholesterol in eukaryotic plasma membranes in providing protection against melittin-induced bilayer lysis. Biochemistry 42:1101–1108",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1016/S0009-3084(02)00179-2",
+        "volume": "122",
+        "author": "D Allende",
+        "year": "2003",
+        "unstructured": "Allende D, Vidal A, Simon SA, McIntosh TJ (2003) Bilayer interfacial properties modulate the binding of amphipathic peptides. Chem Phys Lipids 122:65–76",
+        "journal-title": "Chem Phys Lipids"
+      },
+      {
+        "key": "9030_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "1828",
+        "DOI": "10.1529/biophysj.104.049817",
+        "volume": "88",
+        "author": "D Allende",
+        "year": "2005",
+        "unstructured": "Allende D, Simon SA, McIntosh TJ (2005) Melittin-induced bilayer leakage depends on lipid material properties: evidence for toroidal pores. Biophys J 88:1828–1837",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "230",
+        "DOI": "10.1002/prot.340030404",
+        "volume": "3",
+        "author": "C Altenbach",
+        "year": "1988",
+        "unstructured": "Altenbach C, Hubbell WL (1988) The aggregation state of spin-labeled melittin in solution and bound to phospholipid membranes: evidence that membrane-bound melittin is monomeric. Proteins 3:230–242",
+        "journal-title": "Proteins"
+      },
+      {
+        "key": "9030_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "2578",
+        "DOI": "10.1016/S0021-9258(19)85931-8",
+        "volume": "255",
+        "author": "D Anderson",
+        "year": "1980",
+        "unstructured": "Anderson D, Terwilliger RC, Wickner W, Eisenberg D (1980) Melittin forms crystals which are suitable for high resolution X-ray structural analysis and which reveal a molecular 2-fold axis of symmetry. J Biol Chem 255:2578–2582",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "55042",
+        "DOI": "10.1074/jbc.M408881200",
+        "volume": "279",
+        "author": "N Asthana",
+        "year": "2004",
+        "unstructured": "Asthana N, Yadav SP, Ghosh JK (2004) Dissection of antibacterial and toxic activity of melittin: a leucine zipper motif plays a crucial role in determining its hemolytic activity but not antibacterial activity. J Biol Chem 279:55042–55050",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1359",
+        "DOI": "10.1016/S0006-3495(00)76690-2",
+        "volume": "78",
+        "author": "M Bachar",
+        "year": "2000",
+        "unstructured": "Bachar M, Becker OM (2000) Protein-induced membrane disorder: a molecular dynamics study of melittin in a dipalmitoylphosphatidylcholine bilayer. Biophys J 78:1359–1375",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "3596",
+        "DOI": "10.1021/bi00011a014",
+        "volume": "34",
+        "author": "KJ Baker",
+        "year": "1995",
+        "unstructured": "Baker KJ, East JM, Lee AG (1995) Mechanism of inhibition of the Ca2+-ATPase by melittin. Biochemistry 34:3596–3604",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "5607",
+        "DOI": "10.1128/IAI.66.12.5607-5612.1998",
+        "volume": "66",
+        "author": "A Banemann",
+        "year": "1998",
+        "unstructured": "Banemann A, Deppisch H, Gross R (1998) The lipopolysaccharide of Bordetella bronchiseptica acts as a protective shield against antimicrobial peptides. Infect Immun 66:5607–5612",
+        "journal-title": "Infect Immun"
+      },
+      {
+        "key": "9030_CR10",
+        "doi-asserted-by": "crossref",
+        "first-page": "48",
+        "DOI": "10.1016/0003-2697(81)90320-1",
+        "volume": "116",
+        "author": "BEC Banks",
+        "year": "1981",
+        "unstructured": "Banks BEC, Dempsey CE, Pearce FL, Vernon CA, Wholley TE (1981) New methods of isolating been venom peptides. Anal Biochem 116:48–52",
+        "journal-title": "Anal Biochem"
+      },
+      {
+        "key": "9030_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "5970",
+        "DOI": "10.1021/bi9629945",
+        "volume": "36",
+        "author": "KJ Barnham",
+        "year": "1997",
+        "unstructured": "Barnham KJ, Monks SA, Hinds MG, Azad AA, Norton RS (1997) Solution structure of a polypeptide from the N-terminus of the HIV protein Nef. Biochemistry 36:5970–5980",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.1016/0005-2736(87)90165-9",
+        "volume": "903",
+        "author": "AM Batenburg",
+        "year": "1987",
+        "unstructured": "Batenburg AM, Hibbeln JC, de Kruijff B (1987) Lipid specific penetration of melittin into phospholipid model membranes. Biochim Biophys Acta 903:155–165",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "2324",
+        "DOI": "10.1021/bi00407a013",
+        "volume": "27",
+        "author": "AM Batenburg",
+        "year": "1988",
+        "unstructured": "Batenburg AM, van Esch JH, de Kruijff B (1988) Melittin-induced changes of the macroscopic structure of phosphatidylethanolamines. Biochemistry 27:2324–2331",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR14",
+        "doi-asserted-by": "crossref",
+        "first-page": "538",
+        "DOI": "10.1002/jss.400020504",
+        "volume": "2",
+        "author": "G Baumann",
+        "year": "1974",
+        "unstructured": "Baumann G, Mueller P (1974) A molecular model of membrane excitability. J Supramol Struct 2:538–557",
+        "journal-title": "J Supramol Struct"
+      },
+      {
+        "key": "9030_CR15",
+        "doi-asserted-by": "crossref",
+        "first-page": "139",
+        "DOI": "10.1111/j.1432-1033.1988.tb13977.x",
+        "volume": "173",
+        "author": "R Bazzo",
+        "year": "1988",
+        "unstructured": "Bazzo R, Tappin MJ, Pastore A, Harvey TS, Carver JA, Campbell ID (1988) The structure of melittin. A 1H-NMR study in methanol. Eur J Biochem 173:139–146",
+        "journal-title": "Eur J Biochem"
+      },
+      {
+        "key": "9030_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1007/s002329900201",
+        "volume": "156",
+        "author": "B Bechinger",
+        "year": "1997",
+        "unstructured": "Bechinger B (1997) Structure and functions of channel-forming peptides: magainins, cecropins, melittin and alamethicin. J Membr Biol 156:197–211",
+        "journal-title": "J Membr Biol"
+      },
+      {
+        "key": "9030_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "157",
+        "DOI": "10.1016/S0005-2736(99)00205-9",
+        "volume": "1462",
+        "author": "B Bechinger",
+        "year": "1999",
+        "unstructured": "Bechinger B (1999) The structure, dynamics and orientation of antimicrobial peptides in membranes by solid-state NMR spectroscopy. Biochim Biophys Acta 1462:157–183",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1080/07352680490452825",
+        "volume": "23",
+        "author": "B Bechinger",
+        "year": "2004",
+        "unstructured": "Bechinger B (2004) Structure and function of membrane-lytic peptides. Crit Rev Plant Sci 23:271–292",
+        "journal-title": "Crit Rev Plant Sci"
+      },
+      {
+        "key": "9030_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "461",
+        "DOI": "10.1021/bi00532a007",
+        "volume": "21",
+        "author": "J Bello",
+        "year": "1982",
+        "unstructured": "Bello J, Bello HR, Granados E (1982) Conformation and aggregation of melittin: dependence of pH and concentration. Biochemistry 21:461–465",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR20",
+        "doi-asserted-by": "crossref",
+        "first-page": "452",
+        "DOI": "10.1016/0005-2736(95)80035-E",
+        "volume": "1235",
+        "author": "T Benachir",
+        "year": "1995",
+        "unstructured": "Benachir T, Lafleur M (1995) Study of vesicle leakage induced by melittin. Biochim Biophys Acta 1235:452–460",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "831",
+        "DOI": "10.1016/S0006-3495(96)79622-4",
+        "volume": "70",
+        "author": "T Benachir",
+        "year": "1996",
+        "unstructured": "Benachir T, Lafleur M (1996) Osmotic and pH transmembrane gradients control the lytic power of melittin. Biophys J 70:831–840",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR22",
+        "doi-asserted-by": "crossref",
+        "first-page": "201",
+        "DOI": "10.1007/s002490050032",
+        "volume": "25",
+        "author": "T Benachir",
+        "year": "1997",
+        "unstructured": "Benachir T, Monette M, Grenier J, Lafleur M (1997) Melittin-induced leakage from phosphatidylcholine vesicles is modulated by cholesterol: a property used for membrane targeting. Eur Biophys J 25:201–210",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR23",
+        "doi-asserted-by": "crossref",
+        "first-page": "152",
+        "DOI": "10.1016/0005-2736(82)90590-9",
+        "volume": "688",
+        "author": "E Bernard",
+        "year": "1982",
+        "unstructured": "Bernard E, Faucon JF, Dufourcq J (1982) Phase separation induced by melittin in negatively charged phospholipid bilayers as detected by fluorescence polarization and differential scanning calorimetry. Biochim Biophys Acta 688:152–162",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR24",
+        "doi-asserted-by": "crossref",
+        "first-page": "1603",
+        "DOI": "10.1016/S0006-3495(98)77604-0",
+        "volume": "75",
+        "author": "S Bernèche",
+        "year": "1998",
+        "unstructured": "Bernèche S, Nina M, Roux B (1998) Molecular dynamics simulation of melittin in a dimyristoylphosphatidylcholine bilayer membrane. Biophys J 75:1603–1618",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR25",
+        "doi-asserted-by": "crossref",
+        "first-page": "123",
+        "DOI": "10.1016/0304-4157(86)90018-3",
+        "volume": "864",
+        "author": "AW Bernheimer",
+        "year": "1986",
+        "unstructured": "Bernheimer AW, Ruby B (1986) Interactions between membranes and cytolytic peptides. Biochim Biophys Acta 864:123–141",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR26",
+        "doi-asserted-by": "crossref",
+        "first-page": "195",
+        "DOI": "10.1016/0005-2736(91)90210-Y",
+        "volume": "1068",
+        "author": "G Beschiaschvili",
+        "year": "1991",
+        "unstructured": "Beschiaschvili G, Baeuerle HD (1991) Effective charge of melittin upon interaction with POPC vesicles. Biochim Biophys Acta 1068:195–200",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1021/bi00453a007",
+        "volume": "29",
+        "author": "G Beschiaschvili",
+        "year": "1990",
+        "unstructured": "Beschiaschvili G, Seelig J (1990) Melittin binding to mixed phosphatidylglycerol/phosphatidylcholine membranes. Biochemistry 29:52–58",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR28",
+        "doi-asserted-by": "crossref",
+        "first-page": "3882",
+        "DOI": "10.1093/nar/29.18.3882",
+        "volume": "29",
+        "author": "T Bettinger",
+        "year": "2001",
+        "unstructured": "Bettinger T, Carlisle RC, Read ML, Ogris M, Seymour LW (2001) Peptide-mediated RNA delivery: a novel approach for enhanced transfection of primary and post-mitotic cells. Nucleic Acids Res 29:3882–3891",
+        "journal-title": "Nucleic Acids Res"
+      },
+      {
+        "key": "9030_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1016/0005-2736(93)90358-7",
+        "volume": "1146",
+        "author": "E Bismuto",
+        "year": "1993",
+        "unstructured": "Bismuto E, Sirangelo I, Irace G (1993) Folding and dynamics of melittin in reversed micelles. Biochim Biophys Acta 1146:213–218",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "4671",
+        "DOI": "10.1021/bi00233a006",
+        "volume": "30",
+        "author": "SE Blondelle",
+        "year": "1991a",
+        "unstructured": "Blondelle SE, Houghten RA (1991a) Hemolytic and antimicrobial activities of twenty-four individual omission analogues of melittin. Biochemistry 30:4671–4678",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR31",
+        "first-page": "12",
+        "volume": "4",
+        "author": "SE Blondelle",
+        "year": "1991b",
+        "unstructured": "Blondelle SE, Houghten RA (1991b) Probing the relationships between the structure and hemolytic activity of melittin with a complete set of leucine substitution analogs. Pept Res 4:12–18",
+        "journal-title": "Pept Res"
+      },
+      {
+        "key": "9030_CR32",
+        "doi-asserted-by": "crossref",
+        "first-page": "331",
+        "DOI": "10.1016/0167-4838(93)90024-L",
+        "volume": "1202",
+        "author": "SE Blondelle",
+        "year": "1993",
+        "unstructured": "Blondelle SE, Simpkins LR, Pérez-Payá E, Houghten RA (1993) Influence of tryptophan residues on melittin’s hemolytic activity. Biochim Biophys Acta 1202:331–336",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR33",
+        "first-page": "4682",
+        "volume": "49",
+        "author": "JL Bos",
+        "year": "1989",
+        "unstructured": "Bos JL (1989) ras oncogenes in human cancer: a review. Cancer Res 49:4682–4689",
+        "journal-title": "Cancer Res"
+      },
+      {
+        "key": "9030_CR34",
+        "doi-asserted-by": "crossref",
+        "first-page": "293",
+        "DOI": "10.1038/327293a0",
+        "volume": "327",
+        "author": "JL Bos",
+        "year": "1987",
+        "unstructured": "Bos JL, Fearon ER, Hamilton SR, Verlaan-de Vries M, van Boom JH, van der Eb AJ, Vogelstein B (1987) Prevalence of ras gene mutations in human colorectal cancers. Nature 327:293–297",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "9030_CR35",
+        "doi-asserted-by": "crossref",
+        "first-page": "494",
+        "DOI": "10.1016/0005-2736(87)90479-2",
+        "volume": "905",
+        "author": "TD Bradrick",
+        "year": "1987",
+        "unstructured": "Bradrick TD, Georghiou S (1987) Kinetics of melittin-induced fusion of dipalmitoylphosphatidylcholine small unilamellar vesicles. Biochim Biophys Acta 905:494–498",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR36",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1016/0005-2736(89)90179-X",
+        "volume": "982",
+        "author": "TD Bradrick",
+        "year": "1989",
+        "unstructured": "Bradrick TD, Freire E, Georghiou S (1989) A high-sensitivity differential scanning calorimetric study of the interaction of melittin with dipalmitoylphosphatidylcholine fused unilamellar vesicles. Biochim Biophys Acta 982:94–102",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1999",
+        "DOI": "10.1016/S0006-3495(95)80070-6",
+        "volume": "69",
+        "author": "TD Bradrick",
+        "year": "1995",
+        "unstructured": "Bradrick TD, Philippetis A, Georghiou S (1995) Stopped-flow fluorometric study of the interaction of melittin with phospholipid bilayers: importance of the physical state of the bilayer and the acyl chain length. Biophys J 69:1999–2010",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR38",
+        "doi-asserted-by": "crossref",
+        "first-page": "79",
+        "DOI": "10.3109/09687689409162224",
+        "volume": "11",
+        "author": "JP Bradshaw",
+        "year": "1994",
+        "unstructured": "Bradshaw JP, Dempsey CE, Watts A (1994) A combined X-ray and neutron diffraction study of selectively deuterated melittin in phospholipid bilayers: effect of pH. Mol Membr Biol 11:79–86",
+        "journal-title": "Mol Membr Biol"
+      },
+      {
+        "key": "9030_CR39",
+        "doi-asserted-by": "crossref",
+        "first-page": "8151",
+        "DOI": "10.1021/bi00399a020",
+        "volume": "26",
+        "author": "JW Brauner",
+        "year": "1987",
+        "unstructured": "Brauner JW, Mendelsohn R, Prendergast FG (1987) Attenueted total reflectance Fourier transform infrared studies of the interaction of melittin, two fragments of melittin, and δ-hemolysin with phosphatidylcholines. Biochemistry 26:8151–8158",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR40",
+        "doi-asserted-by": "crossref",
+        "first-page": "95",
+        "DOI": "10.1016/0005-2736(81)90298-4",
+        "volume": "647",
+        "author": "LR Brown",
+        "year": "1981",
+        "unstructured": "Brown LR, Wüthrich K (1981) Melittin bound to dodecylphosphocholine micelles. H-NMR assignments and global conformational features. Biochim Biophys Acta 647:95–111",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR41",
+        "doi-asserted-by": "crossref",
+        "first-page": "231",
+        "DOI": "10.1016/0005-2795(80)90034-3",
+        "volume": "622",
+        "author": "LR Brown",
+        "year": "1980",
+        "unstructured": "Brown LR, Lauterwein J, Wüthrich K (1980) High-resolution 1H-NMR studies of self-aggregation of melittin in aqueous solution. Biochim Biophys Acta 622:231–244",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR42",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.1016/S0006-3495(82)84680-8",
+        "volume": "37",
+        "author": "LR Brown",
+        "year": "1982",
+        "unstructured": "Brown LR, Brawn W, Kumar A, Wüthrich K (1982) High resolution nuclear magnetic resonance studies of the conformation and orientation of melittin bound to a lipid–water interface. Biophys J 37:319–328",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR43",
+        "doi-asserted-by": "crossref",
+        "first-page": "3882",
+        "DOI": "10.1021/bi962788x",
+        "volume": "36",
+        "author": "Y Cajal",
+        "year": "1997",
+        "unstructured": "Cajal Y, Jain MK (1997) Synergism between mellitin and phospholipase A2 from bee venom: apparent activation by intervesicle exchange of phospholipids. Biochemistry 36:3882–3893",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR44",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1016/S0005-2736(98)00219-3",
+        "volume": "1416",
+        "author": "S Castano",
+        "year": "1999",
+        "unstructured": "Castano S, Cornut I, Buttner K, Dasseux JL, Dufourcq J (1999) The amphipathic helix concept: length effects on ideally amphipathic L i K j (i=2j) peptides to acquire optimal hemolytic activity. Biochim Biophys Acta 1416:161–175",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR45",
+        "doi-asserted-by": "crossref",
+        "first-page": "1259",
+        "DOI": "10.1002/bip.360250707",
+        "volume": "25",
+        "author": "B Chandani",
+        "year": "1986",
+        "unstructured": "Chandani B, Balasubramanian D (1986) Analysis of the interaction of membrane-active peptides with membranes: the case of melittin in surfactant assemblies. Biopolymers 25:1259–1272",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR46",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1016/S0009-3084(02)00174-3",
+        "volume": "122",
+        "author": "A Chattopadhyay",
+        "year": "2003",
+        "unstructured": "Chattopadhyay A (2003) Exploring membrane organization and dynamics by the wavelength-selective fluorescence approach. Chem Phys Lipids 122:3–17",
+        "journal-title": "Chem Phys Lipids"
+      },
+      {
+        "key": "9030_CR47",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1021/bi00375a006",
+        "volume": "26",
+        "author": "A Chattopadhyay",
+        "year": "1987",
+        "unstructured": "Chattopadhyay A, London E (1987) Parallax method for direct measurement of membrane penetration depth utilizing fluorescence quenching by spin-labeled phospholipids. Biochemistry 26:39–45",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR48",
+        "doi-asserted-by": "crossref",
+        "first-page": "341",
+        "DOI": "10.1016/0014-5793(93)80415-Q",
+        "volume": "335",
+        "author": "A Chattopadhyay",
+        "year": "1993",
+        "unstructured": "Chattopadhyay A, Rukmini R (1993) Restricted mobility of the sole tryptophan in membrane-bound melittin. FEBS Lett 335:341–344",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR49",
+        "doi-asserted-by": "crossref",
+        "first-page": "2441",
+        "DOI": "10.1128/AAC.45.9.2441-2449.2001",
+        "volume": "45",
+        "author": "C Chicharro",
+        "year": "2001",
+        "unstructured": "Chicharro C, Granata C, Lozano R, Andreu D, Rivas L (2001) N-terminal fatty acid substitution increases the leishmanicidal activity of CA(1–7)M(2–9), a cecropin–melittin hybrid peptide. Antimicrob Agents Chemother 45:2441–2449",
+        "journal-title": "Antimicrob Agents Chemother"
+      },
+      {
+        "key": "9030_CR50",
+        "doi-asserted-by": "crossref",
+        "first-page": "2264",
+        "DOI": "10.1016/S0022-2275(20)34940-3",
+        "volume": "38",
+        "author": "AE Christian",
+        "year": "1997",
+        "unstructured": "Christian AE, Haynes MP, Phillips MC, Rothblat GH (1997) Use of cyclodextrins for manipulating cellular cholesterol content. J Lipid Res 38:2264–2272",
+        "journal-title": "J Lipid Res"
+      },
+      {
+        "key": "9030_CR51",
+        "doi-asserted-by": "crossref",
+        "first-page": "791",
+        "DOI": "10.1042/bj2520791",
+        "volume": "252",
+        "author": "MJ Clague",
+        "year": "1988",
+        "unstructured": "Clague MJ, Cherry RJ (1988) Comparison of p25 presequence peptide and melittin. Red blood cell haemolysis and band 3 aggregation. Biochem J 252:791–794",
+        "journal-title": "Biochem J"
+      },
+      {
+        "key": "9030_CR52",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1016/j.bbamem.2004.08.012",
+        "volume": "1667",
+        "author": "I Constantinescu",
+        "year": "2004",
+        "unstructured": "Constantinescu I, Lafleur M (2004) Influence of the lipid composition on the kinetics of concerted insertion and folding of melittin in bilayers. Biochim Biophys Acta 1667:26–37",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR53",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/0020-711X(94)90189-9",
+        "volume": "26",
+        "author": "T Cserhati",
+        "year": "1994",
+        "unstructured": "Cserhati T, Szogyi M (1994) Interaction of phospholipids with proteins and peptides. New advances IV. Int J Biochem 26:1–18",
+        "journal-title": "Int J Biochem"
+      },
+      {
+        "key": "9030_CR54",
+        "doi-asserted-by": "crossref",
+        "first-page": "409",
+        "DOI": "10.1016/0003-9861(90)90278-7",
+        "volume": "278",
+        "author": "J Cuppoletti",
+        "year": "1990",
+        "unstructured": "Cuppoletti J (1990) [125I]azidosalicylyl melittin binding domains: evidence for a polypeptide receptor on the gastric (H+ + K+)ATPase. Arch Biochem Biophys 278:409–415",
+        "journal-title": "Arch Biochem Biophys"
+      },
+      {
+        "key": "9030_CR55",
+        "doi-asserted-by": "crossref",
+        "first-page": "263",
+        "DOI": "10.1016/0003-9861(89)90372-X",
+        "volume": "275",
+        "author": "J Cuppoletti",
+        "year": "1989",
+        "unstructured": "Cuppoletti J, Blumenthal KE, Malinowska DH (1989) Melittin inhibition of the gastric (H+ + K+) ATPase and photoaffinity labeling with [125I]azidosalicylyl melittin. Arch Biochem Biophys 275:263–270",
+        "journal-title": "Arch Biochem Biophys"
+      },
+      {
+        "key": "9030_CR56",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1016/0003-9861(90)90639-G",
+        "volume": "283",
+        "author": "J Cuppoletti",
+        "year": "1990",
+        "unstructured": "Cuppoletti J, Abbott AJ (1990) Interaction of melittin with the (Na+ + K+)ATPase: evidence for a melittin-induced conformational change. Arch Biochem Biophys 283:249–257",
+        "journal-title": "Arch Biochem Biophys"
+      },
+      {
+        "key": "9030_CR57",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1016/0005-2736(84)90232-3",
+        "volume": "775",
+        "author": "JL Dasseux",
+        "year": "1984",
+        "unstructured": "Dasseux JL, Faucon JF, Lafleur M, Pezolet M, Dufourcq J (1984) A restatement of melittin-induced effects on the thermotropism of zwitterionic phospholipids. Biochim Biophys Acta 775:37–50",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR58",
+        "doi-asserted-by": "crossref",
+        "first-page": "71",
+        "DOI": "10.1016/S0005-2736(99)00201-1",
+        "volume": "1462",
+        "author": "M Dathe",
+        "year": "1999",
+        "unstructured": "Dathe M, Wieprecht T (1999) Structural features of helical antimicrobial peptides: their potential to modulate activity on model membranes and biological cells. Biochim Biophys Acta 1462:71–87",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR59",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1016/0005-2736(78)90131-1",
+        "volume": "510",
+        "author": "CR Dawson",
+        "year": "1978",
+        "unstructured": "Dawson CR, Drake AF, Helliwell J, Hider RC (1978) The interaction of bee melittin with lipid bilayer membranes. Biochim Biophys Acta 510:75–86",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR60",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1007/BF01116571",
+        "volume": "10",
+        "author": "B Kruijff de",
+        "year": "1990",
+        "unstructured": "de Kruijff B (1990) Cholesterol as a target for toxins. Biosci Rep 10:127–130",
+        "journal-title": "Biosci Rep"
+      },
+      {
+        "key": "9030_CR61",
+        "doi-asserted-by": "crossref",
+        "first-page": "679",
+        "DOI": "10.1021/ja00393a035",
+        "volume": "103",
+        "author": "WF DeGrado",
+        "year": "1981",
+        "unstructured": "DeGrado WF, Kezdy FJ, Kaiser ET (1981) Design, synthesis, and characterization of a cytotoxic peptide with melittin-like activity. J Am Chem Soc 103:679–681",
+        "journal-title": "J Am Chem Soc"
+      },
+      {
+        "key": "9030_CR62",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1016/S0006-3495(82)84681-X",
+        "volume": "37",
+        "author": "WF DeGrado",
+        "year": "1982",
+        "unstructured": "DeGrado WF, Musso GF, Lieber M, Kaiser ET, Kezdy FJ (1982) Kinetics and mechanism of hemolysis induced by melittin and by a synthetic melittin analogue. Biophys J 37:329–338",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR63",
+        "doi-asserted-by": "crossref",
+        "first-page": "121",
+        "DOI": "10.1007/BF00255522",
+        "volume": "16",
+        "author": "AP Demchenko",
+        "year": "1988",
+        "unstructured": "Demchenko AP (1988) Red-edge-excitation fluorescence spectroscopy of single-tryptophan proteins. Eur Biophys J 16:121–129",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR64",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1002/bio.671",
+        "volume": "17",
+        "author": "AP Demchenko",
+        "year": "2002",
+        "unstructured": "Demchenko AP (2002) The red-edge effects: 30 years of exploration. Luminescence 17:19–42",
+        "journal-title": "Luminescence"
+      },
+      {
+        "key": "9030_CR65",
+        "doi-asserted-by": "crossref",
+        "first-page": "6893",
+        "DOI": "10.1021/bi00418a035",
+        "volume": "27",
+        "author": "CE Dempsey",
+        "year": "1988",
+        "unstructured": "Dempsey CE (1988) pH-dependence of hydrogen-exchange from backbone peptide amides of melittin in methanol. Biochemistry 27:6893–6901",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR66",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1016/0304-4157(90)90006-X",
+        "volume": "1031",
+        "author": "CE Dempsey",
+        "year": "1990",
+        "unstructured": "Dempsey CE (1990) The actions of melittin on membranes. Biochim Biophys Acta 1031:143–161",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR67",
+        "doi-asserted-by": "crossref",
+        "first-page": "4705",
+        "DOI": "10.1021/bi00134a025",
+        "volume": "31",
+        "author": "CE Dempsey",
+        "year": "1992",
+        "unstructured": "Dempsey CE (1992) Quantitation of the effects of an internal proline residue on individual hydrogen bond stabilities in an alpha-helix: pH-dependent amide exchange in melittin and [Ala-14]melittin. Biochemistry 31:4705–4712",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR68",
+        "doi-asserted-by": "crossref",
+        "first-page": "5803",
+        "DOI": "10.1021/bi00392a033",
+        "volume": "26",
+        "author": "CE Dempsey",
+        "year": "1987",
+        "unstructured": "Dempsey CE, Watts A (1987) A deuterium and phosphorus-31 nuclear magnetic resonance study of the interaction of melittin with dimyristoylphosphatidylcholine bilayers and the effects of contaminating phospholipase A2. Biochemistry 26:5803–5811",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR69",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1016/0005-2736(91)90283-E",
+        "volume": "1061",
+        "author": "CE Dempsey",
+        "year": "1991",
+        "unstructured": "Dempsey CE, Sternberg B (1991) Reversible disc-micellization of dimyristoylphosphatidylcholine bilayers induced by melittin and [Ala-14]melittin. Biochim Biophys Acta 1061:175–184",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR70",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.1016/0014-5793(91)80402-O",
+        "volume": "281",
+        "author": "CE Dempsey",
+        "year": "1991",
+        "unstructured": "Dempsey CE, Bazzo R, Harvey TS, Syperek I, Boheim G, Campbell ID (1991) Contribution of proline-14 to the structure and actions of melittin. FEBS Lett 281:240–244",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR71",
+        "doi-asserted-by": "crossref",
+        "first-page": "11973",
+        "DOI": "10.1021/bi00163a003",
+        "volume": "31",
+        "author": "CE Dempsey",
+        "year": "1992",
+        "unstructured": "Dempsey CE, Butler GS (1992) Helical structure and orientation of melittin in dispersed phospholipid membranes from amide exchange analysis in situ. Biochemistry 31:11973–11977",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR72",
+        "doi-asserted-by": "crossref",
+        "first-page": "453",
+        "DOI": "10.1042/bj3300453",
+        "volume": "330",
+        "author": "P Diaz-Achirica",
+        "year": "1998",
+        "unstructured": "Diaz-Achirica P, Ubach J, Guinea A, Andreu D, Rivas L (1998) The plasma membrane of Leishmania donovani promastigotes is the main target for CA(1–8)M(1–18), a synthetic cecropin A–melittin hybrid peptide. Biochem J 330:453–460",
+        "journal-title": "Biochem J"
+      },
+      {
+        "key": "9030_CR73",
+        "unstructured": "Dufourcq J, Dasseux JL, Faucon JF (1984) In: Alouf JE, Fehrenbach FJ, Freer JH, Jeljaszewicz J (eds) Bacterial protein toxins. Academic Press, London, pp 127–138"
+      },
+      {
+        "key": "9030_CR74",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1016/0005-2736(86)90315-9",
+        "volume": "859",
+        "author": "J Dufourcq",
+        "year": "1986",
+        "unstructured": "Dufourcq J, Faucon JF, Fourche G, Dasseux JL, Le Maire M, Gulik-Krzywicki T (1986) Morphological changes of phosphatidylcholine bilayers induced by melittin: vesicularization, fusion, discoidal particles. Biochim Biophys Acta 859:33–48",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR75",
+        "doi-asserted-by": "crossref",
+        "first-page": "6448",
+        "DOI": "10.1021/bi00369a016",
+        "volume": "25",
+        "author": "EJ Dufourc",
+        "year": "1986",
+        "unstructured": "Dufourc EJ, Smith ICP, Dufourcq J (1986) Molecular details of melittin-induced lysis of phospholipid membranes as revealed by deuterium and phosphorus NMR. Biochemistry 25:6448–6455",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR76",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1007/BF00253854",
+        "volume": "11",
+        "author": "MJ Dufton",
+        "year": "1984",
+        "unstructured": "Dufton MJ, Hider RC, Cherry RJ (1984) The influence of melittin on the rotation of band 3 protein in the human erythrocyte membrane. Eur Biophys J 11:17–24",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR77",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1002/bip.360290122",
+        "volume": "29",
+        "author": "D Eisenberg",
+        "year": "1990",
+        "unstructured": "Eisenberg D, Wesson M (1990) The most highly amphiphilic alpha-helices include two amino acid segments in human immunodeficiency virus glycoprotein 41. Biopolymers 29:171–177",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR78",
+        "doi-asserted-by": "crossref",
+        "first-page": "133",
+        "DOI": "10.1002/(SICI)1520-6343(1999)5:3<133::AID-BSPY3>3.0.CO;2-N",
+        "volume": "5",
+        "author": "R El Jastimi",
+        "year": "1999",
+        "unstructured": "El Jastimi R, Lafleur M (1999) A dual-probe fluorescence method to examine selective perturbations of membrane permeability by melittin. Biospectroscopy 5:133–140",
+        "journal-title": "Biospectroscopy"
+      },
+      {
+        "key": "9030_CR79",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1016/S0005-2736(99)00198-4",
+        "volume": "1462",
+        "author": "RM Epand",
+        "year": "1999",
+        "unstructured": "Epand RM, Vogel HJ (1999) Diversity of antimicrobial peptides and their mechanisms of action. Biochim Biophys Acta 1462:11–28",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR80",
+        "doi-asserted-by": "crossref",
+        "first-page": "11673",
+        "DOI": "10.1073/pnas.95.20.11673",
+        "volume": "95",
+        "author": "LO Essen",
+        "year": "1998",
+        "unstructured": "Essen LO, Siegert R, Lehmann WD, Oesterhelt D (1998) Lipid patches in membrane protein oligomers: crystal structure of the bacteriorhodopsin–lipid complex. Proc Natl Acad Sci USA 95:11673–11678",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR81",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1016/0014-5793(79)80956-4",
+        "volume": "102",
+        "author": "JF Faucon",
+        "year": "1979",
+        "unstructured": "Faucon JF, Dufourcq I, Lussan C (1979) The self-association of melittin and its binding to lipids: an intrinsic fluorescence polarization study. FEBS Lett 102:187–190",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR82",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1016/0005-2736(94)00298-4",
+        "volume": "1234",
+        "author": "JF Faucon",
+        "year": "1995",
+        "unstructured": "Faucon JF, Bonmatin JM, Dufourcq J, Dufourc EJ (1995) Acyl chain length dependence in the stability of melittin–phosphatidylcholine complexes. A light scattering and 31P-NMR study. Biochim Biophys Acta 1234:235–243",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR83",
+        "doi-asserted-by": "crossref",
+        "first-page": "669",
+        "DOI": "10.1016/0041-0101(93)90375-S",
+        "volume": "31",
+        "author": "JE Fletcher",
+        "year": "1993",
+        "unstructured": "Fletcher JE, Jiang MS (1993) Possible mechanisms of action of cobra snake venom cardiotoxins and bee venom melittin. Toxicon 31:669–695",
+        "journal-title": "Toxicon"
+      },
+      {
+        "key": "9030_CR84",
+        "doi-asserted-by": "crossref",
+        "first-page": "298",
+        "DOI": "10.1038/327298a0",
+        "volume": "327",
+        "author": "K Forrester",
+        "year": "1987",
+        "unstructured": "Forrester K, Almoguera C, Han K, Grizzle WE, Perucho M (1987) Detection of high incidence of K-ras oncogenes during human colon tumorigenesis. Nature 327:298–303",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "9030_CR85",
+        "doi-asserted-by": "crossref",
+        "first-page": "922",
+        "DOI": "10.1016/S0006-3495(91)82126-9",
+        "volume": "60",
+        "author": "S Frey",
+        "year": "1991",
+        "unstructured": "Frey S, Tamm LK (1991) Orientation of melittin in phospholipid bilayers. A polarized attenuated total reflection infrared study. Biophys J 60:922–930",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR86",
+        "doi-asserted-by": "crossref",
+        "first-page": "811",
+        "DOI": "10.1016/S0196-9781(98)00027-8",
+        "volume": "19",
+        "author": "N Fukushima",
+        "year": "1998",
+        "unstructured": "Fukushima N, Kohno M, Kato T, Kawamoto S, Okuda K, Misu Y, Ueda H (1998) Melittin, a metabostatic peptide inhibiting Gs activity. Peptides 19:811–819",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "9030_CR87",
+        "doi-asserted-by": "crossref",
+        "first-page": "5241",
+        "DOI": "10.1021/bi00617a025",
+        "volume": "17",
+        "author": "LK Fung",
+        "year": "1978",
+        "unstructured": "Fung LK, Stryer L (1978) Surface density determination in membranes by fluorescence energy transfer. Biochemistry 17:5241–5248",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR88",
+        "doi-asserted-by": "crossref",
+        "first-page": "231",
+        "DOI": "10.1016/S0300-9084(80)80397-X",
+        "volume": "62",
+        "author": "J Garnier",
+        "year": "1980",
+        "unstructured": "Garnier J, Gaye P, Mercier JC, Robson B (1980) Structural properties of signal peptides and their membrane insertion. Biochimie 62:231–239",
+        "journal-title": "Biochimie"
+      },
+      {
+        "key": "9030_CR89",
+        "doi-asserted-by": "crossref",
+        "first-page": "441",
+        "DOI": "10.1016/0005-2736(82)90355-8",
+        "volume": "688",
+        "author": "S Georghiou",
+        "year": "1982",
+        "unstructured": "Georghiou S, Thompson M, Mukhopadhyay AK (1982) Melittin–phospholipid interaction studied by employing the single tryptophan residue as an intrinsic fluorescent probe. Biochim Biophys Acta 688:441–452",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR90",
+        "doi-asserted-by": "crossref",
+        "first-page": "1079",
+        "DOI": "10.1016/S0006-3495(84)84255-1",
+        "volume": "45",
+        "author": "VS Gevod",
+        "year": "1984",
+        "unstructured": "Gevod VS, Birdi KS (1984) Melittin and the 8–26 fragment. Differences in ionophoric properties as measured by monolayer method. Biophys J 45:1079–1083",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR91",
+        "doi-asserted-by": "crossref",
+        "first-page": "14291",
+        "DOI": "10.1021/bi971933j",
+        "volume": "36",
+        "author": "AK Ghosh",
+        "year": "1997",
+        "unstructured": "Ghosh AK, Rukmini R, Chattopadhyay A (1997) Modulation of tryptophan environment in membrane-bound melittin by negatively charged phospholipids: implications in membrane organization and function. Biochemistry 36:14291–14305",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR92",
+        "doi-asserted-by": "crossref",
+        "first-page": "971",
+        "DOI": "10.1042/bst0230971",
+        "volume": "23",
+        "author": "C Golding",
+        "year": "1995",
+        "unstructured": "Golding C, O’Shea P (1995) The interactions of signal sequences with membranes. Biochem Soc Trans 23:971–976",
+        "journal-title": "Biochem Soc Trans"
+      },
+      {
+        "key": "9030_CR93",
+        "doi-asserted-by": "crossref",
+        "first-page": "83",
+        "DOI": "10.1016/S0005-2736(03)00107-X",
+        "volume": "1612",
+        "author": "MJ Gómara",
+        "year": "2003",
+        "unstructured": "Gómara MJ, Nir S, Nieva JL (2003) Effects of sphingomyelin on melittin pore formation. Biochim Biophys Acta 1612:83–89",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR94",
+        "doi-asserted-by": "crossref",
+        "first-page": "703",
+        "DOI": "10.1007/s00249-003-0333-8",
+        "volume": "32",
+        "author": "G Gorbenko",
+        "year": "2003",
+        "unstructured": "Gorbenko G, Handa T, Saito H, Molotkovsky J, Tanaka M, Egashira M, Nakano M (2003) Effect of cholesterol on bilayer location of the class A peptide Ac-18A-NH2 as revealed by fluorescence resonance energy transfer. Eur Biophys J 32:703–709",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR95",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1016/0009-3084(92)90075-Z",
+        "volume": "60",
+        "author": "IA Gromova",
+        "year": "1992",
+        "unstructured": "Gromova IA, Molokovsky JG, Bergelson LD (1992) Anthrylvinyl-labeled phospholipids as fluorescent membrane probes. The action of melittin on multilipid systems. Chem Phys Lipids 60:235–246",
+        "journal-title": "Chem Phys Lipids"
+      },
+      {
+        "key": "9030_CR96",
+        "doi-asserted-by": "crossref",
+        "first-page": "393",
+        "DOI": "10.1007/BF01901695",
+        "volume": "13",
+        "author": "A Guz",
+        "year": "1994",
+        "unstructured": "Guz A, Wasylewski Z (1994) Red-edge excitation fluorescence spectroscopy of proteins in reversed micelles. Red-edge excitation fluorescence spectroscopy of proteins in reversed micelles. J Protein Chem 13:393–399",
+        "journal-title": "J Protein Chem"
+      },
+      {
+        "key": "9030_CR97",
+        "doi-asserted-by": "crossref",
+        "first-page": "314",
+        "DOI": "10.1126/science.177.4046.314",
+        "volume": "177",
+        "author": "E Habermann",
+        "year": "1972",
+        "unstructured": "Habermann E (1972) Bee and wasp venoms. Science 177:314–322",
+        "journal-title": "Science"
+      },
+      {
+        "key": "9030_CR98",
+        "doi-asserted-by": "crossref",
+        "first-page": "884",
+        "DOI": "10.1515/bchm2.1970.351.2.884",
+        "volume": "351",
+        "author": "E Habermann",
+        "year": "1970",
+        "unstructured": "Habermann E, Kowallek H (1970) Modifications of amino group and tryptophan in melittin as an aid to recognition of structure–activity relationships. Hoppe-Seyler’s Z Physiol Chem 351:884–890",
+        "journal-title": "Hoppe-Seyler’s Z Physiol Chem"
+      },
+      {
+        "key": "9030_CR99",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1016/0005-2736(83)90374-7",
+        "volume": "727",
+        "author": "W Hanke",
+        "year": "1983",
+        "unstructured": "Hanke W, Methfessel C, Wilmsen HU, Katz E, Jung G, Boheim G (1983) Melittin and a chemically modified trichotoxin form alamethicin-type multi-state pores. Biochim Biophys Acta 727:108–114",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR100",
+        "doi-asserted-by": "crossref",
+        "first-page": "8243",
+        "DOI": "10.1016/S0021-9258(19)83902-9",
+        "volume": "261",
+        "author": "A Hermetter",
+        "year": "1986",
+        "unstructured": "Hermetter A, Lakowicz JR (1986) The aggregation state of mellitin in lipid bilayers. An energy transfer study. J Biol Chem 261:8243–8248",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR101",
+        "doi-asserted-by": "crossref",
+        "first-page": "1191",
+        "DOI": "10.1016/S0140-6736(98)10178-2",
+        "volume": "354",
+        "author": "BL Herwaldt",
+        "year": "1999",
+        "unstructured": "Herwaldt BL (1999) Leishmaniasis. Lancet 354:1191–1199",
+        "journal-title": "Lancet"
+      },
+      {
+        "key": "9030_CR102",
+        "doi-asserted-by": "crossref",
+        "first-page": "206",
+        "DOI": "10.1016/0005-2736(83)90473-X",
+        "volume": "728",
+        "author": "RC Hider",
+        "year": "1983",
+        "unstructured": "Hider RC, Khader F, Tatham AS (1983) Lytic activity of monomeric and oligomeric melittin. Biochim Biophys Acta 728:206–214",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR103",
+        "doi-asserted-by": "crossref",
+        "first-page": "6491",
+        "DOI": "10.1016/S0021-9258(18)68669-7",
+        "volume": "263",
+        "author": "T Higashijima",
+        "year": "1988",
+        "unstructured": "Higashijima T, Uzu S, Nakajima T, Ross EM (1988) Mastoparan, a peptide toxin from wasp venom, mimics receptors by activating GTP-binding regulatory proteins (G proteins). J Biol Chem 263:6491–6494",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR104",
+        "doi-asserted-by": "crossref",
+        "first-page": "14176",
+        "DOI": "10.1016/S0021-9258(18)77284-0",
+        "volume": "265",
+        "author": "T Higashijima",
+        "year": "1990",
+        "unstructured": "Higashijima T, Burnier J, Ross EM (1990) Regulation of Gi and Go by mastoparan, related amphiphilic peptides, and hydrophobic amines. Mechanism and structural determinants of activity. J Biol Chem 265:14176–14186",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR105",
+        "doi-asserted-by": "crossref",
+        "first-page": "162",
+        "DOI": "10.1016/S0005-2736(96)00122-8",
+        "volume": "1284",
+        "author": "DK Hincha",
+        "year": "1996",
+        "unstructured": "Hincha DK, Crowe JH (1996) The lytic activity of the bee venom peptide melittin is strongly reduced by the presence of negatively charged phospholipids or chloroplast galactolipids in the membranes of phosphatidylcholines large unilamellar vesicles. Biochim Biophys Acta 1284:162–170",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR106",
+        "doi-asserted-by": "crossref",
+        "first-page": "897",
+        "DOI": "10.1016/S0006-3495(92)81671-5",
+        "volume": "63",
+        "author": "C Ho",
+        "year": "1992",
+        "unstructured": "Ho C, Stubbs CD (1992) Hydration at the membrane protein–lipid interface. Biophys J 63:897–902",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR107",
+        "doi-asserted-by": "crossref",
+        "first-page": "801",
+        "DOI": "10.1016/S0006-3495(01)76059-6",
+        "volume": "80",
+        "author": "K Hristova",
+        "year": "2001",
+        "unstructured": "Hristova K, Dempsey CE, White SH (2001) Structure, location, and lipid perturbations of melittin at the membrane interface. Biophys J 80:801–811",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR108",
+        "doi-asserted-by": "crossref",
+        "first-page": "358",
+        "DOI": "10.1016/0005-2736(85)90503-6",
+        "volume": "816",
+        "author": "KS Hu",
+        "year": "1985",
+        "unstructured": "Hu K-S, Dufton MJ, Morrison I, Cherry RJ (1985) Protein rotational diffusion measurements on the interaction of bee venom melittin with bacteriorhodopsin in lipid vesicles. Biochim Biophys Acta 816:358–364",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR109",
+        "doi-asserted-by": "crossref",
+        "first-page": "8347",
+        "DOI": "10.1021/bi000946l",
+        "volume": "39",
+        "author": "HW Huang",
+        "year": "2000",
+        "unstructured": "Huang HW (2000) Action of antimicrobial peptides: two-state model. Biochemistry 39:8347–8352",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR110",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.1016/0005-2736(90)90124-7",
+        "volume": "1023",
+        "author": "SW Hui",
+        "year": "1990",
+        "unstructured": "Hui SW, Stewart CM, Cherry RJ (1990) Electron microscopic observation of the aggregation of membrane proteins in human erythrocyte by melittin. Biochim Biophys Acta 1023:335–340",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR111",
+        "first-page": "137",
+        "volume": "44",
+        "author": "WC Hung",
+        "year": "2006",
+        "unstructured": "Hung WC, Lee MT (2006) The interaction of melittin with E. coli membrane: the role of cardiolipin. Chinese J Phys 44:137–149",
+        "journal-title": "Chinese J Phys"
+      },
+      {
+        "key": "9030_CR112",
+        "doi-asserted-by": "crossref",
+        "first-page": "81",
+        "DOI": "10.1002/prot.340090202",
+        "volume": "9",
+        "author": "T Ikura",
+        "year": "1991",
+        "unstructured": "Ikura T, Go N, Inagaki F (1991) Refined structure of melittin bound to perdeuterated dodecylphosphocholine micelles as studied by 2D-NMR and distance geometry calculation. Proteins 9:81–89",
+        "journal-title": "Proteins"
+      },
+      {
+        "key": "9030_CR113",
+        "doi-asserted-by": "crossref",
+        "first-page": "5985",
+        "DOI": "10.1021/bi00440a040",
+        "volume": "28",
+        "author": "F Inagaki",
+        "year": "1989",
+        "unstructured": "Inagaki F, Shimada I, Kawaguchi K, Hirano M, Terasawa I, Ikura T, Go N (1989) Structure of melittin bound to perdeuterated dodecylphosphocholine micelles as studied by two-dimensional NMR and distance geometry calculations. Biochemistry 28:5985–5991",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR114",
+        "doi-asserted-by": "crossref",
+        "first-page": "479",
+        "DOI": "10.1046/j.1432-1327.1998.2570479.x",
+        "volume": "257",
+        "author": "M Iwadate",
+        "year": "1998",
+        "unstructured": "Iwadate M, Asakura T, Williamson MP (1998) The structure of the melittin tetramer at different temperatures. An NOE-based calculation with chemical shift refinement. Eur J Biochem 257:479–487",
+        "journal-title": "Eur J Biochem"
+      },
+      {
+        "key": "9030_CR115",
+        "doi-asserted-by": "crossref",
+        "first-page": "817",
+        "DOI": "10.1016/S0006-3495(88)83019-4",
+        "volume": "54",
+        "author": "E John",
+        "year": "1988",
+        "unstructured": "John E, Jähnig F (1988) Dynamics of melittin in water and membranes as determined by fluorescence anisotropy decay. Biophys J 54:817–827",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR116",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.1016/S0006-3495(91)82056-2",
+        "volume": "60",
+        "author": "E John",
+        "year": "1991",
+        "unstructured": "John E, Jähnig F (1991) Aggregation state of melittin in lipid vesicle membranes. Biophys J 60:319–328",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR117",
+        "doi-asserted-by": "crossref",
+        "first-page": "8989",
+        "DOI": "10.1021/ja9542911",
+        "volume": "118",
+        "author": "P Juvvadi",
+        "year": "1996",
+        "unstructured": "Juvvadi P, Vumman S, Merrifield RB (1996) Synthetic melittin, its enantio, retro, and retroenantio isomers, and selected chimeric analogs: their antibacterial, hemolytic, and lipid bilayer action. J Am Chem Soc 118:8989–8997",
+        "journal-title": "J Am Chem Soc"
+      },
+      {
+        "key": "9030_CR118",
+        "doi-asserted-by": "crossref",
+        "first-page": "1137",
+        "DOI": "10.1073/pnas.80.4.1137",
+        "volume": "80",
+        "author": "ET Kaiser",
+        "year": "1983",
+        "unstructured": "Kaiser ET, Kezdy FJ (1983) Secondary structures of proteins and peptides in amphiphilic environment. Proc Natl Acad Sci USA 80:1137–1143",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR119",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1126/science.6322295",
+        "volume": "223",
+        "author": "ET Kaiser",
+        "year": "1984",
+        "unstructured": "Kaiser ET, Kezdy FJ (1984) Amphiphilic secondary structure: design of peptide hormones. Science 223:249–255",
+        "journal-title": "Science"
+      },
+      {
+        "key": "9030_CR120",
+        "doi-asserted-by": "crossref",
+        "first-page": "337",
+        "DOI": "10.1016/0167-4838(90)90131-X",
+        "volume": "1040",
+        "author": "P Kaszycki",
+        "year": "1990",
+        "unstructured": "Kaszycki P, Wasylewski Z (1990) Fluorescence-quenching-resolved spectra of melittin in lipid bilayers. Biochim Biophys Acta 1040:337–345",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR121",
+        "doi-asserted-by": "crossref",
+        "first-page": "57",
+        "DOI": "10.1016/0005-2736(88)90047-8",
+        "volume": "939",
+        "author": "T Katsu",
+        "year": "1988",
+        "unstructured": "Katsu T, Ninomiya C, Kuroko M, Kobayashi H, Hirota T, Fujita Y (1988) Action mechanism of amphipathic peptides gramicidin S and melittin on erythrocyte membrane. Biochim Biophys Acta 939:57–63",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR122",
+        "doi-asserted-by": "crossref",
+        "first-page": "2469",
+        "DOI": "10.1016/S0021-9258(18)34947-0",
+        "volume": "257",
+        "author": "C Kempf",
+        "year": "1982",
+        "unstructured": "Kempf C, Klausner RD, Weinstein JN, Renswoude JV, Pincus M, Blumenthal R (1982) Voltage-dependent trans-bilayer orientation of melittin. J Biol Chem 257:2469–2476",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR123",
+        "doi-asserted-by": "crossref",
+        "first-page": "767",
+        "DOI": "10.1016/S0006-3495(97)78711-3",
+        "volume": "72",
+        "author": "JH Kleinschmidt",
+        "year": "1997",
+        "unstructured": "Kleinschmidt JH, Mahaney JE, Thomas DD, Marsh D (1997) Interaction of bee venom melittin with zwitterionic and negatively charged phospholipid bilayers: a spin-label electron spin resonance study. Biophys J 72:767–778",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR124",
+        "doi-asserted-by": "crossref",
+        "first-page": "4177",
+        "DOI": "10.1021/bi00586a021",
+        "volume": "18",
+        "author": "E Knoppel",
+        "year": "1979",
+        "unstructured": "Knoppel E, Eisenberg D, Wickner W (1979) Interactions of melittin, a preprotein model, with detergents. Biochemistry 18:4177–4181",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR125",
+        "doi-asserted-by": "crossref",
+        "first-page": "C1063",
+        "DOI": "10.1152/ajpcell.2000.278.6.C1063",
+        "volume": "278",
+        "author": "JI Kourie",
+        "year": "2000",
+        "unstructured": "Kourie JI, Shorthouse AA (2000) Properties of cytotoxic peptide-formed ion channels. Am J Physiol Cell Physiol 278:C1063–C1087",
+        "journal-title": "Am J Physiol Cell Physiol"
+      },
+      {
+        "key": "9030_CR126",
+        "doi-asserted-by": "crossref",
+        "first-page": "531",
+        "DOI": "10.1016/j.jmb.2003.10.068",
+        "volume": "335",
+        "author": "T Kouyama",
+        "year": "2004",
+        "unstructured": "Kouyama T, Nishikawa T, Tokuhisa T, Okumura H (2004) Crystal structure of the L intermediate of bacteriorhodopsin: evidence for vertical translocation of a water molecule during the proton pumping cycle. J Mol Biol 335:531–546",
+        "journal-title": "J Mol Biol"
+      },
+      {
+        "key": "9030_CR127",
+        "doi-asserted-by": "crossref",
+        "first-page": "1148",
+        "DOI": "10.1021/ja028577z",
+        "volume": "125",
+        "author": "MA Kriech",
+        "year": "2003",
+        "unstructured": "Kriech MA, Conboy JC (2003) Label-free chiral detection of melittin binding to a membrane. J Am Chem Soc 125:1148–1149",
+        "journal-title": "J Am Chem Soc"
+      },
+      {
+        "key": "9030_CR128",
+        "doi-asserted-by": "crossref",
+        "first-page": "4216",
+        "DOI": "10.1021/bi00436a014",
+        "volume": "28",
+        "author": "E Kuchinka",
+        "year": "1989",
+        "unstructured": "Kuchinka E, Seelig J (1989) Interaction of melittin with phosphatidylcholine membranes. Binding isotherm and lipid head-group conformation. Biochemistry 28:4216–4221",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR129",
+        "doi-asserted-by": "crossref",
+        "first-page": "1762",
+        "DOI": "10.1016/S0006-3495(97)78822-2",
+        "volume": "72",
+        "author": "AS Ladokhin",
+        "year": "1997",
+        "unstructured": "Ladokhin AS, Selsted ME, White SH (1997) Sizing membrane pores in lipid vesicles by leakage of co-encapsulated markers: pore formation by melittin. Biophys J 72:1762–1766",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR130",
+        "doi-asserted-by": "crossref",
+        "first-page": "1363",
+        "DOI": "10.1006/jmbi.1998.2346",
+        "volume": "285",
+        "author": "AS Ladokhin",
+        "year": "1999",
+        "unstructured": "Ladokhin AS, White SH (1999) Folding of amphipathic alpha-helices on membranes: energetics of helix formation by melittin. J Mol Biol 285:1363–1369",
+        "journal-title": "J Mol Biol"
+      },
+      {
+        "key": "9030_CR131",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1016/S0005-2736(01)00382-0",
+        "volume": "1514",
+        "author": "AS Ladokhin",
+        "year": "2001",
+        "unstructured": "Ladokhin AS, White SH (2001) ‘Detergent-like’ permeabilization of anionic lipid vesicles by melittin. Biochim Biophys Acta 1514:253–260",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR132",
+        "doi-asserted-by": "crossref",
+        "first-page": "2752",
+        "DOI": "10.1016/S0006-3495(01)75918-8",
+        "volume": "81",
+        "author": "YH Lam",
+        "year": "2001",
+        "unstructured": "Lam YH, Wassall SR, Morton CJ, Smith R, Separovic F (2001) Solid-state NMR structure determination of melittin in a lipid environment. Biophys J 81:2752–2761",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR133",
+        "doi-asserted-by": "crossref",
+        "first-page": "244",
+        "DOI": "10.1016/0005-2736(79)90046-4",
+        "volume": "556",
+        "author": "J Lauterwein",
+        "year": "1979",
+        "unstructured": "Lauterwein J, Bosch C, Brown LR, Wuthrich K (1979) Physicochemical studies of the protein–lipid interactions in melittin-containing micelles. Biochim Biophys Acta 556:244–264",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR134",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1016/0005-2795(80)90033-1",
+        "volume": "622",
+        "author": "J Lauterwein",
+        "year": "1980",
+        "unstructured": "Lauterwein J, Brown LR, Wüthrich K (1980) High-resolution 1H-NMR studies of monomeric melittin in aqueous solution. Biochim Biophys Acta 622:219–230",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR135",
+        "doi-asserted-by": "crossref",
+        "first-page": "102",
+        "DOI": "10.1016/j.ijpharm.2005.06.001",
+        "volume": "300",
+        "author": "N Lavignac",
+        "year": "2005",
+        "unstructured": "Lavignac N, Lazenby M, Franchini J, Ferruti P, Duncan R (2005) Synthesis and preliminary evaluation of poly(amidoamine)-melittin conjugates as endosomolytic polymers and/or potential anticancer therapeutics. Int J Pharm 300:102–112",
+        "journal-title": "Int J Pharm"
+      },
+      {
+        "key": "9030_CR136",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Lazarev VN, Parfenova TM, Gularyan SK, Misyurina O Yu, Akopian TA, Govorun VM (2002) Induced expression of melittin, an antimicrobial peptide, inhibits infection by Chlamydia trachomatis and Mycoplasma hominis in a HeLa cell line. Int J Antimicrob Agents 19:133–137",
+        "DOI": "10.1016/S0924-8579(01)00479-4"
+      },
+      {
+        "key": "9030_CR137",
+        "doi-asserted-by": "crossref",
+        "first-page": "176",
+        "DOI": "10.1002/prot.10410",
+        "volume": "52",
+        "author": "T Lazaridis",
+        "year": "2003",
+        "unstructured": "Lazaridis T (2003) Effective energy function for proteins in lipid membranes. Proteins 52:176–192",
+        "journal-title": "Proteins"
+      },
+      {
+        "key": "9030_CR138",
+        "doi-asserted-by": "crossref",
+        "first-page": "464",
+        "DOI": "10.1034/j.1399-3011.2001.10974.x",
+        "volume": "58",
+        "author": "TH Lee",
+        "year": "2001",
+        "unstructured": "Lee TH, Mozsolits H, Aguilar MI (2001) Measurement of the affinity of melittin for zwitterionic and anionic membranes using immobilized lipid biosensors. J Pept Res 58:464–476",
+        "journal-title": "J Pept Res"
+      },
+      {
+        "key": "9030_CR139",
+        "doi-asserted-by": "crossref",
+        "first-page": "7659",
+        "DOI": "10.1073/pnas.88.17.7659",
+        "volume": "88",
+        "author": "M Leippe",
+        "year": "1991",
+        "unstructured": "Leippe M, Ebel S, Schoenberger OL, Horstmann RD, Muller-Eberhard HJ (1991) Pore-forming peptide of pathogenic Entamoeba histolytica. Proc Natl Acad Sci USA 88:7659–7663",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR140",
+        "doi-asserted-by": "crossref",
+        "first-page": "3501",
+        "DOI": "10.1002/j.1460-2075.1992.tb05432.x",
+        "volume": "11",
+        "author": "M Leippe",
+        "year": "1992",
+        "unstructured": "Leippe M, Tannich E, Nickel R, van der Goot G, Pattus F, Horstmann RD, Müller-Eberhard HJ (1992) Primary and secondary structure of the pore-forming peptide of pathogenic Entamoeba histolytica. EMBO J 11:3501–3506",
+        "journal-title": "EMBO J"
+      },
+      {
+        "key": "9030_CR141",
+        "doi-asserted-by": "crossref",
+        "first-page": "1714",
+        "DOI": "10.1016/S0006-3495(00)76723-3",
+        "volume": "78",
+        "author": "JH Lin",
+        "year": "2000",
+        "unstructured": "Lin JH, Baumgaertner A (2000) Stability of a melittin pore in a lipid bilayer: a molecular dynamics study. Biophys J 78:1714–1724",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR142",
+        "doi-asserted-by": "crossref",
+        "first-page": "15443",
+        "DOI": "10.1074/jbc.270.26.15443",
+        "volume": "270",
+        "author": "L Liscum",
+        "year": "1995",
+        "unstructured": "Liscum L, Underwood KW (1995) Intracellular cholesterol transport and compartmentation. J Biol Chem 270:15443–15446",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR143",
+        "doi-asserted-by": "crossref",
+        "first-page": "13723",
+        "DOI": "10.1021/bi9620621",
+        "volume": "35",
+        "author": "SJ Ludtke",
+        "year": "1996",
+        "unstructured": "Ludtke SJ, He K, Heller WT, Harroun TA, Yang L, Huang HW (1996) Membrane pores induced by magainin. Biochemistry 35:13723–13728",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR144",
+        "doi-asserted-by": "crossref",
+        "first-page": "409",
+        "DOI": "10.3109/10409238609081999",
+        "volume": "20",
+        "author": "PL Luisi",
+        "year": "1986",
+        "unstructured": "Luisi PL, Magid LJ (1986) Solubilization of enzymes and nucleic acids in hydrocarbon micellar solutions. CRC Crit Rev Biochem 20:409–474",
+        "journal-title": "CRC Crit Rev Biochem"
+      },
+      {
+        "key": "9030_CR145",
+        "doi-asserted-by": "crossref",
+        "first-page": "209",
+        "DOI": "10.1016/0304-4157(88)90025-1",
+        "volume": "947",
+        "author": "PL Luisi",
+        "year": "1988",
+        "unstructured": "Luisi PL, Giomini M, Pileni MP, Robinson BH (1988) Reverse micelles as hosts for proteins and small molecules. Biochim Biophys Acta 947:209–246",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR146",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1042/bj20030544",
+        "volume": "375",
+        "author": "JR Luque-Ortega",
+        "year": "2003",
+        "unstructured": "Luque-Ortega JR, Saugar JM, Chiva C, Andreu D, Rivas L (2003) Identification of new leishmanicidal peptide lead structures by automated real-time monitoring of changes in intracellular ATP. Biochem J 375:221–230",
+        "journal-title": "Biochem J"
+      },
+      {
+        "key": "9030_CR147",
+        "doi-asserted-by": "crossref",
+        "first-page": "7171",
+        "DOI": "10.1021/bi00243a019",
+        "volume": "30",
+        "author": "JE Mahaney",
+        "year": "1991",
+        "unstructured": "Mahaney JE, Thomas DD (1991) Effects of melittin on molecular dynamics and Ca-ATPase activity in sarcoplasmic reticulum membranes: electron paramagnetic resonance. Biochemistry 30:7171–7180",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR148",
+        "doi-asserted-by": "crossref",
+        "first-page": "1513",
+        "DOI": "10.1016/S0006-3495(92)81736-8",
+        "volume": "63",
+        "author": "JE Mahaney",
+        "year": "1992",
+        "unstructured": "Mahaney JE, Kleinschmidt J, Marsh D, Thomas DD (1992) Effects of melittin on lipid–protein interactions in sarcoplasmic reticulum membranes. Biophys J 63:1513–1522",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR149",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1002/bip.360370206",
+        "volume": "37",
+        "author": "WL Maloy",
+        "year": "1995",
+        "unstructured": "Maloy WL, Kari UP (1995) Structure–activity studies on magainins and other host defense peptides. Biopolymers 37:105–122",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR150",
+        "doi-asserted-by": "crossref",
+        "first-page": "12466",
+        "DOI": "10.1073/pnas.92.26.12466",
+        "volume": "92",
+        "author": "JF Marcos",
+        "year": "1995",
+        "unstructured": "Marcos JF, Beachy RN, Houghten RA, Blondelle SE, Pérez-Payá E (1995) Inhibition of a plant virus infection by analogs of melittin. Proc Natl Acad Sci USA 92:12466–12469",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR151",
+        "doi-asserted-by": "crossref",
+        "first-page": "162",
+        "DOI": "10.1016/0005-2736(91)90366-G",
+        "volume": "1063",
+        "author": "K Matsuzaki",
+        "year": "1996",
+        "unstructured": "Matsuzaki K, Murase O, Tokuda H, Fujii N, Miyajima K (1996) Physicochemical determinants for the interactions of magainins 1 and 2 with acidic lipid bilayers. Biochim Biophys Acta 1063:162–170",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR152",
+        "doi-asserted-by": "crossref",
+        "first-page": "3342",
+        "DOI": "10.1021/bi00177a027",
+        "volume": "33",
+        "author": "K Matsuzaki",
+        "year": "1994",
+        "unstructured": "Matsuzaki K, Murase O, Tokuda H, Funakoshi S, Fujii N, Miyajima K (1994) Orientational and aggregational states of magainin 2 in phospholipid bilayers. Biochemistry 33:3342–3349",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR153",
+        "doi-asserted-by": "crossref",
+        "first-page": "831",
+        "DOI": "10.1016/S0006-3495(97)78115-3",
+        "volume": "73",
+        "author": "K Matsuzaki",
+        "year": "1997",
+        "unstructured": "Matsuzaki K, Yoneyama S, Miyajima K (1997) Pore formation and translocation of melittin. Biophys J 73:831–838",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR154",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1111/j.1432-1033.1991.tb15796.x",
+        "volume": "196",
+        "author": "T Maurer",
+        "year": "1991",
+        "unstructured": "Maurer T, Lucke C, Ruterjans H (1991) Investigation of the membrane-active peptides melittin and glucagons by photochemically induced dynamic-nuclear-polarization (photo-CIDNP) NMR. Eur J Biochem 196:135–141",
+        "journal-title": "Eur J Biochem"
+      },
+      {
+        "key": "9030_CR155",
+        "doi-asserted-by": "crossref",
+        "first-page": "14706",
+        "DOI": "10.1073/pnas.96.26.14706",
+        "volume": "96",
+        "author": "KE McAuley",
+        "year": "1999",
+        "unstructured": "McAuley KE, Fyfe PK, Ridge JP, Isaacs NW, Cogdell RJ, Jones MR (1999) Structural details of an interaction between cardiolipin and an integral membrane protein. Proc Natl Acad Sci USA 96:14706–14711",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR156",
+        "doi-asserted-by": "crossref",
+        "first-page": "3449",
+        "DOI": "10.1073/pnas.92.8.3449",
+        "volume": "92",
+        "author": "RB Merrifield",
+        "year": "1995",
+        "unstructured": "Merrifield RB, Juvvadi P, Andreu D, Ubach J, Boman A, Boman HG (1995) Retro and retroenantio analogs of cecropin–melittin hybrids. Proc Natl Acad Sci USA 92:3449–3453",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR157",
+        "doi-asserted-by": "crossref",
+        "first-page": "896",
+        "DOI": "10.1016/S0006-3495(98)77578-2",
+        "volume": "75",
+        "author": "DC BJ Mitchell Litman",
+        "year": "1998",
+        "unstructured": "Mitchell DC Litman BJ (1998) Effect of cholesterol on molecular order and dynamics in highly polyunsaturated phospholipid bilayers. Biophys J 75:896–908",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR158",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1016/S0006-3495(95)80174-8",
+        "volume": "68",
+        "author": "M Monette",
+        "year": "1995",
+        "unstructured": "Monette M, Lafleur M (1995) Modulation of melittin-induced lysis by surface charge density of membranes. Biophys J 68:187–195",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR159",
+        "doi-asserted-by": "crossref",
+        "first-page": "2195",
+        "DOI": "10.1016/S0006-3495(96)79785-0",
+        "volume": "70",
+        "author": "M Monette",
+        "year": "1996",
+        "unstructured": "Monette M, Lafleur M (1996) Influence of lipid chain unsaturation on melittin-induced micellization. Biophys J 70:2195–2202",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR160",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.1016/0005-2736(93)90217-N",
+        "volume": "1149",
+        "author": "M Monette",
+        "year": "1993",
+        "unstructured": "Monette M, van Calsteren MR, Lafleur M (1993) Effect of cholesterol on the polymorphism of dipalmitoylphosphatidylcholine/melittin complexes: an NMR study. Biochim Biophys Acta 1149:319–328",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR161",
+        "doi-asserted-by": "crossref",
+        "first-page": "668",
+        "DOI": "10.1016/0005-2736(83)90245-6",
+        "volume": "732",
+        "author": "CG Morgan",
+        "year": "1983",
+        "unstructured": "Morgan CG, Williamson H, Fuller S, Hudson B (1983) Melittin induces fusion of unilamellar phospholipid vesicles. Biochim Biophys Acta 732:668–674",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR162",
+        "doi-asserted-by": "crossref",
+        "first-page": "481",
+        "DOI": "10.1002/bip.360340405",
+        "volume": "34",
+        "author": "H Morii",
+        "year": "1994",
+        "unstructured": "Morii H, Honda S, Ohashi S, Uedaira H (1994) Alpha-helical assembly of biologically active peptides and designed helix bundle protein. Biopolymers 34:481–488",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR163",
+        "doi-asserted-by": "crossref",
+        "first-page": "64",
+        "DOI": "10.1016/S0005-2736(01)00303-0",
+        "volume": "1512",
+        "author": "H Mozsolits",
+        "year": "2001",
+        "unstructured": "Mozsolits H, Wirth HJ, Werkmeister J, Aguilar MI (2001) Analysis of antimicrobial peptide interactions with hybrid bilayer membrane systems using surface plasmon resonance. Biochim Biophys Acta 1512:64–76",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR164",
+        "doi-asserted-by": "crossref",
+        "first-page": "1915",
+        "DOI": "10.1016/S0006-3495(98)77632-5",
+        "volume": "75",
+        "author": "S Mukherjee",
+        "year": "1998",
+        "unstructured": "Mukherjee S, Zha X, Tabas I, Maxfield FR (1998) Cholesterol distribution in living cells: fluorescence imaging using dehydroergosterol as a fluorescent cholesterol analog. Biophys J 75:1915–1925",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR165",
+        "doi-asserted-by": "crossref",
+        "first-page": "2405",
+        "DOI": "10.1016/S0006-3495(00)76784-1",
+        "volume": "78",
+        "author": "A Naito",
+        "year": "2000",
+        "unstructured": "Naito A, Nagao T, Norisada K, Mizuno T, Tuzi S, Saitô H (2000) Conformation and dynamics of melittin bound to magnetically oriented lipid bilayers by solid-state 31P and 13C NMR spectroscopy. Biophys J 78:2405–2417",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR166",
+        "first-page": "49",
+        "volume-title": "Permeability and stability of bilayers",
+        "author": "D Needham",
+        "year": "1995",
+        "unstructured": "Needham D (1995) Cohesion and permeability in lipid bilayer vesicles. In: Simon SA, Disalvo EA (eds) Permeability and stability of bilayers. CRC Press, Boca Raton, Florida, pp 49–76"
+      },
+      {
+        "key": "9030_CR167",
+        "first-page": "130",
+        "volume": "217",
+        "author": "W Neumann",
+        "year": "1953",
+        "unstructured": "Neumann W, Habermann E, Hansen H (1953) Differentiation of two hemolytic factors in bee venom. Naunyn-Schmiedebergs Arch Exp Path Pharma 217:130–143",
+        "journal-title": "Naunyn-Schmiedebergs Arch Exp Path Pharma"
+      },
+      {
+        "key": "9030_CR168",
+        "doi-asserted-by": "crossref",
+        "first-page": "7407",
+        "DOI": "10.1021/ja004351p",
+        "volume": "123",
+        "author": "A Niemz",
+        "year": "2001",
+        "unstructured": "Niemz A, Tirrel DA (2001) Self-association and membrane-binding behavior of melittins containing trifluoroleucine. J Am Chem Soc 123:7407–7413",
+        "journal-title": "J Am Chem Soc"
+      },
+      {
+        "key": "9030_CR169",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1016/S0163-7827(00)00004-7",
+        "volume": "39",
+        "author": "S Nir",
+        "year": "2000",
+        "unstructured": "Nir S, Nieva JL (2000) Interactions of peptides with liposomes: pore formation and fusion. Prog Lipid Res 39:181–206",
+        "journal-title": "Prog Lipid Res"
+      },
+      {
+        "key": "9030_CR170",
+        "doi-asserted-by": "crossref",
+        "first-page": "732",
+        "DOI": "10.1093/oxfordjournals.jbchem.a123649",
+        "volume": "110",
+        "author": "T Nishiya",
+        "year": "1991",
+        "unstructured": "Nishiya T, Chou HL (1991) The study of lipid–protein interactions: effect of melittin on phase transition of phosphatidylethanolamine and sensitivity of phospholipases to phase state. J Biochem 110:732–736",
+        "journal-title": "J Biochem"
+      },
+      {
+        "key": "9030_CR171",
+        "doi-asserted-by": "crossref",
+        "first-page": "215",
+        "DOI": "10.1080/152165400300001543",
+        "volume": "50",
+        "author": "W Niu",
+        "year": "2000",
+        "unstructured": "Niu W, Wu Y, Sui SF (2000) Orientation of membrane-bound melittin studied by a combination of HPLC and liquid secondary ion mass spectrometry (LSIMS). IUBMB Life 50:215–219",
+        "journal-title": "IUBMB Life"
+      },
+      {
+        "key": "9030_CR172",
+        "doi-asserted-by": "crossref",
+        "first-page": "47550",
+        "DOI": "10.1074/jbc.M108331200",
+        "volume": "276",
+        "author": "M Ogris",
+        "year": "2001",
+        "unstructured": "Ogris M, Carlisle RC, Bettinger T, Seymour LW (2001) Melittin enables efficient vesicular escape and enhanced nuclear access of nonviral gene delivery vectors. J Biol Chem 276:47550–47555",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR173",
+        "doi-asserted-by": "crossref",
+        "first-page": "185",
+        "DOI": "10.1016/0301-4622(95)00122-0",
+        "volume": "59",
+        "author": "A Ohman",
+        "year": "1996",
+        "unstructured": "Ohman A, Davydov R, Backlund BM, Langel U, Graslund A (1996) A study of melittin, motilin and galanin in reversed micellar environments, using circular dichroism spectroscopy. Biophys Chem 59:185–192",
+        "journal-title": "Biophys Chem"
+      },
+      {
+        "key": "9030_CR174",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.1111/j.1432-1033.1989.tb15171.x",
+        "volume": "186",
+        "author": "Y Ohtani",
+        "year": "1989",
+        "unstructured": "Ohtani Y, Irie T, Fukunaga K, Pitha J (1989) Differential effects of alpha-, beta- and gamma-cyclodextrins on human erythrocytes. Eur J Biochem 186:17–22",
+        "journal-title": "Eur J Biochem"
+      },
+      {
+        "key": "9030_CR175",
+        "doi-asserted-by": "crossref",
+        "first-page": "5982",
+        "DOI": "10.1073/pnas.082666399",
+        "volume": "99",
+        "author": "T Okada",
+        "year": "2002",
+        "unstructured": "Okada T, Fujiyoshi Y, Silow M, Navarro J, Landau EM, Shichida Y (2002) Functional role of internal water molecules in rhodopsin revealed by X-ray crystallography. Proc Natl Acad Sci USA 99:5982–5987",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "9030_CR176",
+        "doi-asserted-by": "crossref",
+        "first-page": "1826",
+        "DOI": "10.1021/bi962507l",
+        "volume": "36",
+        "author": "Z Oren",
+        "year": "1997",
+        "unstructured": "Oren Z, Shai Y (1997) Selective lysis of bacteria but not mammalian cells by diastereomers of melittin: structure–function study. Biochemistry 36:1826–1835",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR177",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/0005-2736(92)90245-H",
+        "volume": "1112",
+        "author": "K Otoda",
+        "year": "1992",
+        "unstructured": "Otoda K, Kimura S, Imanishi Y (1992) Interaction of melittin derivatives with lipid bilayer membrane. Role of basic residues at the C-terminal and their replacement with lactose. Biochim Biophys Acta 1112:1–6",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR178",
+        "doi-asserted-by": "crossref",
+        "first-page": "458",
+        "DOI": "10.1021/bi0267846",
+        "volume": "42",
+        "author": "N Papo",
+        "year": "2003a",
+        "unstructured": "Papo N, Shai Y (2003a) Exploring peptide membrane interaction using surface plasmon resonance: differentiation between pore formation versus membrane disruption by lytic peptides. Biochemistry 42:458–466",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR179",
+        "doi-asserted-by": "crossref",
+        "first-page": "9346",
+        "DOI": "10.1021/bi027212o",
+        "volume": "42",
+        "author": "N Papo",
+        "year": "2003b",
+        "unstructured": "Papo N, Shai Y (2003b) New lytic peptides based on the d,l-amphipathic helix motif preferentially kill tumor cells compared to normal cells. Biochemistry 42:9346–9354",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR180",
+        "doi-asserted-by": "crossref",
+        "first-page": "8720",
+        "DOI": "10.1021/bi00489a031",
+        "volume": "29",
+        "author": "RA Parente",
+        "year": "1990",
+        "unstructured": "Parente RA, Nir S, Szoka F (1990) Mechanism of leakage of phospholipid vesicle contents induced by the peptide GALA. Biochemistry 29:8720–8728",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR181",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1016/0005-2736(91)90339-A",
+        "volume": "1062",
+        "author": "M Pawlak",
+        "year": "1991",
+        "unstructured": "Pawlak M, Stankowski S, Schwarz G (1991) Melittin induced voltage-dependent conductance in DOPC lipid bilayers. Biochim Biophys Acta 1062:94–102",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR182",
+        "doi-asserted-by": "crossref",
+        "first-page": "1048",
+        "DOI": "10.1074/jbc.270.3.1048",
+        "volume": "270",
+        "author": "E Pérez-Payá",
+        "year": "1995",
+        "unstructured": "Pérez-Payá E, Houghten RA, Blondelle SE (1995) The role of amphipathicity in the folding, self-association and biological activity of multiple subunit small proteins. J Biol Chem 270:1048–1056",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR183",
+        "doi-asserted-by": "crossref",
+        "first-page": "223",
+        "DOI": "10.1016/S0005-2736(97)00112-0",
+        "volume": "1329",
+        "author": "E Pérez-Payá",
+        "year": "1997",
+        "unstructured": "Pérez-Payá E, Dufourcq J, Braco L, Abad C (1997) Structural characterization of the natural membrane-bound state of melittin: a fluorescence study of a dansylated analogue. Biochim Biophys Acta 1329:223–236",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR184",
+        "doi-asserted-by": "crossref",
+        "first-page": "965",
+        "DOI": "10.1016/S0006-3495(95)80272-9",
+        "volume": "68",
+        "author": "T Pott",
+        "year": "1995",
+        "unstructured": "Pott T, Dufourc EJ (1995) Action of melittin on the DPPC-cholesterol liquid-ordered phase: a solid state 2H-and 31P-NMR study. Biophys J 68:965–977",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR185",
+        "doi-asserted-by": "crossref",
+        "first-page": "209",
+        "DOI": "10.1016/S0009-3084(00)00223-1",
+        "volume": "109",
+        "author": "T Pott",
+        "year": "2001",
+        "unstructured": "Pott T, Maillet JC, Abad C, Campos A, Dufourcq J, Dufourc EJ (2001) The lipid charge density at the bilayer surface modulates the effects of melittin on membranes. Chem Phys Lipids 109:209–223",
+        "journal-title": "Chem Phys Lipids"
+      },
+      {
+        "key": "9030_CR186",
+        "doi-asserted-by": "crossref",
+        "first-page": "188",
+        "DOI": "10.1016/j.bbamem.2004.03.010",
+        "volume": "1663",
+        "author": "TJ Pucadyil",
+        "year": "2004",
+        "unstructured": "Pucadyil TJ, Chattopadhyay A (2004) Cholesterol modulates ligand binding and G-protein coupling to serotonin1A receptors from bovine hippocampus. Biochim Biophys Acta 1663:188–200",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR187",
+        "doi-asserted-by": "crossref",
+        "first-page": "295",
+        "DOI": "10.1016/j.plipres.2006.02.002",
+        "volume": "45",
+        "author": "TJ Pucadyil",
+        "year": "2006",
+        "unstructured": "Pucadyil TJ, Chattopadhyay A (2006) Role of cholesterol in the function and organization of G-protein coupled receptors. Prog Lipid Res 45:295–333",
+        "journal-title": "Prog Lipid Res"
+      },
+      {
+        "key": "9030_CR188",
+        "doi-asserted-by": "crossref",
+        "first-page": "16901",
+        "DOI": "10.1021/jp0511754",
+        "volume": "109",
+        "author": "W Qiu",
+        "year": "2005",
+        "unstructured": "Qiu W, Zhang L, Kao YT, Lu W, Li T, Kim J, Sollenberger GM, Wang L, Zhong D (2005) Ultrafast hydration dynamics in melittin folding and aggregation: helix formation and tetramer self-assembly. J Phys Chem B 109:16901–16910",
+        "journal-title": "J Phys Chem B"
+      },
+      {
+        "key": "9030_CR189",
+        "doi-asserted-by": "crossref",
+        "first-page": "695",
+        "DOI": "10.1021/bi00272a026",
+        "volume": "22",
+        "author": "SC Quay",
+        "year": "1983",
+        "unstructured": "Quay SC, Condie CC (1983) Conformational studies of aqueous melittin: thermodynamic parameters of the monomer-tetramer self-association reaction. Biochemistry 22:695–700",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR190",
+        "doi-asserted-by": "crossref",
+        "first-page": "13390",
+        "DOI": "10.1021/bi00041a016",
+        "volume": "34",
+        "author": "M Rabenstein",
+        "year": "1995",
+        "unstructured": "Rabenstein M, Shin YK (1995) A peptide from the heptad repeat of human immunodeficiency virus gp41 shows both membrane binding and coiled-coil formation. Biochemistry 34:13390–13397",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR191",
+        "doi-asserted-by": "crossref",
+        "first-page": "10332",
+        "DOI": "10.1021/la035126z",
+        "volume": "19",
+        "author": "H Raghuraman",
+        "year": "2003",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2003) Organization and dynamics of melittin in environments of graded hydration: a fluorescence approach. Langmuir 19:10332–10341",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "9030_CR192",
+        "doi-asserted-by": "crossref",
+        "first-page": "611",
+        "DOI": "10.1007/s00249-004-0402-7",
+        "volume": "33",
+        "author": "H Raghuraman",
+        "year": "2004a",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2004a) Effect of micellar charge on the conformation and dynamics of melittin. Eur Biophys J 33:611–622",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR193",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1016/j.bbamem.2004.06.008",
+        "volume": "1665",
+        "author": "H Raghuraman",
+        "year": "2004b",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2004b) Influence of lipid chain unsaturation on membrane-bound melittin: a fluorescence approach. Biochim Biophys Acta 1665:29–39",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR194",
+        "doi-asserted-by": "crossref",
+        "first-page": "2419",
+        "DOI": "10.1529/biophysj.104.043596",
+        "volume": "87",
+        "author": "H Raghuraman",
+        "year": "2004c",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2004c) Interaction of melittin with membrane cholesterol: a fluorescence approach. Biophys J 87:2419–2432",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR195",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.1016/j.chemphyslip.2004.12.011",
+        "volume": "134",
+        "author": "H Raghuraman",
+        "year": "2005",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2005) Cholesterol inhibits the lytic activity of melittin in erythrocytes. Chem Phys Lipids 134:183–189",
+        "journal-title": "Chem Phys Lipids"
+      },
+      {
+        "key": "9030_CR196",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.1002/bip.20536",
+        "volume": "83",
+        "author": "H Raghuraman",
+        "year": "2006a",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2006a) Effect of ionic strength on folding and aggregation of the hemolytic peptide melittin in solution. Biopolymers 83:111–121",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR277",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Raghuraman H, Chattopadhyay A (2006b) Orientation and dynamics of melittin in membranes of varying composition utilizing NBD fluorescence. Biophys J (in press).",
+        "DOI": "10.1529/biophysj.106.088690"
+      },
+      {
+        "key": "9030_CR197",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.1016/j.bpc.2006.06.011",
+        "volume": "124",
+        "author": "H Raghuraman",
+        "year": "2006",
+        "unstructured": "Raghuraman H, Ganguly S, Chattopadhyay A (2006) Effect of ionic strength on the organization and dynamics of membrane-bound melittin. Biophys Chem 124:115–124",
+        "journal-title": "Biophys Chem"
+      },
+      {
+        "key": "9030_CR198",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Raghuraman H, Kelkar DA, Chattopadhyay A (2005) Novel insights into protein structure and dynamics utilizing the red edge excitation shift approach. In: Geddes CD, Lakowicz JR (eds) Reviews in fluorescence, Vol. 2. Springer, New York, pp 199–222",
+        "DOI": "10.1007/0-387-23690-2_9"
+      },
+      {
+        "key": "9030_CR199",
+        "doi-asserted-by": "crossref",
+        "first-page": "981",
+        "DOI": "10.1002/bip.360320809",
+        "volume": "32",
+        "author": "K Ramalingam",
+        "year": "1992",
+        "unstructured": "Ramalingam K, Aimoto S, Bello J (1992) Conformational studies of anionic melittin analogues: effect of peptide concentration, pH, ionic strength, and temperature-models for protein folding and halophilic proteins. Biopolymers 32:981–992",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR200",
+        "doi-asserted-by": "crossref",
+        "first-page": "2502",
+        "DOI": "10.1016/S0006-3495(96)79822-3",
+        "volume": "70",
+        "author": "D Rapaport",
+        "year": "1996",
+        "unstructured": "Rapaport D, Peled R, Nir S, Shai Y (1996) Reversible surface aggregation in pore formation by pardaxin. Biophys J 70:2502–2512",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR201",
+        "doi-asserted-by": "crossref",
+        "first-page": "2753",
+        "DOI": "10.1016/S0021-9258(18)49909-7",
+        "volume": "266",
+        "author": "RL Raynor",
+        "year": "1991",
+        "unstructured": "Raynor RL, Zheng B, Kuo JF (1991) Membrane interactions of amphiphilic polypeptides mastoparan, melittin, polymyxin B, and cardiotoxin. Differential inhibition of protein kinase C, Ca2+/calmodulin-dependent protein kinase II and synaptosomal membrane Na,K-ATPase, and Na+ pump and differentiation of HL60 cells. J Biol Chem 266:2753–2758",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR202",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1016/0301-4622(95)00087-9",
+        "volume": "58",
+        "author": "S Rex",
+        "year": "1996",
+        "unstructured": "Rex S (1996) Pore formation induced by the peptide melittin in different lipid vesicle membranes. Biophys Chem 58:75–85",
+        "journal-title": "Biophys Chem"
+      },
+      {
+        "key": "9030_CR203",
+        "doi-asserted-by": "crossref",
+        "first-page": "209",
+        "DOI": "10.1016/S0301-4622(00)00121-6",
+        "volume": "85",
+        "author": "S Rex",
+        "year": "2000",
+        "unstructured": "Rex S (2000) A Pro→Ala substitution in melittin affects self-association, membrane binding and pore-formation kinetics due to changes in structural and electrostatic properties. Biophys Chem 85:209–228",
+        "journal-title": "Biophys Chem"
+      },
+      {
+        "key": "9030_CR204",
+        "doi-asserted-by": "crossref",
+        "first-page": "2336",
+        "DOI": "10.1021/bi971009p",
+        "volume": "37",
+        "author": "S Rex",
+        "year": "1998",
+        "unstructured": "Rex S, Schwarz G (1998) Quantitative studies on the melittin-induced leakage mechanism of lipid vesicles. Biochemistry 37:2336–2345",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR205",
+        "doi-asserted-by": "crossref",
+        "first-page": "525",
+        "DOI": "10.1042/bj3160525",
+        "volume": "316",
+        "author": "DE Rivett",
+        "year": "1996",
+        "unstructured": "Rivett DE, Kirkpatrick A, Hewish DR, Reilly W, Werkmeister JA (1996) Dimerization of truncated melittin analogues results in cytolytic peptides. Biochem J 316:525–529",
+        "journal-title": "Biochem J"
+      },
+      {
+        "key": "9030_CR206",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1016/S0076-6879(94)37050-8",
+        "volume": "237",
+        "author": "EM Ross",
+        "year": "1994",
+        "unstructured": "Ross EM, Higashijima T (1994) Regulation of G-protein activation by mastoparans and other cationic peptides. Methods Enzymol 237:26–37",
+        "journal-title": "Methods Enzymol"
+      },
+      {
+        "key": "9030_CR207",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/0005-2736(94)00275-T",
+        "volume": "1235",
+        "author": "SV Rudenko",
+        "year": "1995",
+        "unstructured": "Rudenko SV, Patelaros SV (1995) Cation-sensitive pore formation in rehydrated erythrocytes. Biochim Biophys Acta 1235:1–9",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR208",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/0304-4157(94)90002-7",
+        "volume": "1197",
+        "author": "G Saberwal",
+        "year": "1994",
+        "unstructured": "Saberwal G, Nagaraj R (1994) Cell-lytic and antibacterial peptides that act by perturbing the barrier function of membranes: facets of their conformational features, structure–function correlation and membrane-perturbing abilities. Biochim Biophys Acta 1197:109–131",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR209",
+        "doi-asserted-by": "crossref",
+        "first-page": "377",
+        "DOI": "10.1016/0014-5793(95)01376-8",
+        "volume": "377",
+        "author": "R Sankararamakrishnan",
+        "year": "1995",
+        "unstructured": "Sankararamakrishnan R, Sansom MSP (1995) Water-mediated conformational transitions in nicotinic receptor M2 helix bundles: a molecular dynamics study. FEBS Lett 377:377–382",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR210",
+        "doi-asserted-by": "crossref",
+        "first-page": "139",
+        "DOI": "10.1016/0079-6107(91)90004-C",
+        "volume": "55",
+        "author": "MSP Sansom",
+        "year": "1991",
+        "unstructured": "Sansom MSP (1991) The biophysics of peptide models of ion channels. Prog Biophys Mol Biol 55:139–235",
+        "journal-title": "Prog Biophys Mol Biol"
+      },
+      {
+        "key": "9030_CR211",
+        "doi-asserted-by": "crossref",
+        "first-page": "764",
+        "DOI": "10.1007/BF02136851",
+        "volume": "27",
+        "author": "E Schroder",
+        "year": "1971",
+        "unstructured": "Schroder E, Lubke K, Lehmann M, Beetz I (1971) Haemolytic activity and action on the surface tension of aqueous solutions of synthetic melittins and their derivatives. Experientia 27:764–765",
+        "journal-title": "Experientia"
+      },
+      {
+        "key": "9030_CR212",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.3181/00379727-196-43185",
+        "volume": "196",
+        "author": "F Schroeder",
+        "year": "1991",
+        "unstructured": "Schroeder F, Jefferson JR, Kier AB, Knittel J, Scallen TJ, Wood WG, Hapala I (1991) Membrane cholesterol dynamics: cholesterol domains and kinetic pools. Proc Soc Exp Biol Med 196:235–252",
+        "journal-title": "Proc Soc Exp Biol Med"
+      },
+      {
+        "key": "9030_CR213",
+        "doi-asserted-by": "crossref",
+        "first-page": "101",
+        "DOI": "10.1016/0005-2736(87)90261-6",
+        "volume": "901",
+        "author": "J Schulze",
+        "year": "1987",
+        "unstructured": "Schulze J, Mischeck U, Wigand S, Galla HJ (1987) Incorporation of highly purified melittin into phosphatidylcholines bilayer vesicles. Biochim Biophys Acta 901:101–111",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR214",
+        "doi-asserted-by": "crossref",
+        "first-page": "51",
+        "DOI": "10.1016/0005-2736(95)00134-O",
+        "volume": "1239",
+        "author": "G Schwarz",
+        "year": "1995",
+        "unstructured": "Schwarz G, Arbuzova G (1995) Pore kinetics reflected in the dequenching of a lipid vesicle entrapped fluorescent dye. Biochim Biophys Acta 1239:51–57",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR215",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1016/0005-2736(89)90526-9",
+        "volume": "979",
+        "author": "G Schwarz",
+        "year": "1989",
+        "unstructured": "Schwarz G, Beschiaschvili A (1989) Thermodynamic and kinetic studies on the association of melittin with a phospholipid bilayer. Biochim Biophys Acta 979:82–90",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR216",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1016/0005-2736(92)90299-2",
+        "volume": "1110",
+        "author": "G Schwarz",
+        "year": "1992",
+        "unstructured": "Schwarz G, Zong RT, Popescu T (1992) Kinetics of melittin induced pore formation in the membrane of lipid vesicles. Biochim Biophys Acta 1110:97–104",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR217",
+        "first-page": "347",
+        "volume": "3",
+        "author": "R Schwyzer",
+        "year": "1992",
+        "unstructured": "Schwyzer R (1992) Conformations and orientations of amphiphilic peptides induced by artificial lipid membranes: correlations with biological activity. Chemtracts-Biochem Mol Biol 3:347–379",
+        "journal-title": "Chemtracts-Biochem Mol Biol"
+      },
+      {
+        "key": "9030_CR218",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1016/0005-2736(91)90367-H",
+        "volume": "1063",
+        "author": "KM Sekharam",
+        "year": "1991",
+        "unstructured": "Sekharam KM, Bradrick TD, Georghiou S (1991) Kinetics of melittin binding to phospholipid small unilamellar vesicles. Biochim Biophys Acta 1063:171–174",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR219",
+        "doi-asserted-by": "crossref",
+        "first-page": "460",
+        "DOI": "10.1016/S0968-0004(00)89101-X",
+        "volume": "20",
+        "author": "Y Shai",
+        "year": "1995",
+        "unstructured": "Shai Y (1995) Molecular recognition between membrane-spanning polypeptides. Trends Biochem Sci 20:460–464",
+        "journal-title": "Trends Biochem Sci"
+      },
+      {
+        "key": "9030_CR220",
+        "doi-asserted-by": "crossref",
+        "first-page": "236",
+        "DOI": "10.1002/bip.10260",
+        "volume": "66",
+        "author": "Y Shai",
+        "year": "2002",
+        "unstructured": "Shai Y (2002) Mode of action of membrane active antimicrobial peptides. Biopolymers 66:236–248",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "9030_CR221",
+        "first-page": "193",
+        "volume": "7",
+        "author": "SV Sharma",
+        "year": "1992",
+        "unstructured": "Sharma SV (1992) Melittin resistance: a counterselection for ras transformation. Oncogene 7:193–201",
+        "journal-title": "Oncogene"
+      },
+      {
+        "key": "9030_CR222",
+        "first-page": "939",
+        "volume": "8",
+        "author": "SV Sharma",
+        "year": "1993",
+        "unstructured": "Sharma SV (1993) Melittin-induced hyperactivation of phospholipase A2 activity and calcium influx in ras-transformed cells. Oncogene 8:939–947",
+        "journal-title": "Oncogene"
+      },
+      {
+        "key": "9030_CR223",
+        "doi-asserted-by": "crossref",
+        "first-page": "4478",
+        "DOI": "10.1046/j.1432-1033.2003.03840.x",
+        "volume": "270",
+        "author": "T Sheynis",
+        "year": "2003",
+        "unstructured": "Sheynis T, Sykora J, Benda A, Kolusheva S, Hof M, Jelinek R (2003) Bilayer localization of membrane-active peptides studied in biomimetic vesicles by visible and fluorescence spectroscopies. Eur Biophys J 270:4478–4487",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR224",
+        "doi-asserted-by": "crossref",
+        "first-page": "459",
+        "DOI": "10.1111/j.1432-1033.1971.tb01414.x",
+        "volume": "20",
+        "author": "RA Shipolini",
+        "year": "1971",
+        "unstructured": "Shipolini RA, Callewaert GL, Cottrell RC, Doonan S, Vernan CA, Banks BEC (1971) Phospholipase A from bee venom. Eur J Biochem 20:459–468",
+        "journal-title": "Eur J Biochem"
+      },
+      {
+        "key": "9030_CR225",
+        "doi-asserted-by": "crossref",
+        "first-page": "1721",
+        "DOI": "10.1126/science.290.5497.1721",
+        "volume": "290",
+        "author": "K Simons",
+        "year": "2000",
+        "unstructured": "Simons K, Ikonen E (2000) How cells handle cholesterol. Science 290:1721–1726",
+        "journal-title": "Science"
+      },
+      {
+        "key": "9030_CR226",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1016/S0005-2736(99)00199-6",
+        "volume": "1462",
+        "author": "N Sitaram",
+        "year": "1999",
+        "unstructured": "Sitaram N, Nagaraj R (1999) Interaction of antimicrobial peptides with biological and model membranes: structural and charge requirements for activity. Biochim Biophys Acta 1462:29–54",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR227",
+        "doi-asserted-by": "crossref",
+        "first-page": "1859",
+        "DOI": "10.1126/science.274.5294.1859",
+        "volume": "274",
+        "author": "L Song",
+        "year": "1996",
+        "unstructured": "Song L, Hobaugh MR, Shustak C, Cheley S, Bayley H, Gouaux JE (1996) Structure of staphylococcal alpha-hemolysin, a heptameric transmembrane pore. Science 274:1859–1866",
+        "journal-title": "Science"
+      },
+      {
+        "key": "9030_CR228",
+        "doi-asserted-by": "crossref",
+        "first-page": "77",
+        "DOI": "10.1016/0005-2736(91)90106-I",
+        "volume": "1069",
+        "author": "S Stankowski",
+        "year": "1991",
+        "unstructured": "Stankowski S, Schwarz UD, Schwarz G (1991) A combined study of aggregation, membrane affinity and pore activity of natural and modified melittin. Biochim Biophys Acta 1069:77–86",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR229",
+        "doi-asserted-by": "crossref",
+        "first-page": "2118",
+        "DOI": "10.1016/S0006-3495(02)73972-6",
+        "volume": "83",
+        "author": "TL Steck",
+        "year": "2002",
+        "unstructured": "Steck TL, Ye J, Lange Y (2002) Probing red cell membrane cholesterol movement with cyclodextrin. Biophys J 83:2118–2125",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR230",
+        "doi-asserted-by": "crossref",
+        "first-page": "63",
+        "DOI": "10.1016/S0022-1759(01)00334-9",
+        "volume": "252",
+        "author": "M Su",
+        "year": "2001",
+        "unstructured": "Su M, He C, West CA, Mentzer SJ (2001) Cytolytic peptides induce biphasic permeability changes in mammalian cell membranes. J Immunol Methods 252:63–71",
+        "journal-title": "J Immunol Methods"
+      },
+      {
+        "key": "9030_CR231",
+        "doi-asserted-by": "crossref",
+        "first-page": "62",
+        "DOI": "10.1016/S0014-5793(99)00328-2",
+        "volume": "448",
+        "author": "C Subbalakshmi",
+        "year": "1999",
+        "unstructured": "Subbalakshmi C, Nagaraj R, Sitaram N (1999) Biological activities of C-terminal 15-residue synthetic fragment of melittin: design of an analog with improved antibacterial activity. FEBS Lett 448:62–66",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR232",
+        "doi-asserted-by": "crossref",
+        "first-page": "101",
+        "DOI": "10.1016/0005-2736(94)90286-0",
+        "volume": "1189",
+        "author": "NK Subbarao",
+        "year": "1994",
+        "unstructured": "Subbarao NK, MacDonald RC (1994) Lipid unsaturation influences melittin-induced leakage of vesicles. Biochim Biophys Acta 1189:101–107",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR233",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1016/0005-2736(89)90092-8",
+        "volume": "981",
+        "author": "M Svenaga",
+        "year": "1989",
+        "unstructured": "Svenaga M, Lee S, Park NG, Aoyagi H, Kato T, Umeda A, Amako K (1989) Basic amphipathic helical peptides induce destabilization and fusion of acidic and neutral liposomes. Biochim Biophys Acta 981:143–150",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR234",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1016/S0014-5793(98)01617-2",
+        "volume": "442",
+        "author": "J Takei",
+        "year": "1999",
+        "unstructured": "Takei J, Remenyi A, Dempsey CE (1999) Generalised bilayer perturbation from peptide helix dimerisation at membrane surfaces: vesicle lysis induced by disulphide-dimerised melittin analogues. FEBS Lett 442:11–14",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR235",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1016/0014-5793(79)80957-6",
+        "volume": "102",
+        "author": "JC Talbot",
+        "year": "1979",
+        "unstructured": "Talbot JC, Dufourcq J, de Bony J, Faucon JF, Lussan C (1979) Conformational change and self association of monomeric melittin. FEBS Lett 102:191–193",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR236",
+        "doi-asserted-by": "crossref",
+        "first-page": "147",
+        "DOI": "10.1007/BF00263679",
+        "volume": "15",
+        "author": "JC Talbot",
+        "year": "1987",
+        "unstructured": "Talbot JC, Faucon JF, Dufourcq J (1987) Different states of self-association of melittin in phospholipid bilayers. A resonance energy transfer approach. Eur Biophys J 15:147–157",
+        "journal-title": "Eur Biophys J"
+      },
+      {
+        "key": "9030_CR237",
+        "doi-asserted-by": "crossref",
+        "first-page": "569",
+        "DOI": "10.1016/S0006-3495(92)81629-6",
+        "volume": "63",
+        "author": "H Tanaka",
+        "year": "1992",
+        "unstructured": "Tanaka H, Matsunaga K, Kawazura H (1992) 23Na and 1H NMR studies on melittin channels activated by tricyclic tranquilizers. Biophys J 63:569–572",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR238",
+        "doi-asserted-by": "crossref",
+        "first-page": "12434",
+        "DOI": "10.1016/S0021-9258(18)31408-X",
+        "volume": "268",
+        "author": "Q Teng",
+        "year": "1993",
+        "unstructured": "Teng Q, Scarlata S (1993) Effect of high pressure on the association of melittin to membranes. J Biol Chem 268:12434–12442",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR239",
+        "doi-asserted-by": "crossref",
+        "first-page": "6010",
+        "DOI": "10.1016/S0021-9258(20)65097-9",
+        "volume": "257",
+        "author": "TC Terwilliger",
+        "year": "1982a",
+        "unstructured": "Terwilliger TC, Eisenberg D (1982a) The structure of melittin. I. Structure determination and partial refinement. J Biol Chem 257:6010–6015",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR240",
+        "doi-asserted-by": "crossref",
+        "first-page": "6016",
+        "DOI": "10.1016/S0021-9258(20)65098-0",
+        "volume": "257",
+        "author": "TC Terwilliger",
+        "year": "1982b",
+        "unstructured": "Terwilliger TC, Eisenberg D (1982b) The structure of melittin. II. Interpretation of the structure. J Biol Chem 257:6016–6022",
+        "journal-title": "J Biol Chem"
+      },
+      {
+        "key": "9030_CR241",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.1016/S0006-3495(82)84683-3",
+        "volume": "37",
+        "author": "TC Terwilliger",
+        "year": "1982",
+        "unstructured": "Terwilliger TC, Weissman L, Eisenberg D (1982) The structure of melittin in the form I crystals and its implication for melittin’s lytic and surface activities. Biophys J 37:353–361",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR242",
+        "doi-asserted-by": "crossref",
+        "first-page": "3323",
+        "DOI": "10.1529/biophysj.104.046102",
+        "volume": "87",
+        "author": "S Toraya",
+        "year": "2004",
+        "unstructured": "Toraya S, Nishimura K, Naito A (2004). Dynamic structure of vesicle-bound melittin in a variety of lipid chain lengths by solid-state NMR. Biophys J 87:3323–3335",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR243",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1016/0167-0115(85)90216-2",
+        "volume": "13",
+        "author": "MT Tosteson",
+        "year": "1985a",
+        "unstructured": "Tosteson MT, Alvarez O, Tosteson DC (1985a) Melittin is able to form anion-seletive channels in lipid bilayers. Regul Pept 13:39–45",
+        "journal-title": "Regul Pept"
+      },
+      {
+        "key": "9030_CR244",
+        "doi-asserted-by": "crossref",
+        "first-page": "35",
+        "DOI": "10.1007/BF01870697",
+        "volume": "87",
+        "author": "MT Tosteson",
+        "year": "1985b",
+        "unstructured": "Tosteson MT, Holmes SJ, Razin M, Tosteson DC (1985b) Melittin lysis of red cells. J Membr Biol 87:35–44",
+        "journal-title": "J Membr Biol"
+      },
+      {
+        "key": "9030_CR245",
+        "doi-asserted-by": "crossref",
+        "first-page": "1367",
+        "DOI": "10.1016/S0006-3495(90)82483-8",
+        "volume": "58",
+        "author": "MT Tosteson",
+        "year": "1990",
+        "unstructured": "Tosteson MT, Alvarez O, Hubbell W, Bieganski RM, Altenbach C, Caporale LH, Levy JJ, Nutt RF, Rosenblatt M, Tosteson DC (1990) Primary structure of peptides and ion channels. Role of amino acid side chains in voltage gating of melittin channels. Biophys J 58:1367–1375",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR246",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1016/S0006-3495(81)84719-4",
+        "volume": "36",
+        "author": "MT Tosteson",
+        "year": "1981",
+        "unstructured": "Tosteson MT, Tosteson DC (1981) The sting. Melittin forms channels in lipid bilayers. Biophys J 36:109–116",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR247",
+        "doi-asserted-by": "crossref",
+        "first-page": "6627",
+        "DOI": "10.1021/bi00395a010",
+        "volume": "26",
+        "author": "MT Tosteson",
+        "year": "1987",
+        "unstructured": "Tosteson MT, Levy JL, Caporale LH, Rosenblatt M, Tosteson DC (1987) Solid-phase synthesis of melittin: purification and functional characterization. Biochemistry 26:6627–6631",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR248",
+        "doi-asserted-by": "crossref",
+        "first-page": "6388",
+        "DOI": "10.1021/bi0026066",
+        "volume": "40",
+        "author": "T Unger",
+        "year": "2001",
+        "unstructured": "Unger T, Oren Z, Shai Y (2001) The effect of cyclization of magainin 2 and melittin analogues on structure, function, and model membrane interactions: implication to their mode of action. Biochemistry 40:6388–6397",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR249",
+        "doi-asserted-by": "crossref",
+        "first-page": "785",
+        "DOI": "10.1042/bj3050785",
+        "volume": "305",
+        "author": "M Veen van",
+        "year": "1995",
+        "unstructured": "van Veen M, Georgiou GN, Drake AF, Cherry RJ (1995) Circular-dichroism and fluorescene studies of melittin: effects of C-terminal modifications on tetramer formation and binding to phospholipid vesicles. Biochem J 305:785–790",
+        "journal-title": "Biochem J"
+      },
+      {
+        "key": "9030_CR250",
+        "doi-asserted-by": "crossref",
+        "first-page": "269",
+        "DOI": "10.1016/0163-7258(92)90003-I",
+        "volume": "54",
+        "author": "LP Vernon",
+        "year": "1992",
+        "unstructured": "Vernon LP, Bell JD (1992) Membrane structure, toxins and phospholipase A2 activity. Pharmacol Ther 54:269–295",
+        "journal-title": "Pharmacol Ther"
+      },
+      {
+        "key": "9030_CR251",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1016/0014-5793(81)80545-5",
+        "volume": "134",
+        "author": "H Vogel",
+        "year": "1981",
+        "unstructured": "Vogel H (1981) Incorporation of melittin into phosphatidylcholines bilayers. Study of binding and conformational changes. FEBS Lett 134:37–42",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR252",
+        "doi-asserted-by": "crossref",
+        "first-page": "4562",
+        "DOI": "10.1021/bi00388a060",
+        "volume": "26",
+        "author": "H Vogel",
+        "year": "1987",
+        "unstructured": "Vogel H (1987) Comparison of the conformation and orientation of alamethicin and melittin in lipid membranes. Biochemistry 26:4562–4572",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR253",
+        "doi-asserted-by": "crossref",
+        "first-page": "573",
+        "DOI": "10.1016/S0006-3495(86)83497-X",
+        "volume": "50",
+        "author": "H Vogel",
+        "year": "1986",
+        "unstructured": "Vogel H, Jähnig F (1986) The structure of melittin in membranes. Biophys J 50:573–582",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR254",
+        "doi-asserted-by": "crossref",
+        "first-page": "7498",
+        "DOI": "10.1021/bi00244a019",
+        "volume": "30",
+        "author": "J Voss",
+        "year": "1991",
+        "unstructured": "Voss J, Birmachu W, Hussey DM, Thomas DD (1991) Effects of melittin on molecular dynamics and Ca-ATPase activity in sarcoplasmic reticulum membranes: time-resolved optical anisotropy. Biochemistry 30:7498–7506",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR255",
+        "doi-asserted-by": "crossref",
+        "first-page": "731",
+        "DOI": "10.1099/0022-1317-79-4-731",
+        "volume": "79",
+        "author": "M Wachinger",
+        "year": "1998",
+        "unstructured": "Wachinger M, Kleinschmidt A, Winder D, von Pechmann N, Ludvigsen A, Neumann M, Holle R, Salmons B, Erfle V, Brack-Werner R (1998) Antimicrobial peptides melittin and cecropin inhibit replication of human immunodeficiency virus 1 by suppressing viral gene expression. J Gen Virol 79:731–740",
+        "journal-title": "J Gen Virol"
+      },
+      {
+        "key": "9030_CR256",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1016/0014-5793(92)80780-K",
+        "volume": "309",
+        "author": "M Wachinger",
+        "year": "1992",
+        "unstructured": "Wachinger M, Saermark T, Erfle V (1992) Influence of amphipathic peptides on the HIV-1 production in persistently infected T lymphoma cells. FEBS Lett 309:235–241",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR257",
+        "doi-asserted-by": "crossref",
+        "first-page": "183",
+        "DOI": "10.3109/09687689509027506",
+        "volume": "12",
+        "author": "J Wall",
+        "year": "1995",
+        "unstructured": "Wall J, Golding CA, Van Veen M, O’Shea P (1995) The use of fluoresceinphosphatidylethanolamine (FPE) as a real-time probe for peptide–membrane interactions. Mol Membr Biol 12:183–192",
+        "journal-title": "Mol Membr Biol"
+      },
+      {
+        "key": "9030_CR258",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1016/0009-2797(92)90106-U",
+        "volume": "82",
+        "author": "C Watala",
+        "year": "1992",
+        "unstructured": "Watala C, Gwozdzinski K (1992) Melittin-induced alterations in dynamic properties of human red blood cell membranes. Chem Biol Interact 82:135–149",
+        "journal-title": "Chem Biol Interact"
+      },
+      {
+        "key": "9030_CR259",
+        "doi-asserted-by": "crossref",
+        "first-page": "8614",
+        "DOI": "10.1021/bi00447a052",
+        "volume": "28",
+        "author": "AJ Weaver",
+        "year": "1989",
+        "unstructured": "Weaver AJ, Kemple MD, Prendergast FG (1989) Characterization of selectively 13C-labeled synthetic melittin and melittin analogues in isotropic solvents by circular dichroism, fluorescence, and NMR spectroscopy. Biochemistry 28:8614–8623",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR260",
+        "doi-asserted-by": "crossref",
+        "first-page": "1301",
+        "DOI": "10.1021/bi00120a005",
+        "volume": "31",
+        "author": "AJ Weaver",
+        "year": "1992",
+        "unstructured": "Weaver AJ, Kemple MD, Brauner JW, Mendelsohn R, Prendergast FG (1992) Fluorescence, CD, attenuated total reflectance (ATR) FTIR, and carbon-13 NMR characterization of the structure and dynamics of synthetic melittin and melittin analogues in lipid environments. Biochemistry 31:1301–1313",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR261",
+        "doi-asserted-by": "crossref",
+        "first-page": "232",
+        "DOI": "10.1034/j.1399-3011.2002.21011.x",
+        "volume": "60",
+        "author": "JA Werkmeister",
+        "year": "2002",
+        "unstructured": "Werkmeister JA, Hewish DR, Kirkpatrick A, Rivett DE (2002) Sequence requirements for the activity of membrane-active peptides. J Pept Res 60:232–238",
+        "journal-title": "J Pept Res"
+      },
+      {
+        "key": "9030_CR262",
+        "doi-asserted-by": "crossref",
+        "first-page": "50",
+        "DOI": "10.1016/0304-4165(93)90077-L",
+        "volume": "1157",
+        "author": "JA Werkmeister",
+        "year": "1993",
+        "unstructured": "Werkmeister JA, Kirkpatrick A, McKenzie JA, Rivett DE (1993) The effect of sequence variations and structure on the cytolytic activity of melittin peptides. Biochim Biophys Acta 1157:50–54",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR263",
+        "doi-asserted-by": "crossref",
+        "first-page": "339",
+        "DOI": "10.1016/S0304-4157(98)00021-5",
+        "volume": "1376",
+        "author": "SH White",
+        "year": "1998",
+        "unstructured": "White SH, Wimley WC (1998) Hydrophobic interactions of peptides with membrane interfaces. Biochim Biophys Acta 1376:339–352",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR264",
+        "doi-asserted-by": "crossref",
+        "first-page": "641",
+        "DOI": "10.1002/pro.5560010510",
+        "volume": "1",
+        "author": "W Wilcox",
+        "year": "1992",
+        "unstructured": "Wilcox W, Eisenberg D (1992) Thermodynamics of melittin tetramerization determined by circular dichroism and implications for protein folding. Protein Sci 1:641–653",
+        "journal-title": "Protein Sci"
+      },
+      {
+        "key": "9030_CR265",
+        "doi-asserted-by": "crossref",
+        "first-page": "842",
+        "DOI": "10.1038/nsb1096-842",
+        "volume": "3",
+        "author": "WC Wimley",
+        "year": "1996",
+        "unstructured": "Wimley WC, White SH (1996) Experimentally determined hydrophobicity scale for proteins at membrane interfaces. Nat Struct Biol 3:842–848",
+        "journal-title": "Nat Struct Biol"
+      },
+      {
+        "key": "9030_CR266",
+        "doi-asserted-by": "crossref",
+        "first-page": "161",
+        "DOI": "10.1021/bi991836l",
+        "volume": "39",
+        "author": "WC Wimley",
+        "year": "2000",
+        "unstructured": "Wimley WC, White SH (2000) Determining the membrane topology of peptides by fluorescence quenching. Biochemistry 39:161–170",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "9030_CR267",
+        "doi-asserted-by": "crossref",
+        "first-page": "1362",
+        "DOI": "10.1002/pro.5560030902",
+        "volume": "3",
+        "author": "WC Wimley",
+        "year": "1994",
+        "unstructured": "Wimley WC, Selsted ME, White SH (1994) Interactions between human defensins and lipid bilayers: evidence for formation of multimeric pores. Protein Sci 3:1362–1373",
+        "journal-title": "Protein Sci"
+      },
+      {
+        "key": "9030_CR268",
+        "doi-asserted-by": "crossref",
+        "first-page": "608",
+        "DOI": "10.1006/bbrc.1997.8014",
+        "volume": "242",
+        "author": "D Winder",
+        "year": "1998",
+        "unstructured": "Winder D, Gunzburg WH, Erfle V, Salmons B (1998) Expression of antimicrobial peptides has an antitumour effect in human cells. Biochem Biophys Res Commun 242:608–612",
+        "journal-title": "Biochem Biophys Res Commun"
+      },
+      {
+        "key": "9030_CR269",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.3109/09687689709044324",
+        "volume": "15",
+        "author": "C Wolfe",
+        "year": "1998",
+        "unstructured": "Wolfe C, Cladera J, O’Shea P (1998) Amino acid sequences which promote and prevent the binding and membrane insertion of surface-active peptides: comparison of melittin and promelittin. Mol Membr Biol 15:221–227",
+        "journal-title": "Mol Membr Biol"
+      },
+      {
+        "key": "9030_CR270",
+        "doi-asserted-by": "crossref",
+        "first-page": "100",
+        "DOI": "10.1016/S0014-5793(03)01113-X",
+        "volume": "554",
+        "author": "H Yan",
+        "year": "2003",
+        "unstructured": "Yan H, Li S, Sun X, Mi H, He B (2003) Individual substitution analogs of Mel(12–26), melittin’s C-terminal 15-residue peptide: their antimicrobial and hemolytic actions. FEBS Lett 554:100–104",
+        "journal-title": "FEBS Lett"
+      },
+      {
+        "key": "9030_CR271",
+        "doi-asserted-by": "crossref",
+        "first-page": "1475",
+        "DOI": "10.1016/S0006-3495(01)75802-X",
+        "volume": "81",
+        "author": "L Yang",
+        "year": "2001",
+        "unstructured": "Yang L, Harroun TA, Weiss TA, Ding L, Huang HW (2001) Barrel-stave model or toroidal model? A case study on melittin pores. Biophys J 81:1475–1485",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR272",
+        "doi-asserted-by": "crossref",
+        "first-page": "267",
+        "DOI": "10.1016/0304-4157(85)90011-5",
+        "volume": "822",
+        "author": "PL Yeagle",
+        "year": "1985",
+        "unstructured": "Yeagle PL (1985) Cholesterol and the cell membrane. Biochim Biophys Acta 822:267–287",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR273",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1016/0005-2736(86)90014-3",
+        "volume": "856",
+        "author": "YP Yianni",
+        "year": "1986",
+        "unstructured": "Yianni YP, Fitton JE, Morgan CG (1986) Lytic effects of melittin and δ-haemolysin from Staphylococcus aureus on vesicles of dipalmitoylphosphatidylcholine. Biochim Biophys Acta 856:91–100",
+        "journal-title": "Biochim Biophys Acta"
+      },
+      {
+        "key": "9030_CR274",
+        "doi-asserted-by": "crossref",
+        "first-page": "2223",
+        "DOI": "10.1016/S0006-3495(96)79788-6",
+        "volume": "70",
+        "author": "P Yuan",
+        "year": "1996",
+        "unstructured": "Yuan P, Fisher PJ, Prendergast FG, Kemple MD (1996) Structure and dynamics of melittin in lysomyristoyl phosphatidylcholine micelles determined by nuclear magnetic resonance. Biophys J 70:2223–2238",
+        "journal-title": "Biophys J"
+      },
+      {
+        "key": "9030_CR275",
+        "doi-asserted-by": "crossref",
+        "first-page": "25170",
+        "DOI": "10.1074/jbc.M203186200",
+        "volume": "277",
+        "author": "H Zhao",
+        "year": "2002",
+        "unstructured": "Zhao H, Kinnunen PKJ (2002) Binding of the antimicrobial peptide temporin L to liposomes assessed by Trp fluorescence. J Biol Chem 277:25170–25177",
+        "journal-title": "J Biol Chem"
+      }
+    ],
+    "container-title": [
+      "Bioscience Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://portlandpress.com/bioscirep/article-pdf/27/4-5/189/472614/bsr0270189.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://portlandpress.com/bioscirep/article-pdf/27/4-5/189/472614/bsr0270189.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          11,
+          16
+        ]
+      ],
+      "date-time": "2021-11-16T18:08:25Z",
+      "timestamp": 1637086105000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://portlandpress.com/bioscirep/article/27/4-5/189/55691/Melittin-a-Membrane-active-Peptide-with-Diverse"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2007,
+          8,
+          6
+        ]
+      ]
+    },
+    "references-count": 276,
+    "journal-issue": {
+      "issue": "4-5",
+      "published-print": {
+        "date-parts": [
+          [
+            2007,
+            8,
+            6
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1007/s10540-006-9030-z",
+    "relation": {},
+    "ISSN": [
+      "0144-8463",
+      "1573-4935"
+    ],
+    "issn-type": [
+      {
+        "value": "0144-8463",
+        "type": "print"
+      },
+      {
+        "value": "1573-4935",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2007,
+          8,
+          6
+        ]
+      ]
+    }
+  }
+}

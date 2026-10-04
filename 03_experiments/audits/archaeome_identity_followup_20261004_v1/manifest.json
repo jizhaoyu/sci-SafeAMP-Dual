@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-10-04T04:34:09.607585+00:00",
+  "artifact_version": "archaeome_identity_followup_20261004_v1",
+  "review_mode": "agent_primary_source_review",
+  "new_molecules_admitted": 0,
+  "training_executed": false,
+  "formal_dual_task_status": "blocked",
+  "current_mic_training_blocked": false,
+  "current_state_source": "03_experiments\\audits\\mic_training_readiness_20261004_v22.json",
+  "current_state_sha256": "67fcb7ce81a3957ba468084b6b7e24732fe4e761476e0dbfd6b22655fb42aab1",
+  "protected_state_hash_verified": true,
+  "prescreen_counts": {
+    "formal_development_417": {
+      "sequences_with_conflict": 64,
+      "sequences_without_conflict": 16,
+      "violating_pairs": 411
+    },
+    "mic_development_16": {
+      "sequences_with_conflict": 8,
+      "sequences_without_conflict": 72,
+      "violating_pairs": 9
+    }
+  },
+  "all_member_pairs_verified": 34640,
+  "scientific_blockers": [
+    "Assay ID to certificate mapping unresolved",
+    "Explicit terminal forms unresolved",
+    "Extended Data Fig. 7 raw dose responses not obtained"
+  ],
+  "author_request_sent": false,
+  "files": {
+    "acquire.py": "f78450381b4e05a81fd9b72107f10dac8f1fe4959348daa9ac79bfc85bbafedb",
+    "acquisition_recovery.json": "83c1a2654349314bb05b28f7ba01f70e59df58913189cd4ce9fc8e9313a11886",
+    "author_data_request_draft.md": "ea023fd684e690ac893930b22a0a2e79761ec9d527ae2ea9213e3dd7f34ed94a",
+    "finalize.py": "f2e4be6de0222dca9b1d9be1fdf1fb575306eb35e927689759b51df8188a25b4",
+    "mendeley_v3_check.json": "f31c6e24e7b400cdc875c9c85ed3ac667fa3d6d85eac65046e0e65b0a050fb14",
+    "prescreen.json": "46215645d5478733cdc0697f1adc6fd2dec1837852cd662f5e426f48157718b1",
+    "prescreen.py": "ef0d601d52f6af8f0e7d3e6660b11c402cf5ca9b3585d8fc0ecb3c5471250201",
+    "raw/41564_2025_2061_MOESM17_ESM.xlsx": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "raw/41564_2025_2061_MOESM1_ESM.pdf": "635f36cf4a0a79d77d32cd63f93f49237bd0d3b967cf1e1234eaffff07c49919",
+    "report.md": "1105a0118b2026004039cadde78d9783d5f6809c3086c8a73dfb720ef37ed02e",
+    "sequence_pair_prescreen.csv": "8a633c192e9d530ac65699704f9a28443d12773546b1217ceb2ee3a6a6b2620a",
+    "sequence_prescreen_summary.csv": "9adc21a42423eadc692232d7564b6d74776ae1e8d457e7585bee6a6bf3a31e17",
+    "supplement_page_3.png": "0b72254f4284cd1624c126b6f591a90364d39c0cbbe6480615b140739e6ef94d",
+    "supplement_pages.json": "21129c3b6d0074024fa88cc671518e2d4e00e1ddfda36efa7eb99b0e6001ae4d"
+  }
+}

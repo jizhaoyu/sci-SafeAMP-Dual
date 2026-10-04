@@ -1,0 +1,29 @@
+{
+  "status": "validation_passed_research_still_blocked",
+  "generated_at": "2026-10-02T08:01:27.670704+00:00",
+  "independently_recomputed_pairs": 55,
+  "independently_rederived_observations": 16,
+  "homology_edges": 11,
+  "combined_components": 4,
+  "positive_bearing_components": 2,
+  "negative_bearing_components": 4,
+  "historical_frozen_manifests_verified": 5,
+  "current_state_documents_verified": 5,
+  "formal_status_unchanged": true,
+  "training_started": false,
+  "records_released_for_training": 0,
+  "script_sha256": "93706882fc3a7cfe42f3d1ddcd6689efeb494078fc981097eeba87dc9696de0b",
+  "inputs": {
+    "README.md": "87e27256d35bf7bfe6f47bd0384448925eee800ffe62b1d366d250ee1290ac16",
+    "docs\\REMEDIATION_STATUS.md": "e82903b8309d79b264bb553004a01d36a009d71774af636d68e7b6106e76d6e5",
+    "docs\\DOCUMENTATION_INDEX.md": "1e577ef36fa5c945c52a0f3e17ff0f93a750dddb803436e8142eaac90b900c2e",
+    "docs\\handoff\\TASK_STATE.md": "ac7d98bfd2c973475f4c1159270974615398d9ec29198c6de533824b45fcbdf6",
+    "03_experiments\\audits\\multi_database_ecoli_mic_screen_20261001.md": "bf5b1e4e05d8a43a036d18582928e16b1ebde395ee114c3f9f2208bc5ec8b47b"
+  },
+  "readiness_sha256": "31708eff26c1c000647072af23cf123b64d40c7c12dd3a02ad032fc90299d722",
+  "cohort_manifest_sha256": "1b8da8889327ee9c58c3d2e50c3d07b7e9a2e12fd4237b57c81f2db2c3fc3009",
+  "limitations": [
+    "Local field confirmation does not complete independent source/release review.",
+    "This checks audit arithmetic and state consistency, not model performance."
+  ]
+}

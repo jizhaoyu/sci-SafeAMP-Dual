@@ -1,0 +1,51 @@
+{
+  "status": "local_exploratory_training_ready_validation_passed",
+  "generated_at": "2026-10-02T10:03:26.432171+00:00",
+  "readiness_state": "mic_training_readiness_20261002_v11.json",
+  "audit_protocol_id": "protocol-mic-06",
+  "training_protocol_id": "protocol-mic-07",
+  "molecules": 15,
+  "observations": 22,
+  "independently_recomputed_pairs": 105,
+  "fold_roles_verified": 45,
+  "fixed_features_shape": [
+    15,
+    44
+  ],
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "primary_measurement_studies": 7,
+  "referenced_method_documents": 1,
+  "historical_manifests_verified": 8,
+  "current_state_documents_verified": 5,
+  "model_fit_calls_forbidden_during_validation": true,
+  "training_started": false,
+  "records_released_for_training": 15,
+  "old_protocol_mic_05_rejected": true,
+  "overwrite_attempts_rejected": [
+    "readiness",
+    "primary_release"
+  ],
+  "formal_status_unchanged": true,
+  "independent_human_review_claimed": false,
+  "script_sha256": "789ba687c600d740a4445e503bdd3405562653f1eb6f0b3c2f5041451a8d5d45",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_readiness_20261002_v11.json": "879644326884d249d1b061b171cf855ebc2ee6337c88feb91973ff2b309f1354",
+    "03_experiments\\audits\\mic_three_fold_primary_release_20261002_v1\\manifest.json": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\manifest.json": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+    "03_experiments\\protocols\\protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "04_paper\\research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "02_code\\train_mic_three_fold_v2.py": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+    "README.md": "d0e0eeb9ffce5702fedc25fae8d14521d5c4a0535c07590ab6d0e7da4993f7a9",
+    "docs\\REMEDIATION_STATUS.md": "361c49704af64d3d9bf13bb618443f578a70282445a817dc03c11c063296997f",
+    "docs\\DOCUMENTATION_INDEX.md": "334d71315973f92927b5ad1d3e6176e0163db3c5905deafe0183d894d24b3f03",
+    "docs\\handoff\\TASK_STATE.md": "1f7fc91250ec81712b13535158a6f7e61847cf86aa5f8c616a412c430fb46047",
+    "03_experiments\\audits\\multi_database_ecoli_mic_screen_20261001.md": "e8184b142560b126b0d329a0093d1c1ab35d234f50bcec20f14314df84f8a516"
+  },
+  "limitations": [
+    "Only 15 molecules, 4 positives and 6 indivisible components; validation folds contain only 1-2 positives.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ]
+}

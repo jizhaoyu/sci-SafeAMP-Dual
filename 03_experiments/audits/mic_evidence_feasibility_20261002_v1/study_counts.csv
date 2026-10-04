@@ -1,0 +1,7 @@
+primary_study,review_level,records,binary_observations,positive_observations,negative_observations,training_released
+pmid:22467870,screened_candidate,3,3,3,0,False
+pmid:29259134,paper_level_provisional,3,3,1,2,False
+pmid:30658410,screened_candidate,1,1,1,0,False
+pmid:33281785,paper_level_provisional,8,8,8,0,False
+pmid:36551368,paper_level_provisional,7,7,0,7,False
+pmid:42206144,paper_level_provisional,9,19,5,14,False

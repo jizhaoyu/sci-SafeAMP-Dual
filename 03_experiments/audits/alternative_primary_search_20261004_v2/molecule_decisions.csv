@@ -1,0 +1,14 @@
+﻿candidate_name,source_id,seq,length,mw,terminal_n,terminal_c,modifications,decision,admitted
+Pin2,pandinin2014,FWGALAKGALKLIPSLFSSFSKKD,24,2612.1,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Pin2[G],pandinin2014,FWGALAKGALKLIGSLFSSFSKKD,24,2572.0,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Pin2[GPG],pandinin2014,FWGALAKGALKLIGPGSLFSSFSKKD,26,2726.2,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Pin2[14],pandinin2014,FWGLKGLKKFSKKL,14,1693.1,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Pin2[17],pandinin2014,FWGALAKGLKKFSKKL,16,1849.3,free amino,free carboxyl,none,excluded_indeterminate_label,False
+ChMAP-28,goat_antibacterial2018,GRFKRFRKKLKRLWHKVGPFVGPILHY,27,3370.2,free amino,free carboxyl,none,blocked_dev_overlap_and_component_4_merge,False
+mini-ChBac7.5Nα,goat_antibacterial2018,RRLRPRRPRLPRPRPRPRPRPR,22,2909.5,free amino,free carboxyl,none,blocked_dev_homology_and_component_0_merge,False
+mini-ChBac7.5Nα(1-16),goat_antibacterial2018,RRLRPRRPRLPRPRPR,16,2132.6,free amino,free carboxyl,none,blocked_dev_homology_and_component_0_merge,False
+Hymenochirin-1B,hymenochirin2012,IKLSPETKDNLKKVLKGAIKGAIAVAKMV,29,3061.8,free amino,amidated (-NH2),C-terminal amidation,excluded_chemical_modification,False
+Hymenochirin-2B,hymenochirin2012,LKIPGFVKDTLKKVAKGIFSAVAGAMTPS,29,2973.7,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Hymenochirin-3B,hymenochirin2012,IKIPAVVKDTLKKVAKGVLSAVAGALTQ,28,2817.7,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Hymenochirin-4B,hymenochirin2012,IKIPAFVKDTLKKVAKGVISAVAGALTQ,28,2865.7,free amino,free carboxyl,none,excluded_indeterminate_label,False
+Hymenochirin-5B,hymenochirin2012,IKIPPIVKDTLKKVAKGVLSTIAGALST,28,2860.8,free amino,free carboxyl,none,excluded_indeterminate_label,False

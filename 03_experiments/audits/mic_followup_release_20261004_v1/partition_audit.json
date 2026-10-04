@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T02:58:48.964557+00:00",
+  "molecules": 16,
+  "observations": 23,
+  "pairs_recomputed": 120,
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "blockers": [],
+  "model_fitting_performed": false,
+  "inputs": {
+    "03_experiments/audits/mic_followup_release_20261004_v1/cohort/manifest.json": "dcee4855497aa2141940f7ec440dd27c2ccb03c1525e3c294159f47bc50d08cc",
+    "03_experiments/audits/mic_followup_release_20261004_v1/evidence/manifest.json": "68c2f28df6c0bbf0c53ba95d151f301c34f06576450a4487bc5d1564bedd93be"
+  }
+}

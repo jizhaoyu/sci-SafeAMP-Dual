@@ -1,0 +1,45 @@
+{
+  "status": "descriptive_diagnostics_completed",
+  "generated_at": "2026-10-01T09:15:35.776892+00:00",
+  "audit_protocol_id": "protocol-mic-01",
+  "baseline_protocol_id": "protocol-mic-03",
+  "inputs_sha256": {
+    "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+    "03_experiments\\audits\\dramp_verified_ecoli_mic_20261001_v5\\records.csv": "43e6fa66709f9babcf661b8830c7041cdd2bcc0cc74332fb3bfe5456d7db5f37",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v2\\manifest.json": "74fe9e4b1d950c726b4010357f2f5ffe712730a9866472527cce467e2f17f323",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v2\\molecule_components.csv": "10905d251b82753fbf6d15b7f8b65e79e893e6f43a7f4fd0bb4cbac957825d6a",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v2\\fold_assignments.csv": "46bdd34d7f0d140755b848649673aa4bd67fc34a86deb36a1840400383e792a8",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v2\\all_member_similarity.csv": "6f5f3e0dd0e895ecf1b0dc15febe98d8f7d9853ddbc14c5f3d4eb50ada9f2bab",
+    "03_experiments\\runs\\mic_only_baselines_20261001_v2\\manifest.json": "00ccd341208274d77ad3da66c5eb6826ab74087ad9211c83484f6063de26aaec",
+    "03_experiments\\runs\\mic_only_baselines_20261001_v2\\oof_predictions.csv": "b0274986537b39f6e576018fd47dfc173df257d8c84634088ce99217777bb25c"
+  },
+  "n_molecules": 395,
+  "n_assay_observations": 554,
+  "largest_component_graph": {
+    "component_id": 55,
+    "n": 293,
+    "direct_edges": 1166,
+    "possible_pairs": 42778,
+    "direct_edge_fraction": 0.027257001262331104,
+    "median_pair_identity": 0.2,
+    "pairs_below_0_40": 41612,
+    "median_shortest_path_edges": 4.0,
+    "maximum_shortest_path_edges": 10,
+    "median_direct_degree": 6.0,
+    "isolated_within_component": 0
+  },
+  "outputs": [
+    "report.md",
+    "molecule_diagnostics.csv",
+    "assay_observations.csv",
+    "component_summary.csv",
+    "fold_composition.csv",
+    "cross_fold_study_overlap.csv",
+    "prediction_errors.csv",
+    "error_summary.csv",
+    "fold_prediction_distribution.csv",
+    "shared_errors.csv"
+  ],
+  "training_performed": false,
+  "formal_study_status": "blocked_unmodified"
+}

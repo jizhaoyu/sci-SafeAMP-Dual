@@ -1,0 +1,25 @@
+{
+  "status": "excluded_molecular_identity_mismatch",
+  "generated_at": "2026-10-02T02:16:04.809980+00:00",
+  "paper": {
+    "pmid": "37938588",
+    "doi": "10.1038/s41467-023-42434-9",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10632401/",
+    "supplement_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-023-42434-9/MediaObjects/41467_2023_42434_MOESM1_ESM.pdf"
+  },
+  "script_sha256": "f9719e8d1f47f4efc00669c5b2d3d208da678b55317f430a15d6d21d93a75c43",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_pmid37938588_20261002_v1\\raw\\41467_2023_42434_MOESM1_ESM.pdf": "c0afe2d35b4dae592c00333f86a3fe6d210ffd662e683973c6438925c2831ebf"
+  },
+  "review": {
+    "records": 2,
+    "chemistry_conflicts": 2,
+    "records_released_for_training": 0
+  },
+  "outputs": {
+    "record_review.csv": "7037fcc5dee2b158759a93168d4d0c34a24541067bb7c14b61877b39bd7c0116",
+    "report.md": "f29f154b286a1db1fed465e5d1b904253e7c45d70089429ff28956dab2cda095"
+  }
+}

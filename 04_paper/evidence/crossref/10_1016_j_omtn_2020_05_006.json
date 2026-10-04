@@ -1,0 +1,908 @@
+{
+  "url": "https://api.crossref.org/works/10.1016/j.omtn.2020.05.006",
+  "retrieved_at": "2026-09-28T14:31:19.041749+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T23:32:49Z",
+      "timestamp": 1790465569588,
+      "version": "4.1.0"
+    },
+    "reference-count": 52,
+    "publisher": "Elsevier BV",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2020-06-01T00:00:00Z",
+          "timestamp": 1590969600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2020-06-01T00:00:00Z",
+          "timestamp": 1590969600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              5,
+              7
+            ]
+          ],
+          "date-time": "2020-05-07T00:00:00Z",
+          "timestamp": 1588809600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100004733",
+        "name": "Universidade de Macau",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "MYRG2017-00146-FST"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "MYRG2017-00146-FST"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004733",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100004733",
+        "name": "Universidade de Macau",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "MYRG2019-00098-FST"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "MYRG2019-00098-FST"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100004733",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "cell.com",
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Molecular Therapy Nucleic Acids"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.omtn.2020.05.006",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          5,
+          11
+        ]
+      ],
+      "date-time": "2020-05-11T21:57:17Z",
+      "timestamp": 1589234237000
+    },
+    "page": "882-894",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 284,
+    "special_numbering": "C",
+    "title": [
+      "Deep-AmPEP30: Improve Short Antimicrobial Peptides Prediction with Deep Learning"
+    ],
+    "prefix": "10.1016",
+    "volume": "20",
+    "author": [
+      {
+        "given": "Jielu",
+        "family": "Yan",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pratiti",
+        "family": "Bhadra",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ang",
+        "family": "Li",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Pooja",
+        "family": "Sethiya",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Longguang",
+        "family": "Qin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hio Kuan",
+        "family": "Tai",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Koon Ho",
+        "family": "Wong",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shirley W.I.",
+        "family": "Siu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1551",
+        "DOI": "10.1038/nbt1267",
+        "article-title": "Antimicrobial and host-defense peptides as new anti-infective therapeutic strategies",
+        "volume": "24",
+        "author": "Hancock",
+        "year": "2006",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib2",
+        "doi-asserted-by": "crossref",
+        "first-page": "807",
+        "DOI": "10.2174/138161212799277617",
+        "article-title": "Therapeutic potential of host defense peptides in antibiotic-resistant infections",
+        "volume": "18",
+        "author": "Afacan",
+        "year": "2012",
+        "journal-title": "Curr. Pharm. Des."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib3",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1177/0022034516679973",
+        "article-title": "Antimicrobial peptides: mechanisms of action and resistance",
+        "volume": "96",
+        "author": "Bechinger",
+        "year": "2017",
+        "journal-title": "J. Dent. Res."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib4",
+        "doi-asserted-by": "crossref",
+        "first-page": "163",
+        "DOI": "10.1016/j.jcis.2018.10.103",
+        "article-title": "Membrane targeting cationic antimicrobial peptides",
+        "volume": "537",
+        "author": "Ciumac",
+        "year": "2019",
+        "journal-title": "J. Colloid Interface Sci."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib5",
+        "doi-asserted-by": "crossref",
+        "first-page": "76",
+        "DOI": "10.2174/1568026615666150703121009",
+        "article-title": "Non-membrane permeabilizing modes of action of antimicrobial peptides on bacteria",
+        "volume": "16",
+        "author": "Scocchi",
+        "year": "2016",
+        "journal-title": "Curr. Top. Med. Chem."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib6",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.3389/fchem.2017.00005",
+        "article-title": "Peptides with dual antimicrobial and anticancer activities",
+        "volume": "5",
+        "author": "Felício",
+        "year": "2017",
+        "journal-title": "Front Chem."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib7",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1016/j.omto.2019.12.001",
+        "article-title": "In vitro and MD simulation study to explore physicochemical parameters for antibacterial peptide to become potent anticancer peptide",
+        "volume": "16",
+        "author": "Ma",
+        "year": "2019",
+        "journal-title": "Mol. Ther. Oncolytics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib8",
+        "doi-asserted-by": "crossref",
+        "first-page": "1687",
+        "DOI": "10.1016/j.bbamem.2008.09.013",
+        "article-title": "Control of cell selectivity of antimicrobial peptides",
+        "volume": "1788",
+        "author": "Matsuzaki",
+        "year": "2009",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib9",
+        "doi-asserted-by": "crossref",
+        "first-page": "121",
+        "DOI": "10.1093/jac/dkt322",
+        "article-title": "De novo generation of short antimicrobial peptides with enhanced stability and cell specificity",
+        "volume": "69",
+        "author": "Kim",
+        "year": "2014",
+        "journal-title": "J. Antimicrob. Chemother."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib10",
+        "doi-asserted-by": "crossref",
+        "first-page": "168",
+        "DOI": "10.1016/j.ab.2013.01.019",
+        "article-title": "iAMP-2L: a two-level multi-label classifier for identifying antimicrobial peptides and their functional types",
+        "volume": "436",
+        "author": "Xiao",
+        "year": "2013",
+        "journal-title": "Anal. Biochem."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib11",
+        "doi-asserted-by": "crossref",
+        "first-page": "D774",
+        "DOI": "10.1093/nar/gkp1021",
+        "article-title": "CAMP: a useful resource for research on antimicrobial peptides",
+        "volume": "38",
+        "author": "Thomas",
+        "year": "2010",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib12",
+        "doi-asserted-by": "crossref",
+        "first-page": "42362",
+        "DOI": "10.1038/srep42362",
+        "article-title": "Predicting antimicrobial peptides with improved accuracy by incorporating the compositional, physico-chemical and structural features into Chou’s general PseAAC",
+        "volume": "7",
+        "author": "Meher",
+        "year": "2017",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1697",
+        "DOI": "10.1038/s41598-018-19752-w",
+        "article-title": "AmPEP: sequence-based prediction of antimicrobial peptides using distribution patterns of amino acid properties and random forest",
+        "volume": "8",
+        "author": "Bhadra",
+        "year": "2018",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib14",
+        "doi-asserted-by": "crossref",
+        "first-page": "1141",
+        "DOI": "10.1021/acs.jcim.8b00118",
+        "article-title": "Predictive model of linear antimicrobial peptides active against gram-negative bacteria",
+        "volume": "58",
+        "author": "Vishnepolsky",
+        "year": "2018",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib15",
+        "doi-asserted-by": "crossref",
+        "first-page": "2740",
+        "DOI": "10.1093/bioinformatics/bty179",
+        "article-title": "Deep learning improves antimicrobial peptide recognition",
+        "volume": "34",
+        "author": "Veltri",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib16",
+        "doi-asserted-by": "crossref",
+        "first-page": "4007",
+        "DOI": "10.1093/bioinformatics/bty451",
+        "article-title": "ACPred-FL: a sequence-based predictor using effective feature representation to improve the prediction of anti-cancer peptides",
+        "volume": "34",
+        "author": "Wei",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib17",
+        "doi-asserted-by": "crossref",
+        "first-page": "2757",
+        "DOI": "10.1093/bioinformatics/bty1047",
+        "article-title": "mAHTPred: a sequence-based meta-predictor for improving the prediction of anti-hypertensive peptides using effective feature representation",
+        "volume": "35",
+        "author": "Manavalan",
+        "year": "2019",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib18",
+        "doi-asserted-by": "crossref",
+        "first-page": "2044",
+        "DOI": "10.1021/acs.jproteome.7b00019",
+        "article-title": "CPPred-RF: a sequence-based predictor for identifying cell-penetrating peptides and their uptake efficiency",
+        "volume": "16",
+        "author": "Wei",
+        "year": "2017",
+        "journal-title": "J. Proteome Res."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib19",
+        "doi-asserted-by": "crossref",
+        "first-page": "2559",
+        "DOI": "10.3389/fimmu.2019.02559",
+        "article-title": "DeepHLApan: a deep learning approach for neoantigen prediction considering both HLA-peptide binding and immunogenicity",
+        "volume": "10",
+        "author": "Wu",
+        "year": "2019",
+        "journal-title": "Front. Immunol."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib20",
+        "article-title": "G-DipC: an improved feature representation method for short sequences to predict the type of cargo in cell-penetrating peptides",
+        "author": "Wang",
+        "year": "2019",
+        "journal-title": "IEEE/ACM Trans. Comput. Biol. Bioinform"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib21",
+        "doi-asserted-by": "crossref",
+        "first-page": "438",
+        "DOI": "10.1002/psc.2894",
+        "article-title": "Short antimicrobial peptides (SAMPs) as a class of extraordinary promising therapeutic agents",
+        "volume": "22",
+        "author": "Ramesh",
+        "year": "2016",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib22",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1016/j.bpj.2009.09.060",
+        "article-title": "Antimicrobial and membrane disrupting activities of a peptide derived from the human cathelicidin antimicrobial peptide LL37",
+        "volume": "98",
+        "author": "Thennarasu",
+        "year": "2010",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib23",
+        "doi-asserted-by": "crossref",
+        "first-page": "5776",
+        "DOI": "10.1021/ja0584875",
+        "article-title": "Solution structures of human LL-37 fragments and NMR-based identification of a minimal membrane-targeting antimicrobial and anticancer region",
+        "volume": "128",
+        "author": "Li",
+        "year": "2006",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib24",
+        "series-title": "Proceedings of the 2015 IEEE Hot Chips 27 Symposium",
+        "first-page": "1",
+        "article-title": "Deep learning & convolutional networks",
+        "author": "LeCun",
+        "year": "2016"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib25",
+        "doi-asserted-by": "crossref",
+        "first-page": "1356",
+        "DOI": "10.1093/bioinformatics/btp164",
+        "article-title": "Reduced amino acid alphabets exhibit an improved sensitivity and selectivity in fold assignment",
+        "volume": "25",
+        "author": "Peterson",
+        "year": "2009",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib26",
+        "doi-asserted-by": "crossref",
+        "first-page": "118",
+        "DOI": "10.1016/j.ab.2013.05.024",
+        "article-title": "iHSP-PseRAAAC: identifying the heat shock protein families using pseudo reduced amino acid alphabet composition",
+        "volume": "442",
+        "author": "Feng",
+        "year": "2013",
+        "journal-title": "Anal. Biochem."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib27",
+        "doi-asserted-by": "crossref",
+        "first-page": "1033",
+        "DOI": "10.1038/14918",
+        "article-title": "A computational approach to simplifying the protein folding alphabet",
+        "volume": "6",
+        "author": "Wang",
+        "year": "1999",
+        "journal-title": "Nat. Struct. Biol."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib28",
+        "doi-asserted-by": "crossref",
+        "first-page": "1826",
+        "DOI": "10.1093/bib/bby053",
+        "article-title": "Function determinants of TET proteins: the arrangements of sequence motifs with specific codes",
+        "volume": "20",
+        "author": "Liu",
+        "year": "2019",
+        "journal-title": "Brief. Bioinform."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib29",
+        "doi-asserted-by": "crossref",
+        "first-page": "122",
+        "DOI": "10.1093/bioinformatics/btw564",
+        "article-title": "PseKRAAC: a flexible web server for generating pseudo K-tuple reduced amino acids composition",
+        "volume": "33",
+        "author": "Zuo",
+        "year": "2017",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib30",
+        "doi-asserted-by": "crossref",
+        "first-page": "631",
+        "DOI": "10.1002/prot.24762",
+        "article-title": "Reduced alphabet for protein folding prediction",
+        "volume": "83",
+        "author": "Huang",
+        "year": "2015",
+        "journal-title": "Proteins"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib31",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0145541",
+        "DOI": "10.1371/journal.pone.0145541",
+        "article-title": "iDPF-PseRAAAC: a web-server for identifying the defensin peptide family and subfamily using pseudo reduced amino acid alphabet composition",
+        "volume": "10",
+        "author": "Zuo",
+        "year": "2015",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib32",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1016/j.jtbi.2018.11.010",
+        "article-title": "Analysis and prediction of animal toxins by various Chou’s pseudo components and reduced amino acid compositions",
+        "volume": "462",
+        "author": "Pan",
+        "year": "2019",
+        "journal-title": "J. Theor. Biol."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib33",
+        "doi-asserted-by": "crossref",
+        "first-page": "2546",
+        "DOI": "10.1093/bioinformatics/bty155",
+        "article-title": "Bastion6: a bioinformatics approach for accurate prediction of type VI secreted effectors",
+        "volume": "34",
+        "author": "Wang",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib34",
+        "doi-asserted-by": "crossref",
+        "first-page": "e106691",
+        "DOI": "10.1371/journal.pone.0106691",
+        "article-title": "iDNA-Prot|dis: identifying DNA-binding proteins by incorporating amino acid distance-pairs and reduced alphabet profile into the general pseudo amino acid composition",
+        "volume": "9",
+        "author": "Liu",
+        "year": "2014",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib35",
+        "doi-asserted-by": "crossref",
+        "first-page": "D370",
+        "DOI": "10.1093/nar/gkr703",
+        "article-title": "OPM database and PPM web server: resources for positioning of proteins in membranes",
+        "volume": "40",
+        "author": "Lomize",
+        "year": "2012",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib36",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1002/med.21658",
+        "article-title": "Machine intelligence in peptide therapeutics: a next-generation tool for rapid disease screening",
+        "author": "Basith",
+        "year": "2020",
+        "journal-title": "Med. Res. Rev."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1226",
+        "DOI": "10.1109/TPAMI.2005.159",
+        "article-title": "Feature selection based on mutual information: criteria of max-dependency, max-relevance, and min-redundancy",
+        "volume": "27",
+        "author": "Peng",
+        "year": "2005",
+        "journal-title": "IEEE Trans. Pattern Anal. Mach. Intell."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib38",
+        "doi-asserted-by": "crossref",
+        "first-page": "346",
+        "DOI": "10.1016/j.neucom.2014.12.123",
+        "article-title": "A novel features ranking metric with application to scalable visual and bioinformatics data classification",
+        "volume": "173",
+        "author": "Zou",
+        "year": "2016",
+        "journal-title": "Neurocomputing"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib39",
+        "doi-asserted-by": "crossref",
+        "first-page": "77121",
+        "DOI": "10.18632/oncotarget.20365",
+        "article-title": "MLACP: machine-learning-based prediction of anticancer peptides",
+        "volume": "8",
+        "author": "Manavalan",
+        "year": "2017",
+        "journal-title": "Oncotarget"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib40",
+        "doi-asserted-by": "crossref",
+        "first-page": "3150",
+        "DOI": "10.1093/bioinformatics/bts565",
+        "article-title": "CD-HIT: accelerated for clustering the next-generation sequencing data",
+        "volume": "28",
+        "author": "Fu",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib41",
+        "series-title": "Proceedings of the 2011 Annual IEEE India Conference",
+        "first-page": "1",
+        "article-title": "Composition, Transition and Distribution (CTD)—a dynamic feature for predictions based on hierarchical structure of cellular sorting",
+        "author": "Govindan",
+        "year": "2011"
+      },
+      {
+        "issue": "W1",
+        "key": "10.1016/j.omtn.2020.05.006_bib42",
+        "doi-asserted-by": "crossref",
+        "first-page": "W65",
+        "DOI": "10.1093/nar/gkv458",
+        "article-title": "Pse-in-One: a web server for generating various modes of pseudo components of DNA, RNA, and protein sequences",
+        "volume": "43",
+        "author": "Liu",
+        "year": "2015",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib43",
+        "doi-asserted-by": "crossref",
+        "first-page": "e7813",
+        "DOI": "10.1371/journal.pone.0007813",
+        "article-title": "Exploiting amino acid composition for predicting protein-protein interactions",
+        "volume": "4",
+        "author": "Roy",
+        "year": "2009",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib44",
+        "series-title": "Proceedings of the 27th International Conference on Machine Learning",
+        "first-page": "807",
+        "article-title": "Rectified linear units improve restricted Boltzmann machines",
+        "author": "Nair",
+        "year": "2010"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib45",
+        "article-title": "Improving neural networks by preventing co-adaptation of feature detectors",
+        "author": "Hinton",
+        "year": "2012",
+        "journal-title": "arXiv"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib46",
+        "series-title": "Feature Extraction: Foundations and Applications",
+        "author": "Guyon",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib47",
+        "doi-asserted-by": "crossref",
+        "first-page": "442",
+        "DOI": "10.1016/0005-2795(75)90109-9",
+        "article-title": "Comparison of the predicted and observed secondary structure of T4 phage lysozyme",
+        "volume": "405",
+        "author": "Matthews",
+        "year": "1975",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib48",
+        "doi-asserted-by": "crossref",
+        "first-page": "3708",
+        "DOI": "10.1007/s11227-015-1541-6",
+        "article-title": "Improving the classification performance of biological imbalanced datasets by swarm optimization algorithms",
+        "volume": "72",
+        "author": "Li",
+        "year": "2016",
+        "journal-title": "J. Supercomput."
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib49",
+        "doi-asserted-by": "crossref",
+        "first-page": "29",
+        "DOI": "10.1148/radiology.143.1.7063747",
+        "article-title": "The meaning and use of the area under a receiver operating characteristic (ROC) curve",
+        "volume": "143",
+        "author": "Hanley",
+        "year": "1982",
+        "journal-title": "Radiology"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib50",
+        "series-title": "Proceedings of the 23rd International Conference on Machine Learning",
+        "first-page": "233",
+        "article-title": "The relationship between precision-recall and ROC curves",
+        "author": "Davis",
+        "year": "2006"
+      },
+      {
+        "key": "10.1016/j.omtn.2020.05.006_bib51",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.1145/65943.65945",
+        "article-title": "A critical investigation of recall and precision as measures of retrieval system performance",
+        "volume": "7",
+        "author": "Raghavan",
+        "year": "1989",
+        "journal-title": "ACM Trans. Inf. Syst."
+      },
+      {
+        "issue": "D1",
+        "key": "10.1016/j.omtn.2020.05.006_bib52",
+        "doi-asserted-by": "crossref",
+        "first-page": "D592",
+        "DOI": "10.1093/nar/gkw924",
+        "article-title": "The Candida Genome Database (CGD): incorporation of Assembly 22, systematic identifiers and visualization of high throughput sequencing data",
+        "volume": "45",
+        "author": "Skrzypek",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      }
+    ],
+    "container-title": [
+      "Molecular Therapy Nucleic Acids"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2162253120301323?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S2162253120301323?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          13
+        ]
+      ],
+      "date-time": "2026-03-13T17:05:50Z",
+      "timestamp": 1773421550000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S2162253120301323"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          6
+        ]
+      ]
+    },
+    "references-count": 52,
+    "alternative-id": [
+      "S2162253120301323"
+    ],
+    "URL": "https://doi.org/10.1016/j.omtn.2020.05.006",
+    "relation": {},
+    "ISSN": [
+      "2162-2531"
+    ],
+    "issn-type": [
+      {
+        "value": "2162-2531",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Deep-AmPEP30: Improve Short Antimicrobial Peptides Prediction with Deep Learning",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Molecular Therapy Nucleic Acids",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.omtn.2020.05.006",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2020 The Authors.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

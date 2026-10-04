@@ -1,0 +1,25 @@
+{
+  "status": "exploratory_features_only",
+  "generated_at": "2026-10-01T06:38:37.111286+00:00",
+  "scope": "Real pretrained protein-language-model embeddings only. Input read selected only record_id and seq columns; no label columns accessed. No classifier fitted, evaluation performed, or performance result generated.",
+  "model": "esm2_t6_8M_UR50D",
+  "feature_version": "esm2-t6-8M-phys44-v2",
+  "backend": "fair-esm",
+  "checkpoint_path": "C:\\Users\\888\\.cache\\torch\\hub\\checkpoints\\esm2_t6_8M_UR50D.pt",
+  "checkpoint_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+  "fair_esm_version": "2.0.0",
+  "torch_version": "2.11.0+cpu",
+  "device": "cpu",
+  "source_records_path": "D:\\桌面文件\\sci\\02_code\\data\\sources\\combined_v3_evidence_clean_20261001\\records.csv",
+  "source_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "source_record_count": 417,
+  "embedding_shape": [
+    417,
+    320
+  ],
+  "embedding_dtype": "float32",
+  "embedding_file": "pooled_embeddings.npz",
+  "embedding_file_sha256": "6eb4985629252b4f6597aab208ecee1e622d293104b1a86c0bc1670c905cd9a7",
+  "research_status": "blocked; these embeddings do not constitute formal model results",
+  "label_columns_accessed": false
+}

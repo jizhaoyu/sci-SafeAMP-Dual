@@ -1,0 +1,14 @@
+{
+  "study_type": "computational prediction protocol and feasibility pilot",
+  "guideline_selection": "pending target venue and final study design",
+  "compliance_claim": false,
+  "data_provenance": "machine integrity checks implemented; primary assay review pending",
+  "sequence_isolation": "implemented; pilot fails feasibility",
+  "missing_outcomes": "explicit masks implemented",
+  "comparison_and_uncertainty": "implemented; formal execution blocked",
+  "external_validation": "not_completed",
+  "mechanism_and_clinical_claims": "removed_from_active_manuscript",
+  "authorship_declarations": "unverified",
+  "bibliographic_metadata": "repaired_and_audited_separately",
+  "claim_support": "pending_accountable_human_review"
+}

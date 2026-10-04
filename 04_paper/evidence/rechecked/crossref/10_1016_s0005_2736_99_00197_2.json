@@ -1,0 +1,939 @@
+{
+  "url": "https://api.crossref.org/works/10.1016/s0005-2736%2899%2900197-2",
+  "retrieved_at": "2026-09-28T14:56:35.592560+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T14:11:28Z",
+      "timestamp": 1790518288319,
+      "version": "4.1.0"
+    },
+    "reference-count": 78,
+    "publisher": "Elsevier BV",
+    "issue": "1-2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              1999,
+              12,
+              1
+            ]
+          ],
+          "date-time": "1999-12-01T00:00:00Z",
+          "timestamp": 944006400000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2014,
+              11,
+              19
+            ]
+          ],
+          "date-time": "2014-11-19T00:00:00Z",
+          "timestamp": 1416355200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 5467,
+        "URL": "https://www.elsevier.com/open-access/userlicense/1.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Biochimica et Biophysica Acta (BBA) - Biomembranes"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1999,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1016/s0005-2736(99)00197-2",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T00:29:11Z",
+      "timestamp": 1027643351000
+    },
+    "page": "1-10",
+    "source": "Crossref",
+    "is-referenced-by-count": 844,
+    "title": [
+      "Why and how are peptide–lipid interactions utilized for self-defense? Magainins and tachyplesins as archetypes"
+    ],
+    "prefix": "10.1016",
+    "volume": "1462",
+    "author": [
+      {
+        "given": "Katsumi",
+        "family": "Matsuzaki",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB1",
+        "unstructured": "H.G. Boman, J. Marsh, J.A. Goode, in: Ciba Foundation Symposium, Vol. 186, John Wiley and Sons, Chichester, 1994."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB2",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.2174/092986650303220615100109",
+        "volume": "3",
+        "author": "Waring",
+        "year": "1996",
+        "journal-title": "Protein Peptide Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB3",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1002/bip.360370206",
+        "volume": "37",
+        "author": "Maloy",
+        "year": "1995",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB4",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1016/S0167-7799(97)01156-6",
+        "volume": "16",
+        "author": "Hancock",
+        "year": "1998",
+        "journal-title": "Trends Biotech."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB5",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1006/bbrc.1998.8159",
+        "volume": "244",
+        "author": "Park",
+        "year": "1998",
+        "journal-title": "Biochem. Biophys. Res. Commun."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB6",
+        "doi-asserted-by": "crossref",
+        "first-page": "391",
+        "DOI": "10.1016/S0304-4157(98)00014-8",
+        "volume": "1376",
+        "author": "Matsuzaki",
+        "year": "1998",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB7",
+        "doi-asserted-by": "crossref",
+        "first-page": "575",
+        "DOI": "10.1111/j.1432-1033.1996.0575p.x",
+        "volume": "237",
+        "author": "Aumelas",
+        "year": "1996",
+        "journal-title": "Eur. J. Biochem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB8",
+        "doi-asserted-by": "crossref",
+        "first-page": "352",
+        "DOI": "10.1111/j.1432-1033.1996.0352h.x",
+        "volume": "240",
+        "author": "Harwig",
+        "year": "1996",
+        "journal-title": "Eur. J. Biochem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB9",
+        "doi-asserted-by": "crossref",
+        "first-page": "93",
+        "DOI": "10.1016/0014-5793(96)00236-0",
+        "volume": "383",
+        "author": "Mangoni",
+        "year": "1996",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB10",
+        "doi-asserted-by": "crossref",
+        "first-page": "177",
+        "DOI": "10.2174/092986650303220615100109",
+        "volume": "3",
+        "author": "Waring",
+        "year": "1996",
+        "journal-title": "Protein Peptide Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB11",
+        "doi-asserted-by": "crossref",
+        "first-page": "5449",
+        "DOI": "10.1073/pnas.84.15.5449",
+        "volume": "84",
+        "author": "Zasloff",
+        "year": "1987",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB12",
+        "doi-asserted-by": "crossref",
+        "first-page": "711",
+        "DOI": "10.1002/j.1460-2075.1983.tb01489.x",
+        "volume": "2",
+        "author": "Hoffmann",
+        "year": "1983",
+        "journal-title": "EMBO J."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB13",
+        "doi-asserted-by": "crossref",
+        "first-page": "910",
+        "DOI": "10.1073/pnas.85.3.910",
+        "volume": "85",
+        "author": "Zasloff",
+        "year": "1988",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB14",
+        "doi-asserted-by": "crossref",
+        "first-page": "462",
+        "DOI": "10.1016/0014-5793(88)80077-2",
+        "volume": "236",
+        "author": "Chen",
+        "year": "1988",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB15",
+        "doi-asserted-by": "crossref",
+        "first-page": "151",
+        "DOI": "10.1016/0014-5793(90)81351-N",
+        "volume": "274",
+        "author": "Bessalle",
+        "year": "1990",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB16",
+        "doi-asserted-by": "crossref",
+        "first-page": "119",
+        "DOI": "10.1016/S0005-2736(97)00051-5",
+        "volume": "1327",
+        "author": "Matsuzaki",
+        "year": "1997",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB17",
+        "doi-asserted-by": "crossref",
+        "first-page": "3423",
+        "DOI": "10.1021/bi00010a034",
+        "volume": "34",
+        "author": "Matsuzaki",
+        "year": "1995",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB18",
+        "doi-asserted-by": "crossref",
+        "first-page": "16709",
+        "DOI": "10.1016/S0021-9258(18)37448-9",
+        "volume": "263",
+        "author": "Nakamura",
+        "year": "1988",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB19",
+        "doi-asserted-by": "crossref",
+        "first-page": "663",
+        "DOI": "10.1093/oxfordjournals.jbchem.a122913",
+        "volume": "106",
+        "author": "Miyata",
+        "year": "1989",
+        "journal-title": "J. Biochem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB20",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.1093/oxfordjournals.jbchem.a123191",
+        "volume": "108",
+        "author": "Muta",
+        "year": "1990",
+        "journal-title": "J. Biochem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB21",
+        "doi-asserted-by": "crossref",
+        "first-page": "121",
+        "DOI": "10.1016/0014-5793(89)80902-0",
+        "volume": "252",
+        "author": "Shieh",
+        "year": "1989",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB22",
+        "doi-asserted-by": "crossref",
+        "unstructured": "K. Akaji, N. Fujii, F. Tokunaga, T. Miyata, S. Iwanaga, H. Yajima, Chem. Pharm. Bull. 37 (1989) 2661–2664.",
+        "DOI": "10.1248/cpb.37.2661"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB23",
+        "doi-asserted-by": "crossref",
+        "first-page": "978",
+        "DOI": "10.1248/cpb.41.978",
+        "volume": "41",
+        "author": "Tamamura",
+        "year": "1993",
+        "journal-title": "Chem. Pharm. Bull."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB24",
+        "doi-asserted-by": "crossref",
+        "first-page": "178",
+        "DOI": "10.1248/bpb.16.178",
+        "volume": "16",
+        "author": "Katsu",
+        "year": "1993",
+        "journal-title": "Biol. Pharm. Bull."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB25",
+        "doi-asserted-by": "crossref",
+        "first-page": "259",
+        "DOI": "10.1016/0005-2736(91)90173-6",
+        "volume": "1070",
+        "author": "Matsuzaki",
+        "year": "1991",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB26",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1016/0014-5793(89)80627-1",
+        "volume": "249",
+        "author": "Juretić",
+        "year": "1989",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB27",
+        "doi-asserted-by": "crossref",
+        "first-page": "1460",
+        "DOI": "10.1128/AAC.36.7.1460",
+        "volume": "36",
+        "author": "Ohta",
+        "year": "1992",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB28",
+        "doi-asserted-by": "crossref",
+        "first-page": "4761",
+        "DOI": "10.1073/pnas.87.12.4761",
+        "volume": "87",
+        "author": "Wade",
+        "year": "1990",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB29",
+        "doi-asserted-by": "crossref",
+        "first-page": "130",
+        "DOI": "10.1016/0005-2736(89)90090-4",
+        "volume": "981",
+        "author": "Matsuzaki",
+        "year": "1989",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB30",
+        "doi-asserted-by": "crossref",
+        "first-page": "162",
+        "DOI": "10.1016/0005-2736(91)90366-G",
+        "volume": "1063",
+        "author": "Matsuzaki",
+        "year": "1991",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB31",
+        "doi-asserted-by": "crossref",
+        "first-page": "5365",
+        "DOI": "10.1021/bi00071a011",
+        "volume": "32",
+        "author": "Vaz Gomes",
+        "year": "1993",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB32",
+        "doi-asserted-by": "crossref",
+        "first-page": "287",
+        "DOI": "10.1016/0922-4106(92)90045-W",
+        "volume": "226",
+        "author": "Cruciani",
+        "year": "1992",
+        "journal-title": "Eur. J. Pharmacol. Mol. Pharmacol. Sect."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB33",
+        "doi-asserted-by": "crossref",
+        "first-page": "1017",
+        "DOI": "10.1016/S0006-3495(89)82746-8",
+        "volume": "56",
+        "author": "Duclohier",
+        "year": "1989",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB34",
+        "doi-asserted-by": "crossref",
+        "first-page": "9799",
+        "DOI": "10.1021/bi970588v",
+        "volume": "36",
+        "author": "Matsuzaki",
+        "year": "1997",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB35",
+        "unstructured": "J.M. Graham, J.A. Higgins, in: Membrane Analysis, Springer, New York, 1997."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB36",
+        "unstructured": "C. Ratledge, S.G. Wilkinson, in: Microbial Lipids, Vol. 1, Academic Press, London, 1988."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB37",
+        "first-page": "53",
+        "volume": "6",
+        "author": "Lohner",
+        "year": "1997",
+        "journal-title": "Adv. Biophys. Chem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB38",
+        "doi-asserted-by": "crossref",
+        "first-page": "11704",
+        "DOI": "10.1021/bi00094a029",
+        "volume": "32",
+        "author": "Matsuzaki",
+        "year": "1993",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB39",
+        "doi-asserted-by": "crossref",
+        "first-page": "52",
+        "DOI": "10.1021/bi00453a007",
+        "volume": "29",
+        "author": "Beschiaschvili",
+        "year": "1990",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB40",
+        "doi-asserted-by": "crossref",
+        "first-page": "3909",
+        "DOI": "10.1021/bi972615n",
+        "volume": "37",
+        "author": "Wenk",
+        "year": "1998",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB41",
+        "unstructured": "M.T. Madigan, J.M. Martinko, J. Parker, in: Biology of Microorganisms, 8th edn., Prentice Hall, London, 1997."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB42",
+        "doi-asserted-by": "crossref",
+        "first-page": "10844",
+        "DOI": "10.1021/bi960362c",
+        "volume": "35",
+        "author": "Wieprecht",
+        "year": "1996",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB43",
+        "doi-asserted-by": "crossref",
+        "first-page": "2104",
+        "DOI": "10.1021/bi961870p",
+        "volume": "36",
+        "author": "Matsuzaki",
+        "year": "1997",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB44",
+        "doi-asserted-by": "crossref",
+        "first-page": "11856",
+        "DOI": "10.1021/bi980539y",
+        "volume": "37",
+        "author": "Matsuzaki",
+        "year": "1998",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB45",
+        "doi-asserted-by": "crossref",
+        "first-page": "15144",
+        "DOI": "10.1021/bi9811617",
+        "volume": "37",
+        "author": "Matsuzaki",
+        "year": "1998",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB46",
+        "doi-asserted-by": "crossref",
+        "first-page": "4490",
+        "DOI": "10.1021/bi00470a031",
+        "volume": "29",
+        "author": "Williams",
+        "year": "1990",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB47",
+        "doi-asserted-by": "crossref",
+        "first-page": "7289",
+        "DOI": "10.1021/bi00147a012",
+        "volume": "31",
+        "author": "Jackson",
+        "year": "1992",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB48",
+        "doi-asserted-by": "crossref",
+        "first-page": "12733",
+        "DOI": "10.1021/bi961468a",
+        "volume": "35",
+        "author": "Hirsh",
+        "year": "1996",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB49",
+        "doi-asserted-by": "crossref",
+        "first-page": "2077",
+        "DOI": "10.1002/pro.5560021208",
+        "volume": "2",
+        "author": "Bechinger",
+        "year": "1993",
+        "journal-title": "Protein Sci."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB50",
+        "doi-asserted-by": "crossref",
+        "first-page": "15365",
+        "DOI": "10.1016/S0021-9258(18)55402-8",
+        "volume": "265",
+        "author": "Kawano",
+        "year": "1990",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB51",
+        "doi-asserted-by": "crossref",
+        "first-page": "209",
+        "DOI": "10.1016/0167-4838(93)90183-R",
+        "volume": "1163",
+        "author": "Tamamura",
+        "year": "1993",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB52",
+        "doi-asserted-by": "crossref",
+        "first-page": "12241",
+        "DOI": "10.1021/bi00163a038",
+        "volume": "31",
+        "author": "Park",
+        "year": "1992",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB53",
+        "doi-asserted-by": "crossref",
+        "first-page": "4352",
+        "DOI": "10.1021/bi962171f",
+        "volume": "36",
+        "author": "Oishi",
+        "year": "1997",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB54",
+        "doi-asserted-by": "crossref",
+        "first-page": "79",
+        "DOI": "10.1016/S0959-440X(94)90063-9",
+        "volume": "4",
+        "author": "White",
+        "year": "1994",
+        "journal-title": "Curr. Opin. Struct. Biol."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB55",
+        "doi-asserted-by": "crossref",
+        "first-page": "981",
+        "DOI": "10.1016/S0006-3495(98)74021-4",
+        "volume": "74",
+        "author": "Bechinger",
+        "year": "1998",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB56",
+        "doi-asserted-by": "crossref",
+        "first-page": "3342",
+        "DOI": "10.1021/bi00177a027",
+        "volume": "33",
+        "author": "Matsuzaki",
+        "year": "1994",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB57",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1016/0005-2736(94)90050-7",
+        "volume": "1190",
+        "author": "Ludtke",
+        "year": "1994",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB58",
+        "doi-asserted-by": "crossref",
+        "first-page": "16764",
+        "DOI": "10.1021/bi00051a026",
+        "volume": "34",
+        "author": "Ludtke",
+        "year": "1995",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB59",
+        "doi-asserted-by": "crossref",
+        "first-page": "12869",
+        "DOI": "10.1021/bi971398n",
+        "volume": "36",
+        "author": "Wieprecht",
+        "year": "1997",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB60",
+        "doi-asserted-by": "crossref",
+        "first-page": "1427",
+        "DOI": "10.1051/jp2:1995103",
+        "volume": "5",
+        "author": "Huang",
+        "year": "1995",
+        "journal-title": "J. Phys. II (France)"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB61",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1016/S0006-3495(97)78064-0",
+        "volume": "73",
+        "author": "Heller",
+        "year": "1997",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB62",
+        "doi-asserted-by": "crossref",
+        "first-page": "2659",
+        "DOI": "10.1016/S0006-3495(96)79835-1",
+        "volume": "70",
+        "author": "He",
+        "year": "1996",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB63",
+        "doi-asserted-by": "crossref",
+        "first-page": "11361",
+        "DOI": "10.1021/bi960016v",
+        "volume": "35",
+        "author": "Matsuzaki",
+        "year": "1996",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB64",
+        "doi-asserted-by": "crossref",
+        "first-page": "13723",
+        "DOI": "10.1021/bi9620621",
+        "volume": "35",
+        "author": "Ludtke",
+        "year": "1996",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB65",
+        "doi-asserted-by": "crossref",
+        "first-page": "846",
+        "DOI": "10.1016/0006-291X(80)90780-9",
+        "volume": "92",
+        "author": "Hope",
+        "year": "1980",
+        "journal-title": "Biochem. Biophys. Res. Commun."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB66",
+        "doi-asserted-by": "crossref",
+        "first-page": "347",
+        "DOI": "10.1016/0005-2736(83)90134-7",
+        "volume": "734",
+        "author": "Seddon",
+        "year": "1983",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB67",
+        "doi-asserted-by": "crossref",
+        "first-page": "675",
+        "DOI": "10.1016/0006-291X(83)90359-5",
+        "volume": "111",
+        "author": "Farren",
+        "year": "1983",
+        "journal-title": "Biochem. Biophys. Res. Commun."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB68",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.1016/S0304-4157(98)00015-X",
+        "volume": "1376",
+        "author": "Epand",
+        "year": "1998",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB69",
+        "doi-asserted-by": "crossref",
+        "first-page": "11479",
+        "DOI": "10.1021/bi00036a021",
+        "volume": "34",
+        "author": "Gazit",
+        "year": "1995",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB70",
+        "doi-asserted-by": "crossref",
+        "first-page": "460",
+        "DOI": "10.1016/S0968-0004(00)89101-X",
+        "volume": "20",
+        "author": "Shai",
+        "year": "1995",
+        "journal-title": "Trends Biol. Sci."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB71",
+        "doi-asserted-by": "crossref",
+        "first-page": "6521",
+        "DOI": "10.1021/bi00019a033",
+        "volume": "34",
+        "author": "Matsuzaki",
+        "year": "1995",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB72",
+        "doi-asserted-by": "crossref",
+        "first-page": "219",
+        "DOI": "10.1016/0014-5793(91)81191-A",
+        "volume": "293",
+        "author": "de Waal",
+        "year": "1991",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB73",
+        "doi-asserted-by": "crossref",
+        "first-page": "257",
+        "DOI": "10.1111/j.1432-1033.1995.00257.x",
+        "volume": "228",
+        "author": "Westerhoff",
+        "year": "1995",
+        "journal-title": "Eur. J. Biochem."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB74",
+        "doi-asserted-by": "crossref",
+        "first-page": "237",
+        "DOI": "10.1146/annurev.mi.38.100184.001321",
+        "volume": "38",
+        "author": "Hancock",
+        "year": "1984",
+        "journal-title": "Annu. Rev. Microbiol."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB75",
+        "doi-asserted-by": "crossref",
+        "first-page": "464",
+        "DOI": "10.1016/0014-5793(90)80616-Q",
+        "volume": "261",
+        "author": "Rana",
+        "year": "1990",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB76",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1016/0014-5793(91)81141-T",
+        "volume": "293",
+        "author": "Rana",
+        "year": "1991",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB77",
+        "doi-asserted-by": "crossref",
+        "first-page": "5858",
+        "DOI": "10.1021/bi00238a008",
+        "volume": "30",
+        "author": "Rana",
+        "year": "1991",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "10.1016/S0005-2736(99)00197-2_BIB78",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.1016/S0014-5793(99)00443-3",
+        "volume": "449",
+        "author": "Matsuzaki",
+        "year": "1999",
+        "journal-title": "FEBS Lett."
+      }
+    ],
+    "container-title": [
+      "Biochimica et Biophysica Acta (BBA) - Biomembranes"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0005273699001972?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0005273699001972?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          18
+        ]
+      ],
+      "date-time": "2023-04-18T17:48:37Z",
+      "timestamp": 1681840117000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0005273699001972"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1999,
+          12
+        ]
+      ]
+    },
+    "references-count": 78,
+    "journal-issue": {
+      "issue": "1-2",
+      "published-print": {
+        "date-parts": [
+          [
+            1999,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0005273699001972"
+    ],
+    "URL": "https://doi.org/10.1016/s0005-2736(99)00197-2",
+    "relation": {},
+    "ISSN": [
+      "0005-2736"
+    ],
+    "issn-type": [
+      {
+        "value": "0005-2736",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1999,
+          12
+        ]
+      ]
+    }
+  }
+}

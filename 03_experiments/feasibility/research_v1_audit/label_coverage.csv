@@ -1,0 +1,6 @@
+endpoint,positive,negative,unknown,total_observed,obs_pct
+AMP (E. coli MIC),253,138,26,391,93.76
+Hemo (Human HC50),18,44,355,62,14.87
+Both Dual-Task,36,0,381,36,8.63
+AMP-Only,355,0,0,355,85.13
+Hemo-Only,26,0,0,26,6.24

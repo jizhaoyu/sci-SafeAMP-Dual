@@ -1,0 +1,79 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-02T06:38:26.436691+00:00",
+  "cutoff": 0.4,
+  "folds_required": 5,
+  "candidate_observations": 54,
+  "candidate_molecules": 41,
+  "all_member_pairs": 820,
+  "homology_edges": 31,
+  "combined_components": 8,
+  "negative_bearing_components": 5,
+  "positive_bearing_components": 6,
+  "fold_structure_gate_passed": true,
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 32,
+      "validation_n": 9,
+      "validation_positive": 8,
+      "validation_negative": 1,
+      "both_classes": true
+    },
+    {
+      "fold": 1,
+      "train_n": 33,
+      "validation_n": 8,
+      "validation_positive": 1,
+      "validation_negative": 7,
+      "both_classes": true
+    },
+    {
+      "fold": 2,
+      "train_n": 35,
+      "validation_n": 6,
+      "validation_positive": 4,
+      "validation_negative": 2,
+      "both_classes": true
+    },
+    {
+      "fold": 3,
+      "train_n": 35,
+      "validation_n": 6,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 4,
+      "train_n": 29,
+      "validation_n": 12,
+      "validation_positive": 5,
+      "validation_negative": 7,
+      "both_classes": true
+    }
+  ],
+  "blockers": [
+    "The full selected cohort still needs complete primary-paper review and a new immutable training protocol."
+  ],
+  "records_released_for_training": 0,
+  "script_sha256": "36c113f05f542e113c2de1c1035c16786d00c82b6ca642a77d192d2a5734c2a1",
+  "inputs": {
+    "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v2\\manifest.json": "b8507cae4124233349e591a30d9c756346c00a92d3ec1e9b72936bedd4c9c27b",
+    "03_experiments\\audits\\mic_primary_review_pmid35735615_20261002_v1\\manifest.json": "36c341e40fcf1601aaca9e3e89943a5f6d51134d11c287e43687c48e825f5e9c",
+    "02_code\\audit_mic_reviewed_subset_hirsch.py": "7edf6a2cd9fac48ab682ebe3b11a0a75697cfe85d96498ddc64bcc9f257ff43e",
+    "02_code\\research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350",
+    "02_code\\research_protocol_config.py": "d21ccf0a1088be675591878490cd9c4a90a43c5ec0da5af78541901725c25a72"
+  },
+  "outputs": {
+    "candidate_molecules.csv": "2016c7c54231d57a040e9cb885fc121a5bc3de46417e77b08a37134e51ba0994",
+    "candidate_observations.csv": "98e1d3d4f655941200630457f7cbe8286d53e5fde02b475b44157a22885c0253",
+    "all_member_similarity.csv": "ab4faefc820bf23092da50486b4778d02fddae6e7cdf320f2170e9147d57b334",
+    "component_summary.csv": "744e9315568bab24830bcb26a05d06e6ad45e598412ec1b731b0c7ddcafde150",
+    "fold_assignments.csv": "3c4dd0cdc57c3656411377e6429b5a651b69f45b906d56a3f44503c8365418d2",
+    "cross_fold_study_audit.csv": "876c2c3534ec96c1b2b61bc6b00811c97754c831e0aa019147c5eea913ebedd4",
+    "report.md": "f563244ae32b28c5258a3588572a9e3436b5660e2b28b83cd7c010244e8f8b2a"
+  }
+}

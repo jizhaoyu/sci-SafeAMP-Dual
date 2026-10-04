@@ -1,0 +1,1501 @@
+[
+  {
+    "source_id": "pandinin2014",
+    "source_type": "JATS_XML",
+    "tables": [
+      {
+        "id": "pone-0101742-t001",
+        "caption": "Physicochemical properties of Pin2 and Pin2 variants.",
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "Molecular Weight (Da)"
+          ],
+          [
+            "Peptide",
+            "Sequence",
+            "GRAVY",
+            "AMF",
+            "μHrel",
+            "Q",
+            "RT (min)",
+            "Theoretical",
+            "Experimental §"
+          ],
+          [
+            "Pin2",
+            "FWGALAKGALKLIPSLFSSFSKKD",
+            "0.329",
+            "0.4283",
+            "0.48",
+            "+3",
+            "30.6",
+            "2612.1",
+            "2612.0"
+          ],
+          [
+            "Pin2 [G]",
+            "FWGALAKGALKLIGSLFSSFSKKD",
+            "0.379",
+            "0.4296",
+            "0.49",
+            "+3",
+            "40.1",
+            "2572.0",
+            "2572.0"
+          ],
+          [
+            "Pin2 [GPG]",
+            "FWGALAKGALKLIGPGSLFSSFSKKD",
+            "0.273",
+            "0.4369",
+            "0.28",
+            "+3",
+            "27.6",
+            "2726.2",
+            "2727.0"
+          ],
+          [
+            "Pin2  \n [14]",
+            "FWGLKGLKKFSKKL",
+            "−0.357",
+            "0.4271",
+            "0.51",
+            "+5",
+            "18.5",
+            "1680.1",
+            "1680.0"
+          ],
+          [
+            "Pin2  \n [17]",
+            "FWGLKGLKGPGKFSKKL",
+            "−0.435",
+            "0.4453",
+            "0.35",
+            "+5",
+            "17.2",
+            "1891.3",
+            "1891.3"
+          ]
+        ]
+      },
+      {
+        "id": "pone-0101742-t002",
+        "caption": "Alignment of the sequences of Pin2  [14]  and Pin2  [17]  with the sequence of other antimicrobial peptides.",
+        "rows": [
+          [
+            "Peptide",
+            "UniProtKB ID",
+            "Origin",
+            "Sequence ‡",
+            "AA",
+            "Identity (%)",
+            "Q",
+            "Reference"
+          ],
+          [
+            "Pin2  [14]",
+            "-",
+            "Synthetic",
+            "-FWG—LKGLKKFS---KKL--------",
+            "14",
+            "-",
+            "+5",
+            "This work"
+          ],
+          [
+            "Pin2",
+            "P83240",
+            "Pandinus imperator",
+            "-FWGALAKGALKLI---PSLFSSFSKKD",
+            "24",
+            "50.0",
+            "+3",
+            "[15]"
+          ],
+          [
+            "CPF-SE3",
+            "P84386",
+            "Silurana epitropicalis",
+            "GFLGSLLKTGLKVG---SNLL-------",
+            "18",
+            "50.0",
+            "+3",
+            "[46]"
+          ],
+          [
+            "CE-MA §",
+            "-",
+            "Synthetic",
+            "-KWK—LFKKIKFLHSAKKF--------",
+            "17",
+            "47.4",
+            "+7",
+            "[47]"
+          ],
+          [
+            "Macropin 1",
+            "",
+            "Macropis fulvipes",
+            "---G—-FGMALKLL---KKVL-------",
+            "13",
+            "47.1",
+            "+3",
+            "[48]"
+          ],
+          [
+            "Mastoparam",
+            "P69034",
+            "Mischocyttarus phthisicus",
+            "INW---LKLGKKMM---SAL--------",
+            "14",
+            "47.1",
+            "+3",
+            "[49]"
+          ],
+          [
+            "Japonicin 1",
+            "B3VZU2",
+            "Rana chensinensis",
+            "-FFP—LALLCKVF---KKC--------",
+            "14",
+            "46.7",
+            "+3",
+            "[50]"
+          ],
+          [
+            "Pin2  [17]",
+            "",
+            "Synthetic",
+            "-FWG-LKGLKGP------GKFSKKL",
+            "17",
+            "-",
+            "+5",
+            "This work"
+          ],
+          [
+            "Pin2",
+            "P83240",
+            "Pandinus imperator",
+            "-FWGALAKGALKLIPSLFSSFSKKD",
+            "24",
+            "54.2",
+            "+3",
+            "[15]"
+          ],
+          [
+            "Ponericin W5",
+            "P82427",
+            "Pachycondyla goeldii",
+            "-FWGALIKGAAKLIPSVVGLFKKKQ",
+            "24",
+            "50.0",
+            "+5",
+            "[23]"
+          ],
+          [
+            "CPF-SE3",
+            "P84386",
+            "Silurana epitropicalis",
+            "GFLGSLLKTGLK-----VGSNLL—",
+            "18",
+            "47.6",
+            "+3",
+            "[46]"
+          ],
+          [
+            "NRC-15",
+            "-",
+            "Glyptocephalus cynoglossus L",
+            "GFWGKLFKLGLHG----IGLLHLHL",
+            "21",
+            "47.6",
+            "+2",
+            "[51]"
+          ],
+          [
+            "Brevinin 1RTb",
+            "D1MIZ6",
+            "Amolops ricketti",
+            "-FLGSLLGLVGKVVPTLFCKISKKC",
+            "24",
+            "45.8",
+            "+4",
+            "[52]"
+          ],
+          [
+            "Brevinin 1AUa",
+            "-",
+            "Rana aurora aurora",
+            "-FLPILAGLAAKLVPKVFCSITKKC",
+            "24",
+            "44.0",
+            "+4",
+            "[53]"
+          ],
+          [
+            "Maxinin H39",
+            "Q58T55",
+            "Bombina maxima",
+            "-ILGPVLGLVGNAL----GGLIKKL",
+            "20",
+            "42.9",
+            "+2",
+            "[54]"
+          ]
+        ]
+      },
+      {
+        "id": "pone-0101742-t003",
+        "caption": "Antimicrobial and hemolytic activities of Pin2 and the Pin2 variants.",
+        "rows": [
+          [
+            "",
+            "",
+            "MIC (µM)",
+            ""
+          ],
+          [
+            "Peptide",
+            "Assay",
+            "E. coli",
+            "S. aureus",
+            "Hemolysis (IC 50 ) ‡"
+          ],
+          [
+            "Pin2",
+            "MHA",
+            "18.8",
+            "37.5",
+            "3.3 [1.9–5.7]"
+          ],
+          [
+            "",
+            "MHB",
+            "12.5",
+            "12.5",
+            ""
+          ],
+          [
+            "Pin2 [G]",
+            "MHA",
+            "12.5",
+            "12.5",
+            "1.4 [0.4–4.3]"
+          ],
+          [
+            "",
+            "MHB",
+            "12.5",
+            "12.5",
+            ""
+          ],
+          [
+            "Pin2 [GPG]",
+            "MHA",
+            "25",
+            "25",
+            "46.6 [34–64] *"
+          ],
+          [
+            "",
+            "MHB",
+            "12.5",
+            "12.5",
+            ""
+          ],
+          [
+            "Pin2  [14]",
+            "MHA",
+            "25",
+            ">300",
+            "418.4 [291–602] *"
+          ],
+          [
+            "",
+            "MHB",
+            "25",
+            ">25 †",
+            ""
+          ],
+          [
+            "Pin2  [17]",
+            "MHA",
+            "25",
+            "80",
+            "NO"
+          ],
+          [
+            "",
+            "MHB",
+            ">25 †",
+            ">25",
+            ""
+          ]
+        ]
+      },
+      {
+        "id": "pone-0101742-t004",
+        "caption": "Antimicrobial activity of Pin2 and the Pin2 variants on two strains of  M. tuberculosis .",
+        "rows": [
+          [
+            "",
+            "",
+            "Mycobacterium tuberculosis  H37Rv",
+            "Mycobacterium tuberculosis  MDR *"
+          ],
+          [
+            "Peptide",
+            "MW (Da)",
+            "MIC (µg/mL)",
+            "MIC (µM)",
+            "MIC (µg/mL)",
+            "MIC (µM)"
+          ],
+          [
+            "Pin2",
+            "2,612.1",
+            "57.7±22.3",
+            "22.1±8.6",
+            "86.5",
+            "33.1"
+          ],
+          [
+            "Pin2 [G]",
+            "2,572.0",
+            "48.1",
+            "18.7",
+            "48.1",
+            "18.7"
+          ],
+          [
+            "Pin2 [GPG]",
+            "2,762.2",
+            "80.1±24.8",
+            "29±9",
+            "48.1",
+            "17.4"
+          ],
+          [
+            "Pin2  [14]",
+            "1,680.1",
+            "20±6.2",
+            "11.92±3.7",
+            "10±3.1",
+            "6±1.8"
+          ],
+          [
+            "Pin2  [17]",
+            "1,891.3",
+            "22±4.9",
+            "11.65±2.59",
+            "28.0±9.8",
+            "14.8±5.2"
+          ],
+          [
+            "Ethambutol §",
+            "204.3",
+            "0.5",
+            "2.5",
+            "20",
+            "97"
+          ],
+          [
+            "Isoniazid",
+            "137.1",
+            "24±8.8",
+            "175.1±63.9",
+            "6±2.2",
+            "43.8±16"
+          ],
+          [
+            "Rifampicin §",
+            "823.0",
+            "0.4",
+            "0.5",
+            "32",
+            "38.9"
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Microorganisms",
+        "text": "Microorganisms The bacterial strains used were  Escherichia coli  (ATCC 25922) and  Staphylococcus aureus  (ATCC 25923). They were purchased directly from the American Type Culture Collection (ATCC) through The Global Bioresource Center.  Mycobacterium tuberculosis  H37Rv (ATCC 27294)  [27]  and  M. tuberculosis  muti-drug resistant strain (MDR)  [28]  were from the Medical Research Unit-Zacatecas belonging to the Mexican Institute of Social Security."
+      },
+      {
+        "title": "Solid phase peptide synthesis",
+        "text": "Solid phase peptide synthesis Pin2 and Pin2 variants were chemically synthesized by a solid-phase method using the Fmoc methodology on an Applied Biosystems 433A peptide synthesizer. Fmoc-Asp(otBu) or Fmoc-Leu(otBu)-Wang resins were used to provide a free carboxyl at the C-terminus of the Pin2 and its variants. Cleavage and deprotection of peptides, from resins and from protecting side chain groups, were performed using a chemical mixture composed of 1 g crystalline phenol, 0.2 g imidazole, 1 mL thioanisol, 0.5 mL 1,2-ethanedithiol in 20 mL trifluoroacetic acid (TFA). The resin was removed by filtration, and the deprotected peptides in solution were precipitated using cold ethyl ether. The precipitated peptides were washed twice with cold diethyl ether to remove remaining scavengers and protecting groups. Each crude synthetic peptide was then dissolved in a 10% aqueous acetonitrile solution and separated by reverse phase HPLC (RP-HPLC) on a semipreparative C 18  column (10×250 mm, Vydac, USA). Cationic exchange chromatography and C 18  analytical RP-HPLC were further used to purify the synthetic peptides, after all purification steps, the final purity of the peptides was higher than 95%. The molecular masses of the synthetic peptides were obtained by mass spectrometry using a LCQ DUO ion trap mass spectrometer (Finnigan, San Jose, USA) with and ESI source from 2.1 to 3.1 kV."
+      },
+      {
+        "title": "Antimicrobial assays",
+        "text": "Antimicrobial assays Minimal inhibitory concentrations (MIC) and growth inhibition curves were obtained using pure peptides in the presence of bacteria using two different methods, agar diffusion susceptibility assays and broth microdilution assays in accordance to the procedures from the Clinical and Laboratory Standards Institute (CLSI,  http://www.clsi.org ). The agar diffusion susceptibility assay was performed using 10 mL of Mueller-Hinton agar (MHA) underlay on a Petri dish plate, while at the same time, 0.1 mL aliquot of a mid-logarithmic-phase (1×10 8  CFU/mL in MHB with A 625nm  = 0.5) culture, was inoculated in a sterile tube containing 9.9 mL of non solidified MHA and mixed. The content of the tube was overlaid in the previously poured MHA Petri dish. Then 5 µL aliquots of a diluted antimicrobial peptide at 300, 100, 80, 50, 37.5, 25, 18.8, 12.5, 6.25, 3.1 and 1.6 µM were subsequently loaded into the overlay gel. Samples were incubated overnight at 37°C. The antimicrobial activity was determined by measuring clear zone diameters or halos observed around each peptide concentration in cultured MH Petri dishes. Peptide MICs were defined as the lowest peptide concentration with a clear zone halo. Broth microdilution assays were performed using stock solutions of Pin2 [G], Pin2 [GPG], Pin2  [14]  or Pin2  [17]  antimicrobial peptide diluted serially from 25 to 0.4 µM to a final volume of 200 µL, placed in polypropylene microtubes and vacuum dried. Next a volume of 200 µL aliquots of the bacterial suspension (1×10 5  CFU/mL) in MHB was dispensed into each of the polypropylene microtubes and mixed with the diluted antimicrobial peptide. Then each was transferred into a well of a 96-well microtiter plate and bacterial growth was evaluated by measuring absorbance every 2 h until 10 h of incubation time at 37°C. The optical density (OD) of each well was measured at 625 nm in an ELISA reader (BioRad, model 450, Hercules, CA, USA). The positive control contained only"
+      },
+      {
+        "title": "Hemolytic assays",
+        "text": "Hemolytic assays Hemolytic activity was determined by incubating suspensions of human red blood cells with serial dilutions of each selected peptides. Red blood cells were rinsed several times in PBS by centrifugation for 3 min at 3,000  g  until the OD of the supernatant reached the OD of the control (PBS only). Red blood cells were counted by a hemocytometer and adjusted to 7.7×10 6 ±0.3×10 6  cells/mL. Red blood cells were then incubated at room temperature for 1 h in 10% Triton X-100 (positive control), in PBS (blank), or with amphipathic peptides at concentrations of 0.4, 0.8, 1.6, 3.1, 6.2, 12.5 and 25 µM, only for Pin2  [14]  and Pin2  [17]  the 50 and 100 µM concentrations were evaluated. The samples were then centrifuged at 10,000  g  for 5 min, the supernatant was separated from the pellet, and its absorbance measured at 570 nm. The relative optical density compared to that of the suspension treated with 10% Triton X-100 was defined as the percentage of hemolysis."
+      },
+      {
+        "title": "Peptide chemical synthesis and purification",
+        "text": "Peptide chemical synthesis and purification The chemical synthesis of Pin2 and its variants was performed using a 0.1 mmol Fmoc chemistry. The crude synthetic peptide Pin2 and its variants were uniformly purified by RP-HPLC. As a result of the amino acid substitution and deletions in the primary structure of Pin2, the elution times of the Pin2 variants under RP-HPLC were shorter compared to the parental peptide except for Pin2 [G] ( \n Figure 2 \n ). All purified Pin2 variants were proved to have the expected molecular masses. For instance, the experimental  versus  the theoretical masses expected were 2,612.0/2,612.1 for the native Pin2, 2,572.0/2,572.0 for Pin2 [G], 2,727.0/2,726.2 for Pin2 [GPG], 1,680.0/1,680.1 for Pin2  [14] , and 1,891.3/1,891.3 for Pin2  [17] . As a consequence of the substitution and deletions in the primary structure of Pin2, the retention times (RT) under RP-HPLC changed, for instance the Pin2 [G] variant showed a RT of 40.1 min indicating a more hydrophobic molecule respect to Pin2 (RT of 30.6 min). Also, the less hydrophobic character of Pin2 [GPG] variant showed a RT of 27.6 min, while the RT of the short variants Pin2  [14]  and Pin2  [17]  were 18.5 and 17.2 min, respectively. The hydrophobic nature of the Pin2 variants observed by the experimental RT under RP-HPLC agreed to the theoretical hydrophobic character calculated using the GRAVY values. The amino acid sequences and some physicochemical properties of these peptides are listed in  table 1 . Once confirmed the identity of all synthesized peptides, their secondary structure was analyzed as well as their antimicrobial and hemolytic properties were observed. Figure 2 RP-HPLC purification of Pin2 and the variants characterized in this report. A. Pin2, B. Pin2 [G], C. Pin2 [GPG], D. Pin2  [14]  and E. Pin2  [17] ."
+      },
+      {
+        "title": "Antimicrobial activities in Mueller-Hinton Agar and Mueller-Hinton Broth",
+        "text": "Antimicrobial activities in Mueller-Hinton Agar and Mueller-Hinton Broth The Gram-positive bacterium  S. aureus  is one of the main concerns in several topical infections while the Gram-negative bacterium  E. coli  is present in many gastrointestinal infections and other infection diseases. In agar culture media, the antimicrobial activity of Pin2 and Pin2 variants were tested against  S. aureus  and  E. coli . Pin2 [G] variant displayed the highest antimicrobial activity with a MIC value of 12.5 µM, towards both  S. aureus  and  E. coli  ( \n Table 3 \n ). Both parental Pin2 and Pin2 [GPG] showed MIC values of 37.5 and 25 µM for  S. aureus , and 18.8 and 25 µM for  E. coli , respectively. However the short variants Pin2  [14]  and Pin2  [17]  had MIC values >300 and 80 µM towards  S. aureus , respectively, but they both Pin2  [14]  and Pin2  [17]  were more active towards  E. coli  with MIC values of 25 µM. Table 3 Antimicrobial and hemolytic activities of Pin2 and the Pin2 variants. MIC (µM) Peptide Assay \n E. coli \n \n S. aureus \n Hemolysis (IC 50 ) ‡ \n Pin2 MHA 18.8 37.5 3.3 [1.9–5.7] MHB 12.5 12.5 Pin2 [G] MHA 12.5 12.5 1.4 [0.4–4.3] MHB 12.5 12.5 Pin2 [GPG] MHA 25 25 46.6 [34–64] * \n MHB 12.5 12.5 Pin2  [14] \n MHA 25 >300 418.4 [291–602] * \n MHB 25 >25 † \n Pin2  [17] \n MHA 25 80 NO MHB >25 † \n >25 MHA, Mueller-Hinton Agar. MHB: Mueller Hinton Broth. ‡ Mean and 95% confidence intervals, values expressed in µM. *The numeric IC 50  value was obtained from the Boltzmann sigmoid equation fit. † Bacteriostatic effect. NO means no observed hemolytic activity at 100 µM. In broth culture media, the bacterial growth of both  S. aureus  and  E. coli  was observed in the presence of serial concentrations of all Pin2 variants from 25 to 0.4 µM ( \n Figure 4 \n ). Most of the synthetic peptides showed bactericidal or bacteriostatic antimicrobial activity against the two strains with MIC values of 12.5 and 25 µM. Pin2 [G] and Pin2 [GPG] showed MIC values of 12.5 µM for both  E. c"
+      },
+      {
+        "title": "Activity of Pin2 variants against M. tuberculosis",
+        "text": "Activity of Pin2 variants against M. tuberculosis The antibiotic capacities of Pin2 variants were tested in two strains of  M. tuberculosis  using the REMA methodology.  M. tuberculosis  H37Rv is an ATCC strain which has been widely studied and its genome have been completely sequenced, on the other hand,  M. tuberculosis  MDR is a clinical isolated strain which possesses antimicrobial resistance against rifampicin and isoniazid, which are antibiotics used commercially for the treatment of tuberculosis. All synthetic peptide variants showed antimicrobial activities over both strains of  M. tuberculosis  ( \n Table 4 \n ). The MIC values observed were from 11 to 30 µM for the  M. tuberculosis  H37Rv and from 6 to 33 µM for  M. tuberculosis  MDR. It was interesting to observe that the two short variants Pin2  [14]  and Pin2  [17]  had MIC values of 11.9 and 11.6 µM towards  M. tuberculosis  H37Rv and MIC values of 6 and 14.8 µM against  M. tuberculosis  MDR, respectively. These results show the feasibility for using short sequence CAMPs against pathogenic  M. tuberculosis  strains that have acquired resistance to commercial antibiotics. Table 4 Antimicrobial activity of Pin2 and the Pin2 variants on two strains of  M. tuberculosis . \n Mycobacterium tuberculosis  H37Rv \n Mycobacterium tuberculosis  MDR * \n Peptide MW (Da) MIC (µg/mL) MIC (µM) MIC (µg/mL) MIC (µM) Pin2 2,612.1 57.7±22.3 22.1±8.6 86.5 33.1 Pin2 [G] 2,572.0 48.1 18.7 48.1 18.7 Pin2 [GPG] 2,762.2 80.1±24.8 29±9 48.1 17.4 Pin2  [14] \n 1,680.1 20±6.2 11.92±3.7 10±3.1 6±1.8 Pin2  [17] \n 1,891.3 22±4.9 11.65±2.59 28.0±9.8 14.8±5.2 Ethambutol § \n 204.3 0.5 2.5 20 97 Isoniazid 137.1 24±8.8 175.1±63.9 6±2.2 43.8±16 Rifampicin § \n 823.0 0.4 0.5 32 38.9 \n The MIC values were calculated using the Resazurin dye reduction method, 500,000 bacteria per well were evaluated. \n \n §, MIC values reported by Rastogi, et al., 1996  \n [55] \n . \n \n *, Clinically isolated strain characterized with resistance to rifampicin and isoni"
+      },
+      {
+        "title": "Hemolytic activity of Pin2 variants",
+        "text": "Hemolytic activity of Pin2 variants The hemolytic assays of Pin2 and the Pin2 variants on human erythrocytes ( \n Figure 5 \n ) showed that the parental peptides Pin2 as the Pin2 [G] variant at 25 µM had the highest hemolytic activities of all five peptides evaluated, with a 91% and a 100% of hemolysis, respectively. However at the same concentration the Pin2 [GPG] variant showed only a 30% of hemolysis, indicating that the insertion of the GPG motif is relevant for hemolytic activity reduction. The two short variants had not hemolytic effects at 25 µM. Furthermore, they were assayed up to 100 µM observing that the peptide Pin2  [14]  showed 25% of hemolysis, while Pin2  [17]  did not show any hemolytic effect at such concentration. The statistical analysis is shown in table S1 in  file S1 . Figure 5 Hemolytic activity in human red blood cells. Data are the average of at least four independent experiments. Error bars represent the standard deviations."
+      }
+    ]
+  },
+  {
+    "source_id": "corvus2023",
+    "source_type": "JATS_XML",
+    "tables": [
+      {
+        "id": "Tab3",
+        "caption": "List of some of the major AMPs identified from  C. splendens  using APD3, CAMP  R3  and LAMP databases.",
+        "rows": [
+          [
+            "Unigenes ID",
+            "AMP"
+          ],
+          [
+            "CL35Contig1",
+            "Ubiquitin"
+          ],
+          [
+            "CL10522Contig1",
+            "Ubiquicidin"
+          ],
+          [
+            "CL516Contig1",
+            "Histone H2B 1/2/3/4/6"
+          ],
+          [
+            "CL1Contig2038",
+            "Histone H4"
+          ],
+          [
+            "CL17878Contig1",
+            "Histone H2B type 2-E"
+          ],
+          [
+            "CL10566Contig1",
+            "HNr (histone-derived)"
+          ],
+          [
+            "CL10566Contig1",
+            "Histone H2A"
+          ],
+          [
+            "CL516Contig2",
+            "Histone H3"
+          ],
+          [
+            "CL63204Contig1",
+            "Beta-defensin (Fragment)"
+          ],
+          [
+            "CL60147Contig1",
+            "Gallinacin-2"
+          ],
+          [
+            "CL64604Contig1",
+            "Gallinacin-13"
+          ],
+          [
+            "CL59522Contig1",
+            "Gallinacin-5"
+          ],
+          [
+            "CL1Contig2041",
+            "Beta-defensin 9"
+          ],
+          [
+            "CL1Contig2041",
+            "Gallinacin 6"
+          ],
+          [
+            "CL26196Contig1",
+            "Defensin-like fragment"
+          ],
+          [
+            "CL48257Contig1",
+            "Beta-amyloid peptide (1–42)"
+          ],
+          [
+            "CL60229Contig1",
+            "Beta-amyloid peptide (1–40)"
+          ],
+          [
+            "CL31589Contig1",
+            "Cathelicidin-2"
+          ],
+          [
+            "CL8444Contig1",
+            "rtCATH-1b (cathelicidin, fish, animals)"
+          ],
+          [
+            "CL26031Contig1",
+            "Liver-expressed antimicrobial peptide 2"
+          ],
+          [
+            "CL26031Contig1",
+            "Hepcidin"
+          ],
+          [
+            "CL23973Contig1",
+            "Neuropeptide Y"
+          ],
+          [
+            "CL44565Contig1",
+            "Enkelytin"
+          ],
+          [
+            "CL44565Contig1",
+            "Proenkephalin-A"
+          ],
+          [
+            "CL23973Contig1",
+            "Bradykinin"
+          ],
+          [
+            "CL44349Contig1",
+            "Vasoactive intestinal polypeptide"
+          ],
+          [
+            "CL52025Contig1",
+            "Vasostatin-1"
+          ],
+          [
+            "CL44349Contig1",
+            "Calcitonin gene-related peptide"
+          ],
+          [
+            "CL540Contig1",
+            "Enhancer of rudimentary homolog"
+          ],
+          [
+            "CL22143Contig1",
+            "Ovotransferrin"
+          ],
+          [
+            "CL50263Contig1",
+            "CCL8"
+          ],
+          [
+            "CL7703Contig1",
+            "Pleiotrophin-A"
+          ],
+          [
+            "CL50263Contig1",
+            "CXCL12"
+          ],
+          [
+            "CL44565Contig1",
+            "Bombinin H7"
+          ]
+        ]
+      },
+      {
+        "id": "Tab1",
+        "caption": "Raw read summary.",
+        "rows": [
+          [
+            "Samples",
+            "Total sequences",
+            "Sequence length",
+            "% GC"
+          ],
+          [
+            "Set1_R1.fastq.gz",
+            "23,785,322",
+            "76",
+            "47"
+          ],
+          [
+            "Set1_R2.fastq.gz",
+            "23,785,322",
+            "76",
+            "47"
+          ],
+          [
+            "Set2_R1.fastq.gz",
+            "59,779,517",
+            "100",
+            "51"
+          ],
+          [
+            "Set2_R2.fastq.gz",
+            "59,779,517",
+            "100",
+            "51"
+          ]
+        ]
+      },
+      {
+        "id": "Tab2",
+        "caption": "Assembly statistics of transcripts and unigenes.",
+        "rows": [
+          [
+            "Assembly statistics",
+            "Transcripts",
+            "Unigenes"
+          ],
+          [
+            "Total sequence length",
+            "353,951,778",
+            "126,484,523"
+          ],
+          [
+            "Minimum sequence length",
+            "185",
+            "201"
+          ],
+          [
+            "Maximum sequence length",
+            "38,885",
+            "38,887"
+          ],
+          [
+            "Average sequence length",
+            "1030.40",
+            "1687.40"
+          ],
+          [
+            "N10",
+            "7826",
+            "8828"
+          ],
+          [
+            "N20",
+            "5796",
+            "6704"
+          ],
+          [
+            "N30",
+            "4547",
+            "5370"
+          ],
+          [
+            "N40",
+            "3603",
+            "4335"
+          ],
+          [
+            "N50",
+            "2747",
+            "3467"
+          ],
+          [
+            "Percent GC",
+            "46.62%",
+            "46.36%"
+          ]
+        ]
+      },
+      {
+        "id": "Tab4",
+        "caption": "Primer sequences for real time PCR.",
+        "rows": [
+          [
+            "Gene name",
+            "Forward primer",
+            "Reverse primer"
+          ],
+          [
+            "Avian beta-defensin 2 (AvBD-2)",
+            "ACAGCCATGAAGATCCTTTACC",
+            "GGCAAAGACAAACCTGGAGA"
+          ],
+          [
+            "Avian beta-defensin 13 (AvBD-13)",
+            "CAGCAGTGCAGAAGCAACC",
+            "ATTGCTGCAGCTCCCTTC"
+          ],
+          [
+            "Cathelicidin 2 (CATH-2)",
+            "CCGTGGATTCCTACAACCAG",
+            "TCCATCATGCTGAAGTTGAGTC"
+          ],
+          [
+            "β- actin",
+            "CCCCACCTGAGCGTAAATACT",
+            "CCTGCTTGCTGATCCACAT"
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Antimicrobial peptide annotation",
+        "text": "Antimicrobial peptide annotation BLASTx results showed that 578 unigenes were annotated as AMPs in  C. splendens  using antimicrobial peptide databases APD3, CAMP R3 , and LAMP with an e-value: 1e−5 and similarity score of ≥ 80 (Tables  S2 ,  S3  and  S4 ). In this study, we obtained 63 AMPs belonging to more than 20 diverse families and functional classes. Among them, some of the major families were ubiquitin, histones, defensins, cathelicidins, amyloids, LEAP-2, transferrin, neuropeptides, enhancer of rudimentary homolog, hepcidin, and chemokines (Table  3 ). The workflow for the analysis of transcriptome data and AMP annotation is shown in Fig.  3 . Figure 3 Workflow for transcriptome analysis and AMP annotation."
+      },
+      {
+        "title": "Antimicrobial activity",
+        "text": "Antimicrobial activity The MIC of  Corvus  CATH-2 was determined for three strains of bacteria such as  S. aureus ,  E. coli , and  B. cereus . Although the tested organisms were susceptible to  Corvus  CATH-2, MIC values were found to be 18.87 μM for  S. aureus , 22.64 μM for  E. coli  and 25.16 μM for  B. cereus  (Fig.  14 ) . Figure 14 Antimicrobial activity of  Corvus  CATH-2 against  B. cereus ,  E. coli  and  S. aureus . Data shown are mean ± standard deviation from three independent experiments. Inoculum (respective strains)—positive control."
+      },
+      {
+        "title": "Hemolytic activity",
+        "text": "Hemolytic activity The hemolytic activity of AMPs against human RBC is generally considered as an indication of their toxicity towards mammalian cells 52 , 53 . The synthesized peptide induced 22% hemolysis at a concentration up to 62.89 µM (Fig.  15 ). Figure 15 Hemolytic activity of  Corvus  CATH-2 against human erythrocytes. Data shown are mean ± standard deviation from three independent experiments. 0.1% Triton—positive control, PBS—negative control."
+      },
+      {
+        "title": "Peptide synthesis",
+        "text": "Peptide synthesis The mature peptide was synthesized by Fmoc solid-phase synthesis (SPPS) strategy using specific automated peptide synthesizer Autopep-001A 130 . The peptide was amidated at the C-terminus as previous research has shown that amidation at the C-terminal of the peptide is strongly linked to its stability 66 . To provide a C-terminus free carboxyl group of activated amino acid for strong and detachable covalent bonding, 4-(2′,4′-Dimethoxyphenyl-Fmoc-aminomethyl) phenoxy resin 100–200 mesh was used. Carboxylic group of N-terminal protected amino acid was activated and peptide amide coupling with the growing solid-phase system was initiated. Deprotection was performed using 20% piperidine in dimethylformamide. The final form of resin was washed with MeOH, CHCl3, and hexane, and dried. A combination of TFA (95%): TIS (2.5%): water (2.5%) was used to remove the peptide from polymer resin and side-chain protecting groups. The synthesized peptide was extracted from the solution using excess peroxide-free pure cold diethyl ether, which was subsequently rinsed seven times with diethyl ether prior to centrifugation to remove residual scavengers and protecting groups. The crude peptide was diluted in 5% acetonitrile solution, and the peptide purity was analyzed to be higher than 95% using reverse-phase HPLC on an RPC18 column (M/s Shimadzu Corporation, Japan). The molecular mass of the synthesized peptide was measured using ESI–MS."
+      },
+      {
+        "title": "Antimicrobial assay",
+        "text": "Antimicrobial assay Antimicrobial activity of the peptide against a few clinically important bacterial strains, namely  Escherichia coli  (MTCC 739),  Staphylococcus aureus  (MTCC 737), and  Bacillus cereus  (clinical isolate) was determined by a modified broth dilution assay as described previously 88 . The peptide’s minimum inhibitory concentration (MIC) was measured. The bacterial strains were cultured in fresh Mueller Hinton (MH) broth at 37 °C to mid-log phase and then diluted with MH broth to a final concentration of approximately 5 × 10 5  CFU/ml. The peptide was subjected to serial dilutions in MH broth. Equal volumes (50 μl) of serially diluted concentrations of peptide and bacterial inoculums were poured to each well of a sterile 96-well microtitre plate. The positive and negative controls were broth with and without bacteria control, respectively. After incubation for 18 h at 37 °C, the optical density at 595 nm was determined using Enspire multimode plate reader from Perkin Elmer Inc. (Waltham, MA, USA). The assays were performed in triplicates with three biological replicates per experiment."
+      },
+      {
+        "title": "Haemolytic assay",
+        "text": "Haemolytic assay The cytotoxicity of the synthesized peptide was measured using human erythrocytes 50 , 134 , 135 . Stored blood from the blood bank was used for the study. Erythrocytes were collected by the centrifugation of whole blood at 1000× g  for 5 min at 4 °C. The collected erythrocytes were washed 3 times with PBS, and the precipitates were resuspended to 2% in PBS. Equal volumes (100 μl) of both erythrocytes suspension and twofold serial dilution of the synthetic peptide were added to 96 well plate. Positive and negative controls were erythrocytes suspended in Triton X-100 (0.1%) and PBS, respectively. After 1 h of incubation at 37 °C, the plate was centrifuged for 5 min at 1000× g . The supernatant was then transferred to a new plate and the haemoglobin release of was determined by monitoring the absorbance at 414 nm using Enspire Multimode plate reader from Perkin Elmer Inc. (Waltham, MA, USA). The assays were performed in triplicates with three biological replicates per experiment. The following equation was used to calculate the percentage of hemolysis: % hemolysis = A 414 nm in CATH-2 - A 414 nm in PBS / A 414 nm in 0.1 % Triton X- 100 - A 414 nm in PBS × 100 %"
+      }
+    ]
+  },
+  {
+    "source_id": "chmap2018",
+    "source_type": "JATS_XML",
+    "tables": [
+      {
+        "id": "T1",
+        "caption": "Comparison of IC 50  values determined for ChMAP-28 and melittin.",
+        "rows": [
+          [
+            "Cell line",
+            "HL-60",
+            "SKBR-3",
+            "A431",
+            "B16F1",
+            "HEK293T",
+            "HEF",
+            "NHA"
+          ],
+          [
+            "",
+            ""
+          ],
+          [
+            "Peptide",
+            "IC 50 , μM"
+          ],
+          [
+            "ChMAP-28",
+            "3.39 ± 0.15",
+            "5.63 ± 1.05",
+            "6.49 ± 0.09",
+            "4.82 ± 1.01",
+            "5.09 ± 0.40",
+            "8.95 ± 2.68",
+            "ND (>10)"
+          ],
+          [
+            "Melittin",
+            "1.86 ± 0.03",
+            "2.03 ±0.09",
+            "1.09 ± 0.17",
+            "1.46 ± 0.07",
+            "1.42 ± 0.18",
+            "1.64 ± 0.10",
+            "1.83 ± 0.15"
+          ],
+          [
+            ""
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Hemolytic Activity Assay",
+        "text": "Hemolytic Activity Assay Hemolytic activity of ChMAP-28 and melittin was tested against fresh human red blood cells (hRBC) washed three times with phosphate buffered saline (PBS: 10 mM Na 2 HPO 4 , 1.76 mM K 2 HPO 4 , pH 7.4, containing 173 mM NaCl, and 2.7 mM KCl). Two-fold serial dilutions of the peptides solutions were then added to 50 μl aliquots of hRBC in PBS to adjust a final volume to 100 μl and hRBC concentration to 4% (v/v) in each well of a 96-well plate. The suspension was incubated for 1.5 h at 37°C under stirring at 1000 rpm. The plates were centrifuged at 2000  g  for 5 min. Supernatant aliquots of 50 μl were transferred into flat-bottomed 96-well microplates, and the release of hemoglobin was monitored by measuring the absorbance at 405 nm in a microplate reader (Eppendorf, Germany). hRBC in PBS and 0.1% Triton X-100 were used as negative and positive controls, respectively. Hemolytic activity was expressed as a percentage of hemolysis calculated according to the following equation: Hemolysis   ( % ) = ( OD 405   sample − OD 405 0 %   lysis   control ) / ( OD 405   100 %   lysis   control − OD 405   0 %   lysis   control ) × 100 % Two experiments were performed with fresh hRBC from human blood samples of independent donors. The quantitative data were represented as average means with standard deviations."
+      },
+      {
+        "title": "Cytotoxic Activity Assay",
+        "text": "Cytotoxic Activity Assay The colorimetric 3-(4,5-dimethylthiazol-2-yl)-2,5-dipheny-ltetrazolium bromide (MTT) dye reduction assay was used to determine the cytotoxicity of the ChMAP-28. 5 × 10 3  – 10 4  cells per well for the cell lines and 10 5  cells per well for PBMC in DMEM/F12 or RPMI-1640 medium, supplemented with 10% FBS were placed into 96-well plates and then incubated in the atmosphere containing 5% CO 2  and 95% air at 37°C overnight. After the media were removed, ChMAP-28 was dissolved in 0.1 ml DMEM/F12 with 10% FBS. The peptide was added to the cell cultures up to final concentrations of 0.6, 1.25, 2.5, 5, 10 μM. Melittin was added at final concentrations of 0.15, 0.3, 0.6, 1.25, 2.5, 5 μM. HL-60 cells (4 × 10 4  in 50 μl) were added to two-time serial dilutions of ChMAP-28 or melittin solutions in 50 μl RPMI-1640 with 10% FBS. Forty eight hours later, 20 μl of MTT (5 mg/ml) was added into each well and the plates were incubated for 3 h at 37°C. The plates with HL-60 cells were centrifuged for 10 min at 2000 rpm. The media were discarded and 0.1 ml of dimethyl sulfoxide and isopropanol mixture at a ratio of 1:1 (v/v) was added to each well to dissolve the crystallized formazan. The absorbance at 570 nm was measured by a microplate reader (Eppendorf)."
+      },
+      {
+        "title": "Synthesis of Microarrays",
+        "text": "Synthesis of Microarrays B3 microarray synthesizer (CustomArray, United States) was used for forty nucleotides-long oligonucleotide probe synthesis on CustomArray ECD 4X2K/12K slides. Synthesis was performed according to the manufacturer’s recommendations. Two replicates of total 6020 unique oligonucleotide probes specific to 3706 human gene transcripts were placed on each chip. Chip design was performed using the Layout Designer software (CustomArray, United States). For the custom microchip, we used original oligonucleotide probe sequences of the Illumina HT 12 v4 platform."
+      },
+      {
+        "title": "Initial Processing of Microarray Data",
+        "text": "Initial Processing of Microarray Data Probe signals were geometrically averaged, thus obtaining expression value for each specific type of the probe. Then quantile normalization ( Bolstad et al., 2003 ) was performed using the “preprocessCore” R package ( Bolstad, 2018 )."
+      },
+      {
+        "title": "Hemolytic Activity of ChMAP-28",
+        "text": "Hemolytic Activity of ChMAP-28 The assay for hemolytic activity of ChMAP-28 was performed to determine the peptide effect on the integrity of red blood cells. This assay allows to assess an ability of the peptide to permeabilize cytoplasmic membrane of erythrocytes. Their lysis results in a detectable increase of the optical density caused by hemoglobin release into solution. For both ChMAP-28 and melittin, we used the detergent Triton X-100 as a positive control and the PBS buffer solution as a negative control. The results (Figure  1A ) evidence that ChMAP-28 has a low hemolytic activity (hemolysis less than 10%) at a concentration range up to 10 μM. The half-hemolysis concentration of ChMAP-28 determined in this study (∼100 μM) was ∼20-fold higher than its IC 50  measured against the cancer cell lines and shown in Table  1 . In contrast, melittin caused 42% hemolysis at the peptide concentrations down to 1.5 μM. FIGURE 1 Toxicity of ChMAP-28 and melittin to normal human blood cells.  (A)  Concentration-dependent curve of ChMAP-28 and melittin toward PBMC assessed by MTT-test.  (B)  The hemolysis curve showing effects of ChMAP-28 and mellitin on human erythrocytes. The data represent the mean values ± SD of three independent series of triplicated experiments. Table 1 Comparison of IC 50  values determined for ChMAP-28 and melittin. Cell line HL-60 SKBR-3 A431 B16F1 HEK293T HEF NHA Peptide IC 50 , μM ChMAP-28 3.39 ± 0.15 5.63 ± 1.05 6.49 ± 0.09 4.82 ± 1.01 5.09 ± 0.40 8.95 ± 2.68 ND (>10) Melittin 1.86 ± 0.03 2.03 ±0.09 1.09 ± 0.17 1.46 ± 0.07 1.42 ± 0.18 1.64 ± 0.10 1.83 ± 0.15 IC 50  values are represented as the means ± standard deviations (SD) of at least three independent experiments. In the case of NHA cells, 50% inhibition was not reached even at the peptide concentration of 10 μM, thus the IC 50  value could not be determined."
+      },
+      {
+        "title": "Cytotoxicity of ChMAP-28",
+        "text": "Cytotoxicity of ChMAP-28 We evaluated the cytotoxic activity of ChMAP-28 against seven mammalian cell types. Four cancer (HL-60 acute promyelocytic leukemia, A431 human epidermoid carcinoma, B16F1 murine melanoma, SKBR-3 human breast adenocarcinoma), one transformed (HEK 293T transformed human embryonic kidney) and two normal human cell lines (HEF human embryonic fibroblasts and NHA normal human astrocytes) were used in this study. HEF and NHA cells were chosen as  in vitro  normal cell models. Cytotoxicity was measured by incubating the cells with serial dilutions of ChMAP-28 followed by MTT assay after 48 h. Dose-dependent cytotoxicity effect curves for the cell lines investigated are shown in Figure  2A . As the positive control, we used the α-helical antimicrobial peptide melittin with a pronounced lytic activity (Figure  2B ). For every condition, cell viabilities were assessed in at least three independent experiments for every cell culture. The half maximal inhibitory concentrations (IC 50 ) were measured as the peptide concentration at which cell viability was reduced by 50% in comparison to untreated cells (Table  1 ). These results demonstrate that ChMAP-28 has a pronounced cytotoxic activity against the mammalian cancer and transformed cell lines and a significantly reduced effect on the normal cells. The most significant cytotoxicity was observed for the HL-60 leukemia cells (IC 50  = 3.4 μM). In contrast, the normal cells (HEF fibroblasts and NHA astrocytes) were much less sensitive to ChMAP-28, with IC 50  of ∼9 μM for HEF, and of >10 μM for NHA cells. In contrast, the control cytolytic peptide melittin displayed cytotoxicity against all cell types revealing IC 50  within a narrow range of 1–2 μM without any selectivity toward adherent, suspension, cancer or normal cells. Toxicities of ChMAP-28 and mellitin measured by MTT assay toward freshly isolated human PBMC were compared in Figure  1B . The IC 50  value for ChMAP-28 (4.6 μM) was lower than the ha"
+      },
+      {
+        "title": "Mechanism of ChMAP-28 Cytotoxicity",
+        "text": "Mechanism of ChMAP-28 Cytotoxicity According to MTT-test, HL-60 cells were found to be the most sensitive to ChMAP-28. They were used, therefore, for investigation of cell death mechanisms with the use of flow cytometry. FITC-Annexin V binds to phosphatidylserine, which is exposed on the outer leaflet of the cellular plasma membrane at the initial stages of apoptosis, whereas PI preferentially stains nuclei of dead cells. Therefore, a combination of FITC-Annexin V and PI assays can be conclusive for differentiating between early apoptotic and late apoptotic/necrotic cells. ChMAP-28 was used at three concentrations: less than IC 50  (1 μM), comparable to IC 50  (3 μM) and twofold exceeding IC 50  (6 μM). Melittin was used as the positive cytotoxic control at final concentrations of 1, 2, and 4 μM. Three time points were used for measurements of the peptide-dependent cytotoxicities: 1, 2, and 4 h after addition of the peptides. The results of double staining of HL-60 cells, followed by the flow cytometry analysis are shown in Figure  3 . The ChMAP-28 concentration of 1 μM was not toxic to HL-60 cells. However, their incubation with ChMAP-28 at the peptide concentration of 3 μM for 1, 2, and 4 h caused disruption of membrane integrity in >60% of the cells. Moreover, at the ChMAP-28 final concentration of 6 μM almost all cancer cells were dead at any time points. Thus, the effect of ChMAP-28 on cancer cells depended mostly on the peptide concentration but not on the incubation time (Figure  3A ) which was illustrative of the peptide nondelayed effect. FIGURE 3 The flow cytometry results of FITC-annexin V/PI double staining of HL-60 cells after  (A)  1, 2, and 4 h of incubation with RPMI-1640 medium (control) at the final ChMAP-28 concentrations of 1, 3, and 6 μM.  (B)  1, 2, and 4 h of incubation with RPMI-1640 medium (control) at the final melittin concentrations of 1, 2, and 4 μM. The results are presented as the percentage of viable (AV- PI-), apoptotic (AV+ PI-), se"
+      }
+    ]
+  },
+  {
+    "source_id": "goat_antibacterial2018",
+    "source_type": "JATS_XML",
+    "tables": [
+      {
+        "id": "T1",
+        "caption": "Bacterial strains used in this study.",
+        "rows": [
+          [
+            "Bacterial strain",
+            "Characteristics (source, antibiotic resistance)"
+          ],
+          [
+            "Micrococcus luteus  B-1314",
+            "Laboratory strain (VKM collection)"
+          ],
+          [
+            "Bacillus subtilis  B-886",
+            "Laboratory strain (VKM collection)"
+          ],
+          [
+            "Enterococcus faecalis  ATCC 29212",
+            "Laboratory strain (ATCC collection)"
+          ],
+          [
+            "Staphylococcus aureus  ATCC 29213",
+            "Laboratory strain (ATCC collection)"
+          ],
+          [
+            "Staphylococcus aureus  209P",
+            "Laboratory strain (ATCC collection)"
+          ],
+          [
+            "Escherichia coli  DH10B",
+            "Cloning strain (Invitrogen)"
+          ],
+          [
+            "Escherichia coli  BL21 (DE3)",
+            "Expression strain (Novagen)"
+          ],
+          [
+            "Escherichia coli  BL21 Star (DE3)",
+            "Expression strain (Novagen)"
+          ],
+          [
+            "Escherichia coli  ML-35p",
+            "Laboratory strain (ATCC collection)"
+          ],
+          [
+            "Escherichia coli  C600",
+            "Laboratory strain (ATCC collection)"
+          ],
+          [
+            "Escherichia coli  (XDR CI 1057)",
+            "Extensively drug resistant clinical isolate (urine, urinary tract infection; ESBL+)"
+          ],
+          [
+            "Escherichia coli  (CI 214)",
+            "Clinical isolate (urine, acute pyelonephritis)"
+          ],
+          [
+            "Klebsiella pneumoniae  (CI 287)",
+            "Clinical isolate ∗"
+          ],
+          [
+            "Klebsiella pneumoniae  (XDR CI 1056)",
+            "Extensively drug resistant clinical isolate (urine, urinary tract infection; ESBL+)"
+          ],
+          [
+            "Enterobacter cloacae  (XDR CI 4172)",
+            "Extensively drug resistant clinical isolate ∗  (MBL+)"
+          ],
+          [
+            "Acinetobacter baumannii  (XDR CI 2675)",
+            "Extensively drug resistant clinical isolate ∗  (MBL+)"
+          ],
+          [
+            "Pseudomonas aeruginosa  PAO1",
+            "Laboratory strain (ATCC collection)"
+          ],
+          [
+            "Pseudomonas aeruginosa  (XDR CI 1049)",
+            "Extensively drug resistant clinical isolate (urine, kidney stone disease; MBL+)"
+          ],
+          [
+            "Proteus mirabilis  (XDR CI 3423)",
+            "Extensively drug resistant clinical isolate ∗  (MBL+)"
+          ]
+        ]
+      },
+      {
+        "id": "T2",
+        "caption": "Antibacterial activity of goat cathelicidins and melittin.",
+        "rows": [
+          [
+            "Strain",
+            "sbmA/yaiW ∗∗",
+            "Minimum inhibitory concentration (μM) ∗"
+          ],
+          [
+            "",
+            "",
+            "Melittin",
+            "ChMAP-28",
+            "mini-ChBac7.5Nα",
+            "mini-ChBac7.5Nα(1–16)"
+          ],
+          [
+            "",
+            "",
+            "Without NaCl",
+            "0.9% NaCl",
+            "Without NaCl",
+            "0.9% NaCl",
+            "Without NaCl",
+            "0.9% NaCl",
+            "Without NaCl",
+            "0.9% NaCl"
+          ],
+          [
+            "M. luteus  B-1314",
+            "-/-",
+            "0.25",
+            "0.5",
+            "0.25",
+            "0.5",
+            "0.125",
+            "0.5",
+            "1",
+            "8"
+          ],
+          [
+            "B. subtilis  B-886",
+            "-/-",
+            "0.5",
+            "0.5",
+            "0.25",
+            "1",
+            "0.25",
+            "4",
+            "1",
+            ">32"
+          ],
+          [
+            "E. faecalis  ATCC 29212",
+            "-/-",
+            "1",
+            "1",
+            "4",
+            ">8",
+            ">32",
+            ">32",
+            ">32",
+            ">32"
+          ],
+          [
+            "S. aureus  ATCC 29213",
+            "-/-",
+            "1",
+            "1",
+            "1",
+            "2",
+            "8",
+            ">32",
+            ">32",
+            ">32"
+          ],
+          [
+            "S. aureus  209P",
+            "-/-",
+            "2",
+            "16",
+            "0.06",
+            "0.5",
+            "2",
+            "16",
+            "8",
+            ">32"
+          ],
+          [
+            "E. coli  C600",
+            "+/+",
+            "4",
+            "8",
+            "0.06",
+            "0.125",
+            "2",
+            "4",
+            "2",
+            "16"
+          ],
+          [
+            "E. coli  ML-35p",
+            "+/+",
+            "2",
+            "8",
+            "0.06",
+            "0.06",
+            "0.5",
+            "4",
+            "0.5",
+            "8"
+          ],
+          [
+            "P. aeruginosa  PAO1",
+            "-/-",
+            "4",
+            "8",
+            "0.25",
+            "1",
+            "2",
+            ">32",
+            "16",
+            ">32"
+          ],
+          [
+            "A. baumannii  (XDR CI 2675)",
+            "+/-",
+            "2",
+            "8",
+            "0.03",
+            "0.25",
+            "2",
+            ">32",
+            "4",
+            ">32"
+          ],
+          [
+            "K. pneumoniae  (CI 287)",
+            "+/+",
+            "4",
+            "16",
+            "0.125",
+            "0.5",
+            "4",
+            "16",
+            "4",
+            ">32"
+          ],
+          [
+            "E. cloacae  (XDR CI 4172)",
+            "+/+",
+            "2",
+            "8",
+            "0.125",
+            "0.25",
+            "1",
+            "4",
+            "1",
+            ">32"
+          ]
+        ]
+      },
+      {
+        "id": "T3",
+        "caption": "Synergy between goat cathelicidins ChMAP-28 and mini-ChBac7.5Nα.",
+        "rows": [
+          [
+            "Strain",
+            "ChMAP-28",
+            "mini-ChBac7.5Nα",
+            "FICI ∗",
+            "Synergy"
+          ],
+          [
+            "",
+            "MIC A",
+            "[A]",
+            "FIC A",
+            "MIC B",
+            "[B]",
+            "FIC B",
+            "",
+            ""
+          ],
+          [
+            "E. coli  BL21 (DE3)",
+            "0.06",
+            "0.015",
+            "0.25",
+            "8",
+            "1",
+            "0.125",
+            "0.375",
+            "Yes"
+          ],
+          [
+            "E. coli  ML-35p",
+            "0.06",
+            "0.008",
+            "0.125",
+            "4",
+            "1",
+            "0.25",
+            "0.375",
+            "Yes"
+          ],
+          [
+            "E. coli  C600",
+            "0.125",
+            "0.015-0.03",
+            "0.125-0.25",
+            "4",
+            "1",
+            "0.25",
+            "0.375-0.5",
+            "Yes"
+          ],
+          [
+            "E. coli  (XDR CI 1057)",
+            "0.125",
+            "0.008",
+            "0.063",
+            "8",
+            "2",
+            "0.25",
+            "0.313",
+            "Yes"
+          ],
+          [
+            "E. coli  (CI 214)",
+            "0.06",
+            "0.015",
+            "0.25",
+            ">64",
+            "4",
+            "0.031",
+            "0.281",
+            "Yes"
+          ],
+          [
+            "E. cloacae  (XDR CI 4172)",
+            "0.25",
+            "0.03",
+            "0.125",
+            "4",
+            "0.5",
+            "0.125",
+            "0.25",
+            "Yes"
+          ],
+          [
+            "K. pneumoniae  (CI 287)",
+            "0.5",
+            "0.06",
+            "0.125",
+            "16",
+            "2",
+            "0.125",
+            "0.25",
+            "Yes"
+          ],
+          [
+            "A. baumannii  (XDR CI 2675)",
+            "0.25",
+            "0.03",
+            "0.125",
+            ">32",
+            "0.5",
+            "0.008",
+            "0.133",
+            "Yes"
+          ],
+          [
+            "P. aeruginosa  PAO1",
+            "0.125",
+            "0.06",
+            "0.5",
+            ">32",
+            "8",
+            "0.125",
+            "0.625",
+            "No"
+          ],
+          [
+            "S. aureus  209P",
+            "0.5",
+            "0.03",
+            "0.063",
+            "16",
+            "2",
+            "0.125",
+            "0.188",
+            "Yes"
+          ]
+        ]
+      },
+      {
+        "id": "T4",
+        "caption": "Antibacterial activity of goat cathelicidins and polymyxin B against  E. coli  strains obtained after selection experiment.",
+        "rows": [
+          [
+            "Strain",
+            "Minimum inhibitory concentration (μM)"
+          ],
+          [
+            "",
+            "Polymyxin B",
+            "ChMAP-28",
+            "mini-ChBac7.5Nα"
+          ],
+          [
+            "E. coli  XDR CI 1057 (0 days)",
+            "0.125",
+            "0.125",
+            "8"
+          ],
+          [
+            "E. coli  XDR CI 1057 (26 days without antimicrobial agent)",
+            "0.125",
+            "0.125",
+            "8"
+          ],
+          [
+            "E. coli  XDR CI 1057 (26 days with polymyxin B)",
+            ">128",
+            "0.25",
+            "64"
+          ],
+          [
+            "E. coli  XDR CI 1057 (26 days with mini-ChBac7.5Nα)",
+            "0.125",
+            "0.125",
+            ">128"
+          ],
+          [
+            "E. coli  XDR CI 1057 (26 days with synergy combination)",
+            "0.06",
+            "0.125",
+            "8"
+          ]
+        ]
+      },
+      {
+        "id": "T5",
+        "caption": "Effect of salt on activity of goat cathelicidins against  E. coli  strain obtained after 26 days selection in the presence of mini-ChBac7.5Nα.",
+        "rows": [
+          [
+            "Strain",
+            "Minimum inhibitory concentration (μM)"
+          ],
+          [
+            "",
+            "ChMAP-28",
+            "mini-ChBac7.5Nα",
+            "mini-ChBac7.5Nα(1-16)"
+          ],
+          [
+            "",
+            "Without salt",
+            "With 0.9% NaCl",
+            "Without salt",
+            "With 0.9% NaCl",
+            "Without salt",
+            "With 0.9% NaCl"
+          ],
+          [
+            "E. coli  XDR CI 1057 (26 days without antimicrobial agent)",
+            "0.125",
+            "0.125",
+            "1",
+            "8",
+            "2",
+            "16"
+          ],
+          [
+            "E. coli  XDR CI 1057 (26 days with mini-ChBac7.5Nα)",
+            "0.125",
+            "0.125",
+            "1",
+            ">256",
+            "16",
+            ">256"
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Expression and Purification of the Antimicrobial Peptides",
+        "text": "Expression and Purification of the Antimicrobial Peptides The recombinant plasmids for expression of the goat cathelicidins were constructed with the use of pET-based vector as described previously ( Panteleev and Ovchinnikova, 2017 ). The target peptides were expressed in  E. coli  BL21 (DE3) as chimeric proteins that included 8 × His tag, the  E. coli  thioredoxin A with the M37L substitution (TrxL), methionine residue, and a mature cathelicidin. The ChMAP-28 amino acid sequence was translated from mRNA for the corresponding precursor protein (GenBank:  AJ243126.1 ) as a 27-residue peptide without the C-terminal glycine, a common amidation signal in cathelicidins. The transformed  E. coli  BL21 (DE3) cells were grown up to OD 600  1.0 at 37°C in lysogeny broth (LB) containing 20 mM glucose, 1 mM MgSO 4 , and 0.1 mM CaCl 2 , 100 μg/ml of ampicillin and then were induced with isopropyl β- D -1-thiogalactopyranoside (IPTG) at a final concentration of 0.3 mM. The cells were cultivated for 5 h at 30°C with intense agitation. Then the cells were pelleted by centrifugation and sonicated in immobilized metal affinity chromatography (IMAC) loading buffer containing 6 M guanidine hydrochloride. The clarified lysate was applied on a column packed with Ni Sepharose (GE Healthcare). The recombinant protein was eluted with the buffer containing 0.5 M imidazole. Then the eluate containing the fusion protein was acidified (up to pH 1.0) and cleaved by 100-fold molar excess of cyanogen bromide over methionine for 20 h at 25°C in the dark. The reaction products were lyophilized, dissolved in water, titrated to pH 5.0, and loaded on a semi-preparative Reprosil-pur C18-AQ column (10 mm × 250 mm, 5-μm particle size, Dr. Maisch GmbH). Reversed-phase high-performance liquid chromatography (RP-HPLC) was performed with a linear gradient of acetonitrile in water containing 0.1% trifluoroacetic acid. The peaks were monitored at 214 and 280 nm. The collected fractions were analyzed by MALDI-"
+      },
+      {
+        "title": "Hemolysis and Cytotoxicity Assay",
+        "text": "Hemolysis and Cytotoxicity Assay Hemolytic activity of the peptides was tested against the fresh suspension of human red blood cells (hRBC) using the hemoglobin release assay as described previously ( Panteleev et al., 2016 ). Three experiments were performed with the hRBC from blood samples obtained from independent donors. The obtained data were represented as average means with standard deviations. The cytotoxicity of the peptides against HEK293T (transformed human embryonic kidney cells) and HEF (human embryonic fibroblasts) cell lines was studied using the colorimetric 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) dye reduction assay according to ( Panteleev and Ovchinnikova, 2017 ). Three independent experiments were performed for each peptide. Half maximal inhibitory concentration (IC 50 ) values were estimated as described previously ( Kuzmin et al., 2018 )."
+      },
+      {
+        "title": "Antimicrobial Assay",
+        "text": "Antimicrobial Assay Antimicrobial assay was performed as described previously ( Panteleev et al., 2017b ). Briefly, mid-log phase bacterial test cultures were diluted with the 2× Mueller-Hinton broth (MH, Sigma) supplemented with 1.8% NaCl or without it so that to reach a final cell concentration of 10 6  CFU/ml. 50 μl aliquots of the obtained bacterial suspension were added to 50 μl of the peptide solutions serially diluted with 0.1% water solution of bovine serum albumin (BSA) in 96-well flat-bottom polystyrene microplates (Eppendorf #0030730011). After incubation at 37°C and 900 rpm for 24 h the minimum inhibitory concentrations (MIC) were determined as the lowest peptide concentrations that prevented growth of a test microorganism observed as visible turbidity. The results were expressed as the median values determined on the basis of at least three independent experiments performed in triplicate."
+      },
+      {
+        "title": "Bacterial Membranes Permeability Assay",
+        "text": "Bacterial Membranes Permeability Assay To examine an ability of the peptides to affect the barrier function of outer and inner membranes of Gram-negative bacteria, we slightly modified the previously described procedure ( Shamova et al., 2016 ) with the use of the  E. coli  ML-35p strain constitutively expressing cytoplasmic β-galactosidase and lacking lactose permease, and also containing β-lactamase in the periplasmic space. The state of the  E. coli  ML-35p outer and cytoplasmic membranes was assessed based on their permeability to chromogenic markers nitrocefin (Calbiochem-Novabiochem) and  o -nitrophenyl-β- D -galactopyranoside (ONPG, AppliChem) which are the β-lactamase and β-galactosidase substrates, respectively. The cells were incubated in the TSB medium at 37°C for 16 h, washed three times with 10 mM sodium phosphate buffer (pH 7.4) to remove residual growth media, diluted to the concentration of 2.5 × 10 8  CFU/ml. The experiments were performed in 10 mM sodium phosphate buffer with or without 0.9% NaCl. The final concentration of  E. coli  ML-35p cells was of 2.5 × 10 7  CFU/ml. The concentrations of ONPG and nitrocefin were of 2.5 mM and 20 μM, respectively. Peptide samples were placed in the wells of a 96-well plate with non-binding surface (NBS, Corning #3641), and the optical density (OD) of the solution rising due to the appearance of the hydrolyzed nitrocefin or ONPG was measured at 540 and 405 nm, respectively, using the Multiskan EX microplate reader (Thermo Fisher Scientific). The final volume in each well was 200 μl. The experiments were performed at 37°C under stirring at 300 rpm. Control experiments were performed under the same conditions without addition of a peptide. Three independent experiments were performed, and the curve pattern was similar for all three series."
+      },
+      {
+        "title": "Genetic Analysis of Bacterial Strains",
+        "text": "Genetic Analysis of Bacterial Strains The  sbmA  and  yaiW  genes encoding the  E. coli  inner or outer membrane proteins, respectively, as well as a regulatory part of their common operon were amplified by polymerase chain reaction (PCR) using gene-specific primers (Supplementary Figure  S3 ). Individual bacterial colonies of the tested strain were picked up from Petri dish and used as a template for PCR. The following components were mixed for the PCR: 2 μl of 10× Encyclo buffer (Evrogen), 0.4 μl of 50× Encyclo DNA polymerase (Evrogen), 10 μM forward primer, 10 μM reverse primer, 0.2 mM dNTPs, bacterial cells on inoculation loop, and water diluting to the total volume of 20 μl. Amplification was carried out on a thermocycler using: initial denaturation (95°C, 10 min), 25 amplification cycles (94°C, 30 s; 55°C, 40 s; 72°C, 90 s), and final elongation (72°C, 10 min). The products were separated by electrophoresis on 1.5% agarose gel (4 V/cm) and visualized on a UV trans-illuminator. The PCR products were purified from agarose gel and inserted into pGEM-T vector (Promega). The ligation products were transformed into the chemically competent  E. coli  DH10B cells. Plasmid DNA was isolated from overnight cultures of single white colonies on LB agar plates supplemented with ampicillin (100 μg/ml), using Plasmid Miniprep kit (Evrogen). The plasmids were sequenced on both strands using the ABI PRISM 3100-Avant automatic sequencer (Applied Biosystems). At least two independent experiments were performed with each strain to prove the obtained results."
+      },
+      {
+        "title": "Cytotoxic Properties of Goat Cathelicidins",
+        "text": "Cytotoxic Properties of Goat Cathelicidins To estimate cytotoxic effect of the cathelicidins, human red blood cells (hRBC) as well as adhesive cell lines of human embryonic fibroblasts (HEF) and human embryonic kidney cells (HEK293T) were used. Melittin known as a potent cytolytic peptide was used as a positive control. It is known that most Pro-rich AMPs have no pronounced toxicity to mammalian cells. Earlier, we showed that cytotoxicity of mini-bactenecins at concentrations up to 30 μM against a set of mammalian cell lines after 24 h was quite modest ( Shamova et al., 2016 ). However, the peptides are not completely non-toxic. The data analysis revealed that both mini-ChBac7.5Nα and its shortened analog showed cytotoxic activity against mammalian cell lines at concentrations >25 μM (Figure  2 ). Mini-ChBac7.5Nα almost lacked hemolytic activity and lysed only 2% of red blood cells at the concentration of 100 μM. In contrast, a half maximal hemolysis concentration (HC 50 ) of ChMAP-28 was of ∼100 μM, and the peptide had the IC 50  against HEK293T cells of ∼3.5 μM. Interestingly, its bovine ortholog BMAP-28 possessed the IC 50  against murine 3T3 cells and HC 50  of <3.75 and ∼20 μM, respectively ( Ahmad et al., 2009 ). Melittin was proved to be significantly more toxic than α-helical cathelicidins and completely damaged all the cells tested at concentrations of <2.5 μM. FIGURE 2 (A)  Hemolytic activity of the goat cathelicidins and melittin after 1.5 h incubation (hemoglobin release assay).  (B)  Cytotoxicity of mini-ChBac7.5Nα and its shortened analog toward HEK293T (transformed human embryonic kidney cells) and HEF (human embryonic fibroblasts) cells after 24 h incubation (MTT-assay). Three independent experiments were performed with each peptide."
+      },
+      {
+        "title": "Antimicrobial Activity of Goat Cathelicidins",
+        "text": "Antimicrobial Activity of Goat Cathelicidins Amphiphilic AMPs are known to be adsorbed on plastic surfaces ( Wiegand et al., 2008 ). For these reason, serial dilutions of the peptides were performed in the presence of BSA in the growth medium in order to minimize this effect. MICs of goat cathelicidins and melittin against Gram-positive and Gram-negative bacteria are presented in Table  2 . It was reported that Pro-rich AMPs have high antimicrobial activity against Gram-negative bacteria and are less active or inactive against most Gram-positive bacteria. In whole, our results confirmed this. It is noteworthy that the medium formulation as well markedly affects the activity values of Pro-rich AMPs. Antibacterial activities of some insect Pro-rich AMPs was low when tested in the presence of a salt, which might inhibit absorption of the peptides to the bacterial surface ( Gennaro et al., 2002 ). Therefore, the salt influence on the antibacterial activity was investigated in this study. Indeed, the presence of 0.9% NaCl resulted in several-fold decrease in the activity of mini-bactenecins against all the strains tested. The shortened analog mini-ChBac7.5Nα(1–16) was shown to be less active and more salt-sensitive as compared with the wild-type mini-ChBac7.5Nα. Interestingly, antibacterial activities of the peptides were similar when tested in a salt-free medium against Gram-negative bacteria  E. coli, Acinetobacter baumannii, Klebsiella pneumoniae , and  Enterobacter cloacae . In contrast to the other tested strains, these bacteria have the ABC transport system based on the homodimeric cytoplasmic membrane protein SbmA. In  E. coli  the cytoplasmic membrane protein SbmA and outer membrane lipoprotein YaiW participate in transport of some Pro-rich AMPs and bacteriocins ( Arnold et al., 2014 ). Mutation or deletion of either SbmA or YaiW significantly decreased the ability of the Bac7 to internalize, and significantly reduced susceptibility to the peptide ( Arnold et al."
+      },
+      {
+        "title": "Analysis of Membrane-Permeabilizing Activity",
+        "text": "Analysis of Membrane-Permeabilizing Activity Antimicrobial peptides can realize their biological functions by damaging membrane integrity and specifically inhibiting intracellular processes. One of the most important objectives in functional study of AMPs is to elucidate a mechanism of their antimicrobial action. The effect of the goat cathelicidins on  E. coli  ML-35p membrane integrity was characterized by monitoring both the SYTOX Green uptake by flow cytometry and permeability to chromogenic markers – ONPG and nitrocefin. The membranolytic peptide melittin was used as a positive control. The flow cytometry data show that mini-ChBac7.5Nα does not influence the  E. coli  cytoplasmic membrane integrity regardless of salt concentration (Figure  3A ). This is in agreement with our previous data ( Shamova et al., 2016 ). In contrast to the longer peptide Bac7(1–35) ( Podda et al., 2006 ), mini-ChBac7.5Nα did not significantly damage membranes at higher concentrations than the MIC values. The cathelicidin ChMAP-28 was shown to damage bacterial membrane at nanomolar concentrations that led to the appearance of bacterial subpopulations with increased fluorescence intensity by one or two orders of magnitude vs. a control (Figure  3B ). These shifted peaks on the graph may represent cells with qualitatively different grades of membrane damage. FIGURE 3 Flow cytometry analysis of the SYTOX Green uptake in  E. coli  ML-35p cells after 60 min treatment with goat cathelicidins.  (A)  The graph showing the effect of the peptides at different concentrations. The experiment was performed in duplicate, with the plotted points representing the mean value ± SD.  (B)  Analysis of bacterial cell populations after treatment in the presence of 0.9% NaCl. Synergy between two different AMPs could result from either facilitation of translocation of one of them into the cell by another peptide or cooperative augmentation of the membrane damage, as was shown for cathelicidins and defensins ("
+      },
+      {
+        "title": "Inhibition of  in vitro  Protein Synthesis in  E. coli",
+        "text": "Inhibition of  in vitro  Protein Synthesis in  E. coli Taking into account the reported data on the mechanism of action of proline-rich AMPs and the inability of mini-ChBac7.5Nα to disrupt cytoplasmic membrane integrity, we tested an ability of this peptide and other antimicrobial compounds to inhibit protein biosynthesis  in vitro . The experiment was carried out using the bacterial cell-free protein synthesis system expressing the green fluorescent protein (GFP). The results obtained for streptomycin with IC 50  value of 0.2 μM and a full inhibition of >1 μM correspond with the published data ( Krizsan et al., 2014 ) (Figure  5A ). IC 50  for mini-ChBac7.5Nα was of ∼1 μM which is comparable to that of conventional inhibitors of bacterial translation – streptomycin and erythromycin. Apart from that, the values of IC 50  for mini-ChBac7.5Nα were similar to those of its homologs – the Bac7 fragments ( Seefeldt et al., 2016 ), and also to the previously determined MICs against  E. coli  (see Table  2 ). It should be noted that the mini-ChBac7.5Nα(1–16) fragment inhibits biosynthesis twice less effectively than the wild-type mini-ChBac7.5Nα that might account for the reduction of antibacterial activity. Interestingly, the cathelicidin ChMAP-28 also affects protein biosynthesis, but at much higher concentrations than its MIC. It seems that ChMAP-28 ability to inhibit translation is due to a non-specific interaction with nucleic acids. This assumption is supported by the fact that tachyplesin-1, which is known to bind DNA ( Yonezawa et al., 1992 ), demonstrates a comparable level of inhibition. For several cationic AMPs, e.g., for indolicidin (bovine tryptophan-rich cathelicidin), binding to DNA is considered to be one of the mechanisms of their antimicrobial action. AMP-DNA binding induces aggregation and interferes with the process of replication ( Hsu et al., 2005 ). It was shown that both goat cathelicidins bound plasmid DNA at a mass ratio of 1:1 (Figures  5B,C ). I"
+      },
+      {
+        "title": "Anti-biofilm Activity of Goat Cathelicidins",
+        "text": "Anti-biofilm Activity of Goat Cathelicidins The biofilm formation raises difficulties for therapy of bacterial infectious diseases due to the resistance to conventional antibiotics. Notably, the biofilms can colonize abiotic objects such as surfaces of medical devices and instruments and also be localized in host-organism tissues. Development of compounds that could prevent adhesion of microorganisms to the surfaces and therefore block the formation of biofilms is one of the key problems of modern medicine. In the present work, we investigated whether the synergistic combination of different goat cathelicidins prevent formation of biofilms. The strain  E. coli  CI 214 isolated from urine in acute pyelonephritis was proved to be a strong biofilm producer when cultivated in minimal growth medium (Supplementary Figure  S2 ). It is important to notice that this strain has comparatively low sensitivity to mini-ChBac7.5Nα (Table  2 ). All the compounds demonstrated high activity, and at concentrations suppressing planktonic bacterial growth (MIC) the biofilm formation was not observed (Figure  6 ). Complete inhibition of both planktonic and biofilm growth by ChMAP-28, mini-ChBac7.5Nα, and their combination was achieved at concentrations of 1, 32, and (0.125 + 8) μM, respectively. Therefore, the synergy effect consisting in the complete inhibition of  E. coli  was shown with the FICI value of 0.375. The MIC values shown by antibiotic polymyxin B agreed well with those reported earlier when tested against  P. aeruginosa  PAO1 ( Panteleev et al., 2017a ). It is noteworthy that reduction of biofilm formation with sub-inhibitory concentrations of mini-ChBac7.5Nα was followed by a significant stimulation (1.5–2-fold) of planktonic growth as compared with a control. The effect of ChMAP-28 and the combination of the peptides was less pronounced. At concentrations up to 1/16× MIC the peptides inhibited biofilm growth by more than twofold. Presumably, the peptides could prevent an "
+      }
+    ]
+  },
+  {
+    "source_id": "hymenochirin2012",
+    "source_type": "AUTHOR_DEPOSITED_THESIS_PDF",
+    "thesis_page_range": "Chapter 6 (pp. 127-142)",
+    "tables": [
+      {
+        "id": "Chapter6_Table1",
+        "caption": "Minimum inhibitory concentrations against microorganisms and hemolytic activity against human erythrocytes (LC50) of the peptides isolated from skin secretions of H. boettgeri.",
+        "rows": [
+          [
+            "Peptide",
+            "E. coli (ATCC 25726)",
+            "P. aeruginosa",
+            "K. pneumoniae",
+            "S. aureus",
+            "C. albicans",
+            "LC50 (human RBC)"
+          ],
+          [
+            "Hymenochirin-1B",
+            "20 µM",
+            "40 µM",
+            "20 µM",
+            "10 µM",
+            "80 µM",
+            "225 µM"
+          ],
+          [
+            "Hymenochirin-2B",
+            "20 µM",
+            "20 µM",
+            "20 µM",
+            "40 µM",
+            "80 µM",
+            ">300 µM"
+          ],
+          [
+            "Hymenochirin-3B",
+            "20 µM",
+            "40 µM",
+            "40 µM",
+            "40 µM",
+            "80 µM",
+            ">300 µM"
+          ],
+          [
+            "Hymenochirin-4B",
+            "20 µM",
+            "20 µM",
+            "20 µM",
+            "20 µM",
+            "80 µM",
+            "160 µM"
+          ],
+          [
+            "Hymenochirin-5B",
+            "40 µM",
+            "ND",
+            "ND",
+            "80 µM",
+            "160 µM",
+            "ND"
+          ]
+        ]
+      },
+      {
+        "id": "Chapter6_Fig4_Sequences",
+        "caption": "Amino acid sequences and molecular masses of hymenochirins from H. boettgeri.",
+        "rows": [
+          [
+            "Peptide",
+            "Sequence",
+            "Observed Mr",
+            "Calculated Mr",
+            "Terminal C"
+          ],
+          [
+            "Hymenochirin-1B",
+            "IKLSPETKDNLKKVLKGAIKGAIAVAKMV.NH2",
+            "3061.8",
+            "3061.8",
+            "amidated (-NH2)"
+          ],
+          [
+            "Hymenochirin-2B",
+            "LKIPGFVKDTLKKVAKGIFSAVAGAMTPS",
+            "2973.5",
+            "2973.7",
+            "free carboxyl (-COOH)"
+          ],
+          [
+            "Hymenochirin-3B",
+            "IKIPAVVKDTLKKVAKGVLSAVAGALTQ",
+            "2817.6",
+            "2817.7",
+            "free carboxyl (-COOH)"
+          ],
+          [
+            "Hymenochirin-4B",
+            "IKIPAFVKDTLKKVAKGVISAVAGALTQ",
+            "2865.9",
+            "2865.7",
+            "free carboxyl (-COOH)"
+          ],
+          [
+            "Hymenochirin-5B",
+            "IKIPPIVKDTLKKVAKGVLSTIAGALST",
+            "2861.0",
+            "2860.8",
+            "free carboxyl (-COOH)"
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Chapter 6 Section 2.4 Peptide synthesis",
+        "text": "Chapter  6 \n131\n(ATCC 25726) in 96-well microtiter cell-culture plates for 18 h at 37 oC in a humidified \natmosphere of air. After incubation, the absorbance at 630 nm of each well was determined \nusing a microtiter plate reader. Fractions a ssociated with antimicrobial activity were \nsuccessively chromatographed on a (1.0 cm x 25 cm) Vydac 214TP510 (C-4) column and a \n(1.0 cm x 25 cm) Vydac 208TP510 (C-8) colu mn. The concentration of acetonitrile in the \neluting solvent was raised from 21% to 56% over 50 min and the flow rate was 2.0 ml min-1. \n2.3. Structural characterization \nThe primary structures of the peptides were determined by automated Edman \ndegradation using a model 494 Procise sequenator (Applied Biosystems, Foster City, CA, \nUSA). MALDI-TOF mass spectrometry was carried out using a Voyager DE-PRO \ninstrument (Applied Biosystems) that was operated in reflector mode with delayed \nextraction and the accelerating vo ltage in the ion source was 20 kV. The instrument was \ncalibrated with peptides of known molecular mass in the 2 - 4 kDa range. The accuracy of \nmass determinations was  0.02%. \n2.4. Peptide synthesis \nHymenochirins-1B - 5B were supplied in crude form by China Peptides Ltd. \n(Shanghai, China) and GL Biochem Ltd. (Shanghai, China) and were purified to near \nhomogeneity (> 98% purity) by reversed- phase HPLC on a (2.2 cm x 25 cm) Vydac \n218TP1022 (C-18) column. The concentration of acetonitrile in th e eluting solvent was \nraised from 28% to 56% over 60 min and the flow rate was 6 ml min\n-1. The identity and \npurity of the peptides was confirmed by electrospray mass spectrometry. Hymenochirin-5B \nwas obtained in low yield and was observed to form a viscous gel in concentrated solution. \n2.5. Antimicrobial and hemolytic activities \nReference strains of microorganisms were purchased from the American Type Culture \nCollection (Rockville, MD). Minimum inhibitory concentrations (MIC) of the synthetic \nhymenochirins against S. aureus  (ATCC 25923), E. coli (ATCC 25726), \nKlebsiella pneumoniae  (ATCC 700603), Pseudomonas aeruginosa (ATCC 27853), and \nCandida albicans (ATCC 90028) were measured in the concentration range of 2.5 - 160 \nμM by standard double dilution methods [5,6] and were taken as the lowest concentration \nof peptide where no visible growth was observed. The values were confirmed by \nmeasurement of absorbance at 630 nm. A minimum of three independent incubations were \nperformed. In order to monitor the validity and reproducibility of the assays, incubations "
+      },
+      {
+        "title": "Chapter 6 Section 2.5 Antimicrobial and hemolytic activities",
+        "text": " \n \n Chapter  6 \n132\nwere carried out in parallel with increasing concentrations of antibiotics (ampicillin for  \nS. aureus and E. coli,  ciprofloxacin for K. pneumoniae  and P. aeruginosa, and \namphotericin for C. albicans) as previously described [28-30]. \nHemolytic activity against human erythroc ytes taken from a healthy donor was \nmeasured as previously described [28-30]. Pep tides were tested in the concentration range \n37.5 - 300 µM. The LC 50 value was taken as the mean concentration of peptide producing \n50% hemolysis in three independent incubations. \n \n2.6.  Secondary structure prediction \nPrediction of secondary structure and determination of % helicity per residue for the \npeptides were performed using the AGADIR program [31]. AGADIR is a prediction \nalgorithm based on the helix/coil transition theory which predicts the helical behaviour of \nmonomeric peptides. Calculations were performed at pH 7 and 278K. A minimum \npercentage of 1% helicity/residue was considered to predict the presence of a helix. \nCalculated mean hydrophobicities of the peptides were based upon the hydrophobicity \nscales for amino acids of Kyte and Doolittle [23]. \n \n3. Results \n3.1. Purification of the peptides \nThe pooled skin secretions from the group 1 population of H. boettgeri (Cameroon), \nafter partial purification on Sep-Pak C-18 cartridges, were chromatographed on a Vydac  \nC-18 preparative reversed-phase HPLC column (Fig. 1). Under the conditions of assay, the \nprominent peaks designated 1 - 5 were associated with the ability to inhibit the growth of \nboth E. coli and S. aureus . Subsequent structural analysis  demonstrated that these peaks \ncontained hymenochirins 1- 5. The peptides were purified to near homogeneity, as assessed \nby a symmetrical peak shape and mass spect rometry, by further chromatography on \nsemipreparative Vydac C-4 and Vydac C-8 columns. The methodology is illustrated by \npurification of hymenochirin-3B on C-4 (Fig. 2A) and C-8 (Fig. 2B) columns. The \napproximate final yields of purified peptides (nmol) were hymenochirin-1B (40), \nhymenochirin-2B (55), hymenochirin-3B (425), hymenochirin-4B (90) and  \nhymenochirin-5B (65). \n  "
+      },
+      {
+        "title": "Chapter 6 Section 3.3 Results: Antimicrobial and hemolytic activities",
+        "text": "Chapter  6 \n135\nCameroon Congo\nMrobs Mr obs Mr calc \nHymenochirin-1B IKLSPETKDNLKKVLKGAIKGAIAVAKMV.NH 2 3061.8 3062.4 3061.8 \nHymenochirin-2B LKIPGFVKDTLK KVAKGIFSAVAGAMTPS 2973.5 2973.7 2973.7 \nHymenochirin-3B IKIPAVVKDTLK KVAKGVLSAVAGALTQ 2817.6 2817.9 2817.7 \nHymenochirin-4B IKIPAFVKDTLK KVAKGVISAVAGALTQ 2865.9 2865.5 2865.7 \nHymenochirin-5B IKIPPIVKDTLKK VAKGVLSTIAGALST  2861.0 2860.5 2860.8 \nFig. 4. Amino acid sequences, observed molecular masses (Mr obs), and calculated molecular masses \n(Mr calc) of the antimicrobial peptides isolated from skin secretions of H. boettgeri. \nAs there was some ambiguity with regard to identification of the amino acids at the \nhydrophobic C-terminus of  hymenochirin-1B, the proposed sequence was confirmed by \namino acid composition analysis [Found: Asx 2.1 (2), Clx (1.0), Thr 1.1 (1), Ser 1.1 (1), \nGly 2.1 (2), Ala 4.0 (4), Val 2.9 (3), Met 1.1 (1), Ile 2.7 (3), Leu 3.0 (3), Lys 6.7 (7), Pro \n1.0 (1) residues/mol peptide]. Figures in parentheses show the number of residues predicted \nfrom the proposed sequences. The molecula r masses of the peptides determined by \nMALDI-TOF mass spectrometry are consistent  with their proposed structures and \ndemonstrate that only hymenochirin-1B is C-terminally α-amidated. The amino acid \nsequences of hymenochirins from the group 2 population (Congo) were not determined but \nthe close similarities in molecular masses (Fig. 4) and retention times on reversed-phase \nHPLC (Figs. 1 and 3) indicate that the peptides from both populations are probably \nidentical. \n3.3. Antimicrobial and hemolytic activities \nThe abilities of the synthetic hymenochirins to  inhibit the growth of reference strains \nof the Gram-positive bacterium S. aureus , the Gram-negative bacteria E. coli,  \nK. pneumoniae, and P. aeruginosa, and the opportunistic yeast pathogen C. albicans are \ncompared in Table 1. The MIC values for hymenochirin-5B may be artefactually high \nbecause of the restricted solu bility of the peptide in Mueller-Hinton broth and its tendency \nto form a gel in concentrated solution. All peptides displayed relatively low hemolytic \nactivities against human erythrocytes (LC\n50 in the range 160 to > 300 µM). "
+      }
+    ]
+  }
+]

@@ -1,0 +1,425 @@
+[
+  {
+    "id": "APD3_AP00118",
+    "name": "Magainin-2",
+    "seq": "GIGKFLHSAKKFGKAFVGEIMNS",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00118"
+  },
+  {
+    "id": "APD3_AP00256",
+    "name": "Pleurocidin",
+    "seq": "GWGSFFKKAAHVGKHVGKAALTHYL",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00256"
+  },
+  {
+    "id": "APD3_AP00318",
+    "name": "Cecropin-A",
+    "seq": "KWKLFKKIEKVGQNIRDGIIKAGPAVAVVGQATQIAK",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00318"
+  },
+  {
+    "id": "APD3_AP00150",
+    "name": "Dermaseptin-S1",
+    "seq": "ALWKTMLKKLGTMALHAGKAALGAAADTISQGTQ",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00150"
+  },
+  {
+    "id": "APD3_AP00814",
+    "name": "Buforin-II",
+    "seq": "TRSSRAGLQFPVGRVHRLLRK",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00814"
+  },
+  {
+    "id": "APD3_AP00443",
+    "name": "Temporin-A",
+    "seq": "FLPLIGRVLSGIL",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00443"
+  },
+  {
+    "id": "APD3_AP00049",
+    "name": "Indolicidin",
+    "seq": "ILPWKWPWWPWRR",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00049"
+  },
+  {
+    "id": "APD3_AP00018",
+    "name": "Aurein-1.2",
+    "seq": "GLFDIIKKIAESF",
+    "amp": 1,
+    "hemo": 0,
+    "db": "APD3",
+    "acc": "AP00018"
+  },
+  {
+    "id": "DRAMP_01234",
+    "name": "Pexiganan (MSI-78)",
+    "seq": "GIGKFLKKAKKFGKAFVKILKK",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DRAMP",
+    "acc": "DRAMP01234"
+  },
+  {
+    "id": "DRAMP_01892",
+    "name": "LL-37-fragment",
+    "seq": "FKRIVQRIKDFLRNLVPRTES",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DRAMP",
+    "acc": "DRAMP01892"
+  },
+  {
+    "id": "DRAMP_02345",
+    "name": "Gaegurin-4",
+    "seq": "FLGTLINLAKKIM",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DRAMP",
+    "acc": "DRAMP02345"
+  },
+  {
+    "id": "DRAMP_03412",
+    "name": "Ranatuerin-2",
+    "seq": "GLFLDTLKGAAKDVAGKLEGLKCKITECK",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DRAMP",
+    "acc": "DRAMP03412"
+  },
+  {
+    "id": "DBAASP_1204",
+    "name": "Pexiganan-analog",
+    "seq": "GIGKFLKKAKKFGKAFVKILK",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DBAASP",
+    "acc": "DBAASP_1204"
+  },
+  {
+    "id": "DBAASP_1562",
+    "name": "Arenicin-1",
+    "seq": "RWCVYAYVRVRGVLVRYRRCW",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DBAASP",
+    "acc": "DBAASP_1562"
+  },
+  {
+    "id": "DBAASP_2340",
+    "name": "Omiganan",
+    "seq": "ILRWPWWPWRRK",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DBAASP",
+    "acc": "DBAASP_2340"
+  },
+  {
+    "id": "DBAASP_3419",
+    "name": "Piscidin-1-mut",
+    "seq": "FFHHIFRGIVHVGKTIHRLVTG",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DBAASP",
+    "acc": "DBAASP_3419"
+  },
+  {
+    "id": "DBAASP_4125",
+    "name": "Clavanin-A",
+    "seq": "VFQFLGKIIHHVGNFVHGFSHVF",
+    "amp": 1,
+    "hemo": 0,
+    "db": "DBAASP",
+    "acc": "DBAASP_4125"
+  },
+  {
+    "id": "UniProt_P01496",
+    "name": "Melittin",
+    "seq": "GIGAVLKVLTTGLPALISWIKRKRQQ",
+    "amp": 1,
+    "hemo": 1,
+    "db": "UniProt",
+    "acc": "P01496"
+  },
+  {
+    "id": "UniProt_P01501",
+    "name": "Mastoparan",
+    "seq": "INLKALAALAKKIL",
+    "amp": 1,
+    "hemo": 1,
+    "db": "UniProt",
+    "acc": "P01501"
+  },
+  {
+    "id": "UniProt_P01530",
+    "name": "Gramicidin-S",
+    "seq": "VOLFPVOLFP",
+    "amp": 1,
+    "hemo": 1,
+    "db": "UniProt",
+    "acc": "P01530"
+  },
+  {
+    "id": "HemoPI1_0012",
+    "name": "Crabrolin",
+    "seq": "FLPLILRKIVTAL",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0012"
+  },
+  {
+    "id": "HemoPI1_0025",
+    "name": "Bombinin-H2",
+    "seq": "IIGPVLGLVGSALGGLLKKI",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0025"
+  },
+  {
+    "id": "HemoPI1_0112",
+    "name": "Polistes-mastoparan",
+    "seq": "VDWKKIGQHILSVL",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0112"
+  },
+  {
+    "id": "HemoPI1_0234",
+    "name": "Macropin-1",
+    "seq": "FDIMGMIKSIGRAIS",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0234"
+  },
+  {
+    "id": "HemoPI2_0015",
+    "name": "Melittin-V3",
+    "seq": "GIGAILKVLATGLPTLISWIKNKRKQ",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-2",
+    "acc": "HP2_0015"
+  },
+  {
+    "id": "HemoPI2_0042",
+    "name": "Hylaseptin-P1",
+    "seq": "LIKKILASL",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-2",
+    "acc": "HP2_0042"
+  },
+  {
+    "id": "HemoPI2_0120",
+    "name": "Kassinatuerin-1",
+    "seq": "GFMDTIKNGAKDIASGLLGSLKKF",
+    "amp": 1,
+    "hemo": 1,
+    "db": "HemoPI-2",
+    "acc": "HP2_0120"
+  },
+  {
+    "id": "APD3_AP00124",
+    "name": "Pardaxin-P1",
+    "seq": "GFFALIPKIISSPLFKTLLSAVGSALSSSGGQE",
+    "amp": 1,
+    "hemo": 1,
+    "db": "APD3",
+    "acc": "AP00124"
+  },
+  {
+    "id": "APD3_AP00201",
+    "name": "Caerin-1.1",
+    "seq": "GLLSVLGSVAKHVLPHVVPVIAEHL",
+    "amp": 1,
+    "hemo": 1,
+    "db": "APD3",
+    "acc": "AP00201"
+  },
+  {
+    "id": "UniProt_P02871",
+    "name": "Ubiquitin-frag",
+    "seq": "MQIFVKTLTGKTITLEVEPSDTIEN",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P02871"
+  },
+  {
+    "id": "UniProt_P60709",
+    "name": "Actin-frag",
+    "seq": "DEDIAALVVDNGSGMCKAGFAGDDAPRA",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P60709"
+  },
+  {
+    "id": "UniProt_P62805",
+    "name": "Histone-H4-frag",
+    "seq": "SGRGKGGKGLGKGGAKRHRKVLRD",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P62805"
+  },
+  {
+    "id": "UniProt_P02768",
+    "name": "Albumin-frag",
+    "seq": "DAHKSEVAHRFKDLGEENFKALVL",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P02768"
+  },
+  {
+    "id": "UniProt_P04264",
+    "name": "Keratin-frag",
+    "seq": "MTCGSYGGGLGGGYGGGLGGGYGG",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P04264"
+  },
+  {
+    "id": "UniProt_P99999",
+    "name": "Cytochrome-c-frag",
+    "seq": "GDVEKGKKIFVQKCAQCHTVEKGGK",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P99999"
+  },
+  {
+    "id": "UniProt_P68082",
+    "name": "Myoglobin-frag",
+    "seq": "GLSDGEWQQVLNVWGKVEADIAG",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P68082"
+  },
+  {
+    "id": "UniProt_P00695",
+    "name": "Lysozyme-frag",
+    "seq": "KVFGRCELAAAMKRHGLDNYRGYSL",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P00695"
+  },
+  {
+    "id": "UniProt_P62829",
+    "name": "Ribosomal-L23-frag",
+    "seq": "MSKRPVTGGLKKVKKVVTTVK",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P62829"
+  },
+  {
+    "id": "UniProt_P02452",
+    "name": "Collagen-alpha-frag",
+    "seq": "GPPGPQGPRGDKGETGEQGDRGIK",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P02452"
+  },
+  {
+    "id": "UniProt_P01009",
+    "name": "Alpha1-antitrypsin-frag",
+    "seq": "EDVHQGFQELLRTLNQPDSQLQ",
+    "amp": 0,
+    "hemo": 0,
+    "db": "UniProt",
+    "acc": "P01009"
+  },
+  {
+    "id": "HemoPI1_0411",
+    "name": "Hemolysin-domain-alpha",
+    "seq": "AIAFAISFLGVFLFA",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0411"
+  },
+  {
+    "id": "HemoPI1_0520",
+    "name": "Cytolysin-frag",
+    "seq": "FLGVIALIAIVGVAL",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0520"
+  },
+  {
+    "id": "HemoPI1_0689",
+    "name": "Delta-lysin-motif",
+    "seq": "MAQDIISTIGDLVKWIIDTVNKFKK",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0689"
+  },
+  {
+    "id": "HemoPI1_0901",
+    "name": "Streptolysin-S-core",
+    "seq": "CCCCMTGICC",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-1",
+    "acc": "HP1_0901"
+  },
+  {
+    "id": "HemoPI2_0388",
+    "name": "Pneumolysin-pore-frag",
+    "seq": "TLTLESPAYKAFI",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-2",
+    "acc": "HP2_0388"
+  },
+  {
+    "id": "HemoPI2_0472",
+    "name": "Listeriolysin-O-core",
+    "seq": "KAVNDLMKR",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-2",
+    "acc": "HP2_0472"
+  },
+  {
+    "id": "HemoPI2_0544",
+    "name": "Aerolysin-pore-motif",
+    "seq": "AAIAIVFSGFLF",
+    "amp": 0,
+    "hemo": 1,
+    "db": "HemoPI-2",
+    "acc": "HP2_0544"
+  }
+]

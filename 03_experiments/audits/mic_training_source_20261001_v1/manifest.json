@@ -1,0 +1,25 @@
+{
+  "status": "evidence_screened_subset_pending_full_cohort_audit",
+  "generated_at": "2026-10-01T12:41:40.000967+00:00",
+  "protocol_id": "protocol-mic-01",
+  "source_records": "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv",
+  "source_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "target_audit": "03_experiments\\audits\\mic_only_cohort_20261001_v7\\target_identifier_audit.csv",
+  "target_audit_sha256": "db4648ce9ded24f0874925fe81746794b83cccf81464242c4dc0857d3e4f2c04",
+  "script_sha256": "338f89313b2182b509439fda3a8592501ba4cfdfae55bab7787b8aedd895a5f7",
+  "source_count": 417,
+  "retained_count": 320,
+  "excluded_unresolved_target_count": 71,
+  "excluded_no_binary_mic_count": 26,
+  "label_counts": {
+    "0": 107,
+    "1": 213
+  },
+  "retained_records_sha256": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+  "exclusions_sha256": "264b482a86270fe37213c1c2ec427c9ede9ce1632bdd6b91085ab0769e966f96",
+  "training_started": false,
+  "outputs": {
+    "records": "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv",
+    "exclusions": "03_experiments\\audits\\mic_training_source_20261001_v1\\exclusions.csv"
+  }
+}

@@ -1,0 +1,1326 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/nar/gkz943",
+  "retrieved_at": "2026-09-28T14:31:02.596832+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T05:56:43Z",
+      "timestamp": 1790488603496,
+      "version": "4.1.0"
+    },
+    "reference-count": 53,
+    "publisher": "Oxford University Press (OUP)",
+    "funder": [
+      {
+        "DOI": "10.13039/100000060",
+        "name": "National Institute of Allergy and Infectious Diseases",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "HHSN272201400027C"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "HHSN272201400027C"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000060",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>The PathoSystems Resource Integration Center (PATRIC) is the bacterial Bioinformatics Resource Center funded by the National Institute of Allergy and Infectious Diseases (https://www.patricbrc.org). PATRIC supports bioinformatic analyses of all bacteria with a special emphasis on pathogens, offering a rich comparative analysis environment that provides users with access to over 250 000 uniformly annotated and publicly available genomes with curated metadata. PATRIC offers web-based visualization and comparative analysis tools, a private workspace in which users can analyze their own data in the context of the public collections, services that streamline complex bioinformatic workflows and command-line tools for bulk data analysis. Over the past several years, as genomic and other omics-related experiments have become more cost-effective and widespread, we have observed considerable growth in the usage of and demand for easy-to-use, publicly available bioinformatic tools and services. Here we report the recent updates to the PATRIC resource, including new web-based comparative analysis tools, eight new services and the release of a command-line interface to access, query and analyze data.</jats:p>",
+    "DOI": "10.1093/nar/gkz943",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          12
+        ]
+      ],
+      "date-time": "2019-10-12T15:28:51Z",
+      "timestamp": 1570894131000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 432,
+    "title": [
+      "The PATRIC Bioinformatics Resource Center: expanding data and analysis capabilities"
+    ],
+    "prefix": "10.1093",
+    "author": [
+      {
+        "given": "James J",
+        "family": "Davis",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alice R",
+        "family": "Wattam",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          },
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ramy K",
+        "family": "Aziz",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Microbiology and Immunology, Faculty of Pharmacy, Cairo University, 11562 Cairo, Egypt"
+          },
+          {
+            "name": "Center for Genome and Microbiome Research, Cairo University, 11562 Cairo, Egypt"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Thomas",
+        "family": "Brettin",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Computing Environment and Life Sciences, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ralph",
+        "family": "Butler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          },
+          {
+            "name": "Middle Tennessee State University, Murfreesboro, TN 37132, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rory M",
+        "family": "Butler",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Philippe",
+        "family": "Chlenski",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fellowship for Interpretation of Genomes, Burr Ridge, IL 60527, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Neal",
+        "family": "Conrad",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Allan",
+        "family": "Dickerman",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Emily M",
+        "family": "Dietrich",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Computing Environment and Life Sciences, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Joseph L",
+        "family": "Gabbard",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Virginia Tech, Blacksburg, VA 24061, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-5472-2912",
+        "authenticated-orcid": false,
+        "given": "Svetlana",
+        "family": "Gerdes",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fellowship for Interpretation of Genomes, Burr Ridge, IL 60527, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew",
+        "family": "Guard",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ronald W",
+        "family": "Kenyon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dustin",
+        "family": "Machi",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chunhong",
+        "family": "Mao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dan",
+        "family": "Murphy-Olson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Computing Environment and Life Sciences, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Marcus",
+        "family": "Nguyen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eric K",
+        "family": "Nordberg",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Transportation Institute, Virginia Tech University, Blacksburg, VA 24061, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gary J",
+        "family": "Olsen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Microbiology, University of Illinois, Urbana, IL 61801, USA"
+          },
+          {
+            "name": "Carl R. Woese Institute for Genomic Biology, University of Illinois, Urbana, IL 61801, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert D",
+        "family": "Olson",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jamie C",
+        "family": "Overbeek",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ross",
+        "family": "Overbeek",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bruce",
+        "family": "Parrello",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gordon D",
+        "family": "Pusch",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fellowship for Interpretation of Genomes, Burr Ridge, IL 60527, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Maulik",
+        "family": "Shukla",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chris",
+        "family": "Thomas",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Margo",
+        "family": "VanOeffelen",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fellowship for Interpretation of Genomes, Burr Ridge, IL 60527, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Veronika",
+        "family": "Vonstein",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fellowship for Interpretation of Genomes, Burr Ridge, IL 60527, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Andrew S",
+        "family": "Warren",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Fangfang",
+        "family": "Xia",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dawen",
+        "family": "Xie",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Biocomplexity Institute and Initiative, University of Virginia, Charlottesville, VA 22904, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hyunseung",
+        "family": "Yoo",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "University of Chicago Consortium for Advanced Science and Engineering, University of Chicago, Chicago, IL 60637, USA"
+          },
+          {
+            "name": "Division of Data Science and Learning, Argonne National Laboratory, Argonne, IL 60439, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Rick",
+        "family": "Stevens",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Computing Environment and Life Sciences, Argonne National Laboratory, Argonne, IL 60439, USA"
+          },
+          {
+            "name": "University of Chicago, Department of Computer Science, Chicago, IL 60637, USA"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          31
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2019103104193083200_B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "D401",
+        "DOI": "10.1093/nar/gkl858",
+        "article-title": "PATRIC: the VBI pathosystems resource integration center",
+        "volume": "35",
+        "author": "Snyder",
+        "year": "2006",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B2",
+        "doi-asserted-by": "crossref",
+        "first-page": "D581",
+        "DOI": "10.1093/nar/gkt1099",
+        "article-title": "PATRIC, the bacterial bioinformatics database and analysis resource",
+        "volume": "42",
+        "author": "Wattam",
+        "year": "2013",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B3",
+        "doi-asserted-by": "crossref",
+        "first-page": "D535",
+        "DOI": "10.1093/nar/gkw1017",
+        "article-title": "Improvements to PATRIC, the all-bacterial bioinformatics database and analysis resource center",
+        "volume": "45",
+        "author": "Wattam",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "D347",
+        "DOI": "10.1093/nar/gkl947",
+        "article-title": "The National Microbial Pathogen Database Resource (NMPDR): a genomics platform based on subsystem annotation",
+        "volume": "35",
+        "author": "McNeil",
+        "year": "2006",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "D206",
+        "DOI": "10.1093/nar/gkt1226",
+        "article-title": "The SEED and the Rapid Annotation of microbial genomes using Subsystems Technology (RAST)",
+        "volume": "42",
+        "author": "Overbeek",
+        "year": "2013",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "75",
+        "DOI": "10.1186/1471-2164-9-75",
+        "article-title": "The RAST Server: rapid annotations using subsystems technology",
+        "volume": "9",
+        "author": "Aziz",
+        "year": "2008",
+        "journal-title": "BMC Genomics"
+      },
+      {
+        "key": "2019103104193083200_B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "5691",
+        "DOI": "10.1093/nar/gki866",
+        "article-title": "The subsystems approach to genome annotation and its use in the project to annotate 1000 genomes",
+        "volume": "33",
+        "author": "Overbeek",
+        "year": "2005",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B8",
+        "doi-asserted-by": "crossref",
+        "first-page": "8365",
+        "DOI": "10.1038/srep08365",
+        "article-title": "RASTtk: a modular and extensible implementation of the RAST algorithm for building custom annotation pipelines and annotating batches of genomes",
+        "volume": "5",
+        "author": "Brettin",
+        "year": "2015",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2019103104193083200_B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1094",
+        "DOI": "10.1093/bib/bbx083",
+        "article-title": "PATRIC as a unique resource for studying antimicrobial resistance",
+        "volume": "20",
+        "author": "Antonopoulos",
+        "year": "2019",
+        "journal-title": "Brief. Bioinform."
+      },
+      {
+        "key": "2019103104193083200_B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "421",
+        "DOI": "10.1038/s41598-017-18972-w",
+        "article-title": "Developing an in silico minimum inhibitory concentration panel test for Klebsiella pneumoniae",
+        "volume": "8",
+        "author": "Nguyen",
+        "year": "2018",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2019103104193083200_B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "e01260-18",
+        "DOI": "10.1128/JCM.01260-18",
+        "article-title": "Using machine learning to predict antimicrobial MICs and associated genomic features for nontyphoidal Salmonella",
+        "volume": "57",
+        "author": "Nguyen",
+        "year": "2019",
+        "journal-title": "J. Clin. Microbiol."
+      },
+      {
+        "key": "2019103104193083200_B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "D566",
+        "DOI": "10.1093/nar/gkw1004",
+        "article-title": "CARD 2017: expansion and model-centric curation of the comprehensive antibiotic resistance database",
+        "volume": "45",
+        "author": "Jia",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "e00483-19",
+        "DOI": "10.1128/AAC.00483-19",
+        "article-title": "Validating the NCBI AMRFinder tool and resistance gene database using antimicrobial resistance Genotype-Phenotype correlations in a collection of NARMS isolates",
+        "volume": "63",
+        "author": "Feldgarden",
+        "year": "2019",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "2019103104193083200_B14",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1007/10968987_3",
+        "article-title": "Slurm: Simple linux utility for resource management",
+        "volume-title": "Workshop on Job Scheduling Strategies for Parallel Processing",
+        "author": "Yoo",
+        "year": "2003"
+      },
+      {
+        "key": "2019103104193083200_B15",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1089/cmb.2012.0021",
+        "article-title": "SPAdes: a new genome assembly algorithm and its applications to single-cell sequencing",
+        "volume": "19",
+        "author": "Bankevich",
+        "year": "2012",
+        "journal-title": "J. Comput. Biol."
+      },
+      {
+        "key": "2019103104193083200_B16",
+        "doi-asserted-by": "crossref",
+        "first-page": "722",
+        "DOI": "10.1101/gr.215087.116",
+        "article-title": "Canu: scalable and accurate long-read assembly via adaptive k-mer weighting and repeat separation",
+        "volume": "27",
+        "author": "Koren",
+        "year": "2017",
+        "journal-title": "Genome Res."
+      },
+      {
+        "key": "2019103104193083200_B17",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1005595",
+        "DOI": "10.1371/journal.pcbi.1005595",
+        "article-title": "Unicycler: resolving bacterial genome assemblies from short and long sequencing reads",
+        "volume": "13",
+        "author": "Wick",
+        "year": "2017",
+        "journal-title": "PLoS Comput. Biol."
+      },
+      {
+        "key": "2019103104193083200_B18",
+        "doi-asserted-by": "crossref",
+        "first-page": "3350",
+        "DOI": "10.1093/bioinformatics/btv383",
+        "article-title": "Bandage: interactive visualization of de novo genome assemblies",
+        "volume": "31",
+        "author": "Wick",
+        "year": "2015",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B19",
+        "doi-asserted-by": "crossref",
+        "first-page": "737",
+        "DOI": "10.1101/gr.214270.116",
+        "article-title": "Fast and accurate de novo genome assembly from long uncorrected reads",
+        "volume": "27",
+        "author": "Vaser",
+        "year": "2017",
+        "journal-title": "Genome Res."
+      },
+      {
+        "key": "2019103104193083200_B20",
+        "doi-asserted-by": "crossref",
+        "first-page": "e112963",
+        "DOI": "10.1371/journal.pone.0112963",
+        "article-title": "Pilon: an integrated tool for comprehensive microbial variant detection and genome assembly improvement",
+        "volume": "9",
+        "author": "Walker",
+        "year": "2014",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2019103104193083200_B21",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1038/nmeth.1923",
+        "article-title": "Fast gapped-read alignment with Bowtie 2",
+        "volume": "9",
+        "author": "Langmead",
+        "year": "2012",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2019103104193083200_B22",
+        "doi-asserted-by": "crossref",
+        "first-page": "3094",
+        "DOI": "10.1093/bioinformatics/bty191",
+        "article-title": "Minimap2: pairwise alignment for nucleotide sequences",
+        "volume": "34",
+        "author": "Li",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B23",
+        "doi-asserted-by": "crossref",
+        "first-page": "2078",
+        "DOI": "10.1093/bioinformatics/btp352",
+        "article-title": "The sequence alignment/map format and SAMtools",
+        "volume": "25",
+        "author": "Li",
+        "year": "2009",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B24",
+        "doi-asserted-by": "crossref",
+        "first-page": "231",
+        "DOI": "10.1007/978-1-4939-7343-9_17",
+        "article-title": "Phage Genome Annotation Using the RAST Pipeline",
+        "volume-title": "Bacteriophages Methods and Protocols",
+        "author": "McNair",
+        "year": "2018"
+      },
+      {
+        "key": "2019103104193083200_B25",
+        "doi-asserted-by": "crossref",
+        "first-page": "1043",
+        "DOI": "10.1101/gr.186072.114",
+        "article-title": "CheckM: assessing the quality of microbial genomes recovered from isolates, single cells, and metagenomes",
+        "volume": "25",
+        "author": "Parks",
+        "year": "2015",
+        "journal-title": "Genome Res."
+      },
+      {
+        "key": "2019103104193083200_B26",
+        "doi-asserted-by": "crossref",
+        "first-page": "486",
+        "DOI": "10.1186/s12859-019-3068-y",
+        "article-title": "A machine learning-based service for estimating quality of genomes using PATRIC",
+        "volume": "20",
+        "author": "Parrello",
+        "year": "2019",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B27",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1038/nmeth.3317",
+        "article-title": "HISAT: a fast spliced aligner with low memory requirements",
+        "volume": "12",
+        "author": "Kim",
+        "year": "2015",
+        "journal-title": "Nat. Methods"
+      },
+      {
+        "key": "2019103104193083200_B28",
+        "doi-asserted-by": "crossref",
+        "first-page": "W29",
+        "DOI": "10.1093/nar/gkt282",
+        "article-title": "BLAST: a more efficient report with usability improvements",
+        "volume": "41",
+        "author": "Boratyn",
+        "year": "2013",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B29",
+        "doi-asserted-by": "crossref",
+        "first-page": "755",
+        "DOI": "10.1093/bioinformatics/14.9.755",
+        "article-title": "Profile hidden Markov models",
+        "volume": "14",
+        "author": "Eddy",
+        "year": "1998",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B30",
+        "doi-asserted-by": "crossref",
+        "first-page": "1575",
+        "DOI": "10.1093/nar/30.7.1575",
+        "article-title": "An efficient algorithm for large-scale detection of protein families",
+        "volume": "30",
+        "author": "Enright",
+        "year": "2002",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1792",
+        "DOI": "10.1093/nar/gkh340",
+        "article-title": "MUSCLE: multiple sequence alignment with high accuracy and high throughput",
+        "volume": "32",
+        "author": "Edgar",
+        "year": "2004",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B32",
+        "doi-asserted-by": "crossref",
+        "first-page": "564",
+        "DOI": "10.1080/10635150701472164",
+        "article-title": "Improvement of phylogenies after removing divergent and ambiguously aligned blocks from protein sequence alignments",
+        "volume": "56",
+        "author": "Talavera",
+        "year": "2007",
+        "journal-title": "Syst. Biol."
+      },
+      {
+        "key": "2019103104193083200_B33",
+        "doi-asserted-by": "crossref",
+        "first-page": "e9490",
+        "DOI": "10.1371/journal.pone.0009490",
+        "article-title": "FastTree 2–approximately maximum-likelihood trees for large alignments",
+        "volume": "5",
+        "author": "Price",
+        "year": "2010",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2019103104193083200_B34",
+        "doi-asserted-by": "crossref",
+        "first-page": "1312",
+        "DOI": "10.1093/bioinformatics/btu033",
+        "article-title": "RAxML version 8: a tool for phylogenetic analysis and post-analysis of large phylogenies",
+        "volume": "30",
+        "author": "Stamatakis",
+        "year": "2014",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B35",
+        "doi-asserted-by": "crossref",
+        "first-page": "118",
+        "DOI": "10.3389/fmicb.2016.00118",
+        "article-title": "PATtyFams: Protein families for the microbial genomes in the PATRIC database",
+        "volume": "7",
+        "author": "Davis",
+        "year": "2016",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "2019103104193083200_B36",
+        "doi-asserted-by": "crossref",
+        "first-page": "1422",
+        "DOI": "10.1093/bioinformatics/btp163",
+        "article-title": "Biopython: freely available Python tools for computational molecular biology and bioinformatics",
+        "volume": "25",
+        "author": "Cock",
+        "year": "2009",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B37",
+        "volume-title": "PHYLIP (Phylogeny Inference Package), Version 3.5 c",
+        "author": "Felsenstein",
+        "year": "1993"
+      },
+      {
+        "key": "2019103104193083200_B38",
+        "doi-asserted-by": "crossref",
+        "first-page": "758",
+        "DOI": "10.1080/10635150802429642",
+        "article-title": "A rapid bootstrap algorithm for the RAxML web servers",
+        "volume": "57",
+        "author": "Stamatakis",
+        "year": "2008",
+        "journal-title": "Syst. Biol."
+      },
+      {
+        "key": "2019103104193083200_B39",
+        "article-title": "Trim Galore: a wrapper tool around Cutadapt and FastQC to consistently apply quality and adapter trimming to FastQ files, with some extra functionality for MspI-digested RRBS-type (Reduced Representation Bisufite-Seq) libraries",
+        "author": "Krueger",
+        "year": "2012"
+      },
+      {
+        "key": "2019103104193083200_B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "10",
+        "DOI": "10.14806/ej.17.1.200",
+        "article-title": "Cutadapt removes adapter sequences from high-throughput sequencing reads",
+        "volume": "17",
+        "author": "Martin",
+        "year": "2011",
+        "journal-title": "EMBnet J."
+      },
+      {
+        "key": "2019103104193083200_B41",
+        "doi-asserted-by": "crossref",
+        "first-page": "421",
+        "DOI": "10.1093/bioinformatics/bty648",
+        "article-title": "Scaling read aligners to hundreds of threads on general-purpose processors",
+        "volume": "35",
+        "author": "Langmead",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B42",
+        "doi-asserted-by": "crossref",
+        "first-page": "130",
+        "DOI": "10.1093/bioinformatics/btq614",
+        "article-title": "SAMStat: monitoring biases in next generation sequencing data",
+        "volume": "27",
+        "author": "Lassmann",
+        "year": "2010",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B43",
+        "doi-asserted-by": "crossref",
+        "first-page": "e11147",
+        "DOI": "10.1371/journal.pone.0011147",
+        "article-title": "progressiveMauve: multiple genome alignment with gene gain, loss and rearrangement",
+        "volume": "5",
+        "author": "Darling",
+        "year": "2010",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2019103104193083200_B44",
+        "doi-asserted-by": "crossref",
+        "first-page": "1394",
+        "DOI": "10.1101/gr.2289704",
+        "article-title": "Mauve: multiple alignment of conserved genomic sequence with rearrangements",
+        "volume": "14",
+        "author": "Darling",
+        "year": "2004",
+        "journal-title": "Genome Res."
+      },
+      {
+        "key": "2019103104193083200_B45",
+        "doi-asserted-by": "crossref",
+        "first-page": "132",
+        "DOI": "10.1186/s13059-016-0997-x",
+        "article-title": "Mash: fast genome and metagenome distance estimation using MinHash",
+        "volume": "17",
+        "author": "Ondov",
+        "year": "2016",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "key": "2019103104193083200_B46",
+        "doi-asserted-by": "crossref",
+        "first-page": "R46",
+        "DOI": "10.1186/gb-2014-15-3-r46",
+        "article-title": "Kraken: ultrafast metagenomic sequence classification using exact alignments",
+        "volume": "15",
+        "author": "Wood",
+        "year": "2014",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "key": "2019103104193083200_B47",
+        "doi-asserted-by": "crossref",
+        "first-page": "D851",
+        "DOI": "10.1093/nar/gkx1068",
+        "article-title": "RefSeq: an update on prokaryotic genome annotation and curation",
+        "volume": "46",
+        "author": "Haft",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B48",
+        "doi-asserted-by": "crossref",
+        "first-page": "385",
+        "DOI": "10.1186/1471-2105-12-385",
+        "article-title": "Interactive metagenomic visualization in a Web browser",
+        "volume": "12",
+        "author": "Ondov",
+        "year": "2011",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B49",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.1186/s12859-018-2336-6",
+        "article-title": "Rapid and precise alignment of raw reads against redundant databases with KMA",
+        "volume": "19",
+        "author": "Clausen",
+        "year": "2018",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2019103104193083200_B50",
+        "doi-asserted-by": "crossref",
+        "first-page": "3348",
+        "DOI": "10.1128/AAC.00419-13",
+        "article-title": "The comprehensive antibiotic resistance database",
+        "volume": "57",
+        "author": "McArthur",
+        "year": "2013",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "2019103104193083200_B51",
+        "doi-asserted-by": "crossref",
+        "first-page": "D687",
+        "DOI": "10.1093/nar/gky1080",
+        "article-title": "VFDB 2019: a comparative pathogenomic platform with an interactive web interface",
+        "volume": "47",
+        "author": "Liu",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B52",
+        "doi-asserted-by": "crossref",
+        "first-page": "D206",
+        "DOI": "10.1093/nar/gkt1226",
+        "article-title": "The SEED and the Rapid Annotation of microbial genomes using Subsystems Technology (RAST)",
+        "volume": "42",
+        "author": "Overbeek",
+        "year": "2013",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2019103104193083200_B53",
+        "doi-asserted-by": "crossref",
+        "first-page": "D136",
+        "DOI": "10.1093/nar/gkr1178",
+        "article-title": "The NCBI taxonomy database",
+        "volume": "40",
+        "author": "Federhen",
+        "year": "2011",
+        "journal-title": "Nucleic Acids Res."
+      }
+    ],
+    "container-title": [
+      "Nucleic Acids Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkz943/30335558/gkz943.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://academic.oup.com/nar/advance-article-pdf/doi/10.1093/nar/gkz943/30335558/gkz943.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          31
+        ]
+      ],
+      "date-time": "2019-10-31T04:20:00Z",
+      "timestamp": 1572495600000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkz943/5610343"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          31
+        ]
+      ]
+    },
+    "references-count": 53,
+    "URL": "https://doi.org/10.1093/nar/gkz943",
+    "relation": {},
+    "ISSN": [
+      "0305-1048",
+      "1362-4962"
+    ],
+    "issn-type": [
+      {
+        "value": "0305-1048",
+        "type": "print"
+      },
+      {
+        "value": "1362-4962",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          31
+        ]
+      ]
+    },
+    "article-number": "gkz943"
+  }
+}

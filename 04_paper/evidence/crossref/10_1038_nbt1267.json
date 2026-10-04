@@ -1,0 +1,638 @@
+{
+  "url": "https://api.crossref.org/works/10.1038/nbt1267",
+  "retrieved_at": "2026-09-28T14:30:48.013483+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T03:45:01Z",
+      "timestamp": 1790480701244,
+      "version": "4.1.0"
+    },
+    "reference-count": 40,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "12",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2006,
+              12,
+              1
+            ]
+          ],
+          "date-time": "2006-12-01T00:00:00Z",
+          "timestamp": 1164931200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Biotechnol"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2006,
+          12
+        ]
+      ]
+    },
+    "DOI": "10.1038/nbt1267",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2006,
+          12,
+          13
+        ]
+      ],
+      "date-time": "2006-12-13T02:29:28Z",
+      "timestamp": 1165976968000
+    },
+    "page": "1551-1557",
+    "source": "Crossref",
+    "is-referenced-by-count": 3804,
+    "title": [
+      "Antimicrobial and host-defense peptides as new anti-infective therapeutic strategies"
+    ],
+    "prefix": "10.1038",
+    "volume": "24",
+    "author": [
+      {
+        "given": "Robert E W",
+        "family": "Hancock",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Hans-Georg",
+        "family": "Sahl",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2006,
+          12,
+          11
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "BFnbt1267_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "82",
+        "DOI": "10.1016/S0167-7799(97)01156-6",
+        "volume": "16",
+        "author": "REW Hancock",
+        "year": "1998",
+        "unstructured": "Hancock, R.E.W. & Lehrer, R. Cationic peptides: a new source of antibiotics. Trends Biotechnol. 16, 82–88 (1998).",
+        "journal-title": "Trends Biotechnol."
+      },
+      {
+        "key": "BFnbt1267_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "389",
+        "DOI": "10.1038/415389a",
+        "volume": "415",
+        "author": "M Zasloff",
+        "year": "2002",
+        "unstructured": "Zasloff, M. Antimicrobial peptides of multicellular organisms. Nature 415, 389–395 (2002).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BFnbt1267_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "359",
+        "DOI": "10.1016/j.coi.2005.06.002",
+        "volume": "17",
+        "author": "JJ Oppenheim",
+        "year": "2005",
+        "unstructured": "Oppenheim, J.J. & Yang, D. Alarmins: chemotactic activators of immune responses. Curr. Opin. Immunol. 17, 359–365 (2005).",
+        "journal-title": "Curr. Opin. Immunol."
+      },
+      {
+        "key": "BFnbt1267_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "35",
+        "DOI": "10.2174/1389203053027494",
+        "volume": "6",
+        "author": "DME Bowdish",
+        "year": "2005",
+        "unstructured": "Bowdish, D.M.E., Davidson, D.J. & Hancock, R.E.W. A re-evaluation of the role of host defense peptides in mammalian immunity. Curr. Protein Pept. Sci. 6, 35–51 (2005).",
+        "journal-title": "Curr. Protein Pept. Sci."
+      },
+      {
+        "key": "BFnbt1267_CR5",
+        "unstructured": "http://www.bbcm.univ.trieste.it/∼tossi/amsdb.html"
+      },
+      {
+        "key": "BFnbt1267_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "701",
+        "DOI": "10.1093/hmg/ddg078",
+        "volume": "12",
+        "author": "RD Emes",
+        "year": "2003",
+        "unstructured": "Emes, R.D., Goodstadt, L., Winter, E.E. & Ponting, C.P. Comparison of the genomes of human and mouse lays the foundation of genome zoology. Hum. Mol. Genet. 12, 701–709 (2003).",
+        "journal-title": "Hum. Mol. Genet."
+      },
+      {
+        "key": "BFnbt1267_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1152/physiolgenomics.00150.2004",
+        "volume": "20",
+        "author": "A Patil",
+        "year": "2004",
+        "unstructured": "Patil, A., Hughes, A.L. & Zhang, G. Rapid evolution and diversification of mammalian alpha-defensins as revealed by comparative analysis of rodent and primate genes. Physiol. Genomics 20, 1–11 (2004).",
+        "journal-title": "Physiol. Genomics"
+      },
+      {
+        "key": "BFnbt1267_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "7",
+        "DOI": "10.2174/1389203053027593",
+        "volume": "6",
+        "author": "S Crovella",
+        "year": "2005",
+        "unstructured": "Crovella, S. et al. Primate beta-defensins - structure, function and evolution. Curr. Protein Pept. Sci. 6, 7–21 (2005).",
+        "journal-title": "Curr. Protein Pept. Sci."
+      },
+      {
+        "key": "BFnbt1267_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "529",
+        "DOI": "10.1038/nrmicro1441",
+        "volume": "4",
+        "author": "A Peschel",
+        "year": "2006",
+        "unstructured": "Peschel, A. & Sahl, H.G. The co-evolution of host cationic antimicrobial peptides and microbial resistance. Nat. Rev. Microbiol. 4, 529–536 (2006).",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "BFnbt1267_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "1373",
+        "DOI": "10.1016/j.bbamem.2006.03.027",
+        "volume": "9",
+        "author": "NY Yount",
+        "year": "2006",
+        "unstructured": "Yount, N.Y. & Yeaman M.R. Structural congruence among membrane-active host defense polypeptides of diverse phylogeny. Biochim. Biophys. Acta 9, 1373–1386 (2006).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnbt1267_CR11",
+        "doi-asserted-by": "publisher",
+        "first-page": "285",
+        "DOI": "10.1111/j.1574-6976.2001.tb00579.x",
+        "volume": "25",
+        "author": "O McAuliffe",
+        "year": "2001",
+        "unstructured": "McAuliffe, O., Ross, R.P. & Hill, C. Lantibiotics: structure, biosynthesis and mode of action. FEMS Microbiol. Rev. 25, 285–308 (2001).",
+        "journal-title": "FEMS Microbiol. Rev."
+      },
+      {
+        "key": "BFnbt1267_CR12",
+        "doi-asserted-by": "publisher",
+        "first-page": "963",
+        "DOI": "10.1038/nsmb830",
+        "volume": "11",
+        "author": "ST Hsu",
+        "year": "2004",
+        "unstructured": "Hsu, S.T. et al. The nisin-lipid II complex reveals a pyrophosphate cage that provides a blueprint for novel antibiotics. Nat. Struct. Mol. Biol. 11, 963–967 (2004).",
+        "journal-title": "Nat. Struct. Mol. Biol."
+      },
+      {
+        "key": "BFnbt1267_CR13",
+        "doi-asserted-by": "publisher",
+        "first-page": "453",
+        "DOI": "10.1146/annurev.micro.58.030603.123615",
+        "volume": "58",
+        "author": "R Finking",
+        "year": "2004",
+        "unstructured": "Finking, R. & Marahiel, M.A. Biosynthesis of nonribosomal peptides. Annu. Rev. Microbiol. 58, 453–488 (2004).",
+        "journal-title": "Annu. Rev. Microbiol."
+      },
+      {
+        "key": "BFnbt1267_CR14",
+        "doi-asserted-by": "publisher",
+        "first-page": "393",
+        "DOI": "10.1046/j.1365-2958.1998.01075.x",
+        "volume": "30",
+        "author": "SN Coulter",
+        "year": "1998",
+        "unstructured": "Coulter, S.N. et al. Staphylococcus aureus genetic loci impacting growth and survival in multiple infection environments. Mol. Microbiol. 30, 393–404 (1998).",
+        "journal-title": "Mol. Microbiol."
+      },
+      {
+        "key": "BFnbt1267_CR15",
+        "doi-asserted-by": "publisher",
+        "first-page": "491",
+        "DOI": "10.1128/CMR.00056-05",
+        "volume": "19",
+        "author": "H Jenssen",
+        "year": "2006",
+        "unstructured": "Jenssen, H., Hamill, P. & Hancock, R.E.W. Peptide antimicrobial agents. Clin. Microbiol. Rev. 19, 491–511 (2006).",
+        "journal-title": "Clin. Microbiol. Rev."
+      },
+      {
+        "key": "BFnbt1267_CR16",
+        "doi-asserted-by": "publisher",
+        "first-page": "27",
+        "DOI": "10.1124/pr.55.1.2",
+        "volume": "55",
+        "author": "MR Yeaman",
+        "year": "2003",
+        "unstructured": "Yeaman, M.R. & Yount, N.Y. Mechanisms of antimicrobial peptide action and resistance. Pharmacol. Rev. 55, 27–55 (2003).",
+        "journal-title": "Pharmacol. Rev."
+      },
+      {
+        "key": "BFnbt1267_CR17",
+        "doi-asserted-by": "publisher",
+        "first-page": "466",
+        "DOI": "10.1189/jlb.0804452",
+        "volume": "77",
+        "author": "HG Sahl",
+        "year": "2005",
+        "unstructured": "Sahl, H.G. et al. Mammalian defensins: structures and mechanism of antibiotic activity. J. Leukoc. Biol. 77, 466–475 (2005).",
+        "journal-title": "J. Leukoc. Biol."
+      },
+      {
+        "key": "BFnbt1267_CR18",
+        "doi-asserted-by": "publisher",
+        "first-page": "1245",
+        "DOI": "10.1016/S1359-6446(05)03566-X",
+        "volume": "10",
+        "author": "MD Brazas",
+        "year": "2005",
+        "unstructured": "Brazas, M.D. & Hancock, R.E.W. Using microarray gene signatures to elucidate mechanisms of antibiotic action and resistance. Drug Discov. Today 10, 1245–1252 (2005).",
+        "journal-title": "Drug Discov. Today"
+      },
+      {
+        "key": "BFnbt1267_CR19",
+        "doi-asserted-by": "publisher",
+        "first-page": "251",
+        "DOI": "10.1098/rspb.2005.3301",
+        "volume": "273",
+        "author": "GG Perron",
+        "year": "2006",
+        "unstructured": "Perron, G.G., Zasloff, M. & Bell, G. Experimental evolution of resistance to an antimicrobial peptide. Proc. Biol. Sci. 273, 251–256 (2006).",
+        "journal-title": "Proc. Biol. Sci."
+      },
+      {
+        "key": "BFnbt1267_CR20",
+        "doi-asserted-by": "publisher",
+        "first-page": "3421",
+        "DOI": "10.1016/j.febslet.2005.05.017",
+        "volume": "579",
+        "author": "O Samuelsen",
+        "year": "2005",
+        "unstructured": "Samuelsen, O. et al. Induced resistance to the antimicrobial peptide lactoferricin B in Staphylococcus aureus. FEBS Lett. 579, 3421–3426 (2005).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BFnbt1267_CR21",
+        "doi-asserted-by": "publisher",
+        "first-page": "321",
+        "DOI": "10.1038/nrd2004",
+        "volume": "5",
+        "author": "E Breukink",
+        "year": "2006",
+        "unstructured": "Breukink, E. & de Kruijff, B. Lipid II as a target for antibiotics. Nat. Rev. Drug Discov. 5, 321–332 (2006).",
+        "journal-title": "Nat. Rev. Drug Discov."
+      },
+      {
+        "key": "BFnbt1267_CR22",
+        "doi-asserted-by": "publisher",
+        "first-page": "653",
+        "DOI": "10.1517/14656566.7.6.653",
+        "volume": "7",
+        "author": "L Zhang",
+        "year": "2006",
+        "unstructured": "Zhang, L. & Falla, T.J. Antimicrobial peptides: therapeutic potential. Expert Opin. Pharmacother. 7, 653–663 (2006).",
+        "journal-title": "Expert Opin. Pharmacother."
+      },
+      {
+        "key": "BFnbt1267_CR23",
+        "doi-asserted-by": "publisher",
+        "first-page": "583",
+        "DOI": "10.1128/IAI.73.1.583-591.2005",
+        "volume": "73",
+        "author": "YE Lau",
+        "year": "2005",
+        "unstructured": "Lau, Y.E. et al. Interaction and cellular localization of the human host defense peptide, LL-37, with lung epithelial cells. Infect. Immun. 73, 583–591 (2005).",
+        "journal-title": "Infect. Immun."
+      },
+      {
+        "key": "BFnbt1267_CR24",
+        "doi-asserted-by": "publisher",
+        "first-page": "17951",
+        "DOI": "10.1074/jbc.M311440200",
+        "volume": "279",
+        "author": "S Sandgren",
+        "year": "2004",
+        "unstructured": "Sandgren, S. et al. The human antimicrobial peptide LL-37 transfers extracellular DNA plasmid to the nuclear compartment of mammalian cells via lipid rafts and proteoglycan-dependent endocytosis. J. Biol. Chem. 279, 17951–17956 (2004).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "BFnbt1267_CR25",
+        "doi-asserted-by": "publisher",
+        "first-page": "257",
+        "DOI": "10.2174/1386207053764558",
+        "volume": "8",
+        "author": "JB McPhee",
+        "year": "2005",
+        "unstructured": "McPhee, J.B., Scott, M.G. & Hancock, R.E.W. Design of host defence peptides for antimicrobial and immunity enhancing activities. Comb. Chem. High Throughput Screen. 8, 257–272 (2005).",
+        "journal-title": "Comb. Chem. High Throughput Screen."
+      },
+      {
+        "key": "BFnbt1267_CR26",
+        "doi-asserted-by": "publisher",
+        "first-page": "975",
+        "DOI": "10.1038/nature04051",
+        "volume": "437",
+        "author": "PH Mygind",
+        "year": "2005",
+        "unstructured": "Mygind, P.H. et al. Plectasin is a peptide antibiotic with therapeutic potential from a saprophytic fungus. Nature 437, 975–980 (2005).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BFnbt1267_CR27",
+        "doi-asserted-by": "publisher",
+        "first-page": "777",
+        "DOI": "10.1038/nrmicro1273",
+        "volume": "3",
+        "author": "PD Cotter",
+        "year": "2005",
+        "unstructured": "Cotter, P.D., Hill, C. & Ross, R.P. Bacteriocins: developing innate immunity for food. Nat. Rev. Microbiol. 3, 777–788 (2005).",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "BFnbt1267_CR28",
+        "doi-asserted-by": "publisher",
+        "first-page": "1008",
+        "DOI": "10.1038/nbt1113",
+        "volume": "23",
+        "author": "K Hilpert",
+        "year": "2005",
+        "unstructured": "Hilpert, K., Volkmer-Engert, R., Walter, T. & Hancock, R.E.W. High-throughput generation of small antibacterial peptides with improved activity. Nat. Biotechnol. 23, 1008–1012 (2005).",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "BFnbt1267_CR29",
+        "doi-asserted-by": "publisher",
+        "first-page": "60",
+        "DOI": "10.1016/0167-7799(96)80922-X",
+        "volume": "14",
+        "author": "SE Blondelle",
+        "year": "1996",
+        "unstructured": "Blondelle, S.E. & Houghten, R.A. Novel antimicrobial compounds identified using synthetic combinatorial library technology. Trends Biotechnol. 14, 60–65 (1996).",
+        "journal-title": "Trends Biotechnol."
+      },
+      {
+        "key": "BFnbt1267_CR30",
+        "doi-asserted-by": "publisher",
+        "first-page": "5553",
+        "DOI": "10.1021/jm030484k",
+        "volume": "46",
+        "author": "RM Freidinger",
+        "year": "2003",
+        "unstructured": "Freidinger, R.M. et al. Design and synthesis of novel bioactive peptides and peptidomimetics. J. Med. Chem. 46, 5553–5566 (2003).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "BFnbt1267_CR31",
+        "doi-asserted-by": "publisher",
+        "first-page": "235",
+        "DOI": "10.2174/1386207053764567",
+        "volume": "8",
+        "author": "I Masip",
+        "year": "2005",
+        "unstructured": "Masip, I., Perez-Paya, E. & Messeguer, A. Peptoids as source of compounds eliciting antibacterial activity. Comb. Chem. High Throughput Screen. 8, 235–239 (2005).",
+        "journal-title": "Comb. Chem. High Throughput Screen."
+      },
+      {
+        "key": "BFnbt1267_CR32",
+        "doi-asserted-by": "publisher",
+        "first-page": "2055",
+        "DOI": "10.1016/j.bmc.2005.01.009",
+        "volume": "13",
+        "author": "JA Robinson",
+        "year": "2005",
+        "unstructured": "Robinson, J.A. et al. Properties and structure-activity studies of cyclic beta-hairpin peptidomimetics based on the cationic antimicrobial peptide protegrin I. Bioorg. Med. Chem. 13, 2055–2064 (2005).",
+        "journal-title": "Bioorg. Med. Chem."
+      },
+      {
+        "key": "BFnbt1267_CR33",
+        "doi-asserted-by": "publisher",
+        "first-page": "565",
+        "DOI": "10.1038/35007145",
+        "volume": "404",
+        "author": "EA Porter",
+        "year": "2000",
+        "unstructured": "Porter, E.A., Wang, X., Lee, H.S., Weisblum, B. & Gellman, S.H. Non-haemolytic beta-amino-acid oligomers. Nature 404, 565 (2000).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BFnbt1267_CR34",
+        "doi-asserted-by": "publisher",
+        "first-page": "821",
+        "DOI": "10.1093/jac/dkg170",
+        "volume": "51",
+        "author": "NJ Marshall",
+        "year": "2003",
+        "unstructured": "Marshall, N.J., Andruszkiewicz, R., Gupta, S., Milewski, S. & Payne, J.W. Structure-activity relationships for a series of peptidomimetic antimicrobial prodrugs containing glutamine analogues. J. Antimicrob. Chemother. 51, 821–831 (2003).",
+        "journal-title": "J. Antimicrob. Chemother."
+      },
+      {
+        "key": "BFnbt1267_CR35",
+        "doi-asserted-by": "publisher",
+        "first-page": "679",
+        "DOI": "10.1126/science.1092600",
+        "volume": "303",
+        "author": "L Xie",
+        "year": "2004",
+        "unstructured": "Xie, L. et al. Lacticin 481: in vitro reconstitution of lantibiotic synthetase activity. Science 303, 679–681 (2004).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "BFnbt1267_CR36",
+        "doi-asserted-by": "publisher",
+        "first-page": "8873",
+        "DOI": "10.1021/bi050081h",
+        "volume": "44",
+        "author": "R Rink",
+        "year": "2005",
+        "unstructured": "Rink, R., et al. Lantibiotic structures as guidelines for the design of peptides that can be modified by lantibiotic enzymes. Biochem. 44, 8873–8882 (2005).",
+        "journal-title": "Biochem."
+      },
+      {
+        "key": "BFnbt1267_CR37",
+        "doi-asserted-by": "publisher",
+        "first-page": "497",
+        "DOI": "10.1038/nrmicro908",
+        "volume": "2",
+        "author": "BB Finlay",
+        "year": "2004",
+        "unstructured": "Finlay, B.B. & Hancock, R.E.W. Can innate immunity be enhanced to treat infections? Nat. Rev. Microbiol. 2, 497–504 (2004).",
+        "journal-title": "Nat. Rev. Microbiol."
+      },
+      {
+        "key": "BFnbt1267_CR38",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1016/j.coi.2005.11.012",
+        "volume": "18",
+        "author": "LA O'Neill",
+        "year": "2006",
+        "unstructured": "O'Neill, L.A. How Toll-like receptors signal: what we know and what we don't know. Curr. Opin. Immunol. 18, 3–9 (2006).",
+        "journal-title": "Curr. Opin. Immunol."
+      },
+      {
+        "key": "BFnbt1267_CR39",
+        "doi-asserted-by": "publisher",
+        "first-page": "451",
+        "DOI": "10.1189/jlb.0704380",
+        "volume": "77",
+        "author": "DME Bowdish",
+        "year": "2005",
+        "unstructured": "Bowdish, D.M.E. et al. Impact of LL-37 on anti-infective immunity. J. Leukoc. Biol. 77, 451–459 (2005).",
+        "journal-title": "J. Leukoc. Biol."
+      },
+      {
+        "key": "BFnbt1267_CR40",
+        "doi-asserted-by": "publisher",
+        "first-page": "2921",
+        "DOI": "10.1128/AAC.49.7.2921-2927.2005",
+        "volume": "49",
+        "author": "L Zhang",
+        "year": "2005",
+        "unstructured": "Zhang, L. et al. Antimicrobial peptide therapeutics for cystic fibrosis. Antimicrob. Agents Chemother. 49, 2921–2927 (2005).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      }
+    ],
+    "container-title": [
+      "Nature Biotechnology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/nbt1267.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/nbt1267",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/nbt1267.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          18
+        ]
+      ],
+      "date-time": "2023-05-18T15:51:32Z",
+      "timestamp": 1684425092000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/nbt1267"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2006,
+          12
+        ]
+      ]
+    },
+    "references-count": 40,
+    "journal-issue": {
+      "issue": "12",
+      "published-print": {
+        "date-parts": [
+          [
+            2006,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "BFnbt1267"
+    ],
+    "URL": "https://doi.org/10.1038/nbt1267",
+    "relation": {},
+    "ISSN": [
+      "1087-0156",
+      "1546-1696"
+    ],
+    "issn-type": [
+      {
+        "value": "1087-0156",
+        "type": "print"
+      },
+      {
+        "value": "1546-1696",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2006,
+          12
+        ]
+      ]
+    }
+  }
+}

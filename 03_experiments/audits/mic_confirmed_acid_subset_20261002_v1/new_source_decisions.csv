@@ -1,0 +1,9 @@
+paper_peptide_name,sequence,decision,basis,training_release
+MSI-103-COOH,KIAGKIAKIAGKIAKIAGKIA,local_free_acid_fields_confirmed,explicit free-acid molecular identity and original E. coli MIC; text plus visual table check,False
+PGLa-COOH,GMASKAGAIAGKIAKVALKAL,local_free_acid_fields_confirmed,explicit free-acid molecular identity and original E. coli MIC; text plus visual table check,False
+MAP-COOH,KLALKLALKALKAALKLA,local_free_acid_fields_confirmed,explicit free-acid molecular identity and original E. coli MIC; text plus visual table check,False
+Aurein 2.3-COOH,GLFDIVKKVVGAIGSL,local_free_acid_fields_confirmed,explicit free-acid molecular identity and original E. coli MIC; text plus visual table check,False
+Ltc-3a,SWKSMAKKLKEYMEKLKQRA,withheld_molecular_form_conflict,PMID 36212827 Methods: Rink amide resin; Results: COOH; do not choose one description,False
+Lt-MAP1,LAKKLKEYLEKLV,withheld_molecular_form_conflict,PMID 36212827 Methods: Rink amide resin; Results: COOH; do not choose one description,False
+Lt-MAP2,LIKKLKEYLKKLI,withheld_molecular_form_conflict,PMID 36212827 Methods: Rink amide resin; Results: COOH; do not choose one description,False
+Lt-MAP3,LAKKLAKYLKKAL,withheld_molecular_form_conflict,PMID 36212827 Methods: Rink amide resin; Results: COOH; do not choose one description,False

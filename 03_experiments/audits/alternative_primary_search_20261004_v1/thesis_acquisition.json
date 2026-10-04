@@ -1,0 +1,8 @@
+{
+  "url": "https://edepot.wur.nl/255770",
+  "started_at": "2026-10-04T04:48:08.094394+00:00",
+  "source_role": "author_deposited_thesis_chapter_6_contains_2012_original_study",
+  "reuse_license": "not_yet_verified; do_not_assume_CC_BY_from_public_access",
+  "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1006)>",
+  "finished_at": "2026-10-04T04:48:08.858947+00:00"
+}

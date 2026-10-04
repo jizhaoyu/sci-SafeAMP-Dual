@@ -1,0 +1,330 @@
+{
+  "created_at": "2026-09-28T14:55:47.783911+00:00",
+  "original_sha256": "55a093d1e19fabd94ee994cc06cf0791f630809d08dc84d965c5fb84ea8d262b",
+  "current_sha256": "af0de4b09c86240641ffa7e02974c5b53c13df45cb3f6acbd7007f765453f51f",
+  "all_claims_verified": false,
+  "entries": [
+    {
+      "key": "murray2022global",
+      "original_doi": "10.1016/S0140-6736(21)02724-0",
+      "resolved_doi": "10.1016/S0140-6736(21)02724-0",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1016/S0140-6736%2821%2902724-0",
+      "retrieved_at": "2026-09-28T14:30:42.511534+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "who2021amr",
+      "status": "retired_unverified_report_metadata",
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "zasloff2002antimicrobial",
+      "original_doi": "10.1038/415389a",
+      "resolved_doi": "10.1038/415389a",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/415389a",
+      "retrieved_at": "2026-09-28T14:30:44.851855+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "marr2006antibacterial",
+      "original_doi": "10.1016/j.coph.2006.04.006",
+      "resolved_doi": "10.1016/j.coph.2006.04.006",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1016/j.coph.2006.04.006",
+      "retrieved_at": "2026-09-28T14:30:46.363185+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "hancock2006antimicrobial",
+      "original_doi": "10.1038/nbt1267",
+      "resolved_doi": "10.1038/nbt1267",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/nbt1267",
+      "retrieved_at": "2026-09-28T14:30:48.013483+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "mahlapuu2016antimicrobial",
+      "original_doi": "10.3389/fcimb.2016.00194",
+      "resolved_doi": "10.3389/fcimb.2016.00194",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.3389/fcimb.2016.00194",
+      "retrieved_at": "2026-09-28T14:30:49.525884+00:00",
+      "missing_fields": [
+        "pages"
+      ],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "fjell2012designing",
+      "original_doi": "10.1038/nrd3591",
+      "resolved_doi": "10.1038/nrd3591",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/nrd3591",
+      "retrieved_at": "2026-09-28T14:30:55.717320+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "wang2016apd3",
+      "original_doi": "10.1093/nar/gkv1278",
+      "resolved_doi": "10.1093/nar/gkv1278",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/nar/gkv1278",
+      "retrieved_at": "2026-09-28T14:30:56.909684+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "kang2019dramp",
+      "original_doi": "10.1093/nar/gkz869",
+      "resolved_doi": "10.1038/s41597-019-0154-y",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/s41597-019-0154-y",
+      "retrieved_at": "2026-09-28T14:55:41.823561+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "chung2020dbamp",
+      "original_doi": "10.1093/nar/gkz943",
+      "resolved_doi": "10.1093/nar/gky1030",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/nar/gky1030",
+      "retrieved_at": "2026-09-28T14:55:43.698262+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "chaudhary2016hemopi",
+      "original_doi": "10.1038/srep22843",
+      "resolved_doi": "10.1038/srep22843",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/srep22843",
+      "retrieved_at": "2026-09-28T14:31:06.044377+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "pirtskhalava2021dbaasp",
+      "original_doi": "10.1093/nar/gkaa991",
+      "resolved_doi": "10.1093/nar/gkaa991",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/nar/gkaa991",
+      "retrieved_at": "2026-09-28T14:31:07.278066+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "uniprot2023uniprot",
+      "original_doi": "10.1093/nar/gkac1052",
+      "resolved_doi": "10.1093/nar/gkac1052",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/nar/gkac1052",
+      "retrieved_at": "2026-09-28T14:31:10.274710+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "fu2012cdhit",
+      "original_doi": "10.1093/bioinformatics/bts565",
+      "resolved_doi": "10.1093/bioinformatics/bts565",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/bioinformatics/bts565",
+      "retrieved_at": "2026-09-28T14:31:11.621689+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "lin2023evolutionary",
+      "original_doi": "10.1126/science.ade2574",
+      "resolved_doi": "10.1126/science.ade2574",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1126/science.ade2574",
+      "retrieved_at": "2026-09-28T14:31:12.835084+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "jumper2021highly",
+      "original_doi": "10.1038/s41586-021-03819-2",
+      "resolved_doi": "10.1038/s41586-021-03819-2",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/s41586-021-03819-2",
+      "retrieved_at": "2026-09-28T14:31:15.212023+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "vaswani2017attention",
+      "status": "retained_pending_primary_source_review",
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "veltri2018deep",
+      "original_doi": "10.1093/bioinformatics/bty179",
+      "resolved_doi": "10.1093/bioinformatics/bty179",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/bioinformatics/bty179",
+      "retrieved_at": "2026-09-28T14:31:18.062115+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "yan2020deep",
+      "original_doi": "10.1016/j.omtn.2020.05.006",
+      "resolved_doi": "10.1016/j.omtn.2020.05.006",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1016/j.omtn.2020.05.006",
+      "retrieved_at": "2026-09-28T14:31:19.041749+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "sidorczuk2022benchmarking",
+      "original_doi": "10.1093/bib/bbac343",
+      "resolved_doi": "10.1093/bib/bbac343",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1093/bib/bbac343",
+      "retrieved_at": "2026-09-28T14:31:21.421621+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "santos2020macrel",
+      "original_doi": "10.1093/bioinformatics/btaa584",
+      "resolved_doi": "10.7717/peerj.10555",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.7717/peerj.10555",
+      "retrieved_at": "2026-09-28T14:55:44.570704+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "plisson2020happenn",
+      "original_doi": "10.1093/bioinformatics/btaa602",
+      "resolved_doi": "10.1038/s41598-020-67701-3",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/s41598-020-67701-3",
+      "retrieved_at": "2026-09-28T14:55:46.829852+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "capecchi2021machine",
+      "original_doi": "10.1021/acs.jcim.1c00251",
+      "resolved_doi": "10.1021/acs.jcim.1c00251",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1021/acs.jcim.1c00251",
+      "retrieved_at": "2026-09-28T14:31:26.512104+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "boman2003antibacterial",
+      "original_doi": "10.1046/j.1365-2796.2003.01228.x",
+      "resolved_doi": "10.1046/j.1365-2796.2003.01228.x",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1046/j.1365-2796.2003.01228.x",
+      "retrieved_at": "2026-09-28T14:31:28.681825+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "kyte1982simple",
+      "original_doi": "10.1016/0022-2836(82)90515-0",
+      "resolved_doi": "10.1016/0022-2836(82)90515-0",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1016/0022-2836%2882%2990515-0",
+      "retrieved_at": "2026-09-28T14:31:30.650058+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "eisenberg1982helical",
+      "original_doi": "10.1038/299371a0",
+      "resolved_doi": "10.1038/299371a0",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1038/299371a0",
+      "retrieved_at": "2026-09-28T14:31:32.097308+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "raghuraman2007melittin",
+      "original_doi": "10.1007/s10540-006-9030-z",
+      "resolved_doi": "10.1007/s10540-006-9030-z",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1007/s10540-006-9030-z",
+      "retrieved_at": "2026-09-28T14:31:37.857620+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "matsuzaki1999why",
+      "original_doi": "10.1016/S0005-2736(99)00197-2",
+      "resolved_doi": "10.1016/S0005-2736(99)00197-2",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1016/S0005-2736%2899%2900197-2",
+      "retrieved_at": "2026-09-28T14:31:40.599825+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "oren1997selective",
+      "original_doi": "10.1021/bi962452g",
+      "resolved_doi": "10.1021/bi962507l",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1021/bi962507l",
+      "retrieved_at": "2026-09-28T14:55:47.781153+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "blondelle1991hemolytic",
+      "original_doi": "10.1021/bi00233a006",
+      "resolved_doi": "10.1021/bi00233a006",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1021/bi00233a006",
+      "retrieved_at": "2026-09-28T14:31:51.013408+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "pedregosa2011scikit",
+      "status": "retained_pending_primary_source_review",
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "paszke2019pytorch",
+      "status": "retained_pending_primary_source_review",
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "loshchilov2019decoupled",
+      "status": "retained_pending_primary_source_review",
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "kingma2015adam",
+      "status": "retained_pending_primary_source_review",
+      "claim_support": "not_checked"
+    },
+    {
+      "key": "muller2016therapeutic",
+      "original_doi": "10.1016/j.bmc.2017.06.052",
+      "resolved_doi": "10.1016/j.bmc.2017.06.052",
+      "status": "metadata_refreshed_claim_unverified",
+      "source_url": "https://api.crossref.org/works/10.1016/j.bmc.2017.06.052",
+      "retrieved_at": "2026-09-28T14:31:54.518954+00:00",
+      "missing_fields": [],
+      "claim_support": "not_checked"
+    }
+  ]
+}

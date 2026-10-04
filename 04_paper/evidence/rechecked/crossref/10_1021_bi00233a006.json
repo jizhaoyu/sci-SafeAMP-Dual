@@ -1,0 +1,174 @@
+{
+  "url": "https://api.crossref.org/works/10.1021/bi00233a006",
+  "retrieved_at": "2026-09-28T15:04:32.904790+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          15
+        ]
+      ],
+      "date-time": "2026-07-15T15:34:26Z",
+      "timestamp": 1784129666538,
+      "version": "3.55.0"
+    },
+    "reference-count": 0,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "19",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Biochemistry"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1991,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1021/bi00233a006",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2005,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2005-03-08T09:47:41Z",
+      "timestamp": 1110275261000
+    },
+    "page": "4671-4678",
+    "source": "Crossref",
+    "is-referenced-by-count": 237,
+    "title": [
+      "Hemolytic and antimicrobial activities of the twenty-four individual omission analogs of melittin"
+    ],
+    "prefix": "10.1021",
+    "volume": "30",
+    "author": [
+      {
+        "given": "Sylvie E.",
+        "family": "Blondelle",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Richard A.",
+        "family": "Houghten",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2002,
+          5,
+          1
+        ]
+      ]
+    },
+    "container-title": [
+      "Biochemistry"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/bi00233a006",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          9
+        ]
+      ],
+      "date-time": "2023-03-09T13:02:06Z",
+      "timestamp": 1678366926000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/abs/10.1021/bi00233a006"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1991,
+          5
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "19",
+      "published-print": {
+        "date-parts": [
+          [
+            1991,
+            5,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/bi00233a006"
+    ],
+    "URL": "https://doi.org/10.1021/bi00233a006",
+    "relation": {},
+    "ISSN": [
+      "0006-2960",
+      "1520-4995"
+    ],
+    "issn-type": [
+      {
+        "value": "0006-2960",
+        "type": "print"
+      },
+      {
+        "value": "1520-4995",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1991,
+          5
+        ]
+      ]
+    }
+  }
+}

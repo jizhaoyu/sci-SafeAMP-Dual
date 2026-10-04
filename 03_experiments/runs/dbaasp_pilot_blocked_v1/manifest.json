@@ -1,0 +1,73 @@
+{
+  "status": "blocked",
+  "created_at": "2026-09-28T14:52:04.810808+00:00",
+  "config": {
+    "epochs": 15,
+    "batch_size": 32,
+    "hidden_dim": 128,
+    "dropout": 0.25,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "svm_C": 1.0,
+    "rf_trees": 100,
+    "target_specificity": 0.95,
+    "seeds": [
+      11,
+      23,
+      42
+    ],
+    "models": [
+      "svm",
+      "rf",
+      "dual_gated",
+      "dual_concat",
+      "phys_only",
+      "esm_only",
+      "single_task"
+    ],
+    "hyperparameter_selection": "fixed prespecified settings for all methods; no search",
+    "primary_metric": "hemo AUPRC",
+    "probability_interpretation": "logistic calibration on development OOF scores; no clinical claim",
+    "calibration": {
+      "method": "logistic on clipped logit",
+      "C": 1.0,
+      "clip": 1e-06,
+      "selection_split": "oof_selection"
+    }
+  },
+  "dataset_dir": "D:\\桌面文件\\sci\\03_experiments\\prepared\\dbaasp_pilot_v3",
+  "python": "3.11.9",
+  "software": {
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.8.0",
+    "torch": "2.11.0",
+    "fair-esm": "2.0.0"
+  },
+  "code_hashes": {
+    "agent_state.py": "35a4cac9c78b82c52ddf8a38ac80d6b778cbe08fda1d6bbf8d527ce3697687d5",
+    "agent_tools.py": "2178af3521c33c0a8cf92a9b345cfedb9bba8f7d9c8ca7aae2913b989d06fe11",
+    "ai_optimizer.py": "92a02ca0c734da094487de3204bfe557671e81e75c6dbad0f6d2f3398c5f58a3",
+    "audit_references.py": "7fb255c2d992327f9ad61d2465beafda7fe577e0e3e13b5268920421dbb61f15",
+    "calc_statistical_significance.py": "d8c40de40a12e501384782558544572175f2175c5b0d9f6a05bb49e7307ce2c6",
+    "dataset_manager.py": "d81d117655d3842f43a22f1e4c52222d37b7ad3b51b017a1169aecd0a299c1bf",
+    "evaluation.py": "419c0759a1e37d07aafd531a367e29bccc3d4b22f00a70e01a0af78f82c8c85c",
+    "experiment_runner.py": "c3a4fcd1fd00e018f02a77409d800dfc26ada8246c65cf40438e9b7538a9ea73",
+    "feature_extractor.py": "ca106f0901f23beb678011bdd6ce196d9a965985cc3ca85fcbe0f6c5afa24773",
+    "helical_wheel.py": "17b476b939c6b7bf21b126694fca95d504926f14f30460c9163b981b52030bb1",
+    "inference_runtime.py": "2d80a0e809b534b21d50d6a108d91d75feffc9bf4d01ddd20226dbedc7598f41",
+    "model_dual_task.py": "4ec2d0c9c86e291aa4db0f47a3ee1a7746f570a2f049511a794dc8b0720d8af7",
+    "mutation_graph.py": "95e5ceec8a0428c273255f829bc674f11c5c83f29ddb690988ff5be9a55a6c3f",
+    "publication_artifacts.py": "d36a81c0e1c97bc2656a8c3df42ec5b88ca7df51a501d259bbef2c1eea2fc19e",
+    "public_data.py": "77a41935764fb91d4e4933f7ec29261f88469d96eb4312a0ad08240430529a65",
+    "research_data.py": "10ac66f9fdb64659e24925b7fc361b93b4f0999b6a0729581c81169487cc5847",
+    "research_utils.py": "2b3f8a7e34f55ad4ee15a471854a77323ff3cfd12a8dce0996cc33f37b8ba0a8",
+    "test_cdhit_split.py": "8410c79276fd2a391b58f9df580e8909d5bb671d702e65f88eda83a6c9b5cbc0",
+    "test_helical_wheel.py": "370366f9d69f6376f50a8b7940925078bafeb596974069cfcefdb400f2e1f36d",
+    "test_multi_agent.py": "07af3649b015eaf92edef1157e7871aecf0b2e15ee800d7fb9dc83e3d602fa76",
+    "train_and_eval.py": "5a6da4e1972018ae5b62ae0a63462a4de1592f1c8631248fcf0c35104d246e15"
+  },
+  "publication_ready": false,
+  "reason": "Dataset has not passed research validation."
+}

@@ -1,0 +1,115 @@
+{
+  "status": "feasible_for_training_review",
+  "generated_at": "2026-10-01T12:09:52.065550+00:00",
+  "protocol_id": "protocol-mic-01",
+  "protocol_sha256": "d54227ebb5380039cd07f6ddc979561ef6f99efaecdb7644267e6c7d00dffb97",
+  "protocol_path": "03_experiments\\protocols\\protocol-mic-01.json",
+  "existing_records_path": "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv",
+  "existing_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "existing_record_count": 417,
+  "supplement_records_path": "03_experiments\\audits\\dramp_verified_ecoli_mic_20261001_v7\\records.csv",
+  "supplement_records_sha256": "f30f65accb3d2da7641e4e1d2e214aa0613f7932b6fa5b7b0bfa3df227afa3e6",
+  "supplement_record_count": 5,
+  "combined_evidence_gate": {
+    "status": "passed",
+    "detail": "422 provenance records passed raw-assay validation and label re-derivation."
+  },
+  "eligible_record_count_before_exact_sequence_merge": 396,
+  "unique_labeled_molecule_count": 396,
+  "amp_label_counts": {
+    "0": 139,
+    "1": 257
+  },
+  "primary_study_identifier_count": 298,
+  "source_dataset_record_counts": {
+    "DBAASP": 391,
+    "DRAMP": 5
+  },
+  "homology": {
+    "possible_pairs": 78210,
+    "above_cutoff_pairs": 1182,
+    "component_count": 91,
+    "largest_component": 293,
+    "largest_component_fraction": 0.73989898989899
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_molecules": 103,
+      "validation_molecules": 293,
+      "train_positive": 47,
+      "train_negative": 56,
+      "validation_positive": 210,
+      "validation_negative": 83,
+      "train_components": 90,
+      "validation_components": 1,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 1,
+      "train_molecules": 371,
+      "validation_molecules": 25,
+      "train_positive": 246,
+      "train_negative": 125,
+      "validation_positive": 11,
+      "validation_negative": 14,
+      "train_components": 70,
+      "validation_components": 21,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 2,
+      "train_molecules": 369,
+      "validation_molecules": 27,
+      "train_positive": 244,
+      "train_negative": 125,
+      "validation_positive": 13,
+      "validation_negative": 14,
+      "train_components": 68,
+      "validation_components": 23,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 3,
+      "train_molecules": 371,
+      "validation_molecules": 25,
+      "train_positive": 246,
+      "train_negative": 125,
+      "validation_positive": 11,
+      "validation_negative": 14,
+      "train_components": 68,
+      "validation_components": 23,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 4,
+      "train_molecules": 370,
+      "validation_molecules": 26,
+      "train_positive": 245,
+      "train_negative": 125,
+      "validation_positive": 12,
+      "validation_negative": 14,
+      "train_components": 68,
+      "validation_components": 23,
+      "shared_components": 0,
+      "gate_passed": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Severe fold-size imbalance from an indivisible homology component: largest component=293 of 396 molecules (74.0%); validation fold sizes=[293, 25, 27, 25, 26]. Preserve all-member isolation and review the estimand before model training."
+  ],
+  "training_started": false,
+  "model_results_generated": false,
+  "outputs": {
+    "evidence_inventory": "03_experiments\\audits\\mic_only_cohort_20261001_v4\\evidence_inventory.csv",
+    "exclusions": "03_experiments\\audits\\mic_only_cohort_20261001_v4\\exclusions.csv",
+    "molecule_components": "03_experiments\\audits\\mic_only_cohort_20261001_v4\\molecule_components.csv",
+    "all_member_similarity": "03_experiments\\audits\\mic_only_cohort_20261001_v4\\all_member_similarity.csv",
+    "fold_assignments": "03_experiments\\audits\\mic_only_cohort_20261001_v4\\fold_assignments.csv"
+  }
+}

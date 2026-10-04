@@ -1,0 +1,21 @@
+{
+  "protocol_id": "protocol-mic-10",
+  "frozen_at": "2026-10-02T13:38:00.000000+00:00",
+  "protocol_sha256": "9d64563b92bd7042a5acca543e73b4361c61fde6d284d059c11bfab81dbb3407",
+  "protocol_file_sha256": "9d64563b92bd7042a5acca543e73b4361c61fde6d284d059c11bfab81dbb3407",
+  "training_entry_sha256": "0c45664fca6965dfe23902cda5fc88019122cc3a260532bbe378dbfab7bebe9b",
+  "independent_partition_validation_sha256": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5",
+  "model_training_started": false,
+  "model_performance_used_to_choose_design": false,
+  "inputs": {
+    "03_experiments/protocols/protocol-mic-10.json": "9d64563b92bd7042a5acca543e73b4361c61fde6d284d059c11bfab81dbb3407",
+    "docs/amendments/PROTOCOL_MIC_10_ESM2_REPRESENTATION.md": "0015a658f0d79c3a594afca5eec36a3526cd717a8980dbd8adfa18959f9364b1",
+    "02_code/extract_mic_esm2_features.py": "429759c008905fb6eba5dba75c96bd31336280faba6e434ff0d78df70068909f",
+    "03_experiments/features/mic_expanded_17/esm2_features.npy": "74f3fab226325dc2a184ca53e32aac15496d3e5cbd2a17c388e334b1329ae647",
+    "03_experiments/features/mic_expanded_17/esm2_features_meta.json": "5c088e7e97fdfeb7533142d56651e3b25ee13202ce33d74f5455b578c2057390",
+    "03_experiments/audits/mic_expanded_cohort_validation_20261002_v1.json": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5",
+    "03_experiments/audits/mic_source_expansion_result_20261002_v2/manifest.json": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+    "03_experiments/audits/mic_training_readiness_20261002_v14.json": "8165d0b2d7a2b7f9fd89e7b3ee0caa19eef2347d255d7253bcbdedaf24514100",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c"
+  }
+}

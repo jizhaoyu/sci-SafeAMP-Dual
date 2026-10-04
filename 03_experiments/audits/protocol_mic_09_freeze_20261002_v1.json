@@ -1,0 +1,18 @@
+{
+  "protocol_id": "protocol-mic-09",
+  "frozen_at": "2026-10-02T13:14:30.000000+00:00",
+  "protocol_sha256": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+  "protocol_file_sha256": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+  "training_entry_sha256": "7862736b91db38181e663e15c4fea11999c353121608f0c754703bc6ebc78f60",
+  "independent_partition_validation_sha256": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5",
+  "model_training_started": false,
+  "model_performance_used_to_choose_design": false,
+  "inputs": {
+    "03_experiments/protocols/protocol-mic-09.json": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+    "docs/amendments/PROTOCOL_MIC_09_EXPANDED_TRAINING.md": "59ac68cf10761190a8f97493eb188a04eb6d4728e6fc920ae9676fcc0c8fb5d2",
+    "03_experiments/audits/mic_expanded_cohort_validation_20261002_v1.json": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5",
+    "03_experiments/audits/mic_source_expansion_result_20261002_v2/manifest.json": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+    "03_experiments/audits/mic_training_readiness_20261002_v12.json": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c"
+  }
+}

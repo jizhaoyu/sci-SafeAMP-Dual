@@ -1,0 +1,806 @@
+{
+  "generated_at": "2026-10-04T04:18:20.261215+00:00",
+  "review_mode": "agent_primary_source_review",
+  "records": [
+    {
+      "archive_member": "HPLC-MS data/PYRAE-LWL12 COA report.pdf",
+      "sha256": "092aacf44f7c2e0012ee85e2411cca072c9ace07d273f78df4b19eaa3ef25458",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRAE-LWL12\nPeptide Sequence:LWLARARLKWIT\nSalt Form:TFA\nMolecular Weight (Theoretical):1526.83 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):764.62 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METS5-LLI13 COA report.pdf",
+      "sha256": "f695d599638548eb22b58fd574d2d76f45089bed4628e721f464e5459c618160",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METS5-LLI13\nPeptide Sequence:LLIRRALRTLKLL\nSalt Form:TFA\nMolecular Weight (Theoretical):1578.97 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):790.69 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METBU-VKK24 COA report.pdf",
+      "sha256": "6b64b18c408181b633762eac07c1b775149963e058c8105583fe45da51f352b0",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METBU-VKK24\nPeptide Sequence:VKKYGLRNKRELWKSLSVLRRFRG \nSalt Form:TFA\nMolecular Weight (Theoretical):2990.47\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):599.09 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRFU-LRR35 COA report.pdf",
+      "sha256": "1ec841f05f68011d500882dadbf014712216de30377685478b8c56cb1b955c4b",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRFU-LRR35\nPeptide Sequence:LRRRIKKYQRIIFGLPRFKLRGVRKDLRRASPLWF \nSalt Form:TFA\nMolecular Weight (Theoretical):4441.24\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):889.25\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HYPBU-KHP43 COA report.pdf",
+      "sha256": "43d6ab4ef67e89d56dd957f1a3cd85e18d3f629de7a5cf8c4d63c0926d0180e3",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HYPBU-KHP43\nPeptide Sequence:KHPWIKERLVRELELVGRYGLRNKRELWKLETLARYFRHRARS \nSalt Form:TFA\nMolecular Weight (Theoretical):5461.19\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):1093.24\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-IGW20 COA report.pdf",
+      "sha256": "93945dad4f832c7dafe245915a9cd187048b52ae87a61f0a37dfadcea95dfc54",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-IGW20\nPeptide Sequence:IGWISNRVILKLLRFAKNMK \nSalt Form:TFA\nMolecular Weight (Theoretical):2400.93 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):801.42 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METHJ-PKL16 COA report.pdf",
+      "sha256": "d994251ebdd9b8055a37f87f1eecd54e75f65ee2cb899e0319b193075893f9f6",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METHJ-PKL16\nPeptide Sequence:PKLAIKLGKAGLKSLL \nSalt Form:TFA\nMolecular Weight (Theoretical):1650.03 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):826.23 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SULAC-FIG15 COA report.pdf",
+      "sha256": "6933da7d743c4a5c83228f615d6c3da560da40da29566be98f5f32e588fbcda7",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SULAC-FIG15\nPeptide Sequence:FIGINVAVGLKLIGK \nSalt Form:TFA\nMolecular Weight (Theoretical):1541.9 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):772.16 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-ILV13 COA report.pdf",
+      "sha256": "e10cab46656e6fab007f64741af90ed39eba77299ad9b88837afe7b780ccb212",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-ILV13\nPeptide Sequence:ILVLLRIIKLRKL\nSalt Form:TFA\nMolecular Weight (Theoretical):1591.08 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):796.75 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-IKL12 COA report.pdf",
+      "sha256": "81b9304b82d5b9838ae9405552ec8e9ea11587e5b89ac3bebdca74eab24a16d3",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-IKL12\nPeptide Sequence:IKLRLWRWKYLL\nSalt Form:TFA\nMolecular Weight (Theoretical):1688.07 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):845.25 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRHO-WRR14 COA report.pdf",
+      "sha256": "cfeb618ab5c6677d0f32d9afb0c820030dfe879f4fee6507b1aca92b2b00405c",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRHO-WRR14\nPeptide Sequence:WRRIRWALKLVRLW \nSalt Form:TFA\nMolecular Weight (Theoretical):4441.24 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):977.38 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METVO-IGF14 COA report.pdf",
+      "sha256": "1b629c595b70681bbe5adee248aa85959121beee2c1cc26525d590500901f039",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METVO-IGF14\nPeptide Sequence:IGFKIFYRLLMLKM \nSalt Form:TFA\nMolecular Weight (Theoretical):1773.25 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):887.85 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-LFH49 COA report.pdf",
+      "sha256": "7a14c1ded8a4acb493b2b096116dcc9b28a605aa427b05c527566904f58f7292",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-LFH49\nPeptide Sequence:LFHPIEGWTRVDLTELHRIKEVYDRKIDFLKKLLKKFPLRAMRKINRLF \nSalt Form:TFA\nMolecular Weight (Theoretical):6123.16\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+6H]6H+):1021.52\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METTH-ILF14 COA report.pdf",
+      "sha256": "fa61a7641c1613bf1d55cdc0feb9c279a6cfb52c67d6f77e2023c97a8ee59e59",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METTH-ILF14\nPeptide Sequence:ILFAGLLKGLLKSL\nSalt Form:TFA\nMolecular Weight (Theoretical):1485.83 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):744.13 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PICTO-TWF22 COA report.pdf",
+      "sha256": "cea3284634ff566998370560d4f3ad897c42664322971b7f99dffceaa3112a70",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PICTO-TWF22\nPeptide Sequence:TWFIKVSLIRKKLLENNEKINW \nSalt Form:TFA\nMolecular Weight (Theoretical):2773.26\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):925.53 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRIL-IFG12 COA report.pdf",
+      "sha256": "73bc9e3e2b881fdd0e13ee4c993c0c558273371de2dc955c0e8f47acbe670c27",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRIL-IFG12\nPeptide Sequence:IFGALAKIRRLL\nSalt Form:TFA\nMolecular Weight (Theoretical):1370.68 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):686.56 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HALVD-FGI13 COA report.pdf",
+      "sha256": "ff60faa1ba3012485d4ff7f7b1ee5e68c82ca7592b8354731cc8c99d1b937916",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HALVD-FGI13\nPeptide Sequence:FGIFALSAALVKW\nSalt Form:TFA\nMolecular Weight (Theoretical):1422.66 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+H]H+):1423.76 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SACS2-YLG19 COA report.pdf",
+      "sha256": "daf8a32123bfc65d6b55b9c533c4c950c0fc0a74136f6c0045c7e0fe8f93318c",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SACS2-YLG19\nPeptide Sequence:YLGRLVIRRALKVLRLLKS \nSalt Form:TFA\nMolecular Weight (Theoretical):2267.76 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):1135.07 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRAE-LLF10 COA report.pdf",
+      "sha256": "6a79c6ef9e49928d75edb1ba757487abf8b93715ff1a56d75adfb10fe8f78437",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRAE-LLF10\nPeptide Sequence:LLFKLIRHRL\nSalt Form:TFA\nMolecular Weight (Theoretical):1308.62 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):655.52 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SULTO-LKI13 COA report.pdf",
+      "sha256": "0ee4ad31a5146de9fe3891226a1d0808583634762a55193e48da7e6e287afb21",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SULTO-LKI13\nPeptide Sequence:LKINNISLIRKIL\nSalt Form:TFA\nMolecular Weight (Theoretical):1537.92 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):770.17 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/KORCO-LGR13 COA report.pdf",
+      "sha256": "e75c6db2fb8d92dc473610a12ba7a44b9e986aab720b93a7dbe20922dfb5f944",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: KORCO-LGR13\nPeptide Sequence:LGRLLIRRSLRIL\nSalt Form:TFA\nMolecular Weight (Theoretical):1578.93 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):790.70 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRAR-LAR15 COA report.pdf",
+      "sha256": "5432f75a68727b0a13eeeecffb073af759283029e66623f824c53fe71dca6574",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRAR-LAR15\nPeptide Sequence:LARLLIRRILKNLKL \nSalt Form:TFA\nMolecular Weight (Theoretical):1833.3 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):612.22 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRHO-KWI13 COA report.pdf",
+      "sha256": "9b5f816fdad386444b695aa51e5b35f1b405e8d4839933e498ee5b5fc8e32c80",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRHO-KWI13\nPeptide Sequence:KWILSRLHRIIKF\nSalt Form:TFA\nMolecular Weight (Theoretical):1710.09 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):856.25 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/AERPE-WRL14 COA report.pdf",
+      "sha256": "f7212e7b43833a2ce0dc24ccf569421523a37ac45580e8f7781726943f708d02",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: AERPE-WRL14\nPeptide Sequence:WRLRIASLASLRRF\nSalt Form:TFA\nMolecular Weight (Theoretical):1745.01 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):873.75 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THESM-LFG11 COA report.pdf",
+      "sha256": "0322d82bb7d85b48f5c62a7e598f17c46d36217e115a2d675d14422c2d21affa",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THESM-LFG11\nPeptide Sequence:LFGGILRSIKL\nSalt Form:TFA\nMolecular Weight (Theoretical):1216.48 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):609.45 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/META3-KWK14 COA report.pdf",
+      "sha256": "a918a07cf83014aba61716dc33df7f6e79e89216e9e46c6f0075264b9b07430c",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:META3-KWK14\nPeptide Sequence:VKWKKLIKGFVINKF \nSalt Form:TFA\nMolecular Weight (Theoretical):1749.18 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):875.80 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-LPP20 COA report.pdf",
+      "sha256": "66458ae39a46587719cc255e815f7c58a7ec2cafe2de7cc76bb5d1e16cc013fa",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-LPP20\nPeptide Sequence:LPPSFAMLLRKYLKNAKLIK \nSalt Form:TFA\nMolecular Weight (Theoretical):2344.86 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):782.73 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METAC-GII19 COA report.pdf",
+      "sha256": "86073ac32225f442c63ec07baa0e59ffc80ce36361693d4e4b5d07f890d9dd31",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METAC-GII19\nPeptide Sequence:GIILRPLLHSRGSRRIRLL \nSalt Form:TFA\nMolecular Weight (Theoretical):2226.64 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+H]H+):743.32 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THEAC-GLI14 COA report.pdf",
+      "sha256": "26b79ef3c6f52deab9bb081b8ad7c0e82de12613ac7ce594b95ee896f64c3af1",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THEAC-GLI14\nPeptide Sequence:GLIGARILKRINRF\nSalt Form:TFA\nMolecular Weight (Theoretical):1626.96 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):814.69 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/DESA1-LRM20 COA report.pdf",
+      "sha256": "7c9098e903f387d41ddb8568d9519abf75b5ad1646e1552f52dff3575dac7402",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: DESA1-LRM20\nPeptide Sequence:LRMEKIKKIMERTVEILRRW \nSalt Form:TFA\nMolecular Weight (Theoretical):2629.19 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):526.84 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METLZ-LPL16 COA report.pdf",
+      "sha256": "501e62be0231ad404d8f4d7b9d7ec4e384655d86da2e6b7f07d5ef2ebb891e9e",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METLZ-LPL16\nPeptide Sequence:LPLAKIAAKLMLGKKL \nSalt Form:TFA\nMolecular Weight (Theoretical):1708.17 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):570.51 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/STAMF-PKW15 COA report.pdf",
+      "sha256": "88cdc9c8a302be7fbb91c340a6c96411c5b8a41e8988ba7eea5dfa4b1ba2d823",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:STAMF-PKW15\nPeptide Sequence:PKWKKIKRIMKKIGL \nSalt Form:TFA\nMolecular Weight (Theoretical):1867.41 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):623.58 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METMJ-IRK17 COA report.pdf",
+      "sha256": "1fe595a6f07ba1e4d8892c9291a8504cd4f03f485ee6fda3db818b826efa90ee",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METMJ-IRK17\nPeptide Sequence:IRKLSHHMIKLLGLAKK \nSalt Form:TFA\nMolecular Weight (Theoretical):1986.46 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):663.27 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-ILG13 COA report.pdf",
+      "sha256": "c3ee43215427453d635ee21e2a4fd25876af5fe8c86736f29f9c0ad6a4d9f7fa",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-ILG13\nPeptide Sequence:ILGGKLIKKSLKL\nSalt Form:TFA\nMolecular Weight (Theoretical):1410.79 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):706.61 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SACS2-KRF12 COA report.pdf",
+      "sha256": "41e904a470210e55809ecafabaaf2591cecede9cba2fe50fc7201f8a890018d1",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SACS2-KRF12\nPeptide Sequence:KRFWTLIKMLRF\nSalt Form:TFA\nMolecular Weight (Theoretical):1639.03 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):820.73 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HYPBU-RWS17 COA report.pdf",
+      "sha256": "494214dc92501aa99c735516ee829e293bcfe451975242850ca4619f8310aa45",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HYPBU-RWS17\nPeptide Sequence:RWSEREFKIRMLGLKKK \nSalt Form:TFA\nMolecular Weight (Theoretical):2205.61 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):736.32 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HALWD-ISK13 COA report.pdf",
+      "sha256": "7fb6559fad39542ac5c45dd4eeaf0d41af2a4f4cc006bcee002ae246d27eb512",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HALWD-ISK13\nPeptide Sequence:ISKLLARLRRLKW\nSalt Form:TFA\nMolecular Weight (Theoretical):1653.01 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):827.72 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/IGNH4-YLA18 COA report.pdf",
+      "sha256": "e4400157c08682c0c38c67920be3fb6588d2358058c2a7f3eb194e50cd3f8f90",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: IGNH4-YLA18\nPeptide Sequence:YLARLVIRRTLRALKKLK \nSalt Form:TFA\nMolecular Weight (Theoretical):2211.71 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):1107.10 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METB6-IKA18 COA report.pdf",
+      "sha256": "e0eea033f394866f029879132e09b7bb0afb6251793ddc320a91cc7842aded73",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METB6-IKA18\nPeptide Sequence:IKAIALKINTLLSGLLAK \nSalt Form:TFA\nMolecular Weight (Theoretical):1880.31 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):941.37 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/AERPE-LFR14 COA report.pdf",
+      "sha256": "bac389321d64e46a9bc8d98a685ac801162974464a5f95c21057927936cb2bab",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: AERPE-LFR14\nPeptide Sequence:LFRLVRLLRFLRIL\nSalt Form:TFA\nMolecular Weight (Theoretical):1828.27 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):915.34 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRCJ-LRN28 COA report.pdf",
+      "sha256": "5000afbc83e4e3f487963898f0fb50001aab4932fecf5b61667e3fbf0dcd90ce",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRCJ-LRN28\nPeptide Sequence:LRNKKELWLARARLKWIVRRARALLSMT \nSalt Form:TFA\nMolecular Weight (Theoretical):3450.09\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):691.02\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/CALMQ-IGL14 COA report.pdf",
+      "sha256": "09fa64d3a345a2d119e2b26043948f74bc780a74ef3e517381256c72fc9b9f00",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: CALMQ-IGL14\nPeptide Sequence:IGLLSRGLIKRINL\nSalt Form:TFA\nMolecular Weight (Theoretical):1565.91 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):784.17 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METKA-LLI23 COA report.pdf",
+      "sha256": "93786bbeeb9b285c72aa98a350cdf5a2d52035e1fff9cd8ab8a347b0bac474b6",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METKA-LLI23\nPeptide Sequence:LLIPLVRSGKIWEIAAKLRKLGW \nSalt Form:TFA\nMolecular Weight (Theoretical):2661.2\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):888.18 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRAB-IER14 COA report.pdf",
+      "sha256": "dab40f49a0921ce99805d762603a9bebb53616c012c828d32a60a8081740a5a5",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRAB-IER14\nPeptide Sequence:IERIRLRIRLAKNW\nSalt Form:TFA\nMolecular Weight (Theoretical):1837.19 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):919.82 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METTH-GHI16 COA report.pdf",
+      "sha256": "5bbfd895d7a63284de5c665bb3343030c022645f62a35ee1c3c830b469b5a2bb",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METTH-GHI16\nPeptide Sequence:GHILGRLASVVSKKLL \nSalt Form:TFA\nMolecular Weight (Theoretical):1691.01 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):846.73 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SACS2-LIK14 COA report.pdf",
+      "sha256": "d2a802a2ef1b634d177a6d546341c2c50d8147867682ff646d54372000778883",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SACS2-LIK14\nPeptide Sequence:LIKMLRFYVVLRRF \nSalt Form:TFA\nMolecular Weight (Theoretical):1854.3 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):619.21 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-WLG18 COA report.pdf",
+      "sha256": "a10e226a64c7dcc093b7c8ec9c578550fad818746b252d38da3a949c63d3c5ea",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-WLG18\nPeptide Sequence:WLGDKALAKLLKFLKGIK \nSalt Form:TFA\nMolecular Weight (Theoretical):2042.48 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):681.93 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METMP-IAK14 COA report.pdf",
+      "sha256": "fa96ff46d5919f053bc3ffe63fe9d7ebebbbc97875e4e07b5e152c626685ed92",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METMP-IAK14\nPeptide Sequence:IAKKGNLRLLIKIL\nSalt Form:TFA\nMolecular Weight (Theoretical):1593.02 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):797.73 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METAR-FGA13 COA report.pdf",
+      "sha256": "115bcfc7e1538e90d0b9b8d1ae3f1eaa44b0d3e2ca8ffacefc49df5fd238b6b5",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METAR-FGA13\nPeptide Sequence:FGALLGDIVKSFF\nSalt Form:TFA\nMolecular Weight (Theoretical):1413.61 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):708.02 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SACS2-IRY14 COA report.pdf",
+      "sha256": "68cda62557573810125b2776e33519aacc0a80d5377b2ba138b7dc95c84e235a",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SACS2-IRY14\nPeptide Sequence:IRYYIIAVRRFLKW\nSalt Form:TFA\nMolecular Weight (Theoretical):1897.28 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):949.85 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METMA-IIL13 COA report.pdf",
+      "sha256": "693e6e825dd9c0fcf70a10874619ecfbe7011dcf55f73db418c2af745fd80253",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METMA-IIL13\nPeptide Sequence:IILGSLALAIKKL\nSalt Form:TFA\nMolecular Weight (Theoretical):1352.7 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):677.56 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METTH-RRL13 COA report.pdf",
+      "sha256": "e6565c9b70c2e2cee4a417a69d40d641c5f4d3f2b9df3cf5ff0276523a184b02",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METTH-RRL13\nPeptide Sequence:RRLSTWKLKLRMF\nSalt Form:TFA\nMolecular Weight (Theoretical):1735.1 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):868.76 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THEKO-LRR18 COA report.pdf",
+      "sha256": "e9500876e1604a8ca40c085d35f6d5f97f8a35c56f29fa5ece7ab88a54acadbe",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THEKO-LRR18\nPeptide Sequence:LRRVGITNLRTVAKINWK \nSalt Form:TFA\nMolecular Weight (Theoretical):2138.55 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):713.97 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METFV-LWM16 COA report.pdf",
+      "sha256": "23ffb3ec0bd5586e68052086e52d044c7a53016e07789def5be055cd34e5b583",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METFV-LWM16\nPeptide Sequence:LWMVRWRIAVVAAKIK \nSalt Form:TFA\nMolecular Weight (Theoretical):1940.4 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):647.92 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/ARCFU-LAW18 COA report.pdf",
+      "sha256": "6ee981f2c00f7bdbe2d707965700bed97e8b52f5372c54d87c27ffdb813d597a",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: ARCFU-LAW18\nPeptide Sequence:LAWGLGIGRLAMLKIGLK \nSalt Form:TFA\nMolecular Weight (Theoretical):1910.35 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+4H]4H+):478.57 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THEVO-LIM14 COA report.pdf",
+      "sha256": "ce3e6c74fdc310fdd3a9249195b8dfbd6db93af7f5b29e68d53bb26cf92c0608",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THEVO-LIM14\nPeptide Sequence:LIMAKMLRLVRYYK \nSalt Form:TFA\nMolecular Weight (Theoretical):1798.25 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):900.33 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METST-KLI14 COA report.pdf",
+      "sha256": "74b5da4937beb6a6826968fe89f4fe3749a75fe53fae885536c4086cbe850140",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METST-KLI14\nPeptide Sequence:KLILKKIKMLKIEF\nSalt Form:TFA\nMolecular Weight (Theoretical):1745.27 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):873.85 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HALSA-FGL12 COA report.pdf",
+      "sha256": "669daf0b657215fd1bd6bfb74e401eb63c61589e9dc4607f3dc5747221609e91",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HALSA-FGL12\nPeptide Sequence:FGLILLRSRAIF\nSalt Form:TFA\nMolecular Weight (Theoretical):1405.68 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):704.05 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THEPD-GAG20 COA report.pdf",
+      "sha256": "e30b9a5ab496d026a59da2f9134b4c53623d230b2e1906937277ea7d29b70693",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THEPD-GAG20\nPeptide Sequence:GAGYLARLLIRRSLRLLRRL \nSalt Form:TFA\nMolecular Weight (Theoretical):2366.79 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):790.05 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METTH-KKL17 COA report.pdf",
+      "sha256": "0bf9474650a6c19639a68659a1e1f7135b033aff95c15c72576c3fb3a568a1ef",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METTH-KKL17\nPeptide Sequence:KKLIKVSPKALLKLGKL \nSalt Form:TFA\nMolecular Weight (Theoretical):1877.38 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):626.90 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METJA-FLG13 COA report.pdf",
+      "sha256": "dd08fdcfdc2cf7d57d05d7f3f4f30232acb8d21fe63f8c37386663ed63ac114b",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METJA-FLG13\nPeptide Sequence:FLGLRVINLLRIL\nSalt Form:TFA\nMolecular Weight (Theoretical):1539.91 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):771.17 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRFU-IKL14 COA report.pdf",
+      "sha256": "34319117e01eef6e75b053d099c5b1cfe7869699cf792382527242e0782d54a6",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRFU-IKL14\nPeptide Sequence:IKLIELGHKLKRIF\nSalt Form:TFA\nMolecular Weight (Theoretical):1708.11 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):855.27 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HALWD-IQT41 COA report.pdf",
+      "sha256": "fc2ce5abe17462d0cb5618afe32ae6d06e1081fb3f9f501907a54026b75ef0e1",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HALWD-IQT41\nPeptide Sequence:IQTPLNIARRRFQSWLRRRIRGSSRSQISKLLARLRRLKWA \nSalt Form:TFA\nMolecular Weight (Theoretical):5045.8\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):1010.15\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/SULTO-FLG15 COA report.pdf",
+      "sha256": "c21cc81608f88477731e24c911192065793252070795a3e39ae66c7e40421592",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:SULTO-FLG15\nPeptide Sequence:FLGVKLPKMLRFIKF \nSalt Form:TFA\nMolecular Weight (Theoretical):1837.31 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):613.54 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HYPBU-KIN18 COA report.pdf",
+      "sha256": "03e8b8b6ae4f8f92ab7b968a6da2286469c96136c269e145a7be947615a9d310",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HYPBU-KIN18\nPeptide Sequence:KINYRANIWALKMLGVKW \nSalt Form:TFA\nMolecular Weight (Theoretical):2204.65 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):735.99 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METTP-LIK34 COA report.pdf",
+      "sha256": "911d0537d50f1d2bd80c91a4550d4b2cde63cf9e95a6add6f9b6b313cc5d48f7",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METTP-LIK34\nPeptide Sequence:LIKTYGLRNKRELWKAESILRKYRRVGRMLLASK \nSalt Form:TFA\nMolecular Weight (Theoretical):4147.86\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):830.57\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HALWD-QIS39 COA report.pdf",
+      "sha256": "d69b786b142ab3dff724807a38163c339dcc30e1f58c7f1f63c56a718b4e480d",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HALWD-QIS39\nPeptide Sequence:QISKLLARLRRLKWAKIRTQIAGVRKYFTRSYWRELIAK \nSalt Form:TFA\nMolecular Weight (Theoretical):4818.64\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+5H]5H+):964.73\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METM6-FLW13 COA report.pdf",
+      "sha256": "a0e631228525b3c9641f9318a2fdb9fc74c4cdb3cab5a6ab9e0da111458b0bc1",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METM6-FLW13\nPeptide Sequence:FLWNMVRRIIRLL\nSalt Form:TFA\nMolecular Weight (Theoretical):1730.14 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):866.29 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METBF-WPL20 COA report.pdf",
+      "sha256": "fbaf2053440155a48ea1cb6b04430ecff314f2f68e22ce05296dc21d95ae6223",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METBF-WPL20\nPeptide Sequence:WPLPKIFRLTKGGKLNKKIF \nSalt Form:TFA\nMolecular Weight (Theoretical):2384.91 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):796.08 \nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METVS-LGL17 COA report.pdf",
+      "sha256": "b06bebed2b829746980cad801d4d50806a8a4ed772c6973e26657e0f3d019c9b",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METVS-LGL17\nPeptide Sequence:LGLHLLKKMVIAGKLKF \nSalt Form:TFA\nMolecular Weight (Theoretical):1909.41 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):955.91 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THEHY-ILS15 COA report.pdf",
+      "sha256": "00d5ddec121b2e999a983219d89541c25c32ceb58cf0b89079145545cab0b6ab",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THEHY-ILS15\nPeptide Sequence:ILSKWLARFMVRYFK \nSalt Form:TFA\nMolecular Weight (Theoretical):1958.36 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):980.40 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/ARCFU-FLI13 COA report.pdf",
+      "sha256": "62dcf6f8bcd303a64b2dd7e3a7e386082c19755cb5fcde5c4e0efc7dfeb21887",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: ARCFU-FLI13\nPeptide Sequence:FLIHIVRRRLILF\nSalt Form:TFA\nMolecular Weight (Theoretical):1696.1 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):849.28 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/ARCPA-LRR11 COA report.pdf",
+      "sha256": "6d169194d666476bdf6f1e9e8aee5e6c3d86e27901330aedb9a192d968b2bd9c",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: ARCPA-LRR11\nPeptide Sequence:LRRFKLLHKLL\nSalt Form:TFA\nMolecular Weight (Theoretical):1436.78 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+H]H+):179.60 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRAB-LSR14 COA report.pdf",
+      "sha256": "ffa919fd9262d8c2401b8136383074f50ad734e85998c69fbc1b91332ad334e8",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRAB-LSR14\nPeptide Sequence:LSRWYVRLIRKRLW \nSalt Form:TFA\nMolecular Weight (Theoretical):1945.31 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):649.54 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/METS3-FAG15 COA report.pdf",
+      "sha256": "31a3224e6a611dafb8b0e1176873f16e4dfc1070505ec1c8b9174cde91cb9745",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:METS3-FAG15\nPeptide Sequence:FAGKMLRKLVKIVFK \nSalt Form:TFA\nMolecular Weight (Theoretical):1778.25 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+3H]3H+):593.87 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/NANEQ-FAL13 COA report.pdf",
+      "sha256": "97209cc525cd18389a891ff51a472a1cf24f9b40b3d587e9158a571452551349",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:NANEQ-FAL13\nPeptide Sequence:FALRFPRIVRIRF\nSalt Form:TFA\nMolecular Weight (Theoretical):1691.03 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):846.73 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/PYRAE-GRG31 COA report.pdf",
+      "sha256": "2a13edb22413d24fe35313e2728a0f936890bcdcfe761cdb679b19bafbf62dd2",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:PYRAE-GRG31\nPeptide Sequence:GRGLQLAKKWVWLKIRGQLENLKRWRRRLGK \nSalt Form:TFA\nMolecular Weight (Theoretical):3844.52\nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+4H]4H+):962.13\nMolecular Weight (by MS, [M+Na] +)\nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/HALSA-LWR13 COA report.pdf",
+      "sha256": "8ef26a64469f73401ba39b92b3ed76b68a20ee1cbfa8c48e45b857809b161eb6",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name: HALSA-LWR13\nPeptide Sequence:LWRRRRVFAAAVL\nSalt Form:TFA\nMolecular Weight (Theoretical):1613.89 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):808.15 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/NITMS-LRM19 COA report.pdf",
+      "sha256": "a9e2a705bb19d64641f21f31130f731e04e6ba298128c5f8ce81b92fcff22fde",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:NITMS-LRM19\nPeptide Sequence:LRMMLRRINATISKLNLKL \nSalt Form:TFA\nMolecular Weight (Theoretical):2284.82 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):1143.61 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    },
+    {
+      "archive_member": "HPLC-MS data/THEAG-FFK13 COA report.pdf",
+      "sha256": "2b72b7f3e441577f3bc64763e6a686bfd55abbb13982c3ca717ae6d0c3954cf0",
+      "pages": [
+        "628\nCertificate of Analysis\nCertificate of Analysis\nSAMPLE INFORMATION\nOrder No. : 12543\nManufacturing Date: 2023-10-28\nPeptide Name:THEAG-FFK13\nPeptide Sequence:FFKGMLRTLKWIF\nSalt Form:TFA\nMolecular Weight (Theoretical):1687.07 \nProduced Amount:10.0mg\nSample No. :\nTESTS\nAppearance: White to off white powder\nMolecular Weight (by MS, [M+2H]2H+):844.75 \nMolecular Weight (by MS, [M+Na] +) \nMolecular Weight (by MS, M+K+)\nSTORAGE INFORMATION\nStorage Conditions\nCool dry place\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com",
+        "Mass Spectrometry Report\nCertificate of Analysis\nFor more information or to place an order:\nAAPPTec, LLC 6309 Shepherdsville Road Louisville, KY 40228-1027 U.S.A.\n502.968.2223 \uf0b7 info@aapptec.com \uf0b7 www.aapptec.com"
+      ],
+      "admitted": false,
+      "label": null
+    }
+  ]
+}

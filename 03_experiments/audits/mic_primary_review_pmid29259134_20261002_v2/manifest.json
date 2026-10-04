@@ -1,0 +1,27 @@
+{
+  "status": "blocked_primary_review_in_progress",
+  "generated_at": "2026-10-02T02:15:26.812910+00:00",
+  "paper": {
+    "pmid": "29259134",
+    "doi": "10.1074/jbc.M117.805499",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5846155/",
+    "pdf_url": "https://repository.ias.ac.in/118258/1/PIIS0021925820403904.pdf"
+  },
+  "script_sha256": "ea25cc3933747e673de43bbe631447fe046340a4eed89f8254e941daaa35050d",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_pmid29259134_20261002_v1\\raw\\PIIS0021925820403904.pdf": "f8a360b40897fb8473f348af2c485c59304ed11c46dadcf2f7987c104d8c32ea"
+  },
+  "review": {
+    "records": 3,
+    "sequence_and_mic_matches": 3,
+    "positive_observations": 1,
+    "negative_observations": 2,
+    "records_released_for_training": 0
+  },
+  "outputs": {
+    "record_review.csv": "6dbd237c4c6bef27613b3d202cd158ff4de18d699ab1e7bd7c09a88e785d8ee3",
+    "report.md": "a10ede172809eeb56a0224645a511edc9440f1e2b8372ec67b2b9512a5893a62"
+  }
+}

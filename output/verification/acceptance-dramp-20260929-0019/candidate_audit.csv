@@ -1,0 +1,11 @@
+dramp_id,sequence,length,raw_value,raw_unit,assay_eligible,derived_label,ineligibility_reason,exact_dev_overlap,literature_overlap,dbaasp_crossref,max_id_min,max_id_max,violates_current_0.40_isolation,violates_standard_max_0.40_isolation
+Not available,GLFGKLIKKFLRKAISYAVKKARGKH,26,3,µM,True,1.0,,False,True,False,0.962,0.962,True,True
+Not available,RRGCFRVCYRGFCFQRCR,18,46,µM,True,,intermediate_range,False,False,False,0.636,0.444,True,True
+Not available,FKKLKKLFSKLWNWK,15,32,μM,True,1.0,,False,False,False,0.733,0.667,True,True
+Not available,FKKLKKLFSKLWNWKCRGDKGPDC,24,125,μM,True,0.0,,False,False,False,0.733,0.458,True,True
+Not available,FKKLKKLFSKLWNWKGGCRGDKGPDC,26,125,μM,True,0.0,,False,False,False,0.733,0.423,True,True
+Not available,FKKLKKLFSKLWNWKGGRGD,20,125,μM,True,0.0,,False,False,False,0.667,0.5,True,True
+Not available,FKKLKKLFSKLWNWKRGD,18,125,μM,True,0.0,,False,False,False,0.667,0.556,True,True
+Not available,FIGTLIPLALGALTKLFK,18,10,µM,True,1.0,,False,False,False,0.722,0.444,True,True
+Not available,FFHHIFRGIVHVGKTIHRLVTG,22,3.12,µg/ml,True,1.0,,False,False,True,0.955,0.955,True,True
+Not available,GFSSIFRGVAKFASKGLGKKLAKLGVKLVACKISKQC,37,11,µM,True,1.0,,False,True,True,0.933,0.757,True,True

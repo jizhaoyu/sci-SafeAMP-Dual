@@ -1,0 +1,35 @@
+{
+  "record_type": "primary-source leads recorded before detailed MIC extraction",
+  "selection_basis": "retrievable primary research or original dataset, matching frozen search themes; no model score or error identity used",
+  "selected_studies": [
+    {"source_id": "chekmenev2006", "doi": "10.1016/j.bbamem.2006.03.034", "pdf_url": "https://nationalmaglab.org/library/publications/NHMFL_Publication-3172.pdf", "discovery": "web theme free carboxyl; mirror discovery replaced by author-institution original paper"},
+    {"source_id": "foundation2024", "doi": "10.1038/s41467-024-51933-2", "discovery": "web theme peptide dataset synthesis; publisher original research"},
+    {"source_id": "lactoferricin2015", "pmcid": "PMC4359834", "discovery": "web theme Wang resin; original research"},
+    {"source_id": "boncat2025", "pmcid": "PMC12748266", "discovery": "web theme proline-rich peptide; original research"},
+    {"source_id": "carrier2016", "doi": "10.1371/journal.pone.0146552", "discovery": "web theme peptide MIC synthesis; publisher original research"},
+    {"source_id": "drosocin2002", "pmid": "12238928", "doi": "10.1021/jm020861d", "discovery": "PubChem AID64242 primary-paper pointer; database values not admitted"},
+    {"source_id": "pexiganan2016", "arxiv": "1606.00620", "pdf_url": "https://arxiv.org/pdf/1606.00620", "discovery": "original dataset and original research preprint; publication alias to be checked"},
+    {"source_id": "brucin2020", "pdf_url": "https://imsear.searo.who.int/bitstreams/0dabbda4-b70a-402d-ac2c-c2d64c37e124/download", "discovery": "web theme peptide minimum inhibitory concentration; WHO repository original journal PDF"},
+    {"source_id": "apidaecin2009", "pmcid": "PMC2648157", "discovery": "web theme Wang resin; original research"},
+    {"source_id": "neopeptides2005", "pmcid": "PMC1196242", "discovery": "web theme Wang resin; original research"},
+    {"source_id": "bmap2025", "pmcid": "PMC12207908", "discovery": "web theme Wang resin; original research"},
+    {"source_id": "tat2026", "pmcid": "PMC13112966", "discovery": "web theme Wang resin; original research"}
+  ],
+  "other_discovery_decisions": [
+    {"id": "10.3389/fmicb.2021.624465 / PMC8203924", "decision": "already_reviewed_and_present_in_existing_15; not a new study"},
+    {"id": "10.1021/acs.jcim.4c01749", "decision": "secondary_DBAASP_model_dataset; no new primary measurements"},
+    {"id": "PMC11805985", "decision": "secondary_DBAASP_model_dataset; no new primary measurements"},
+    {"id": "PXD049239-1", "decision": "discovery_dataset_abstract_MIC_91.3_ug_ml_in_binary_gap; not admitted; full molecular evidence not reviewed"},
+    {"id": "Peptides-2006.pdf conference abstract", "decision": "agar_diffusion_endpoint_in_search_excerpt; not interpreted as quantitative MIC"},
+    {"id": "PMID2186965", "decision": "protein_degradation_study_not_target_MIC"},
+    {"id": "US9657091", "decision": "patent_pointer_not_selected_as_primary_measurement_article_in_this_batch"},
+    {"id": "PMC12842892", "decision": "already_reviewed_Equinin_unit_endpoint_and_sequence_conflicts_remain_withheld"},
+    {"id": "PMC5784245", "decision": "batch_detailed_review_limit_reached; noncanonical_chemistry_lead_not_admitted"},
+    {"id": "PMC5448120", "decision": "glycoprotein_modification_not_target_MIC"},
+    {"id": "PMC1168694", "decision": "batch_detailed_review_limit_reached; dendrimer_lead_not_admitted"},
+    {"id": "PMC8208971", "decision": "copper_binding_anticancer_study_not_selected_target_MIC_source"},
+    {"id": "PMC10123104", "decision": "GTPase_interactor_study_not_target_MIC"},
+    {"id": "PMC1140510", "decision": "batch_detailed_review_limit_reached; acyl_conjugation_lead_not_admitted"},
+    {"id": "commercial_supplier_pages, Wikipedia, antibiotic_small_molecule_pages, systematic_review", "decision": "not_original_peptide_MIC_measurement_evidence"}
+  ]
+}

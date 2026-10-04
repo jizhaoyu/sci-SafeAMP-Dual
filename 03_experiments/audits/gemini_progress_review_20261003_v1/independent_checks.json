@@ -1,0 +1,195 @@
+{
+  "status": "review_completed_scientific_release_not_accepted",
+  "generated_at": "2026-10-03T03:09:16.907583+00:00",
+  "scope": "Local artifact and evidence review; no training, release, deployment or protocol edits",
+  "historical_hash_checks": [
+    {
+      "path": "04_paper/research_status.json",
+      "expected_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+      "actual_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+      "matches": true
+    },
+    {
+      "path": "03_experiments/protocols/protocol-mic-06.json",
+      "expected_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+      "actual_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+      "matches": true
+    },
+    {
+      "path": "03_experiments/protocols/protocol-mic-07.json",
+      "expected_sha256": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+      "actual_sha256": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+      "matches": true
+    },
+    {
+      "path": "03_experiments/protocols/protocol-mic-08.json",
+      "expected_sha256": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+      "actual_sha256": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+      "matches": true
+    },
+    {
+      "path": "03_experiments/audits/mic_training_readiness_20261002_v12.json",
+      "expected_sha256": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+      "actual_sha256": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+      "matches": true
+    },
+    {
+      "path": "03_experiments/runs/mic_three_fold_20261002_v1/manifest.json",
+      "expected_sha256": "c9e35b637a8a7b7e79058b72ecaf6504bab4784dd7848721c06cd01d9c758de1",
+      "actual_sha256": "c9e35b637a8a7b7e79058b72ecaf6504bab4784dd7848721c06cd01d9c758de1",
+      "matches": true
+    },
+    {
+      "path": "02_code/train_mic_three_fold_v2.py",
+      "expected_sha256": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+      "actual_sha256": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+      "matches": true
+    },
+    {
+      "path": "02_code/validate_mic_three_fold_run.py",
+      "expected_sha256": "251758d72134ee9433f4f482b85c017f34203396333dfddb42c9b78868655915",
+      "actual_sha256": "251758d72134ee9433f4f482b85c017f34203396333dfddb42c9b78868655915",
+      "matches": true
+    }
+  ],
+  "old_15_run_all_output_hashes_match": true,
+  "expanded_17_run_all_output_hashes_match": true,
+  "all_member_audit": {
+    "pairs_recomputed": 136,
+    "numeric_mismatches": 0,
+    "homology_edges": 11,
+    "cross_fold_homology_edges": 0,
+    "cross_fold_study_edges_using_recorded_aliases": 0,
+    "seed42_three_fold_exactly_reproduced": true
+  },
+  "source_identifier_audit": {
+    "parseable_primary_xml_with_identifiers": 6,
+    "sources_with_mismatched_ids": 5,
+    "mismatches": [
+      {
+        "source_id": "lactoferricin2015",
+        "raw_source": "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/lactoferricin2015.xml",
+        "mismatches": {
+          "doi": {
+            "recorded": "10.1155/2015/480874",
+            "original": "10.1155/2015/453826"
+          },
+          "pmid": {
+            "recorded": "25815340",
+            "original": "25815317"
+          }
+        }
+      },
+      {
+        "source_id": "boncat2025",
+        "raw_source": "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/boncat2025.xml",
+        "mismatches": {
+          "doi": {
+            "recorded": "10.1039/d4md00742c",
+            "original": "10.3389/fmicb.2025.1713216"
+          },
+          "pmid": {
+            "recorded": "39908380",
+            "original": "41477210"
+          }
+        }
+      },
+      {
+        "source_id": "carrier2016",
+        "raw_source": "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/carrier2016.xml",
+        "mismatches": {
+          "pmid": {
+            "recorded": "26784381",
+            "original": "26808536"
+          },
+          "pmcid": {
+            "recorded": "PMC4718485",
+            "original": "PMC4726619"
+          }
+        }
+      },
+      {
+        "source_id": "bmap2025",
+        "raw_source": "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/bmap2025.xml",
+        "mismatches": {
+          "doi": {
+            "recorded": "10.1002/mlf2.12157",
+            "original": "10.1002/mlf2.70020"
+          },
+          "pmid": {
+            "recorded": "40645962",
+            "original": "40600060"
+          }
+        }
+      },
+      {
+        "source_id": "tat2026",
+        "raw_source": "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/tat2026.xml",
+        "mismatches": {
+          "pmid": {
+            "recorded": "40360875",
+            "original": "42072633"
+          }
+        }
+      }
+    ]
+  },
+  "evidence_release_gate": {
+    "audit_manifest_release_count": 0,
+    "new_candidate_decisions_training_release": [
+      {
+        "record_id": "chekmenev2006:p1-COO-",
+        "training_release": false
+      },
+      {
+        "record_id": "bmap2025:BMAP-27B",
+        "training_release": false
+      }
+    ],
+    "readiness_declares_complete_release": {
+      "status": "passed",
+      "full_release_review_complete": true,
+      "molecules_approved": 17,
+      "observations_approved": 24,
+      "independent_human_review_claimed": false
+    },
+    "training_protocol_09_binds_evidence_release_manifest": false
+  },
+  "esm2_artifact_inventory": {
+    "expected_files": 33,
+    "actual_files": 34,
+    "exact_inventory_match": false,
+    "run_manifest_contains_output_hashes": false,
+    "handcrafted_probability_max_absolute_diff_from_protocol09": 0.0
+  },
+  "esm2_freeze_absence_negative_check": {
+    "method": "mock only Path.exists for FREEZE; original freeze file preserved; all fit functions forbidden",
+    "loader_disposition": "accepted"
+  },
+  "syntax_check": {
+    "scripts_parsed": 10,
+    "passed": true
+  },
+  "formal_state": {
+    "status": "blocked",
+    "protocol_id": "protocol-amd-02",
+    "sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c"
+  },
+  "model_fitting_performed": false,
+  "inputs": {
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments/protocols/protocol-mic-06.json": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+    "03_experiments/protocols/protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "03_experiments/protocols/protocol-mic-08.json": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+    "03_experiments/audits/mic_training_readiness_20261002_v12.json": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+    "03_experiments/runs/mic_three_fold_20261002_v1/manifest.json": "c9e35b637a8a7b7e79058b72ecaf6504bab4784dd7848721c06cd01d9c758de1",
+    "02_code/train_mic_three_fold_v2.py": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+    "02_code/validate_mic_three_fold_run.py": "251758d72134ee9433f4f482b85c017f34203396333dfddb42c9b78868655915",
+    "03_experiments/audits/mic_source_expansion_result_20261002_v2/manifest.json": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+    "03_experiments/audits/mic_source_expansion_result_20261002_v2/source_inventory.csv": "055c953daa742569cf426c12028942546c5e246e9abcb2e75492f1a70f55732a",
+    "03_experiments/audits/mic_source_expansion_result_20261002_v2/record_decisions.csv": "532db497bf8ff9c74b6d36d74e07bf258abf61b19c6f1914eff67465a15bf914",
+    "03_experiments/audits/mic_source_expansion_result_20261002_v2/assay_observations.csv": "cc296a8fabb09b8369374141e5bfbc52785fe8dfc946bb7913e3bad21e65c420",
+    "02_code/train_mic_three_fold_v3.py": "7862736b91db38181e663e15c4fea11999c353121608f0c754703bc6ebc78f60",
+    "02_code/train_mic_esm2_three_fold.py": "0c45664fca6965dfe23902cda5fc88019122cc3a260532bbe378dbfab7bebe9b"
+  }
+}

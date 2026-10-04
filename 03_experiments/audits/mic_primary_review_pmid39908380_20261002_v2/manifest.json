@@ -1,0 +1,27 @@
+{
+  "status": "blocked_paper_range_and_target_resolution",
+  "generated_at": "2026-10-02T02:39:55.426312+00:00",
+  "paper": {
+    "pmid": "39908380",
+    "doi": "10.1126/sciadv.adp7171",
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11797553/",
+    "supplement_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11797553/supplementaryFiles"
+  },
+  "script_sha256": "cce16067992042b9e8ee452f40281ba075b0f4dfb773c732836db7848dcb52e7",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_pmid39908380_20261002_v1\\raw\\PMC11797553_fullTextXML.xml": "0564866b40e34e0223100373b42f40d9ecf1c3528d8debabb6025e37bd7840da",
+    "03_experiments\\audits\\mic_primary_review_pmid39908380_20261002_v1\\raw\\supplement\\sciadv.adp7171_sm.pdf": "f07e21c556d43c5a07d30bbe44db23700fe88e939e3b65f9b55dd0afdd45d487"
+  },
+  "review": {
+    "records": 2,
+    "range_conflicts": 2,
+    "target_annotations_pending": 2,
+    "records_released_for_training": 0
+  },
+  "outputs": {
+    "record_review.csv": "f51feeb8a4b5cb3be3ef7118aede15a25ef752cb82a1084808428a216f470121",
+    "report.md": "d7012323dd1353bc25827d9225182d7c735e53a4ca246946d8a6f473d891073c"
+  }
+}

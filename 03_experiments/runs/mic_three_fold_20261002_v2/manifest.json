@@ -1,0 +1,83 @@
+{
+  "status": "local_exploratory_three_fold_training_completed",
+  "generated_at": "2026-10-02T13:15:02.213492+00:00",
+  "protocol_id": "protocol-mic-09",
+  "protocol_sha256": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+  "cohort_manifest_sha256": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+  "independent_partition_validation_sha256": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5",
+  "molecules": 17,
+  "observations": 24,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 11,
+      "validation_n": 6,
+      "train_positive": 4,
+      "train_negative": 7,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 1,
+      "train_n": 12,
+      "validation_n": 5,
+      "train_positive": 4,
+      "train_negative": 8,
+      "validation_positive": 2,
+      "validation_negative": 3,
+      "both_classes": true
+    },
+    {
+      "fold": 2,
+      "train_n": 11,
+      "validation_n": 6,
+      "train_positive": 4,
+      "train_negative": 7,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    }
+  ],
+  "oof_rows": 51,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "dummy_prior"
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "training_started": true,
+  "formal_results_available": false,
+  "publication_ready": false,
+  "limitations": [
+    "Expanded cohort contains 17 molecules, 6 positives and 11 negatives across 8 indivisible components; each validation fold contains strictly 2 positives.",
+    "Piscidin 1 facility synthesis resin at UTSW unreported; Todd Hewitt broth non-standard; condition limitations remain explicit.",
+    "BMAP-27B multiresistant CREC isolate context and heatmap resolution bracket (1.563-6.250 ug/mL) noted as limitations.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ],
+  "script_sha256": "7862736b91db38181e663e15c4fea11999c353121608f0c754703bc6ebc78f60",
+  "outputs": {
+    "fixed_features.npy": "472731265b97c43013b631f2349f9658a6521ad2513b36aa4e85357c32d45e06",
+    "fold_metrics.csv": "a24eb1f1a7fa55d65af959e158baa3371aea5f6ea5cf6a2bbd2f8a860be3a26a",
+    "fold_models\\dummy_prior_fold0.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "fold_models\\dummy_prior_fold1.joblib": "8757f39362508945dcec476ef3f5451566d4d58fc650c1d812cfd48c4a5122cb",
+    "fold_models\\dummy_prior_fold2.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "fold_models\\logistic_regression_fold0.joblib": "962e349eda416fa3b15a760cb7bb5dfe2ba660b9e25b3b1c3e0b2e279dcfd435",
+    "fold_models\\logistic_regression_fold1.joblib": "6fbdbae639b53edb0e3bdb051b6aebe89572908b2a1241b76d08d6d9312cddad",
+    "fold_models\\logistic_regression_fold2.joblib": "565ea6342798f5b70378cc34101f8576f3388e90e3de6ee991c0f51c18b5b049",
+    "fold_models\\random_forest_fold0.joblib": "0a21534f2ca9988c03be7bfd033485ed2f3d623970ac756fdf4865c46be899c5",
+    "fold_models\\random_forest_fold1.joblib": "d8c7750007ea98132c5315f69091a04fb7bdc7ad80da8cffd13fc1b69a912d2a",
+    "fold_models\\random_forest_fold2.joblib": "9cd13b409bd225038baca47ae05d12bcb280529115badb23f139a10c0d17e262",
+    "oof_predictions.csv": "fdf8cf10527b6e754a0e93d8adb598dfacb8ec96bc9027fa7378cb1eb12bd92c",
+    "pooled_descriptive_metrics.csv": "02626c2795ccdd91ba6ff6645234002f2b656fb05adf36a5d0fc4eebcdd30bec",
+    "report.md": "bed37e491179f752b926435a6790d5d1304031197b13c74bb5f9dfd357bf3c23"
+  }
+}

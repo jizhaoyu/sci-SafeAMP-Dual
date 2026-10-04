@@ -1,0 +1,15 @@
+{
+  "status": "screen_completed",
+  "generated_at": "2026-10-03T02:22:47.145930+00:00",
+  "dramp_source_sha256": "d61049d96af0fe527a4d9402f19ab0974f6fe2eb71258be4be09bc7f401dc6ac",
+  "development_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "statistics": {
+    "total_dramp_records": 4159,
+    "dual_assay_relevant_canonical_10_50": 1139,
+    "homology_cutoff": 0.4,
+    "homology_passed_count": 239,
+    "homology_failed_count": 900,
+    "passing_high_priority_linear_count": 39,
+    "passing_disulfide_or_cyclic_count": 200
+  }
+}

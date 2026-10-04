@@ -1,0 +1,79 @@
+{
+  "protocol_id": "protocol-mic-07",
+  "protocol_version": 1,
+  "status": "frozen_local_exploratory_baseline_training",
+  "frozen_date": "2026-10-02",
+  "authorization": "User requested progression to training readiness and explicitly authorized a prospective three-fold amendment retaining real evidence and zero leakage.",
+  "scope": "local small-sample E. coli MIC exploration only; no dual-task, clinical, external-validation, deployment or publication authorization",
+  "audit_protocol_id": "protocol-mic-06",
+  "audit_protocol_path": "03_experiments/protocols/protocol-mic-06.json",
+  "audit_protocol_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+  "cohort_manifest": "03_experiments/audits/mic_three_fold_20261002_v1/manifest.json",
+  "cohort_manifest_sha256": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+  "evidence_release_manifest": "03_experiments/audits/mic_three_fold_primary_release_20261002_v1/manifest.json",
+  "evidence_release_manifest_sha256": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+  "independent_partition_validation": "03_experiments/audits/mic_three_fold_validation_20261002_v1.json",
+  "independent_partition_validation_sha256": "64c5f107926592ddd18eaff59325eea7c58d0083ae635ffc236b3a2489af3037",
+  "molecules": "03_experiments/audits/mic_three_fold_20261002_v1/candidate_molecules.csv",
+  "molecules_sha256": "d2ad54b302ce677360df3b4a37c26a40f53e01ea6a4ac5e4e441e1461bd0a3a2",
+  "fold_roles": "03_experiments/audits/mic_three_fold_20261002_v1/fold_roles.csv",
+  "fold_roles_sha256": "e726be12479b273d546ebceb8077bd913278caac1419e95078e8b78cf719ee90",
+  "validation": {
+    "folds": 3,
+    "seed": 42,
+    "partition": "use the frozen whole-component roles; no new split or seed search",
+    "require_both_classes_in_training_and_validation": true,
+    "homology_cutoff": 0.4,
+    "all_member_and_primary_study_isolation": true,
+    "inner_cross_validation": false,
+    "hyperparameter_search": false,
+    "probability_calibration": false
+  },
+  "features": {
+    "name": "existing fixed handcrafted sequence descriptors",
+    "dimensions": 44,
+    "learned_embedding": false,
+    "feature_extractor": "02_code/feature_extractor.py",
+    "feature_extractor_sha256": "cd0f8d7318f88ecb4f8e53bb1d0c44a3b286fed9c0380b06de5101c77f4b82e4",
+    "selection": "no feature selection or outcome-informed redesign"
+  },
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 5000,
+      "solver": "lbfgs",
+      "random_state": 42,
+      "preprocessing": "StandardScaler fitted only inside each training complement"
+    },
+    "random_forest": {
+      "class_weight": "balanced",
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "n_estimators": 500,
+      "n_jobs": 1,
+      "random_state": 42
+    },
+    "dummy_prior": {"strategy": "prior"}
+  },
+  "baseline_implementation": "02_code/train_mic_baselines.py",
+  "baseline_implementation_sha256": "456f8517c919b8e31426782f317fe3e0a8030407ffaf92b5461932a5389cb3dd",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "model_design_rationale": "Reuse existing fixed LR/RF baseline parameters and add a prior-only control. No model performance has been produced for this cohort. Do not use internal random calibration CV on these few independent groups.",
+  "decision_threshold": 0.5,
+  "metrics": ["AUPRC", "AUROC", "MCC_at_0_5", "balanced_accuracy_at_0_5", "accuracy_at_0_5"],
+  "output": "fold models, features, per-molecule out-of-fold predictions, fold and pooled descriptive metrics, immutable manifest",
+  "model_selection": "none; report all predeclared models; no best-model selection or full-cohort deployment fit",
+  "limitations": [
+    "Only 15 molecules, 4 positives and 6 indivisible components; validation folds contain only 1-2 positives.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12408343/fullTextXML",
+  "retrieved_at": "2026-10-04T04:01:14.393891+00:00",
+  "sha256": "7bb23c76467de91f3bc14cea8dc8f528e456d470ecda076b628ea35e0d2f95e2",
+  "bytes": 202384,
+  "status": "retrieved_unreviewed",
+  "path": "raw/archaeome2025.xml"
+}

@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>dbAMP</title>
+    <!-- BOOTSTRAP CORE STYLE  -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME STYLE  -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE  -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+	<link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+</head>
+<script src="assets/js/jquery-1.10.2.js"></script>
+<body>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-12">
+                    <div class="navbar-collapse collapse ">
+						<a class="navbar-brand" href="index.php">
+
+							<img src="assets/img/dbAMPv2.svg" style="position:absolute;top:6px;" width="15%"/>
+						</a>
+                        <ul id="menu-top" class="nav navbar-nav navbar-right">
+                            <li><a href="introduction.php">Introduction</a></li>
+							<li><a href="browse.php">Browse</a></li>
+                            <li><a href="statistics.php">Statistics</a></li>
+                            <li><a href="search.php">Search</a></li>
+							<li><a href="analyze.php">Analyze</a></li>
+                            <!--li><a href="ngs.php">NGS Detection</a></li>
+                            <li><a href="predict.php">AMP Prediction</a></li-->
+                            <!-- <li><a href="community.php">Tool</a></li>
+                            <li><a href="generation.php">Generation</a></li> -->
+							<li><a href="tutorial.php">Tutorial</a></li>
+							<li><a href="download2024.php">Download</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+     <!-- MENU SECTION END-->
+	 
+	 
+<!--	回到頂端	-->
+<style type="text/css">
+#gotop {
+       position: fixed;
+    border-radius: 50px;
+    right: 20px;
+    bottom: 30px;
+    padding: 10px 16px;
+    font-size: 25px;
+    background: rgba(228, 211, 211, 0.36);
+	background-color: #c0c0c0;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;}
+</style>	 
+
+
+<script type="text/javascript">
+$(function(){
+    $("#gotop").click(function(){
+        jQuery("html,body").animate({
+            scrollTop:0
+        },1000);
+    });
+    $(window).scroll(function() {
+        if ( $(this).scrollTop() > 300){
+            $('#gotop').fadeIn("fast");
+        } else {
+            $('#gotop').stop().fadeOut("fast");
+        }
+    });
+});
+</script>
+<!--	回到頂端	-->
+
+</body>
+</html>
+<style>
+.preloader{
+  position: fixed;
+  left:0px;
+  top:0px;
+  height:100%;
+  width: 100%;
+  z-index:999999;
+  background-color:#fff;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-image:url(preloader.gif);
+}
+
+</style>
+
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 400px;
+    }
+    </style>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<link rel="stylesheet" href="dist/css/LiteMol-plugin.css" type="text/css" />
+<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> -->
+<script src="dist/js/LiteMol-plugin.js"></script>
+<script src="dist/js/highcharts.js"></script>
+<script src="dist/js/heatmap.js"></script>
+<script src="dist/js/highcharts-more.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<script>
+var click_structure_number = 0;
+
+
+
+var show_home = function(){
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade active in";
+	document.getElementById("home_teg").className = "active";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+
+}
+var show_profile = function(){
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade active in";
+	document.getElementById("profile_teg").className = "active";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+
+}
+var show_target = function(){
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade active in";
+	document.getElementById("target_teg").className = "active";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+
+}
+var show_messages = function(){
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade active in";
+		document.getElementById("messages_teg").className = "active";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+
+}
+var show_ppi = function(){
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade active in";
+	document.getElementById("ppi_teg").className = "active";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+
+}
+var show_structure = function(){
+
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade active in";
+	document.getElementById("structure_teg").className = "active";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+
+}
+var show_settings = function(){
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade active in";
+	document.getElementById("settings_teg").className = "active";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade";
+	document.getElementById("activity_teg").className = "";
+	}
+
+}
+
+var show_activity = function(){
+	function GetUrlPara()
+    {
+        var url = document.location.toString();
+        var arrUrl = url.split("?");
+        var para = arrUrl[1];
+        return para.substring(3,14);
+    }
+    function structure()
+    {
+    var protein_id = GetUrlPara();
+    var link = "docking/" + protein_id + ".pdb";
+    $.get(link,function(data,status){
+        var str = data;
+        var plugin = LiteMol.Plugin.create({ target: '#litemol',layoutState: { hideControls: true } });
+        plugin.loadMolecule({
+                            id: protein_id,
+                            data: str,
+                            format: 'pdb'
+        });
+
+        })
+    }
+
+    click_structure_number = click_structure_number + 1;
+    if(click_structure_number == 1)
+    {
+        structure();
+
+    }
+
+	if(document.getElementById("home") != null){
+	document.getElementById("home").className = "tab-pane fade";
+	document.getElementById("home_teg").className = "";
+	}
+
+	if(document.getElementById("profile") != null){
+	document.getElementById("profile").className = "tab-pane fade";
+	document.getElementById("profile_teg").className = "";
+	}
+
+	if(document.getElementById("target") != null){
+	document.getElementById("target").className = "tab-pane fade";
+	document.getElementById("target_teg").className = "";
+	}
+
+	if(document.getElementById("messages") != null){
+		document.getElementById("messages").className = "tab-pane fade";
+		document.getElementById("messages_teg").className = "";
+	}
+
+	if(document.getElementById("ppi") != null){
+	document.getElementById("ppi").className = "tab-pane fade";
+	document.getElementById("ppi_teg").className = "";
+	}
+
+	if(document.getElementById("structure") != null){
+	document.getElementById("structure").className = "tab-pane fade";
+	document.getElementById("structure_teg").className = "";
+	}
+
+	if(document.getElementById("settings") != null){
+	document.getElementById("settings").className = "tab-pane fade";
+	document.getElementById("settings_teg").className = "";
+	}
+
+	if(document.getElementById("activity") != null){
+	document.getElementById("activity").className = "tab-pane fade active in";
+	document.getElementById("activity_teg").className = "active";
+	}
+
+}
+</script>
+
+<body><div class="preloader" id='loading'></div>
+
+    <div class="content-wrapper">
+        <div class="container">
+			<div class="row pad-botm">
+				<div class="col-md-12">
+					<h4 class="header-line">Antimicrobial Peptide Card</h4>
+
+				</div>
+			</div>
+
+			
+            <div class="row">
+                <div class="col-md-11">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            General Information
+                        </div>
+                        <!--div class="panel-body"-->
+                            <ul class="nav nav-tabs">
+                                <li class="active" id="home_teg"><a href="#home" data-toggle="tab" onclick="show_home()">Basic</a>
+                                </li>
+                                <li class="" id="profile_teg"><a href="#profile" data-toggle="tab" onclick="show_profile()">Antimicrobial Potency</a>
+                                </li>
+								<!--li class=""><a href="#target" data-toggle="tab" onclick="hide_PPI()" >Against Target Species</a>
+                                </li-->
+                                <li class="" id="messages_teg"><a href="#messages" data-toggle="tab" onclick="show_messages()">Physical-chemical Properties</a>
+                                </li>
+								<li class="" id="ppi_teg"><a href="#ppi" data-toggle="tab" onclick="show_ppi()" style='display:none'>Interacting Proteins</a>
+                                </li>
+								<li class="" id="structure_teg"><a href="#structure" data-toggle="tab" onclick="show_structure()" >3D Structure<img src="assets/img/icons8-new-100.png" style="width: 50px;height:50px;margin-top:-50px;margin-left:-15px;"></a>
+                                </li>
+                                <li class="" id="settings_teg" style='display:none'><a href="#settings" data-toggle="tab" onclick="show_settings()">External Links</a>
+                                </li>
+								<li class="" id="activity_teg"><a href="#activity" data-toggle="tab" onclick="show_activity()" style='display:none'>Docking<img src="assets/img/icons8-new-100.png" style="width: 50px;height:50px;margin-top:-50px;margin-left:-15px;"></a>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content">
+
+								<div class="tab-pane fade" id="activity">
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Docking with LptB2FG protein
+										</div>
+										<div class="panel-body">
+										<table class="table">
+													<thead>
+														<tr>
+															<th align="center"><b>dbAMP ID</b></th>
+															<th>dbAMP_16971 (AntiGram-)</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Residues</td>
+															<td colspan="4">38</td>
+														</tr>
+														<tr>
+															<td>Sequence</td>
+															<td style="word-break:break-all" colspan="4">WQQPSCSSICDYSCGKSACISYSGRCGCCASCRRGPIY </td>
+														</tr>
+														<tr>
+															<td>Receptor</td>
+															<td>Area near lipopolysaccharides</td>
+														</tr>
+														<tr>
+															<td>Score</td>
+															<td></td>
+														</tr>
+													</tbody>
+										</table>	
+										
+										<!-- <img src="assets/img/Regression_workflow.png" alt="" width="100%" style="border:1px #ccc solid;"/><br><br>
+										 -->
+										 <!-- <div class="alert alert-success" align="center">
+											<p><b><font color="#990000">The predicted activity (Log MIC, unit: μM) for different types of bacteria is as follows:</font></b></p>
+										</div> -->
+										<!-- <div id="chartdiv"></div>	
+										-->
+										<div class="row" >
+										
+										<div id="content2" class="col-lg-6 col-md-6 col-sm-6"  style="text-align:center; height: 480px;">
+                                               <div id="litemol"></div>
+                                            </div>
+
+											<div class="col-lg-6 col-md-6 col-sm-6"  style="text-align:center; height: 440;">
+											<img src="docking/dbAMP_16971.png" alt="" width="100%" />
+											</div>
+										</div>
+
+										</div>
+									</div>
+                                </div>
+
+                                <div class="tab-pane fade active in" id="home">
+								<!--div class="tab-pane fade" id="home"-->
+                                     <!--   Basic Information  -->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Basic Information
+										</div>
+
+										<div class="panel-body">
+											<div class="table-responsive">
+												<table class="table">
+													<thead>
+														<tr>
+															<th align="center" width="20%"><b>dbAMP ID</b></th>
+															<th>dbAMP_16971</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>															<td>Name</td>															<td>Paralithocin 1<br>  Paralithodes camtschaticus<br></td>														</tr>
+														<tr>															<td>Source</td>															<td>  Paralithodes camtschaticus<br></td>														</tr>
+														<tr>
+															<td>Length</td>
+															<td>38</td>
+														</tr>
+														<tr>
+															<td>Activity</td>
+															<td style="word-break:break-all">
+																<span class="label label-primary">AntiGram&nbsp+</span>&nbsp<span class="label label-primary">AntiGram&nbsp-</span>&nbsp															</td>
+														</tr>
+																																																																																																					
+
+														<tr>
+															<td>Sequence</td>
+															<td style="word-break:break-all">WQQPSCSSICDYSCGKSACISYSGRCGCCASCRRGPIY</td>
+														</tr>
+																																																																						<tr>
+															<td>Experimental Evidence</td>
+															<td>NO</td>
+														</tr>
+														<tr>														<td>Target</td>														<td>Escherichia coli ATCC 25922 (MIC=>100μM)<br>Pseudomonas aeruginosa ATCC 27853 (MIC=>100μM)<br>Yersinia ruckeri CCUG 14190 (MIC=>100μM)<br>Vibrio anguillarum AL104 (MIC=>100μM)<br>Aeromonas salmonicida AL2020 (MIC=200μM)<br>Corynebacterium glutamicum ATCC 13032 (MIC=50μM)<br>Staphylococcus aureus ATCC 9144 (MIC=>100μM)<br>Carnobacterium maltaromaticum CCUG 34645 (MIC=200μM)<br>Carnobacterium mobile (MIC=100μM)<br>Carnobacterium divergens (MIC=200μM)<br>Carnobacterium funditum CCUG 34644 (MIC=200μM)<br></td>														</tr>														
+														<tr>														<td>PubMed</td>														<td><a href='http://www.ncbi.nlm.nih.gov/pubmed/?term=29338238'>29338238</a><br></a></td>														</tr>																											</tbody>
+												</table>
+											</div>
+										</div>
+																				<div class="panel-heading">
+											Composition Information
+										</div>
+										<div class="panel-body">
+
+											<br />
+											<div id="aac"></div>
+											<hr /><br />
+
+											<div id="aapc" style="height: 700px; min-width: 600px; max-width: 950px; margin: 0 auto"></div>
+
+										</div>
+									</div>
+
+									  <!-- End  Basic Information  -->
+                                </div>
+                                <div class="tab-pane fade" id="profile">
+                                     <!--   Antibacterial Activities  -->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Antibacterial Activities
+										</div>
+										<div class="panel-body">
+											<div class="table-responsive">
+												<table class="table">
+													<thead>
+														<tr>
+															<th align="center" width="20%"><b>dbAMP ID</b></th>
+															<th>dbAMP_16971</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Activity</td>
+															<td style="word-break:break-all">
+																<span class="label label-primary">AntiGram&nbsp+</span>&nbsp<span class="label label-primary">AntiGram&nbsp-</span>&nbsp															</td>
+														</tr>
+													</tbody>
+												</table>
+												<hr /><br />
+												<div>
+													<!--<img src="activity/<php echo $id; >.png" width="80%" align="center" />-->
+													<div id="ap" style="height: 600px; min-width: 310px; max-width: 800px; margin: 0 auto"></div>
+													<div class="well">
+														<blockquote><i>
+															<a href='https://www.ncbi.nlm.nih.gov/pubmed/?term=28216428' target='_blank'><strong><font color="#005757">Pane, K., et al.,</font></strong></a> Antimicrobial potency of cationic antimicrobial peptides can be predicted from their amino acid composition: Application to the detection of "cryptic" antimicrobial peptides. J Theor Biol, 2017. 419: p. 254-265.<br>
+														</i></blockquote>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									  <!-- End  Antibacterial Activities  -->
+                                </div>
+
+								<div class="tab-pane fade" id="messages">
+                                     <!--   Physical Properties  -->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Physico-chemical Properties
+										</div>
+										<div class="panel-body">
+											<div class="table-responsive">
+												<table class="table">
+													<col width="20%" /><col width="20%" /><col width="20%" /><col width="20%" /><col width="20%" />
+													<thead>
+														<tr>
+															<th align="center" width="20%"><b>dbAMP ID</b></th>
+															<th>dbAMP_16971</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Residues</td>
+															<td colspan="4">38</td>
+														</tr>
+														<tr>
+															<td>Sequence</td>
+															<td style="word-break:break-all" colspan="4">WQQPSCSSICDYSCGKSACISYSGRCGCCASCRRGPIY</td>
+														</tr>
+														<tr>
+															<td>Molecular Weight</td>
+															<td colspan="4">4087.66</td>
+														</tr>
+														<tr>
+															<td>Net Charge</td>
+															<td colspan="2">3</td>
+															<td>Isoelectric Point</td>
+															<td>8.0737</td>
+														</tr>
+														<tr>
+															<td>charge Density</td>
+															<td colspan="2">3.453</td>
+															<td>Aliphatic Index</td>
+															<td>36.0526</td>
+														</tr>
+														<tr>
+															<td>Aromaticity Index</td>
+															<td colspan="2">0.105263</td>
+															<td>hydrophobic Ratio</td>
+															<td>0.0701658</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										
+										<div class="panel-heading">
+											Histograms of physico-chemical properties
+										</div>
+
+										<div class="panel-body">
+											<img src="emboss/dbAMP_16971.1.png" alt="" width="100%"/>
+										</div>
+																														<div class="panel-heading">
+											Hydropathy plots
+										</div>
+										<div class="panel-body">
+											<img src="emboss/dbAMP_16971.2.png" alt="" width="100%"/>
+										</div>
+																			</div>
+									  <!-- End  Physical Properties  -->
+                                </div>
+
+								<div class="PPI_layout tab-pane fade" id="ppi">
+                                    <!--   PPI  -->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Protein-Protein Interaction
+										</div>
+										<div class="panel-body">
+											<div class="table-responsive">
+												<table class="table" style="table-layout:fixed;text-align:center;">
+													<thead>
+														<tr align='center' style="table-layout:fixed;text-align:center;">
+															<th>Domain-Domain Interactions</th>
+															<th>Interacting Protein</th>
+															<th>Gene Name</th>
+															<th>Interaction Type</th>
+															<th>PPI Reference</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr><td align='center' colspan='5'><br><font color='blue'>There are no interacting protiens for the queried protein.</font></td></tr>													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+									<!-- End  PPI  -->
+                                </div>
+
+								<div class="tab-pane fade" id="structure">
+                                     <!--   3D Structure  -->
+									<div class="panel panel-default">
+										<div class="panel-heading">
+											Structural View
+										</div>
+										<div class="panel-body">									
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-sm-6">
+													<div class="table-responsive" style="max-width: 100%;">
+														<table class="table" style="table-layout:fixed;width: 100%" id="structureTable">
+															<thead>
+																<tr>
+																	<th align="center" width="20%"><b>dbAMP ID</b></th>
+																	<th  width="80%">dbAMP_16971</th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td>Sequence</td>
+																	<td style="word-wrap:break-word;">WQQPSCSSICDYSCGKSACISYSGRCGCCASCRRGPIY</td>
+																</tr>
+																<tr>
+																	<td>UniProtAC</td>
+																	<td colspan="4">
+																		None																		
+																	</td>
+																</tr>
+																<tr>
+																	<td>PDB</td>
+																	<td>
+																		None																		</a>
+																	</td>
+																</tr>
+																<tr >
+																		<td>Target</td>
+																		<td>
+																			Escherichia coli ATCC 25922 (MIC=>100μM)<br>Pseudomonas aeruginosa ATCC 27853 (MIC=>100μM)<br>Yersinia ruckeri CCUG 14190 (MIC=>100μM)<br>Vibrio anguillarum AL104 (MIC=>100μM)<br>Aeromonas salmonicida AL2020 (MIC=200μM)<br>Corynebacterium glutamicum ATCC 13032 (MIC=50μM)<br>Staphylococcus aureus ATCC 9144 (MIC=>100μM)<br>Carnobacterium maltaromaticum CCUG 34645 (MIC=200μM)<br>Carnobacterium mobile (MIC=100μM)<br>Carnobacterium divergens (MIC=200μM)<br>Carnobacterium funditum CCUG 34644 (MIC=200μM)<br>																		</td>
+																</tr>
+																<!-- <tr>
+																	<td>Contact map</td>
+																	<td>
+																	
+																		<img src= esmfold-contactmap/dbAMP_16971.png alt="" width="100%" />
+																	</td>
+																</tr> -->
+															</tbody>
+														</table>
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-sm-6"  style="height: 500;">
+												<h5><strong>Predicted Structure (ESMFold)</strong></h5>
+												<h5>
+																																																<script language="JavaScript" type="text/javascript" src="jsmol/JSmol.min.js"></script>
+																																																<script language="JavaScript">
+																																																	var Info = {
+																																																	width: 500,
+																																																	height: 480,
+																																																	color: "black",
+																																																	serverURL: "jsmol/php/jsmol.php ",
+																																																	use: "HTML5 WEBGL JAVA",
+																																																	j2sPath: "jsmol/j2s",
+																																																	script: "load esmfold/dbAMP_16971.pdb;select all;wireframe 0;spacefill off;cartoon on;select helix;color [0,239,239];select sheet;color [231,0,231];color yellow; spin on;",
+																																																	console: "jmolApplet0_infodiv"
+																																																	}
+																																																</script>
+																																																<script>myJmol = Jmol.getApplet("myJmol", Info);</script>
+												</h5>
+												</div>
+											</div>
+									
+										</div>
+										<div class="panel-heading">
+										Secondary Structure
+										</div>
+										<div class="panel-body">
+										<img src= secondaryStructure/dbAMP_16971.png alt="" width="100%" />				
+										</div>
+
+										<div class="panel-heading">
+										Download structure information
+										</div>
+										<div class="panel-body">
+										<table class="table table-striped table-condensed table-bordered" data-toggle="table" data-cache="true" data-height="299">
+															<tr>
+																<td align="center" valign="center"><strong>NAME</strong></td>
+															    <td align="center" valign="center"><strong>FILE FORMAT</strong></td>
+																<td align="center" valign="center"><strong>ACTION</strong></td>
+															</tr>
+															<tr>
+															    <td align="center" valign="center">Representative Structure</td>
+															    <td align="center" valign="center">PDB</td>
+																<td align="center" valign="center"><a href="esmfold/dbAMP_16971.pdb" download="esmfold/dbAMP_16971.pdb"><img src="assets/img/download.png" alt="Download" title="Download" width="15%"></a></td>
+															</tr>
+															<tr>
+															    <td align="center" valign="center">Contact Map</td>
+															    <td align="center" valign="center">TXT</td>
+																<td align="center" valign="center"><a href="esmfold-contactmap-value/dbAMP_16971.txt" download="esmfold-contactmap-value/dbAMP_16971.txt"><img src="assets/img/download.png" alt="Download" title="Download" width="15%"></a></td>
+															</tr>	
+															<tr>
+															<td align="center" valign="center">Contact Map</td>
+															    <td align="center" valign="center">PNG</td>
+																<td align="center" valign="center"><a href="esmfold-contactmap/dbAMP_16971.png" download="dbAMP_16971.png" target="_blank"><img src="assets/img/download.png" alt="Download" title="Download" width="15%"></a></td>																																
+														</tr>	
+															<tr>
+															    <td align="center" valign="center">Secondary Structure</td>
+															    <td align="center" valign="center">DSSP</td>
+																<td align="center" valign="center"><a href="dssp/dbAMP_16971.dssp" download="dssp/dbAMP_16971.dssp"><img src="assets/img/download.png" alt="Download" title="Download" width="15%"></a></td>
+															</tr>	
+														
+										</table>					
+										</div>
+									</div>
+								</div>
+								<!-- End  3D Structure  -->
+                                </div>	
+								
+								</div>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <!-- /. ROW  -->
+		</div>
+    </div>
+     <!-- CONTENT-WRAPPER SECTION END-->
+
+<script type="text/javascript">
+var chart = Highcharts.chart('aac', {
+
+    title: {
+        text: 'Amino Acid Composition'
+    },
+
+    /*subtitle: {
+        text: 'Plain'
+    },*/
+
+    xAxis: {
+        categories: ['I', 'V', 'L', 'F', 'C', 'M', 'A', 'W', 'G', 'P', 'T', 'S', 'Y', 'Q', 'N', 'E', 'D', 'H', 'K', 'R'],
+		plotBands: [{ // visualize the weekend
+				from: -1,
+				to: 7.5,
+				color: 'rgba(68, 170, 213, .2)',
+				label: {
+					text: 'Hydrophobic', // Content of the label.
+				  },
+		}, { // visualize the weekend
+				from: 7.5,
+				to: 9.5,
+				color: 'rgba(114, 68, 213, .2)',
+				label: {
+					text: 'GP', // Content of the label.
+				  },
+		}, { // visualize the weekend
+				from: 9.5,
+				to: 14.5,
+				color: 'rgb(213, 68, 126, .2)',
+				label: {
+					text: 'Polar', // Content of the label.
+				  },
+		}, { // visualize the weekend
+				from: 14.5,
+				to: 19.5,
+				color: 'rgb(208, 213, 68, .2)',
+				label: {
+					text: 'Charged', // Content of the label.
+				  },
+		}, { // visualize the weekend
+				from: 19.5,
+				to: 20.5,
+				color: 'rgb(0, 0, 0, .2)',
+		}],
+    },
+
+	yAxis: {
+        allowDecimals: false,
+        title: {
+            text: 'Percentage'
+        }
+    },
+
+    series: [{
+		name: 'AAC',
+        type: 'column',
+        colorByPoint: true,
+        data: [7.89,0.00,0.00,0.00,21.05,0.00,5.26,2.63,10.53,5.26,0.00,21.05,7.89,5.26,0.00,0.00,2.63,0.00,2.63,7.89],
+        showInLegend: false
+    }]
+
+});
+
+
+$('#plain').click(function () {
+    chart.update({
+        chart: {
+            inverted: false,
+            polar: false
+        },
+        subtitle: {
+            text: 'Plain'
+        }
+    });
+});
+
+$('#inverted').click(function () {
+    chart.update({
+        chart: {
+            inverted: true,
+            polar: false
+        },
+        subtitle: {
+            text: 'Inverted'
+        }
+    });
+});
+
+$('#polar').click(function () {
+    chart.update({
+        chart: {
+            inverted: false,
+            polar: true
+        },
+        subtitle: {
+            text: 'Polar'
+        }
+    });
+});
+
+</script>
+
+<script type="text/javascript">
+
+Highcharts.chart('aapc', {
+
+    chart: {
+        type: 'heatmap',
+        marginTop: 40,
+        marginBottom: 80,
+        plotBorderWidth: 1
+    },
+
+
+    title: {
+        text: 'Amino Acid Pair Composition'
+    },
+
+    xAxis: {
+        categories: ['I', 'V', 'L', 'F', 'C', 'M', 'A', 'W', 'G', 'P', 'T', 'S', 'Y', 'Q', 'N', 'E', 'D', 'H', 'K', 'R']
+    },
+
+    yAxis: {
+       categories: ['I', 'V', 'L', 'F', 'C', 'M', 'A', 'W', 'G', 'P', 'T', 'S', 'Y', 'Q', 'N', 'E', 'D', 'H', 'K', 'R'],
+        title: null
+    },
+
+    colorAxis: {
+        min: 0,
+        minColor: '#FFFFFF',
+		max: 10,
+        maxColor: '#BE77FF'
+    },
+
+    legend: {
+    		title: {
+          text: "%",
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+          }
+        },
+        align: 'right',
+        layout: 'vertical',
+        margin: 0,
+        verticalAlign: 'top',
+        y: 25,
+        symbolHeight: 280
+    },
+
+    tooltip: {
+        formatter: function () {
+            return '<b>' + this.series.xAxis.categories[this.point.x] + this.series.yAxis.categories[this.point.y] + '</b><br><b>' +
+                this.point.value +  '</b>';
+        }
+    },
+
+    series: [{
+        name: 'Sales per employee',
+        borderWidth: 1,
+        data: [[0,0,0.00],[0,1,0.00],[0,2,0.00],[0,3,0.00],[0,4,2.70],[0,5,0.00],[0,6,0.00],[0,7,0.00],[0,8,0.00],[0,9,0.00],[0,10,0.00],[0,11,2.70],[0,12,2.70],[0,13,0.00],[0,14,0.00],[0,15,0.00],[0,16,0.00],[0,17,0.00],[0,18,0.00],[0,19,0.00],[1,0,0.00],[1,1,0.00],[1,2,0.00],[1,3,0.00],[1,4,0.00],[1,5,0.00],[1,6,0.00],[1,7,0.00],[1,8,0.00],[1,9,0.00],[1,10,0.00],[1,11,0.00],[1,12,0.00],[1,13,0.00],[1,14,0.00],[1,15,0.00],[1,16,0.00],[1,17,0.00],[1,18,0.00],[1,19,0.00],[2,0,0.00],[2,1,0.00],[2,2,0.00],[2,3,0.00],[2,4,0.00],[2,5,0.00],[2,6,0.00],[2,7,0.00],[2,8,0.00],[2,9,0.00],[2,10,0.00],[2,11,0.00],[2,12,0.00],[2,13,0.00],[2,14,0.00],[2,15,0.00],[2,16,0.00],[2,17,0.00],[2,18,0.00],[2,19,0.00],[3,0,0.00],[3,1,0.00],[3,2,0.00],[3,3,0.00],[3,4,0.00],[3,5,0.00],[3,6,0.00],[3,7,0.00],[3,8,0.00],[3,9,0.00],[3,10,0.00],[3,11,0.00],[3,12,0.00],[3,13,0.00],[3,14,0.00],[3,15,0.00],[3,16,0.00],[3,17,0.00],[3,18,0.00],[3,19,0.00],[4,0,2.70],[4,1,0.00],[4,2,0.00],[4,3,0.00],[4,4,2.70],[4,5,0.00],[4,6,2.70],[4,7,0.00],[4,8,5.41],[4,9,0.00],[4,10,0.00],[4,11,2.70],[4,12,0.00],[4,13,0.00],[4,14,0.00],[4,15,0.00],[4,16,2.70],[4,17,0.00],[4,18,0.00],[4,19,2.70],[5,0,0.00],[5,1,0.00],[5,2,0.00],[5,3,0.00],[5,4,0.00],[5,5,0.00],[5,6,0.00],[5,7,0.00],[5,8,0.00],[5,9,0.00],[5,10,0.00],[5,11,0.00],[5,12,0.00],[5,13,0.00],[5,14,0.00],[5,15,0.00],[5,16,0.00],[5,17,0.00],[5,18,0.00],[5,19,0.00],[6,0,0.00],[6,1,0.00],[6,2,0.00],[6,3,0.00],[6,4,2.70],[6,5,0.00],[6,6,0.00],[6,7,0.00],[6,8,0.00],[6,9,0.00],[6,10,0.00],[6,11,2.70],[6,12,0.00],[6,13,0.00],[6,14,0.00],[6,15,0.00],[6,16,0.00],[6,17,0.00],[6,18,0.00],[6,19,0.00],[7,0,0.00],[7,1,0.00],[7,2,0.00],[7,3,0.00],[7,4,0.00],[7,5,0.00],[7,6,0.00],[7,7,0.00],[7,8,0.00],[7,9,0.00],[7,10,0.00],[7,11,0.00],[7,12,0.00],[7,13,2.70],[7,14,0.00],[7,15,0.00],[7,16,0.00],[7,17,0.00],[7,18,0.00],[7,19,0.00],[8,0,0.00],[8,1,0.00],[8,2,0.00],[8,3,0.00],[8,4,2.70],[8,5,0.00],[8,6,0.00],[8,7,0.00],[8,8,0.00],[8,9,2.70],[8,10,0.00],[8,11,0.00],[8,12,0.00],[8,13,0.00],[8,14,0.00],[8,15,0.00],[8,16,0.00],[8,17,0.00],[8,18,2.70],[8,19,2.70],[9,0,2.70],[9,1,0.00],[9,2,0.00],[9,3,0.00],[9,4,0.00],[9,5,0.00],[9,6,0.00],[9,7,0.00],[9,8,0.00],[9,9,0.00],[9,10,0.00],[9,11,2.70],[9,12,0.00],[9,13,0.00],[9,14,0.00],[9,15,0.00],[9,16,0.00],[9,17,0.00],[9,18,0.00],[9,19,0.00],[10,0,0.00],[10,1,0.00],[10,2,0.00],[10,3,0.00],[10,4,0.00],[10,5,0.00],[10,6,0.00],[10,7,0.00],[10,8,0.00],[10,9,0.00],[10,10,0.00],[10,11,0.00],[10,12,0.00],[10,13,0.00],[10,14,0.00],[10,15,0.00],[10,16,0.00],[10,17,0.00],[10,18,0.00],[10,19,0.00],[11,0,2.70],[11,1,0.00],[11,2,0.00],[11,3,0.00],[11,4,8.11],[11,5,0.00],[11,6,2.70],[11,7,0.00],[11,8,2.70],[11,9,0.00],[11,10,0.00],[11,11,2.70],[11,12,2.70],[11,13,0.00],[11,14,0.00],[11,15,0.00],[11,16,0.00],[11,17,0.00],[11,18,0.00],[11,19,0.00],[12,0,0.00],[12,1,0.00],[12,2,0.00],[12,3,0.00],[12,4,0.00],[12,5,0.00],[12,6,0.00],[12,7,0.00],[12,8,0.00],[12,9,0.00],[12,10,0.00],[12,11,5.41],[12,12,0.00],[12,13,0.00],[12,14,0.00],[12,15,0.00],[12,16,0.00],[12,17,0.00],[12,18,0.00],[12,19,0.00],[13,0,0.00],[13,1,0.00],[13,2,0.00],[13,3,0.00],[13,4,0.00],[13,5,0.00],[13,6,0.00],[13,7,0.00],[13,8,0.00],[13,9,2.70],[13,10,0.00],[13,11,0.00],[13,12,0.00],[13,13,2.70],[13,14,0.00],[13,15,0.00],[13,16,0.00],[13,17,0.00],[13,18,0.00],[13,19,0.00],[14,0,0.00],[14,1,0.00],[14,2,0.00],[14,3,0.00],[14,4,0.00],[14,5,0.00],[14,6,0.00],[14,7,0.00],[14,8,0.00],[14,9,0.00],[14,10,0.00],[14,11,0.00],[14,12,0.00],[14,13,0.00],[14,14,0.00],[14,15,0.00],[14,16,0.00],[14,17,0.00],[14,18,0.00],[14,19,0.00],[15,0,0.00],[15,1,0.00],[15,2,0.00],[15,3,0.00],[15,4,0.00],[15,5,0.00],[15,6,0.00],[15,7,0.00],[15,8,0.00],[15,9,0.00],[15,10,0.00],[15,11,0.00],[15,12,0.00],[15,13,0.00],[15,14,0.00],[15,15,0.00],[15,16,0.00],[15,17,0.00],[15,18,0.00],[15,19,0.00],[16,0,0.00],[16,1,0.00],[16,2,0.00],[16,3,0.00],[16,4,0.00],[16,5,0.00],[16,6,0.00],[16,7,0.00],[16,8,0.00],[16,9,0.00],[16,10,0.00],[16,11,0.00],[16,12,2.70],[16,13,0.00],[16,14,0.00],[16,15,0.00],[16,16,0.00],[16,17,0.00],[16,18,0.00],[16,19,0.00],[17,0,0.00],[17,1,0.00],[17,2,0.00],[17,3,0.00],[17,4,0.00],[17,5,0.00],[17,6,0.00],[17,7,0.00],[17,8,0.00],[17,9,0.00],[17,10,0.00],[17,11,0.00],[17,12,0.00],[17,13,0.00],[17,14,0.00],[17,15,0.00],[17,16,0.00],[17,17,0.00],[17,18,0.00],[17,19,0.00],[18,0,0.00],[18,1,0.00],[18,2,0.00],[18,3,0.00],[18,4,0.00],[18,5,0.00],[18,6,0.00],[18,7,0.00],[18,8,0.00],[18,9,0.00],[18,10,0.00],[18,11,2.70],[18,12,0.00],[18,13,0.00],[18,14,0.00],[18,15,0.00],[18,16,0.00],[18,17,0.00],[18,18,0.00],[18,19,0.00],[19,0,0.00],[19,1,0.00],[19,2,0.00],[19,3,0.00],[19,4,2.70],[19,5,0.00],[19,6,0.00],[19,7,0.00],[19,8,2.70],[19,9,0.00],[19,10,0.00],[19,11,0.00],[19,12,0.00],[19,13,0.00],[19,14,0.00],[19,15,0.00],[19,16,0.00],[19,17,0.00],[19,18,0.00],[19,19,2.70]],
+        dataLabels: {
+            enabled: true,
+            color: '#000000'
+        }
+    }]
+
+});
+
+</script>
+
+
+<script type="text/javascript">
+
+
+Highcharts.chart('ap', {
+
+    chart: {
+        type: 'heatmap',
+        marginTop: 40,
+        marginRight: 140,
+        marginBottom: 70,
+        plotBorderWidth: 1
+    },
+		colors: ['rgba(19,64,117,0.05)', 'rgba(19,64,117,0.2)', 'rgba(19,64,117,0.4)',
+                'rgba(19,64,117,0.5)', 'rgba(19,64,117,0.6)', 'rgba(19,64,117,0.8)', 'rgba(19,64,117,1)'],
+
+    title: {
+        text: 'Antimicrobial Potency'
+    },
+
+    xAxis: {
+        categories: ['W12', 'W13', 'W14', 'W15', 'W16', 'W17', 'W18', 'W19', 'W20', 'W21', 'W22', 'W23', 'W24','W25', 'W26', 'W27', 'W28', 'W29', 'W30', 'W31','W32','W33', 'W34', 'W35', 'W36', 'W37', 'W38', 'W39','W40'],
+        title: {
+            text: '<b>Window Size</b>',
+			style: {
+				color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+			}
+        },
+    },
+
+    yAxis: {
+        categories: ['38Y','37I','36P','35G','34R','33R','32C','31S','30A','29C','28C','27G','26C','25R','24G','23S','22Y','21S','20I','19C','18A','17S','16K','15G','14C','13S','12Y','11D','10C','9I','8S','7S','6C','5S','4P','3Q','2Q','1W',],
+        title: {
+            text: '<b>Sequence</b>',
+            style: {
+              color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+            }
+        }
+    },
+
+    legend: {
+    		title: {
+          text: "Anti` potency",
+          style: {
+            color: (Highcharts.theme && Highcharts.theme.textColor) || 'black'
+          }
+        },
+        align: 'right',
+        layout: 'vertical',
+        margin: 0,
+        verticalAlign: 'top',
+        y: 25,
+        valueDecimals: 1,
+        symbolRadius: 2,
+        symbolHeight: 14,
+        floating: true,
+    },
+    colorAxis: {
+		dataClasses: [{
+        to: 3.0},{from: 3.0,to: 3.5},{from: 3.5,to: 4.0},{from: 4.0,to: 4.5},{from: 4.5,to: 5.0},{from: 5.0,to: 5.5},{from: 5.5,to: 6.0}, {from: 6.0,to: 6.5}, {from: 6.5,to: 7.0}, {from: 7.0,to: 7.5}, {from: 7.5,to: 8.0}, {from: 8.0,to: 8.5}, {from: 8.5,to: 9.0}, {from: 9.0,to: 9.5}, {from: 9.5,to: 10.0}, {from: 10.0,to: 10.5}, {from: 10.5,to: 11.0}, {from: 11.0,to: 11.5}, {from: 11.5,to: 12.0}, {from: 12.0,to: 12.5}, {from: 12.5,to: 13.0}, {from: 13.0,to: 13.5}, {from: 13.5,to: 14.0}, {from: 14.0,to: 14.5}, {from: 14.5,to: 15.0}, {from: 15.0,to: 15.5}, {from: 15.5,to: 16.0}, {from: 16}]
+	},
+
+    tooltip: {
+        formatter: function () {
+            return 'Antimicrobial Potency<br><b>' + this.point.value + '</b><br> in window size <b>' + this.series.xAxis.categories[this.point.x] + '</b>';
+        }
+    },
+
+    series: [{
+        //name: 'Sales per employee',
+        borderWidth: 0,
+        data: [[0, 0, 0], [1, 0, 0], [2, 0, 0], [3, 0, 0], [4, 0, 0], [5, 0, 0], [6, 0, 0], [7, 0, 0], [8, 0, 0], [9, 0, 0], [10, 0, 0], [11, 0, 0], [12, 0, 0], [13, 0, 0], [14, 0, 0], [15, 0, 0], [16, 0, 0], [17, 0, 0], [18, 0, 0], [19, 0, 0], [20, 0, 0], [21, 0, 0], [22, 0, 0], [23, 0, 0], [24, 0, 0], [25, 0, 0], [26, 0, 0], [27, 0, 0], [28, 0, 0],[0, 1, 0], [1, 1, 0], [2, 1, 0], [3, 1, 0], [4, 1, 0], [5, 1, 0], [6, 1, 0], [7, 1, 0], [8, 1, 0], [9, 1, 0], [10, 1, 0], [11, 1, 0], [12, 1, 0], [13, 1, 0], [14, 1, 0], [15, 1, 0], [16, 1, 0], [17, 1, 0], [18, 1, 0], [19, 1, 0], [20, 1, 0], [21, 1, 0], [22, 1, 0], [23, 1, 0], [24, 1, 0], [25, 1, 0], [26, 1, 0], [27, 1, 0], [28, 1, 0],[0, 2, 0], [1, 2, 0], [2, 2, 0], [3, 2, 0], [4, 2, 0], [5, 2, 0], [6, 2, 0], [7, 2, 0], [8, 2, 0], [9, 2, 0], [10, 2, 0], [11, 2, 0], [12, 2, 0], [13, 2, 0], [14, 2, 0], [15, 2, 0], [16, 2, 0], [17, 2, 0], [18, 2, 0], [19, 2, 0], [20, 2, 0], [21, 2, 0], [22, 2, 0], [23, 2, 0], [24, 2, 0], [25, 2, 0], [26, 2, 0], [27, 2, 0], [28, 2, 0],[0, 3, 0], [1, 3, 0], [2, 3, 0], [3, 3, 0], [4, 3, 0], [5, 3, 0], [6, 3, 0], [7, 3, 0], [8, 3, 0], [9, 3, 0], [10, 3, 0], [11, 3, 0], [12, 3, 0], [13, 3, 0], [14, 3, 0], [15, 3, 0], [16, 3, 0], [17, 3, 0], [18, 3, 0], [19, 3, 0], [20, 3, 0], [21, 3, 0], [22, 3, 0], [23, 3, 0], [24, 3, 0], [25, 3, 0], [26, 3, 0], [27, 3, 0], [28, 3, 0],[0, 4, 0], [1, 4, 0], [2, 4, 0], [3, 4, 0], [4, 4, 0], [5, 4, 0], [6, 4, 0], [7, 4, 0], [8, 4, 0], [9, 4, 0], [10, 4, 0], [11, 4, 0], [12, 4, 0], [13, 4, 0], [14, 4, 0], [15, 4, 0], [16, 4, 0], [17, 4, 0], [18, 4, 0], [19, 4, 0], [20, 4, 0], [21, 4, 0], [22, 4, 0], [23, 4, 0], [24, 4, 0], [25, 4, 0], [26, 4, 0], [27, 4, 0], [28, 4, 0],[0, 5, 0], [1, 5, 0], [2, 5, 0], [3, 5, 0], [4, 5, 0], [5, 5, 0], [6, 5, 0], [7, 5, 0], [8, 5, 0], [9, 5, 0], [10, 5, 0], [11, 5, 0], [12, 5, 0], [13, 5, 0], [14, 5, 0], [15, 5, 0], [16, 5, 0], [17, 5, 0], [18, 5, 0], [19, 5, 0], [20, 5, 0], [21, 5, 0], [22, 5, 0], [23, 5, 0], [24, 5, 0], [25, 5, 0], [26, 5, 0], [27, 5, 0], [28, 5, 0],[0, 6, 0], [1, 6, 0], [2, 6, 0], [3, 6, 0], [4, 6, 0], [5, 6, 0], [6, 6, 0], [7, 6, 0], [8, 6, 0], [9, 6, 0], [10, 6, 0], [11, 6, 0], [12, 6, 0], [13, 6, 0], [14, 6, 0], [15, 6, 0], [16, 6, 0], [17, 6, 0], [18, 6, 0], [19, 6, 0], [20, 6, 0], [21, 6, 0], [22, 6, 0], [23, 6, 0], [24, 6, 0], [25, 6, 0], [26, 6, 0], [27, 6, 0], [28, 6, 0],[0, 7, 0], [1, 7, 0], [2, 7, 0], [3, 7, 0], [4, 7, 0], [5, 7, 0], [6, 7, 0], [7, 7, 0], [8, 7, 0], [9, 7, 0], [10, 7, 0], [11, 7, 0], [12, 7, 0], [13, 7, 0], [14, 7, 0], [15, 7, 0], [16, 7, 0], [17, 7, 0], [18, 7, 0], [19, 7, 0], [20, 7, 0], [21, 7, 0], [22, 7, 0], [23, 7, 0], [24, 7, 0], [25, 7, 0], [26, 7, 0], [27, 7, 0], [28, 7, 0],[0, 8, 0], [1, 8, 0], [2, 8, 0], [3, 8, 0], [4, 8, 0], [5, 8, 0], [6, 8, 0], [7, 8, 0], [8, 8, 0], [9, 8, 0], [10, 8, 0], [11, 8, 0], [12, 8, 0], [13, 8, 0], [14, 8, 0], [15, 8, 0], [16, 8, 0], [17, 8, 0], [18, 8, 0], [19, 8, 0], [20, 8, 0], [21, 8, 0], [22, 8, 0], [23, 8, 0], [24, 8, 0], [25, 8, 0], [26, 8, 0], [27, 8, 0], [28, 8, 0],[0, 9, 0], [1, 9, 0], [2, 9, 0], [3, 9, 0], [4, 9, 0], [5, 9, 0], [6, 9, 0], [7, 9, 0], [8, 9, 0], [9, 9, 0], [10, 9, 0], [11, 9, 0], [12, 9, 0], [13, 9, 0], [14, 9, 0], [15, 9, 0], [16, 9, 0], [17, 9, 0], [18, 9, 0], [19, 9, 0], [20, 9, 0], [21, 9, 0], [22, 9, 0], [23, 9, 0], [24, 9, 0], [25, 9, 0], [26, 9, 0], [27, 9, 0], [28, 9, 0],[0, 10, 0], [1, 10, 0], [2, 10, 0], [3, 10, 0], [4, 10, 0], [5, 10, 0], [6, 10, 0], [7, 10, 0], [8, 10, 0], [9, 10, 0], [10, 10, 0], [11, 10, 0], [12, 10, 0], [13, 10, 0], [14, 10, 0], [15, 10, 0], [16, 10, 0], [17, 10, 0], [18, 10, 0], [19, 10, 0], [20, 10, 0], [21, 10, 0], [22, 10, 0], [23, 10, 0], [24, 10, 0], [25, 10, 0], [26, 10, 0], [27, 10, 0], [28, 10, 0],[0, 11, 1.5320787012655], [1, 11, 0], [2, 11, 0], [3, 11, 0], [4, 11, 0], [5, 11, 0], [6, 11, 0], [7, 11, 0], [8, 11, 0], [9, 11, 0], [10, 11, 0], [11, 11, 0], [12, 11, 0], [13, 11, 0], [14, 11, 0], [15, 11, 0], [16, 11, 0], [17, 11, 0], [18, 11, 0], [19, 11, 0], [20, 11, 0], [21, 11, 0], [22, 11, 0], [23, 11, 0], [24, 11, 0], [25, 11, 0], [26, 11, 0], [27, 11, 0], [28, 11, 0],[0, 12, 1.4074529355031], [1, 12, 1.577184832907], [2, 12, 0], [3, 12, 0], [4, 12, 0], [5, 12, 0], [6, 12, 0], [7, 12, 0], [8, 12, 0], [9, 12, 0], [10, 12, 0], [11, 12, 0], [12, 12, 0], [13, 12, 0], [14, 12, 0], [15, 12, 0], [16, 12, 0], [17, 12, 0], [18, 12, 0], [19, 12, 0], [20, 12, 0], [21, 12, 0], [22, 12, 0], [23, 12, 0], [24, 12, 0], [25, 12, 0], [26, 12, 0], [27, 12, 0], [28, 12, 0],[0, 13, 1.3765295996713], [1, 13, 1.9613341461987], [2, 13, 2.2073735615091], [3, 13, 0], [4, 13, 0], [5, 13, 0], [6, 13, 0], [7, 13, 0], [8, 13, 0], [9, 13, 0], [10, 13, 0], [11, 13, 0], [12, 13, 0], [13, 13, 0], [14, 13, 0], [15, 13, 0], [16, 13, 0], [17, 13, 0], [18, 13, 0], [19, 13, 0], [20, 13, 0], [21, 13, 0], [22, 13, 0], [23, 13, 0], [24, 13, 0], [25, 13, 0], [26, 13, 0], [27, 13, 0], [28, 13, 0],[0, 14, 1.1895008869208], [1, 14, 1.2800394674586], [2, 14, 1.8429221497281], [3, 14, 2.071526171076], [4, 14, 0], [5, 14, 0], [6, 14, 0], [7, 14, 0], [8, 14, 0], [9, 14, 0], [10, 14, 0], [11, 14, 0], [12, 14, 0], [13, 14, 0], [14, 14, 0], [15, 14, 0], [16, 14, 0], [17, 14, 0], [18, 14, 0], [19, 14, 0], [20, 14, 0], [21, 14, 0], [22, 14, 0], [23, 14, 0], [24, 14, 0], [25, 14, 0], [26, 14, 0], [27, 14, 0], [28, 14, 0],[0, 15, 1.1895008869208], [1, 15, 1.1061208434597], [2, 15, 1.2027594031735], [3, 15, 1.7295040273144], [4, 15, 1.9596928282026], [5, 15, 0], [6, 15, 0], [7, 15, 0], [8, 15, 0], [9, 15, 0], [10, 15, 0], [11, 15, 0], [12, 15, 0], [13, 15, 0], [14, 15, 0], [15, 15, 0], [16, 15, 0], [17, 15, 0], [18, 15, 0], [19, 15, 0], [20, 15, 0], [21, 15, 0], [22, 15, 0], [23, 15, 0], [24, 15, 0], [25, 15, 0], [26, 15, 0], [27, 15, 0], [28, 15, 0],[0, 16, 1.0467829263274], [1, 16, 1.4762606561632], [2, 16, 1.3871340930296], [3, 16, 1.4589669091373], [4, 16, 1.9596928282026], [5, 16, 2.16321254108], [6, 16, 0], [7, 16, 0], [8, 16, 0], [9, 16, 0], [10, 16, 0], [11, 16, 0], [12, 16, 0], [13, 16, 0], [14, 16, 0], [15, 16, 0], [16, 16, 0], [17, 16, 0], [18, 16, 0], [19, 16, 0], [20, 16, 0], [21, 16, 0], [22, 16, 0], [23, 16, 0], [24, 16, 0], [25, 16, 0], [26, 16, 0], [27, 16, 0], [28, 16, 0],[0, 17, 0.53142540823357], [1, 17, 0.97340693573233], [2, 17, 1.3871340930296], [3, 17, 1.3017663283681], [4, 17, 1.3802031701758], [5, 17, 1.8526482281289], [6, 17, 2.0573983958928], [7, 17, 0], [8, 17, 0], [9, 17, 0], [10, 17, 0], [11, 17, 0], [12, 17, 0], [13, 17, 0], [14, 17, 0], [15, 17, 0], [16, 17, 0], [17, 17, 0], [18, 17, 0], [19, 17, 0], [20, 17, 0], [21, 17, 0], [22, 17, 0], [23, 17, 0], [24, 17, 0], [25, 17, 0], [26, 17, 0], [27, 17, 0], [28, 17, 0],[0, 18, 0.71788618162635], [1, 18, 0.74834370248376], [2, 18, 1.3621140714728], [3, 18, 1.9090040711773], [4, 18, 1.8059446409758], [5, 18, 1.8526482281289], [6, 18, 2.2976562370437], [7, 18, 2.4719067335954], [8, 18, 0], [9, 18, 0], [10, 18, 0], [11, 18, 0], [12, 18, 0], [13, 18, 0], [14, 18, 0], [15, 18, 0], [16, 18, 0], [17, 18, 0], [18, 18, 0], [19, 18, 0], [20, 18, 0], [21, 18, 0], [22, 18, 0], [23, 18, 0], [24, 18, 0], [25, 18, 0], [26, 18, 0], [27, 18, 0], [28, 18, 0],[0, 19, 0.80475429342949], [1, 19, 0.74834370248376], [2, 19, 0.77981938248858], [3, 19, 1.4129631097069], [4, 19, 1.9900375411741], [5, 19, 1.8813354172183], [6, 19, 1.9287314749685], [7, 19, 2.3468681322546], [8, 19, 2.5183128495447], [9, 19, 0], [10, 19, 0], [11, 19, 0], [12, 19, 0], [13, 19, 0], [14, 19, 0], [15, 19, 0], [16, 19, 0], [17, 19, 0], [18, 19, 0], [19, 19, 0], [20, 19, 0], [21, 19, 0], [22, 19, 0], [23, 19, 0], [24, 19, 0], [25, 19, 0], [26, 19, 0], [27, 19, 0], [28, 19, 0],[0, 20, 0.80475429342949], [1, 20, 0.81647410182203], [2, 20, 0.7671809568214], [3, 20, 0.79245112175145], [4, 20, 1.4440238714918], [5, 20, 2.0279281462242], [6, 20, 1.9287314749685], [7, 20, 1.9672975426048], [8, 20, 2.3724553400622], [9, 20, 2.531202216941], [10, 20, 0], [11, 20, 0], [12, 20, 0], [13, 20, 0], [14, 20, 0], [15, 20, 0], [16, 20, 0], [17, 20, 0], [18, 20, 0], [19, 20, 0], [20, 20, 0], [21, 20, 0], [22, 20, 0], [23, 20, 0], [24, 20, 0], [25, 20, 0], [26, 20, 0], [27, 20, 0], [28, 20, 0],[0, 21, 0.71788618162635], [1, 21, 0.74834370248376], [2, 21, 0.7671809568214], [3, 21, 0.71996668697984], [4, 21, 0.74966988188751], [5, 21, 1.3651467354447], [6, 21, 1.9287314749685], [7, 21, 1.8338561043493], [8, 21, 1.8795240770564], [9, 21, 2.2661356504237], [10, 21, 2.427586043753], [11, 21, 0], [12, 21, 0], [13, 21, 0], [14, 21, 0], [15, 21, 0], [16, 21, 0], [17, 21, 0], [18, 21, 0], [19, 21, 0], [20, 21, 0], [21, 21, 0], [22, 21, 0], [23, 21, 0], [24, 21, 0], [25, 21, 0], [26, 21, 0], [27, 21, 0], [28, 21, 0],[0, 22, 1.1792888225724], [1, 22, 1.2457198817127], [2, 22, 1.3121500606539], [3, 22, 1.3435053435193], [4, 22, 1.2709749087935], [5, 22, 1.3225193092181], [6, 22, 1.8701682206215], [7, 22, 2.3758013140164], [8, 22, 2.2698019365609], [9, 22, 2.325844168506], [10, 22, 2.8156492683284], [11, 22, 3.0157538338877], [12, 22, 0], [13, 22, 0], [14, 22, 0], [15, 22, 0], [16, 22, 0], [17, 22, 0], [18, 22, 0], [19, 22, 0], [20, 22, 0], [21, 22, 0], [22, 22, 0], [23, 22, 0], [24, 22, 0], [25, 22, 0], [26, 22, 0], [27, 22, 0], [28, 22, 0],[0, 23, 1.1792888225724], [1, 23, 1.09662461075], [2, 23, 1.1705118002532], [3, 23, 1.2313970043046], [4, 23, 1.2709749087935], [5, 23, 1.2015502526139], [6, 23, 1.2578279081001], [7, 23, 1.7781736089535], [8, 23, 2.2698019365609], [9, 23, 2.1680825771441], [10, 23, 2.2306344414604], [11, 23, 2.6999452000062], [12, 23, 2.9015290814411], [13, 23, 0], [14, 23, 0], [15, 23, 0], [16, 23, 0], [17, 23, 0], [18, 23, 0], [19, 23, 0], [20, 23, 0], [21, 23, 0], [22, 23, 0], [23, 23, 0], [24, 23, 0], [25, 23, 0], [26, 23, 0], [27, 23, 0], [28, 23, 0],[0, 24, 1.1792888225724], [1, 24, 1.2457198817127], [2, 24, 1.1705118002532], [3, 24, 1.2313970043046], [4, 24, 1.2919127615476], [5, 24, 1.3225193092181], [6, 24, 1.2578279081001], [7, 24, 1.3062654075246], [8, 24, 1.8510615246992], [9, 24, 2.3569622143902], [10, 24, 2.2604786527967], [11, 24, 2.3137463921222], [12, 24, 2.7693202600233], [13, 24, 2.9581840469915], [14, 24, 0], [15, 24, 0], [16, 24, 0], [17, 24, 0], [18, 24, 0], [19, 24, 0], [20, 24, 0], [21, 24, 0], [22, 24, 0], [23, 24, 0], [24, 24, 0], [25, 24, 0], [26, 24, 0], [27, 24, 0], [28, 24, 0],[0, 25, 0.60210425096509], [1, 25, 1.09662461075], [2, 25, 1.1705118002532], [3, 25, 1.0984755231552], [4, 25, 1.1649188466456], [5, 25, 1.2213444138454], [6, 25, 1.2578279081001], [7, 25, 1.1959546559108], [8, 25, 1.2479847258984], [9, 25, 1.7681076821192], [10, 25, 2.2604786527967], [11, 25, 2.1675883274902], [12, 25, 2.2261108875612], [13, 25, 2.6642431088399], [14, 25, 2.8537942545843], [15, 25, 0], [16, 25, 0], [17, 25, 0], [18, 25, 0], [19, 25, 0], [20, 25, 0], [21, 25, 0], [22, 25, 0], [23, 25, 0], [24, 25, 0], [25, 25, 0], [26, 25, 0], [27, 25, 0], [28, 25, 0],[0, 26, 0.75391857446101], [1, 26, 0.70107139780407], [2, 26, 1.2789361611675], [3, 26, 1.3341703339596], [4, 26, 1.2621438587489], [5, 26, 1.3140972926429], [6, 26, 1.365770899536], [7, 26, 1.3913914779577], [8, 26, 1.3293127891422], [9, 26, 1.3717494671863], [10, 26, 1.9445832921902], [11, 26, 2.4774909066002], [12, 26, 2.3836534115384], [13, 26, 2.4301036245383], [14, 26, 2.8537942545843], [15, 26, 3.0293028727907], [16, 26, 0], [17, 26, 0], [18, 26, 0], [19, 26, 0], [20, 26, 0], [21, 26, 0], [22, 26, 0], [23, 26, 0], [24, 26, 0], [25, 26, 0], [26, 26, 0], [27, 26, 0], [28, 26, 0],[0, 27, 0], [1, 27, 0], [2, 27, 0], [3, 27, 0.64318581639895], [4, 27, 0.67636614685514], [5, 27, 0.63942089571599], [6, 27, 0.66976080596977], [7, 27, 0.69589600985663], [8, 27, 0.71236108540635], [9, 27, 0.68043719279096], [10, 27, 0.7050105142656], [11, 27, 1.2945559061572], [12, 27, 1.8399170560323], [13, 27, 1.77010453003], [14, 27, 1.8095783799872], [15, 27, 2.125189226583], [16, 27, 2.2612564415078], [17, 27, 0], [18, 27, 0], [19, 27, 0], [20, 27, 0], [21, 27, 0], [22, 27, 0], [23, 27, 0], [24, 27, 0], [25, 27, 0], [26, 27, 0], [27, 27, 0], [28, 27, 0],[0, 28, 0], [1, 28, 0], [2, 28, 0], [3, 28, 0], [4, 28, 0.67636614685514], [5, 28, 0.7042073027227], [6, 28, 0.66976080596977], [7, 28, 0.69589600985663], [8, 28, 0.72173236599774], [9, 28, 0.73510233808931], [10, 28, 0.7050105142656], [11, 28, 0.72665481061653], [12, 28, 1.3366044202384], [13, 28, 1.8966004990775], [14, 28, 1.8296723670772], [15, 28, 1.864146082507], [16, 28, 2.1716231293081], [17, 28, 2.3003459664263], [18, 28, 0], [19, 28, 0], [20, 28, 0], [21, 28, 0], [22, 28, 0], [23, 28, 0], [24, 28, 0], [25, 28, 0], [26, 28, 0], [27, 28, 0], [28, 28, 0],[0, 29, 0], [1, 29, 0], [2, 29, 0], [3, 29, 0], [4, 29, 0], [5, 29, 0.84769174486972], [6, 29, 0.86938159567298], [7, 29, 0.82661623296209], [8, 29, 0.84748655508282], [9, 29, 0.86501400538582], [10, 29, 0.8743363804289], [11, 29, 0.83840709142416], [12, 29, 0.85628345338398], [13, 29, 1.5685836687834], [14, 29, 2.2232685877997], [15, 29, 2.1449231732388], [16, 29, 2.1716231293081], [17, 29, 2.4624544444304], [18, 29, 2.5830743267163], [19, 29, 0], [20, 29, 0], [21, 29, 0], [22, 29, 0], [23, 29, 0], [24, 29, 0], [25, 29, 0], [26, 29, 0], [27, 29, 0], [28, 29, 0],[0, 30, 0], [1, 30, 0], [2, 30, 0], [3, 30, 0], [4, 30, 0], [5, 30, 0], [6, 30, 0.80622666658348], [7, 30, 0.82661623296209], [8, 30, 0.78973570529689], [9, 30, 0.80950712255666], [10, 30, 0.8296041750719], [11, 30, 0.83840709142416], [12, 30, 0.8066515676837], [13, 30, 0.82379323288262], [14, 30, 1.5132307492367], [15, 30, 2.1449231732388], [16, 30, 2.0742625409949], [17, 30, 2.1000967847097], [18, 30, 2.3862985136501], [19, 30, 2.5032186074612], [20, 30, 0], [21, 30, 0], [22, 30, 0], [23, 30, 0], [24, 30, 0], [25, 30, 0], [26, 30, 0], [27, 30, 0], [28, 30, 0],[0, 31, 0], [1, 31, 0], [2, 31, 0], [3, 31, 0], [4, 31, 0], [5, 31, 0], [6, 31, 0], [7, 31, 0.7665679298501], [8, 31, 0.78973570529689], [9, 31, 0.75434433094065], [10, 31, 0.77636949742092], [11, 31, 0.79551307600191], [12, 31, 0.8066515676837], [13, 31, 0.7760445447426], [14, 31, 0.7947228291481], [15, 31, 1.4599062471833], [16, 31, 2.0742625409949], [17, 31, 2.0059429438732], [18, 31, 2.0351474307308], [19, 31, 2.3125261168615], [20, 31, 2.4302730710153], [21, 31, 0], [22, 31, 0], [23, 31, 0], [24, 31, 0], [25, 31, 0], [26, 31, 0], [27, 31, 0], [28, 31, 0],[0, 32, 0], [1, 32, 0], [2, 32, 0], [3, 32, 0], [4, 32, 0], [5, 32, 0], [6, 32, 0], [7, 32, 0], [8, 32, 0.78973570529689], [9, 32, 0.80950712255666], [10, 32, 0.77636949742092], [11, 32, 0.79551307600191], [12, 32, 0.81478420054586], [13, 32, 0.82379323288262], [14, 32, 0.7947228291481], [15, 32, 0.81139371863312], [16, 32, 1.4925784758479], [17, 32, 2.1186443870268], [18, 32, 2.0531214143474], [19, 32, 2.0785019538597], [20, 32, 2.3497821365455], [21, 32, 2.4619616861095], [22, 32, 0], [23, 32, 0], [24, 32, 0], [25, 32, 0], [26, 32, 0], [27, 32, 0], [28, 32, 0],[0, 33, 0], [1, 33, 0], [2, 33, 0], [3, 33, 0], [4, 33, 0], [5, 33, 0], [6, 33, 0], [7, 33, 0], [8, 33, 0], [9, 33, 0.75434433094065], [10, 33, 0.77636949742092], [11, 33, 0.74446598217017], [12, 33, 0.76538220684631], [13, 33, 0.7838685986711], [14, 33, 0.7947228291481], [15, 33, 0.76671771548242], [16, 33, 0.784663813398], [17, 33, 1.4434176979197], [18, 33, 2.0531214143474], [19, 33, 1.9896491845455], [20, 33, 2.0179329569785], [21, 33, 2.2814870882518], [22, 33, 2.394131397022], [23, 33, 0], [24, 33, 0], [25, 33, 0], [26, 33, 0], [27, 33, 0], [28, 33, 0],[0, 34, 0], [1, 34, 0], [2, 34, 0], [3, 34, 0], [4, 34, 0], [5, 34, 0], [6, 34, 0], [7, 34, 0], [8, 34, 0], [9, 34, 0], [10, 34, 0.7676576312286], [11, 34, 0.78710843732635], [12, 34, 0.7572959024331], [13, 34, 0.7760445447426], [14, 34, 0.7947228291481], [15, 34, 0.80404071553899], [16, 34, 0.77755304175253], [17, 34, 0.7939005379181], [18, 34, 1.4623247506977], [19, 34, 2.0785019538597], [20, 34, 2.0179329569785], [21, 34, 2.0433661027518], [22, 34, 2.3015149043853], [23, 34, 2.4095011465745], [24, 34, 0], [25, 34, 0], [26, 34, 0], [27, 34, 0], [28, 34, 0],[0, 35, 0], [1, 35, 0], [2, 35, 0], [3, 35, 0], [4, 35, 0], [5, 35, 0], [6, 35, 0], [7, 35, 0], [8, 35, 0], [9, 35, 0], [10, 35, 0], [11, 35, 0.7361121145299], [12, 35, 0.7572959024331], [13, 35, 0.72856159633669], [14, 35, 0.74865911921209], [15, 35, 0.76671771548242], [16, 35, 0.77755304175253], [17, 35, 0.75194292273266], [18, 35, 0.76934770424075], [19, 35, 1.417116994365], [20, 35, 2.0179329569785], [21, 35, 1.9592829116798], [22, 35, 1.9870686736556], [23, 35, 2.2382707384071], [24, 35, 2.3465536422718], [25, 35, 0], [26, 35, 0], [27, 35, 0], [28, 35, 0],[0, 36, 0], [1, 36, 0], [2, 36, 0], [3, 36, 0], [4, 36, 0], [5, 36, 0], [6, 36, 0], [7, 36, 0], [8, 36, 0], [9, 36, 0], [10, 36, 0], [11, 36, 0], [12, 36, 0.70823111737744], [13, 36, 0.72856159633669], [14, 36, 0.70285177146126], [15, 36, 0.72227723742715], [16, 36, 0.74145958073686], [17, 36, 0.75194292273266], [18, 36, 0.72868770544167], [19, 36, 0.74556332697992], [20, 36, 1.3758212165802], [21, 36, 1.9592829116798], [22, 36, 1.9053020853114], [23, 36, 1.9324652901331], [24, 36, 2.1797965778378], [25, 36, 2.2854668037077], [26, 36, 0], [27, 36, 0], [28, 36, 0],[0, 37, 0], [1, 37, 0], [2, 37, 0], [3, 37, 0], [4, 37, 0], [5, 37, 0], [6, 37, 0], [7, 37, 0], [8, 37, 0], [9, 37, 0], [10, 37, 0], [11, 37, 0], [12, 37, 0], [13, 37, 0.85494879100921], [14, 37, 0.87123939289346], [15, 37, 0.84053792398743], [16, 37, 0.85640577166451], [17, 37, 0.87051744014641], [18, 37, 0.87800999904432], [19, 37, 0.85086632793054], [20, 37, 0.86496517480164], [21, 37, 1.5919284981696], [22, 37, 2.2645622274496], [23, 37, 2.2023334975343], [24, 37, 2.2234444365552], [25, 37, 2.4597835528225], [26, 37, 2.5591349381881], [27, 37, 0], [28, 37, 0],],
+        dataLabels: {
+            enabled: false,
+            color: '#000000'
+        }
+    }]
+
+});
+
+</script>
+
+<script>$('#loading').hide()</script></body>
+
+<div id="gotop">˄</div>			<!--	回到頂端	-->
+
+</body>
+</html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<body>
+    <section class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                   &copy; 2022 Arieh Warshel Institute of Computational Biology, CUHK(SZ) | Designed by : <a href="https://warshel.cuhk.edu.cn/~tylee/index.php/en/" target="_blank" >Biomics Lab</a> 
+                </div>
+
+            </div>
+        </div>
+    </section>
+      <!-- FOOTER SECTION END-->
+    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
+    <!-- CORE JQUERY  -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+	<!-- DATATABLE SCRIPTS  -->
+    <script src="assets/js/dataTables/jquery.dataTables.js"></script>
+    <script src="assets/js/dataTables/dataTables.bootstrap.js"></script>
+      <!-- CUSTOM SCRIPTS  -->
+    <script src="assets/js/custom.js"></script>
+	<!-- GOTOP  -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  
+</body>
+</html>

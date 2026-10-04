@@ -1,0 +1,41 @@
+{
+  "status": "local_review_complete_training_not_released",
+  "generated_at": "2026-10-02T08:45:23.411384+00:00",
+  "audit_protocol_id": "protocol-mic-01",
+  "primary_articles": 10,
+  "reviewed_records": 70,
+  "candidate_molecules": 4,
+  "candidate_observations": 6,
+  "records_released_for_training": 0,
+  "training_started": false,
+  "script_sha256": "652e09de5619fa535630412332d9fe2f2a32a305d4396ecc8ea3515507f0bb5e",
+  "inputs": {
+    "03_experiments\\protocols\\protocol-mic-01.json": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+    "02_code\\public_data.py": "08b51ce8548b0d0a1cdbcaffa59edb59920572b9c649c1324d164beabd5209ea",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\Peptides2010_efetch.xml": "b7aa637bf248161560f1f3ba79c4ddea4e87345eeca77c01e540826787882851",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC10654507.xml": "d071285761d84de178dc5e61d139081fb4f7f6063962afb6f0c9f14c586f81b4",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC11840929.xml": "1a14d4f25fe7f97abb8ce393002721ea9f4f5be94887e38bf306480114173357",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC12787115.xml": "a1a45a2ddb3aa71f258ab829250d004d26643651e93606fa56314cdb3f9e4ae1",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC12842892.xml": "236d6eaed7d5e7772ba1a5ce7db3761cab1eff7b6835612ee330e87b062d394c",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC3597565.xml": "d73d149e268b3e6e681322d09440006d0bb98aba79c57d42a54ae1f5a662ca82",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC3782441.xml": "3d98fcc3b04b389b0658f59a79272efd435ec297fb29f5a6ef3e89ea6bed8e21",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC6023086.xml": "29119a1d4311fa58e96975a3c2fb23fe390ccd9309206225a512519a48b6a1ef",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC6978316.xml": "613976d49377f44808167a71cad2a2ccbe54d78d7930507d8a7be0244281ca5f",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\PMC8203924.xml": "15122ee960fb2d43f6427b88601aa1c61392077cf9f679f88cc7022bf612708c",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\sharma2013_page12.png": "e06c03ef5605cbc8642ae87f1ad7a4ab3d14d3b315def449864f6c9f80fc8102",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\sharma2013_page3.png": "ebec63ea2b188fd8afbef629b56963dbdc602a59717f7cdfe5bb1e52140b3c65",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\sharma2013_page6.png": "27f8fff69ffdd4a204535c403699c06d082d5b9c4251f56db2ffd89d53bf21dc",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\sharma2013_page7.png": "4cc64d492522661e197d3a6dd50b0546cc7d0537eefcbc66fcadab0945805f33",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\sharma2013_primary.pdf": "5a96665935a39d8bda3617d786fd1d372f64782630f9288481e3346da573188b",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\zhang2021_page6.png": "56155bd1114c4a1240668c3f3ab9fdc582393c5a9625d628ce4eb070de12fd94",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\zhang2021_page7.png": "996d8b4624bdb2921fdd7fd5568ad7b0604966a9a75e4720252d32571989e236",
+    "03_experiments\\audits\\mic_independent_sources_20261002_v1\\raw\\zhang2021_primary.pdf": "486bf7b5681a4c20f2904617d2c0f60c2cf5e42293f80d2349b4ea32d9ad9ef8"
+  },
+  "outputs": {
+    "candidate_assays.csv": "79fc91703a857a3e2a8a924b719563486fffe8fffca64e4bf56725f245eae8df",
+    "original_table_cells.csv": "8f292a99f4ef463457de043b6c19451e3e530ae7a8b92862864806fbaf6547e5",
+    "record_decisions.csv": "c1d85bcc816be1f72f5f256a5f4c0f01e6286b8b761f95594b8a4e321d6b17dc",
+    "report.md": "ae41743d06bcd9179484339db73f3cd915a4656a0f2e7cb7898dc2c6b8858d4c",
+    "source_inventory.csv": "04be0d241283091a85dd186d14ebcb26d30513bab2507be1bcea9270c164fda4"
+  }
+}

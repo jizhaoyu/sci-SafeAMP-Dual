@@ -1,0 +1,7 @@
+model,source_datasets,n,wrong,error_rate_at_0_5
+logistic_regression,DBAASP,391,206,0.5268542199488491
+logistic_regression,DRAMP,4,4,1.0
+random_forest,DBAASP,391,224,0.5728900255754475
+random_forest,DRAMP,4,2,0.5
+rbf_svm,DBAASP,391,238,0.6086956521739131
+rbf_svm,DRAMP,4,1,0.25

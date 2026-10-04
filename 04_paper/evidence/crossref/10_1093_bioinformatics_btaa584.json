@@ -1,0 +1,404 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/bioinformatics/btaa584",
+  "retrieved_at": "2026-09-28T14:31:23.079970+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          8,
+          23
+        ]
+      ],
+      "date-time": "2026-08-23T16:16:08Z",
+      "timestamp": 1787501768234,
+      "version": "build-2736575974"
+    },
+    "reference-count": 9,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "17",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              6,
+              23
+            ]
+          ],
+          "date-time": "2020-06-23T00:00:00Z",
+          "timestamp": 1592870400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100014434",
+        "name": "Polish National Agency for Academic Exchange",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100014434",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "name": "Instituto Nacional de Bioinformática"
+      },
+      {
+        "name": "European Union’s Horizon 2020"
+      },
+      {
+        "name": "Biomolecular and Bioinformatics Resources Platform",
+        "award": [
+          "ISCIII PT 13/0001/0030"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "ISCIII PT 13/0001/0030"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MINECO Severo Ochoa Award of Excellence"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          1
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:sec>\n                    <jats:title>Motivation</jats:title>\n                    <jats:p>High-quality dynamic visuals are needed at all levels of science communication, from the conference hall to the classroom. As scientific journals embrace new article formats, many key concepts—particularly, in structural biology—are also more easily conveyed as videos than still frames. Notwithstanding, the design and rendering of a complex molecular movie remain an arduous task. Here, we introduce Molywood, a robust and intuitive tool that builds on the capabilities of Visual Molecular Dynamics (VMD) to automate all stages of movie rendering.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Molywood is a Python-based script that uses an integrated workflow to give maximal flexibility in movie design. It implements the basic concepts of actions, layers, grids and concurrency and requires no programming experience to run.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Availability and implementation</jats:title>\n                    <jats:p>The script is freely available on GitLab (gitlab.com/KomBioMol/molywood) and PyPI (through pip), and features an extended documentation, tutorial and gallery hosted on mmb.irbbarcelona.org/molywood.</jats:p>\n                  </jats:sec>",
+    "DOI": "10.1093/bioinformatics/btaa584",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          15
+        ]
+      ],
+      "date-time": "2020-06-15T15:11:41Z",
+      "timestamp": 1592233901000
+    },
+    "page": "4660-4661",
+    "source": "Crossref",
+    "is-referenced-by-count": 18,
+    "title": [
+      "Molywood: streamlining the design and rendering of molecular movies"
+    ],
+    "prefix": "10.1093",
+    "volume": "36",
+    "author": [
+      {
+        "given": "Miłosz",
+        "family": "Wieczór",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Physical Chemistry, Gdańsk University of Technology , Gdańsk 80-233, Poland"
+          },
+          {
+            "name": "Institute for Research in Biomedicine (IRB Barcelona), Barcelona Institute of Science and Technology , Barcelona 08028, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Adam",
+        "family": "Hospital",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Research in Biomedicine (IRB Barcelona), Barcelona Institute of Science and Technology , Barcelona 08028, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Genis",
+        "family": "Bayarri",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Research in Biomedicine (IRB Barcelona), Barcelona Institute of Science and Technology , Barcelona 08028, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jacek",
+        "family": "Czub",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Physical Chemistry, Gdańsk University of Technology , Gdańsk 80-233, Poland"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Modesto",
+        "family": "Orozco",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute for Research in Biomedicine (IRB Barcelona), Barcelona Institute of Science and Technology , Barcelona 08028, Spain"
+          },
+          {
+            "name": "Department of Biochemistry and Biomedicine, University of Barcelona , Barcelona 08028, Spain"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          23
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2023062213565222800_btaa584-B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "S16",
+        "DOI": "10.1186/1471-2105-13-S4-S16",
+        "article-title": "Intuitive representation of surface properties of biomolecules using BioBlender",
+        "volume": "13",
+        "author": "Andrei",
+        "year": "2012",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B2",
+        "volume": "32",
+        "author": "Hodis",
+        "year": "2007"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B3",
+        "author": "Hsin",
+        "year": "2008"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "33",
+        "DOI": "10.1016/0263-7855(96)00018-5",
+        "article-title": "VMD: visual molecular dynamics",
+        "volume": "14",
+        "author": "Humphrey",
+        "year": "1996",
+        "journal-title": "J. Mol. Graph"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B5",
+        "doi-asserted-by": "crossref",
+        "first-page": "293",
+        "DOI": "10.1016/j.str.2010.12.023",
+        "article-title": "ePMV embeds molecular modeling into professional animation software environments",
+        "volume": "19",
+        "author": "Johnson",
+        "year": "2011",
+        "journal-title": "Structure"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "422",
+        "DOI": "10.1038/185422a0",
+        "article-title": "Structure of myoglobin: a three-dimensional Fourier synthesis at 2 Å. Resolution",
+        "volume": "185",
+        "author": "Kendrew",
+        "year": "1960",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B7",
+        "author": "McGill",
+        "year": "2008"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B8",
+        "first-page": "607",
+        "volume": "13",
+        "author": "Stuart",
+        "year": "2016"
+      },
+      {
+        "key": "2023062213565222800_btaa584-B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "706",
+        "DOI": "10.1177/0963662515572068",
+        "article-title": "Science communication on YouTube: factors that affect channel and video popularity",
+        "volume": "25",
+        "author": "Welbourne",
+        "year": "2016",
+        "journal-title": "Public Understand. Sci."
+      }
+    ],
+    "container-title": [
+      "Bioinformatics"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/bioinformatics/advance-article-pdf/doi/10.1093/bioinformatics/btaa584/33830593/btaa584.pdf",
+        "content-type": "application/pdf",
+        "content-version": "am",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/36/17/4660/50677679/btaa584.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "https://academic.oup.com/bioinformatics/article-pdf/36/17/4660/50677679/btaa584.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          6,
+          22
+        ]
+      ],
+      "date-time": "2023-06-22T16:52:41Z",
+      "timestamp": 1687452761000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/bioinformatics/article/36/17/4660/5861531"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Arne",
+        "family": "Elofsson",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "editor"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          23
+        ]
+      ]
+    },
+    "references-count": 9,
+    "journal-issue": {
+      "issue": "17",
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            11,
+            1
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/bioinformatics/btaa584",
+    "relation": {},
+    "ISSN": [
+      "1367-4803",
+      "1367-4811"
+    ],
+    "issn-type": [
+      {
+        "value": "1367-4803",
+        "type": "print"
+      },
+      {
+        "value": "1367-4811",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2020,
+          9,
+          1
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          6,
+          23
+        ]
+      ]
+    }
+  }
+}

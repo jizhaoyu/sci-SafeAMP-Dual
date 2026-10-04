@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-02T09:31:06.148824+00:00",
+  "rejection_probes": [
+    {
+      "entry": "02_code/audit_mic_three_fold.py",
+      "exit_code": 1,
+      "existing_output_rejected": true
+    },
+    {
+      "entry": "02_code/audit_mic_three_fold.py",
+      "exit_code": 1,
+      "existing_output_rejected": true
+    },
+    {
+      "entry": "02_code/validate_mic_three_fold.py",
+      "exit_code": 1,
+      "existing_output_rejected": true
+    }
+  ],
+  "all_artifact_hashes_unchanged": true,
+  "artifacts": {
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\all_member_similarity.csv": "3782dc829d5daff75904ade92c81a1a8e5e9a635531c75062ecb027b40de0d35",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\candidate_molecules.csv": "d2ad54b302ce677360df3b4a37c26a40f53e01ea6a4ac5e4e441e1461bd0a3a2",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\candidate_observations.csv": "8d2b31f4c4be0904024cb6920040ec7986a78106f9e794fee9c88eb6c63d6f4c",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\component_summary.csv": "6b6ec51e48612dde6de0dd7354a1932b495cb778133955a6af05dc7ea0be5f6d",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\fold_assignments.csv": "ddde1df8f658895f910a3d2d02356fd537a3790901a8cad41ff5fefaaffc9651",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\fold_roles.csv": "e726be12479b273d546ebceb8077bd913278caac1419e95078e8b78cf719ee90",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\manifest.json": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\report.md": "c12004b7427e5b4faf535dd62b2e2dcb6cc9424965c106db9bf9bf16ca7238e1",
+    "03_experiments\\audits\\mic_training_readiness_20261002_v10.json": "89c2b4f71ec87319499c18677aaac85deabf165033024145cf436bf68fc019a2",
+    "03_experiments\\audits\\mic_three_fold_validation_20261002_v1.json": "64c5f107926592ddd18eaff59325eea7c58d0083ae635ffc236b3a2489af3037",
+    "03_experiments\\audits\\mic_three_fold_validation_20261002_v1.md": "0a471d2b0596c31dc4431a815da86c3f00584f6e572e62824033d79d1eac144d",
+    "03_experiments\\protocols\\protocol-mic-06.json": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+    "03_experiments\\protocols\\protocol-mic-01.json": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+    "04_paper\\research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c"
+  }
+}

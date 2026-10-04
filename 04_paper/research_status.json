@@ -1,0 +1,27 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-10-01T06:31:07.787118+00:00",
+  "status": "blocked",
+  "dataset_preparation_status": "blocked",
+  "protocol_id": "protocol-amd-02",
+  "protocol_digest": "6bcf8993a08f8da1ebae4609f4ef9e4ebae7205257d136dfa059a1b93db4bc4c",
+  "records_input_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "prepared_created_at": "2026-10-01T05:55:08.139221+00:00",
+  "run_status": "none",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "prepared_dir": "D:\\桌面文件\\sci\\03_experiments\\prepared\\amd02_evidence_clean_20261001",
+  "prepared_sha256": "eb6dda5d81140944dbfebc797f8b3ce4b398d9487ddcb983c43255926ff8fbf5",
+  "run_dir": null,
+  "run_sha256": null,
+  "blockers": [
+    "Dataset preparation not validated: A separately sourced external cohort is required.",
+    "No experimental run evaluated (run_dir=None)",
+    "Publication submission requires formal human review and approval receipt"
+  ],
+  "required_next_steps": [
+    "Acquire an independently sourced cohort with compatible measurements and audit cross-cohort homology.",
+    "Complete seven-model three-seed grouped experiments only after all data gates pass.",
+    "Review source reuse terms, bibliographic claim support, authorship and all declarations."
+  ]
+}

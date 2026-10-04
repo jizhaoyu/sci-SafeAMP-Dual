@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-28T15:10:37.950970+00:00",
+  "backend": "fair-esm",
+  "real_encoder": true,
+  "pooled_dimension": 320,
+  "residue_dimension": [
+    20,
+    320
+  ],
+  "feature_version": "esm2-t6-8M-phys44-v2",
+  "checkpoint_sha256": "46f002a9870c9bdecd0ea887acb1f9a38a6b561e8f8bf8a6990b679b9d31b928",
+  "not_model_performance_validation": true
+}

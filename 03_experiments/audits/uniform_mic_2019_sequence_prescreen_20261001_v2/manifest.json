@@ -1,0 +1,25 @@
+{
+  "status": "sequence_prescreen_only_not_eligible_for_training",
+  "generated_at": "2026-10-01T12:37:21.929087+00:00",
+  "source_doi": "10.3390/data4010027",
+  "source_article": "https://doi.org/10.3390/data4010027",
+  "source_table": "primary article Table 1; sequences transcribed for screening only",
+  "sequence_identity_protocol": "protocol-amd-02; global Needleman-Wunsch matches/alignment columns; cutoff 0.40",
+  "development_records": 417,
+  "development_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "dramp_candidate_records": 4,
+  "dramp_candidate_sha256": "6d2acb0291a6debbe226d2673342a17b0988a381fb486e47a1cc0018bfeb9d00",
+  "script_sha256": "179e61d6ac77f607927b64832fd7c9b5624d488cf1e57084467e837d8067119f",
+  "candidate_count": 20,
+  "below_cutoff_count": 5,
+  "at_or_above_cutoff_count": 15,
+  "comparisons_evaluated": 8420,
+  "training_started": false,
+  "blockers": [
+    "Supplementary Table S1 MIC values and sequence chemistry not yet verified against the primary source.",
+    "Study overlap, candidate-to-candidate grouping, and full cohort feasibility are not yet audited."
+  ],
+  "outputs": {
+    "sequence_prescreen": "03_experiments\\audits\\uniform_mic_2019_sequence_prescreen_20261001_v2\\sequence_prescreen.csv"
+  }
+}

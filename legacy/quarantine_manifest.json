@@ -1,0 +1,71 @@
+{
+  "status": "not_research_evidence",
+  "files": [
+    {
+      "original": "02_code/data/benchmark_peptides.csv",
+      "retired": "02_code/tests/fixtures/legacy/benchmark_peptides.csv",
+      "sha256": "73ab393b463d48dd46df41a062f3daf1eed01fa46cb8635709c4be1e8e7ce67e",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "02_code/data/train_val_set.csv",
+      "retired": "02_code/tests/fixtures/legacy/train_val_set.csv",
+      "sha256": "ba3e53b8a0e9959d6fc6d33d3e2efc18a7b90251c5ab3a07ce6911538f414474",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "02_code/data/independent_test_set.csv",
+      "retired": "02_code/tests/fixtures/legacy/independent_test_set.csv",
+      "sha256": "e985c9a6866d9199d184d23ea92c44cc240535bd0534c9586a0a803b59946f9e",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/ablation_study_results.csv",
+      "retired": "03_experiments/retired_unsupported/ablation_study_results.csv",
+      "sha256": "84090b421493e7dec8710f32adffa09a92e1f32c04101b22c8f3b021bd013848",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/benchmark_comparison_results.csv",
+      "retired": "03_experiments/retired_unsupported/benchmark_comparison_results.csv",
+      "sha256": "777f813861b6b7586e2445e33b4e0818265d79c469b2f46ff99550034618ac5a",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/statistical_significance_report.csv",
+      "retired": "03_experiments/retired_unsupported/statistical_significance_report.csv",
+      "sha256": "c9fdf12c1b7d6020ed7e7173e452143caa7e8978f9be4a06082993c19d66eae8",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/case_study_predictions.csv",
+      "retired": "03_experiments/retired_unsupported/case_study_predictions.csv",
+      "sha256": "b88dee9448a2789d79c4b3a26880968b5383fc671ede0b095a214fad24e2cf5e",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/figure_ablation_comparison.png",
+      "retired": "03_experiments/retired_unsupported/figure_ablation_comparison.png",
+      "sha256": "68af9cccffabf71d947121a96561bc6aefdf7207d7fe90bc939311a9f598a0dc",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/figure_roc_curves.png",
+      "retired": "03_experiments/retired_unsupported/figure_roc_curves.png",
+      "sha256": "5b47c349bfc78462b63374832333df90c2187edb3c74ae8ee4dc50573ce392df",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/peer_review_audit_and_flaws.md",
+      "retired": "03_experiments/retired_unsupported/peer_review_audit_and_flaws.md",
+      "sha256": "913c79807a38c29c085c1e03e742355528854789dad83b13ba3a0d588a02153b",
+      "use": "historical audit / software fixtures only"
+    },
+    {
+      "original": "03_experiments/sci_publication_standard_checklist.md",
+      "retired": "03_experiments/retired_unsupported/sci_publication_standard_checklist.md",
+      "sha256": "3f142bb706e04316c3d831e5d5a230769dba2526e6f2cfc07c4bea822cfa2310",
+      "use": "historical audit / software fixtures only"
+    }
+  ]
+}

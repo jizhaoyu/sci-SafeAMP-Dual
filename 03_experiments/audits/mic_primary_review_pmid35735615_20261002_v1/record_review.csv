@@ -1,0 +1,6 @@
+record_id,sample_id,name,sequence,molecular_form,decision,reason,derived_binary_label,training_release
+PMID35735615:Api801,16032d07b187aa447eea3ada,Api801,GNNRPVYIPRPRPPHPRL,C-terminal free acid,candidate,all_reported_MICs_support_one_binary_class,1.0,False
+PMID35735615:Api802,bc4f55163d7a47b2f82e9a55,Api802,MNNRPIYIPRPRPPHPRL,C-terminal free acid,excluded,at_least_one_measured_MIC_in_32_128_threshold_gap,,False
+PMID35735615:Api805,8a7ea548dccd036db56d8c94,Api805,GNNRPIYIPRPRPPHPRPIRV,C-terminal free acid,candidate,all_reported_MICs_support_one_binary_class,1.0,False
+PMID35735615:Api806,98c7c35b434a2077d4731f7e,Api806,MNNRPIYIPRPRPPHPRPIRV,C-terminal free acid,excluded,conflicting_binary_MIC_labels_across_media,,False
+PMID35735615:Api810,f74052fb265151ecb406d09f,Api810,MNNRPIYIPRPRPPHPAL,C-terminal free acid,candidate,all_reported_MICs_support_one_binary_class,0.0,False

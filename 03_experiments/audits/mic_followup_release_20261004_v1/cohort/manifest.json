@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T02:58:48.976947+00:00",
+  "molecules": 16,
+  "observations": 23,
+  "component_counts": {
+    "total": 7,
+    "positive": 4,
+    "negative": 6
+  },
+  "fold_structure_gate_passed": true,
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "validation": {
+    "folds": 3,
+    "shuffle": true,
+    "seed": 42
+  },
+  "candidate_selection_after_split": false,
+  "inputs": {
+    "03_experiments/audits/mic_training_readiness_20261003_v20.json": "15d32dafbab6a256f30d3dcecf8d2a9c87292e854bd78e6cb4ef1a9e67efeec7",
+    "02_code/mic_followup_release.py": "d9a9e1c7d383d1b111dc3e651a0e9bf5ef91c27d41d4635eb67ed25a8171124c",
+    "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/bmap2025.xml": "6f9ff4fd2e4717576da2b0ad83a053c15ef023b2ba9ccba3eeed689e0e8a4e76",
+    "03_experiments/audits/mic_followup_source_retrieval_20261004_v1/bmap_figure_1.jpeg": "c4f0f07f3c4df75955ffbb034f165da2ea4eaef8cbb54e42d10adf636810c815",
+    "03_experiments/audits/mic_followup_source_retrieval_20261004_v1/acquisition.json": "7cca538dfc1fbaacff5c7dc5eeeb233671de84648d1dff00e144da5683c618bc",
+    "03_experiments/audits/mic_three_fold_primary_release_20261002_v1/manifest.json": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190"
+  },
+  "outputs": {
+    "all_member_similarity.csv": "c547992901922ae0feb6de817ecc394df3d6ba54f68daa23af057587e2cf55ab",
+    "candidate_molecules.csv": "ee7fea142e30cad7e6d2a8418df1eee2d26bf2f81ac116245a4f81c82680cefe",
+    "candidate_observations.csv": "5fc53b54a959f3da772506a12e43d63d0fe6433366781102c006a5255d86692c",
+    "fold_roles.csv": "48de81a3510733a6cc31282caefa8ca17f3695936a8fea670501af8fa02ac5b8"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "protocol_id": "protocol-mic-08",
+  "frozen_at": "2026-10-02T11:22:32.120817+00:00",
+  "protocol_sha256": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+  "new_source_review_started": false,
+  "new_candidate_labels_derived": false,
+  "new_model_training_authorized": false,
+  "existing_baseline_performance_known": true,
+  "inputs": {
+    "03_experiments/protocols/protocol-mic-08.json": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+    "docs/amendments/PROTOCOL_MIC_08_SOURCE_EXPANSION.md": "5d12f48f9797ba4bdc8b934e88d56ba01418167fd2453f11d47444bfe9462eef",
+    "03_experiments/protocols/protocol-mic-06.json": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+    "03_experiments/protocols/protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "03_experiments/audits/mic_training_readiness_20261002_v12.json": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+    "03_experiments/audits/mic_three_fold_20261002_v1/candidate_molecules.csv": "d2ad54b302ce677360df3b4a37c26a40f53e01ea6a4ac5e4e441e1461bd0a3a2",
+    "03_experiments/audits/mic_three_fold_20261002_v1/candidate_observations.csv": "8d2b31f4c4be0904024cb6920040ec7986a78106f9e794fee9c88eb6c63d6f4c",
+    "03_experiments/runs/mic_three_fold_20261002_v1/manifest.json": "c9e35b637a8a7b7e79058b72ecaf6504bab4784dd7848721c06cd01d9c758de1",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c"
+  }
+}

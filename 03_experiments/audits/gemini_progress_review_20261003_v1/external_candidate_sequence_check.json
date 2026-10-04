@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-10-03T03:11:39.271505+00:00",
+  "candidate_id": "DRAMP20968",
+  "development_count": 417,
+  "pairs_recomputed": 417,
+  "maximum_identity": 0.3333333333333333,
+  "nearest_dev_record": "DBAASP:25512",
+  "recorded_value_matches": true,
+  "homology_edges_ge_0_40": 0,
+  "literal_primary_reference_overlap_count": 0,
+  "evidence_scope": "sequence and literal reference comparison only; no original MIC/HC50 or measured molecular-form release",
+  "esm2_unmanifested_files": [
+    "report.md"
+  ],
+  "inputs": {
+    "02_code\\data\\sources\\combined_v3_evidence_clean_20261001\\records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+    "03_experiments/audits/dual_task_external_curation_20261003_v1/verified_eligible_candidates.csv": "d74a920ee388ba5ef07f23dbff63fb399c8f3f280d413230b9ac521b90735cea"
+  }
+}

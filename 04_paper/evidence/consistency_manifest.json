@@ -1,0 +1,27 @@
+{
+  "sample_count": 417,
+  "tasks": {
+    "amp": {
+      "positive": 253,
+      "negative": 138,
+      "unknown": 26
+    },
+    "hemo": {
+      "positive": 18,
+      "negative": 44,
+      "unknown": 355
+    }
+  },
+  "methods": {
+    "identity": "global NW +2/-1/-2, lexicographic orientation, diagonal-first ties, matches/min(lengths)",
+    "cutoff": 0.4,
+    "folds": 5,
+    "seeds": [
+      11,
+      23,
+      42
+    ]
+  },
+  "results": [],
+  "status": "protocol_only_no_formal_results"
+}

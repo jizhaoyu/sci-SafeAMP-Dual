@@ -1,0 +1,58 @@
+{
+  "status": "complete_evidence_release_blocked",
+  "generated_at": "2026-10-03T03:38:48.949469+00:00",
+  "audit_protocol_id": "protocol-mic-08",
+  "data_version": "mic_evidence_repair_20261003_v1",
+  "historical_cohort_version": "mic_source_expansion_result_20261002_v2",
+  "candidate_molecules": 17,
+  "candidate_observations": 24,
+  "original_xml_identifier_reviews": 6,
+  "sources_with_identifiers_corrected": [
+    "lactoferricin2015",
+    "boncat2025",
+    "carrier2016",
+    "bmap2025",
+    "tat2026"
+  ],
+  "existing_15_molecules_evidence_approved": 15,
+  "new_molecules_evidence_approved": 0,
+  "full_release_review_complete": false,
+  "records_released_for_training": 0,
+  "training_started": false,
+  "blockers": [
+    "Expanded cohort has no complete release manifest bound by a prospective training protocol.",
+    "BMAP-27B range is aggregate; identified isolate MIC observations remain unverified.",
+    "Piscidin 1 has not completed the separate new evidence release review.",
+    "Wrong historical study aliases require re-auditing before a scientific isolation claim."
+  ],
+  "inputs": {
+    "03_experiments\\audits\\gemini_repair_20261003_v1\\archive_manifest.json": "64b2eb375aa18fd90b266804858f099ceb8be1a6eaf9d59a8402ae32fd09adaa",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\chekmenev2006.pdf": "8c5097aed570e91d0a1deca34dcd382a2bc47da7c54c5366e55a2fb563c9d8e7",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\foundation2024.xml": "b1ba699c9539c56b2e13ced18b226fbc8fce2d7a5f28cc1889c040918b403ca0",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\lactoferricin2015.xml": "20947ee9c8953d18fb0267a9cf7a3d0b45083a234e026d194f2c6e3cf8338111",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\boncat2025.xml": "e2f3622c14db7d393d0285747786096547035731f3d18076dc046dc9a3550dd6",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\carrier2016.xml": "d4bc4446d661337b5095a06216bcec4bd52a103755c1d604828e23e0b6cce720",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\drosocin2002_metadata.json": "4699dd4efda4436902c5a861e535d02fd011b111b85ffe88be2cdcb387ede0b0",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\pexiganan2016.pdf": "4dd81c434eebac487d7339182619eed38f5f25320476eaeed34d24c2907f80a6",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\apidaecin2009.xml": "28fe7610174e3cec34c808ec637ce9545bb869c29b8951cad81fdaac62067e08",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\neopeptides2005.xml": "d9e2a454b52b56721d6c19f8cdb6a415d101c0a6537c6ba497181160e4c72016",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\bmap2025.xml": "6f9ff4fd2e4717576da2b0ad83a053c15ef023b2ba9ccba3eeed689e0e8a4e76",
+    "03_experiments\\audits\\mic_source_expansion_acquisition_20261002_v1\\raw\\tat2026.xml": "15d468dc1199c3719569e42929ad9113f35faa4038b01eb0d5b144405cc3197e",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\manifest.json": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\source_inventory.csv": "055c953daa742569cf426c12028942546c5e246e9abcb2e75492f1a70f55732a",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\record_decisions.csv": "532db497bf8ff9c74b6d36d74e07bf258abf61b19c6f1914eff67465a15bf914",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\candidate_molecules.csv": "878d9c0263ddf13d5dba6080dd8efe66b166b1f85e6b25d09c62cde5f6199890",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\assay_observations.csv": "cc296a8fabb09b8369374141e5bfbc52785fe8dfc946bb7913e3bad21e65c420",
+    "03_experiments\\protocols\\protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "03_experiments\\audits\\mic_three_fold_primary_release_20261002_v1\\manifest.json": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+    "02_code\\audit_mic_evidence_repair.py": "f6ae55779ebd64c1fbf6b08282e893669221c0b5cda2708d5b5671b7b51bb48d"
+  },
+  "outputs": {
+    "assay_evidence_review.csv": "5ce60ab7bc1c397a8ef9bfbc6bc5c8c6f142ac200c4c575566607916df1ff8a8",
+    "molecule_evidence_review.csv": "dbe03dcc5c5d707250b77bfb1f2cd43607e508d85a49d202f8a85a87b74355c5",
+    "record_decisions.csv": "7b91da85b7bf5f412f306a61aa009a9dfc447974e769ea1ec568d08f24e024bb",
+    "report.md": "ac8b74ed3af0ca5144be85eca76d4eb26452ce111d8d653ddd5b8ec552115365",
+    "source_identifier_review.csv": "a70fe0ac98abe79ac27a50cb6f3578a25aadd38b6589538592f1f2ce02546cd3"
+  },
+  "script_sha256": "f6ae55779ebd64c1fbf6b08282e893669221c0b5cda2708d5b5671b7b51bb48d"
+}

@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-10-04T04:46:42.422916+00:00",
+  "status": "discovery_prescreen_only",
+  "candidates": [
+    {
+      "name": "Pin2",
+      "seq": "FWGALAKGALKLIPSLFSSFSKKD",
+      "source_id": "pandinin2014",
+      "identity_basis": "Table 1 sequence and MS; synthesis explicitly states free carboxyl",
+      "label": null
+    },
+    {
+      "name": "Pin2 [G]",
+      "seq": "FWGALAKGALKLIGSLFSSFSKKD",
+      "source_id": "pandinin2014",
+      "identity_basis": "Table 1 sequence and MS; synthesis explicitly states free carboxyl",
+      "label": null
+    },
+    {
+      "name": "Pin2 [GPG]",
+      "seq": "FWGALAKGALKLIGPGSLFSSFSKKD",
+      "source_id": "pandinin2014",
+      "identity_basis": "Table 1 sequence and MS; synthesis explicitly states free carboxyl",
+      "label": null
+    },
+    {
+      "name": "Pin2 [14]",
+      "seq": "FWGLKGLKKFSKKL",
+      "source_id": "pandinin2014",
+      "identity_basis": "Table 1 sequence and MS; synthesis explicitly states free carboxyl",
+      "label": null
+    },
+    {
+      "name": "Pin2 [17]",
+      "seq": "FWGLKGLKGPGKFSKKL",
+      "source_id": "pandinin2014",
+      "identity_basis": "Table 1 sequence and MS; synthesis explicitly states free carboxyl",
+      "label": null
+    },
+    {
+      "name": "ChMAP-28",
+      "seq": "GRFKRFRKKLKRLWHKVGPFVGPILHY",
+      "source_id": "chmap2018",
+      "identity_basis": "Abstract sequence; methods explicitly non-amidated recombinant analog",
+      "label": null
+    }
+  ],
+  "summary": [
+    {
+      "candidate_name": "Pin2",
+      "reference_cohort": "formal_417",
+      "max_identity": 1.0,
+      "closest_reference_id": "DBAASP:948",
+      "violating_pairs": 5,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3333333333333333,
+      "closest_reference_id": "d109526ef5b890b80697cd3c",
+      "violating_pairs": 0,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [G]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.9583333333333334,
+      "closest_reference_id": "DBAASP:948",
+      "violating_pairs": 4,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [G]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3333333333333333,
+      "closest_reference_id": "d109526ef5b890b80697cd3c",
+      "violating_pairs": 0,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [GPG]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.9615384615384616,
+      "closest_reference_id": "DBAASP:4731",
+      "violating_pairs": 5,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [GPG]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3076923076923077,
+      "closest_reference_id": "d109526ef5b890b80697cd3c",
+      "violating_pairs": 0,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [14]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.5,
+      "closest_reference_id": "DBAASP:948",
+      "violating_pairs": 16,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [14]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3888888888888889,
+      "closest_reference_id": "d109526ef5b890b80697cd3c",
+      "violating_pairs": 0,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [17]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.5416666666666666,
+      "closest_reference_id": "DBAASP:948",
+      "violating_pairs": 9,
+      "admitted": false
+    },
+    {
+      "candidate_name": "Pin2 [17]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3684210526315789,
+      "closest_reference_id": "d109526ef5b890b80697cd3c",
+      "violating_pairs": 0,
+      "admitted": false
+    },
+    {
+      "candidate_name": "ChMAP-28",
+      "reference_cohort": "formal_417",
+      "max_identity": 1.0,
+      "closest_reference_id": "DBAASP:12306",
+      "violating_pairs": 5,
+      "admitted": false
+    },
+    {
+      "candidate_name": "ChMAP-28",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.6071428571428571,
+      "closest_reference_id": "5445b7b645f69b6d7f8abdf3",
+      "violating_pairs": 1,
+      "admitted": false
+    }
+  ],
+  "pair_count": 2598,
+  "identity_mode": "alignment",
+  "cutoff": 0.4,
+  "labels_released": 0,
+  "new_training": false
+}

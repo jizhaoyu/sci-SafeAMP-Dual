@@ -1,0 +1,33 @@
+{
+  "status": "ready_for_formal_experiments",
+  "generated_at": "2026-09-29T15:12:39.850217+00:00",
+  "records_path": "02_code\\data\\sources\\combined_v2\\records.csv",
+  "records_sha256": "f448b8af437f3cf6050831a802e2efb15cc54ba2bddbb39eec9d7d79a6c95801",
+  "cutoff": 0.4,
+  "blockers": [],
+  "warnings": [],
+  "checks": {
+    "records_provenance_validation": {
+      "status": "passed",
+      "detail": "430 records validated"
+    },
+    "consolidation": {
+      "status": "passed",
+      "detail": "430 consolidated unique molecules"
+    },
+    "external_isolation": {
+      "status": "passed",
+      "detail": "Zero cross-cohort homology violations"
+    }
+  },
+  "summary_metrics": {
+    "total_unique_molecules": 430,
+    "amp_observed": 404,
+    "hemo_observed": 75,
+    "both_observed": 49,
+    "homology_clusters": 61,
+    "largest_cluster_size": 38,
+    "largest_cluster_pct": 8.84,
+    "external_cohort_size": 13
+  }
+}

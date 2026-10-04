@@ -1,0 +1,37 @@
+{
+  "status": "candidate_screen_only",
+  "generated_at_utc": "2026-10-01T07:58:57.108512+00:00",
+  "source_database": "DRAMP",
+  "source_release_as_labeled_on_official_download_page": "DRAMP 3.0",
+  "source_download_url": "https://cpu-bioinfor.org/downloads/download.php?filename=download_data/DRAMP3.0_new/Antibacterial_amps.xlsx",
+  "source_file": "02_code\\data\\sources\\dramp_mic_screen_20261001\\raw\\Antibacterial_amps.xlsx",
+  "source_sha256": "d61049d96af0fe527a4d9402f19ab0974f6fe2eb71258be4be09bc7f401dc6ac",
+  "development_file": "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv",
+  "development_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "development_unique_sequences": 417,
+  "protocol_id": "protocol-amd-02",
+  "protocol_digest": "6bcf8993a08f8da1ebae4609f4ef9e4ebae7205257d136dfa059a1b93db4bc4c",
+  "cutoff": 0.4,
+  "input_rows": 4159,
+  "rows_with_at_least_one_parsable_ecoli_mic": 0,
+  "eligible_sequence_record_count": 94,
+  "parsed_ecoli_mic_observation_count": 152,
+  "records_with_primary_references": 94,
+  "exact_sequence_overlap_records": 13,
+  "records_violating_0_40_homology_cutoff": 76,
+  "unique_candidate_sequences": 93,
+  "label_derivation": "none; all entries pending primary assay verification",
+  "exclusion_counts": {
+    "no_parsable_ecoli_mic_text": 2544,
+    "length_outside_10_50": 82,
+    "not_explicitly_linear": 1042,
+    "modification:C-terminal_Modification": 351,
+    "modification:Other_Modifications": 5,
+    "noncanonical_or_missing_sequence": 31,
+    "modification:N-terminal_Modification": 10
+  },
+  "outputs": [
+    "ecoli_mic_candidates.csv",
+    "manifest.json"
+  ]
+}

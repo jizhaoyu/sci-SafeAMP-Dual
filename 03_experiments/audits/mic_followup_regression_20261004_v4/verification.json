@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-04T03:24:20.232623+00:00",
+  "command": [
+    "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "tests/test_mic_followup_validation.py",
+    "tests/test_mic_followup_release.py",
+    "tests/test_mic_reviewed_training.py",
+    "tests/test_evidence_gate_repair.py",
+    "tests/test_protocol_contract.py",
+    "tests/test_isolation_diagnostics.py",
+    "--deselect=tests/test_mic_reviewed_training.py::test_protocol_11_and_freeze_slots_remain_unused_until_gate_passes",
+    "-q",
+    "--junitxml=D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v4\\regression_results.xml"
+  ],
+  "exit_code": 1,
+  "stdout": ".................F......................................                 [100%]\n================================== FAILURES ===================================\n______ test_protocol_11_and_freeze_slots_remain_unused_until_gate_passes ______\n\n    def test_protocol_11_and_freeze_slots_remain_unused_until_gate_passes():\n>       assert not PROTOCOL.exists()\nE       AssertionError: assert not True\nE        +  where True = <bound method Path.exists of WindowsPath('D:/桌面文件/sci/03_experiments/protocols/protocol-mic-11.json')>()\nE        +    where <bound method Path.exists of WindowsPath('D:/桌面文件/sci/03_experiments/protocols/protocol-mic-11.json')> = WindowsPath('D:/桌面文件/sci/03_experiments/protocols/protocol-mic-11.json').exists\n\ntests\\test_mic_reviewed_training.py:101: AssertionError\n- generated xml file: D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v4\\regression_results.xml -\n=========================== short test summary info ===========================\nFAILED tests\\test_mic_reviewed_training.py::test_protocol_11_and_freeze_slots_remain_unused_until_gate_passes\n1 failed, 55 passed in 4.88s\n",
+  "stderr": "",
+  "xml_sha256": "0591637ee970a6b39a98be3d85264e8340acb3de3f01c77702080a9580080ba4",
+  "deselection_reason": "Historical protected regression asserts protocol-mic-11 does not exist before gate passes. Gate has now passed; replaced by a new check that protocol binds admitted pre-training state, preserving original file."
+}

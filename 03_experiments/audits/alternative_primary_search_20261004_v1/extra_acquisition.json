@@ -1,0 +1,27 @@
+[
+  {
+    "source_id": "goat_antibacterial2018",
+    "doi": "10.3389/fmicb.2018.02983",
+    "started_at": "2026-10-04T04:43:56.766088+00:00",
+    "metadata_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.3389%2Ffmicb.2018.02983%22&format=json&resultType=core",
+    "pmid": "30555455",
+    "pmcid": "PMC6284057",
+    "title": "Combined Antibacterial Effects of Goat Cathelicidins With Different Mechanisms of Action.",
+    "metadata_sha256": "fb1f8d13b4997dbfcf8d7d3a438b11056ed02598836d7faed78b0c0b50a28e24",
+    "xml_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6284057/fullTextXML",
+    "xml_sha256": "01b43c8a0b91e6521354227a7e584c84c64400f235cf6b52ef7c4cb0cd3d0bd6",
+    "finished_at": "2026-10-04T04:44:03.075486+00:00"
+  },
+  {
+    "source_id": "hymenochirin2012",
+    "doi": "10.1016/j.peptides.2012.03.029",
+    "started_at": "2026-10-04T04:44:03.075486+00:00",
+    "metadata_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=DOI%3A%2210.1016%2Fj.peptides.2012.03.029%22&format=json&resultType=core",
+    "pmid": "22497805",
+    "pmcid": null,
+    "title": "The hymenochirins: a family of host-defense peptides from the Congo dwarf clawed frog Hymenochirus boettgeri (Pipidae).",
+    "metadata_sha256": "461a76cf7d4077a06051362910e6ad24c6f28f48203584e5c6fd444bf3ac84f5",
+    "full_text_status": "no_pmc_full_text_in_metadata; abstract_not_sufficient_for_admission",
+    "finished_at": "2026-10-04T04:44:04.527353+00:00"
+  }
+]

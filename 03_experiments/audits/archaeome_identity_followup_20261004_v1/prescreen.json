@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-04T04:29:59.904096+00:00",
+  "status": "sequence_prescreen_only",
+  "candidate_sequences": 80,
+  "pairs": 34640,
+  "identity_mode": "alignment",
+  "cutoff": 0.4,
+  "alignment": {
+    "algorithm": "global Needleman-Wunsch",
+    "match": 2,
+    "mismatch": -1,
+    "gap": -2,
+    "tie_order": [
+      "diagonal",
+      "up",
+      "left"
+    ],
+    "orientation": "canonical lexicographic",
+    "denominator": "alignment columns"
+  },
+  "counts": {
+    "formal_development_417": {
+      "sequences_with_conflict": 64,
+      "sequences_without_conflict": 16,
+      "violating_pairs": 411
+    },
+    "mic_development_16": {
+      "sequences_with_conflict": 8,
+      "sequences_without_conflict": 72,
+      "violating_pairs": 9
+    }
+  },
+  "new_molecules_admitted": 0,
+  "training_executed": false,
+  "limitations": [
+    "No assay-to-certificate mapping or terminal identity approval",
+    "This is not a complete source-alias or candidate-internal isolation audit"
+  ],
+  "inputs": {
+    "03_experiments\\audits\\mic_priority_primary_review_20261004_v1\\molecule_identity_review.csv": "e6dfd8bdb99ac70b2d412a49200ce68bebef30c8cef1aa482c0b2a2a306420c6",
+    "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+    "03_experiments\\audits\\mic_followup_release_20261004_v1\\cohort\\candidate_molecules.csv": "ee7fea142e30cad7e6d2a8418df1eee2d26bf2f81ac116245a4f81c82680cefe",
+    "02_code\\research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350"
+  },
+  "outputs": {
+    "sequence_pair_prescreen.csv": "8a633c192e9d530ac65699704f9a28443d12773546b1217ceb2ee3a6a6b2620a",
+    "sequence_prescreen_summary.csv": "9adc21a42423eadc692232d7564b6d74776ae1e8d457e7585bee6a6bf3a31e17"
+  }
+}

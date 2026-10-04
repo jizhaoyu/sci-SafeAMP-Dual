@@ -1,0 +1,38 @@
+{
+  "unit_tests": 132,
+  "test_failures": 0,
+  "browser": {
+    "status": "passed",
+    "checks": [
+      "screening_503_visible",
+      "invalid_sequence_rejected",
+      "evolution_503_visible",
+      "report_503_visible",
+      "wheel_26_residues_correct",
+      "mobile_no_document_overflow"
+    ],
+    "page_errors": []
+  },
+  "frontend_build": "passed",
+  "frontend_lint_warnings": 0,
+  "latex_compile": "environment_unavailable",
+  "isolation_diagnostics": {
+    "status": "completed",
+    "total_sequences": 417,
+    "current_rule_edges": 22487,
+    "graph_density": 0.2593,
+    "max_degree": 313,
+    "mean_degree": 107.85,
+    "components_at_0.40_min": 1,
+    "components_at_0.40_max": 64
+  },
+  "external_dramp_audit": {
+    "status": "completed",
+    "total_raw": 6107,
+    "candidates_with_human_hc50": 10,
+    "strictly_eligible_under_current_rule": 0,
+    "blocker": "all_candidates_violate_0.40_homology_against_development"
+  },
+  "formal_experiments": "blocked",
+  "publication_ready": false
+}

@@ -1,0 +1,89 @@
+{
+  "protocol_id": "protocol-mic-09",
+  "protocol_version": 1,
+  "status": "frozen_local_exploratory_baseline_training",
+  "frozen_date": "2026-10-02",
+  "authorization": "User selected Decision Point A to proceed with exploratory three-fold baseline training on the expanded 17-molecule cohort (including Piscidin 1 and BMAP-27B).",
+  "scope": "local small-sample E. coli MIC exploration on 17 molecules; no dual-task, clinical, external-validation, deployment or publication authorization",
+  "audit_protocol_id": "protocol-mic-08",
+  "audit_protocol_path": "03_experiments/protocols/protocol-mic-08.json",
+  "audit_protocol_sha256": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+  "cohort_manifest": "03_experiments/audits/mic_source_expansion_result_20261002_v2/manifest.json",
+  "cohort_manifest_sha256": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+  "independent_partition_validation": "03_experiments/audits/mic_expanded_cohort_validation_20261002_v1.json",
+  "independent_partition_validation_sha256": "4b72ee87106f824105eea9c15cfb4e60febb092948a494fdd516d116bebd8fa5",
+  "molecules": "03_experiments/audits/mic_source_expansion_result_20261002_v2/candidate_molecules.csv",
+  "molecules_sha256": "878d9c0263ddf13d5dba6080dd8efe66b166b1f85e6b25d09c62cde5f6199890",
+  "observations": "03_experiments/audits/mic_source_expansion_result_20261002_v2/assay_observations.csv",
+  "observations_sha256": "cc296a8fabb09b8369374141e5bfbc52785fe8dfc946bb7913e3bad21e65c420",
+  "fold_roles": "03_experiments/audits/mic_source_expansion_result_20261002_v2/fold_roles.csv",
+  "fold_roles_sha256": "31390afd1ef18842b3473577988908233bcb7ea2db9c884565c85a57f63c9450",
+  "validation": {
+    "folds": 3,
+    "seed": 42,
+    "partition": "use the frozen whole-component roles; no new split or seed search",
+    "require_both_classes_in_training_and_validation": true,
+    "homology_cutoff": 0.4,
+    "all_member_and_primary_study_isolation": true,
+    "inner_cross_validation": false,
+    "hyperparameter_search": false,
+    "probability_calibration": false
+  },
+  "features": {
+    "name": "existing fixed handcrafted sequence descriptors",
+    "dimensions": 44,
+    "learned_embedding": false,
+    "feature_extractor": "02_code/feature_extractor.py",
+    "feature_extractor_sha256": "cd0f8d7318f88ecb4f8e53bb1d0c44a3b286fed9c0380b06de5101c77f4b82e4",
+    "selection": "no feature selection or outcome-informed redesign"
+  },
+  "models": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "max_iter": 5000,
+      "solver": "lbfgs",
+      "random_state": 42,
+      "preprocessing": "StandardScaler fitted only inside each training complement"
+    },
+    "random_forest": {
+      "class_weight": "balanced",
+      "max_depth": null,
+      "min_samples_leaf": 2,
+      "n_estimators": 500,
+      "n_jobs": 1,
+      "random_state": 42
+    },
+    "dummy_prior": {
+      "strategy": "prior"
+    }
+  },
+  "baseline_implementation": "02_code/train_mic_baselines.py",
+  "baseline_implementation_sha256": "456f8517c919b8e31426782f317fe3e0a8030407ffaf92b5461932a5389cb3dd",
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "model_design_rationale": "Reuse existing fixed LR/RF baseline parameters and add a prior-only control. No model performance has been produced for this expanded cohort. Do not use internal random calibration CV on these few independent groups.",
+  "decision_threshold": 0.5,
+  "metrics": [
+    "AUPRC",
+    "AUROC",
+    "MCC_at_0_5",
+    "balanced_accuracy_at_0_5",
+    "accuracy_at_0_5"
+  ],
+  "output": "fold models, features, per-molecule out-of-fold predictions, fold and pooled descriptive metrics, immutable manifest",
+  "model_selection": "none; report all predeclared models; no best-model selection or full-cohort deployment fit",
+  "limitations": [
+    "Expanded cohort contains 17 molecules, 6 positives and 11 negatives across 8 indivisible components; each validation fold contains strictly 2 positives.",
+    "Piscidin 1 facility synthesis resin at UTSW unreported; Todd Hewitt broth non-standard; condition limitations remain explicit.",
+    "BMAP-27B multiresistant CREC isolate context and heatmap resolution bracket (1.563-6.250 ug/mL) noted as limitations.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ]
+}

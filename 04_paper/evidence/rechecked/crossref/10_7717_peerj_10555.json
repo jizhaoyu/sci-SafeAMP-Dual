@@ -1,0 +1,1042 @@
+{
+  "url": "https://api.crossref.org/works/10.7717/peerj.10555",
+  "retrieved_at": "2026-09-28T14:56:22.803898+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2026-09-21T02:50:36Z",
+      "timestamp": 1789959036477,
+      "version": "4.0.1"
+    },
+    "reference-count": 60,
+    "publisher": "PeerJ",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              12,
+              18
+            ]
+          ],
+          "date-time": "2020-12-18T00:00:00Z",
+          "timestamp": 1608249600000
+        },
+        "content-version": "unspecified",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "National Key R&D Program of China",
+        "award": [
+          "2020YFA0712403, 2018YFC0910500"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2020YFA0712403, 2018YFC0910500"
+            ]
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/501100001809",
+        "name": "National Natural Science Foundation of China",
+        "doi-asserted-by": "crossref",
+        "award": [
+          "61932008, 61772368"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "61932008, 61772368"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/501100001809",
+            "id-type": "DOI",
+            "asserted-by": "crossref"
+          }
+        ]
+      },
+      {
+        "name": "Shanghai Science and Technology Innovation Fund",
+        "award": [
+          "19511101404"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "19511101404"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Shanghai Municipal Science and Technology Major Project",
+        "award": [
+          "2018SHZDZX01"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "2018SHZDZX01"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "abstract": "<jats:sec>\n                    <jats:title>Motivation</jats:title>\n                    <jats:p>Antimicrobial peptides (AMPs) have the potential to tackle multidrug-resistant pathogens in both clinical and non-clinical contexts. The recent growth in the availability of genomes and metagenomes provides an opportunity for in silico prediction of novel AMP molecules. However, due to the small size of these peptides, standard gene prospection methods cannot be applied in this domain and alternative approaches are necessary. In particular, standard gene prediction methods have low precision for short peptides, and functional classification by homology results in low recall.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Results</jats:title>\n                    <jats:p>Here, we present Macrel (for metagenomic AMP classification and retrieval), which is an end-to-end pipeline for the prospection of high-quality AMP candidates from (meta)genomes. For this, we introduce a novel set of 22 peptide features. These were used to build classifiers which perform similarly to the state-of-the-art in the prediction of both antimicrobial and hemolytic activity of peptides, but with enhanced precision (using standard benchmarks as well as a stricter testing regime). We demonstrate that Macrel recovers high-quality AMP candidates using realistic simulations and real data.</jats:p>\n                  </jats:sec>\n                  <jats:sec>\n                    <jats:title>Availability</jats:title>\n                    <jats:p>\n                      Macrel is implemented in Python 3. It is available as open source at\n                      <jats:uri xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://github.com/BigDataBiology/macrel\">https://github.com/BigDataBiology/macrel</jats:uri>\n                      and through bioconda. Classification of peptides or prediction of AMPs in contigs can also be performed on the webserver:\n                      <jats:uri xmlns:xlink=\"http://www.w3.org/1999/xlink\" xlink:href=\"https://big-data-biology.org/software/macrel\">https://big-data-biology.org/software/macrel</jats:uri>\n                      .\n                    </jats:p>\n                  </jats:sec>",
+    "DOI": "10.7717/peerj.10555",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          18
+        ]
+      ],
+      "date-time": "2020-12-18T05:25:02Z",
+      "timestamp": 1608269102000
+    },
+    "page": "e10555",
+    "source": "Crossref",
+    "is-referenced-by-count": 142,
+    "title": [
+      "Macrel: antimicrobial peptide screening in genomes and metagenomes"
+    ],
+    "prefix": "10.7717",
+    "volume": "8",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-1974-1736",
+        "authenticated-orcid": true,
+        "given": "Célio Dias",
+        "family": "Santos-Júnior",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University, Shanghai, China"
+          },
+          {
+            "name": "Ministry of Education, Key Laboratory of Computational Neuroscience and Brain-Inspired Intelligence, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Shaojun",
+        "family": "Pan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University, Shanghai, China"
+          },
+          {
+            "name": "Ministry of Education, Key Laboratory of Computational Neuroscience and Brain-Inspired Intelligence, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-4531-3970",
+        "authenticated-orcid": true,
+        "given": "Xing-Ming",
+        "family": "Zhao",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University, Shanghai, China"
+          },
+          {
+            "name": "Ministry of Education, Key Laboratory of Computational Neuroscience and Brain-Inspired Intelligence, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-9280-7885",
+        "authenticated-orcid": true,
+        "given": "Luis Pedro",
+        "family": "Coelho",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Science and Technology for Brain-Inspired Intelligence, Fudan University, Shanghai, China"
+          },
+          {
+            "name": "Ministry of Education, Key Laboratory of Computational Neuroscience and Brain-Inspired Intelligence, Shanghai, China"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "4443",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          18
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "W1",
+        "key": "10.7717/peerj.10555/ref-1",
+        "doi-asserted-by": "publisher",
+        "first-page": "W80",
+        "DOI": "10.1093/nar/gkx408",
+        "article-title": "Rippminer: a bioinformatics resource for deciphering chemical structures of ripps based on prediction of cleavage and cross-links",
+        "volume": "45",
+        "author": "Agrawal",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Research"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-2",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1039/C2NP20085F",
+        "article-title": "Ribosomally synthesized and post-translationally modified peptide natural products: overview and recommendations for a universal nomenclature",
+        "volume": "30",
+        "author": "Arnison",
+        "year": "2013",
+        "journal-title": "Natural Products Reports"
+      },
+      {
+        "issue": "12",
+        "key": "10.7717/peerj.10555/ref-3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1543",
+        "DOI": "10.3390/ph6121543",
+        "article-title": "Antimicrobial peptides",
+        "volume": "6",
+        "author": "Bahar",
+        "year": "2013",
+        "journal-title": "Pharmaceuticals"
+      },
+      {
+        "issue": "3",
+        "key": "10.7717/peerj.10555/ref-4",
+        "doi-asserted-by": "publisher",
+        "first-page": "707",
+        "DOI": "10.1093/gbe/evy031",
+        "article-title": "Microbial dark matter investigations: how microbial studies transform biological knowledge and empirically sketch a logic of scientific discovery",
+        "volume": "10",
+        "author": "Bernard",
+        "year": "2018",
+        "journal-title": "Genome Biology and Evolution"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41598-018-19752-w",
+        "article-title": "AmPEP: sequence-based prediction of antimicrobial peptides using distribution patterns of amino acid properties and random forest",
+        "volume": "8",
+        "author": "Bhadra",
+        "year": "2018",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "issue": "3",
+        "key": "10.7717/peerj.10555/ref-6",
+        "doi-asserted-by": "publisher",
+        "first-page": "197",
+        "DOI": "10.1046/j.1365-2796.2003.01228.x",
+        "article-title": "Antibacterial peptides: basic facts and emerging concepts",
+        "volume": "254",
+        "author": "Boman",
+        "year": "2003",
+        "journal-title": "Journal of Internal Medicine"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-7",
+        "doi-asserted-by": "publisher",
+        "first-page": "469",
+        "DOI": "10.1186/s12859-018-2514-6",
+        "article-title": "Antimicrobial peptide similarity and classification through rough set theory using physicochemical boundaries",
+        "volume": "19",
+        "author": "Boone",
+        "year": "2018",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-8",
+        "doi-asserted-by": "publisher",
+        "first-page": "421",
+        "DOI": "10.1186/1471-2105-10-421",
+        "article-title": "BLAST+: architecture and applications",
+        "volume": "10",
+        "author": "Camacho",
+        "year": "2009",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-9",
+        "doi-asserted-by": "publisher",
+        "first-page": "22843",
+        "DOI": "10.1038/srep22843",
+        "article-title": "A web server and mobile app for computing hemolytic potency of peptides",
+        "volume": "6",
+        "author": "Chaudhary",
+        "year": "2016",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "issue": "3",
+        "key": "10.7717/peerj.10555/ref-10",
+        "doi-asserted-by": "crossref",
+        "first-page": "986",
+        "DOI": "10.3390/ijms21030986",
+        "article-title": "Characterization and identification of natural antimicrobial peptides on different organisms",
+        "volume": "21",
+        "author": "Chung",
+        "year": "2020",
+        "journal-title": "International Journal of Molecular Sciences"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-11",
+        "doi-asserted-by": "publisher",
+        "first-page": "84",
+        "DOI": "10.1186/s40168-019-0684-8",
+        "article-title": "NG-meta-profiler: fast processing of metagenomes using NGLess, a domain-specific language",
+        "volume": "7",
+        "author": "Coelho",
+        "year": "2019",
+        "journal-title": "Microbiome"
+      },
+      {
+        "issue": "2",
+        "key": "10.7717/peerj.10555/ref-12",
+        "doi-asserted-by": "publisher",
+        "first-page": "208",
+        "DOI": "10.1016/S0014-5793(97)00055-0",
+        "article-title": "Hydrophobicity, hydrophobic moment and angle subtended by charged residues modulate antibacterial and haemolytic activity of amphipathic helical peptides",
+        "volume": "403",
+        "author": "Dathe",
+        "year": "1997",
+        "journal-title": "FEBS Letters"
+      },
+      {
+        "issue": "19",
+        "key": "10.7717/peerj.10555/ref-13",
+        "doi-asserted-by": "publisher",
+        "first-page": "8700",
+        "DOI": "10.1073/pnas.92.19.8700",
+        "article-title": "Prediction of protein folding class using global description of amino acid sequence",
+        "volume": "92",
+        "author": "Dubchak",
+        "year": "1995",
+        "journal-title": "Proceedings of the National Academy of Sciences of the United States of America"
+      },
+      {
+        "issue": "4",
+        "key": "10.7717/peerj.10555/ref-14",
+        "doi-asserted-by": "publisher",
+        "first-page": "401",
+        "DOI": "10.1002/(SICI)1097-0134(19990601)35:4<401::AID-PROT3>3.0.CO;2-K",
+        "article-title": "Recognition of a protein fold in the context of the structural classification of proteins (SCOP) classification",
+        "volume": "35",
+        "author": "Dubchak",
+        "year": "1999",
+        "journal-title": "Proteins-Structure Function and Bioinformatics"
+      },
+      {
+        "issue": "3",
+        "key": "10.7717/peerj.10555/ref-15",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1155/2014/867381",
+        "article-title": "Antimicrobial peptides: their role as infection-selective tracers for molecular imaging",
+        "volume": "2014",
+        "author": "Ebenhan",
+        "year": "2014",
+        "journal-title": "BioMed Research International"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-16",
+        "doi-asserted-by": "publisher",
+        "first-page": "24482",
+        "DOI": "10.1038/srep24482",
+        "article-title": "DRAMP: a comprehensive data repository of antimicrobial peptides",
+        "volume": "6",
+        "author": "Fan",
+        "year": "2016",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-17",
+        "doi-asserted-by": "publisher",
+        "first-page": "btaa653",
+        "DOI": "10.1093/bioinformatics/btaa653",
+        "article-title": "Ampir: an r package for fast genome-wide prediction of antimicrobial peptides",
+        "volume": "8",
+        "author": "Fingerhut",
+        "year": "2020",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "7",
+        "key": "10.7717/peerj.10555/ref-18",
+        "doi-asserted-by": "publisher",
+        "first-page": "2006",
+        "DOI": "10.1021/jm8015365",
+        "article-title": "Identification of novel antibacterial peptides by chemoinformatics and machine learning",
+        "volume": "52",
+        "author": "Fjell",
+        "year": "2009",
+        "journal-title": "Journal of Medicinal Chemistry"
+      },
+      {
+        "issue": "23",
+        "key": "10.7717/peerj.10555/ref-19",
+        "doi-asserted-by": "publisher",
+        "first-page": "3150",
+        "DOI": "10.1093/bioinformatics/bts565",
+        "article-title": "Cd-hit: accelerated for clustering the next generation sequencing data",
+        "volume": "28",
+        "author": "Fu",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "12",
+        "key": "10.7717/peerj.10555/ref-20",
+        "doi-asserted-by": "publisher",
+        "first-page": "1455",
+        "DOI": "10.1007/s00018-004-3466-8",
+        "article-title": "Protein n-terminal methionine excision",
+        "volume": "61",
+        "author": "Giglione",
+        "year": "2004",
+        "journal-title": "Cellular and Molecular Life Sciences"
+      },
+      {
+        "issue": "7",
+        "key": "10.7717/peerj.10555/ref-21",
+        "doi-asserted-by": "publisher",
+        "first-page": "475",
+        "DOI": "10.1038/s41592-018-0046-7",
+        "article-title": "Bioconda: sustainable and comprehensive software distribution for the life sciences",
+        "volume": "15",
+        "author": "Grüning",
+        "year": "2018",
+        "journal-title": "Nature Methods"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-22",
+        "doi-asserted-by": "publisher",
+        "first-page": "172",
+        "DOI": "10.1016/j.compbiomed.2019.02.018",
+        "article-title": "AMAP: hierarchical multi-label prediction of biologically active and antimicrobial peptides",
+        "volume": "107",
+        "author": "Gull",
+        "year": "2019",
+        "journal-title": "Computers in Biology and Medicine"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-23",
+        "first-page": "1",
+        "article-title": "Integrated multi-omics of the human gut microbiome in a case study of familial type 1 diabetes",
+        "volume": "2",
+        "author": "Heintz-Buschart",
+        "year": "2016",
+        "journal-title": "Nature Microbiology"
+      },
+      {
+        "issue": "4",
+        "key": "10.7717/peerj.10555/ref-24",
+        "doi-asserted-by": "publisher",
+        "first-page": "593",
+        "DOI": "10.1093/bioinformatics/btr708",
+        "article-title": "ART: a next-generation sequencing read simulator",
+        "volume": "28",
+        "author": "Huang",
+        "year": "2012",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "8",
+        "key": "10.7717/peerj.10555/ref-25",
+        "doi-asserted-by": "publisher",
+        "first-page": "2115",
+        "DOI": "10.1093/molbev/msx148",
+        "article-title": "Fast genome-wide functional annotation through orthology assignment by eggNOG-mapper",
+        "volume": "34",
+        "author": "Huerta-Cepas",
+        "year": "2017",
+        "journal-title": "Molecular Biology and Evolution"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-26",
+        "doi-asserted-by": "publisher",
+        "first-page": "119",
+        "DOI": "10.1186/1471-2105-11-119",
+        "article-title": "Prodigal: prokaryotic gene recognition and translation initiation site identification",
+        "volume": "11",
+        "author": "Hyatt",
+        "year": "2010",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-27",
+        "doi-asserted-by": "publisher",
+        "first-page": "261",
+        "DOI": "10.12688/f1000research.14050.1",
+        "article-title": "Gene unprediction with spurio: a tool to identify spurious protein sequences",
+        "volume": "7",
+        "author": "Höps",
+        "year": "2018",
+        "journal-title": "F1000Research"
+      },
+      {
+        "issue": "D1",
+        "key": "10.7717/peerj.10555/ref-28",
+        "doi-asserted-by": "publisher",
+        "first-page": "D285",
+        "DOI": "10.1093/nar/gky1030",
+        "article-title": "dbAMP: an integrated resource for exploring antimicrobial peptides with functional activities and physicochemical properties on transcriptome and proteome data",
+        "volume": "47",
+        "author": "Jhong",
+        "year": "2019",
+        "journal-title": "Nucleic Acids Research"
+      },
+      {
+        "issue": "Suppl. 1",
+        "key": "10.7717/peerj.10555/ref-29",
+        "doi-asserted-by": "publisher",
+        "first-page": "S19",
+        "DOI": "10.1186/1471-2105-11-S1-S19",
+        "article-title": "AntiBP2: improved version of antibacterial peptide prediction",
+        "volume": "11",
+        "author": "Lata",
+        "year": "2010",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-30",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1016/j.ymeth.2016.02.020",
+        "article-title": "MEGAHIT v1.0: a fast and scalable metagenome assembler driven by advanced methodologies and community practices",
+        "volume": "102",
+        "author": "Li",
+        "year": "2016",
+        "journal-title": "Methods"
+      },
+      {
+        "issue": "S8",
+        "key": "10.7717/peerj.10555/ref-31",
+        "doi-asserted-by": "publisher",
+        "first-page": "291",
+        "DOI": "10.1186/s12859-019-2766-9",
+        "article-title": "An advanced approach to identify antimicrobial peptides and their function types for penaeus through machine learning strategies",
+        "volume": "20",
+        "author": "Lin",
+        "year": "2019",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "issue": "2",
+        "key": "10.7717/peerj.10555/ref-32",
+        "doi-asserted-by": "publisher",
+        "first-page": "199",
+        "DOI": "10.3109/03009734.2014.899278",
+        "article-title": "Antimicrobial peptides",
+        "volume": "119",
+        "author": "Malmsten",
+        "year": "2014",
+        "journal-title": "Upsala Journal of Medical Sciences"
+      },
+      {
+        "issue": "12",
+        "key": "10.7717/peerj.10555/ref-33",
+        "doi-asserted-by": "publisher",
+        "first-page": "1323",
+        "DOI": "10.1139/o75-179",
+        "article-title": "The conservation of amino acids in the n-terminal position of ribosomal and cytosol proteins from escherichia coli, bacillus stearothermophilus, and halobacterium cutirubrum",
+        "volume": "53",
+        "author": "Matheson",
+        "year": "1975",
+        "journal-title": "Canadian Journal of Biochemistry"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-34",
+        "doi-asserted-by": "publisher",
+        "first-page": "42362",
+        "DOI": "10.1038/srep42362",
+        "article-title": "Predicting antimicrobial peptides with improved accuracy by incorporating the compositional, physico-chemical and structural features into chou’s general PseAAC",
+        "volume": "7",
+        "author": "Meher",
+        "year": "2017",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "issue": "2",
+        "key": "10.7717/peerj.10555/ref-35",
+        "doi-asserted-by": "publisher",
+        "first-page": "e8290",
+        "DOI": "10.15252/msb.20188290",
+        "article-title": "Unraveling the hidden universe of small proteins in bacterial genomes",
+        "volume": "15",
+        "author": "Miravet-Verde",
+        "year": "2019",
+        "journal-title": "Molecular Systems Biology"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-36",
+        "doi-asserted-by": "publisher",
+        "first-page": "27",
+        "DOI": "10.3390/data4010027",
+        "article-title": "A uniform in vitro efficacy dataset to guide antimicrobial peptide design",
+        "volume": "4",
+        "author": "Nagarajan",
+        "year": "2019",
+        "journal-title": "Data"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-37",
+        "doi-asserted-by": "crossref",
+        "first-page": "427",
+        "DOI": "10.1007/978-1-4939-6737-7_31",
+        "article-title": "Hemolytic activity of antimicrobial peptides",
+        "volume": "1548",
+        "author": "Oddo",
+        "year": "2017",
+        "journal-title": "Methods in Molecular Biology"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-38",
+        "doi-asserted-by": "publisher",
+        "first-page": "31",
+        "DOI": "10.1016/j.chembiol.2015.11.012",
+        "article-title": "New insights into the biosynthetic logic of ribosomally synthesized and post-translationally modified peptide natural products",
+        "volume": "23",
+        "author": "Ortega",
+        "year": "2016",
+        "journal-title": "Cell Chemical Biology"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-39",
+        "doi-asserted-by": "publisher",
+        "first-page": "4",
+        "DOI": "10.32614/RJ-2015-001",
+        "article-title": "Peptides: a package for data mining of antimicrobial peptides",
+        "volume": "7",
+        "author": "Osorio",
+        "year": "2015",
+        "journal-title": "R Journal"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-40",
+        "doi-asserted-by": "publisher",
+        "first-page": "42",
+        "DOI": "10.3389/fmicb.2020.00231",
+        "article-title": "The link between the ecology of the prokaryotic rare biosphere and its biotechnological potential",
+        "volume": "11",
+        "author": "Pascoal",
+        "year": "2020",
+        "journal-title": "Frontiers in Microbiology"
+      },
+      {
+        "issue": "2",
+        "key": "10.7717/peerj.10555/ref-41",
+        "doi-asserted-by": "publisher",
+        "first-page": "143",
+        "DOI": "10.3109/07388551.2011.594423",
+        "article-title": "Antimicrobial peptides: key components of the innate immune system",
+        "volume": "32",
+        "author": "Pasupuleti",
+        "year": "2012",
+        "journal-title": "Critical Reviews in Biotechnology"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-42",
+        "first-page": "2825",
+        "article-title": "Scikit-learn: machine learning in python",
+        "volume": "12",
+        "author": "Pedregosa",
+        "year": "2011",
+        "journal-title": "Journal of Machine Learning Research"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-43",
+        "volume-title": "R: a language and environment for statistical computing",
+        "author": "R Core Team",
+        "year": "2018"
+      },
+      {
+        "issue": "11",
+        "key": "10.7717/peerj.10555/ref-44",
+        "doi-asserted-by": "publisher",
+        "first-page": "5042",
+        "DOI": "10.1021/la060317y",
+        "article-title": "Effect of peptide length on the interaction between consensus peptides and DOPC/DOPA bilayers",
+        "volume": "22",
+        "author": "Ringstad",
+        "year": "2006",
+        "journal-title": "Langmuir: the ACS journal of surfaces and colloids"
+      },
+      {
+        "key": "10.7717/peerj.10555/ref-45",
+        "first-page": "253",
+        "article-title": "Analysis of structure and hemolytic activity relationships of antimicrobial peptides (AMPs)",
+        "volume-title": "Advances in Computational Biology, Advances in Intelligent Systems and Computing",
+        "author": "Ruiz",
+        "year": "2014"
+      },
+      {
+        "issue": "12",
+        "key": "10.7717/peerj.10555/ref-46",
+        "doi-asserted-by": "publisher",
+        "first-page": "909",
+        "DOI": "10.1038/nchembio.1964",
+        "article-title": "Discovery and characterization of smORF-encoded bioactive polypeptides",
+        "volume": "11",
+        "author": "Saghatelian",
+        "year": "2015",
+        "journal-title": "Nature Chemical Biology"
+      },
+      {
+        "issue": "5",
+        "key": "10.7717/peerj.10555/ref-47",
+        "doi-asserted-by": "publisher",
+        "first-page": "1245",
+        "DOI": "10.1016/j.cell.2019.07.016",
+        "article-title": "Large-scale analyses of human microbiomes reveal thousands of small, novel genes",
+        "volume": "178",
+        "author": "Sberro",
+        "year": "2019",
+        "journal-title": "Cell"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-48",
+        "doi-asserted-by": "publisher",
+        "first-page": "21839",
+        "DOI": "10.1038/srep21839",
+        "article-title": "dPABBs: a novel in silico approach for predicting and designing anti-biofilm peptides",
+        "volume": "6",
+        "author": "Sharma",
+        "year": "2016",
+        "journal-title": "Scientific Reports"
+      },
+      {
+        "issue": "7",
+        "key": "10.7717/peerj.10555/ref-49",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1186/s13040-018-0188-2",
+        "article-title": "Encodings and models for antimicrobial peptide classification for multi-resistant pathogens",
+        "volume": "12",
+        "author": "Spänig",
+        "year": "2019",
+        "journal-title": "BioData Mining"
+      },
+      {
+        "issue": "W1",
+        "key": "10.7717/peerj.10555/ref-50",
+        "doi-asserted-by": "publisher",
+        "first-page": "W199",
+        "DOI": "10.1093/nar/gks450",
+        "article-title": "AVPpred: collection and prediction of highly effective antiviral peptides",
+        "volume": "40",
+        "author": "Thakur",
+        "year": "2012",
+        "journal-title": "Nucleic Acids Research"
+      },
+      {
+        "issue": "5",
+        "key": "10.7717/peerj.10555/ref-51",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1038/s41579-019-0288-0",
+        "article-title": "The global preclinical antibacterial pipeline",
+        "volume": "18",
+        "author": "Theuretzbacher",
+        "year": "2019",
+        "journal-title": "Nature Reviews Microbiology"
+      },
+      {
+        "issue": "16",
+        "key": "10.7717/peerj.10555/ref-52",
+        "doi-asserted-by": "publisher",
+        "first-page": "2740",
+        "DOI": "10.1093/bioinformatics/bty179",
+        "article-title": "Deep learning improves antimicrobial peptide recognition",
+        "volume": "34",
+        "author": "Veltri",
+        "year": "2018",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-53",
+        "doi-asserted-by": "publisher",
+        "first-page": "175",
+        "DOI": "10.1111/j.1432-1033.1979.tb13100.x",
+        "article-title": "Trans-membrane translocation of proteins. The direct transfer model",
+        "volume": "97",
+        "author": "Von Heijne",
+        "year": "1979",
+        "journal-title": "European Journal of Biochemistry"
+      },
+      {
+        "issue": "D1",
+        "key": "10.7717/peerj.10555/ref-54",
+        "doi-asserted-by": "publisher",
+        "first-page": "D1094",
+        "DOI": "10.1093/nar/gkv1051",
+        "article-title": "CAMPR3: a database on sequences, structures and signatures of antimicrobial peptides",
+        "volume": "44",
+        "author": "Waghu",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Research"
+      },
+      {
+        "issue": "5",
+        "key": "10.7717/peerj.10555/ref-55",
+        "doi-asserted-by": "publisher",
+        "first-page": "483",
+        "DOI": "10.1016/S0022-2836(63)80096-0",
+        "article-title": "The nh2-terminal residue of the proteins from cell-free extract of e. coli",
+        "volume": "7",
+        "author": "Waller",
+        "year": "1963",
+        "journal-title": "Journal of Molecular Biology"
+      },
+      {
+        "issue": "14",
+        "key": "10.7717/peerj.10555/ref-56",
+        "doi-asserted-by": "publisher",
+        "first-page": "E1409",
+        "DOI": "10.1073/pnas.1319900111",
+        "article-title": "Small cationic antimicrobial peptides delocalize peripheral membrane proteins",
+        "volume": "111",
+        "author": "Wenzel",
+        "year": "2014",
+        "journal-title": "Proceedings of the National Academy of Sciences of the United States of America"
+      },
+      {
+        "issue": "10",
+        "key": "10.7717/peerj.10555/ref-57",
+        "doi-asserted-by": "publisher",
+        "first-page": "1473",
+        "DOI": "10.1093/bioinformatics/btx021",
+        "article-title": "PALADIN: protein alignment for functional profiling whole metagenome shotgun data",
+        "volume": "33",
+        "author": "Westbrook",
+        "year": "2017",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-58",
+        "doi-asserted-by": "publisher",
+        "first-page": "6.14.1",
+        "DOI": "10.1002/cpps.29",
+        "article-title": "N-terminal methionine processing",
+        "volume": "88",
+        "author": "Wingfield",
+        "year": "2017",
+        "journal-title": "Current Protocols in Protein Science"
+      },
+      {
+        "issue": "2",
+        "key": "10.7717/peerj.10555/ref-59",
+        "doi-asserted-by": "publisher",
+        "first-page": "168",
+        "DOI": "10.1016/j.ab.2013.01.019",
+        "article-title": "iAMP-2L: a two-level multi-label classifier for identifying antimicrobial peptides and their functional types",
+        "volume": "436",
+        "author": "Xiao",
+        "year": "2013",
+        "journal-title": "Analytical Biochemistry"
+      },
+      {
+        "issue": "1",
+        "key": "10.7717/peerj.10555/ref-60",
+        "doi-asserted-by": "publisher",
+        "first-page": "R14",
+        "DOI": "10.1016/j.cub.2015.11.017",
+        "article-title": "Antimicrobial peptides",
+        "volume": "26",
+        "author": "Zhang",
+        "year": "2016",
+        "journal-title": "Current Biology"
+      }
+    ],
+    "container-title": [
+      "PeerJ"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://peerj.com/articles/10555.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/articles/10555.xml",
+        "content-type": "application/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/articles/10555.html",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://peerj.com/articles/10555.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          18
+        ]
+      ],
+      "date-time": "2020-12-18T05:25:49Z",
+      "timestamp": 1608269149000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://peerj.com/articles/10555"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          18
+        ]
+      ]
+    },
+    "references-count": 60,
+    "alternative-id": [
+      "10.7717/peerj.10555"
+    ],
+    "URL": "https://doi.org/10.7717/peerj.10555",
+    "archive": [
+      "CLOCKSS",
+      "LOCKSS",
+      "Portico"
+    ],
+    "relation": {
+      "has-review": [
+        {
+          "id-type": "doi",
+          "id": "10.7287/peerj.10555v0.2/reviews/1",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.7287/peerj.10555v0.2/reviews/2",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.7287/peerj.10555v0.1/reviews/2",
+          "asserted-by": "object"
+        },
+        {
+          "id-type": "doi",
+          "id": "10.7287/peerj.10555v0.1/reviews/1",
+          "asserted-by": "object"
+        }
+      ],
+      "has-preprint": [
+        {
+          "id-type": "doi",
+          "id": "10.1101/2019.12.17.880385",
+          "asserted-by": "object"
+        }
+      ]
+    },
+    "ISSN": [
+      "2167-8359"
+    ],
+    "issn-type": [
+      {
+        "value": "2167-8359",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          12,
+          18
+        ]
+      ]
+    },
+    "article-number": "e10555"
+  }
+}

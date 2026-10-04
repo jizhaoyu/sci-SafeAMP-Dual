@@ -1,0 +1,155 @@
+{
+  "status": "repair_original_materials_archived",
+  "generated_at": "2026-10-03T03:28:30.044274+00:00",
+  "archives": {
+    "02_code/train_mic_three_fold_v3.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/train_mic_three_fold_v3.py",
+      "sha256": "7862736b91db38181e663e15c4fea11999c353121608f0c754703bc6ebc78f60"
+    },
+    "02_code/train_mic_esm2_three_fold.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/train_mic_esm2_three_fold.py",
+      "sha256": "0c45664fca6965dfe23902cda5fc88019122cc3a260532bbe378dbfab7bebe9b"
+    },
+    "02_code/extract_mic_esm2_features.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/extract_mic_esm2_features.py",
+      "sha256": "429759c008905fb6eba5dba75c96bd31336280faba6e434ff0d78df70068909f"
+    },
+    "02_code/curate_dual_task_external_evidence.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/curate_dual_task_external_evidence.py",
+      "sha256": "7ea15ff5c39442949e0a8b40363a08d702ef019865f995974457a5a2fd40c7d3"
+    },
+    "02_code/audit_mic_source_expansion.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/audit_mic_source_expansion.py",
+      "sha256": "eee865b32cbd0db247af1695a3676d42017d9ffaabbe003a73ebdb167c299fda"
+    },
+    "02_code/validate_mic_three_fold_run_v2.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/validate_mic_three_fold_run_v2.py",
+      "sha256": "267176f9310282a78c4d0ce714aed34197afbba5ed7374a6c6cdbd08d88b395f"
+    },
+    "02_code/validate_mic_esm2_three_fold_run.py": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/02_code/validate_mic_esm2_three_fold_run.py",
+      "sha256": "99af505be25a50266e3e9c724a3fba01ed063b090f5655097509aee3a8ef0db8"
+    },
+    "README.md": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/README.md",
+      "sha256": "ac8e42c912f8c5d68cb93ce2a9b8a38c3b97474bd4499e8e7ed88b2e93592b94"
+    },
+    "docs/REMEDIATION_STATUS.md": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/docs/REMEDIATION_STATUS.md",
+      "sha256": "beda51b122f1952a09142246fded69f1df13866f1dfc560c912c0c3ef7d7ca6c"
+    },
+    "docs/DOCUMENTATION_INDEX.md": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/docs/DOCUMENTATION_INDEX.md",
+      "sha256": "7b278920eea92af83ac6d34747834390445cd0d4d7beca96847d12b660886123"
+    },
+    "docs/handoff/TASK_STATE.md": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/docs/handoff/TASK_STATE.md",
+      "sha256": "2acd9d6d42684dade3991aab7986c85b88572a84458663a0e6d7d312a75c8151"
+    },
+    "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md": {
+      "archive_path": "03_experiments/audits/gemini_repair_20261003_v1/original_sources/03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md",
+      "sha256": "4fcffb2342568bd330c3b7a12a3fd6ae4c7d8cb79f87117be3d2bf6dc8c3c707"
+    }
+  },
+  "protected_files": {
+    "03_experiments/protocols/protocol-mic-01.json": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+    "03_experiments/protocols/protocol-mic-02.json": "fe072629107bf69f1c61946e37db330a52d69f015772c871ad76c14049883b28",
+    "03_experiments/protocols/protocol-mic-03.json": "d6c5f30b4e03752ce1c529fb12c6b2b50fd142d870797e39e1b1b51af25ba142",
+    "03_experiments/protocols/protocol-mic-04.json": "f7a0ee80ee371034453486e2e605e31bb89d9f090635f98c86c4199783ddd599",
+    "03_experiments/protocols/protocol-mic-05.json": "c785b217cfae88c802e58209d74eed9b6df68b143d03c4e6e1f9e1e1c3ce9b03",
+    "03_experiments/protocols/protocol-mic-06.json": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+    "03_experiments/protocols/protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "03_experiments/protocols/protocol-mic-08.json": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+    "03_experiments/protocols/protocol-mic-09.json": "2a2ea6b7d4691e91858e4dd760531db06f95fe8749e6dde6c588602e63e6b534",
+    "03_experiments/protocols/protocol-mic-10.json": "9d64563b92bd7042a5acca543e73b4361c61fde6d284d059c11bfab81dbb3407",
+    "03_experiments/protocols/protocol-mic-study-01.json": "333a8601d6730968b4468075d33a46d61b845fd473f7779cfd2249b68a6db589",
+    "03_experiments/protocols/protocol-mic-study-02.json": "11e500f9537b3aee53fd9393bce3a295b53c8951a547d3fb4da4dfa00a0812b6",
+    "03_experiments/protocols/protocol-mic-study-03.json": "bc02184fd17bd50f6e091c49465fd90d6e41dc9d4060574b6b676bfbd483ec83",
+    "03_experiments/audits/protocol_mic_06_freeze_20261002_v1.json": "7bb8c2a1e82eede1bb24b13f25d6dbfa4aecc0eb44ae062ac9675e9713a7f67d",
+    "03_experiments/audits/protocol_mic_07_freeze_20261002_v1.json": "b3defa678b488a416d491a2673791e3739ce5fc70a5fe639e1fa7982dacd5896",
+    "03_experiments/audits/protocol_mic_07_freeze_20261002_v2.json": "8eceeead1ac9e61e380b84082e8799526b3d3f9264e82bec28d6f4ba1a7163af",
+    "03_experiments/audits/protocol_mic_08_freeze_20261002_v1.json": "e4b84b7fdaf260c79a7a3f4dc06c333563c639c6b498a599356bc189a6646a9d",
+    "03_experiments/audits/protocol_mic_09_freeze_20261002_v1.json": "ded4a81f1cdc3d4aafe23b3105e1724ca159d4cba7c238670e0d049f753430b8",
+    "03_experiments/audits/protocol_mic_10_freeze_20261002_v1.json": "d9415fa197dd5def6aa44486b6888ca5a9e0d755745130370a856231f1a14f33",
+    "03_experiments/audits/mic_training_readiness_20261002_v10.json": "89c2b4f71ec87319499c18677aaac85deabf165033024145cf436bf68fc019a2",
+    "03_experiments/audits/mic_training_readiness_20261002_v11.json": "879644326884d249d1b061b171cf855ebc2ee6337c88feb91973ff2b309f1354",
+    "03_experiments/audits/mic_training_readiness_20261002_v12.json": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+    "03_experiments/audits/mic_training_readiness_20261002_v13.json": "785b827eef45ba63a7e120f6ec565516123170e8221ce191227ae61a98e7a58e",
+    "03_experiments/audits/mic_training_readiness_20261002_v14.json": "8165d0b2d7a2b7f9fd89e7b3ee0caa19eef2347d255d7253bcbdedaf24514100",
+    "03_experiments/audits/mic_training_readiness_20261002_v15.json": "1d4fb6d0501a5757df1ab45e5c3f1ab5abe4f1f4669a866ad45495c40d89c7a2",
+    "03_experiments/audits/mic_training_readiness_20261002_v4.json": "b2a157281473f261db06014f6adf42dc722d71daa41075f293fd18b01f28d190",
+    "03_experiments/audits/mic_training_readiness_20261002_v5.json": "238355706a2f15c21f08948a8b7ff4f3d43410c02a112f885135c739a945b316",
+    "03_experiments/audits/mic_training_readiness_20261002_v6.json": "08c5a14344d1d71eb77dd97037ba2c46468b260e3a72d0b657b29cfc4a58e9a2",
+    "03_experiments/audits/mic_training_readiness_20261002_v7.json": "f9a6bde20c58bb297a34e4a14e2074d79bcff608df8dbab256f5e1d199c3af3e",
+    "03_experiments/audits/mic_training_readiness_20261002_v8.json": "31708eff26c1c000647072af23cf123b64d40c7c12dd3a02ad032fc90299d722",
+    "03_experiments/audits/mic_training_readiness_20261002_v9.json": "656704e15e854ef345a73b4815cb298de496f5af390f7b79482a153ab377e56a",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "02_code/train_mic_three_fold_v2.py": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+    "02_code/validate_mic_three_fold_run.py": "251758d72134ee9433f4f482b85c017f34203396333dfddb42c9b78868655915",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fixed_features.npy": "6766016ca4dac03aec7da45ad943be97dbe0195fe3264c846e5bd17ba06eaf3c",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_metrics.csv": "7268c897a9a22bf25eb69e18113a566982e649d7de9b16f5971c6271224a8b46",
+    "03_experiments/runs/mic_three_fold_20261002_v1/manifest.json": "c9e35b637a8a7b7e79058b72ecaf6504bab4784dd7848721c06cd01d9c758de1",
+    "03_experiments/runs/mic_three_fold_20261002_v1/oof_predictions.csv": "c99da2df5836b79cf89b174607884d545c54bab0991609cb59a27deb77a7b85b",
+    "03_experiments/runs/mic_three_fold_20261002_v1/pooled_descriptive_metrics.csv": "b0f11fd0e873209e466cfa84827d2c36290c7c036fca6673872161a8127344a7",
+    "03_experiments/runs/mic_three_fold_20261002_v1/report.md": "0fd6f232b3f609931898f9d19661da415fd8e940746ea0f2f1be1a961bf78764",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/dummy_prior_fold0.joblib": "2b5c6c44142bcfbdd63e111a2e9054bd80818f5c8c2374b5b5e94bbffd2c1b02",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/dummy_prior_fold1.joblib": "c64f975baa66b1fe97235425dd9de6bab2ec36fdbe23c1dc09f8720c6923458a",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/dummy_prior_fold2.joblib": "af8ca968fdf62b13b61689a80c65a1cc22b7f0e10080948291d2e132ab11939b",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/logistic_regression_fold0.joblib": "95e69c2f86052cb18c3cac65830f2ce69ffc03449ff3988ae3a99cafdee7c870",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/logistic_regression_fold1.joblib": "8a51e0b8bb916a8ce1778133c5ebfe21c48a45ede09e869c67ecdf93f10b67e9",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/logistic_regression_fold2.joblib": "372e16420363c3fcbd5093a72a7663e6d3339ed10579c5b99891c3eae9bf2b7d",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/random_forest_fold0.joblib": "cc0b84b0ae7bfa15d1cc1e4a8b39303dcd2b3d86aa6f1ab9a2a3a1ebafd69249",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/random_forest_fold1.joblib": "cda2c5943169740b26bf84e82dbb8980c85f66a9710080ecf5ae3ebb11bf9b93",
+    "03_experiments/runs/mic_three_fold_20261002_v1/fold_models/random_forest_fold2.joblib": "d37f09975208b86b9e49b3df57c7e28401c634b9a00e53a3c5300835cf07233f",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fixed_features.npy": "472731265b97c43013b631f2349f9658a6521ad2513b36aa4e85357c32d45e06",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_metrics.csv": "a24eb1f1a7fa55d65af959e158baa3371aea5f6ea5cf6a2bbd2f8a860be3a26a",
+    "03_experiments/runs/mic_three_fold_20261002_v2/manifest.json": "6e12b96d9beca6656524d7861b2342c7978b3ac24e2ab1702a0b6a4e8c1a8c2b",
+    "03_experiments/runs/mic_three_fold_20261002_v2/oof_predictions.csv": "fdf8cf10527b6e754a0e93d8adb598dfacb8ec96bc9027fa7378cb1eb12bd92c",
+    "03_experiments/runs/mic_three_fold_20261002_v2/pooled_descriptive_metrics.csv": "02626c2795ccdd91ba6ff6645234002f2b656fb05adf36a5d0fc4eebcdd30bec",
+    "03_experiments/runs/mic_three_fold_20261002_v2/report.md": "bed37e491179f752b926435a6790d5d1304031197b13c74bb5f9dfd357bf3c23",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/dummy_prior_fold0.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/dummy_prior_fold1.joblib": "8757f39362508945dcec476ef3f5451566d4d58fc650c1d812cfd48c4a5122cb",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/dummy_prior_fold2.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/logistic_regression_fold0.joblib": "962e349eda416fa3b15a760cb7bb5dfe2ba660b9e25b3b1c3e0b2e279dcfd435",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/logistic_regression_fold1.joblib": "6fbdbae639b53edb0e3bdb051b6aebe89572908b2a1241b76d08d6d9312cddad",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/logistic_regression_fold2.joblib": "565ea6342798f5b70378cc34101f8576f3388e90e3de6ee991c0f51c18b5b049",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/random_forest_fold0.joblib": "0a21534f2ca9988c03be7bfd033485ed2f3d623970ac756fdf4865c46be899c5",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/random_forest_fold1.joblib": "d8c7750007ea98132c5315f69091a04fb7bdc7ad80da8cffd13fc1b69a912d2a",
+    "03_experiments/runs/mic_three_fold_20261002_v2/fold_models/random_forest_fold2.joblib": "9cd13b409bd225038baca47ae05d12bcb280529115badb23f139a10c0d17e262",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_metrics.csv": "ecb784be384e4f9952b54604c5eae5328df499d22fb0d1a235f6a159cbc05cd4",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/manifest.json": "7144a6e21c0322c9c75e6337487ec5ca3f040e9aa2e09fe8ff0eaecc1f8065d5",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/oof_predictions.csv": "1971d2115c0f9c300dbf2b02c003923cfc1c4e5e5220e0f26aa9b9562f096042",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/pooled_descriptive_metrics.csv": "dd5ab39091a548d04d0ce829a5d80b637588eb0f8ee2ff35a634ddd5d2707b78",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/report.md": "3a22f2a3edcc30d661b3f6f72d30ec6d848b8f2262d9cf35f0acc35b18522898",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/features/esm2_only_320.npy": "74f3fab226325dc2a184ca53e32aac15496d3e5cbd2a17c388e334b1329ae647",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/features/handcrafted_44.npy": "472731265b97c43013b631f2349f9658a6521ad2513b36aa4e85357c32d45e06",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/features/hybrid_364.npy": "386336ce20d2ffb6320ab85ea803fb7dc79595acd8dac06d9f8dacbdd80bdec6",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__dummy_prior_fold0.joblib": "e5c34187bf6b60a9e3261072df8108f77654f5694074754e10d8d6dd49bfba20",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__dummy_prior_fold1.joblib": "bc9d6677c2738ed1265f4af26c534de84e1fe922e8f6d3d1dd63527fd176446e",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__dummy_prior_fold2.joblib": "e5c34187bf6b60a9e3261072df8108f77654f5694074754e10d8d6dd49bfba20",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__logistic_regression_fold0.joblib": "ae97bfb9dee253445f6254e7634b1580d6e055bd2b48f2a2ba02f8460e1d62e5",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__logistic_regression_fold1.joblib": "b074c9ba1a84a599f3cdb90c4d9c3e17c4ca7a903b49805d71742466acbff3f7",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__logistic_regression_fold2.joblib": "2fae195b540bc5c29ee3447dfbafc96660fe27fa1c0500bfdd652c86235c9e5b",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__random_forest_fold0.joblib": "f6cda2375f8a0ba8fc715416d5e5cae6df4f8aac6d6e46da26d6bcc61726ac79",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__random_forest_fold1.joblib": "a880df326366d9612fdb890313be918c8b03fa367b270408cd4ddf868b6d05f4",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/esm2_only__random_forest_fold2.joblib": "2afd6d319e19b648bbe8bf7081580bcadd3f586e706b823689666b732e008801",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__dummy_prior_fold0.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__dummy_prior_fold1.joblib": "8757f39362508945dcec476ef3f5451566d4d58fc650c1d812cfd48c4a5122cb",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__dummy_prior_fold2.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__logistic_regression_fold0.joblib": "26dd79e4e2e8ae1b7ff6b2b11fdd11849aac4e973900fecf3b6995b7d75b22ee",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__logistic_regression_fold1.joblib": "66d8bf2a6d4fcfb7cf03c85fce267bfdcedf65950f5e201a315472718154a1cf",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__logistic_regression_fold2.joblib": "91d21ea34c552c74fec23e96cb2054a3457f1f99f819681bf0731fcea8ea72d5",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__random_forest_fold0.joblib": "0a21534f2ca9988c03be7bfd033485ed2f3d623970ac756fdf4865c46be899c5",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__random_forest_fold1.joblib": "d8c7750007ea98132c5315f69091a04fb7bdc7ad80da8cffd13fc1b69a912d2a",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/handcrafted__random_forest_fold2.joblib": "9cd13b409bd225038baca47ae05d12bcb280529115badb23f139a10c0d17e262",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__dummy_prior_fold0.joblib": "ab3026c524405e1adfc6dd45f85e0ed8df9dd98adc069de7a0882ef22ae68798",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__dummy_prior_fold1.joblib": "2e3a22624b20d02358993624ed598e0efb3bb099bcc3b8f020580d24cb45bc6d",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__dummy_prior_fold2.joblib": "ab3026c524405e1adfc6dd45f85e0ed8df9dd98adc069de7a0882ef22ae68798",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__logistic_regression_fold0.joblib": "32a24cdd9eafdb7f51b017af962502a7e32c39b0a99f83c52db7074192d74c4c",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__logistic_regression_fold1.joblib": "ccf2dea2b387e05fd18c2b265397d74136c05c7add39da3c8d32aa03e1bac823",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__logistic_regression_fold2.joblib": "81d97c9830c9d95ac5ce75e7854e0c5962122c52b0f7c612ca9c17ff66496bf5",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__random_forest_fold0.joblib": "558dd7bb6592dbeb0734b71184a47bbb76bf76dc9f1b5e648aa10fa312318265",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__random_forest_fold1.joblib": "b6c78cad990eff7c31314178757091662ead0d147e3a27b8302d964e7e61de0a",
+    "03_experiments/runs/mic_three_fold_esm2_20261002_v1/fold_models/hybrid__random_forest_fold2.joblib": "f1de04d5db394694431348c2c6d22b51029219d877c3bbf40e2099ebe7883d64"
+  }
+}

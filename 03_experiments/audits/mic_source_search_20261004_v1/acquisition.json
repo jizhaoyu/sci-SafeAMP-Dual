@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-10-04T03:58:43.422003+00:00",
+  "status": "discovery_only_not_evidence_release",
+  "sources": [
+    {
+      "source_id": "pandi2023",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10632401/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:37.129631+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10632401/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\pandi2023.xml",
+      "bytes": 154663,
+      "sha256": "40b2eec20433a617e2af71a4c6889f7439ceb10879a780d9022afdb2eab22149"
+    },
+    {
+      "source_id": "foundation2025",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13109931/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:37.131629+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13109931/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\foundation2025.xml",
+      "bytes": 265522,
+      "sha256": "4ce1c57705d59c242ddba829c55f8035c937c64431ae4eb87d9904aa9c6feb8c"
+    },
+    {
+      "source_id": "hybrid2018",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6099547/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:37.135803+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6099547/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\hybrid2018.xml",
+      "bytes": 89045,
+      "sha256": "cf3a936e70c0c643c661f2e27da60c197995ecded88de4c67d0a37492067ade9"
+    },
+    {
+      "source_id": "spectrum2020",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7436000/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:37.135803+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7436000/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\spectrum2020.xml",
+      "bytes": 225004,
+      "sha256": "0c7689e2561997067142a5ab1d586aecf8b3856b7efbdc38ed702b7ef04831f9"
+    },
+    {
+      "source_id": "capitellacin2022",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8953592/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:40.351117+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8953592/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\capitellacin2022.xml",
+      "bytes": 127495,
+      "sha256": "9f48d256618c3f41ac4fd616c9a02b7a1933b12b29611df2134ac901162b96ee"
+    },
+    {
+      "source_id": "qmap2026",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13473575/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:40.596824+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13473575/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\qmap2026.xml",
+      "bytes": 106355,
+      "sha256": "7b8117ef9aeee9bfbbbd3a781f153f85085b468db2d55ae14ae5c6bb49c9c8f1"
+    },
+    {
+      "source_id": "hydramp2023",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10017685/fullTextXML",
+      "retrieved_at": "2026-10-04T03:58:40.708827+00:00",
+      "status_code": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10017685/fullTextXML",
+      "content_type": "application/xml",
+      "status": "retrieved_unreviewed",
+      "path": "raw\\hydramp2023.xml",
+      "bytes": 425006,
+      "sha256": "a9f0e232ae428abe2fba01eefa294babbf11d20b3106bf2ba62d39dabe1cea62"
+    }
+  ],
+  "script_sha256": "c5b5e4f4540546b699a42a5d357a7791ce84c9738d47828ab3a123bf9fe582cd"
+}

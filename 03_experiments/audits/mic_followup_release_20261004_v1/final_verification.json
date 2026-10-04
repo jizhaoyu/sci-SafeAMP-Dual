@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T03:25:49.320285+00:00",
+  "current_state": "03_experiments/audits/mic_training_readiness_20261004_v22.json",
+  "current_state_sha256": "67fcb7ce81a3957ba468084b6b7e24732fe4e761476e0dbfd6b22655fb42aab1",
+  "documents_consistent": true,
+  "document_sha256": {
+    "README.md": "5c0d6b85c656e6312c835e36c9d1c93add30aad3dc7d9742973bbc95a353e4f5",
+    "docs/REMEDIATION_STATUS.md": "0b533e0bc13841a09b5abede775367c43b91a48a94d3fd6d9a7abb08de2c0dec",
+    "docs/DOCUMENTATION_INDEX.md": "07bd8c86a37c7fb4dcb3e53728856b1b199c68c075a2629e34fca075a1b08571",
+    "docs/handoff/TASK_STATE.md": "d92a2b3a8a53f9d736faa5c508e19335439ea9fc80536229def4725fc9cc24d2",
+    "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md": "c506bbbd28b340ec5254572c05c6f058597c4da32070b71f4d128f0d5d6ddda8"
+  },
+  "protected_historical_files_unchanged": 99,
+  "evidence_molecules": 16,
+  "evidence_observations": 23,
+  "new_candidates_released": 1,
+  "all_member_pairs": 120,
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "models_reloaded": 9,
+  "oof_predictions_recomputed": 48,
+  "fit_calls_during_verification": 0,
+  "scaler_training_range_verified": true,
+  "regression": "55 passed, 1 deselected",
+  "historical_test_deselection_reason": "One historical protected regression asserts protocol-mic-11 does not exist before gate passes. Gate has now passed; replacement test verifies admitted pre-training state binding. Original file unchanged.",
+  "formal_dual_task_status": "blocked",
+  "publication_ready": false,
+  "inputs": {
+    "03_experiments/audits/mic_followup_regression_20261004_v5/verification.json": "dc0baaa8abeab7ca9927be5ff5a4e55845bcd9280430176c727eaf2e4e639535",
+    "03_experiments/audits/mic_followup_run_validation_20261004_v2.json": "1000378377c908398fd1b75a496c646454cc7d6228e53c9f002ddbeabebd317b",
+    "03_experiments/audits/mic_followup_release_20261004_v1/completion_addendum.md": "bd04fb9eda0647b6b2f4c8c5e34617534aac8da82d8feb6a3eeecf1b7a7ea959",
+    "03_experiments/audits/mic_followup_release_20261004_v1/final_report.md": "60fcbb70c562259b39cd17f9b87775c01f08f15c69b2fe05e5b1077da414c173",
+    "02_code/tests/test_mic_followup_validation.py": "1797c3593fb5624fa3f4d12b2793959729de64cc52df760890927de5152c4bea"
+  }
+}

@@ -1,0 +1,716 @@
+{
+  "url": "https://api.crossref.org/works/10.1016/j.bmc.2017.06.052",
+  "retrieved_at": "2026-09-28T15:04:34.906038+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          27
+        ]
+      ],
+      "date-time": "2026-09-27T20:16:00Z",
+      "timestamp": 1790540160501,
+      "version": "4.1.0"
+    },
+    "reference-count": 48,
+    "publisher": "Elsevier BV",
+    "issue": "10",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2018-06-01T00:00:00Z",
+          "timestamp": 1527811200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2018-06-01T00:00:00Z",
+          "timestamp": 1527811200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.elsevier.com/legal/tdmrep-license"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2017,
+              7,
+              10
+            ]
+          ],
+          "date-time": "2017-07-10T00:00:00Z",
+          "timestamp": 1499644800000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "elsevier.com",
+        "sciencedirect.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Bioorganic &amp; Medicinal Chemistry"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2018,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1016/j.bmc.2017.06.052",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2017,
+          7,
+          1
+        ]
+      ],
+      "date-time": "2017-07-01T20:03:22Z",
+      "timestamp": 1498939402000
+    },
+    "page": "2700-2707",
+    "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1774,
+    "title": [
+      "Therapeutic peptides: Historical perspectives, current development trends, and future directions"
+    ],
+    "prefix": "10.1016",
+    "volume": "26",
+    "author": [
+      {
+        "given": "Jolene L.",
+        "family": "Lau",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael K.",
+        "family": "Dunn",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "78",
+    "reference": [
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0005",
+        "first-page": "141",
+        "article-title": "Pancreatic extracts in the treatment of diabetes mellitus",
+        "volume": "12",
+        "author": "Banting",
+        "year": "1922",
+        "journal-title": "Can Med Assoc J"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "1273",
+        "DOI": "10.1001/jama.1949.02910180001001",
+        "article-title": "Effects of pituitary adrenocorticotropic hormone (ACTH) therapy",
+        "volume": "141",
+        "author": "Elkinton",
+        "year": "1949",
+        "journal-title": "J Am Med Assoc"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0015",
+        "doi-asserted-by": "crossref",
+        "first-page": "134",
+        "DOI": "10.1208/s12248-014-9687-3",
+        "article-title": "Strategic approaches to optimizing peptide ADME properties",
+        "volume": "17",
+        "author": "Di",
+        "year": "2014",
+        "journal-title": "AAPS J"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0020",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/j.tips.2013.11.001",
+        "article-title": "Insights into the structure of class B GPCRs",
+        "volume": "35",
+        "author": "Hollenstein",
+        "year": "2014",
+        "journal-title": "Trends Pharmacol Sci"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0025",
+        "doi-asserted-by": "crossref",
+        "first-page": "977",
+        "DOI": "10.1111/bph.13656",
+        "article-title": "Synthetic non-peptide low molecular weight agonists of the relaxin receptor 1",
+        "volume": "174",
+        "author": "Agoulnik",
+        "year": "2017",
+        "journal-title": "Br J Pharmacol"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0030",
+        "doi-asserted-by": "crossref",
+        "first-page": "30155",
+        "DOI": "10.1038/srep30155",
+        "article-title": "Discovery and characterization of novel small-molecule CXCR4 receptor agonists and antagonists",
+        "volume": "6",
+        "author": "Mishra",
+        "year": "2016",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0035",
+        "unstructured": "Drugs@FDA. Accessed April 23, 2017."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0040",
+        "doi-asserted-by": "crossref",
+        "first-page": "39",
+        "DOI": "10.1172/JCI108266",
+        "article-title": "Blockade and stimulation of renal, adrenal, and vascular angiotensin II receptors with 1-Sar, 8-Ala angiotensin II in normal man",
+        "volume": "57",
+        "author": "Hollenberg",
+        "year": "1976",
+        "journal-title": "J Clin Invest"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0045",
+        "doi-asserted-by": "crossref",
+        "first-page": "1178",
+        "DOI": "10.1038/nbt1214-1178",
+        "article-title": "Once-yearly device takes on daily and weekly diabetes drugs",
+        "volume": "32",
+        "author": "Mullard",
+        "year": "2014",
+        "journal-title": "Nat Biotechnol"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0050",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.4158/EP161435.GL",
+        "article-title": "American Association of Clinical Endocrinologists and American College of Endocrinology Clinical Practice Guidelines for the Diagnosis and Treatment of Postmenopausal Osteoporosis – 2016",
+        "volume": "22",
+        "author": "Camacho",
+        "year": "2016",
+        "journal-title": "Endocr Pract"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0055",
+        "doi-asserted-by": "crossref",
+        "first-page": "1100",
+        "DOI": "10.1016/S1470-2045(14)70379-1",
+        "article-title": "Cilengitide combined with standard treatment for patients with newly diagnosed glioblastoma with methylated MGMT promoter (CENTRIC EORTC 26071–22072 study): a multicentre, randomised, open-label, phase 3 trial",
+        "volume": "15",
+        "author": "Stupp",
+        "year": "2014",
+        "journal-title": "Lancet Oncol"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0060",
+        "doi-asserted-by": "crossref",
+        "first-page": "E3445",
+        "DOI": "10.1073/pnas.1303002110",
+        "article-title": "Stapled α-helical peptide drug development: a potent dual inhibitor of MDM2 and MDMX for p53-dependent cancer therapy",
+        "volume": "110",
+        "author": "Chang",
+        "year": "2013",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0065",
+        "doi-asserted-by": "crossref",
+        "first-page": "1275",
+        "DOI": "10.2147/OPTH.S44688",
+        "article-title": "Safety and efficacy of MIM-D3 ophthalmic solutions in a randomized, placebo-controlled Phase 2 clinical trial in patients with dry eye",
+        "volume": "7",
+        "author": "Meerovitch",
+        "year": "2013",
+        "journal-title": "Clin Ophthalmol"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0070",
+        "doi-asserted-by": "crossref",
+        "first-page": "1250",
+        "DOI": "10.1681/ASN.2012121216",
+        "article-title": "The mitochondrial-targeted compound SS-31 re-energizes ischemic mitochondria by interacting with cardiolipin",
+        "volume": "24",
+        "author": "Birk",
+        "year": "2013",
+        "journal-title": "J Am Soc Nephrol"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0075",
+        "unstructured": "Reichert J, Pechon P, Tartar A, Dunn MK. Development trends for peptide therapeutics: A comprehensive quantitative analysis of peptide therapeutics in clinical development. 2010."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0080",
+        "first-page": "779",
+        "article-title": "Current trends in the clinical development of peptide therapeutics",
+        "volume": "12",
+        "author": "Saladin",
+        "year": "2009",
+        "journal-title": "IDrugs."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0085",
+        "doi-asserted-by": "crossref",
+        "first-page": "587",
+        "DOI": "10.1038/nrd1133",
+        "article-title": "Large-scale manufacture of peptide therapeutics by chemical synthesis",
+        "volume": "2",
+        "author": "Bray",
+        "year": "2003",
+        "journal-title": "Nat Rev Drug Discov"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0090",
+        "series-title": "Chemical & Engineering News",
+        "first-page": "21",
+        "article-title": "Making Peptides at Large Scale",
+        "volume": "Vol. 89",
+        "author": "Thayer",
+        "year": "2011"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0095",
+        "doi-asserted-by": "crossref",
+        "first-page": "4",
+        "DOI": "10.1002/psc.2836",
+        "article-title": "Offer JCPSC. Advances in Fmoc solid-phase peptide synthesis",
+        "volume": "22",
+        "author": "Behrendt",
+        "year": "2015",
+        "journal-title": "J Pept Sci"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0100",
+        "doi-asserted-by": "crossref",
+        "first-page": "15",
+        "DOI": "10.1385/JMN:18:1-2:15",
+        "article-title": "Drug design at peptide receptors: somatostatin receptor ligands",
+        "volume": "18",
+        "author": "Hannon",
+        "year": "2002",
+        "journal-title": "J Mol Neurosci"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0105",
+        "doi-asserted-by": "crossref",
+        "first-page": "1544",
+        "DOI": "10.1016/0016-5085(91)90651-Z",
+        "article-title": "Intestinal absorption of the octapeptide SMS 201-995 visualized by fluorescence derivatization",
+        "volume": "100",
+        "author": "Fricker",
+        "year": "1991",
+        "journal-title": "Gastroenterology"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0110",
+        "doi-asserted-by": "crossref",
+        "first-page": "1672",
+        "DOI": "10.1056/NEJMoa054626",
+        "article-title": "AMG 531, a thrombopoiesis-stimulating protein, for chronic ITP",
+        "volume": "355",
+        "author": "Bussel",
+        "year": "2006",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0115",
+        "doi-asserted-by": "crossref",
+        "first-page": "480",
+        "DOI": "10.1158/1535-7163.MCT-14-0850",
+        "article-title": "Identification of LY2510924, a novel cyclic peptide CXCR4 antagonist that exhibits antitumor activities in solid tumor and breast cancer metastatic models",
+        "volume": "14",
+        "author": "Peng",
+        "year": "2015",
+        "journal-title": "Mol Cancer Ther"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0120",
+        "doi-asserted-by": "crossref",
+        "first-page": "317",
+        "DOI": "10.1111/dom.12596",
+        "article-title": "Review of head-to-head comparisons of glucagon-like peptide-1 receptor agonists",
+        "volume": "18",
+        "author": "Madsbad",
+        "year": "2016",
+        "journal-title": "Diabetes Obes Metab"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0125",
+        "doi-asserted-by": "crossref",
+        "first-page": "758",
+        "DOI": "10.1016/j.cell.2017.01.025",
+        "article-title": "Gut-brain cross-talk in metabolic control",
+        "volume": "168",
+        "author": "Clemmensen",
+        "year": "2017",
+        "journal-title": "Cell"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0130",
+        "unstructured": "Saveaunu A, Datta R, Zhang S, et al. Novel Somatostatin-Dopamine Chimeric Compound Demonstrates Superior Efficacy in Suppressing Growth Hormone Secretion from Human Acromegalic Tumors Partially Responsive to Current Somatostatin and Dopamine Therapies. Paper presented at: ENDO 2016; Boston, MA."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0135",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1126/scitranslmed.3007218",
+        "article-title": "Unimolecular dual incretins maximize metabolic benefits in rodents, monkeys, and humans",
+        "volume": "5",
+        "author": "Finan",
+        "year": "2013",
+        "journal-title": "Sci Transl Med"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0140",
+        "unstructured": "Konkar A, Suckow A, Hummer T, et al. MEDI4166: a PCSK9 Ab-GLP-1 fusion molecule that elicits robust antidiabetic and antihyperlipidaemic effects in rodents and non-human primates. Paper presented at: European Association for the Study of Diabetes 2016; Munich, Germany."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0145",
+        "unstructured": "Thomas DW, Burns J, Audette J, Carroll A, Dow-Hygelund C, Hay M. Clinical development success rates 2006–2015. 2016. <https://www.bio.org/sites/default/files/Clinical%20Development%20Success%20Rates%202006-2015%20-%20BIO,%20Biomedtracker,%20Amplion%202016.pdf>."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0150",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1038/clpt.2013.117",
+        "article-title": "Clinical approval success rates for investigational cancer drugs",
+        "volume": "94",
+        "author": "DiMasi",
+        "year": "2013",
+        "journal-title": "Clin Pharmacol Ther"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0155",
+        "unstructured": "CMR International. 2015 CMR International Pharmaceutical R&D Factbook. 2015."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0160",
+        "doi-asserted-by": "crossref",
+        "first-page": "3322",
+        "DOI": "10.1210/jc.2015-2332",
+        "article-title": "Efficacy of kisspeptin-54 to trigger oocyte maturation in women at high risk of ovarian hyperstimulation syndrome (OHSS) during in vitro fertilization (IVF) therapy",
+        "volume": "100",
+        "author": "Abbara",
+        "year": "2015",
+        "journal-title": "J Clin Endocrinol Metab"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0165",
+        "doi-asserted-by": "crossref",
+        "first-page": "240",
+        "DOI": "10.1056/NEJMoa1512693",
+        "article-title": "Proopiomelanocortin deficiency treated with a melanocortin-4 receptor agonist",
+        "volume": "375",
+        "author": "Kühnen",
+        "year": "2016",
+        "journal-title": "N Engl J Med"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0170",
+        "doi-asserted-by": "crossref",
+        "first-page": "4871",
+        "DOI": "10.1016/j.bmcl.2014.08.045",
+        "article-title": "The design and implementation of a generic lipopeptide scanning platform to enable the identification of 'locally acting' agonists for the apelin receptor",
+        "volume": "24",
+        "author": "McKeown",
+        "year": "2014",
+        "journal-title": "Bioorg Med Chem Lett"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0175",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1016/j.peptides.2012.09.003",
+        "article-title": "Cardiovascular effects of a PEGylated apelin",
+        "volume": "38",
+        "author": "Jia",
+        "year": "2012",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0180",
+        "doi-asserted-by": "crossref",
+        "first-page": "5695",
+        "DOI": "10.1021/acs.jmedchem.6b00126",
+        "article-title": "Adrenomedullin 2.0: adjusting key levers for metabolic stability",
+        "volume": "59",
+        "author": "Schönauer",
+        "year": "2016",
+        "journal-title": "J Med Chem"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0185",
+        "unstructured": "Ohtaki T, Masuda Y, Kuman S, Inooka H, Inventors; Takeda Pharmaceutical Company Limited, assignee. Neuromedin U derivative. US patent 9,175,037; 2015."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0190",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1016/j.peptides.2017.04.001",
+        "article-title": "PEGylated neuromedin U-8 shows long-lasting anorectic activity and anti-obesity effect in mice by peripheral administration",
+        "author": "Masuda",
+        "year": "2017",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0195",
+        "unstructured": "A Study of CLR325 in Chronic Stable Heart Failure Patients (NCT02696967). Clinicaltrials.gov. National Institutes of Health. Accessed June 12, 2017."
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0200",
+        "doi-asserted-by": "crossref",
+        "first-page": "455",
+        "DOI": "10.1038/nature14098",
+        "article-title": "A new antibiotic kills pathogens without detectable resistance",
+        "volume": "517",
+        "author": "Ling",
+        "year": "2015",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0205",
+        "doi-asserted-by": "crossref",
+        "first-page": "598",
+        "DOI": "10.1021/acs.jnatprod.6b00772",
+        "article-title": "Opportunistic sampling of roadkill as an entry point to accessing natural products assembled by bacteria associated with non-anthropoidal mammalian microbiomes",
+        "volume": "80",
+        "author": "Motley",
+        "year": "2017",
+        "journal-title": "J Nat Prod"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0210",
+        "doi-asserted-by": "crossref",
+        "first-page": "E3782",
+        "DOI": "10.1073/pnas.1501334112",
+        "article-title": "Optimized deep-targeted proteotranscriptomic profiling reveals unexplored Conus toxin diversity and novel cysteine frameworks",
+        "volume": "112",
+        "author": "Lavergne",
+        "year": "2015",
+        "journal-title": "Proc Natl Acad Sci USA"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0215",
+        "doi-asserted-by": "crossref",
+        "first-page": "566",
+        "DOI": "10.1016/j.cell.2016.02.063",
+        "article-title": "Asprosin, a fasting-induced glucogenic protein hormone",
+        "volume": "165",
+        "author": "Romere",
+        "year": "2016",
+        "journal-title": "Cell"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0220",
+        "doi-asserted-by": "crossref",
+        "first-page": "831",
+        "DOI": "10.1016/S1097-2765(00)80323-8",
+        "article-title": "A novel ligand of the formyl peptide receptor: annexin I regulates neutrophil extravasation by interacting with the FPR",
+        "volume": "5",
+        "author": "Walther",
+        "year": "2000",
+        "journal-title": "Mol Cell"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0225",
+        "doi-asserted-by": "crossref",
+        "first-page": "193",
+        "DOI": "10.1016/j.addr.2016.10.005",
+        "article-title": "Oral delivery of peptides: opportunities and issues for translation",
+        "volume": "106",
+        "author": "Brayden",
+        "year": "2016",
+        "journal-title": "Adv Drug Deliv Rev"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0230",
+        "doi-asserted-by": "crossref",
+        "first-page": "1699",
+        "DOI": "10.1210/jc.2014-4113",
+        "article-title": "Safety and efficacy of oral octreotide in acromegaly: results of a multicenter phase III trial",
+        "volume": "100",
+        "author": "Melmed",
+        "year": "2015",
+        "journal-title": "J Clin Endocrinol Metab"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0235",
+        "doi-asserted-by": "crossref",
+        "first-page": "1081",
+        "DOI": "10.1021/mp400680d",
+        "article-title": "Strategies to deliver peptide drugs to the brain",
+        "volume": "11",
+        "author": "Lalatsa",
+        "year": "2014",
+        "journal-title": "Mol Pharm"
+      },
+      {
+        "key": "10.1016/j.bmc.2017.06.052_b0240",
+        "doi-asserted-by": "crossref",
+        "first-page": "942",
+        "DOI": "10.1016/S1474-4422(12)70225-9",
+        "article-title": "Safety and efficacy of NA-1 in patients with iatrogenic stroke after endovascular aneurysm repair (ENACT): a phase 2, randomised, double-blind, placebo-controlled trial",
+        "volume": "11",
+        "author": "Hill",
+        "year": "2012",
+        "journal-title": "Lancet Neurol"
+      }
+    ],
+    "container-title": [
+      "Bioorganic &amp; Medicinal Chemistry"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0968089617310222?httpAccept=text/xml",
+        "content-type": "text/xml",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://api.elsevier.com/content/article/PII:S0968089617310222?httpAccept=text/plain",
+        "content-type": "text/plain",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          10,
+          19
+        ]
+      ],
+      "date-time": "2025-10-19T00:57:03Z",
+      "timestamp": 1760835423000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://linkinghub.elsevier.com/retrieve/pii/S0968089617310222"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          6
+        ]
+      ]
+    },
+    "references-count": 48,
+    "journal-issue": {
+      "issue": "10",
+      "published-print": {
+        "date-parts": [
+          [
+            2018,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "S0968089617310222"
+    ],
+    "URL": "https://doi.org/10.1016/j.bmc.2017.06.052",
+    "relation": {},
+    "ISSN": [
+      "0968-0896"
+    ],
+    "issn-type": [
+      {
+        "value": "0968-0896",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "Elsevier",
+        "name": "publisher",
+        "label": "This article is maintained by"
+      },
+      {
+        "value": "Therapeutic peptides: Historical perspectives, current development trends, and future directions",
+        "name": "articletitle",
+        "label": "Article Title"
+      },
+      {
+        "value": "Bioorganic & Medicinal Chemistry",
+        "name": "journaltitle",
+        "label": "Journal Title"
+      },
+      {
+        "value": "https://doi.org/10.1016/j.bmc.2017.06.052",
+        "name": "articlelink",
+        "label": "CrossRef DOI link to publisher maintained version"
+      },
+      {
+        "value": "article",
+        "name": "content_type",
+        "label": "Content Type"
+      },
+      {
+        "value": "© 2017 The Authors. Published by Elsevier Ltd.",
+        "name": "copyright",
+        "label": "Copyright"
+      }
+    ]
+  }
+}

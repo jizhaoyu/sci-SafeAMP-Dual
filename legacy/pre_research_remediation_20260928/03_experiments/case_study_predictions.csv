@@ -1,0 +1,6 @@
+Peptide Name,Sequence,Biological Property,Pred_AMP_Prob,Pred_Hemo_Prob,Therapeutic_Safety_Index (TSI)
+Melittin (蜂毒素),GIGAVLKVLTTGLPALISWIKRKRQQ,高抗菌且剧烈溶血 (传统痛点),0.997,0.706,0.293
+Magainin-2 (非洲爪蟾抗菌肽),GIGKFLHSAKKFGKAFVGEIMNS,高抗菌且低溶血 (理想药物分子),0.996,0.008,0.988
+Pleurocidin (比目鱼抗菌肽),GWGSFFKKAAHVGKHVGKAALTHYL,广谱杀菌、临床安全性高,0.996,0.016,0.981
+Mastoparan (黄蜂毒素),INLKALAALAKKIL,细胞裂解毒素、强溶血,0.997,0.984,0.016
+Ubiquitin-frag (泛素结构肽),MQIFVKTLTGKTITLEVEPSDTIEN,非抗菌阴性天然肽,0.005,0.003,0.005

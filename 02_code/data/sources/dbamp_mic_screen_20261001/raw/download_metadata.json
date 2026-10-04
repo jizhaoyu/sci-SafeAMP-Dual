@@ -1,0 +1,25 @@
+{
+  "retrieved_at_utc": "2026-10-01T08:09:19.594916+00:00",
+  "release": "dbAMP 3.0, June 2024",
+  "files": [
+    {
+      "path": "dbAMP2024.zip",
+      "source_url": "https://ycclab.cuhk.edu.cn/dbAMP/download/3.0/dbAMP2024.zip",
+      "bytes": 3872120,
+      "sha256": "93a5e03012145ef6fb2a770fc695135b0eece144baa3e618acb01ef444f8134a"
+    },
+    {
+      "path": "dbAMP_Antibacterial.fasta",
+      "source_url": "https://ycclab.cuhk.edu.cn/dbAMP/download/3.0/activity/dbAMP_Antibacterial.fasta",
+      "bytes": 377515,
+      "sha256": "e67a7709f4ed36dc4a6ba8202326ec76a38ad32ff60cb68068f0694775edc7a5"
+    }
+  ],
+  "license_file": {
+    "path": "dbAMP_LICENSE",
+    "source_url": "https://ycclab.cuhk.edu.cn/dbAMP/download/LICENSE",
+    "bytes": 692,
+    "sha256": "b2f9535a7d53a2ed20223fc7d91f253010c01e11bb1885e413617b3290a35cea",
+    "summary": "Free of charge for academic use; no explicit CC license stated."
+  }
+}

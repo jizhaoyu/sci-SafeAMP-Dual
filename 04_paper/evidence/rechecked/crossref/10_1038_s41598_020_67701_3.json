@@ -1,0 +1,1684 @@
+{
+  "url": "https://api.crossref.org/works/10.1038/s41598-020-67701-3",
+  "retrieved_at": "2026-09-28T14:56:24.879048+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          4
+        ]
+      ],
+      "date-time": "2026-09-04T00:03:06Z",
+      "timestamp": 1788480186293,
+      "version": "build-2803163510"
+    },
+    "reference-count": 134,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              2
+            ]
+          ],
+          "date-time": "2020-07-02T00:00:00Z",
+          "timestamp": 1593648000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              7,
+              2
+            ]
+          ],
+          "date-time": "2020-07-02T00:00:00Z",
+          "timestamp": 1593648000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/501100001631",
+        "name": "University College Dublin",
+        "doi-asserted-by": "publisher",
+        "id": [
+          {
+            "id": "10.13039/501100001631",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Rep"
+    ],
+    "abstract": "<jats:title>Abstract</jats:title>\n                  <jats:p>\n                    The growing prevalence of resistance to antibiotics motivates the search for new antibacterial agents. Antimicrobial peptides are a diverse class of well-studied membrane-active peptides which function as part of the innate host defence system, and form a promising avenue in antibiotic drug research. Some antimicrobial peptides exhibit toxicity against eukaryotic membranes, typically characterised by hemolytic activity assays, but currently, the understanding of what differentiates hemolytic and non-hemolytic peptides is limited. This study leverages advances in machine learning research to produce a novel artificial neural network classifier for the prediction of hemolytic activity from a peptide’s primary sequence. The classifier achieves best-in-class performance, with cross-validated accuracy of\n                    <jats:inline-formula>\n                      <jats:alternatives>\n                        <jats:tex-math>$$85.7\\%$$</jats:tex-math>\n                        <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\">\n                          <mml:mrow>\n                            <mml:mn>85.7</mml:mn>\n                            <mml:mo>%</mml:mo>\n                          </mml:mrow>\n                        </mml:math>\n                      </jats:alternatives>\n                    </jats:inline-formula>\n                    and Matthews correlation coefficient of 0.71. This innovative classifier is available as a web server at\n                    <jats:ext-link xmlns:xlink=\"http://www.w3.org/1999/xlink\" ext-link-type=\"uri\" xlink:href=\"https://research.timmons.eu/happenn\">https://research.timmons.eu/happenn</jats:ext-link>\n                    , allowing the research community to utilise it for in silico screening of peptide drug candidates for high therapeutic efficacies.\n                  </jats:p>",
+    "DOI": "10.1038/s41598-020-67701-3",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          7,
+          2
+        ]
+      ],
+      "date-time": "2020-07-02T06:26:17Z",
+      "timestamp": 1593671177000
+    },
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 141,
+    "title": [
+      "HAPPENN is a novel tool for hemolytic activity prediction for therapeutic peptides which employs neural networks"
+    ],
+    "prefix": "10.1038",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Patrick Brendan",
+        "family": "Timmons",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Chandralal M.",
+        "family": "Hewage",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          7,
+          2
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "67701_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "12",
+        "DOI": "10.1016/S0952-7915(02)00005-5",
+        "volume": "15",
+        "author": "D Hultmark",
+        "year": "2003",
+        "unstructured": "Hultmark, D. Drosophila immunity: paths and patterns. Curr. Opin. Immunol. 15, 12–19 (2003).",
+        "journal-title": "Curr. Opin. Immunol."
+      },
+      {
+        "key": "67701_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1124/pr.55.1.2",
+        "volume": "55",
+        "author": "MR Yeaman",
+        "year": "2003",
+        "unstructured": "Yeaman, M. R. & Yount, N. Y. Mechanisms of antimicrobial peptide action and resistance. Pharmacol. Rev. 55, 27–55 (2003).",
+        "journal-title": "Pharmacol. Rev."
+      },
+      {
+        "key": "67701_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "353",
+        "DOI": "10.3389/fmicb.2013.00353",
+        "volume": "4",
+        "author": "F Guilhelmelli",
+        "year": "2013",
+        "unstructured": "Guilhelmelli, F. et al. Antibiotic development challenges: the various mechanisms of action of antimicrobial peptides and of bacterial resistance. Front. Microbiol. 4, 353 (2013).",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "67701_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.1016/j.drudis.2009.10.009",
+        "volume": "15",
+        "author": "P Vlieghe",
+        "year": "2010",
+        "unstructured": "Vlieghe, P., Lisowski, V., Martinez, J. & Khrestchatisky, M. Synthetic therapeutic peptides: science and market. Drug Discov. Today 15, 40–56 (2010).",
+        "journal-title": "Drug Discov. Today"
+      },
+      {
+        "key": "67701_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "505",
+        "DOI": "10.1080/02713680590968637",
+        "volume": "30",
+        "author": "YJ Gordon",
+        "year": "2005",
+        "unstructured": "Gordon, Y. J., Romanowski, E. G. & McDermott, A. M. Mini review: A review of antimicrobial peptides and their therapeutic potential as anti-infective drugs. Curr. Eye Res. 30, 505–515 (2005).",
+        "journal-title": "Curr. Eye Res."
+      },
+      {
+        "key": "67701_CR6",
+        "doi-asserted-by": "crossref",
+        "first-page": "67",
+        "DOI": "10.1016/j.peptides.2014.04.019",
+        "volume": "57",
+        "author": "JM Conlon",
+        "year": "2014",
+        "unstructured": "Conlon, J. M., Mechkarska, M., Lukic, M. L. & Flatt, P. R. Potential therapeutic applications of multifunctional host-defense peptides from frog skin as anti-cancer, anti-viral, immunomodulatory, and anti-diabetic agents. Peptides 57, 67–77 (2014).",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "67701_CR7",
+        "doi-asserted-by": "crossref",
+        "first-page": "1645",
+        "DOI": "10.1089/scd.2012.0488",
+        "volume": "22",
+        "author": "AV Karapetyan",
+        "year": "2013",
+        "unstructured": "Karapetyan, A. V. et al. Bioactive lipids and cationic antimicrobial peptides as new potential regulators for trafficking of bone marrow-derived stem cells in patients with acute myocardial infarction. Stem Cells Dev. 22, 1645–1656 (2013).",
+        "journal-title": "Stem Cells Dev."
+      },
+      {
+        "key": "67701_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "2731",
+        "DOI": "10.3748/wjg.v19.i18.2731",
+        "volume": "19",
+        "author": "JYC Chow",
+        "year": "2013",
+        "unstructured": "Chow, J. Y. C., Li, Z. J., Kei, W. K. & Cho, C. H. Cathelicidin a potential therapeutic peptide for gastrointestinal inflammation and cancer. World J. Gastroenterol. 19, 2731–2735 (2013).",
+        "journal-title": "World J. Gastroenterol."
+      },
+      {
+        "key": "67701_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "26",
+        "DOI": "10.1111/j.1600-0714.1999.tb01990.x",
+        "volume": "28",
+        "author": "JG Bercier",
+        "year": "1999",
+        "unstructured": "Bercier, J. G., Al-Hashimi, I., Haghighat, N., Rees, T. D. & Oppenheim, F. G. Salivary histatins in patients with recurrent oral candidiasis. J. Oral Pathol. Med. 28, 26–29 (1999).",
+        "journal-title": "J. Oral Pathol. Med."
+      },
+      {
+        "key": "67701_CR10",
+        "doi-asserted-by": "crossref",
+        "first-page": "2700",
+        "DOI": "10.1016/j.bmc.2017.06.052",
+        "volume": "26",
+        "author": "JL Lau",
+        "year": "2018",
+        "unstructured": "Lau, J. L. & Dunn, M. K. Therapeutic peptides: historical perspectives, current development trends, and future directions. Bioorg. Med. Chem. 26, 2700–2707 (2018).",
+        "journal-title": "Bioorg. Med. Chem."
+      },
+      {
+        "key": "67701_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "90",
+        "DOI": "10.1038/s41570-019-0159-2",
+        "volume": "4",
+        "author": "C Sohrabi",
+        "year": "2020",
+        "unstructured": "Sohrabi, C., Foster, A. & Tavassoli, A. Methods for generating and screening libraries of genetically encoded cyclic peptides in drug discovery. Nat. Rev. Chem. 4, 90–101 (2020).",
+        "journal-title": "Nat. Rev. Chem."
+      },
+      {
+        "key": "67701_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "215",
+        "DOI": "10.3390/ijms21010215",
+        "volume": "21",
+        "author": "K Bozovičar",
+        "year": "2020",
+        "unstructured": "Bozovičar, K. & Bratkovič, T. Evolving a peptide: library platforms and diversification strategies. Int. J. Mol. Sci. 21, 215 (2020).",
+        "journal-title": "Int. J. Mol. Sci."
+      },
+      {
+        "key": "67701_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "487",
+        "DOI": "10.1111/j.1399-3011.1991.tb00765.x",
+        "volume": "37",
+        "author": "Á Furka",
+        "year": "1991",
+        "unstructured": "Furka, Á, Sebestyén, F., Asgedom, M. & Dibó, G. General method for rapid synthesis of multicomponent peptide mixtures. Int. J. Pept. Protein Res. 37, 487–493 (1991).",
+        "journal-title": "Int. J. Pept. Protein Res."
+      },
+      {
+        "key": "67701_CR14",
+        "doi-asserted-by": "crossref",
+        "first-page": "691",
+        "DOI": "10.1097/00002030-200303280-00007",
+        "volume": "17",
+        "author": "JP Lalezari",
+        "year": "2003",
+        "unstructured": "Lalezari, J. P. et al. A phase II clinical study of the long-term safety and antiviral activity of enfuvirtide-based antiretroviral therapy. AIDS 17, 691–698 (2003).",
+        "journal-title": "AIDS"
+      },
+      {
+        "key": "67701_CR15",
+        "doi-asserted-by": "crossref",
+        "first-page": "226",
+        "DOI": "10.1046/j.1464-410X.2003.04308.x",
+        "volume": "92",
+        "author": "C Heyns",
+        "year": "2003",
+        "unstructured": "Heyns, C., Simonin, M.-P., Grosgurin, P., Schall, R. & Porchet, H. Comparative efficacy of triptorelin pamoate and leuprolide acetate in men with advanced prostate cancer. BJU Int. 92, 226–231 (2003).",
+        "journal-title": "BJU Int."
+      },
+      {
+        "key": "67701_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "1232",
+        "DOI": "10.7326/0003-4819-34-5-1232",
+        "volume": "34",
+        "author": "EH Reisner",
+        "year": "1951",
+        "unstructured": "Reisner, E. H., Bailey, F. N. & Appelbaum, E. The treatment of pneumonia with bacitracin. Ann. Intern. Med. 34, 1232–1242 (1951).",
+        "journal-title": "Ann. Intern. Med."
+      },
+      {
+        "issue": "3",
+        "key": "67701_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1177/2040622312441496",
+        "volume": "3",
+        "author": "A Ascione",
+        "year": "2012",
+        "unstructured": "Ascione, A. Boceprevir in chronic hepatitis C infection: a perspective review. Ther. Adv. Chron. Dis. 3(3), 113–121 (2012).",
+        "journal-title": "Ther. Adv. Chron. Dis."
+      },
+      {
+        "issue": "11",
+        "key": "67701_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "1443",
+        "DOI": "10.4155/tde.13.104",
+        "volume": "4",
+        "author": "BJ Bruno",
+        "year": "2013",
+        "unstructured": "Bruno, B. J., Miller, G. D. & Lim, C. S. Basics and recent advances in peptide and protein drug delivery. Ther. Deliv. 4(11), 1443–1467 (2013).",
+        "journal-title": "Ther. Deliv."
+      },
+      {
+        "key": "67701_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "741",
+        "DOI": "10.1111/j.1348-0421.2002.tb02759.x",
+        "volume": "46",
+        "author": "K Hamamoto",
+        "year": "2002",
+        "unstructured": "Hamamoto, K., Kida, Y., Zhang, Y., Shimizu, T. & Kuwano, K. Antimicrobial activity and stability to proteolysis of small linear cationic peptides with D-amino acid substitutions. Microbiol. Immunol. 46, 741–749 (2002).",
+        "journal-title": "Microbiol. Immunol."
+      },
+      {
+        "key": "67701_CR20",
+        "doi-asserted-by": "crossref",
+        "first-page": "905",
+        "DOI": "10.1021/cb1001558",
+        "volume": "5",
+        "author": "WC Wimley",
+        "year": "2010",
+        "unstructured": "Wimley, W. C. Describing the mechanism of antimicrobial peptide action with the interfacial activity model. ACS Chem. Biol. 5, 905–917 (2010).",
+        "journal-title": "ACS Chem. Biol."
+      },
+      {
+        "key": "67701_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "6615",
+        "DOI": "10.1021/la504049q",
+        "volume": "31",
+        "author": "Y Hu",
+        "year": "2015",
+        "unstructured": "Hu, Y., Sinha, S. K. & Patel, S. Investigating hydrophilic pores in model lipid bilayers using molecular simulations: correlating bilayer properties with pore-formation thermodynamics. Langmuir 31, 6615–6631 (2015).",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "67701_CR22",
+        "doi-asserted-by": "crossref",
+        "first-page": "796",
+        "DOI": "10.1016/S0006-291X(02)00762-3",
+        "volume": "295",
+        "author": "R Lai",
+        "year": "2002",
+        "unstructured": "Lai, R., Liu, H., Hui Lee, W. & Zhang, Y. An anionic antimicrobial peptide from toad Bombina maxima. Biochem. Biophys. Res. Commun. 295, 796–799 (2002).",
+        "journal-title": "Biochem. Biophys. Res. Commun."
+      },
+      {
+        "key": "67701_CR23",
+        "doi-asserted-by": "crossref",
+        "first-page": "3423",
+        "DOI": "10.1021/bi00010a034",
+        "volume": "34",
+        "author": "K Matsuzaki",
+        "year": "1995",
+        "unstructured": "Matsuzaki, K., Sugishita, K. I., Fujii, N. & Miyajima, K. Molecular basis for membrane selectivity of an antimicrobial peptide, Magainin 2. Biochemistry 34, 3423–3429 (1995).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "67701_CR24",
+        "doi-asserted-by": "crossref",
+        "first-page": "415",
+        "DOI": "10.1016/j.biotechadv.2018.01.004",
+        "volume": "36",
+        "author": "B Gomes",
+        "year": "2018",
+        "unstructured": "Gomes, B. et al. Designing improved active peptides for therapeutic approaches against infectious diseases. Biotechnol. Adv. 36, 415–429 (2018).",
+        "journal-title": "Biotechnol. Adv."
+      },
+      {
+        "key": "67701_CR25",
+        "doi-asserted-by": "crossref",
+        "first-page": "1114",
+        "DOI": "10.1093/bioinformatics/btaa010",
+        "volume": "36",
+        "author": "M Zeng",
+        "year": "2020",
+        "unstructured": "Zeng, M. et al. Protein-protein interaction site prediction through combining local and global features with deep neural networks. Bioinformatics 36, 1114–1120 (2020).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR26",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1007/978-1-61779-176-5_11",
+        "volume": "760",
+        "author": "M Oti",
+        "year": "2011",
+        "unstructured": "Oti, M., Ballouz, S. & Wouters, M. a. In silico tools for gene discovery. Methods Mol. Biol. 760, 175–187 (2011).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "67701_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "3094",
+        "DOI": "10.1093/bioinformatics/btt518",
+        "volume": "29",
+        "author": "TA Holton",
+        "year": "2013",
+        "unstructured": "Holton, T. A., Pollastri, G., Shields, D. C. & Mooney, C. CPPpred: prediction of cell penetrating peptides. Bioinformatics 29, 3094–3096 (2013).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR28",
+        "doi-asserted-by": "crossref",
+        "first-page": "6503",
+        "DOI": "10.1093/nar/gkw243",
+        "volume": "44",
+        "author": "M Pirtskhalava",
+        "year": "2016",
+        "unstructured": "Pirtskhalava, M. et al. Erratum: DBAASP vol 2: an enhanced database of structure and antimicrobial/cytotoxic activity of natural and synthetic peptides (Nucleic Acids Research 44 (D1104–D1112) DOI 10.1093/nar/gkv1174). Nucleic Acids Res. 44, 6503 (2016).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "67701_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1154",
+        "DOI": "10.1093/nar/gkt1157",
+        "volume": "42",
+        "author": "FH Waghu",
+        "year": "2014",
+        "unstructured": "Waghu, F. H. et al. CAMP: collection of sequences and structures of antimicrobial peptides. Nucleic Acids Res. 42, D1154-8 (2014).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "67701_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "D444",
+        "DOI": "10.1093/nar/gkt1008",
+        "volume": "42",
+        "author": "A Gautam",
+        "year": "2014",
+        "unstructured": "Gautam, A. et al. Hemolytik: a database of experimentally determined hemolytic and non-hemolytic peptides. Nucleic Acids Res. 42, D444-9 (2014).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "67701_CR31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1658",
+        "DOI": "10.1093/bioinformatics/btl158",
+        "volume": "22",
+        "author": "W Li",
+        "year": "2006",
+        "unstructured": "Li, W. & Godzik, A. Cd-hit: a fast program for clustering and comparing large sets of protein or nucleotide sequences. Bioinformatics 22, 1658–1659 (2006).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR32",
+        "doi-asserted-by": "crossref",
+        "first-page": "680",
+        "DOI": "10.1093/bioinformatics/btq003",
+        "volume": "26",
+        "author": "Y Huang",
+        "year": "2010",
+        "unstructured": "Huang, Y., Niu, B., Gao, Y., Fu, L. & Li, W. CD-HIT Suite: a web server for clustering and comparing biological sequences. Bioinformatics 26, 680–682 (2010).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR33",
+        "doi-asserted-by": "crossref",
+        "first-page": "3150",
+        "DOI": "10.1093/bioinformatics/bts565",
+        "volume": "28",
+        "author": "L Fu",
+        "year": "2012",
+        "unstructured": "Fu, L., Niu, B., Zhu, Z., Wu, S. & Li, W. CD-HIT: accelerated for clustering the next-generation sequencing data. Bioinformatics 28, 3150–3152 (2012).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR34",
+        "doi-asserted-by": "crossref",
+        "first-page": "867",
+        "DOI": "10.1038/nature05233",
+        "volume": "443",
+        "author": "C Loose",
+        "year": "2006",
+        "unstructured": "Loose, C., Jensen, K., Rigoutsos, I. & Stephanopoulos, G. A linguistic model for the rational design of antimicrobial peptides. Nature 443, 867–869 (2006).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "67701_CR35",
+        "doi-asserted-by": "crossref",
+        "first-page": "337",
+        "DOI": "10.1016/j.biotechadv.2017.02.001",
+        "volume": "35",
+        "author": "WF Porto",
+        "year": "2017",
+        "unstructured": "Porto, W. F., Pires, A. S. & Franco, O. L. Computational tools for exploring sequence databases as a resource for antimicrobial peptides. Biotechnol. Adv. 35, 337–349 (2017).",
+        "journal-title": "Biotechnol. Adv."
+      },
+      {
+        "key": "67701_CR36",
+        "first-page": "121",
+        "volume": "8",
+        "author": "M Kumar",
+        "year": "2008",
+        "unstructured": "Kumar, M., Thakur, V. & Raghava, G. P. COPid: composition based protein identification. In Silico Biol. 8, 121–128 (2008).",
+        "journal-title": "In Silico Biol."
+      },
+      {
+        "key": "67701_CR37",
+        "doi-asserted-by": "crossref",
+        "first-page": "323",
+        "DOI": "10.3389/fmicb.2018.00323",
+        "volume": "9",
+        "author": "P Agrawal",
+        "year": "2018",
+        "unstructured": "Agrawal, P. et al. In silico approach for prediction of antifungal peptides. Front. Microbiol. 9, 323 (2018).",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "67701_CR38",
+        "doi-asserted-by": "crossref",
+        "first-page": "5129",
+        "DOI": "10.1038/s41598-019-41538-x",
+        "volume": "9",
+        "author": "P Agrawal",
+        "year": "2019",
+        "unstructured": "Agrawal, P., Kumar, S., Singh, A., Raghava, G. P. & Singh, I. K. NeuroPIpred: a tool to predict, design and scan insect neuropeptides. Sci. Rep. 9, 5129 (2019).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "67701_CR39",
+        "doi-asserted-by": "crossref",
+        "first-page": "D43",
+        "DOI": "10.1093/nar/gks902",
+        "volume": "41",
+        "author": "R Apweiler",
+        "year": "2013",
+        "unstructured": "Apweiler, R. et al. Update on activities at the Universal Protein Resource (UniProt) in 2013. Nucleic Acids Res. 41, D43-7 (2013).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "67701_CR40",
+        "doi-asserted-by": "crossref",
+        "first-page": "473",
+        "DOI": "10.1186/s12859-018-2489-3",
+        "volume": "19",
+        "author": "KK Dey",
+        "year": "2018",
+        "unstructured": "Dey, K. K., Xie, D. & Stephens, M. A new sequence logo plot to highlight enrichment and depletion. BMC Bioinform. 19, 473 (2018).",
+        "journal-title": "BMC Bioinform."
+      },
+      {
+        "key": "67701_CR41",
+        "doi-asserted-by": "crossref",
+        "first-page": "2753",
+        "DOI": "10.1093/bioinformatics/btx285",
+        "volume": "33",
+        "author": "AT Müller",
+        "year": "2017",
+        "unstructured": "Müller, A. T., Gabernet, G., Hiss, J. A. & Schneider, G. modlAMP: Python for antimicrobial peptides. Bioinformatics (Oxford, England) 33, 2753–2755 (2017).",
+        "journal-title": "Bioinformatics (Oxford, England)"
+      },
+      {
+        "key": "67701_CR42",
+        "doi-asserted-by": "crossref",
+        "first-page": "1092",
+        "DOI": "10.1093/bioinformatics/btt105",
+        "volume": "29",
+        "author": "DS Cao",
+        "year": "2013",
+        "unstructured": "Cao, D. S., Xu, Q. S., Hu, Q. N. & Liang, Y. Z. ChemoPy: freely available python package for computational biology and chemoinformatics. Bioinformatics 29, 1092–1094 (2013).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR43",
+        "doi-asserted-by": "crossref",
+        "first-page": "3174",
+        "DOI": "10.1093/nar/22.15.3174",
+        "volume": "22",
+        "author": "JR Lobry",
+        "year": "1994",
+        "unstructured": "Lobry, J. R. & Gautier, C. Hydrophobicity, expressivity and aromaticity are the major trends of amino-acid usage in 999 Escherichia coli chromosome-encoded genes. Nucleic Acids Res. 22, 3174–3180 (1994).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "67701_CR44",
+        "first-page": "1895",
+        "volume": "88",
+        "author": "A Ikai",
+        "year": "1980",
+        "unstructured": "Ikai, A. Thermostability and aliphatic index of globular proteins. J. Biochem. 88, 1895–8 (1980).",
+        "journal-title": "J. Biochem."
+      },
+      {
+        "key": "67701_CR45",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1016/0014-5793(89)81505-4",
+        "volume": "259",
+        "author": "HG Boman",
+        "year": "1989",
+        "unstructured": "Boman, H. G., Wade, D., Boman, I. A., Wåhlin, B. & Merrifield, R. B. Antibacterial and antimalarial properties of peptides that are cecropin–melittin hybrids. FEBS Lett. 259, 103–106 (1989).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "67701_CR46",
+        "doi-asserted-by": "crossref",
+        "first-page": "2873",
+        "DOI": "10.1021/ci900327a",
+        "volume": "49",
+        "author": "D Juretić",
+        "year": "2009",
+        "unstructured": "Juretić, D., Vukičević, D., Ilić, N., Antcheva, N. & Tossi, A. Computational design of highly selective antimicrobial peptides. J. Chem. Inf. Model. 49, 2873–2882 (2009).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "67701_CR47",
+        "doi-asserted-by": "crossref",
+        "first-page": "565",
+        "DOI": "10.1111/j.1432-1033.1982.tb07002.x",
+        "volume": "128",
+        "author": "P Argos",
+        "year": "1982",
+        "unstructured": "Argos, P., Rao, J. K. & Hargrave, P. A. Structural prediction of membrane-bound proteins. Eur. J. Biochem. 128, 565–575 (1982).",
+        "journal-title": "Eur. J. Biochem."
+      },
+      {
+        "key": "67701_CR48",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1039/fs9821700109",
+        "volume": "17",
+        "author": "D Eisenberg",
+        "year": "1982",
+        "unstructured": "Eisenberg, D., Weiss, R. M., Terwilliger, T. C. & Wilcox, W. Hydrophobic moments and protein structure. Faraday Symp. Chem. Soc. 17, 109–120 (1982).",
+        "journal-title": "Faraday Symp. Chem. Soc."
+      },
+      {
+        "key": "67701_CR49",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.1016/0022-2836(82)90515-0",
+        "volume": "157",
+        "author": "J Kyte",
+        "year": "1982",
+        "unstructured": "Kyte, J. & Doolittle, R. F. A simple method for displaying the hydropathic character of a protein. J. Mol. Biol. 157, 105–132 (1982).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR50",
+        "doi-asserted-by": "crossref",
+        "first-page": "3824",
+        "DOI": "10.1073/pnas.78.6.3824",
+        "volume": "78",
+        "author": "TP Hopp",
+        "year": "1981",
+        "unstructured": "Hopp, T. P. & Woods, K. R. Prediction of protein antigenic determinants from amino acid sequences. Proc. Natl. Acad. Sci. USA 78, 3824–3828 (1981).",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "67701_CR51",
+        "doi-asserted-by": "crossref",
+        "first-page": "659",
+        "DOI": "10.1016/0022-2836(87)90189-6",
+        "volume": "195",
+        "author": "JL Cornette",
+        "year": "1987",
+        "unstructured": "Cornette, J. L. et al. Hydrophobicity scales and computational techniques for detecting amphipathic structures in proteins. J. Mol. Biol. 195, 659–685 (1987).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR52",
+        "doi-asserted-by": "crossref",
+        "first-page": "170",
+        "DOI": "10.1016/0022-5193(68)90069-6",
+        "volume": "21",
+        "author": "JM Zimmerman",
+        "year": "1968",
+        "unstructured": "Zimmerman, J. M., Eliezer, N. & Simha, R. The characterization of amino acid sequences in proteins by statistical methods. J. Theor. Biol. 21, 170–201 (1968).",
+        "journal-title": "J. Theor. Biol."
+      },
+      {
+        "key": "67701_CR53",
+        "doi-asserted-by": "crossref",
+        "first-page": "436",
+        "DOI": "10.1016/j.jmb.2006.09.020",
+        "volume": "366",
+        "author": "A Senes",
+        "year": "2007",
+        "unstructured": "Senes, A. et al. Ez, a depth-dependent potential for assessing the energies of insertion of amino acid side-chains into membranes: derivation and applications to determining the orientation of transmembrane and interfacial helices. J. Mol. Biol. 366, 436–448 (2007).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR54",
+        "doi-asserted-by": "crossref",
+        "first-page": "241",
+        "DOI": "10.1111/j.1399-3011.1988.tb01258.x",
+        "volume": "32",
+        "author": "R Bhaskaran",
+        "year": "1988",
+        "unstructured": "Bhaskaran, R. & Ponnuswamy, P. K. Positional flexibilities of amino acid residues in globular proteins. Int. J. Pept. Protein Res. 32, 241–255 (1988).",
+        "journal-title": "Int. J. Pept. Protein Res."
+      },
+      {
+        "key": "67701_CR55",
+        "doi-asserted-by": "crossref",
+        "first-page": "862",
+        "DOI": "10.1126/science.185.4154.862",
+        "volume": "185",
+        "author": "R Grantham",
+        "year": "1974",
+        "unstructured": "Grantham, R. Amino acid difference formula to help explain protein evolution. Science 185, 862–864 (1974).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "67701_CR56",
+        "doi-asserted-by": "crossref",
+        "first-page": "2705",
+        "DOI": "10.1021/jm00014a022",
+        "volume": "38",
+        "author": "ER Collantes",
+        "year": "1995",
+        "unstructured": "Collantes, E. R. & Dunn, W. J. Amino acid side chain descriptors for quantitative structure–activity relationship studies of peptide analogues. J. Med. Chem. 38, 2705–2713 (1995).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "67701_CR57",
+        "doi-asserted-by": "crossref",
+        "first-page": "4277",
+        "DOI": "10.1021/bi00613a026",
+        "volume": "17",
+        "author": "M Levitt",
+        "year": "1978",
+        "unstructured": "Levitt, M. & Levitt, M. Conformational preferences of amino acids in globular proteins. Biochemistry 17, 4277–4285 (1978).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "67701_CR58",
+        "doi-asserted-by": "crossref",
+        "first-page": "248",
+        "DOI": "10.1021/ci980052w",
+        "volume": "39",
+        "author": "C Raychaudhury",
+        "year": "1999",
+        "unstructured": "Raychaudhury, C., Banerjee, A., Bag, P. & Roy, S. Topological shape and size of peptides: identification of potential allele specific helper T cell antigenic sites. J. Chem. Inf. Comput. Sci. 39, 248–254 (1999).",
+        "journal-title": "J. Chem. Inf. Comput. Sci."
+      },
+      {
+        "key": "67701_CR59",
+        "doi-asserted-by": "crossref",
+        "first-page": "525",
+        "DOI": "10.1021/ci980211b",
+        "volume": "39",
+        "author": "A Zaliani",
+        "year": "1999",
+        "unstructured": "Zaliani, A. & Gancia, E. MS-WHIM scores for amino acids: a new 3D-description for peptide QSAR and QSPR studies. J. Chem. Inf. Comput. Sci. 39, 525–533 (1999).",
+        "journal-title": "J. Chem. Inf. Comput. Sci."
+      },
+      {
+        "key": "67701_CR60",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1003088",
+        "DOI": "10.1371/journal.pcbi.1003088",
+        "volume": "9",
+        "author": "CP Koch",
+        "year": "2013",
+        "unstructured": "Koch, C. P. et al. Scrutinizing MHC-I binding peptides and their limits of variation. PLoS Comput. Biol. 9, e1003088 (2013).",
+        "journal-title": "PLoS Comput. Biol."
+      },
+      {
+        "key": "67701_CR61",
+        "doi-asserted-by": "crossref",
+        "first-page": "151",
+        "DOI": "10.1016/0006-291X(62)90165-1",
+        "volume": "7",
+        "author": "TL McMeekin",
+        "year": "1962",
+        "unstructured": "McMeekin, T. L., Wilensky, M. & Groves, M. L. Refractive indices of proteins in relation to amino acid composition and specific volume. Biochem. Biophys. Res. Commun. 7, 151–156 (1962).",
+        "journal-title": "Biochem. Biophys. Res. Commun."
+      },
+      {
+        "key": "67701_CR62",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1002/qsar.19930120102",
+        "volume": "12",
+        "author": "M Cocchi",
+        "year": "1993",
+        "unstructured": "Cocchi, M. & Johansson, E. Amino acids characterization by GRID and multivariate data analysis. Quant. Struct. Act. Relatsh. 12, 1–8 (1993).",
+        "journal-title": "Quant. Struct. Act. Relatsh."
+      },
+      {
+        "key": "67701_CR63",
+        "doi-asserted-by": "crossref",
+        "first-page": "1987",
+        "DOI": "10.1110/ps.062286306",
+        "volume": "15",
+        "author": "G Zhao",
+        "year": "2006",
+        "unstructured": "Zhao, G. & London, E. An amino acid transmembrane tendency scale that approaches the theoretical limit to accuracy for prediction of transmembrane helices: relationship to biological hydrophobicity. Protein Sci. 15, 1987–2001 (2006).",
+        "journal-title": "Protein Sci."
+      },
+      {
+        "key": "67701_CR64",
+        "doi-asserted-by": "crossref",
+        "first-page": "1126",
+        "DOI": "10.1021/jm00390a003",
+        "volume": "30",
+        "author": "S Hellberg",
+        "year": "1987",
+        "unstructured": "Hellberg, S., Sjöström, M., Skagerberg, B. & Wold, S. Peptide quantitative structure–activity relationships, a multivariate approach. J. Med. Chem. 30, 1126–1135 (1987).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "67701_CR65",
+        "doi-asserted-by": "crossref",
+        "first-page": "2481",
+        "DOI": "10.1021/jm9700575",
+        "volume": "41",
+        "author": "M Sandberg",
+        "year": "1998",
+        "unstructured": "Sandberg, M., Eriksson, L., Jonsson, J., Sjöström, M. & Wold, S. New chemical descriptors relevant for the design of biologically active peptides. A multivariate characterization of 87 amino acids. J. Med. Chem. 41, 2481–2491 (1998).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "67701_CR66",
+        "doi-asserted-by": "crossref",
+        "first-page": "D202",
+        "DOI": "10.1093/nar/gkm998",
+        "volume": "36",
+        "author": "S Kawashima",
+        "year": "2008",
+        "unstructured": "Kawashima, S. et al. AAindex: amino acid index database, progress report 2008. Nucleic Acids Res. 36, D202-5 (2008).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "67701_CR67",
+        "doi-asserted-by": "crossref",
+        "first-page": "141",
+        "DOI": "10.1006/jmbi.1999.2657",
+        "volume": "288",
+        "author": "M Monné",
+        "year": "1999",
+        "unstructured": "Monné, M., Hermansson, M. & Von Heijne, G. A turn propensity scale for transmembrane helices. J. Mol. Biol. 288, 141–145 (1999).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR68",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1002/pro.5560070103",
+        "volume": "7",
+        "author": "R Aurora",
+        "year": "1998",
+        "unstructured": "Aurora, R. & Rose, G. D. Helix capping. Protein Sci. 7, 21–38 (1998).",
+        "journal-title": "Protein Sci."
+      },
+      {
+        "key": "67701_CR69",
+        "doi-asserted-by": "crossref",
+        "first-page": "865",
+        "DOI": "10.1016/0022-2836(88)90564-5",
+        "volume": "202",
+        "author": "N Qian",
+        "year": "1988",
+        "unstructured": "Qian, N. & Sejnowski, T. J. Predicting the secondary structure of globular proteins using neural network models. J. Mol. Biol. 202, 865–884 (1988).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR70",
+        "doi-asserted-by": "crossref",
+        "first-page": "608",
+        "DOI": "10.1093/bioinformatics/18.4.608",
+        "volume": "18",
+        "author": "S Mitaku",
+        "year": "2002",
+        "unstructured": "Mitaku, S., Hirokawa, T. & Tsuji, T. Amphiphilicity index index of polar amino acids as an aid in the characterization of amino acid preference at membrane-water interfaces. Bioinformatics 18, 608–616 (2002).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR71",
+        "doi-asserted-by": "crossref",
+        "first-page": "452",
+        "DOI": "10.1002/1097-0134(20010301)42:4<452::AID-PROT40>3.0.CO;2-Q",
+        "volume": "42",
+        "author": "H Naderi-Manesh",
+        "year": "2001",
+        "unstructured": "Naderi-Manesh, H., Sadeghi, M., Arab, S. & Moosavi Movahedi, A. A. Prediction of protein surface accessibility with information theory. Proteins: Struct. Funct. Genet. 42, 452–459 (2001).",
+        "journal-title": "Proteins: Struct. Funct. Genet."
+      },
+      {
+        "key": "67701_CR72",
+        "first-page": "369",
+        "volume": "18",
+        "author": "J-L Fauchere",
+        "year": "1983",
+        "unstructured": "Fauchere, J.-L. & Pliska, V. Hydrophobic parameters pi of amino-acid side chains from the partitioning of N-acetyl-amino-acid amides. Eur. J. Med. Chem 18, 369–375 (1983).",
+        "journal-title": "Eur. J. Med. Chem"
+      },
+      {
+        "key": "67701_CR73",
+        "doi-asserted-by": "crossref",
+        "first-page": "595",
+        "DOI": "10.1146/annurev.bi.53.070184.003115",
+        "volume": "53",
+        "author": "D Eisenberg",
+        "year": "1984",
+        "unstructured": "Eisenberg, D. Three-dimensional structure of membrane and surface proteins. Annu. Rev. Biochem. 53, 595–623 (1984).",
+        "journal-title": "Annu. Rev. Biochem."
+      },
+      {
+        "key": "67701_CR74",
+        "doi-asserted-by": "crossref",
+        "first-page": "301",
+        "DOI": "10.1016/0005-2795(80)90258-5",
+        "volume": "623",
+        "author": "PK Ponnuswamy",
+        "year": "1980",
+        "unstructured": "Ponnuswamy, P. K., Prabhakaran, M. & Manavalan, P. Hydrophobic packing and spatial arrangement of amino acid residues in globular proteins. BBA Protein Struct. 623, 301–316 (1980).",
+        "journal-title": "BBA Protein Struct."
+      },
+      {
+        "key": "67701_CR75",
+        "doi-asserted-by": "crossref",
+        "first-page": "1210",
+        "DOI": "10.1021/ac00103a012",
+        "volume": "67",
+        "author": "MC Wilce",
+        "year": "1995",
+        "unstructured": "Wilce, M. C., Aguilar, M. I. & Hearn, M. T. Physicochemical basis of amino acid hydrophobicity scales: evaluation of four new scales of amino acid hydrophobicity coefficients derived from RP-HPLC of peptides. Anal. Chem. 67, 1210–1219 (1995).",
+        "journal-title": "Anal. Chem."
+      },
+      {
+        "key": "67701_CR76",
+        "doi-asserted-by": "crossref",
+        "first-page": "72",
+        "DOI": "10.1016/0003-2697(91)90045-U",
+        "volume": "193",
+        "author": "SD Black",
+        "year": "1991",
+        "unstructured": "Black, S. D. & Mould, D. R. Development of hydrophobicity parameters to analyze proteins which bear post- or cotranslational modifications. Anal. Biochem. 193, 72–82 (1991).",
+        "journal-title": "Anal. Biochem."
+      },
+      {
+        "key": "67701_CR77",
+        "doi-asserted-by": "crossref",
+        "first-page": "199",
+        "DOI": "10.1038/319199a0",
+        "volume": "319",
+        "author": "D Eisenberg",
+        "year": "1986",
+        "unstructured": "Eisenberg, D. & Mclachlan, A. D. Solvation energy in protein folding and binding. Nature 319, 199–203 (1986).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "67701_CR78",
+        "doi-asserted-by": "crossref",
+        "first-page": "79",
+        "DOI": "10.1016/S0021-9673(00)82337-7",
+        "volume": "216",
+        "author": "V Pliška",
+        "year": "1981",
+        "unstructured": "Pliška, V., Schmidt, M. & Fauchère, J. L. Partition coefficients of amino acids and hydrophobic parameters $$\\pi$$ of their side-chains as measured by thin-layer chromatography. J. Chromatogr. A 216, 79–92 (1981).",
+        "journal-title": "J. Chromatogr. A"
+      },
+      {
+        "key": "67701_CR79",
+        "doi-asserted-by": "crossref",
+        "first-page": "534",
+        "DOI": "10.1021/ma00145a039",
+        "volume": "18",
+        "author": "S Miyazawa",
+        "year": "1985",
+        "unstructured": "Miyazawa, S. & Jernigan, R. L. Estimation of effective interresidue contact energies from protein crystal structures: quasi-chemical approximation. Macromolecules 18, 534–552 (1985).",
+        "journal-title": "Macromolecules"
+      },
+      {
+        "key": "67701_CR80",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "DOI": "10.1016/S0006-3495(85)83877-7",
+        "volume": "47",
+        "author": "HR Guy",
+        "year": "1985",
+        "unstructured": "Guy, H. R. Amino acid side-chain partition energies and distribution of residues in soluble proteins. Biophys. J. 47, 61–70 (1985).",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "67701_CR81",
+        "doi-asserted-by": "crossref",
+        "first-page": "1632",
+        "DOI": "10.1073/pnas.77.3.1632",
+        "volume": "77",
+        "author": "JL Meek",
+        "year": "1980",
+        "unstructured": "Meek, J. L. Prediction of peptide retention times in high-pressure liquid chromatography on the basis of amino acid composition. Proc. Natl. Acad. Sci. USA 77, 1632–1636 (1980).",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "67701_CR82",
+        "doi-asserted-by": "crossref",
+        "first-page": "5425",
+        "DOI": "10.1021/bi00367a013",
+        "volume": "25",
+        "author": "JM Parker",
+        "year": "1986",
+        "unstructured": "Parker, J. M., Guo, D. & Hodges, R. S. New hydrophilicity scale derived from high-performance liquid chromatography peptide retention data: correlation of predicted surface residues with antigenicity and X-ray-derived accessible sites. Biochemistry 25, 5425–5432 (1986).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "67701_CR83",
+        "first-page": "221",
+        "volume": "787",
+        "author": "P Klein",
+        "year": "1984",
+        "unstructured": "Klein, P., Kanehisa, M. & DeLisi, C. Prediction of protein function from sequence properties. Discriminant analysis of a data base. Biochim. Biophys. Acta (BBA) Protein Struct. Mol. 787, 221–226 (1984).",
+        "journal-title": "Biochim. Biophys. Acta (BBA) Protein Struct. Mol."
+      },
+      {
+        "key": "67701_CR84",
+        "doi-asserted-by": "crossref",
+        "first-page": "447",
+        "DOI": "10.1007/BF00592854",
+        "volume": "60",
+        "author": "CR Woese",
+        "year": "1973",
+        "unstructured": "Woese, C. R. Evolution of the genetic code. Die Nat. 60, 447–459 (1973).",
+        "journal-title": "Die Nat."
+      },
+      {
+        "key": "67701_CR85",
+        "doi-asserted-by": "crossref",
+        "first-page": "1664",
+        "DOI": "10.1021/bi00405a042",
+        "volume": "27",
+        "author": "A Radzicka",
+        "year": "1988",
+        "unstructured": "Radzicka, A. & Wolfenden, R. Comparing the polarities of the amino acids: side-chain distribution coefficients between the vapor phase, cyclohexane, 1-octanol, and neutral aqueous solution. Biochemistry 27, 1664–1670 (1988).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "67701_CR86",
+        "doi-asserted-by": "crossref",
+        "first-page": "629",
+        "DOI": "10.1016/0022-5193(82)90191-6",
+        "volume": "99",
+        "author": "M Charton",
+        "year": "1982",
+        "unstructured": "Charton, M. & Charton, B. I. The structural dependence of amino acid hydrophobicity parameters. J. Theor. Biol. 99, 629–644 (1982).",
+        "journal-title": "J. Theor. Biol."
+      },
+      {
+        "key": "67701_CR87",
+        "doi-asserted-by": "crossref",
+        "first-page": "269",
+        "DOI": "10.1111/j.1399-3011.1988.tb01261.x",
+        "volume": "32",
+        "author": "JL Fauchère",
+        "year": "1988",
+        "unstructured": "Fauchère, J. L., Charton, M., Kier, L. B., Verloop, A. & Pliska, V. Amino acid side chain parameters for correlation studies in biology and pharmacology. Int. J. Pept. Protein Res. 32, 269–278 (1988).",
+        "journal-title": "Int. J. Pept. Protein Res."
+      },
+      {
+        "key": "67701_CR88",
+        "doi-asserted-by": "crossref",
+        "first-page": "204",
+        "DOI": "10.1016/0005-2795(79)90498-7",
+        "volume": "576",
+        "author": "WR Krigbaum",
+        "year": "1979",
+        "unstructured": "Krigbaum, W. R. & Komoriya, A. Local interactions as a structure determinant for protein molecules: II. BBA Protein Struct. 576, 204–228 (1979).",
+        "journal-title": "BBA Protein Struct."
+      },
+      {
+        "key": "67701_CR89",
+        "doi-asserted-by": "crossref",
+        "first-page": "645",
+        "DOI": "10.1016/0022-5193(73)90075-1",
+        "volume": "39",
+        "author": "DE Goldsack",
+        "year": "1973",
+        "unstructured": "Goldsack, D. E. & Chalifoux, R. C. Contribution of the free energy of mixing of hydrophobic side chains to the stability of the tertiary structure of proteins. J. Theor. Biol. 39, 645–651 (1973).",
+        "journal-title": "J. Theor. Biol."
+      },
+      {
+        "key": "67701_CR90",
+        "doi-asserted-by": "crossref",
+        "first-page": "253",
+        "DOI": "10.1006/jmbi.1999.2829",
+        "volume": "290",
+        "author": "J Tsai",
+        "year": "1999",
+        "unstructured": "Tsai, J., Taylor, R., Chothia, C. & Gerstein, M. The packing density in proteins: standard radii and volumes. J. Mol. Biol. 290, 253–266 (1999).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR91",
+        "doi-asserted-by": "crossref",
+        "first-page": "121",
+        "DOI": "10.1006/jmbi.1996.0628",
+        "volume": "264",
+        "author": "J Pontius",
+        "year": "1996",
+        "unstructured": "Pontius, J., Richelle, J. & Wodak, S. J. Deviations from standard atomic volumes as a quality measure for protein crystal structures. J. Mol. Biol. 264, 121–136 (1996).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR92",
+        "doi-asserted-by": "crossref",
+        "first-page": "641",
+        "DOI": "10.1016/S0969-2126(00)00065-4",
+        "volume": "2",
+        "author": "Y. Harpaz",
+        "year": "1994",
+        "unstructured": "Harpaz, Y. ., Gerstein, M. . & Chothia, C. . Volume changes on protein folding. Structure 2, 641–649 (1994).",
+        "journal-title": "Structure"
+      },
+      {
+        "key": "67701_CR93",
+        "doi-asserted-by": "crossref",
+        "first-page": "115",
+        "DOI": "10.1016/0022-5193(81)90377-5",
+        "volume": "91",
+        "author": "M Charton",
+        "year": "1981",
+        "unstructured": "Charton, M. Protein folding and the genetic code: an alternative quantitative model. J. Theor. Biol. 91, 115–123 (1981).",
+        "journal-title": "J. Theor. Biol."
+      },
+      {
+        "key": "67701_CR94",
+        "doi-asserted-by": "crossref",
+        "first-page": "19",
+        "DOI": "10.1111/j.1399-3011.1980.tb02931.x",
+        "volume": "16",
+        "author": "K Nishikawa",
+        "year": "1980",
+        "unstructured": "Nishikawa, K. & Ooi, T. Prediction of the surface-interior diagram of globular proteins by an empirical method. Int. J. Pept. Protein Res. 16, 19–32 (1980).",
+        "journal-title": "Int. J. Pept. Protein Res."
+      },
+      {
+        "key": "67701_CR95",
+        "doi-asserted-by": "crossref",
+        "first-page": "1043",
+        "DOI": "10.1093/oxfordjournals.jbchem.a121783",
+        "volume": "100",
+        "author": "K Nishikawa",
+        "year": "1986",
+        "unstructured": "Nishikawa, K. & Ooi, T. Radial locations of amino acid residues in a globular protein: correlation with the sequence. J. Biochem. 100, 1043–1047 (1986).",
+        "journal-title": "J. Biochem."
+      },
+      {
+        "key": "67701_CR96",
+        "doi-asserted-by": "crossref",
+        "first-page": "1398",
+        "DOI": "10.1021/ma60078a013",
+        "volume": "13",
+        "author": "H Meirovitch",
+        "year": "1980",
+        "unstructured": "Meirovitch, H., Rackovsky, S. & Scheraga, H. A. Empirical studies of hydrophobicity. 1. Effect of protein size on the hydrophobic behavior of amino acids. Macromolecules 13, 1398–1405 (1980).",
+        "journal-title": "Macromolecules"
+      },
+      {
+        "key": "67701_CR97",
+        "doi-asserted-by": "crossref",
+        "first-page": "491",
+        "DOI": "10.1038/277491a0",
+        "volume": "277",
+        "author": "J Janin",
+        "year": "1979",
+        "unstructured": "Janin, J. Surface and inside volumes in globular proteins [20]. Nature 277, 491–492 (1979).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "67701_CR98",
+        "doi-asserted-by": "crossref",
+        "first-page": "114",
+        "DOI": "10.1002/prot.10247",
+        "volume": "50",
+        "author": "M Punta",
+        "year": "2003",
+        "unstructured": "Punta, M. & Maritan, A. A knowledge-based scale for amino acid membrane propensity. Proteins: Struct. Funct. Genet. 50, 114–121 (2003).",
+        "journal-title": "Proteins: Struct. Funct. Genet."
+      },
+      {
+        "key": "67701_CR99",
+        "doi-asserted-by": "crossref",
+        "first-page": "315",
+        "DOI": "10.1002/prot.10584",
+        "volume": "54",
+        "author": "H Zhou",
+        "year": "2004",
+        "unstructured": "Zhou, H. & Zhou, Y. Quantifying the effect of burial of amino acid residues on protein stability. Proteins: Struct. Funct. Genet. 54, 315–322 (2004).",
+        "journal-title": "Proteins: Struct. Funct. Genet."
+      },
+      {
+        "key": "67701_CR100",
+        "unstructured": "Oobatake, M., Kubota, Y. & Ooi, T. Optimization of Amino Acid Parameters for Correspondence of Sequence to Tertiary Structures of Proteins. Tech. Rep. 2 (1985)."
+      },
+      {
+        "key": "67701_CR101",
+        "doi-asserted-by": "crossref",
+        "first-page": "289",
+        "DOI": "10.1016/0022-2836(78)90229-2",
+        "volume": "118",
+        "author": "PK Warme",
+        "year": "1978",
+        "unstructured": "Warme, P. K. & Morgan, R. S. A survey of amino acid side-chain interactions in 21 proteins. J. Mol. Biol. 118, 289–304 (1978).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "67701_CR102",
+        "doi-asserted-by": "crossref",
+        "first-page": "337",
+        "DOI": "10.1109/TBME.1985.325549",
+        "volume": "32",
+        "author": "V Veljkovic",
+        "year": "1985",
+        "unstructured": "Veljkovic, V., Cosic, I., Dimitrijevic, B. & Lalovic, D. Is it possible to analyze DNA and protein sequences by the methods of digital signal processing?. IEEE Trans. Biomed. Eng. 32, 337–341 (1985).",
+        "journal-title": "IEEE Trans. Biomed. Eng."
+      },
+      {
+        "key": "67701_CR103",
+        "doi-asserted-by": "crossref",
+        "first-page": "1101",
+        "DOI": "10.1109/10.335859",
+        "volume": "41",
+        "author": "I Cosic",
+        "year": "1994",
+        "unstructured": "Cosic, I. Macromolecular bioactivity: is it resonant interaction between macromolecules? Theory and applications. IEEE Trans. Biomed. Eng. 41, 1101–1114 (1994).",
+        "journal-title": "IEEE Trans. Biomed. Eng."
+      },
+      {
+        "key": "67701_CR104",
+        "doi-asserted-by": "crossref",
+        "first-page": "3421",
+        "DOI": "10.1021/bi00434a042",
+        "volume": "28",
+        "author": "RE Jacobs",
+        "year": "1989",
+        "unstructured": "Jacobs, R. E. & White, S. H. The nature of the hydrophobic binding of small peptides at the bilayer interface: implications for the insertion of transbilayer helices. Biochemistry 28, 3421–3437 (1989).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "67701_CR105",
+        "doi-asserted-by": "crossref",
+        "first-page": "1814",
+        "DOI": "10.1139/v87-305",
+        "volume": "65",
+        "author": "S Wold",
+        "year": "1987",
+        "unstructured": "Wold, S. et al. Principal property values for six non-natural amino acids and their application to a structure–activity relationship for oxytocin peptide analogues. Can. J. Chem. 65, 1814–1820 (1987).",
+        "journal-title": "Can. J. Chem."
+      },
+      {
+        "key": "67701_CR106",
+        "doi-asserted-by": "crossref",
+        "first-page": "2740",
+        "DOI": "10.1093/bioinformatics/bty179",
+        "volume": "34",
+        "author": "D Veltri",
+        "year": "2018",
+        "unstructured": "Veltri, D., Kamath, U. & Shehu, A. Deep learning improves antimicrobial peptide recognition. Bioinformatics 34, 2740–2747 (2018).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "67701_CR107",
+        "doi-asserted-by": "crossref",
+        "first-page": "11628",
+        "DOI": "10.1073/pnas.93.21.11628",
+        "volume": "93",
+        "author": "PD Thomas",
+        "year": "1996",
+        "unstructured": "Thomas, P. D. & Dill, K. A. An iterative method for extracting energy-like quantities from protein structures. Proc. Natl. Acad. Sci. USA 93, 11628–11633 (1996).",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "67701_CR108",
+        "doi-asserted-by": "crossref",
+        "first-page": "4337",
+        "DOI": "10.1073/pnas.0607879104",
+        "volume": "104",
+        "author": "J Shen",
+        "year": "2007",
+        "unstructured": "Shen, J. et al. Predicting protein-protein interactions based only on sequences information. Proc. Natl. Acad. Sci. USA 104, 4337–4341 (2007).",
+        "journal-title": "Proc. Natl. Acad. Sci. USA"
+      },
+      {
+        "key": "67701_CR109",
+        "doi-asserted-by": "crossref",
+        "first-page": "2229",
+        "DOI": "10.1039/C4MB00316K",
+        "volume": "10",
+        "author": "H Ding",
+        "year": "2014",
+        "unstructured": "Ding, H., Feng, P. M., Chen, W. & Lin, H. Identification of bacteriophage virion proteins by the ANOVA feature selection and analysis. Mol. BioSyst. 10, 2229–2235 (2014).",
+        "journal-title": "Mol. BioSyst."
+      },
+      {
+        "key": "67701_CR110",
+        "doi-asserted-by": "crossref",
+        "first-page": "3086",
+        "DOI": "10.1021/ci400127q",
+        "volume": "53",
+        "author": "DS Cao",
+        "year": "2013",
+        "unstructured": "Cao, D. S. et al. PyDPI: freely available python package for chemoinformatics, bioinformatics, and chemogenomics studies. J. Chem. Inf. Model. 53, 3086–3096 (2013).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "67701_CR111",
+        "doi-asserted-by": "crossref",
+        "first-page": "16",
+        "DOI": "10.1186/s13321-018-0270-2",
+        "volume": "10",
+        "author": "J Dong",
+        "year": "2018",
+        "unstructured": "Dong, J. et al. PyBioMed: a python library for various molecular representations of chemicals, proteins and DNAs and their interactions. J. Cheminformatics 10, 16 (2018).",
+        "journal-title": "J. Cheminformatics"
+      },
+      {
+        "key": "67701_CR112",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Cortes, C. Support-Vector Networks (Tech, Rep, 1995).",
+        "DOI": "10.1007/BF00994018"
+      },
+      {
+        "key": "67701_CR113",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ho, T. K. Random decision forests. In Proceedings of the International Conference on Document Analysis and Recognition, ICDAR, vol. 1 of ICDAR ’95, 278–282 (IEEE Computer Society, Washington, DC, USA, 1995).",
+        "DOI": "10.1109/ICDAR.1995.598994"
+      },
+      {
+        "key": "67701_CR114",
+        "doi-asserted-by": "crossref",
+        "first-page": "559",
+        "DOI": "10.1080/14786440109462720",
+        "volume": "2",
+        "author": "KLIII Pearson",
+        "year": "1901",
+        "unstructured": "Pearson, K. L. I. I. I. On lines and planes of closest fit to systems of points in space. Lond. Edinb. Dublin Philos. Mag. J. Sci. 2, 559–572 (1901).",
+        "journal-title": "Lond. Edinb. Dublin Philos. Mag. J. Sci."
+      },
+      {
+        "key": "67701_CR115",
+        "first-page": "2579",
+        "volume": "9",
+        "author": "L Van Der Maaten",
+        "year": "2008",
+        "unstructured": "Van Der Maaten, L. & Hinton, G. Visualizing data using t-SNE. J. Mach. Learn. Res. 9, 2579–2625 (2008).",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "67701_CR116",
+        "volume-title": "Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms",
+        "author": "BW White",
+        "year": "1963",
+        "unstructured": "White, B. W. & Rosenblatt, F. Principles of Neurodynamics: Perceptrons and the Theory of Brain Mechanisms Vol. 76 (Spartan Books, New York, 1963)."
+      },
+      {
+        "key": "67701_CR117",
+        "unstructured": "Brank, J., Grobelnik, M., Milić-Frayling, N. & Mladenić, D. Feature selection using support vector machines. Tech. Rep. MSR-TR-2002-63 (2002)."
+      },
+      {
+        "key": "67701_CR118",
+        "unstructured": "Ioffe, S. & Szegedy, C. Batch normalization: accelerating deep network training by reducing internal covariate shift. 32nd International Conference on Machine Learning, ICML 2015 1, 448–456. arXiv:1502.03167 (2015)"
+      },
+      {
+        "key": "67701_CR119",
+        "first-page": "1929",
+        "volume": "15",
+        "author": "N Srivastava",
+        "year": "2014",
+        "unstructured": "Srivastava, N., Hinton, G., Krizhevsky, A., Sutskever, I. & Salakhutdinov, R. Dropout: a simple way to prevent neural networks from overfitting. J. Mach. Learn. Res. 15, 1929–1958 (2014).",
+        "journal-title": "J. Mach. Learn. Res."
+      },
+      {
+        "key": "67701_CR120",
+        "unstructured": "Abadi, M. et al. TensorFlow: Large-Scale Machine Learning on Heterogeneous Distributed Systems (2016). arXiv:1603.04467."
+      },
+      {
+        "key": "67701_CR121",
+        "unstructured": "Kingma, D. P. & Ba, J. L. Adam: A method for stochastic optimization. 3rd International Conference on Learning Representations, ICLR 2015 - Conference Track Proceedings (2015). arXiv:1412.6980."
+      },
+      {
+        "key": "67701_CR122",
+        "doi-asserted-by": "crossref",
+        "first-page": "207",
+        "DOI": "10.1034/j.1399-3011.2003.00090.x",
+        "volume": "62",
+        "author": "JM Conlon",
+        "year": "2003",
+        "unstructured": "Conlon, J. M. et al. Isolation of peptides of the brevinin-1 family with potent candidacidal activity from the skin secretions of the frog Rana boylii. J. Pept. Res. 62, 207–213 (2003).",
+        "journal-title": "J. Pept. Res."
+      },
+      {
+        "key": "67701_CR123",
+        "doi-asserted-by": "crossref",
+        "first-page": "22843",
+        "DOI": "10.1038/srep22843",
+        "volume": "6",
+        "author": "K Chaudhary",
+        "year": "2016",
+        "unstructured": "Chaudhary, K. et al. A web server and mobile app for computing hemolytic potency of peptides. Sci. Rep. 6, 22843 (2016).",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "67701_CR124",
+        "doi-asserted-by": "crossref",
+        "first-page": "275",
+        "DOI": "10.4155/fmc-2016-0188",
+        "volume": "9",
+        "author": "TS Win",
+        "year": "2017",
+        "unstructured": "Win, T. S. et al. HemoPred: a web server for predicting the hemolytic activity of peptides. Future Med. Chem. 9, 275–291 (2017).",
+        "journal-title": "Future Med. Chem."
+      },
+      {
+        "key": "67701_CR125",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.3389/fphar.2020.00054",
+        "volume": "11",
+        "author": "V Kumar",
+        "year": "2020",
+        "unstructured": "Kumar, V., Kumar, R., Agrawal, P., Patiyal, S. & Raghava, G. P. A method for predicting hemolytic potency of chemically modified peptides from its structure. Front. Pharmacol. 11, 54 (2020).",
+        "journal-title": "Front. Pharmacol."
+      },
+      {
+        "key": "67701_CR126",
+        "doi-asserted-by": "crossref",
+        "first-page": "399",
+        "DOI": "10.1177/089443939100900304",
+        "volume": "9",
+        "author": "GD Garson",
+        "year": "1991",
+        "unstructured": "Garson, G. D. A comparison of neural network and expert systems algorithms with common multivariate procedures for analysis of social science data. Soc. Sci. Comput. Rev. 9, 399–434 (1991).",
+        "journal-title": "Soc. Sci. Comput. Rev."
+      },
+      {
+        "key": "67701_CR127",
+        "doi-asserted-by": "crossref",
+        "first-page": "203",
+        "DOI": "10.1007/s00249-019-01346-7",
+        "volume": "48",
+        "author": "S Benetti",
+        "year": "2019",
+        "unstructured": "Benetti, S., Timmons, P. B. & Hewage, C. M. NMR model structure of the antimicrobial peptide maximin 3. Eur. Biophys. J. 48, 203–212 (2019).",
+        "journal-title": "Eur. Biophys. J."
+      },
+      {
+        "key": "67701_CR128",
+        "doi-asserted-by": "crossref",
+        "first-page": "e3208",
+        "DOI": "10.1002/psc.3208",
+        "volume": "25",
+        "author": "PB Timmons",
+        "year": "2019",
+        "unstructured": "Timmons, P. B., O'Flynn, D., Conlon, J. M. & Hewage, C. M. Structural and positional studies of the antimicrobial peptide brevinin-1BYa in membrane-mimetic environments. J. Pept. Sci. 25, e3208 (2019).",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "67701_CR129",
+        "doi-asserted-by": "crossref",
+        "first-page": "701",
+        "DOI": "10.1007/s00249-019-01395-y",
+        "volume": "48",
+        "author": "PB Timmons",
+        "year": "2019",
+        "unstructured": "Timmons, P. B., O'Flynn, D., Conlon, J. M. & Hewage, C. M. Insights into conformation and membrane interactions of the acyclic and dicarba-bridged brevinin-1BYa antimicrobial peptides. Eur. Biophys. J. 48, 701–710 (2019).",
+        "journal-title": "Eur. Biophys. J."
+      },
+      {
+        "key": "67701_CR130",
+        "doi-asserted-by": "crossref",
+        "first-page": "89",
+        "DOI": "10.1080/10408410802143808",
+        "volume": "34",
+        "author": "RM Dawson",
+        "year": "2008",
+        "unstructured": "Dawson, R. M. & Liu, C. Q. Properties and applications of antimicrobial peptides in biodefense against biological warfare threat agents. Crit. Rev. Microbiol. 34, 89–107 (2008).",
+        "journal-title": "Crit. Rev. Microbiol."
+      },
+      {
+        "key": "67701_CR131",
+        "doi-asserted-by": "crossref",
+        "first-page": "1398",
+        "DOI": "10.1128/AAC.00925-06",
+        "volume": "51",
+        "author": "Y Chen",
+        "year": "2007",
+        "unstructured": "Chen, Y. et al. Role of peptide hydrophobicity in the mechanism of action of $$\\alpha$$-helical antimicrobial peptides. Antimicrob. Agents Chemother. 51, 1398–1406 (2007).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "67701_CR132",
+        "doi-asserted-by": "crossref",
+        "first-page": "528",
+        "DOI": "10.1016/j.colsurfb.2016.02.003",
+        "volume": "141",
+        "author": "A Hollmann",
+        "year": "2016",
+        "unstructured": "Hollmann, A. et al. Role of amphipathicity and hydrophobicity in the balance between hemolysis and peptide-membrane interactions of three related antimicrobial peptides. Colloids Surf. B Biointerfaces 141, 528–536 (2016).",
+        "journal-title": "Colloids Surf. B Biointerfaces"
+      },
+      {
+        "key": "67701_CR133",
+        "doi-asserted-by": "crossref",
+        "first-page": "427",
+        "DOI": "10.1016/S0196-9781(01)00641-6",
+        "volume": "23",
+        "author": "R Lai",
+        "year": "2002",
+        "unstructured": "Lai, R. et al. Antimicrobial peptides from skin secretions of Chinese red belly toad Bombina maxima. Peptides 23, 427–435 (2002).",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "67701_CR134",
+        "doi-asserted-by": "crossref",
+        "first-page": "561",
+        "DOI": "10.1007/978-0-387-73657-0_246",
+        "volume": "611",
+        "author": "Z Jiang",
+        "year": "2009",
+        "unstructured": "Jiang, Z. et al. Effects of net charge and the number of positively charged residues on the biological activity of amphipathic alpha-helical cationic antimicrobial peptides. Adv. Exp. Med. Biol. 611, 561–562 (2009).",
+        "journal-title": "Adv. Exp. Med. Biol."
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/s41598-020-67701-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-020-67701-3",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/s41598-020-67701-3.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          8,
+          8
+        ]
+      ],
+      "date-time": "2024-08-08T22:14:16Z",
+      "timestamp": 1723155256000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/s41598-020-67701-3"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          7,
+          2
+        ]
+      ]
+    },
+    "references-count": 134,
+    "journal-issue": {
+      "issue": "1",
+      "published-online": {
+        "date-parts": [
+          [
+            2020,
+            12
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "67701"
+    ],
+    "URL": "https://doi.org/10.1038/s41598-020-67701-3",
+    "relation": {},
+    "ISSN": [
+      "2045-2322"
+    ],
+    "issn-type": [
+      {
+        "value": "2045-2322",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          7,
+          2
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "3 March 2020",
+        "order": 1,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "9 June 2020",
+        "order": 2,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "2 July 2020",
+        "order": 3,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The authors declare no competing interests.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ],
+    "article-number": "10869"
+  }
+}

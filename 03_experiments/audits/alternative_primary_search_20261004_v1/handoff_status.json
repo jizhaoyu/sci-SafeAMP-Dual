@@ -1,0 +1,33 @@
+{
+  "status": "discovery_and_partial_primary_review_completed",
+  "review_mode": "agent_primary_source_review",
+  "primary_xmls_acquired": 4,
+  "additional_metadata_leads": 1,
+  "identity_sequences_prescreened": 6,
+  "all_member_pairs_prescreened": 2598,
+  "new_labels_released": 0,
+  "new_training_executed": false,
+  "formal_external_candidates_admitted": 0,
+  "source_decisions": {
+    "pandinin2014": "Formal development source overlap (DBAASP:948); all five sequences have >=0.40 formal-development conflicts. MIC endpoint/class-rule review still needed; do not accept extrapolated HC50 as exact.",
+    "corvus2023": "Methods explicitly report C-terminal amidation despite free-carboxyl wording; excluded from current unmodified MIC domain.",
+    "chmap2018": "Formal development source overlap and exact sequence overlap (DBAASP:12306). This anticancer study does not supply the original E. coli MIC table.",
+    "goat_antibacterial2018": "Original E. coli MIC tables obtained; formal development source overlap (DBAASP:12306). Separate MIC-development evidence review remains pending, including supplement identities and grouping.",
+    "hymenochirin2012": "DOI/PMID metadata obtained, no exact identifier match found in formal development. Author-deposited thesis chapter located; local PDF not obtained due verified TLS errors. No admission based on abstract. Full alias and all-member homology audit not completed."
+  },
+  "local_thesis_retrieval": {
+    "urllib": "certificate issuer verification failed",
+    "curl_with_system_tls_validation": "CRYPT_E_REVOCATION_OFFLINE",
+    "certificate_or_revocation_checks_disabled": false
+  },
+  "unfinished": [
+    "Full original Hymenochirin chapter acquisition, precise assay tables and molecular forms",
+    "Per-assay normalized endpoint and class-rule review for new MIC candidates",
+    "Complete study alias and candidate-internal component audit",
+    "New cohort admission, protocol freeze and training, if all gates pass"
+  ],
+  "current_machine_state": "03_experiments/audits/mic_training_readiness_20261004_v22.json",
+  "current_mic_training_blocked": false,
+  "formal_dual_task_status": "blocked",
+  "publication_ready": false
+}

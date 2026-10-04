@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "status": "blocked",
+  "created_at": "2026-09-29T16:41:58.438963+00:00",
+  "protocol_id": "legacy-v1",
+  "protocol_spec": {
+    "protocol_id": "legacy-v1",
+    "protocol_version": 1,
+    "clustering_method": "transitive",
+    "membership_identity": "min",
+    "min_length_ratio": 0.0,
+    "cross_identity": "min",
+    "cross_scope": "all_members",
+    "cutoff": 0.4,
+    "folds": 5,
+    "partition_seed": 42,
+    "alignment": "global_nw_match2_mismatch-1_gap-2_canonical_diagonal_first"
+  },
+  "protocol_digest": "c9bb5d9a1552bc6dc6ec3b26ebfe35ff4687b78906129c4529413e03f5e5dd2e",
+  "records_input_sha256": "57ce763d21c55bdc397e72d3b2932d3a35c5ace4e9c86403b1b1623c3c559618",
+  "cutoff": 0.4,
+  "identity_definition": "global_nw_match2_mismatch-1_gap-2_canonical_diagonal_first",
+  "folds": 5,
+  "seed": 42,
+  "feasibility_blockers": [
+    "A separately sourced external cohort is required."
+  ],
+  "reason": "A separately sourced external cohort is required."
+}

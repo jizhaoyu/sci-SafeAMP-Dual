@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-10-04T02:52:04.966076+00:00",
+  "status": "source_retrieval_only_no_release",
+  "primary_doi": "10.1002/mlf2.70020",
+  "source_xml": "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/bmap2025.xml",
+  "source_xml_sha256": "6f9ff4fd2e4717576da2b0ad83a053c15ef023b2ba9ccba3eeed689e0e8a4e76",
+  "script_sha256": "dcaae236254bc56dfa6a87860e8926fe7a470b6d56f00f48db321ddee39d2071",
+  "attempts": [
+    {
+      "id": "bmap_figure_1",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fcf5/12207908/1f6489e74c5d/MLF2-4-275-g003.jpg",
+      "expected_type": "jpeg",
+      "url_basis": "cloudpmc-path processing instruction in original XML",
+      "attempted_at": "2026-10-04T02:50:18.528212+00:00",
+      "verified_original_document": true,
+      "http_status": 200,
+      "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/fcf5/12207908/1f6489e74c5d/MLF2-4-275-g003.jpg",
+      "content_type": "image/jpeg",
+      "file": "bmap_figure_1.jpeg",
+      "bytes": 191985,
+      "sha256": "c4f0f07f3c4df75955ffbb034f165da2ea4eaef8cbb54e42d10adf636810c815",
+      "detected_type": "jpeg",
+      "status": "retrieved"
+    },
+    {
+      "id": "bmap_supplement_instance",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12207908/bin/MLF2-4-275-s003.docx",
+      "expected_type": "docx",
+      "url_basis": "PMCID and exact supplementary filename in original XML; instance route derived",
+      "attempted_at": "2026-10-04T02:50:18.529211+00:00",
+      "verified_original_document": false,
+      "http_status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/12207908/bin/MLF2-4-275-s003.docx",
+      "content_type": "text/html; charset=utf-8",
+      "file": "bmap_supplement_instance.html",
+      "bytes": 1817,
+      "sha256": "34f44c32ed79f0fea6ee38b6d15aa11f5265bfd0f31315742b2701f61c4e38ad",
+      "detected_type": "html",
+      "status": "retrieved"
+    },
+    {
+      "id": "bmap_supplement_europepmc",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12207908/supplementaryFiles",
+      "expected_type": "zip",
+      "url_basis": "Europe PMC public supplementaryFiles endpoint and source PMCID",
+      "attempted_at": "2026-10-04T02:50:18.531330+00:00",
+      "verified_original_document": false,
+      "status": "retrieval_failed",
+      "error_type": "TimeoutError"
+    }
+  ],
+  "new_labels_released": 0,
+  "training_started": false
+}

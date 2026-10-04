@@ -1,0 +1,1 @@
+protocol_conflict: cross_scope 'members_to_representatives' vs all-member zero leakage claim and min/max denominator ambiguity require formal scientific protocol sign-off.

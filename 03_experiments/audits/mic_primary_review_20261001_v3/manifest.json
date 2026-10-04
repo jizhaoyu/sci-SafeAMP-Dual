@@ -1,0 +1,38 @@
+{
+  "status": "blocked_primary_review_in_progress",
+  "generated_at": "2026-10-01T13:15:43.312246+00:00",
+  "paper": {
+    "pmid": "42206144",
+    "doi": "10.1038/s42256-026-01237-5",
+    "article_url": "https://www.nature.com/articles/s42256-026-01237-5",
+    "supplement_pdf_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42256-026-01237-5/MediaObjects/42256_2026_1237_MOESM1_ESM.pdf",
+    "supplement_csv_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs42256-026-01237-5/MediaObjects/42256_2026_1237_MOESM3_ESM.csv",
+    "article_license": "CC BY 4.0 as stated on the publisher article page"
+  },
+  "script_sha256": "72a04282c875df1d44f171468462da1de9256263a04fe6fae0f679544a06ea93",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_source_20261001_v1\\records.csv": "0721d767986118267ad3478bbeb4420e3ac0fc4f27748992a0271eb5040c82f9",
+    "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\assay_observations.csv": "356ffa9089dfde88cb0367c11af75ec03b2432c916b9f7f6a0a79e7193d19cdd",
+    "03_experiments\\audits\\mic_primary_review_20261001_v1\\raw\\42256_2026_1237_MOESM1_ESM.pdf": "50468f8a43815cf3f1f0957255781475b42d424cad2c6a57f9af6366b384f48a",
+    "03_experiments\\audits\\mic_primary_review_20261001_v1\\raw\\42256_2026_1237_MOESM3_ESM.csv": "5e908dd89ed0a9d4aca684c0ef5bcb2d6350ae035e8b935cfe2c9960bb653929"
+  },
+  "paper_review": {
+    "records": 10,
+    "paper_ecoli_observations": 30,
+    "database_observations": 31,
+    "curated_binary_observations": 21,
+    "sequence_matches": 10,
+    "database_mic_matches": 30,
+    "database_mic_conflicts": 1,
+    "paper_targets_with_database_conflicts": 1,
+    "raw_observations_not_in_binary_inventory": 10,
+    "records_fully_released_for_training": 0
+  },
+  "remaining_review": "Primary-paper assay conditions and terminal chemistry require record-level confirmation; one database MIC conflicts with the source. All other studies remain unreviewed.",
+  "outputs": {
+    "paper_queue.csv": "20894e3c2d18bd36b9d9ce79c4e3ebf877d079be0b921698e58c9a902afcff97",
+    "paper_assays.csv": "e59ecbba422c267003342f4634b2bc95af349386c62b1fb7ab18f3030b0a3c0b",
+    "raw_activity_review.csv": "cfbf6b35c8aff4c665b5f9fa2ac382086e3fe20927ec62c52da2afbd13f91ffc",
+    "record_review.csv": "ffedf571f99fb412509837d18ef9e47946e28d025d23c34c63fcd946b191d303"
+  }
+}

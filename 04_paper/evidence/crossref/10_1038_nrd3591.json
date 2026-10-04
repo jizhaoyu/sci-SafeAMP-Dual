@@ -1,0 +1,2608 @@
+{
+  "url": "https://api.crossref.org/works/10.1038/nrd3591",
+  "retrieved_at": "2026-09-28T14:30:55.717320+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          26
+        ]
+      ],
+      "date-time": "2026-09-26T11:47:14Z",
+      "timestamp": 1790423234664,
+      "version": "4.1.0"
+    },
+    "reference-count": 212,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2011,
+              12,
+              16
+            ]
+          ],
+          "date-time": "2011-12-16T00:00:00Z",
+          "timestamp": 1323993600000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2011,
+              12,
+              16
+            ]
+          ],
+          "date-time": "2011-12-16T00:00:00Z",
+          "timestamp": 1323993600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "link.springer.com"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Rev Drug Discov"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2012,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/nrd3591",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          16
+        ]
+      ],
+      "date-time": "2011-12-16T02:02:30Z",
+      "timestamp": 1324000950000
+    },
+    "page": "37-51",
+    "update-policy": "https://doi.org/10.1007/springer_crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 1864,
+    "title": [
+      "Designing antimicrobial peptides: form follows function"
+    ],
+    "prefix": "10.1038",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Christopher D.",
+        "family": "Fjell",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jan A.",
+        "family": "Hiss",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Robert E. W.",
+        "family": "Hancock",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Gisbert",
+        "family": "Schneider",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "published-online": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          16
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "BFnrd3591_CR1",
+        "doi-asserted-by": "crossref",
+        "first-page": "389",
+        "DOI": "10.1038/415389a",
+        "volume": "415",
+        "author": "M Zasloff",
+        "year": "2002",
+        "unstructured": "Zasloff, M. Antimicrobial peptides of multicellular organisms. Nature 415, 389–395 (2002). Together with reference 19, this paper gives a recommended overview of the mechanisms of action of AMPs.",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BFnrd3591_CR2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1551",
+        "DOI": "10.1038/nbt1267",
+        "volume": "24",
+        "author": "REW Hancock",
+        "year": "2006",
+        "unstructured": "Hancock R. E. W. & Sahl H. G. Antimicrobial and host-defense peptides as new anti-infective therapeutic strategies. Nature Biotech. 24, 1551–1557 (2006).",
+        "journal-title": "Nature Biotech."
+      },
+      {
+        "key": "BFnrd3591_CR3",
+        "doi-asserted-by": "crossref",
+        "first-page": "727",
+        "DOI": "10.1038/nrmicro976",
+        "volume": "2",
+        "author": "RI Lehrer",
+        "year": "2004",
+        "unstructured": "Lehrer, R. I. Primate defensins. Nature Rev. Microbiol. 2, 727–738 (2004).",
+        "journal-title": "Nature Rev. Microbiol."
+      },
+      {
+        "key": "BFnrd3591_CR4",
+        "doi-asserted-by": "crossref",
+        "first-page": "5",
+        "DOI": "10.1034/j.1600-065X.2000.917301.x",
+        "volume": "173",
+        "author": "HG Boman",
+        "year": "2000",
+        "unstructured": "Boman, H. G. Innate immunity and the normal microflora. Immunol. Rev. 173, 5–16 (2000).",
+        "journal-title": "Immunol. Rev."
+      },
+      {
+        "key": "BFnrd3591_CR5",
+        "doi-asserted-by": "crossref",
+        "first-page": "625",
+        "DOI": "10.1016/0006-2952(90)90138-B",
+        "volume": "39",
+        "author": "BA Berkowitz",
+        "year": "1990",
+        "unstructured": "Berkowitz, B. A., Bevins, C. L. & Zasloff, M. A. Magainins: a new family of membrane-active host defense peptides. Biochem. Pharmacol. 39, 625–629 (1990).",
+        "journal-title": "Biochem. Pharmacol."
+      },
+      {
+        "key": "BFnrd3591_CR6",
+        "first-page": "179",
+        "volume": "7",
+        "author": "M Zanetti",
+        "year": "2005",
+        "unstructured": "Zanetti, M. The role of cathelicidins in the innate host defenses of mammals. Curr. Issues Mol. Biol. 7, 179–196 (2005).",
+        "journal-title": "Curr. Issues Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR7",
+        "volume-title": "Antimicrobial Peptides: Discovery, Design and Novel Therapeutic Strategies. Advances in Molecular and Cellular Microbiology",
+        "author": "G Wang",
+        "year": "2010",
+        "unstructured": "Wang, G. (ed.) Antimicrobial Peptides: Discovery, Design and Novel Therapeutic Strategies. Advances in Molecular and Cellular Microbiology 18th edn (CABI Publishing, Cambridge, Massachusetts, 2010)."
+      },
+      {
+        "key": "BFnrd3591_CR8",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1046/j.1365-2796.2003.01228.x",
+        "volume": "254",
+        "author": "HG Boman",
+        "year": "2003",
+        "unstructured": "Boman, H. G. Antibacterial peptides: basic facts and emerging concepts. J. Intern. Med. 254, 197–215 (2003). This is a must-read paper on the history of AMPs and the significance of their discovery for modern medicine.",
+        "journal-title": "J. Intern. Med."
+      },
+      {
+        "key": "BFnrd3591_CR9",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1016/0952-7915(92)90115-U",
+        "volume": "4",
+        "author": "M Zasloff",
+        "year": "1992",
+        "unstructured": "Zasloff, M. Antibiotic peptides as mediators of innate immunity. Curr. Opin. Immunol. 4, 3–7 (1992).",
+        "journal-title": "Curr. Opin. Immunol."
+      },
+      {
+        "key": "BFnrd3591_CR10",
+        "doi-asserted-by": "crossref",
+        "first-page": "357",
+        "DOI": "10.1016/j.bbamem.2007.11.008",
+        "volume": "1778",
+        "author": "DW Hoskin",
+        "year": "2008",
+        "unstructured": "Hoskin, D. W. & Ramamoorthy, A. Studies on anticancer activities of antimicrobial peptides. Biochim. Biophys. Acta 1778, 357–375 (2008).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR11",
+        "doi-asserted-by": "crossref",
+        "first-page": "415",
+        "DOI": "10.1159/000330510",
+        "volume": "45",
+        "author": "R Sullivan",
+        "year": "2011",
+        "unstructured": "Sullivan, R. et al. Clinical efficacy of a specifically targeted antimicrobial peptide mouth rinse: targeted elimination of Streptococcus mutans and prevention of demineralization. Caries Res. 45, 415–428 (2011).",
+        "journal-title": "Caries Res."
+      },
+      {
+        "key": "BFnrd3591_CR12",
+        "doi-asserted-by": "crossref",
+        "first-page": "26524",
+        "DOI": "10.1074/jbc.M110.214007",
+        "volume": "286",
+        "author": "YS Chung",
+        "year": "2011",
+        "unstructured": "Chung, Y. S. & Kocks, C. Recognition of pathogenic microbes by the Drosophila phagocytic pattern recognition receptor Eater. J. Biol. Chem. 286, 26524–26532 (2011).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1118",
+        "DOI": "10.1002/eji.200939275",
+        "volume": "40",
+        "author": "SM Alalwani",
+        "year": "2010",
+        "unstructured": "Alalwani, S. M. et al. The antimicrobial peptide LL-37 modulates the inflammatory and host defense response of human neutrophils. Eur. J. Immunol. 40, 1118–1126 (2010).",
+        "journal-title": "Eur. J. Immunol."
+      },
+      {
+        "key": "BFnrd3591_CR14",
+        "doi-asserted-by": "crossref",
+        "first-page": "811",
+        "DOI": "10.1128/AAC.00652-09",
+        "volume": "54",
+        "author": "AM van der Does",
+        "year": "2010",
+        "unstructured": "van der Does, A. M. et al. Antimicrobial peptide hLF1–11 directs granulocyte-macrophage colony-stimulating factor-driven monocyte differentiation toward macrophages with enhanced recognition and clearance of pathogens. Antimicrob. Agents Chemother. 54, 811–816 (2010).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR15",
+        "doi-asserted-by": "crossref",
+        "first-page": "1003",
+        "DOI": "10.1189/jlb.72.5.1003",
+        "volume": "72",
+        "author": "L Tomasinsig",
+        "year": "2002",
+        "unstructured": "Tomasinsig, L., Scocchi, M., Di Loreto, C., Artico, D. & Zanetti, M. Inducible expression of an antimicrobial peptide of the innate immunity in polymorphonuclear leukocytes. J. Leukoc. Biol. 72, 1003–1010 (2002).",
+        "journal-title": "J. Leukoc. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR16",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1097/00062752-200201000-00004",
+        "volume": "9",
+        "author": "RI Lehrer",
+        "year": "2002",
+        "unstructured": "Lehrer, R. I. & Ganz, T. Cathelicidins: a family of endogenous antimicrobial peptides. Curr. Opin. Hematol. 9, 18–22 (2002).",
+        "journal-title": "Curr. Opin. Hematol."
+      },
+      {
+        "key": "BFnrd3591_CR17",
+        "doi-asserted-by": "crossref",
+        "first-page": "245",
+        "DOI": "10.1038/nrmicro2095",
+        "volume": "7",
+        "author": "MN Melo",
+        "year": "2009",
+        "unstructured": "Melo, M. N., Ferre, R., Castanho, M. A. Antimicrobial peptides: linking partition, activity and high membrane-bound concentrations. Nature Rev. Microbiol. 7, 245–250 (2009).",
+        "journal-title": "Nature Rev. Microbiol."
+      },
+      {
+        "key": "BFnrd3591_CR18",
+        "doi-asserted-by": "crossref",
+        "first-page": "2161",
+        "DOI": "10.1007/s00018-011-0710-x",
+        "volume": "68",
+        "author": "ATY Yeung",
+        "year": "2011",
+        "unstructured": "Yeung, A. T. Y., Gellatly, S. L. & Hancock, R. E. W. Multifunctional cationic host-defence peptides and clinical applications. Cell. Mol. Life Sci. 68, 2161–2176 (2011). This review covers the various clinical applications of cationic peptides — from antimicrobial to immunomodulatory — and describes the clinical stage of current candidate peptides in development.",
+        "journal-title": "Cell. Mol. Life Sci."
+      },
+      {
+        "key": "BFnrd3591_CR19",
+        "doi-asserted-by": "crossref",
+        "first-page": "238",
+        "DOI": "10.1038/nrmicro1098",
+        "volume": "3",
+        "author": "KA Brogden",
+        "year": "2005",
+        "unstructured": "Brogden, K. A. Antimicrobial peptides: pore formers or metabolic inhibitors in bacteria? Nature Rev. Microbiol. 3, 238–250 (2005).",
+        "journal-title": "Nature Rev. Microbiol."
+      },
+      {
+        "key": "BFnrd3591_CR20",
+        "first-page": "195",
+        "volume-title": "Antimicrobial Peptides: Discovery, Design and Novel Therapeutic Strategies. Advances in Molecular and Cellular Microbiology",
+        "author": "ML Mayer",
+        "year": "2010",
+        "unstructured": "Mayer, M. L., Easton, D. M. & Hancock, R. E. W. in Antimicrobial Peptides: Discovery, Design and Novel Therapeutic Strategies. Advances in Molecular and Cellular Microbiology 18 edn (ed. Wang, G.) 195–220 (CABI Publishing, Cambridge, Massachusetts, 2010)."
+      },
+      {
+        "key": "BFnrd3591_CR21",
+        "doi-asserted-by": "crossref",
+        "first-page": "273",
+        "DOI": "10.1128/br.21.4.273-294.1957",
+        "volume": "4",
+        "author": "RC Skarnes",
+        "year": "1957",
+        "unstructured": "Skarnes, R. C. & Watson, D. W. Antimicrobial factors of normal tissues and fluids. Bacteriol. Rev. 4, 273–294 (1957).",
+        "journal-title": "Bacteriol. Rev."
+      },
+      {
+        "key": "BFnrd3591_CR22",
+        "first-page": "353",
+        "volume": "4",
+        "author": "G Nuttall",
+        "year": "1888",
+        "unstructured": "Nuttall, G. Experimente über die bakterien feindlichen Einflüsse des tierischen Körpers. Z. Hyg. Infektionskr. 4, 353–394 (1888).",
+        "journal-title": "Z. Hyg. Infektionskr."
+      },
+      {
+        "key": "BFnrd3591_CR23",
+        "doi-asserted-by": "crossref",
+        "first-page": "1381",
+        "DOI": "10.1172/JCI114851",
+        "volume": "86",
+        "author": "JK Spitznagel",
+        "year": "1990",
+        "unstructured": "Spitznagel, J. K. Antibiotic proteins of human neutrophils. J. Clin. Invest. 86, 1381–1386 (1990).",
+        "journal-title": "J. Clin. Invest."
+      },
+      {
+        "key": "BFnrd3591_CR24",
+        "doi-asserted-by": "crossref",
+        "first-page": "5020",
+        "DOI": "10.1021/bi00263a028",
+        "volume": "21",
+        "author": "RB Merrifield",
+        "year": "1982",
+        "unstructured": "Merrifield, R. B., Vizioli, L. D. & Boman, H. G. Synthesis of the antibacterial peptide cecropin A (1–33). Biochemistry 21, 5020–5031 (1982).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BFnrd3591_CR25",
+        "doi-asserted-by": "crossref",
+        "first-page": "663",
+        "DOI": "10.1093/oxfordjournals.jbchem.a122913",
+        "volume": "106",
+        "author": "T Miyata",
+        "year": "1989",
+        "unstructured": "Miyata, T. et al. Antimicrobial peptides, isolated from horseshoe crab hemocytes, tachyplesin II, and polyphemusins I and II: chemical structures and biological activity. J. Biochem. 106, 663–668 (1989).",
+        "journal-title": "J. Biochem."
+      },
+      {
+        "key": "BFnrd3591_CR26",
+        "doi-asserted-by": "crossref",
+        "first-page": "239",
+        "DOI": "10.1016/j.bbapap.2003.12.009",
+        "volume": "1698",
+        "author": "JP Powers",
+        "year": "2004",
+        "unstructured": "Powers, J. P., Rozek, A. & Hancock, R. E. Structure–activity relationships for the β-hairpin cationic antimicrobial peptide polyphemusin I. Biochim. Biophys. Acta 1698, 239–250 (2004).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR27",
+        "doi-asserted-by": "crossref",
+        "first-page": "285",
+        "DOI": "10.1016/0014-5793(94)00493-5",
+        "volume": "346",
+        "author": "C Zhao",
+        "year": "1994",
+        "unstructured": "Zhao, C., Liu, L. & Lehrer, R. I. Identification of a new member of the protegrin family by cDNA cloning. FEBS Lett. 346, 285–288 (1994).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BFnrd3591_CR28",
+        "doi-asserted-by": "crossref",
+        "first-page": "249",
+        "DOI": "10.1007/BF03256616",
+        "volume": "1",
+        "author": "AM Cole",
+        "year": "2002",
+        "unstructured": "Cole, A. M. & Waring, A. J. The role of defensins in lung biology and therapy. Am. J. Respir. Med. 1, 249–259 (2002).",
+        "journal-title": "Am. J. Respir. Med."
+      },
+      {
+        "key": "BFnrd3591_CR29",
+        "doi-asserted-by": "crossref",
+        "first-page": "14504",
+        "DOI": "10.1021/bi0011173",
+        "volume": "39",
+        "author": "L Zhang",
+        "year": "2000",
+        "unstructured": "Zhang, L. et al. Interaction of polyphemusin I and structural analogs with bacterial membranes, lipopolysaccharide, and lipid monolayers. Biochemistry 39, 14504–14514 (2000).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BFnrd3591_CR30",
+        "doi-asserted-by": "crossref",
+        "first-page": "674",
+        "DOI": "10.1016/S0360-3016(03)01627-4",
+        "volume": "58",
+        "author": "A Trotti",
+        "year": "2004",
+        "unstructured": "Trotti, A. et al. A multinational, randomized Phase III trial of iseganan HCl oral solution for reducing the severity of oral mucositis in patients receiving radiotherapy for head-and-neck malignancy. Int. J. Radiat. Oncol. Biol. Phys. 58, 674–681 (2004).",
+        "journal-title": "Int. J. Radiat. Oncol. Biol. Phys."
+      },
+      {
+        "key": "BFnrd3591_CR31",
+        "doi-asserted-by": "crossref",
+        "first-page": "91",
+        "DOI": "10.1164/rccm.200504-656OC",
+        "volume": "173",
+        "author": "M Kollef",
+        "year": "2006",
+        "unstructured": "Kollef, M. et al. A randomized double-blind trial of iseganan in prevention of ventilator-associated pneumonia. Am. J. Respir. Crit. Care Med. 173, 91–97 (2006).",
+        "journal-title": "Am. J. Respir. Crit. Care Med."
+      },
+      {
+        "key": "BFnrd3591_CR32",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.1016/S0167-7799(97)01156-6",
+        "volume": "16",
+        "author": "REW Hancock",
+        "year": "1998",
+        "unstructured": "Hancock, R. E. W. & Lehrer, R. I. Cationic peptides: a new source of antibiotics. Trends Biotechnol. 16, 82–88 (1998).",
+        "journal-title": "Trends Biotechnol."
+      },
+      {
+        "key": "BFnrd3591_CR33",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.3389/fmicb.2011.00159",
+        "volume": "2",
+        "author": "SA Loutet",
+        "year": "2011",
+        "unstructured": "Loutet, S. A. & Valvano, M. A. Extreme antimicrobial peptide and polymyxin B resistance in the genus Burkholderia. Front. Microbiol. 2, 159 (2011).",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "BFnrd3591_CR34",
+        "doi-asserted-by": "crossref",
+        "first-page": "995",
+        "DOI": "10.1016/j.febslet.2011.03.008",
+        "volume": "585",
+        "author": "OL Franco",
+        "year": "2011",
+        "unstructured": "Franco, O. L. Peptide promiscuity: an evolutionary concept for plant defense. FEBS Lett. 585, 995–1000 (2011).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BFnrd3591_CR35",
+        "doi-asserted-by": "crossref",
+        "first-page": "549",
+        "DOI": "10.1038/nchembio.2007.27",
+        "volume": "3",
+        "author": "PA Smith",
+        "year": "2007",
+        "unstructured": "Smith, P. A. & Romesberg, F. E. Combating bacteria and drug resistance by inhibiting mechanisms of persistence and adaptation. Nature Chem. Biol. 3, 549–556 (2007).",
+        "journal-title": "Nature Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR36",
+        "doi-asserted-by": "crossref",
+        "first-page": "415",
+        "DOI": "10.1038/nchembio.590",
+        "volume": "7",
+        "author": "SB Falconer",
+        "year": "2011",
+        "unstructured": "Falconer, S. B., Czarny, T. L. & Brown, E. D. Antibiotics as probes of biological complexity. Nature Chem. Biol. 7, 415–423 (2011).",
+        "journal-title": "Nature Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR37",
+        "doi-asserted-by": "crossref",
+        "first-page": "1673",
+        "DOI": "10.1016/j.febslet.2011.04.029",
+        "volume": "585",
+        "author": "A Fabbretti",
+        "year": "2011",
+        "unstructured": "Fabbretti, A., Gualerzi, C. O. & Brandi, L. How to cope with the quest for new antibiotics. FEBS Lett. 585, 1673–1681 (2011).",
+        "journal-title": "FEBS Lett."
+      },
+      {
+        "key": "BFnrd3591_CR38",
+        "doi-asserted-by": "crossref",
+        "first-page": "24015",
+        "DOI": "10.1074/jbc.M009691200",
+        "volume": "276",
+        "author": "CL Friedrich",
+        "year": "2001",
+        "unstructured": "Friedrich, C. L., Rozek, A., Patrzykat, A. & Hancock, R. E. W. Structure and mechanism of action of an indolicidin peptide derivative with improved activity against Gram-positive bacteria. J. Biol. Chem. 276, 24015–24022 (2001).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR39",
+        "doi-asserted-by": "crossref",
+        "first-page": "529",
+        "DOI": "10.1038/nrmicro1441",
+        "volume": "4",
+        "author": "A Peschel",
+        "year": "2006",
+        "unstructured": "Peschel, A. & Sahl, H. G. The co-evolution of host cationic antimicrobial peptides and microbial resistance. Nature Rev. Microbiol. 4, 529–536 (2006).",
+        "journal-title": "Nature Rev. Microbiol."
+      },
+      {
+        "key": "BFnrd3591_CR40",
+        "first-page": "251",
+        "volume": "273",
+        "author": "GG Perron",
+        "year": "2006",
+        "unstructured": "Perron, G. G., Zasloff, M. & Bell, G. Experimental evolution of resistance to an antimicrobial peptide. Proc. Biol. Sci. 273, 251–256 (2006).",
+        "journal-title": "Proc. Biol. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR41",
+        "first-page": "11",
+        "volume": "8",
+        "author": "V Nizet",
+        "year": "2006",
+        "unstructured": "Nizet, V. Antimicrobial peptide resistance mechanisms of human bacterial pathogens. Curr. Issues Mol. Biol. 8, 11–26 (2006).",
+        "journal-title": "Curr. Issues Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR42",
+        "doi-asserted-by": "crossref",
+        "first-page": "993",
+        "DOI": "10.1038/nrd2199",
+        "volume": "5",
+        "author": "JP Overington",
+        "year": "2006",
+        "unstructured": "Overington, J. P., Al-Lazikani, B. & Hopkins, A. L. How many drug targets are there? Nature Rev. Drug Discov. 5, 993–996 (2006).",
+        "journal-title": "Nature Rev. Drug Discov."
+      },
+      {
+        "key": "BFnrd3591_CR43",
+        "doi-asserted-by": "crossref",
+        "first-page": "1119",
+        "DOI": "10.1038/nbt1338",
+        "volume": "25",
+        "author": "MA Yildirim",
+        "year": "2007",
+        "unstructured": "Yildirim, M. A., Goh, K. I., Cusick, M. E., Barabási, A. L. & Vidal, M. Drug–target network. Nature Biotech. 25, 1119–1126 (2007).",
+        "journal-title": "Nature Biotech."
+      },
+      {
+        "key": "BFnrd3591_CR44",
+        "doi-asserted-by": "crossref",
+        "first-page": "489",
+        "DOI": "10.1016/j.cbpa.2011.05.008",
+        "volume": "15",
+        "author": "AR Leach",
+        "year": "2011",
+        "unstructured": "Leach, A. R. & Hann, M. M. Molecular complexity and fragment-based drug discovery: ten years on. Curr. Opin. Chem. Biol. 15, 489–496 (2011).",
+        "journal-title": "Curr. Opin. Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR45",
+        "doi-asserted-by": "crossref",
+        "first-page": "38",
+        "DOI": "10.1038/sj.bjp.0707307",
+        "volume": "152",
+        "author": "D Rognan",
+        "year": "2007",
+        "unstructured": "Rognan, D. Chemogenomic approaches to rational drug design. Br. J. Pharmacol. 152, 38–52 (2007).",
+        "journal-title": "Br. J. Pharmacol."
+      },
+      {
+        "key": "BFnrd3591_CR46",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1007/978-1-60761-274-2_2",
+        "volume": "575",
+        "author": "KV Balakin",
+        "year": "2009",
+        "unstructured": "Balakin, K. V., Ivanenkov, Y. A. & Savchuk, N. P. Compound library design for target families. Methods Mol. Biol. 575, 21–46 (2009).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR47",
+        "doi-asserted-by": "crossref",
+        "first-page": "308",
+        "DOI": "10.1021/ci800344p",
+        "volume": "49",
+        "author": "J Scheiber",
+        "year": "2009",
+        "unstructured": "Scheiber, J. et al. Gaining insight into off-target mediated effects of drug candidates with a comprehensive systems chemical biology analysis. J. Chem. Inf. Model. 49, 308–317 (2009).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "BFnrd3591_CR48",
+        "doi-asserted-by": "crossref",
+        "first-page": "3036",
+        "DOI": "10.1093/bioinformatics/btr500",
+        "volume": "27",
+        "author": "T van Laarhoven",
+        "year": "2011",
+        "unstructured": "van Laarhoven, T., Nabuurs, S. B. & Marchiori, E. Gaussian interaction profile kernels for predicting drug–target interaction. Bioinformatics 27, 3036–3043 (2011).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "BFnrd3591_CR49",
+        "doi-asserted-by": "crossref",
+        "first-page": "55",
+        "DOI": "10.1016/S0005-2736(99)00200-X",
+        "volume": "1462",
+        "author": "Y Shai",
+        "year": "1999",
+        "unstructured": "Shai, Y. Mechanism of the binding, insertion and destabilization of phospholipid bilayer membranes by α-helical antimicrobial and cell non-selective membrane-lytic peptides. Biochim. Biophys. Acta 1462, 55–70 (1999).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR50",
+        "doi-asserted-by": "crossref",
+        "first-page": "399",
+        "DOI": "10.1007/s00249-011-0693-4",
+        "volume": "40",
+        "author": "G Fuertes",
+        "year": "2011",
+        "unstructured": "Fuertes, G., Giménez, D., Esteban-Martín, S., Sánchez-Muñoz, O. L. & Salgado, J. A lipocentric view of peptide-induced pores. Eur. Biophys. J. 40, 399–415 (2011).",
+        "journal-title": "Eur. Biophys. J."
+      },
+      {
+        "key": "BFnrd3591_CR51",
+        "doi-asserted-by": "crossref",
+        "first-page": "105",
+        "DOI": "10.4149/gpb_2009_02_105",
+        "volume": "28",
+        "author": "K Lohner",
+        "year": "2009",
+        "unstructured": "Lohner, K. New strategies for novel antibiotics: peptides targeting bacterial cell membranes. Gen. Physiol. Biophys. 28, 105–116 (2009).",
+        "journal-title": "Gen. Physiol. Biophys."
+      },
+      {
+        "key": "BFnrd3591_CR52",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1007/s00232-011-9343-0",
+        "volume": "239",
+        "author": "WC Wimley",
+        "year": "2011",
+        "unstructured": "Wimley, W. C. & Hristova, K. Antimicrobial peptides: successes, challenges and unanswered questions. J. Membr. Biol. 239, 27–34 (2011). This is a critical review on the current state of AMP design and a discussion on specific open questions that should be addressed in the future.",
+        "journal-title": "J. Membr. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR53",
+        "doi-asserted-by": "crossref",
+        "first-page": "475",
+        "DOI": "10.1007/s10989-004-2407-6",
+        "volume": "10",
+        "author": "K Hall",
+        "year": "2004",
+        "unstructured": "Hall, K., Mozsolits, H. & Aguilar, M. I. Surface plasmon resonance analysis of antimicrobial peptide-membrane interactions: affinity and mechansim of action. Lett. Pept. Sci. 10, 475–485 (2004).",
+        "journal-title": "Lett. Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR54",
+        "doi-asserted-by": "crossref",
+        "first-page": "1859",
+        "DOI": "10.1021/ac800087u",
+        "volume": "80",
+        "author": "HM Hiep",
+        "year": "2008",
+        "unstructured": "Hiep, H. M. et al. Label-free detection of melittin binding to a membrane using electrochemical-localized surface plasmon resonance. Anal. Chem. 80, 1859–1864 (2008).",
+        "journal-title": "Anal. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR55",
+        "doi-asserted-by": "crossref",
+        "first-page": "298",
+        "DOI": "10.1002/psc.1319",
+        "volume": "17",
+        "author": "RM Epand",
+        "year": "2011",
+        "unstructured": "Epand, R. M. & Epand, R. F. Bacterial membrane lipids in the action of antimicrobial agents. J. Pept. Sci. 17, 298–305 (2011).",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR56",
+        "doi-asserted-by": "crossref",
+        "first-page": "1275",
+        "DOI": "10.1529/biophysj.105.067595",
+        "volume": "90",
+        "author": "F Neville",
+        "year": "2006",
+        "unstructured": "Neville, F. et al. Lipid headgroup discrimination by antimicrobial peptide LL-37: insight into mechanism of action. Biophys. J. 90, 1275–1287 (2006).",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "BFnrd3591_CR57",
+        "doi-asserted-by": "crossref",
+        "first-page": "451",
+        "DOI": "10.1189/jlb.0704380",
+        "volume": "77",
+        "author": "DME Bowdish",
+        "year": "2005",
+        "unstructured": "Bowdish, D. M. E. et al. Impact of LL-37 on anti-infective immunity. J. Leukoc. Biol. 77, 451–459 (2005).",
+        "journal-title": "J. Leukoc. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR58",
+        "doi-asserted-by": "crossref",
+        "first-page": "583",
+        "DOI": "10.1128/IAI.73.1.583-591.2005",
+        "volume": "73",
+        "author": "YE Lau",
+        "year": "2005",
+        "unstructured": "Lau, Y. E. et al. Interaction and cellular localization of the human host defence peptide, LL-37, with lung epithelial cells. Infect. Immun. 73, 583–591 (2005). This study demonstrated that uptake into cells is essential for the chemokine-inducing properties of LL-37 and other cationic peptides, changing the paradigm that such peptides were selective because they were not taken up into eukaryotic cells.",
+        "journal-title": "Infect. Immun."
+      },
+      {
+        "key": "BFnrd3591_CR59",
+        "doi-asserted-by": "crossref",
+        "first-page": "2688",
+        "DOI": "10.4049/jimmunol.0802586",
+        "volume": "183",
+        "author": "N Mookherjee",
+        "year": "2009",
+        "unstructured": "Mookherjee, N. et al. Intracellular receptor for human host defence peptide LL-37 in monocytes. J. Immunol. 183, 2688–2696 (2009).",
+        "journal-title": "J. Immunol."
+      },
+      {
+        "key": "BFnrd3591_CR60",
+        "doi-asserted-by": "crossref",
+        "first-page": "172",
+        "DOI": "10.1111/j.1749-6632.1999.tb09410.x",
+        "volume": "886",
+        "author": "A Prochiantz",
+        "year": "1999",
+        "unstructured": "Prochiantz, A. Homeodomain-derived peptides: in and out of the cells. Ann. NY Acad. Sci. 886, 172–179 (1999).",
+        "journal-title": "Ann. NY Acad. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR61",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1016/j.regpep.2010.08.010",
+        "volume": "166",
+        "author": "SH Lee",
+        "year": "2011",
+        "unstructured": "Lee, S. H. et al. De novo generation of short antimicrobial peptides with simple amino acid composition. Regul. Pept. 166, 36–41 (2011).",
+        "journal-title": "Regul. Pept."
+      },
+      {
+        "key": "BFnrd3591_CR62",
+        "doi-asserted-by": "crossref",
+        "first-page": "556",
+        "DOI": "10.1093/nar/gkg160",
+        "volume": "31",
+        "author": "G Dom",
+        "year": "2003",
+        "unstructured": "Dom, G. et al. Cellular uptake of Antennapedia Penetratin peptides is a two-step process in which phase transfer precedes a tryptophan-dependent translocation. Nucleic Acids Res. 31, 556–561 (2003).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "BFnrd3591_CR63",
+        "doi-asserted-by": "crossref",
+        "first-page": "103",
+        "DOI": "10.1146/annurev.mi.41.100187.000535",
+        "volume": "41",
+        "author": "HG Boman",
+        "year": "1987",
+        "unstructured": "Boman, H. G. & Hultmark, D. Cell-free immunity in insects. Annu. Rev. Microbiol. 41, 103–126 (1987).",
+        "journal-title": "Annu. Rev. Microbiol."
+      },
+      {
+        "key": "BFnrd3591_CR64",
+        "doi-asserted-by": "crossref",
+        "first-page": "1683",
+        "DOI": "10.1021/bi00328a017",
+        "volume": "24",
+        "author": "D Andreu",
+        "year": "1985",
+        "unstructured": "Andreu, D., Merrifield, R. B., Steiner, H. & Boman, H. G. N-terminal analogues of cecropin A: synthesis, antibacterial activity, and conformational properties. Biochemistry 24, 1683–1688 (1985).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BFnrd3591_CR65",
+        "doi-asserted-by": "crossref",
+        "first-page": "17951",
+        "DOI": "10.1074/jbc.M311440200",
+        "volume": "279",
+        "author": "S Sandgren",
+        "year": "2004",
+        "unstructured": "Sandgren, S. et al. The human antimicrobial peptide LL-37 transfers extracellular DNA plasmid to the nuclear compartment of mammalian cells via lipid rafts and proteoglycan-dependent endocytosis. J. Biol. Chem. 279, 17951–17956 (2004). This is a breakthrough paper that describes how LL-37 acts as a cell-penetrating peptide and thus shares physicochemical properties with this group of peptides.",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR66",
+        "doi-asserted-by": "crossref",
+        "first-page": "3597",
+        "DOI": "10.2174/138161205774580796",
+        "volume": "11",
+        "author": "S El-Andaloussi",
+        "year": "2005",
+        "unstructured": "El-Andaloussi, S., Holm, T. & Langel, U. Cell-penetrating peptides: mechanisms and applications. Curr. Pharm. Des. 11, 3597–3611 (2005).",
+        "journal-title": "Curr. Pharm. Des."
+      },
+      {
+        "key": "BFnrd3591_CR67",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1016/S0005-2736(99)00198-4",
+        "volume": "1462",
+        "author": "RM Epand",
+        "year": "1999",
+        "unstructured": "Epand, R. M. & Vogel, H. J. Diversity of antimicrobial peptides and their mechanisms of action. Biochim. Biophys. Acta 1462, 11–28 (1999).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR68",
+        "doi-asserted-by": "crossref",
+        "first-page": "1681",
+        "DOI": "10.1016/j.peptides.2003.08.023",
+        "volume": "24",
+        "author": "JP Powers",
+        "year": "2003",
+        "unstructured": "Powers, J. P. & Hancock, R. E. W. The relationship between peptide structure and antibacterial activity. Peptides 24, 1681–1691 (2003).",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "BFnrd3591_CR69",
+        "doi-asserted-by": "crossref",
+        "first-page": "1148",
+        "DOI": "10.1093/bioinformatics/btm068",
+        "volume": "23",
+        "author": "CD Fjell",
+        "year": "2007",
+        "unstructured": "Fjell, C. D., Hancock, R. E. W. & Cherkasov, A. AMPer: a database and an automated discovery tool for antimicrobial peptides. Bioinformatics 23, 1148–1155 (2007).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "BFnrd3591_CR70",
+        "doi-asserted-by": "crossref",
+        "first-page": "420",
+        "DOI": "10.1002/prot.22059",
+        "volume": "73",
+        "author": "CD Fjell",
+        "year": "2008",
+        "unstructured": "Fjell, C. D. et al. Identification of novel host defense peptides and the absence of α-defensins in the bovine genome. Proteins 73, 420–430 (2008).",
+        "journal-title": "Proteins"
+      },
+      {
+        "key": "BFnrd3591_CR71",
+        "doi-asserted-by": "crossref",
+        "first-page": "D774",
+        "DOI": "10.1093/nar/gkp1021",
+        "volume": "38",
+        "author": "S Thomas",
+        "year": "2010",
+        "unstructured": "Thomas, S., Karnik, S., Barai, R. S., Jayaraman, V. K. & Idicula-Thomas, S. CAMP: a useful resource for research on antimicrobial peptides. Nucleic Acids Res. 38, D774–D780 (2010).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "BFnrd3591_CR72",
+        "doi-asserted-by": "crossref",
+        "first-page": "e18476",
+        "DOI": "10.1371/journal.pone.0018476",
+        "volume": "6",
+        "author": "P Wang",
+        "year": "2011",
+        "unstructured": "Wang, P. et al. Prediction of antimicrobial peptides based on sequence alignment and feature selection methods. PLoS ONE 6, e18476 (2011).",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "BFnrd3591_CR73",
+        "doi-asserted-by": "crossref",
+        "first-page": "D586",
+        "DOI": "10.1093/nar/gkh032",
+        "volume": "32",
+        "author": "M Brahmachary",
+        "year": "2004",
+        "unstructured": "Brahmachary, M. et al. ANTIMIC: a database of antimicrobial sequences. Nucleic Acids Res. 32, D586–D589 (2004).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "BFnrd3591_CR74",
+        "doi-asserted-by": "crossref",
+        "first-page": "540",
+        "DOI": "10.1016/j.drudis.2010.05.002",
+        "volume": "15",
+        "author": "R Hammami",
+        "year": "2010",
+        "unstructured": "Hammami, R. & Fliss, I. Current trends in antimicrobial agent research: chemo- and bioinformatics approaches. Drug Discov. Today 15, 540–546 (2010).",
+        "journal-title": "Drug Discov. Today"
+      },
+      {
+        "key": "BFnrd3591_CR75",
+        "doi-asserted-by": "crossref",
+        "first-page": "D590",
+        "DOI": "10.1093/nar/gkh025",
+        "volume": "32",
+        "author": "Z Wang",
+        "year": "2004",
+        "unstructured": "Wang, Z. & Wang, G. APD: the antimicrobial peptide database. Nucleic Acids Res. 32, D590–D592 (2004).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "BFnrd3591_CR76",
+        "doi-asserted-by": "crossref",
+        "first-page": "D933",
+        "DOI": "10.1093/nar/gkn823",
+        "volume": "37",
+        "author": "G Wang",
+        "year": "2009",
+        "unstructured": "Wang, G., Li, X. & Wang, Z. APD2: the updated antimicrobial peptide database and its application in peptide design. Nucleic Acids Res. 37, D933–D937 (2009). This is the most comprehensive AMP database resource.",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "BFnrd3591_CR77",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.2174/138920310791112075",
+        "volume": "11",
+        "author": "AM Benko-Iseppon",
+        "year": "2010",
+        "unstructured": "Benko-Iseppon, A. M. et al. Overview on plant antimicrobial peptides. Curr. Protein Pept. Sci. 11, 181–188 (2010).",
+        "journal-title": "Curr. Protein Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR78",
+        "doi-asserted-by": "crossref",
+        "first-page": "12512",
+        "DOI": "10.1002/chem.201001279",
+        "volume": "16",
+        "author": "CC Hughes",
+        "year": "2010",
+        "unstructured": "Hughes, C. C. & Fenical, W. Antibacterials from the sea. Chem. Eur. J. 16, 12512–12525 (2010).",
+        "journal-title": "Chem. Eur. J."
+      },
+      {
+        "key": "BFnrd3591_CR79",
+        "doi-asserted-by": "crossref",
+        "first-page": "1031",
+        "DOI": "10.2174/138945008786949405",
+        "volume": "9",
+        "author": "WF de Azevedo Jr",
+        "year": "2008",
+        "unstructured": "de Azevedo, W. F. Jr & Dias, R. Computational methods for calculation of ligand-binding affinity. Curr. Drug Targets 9, 1031–1039 (2008).",
+        "journal-title": "Drug Targets"
+      },
+      {
+        "key": "BFnrd3591_CR80",
+        "doi-asserted-by": "crossref",
+        "first-page": "1092",
+        "DOI": "10.2174/138945008786949379",
+        "volume": "9",
+        "author": "LF Timmers",
+        "year": "2008",
+        "unstructured": "Timmers, L. F., Pauli, I., Caceres, R. A. & de Azevedo, W. F. Jr. Drug-binding databases. Curr. Drug Targets 9, 1092–1099 (2008).",
+        "journal-title": "Curr. Drug Targets"
+      },
+      {
+        "key": "BFnrd3591_CR81",
+        "doi-asserted-by": "crossref",
+        "first-page": "589",
+        "DOI": "10.1016/j.coph.2009.06.001",
+        "volume": "9",
+        "author": "T Langer",
+        "year": "2009",
+        "unstructured": "Langer, T., Hoffmann, R., Bryant, S. & Lesur, B. Hit finding: towards 'smarter' approaches. Curr. Opin. Pharmacol. 9, 589–593 (2009).",
+        "journal-title": "Curr. Opin. Pharmacol."
+      },
+      {
+        "key": "BFnrd3591_CR82",
+        "doi-asserted-by": "crossref",
+        "first-page": "2873",
+        "DOI": "10.1021/ci900327a",
+        "volume": "49",
+        "author": "D Juretić",
+        "year": "2009",
+        "unstructured": "Juretić, D., Vukicević, D., Ilić, N., Antcheva, N. & Tossi, A. Computational design of highly selective antimicrobial peptides. J. Chem. Inf. Model. 49, 2873–2882 (2009).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "BFnrd3591_CR83",
+        "doi-asserted-by": "crossref",
+        "first-page": "371",
+        "DOI": "10.1007/s00249-011-0674-7",
+        "volume": "40",
+        "author": "D Juretić",
+        "year": "2011",
+        "unstructured": "Juretić, D. et al. Knowledge-based computational methods for identifying or designing novel, non-homologous antimicrobial peptides. Eur. Biophys. J. 40, 371–385 (2011).",
+        "journal-title": "Eur. Biophys. J."
+      },
+      {
+        "key": "BFnrd3591_CR84",
+        "doi-asserted-by": "crossref",
+        "first-page": "379",
+        "DOI": "10.1016/j.cbpa.2011.02.015",
+        "volume": "15",
+        "author": "JA Robinson",
+        "year": "2011",
+        "unstructured": "Robinson, J. A. Protein epitope mimetics as anti-infectives. Curr. Opin. Chem. Biol. 15, 379–386 (2011).",
+        "journal-title": "Curr. Opin. Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR85",
+        "doi-asserted-by": "crossref",
+        "first-page": "2204",
+        "DOI": "10.1016/j.biomaterials.2010.11.054",
+        "volume": "32",
+        "author": "N Wiradharma",
+        "year": "2011",
+        "unstructured": "Wiradharma, N. et al. Synthetic cationic amphiphilic α-helical peptides as antimicrobial agents. Biomaterials 32, 2204–2212 (2011).",
+        "journal-title": "Biomaterials"
+      },
+      {
+        "key": "BFnrd3591_CR86",
+        "doi-asserted-by": "crossref",
+        "first-page": "143",
+        "DOI": "10.1007/s13238-010-0004-3",
+        "volume": "1",
+        "author": "Y Huang",
+        "year": "2010",
+        "unstructured": "Huang, Y., Huang, J. & Chen, Y. α-helical cationic antimicrobial peptides: relationships of structure and function. Protein Cell 1, 143–152 (2010).",
+        "journal-title": "Protein Cell"
+      },
+      {
+        "key": "BFnrd3591_CR87",
+        "doi-asserted-by": "crossref",
+        "first-page": "341",
+        "DOI": "10.1093/jac/dkm479",
+        "volume": "61",
+        "author": "U Pag",
+        "year": "2008",
+        "unstructured": "Pag, U. et al. Analysis of in vitro activities and modes of action of synthetic antimicrobial peptides derived from an α-helical 'sequence template'. J. Antimicrob. Chemother. 61, 341–352 (2008).",
+        "journal-title": "J. Antimicrob. Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR88",
+        "doi-asserted-by": "crossref",
+        "first-page": "281",
+        "DOI": "10.1515/9783110874242",
+        "volume-title": "Concepts in Protein Engineering and Design",
+        "author": "P Wrede",
+        "year": "1994",
+        "unstructured": "Wrede, P. & Schneider, G. (eds) Concepts in Protein Engineering and Design 281–317 (Walter-de-Gruyter, Berlin, New York, 1994)."
+      },
+      {
+        "key": "BFnrd3591_CR89",
+        "doi-asserted-by": "crossref",
+        "first-page": "3",
+        "DOI": "10.1007/978-1-60327-394-7_1",
+        "volume": "570",
+        "author": "VE Tapia",
+        "year": "2009",
+        "unstructured": "Tapia, V. E., Ay, B. & Volkmer, R. Exploring and profiling protein function with peptide arrays. Methods Mol. Biol. 570, 3–17 (2009).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR90",
+        "doi-asserted-by": "crossref",
+        "first-page": "1008",
+        "DOI": "10.1038/nbt1113",
+        "volume": "23",
+        "author": "K Hilpert",
+        "year": "2005",
+        "unstructured": "Hilpert, K., Volkmer-Engert, R., Walter, T. & Hancock, R. E. W. High-throughput generation of small antibacterial peptides with improved activity. Nature Biotech. 23, 1008–1012 (2005).",
+        "journal-title": "Nature Biotech."
+      },
+      {
+        "key": "BFnrd3591_CR91",
+        "doi-asserted-by": "crossref",
+        "first-page": "1101",
+        "DOI": "10.1016/j.chembiol.2006.08.014",
+        "volume": "13",
+        "author": "K Hilpert",
+        "year": "2006",
+        "unstructured": "Hilpert, K. et al. Sequence requirements and a novel optimization strategy for short antimicrobial peptides. Chem. Biol. 13, 1101–1107 (2006).",
+        "journal-title": "Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR92",
+        "first-page": "635",
+        "volume": "10",
+        "author": "G Schneider",
+        "year": "1994",
+        "unstructured": "Schneider, G., Schuchhardt, J. & Wrede, P. Artificial neural networks and simulated molecular evolution are potential tools for sequence-oriented protein design. Comput. Appl. Biosci. 10, 635–645 (1994).",
+        "journal-title": "Comput. Appl. Biosci."
+      },
+      {
+        "key": "BFnrd3591_CR93",
+        "doi-asserted-by": "crossref",
+        "first-page": "867",
+        "DOI": "10.1038/nature05233",
+        "volume": "443",
+        "author": "C Loose",
+        "year": "2006",
+        "unstructured": "Loose, C., Jensen, K., Rigoutsos, I. & Stephanopoulos, G. A linguistic model for the rational design of antimicrobial peptides. Nature 443, 867–869 (2006). This paper presents a creative bioinformatics concept for a new perspective on amino-acid sequence description and design.",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BFnrd3591_CR94",
+        "doi-asserted-by": "crossref",
+        "first-page": "12688",
+        "DOI": "10.1021/bi00165a020",
+        "volume": "31",
+        "author": "SE Blondelle",
+        "year": "1992",
+        "unstructured": "Blondelle, S. E. & Houghten, R. A. Design of model amphipathic peptides having potent antimicrobial activities. Biochemistry 31, 12688–12694 (1992). This landmark paper used library-based combinatorial design methods to create small active peptides.",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BFnrd3591_CR95",
+        "doi-asserted-by": "crossref",
+        "first-page": "316",
+        "DOI": "10.1128/AAC.49.1.316-322.2005",
+        "volume": "49",
+        "author": "B Deslouches",
+        "year": "2005",
+        "unstructured": "Deslouches, B. et al. De novo generation of cationic antimicrobial peptides: influence of length and tryptophan substitution on antimicrobial activity. Antimicrob. Agents Chemother. 49, 316–322 (2005).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR96",
+        "doi-asserted-by": "crossref",
+        "first-page": "3349",
+        "DOI": "10.1128/AAC.48.9.3349-3357.2004",
+        "volume": "48",
+        "author": "V Frecer",
+        "year": "2004",
+        "unstructured": "Frecer, V., Ho, B. & Ding, J. L. De novo design of potent antimicrobial peptides. Antimicrob. Agents Chemother. 48, 3349–3357 (2004).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR97",
+        "doi-asserted-by": "crossref",
+        "first-page": "13181",
+        "DOI": "10.1074/jbc.274.19.13181",
+        "volume": "274",
+        "author": "LH Kondejewski",
+        "year": "1999",
+        "unstructured": "Kondejewski, L. H. et al. Dissociation of antimicrobial and hemolytic activities in cyclic peptide diastereomers by systematic alterations in amphipathicity. J. Biol. Chem. 274, 13181–13192 (1999).",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR98",
+        "doi-asserted-by": "crossref",
+        "first-page": "225",
+        "DOI": "10.1111/j.1747-0285.2011.01086.x",
+        "volume": "77",
+        "author": "Z Jiang",
+        "year": "2011",
+        "unstructured": "Jiang, Z., Vasil, A. I., Gera, L., Vasil, M. L. & Hodges, R. S. Rational design of α-helical antimicrobial peptides to target Gram-negative pathogens, Acinetobacter baumannii and Pseudomonas aeruginosa: utilization of charge, 'specificity determinants,' total hydrophobicity, hydrophobe type and location as design parameters to improve the therapeutic ratio. Chem. Biol. Drug Des. 77, 225–240 (2011).",
+        "journal-title": "Chem. Biol. Drug Des."
+      },
+      {
+        "key": "BFnrd3591_CR99",
+        "doi-asserted-by": "crossref",
+        "first-page": "532",
+        "DOI": "10.1016/j.ijantimicag.2008.11.013",
+        "volume": "33",
+        "author": "J He",
+        "year": "2009",
+        "unstructured": "He, J., Anderson, M. H., Shi, W. & Eckert, R. Design and activity of a 'dual-targeted' antimicrobial peptide. Int. J. Antimicrob. Agents 33, 532–537 (2009).",
+        "journal-title": "Int. J. Antimicrob. Agents"
+      },
+      {
+        "key": "BFnrd3591_CR100",
+        "doi-asserted-by": "crossref",
+        "first-page": "487",
+        "DOI": "10.1023/A:1008184403558",
+        "volume": "14",
+        "author": "G Schneider",
+        "year": "2000",
+        "unstructured": "Schneider, G., Lee, M. L., Stahl, M. & Schneider, P. De novo design of molecular architectures by evolutionary assembly of drug-derived building blocks. J. Comput. Aided Mol. Des. 14, 487–494 (2000).",
+        "journal-title": "J. Comput. Aided Mol. Des."
+      },
+      {
+        "key": "BFnrd3591_CR101",
+        "doi-asserted-by": "crossref",
+        "first-page": "2768",
+        "DOI": "10.1021/jm030543u",
+        "volume": "47",
+        "author": "AC Pierce",
+        "year": "2004",
+        "unstructured": "Pierce, A. C., Rao, G. & Bemis, G. W. BREED: generating novel inhibitors through hybridization of known ligands. Application to CDK2, p38, and HIV protease. J. Med. Chem. 47, 2768–2775 (2004).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR102",
+        "doi-asserted-by": "crossref",
+        "first-page": "2412",
+        "DOI": "10.1128/AAC.49.6.2412-2420.2005",
+        "volume": "49",
+        "author": "IS Radzishevsky",
+        "year": "2005",
+        "unstructured": "Radzishevsky, I. S. et al. Effects of acyl versus aminoacyl conjugation on the properties of antimicrobial peptides. Antimicrob. Agents Chemother. 49, 2412–2420 (2005).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR103",
+        "doi-asserted-by": "crossref",
+        "first-page": "2215",
+        "DOI": "10.1128/AAC.01100-08",
+        "volume": "53",
+        "author": "GN Serrano",
+        "year": "2009",
+        "unstructured": "Serrano, G. N., Zhanel, G. G. & Schweizer, F. Antibacterial activity of ultrashort cationic lipo-β-peptides. Antimicrob. Agents Chemother. 53, 2215–2217 (2009).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR104",
+        "doi-asserted-by": "crossref",
+        "first-page": "12277",
+        "DOI": "10.1074/jbc.M312260200",
+        "volume": "279",
+        "author": "D Avrahami",
+        "year": "2004",
+        "unstructured": "Avrahami, D. & Shai, Y. A new group of antifungal and antibacterial lipopeptides derived from non-membrane active peptides conjugated to palmitic acid. J. Biol. Chem. 279, 12277–12285 (2004). This study introduced acylation as a strategy to enhance the activity of AMPs.",
+        "journal-title": "J. Biol. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR105",
+        "doi-asserted-by": "crossref",
+        "first-page": "2789",
+        "DOI": "10.2174/092986707782360105",
+        "volume": "14",
+        "author": "E Mátyus",
+        "year": "2007",
+        "unstructured": "Mátyus, E., Kandt, C. & Tieleman, D. P. Computer simulation of antimicrobial peptides. Curr. Med. Chem. 14, 2789–2798 (2007).",
+        "journal-title": "Curr. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR106",
+        "doi-asserted-by": "crossref",
+        "first-page": "724",
+        "DOI": "10.1021/ar800236t",
+        "volume": "42",
+        "author": "WL Jorgensen",
+        "year": "2009",
+        "unstructured": "Jorgensen, W. L. Efficient drug lead discovery and optimization. Acc. Chem. Res. 42, 724–733 (2009).",
+        "journal-title": "Acc. Chem. Res."
+      },
+      {
+        "key": "BFnrd3591_CR107",
+        "doi-asserted-by": "crossref",
+        "first-page": "649",
+        "DOI": "10.1038/nrd1799",
+        "volume": "4",
+        "author": "G Schneider",
+        "year": "2005",
+        "unstructured": "Schneider, G. & Fechner, U. Computer-based de novo design of drug-like molecules. Nature Rev. Drug Discov. 4, 649–663 (2005).",
+        "journal-title": "Nature Rev. Drug Discov."
+      },
+      {
+        "key": "BFnrd3591_CR108",
+        "doi-asserted-by": "crossref",
+        "first-page": "1274",
+        "DOI": "10.1128/AAC.43.5.1274",
+        "volume": "43",
+        "author": "M Wu",
+        "year": "1999",
+        "unstructured": "Wu, M. & Hancock, R. E. W. Improved derivatives of bactenecin, a cyclic dodecameric antimicrobial cationic peptide. Antimicrob. Agents Chemother. 43, 1274–1276 (1999).",
+        "journal-title": "Antimicrob. Agents Chemother."
+      },
+      {
+        "key": "BFnrd3591_CR109",
+        "doi-asserted-by": "crossref",
+        "first-page": "14130",
+        "DOI": "10.1021/bi035643g",
+        "volume": "42",
+        "author": "A Rozek",
+        "year": "2003",
+        "unstructured": "Rozek, A., Powers, J. P., Friedrich, C. L. & Hancock, R. E. W. Structure-based design of an indolicidin peptide analogue with increased protease stability. Biochemistry 42, 14130–14138 (2003).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BFnrd3591_CR110",
+        "doi-asserted-by": "crossref",
+        "first-page": "188",
+        "DOI": "10.1016/j.peptides.2010.10.006",
+        "volume": "32",
+        "author": "DS Bolintineanu",
+        "year": "2011",
+        "unstructured": "Bolintineanu, D. S. & Kaznessis, Y. N. Computational studies of protegrin antimicrobial peptides: a review. Peptides 32, 188–201 (2011).",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "BFnrd3591_CR111",
+        "doi-asserted-by": "crossref",
+        "first-page": "543",
+        "DOI": "10.1016/S1074-5521(96)90145-3",
+        "volume": "3",
+        "author": "RL Fahrner",
+        "year": "1996",
+        "unstructured": "Fahrner, R. L. et al. Solution structure of protegrin-1, a broad-spectrum antimicrobial peptide from porcine leukocytes. J. Chem. Biol. 3, 543–550 (1996).",
+        "journal-title": "J. Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR112",
+        "doi-asserted-by": "crossref",
+        "first-page": "1313",
+        "DOI": "10.2174/0929866511009011313",
+        "volume": "17",
+        "author": "PJ Bond",
+        "year": "2010",
+        "unstructured": "Bond, P. J. & Khalid, S. Antimicrobial and cell-penetrating peptides: structure, assembly and mechanisms of membrane lysis via atomistic and coarse-grained molecular dynamics simulations. Protein Pept. Lett. 17, 1313–1327 (2010).",
+        "journal-title": "Protein Pept. Lett."
+      },
+      {
+        "key": "BFnrd3591_CR113",
+        "doi-asserted-by": "crossref",
+        "first-page": "13726",
+        "DOI": "10.1021/jp1069362",
+        "volume": "114",
+        "author": "Q Wang",
+        "year": "2010",
+        "unstructured": "Wang, Q., Hong, G., Johnson, G. R., Pachter, R. & Cheung, M. S. Biophysical properties of membrane-active peptides based on micelle modeling: a case study of cell-penetrating and antimicrobial peptides. J. Phys. Chem. B 114, 13726–13735 (2010).",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "BFnrd3591_CR114",
+        "doi-asserted-by": "crossref",
+        "first-page": "2019",
+        "DOI": "10.1016/j.bbamem.2011.03.017",
+        "volume": "1808",
+        "author": "TD Romo",
+        "year": "2011",
+        "unstructured": "Romo, T. D., Bradney, L. A., Greathouse, D. V. & Grossfield, A. Membrane binding of an acyl-lactoferricin B antimicrobial peptide from solid-state NMR experiments and molecular dynamics simulations. Biochim. Biophys. Acta 1808, 2019–2030 (2011).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR115",
+        "doi-asserted-by": "crossref",
+        "first-page": "2308",
+        "DOI": "10.1016/j.bbamem.2008.06.007",
+        "volume": "1778",
+        "author": "D Sengupta",
+        "year": "2008",
+        "unstructured": "Sengupta, D., Leontiadou, H., Mark, A. E. & Marrink, S. J. Toroidal pores formed by antimicrobial peptides show significant disorder. Biochim. Biophys. Acta 1778, 2308–2317 (2008).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR116",
+        "doi-asserted-by": "crossref",
+        "first-page": "16242",
+        "DOI": "10.1073/pnas.0605079103",
+        "volume": "103",
+        "author": "R Mani",
+        "year": "2006",
+        "unstructured": "Mani, R. et al. Membrane-dependent oligomeric structure and pore formation of a β-hairpin antimicrobial peptide in lipid bilayers from solid-state NMR. Proc. Natl Acad. Sci. USA 103, 16242–16247 (2006).",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "BFnrd3591_CR117",
+        "doi-asserted-by": "crossref",
+        "first-page": "2037",
+        "DOI": "10.1016/j.peptides.2005.03.058",
+        "volume": "26",
+        "author": "H Khandelia",
+        "year": "2005",
+        "unstructured": "Khandelia, H. & Kaznessis, Y. N. Molecular dynamics simulations of helical antimicrobial peptides in SDS micelles: what do point mutations achieve? Peptides 26, 2037–2049 (2005). This study demonstrates the use of molecular dynamics simulations to define how point mutations influence peptide–membrane interactions.",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "BFnrd3591_CR118",
+        "doi-asserted-by": "crossref",
+        "first-page": "837",
+        "DOI": "10.1016/j.jmb.2009.06.071",
+        "volume": "392",
+        "author": "CW Tsai",
+        "year": "2009",
+        "unstructured": "Tsai, C. W. et al. Coupling molecular dynamics simulations with experiments for the rational design of indolicidin-analogous antimicrobial peptides. J. Mol. Biol. 392, 837–854 (2009).",
+        "journal-title": "J. Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR119",
+        "doi-asserted-by": "crossref",
+        "first-page": "849",
+        "DOI": "10.1016/j.biotechadv.2010.07.004",
+        "volume": "28",
+        "author": "J Pande",
+        "year": "2010",
+        "unstructured": "Pande, J., Szewczyk, M. M. & Grover, A. K. Phage display: concept, innovations, applications and future. Biotechnol. Adv. 28, 849–858 (2010).",
+        "journal-title": "Biotechnol. Adv."
+      },
+      {
+        "key": "BFnrd3591_CR120",
+        "doi-asserted-by": "crossref",
+        "first-page": "64",
+        "DOI": "10.1016/S1359-6446(01)02091-8",
+        "volume": "7",
+        "author": "G Schneider",
+        "year": "2002",
+        "unstructured": "Schneider, G. & Böhm, H. J. Virtual screening and fast automated docking methods. Drug Discov. Today 7, 64–70 (2002).",
+        "journal-title": "Drug Discov. Today"
+      },
+      {
+        "key": "BFnrd3591_CR121",
+        "doi-asserted-by": "crossref",
+        "first-page": "2267",
+        "DOI": "10.1021/ci600234z",
+        "volume": "46",
+        "author": "T Engel",
+        "year": "2006",
+        "unstructured": "Engel, T. Basic overview of chemoinformatics. J. Chem. Inf. Model. 46, 2267–2277 (2006).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "BFnrd3591_CR122",
+        "volume-title": "Molecular Design: Concepts and Applications",
+        "author": "G Schneider",
+        "year": "2008",
+        "unstructured": "Schneider, G. & Baringhaus, K. H. Molecular Design: Concepts and Applications. (Wiley-VCH, Weinheim, 2008)."
+      },
+      {
+        "key": "BFnrd3591_CR123",
+        "doi-asserted-by": "crossref",
+        "first-page": "175",
+        "DOI": "10.1016/S0079-6107(98)00026-1",
+        "volume": "70",
+        "author": "G Schneider",
+        "year": "1998",
+        "unstructured": "Schneider, G. & Wrede, P. Artificial neural networks for computer-based molecular design. Prog. Biophys. Mol. Biol. 70, 175–222 (1998).",
+        "journal-title": "Prog. Biophys. Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR124",
+        "doi-asserted-by": "crossref",
+        "first-page": "701",
+        "DOI": "10.1002/bip.21458",
+        "volume": "94",
+        "author": "Y Klyger",
+        "year": "2010",
+        "unstructured": "Klyger, Y. Computational approaches to therapeutic peptide discovery. Biopolymers 94, 701–710 (2010).",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "BFnrd3591_CR125",
+        "doi-asserted-by": "crossref",
+        "first-page": "1656",
+        "DOI": "10.2174/138161210791164009",
+        "volume": "16",
+        "author": "JA Hiss",
+        "year": "2010",
+        "unstructured": "Hiss, J. A., Hartenfeller, M. & Schneider, G. Concepts and applications of “natural computing” techniques in de novo drug and peptide design. Curr. Pharm. Des. 16, 1656–1665 (2010). This is an authoritative review of stochastic optimization methods for peptide and drug design, highlighting nature-inspired algorithms.",
+        "journal-title": "Curr. Pharm. Des."
+      },
+      {
+        "key": "BFnrd3591_CR126",
+        "doi-asserted-by": "crossref",
+        "first-page": "113",
+        "DOI": "10.1089/cmb.2006.13.113",
+        "volume": "13",
+        "author": "T Hohm",
+        "year": "2006",
+        "unstructured": "Hohm, T., Limbourg, P. & Hoffmann, D. A multiobjective evolutionary method for the design of peptidic mimotopes. J. Comput. Biol. 13, 113–125 (2006).",
+        "journal-title": "J. Comput. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR127",
+        "doi-asserted-by": "crossref",
+        "first-page": "7",
+        "DOI": "10.1007/s11030-006-9053-1",
+        "volume": "11",
+        "author": "I Belda",
+        "year": "2007",
+        "unstructured": "Belda, I., Madurga, S., Tarragó, T., Llorà, X. & Giralt, E. Evolutionary computation and multimodal search: a good combination to tackle molecular diversity in the field of peptide design. Mol. Divers. 11, 7–21 (2007).",
+        "journal-title": "Mol. Divers."
+      },
+      {
+        "key": "BFnrd3591_CR128",
+        "doi-asserted-by": "crossref",
+        "first-page": "428",
+        "DOI": "10.1038/35076523",
+        "volume": "2",
+        "author": "JA Foster",
+        "year": "2001",
+        "unstructured": "Foster, J. A. Evolutionary computation. Nature Rev. Genet. 2, 428–436 (2001).",
+        "journal-title": "Nature Rev. Genet."
+      },
+      {
+        "key": "BFnrd3591_CR129",
+        "doi-asserted-by": "crossref",
+        "first-page": "245",
+        "DOI": "10.1007/BF00201426",
+        "volume": "73",
+        "author": "G Schneider",
+        "year": "1995",
+        "unstructured": "Schneider, G., Schuchhardt, J. & Wrede, P. Development of simple fitness landscapes for peptides by artificial neural filter systems. Biol. Cybern. 73, 245–254 (1995).",
+        "journal-title": "Biol. Cybern."
+      },
+      {
+        "key": "BFnrd3591_CR130",
+        "doi-asserted-by": "crossref",
+        "first-page": "135",
+        "DOI": "10.1007/978-1-60761-244-5_8",
+        "volume": "572",
+        "author": "G Schneider",
+        "year": "2009",
+        "unstructured": "Schneider, G. & Schüller, A. Adaptive combinatorial design of focused compound libraries. Methods Mol. Biol. 572, 135–147 (2009).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR131",
+        "doi-asserted-by": "crossref",
+        "first-page": "299",
+        "DOI": "10.1007/978-1-60761-839-3_12",
+        "volume": "672",
+        "author": "M Hartenfeller",
+        "year": "2011",
+        "unstructured": "Hartenfeller, M. & Schneider, G. De novo drug design. Methods Mol. Biol. 672, 299–323 (2011).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR132",
+        "doi-asserted-by": "crossref",
+        "first-page": "18",
+        "DOI": "10.1016/j.tibtech.2008.09.005",
+        "volume": "27",
+        "author": "G Schneider",
+        "year": "2009",
+        "unstructured": "Schneider, G. et al. Voyages to the (un)known: adaptive design of bioactive compounds. Trends Biotechnol. 27, 18–26 (2009).",
+        "journal-title": "Trends Biotechnol."
+      },
+      {
+        "key": "BFnrd3591_CR133",
+        "doi-asserted-by": "crossref",
+        "first-page": "138",
+        "DOI": "10.1016/j.tips.2008.12.001",
+        "volume": "30",
+        "author": "S Kortagere",
+        "year": "2009",
+        "unstructured": "Kortagere, S., Krasowski, M. D. & Ekins, S. The importance of discerning shape in molecular pharmacology. Trends Pharmacol. Sci. 30, 138–147 (2009).",
+        "journal-title": "Trends Pharmacol. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR134",
+        "doi-asserted-by": "crossref",
+        "first-page": "111",
+        "DOI": "10.1007/978-1-60761-931-4_6",
+        "volume": "685",
+        "author": "JO Ebalunode",
+        "year": "2011",
+        "unstructured": "Ebalunode, J. O., Zheng, W. & Tropsha, A. Application of QSAR and shape pharmacophore modeling approaches for targeted chemical library design. Methods Mol. Biol. 685, 111–133 (2011).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR135",
+        "doi-asserted-by": "crossref",
+        "first-page": "1126",
+        "DOI": "10.1021/jm00390a003",
+        "volume": "30",
+        "author": "S Hellberg",
+        "year": "1987",
+        "unstructured": "Hellberg, S., Sjostrom, M., Skagerberg, B. & Wold, S. Peptide quantitative structure–activity relationships, a multivariate approach. J. Med. Chem. 30, 1126–1135 (1987).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR136",
+        "doi-asserted-by": "crossref",
+        "first-page": "74",
+        "DOI": "10.1002/psc.295",
+        "volume": "7",
+        "author": "T Lejon",
+        "year": "2001",
+        "unstructured": "Lejon, T., Strom, M. B. & Svendsen, J. S. Antibiotic activity of pentadecapeptides modelled from amino acid descriptors. J. Pept. Sci. 7, 74–81 (2001).",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR137",
+        "doi-asserted-by": "crossref",
+        "first-page": "329",
+        "DOI": "10.1002/psc.553",
+        "volume": "10",
+        "author": "T Lejon",
+        "year": "2004",
+        "unstructured": "Lejon, T., Stiberg, T., Strom, M. B. & Svendsen, J. S. Prediction of antibiotic activity and synthesis of new pentadecapeptides based on lactoferricins. J. Pept. Sci. 10, 329–335 (2004).",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR138",
+        "doi-asserted-by": "crossref",
+        "first-page": "127",
+        "DOI": "10.1034/j.1399-3011.2001.00806.x",
+        "volume": "57",
+        "author": "MB Strøm",
+        "year": "2001",
+        "unstructured": "Strøm, M. B., Stensen, W., Svendsen, J. S. & Rekdal, O. Increased antibacterial activity of 15-residue murine lactoferricin derivatives. J. Pept. Res. 57, 127–139 (2001).",
+        "journal-title": "J. Pept. Res."
+      },
+      {
+        "key": "BFnrd3591_CR139",
+        "doi-asserted-by": "crossref",
+        "first-page": "97",
+        "DOI": "10.1002/psc.604",
+        "volume": "11",
+        "author": "H Jenssen",
+        "year": "2005",
+        "unstructured": "Jenssen, H., Gutteberg, T. J. & Lejon, T. Modeling of anti-HSV activity of lactoferricin analogues using amino acid descriptors. J. Pept. Sci. 11, 97–103 (2005).",
+        "journal-title": "J. Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR140",
+        "doi-asserted-by": "crossref",
+        "first-page": "6065",
+        "DOI": "10.1016/j.bmc.2006.05.005",
+        "volume": "14",
+        "author": "V Frecer",
+        "year": "2006",
+        "unstructured": "Frecer, V. QSAR analysis of antimicrobial and haemolytic effects of cyclic cationic antimicrobial peptides derived from protegrin-1. Bioorg. Med. Chem. 14, 6065–6074 (2006).",
+        "journal-title": "Bioorg. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR141",
+        "doi-asserted-by": "crossref",
+        "first-page": "197",
+        "DOI": "10.1016/j.peptides.2004.09.020",
+        "volume": "26",
+        "author": "N Ostberg",
+        "year": "2004",
+        "unstructured": "Ostberg, N. & Kaznessis, Y. Protegrin structure–activity relationships: using homology models of synthetic sequences to determine structural characteristics important for activity. Peptides 26, 197–206 (2004).",
+        "journal-title": "Peptides"
+      },
+      {
+        "key": "BFnrd3591_CR142",
+        "volume-title": "Handbook of Molecular Descriptors",
+        "author": "R Todeschini",
+        "year": "2002",
+        "unstructured": "Todeschini, R. & Consonni, V. Handbook of Molecular Descriptors (Wiley-VCH, Weinheim, 2002)."
+      },
+      {
+        "key": "BFnrd3591_CR143",
+        "first-page": "329",
+        "volume": "8",
+        "author": "WP Walters",
+        "year": "2005",
+        "unstructured": "Walters, W. P. & Goldman, B. B. Feature selection in quantitative structure-activity relationships. Curr. Opin. Drug Discov. Devel. 8, 329–333 (2005).",
+        "journal-title": "Curr. Opin. Drug Discov. Devel."
+      },
+      {
+        "key": "BFnrd3591_CR144",
+        "doi-asserted-by": "crossref",
+        "first-page": "1606",
+        "DOI": "10.2174/156802608786786552",
+        "volume": "8",
+        "author": "MP González",
+        "year": "2008",
+        "unstructured": "González, M. P., Terán, C., Saíz-Urra, L. & Teijeira, M. Variable selection methods in QSAR: an overview. Curr. Top. Med. Chem. 8, 1606–1627 (2008).",
+        "journal-title": "Curr. Top. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR145",
+        "doi-asserted-by": "crossref",
+        "first-page": "171",
+        "DOI": "10.1517/17460441.2011.545817",
+        "volume": "6",
+        "author": "H Jenssen",
+        "year": "2011",
+        "unstructured": "Jenssen, H. Descriptors for antimicrobial peptides. Expert Opin. Drug Discov. 6, 171–184 (2011).",
+        "journal-title": "Expert Opin. Drug Discov."
+      },
+      {
+        "key": "BFnrd3591_CR146",
+        "doi-asserted-by": "crossref",
+        "first-page": "447",
+        "DOI": "10.2174/138920308785915209",
+        "volume": "9",
+        "author": "D Marasco",
+        "year": "2008",
+        "unstructured": "Marasco, D., Perretta, G., Sabatella, M. & Ruvo, M. Past and future perspectives of synthetic peptide libraries. Curr. Protein Pept. Sci. 9, 447–467 (2008).",
+        "journal-title": "Curr. Protein Pept. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR147",
+        "doi-asserted-by": "crossref",
+        "first-page": "905",
+        "DOI": "10.1021/cb1001558",
+        "volume": "5",
+        "author": "WC Wimley",
+        "year": "2010",
+        "unstructured": "Wimley, W. C. Describing the mechanism of antimicrobial peptide action with the interfacial activity model. ACS Chem. Biol. 5, 905–917 (2010).",
+        "journal-title": "ACS Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR148",
+        "doi-asserted-by": "crossref",
+        "first-page": "583",
+        "DOI": "10.1101/gr.3513905",
+        "volume": "15",
+        "author": "S Lewenza",
+        "year": "2005",
+        "unstructured": "Lewenza, S. et al. Construction of a mini-Tn5-luxCDABE mutant library in Pseudomonas aeruginosa PAO1: a tool for identifying differentially regulated genes. Genome Res. 15, 583–589 (2005).",
+        "journal-title": "Genome Res."
+      },
+      {
+        "key": "BFnrd3591_CR149",
+        "doi-asserted-by": "crossref",
+        "first-page": "65",
+        "DOI": "10.1021/cb800240j",
+        "volume": "4",
+        "author": "A Cherkasov",
+        "year": "2009",
+        "unstructured": "Cherkasov, A. et al. Use of artificial intelligence in the design of small peptide antibiotics effective against a broad spectrum of highly antibiotic-resistant superbugs. ACS Chem. Biol. 4, 65–74 (2009). This study used peptide array methods to make thousands of nine-amino-acid peptides that were then used to train neural network QSAR methods, enabling the identification and synthesis of peptides with broad-spectrum activity that were effective in systemic models of infections.",
+        "journal-title": "ACS Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR150",
+        "doi-asserted-by": "crossref",
+        "first-page": "2006",
+        "DOI": "10.1021/jm8015365",
+        "volume": "52",
+        "author": "CD Fjell",
+        "year": "2009",
+        "unstructured": "Fjell, C. D. et al. Identification of novel antibacterial peptides by chemoinformatics and machine learning. J. Med. Chem. 52, 2006–2015 (2009).",
+        "journal-title": "J. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR151",
+        "doi-asserted-by": "crossref",
+        "first-page": "48",
+        "DOI": "10.1111/j.1747-0285.2010.01044.x",
+        "volume": "77",
+        "author": "CD Fjell",
+        "year": "2011",
+        "unstructured": "Fjell, C. D., Jenssen, H., Cheung, W. A., Hancock, R. E. W. & Cherkasov, A. Optimization of antibacterial peptides by genetic algorithms and cheminformatics. Chem. Biol. Drug. Des. 77, 48–56 (2011).",
+        "journal-title": "Chem. Biol. Drug. Des."
+      },
+      {
+        "key": "BFnrd3591_CR152",
+        "doi-asserted-by": "crossref",
+        "first-page": "413",
+        "DOI": "10.1038/ja.2011.44",
+        "volume": "64",
+        "author": "MS Butler",
+        "year": "2011",
+        "unstructured": "Butler, M. S. & Cooper, M. A. Antibiotics in the clinical pipeline in 2011. J. Antibiot. 64, 413–425 (2011).",
+        "journal-title": "J. Antibiot."
+      },
+      {
+        "key": "BFnrd3591_CR153",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1186/1741-7015-7-44",
+        "volume": "7",
+        "author": "WJFMVD Velden",
+        "year": "2009",
+        "unstructured": "Velden, W. J. F. M. V. D., van Iersel, T. M. P., Blijlevens, N. M. A. & Donnelly, J. P. Safety and tolerability of the antimicrobial peptide human lactoferrin 1–11 (hLF1–11). BMC Med. 7, 44 (2009).",
+        "journal-title": "BMC Med."
+      },
+      {
+        "key": "BFnrd3591_CR154",
+        "doi-asserted-by": "crossref",
+        "first-page": "559",
+        "DOI": "10.1016/j.leukres.2003.10.021",
+        "volume": "28",
+        "author": "FJ Giles",
+        "year": "2004",
+        "unstructured": "Giles, F. J. et al. A Phase III, randomized, double-blind, placebo-controlled, study of iseganan for the reduction of stomatitis in patients receiving stomatotoxic chemotherapy. Leuk. Res. 28, 559–565 (2004).",
+        "journal-title": "Leuk. Res."
+      },
+      {
+        "key": "BFnrd3591_CR155",
+        "doi-asserted-by": "crossref",
+        "first-page": "1537",
+        "DOI": "10.1086/593185",
+        "volume": "47",
+        "author": "BA Lipsky",
+        "year": "2008",
+        "unstructured": "Lipsky, B. A., Holroyd, K. J. & Zasloff, M. Topical versus systemic antimicrobial therapy for treating mildly infected diabetic foot ulcers: a randomized, controlled, double-blinded, multicenter trial of pexiganan cream. Clin. Infect. Dis. 47, 1537–1545 (2008).",
+        "journal-title": "Clin. Infect. Dis."
+      },
+      {
+        "key": "BFnrd3591_CR156",
+        "doi-asserted-by": "crossref",
+        "first-page": "67",
+        "DOI": "10.1016/j.biotechadv.2010.08.012",
+        "volume": "29",
+        "author": "SA Onaizi",
+        "year": "2011",
+        "unstructured": "Onaizi, S. A. & Leong, S. S. Tethering antimicrobial peptides: current status and potential challenges. Biotechnol. Adv. 29, 67–74 (2011).",
+        "journal-title": "Biotechnol. Adv."
+      },
+      {
+        "key": "BFnrd3591_CR157",
+        "doi-asserted-by": "crossref",
+        "first-page": "58",
+        "DOI": "10.1016/j.chembiol.2008.11.006",
+        "volume": "16",
+        "author": "K Hilpert",
+        "year": "2009",
+        "unstructured": "Hilpert, K. et al. Screening and characterization of surface-tethered cationic peptides for antimicrobial activity. Chem. Biol. 16, 58–69 (2009).",
+        "journal-title": "Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR158",
+        "doi-asserted-by": "crossref",
+        "first-page": "192",
+        "DOI": "10.1038/nrd1032",
+        "volume": "2",
+        "author": "H van de Waterbeemd",
+        "year": "2003",
+        "unstructured": "van de Waterbeemd, H. & Gifford, E. ADMET in silico modelling: towards prediction paradise? Nature Rev. Drug Discov. 2, 192–204 (2003).",
+        "journal-title": "Nature Rev. Drug Discov."
+      },
+      {
+        "key": "BFnrd3591_CR159",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1007/978-1-60761-931-4_2",
+        "volume": "685",
+        "author": "JZ Zhou",
+        "year": "2011",
+        "unstructured": "Zhou, J. Z. Chemoinformatics and library design. Methods Mol. Biol. 685, 27–52 (2011).",
+        "journal-title": "Methods Mol. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR160",
+        "doi-asserted-by": "crossref",
+        "first-page": "1801",
+        "DOI": "10.1002/cbic.201100272",
+        "volume": "12",
+        "author": "A Choudhary",
+        "year": "2011",
+        "unstructured": "Choudhary, A. & Raines, R. T. An evaluation of peptide-bond isosteres. Chembiochem. 12, 1801–1807 (2011).",
+        "journal-title": "Chembiochem."
+      },
+      {
+        "key": "BFnrd3591_CR161",
+        "doi-asserted-by": "crossref",
+        "first-page": "764",
+        "DOI": "10.2533/chimia.2009.764",
+        "volume": "63",
+        "author": "P Wipf",
+        "year": "2009",
+        "unstructured": "Wipf, P., Xiao, J. & Stephenson, C. R. Peptide-like molecules (PLMs): a journey from peptide bond isosteres to Gramicidin S mimetics and mitochondrial targeting agents. Chimia 63, 764–775 (2009).",
+        "journal-title": "Chimia"
+      },
+      {
+        "key": "BFnrd3591_CR162",
+        "doi-asserted-by": "crossref",
+        "first-page": "482",
+        "DOI": "10.1002/jps.10021",
+        "volume": "91",
+        "author": "TR Desai",
+        "year": "2002",
+        "unstructured": "Desai, T. R., Wong, J. P., Hancock, R. E. W. & Finlay, W. H. A novel approach to the pulmonary delivery of liposomes in dry powder form to eliminate the deleterious effect of milling. J. Pharm. Sci. 91, 482–491 (2002).",
+        "journal-title": "J. Pharm. Sci."
+      },
+      {
+        "key": "BFnrd3591_CR163",
+        "doi-asserted-by": "crossref",
+        "first-page": "2055",
+        "DOI": "10.1016/j.bmc.2005.01.009",
+        "volume": "13",
+        "author": "JA Robinson",
+        "year": "2005",
+        "unstructured": "Robinson, J. A. et al. Properties and structure–activity studies of cyclic β-hairpin peptidomimetics based on the cationic antimicrobial peptide protegrin I. Bioorg. Med. Chem. 13, 2055–2064 (2005).",
+        "journal-title": "Bioorg. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR164",
+        "doi-asserted-by": "crossref",
+        "first-page": "523",
+        "DOI": "10.1177/026119290903700509",
+        "volume": "37",
+        "author": "C Yang",
+        "year": "2009",
+        "unstructured": "Yang, C., Valerio, L. G. Jr & Arvidson, K. B. Computational toxicology approaches at the US Food and Drug Administration. Altern. Lab. Anim. 37, 523–531 (2009).",
+        "journal-title": "Altern. Lab. Anim."
+      },
+      {
+        "key": "BFnrd3591_CR165",
+        "doi-asserted-by": "crossref",
+        "first-page": "635",
+        "DOI": "10.1517/17425255.3.5.635",
+        "volume": "3",
+        "author": "JC Dearden",
+        "year": "2007",
+        "unstructured": "Dearden, J. C. In silico prediction of ADMET properties: how far have we come? Expert Opin. Drug Metab. Toxicol. 3, 635–639 (2007).",
+        "journal-title": "Expert Opin. Drug Metab. Toxicol."
+      },
+      {
+        "key": "BFnrd3591_CR166",
+        "doi-asserted-by": "crossref",
+        "first-page": "356",
+        "DOI": "10.1016/j.taap.2009.08.022",
+        "volume": "241",
+        "author": "LG Valerio Jr.",
+        "year": "2009",
+        "unstructured": "Valerio, L. G. Jr. In silico toxicology for the pharmaceutical sciences. Toxicol. Appl. Pharmacol. 241, 356–370 (2009).",
+        "journal-title": "Toxicol. Appl. Pharmacol."
+      },
+      {
+        "key": "BFnrd3591_CR167",
+        "doi-asserted-by": "crossref",
+        "first-page": "209",
+        "DOI": "10.1023/A:1021320124615",
+        "volume": "5",
+        "author": "DK Agrafiotis",
+        "year": "2002",
+        "unstructured": "Agrafiotis, D. K. Multiobjective optimization of combinatorial libraries. Mol. Divers. 5, 209–230 (2002).",
+        "journal-title": "Mol. Divers."
+      },
+      {
+        "key": "BFnrd3591_CR168",
+        "doi-asserted-by": "crossref",
+        "first-page": "372",
+        "DOI": "10.1016/j.cbpa.2008.02.015",
+        "volume": "12",
+        "author": "VJ Gillet",
+        "year": "2008",
+        "unstructured": "Gillet, V. J. New directions in library design and analysis. Curr. Opin. Chem. Biol. 12, 372–378 (2008).",
+        "journal-title": "Curr. Opin. Chem. Biol."
+      },
+      {
+        "key": "BFnrd3591_CR169",
+        "doi-asserted-by": "crossref",
+        "first-page": "1013",
+        "DOI": "10.1016/j.drudis.2007.08.004",
+        "volume": "12",
+        "author": "MA Lill",
+        "year": "2007",
+        "unstructured": "Lill, M. A. Multi-dimensional QSAR in drug discovery. Drug Discov. Today 12, 1013–1017 (2007).",
+        "journal-title": "Drug Discov. Today"
+      },
+      {
+        "key": "BFnrd3591_CR170",
+        "doi-asserted-by": "crossref",
+        "first-page": "569",
+        "DOI": "10.1016/j.bmc.2008.11.075",
+        "volume": "17",
+        "author": "FJ Prado-Prado",
+        "year": "2009",
+        "unstructured": "Prado-Prado, F. J. et al. Unified QSAR approach to antimicrobials. 4. Multi-target QSAR modeling and comparative multi-distance study of the giant components of antiviral drug–drug complex networks. Bioorg. Med. Chem. 17, 569–575 (2009).",
+        "journal-title": "Bioorg. Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR171",
+        "doi-asserted-by": "crossref",
+        "first-page": "295",
+        "DOI": "10.1021/ci800308h",
+        "volume": "49",
+        "author": "CA Nicolaou",
+        "year": "2009",
+        "unstructured": "Nicolaou, C. A., Apostolakis, J. & Pattichis, C. S. De novo drug design using multiobjective evolutionary graphs. J. Chem. Inf. Model. 49, 295–307 (2009).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "BFnrd3591_CR172",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1021/ci900287p",
+        "volume": "50",
+        "author": "JR Fischer",
+        "year": "2010",
+        "unstructured": "Fischer, J. R., Lessel, U. & Rarey, M. LoFT: similarity-driven multiobjective focused library design. J. Chem. Inf. Model. 50, 1–21 (2010).",
+        "journal-title": "J. Chem. Inf. Model."
+      },
+      {
+        "key": "BFnrd3591_CR173",
+        "doi-asserted-by": "crossref",
+        "first-page": "21",
+        "DOI": "10.1038/sj.bjp.0707306",
+        "volume": "152",
+        "author": "S Ekins",
+        "year": "2007",
+        "unstructured": "Ekins, S., Mestres, J. & Testa, B. In silico pharmacology for drug discovery: applications to targets and beyond. Br. J. Pharmacol. 152, 21–37 (2007).",
+        "journal-title": "Br. J. Pharmacol."
+      },
+      {
+        "key": "BFnrd3591_CR174",
+        "doi-asserted-by": "crossref",
+        "first-page": "1117",
+        "DOI": "10.2174/138920111796117436",
+        "volume": "12",
+        "author": "E Pirogova",
+        "year": "2011",
+        "unstructured": "Pirogova, E., Istivan. T., Gan, E. & Cosic, I. Advances in methods for therapeutic peptide discovery, design and development. Curr. Pharm. Biotechnol. 12, 1117–1127 (2011).",
+        "journal-title": "Curr. Pharm. Biotechnol."
+      },
+      {
+        "key": "BFnrd3591_CR175",
+        "doi-asserted-by": "crossref",
+        "first-page": "1626",
+        "DOI": "10.1002/cbic.201000717",
+        "volume": "12",
+        "author": "RM Liskamp",
+        "year": "2011",
+        "unstructured": "Liskamp, R. M., Rijkers, D. T., Kruijtzer, J. A. & Kemmink, J. Peptides and proteins as a continuing exciting source of inspiration for peptidomimetics. Chembiochem. 12, 1626–1653 (2011).",
+        "journal-title": "Chembiochem."
+      },
+      {
+        "key": "BFnrd3591_CR176",
+        "doi-asserted-by": "crossref",
+        "first-page": "1813",
+        "DOI": "10.4155/fmc.10.259",
+        "volume": "2",
+        "author": "JM Mason",
+        "year": "2010",
+        "unstructured": "Mason, J. M. Design and development of peptides and peptide mimetics as antagonists for therapeutic intervention. Future Med. Chem. 2, 1813–1822 (2010).",
+        "journal-title": "Future Med. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR177",
+        "doi-asserted-by": "crossref",
+        "first-page": "1687",
+        "DOI": "10.1016/j.bbamem.2008.09.013",
+        "volume": "1788",
+        "author": "K Matsuzaki",
+        "year": "2009",
+        "unstructured": "Matsuzaki, K. Control of cell selectivity of antimicrobial peptides. Biochim. Biophys. Acta 1788, 1687–1692 (2009).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR178",
+        "doi-asserted-by": "crossref",
+        "first-page": "7609",
+        "DOI": "10.1021/ja8093247",
+        "volume": "131",
+        "author": "R Rathinakumar",
+        "year": "2009",
+        "unstructured": "Rathinakumar, R., Walkenhorst, W. F. & Wimley, W. C. Broad-spectrum antimicrobial peptides by rational combinatorial design and high-throughput screening: the importance of interfacial activity. J. Am. Chem. Soc. 131, 7609–7617 (2009).",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "BFnrd3591_CR179",
+        "doi-asserted-by": "crossref",
+        "first-page": "2177",
+        "DOI": "10.1002/cbic.201100269",
+        "volume": "12",
+        "author": "MD Díaz",
+        "year": "2011",
+        "unstructured": "Díaz, M. D. et al. Structural framework for the modulation of the activity of the hybrid antibiotic peptide cecropin A-melittin [CA(1–7)M(2–9)] by Nɛ-lysine trimethylation. Chembiochem. 12, 2177–2183 (2011).",
+        "journal-title": "Chembiochem."
+      },
+      {
+        "key": "BFnrd3591_CR180",
+        "doi-asserted-by": "crossref",
+        "first-page": "10686",
+        "DOI": "10.1002/anie.201103589",
+        "volume": "123",
+        "author": "M Torrent",
+        "year": "2011",
+        "unstructured": "Torrent, M., Valle, J., Nogués, M. V., Boix, E. & Andreu, D. The generation of antimicrobial peptide activity: a trade-off between charge and aggregation? Angew. Chem. Int. Ed. Engl. 123, 10686–10689 (2011). This is an elegant study linking the structural features of peptides with antimicrobial activity.",
+        "journal-title": "Angew. Chem. Int. Ed. Engl."
+      },
+      {
+        "key": "BFnrd3591_CR181",
+        "doi-asserted-by": "crossref",
+        "first-page": "2177",
+        "DOI": "10.1007/s00018-011-0711-9",
+        "volume": "68",
+        "author": "RF Epand",
+        "year": "2011",
+        "unstructured": "Epand, R. F., Mor, A. & Epand, R. M. Lipid complexes with cationic peptides and OAKs; their role in antimicrobial action and in the delivery of antimicrobial agents. Cell. Mol. Life Sci. 68, 2177–2188 (2011).",
+        "journal-title": "Cell. Mol. Life Sci."
+      },
+      {
+        "key": "BFnrd3591_CR182",
+        "doi-asserted-by": "crossref",
+        "first-page": "2125",
+        "DOI": "10.1002/cbic.201100433",
+        "volume": "12",
+        "author": "CM Halsey",
+        "year": "2011",
+        "unstructured": "Halsey, C. M. et al. Simultaneous observation of peptide backbone lipid solvation and α-helical structure by deep-UV resonance Raman spectroscopy. Chembiochem. 12, 2125–2128 (2011).",
+        "journal-title": "Chembiochem."
+      },
+      {
+        "key": "BFnrd3591_CR183",
+        "doi-asserted-by": "crossref",
+        "first-page": "505",
+        "DOI": "10.1080/02713680590968637",
+        "volume": "30",
+        "author": "YJ Gordon",
+        "year": "2005",
+        "unstructured": "Gordon, Y. J., Romanowski, E. G., McDermott, A. M. A review of antimicrobial peptides and their therapeutic potential as anti-infective drugs. Curr. Eye Res. 30, 505–515 (2005).",
+        "journal-title": "Curr. Eye Res."
+      },
+      {
+        "key": "BFnrd3591_CR184",
+        "doi-asserted-by": "crossref",
+        "first-page": "1723",
+        "DOI": "10.1517/13543784.9.8.1723",
+        "volume": "9",
+        "author": "REW Hancock",
+        "year": "2000",
+        "unstructured": "Hancock, R. E. W. Cationic antimicrobial peptides: towards clinical application. Exp. Opin. Invest. Drugs 9, 1723–1729 (2000).",
+        "journal-title": "Exp. Opin. Invest. Drugs"
+      },
+      {
+        "key": "BFnrd3591_CR185",
+        "doi-asserted-by": "crossref",
+        "first-page": "841",
+        "DOI": "10.1039/b703924g",
+        "volume": "3",
+        "author": "T Sakata",
+        "year": "2007",
+        "unstructured": "Sakata, T. & Winzeler, E. A. Genomics, systems biology and drug development for infectious diseases. Mol. Biosyst. 3, 841–848 (2007).",
+        "journal-title": "Mol. Biosyst."
+      },
+      {
+        "key": "BFnrd3591_CR186",
+        "volume-title": "Genetic Programming: On the Programming of Computers by Means of Natural Selection (Complex Adaptive Systems)",
+        "author": "JR Koza",
+        "year": "1993",
+        "unstructured": "Koza, J. R. Genetic Programming: On the Programming of Computers by Means of Natural Selection (Complex Adaptive Systems) (MIT Press, Cambridge, Massachusetts, 1993)."
+      },
+      {
+        "key": "BFnrd3591_CR187",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.1016/S0006-3495(94)80782-9",
+        "volume": "66",
+        "author": "G Schneider",
+        "year": "1994",
+        "unstructured": "Schneider, G. & Wrede, P. The rational design of amino acid sequences by artificial neural networks and simulated molecular evolution: de novo design of an idealized leader peptidase cleavage site. Biophys. J. 66, 335–344 (1994).",
+        "journal-title": "Biophys. J."
+      },
+      {
+        "key": "BFnrd3591_CR188",
+        "volume-title": "Evolutionsstrategie: Optimierung Technischer Systeme Nach Prinzipien der Biologischen Evolution",
+        "author": "I Rechenberg",
+        "year": "1973",
+        "unstructured": "Rechenberg, I. Evolutionsstrategie: Optimierung Technischer Systeme Nach Prinzipien der Biologischen Evolution (Frommann-Holzboog, Stuttgart, 1973)."
+      },
+      {
+        "key": "BFnrd3591_CR189",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/oso/9780195079517.001.0001",
+        "volume-title": "The Origins of Order: Self-Organization and Selection in Evolution",
+        "author": "SA Kaufmann",
+        "year": "1993",
+        "unstructured": "Kaufmann, S. A. The Origins of Order: Self-Organization and Selection in Evolution (Oxford University Press, New York, 1993)."
+      },
+      {
+        "key": "BFnrd3591_CR190",
+        "volume-title": "Evolution and Optimum Seeking",
+        "author": "HP Schwefel",
+        "year": "1995",
+        "unstructured": "Schwefel, H. P. Evolution and Optimum Seeking (Wiley & Sons, New York, 1995)."
+      },
+      {
+        "key": "BFnrd3591_CR191",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.7551/mitpress/1090.001.0001",
+        "volume-title": "Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control and Artificial Intelligence (Complex Adaptive Systems)",
+        "author": "JH Holland",
+        "year": "1992",
+        "unstructured": "Holland J. H. Adaptation in Natural and Artificial Systems: An Introductory Analysis with Applications to Biology, Control and Artificial Intelligence (Complex Adaptive Systems) (MIT Press, Cambridge, 1992)."
+      },
+      {
+        "key": "BFnrd3591_CR192",
+        "doi-asserted-by": "crossref",
+        "first-page": "1292",
+        "DOI": "10.1016/j.bbamem.2006.02.001",
+        "volume": "1758",
+        "author": "HW Huang",
+        "year": "2006",
+        "unstructured": "Huang, H. W. Molecular mechanism of antimicrobial peptides: the origin of cooperativity. Biochim. Biophys. Acta 1758, 1292–1302 (2006).",
+        "journal-title": "Biochim. Biophys. Acta"
+      },
+      {
+        "key": "BFnrd3591_CR193",
+        "doi-asserted-by": "crossref",
+        "first-page": "235",
+        "DOI": "10.1093/nar/28.1.235",
+        "volume": "28",
+        "author": "HM Berman",
+        "year": "2000",
+        "unstructured": "Berman, H. M. et al. The Protein Data Bank. Nucleic Acids Res. 28, 235–242 (2000).",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "BFnrd3591_CR194",
+        "doi-asserted-by": "crossref",
+        "first-page": "92",
+        "DOI": "10.1002/bip.20370",
+        "volume": "81",
+        "author": "C Landon",
+        "year": "2006",
+        "unstructured": "Landon, C., Meudal, H., Boulanger, N., Bulet, P. & Vovelle, F. Solution structures of stomoxyn and spinigerin, two insect antimicrobial peptides with an α-helical conformation. Biopolymers 81, 92–103 (2006).",
+        "journal-title": "Biopolymers"
+      },
+      {
+        "key": "BFnrd3591_CR195",
+        "doi-asserted-by": "crossref",
+        "first-page": "1781",
+        "DOI": "10.1002/jcc.20289",
+        "volume": "26",
+        "author": "JC Phillips",
+        "year": "2005",
+        "unstructured": "Phillips, J. C. et al. Scalable molecular dynamics with NAMD. J. Comput. Chem. 26, 1781–1802 (2005).",
+        "journal-title": "J. Comput. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR196",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.1002/jcc.540040211",
+        "volume": "4",
+        "author": "RR Brooks",
+        "year": "1983",
+        "unstructured": "Brooks, R. R. et al. CHARMM: a program for macromolecular energy, minimization, and dynamics calculations. J. Comp. Chem. 4, 187–217 (1983).",
+        "journal-title": "J. Comp. Chem."
+      },
+      {
+        "key": "BFnrd3591_CR197",
+        "doi-asserted-by": "crossref",
+        "first-page": "236",
+        "DOI": "10.1080/01621459.1963.10500845",
+        "volume": "58",
+        "author": "JH Ward",
+        "year": "1963",
+        "unstructured": "Ward, J. H. Hierarchical grouping to optimize an objective function. J. Am. Stat. Assoc. 58, 236–244 (1963).",
+        "journal-title": "J. Am. Stat. Assoc."
+      },
+      {
+        "key": "BFnrd3591_CR198",
+        "doi-asserted-by": "crossref",
+        "first-page": "27",
+        "DOI": "10.1093/protein/9.1.27",
+        "volume": "9",
+        "author": "K Tomii",
+        "year": "1996",
+        "unstructured": "Tomii, K. & Kanehisa, M. Analysis of amino acid indices and mutation matrices for sequence comparison and structure prediction of proteins. Protein Eng. 9, 27–36 (1996).",
+        "journal-title": "Protein Eng."
+      },
+      {
+        "key": "BFnrd3591_CR199",
+        "doi-asserted-by": "crossref",
+        "first-page": "758",
+        "DOI": "10.1002/minf.201000134",
+        "volume": "29",
+        "author": "DK Agrafiotis",
+        "year": "2010",
+        "unstructured": "Agrafiotis, D. K. et al. Stochastic proximity embedding: methods and applications. Mol. Inf. 29, 758–770 (2010).",
+        "journal-title": "Mol. Inf."
+      },
+      {
+        "key": "BFnrd3591_CR200",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1002/anie.201105156",
+        "volume": "50",
+        "author": "M Reutlinger",
+        "year": "2011",
+        "unstructured": "Reutlinger, M. et al. Visualization of adaptive structure–activity relationship landscapes in drug discovery. Angew. Chem. Int. Ed. 50, 1–5 (2011).",
+        "journal-title": "Angew. Chem. Int. Ed."
+      },
+      {
+        "key": "BFnrd3591_CR201",
+        "doi-asserted-by": "crossref",
+        "first-page": "3588",
+        "DOI": "10.1021/bi9726032",
+        "volume": "37",
+        "author": "P Wrede",
+        "year": "1998",
+        "unstructured": "Wrede, P. et al. Peptide design aided by neural networks: biological activity of artificial signal peptidase I cleavage sites. Biochemistry 37, 3588–3593 (1998).",
+        "journal-title": "Biochemistry"
+      },
+      {
+        "key": "BFnrd3591_CR202",
+        "doi-asserted-by": "crossref",
+        "first-page": "12179",
+        "DOI": "10.1073/pnas.95.21.12179",
+        "volume": "95",
+        "author": "G Schneider",
+        "year": "1998",
+        "unstructured": "Schneider, G. et al. Peptide design by artificial neural networks and computer-based evolutionary search. Proc. Natl Acad. Sci. USA 95, 12179–12184 (1998). Together with reference 187, this study provided new strategies for applying computational machine-learning methods to the design of peptides using virtually any quantifiable measurement of peptide activity.",
+        "journal-title": "Proc. Natl Acad. Sci. USA"
+      },
+      {
+        "key": "BFnrd3591_CR203",
+        "doi-asserted-by": "crossref",
+        "first-page": "3817",
+        "DOI": "10.1021/ie0340995",
+        "volume": "43",
+        "author": "JL Klepeis",
+        "year": "2004",
+        "unstructured": "Klepeis, J. L., Floudas, C. A., Morikis, D., Tsokos, C. G. & Lambris, J. D. Design of peptide analogues with improved activity using a novel de novo protein design approach. Ind. Eng. Chem. Res. 43, 3817–3826 (2004).",
+        "journal-title": "Ind. Eng. Chem. Res."
+      },
+      {
+        "key": "BFnrd3591_CR204",
+        "doi-asserted-by": "crossref",
+        "first-page": "585",
+        "DOI": "10.1007/s10822-005-9015-1",
+        "volume": "19",
+        "author": "I Belda",
+        "year": "2005",
+        "unstructured": "Belda, I. et al. ENPDA: an evolutionary structure-based de novo peptide design algorithm. J. Comput. Aided Mol. Des. 19, 585–601 (2005).",
+        "journal-title": "J. Comput. Aided Mol. Des."
+      },
+      {
+        "key": "BFnrd3591_CR205",
+        "doi-asserted-by": "crossref",
+        "first-page": "295",
+        "DOI": "10.1007/s00500-005-0487-7",
+        "volume": "10",
+        "author": "I Belda",
+        "year": "2006",
+        "unstructured": "Belda, I., Llorà, X. & Giralt, E. Evolutionary algorithms and de novo peptide design. Soft Comput. 10, 295–304 (2006).",
+        "journal-title": "Soft Comput."
+      },
+      {
+        "key": "BFnrd3591_CR206",
+        "doi-asserted-by": "crossref",
+        "first-page": "11",
+        "DOI": "10.1186/1471-2105-8-11",
+        "volume": "8",
+        "author": "Y Yagi",
+        "year": "2007",
+        "unstructured": "Yagi, Y., Terada, K., Noma, T., Ikebukuro, K. & Sode, K. In silico panning for a non-competitive peptide inhibitor. BMC Bioinformatics 8, 11 (2007).",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "BFnrd3591_CR207",
+        "doi-asserted-by": "crossref",
+        "first-page": "2816",
+        "DOI": "10.1093/bioinformatics/btm436",
+        "volume": "23",
+        "author": "EE Oren",
+        "year": "2007",
+        "unstructured": "Oren, E. E. et al. A novel knowledge-based approach to design inorganic-binding peptides. Bioinformatics 23, 2816–2822 (2007).",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "BFnrd3591_CR208",
+        "doi-asserted-by": "crossref",
+        "first-page": "99",
+        "DOI": "10.1093/protein/gzl054",
+        "volume": "20",
+        "author": "JA Hiss",
+        "year": "2007",
+        "unstructured": "Hiss, J. A. et al. Design of MHC I stabilizing peptides by agent-based exploration of sequence space. Protein Eng. Des. Sel. 20, 99–108 (2007).",
+        "journal-title": "Protein Eng. Des. Sel."
+      },
+      {
+        "key": "BFnrd3591_CR209",
+        "doi-asserted-by": "crossref",
+        "first-page": "109",
+        "DOI": "10.1186/1471-2105-9-109",
+        "volume": "9",
+        "author": "W Gronwald",
+        "year": "2008",
+        "unstructured": "Gronwald, W., Hohm, T. & Hoffmann, D. Evolutionary pareto-optimization of stably folding peptides. BMC Bioinformatics 9, 109 (2008).",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "BFnrd3591_CR210",
+        "doi-asserted-by": "crossref",
+        "first-page": "774",
+        "DOI": "10.1016/j.pupt.2008.05.001",
+        "volume": "21",
+        "author": "T Kodama",
+        "year": "2008",
+        "unstructured": "Kodama, T., Ashitani, J., Matsumoto, N., Kangawa, K. & Nakazato, M. Ghrelin treatment suppresses neutrophil-dominant inflammation in airways of patients with chronic respiratory infection. Pulm. Pharmacol. Ther. 21, 774–779 (2008).",
+        "journal-title": "Pulm. Pharmacol. Ther."
+      },
+      {
+        "key": "BFnrd3591_CR211",
+        "doi-asserted-by": "crossref",
+        "first-page": "713",
+        "DOI": "10.1097/01.MIB.0000172807.26748.16",
+        "volume": "11",
+        "author": "S Travis",
+        "year": "2005",
+        "unstructured": "Travis, S. et al. RDP58 is a novel and potentially effective oral therapy for ulcerative colitis. Inflamm. Bowel Dis. 11, 713–719 (2005).",
+        "journal-title": "Inflamm. Bowel Dis."
+      },
+      {
+        "key": "BFnrd3591_CR212",
+        "doi-asserted-by": "crossref",
+        "first-page": "1168",
+        "DOI": "10.1126/science.1185723",
+        "volume": "328",
+        "author": "HH Kristensen",
+        "year": "2010",
+        "unstructured": "Kristensen, H. H. et al. Plectasin, a fungal defensin, targets the bacterial cell wall precursor lipid II. Science 328, 1168–1172 (2010). This was a paradigm-shifting paper regarding a recombinantly made fungal defensin with promising preclinical data and  in vivo  efficacy. This study demonstrated that potent AMPs do not need to disrupt lipid membranes but can work by inhibiting cell wall biosynthesis.",
+        "journal-title": "Science"
+      }
+    ],
+    "updated-by": [
+      {
+        "DOI": "10.1038/nrd3653",
+        "type": "erratum",
+        "label": "Erratum",
+        "source": "publisher",
+        "updated": {
+          "date-parts": [
+            [
+              2012,
+              1,
+              20
+            ]
+          ],
+          "date-time": "2012-01-20T00:00:00Z",
+          "timestamp": 1327017600000
+        }
+      }
+    ],
+    "container-title": [
+      "Nature Reviews Drug Discovery"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.nature.com/articles/nrd3591.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/nrd3591",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://www.nature.com/articles/nrd3591.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          10
+        ]
+      ],
+      "date-time": "2025-04-10T05:26:39Z",
+      "timestamp": 1744262799000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/nrd3591"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          16
+        ]
+      ]
+    },
+    "references-count": 212,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2012,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "BFnrd3591"
+    ],
+    "URL": "https://doi.org/10.1038/nrd3591",
+    "relation": {},
+    "ISSN": [
+      "1474-1776",
+      "1474-1784"
+    ],
+    "issn-type": [
+      {
+        "value": "1474-1776",
+        "type": "print"
+      },
+      {
+        "value": "1474-1784",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2011,
+          12,
+          16
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "16 December 2011",
+        "order": 1,
+        "name": "first_online",
+        "label": "First Online",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "20 January 2012",
+        "order": 2,
+        "name": "change_date",
+        "label": "Change Date",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Correction",
+        "order": 3,
+        "name": "change_type",
+        "label": "Change Type",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "The page numbers of reference 180 in this article are incorrect; these should be 10686–10689. This has been corrected in the online version of the article.",
+        "order": 4,
+        "name": "change_details",
+        "label": "Change Details",
+        "group": {
+          "name": "ArticleHistory",
+          "label": "Article History"
+        }
+      },
+      {
+        "value": "Gisbert Schneider is a scientific consultant to the pharmaceutical industry and a co-founder of AlloCyte Pharmaceuticals. Robert E. W. Hancock has co-founded two companies that are developing antimicrobial or innate defence regulator peptides for commercial use: Micrologix/Migenix (renamed BioWest Therapeutics) and Inimex Pharmaceuticals. In addition, he is currently pursuing commercialization opportunities with his newer peptides. His work is the subject of more than three dozen patents covering these peptides.",
+        "order": 1,
+        "name": "Ethics",
+        "group": {
+          "name": "EthicsHeading",
+          "label": "Competing interests"
+        }
+      }
+    ]
+  }
+}

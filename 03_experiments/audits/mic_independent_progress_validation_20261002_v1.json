@@ -1,0 +1,28 @@
+{
+  "status": "validation_passed_research_still_blocked",
+  "generated_at": "2026-10-02T08:59:49.009648+00:00",
+  "independently_recomputed_pairs": 105,
+  "independently_rederived_observations": 22,
+  "combined_components": 6,
+  "positive_bearing_components": 3,
+  "negative_bearing_components": 6,
+  "homology_edges": 11,
+  "primary_sources_verified": 10,
+  "source_decisions_verified": 70,
+  "historical_frozen_manifests_verified": 6,
+  "current_state_documents_verified": 5,
+  "formal_status_unchanged": true,
+  "training_started": false,
+  "script_sha256": "8dd98c48a58a0e584fa2cc0ad91859581092846c67c7456a976597bbd8057692",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_readiness_20261002_v9.json": "656704e15e854ef345a73b4815cb298de496f5af390f7b79482a153ab377e56a",
+    "03_experiments\\audits\\mic_extended_acid_cohort_20261002_v1\\manifest.json": "61df14410e5e3c2449ba84b55cc7f9228be0f4ddb6619231cfcdc15b1e12ee58",
+    "03_experiments\\audits\\mic_independent_sources_review_20261002_v1\\manifest.json": "b64d3b0b42bf80927bec737fbba4024b312ce559be78d100615865da95d6094c",
+    "02_code\\validate_mic_acid_progress.py": "93706882fc3a7cfe42f3d1ddcd6689efeb494078fc981097eeba87dc9696de0b",
+    "README.md": "8d4af09b48b7586fd77e036e9460224113c5687f9a1eb1ec867017cd6e2967af",
+    "docs\\REMEDIATION_STATUS.md": "45828335bd7a78d920d5b8184e1b0ad0c397a3ee2633b916b4a862c035d624fd",
+    "docs\\DOCUMENTATION_INDEX.md": "01bf66a1035daaf9eba202b1f2fb9427a6b19a8fc56af8b09bf88b609750364b",
+    "docs\\handoff\\TASK_STATE.md": "1a3b3f4d9593e48b3bc12a69e69757a74eec4619e38d6aaa70f315e143da537d",
+    "03_experiments\\audits\\multi_database_ecoli_mic_screen_20261001.md": "f11b32bf69b9feef80340b2985c42f69ed2ce0988337a45c922d1b1392ba1fe5"
+  }
+}

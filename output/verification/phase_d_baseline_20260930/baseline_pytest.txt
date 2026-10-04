@@ -1,0 +1,29 @@
+﻿============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-7.4.4, pluggy-1.6.0
+rootdir: D:\�����ļ�\sci
+configfile: pytest.ini
+testpaths: 02_code/tests, 02_code/test_helical_wheel.py
+plugins: anyio-4.12.1, langsmith-0.12.4, asyncio-0.23.8
+asyncio: mode=Mode.STRICT
+collected 144 items
+
+02_code\tests\test_assay_records.py .........                            [  6%]
+02_code\tests\test_audit_logger.py .......                               [ 11%]
+02_code\tests\test_batch_task_manager.py ....                            [ 13%]
+02_code\tests\test_cdhit_cluster.py .....                                [ 17%]
+02_code\tests\test_evaluation.py .....                                   [ 20%]
+02_code\tests\test_experiment_runner.py ........                         [ 26%]
+02_code\tests\test_feasibility_gates.py ..                               [ 27%]
+02_code\tests\test_feature_cache.py ........                             [ 33%]
+02_code\tests\test_health_and_metrics.py ...                             [ 35%]
+02_code\tests\test_isolation_diagnostics.py .......                      [ 40%]
+02_code\tests\test_model_contracts.py .........                          [ 46%]
+02_code\tests\test_publication_artifacts.py ......                       [ 50%]
+02_code\tests\test_qa_integration.py ...............................     [ 72%]
+02_code\tests\test_rate_limiter.py ....                                  [ 75%]
+02_code\tests\test_research_data.py ...................                  [ 88%]
+02_code\tests\test_runtime_api.py .......                                [ 93%]
+02_code\tests\test_source_imports.py ....                                [ 95%]
+02_code\test_helical_wheel.py ......                                     [100%]
+
+============================ 144 passed in 13.09s =============================

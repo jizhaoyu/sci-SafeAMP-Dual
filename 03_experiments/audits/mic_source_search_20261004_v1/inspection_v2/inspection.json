@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-10-04T04:07:08.290804+00:00",
+  "status": "source_discovery_completed_evidence_release_pending",
+  "review_mode": "agent_primary_source_review_not_independent_human_review",
+  "primary_articles_archived": 8,
+  "formal_development_records_checked": 417,
+  "archaeome_experimental_ids": 80,
+  "ecoli_mic_slots": 240,
+  "ecoli_numeric_original_values": 156,
+  "ecoli_blank_slots": 84,
+  "human_hc50_author_fit_outputs": 80,
+  "hc50_author_fits_exceed_figure_range": 55,
+  "implausible_hc50_fits": 13,
+  "prediction_only_csv_rows_not_released": 265,
+  "approved_new_molecules": 0,
+  "formal_external_cohort_released": false,
+  "certificate_repository": "https://data.mendeley.com/datasets/d8yzgtdrcp/3",
+  "certificate_retrieval": "HTTP403 on public page and file-list API; files not obtained",
+  "html_masquerading_as_xlsx_rejected": "raw\\41564_2025_2061_MOESM17_ESM.xlsx",
+  "inputs": {
+    "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+    "03_experiments\\audits\\mic_followup_release_20261004_v1\\evidence\\source_review.csv": "47f4c3813a84db62b0cd38b3e664c5b7b068c48c9144daf6df9f7dc0786fdca4"
+  },
+  "artifacts": {
+    "source_inventory.json": "49dc9be0aefd2ff6ff2382b1d927f02df34ab5b1a00da053fe9d383c8def82e2",
+    "archaeome_observations.json": "35db6d712ed66d2dde6ce69091b8f79981e266bed22dff6a4b6adf35997aa361"
+  }
+}

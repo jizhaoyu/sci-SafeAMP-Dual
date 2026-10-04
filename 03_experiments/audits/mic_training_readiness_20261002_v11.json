@@ -1,0 +1,130 @@
+{
+  "schema_version": 3,
+  "status": "ready_for_local_exploratory_training",
+  "generated_at": "2026-10-02T09:52:12.169727+00:00",
+  "supersedes": "03_experiments\\audits\\mic_training_readiness_20261002_v10.json",
+  "scope": "local small-sample E. coli MIC exploration only; no dual-task, clinical, external-validation, deployment or publication authorization",
+  "audit_protocol_id": "protocol-mic-06",
+  "audit_protocol_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+  "training_protocol_id": "protocol-mic-07",
+  "training_protocol_sha256": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+  "candidate_cohort_version": "mic_three_fold_20261002_v1",
+  "candidate_cohort_manifest": "03_experiments/audits/mic_three_fold_20261002_v1/manifest.json",
+  "evidence_release_manifest": "03_experiments/audits/mic_three_fold_primary_release_20261002_v1/manifest.json",
+  "candidate_molecules": 15,
+  "candidate_observations": 22,
+  "candidate_class_counts": {
+    "0": 11,
+    "1": 4
+  },
+  "candidate_all_member_pairs": 105,
+  "candidate_combined_components": 6,
+  "candidate_positive_bearing_components": 3,
+  "candidate_negative_bearing_components": 6,
+  "gates": {
+    "candidate_structure": {
+      "status": "passed",
+      "folds_required": 3,
+      "seed": 42,
+      "cutoff": 0.4,
+      "folds": [
+        {
+          "fold": 0,
+          "train_n": 9,
+          "validation_n": 6,
+          "train_positive": 2,
+          "train_negative": 7,
+          "validation_positive": 2,
+          "validation_negative": 4,
+          "both_classes": true
+        },
+        {
+          "fold": 1,
+          "train_n": 10,
+          "validation_n": 5,
+          "train_positive": 3,
+          "train_negative": 7,
+          "validation_positive": 1,
+          "validation_negative": 4,
+          "both_classes": true
+        },
+        {
+          "fold": 2,
+          "train_n": 11,
+          "validation_n": 4,
+          "train_positive": 3,
+          "train_negative": 8,
+          "validation_positive": 1,
+          "validation_negative": 3,
+          "both_classes": true
+        }
+      ],
+      "cross_fold_homology_edges": 0,
+      "cross_fold_primary_studies": 0
+    },
+    "primary_evidence_release": {
+      "status": "passed",
+      "full_release_review_complete": true,
+      "molecules_approved": 15,
+      "observations_approved": 22,
+      "independent_human_review_claimed": false
+    },
+    "final_admitted_cohort": {
+      "status": "passed",
+      "same_as_frozen_three_fold_candidate": true
+    },
+    "training_protocol": {
+      "status": "passed",
+      "protocol_id": "protocol-mic-07"
+    },
+    "fixed_features": {
+      "status": "passed",
+      "shape": [
+        15,
+        44
+      ]
+    },
+    "training_entry": {
+      "status": "passed",
+      "model_fitting_performed_by_readiness_check": false
+    }
+  },
+  "blockers": [],
+  "training_blocked": false,
+  "records_released_for_training": 15,
+  "training_started": false,
+  "predeclared_models": [
+    "logistic_regression",
+    "random_forest",
+    "dummy_prior"
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "training_command": "python 02_code/train_mic_three_fold_v2.py --output 03_experiments/runs/mic_three_fold_my_run",
+  "formal_dual_task_status": "blocked",
+  "formal_status_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "limitations": [
+    "Only 15 molecules, 4 positives and 6 indivisible components; validation folds contain only 1-2 positives.",
+    "Strains and assay conditions differ; missing source conditions remain explicit; estimates cannot establish clinical utility or broad generalization.",
+    "This is agent primary-source rechecking and independent arithmetic validation, not an independent human peer-review signoff.",
+    "Original dual-task formal state, results and publication gates remain blocked."
+  ],
+  "script_sha256": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+  "inputs": {
+    "03_experiments\\protocols\\protocol-mic-07.json": "a07a98c5fd62b46dc1740cd2ec290a50a3db1725844aaded78f08a2dfb1822f3",
+    "03_experiments\\audits\\protocol_mic_07_freeze_20261002_v2.json": "8eceeead1ac9e61e380b84082e8799526b3d3f9264e82bec28d6f4ba1a7163af",
+    "02_code\\train_mic_three_fold_v2.py": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+    "03_experiments\\audits\\mic_training_readiness_20261002_v10.json": "89c2b4f71ec87319499c18677aaac85deabf165033024145cf436bf68fc019a2",
+    "04_paper\\research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\manifest.json": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+    "03_experiments\\audits\\mic_three_fold_primary_release_20261002_v1\\manifest.json": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190",
+    "03_experiments\\audits\\mic_three_fold_validation_20261002_v1.json": "64c5f107926592ddd18eaff59325eea7c58d0083ae635ffc236b3a2489af3037"
+  }
+}

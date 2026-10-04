@@ -1,0 +1,396 @@
+sample_id,record_id,source_dataset,reported_peptide_name,raw_path,raw_sha256
+08d6491f5065635716c6275a,DBAASP:2353,DBAASP,GW-Q6,02_code/data/sources/dbaasp_v1/raw/peptide_2353.json,e6cb84a3b7307db34a9416befed57cd7a53d86246a9ecc5e7ac58cca6a5c645f
+59242a575f558b665f07f2c4,DBAASP:20378,DBAASP,NaVi2,02_code/data/sources/dbaasp_v1/raw/peptide_20378.json,8d417ba51ad1a7fd052208f1ea5a7e67f4c516ffb9c8a0e1af1b6cd150040fb6
+387e301a1dbcecb83a9da0e6,DBAASP:8295,DBAASP,Ocellatin-PT8,02_code/data/sources/dbaasp_v1/raw/peptide_8295.json,31d97fcd7ef2a57b2164fd5e9185239b28ed0d2650be9c477b8491a4ea1184ad
+942861220ba5bb1a94a1860a,DBAASP:12524,DBAASP,Tat (47–57)-BRCA1 (782–786),02_code/data/sources/dbaasp_v1/raw/peptide_12524.json,8669d388f2c6a4cdb6d9c620965d1745d2256a1ad2e7569ce91307520a5ba0fa
+3b723d8eddd5d0cfb2321d6c,DBAASP:13561,DBAASP,Pyrrhocoricin [R14K],02_code/data/sources/dbaasp_v1/raw/peptide_13561.json,e8f8d027bd5bb4e05a91601f890fb59a4f7fc1de8f2c89864e13b845833c2976
+27d998b9f6bc5e669f999135,DBAASP:24437,DBAASP,Rumicidin-1 (15-29),02_code/data/sources/dbaasp_v1/raw/peptide_24437.json,05353ed9789ba1ffeda2e58001679d9c1b099f8a02cfcaa5563f66ab9e441f52
+bd9e1caefdd0a456da1ff685,DBAASP:16872,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_16872.json,9fb3fbb3213214d09d5561cbef3bb232fbd675d23cc58893be9d601ffbb57ff8
+ea3fcad9441b41692bd345e5,DBAASP:4647,DBAASP,Rev-NIS [L3S],02_code/data/sources/dbaasp_v1/raw/peptide_4647.json,4abc69c366f5d14b731ceaa69ad4742bbd36ea855812e55c1a97e92ddbbfd6d4
+c98d77ebe8f0fdb63ae1fd06,DBAASP:5611,DBAASP,(K)4 Magainin-2,02_code/data/sources/dbaasp_v1/raw/peptide_5611.json,85765d69cac5d1d751d3436acc7c61c79dba0aa14a4bcc5fc6ae4e479b860473
+85423c7cd3233b379224fa8a,DBAASP:22319,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_22319.json,b56b00b62606fc89c0846c422c4298e5c6287d1dbf546f3cc18839363d73e53b
+5fcd2ba97b42b8027d21557a,DBAASP:8393,DBAASP,Magainin-2 [V17A],02_code/data/sources/dbaasp_v1/raw/peptide_8393.json,388f516c7e698f0df22a68263a8dd1a64c03da20a50c8cd40d559859ecf79433
+7cfd51618c8f644ebf6b9fdb,DBAASP:20356,DBAASP,ApMe3,02_code/data/sources/dbaasp_v1/raw/peptide_20356.json,f595b3a5f32792fc9e73f4efbaa779a89744e550aa83ed40791d59dbdb8745ee
+f55f140bf9a1c3c7596d87d0,DBAASP:9381,DBAASP,"LK [L8,12C]",02_code/data/sources/dbaasp_v1/raw/peptide_9381.json,ae27d045c4ff0c4bd3d73c537f89ad66e291bd7ab487f78cc846ce6b430f310e
+69e36478b99ebbf42c5eac48,DBAASP:7086,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_7086.json,268f56644afd9c3a45cf93d2f729822175ccba38f3fc08168241a08f2a127db2
+5f2aadc3f3a7532c2e33bffb,DBAASP:13556,DBAASP,Apidaecin-1B [I8K],02_code/data/sources/dbaasp_v1/raw/peptide_13556.json,aa8dffe5967b83b4fad91f7d974683e8c2e19ec4dcd371793c387d5ea5bc5532
+535e9222aad4b77f914d3335,DBAASP:25212,DBAASP,E5,02_code/data/sources/dbaasp_v1/raw/peptide_25212.json,12b0ac6d97cf0a1dcb7648d8f96e5bb2d3dad117b31f8e86665857580da64928
+12640db1b80a6c8bac609b25,DBAASP:23373,DBAASP,Rip-4,02_code/data/sources/dbaasp_v1/raw/peptide_23373.json,caf34c4117540b3fa0d7eff7bf33e026d3d2fd978870588b62c788986618bd73
+9c207bac1eb520d7573fb774,DBAASP:2696,DBAASP,Bovine hemoglobin beta chain (1-30),02_code/data/sources/dbaasp_v1/raw/peptide_2696.json,36b34e154c7d2728c08440faa048d6d555328633a5c7c50ba1879dd6a977cc8b
+536c9d8cf1dbd44128a92221,DBAASP:5252,DBAASP,Bactenecin-7 (29-56),02_code/data/sources/dbaasp_v1/raw/peptide_5252.json,a73cd1938ca938b01c95e3944190439c7a9971aa2216461db555390ce1cd9be5
+21779d47214fc4c85fffc2b1,DBAASP:11054,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_11054.json,3ffbdbc3f5ee5c02dc55f02ec244183d1daf4ca500119371a6766a6c810832f7
+bf2f1cde4eb622cdcecb1de6,DBAASP:4470,DBAASP,Raniseptin-1 (1-14),02_code/data/sources/dbaasp_v1/raw/peptide_4470.json,fbead43cedd996905f156618bb913a2f279f80026a5b529f60cdef2f68b4fef6
+865c99257db2fd9f489184bb,DBAASP:18177,DBAASP,Temporin-L,02_code/data/sources/dbaasp_v1/raw/peptide_18177.json,9cd7f5f0d0339895ff0b88bc949319f8e96ee799b961545318566f7bc087e3d0
+07ce6f8346d3833a3cc0fe09,DBAASP:7028,DBAASP,Antibacterial protein PR-39 (1-26),02_code/data/sources/dbaasp_v1/raw/peptide_7028.json,7cabc66245165efbfd1e4cfa78c17d9c115dbd8c34abe287cded13d85e38ac11
+2ecacd40f44b2428f0262717,DBAASP:4182,DBAASP,"PP113, Pteromalus puparum 113",02_code/data/sources/dbaasp_v1/raw/peptide_4182.json,23125129b38d6de190d29c78229a376364ccb1d5127b61d2688fffdf355f08ba
+b4c1ce55d294700361516cb9,DBAASP:23880,DBAASP,14D,02_code/data/sources/dbaasp_v1/raw/peptide_23880.json,62c787ec146139918f3cbba6cdfb5f7597adcf163baf879bc3462eef1141f419
+738c8b0e8cc26206a075bc48,DBAASP:7167,DBAASP,Piscidin 1 [F1A],02_code/data/sources/dbaasp_v1/raw/peptide_7167.json,a79d86833aeee98f1ae2491ce56d759b4d297c257ff494ea29500e246b8c3ea6
+14307b1a0c9074ff9fae4b72,DBAASP:3973,DBAASP,D28-R24,02_code/data/sources/dbaasp_v1/raw/peptide_3973.json,5d24bcd046a11717feffd3f832feac3271de84bd23154a72dc40c885ef758724
+6a2954b47b52c995f57b65b7,DBAASP:13366,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_13366.json,f763086c73180b2a7ec3d4f7257100add789796ad9a1c2fe1faf957ee7d0447e
+67ee1bf61d0b1d7c8591c9cb,DBAASP:2828,DBAASP,OGTI(1-11),02_code/data/sources/dbaasp_v1/raw/peptide_2828.json,28be138d1ce2d3e0aad9311033532b739396a3209765fab9c276da2c984ae4f3
+19321efa1c26e9ba89c23c96,DBAASP:14426,DBAASP,Canis familiaris Histone H4 fragment,02_code/data/sources/dbaasp_v1/raw/peptide_14426.json,17de2652801a3f8cd8c7e4e1a5cf0f8651fd86cb4c82c586c2f21329fadf530b
+7be227145031b4b1d66a2386,DBAASP:3768,DBAASP,XPF-B2,02_code/data/sources/dbaasp_v1/raw/peptide_3768.json,faa0e86275891ad29ca09bbad8c6622bbcd1ec0da1006a45a5ac2dbb1980d92d
+5605a52b850eb434365ffc8b,DBAASP:24619,DBAASP,AMP-3,02_code/data/sources/dbaasp_v1/raw/peptide_24619.json,baeb30c7d583b263a1725a8e280fb3268222654a45c9d0ff92bdd73ba2d03afc
+1877ea0d60c7fedd6466c7ea,DBAASP:14165,DBAASP,R9-G3-M15 [L21P],02_code/data/sources/dbaasp_v1/raw/peptide_14165.json,6a4562e29134815181783db5905cb9d625b5da316c2813812e660897363ef7f6
+0bad315d1aa3eae62114431b,DBAASP:18062,DBAASP,Myticalin A6 (11-26),02_code/data/sources/dbaasp_v1/raw/peptide_18062.json,a44e98502047fccd6579d4f4e8b68de070cfcb51ebcd6f7c58b1ef020c85f16b
+a70e499ae6b2a30325e4522c,DBAASP:11118,DBAASP,"Safencin (48-70)[E4,13K;G18W]",02_code/data/sources/dbaasp_v1/raw/peptide_11118.json,5fa392d64a13fb25110f940056ad268aae55556a50f23e981f73e5b6b231283b
+632ae08bbc53bceaa30259d4,DBAASP:15089,DBAASP,NCR335 (39-50) + NCR247 (13-24)- StrepII,02_code/data/sources/dbaasp_v1/raw/peptide_15089.json,0211b0385853cca8a2645f9a07b144ac8eecff7b34c1da06a471ac42c90f17bd
+a9d165eabe16b6b1c9bab4e5,DBAASP:5476,DBAASP,H/V-peptide (1-11)(19-25),02_code/data/sources/dbaasp_v1/raw/peptide_5476.json,3528ea0048b19167896f70081c4b5504d5cf4928750d74e7592a268f7ae9a176
+52813a67c13f3d51728d55b7,DBAASP:12537,DBAASP,3G-Cathelicidin-6,02_code/data/sources/dbaasp_v1/raw/peptide_12537.json,f7bee9e9e35f0440c99aec28d9e53c76ae1d288fde8f4c66d1d842ac8f9f58e7
+33a7ca752e27223b18c2a72e,DBAASP:3196,DBAASP,"Dermadistinctin-Q2, DD Q2",02_code/data/sources/dbaasp_v1/raw/peptide_3196.json,db25f54e37a8f579ca9853a3ee2cc8ed4907110c116514eef75efaa3e8ad21e8
+7aa2d3da506de49fae0eba2d,DBAASP:21998,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_21998.json,ffc545fb4726739a3989d6b0a68f8f8c064fde96ee6af736d45ef51250778223
+23934fed2118859f7013a470,DBAASP:18203,DBAASP,NCR169 (16-27),02_code/data/sources/dbaasp_v1/raw/peptide_18203.json,8deac221900b16a29ad31f81e7a73f890f64631cc36e88f5da31113a8ee88d0d
+2d76c1590ea5b74aee4ac5aa,DBAASP:988,DBAASP,Dermaseptin-like PBN2,02_code/data/sources/dbaasp_v1/raw/peptide_988.json,262bc2d65f9cf2f69ad96d7e6bbc82d4eb8d570c7430fa749f9f5c2be8df3264
+ea914247b84db5c18a3f2879,DBAASP:25210,DBAASP,E3,02_code/data/sources/dbaasp_v1/raw/peptide_25210.json,8be36963fa2af6fded5cf16334689e623a2672af9084cf2361daa59f4cbbf149
+9d2f0d668492fa989414980f,DBAASP:22018,DBAASP,"Cathelicidin-2 (9-18)[R15,18L], mCHTL (131-140)",02_code/data/sources/dbaasp_v1/raw/peptide_22018.json,6456cfa351aaaebbcccc33dae3cffb9309dc9d514b2b1947eb18c71e4a04d387
+e4f82553f2cc3afcd0a452f7,DBAASP:13080,DBAASP,CAP18 [I13S],02_code/data/sources/dbaasp_v1/raw/peptide_13080.json,f12052b73f61df621f26a09e2f99d768d736ae873ad4a398bd354ba388187d86
+9e5c1c988fe34a0b049e4af3,DBAASP:17141,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_17141.json,ec447c3f3ef4bab548286f3e6f30650293f5833bd7e4e8ad1db8c8c1994b6df3
+c2834f8e2da53e77570cf4b7,DBAASP:23264,DBAASP,Smp24 [S3K],02_code/data/sources/dbaasp_v1/raw/peptide_23264.json,eb3e469b9230c25cee08caaad50d6b3f94797e6c04a093b9f617d8b58a18743e
+b8be201cba1a85a5785e94a2,DBAASP:9990,DBAASP,"Chensinin-1 [G4,7,11W;H6,15,18R]",02_code/data/sources/dbaasp_v1/raw/peptide_9990.json,9a1b861c5af47188c9b2ce283436d4263e8a3a8da9c4f266cfefd8a9035fa3e0
+dce0fa4c0da8127f48e108d1,DBAASP:25379,DBAASP,"FK-24, LL-37 (17-29)+Cathelicidin-BF (10-19)",02_code/data/sources/dbaasp_v1/raw/peptide_25379.json,7821c524666326e5115de34396a5ab7b82e29737cf074803ae14c48d85149164
+bed4eac175d6e45425be87f9,DBAASP:1562,DBAASP,Ixosin,02_code/data/sources/dbaasp_v1/raw/peptide_1562.json,b183fbcbdc24d9c84173dcdc8979cee37375191fb04b0c5bfcac757a3f32a9c4
+97a0563ed149b1669cdf7eff,DBAASP:23706,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_23706.json,05e4d4f5eaba8834fd32ccaf475974dbb902a7faeba1c428d0e58d6322733c84
+9ecb3678cefc5040c5b8e8c2,DBAASP:7043,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_7043.json,291aeca54feed80d73e586157afafb16758de3b96ee04b82a746147067207622
+20435fa636002a7c5939aae9,DBAASP:4008,DBAASP,D19,02_code/data/sources/dbaasp_v1/raw/peptide_4008.json,dafb35cff444dcc8ba1919c662422e2f96356a6d116f089c31db806abf884d06
+13d3e576e48869698b2ea40c,DBAASP:3967,DBAASP,D28-R18,02_code/data/sources/dbaasp_v1/raw/peptide_3967.json,5d58e547c368557954a3d483fc9815f617b8b2aabdbc7d63bc61c7eb38f01f1f
+49f112b2b4cb7fe01b8e3649,DBAASP:11935,DBAASP,Dermaseptin DMS-DA6,02_code/data/sources/dbaasp_v1/raw/peptide_11935.json,4a0cfdaf6e4224ca14d283d71954c5425141e56e8abaae0c6c8d3d12521e1375
+686d885cb609f73f734c1bf4,DBAASP:22768,DBAASP,"Penetratin [Q2W,N9W,R11K,M12I,K13R], T2-1",02_code/data/sources/dbaasp_v1/raw/peptide_22768.json,3865b502364075060471ce2fbd9632c637cac842d2202c87aee218de0e8dc473
+2a7c3a738a8305a91120e8e0,DBAASP:12636,DBAASP,KT19,02_code/data/sources/dbaasp_v1/raw/peptide_12636.json,8bad38c4af6f0608a51f23c58455d97c9fd6ba7d807240e65614e1358bd24412
+e381f91e1b4361db99994d25,DBAASP:25215,DBAASP,E69,02_code/data/sources/dbaasp_v1/raw/peptide_25215.json,9ed82c8ff2c6f8dc3ad5f8215b0d70651191155ee167125523ae744f28cebd0e
+fe519a88e212e34d0ea06125,DBAASP:19889,DBAASP,"Musca domestica antifungal peptide-1, MAF-1A",02_code/data/sources/dbaasp_v1/raw/peptide_19889.json,b6b1446a97c440867b1fada625c2c2af82d7709debbeba4eef430ff91cf585d8
+5664f312fb8b60beec9fc564,DBAASP:22765,DBAASP,"Penetratin [M12W,K13R], T1-16",02_code/data/sources/dbaasp_v1/raw/peptide_22765.json,a0d3c1854befb47e84b28045096dd49c3a8492c3611be3cfa0c5d6ee9c459513
+138f905775d4a1d24c8cbc9f,DBAASP:23414,DBAASP,DAP-10,02_code/data/sources/dbaasp_v1/raw/peptide_23414.json,e8b2333ea9efc297529cd3f473c285b459785c32fd865f99113c5b66d844f47a
+639f31652b8e79a77357b8e3,DBAASP:17057,DBAASP,LK [L8G],02_code/data/sources/dbaasp_v1/raw/peptide_17057.json,a25667c5e4f19c2b204bc561934be8839a6cbe88457e3651e60f8c818cd9735e
+e72babc9e37e7f3a07770f9f,DBAASP:3982,DBAASP,D28-R33,02_code/data/sources/dbaasp_v1/raw/peptide_3982.json,337c24b1e9fb732745a2c8aae392f8a2a001e51fa45f1b774e25aec142f1f82f
+fe37e9a49a9c2ca02107938a,DBAASP:25162,DBAASP,Blap-9,02_code/data/sources/dbaasp_v1/raw/peptide_25162.json,7bb430e47c84d3b3928ccd344e2d3c3a8a4fce4c471b682d21a8efbf4649b05d
+bedb5b0c2b7b82ad96429569,DBAASP:16123,DBAASP,"Ovalbumin (277-287)[V5R, P8R, K11I]",02_code/data/sources/dbaasp_v1/raw/peptide_16123.json,7b4a685a7f4c9916ffafff4cf79766528af1b56ca6ec0ee362ea8791fda2c93e
+e4766be0ea34483803fe4793,DBAASP:13643,DBAASP,NN2_0007,02_code/data/sources/dbaasp_v1/raw/peptide_13643.json,c1c675c8b5daa9963e72d4b59b3e24e44f26d37d59af64abd9597a4740b21956
+649ccf86edbe7d4f6d608c85,DBAASP:16020,DBAASP,Armyworm Cecropin-1,02_code/data/sources/dbaasp_v1/raw/peptide_16020.json,cc4aaefb0cf22b5243fe4ff4766b9bf6546676061ba7315d42bbad6e1c0e3f47
+e7cde85aef1f0bb2c8c46744,DBAASP:13765,DBAASP,"Citropin-1.1 [F3W, D4R, K7R]",02_code/data/sources/dbaasp_v1/raw/peptide_13765.json,ff5f526a521d11f08e199eba78d55cc3a29710be76f9be296b397fe6d6aa5161
+4548540d46cf3858d3db421b,DBAASP:4041,DBAASP,D39,02_code/data/sources/dbaasp_v1/raw/peptide_4041.json,aa2a35a68a6d77b7a84fb76fec031fe0c5ca9aab3605055ee575324153f6fa13
+c89cd899144ec6d2e5a4696a,DBAASP:948,DBAASP,"Pandinin-2, Pin2, Non-disulfide-bridged peptide 4.1, NDBP-4.1",02_code/data/sources/dbaasp_v1/raw/peptide_948.json,a60bbd24bf0a978669a803167809b392680e89fb7c0323c1e9be495f8be9cb15
+6542fabaaf1c4f2b05c92c30,DBAASP:2032,DBAASP,rCRAMP,02_code/data/sources/dbaasp_v1/raw/peptide_2032.json,1dd6c2fe6e63a68d51b9a90f15bc1c6ccdaaa053679161f07fbccffbdc678e21
+2c2330c65137d0a0ebc036f8,DBAASP:21133,DBAASP,Hp-MAP3,02_code/data/sources/dbaasp_v1/raw/peptide_21133.json,8f69aa3be4a1d2a09ac32160756fcbe4506b8200b02f6ddf767af1448ae5ec17
+dd2e82c6ae86822716a5a3c2,DBAASP:22689,DBAASP,DeNo1023,02_code/data/sources/dbaasp_v1/raw/peptide_22689.json,ca617540ca53267b59b2c97be8ab86850f40c5e64daad9b1dce007d2c9a7a1d9
+5072888361b3341c67b1fac5,DBAASP:12553,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_12553.json,15c96308b1efad2ff90bdcc7b30ace5ecfb430c0a931e4dec931f86e1937a401
+a3c7d37ee989e688b7b50c5f,DBAASP:5859,DBAASP,Fowlicidin-2(1-31),02_code/data/sources/dbaasp_v1/raw/peptide_5859.json,a2b46bcad874c724a37c617652628d996ae9a50315e7e0462c5c7b5d94e85cd2
+9969ca3e3c5d1fb6e0955cd1,DBAASP:25545,DBAASP,Hesperelin-3-7,02_code/data/sources/dbaasp_v1/raw/peptide_25545.json,65efff2703a48281916fedb4967445ff9ab8123d53a24018ae3b6db3ad2f04c3
+9cc22255efa140f33509b792,DBAASP:3074,DBAASP,CRAMP-18[E2K],02_code/data/sources/dbaasp_v1/raw/peptide_3074.json,4eaa3f29b354f579d62648cd4dd60d7245025464b6dc861521fc26035f6f94d2
+03cb5e3251a02bff0db857dd,DBAASP:14471,DBAASP,"Bac5 (1-17)[F2W, P4R]",02_code/data/sources/dbaasp_v1/raw/peptide_14471.json,0468cce428ee764b66a19ede500b2906cb35772524971c8f5759db946860d066
+7f682b36dbd581e394a42492,DBAASP:18439,DBAASP,"GW-Q4 (6-20)[Y13K], Q4-15-1",02_code/data/sources/dbaasp_v1/raw/peptide_18439.json,f5cb85595974b0b7db730b30a4e6ac22afb4a2329ff175732ac69c0f92d441be
+bfb8bab10bbc549c188e79af,DBAASP:24337,DBAASP,LL-1,02_code/data/sources/dbaasp_v1/raw/peptide_24337.json,4f585fa7889afa8398179a2222fd53b807f1bcf46c89260409ce438aba6fc58a
+e31c37bfef356a5c5f5bd541,DBAASP:16846,DBAASP,"(P)FLK22, P-Pepsin A-3 (41-61)",02_code/data/sources/dbaasp_v1/raw/peptide_16846.json,22c02ea04a590a9f6b9ef50c4ce8ec6488b7b861411e410b3e346d5eae54eab4
+dba639997f3ac7aa0a460932,DBAASP:20336,DBAASP,VeSi1,02_code/data/sources/dbaasp_v1/raw/peptide_20336.json,011a4a115d6302d75db3309acc0435790ee6532e8ab00b07444b42038c921e11
+7e8c061a532d708a9b6b4956,DBAASP:9380,DBAASP,"LK [L1,12C]",02_code/data/sources/dbaasp_v1/raw/peptide_9380.json,cacbeca4384b9254c73e1c4115d49e2c32e162c0b5faa9606c17b831b0b50b99
+005349f406e09f8fbef9a524,DBAASP:7840,DBAASP,LL-37 [S9A],02_code/data/sources/dbaasp_v1/raw/peptide_7840.json,1d3fc173e1d38e708160913a10f93b9b00cc207debbf5fcbfbffe87f739b3b4d
+e194c9632ec53727dc0a8d6d,DBAASP:11215,DBAASP,"Distinctin-Like-Peptide-PH (15-36), DLP-PH (15-36)",02_code/data/sources/dbaasp_v1/raw/peptide_11215.json,2a4a5f9aab993f1a1d01dee0ed86b99ff213307edf27f5e05271548295086eda
+45323232a9da7443f1f3772a,DBAASP:4957,DBAASP,HP(6-20) 50S ribosomal protein L1,02_code/data/sources/dbaasp_v1/raw/peptide_4957.json,216169d7beeb5a6e21ccefce58d9d912e9751d766dccec9d3e84245322386252
+0b6d5412acebd74a8b0312cd,DBAASP:12372,DBAASP,"PR-39 (1-15) [P10,12R][R11,13P]",02_code/data/sources/dbaasp_v1/raw/peptide_12372.json,830899770ecc0d6b8518a03e18f5768c701127ee4a77d4c70c89d723a1505b34
+6c877e57a31546947006bd70,DBAASP:19434,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_19434.json,efd7023ec1d57074a1f26732f83880ac84f9b35fcda17c46283825eee4351b4a
+5939a069bbda2a9f51e37441,DBAASP:5718,DBAASP,XPF-St8,02_code/data/sources/dbaasp_v1/raw/peptide_5718.json,9fbba66f5dbe9a194f35b4e77b61185697e0020b332683819a3fc3ed7a745487
+6b8e958673aa625c889b12e9,DBAASP:20350,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_20350.json,ecbf9e8c1203f7ca41414e2331fbfb2ec65598c8102980334c8a195af18d2eee
+1e6aad39232c20e677046e55,DBAASP:4039,DBAASP,D36,02_code/data/sources/dbaasp_v1/raw/peptide_4039.json,1a84cccdce4ddd42167bbeb4b9e74c1793916c2f7eb3facca6609a0a8ed365c3
+43616b4df1608ad48827435d,DBAASP:21528,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_21528.json,ae893d08cdde1aa3e38a814daf79b9500f37c680a66ef10259d9d6747b1a52f2
+547bb4dfd81dc630539b1bd9,DBAASP:15046,DBAASP,CGG-KR12-GAGG-KR12-G,02_code/data/sources/dbaasp_v1/raw/peptide_15046.json,dbe667d657af676523b64f0bc476ad99b65b6c0fb155d4d6787324d27e0afd57
+120b8f47459160ed99632dfc,DBAASP:14458,DBAASP,Bac5 (1-17)[I6W],02_code/data/sources/dbaasp_v1/raw/peptide_14458.json,a2f67e7f8789c90d1688d5bf3e5839def1c1a4ebd3ad14490337392c4b67c342
+91166aca9007b56572584bce,DBAASP:25418,DBAASP,Proteobacticin-1,02_code/data/sources/dbaasp_v1/raw/peptide_25418.json,f7a200e40838f323780251fcf1d99fc4e6b37d374ceb1089ac1f06a72ee4f8d9
+66f7b4b9211dd26d85a08994,DBAASP:24628,DBAASP,AMP-30,02_code/data/sources/dbaasp_v1/raw/peptide_24628.json,e6ccc251ec19ed6a8492fa2d45b5f99dddf6f5758f669db2433e73c424bd8f94
+206970d2471f54b40959bd06,DBAASP:24451,DBAASP,Pep5,02_code/data/sources/dbaasp_v1/raw/peptide_24451.json,2e26b1542227349b3235eb83fc6d2b0dfe16dbbb2c35c60006857ec9c551237f
+6ed35674df558ce7bf8bad1c,DBAASP:15150,DBAASP,cCF10-C3,02_code/data/sources/dbaasp_v1/raw/peptide_15150.json,79af0dc5bffa857fc782722eba669a845f9e09b72866aa34613e946a429deef8
+7a668394956d13450fce023c,DBAASP:17750,DBAASP,Legumin (231-251),02_code/data/sources/dbaasp_v1/raw/peptide_17750.json,7f34ecb87bf55b88e213dad52f0596e190af2b17052cad56db18ab4972762c08
+df68e944e2c65b97c437428d,DBAASP:5145,DBAASP,Alzheimer disease amyloid beta-peptide 42,02_code/data/sources/dbaasp_v1/raw/peptide_5145.json,193df210fb0e62698428719569f164a11bdecd125b948df9c2c2d7e6dd342522
+8194b3b639f70b74f8a1d6ce,DBAASP:22682,DBAASP,DeNo1016,02_code/data/sources/dbaasp_v1/raw/peptide_22682.json,abae10012643e45b526fb920ae77f277bde680fc22061130451dfcb81b1320ea
+992ffd07d76031dc5f048403,DBAASP:14272,DBAASP,"Alyteserin-1c [E4R;A8,18S;S12K]",02_code/data/sources/dbaasp_v1/raw/peptide_14272.json,a1be91c3da3caf0b10dc53e9ae20d3cbd5c972d02afad9aad8e0445f1c4370e9
+b0196f0832d0c6c86adb5235,DBAASP:17170,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_17170.json,8784917d34626f784843693451a2e88fda2f371dddb19eb97ddf93e284661f34
+06c49b2803f56bd9e3da3902,DBAASP:25504,DBAASP,Hydrodamin-2-9,02_code/data/sources/dbaasp_v1/raw/peptide_25504.json,79cd5d67bcf61256d98e5fdd1e66a4256f88f2c39c4499e3d526d8e7c4b656db
+b248fc8ca727afb4f540e3a6,DBAASP:21504,DBAASP,"Cecropin-D-like peptide ((2-21)[E6,8R;Q12K;D16K], ∆M3",02_code/data/sources/dbaasp_v1/raw/peptide_21504.json,6e87aada8569d409b2f65ec74b32b89c86539a58408e00d7580b56c166909e22
+995ee7fcb007f2b76867ca09,DBAASP:11053,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_11053.json,a431fad48308c0f379897b6f93cab2dbbe053c5d03663132b2741329da67d9f6
+b69432d72bbb81e6b4545bd3,DBAASP:25470,DBAASP,Arctoterin-1-7,02_code/data/sources/dbaasp_v1/raw/peptide_25470.json,3322273cb04f0263907e1e7ab609782d43df24acd9bf6b615308680c3498ea3b
+f6fec918417b40afd4225ee4,DBAASP:20396,DBAASP,PeNi12,02_code/data/sources/dbaasp_v1/raw/peptide_20396.json,d21e771433f2a3accd72741f52233ecbc32fa7958b82bc7e57cf179310856278
+ce0afda6de44fbeba4177e75,DBAASP:18070,DBAASP,Cecropin Satanin 1,02_code/data/sources/dbaasp_v1/raw/peptide_18070.json,de30c42cda6d81723d069df16c55235642e71ae2660eea2487fc967a9db8f88c
+23ac9d2f96933a87a4259ab2,DBAASP:11934,DBAASP,Sarconesin,02_code/data/sources/dbaasp_v1/raw/peptide_11934.json,117dea337d850481c9413427ca8e4245d8d9078144926f62e18acd79bf36cccb
+ed92f8954600fbbb38c7df7e,DBAASP:12172,DBAASP,"Bombolitin, Bi-bombolitin",02_code/data/sources/dbaasp_v1/raw/peptide_12172.json,0f8091be000b383514bca6e4836f5a20951f324301bc6d7240f87b0433b29cec
+14485f5ce69d7d0af664b8f3,DBAASP:17154,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_17154.json,a4d51399ca669bc58644ec461cee21fc976a140a77ad3c0eab686cba43c9c510
+f96258c70c78025ff218e827,DBAASP:12243,DBAASP,Mastoparan-Vo,02_code/data/sources/dbaasp_v1/raw/peptide_12243.json,d4479b4af038b2ec627a443dbda2b53adc9ed722c4696a40dae73c92dfabc629
+1dd71bc58139fe9d5ab3d516,DBAASP:19354,DBAASP,M-poneritoxin-Na1b,02_code/data/sources/dbaasp_v1/raw/peptide_19354.json,c54de59e94c42f83bebb703a007286c2e1bbb99f1432f34bb426fd6bc2f55395
+fa6f5a197e50aebed5d9dcc6,DBAASP:3979,DBAASP,D28-R30,02_code/data/sources/dbaasp_v1/raw/peptide_3979.json,ec95c79674681a596eadd82a0c62211c82655560e4bf6e9a998a7b3bd5df7da5
+fae47b0752f21f9d90d10ef0,DBAASP:11502,DBAASP,Hemocyanin (32-46)[G10D],02_code/data/sources/dbaasp_v1/raw/peptide_11502.json,6394707b236e8149f4e77d50b0ea299bcb7a05c0d81902fda951b94ab6a651d5
+79f89af40f5eaa9fb792188d,DBAASP:3077,DBAASP,CRAMP-18[Q16K],02_code/data/sources/dbaasp_v1/raw/peptide_3077.json,d2b35d54e28044102811fb2eebd53ea7f05b8c5b49f63b8d2349887dfdbb8051
+641c12bccaa94b921f1b6205,DBAASP:9705,DBAASP,"Piscidin-1, Em-Pis1",02_code/data/sources/dbaasp_v1/raw/peptide_9705.json,603261bcd3c42bc4f087c2f0e047202835a769a67f82e5421e9bde180205a3e4
+6244e0e6b08316e2845ee0bf,DBAASP:25409,DBAASP,"F6P1, F6+MLamP1",02_code/data/sources/dbaasp_v1/raw/peptide_25409.json,b16ec2fc7dc36460ea326585dfa92b2088993412bf8a0db51eab77115080d11c
+02a11781e60de7d2b5fb336e,DBAASP:16119,DBAASP,Ovalbumin (271-290),02_code/data/sources/dbaasp_v1/raw/peptide_16119.json,9099338ed2277e61190ac1435fe8f24f1663ea71aafa837e9be69e71aed1c696
+ed52ed768c1d10d1fc9f4ddf,DBAASP:22888,DBAASP,Apidaecin Fva1,02_code/data/sources/dbaasp_v1/raw/peptide_22888.json,d4d7fa6c5512af211d3da5036caf04efc721e748555f7def65335532d706e522
+6b2a6bcc8dc2e9547bfe4a08,DBAASP:22898,DBAASP,Temporin-PMb non-amidated,02_code/data/sources/dbaasp_v1/raw/peptide_22898.json,6a530fde6925119798b890c68e27795f7b3ea46ee8a2615c0b22e91f2d69f9cb
+8bcf2a550582eb7d4357bdca,DBAASP:20620,DBAASP,Autophagy-related protein 16 (12-32),02_code/data/sources/dbaasp_v1/raw/peptide_20620.json,fa54ef1896964789937ed805ce22dfe1768d10d138944036d9f935ac4d7bc53d
+5bcd6a2f54540f067543331b,DBAASP:22223,DBAASP,L12,02_code/data/sources/dbaasp_v1/raw/peptide_22223.json,a6b78c3a2637256bd942475a57c9b70f4c8243c0946fe65f843bd213b21242ca
+5de6f6b5f8ad98631cdf1ef3,DBAASP:25413,DBAASP,Ampspherin-2,02_code/data/sources/dbaasp_v1/raw/peptide_25413.json,6a2e6ed9e29648feed7c6894d7a06e8b5c67d6bc52f0318d5a9bbb04aee92b69
+ba6debb115ad45a8a827d6e6,DBAASP:2004,DBAASP,"Clavanin [H10,11,17,21K]",02_code/data/sources/dbaasp_v1/raw/peptide_2004.json,be8e91cd85f475ef336e5119dd45ce3b05cadd9125c4217d8b560bfe4a8b32eb
+199c82760ea7fd1c26d39e53,DBAASP:20543,DBAASP,"Spampcin (65–86), Spa22",02_code/data/sources/dbaasp_v1/raw/peptide_20543.json,01f6aeb657aeb6dab6bdeb297e7bd0d4ccc3a20bea96518e3939f610b9fefc94
+140824d101251e7d916d6fb8,DBAASP:25508,DBAASP,Hydrodamin-3-2,02_code/data/sources/dbaasp_v1/raw/peptide_25508.json,7607b4517edff34f8928434f5d74ebe4c63756a274791d4599dfd2a3d7cd7d8e
+cf6ae302bad088280f27436e,DBAASP:18063,DBAASP,Myticalin A6 (16-26),02_code/data/sources/dbaasp_v1/raw/peptide_18063.json,3d57e12c17b31b775b081c1e19b5604085af4f5cc841f97d73dda6c963dfca9a
+f70142872a50cb5d411eb698,DBAASP:20173,DBAASP,Hm-AMP4,02_code/data/sources/dbaasp_v1/raw/peptide_20173.json,7ac2933ce7b7bb9543b02fb0ead8401fd5df56a575910870996945253a9950db
+70fe3bb7e10f309e2809f53f,DBAASP:19492,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_19492.json,3877eaa25518264caa467a337f4edebd2b7b9618faf4fe9dc0430d6e9afd57df
+65ae378c3f40a462912b59d9,DBAASP:17180,DBAASP,"Enterocin AS-48 (46-70)[G18W,A21I,I23A]",02_code/data/sources/dbaasp_v1/raw/peptide_17180.json,d60117361f67b20e6deb996968365a64b89faf874202c90e30b5fa70d86cafc7
+e54011da7ddef7d9ef0a781e,DBAASP:25491,DBAASP,Lophiosin-1-7,02_code/data/sources/dbaasp_v1/raw/peptide_25491.json,22fda8031451bf6b8fc5da4d4c3c5c4003561f2e867f13dc39e52b7810913ba1
+cced7311b736457fb31f2755,DBAASP:16331,DBAASP,Orc1,02_code/data/sources/dbaasp_v1/raw/peptide_16331.json,366eb092a72f7477f4bce615c61667aa7f5af489388f61040491b304630dc25b
+29407294dcfef43cc12c445e,DBAASP:356,DBAASP,[RLLR]3-C,02_code/data/sources/dbaasp_v1/raw/peptide_356.json,096ea7929d0a7c59951b83582dc9411c53a4f4cbbf34d5bca411ee3635c23c83
+1d7e6f75cfa57fe57c2fefeb,DBAASP:13745,DBAASP,MBI 493,02_code/data/sources/dbaasp_v1/raw/peptide_13745.json,27c1ebbbbbcbf1a3b64c7848ea159851b8b852ba463c4ff477edd4d33bce54d4
+22f7dea5abaf2f6ca03072e7,DBAASP:12522,DBAASP,Tat (47–57),02_code/data/sources/dbaasp_v1/raw/peptide_12522.json,bf0e1bf19bf6f2e7bd919b4d81bd906a36bf2b2a18fd77092ff4cf092283cef0
+ab91b73896b4ebc88aebee20,DBAASP:16144,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_16144.json,69b98ecc40662e306e144b9874398c8ef6633481c218c324d71e2ddc5ac02dcd
+90f25e718f6b38a62239bd64,DBAASP:25700,DBAASP,"LIG, LI-GSG-LI",02_code/data/sources/dbaasp_v1/raw/peptide_25700.json,263e7490a2c09a85dc2a21d2dcb3cdee1c71f48965167c164bc4fc028c3af172
+b80d463d1269f40a22c1028d,DBAASP:20004,DBAASP,As-CATH4 (2-18),02_code/data/sources/dbaasp_v1/raw/peptide_20004.json,b2240cfeafd646b205bb12a643b2f758c8ea6439923f689c727059afa53611af
+5b5cb204b7f9e1ef566067ce,DBAASP:16126,DBAASP,"Ovalbumin (277-288)[V5R, P8R, K11I, M12W]",02_code/data/sources/dbaasp_v1/raw/peptide_16126.json,dfbe34855989a8ab834715eabe19af5b9fcb95ab9e97a7121ea9997fd7b9001c
+73964058e76c5552ffa01e8d,DBAASP:4173,DBAASP,Cathelicidin WAM2,02_code/data/sources/dbaasp_v1/raw/peptide_4173.json,65ce618247b14aa5f8799ed16b605b6cb8fec9b96a32284f32523965d55e1073
+6f5eb5844a15365359359a66,DBAASP:24984,DBAASP,AMP_22,02_code/data/sources/dbaasp_v1/raw/peptide_24984.json,23f350b642b201f4670e46c386f070d3e25ed4bef011db41e15f15797317c0b1
+7b9cfedc9a1b492657a2ea9b,DBAASP:10450,DBAASP,"RLLR + Cathelicidin-BF (1-10), Cbf-14",02_code/data/sources/dbaasp_v1/raw/peptide_10450.json,e7f52bb1978a68965a5266a026517b22ec8e397329d9464573009ec8a35635c6
+ec6d4b275b74baf2caef12d7,DBAASP:13929,DBAASP,"P-rpl39e (9-18)[A15K, A16I]",02_code/data/sources/dbaasp_v1/raw/peptide_13929.json,35d086bf332579ee847560d8ba8169c22f34c198d328b27cdd68ad8dfeeeb118
+14f19e6632985ca341bb84c7,DBAASP:22325,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_22325.json,8bb90948eb329cc45cd4054ebd547ad12eb39d44d783bec9edf074d192da9c6d
+2b2151589e8c34add24de217,DBAASP:23385,DBAASP,IK1-O,02_code/data/sources/dbaasp_v1/raw/peptide_23385.json,40b19f2539b89e9216dec338c85f25b4d530990053ae7f5a630e601bd73b0742
+743fd48c0fce235f28b31e5b,DBAASP:25563,DBAASP,Free-75diff-5,02_code/data/sources/dbaasp_v1/raw/peptide_25563.json,67d1626a2bd10126ecb9f6b0540da4fa2cc17e78395f1fcb1de77edc464dc091
+e402482f989f6c017ec40012,DBAASP:566,DBAASP,"Drosocin-4, Drosocin-1 [S7T]",02_code/data/sources/dbaasp_v1/raw/peptide_566.json,b7416c58c20309279a413e78c406376bb318fdaf580e6edc59ff15c78ce8cec4
+b0724ce157987d7e9c64d9ef,DBAASP:11939,DBAASP,"BMAP-28(1-18)[G1I,S5G,L11A,R12L,A13I,W14H]",02_code/data/sources/dbaasp_v1/raw/peptide_11939.json,f3b76fece65d2a0477c46555d1fb91b03ce1bc02aad0f7e353a2d844ad01ae22
+e23728fdb04b88e053c48488,DBAASP:22338,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_22338.json,86557a5ad0665b8bcab67677c40adcb82f3996efa3d4da4f1d4e8f014ed62a0d
+f74fc422854526f3c0474588,DBAASP:5716,DBAASP,XPF-St6,02_code/data/sources/dbaasp_v1/raw/peptide_5716.json,83761e7ec3d3232d1109116900a95996cd4df2149c8d7bfaa2bfa1c1c7de56fb
+27cd3517bed8c2b682edeeab,DBAASP:16140,DBAASP,Ciona intestinalis Uncharacterized protein (1-21),02_code/data/sources/dbaasp_v1/raw/peptide_16140.json,1b98cc1f5dbe24e80135ea01c51d10aa7334ade3dd6ff3fbff737c22d9591926
+02b8b87be660e4525fa213da,DBAASP:24870,DBAASP,P98,02_code/data/sources/dbaasp_v1/raw/peptide_24870.json,900de84277af70beb8402e35279cda3bb79ecc9b0b46b29aa7da0db88bb0c89a
+27d1f2a4994cef1e1e90ad23,DBAASP:21946,DBAASP,P10,02_code/data/sources/dbaasp_v1/raw/peptide_21946.json,890705996932005a3ae75ab8ff41b75403b0cb07a98b0a5005a17f6edb184919
+ec0e15ca8f62337960b8c2d4,DBAASP:2031,DBAASP,"mCRAMP, Cathelin-related antimicrobial peptide",02_code/data/sources/dbaasp_v1/raw/peptide_2031.json,15f01af4359d59266b33cebe3e533e2d987d79d63c636a6cd560a76488723746
+6626e715383319c9a419ecb0,DBAASP:17392,DBAASP,PNG-1/5,02_code/data/sources/dbaasp_v1/raw/peptide_17392.json,bd18a98a1cd6ab255773e7d78cd4d14ea1b94970a727bd458d4adfcbfcf99212
+d203806ae8b7235fb285eafc,DBAASP:876,DBAASP,Buforin-2 (8-21),02_code/data/sources/dbaasp_v1/raw/peptide_876.json,aa33e1acbc925eb81b0d590ea1a2b571a481fc3b808a35db12d9782aeb79ed5b
+76347e00366dc45e5e08f4b5,DBAASP:12312,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_12312.json,d897dc810e93f40dca78842724d306b11b4673d002f7f22fbf5b463f9b9aa68b
+1743a17a0975886ff9179890,DBAASP:166,DBAASP,CEME,02_code/data/sources/dbaasp_v1/raw/peptide_166.json,09d35a4e15212eed11f0d61d70d939cc1f3ebe6a2eea22e08413e89cc10b94cc
+223c513d277428e6f06cf3cc,DBAASP:20464,DBAASP,AC-P19,02_code/data/sources/dbaasp_v1/raw/peptide_20464.json,1a6a1dd2bee5d26bbc3fc76c92fc2fb6433f739737e30cab6f0f45e2434d187a
+9eb69ddf7376140456b68860,DBAASP:5934,DBAASP,"Syphaxin (1-16), SPX(1-16)",02_code/data/sources/dbaasp_v1/raw/peptide_5934.json,61064b9ab321dd26a7ac8606c9240997b52c465f3d9242b2d9e0a871aecaf6d6
+dcea6607c85329661307a45a,DBAASP:173,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_173.json,47924aad3b7891344500db9aa6a718c72529cf3552c388c099285b2024a02984
+8519228e00abd1391b98ade9,DBAASP:19204,DBAASP,Anisaxin-3,02_code/data/sources/dbaasp_v1/raw/peptide_19204.json,d5434f90490bf4af93c49060dfff14ba037b1580dbdc4016cbcee3e4eff8accf
+abc2460b9fae018ca13b7d4e,DBAASP:2038,DBAASP,CAP18-21b,02_code/data/sources/dbaasp_v1/raw/peptide_2038.json,8a7ede501205b322797906bbd83b6563b4950cb2400cf70a8a3995160019a540
+cb081a19332018e7b72bb3dc,DBAASP:24292,DBAASP,Cathelicidin-related peptide Oh-Cath (153-178),02_code/data/sources/dbaasp_v1/raw/peptide_24292.json,ccc925a7dcccdd8b826aec68d6a0769585c75dbb654a4e8adf9506de0370d883
+7018a5e8d7ffbe82506cf5d1,DBAASP:25172,DBAASP,A08,02_code/data/sources/dbaasp_v1/raw/peptide_25172.json,2ceb71f3bef50e8eb79c65ec16bb73cef7c1261079cadb6c6cfd4e8894467f96
+e26bbc54e9879b66bfa7bdd6,DBAASP:7019,DBAASP,Arasin 1 (1-23),02_code/data/sources/dbaasp_v1/raw/peptide_7019.json,ab85f35159119143ddbb44880d48f55872725a349176c5448c9b07e1bdf76a01
+4e86beaa0dd3feaa3c9e18ed,DBAASP:10883,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_10883.json,f83c7447d37c7b13eb30a9857877d0079783f1709d84aad52cd08c9a0a5710e5
+fe9cd089fff99f380133fe5e,DBAASP:22271,DBAASP,PDZD2 (173-188),02_code/data/sources/dbaasp_v1/raw/peptide_22271.json,8aadedb7284d6951dd118cced6b98ab14e04129b2cedcb75b7c3264370c94511
+68833242af058529e88186ea,DBAASP:4027,DBAASP,D23 shuffled,02_code/data/sources/dbaasp_v1/raw/peptide_4027.json,c6d85735c6d1cbb0c7b0386312aa44997a70691372b79764dea46ad56924324e
+4dae9f4c8fca9bc589480de5,DBAASP:22269,DBAASP,PDZD2 (211-224),02_code/data/sources/dbaasp_v1/raw/peptide_22269.json,268da372b588da1c943006e5bf9470569a5f4f440f73b9c745c726b27ee7d6dd
+973e195e880dd0bc45f87c5c,DBAASP:23731,DBAASP,TN6A1,02_code/data/sources/dbaasp_v1/raw/peptide_23731.json,8deeb94786b7dcc930ccdcbba11eb71c7f8311668b60cdf812256a1b55635863
+20fc2276b66c1f3cbe4094ff,DBAASP:25450,DBAASP,Equusin-4-9,02_code/data/sources/dbaasp_v1/raw/peptide_25450.json,1d47779a245fcaa025156c47d8c30b05fd92a8a1e31d1dd1fbf1e899b826bb46
+23389c65fd1189875c56a1fa,DBAASP:21464,DBAASP,nAMP-LP-617,02_code/data/sources/dbaasp_v1/raw/peptide_21464.json,508c3204e52cf6fac9c93db79021f191251b6728abc6c6ce6465b3e64a651e0b
+7ddae288740c625c57c5e676,DBAASP:4724,DBAASP,Vejovine,02_code/data/sources/dbaasp_v1/raw/peptide_4724.json,345000f990ba655546a7cd0bbd98cf3bdcfcee46ef9c23cf10c35db37b10fdc2
+c42be996cb5eb155395054b9,DBAASP:21285,DBAASP,PDB6I34D-ALQ29,02_code/data/sources/dbaasp_v1/raw/peptide_21285.json,dc98e3ff7dfd47ccaa5399ac708d3353a2a36d8876af7ce553693f0d2dc63fa1
+0282d8221c3a15527af18f59,DBAASP:9379,DBAASP,"LK [L1,8C]",02_code/data/sources/dbaasp_v1/raw/peptide_9379.json,078526a254b74df26e3b2d02717f07c63c3ff2e6630a9f37c244d3fdec877dc7
+b82c600d6de4e1e99ff2580e,DBAASP:2030,DBAASP,SMAP34,02_code/data/sources/dbaasp_v1/raw/peptide_2030.json,3c9fd447597d0ef48cb3ee4d6ebfe3f49509a17f677ba8fd33d615d35c7d5c59
+91c2c14e5f6a680354473991,DBAASP:20122,DBAASP,"Fowlicidin-2 (6-20)[R10,13L;P14L]",02_code/data/sources/dbaasp_v1/raw/peptide_20122.json,63bda8ce7170e051b4b60d4f294b7002ab414222561f5329bf61a3ba02ffea4f
+d22111288d3c6b5e3962ed9a,DBAASP:7661,DBAASP,Chensinin-1 [G4L][G7L][G11L],02_code/data/sources/dbaasp_v1/raw/peptide_7661.json,a60771e7a47f04473a195569684573a0676b406159f61d067f87056f413a3095
+39dafda9ab189039cd986ba3,DBAASP:19122,DBAASP,"Grasscarp interferon (137-156), GcIFN-20",02_code/data/sources/dbaasp_v1/raw/peptide_19122.json,ce6aafae67cc336def5437ca52a3679556bdbdacc795bda02dcab31c99fed45c
+00abe737379cfef0be49ac43,DBAASP:21171,DBAASP,Brevinin-1-AW [Q15K],02_code/data/sources/dbaasp_v1/raw/peptide_21171.json,a960e20f5d885a55a6c4fc35a6454043bc0457f595149a1630ef1d7ce421c2fc
+0e46202371a1295d74711a2b,DBAASP:25134,DBAASP,ChBac7.5Nα [P5A],02_code/data/sources/dbaasp_v1/raw/peptide_25134.json,1740bc20143a2d3e952609ab55a3cd9ad6cc32b8fb49c0b1345b8f4cc1898575
+74d94f0fb536e9acdd14c012,DBAASP:953,DBAASP,"Tritrpticin (2-13)[R1,2,12,13K][L11Del]",02_code/data/sources/dbaasp_v1/raw/peptide_953.json,18e636f7f03328cc88dbc5e6f3231f2f8511f4dc228e8fec42ebfae2b81d02e8
+ca24482091809029b0b2d6d0,DBAASP:887,DBAASP,Buforin-2 (5-13)[17-20]3,02_code/data/sources/dbaasp_v1/raw/peptide_887.json,7923ebd22c6436f97bc4d805f108a630732ea5c53f7a5b0bc23aa6a6e0d0fa7e
+83f1536b0daa09b41252d379,DBAASP:13079,DBAASP,CAP18 [I13Q],02_code/data/sources/dbaasp_v1/raw/peptide_13079.json,f8160cfb611406b5041c9c3be076a890b04c89a4214592997fa9714356144c08
+98bd1a3527213bca8e6509e9,DBAASP:19200,DBAASP,"buCATHL4B [W4,6,8Y]",02_code/data/sources/dbaasp_v1/raw/peptide_19200.json,b34193a5c081a56a29a744b54fba7b8cb7efa898e78af838073d53d362381f25
+fbde33b427556a266915ed63,DBAASP:17056,DBAASP,LK [L14A],02_code/data/sources/dbaasp_v1/raw/peptide_17056.json,56c612e51843ffffe1da57dedb9d8f5cee03035b70fbd9f82c513555804452e4
+4b7578f1af728e455333d592,DBAASP:3084,DBAASP,Gaegurin 4 [1-28],02_code/data/sources/dbaasp_v1/raw/peptide_3084.json,2c8b64d6dfb2f7f551ab9f013464ce48ff5ee37dd21cef35b736bb6302fa4ce5
+666502df35b01fc59e11b221,DBAASP:25211,DBAASP,E4,02_code/data/sources/dbaasp_v1/raw/peptide_25211.json,e9cf785832595f95b3d6c84d8f290b2601951585943b16f6dad46bc60496a24a
+f7c66ffcff17e5cca01f1b47,DBAASP:11213,DBAASP,"Distinctin-Like-Peptide-PH (1-18), DLP-PH (1-18)",02_code/data/sources/dbaasp_v1/raw/peptide_11213.json,7eb0c4273614aaf4d80745e59796139473d724fb84c4b7a18019f4517696b454
+22bdec7b1a8d89bf2db86e62,DBAASP:17177,DBAASP,"Enterocin AS-48 (46-70)[R3S,S5R,K7W,A8K,Y9E,E13Y,K17G,G18K,R20V,A21I,V22R,I23A]",02_code/data/sources/dbaasp_v1/raw/peptide_17177.json,3f7f0911f3e84e2b57359b6e2dd089e489bf9988ff8fe0b523e4891989c4f60b
+9ce836fd07f9296277ca1ba4,DBAASP:16526,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_16526.json,498b1d0e0542ab6501770f5b24c251fbf95709c15e095a915dd4d1d30f779c94
+4b089929b953399117f3a907,DBAASP:2686,DBAASP,Bovine hemoglobin alpha chain (107-136),02_code/data/sources/dbaasp_v1/raw/peptide_2686.json,fa5f8b115ddb3b5864ec01cf9e6ce9d0c90b64c4c1223979c3fa8b63f9519278
+0a9716f5e696ffb7b4bb5e5b,DBAASP:22586,DBAASP,"AgrD (25-32)+mBjAMP- 4W,3K",02_code/data/sources/dbaasp_v1/raw/peptide_22586.json,1e69f264f862cda41e663d250f1ca1387239ddf3e680cc08745cdffded30d66b
+12a1d1ac6fda3d9d17dc788c,DBAASP:821,DBAASP,Caltrin / Calcium transport inhibitor / YY-2 / Seminalplasmin / SPLN [14-40],02_code/data/sources/dbaasp_v1/raw/peptide_821.json,96308afb88b132c05f91f9407bbae6bea022d35c929efff93ee6b5b2f877df6c
+f8831974fe1043f75b3c3f79,DBAASP:5046,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_5046.json,0a7cc2f12b156878fd94ec854d963f7e8e5bd6fe19fee2d8f5be1c7101b40599
+7d8357895a7607157b9624d0,DBAASP:5879,DBAASP,"Chromogranin-A (352-372), hCGA(352-372), Catestatin",02_code/data/sources/dbaasp_v1/raw/peptide_5879.json,e12d8f5e0b9385cba2b69aebdd42480b05a9d6a30de6a10630d14392be440713
+92be4e47bbeade091731fd46,DBAASP:18784,DBAASP,Ω13,02_code/data/sources/dbaasp_v1/raw/peptide_18784.json,49ac27dd6e2e94418bf60a970005a647eae7409b468a6d0eb84bc003f9461e7c
+4eec3f0d814e4c8ade3ac55a,DBAASP:536,DBAASP,"M-zodatoxin-Lt2a, Latarcin-2a, Ltc-2a",02_code/data/sources/dbaasp_v1/raw/peptide_536.json,c0c18e713952e1d089d303d47a0f9563b2f0dd1dce29e2fe9101f69c6d4c6f43
+63e2372d345aaeefb8748909,DBAASP:10402,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_10402.json,c5402dca2f65b868feadf95f24eb7834673e493bb0ce7f4c89d17d262ba07d2c
+8f214ac4392ba0c4bc6d14b0,DBAASP:24367,DBAASP,Equusin-1,02_code/data/sources/dbaasp_v1/raw/peptide_24367.json,6e69b22b209a4e1b2b62ca36fc3b210641cc32a9545cfde170f53b4a79678f0e
+79d4bbcf6f0c128d4b078103,DBAASP:22420,DBAASP,"Apidaecin [N2Y,V6A,Q10R,L18R]",02_code/data/sources/dbaasp_v1/raw/peptide_22420.json,ecd4108850106145b1fc4c2c46085a2c75a82748b3cad2ea645f37d5353e1d4e
+8706d4f6826c726dc16a3c1d,DBAASP:3998,DBAASP,D22 shuffled,02_code/data/sources/dbaasp_v1/raw/peptide_3998.json,6c719aea72b2a9efbaf5e738f01151dfb2ce7847f14b3732bedb3ef5ce496f5f
+4664012a88c7fac587f47c62,DBAASP:8829,DBAASP,L-K6 [I1W],02_code/data/sources/dbaasp_v1/raw/peptide_8829.json,89d81e40de569d5e663c1625cff8903d00b34837485fce04e0f023598afcd336
+3efda90747baf2e747bde59b,DBAASP:11117,DBAASP,"Safencin (48-70)[G2W;E4,13K]",02_code/data/sources/dbaasp_v1/raw/peptide_11117.json,2ffec631ee82233cb71dfa8efa08c8c8dbc912e579874ea099c83b8217d1bf23
+3bc4c7ed473a3e3c136ba4cc,DBAASP:17758,DBAASP,Legumin A-like (228-253),02_code/data/sources/dbaasp_v1/raw/peptide_17758.json,b614309864b6fdbe04fce43f52a4510167c959e48d24b314e4dc5fafa400b629
+957727fe080ad91c14581dcf,DBAASP:7125,DBAASP,GNU5,02_code/data/sources/dbaasp_v1/raw/peptide_7125.json,5dde7dd63358d5fdf27daffbe67d8fa3c091f82f469bc43d164b4069ea069a25
+e7c710f1b89b12638f9e891e,DBAASP:5522,DBAASP,V14pp,02_code/data/sources/dbaasp_v1/raw/peptide_5522.json,40eaff640fc49336382fd5e47c5b9b5a071f33c38e4686105c4bb4c2b4588c47
+9cea8e929f17134a9ad2b83e,DBAASP:170,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_170.json,3a93a9220592aa840c2fb47e85a362b948f4e7a06123e193aed2a1b2fc512fad
+080bc35a215a426b75aa49f9,DBAASP:3971,DBAASP,D28-R22,02_code/data/sources/dbaasp_v1/raw/peptide_3971.json,a97548b42c4b9f1cef333b9029261be12755d0478455ecc81681005825af846a
+bede7ce6dc6d91bd36ed90be,DBAASP:20358,DBAASP,ApMe5,02_code/data/sources/dbaasp_v1/raw/peptide_20358.json,e143636e44a2ed35bbaccdce3ee3fc956cabb8bb84921854fc44a17f936d33b0
+7a5f28cd9823eb48380805d3,DBAASP:774,DBAASP,"Cathelicidin-1 (1-23), CATH-1 (1-23), Fowlicidin-1 (1-23)",02_code/data/sources/dbaasp_v1/raw/peptide_774.json,aa96854f9344cda01db0e9068dfa09d65864101d46e474c39de670a139c0260a
+f14e0afc5581b356a795ba27,DBAASP:25497,DBAASP,Hydrodamin-2-2,02_code/data/sources/dbaasp_v1/raw/peptide_25497.json,e80468bd6da3271e925132137568576050c5f251c8dbef3ecb38f86aa31c69da
+7be2d960db25426672cf4819,DBAASP:8647,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_8647.json,f6cab6a9edf36d26b1054fb05d939febe1237d2400be02f8000260adfc797d71
+40027c06bc2894f32c48fe6d,DBAASP:12611,DBAASP,"Myotoxin II (105-117)[Y3,6W][Y5A,P9W,C11A], PEM-2 [W5A,A9W]",02_code/data/sources/dbaasp_v1/raw/peptide_12611.json,546118b1e6e32771e5cf101959e47236f57f8800aa3c2038cf750adf2e01136a
+de23db270938fcaed06efd6b,DBAASP:1501,DBAASP,Odorranain-K1,02_code/data/sources/dbaasp_v1/raw/peptide_1501.json,26911c9048822a48fc03483e76c61d3bae32cd12f82143033a7d13188cb47b68
+5b68d1ff3bb27c529c4c3cfd,DBAASP:14480,DBAASP,"Bac5 (1-17)[F2,15W; P4,9R]",02_code/data/sources/dbaasp_v1/raw/peptide_14480.json,8d217f696e3bb24502dbf751038cdb8a628d3ea96271c52a8719f0eed1d89993
+a6625c7ebd563d56412bc908,DBAASP:22475,DBAASP,OmDefB,02_code/data/sources/dbaasp_v1/raw/peptide_22475.json,7e13dd7d12cd14983980e72be05cd766d16f72587e654d0b0729b852b3f56ee2
+417a5b1f5a54474c2c8a9643,DBAASP:9163,DBAASP,A3,02_code/data/sources/dbaasp_v1/raw/peptide_9163.json,e0ffa4844721990b8d4ffc9665f4786716835ce30ac95c8071975388d5608741
+d774e910a61a864ab3741f3c,DBAASP:22887,DBAASP,Apidaecin Pdi2,02_code/data/sources/dbaasp_v1/raw/peptide_22887.json,af03475534da601a3e0a186f94c031f6f1c673aafacb1cfe3e3662adadf79dd9
+f2ccceb1e24a7f20163f182f,DBAASP:5043,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_5043.json,4e237b5a2443dfc57a1de6c6cf0bfd69a080b24bbfa45fb08e74d54f7ed4c972
+7d3a4cb28ff0d16dbea6695f,DBAASP:9910,DBAASP,Prothrombin (601-623),02_code/data/sources/dbaasp_v1/raw/peptide_9910.json,12556b3777406a271e062927c5b0475805386823c697e39fa24e384d7dedaa83
+71b2dbfe467da898d15075eb,DBAASP:20179,DBAASP,Hm-AMP10,02_code/data/sources/dbaasp_v1/raw/peptide_20179.json,1253d61e99cec5a4e9dde25325461bdb26fcd54ac753f390daabf9ec11931747
+018c76cb8845f37c9cb206ac,DBAASP:4029,DBAASP,D25 shuffled,02_code/data/sources/dbaasp_v1/raw/peptide_4029.json,9e25079a954d87d7e75a94d93a3f7e0dbb43b351a70f0405fef0f020d7965496
+9afaa03e25b3847f343dd946,DBAASP:13996,DBAASP,"Orexin B, ORXB",02_code/data/sources/dbaasp_v1/raw/peptide_13996.json,020b06ab1ac51d7bbc3c3a4ae2ec0583813bf8570bf0f5125669fe045f28d22a
+38ab8fbe491fc436fc094224,DBAASP:2697,DBAASP,Bovine hemoglobin beta chain (1-13),02_code/data/sources/dbaasp_v1/raw/peptide_2697.json,08901cbd4fdc41f51fa9ce1e0bc372e38bb0cbdbbdcf52359da5d625581e8144
+f316a1a3810da92b18228cc7,DBAASP:3992,DBAASP,D28-R43,02_code/data/sources/dbaasp_v1/raw/peptide_3992.json,c39fb96fe3ef8c2b3ed34852a4794d4105aaa580ed67956cb87507a45832866e
+0436683abd2b7b68b0b8bb9a,DBAASP:8499,DBAASP,W - Myxinidin [H3R]-OH,02_code/data/sources/dbaasp_v1/raw/peptide_8499.json,fbddebaa5abdaeae9762aa4ef1b2b4731b84321a87c4b26dd5ce61458a5396a8
+51ae88e9fbe60547af7ba608,DBAASP:19776,DBAASP,IKR18,02_code/data/sources/dbaasp_v1/raw/peptide_19776.json,4e1f3657c8ab4cf8b1674211052cbc43de468f1137fe87657477e9d996ff2beb
+63be8a57f875b4251f46a4e9,DBAASP:17076,DBAASP,LL-37 (17-29)[I4H],02_code/data/sources/dbaasp_v1/raw/peptide_17076.json,eaf41f14cb286ae202fbd010379b1614b50b3538b37d690573ac6fa0ef98007d
+c1595832fd94193a3e89d7c8,DBAASP:8830,DBAASP,L-K6 [I4W],02_code/data/sources/dbaasp_v1/raw/peptide_8830.json,938d04c6b34254b59eac8e86b22d6944c54f21a38ab4660a0a23753812eb9f4f
+690cee5c6355ff1f0e0dcf43,DBAASP:22345,DBAASP,Cathelicidin BM-CATH,02_code/data/sources/dbaasp_v1/raw/peptide_22345.json,ad96d4164719bb4f366cd845dea5000f1dd410fb582c2722735e1ec3917fe0b0
+9e6e1fb3e613c300f3708205,DBAASP:3960,DBAASP,D28-R11,02_code/data/sources/dbaasp_v1/raw/peptide_3960.json,71e25d89c110ee94b2b027ac26c120506550f79179ea85dfee88177fe466a0ad
+a308700d2f286fbd147e062c,DBAASP:10398,DBAASP,"Cecropin-D-like peptide [E6,8R;Q12K]",02_code/data/sources/dbaasp_v1/raw/peptide_10398.json,40b067f771952826555bec01153bdc2b85f7079a825ca54683dc7c2c139a999d
+f02941664ac3d1faaca2f5e5,DBAASP:22220,DBAASP,"Cathelicidin AM (10-21)[G4W], AS-12W",02_code/data/sources/dbaasp_v1/raw/peptide_22220.json,ad48aa4dd1a2b9a0fa617845f10b48741a81d859b118899d0c8a1c10688f2847
+caca7049da9f31c536bbb4fe,DBAASP:19142,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_19142.json,e72fa5567d0dfabcd3a6cb79e083c262c10f08f0cfe153bcea8fdc3e2a32b3ae
+24be5f520067b5d17c2bcb75,DBAASP:17159,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_17159.json,d09b65b9da7621433d271c93b661127ac64163ea6c6453d351496a6e2c42e8dd
+9ab2b31c7f11e13f5b443eff,DBAASP:17752,DBAASP,Legumin J (232-241),02_code/data/sources/dbaasp_v1/raw/peptide_17752.json,ca2ff2cb898e1bb0fc03e048c019c8813fa29f68e93ca054a7d6c01047642566
+1e54e4c19dfc07abf9b16bf9,DBAASP:10304,DBAASP,MS5,02_code/data/sources/dbaasp_v1/raw/peptide_10304.json,ef3157a3ce80551e47731bfc00eed5e701191e07b47a517f3e1e2eee62e6611a
+4130368fe0585647fa41d166,DBAASP:1176,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_1176.json,741869e602e9570fe59056d5cc0ea692b83d62e2fecc361cb84e26384aa430c6
+c945856d2157468900adf28a,DBAASP:25683,DBAASP,AT18,02_code/data/sources/dbaasp_v1/raw/peptide_25683.json,dd14c4aa5ed48ac7317d1d0bc94551c6d3be63e855643bd8578418b9a4d80a4f
+16c6e86f94736e1752c863ff,DBAASP:22344,DBAASP,Cathelicidin LV-CATH,02_code/data/sources/dbaasp_v1/raw/peptide_22344.json,93567b7caa8bb8988c5f8061547c58d5d36a780d2c0adbf2409b211441ca5c62
+d94d144f6a893f19e60d0656,DBAASP:5770,DBAASP,"Delta-hemolysin (5-20)[D7,14K]",02_code/data/sources/dbaasp_v1/raw/peptide_5770.json,286d2a4242a38dd4972d3f6bce79f348ef0710dde50632936f2e7e44c5314334
+58e1ae57b9fd33214570967a,DBAASP:15998,DBAASP,La-AMP1a,02_code/data/sources/dbaasp_v1/raw/peptide_15998.json,37a89b55aec8219fe8df074046e38629b7ec732919717971f1596a3052f623f8
+e989bfa557455b2811b362f1,DBAASP:10343,DBAASP,"OH-CATH (18-34), Cathelicidin-OH (18-34)",02_code/data/sources/dbaasp_v1/raw/peptide_10343.json,460efa5b5be2007c222663b5fcbed8ce069ecf1339986423664656e1b195ebec
+3e656d2ae8d48ae33078fcd4,DBAASP:18059,DBAASP,Myticalin A6 (4-26),02_code/data/sources/dbaasp_v1/raw/peptide_18059.json,e4ca4115c4d7e489b70e1965ba4ca94cd30cfb539be3a6d57a406299afbc049b
+e029337d33c07867dae45863,DBAASP:8983,DBAASP,"Pc-CATH1 (4-26), RL3",02_code/data/sources/dbaasp_v1/raw/peptide_8983.json,8c1f53c420588252adf7507da63ad248bb72de00d892e9a13a8f8c184d16fd4e
+e7ebba8b3a436df121b16037,DBAASP:10717,DBAASP,Myticalin D2,02_code/data/sources/dbaasp_v1/raw/peptide_10717.json,3612e29cfe1c83063644596649ab139ecdd7cdf938e2f7a341fde69cfb98405d
+06ebb332a6bb1c112aea34f7,DBAASP:14867,DBAASP,Antibacterial peptide PMAP-37 [F9R],02_code/data/sources/dbaasp_v1/raw/peptide_14867.json,4119124524b9b0314fbe1c04a8ae3777061aff780813fb2f36fd450d1cdeed54
+eec6ea89fda5cb270dc4d8a0,DBAASP:25179,DBAASP,S05,02_code/data/sources/dbaasp_v1/raw/peptide_25179.json,d493540d18d4bdabf0648f8eeb09180a71075ed880b3dbedb15ca57f8a71f084
+d7d1350a7a0a95c4871e40c2,DBAASP:3756,DBAASP,Astacidin 1 (2-16),02_code/data/sources/dbaasp_v1/raw/peptide_3756.json,58ab7a18747180afd03656147030045ed7f55b3844013cc1b0120823077a8906
+9817a6f1d068c39b422d15ae,DBAASP:24303,DBAASP,Conoserver-16,02_code/data/sources/dbaasp_v1/raw/peptide_24303.json,b86ec876dc550247cb87a0cc2244076f8659395d199f16d9d729665d64eb9751
+6d67de2160a3d343dba319cf,DBAASP:4743,DBAASP,"Papiliocin, Cecropin",02_code/data/sources/dbaasp_v1/raw/peptide_4743.json,85d61c2aa26db7922ea9eaf8f146192bd31034c0c44b136948ec80fcdac14a63
+bc00ad0be59bbd23933dd012,DBAASP:3997,DBAASP,D22,02_code/data/sources/dbaasp_v1/raw/peptide_3997.json,1217ab47fa3fa4de5c60293c1f85368d4fe47c38e7f177e3b09c008127bca2b5
+e4ef9d1b14288c6cf77e9e96,DBAASP:10154,DBAASP,"Lfcin-B (1-17)[C3A,R4F,Q7A,M10W,G14A]",02_code/data/sources/dbaasp_v1/raw/peptide_10154.json,e4351898d59030f0c8fbcbf892e844d353a654d6faa6f305ae29ee8fce10a48b
+699f486508d37408401b0680,DBAASP:2401,DBAASP,Ranatuerin-1[Lys-24],02_code/data/sources/dbaasp_v1/raw/peptide_2401.json,95f2e0a72c4431f24704f5ec2e02c18e9907c629993a04244599970fc91b189f
+7ade60d76f10bc3fc1ede934,DBAASP:5354,DBAASP,"Phenol-soluble modulin alpha 4 peptide, PSMalpha4",02_code/data/sources/dbaasp_v1/raw/peptide_5354.json,1a642dbb3245fcff8fede67ceddf441c81077e4da70cca58ed7e00b4353bf704
+a8fd22763404e383bc7e3c9c,DBAASP:8215,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_8215.json,d4d10a3f0e3f1bb9f2e0260de20ae986f7334086158a430521b023d4aa9929fc
+655a633d65037e4d099c031d,DBAASP:5619,DBAASP,(K)10 Magainin-2 [5Lins][S9A][G14A][G19A][I21K],02_code/data/sources/dbaasp_v1/raw/peptide_5619.json,3f01a2c767596251369aa486d709922bb88714d23451c9ae4d8e3de300594a68
+e25386b0fa041bd051666b72,DBAASP:24027,DBAASP,Neuronin-5,02_code/data/sources/dbaasp_v1/raw/peptide_24027.json,d39ea8475db90c91075923b6b15799a0938b2eba2324a085b397af1fccae074c
+17bad9493a75d507399bc988,DBAASP:13373,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_13373.json,cc9cfca4b48c5c79b70a6ae2fdc2cd58ade43fd4083e751b83f112531f5dbc9f
+b5954341f79c286a515abd91,DBAASP:13248,DBAASP,NN2_R0039,02_code/data/sources/dbaasp_v1/raw/peptide_13248.json,7e71341196a71051ec03b6b42b303ecd1f6caa983102637e9a8e97c1ed87536f
+76d66140b73efbae138b8abd,DBAASP:13426,DBAASP,"FhHDM-1p2  (14-31) [E3K, I7K, D14K, R15K, E17S]",02_code/data/sources/dbaasp_v1/raw/peptide_13426.json,bc8454a1559814248468481e824fe4281c5733ced27342460aae18f6f335bb25
+b3e94ce40bb4a0a4aef44040,DBAASP:4849,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_4849.json,fb9b7815a5499240fcc7c22ef849f89cc5535cfe2200cc2b3a2a701ac421a2f4
+c6ead072d339090090ce6b19,DBAASP:25161,DBAASP,Blap-8,02_code/data/sources/dbaasp_v1/raw/peptide_25161.json,307bf4efb6f18612f67b22f8dba9e81184b66b998a428b3d34a2a4e8bbdd7003
+b3188427ac2a8e4b34ca4e00,DBAASP:17137,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_17137.json,e8c4f688898621baaf306e8f13c6fa8a6a3b9b5ef829bf71a27e3166b81b3c4a
+c31dfac73b7d7b1b74a79121,DBAASP:17148,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_17148.json,729ce5fe6509af776e255875b584f787c772412e23b57d4725f0015176a353cb
+c76ae7a525fd0a657a4cd98a,DBAASP:5148,DBAASP,Rat amyloid beta-peptide 42,02_code/data/sources/dbaasp_v1/raw/peptide_5148.json,9de595c429e689e222551a3db775dfcf5a04e04eced41a8e167da7dda5a83c8c
+3c12ec65498ad83234a99ee5,DBAASP:3194,DBAASP,"Dermadistinctin-M, DD M",02_code/data/sources/dbaasp_v1/raw/peptide_3194.json,895e5b178bbf27540f209064c695688cd96bacd96d46ddbb9b054c0d1c9dc581
+4e4425d6ea09b7c247453b20,DBAASP:24274,DBAASP,Zinc metalloproteinase-disintegrin-like brevilysin H2 (28-40),02_code/data/sources/dbaasp_v1/raw/peptide_24274.json,febd93039e6e26ae0125faa55b27cb8d9428df529c03324d08ae08a98f6fb575
+19e5034de215c5db9fd45bff,DBAASP:129,DBAASP,"CAP7 (1-20)[R5A,K16A]",02_code/data/sources/dbaasp_v1/raw/peptide_129.json,7f0f74b65c45daec8d76974e1f9ff756faf365d6d798ed88ff7e176b75614c83
+d6afa77e4be9428bd58e8482,DBAASP:4262,DBAASP,Citropin 1.1 (1-15)[D4A],02_code/data/sources/dbaasp_v1/raw/peptide_4262.json,172914cb62eb432f30c3f7142d18624e8b89930613173bddc084b478b4053c01
+747b8e6bdac2099167b13616,DBAASP:5419,DBAASP,"MSI-78, Pexiganan",02_code/data/sources/dbaasp_v1/raw/peptide_5419.json,a66bbff2edccdd3ff4d897ec3b7c94462eb3ee26b714d81ddd2f93eca1a6130b
+5db116b67b8cee6ef67a2c07,DBAASP:12314,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_12314.json,bc59ada3b23fab62500d189d3ee0569087d17dfea7e26ae9e5f92e4f147b9b0c
+d276a28081b61bc267d9bae2,DBAASP:12306,DBAASP,"ChMAP-28, MAP28 Protein (102-128)",02_code/data/sources/dbaasp_v1/raw/peptide_12306.json,f30817467fa93d7108f8f1f001de02d9f27c415fdb29a9917115bdafec463df7
+4fd4afd4b86ad81ab63fda4a,DBAASP:22690,DBAASP,DeNo1024,02_code/data/sources/dbaasp_v1/raw/peptide_22690.json,0cce058898d70a7f1179f945ab85630f071d3399783c570f3d775237766dcdcd
+6d9a78cf1ade85a877cf11d5,DBAASP:3957,DBAASP,D28-R8,02_code/data/sources/dbaasp_v1/raw/peptide_3957.json,8279fbb6db310f86d4613f506269371ea8338124dce2a42e248e64c31ca2e19f
+80bec692b0bf9a9c8e3c37f8,DBAASP:13184,DBAASP,NN2_0018,02_code/data/sources/dbaasp_v1/raw/peptide_13184.json,e1527695c290c7067be926ee30286d4f5842d7a4488687fe1988ee9e48ca096e
+7bd04afe47642a03626b7bf9,DBAASP:15045,DBAASP,CGG-KR12-GAGG-retroKR12-G,02_code/data/sources/dbaasp_v1/raw/peptide_15045.json,d2b063a48243f04635404abc3660560a35f5d89eeaa5cd19d3870fe725a722d5
+9024a1b1b484a4f3b6cbfcdb,DBAASP:144,DBAASP,LL-37 (17-29),02_code/data/sources/dbaasp_v1/raw/peptide_144.json,1dae85541edf15f17e1470096152ab65afd99ef1c9a29c97c1053ec7948ff163
+124b5c97f2270f4b9865e432,DBAASP:7190,DBAASP,Piscidin 1 [F6W],02_code/data/sources/dbaasp_v1/raw/peptide_7190.json,e19a11e6c2c881f410b27800cf4ebe05bacc8cfbc140ea1276c79c00b22b7a11
+3a19f8e8ef3c83c6fbe7d608,DBAASP:13760,DBAASP,"Citropin-1.1 [K7,8R]",02_code/data/sources/dbaasp_v1/raw/peptide_13760.json,d0001dbd976072774894b64b9af7418489e40614558f8af8c6742ecac0c664bc
+dd0f59d25185e24c5fca6112,DBAASP:12441,DBAASP,Myticin C (19-40),02_code/data/sources/dbaasp_v1/raw/peptide_12441.json,4df709ccf27737932815e8533cfb38b17d40120b25a0d49b2d452fcc56a1b371
+8556d82815bdcbf865dd7345,DBAASP:22823,DBAASP,WBp-1,02_code/data/sources/dbaasp_v1/raw/peptide_22823.json,caa7e82bff6a7873e6cfa4f0eef2251d7ab930a3a23825e5cb08070d550e667a
+bc54cc77100303624623885b,DBAASP:9479,DBAASP,KSL8,02_code/data/sources/dbaasp_v1/raw/peptide_9479.json,29f9d893ca2a2b1716df7a1a57cd4ee13c5d6aca724c99869d9db06736951f68
+1fba7b0293f47628abebf492,DBAASP:19126,DBAASP,"HFIAP-1 (1-18)[W7K,H12K,G14F]",02_code/data/sources/dbaasp_v1/raw/peptide_19126.json,fb3bcc7849f1b56c6b227708997438d6179bcfadba19c4c5459f53356adf2710
+ed11d134d63cb69a7d8cbf4f,DBAASP:21969,DBAASP,A2P18,02_code/data/sources/dbaasp_v1/raw/peptide_21969.json,0428b4ca905b16be15a7bbdb64fc0909ef33a8697d4236ae04efdc8b6d2fe729
+9c85924199df724c11942d5e,DBAASP:8162,DBAASP,"Truncated apolipoprotein C-I, APOC1(64-88), Apo5",02_code/data/sources/dbaasp_v1/raw/peptide_8162.json,bce4534e4d1bf6b1bd2d41eb2a719619737d402ba590d4e9857d6afaf53fe9d6
+bc04e0be3720ae6cea4a44b9,DBAASP:11733,DBAASP,cLFchimera,02_code/data/sources/dbaasp_v1/raw/peptide_11733.json,c4879def789131cfc1e04ef0c7203dc656e18b010ed52dae7f5fedd8a55ba131
+c1d140e0efe262b2e026b4e8,DBAASP:4009,DBAASP,D38,02_code/data/sources/dbaasp_v1/raw/peptide_4009.json,f8bcbc51e12c6abe2895f6c7807dd3f7f272ac780ac7cedd8aa7dfc67f94e576
+2c05df339124dde68ff80fae,DBAASP:21970,DBAASP,P18A2,02_code/data/sources/dbaasp_v1/raw/peptide_21970.json,4d9f1bdc0c6802f591b01543f11bb79f0d04cda6b036ec7e7f0c3502a86ca794
+5edab9b1933209ced0cc30b9,DBAASP:2843,DBAASP,LL-37 (13-31)[E4K][D14K],02_code/data/sources/dbaasp_v1/raw/peptide_2843.json,844764adda62bb7dbd6830883d7adccb6f2cd5e1da7d56c7f130fd57e86faaae
+2bf7659c88396ffa468f252b,DBAASP:20372,DBAASP,LeBo1,02_code/data/sources/dbaasp_v1/raw/peptide_20372.json,0a5eb0f01fa1f24755718faa5959cfdc99d8fd85cfc5875242e7361a64bc63d7
+65bdf33d9dc8e780d61e5db4,DBAASP:18622,DBAASP,"DefbBm03 (28-41)[C28,34,35S], PS4",02_code/data/sources/dbaasp_v1/raw/peptide_18622.json,8e5bf8445d80852eaaf7f48e03b7ee9b00eb354b93df2b6b750273857ca2b0bd
+f8a32668ba2beb4ba63915ce,DBAASP:3963,DBAASP,D28-R14,02_code/data/sources/dbaasp_v1/raw/peptide_3963.json,ba78bcf5d375f5a62cd626c98a7bfacf597b536b6a0057113cbc5354bd81fa63
+017b31f1123db9a55136e129,DBAASP:6916,DBAASP,"Beta-defensin 103 (6-45) [C11,13,18,28,35,36A]",02_code/data/sources/dbaasp_v1/raw/peptide_6916.json,72a5c8be02212a3accaf4954ab52f7be5838c02c58c69174c77d5a08f2b67a7d
+2af56b9b43f00ae852e42bbe,DBAASP:14093,DBAASP,LfcinB (17–31)[C19A],02_code/data/sources/dbaasp_v1/raw/peptide_14093.json,f9827e29fa01ac0876ac16216ee206ba70859a89afd878fc9fc2ceee661691bd
+8f56942364cdab5c5167b553,DBAASP:22273,DBAASP,COL24A1 (4-22),02_code/data/sources/dbaasp_v1/raw/peptide_22273.json,39607075021e94ac789ab2e4b9abc49eac4645ca0297354382d03dc62a66260d
+6ebd7ad2a43f1ad607338a69,DBAASP:23708,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_23708.json,62a4a867e613931c4c7fe7794a585d4e170db2d5f4aabc243d6eeb3834a28191
+9e7e8737fce23d1115fe3ba3,DBAASP:5717,DBAASP,XPF-St7,02_code/data/sources/dbaasp_v1/raw/peptide_5717.json,b9f82a6bc0dee366402f160b5691896d7f350d4d978d9ea80ec2d6f4e28e3ecd
+fab72b33693eee4ef7d21db0,DBAASP:25169,DBAASP,A05,02_code/data/sources/dbaasp_v1/raw/peptide_25169.json,369173174659abfc1d70c6aa499d5f6f2ad0aa837085ec3ff265708a11e56048
+111334f5ea44506db7442daf,DBAASP:24290,DBAASP,L-amino-acid oxidase (113-154),02_code/data/sources/dbaasp_v1/raw/peptide_24290.json,1ab8774a088ae1608e579a4af525e50bb0d9d3873f6f7d379bcfa78752ae955a
+702ca694f804874abcea4e9a,DBAASP:5821,DBAASP,"Cathelicidin-3 (45-59), Bactenecin-7 (45-59)",02_code/data/sources/dbaasp_v1/raw/peptide_5821.json,a46658acb7b9cdccf2ba4dcf02615d38cbb8d9e01c30d7558a0484f38936c678
+30bc178b4921a8bdcb1ae79c,DBAASP:10715,DBAASP,Myticalin C6,02_code/data/sources/dbaasp_v1/raw/peptide_10715.json,5c94b9fa22102c4608bb6ff44439f4ffca2ae06c241ed14c400d87581ab8bf86
+9a49d7db8066146bf7ff9de4,DBAASP:7549,DBAASP,LAP5,02_code/data/sources/dbaasp_v1/raw/peptide_7549.json,f4dd5b1c2d3941abe6cbfc2d5d475e681d44656608eb7ce434cca61b6edb7255
+5f7aab63281de8c662334701,DBAASP:11749,DBAASP,"Tachyplesin-1 [C3A,C7A,C12A,C16A]",02_code/data/sources/dbaasp_v1/raw/peptide_11749.json,a4069f331a966f9ecc916f9b02d76d135ffd0110178cf7203c4f88ac6d53d27d
+0c8ec06f25580d42e8998687,DBAASP:15147,DBAASP,C4,02_code/data/sources/dbaasp_v1/raw/peptide_15147.json,7f165ccc635fdc9a8944ec3150bee9688ee088eec7a40f48169320505de70ac3
+3d6daa95e1e01ea09b9ff56b,DBAASP:19597,DBAASP,Cathelicidin HA-CATH,02_code/data/sources/dbaasp_v1/raw/peptide_19597.json,cf6bd3f57500a0c5977b5c761e558508030023207fc75317961ae3783d9dd421
+04967cffedeab5e93f085ee9,DBAASP:24269,DBAASP,Bombolitin-8 (1-14),02_code/data/sources/dbaasp_v1/raw/peptide_24269.json,eb2927e000eafd8ffabf43ba980aec6ad960ea3c0c4b23c5525c832366f2efe6
+4db945280dee0a210bf04ba8,DBAASP:1599,DBAASP,Pleurain-E1 [C23G],02_code/data/sources/dbaasp_v1/raw/peptide_1599.json,482e35528a58a9410b01cd0c5037593794b845ff52179b11bfefbdf119a8e929
+da179310449a217d29096b9e,DBAASP:8770,DBAASP,"XPF4, XPF-St7 (2-15)[S3R,N4R]",02_code/data/sources/dbaasp_v1/raw/peptide_8770.json,033c010e44007a04b30e38e65c4ae4238b8dc72ffe212df8f51d35c7b56b7083
+b0a53b34af43c3ef9141b140,DBAASP:11525,DBAASP,Moronecidin-like peptide,02_code/data/sources/dbaasp_v1/raw/peptide_11525.json,b11875fc96ca537005dfdac38f6bdd1e4f1c610edbd635f4e400200052e86b50
+b1a51557ef9862b3c4c02f8e,DBAASP:1912,DBAASP,Magainin analog-1,02_code/data/sources/dbaasp_v1/raw/peptide_1912.json,029c5dd0addad2ee9fd789adaa704c6bc03fd676f5c55143a1bf502247e7e7e6
+4d39397716ca8897b4aba1e9,DBAASP:10549,DBAASP,Lfcin B (17-28)[C3A],02_code/data/sources/dbaasp_v1/raw/peptide_10549.json,ede0bcd31c01857354ef3888bc106a9ca181a723e8b907dd60f87ba12bc48fd3
+0b37c289bffe7f9e1b9792fe,DBAASP:637,DBAASP,Gaegurin 5 (3-15),02_code/data/sources/dbaasp_v1/raw/peptide_637.json,d2bf90204d83517f3aa0760569a450b186af751d80511d206e4062c8a068d52c
+f2f2bc3555a4715cf75acb5c,DBAASP:666,DBAASP,Gaegurin 5 (1-11)[A4K],02_code/data/sources/dbaasp_v1/raw/peptide_666.json,ef1d0c5a7ba644ec987a583c96ec788896f153662ceaec39b1bc19d3d1112896
+23ec79d3113420c50cb3d2d0,DBAASP:20630,DBAASP,SMAP-29 (1-18) [G13A],02_code/data/sources/dbaasp_v1/raw/peptide_20630.json,3eea5678ff133d9d40abfdc3b0ad8b709286911d862a9bf664a6fd7e792a424e
+123673f3c935fa78da8f5ab2,DBAASP:4017,DBAASP,D6,02_code/data/sources/dbaasp_v1/raw/peptide_4017.json,5cb86f2d8713556795aa044bb4f3f9db7ebccc3197078e27d0cd9b21652e8d0c
+0b37ce06e279201eea67a9c6,DBAASP:4388,DBAASP,Esculentin-2CHa (1-30),02_code/data/sources/dbaasp_v1/raw/peptide_4388.json,9e5bf4ff30d06cd56af0f3762c1ba0be07c40c257d73903ce5fcecd57e55bbb1
+3b225219a01580b978df1491,DBAASP:609,DBAASP,Dermaseptin S4 [M4D][N20D],02_code/data/sources/dbaasp_v1/raw/peptide_609.json,4e80d037088352b0dff146edc0b35eb9e3c2017c6bac7352ea3c2a9b492cf2b0
+f4bab7c0ebbc06d476c65ea2,DBAASP:13364,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_13364.json,d3e0326298615f2f5abae9fe45369383a05697dc13bb036bf3a73cbfdf85857f
+c3222aaaddd5d7f5171a3c13,DBAASP:9911,DBAASP,Prothrombin (599-623),02_code/data/sources/dbaasp_v1/raw/peptide_9911.json,28abb6966728b4d9abd04c9db2dbcf55d50779690a284b3dd415a35cc7296fc4
+934c1ffd04b1afaa35152ac1,DBAASP:21534,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_21534.json,da62f0575dad76765815cd2522884c6a1dc9472e78d7ab455c86d1f410f634ba
+d7cd61ad526d17d5976bbedd,DBAASP:16954,DBAASP,"Pumilarin (46-70)[T5K,Q8K,Y9K,G18K], Syn-Safencin-P56",02_code/data/sources/dbaasp_v1/raw/peptide_16954.json,06c91d2c8ba46dea208399f9d8be1cde18a9e344716f40eca75f2c40124ffcb2
+8ff44c8394600bea09403a57,DBAASP:13568,DBAASP,Bactenecin-7 (1-16)[P7K],02_code/data/sources/dbaasp_v1/raw/peptide_13568.json,e1f9066d7ab3136114d3b8cc225c278c82c75f5c14bb45d64d37e6530f6eb26d
+6d22b18b69d9c994945c5893,DBAASP:12640,DBAASP,GR21,02_code/data/sources/dbaasp_v1/raw/peptide_12640.json,966189ff67a5ee63f0aa27634f40d4ea1a45a7be51d8308d4f67b9ae090daee0
+aef1b5ce810bcfd07aea8b34,DBAASP:4106,DBAASP,"Human Glyrichin (4-60), pCM19",02_code/data/sources/dbaasp_v1/raw/peptide_4106.json,976a98ed7e705e3abd5c1e95350bf1857b7a32d62889144a24c5738522c8d29f
+6fa87fb301f7061b7c106969,DBAASP:14484,DBAASP,"Bac5 (1-17)[P4,9,17R; F15W]",02_code/data/sources/dbaasp_v1/raw/peptide_14484.json,febf1dafcc23c6dcec902211990ab961fe8f9e47d56660736ebcea8194545ce2
+f7d5d262d0e51e7d32c8bf40,DBAASP:17078,DBAASP,LL-37 (17-29)[V5S],02_code/data/sources/dbaasp_v1/raw/peptide_17078.json,4da8aebe91724df404d7185036a4388da83b7ee2e3dda6d0aa0d5efda2f204da
+f973b40189d3ce06dffdb009,DBAASP:21172,DBAASP,TN1,02_code/data/sources/dbaasp_v1/raw/peptide_21172.json,06a413b2c92e21251c96ee063c660ec6fc9f22f89b564baeb994eface8866642
+d62b7fb77c8632950892eacd,DBAASP:25592,DBAASP,Im-6-GRRRR,02_code/data/sources/dbaasp_v1/raw/peptide_25592.json,976f7cc712a25d5ae0ef88344be3eb100b702eab7940ae2cda76017c8f23f7dd
+33f7ce1c5b1ec10c85e5c963,DBAASP:7996,DBAASP,"Centrocin interchain,  Centrocin 1a (82-105)",02_code/data/sources/dbaasp_v1/raw/peptide_7996.json,2a579d934608ce1e2ee01269f0cea5bccc43ea96b4846b34f282599d56b04d20
+d31ae38453c66f49413ec65b,DBAASP:25678,DBAASP,YR26,02_code/data/sources/dbaasp_v1/raw/peptide_25678.json,b0c59554ea0676b34a2a395daa46c6ef7959f824fe71d86761c90de3e4d69810
+fe0ec8ea73f0baf5170c4ef0,DBAASP:2724,DBAASP,Parasin I [A1],02_code/data/sources/dbaasp_v1/raw/peptide_2724.json,0c4fb4c507f1e32627eaacf073273d86445f172b0a7450ab20255a828ece7a54
+a0628114286a18c4161e2d87,DBAASP:3952,DBAASP,D28-R3,02_code/data/sources/dbaasp_v1/raw/peptide_3952.json,123cd61755617e05e12e70d490881d833126897e8db4669c50e2153d17fdfe21
+8b7cf7eb427cd733f0474c76,DBAASP:22218,DBAASP,"Cathelicidin AM (6-21)[R2W,G8W], AS-16WW",02_code/data/sources/dbaasp_v1/raw/peptide_22218.json,fbad9859fa7097e3fb34579d855fa33135c7b9e3a77136b11a5b6e809817ba77
+c677caa1aa3e64c419188da1,DBAASP:6132,DBAASP,"Apidaecin-1B [G1V,N2V,N3R]",02_code/data/sources/dbaasp_v1/raw/peptide_6132.json,78d8d748e4ca906aa519b261233e9e9297c510914bf85707bf5375253175c473
+e22654d022dbe272358842ca,DBAASP:20369,DBAASP,CaCa3,02_code/data/sources/dbaasp_v1/raw/peptide_20369.json,07d676c5dc58a2326f58464b5eb81c09cb431135a4272e4b546832578a7d1379
+b18a8bdbc247be9f191437cf,DBAASP:21638,DBAASP,FK13,02_code/data/sources/dbaasp_v1/raw/peptide_21638.json,7e53ea2a699ce97e8967599ec76706239aef94843739ffb63b652a067a9c1e4a
+4f31263906498ed1a49be798,DBAASP:2357,DBAASP,GW-A5,02_code/data/sources/dbaasp_v1/raw/peptide_2357.json,ce5e632546bd0b1b234a3c32be2121ed6927d6446f76c609d91def5a65af2c23
+a466b7ffd079c38caa8b3fe6,DBAASP:9595,DBAASP,Smp43,02_code/data/sources/dbaasp_v1/raw/peptide_9595.json,e154da7762ff99d597f0d4f6e50d925590b06fe82019abfe704bff6ff76cafa5
+71860825cd60bc09d7f8b3cb,DBAASP:21460,DBAASP,nAMP-LP-104,02_code/data/sources/dbaasp_v1/raw/peptide_21460.json,3540fa6932ebfe3555a87858c20982dd5a72314fc725e621ac8fd07077d5eca9
+ef989402165b829f70bdf8a8,DBAASP:3981,DBAASP,D28-R32,02_code/data/sources/dbaasp_v1/raw/peptide_3981.json,d411af3d12fcc654c81934e6fbda96db0632b8055cf8c6d8420d3f1f14e59fe9
+83254e4f0b6063e25791668d,DBAASP:13205,DBAASP,NN2_0035,02_code/data/sources/dbaasp_v1/raw/peptide_13205.json,affb711f8e1f8d7b9a37ea44038178dee1628097f4d8646d37a8bc0e74a99aa5
+6f34f215e7893d599a63875d,DBAASP:9172,DBAASP,S7,02_code/data/sources/dbaasp_v1/raw/peptide_9172.json,537d4cd6fa40b34848eca966f7f8924816f979af280876e8c64bb22a13d40882
+c6780505d5a1d62c8fd9d663,DBAASP:4129,DBAASP,"Lebocin-related peptide 3, LP3",02_code/data/sources/dbaasp_v1/raw/peptide_4129.json,1bc0d289d7dc4281fc1a3ada4a6736feea9013958a87475073ac1a08a19995d4
+55aab95e7c6e4ffaf63b4343,DBAASP:16528,DBAASP,,02_code/data/sources/dbaasp_v1/raw/peptide_16528.json,a9712a676e6890264451113c4dfac262f8f3426dfcbe3dbdb030870a60a21469
+ab62a25cafe8587987ccd0ba,DBAASP:11186,DBAASP,Tur1A (8-24),02_code/data/sources/dbaasp_v1/raw/peptide_11186.json,c0d9384bc059a6fc01c152d070b9dc4d871cd22f53070c1db799b619c530134b
+cd7d6c355dd76a4f466efbd6,DBAASP:12887,DBAASP,Pleurocidin-like peptide AP3 (1-23),02_code/data/sources/dbaasp_v1/raw/peptide_12887.json,0fd900a7d29ad8f908da5f90b4c6afa80e54c2c38030a4f8443e888829f58a79
+e695e896f04954842d1f7b85,DBAASP:7213,DBAASP,Piscidin 1 [V10K],02_code/data/sources/dbaasp_v1/raw/peptide_7213.json,b866d54b0bb65928f19b1300dbc43be185a2b4e65ca8d7de6371ea4d5578bc1b
+d7c0c247abc59e5c2c9a5be9,DBAASP:2271,DBAASP,Caerulein precursor fragment CPF-P3,02_code/data/sources/dbaasp_v1/raw/peptide_2271.json,4fb37d0e1f216dc1fad6345b211637a39b691730ea03c074cb62c7f1b67816bb
+d58c875e04390b191e31681c,DBAASP:19286,DBAASP,Nigrocin-PN (1-14),02_code/data/sources/dbaasp_v1/raw/peptide_19286.json,9e8576cba190bc7f9243e62776e4ed9a940e6b517cb69c7f496fa4b32a872a38
+7137efa9e81ca145ddd8baa8,DBAASP:3994,DBAASP,D28 shuffled,02_code/data/sources/dbaasp_v1/raw/peptide_3994.json,0c3bbcde254628d117ba384f2f7ebbc73693eb6e1cfdad3efd7efbeca46a0a71
+d08d310a869958dc733c960c,DBAASP:20544,DBAASP,"Spampcin (65–76), Spa14",02_code/data/sources/dbaasp_v1/raw/peptide_20544.json,6bbac934201d07799ab774673cc7c0a04f872d74ef5adccd8d23a7a7e8fb8eca
+094e438eae6700f24d87dad6,DBAASP:22219,DBAASP,"Cathelicidin AM (10-21), AS-12",02_code/data/sources/dbaasp_v1/raw/peptide_22219.json,907b9b2cdcd3af8fbc2aa06c55071a773af3bf09fecddaa0f48e483210d1f4cb
+22655a3a28524dcbf57d6687,DBAASP:2302,DBAASP,Ascaphin-8 free acid form,02_code/data/sources/dbaasp_v1/raw/peptide_2302.json,e2f78855fdf6d998e5c2ebc71b867f2429baf38fdb6a2f44dd1969498f350c52
+7429dae24e8e152f0adb836b,DBAASP:357,DBAASP,N-[RLLR]2-C,02_code/data/sources/dbaasp_v1/raw/peptide_357.json,b7fb3eb94cf0cdecf41c426906b2286a69cc4e3699c18e5ffe7bdbe237ee26a7
+519811a6309179df92832dcf,DBAASP:3176,DBAASP,Decoralin,02_code/data/sources/dbaasp_v1/raw/peptide_3176.json,d12a736d7141c6c0370c84ed2748197e653d6a036c7d032e9eb838520a48aed3
+bf917806cd2c2bbad1b784d2,DBAASP:25377,DBAASP,"VK-24, Cathelicidin-BF (10-19)+LL-37 (17-29)",02_code/data/sources/dbaasp_v1/raw/peptide_25377.json,3579ae7a3179c86b132fe4d41e5f03b6b848d27fa9f3d22dcd9463d80bbf4569
+1ddcc1d0137529f5a99ef9b1,DBAASP:25339,DBAASP,CVAE-BIO-45,02_code/data/sources/dbaasp_v1/raw/peptide_25339.json,2aaea7f8f0f0f06314c70af4365c59472c81850e5fa142cafcacbe88e6d3e125
+71c8db42f9e51b23dc92d9b3,DBAASP:2028,DBAASP,Cathelin-related antimicrobial peptide CRAMP -2,02_code/data/sources/dbaasp_v1/raw/peptide_2028.json,9c39f1f9f6eb3382323674d4338215ea1c1958c6a481e30ba707fc57d96d8c99
+268d55ce229783a45fa45e15,DBAASP:9755,DBAASP,Trichoplaxin,02_code/data/sources/dbaasp_v1/raw/peptide_9755.json,56704db2920f73ee96b5108a34888bfbdf4bb7b1fbd2ff874d9e046c5643f8e5
+6680d17287b5e1bd92e4761e,DBAASP:708,DBAASP,"Antibacterial peptide PMAP-37, Myeloid antibacterial peptide 37",02_code/data/sources/dbaasp_v1/raw/peptide_708.json,4471c2d15d329e7099c2ae2abf19adcc5c78420e4bfee4b5bf3194043eda3056
+741315068d38058fc7b1330b,DBAASP:17768,DBAASP,Beta-casein (140-157),02_code/data/sources/dbaasp_v1/raw/peptide_17768.json,c14abba0d2114a40de9c58f428ee3df3ef25018cd8b5c2ad3629f360692f74d4
+39d6eac72224a64b70bd3200,DBAASP:25512,DBAASP,Hydrodamin-3-6,02_code/data/sources/dbaasp_v1/raw/peptide_25512.json,5aa372becae3fb6d6d22f92fa6fc66e02f560002bf93038f4dcdf0b0806d47aa
+cd88e9f21407515381ef5884,DBAASP:6131,DBAASP,"Apidaecin-1B [G1R,N2L,N3P]",02_code/data/sources/dbaasp_v1/raw/peptide_6131.json,3216588e8a115de151c5efa0f7761c6e2f4cca0375154eb75d56d4bc09c3b002
+f00c14fac4f5e9c25447ee16,DBAASP:9129,DBAASP,ISGCock_Contig10_4736-2,02_code/data/sources/dbaasp_v1/raw/peptide_9129.json,d0bc5d212712a4fc039b6f2ca004051b7567ddf4b319c31a24663e3bbfcc27ca
+352add7ddc70bc382050684f,DBAASP:22772,DBAASP,"Penetratin [R1K,Q2W,N9I,M12W,K13R], T2-5",02_code/data/sources/dbaasp_v1/raw/peptide_22772.json,780493f206eeb16691b2b70f42894e9f35d6de55a358f81bc6251c3395cd12e2
+172b1b7caca37708b4f92737,DBAASP:23022,DBAASP,LaCT1 (1-11),02_code/data/sources/dbaasp_v1/raw/peptide_23022.json,2f44b6f0c21e2e311e6710378932e5e0fe041ab919f28da06abb0be9a516b358
+bdb311707fb385cca8361110,DBAASP:16636,DBAASP,RaCa-7,02_code/data/sources/dbaasp_v1/raw/peptide_16636.json,3fd4bd12d055df846366f6bbe78e51da5ff8aeb51ce61288674df876f474377b
+a1e72b397fc4910fbbbc75f0,DBAASP:342,DBAASP,(HR)5,02_code/data/sources/dbaasp_v1/raw/peptide_342.json,596a324e59c85375b732dff12979697b454080b640be934658f7232271dcd841
+763423316b6a6701aff8133e,DBAASP:2399,DBAASP,Ranatuerin-1[Lys-18],02_code/data/sources/dbaasp_v1/raw/peptide_2399.json,cf3c092ccc44e1c365ff2418aaa47990d2da5c8b11cec923ea532ac471ebef82
+01742b9c8c6c3de2e35e01cc,DBAASP:5839,DBAASP,Bacteriocin L-1077,02_code/data/sources/dbaasp_v1/raw/peptide_5839.json,4ddf0bb9bb030718c4f43f9fceb4be2cc3b1de9ecef3473d088a523e6ee856cf
+5f390821233460b3cd2dc235,DBAASP:20166,DBAASP,Cathelicidin As-CATH7,02_code/data/sources/dbaasp_v1/raw/peptide_20166.json,a7ef4dcd79774637138c1c2363f7f45639a919f5b141eaa3a7a348fabc7d3828
+fa60e9f36c9105c28dc38c67,DBAASP:21523,DBAASP,Cathelicidin Zs-CATH,02_code/data/sources/dbaasp_v1/raw/peptide_21523.json,f27ab5a9d41aec141cbc11c3e77a15e014d2577f8b166c5557787a570f2e6355
+7796825d140d4ccb0c359be3,DBAASP:11798,DBAASP,CAP18 [I24D],02_code/data/sources/dbaasp_v1/raw/peptide_11798.json,7606b7f083b292dcf84171ed27709cd4385e4a26fd81fe5197b36255ccbe9e66
+00982c60d9782a22039d8f6e,DBAASP:12232,DBAASP,"Cecropin-A [E9H][D17K][T33A], PEW300",02_code/data/sources/dbaasp_v1/raw/peptide_12232.json,280bed94f5887629645e20d7f2627dc8bb169db234591d86b3e8e783c1711105
+3bde2b1ec3532b08d3119024,DBAASP:14150,DBAASP,Hymenochirin-12B,02_code/data/sources/dbaasp_v1/raw/peptide_14150.json,65462598afce445183d7392bf12a01d4c72d8b38593ca47afd2ebd146326e534
+abe4acd65b1312d476a5c817,DBAASP:3195,DBAASP,"Dermadistinctin-Q1, DD Q1",02_code/data/sources/dbaasp_v1/raw/peptide_3195.json,7adc797c961afee9287b8eebdac0461c233975a1016422f289e5e151ce0403e2
+a48f7eb0b2eca8d91704ea34,DBAASP:17621,DBAASP,"D-amino-acid oxidase, DAAO (323-345)",02_code/data/sources/dbaasp_v1/raw/peptide_17621.json,f47ce1eec2b692c22950667df1b8f792d62e5d76e2b742332c8956ef55076c42
+4d24140e73d39592d569a76b,DBAASP:358,DBAASP,TN-[RLLR]2-TC,02_code/data/sources/dbaasp_v1/raw/peptide_358.json,2e542f9cc844cc753be3b817ac2835348148fe8a8016c9579d0eb6416d714aa0
+a786021c59c68bcd3ba82499,DBAASP:3080,DBAASP,Tritrpticin [W6F][W7F][W8F],02_code/data/sources/dbaasp_v1/raw/peptide_3080.json,406c8239172b262f8a0c57852ccf4032fe2c19643003587b927159d1d20bf32d
+ddabcf10be5cd54db4ffb9eb,DBAASP:15053,DBAASP,LL-37 KR-12 [D9A],02_code/data/sources/dbaasp_v1/raw/peptide_15053.json,4f9a901348c5fb26733ec1c1ef026591f573b1e4b5cf000297cecdd63f398f6c
+de82a2a6ab3486601b4242ad,DBAASP:25453,DBAASP,Mammuthusin-3-1,02_code/data/sources/dbaasp_v1/raw/peptide_25453.json,c4766ca261229ac270c6adaa4c66c8e6b9946a58e3341f3807bc8dd788f7254d
+b5e3546f90680d084b406285,DBAASP:25675,DBAASP,Cecropin mCec_Aealb_A4,02_code/data/sources/dbaasp_v1/raw/peptide_25675.json,73e2cbdb840d85a20ff2a4b5d9826a80ff162c5e4f78221ce3b1623f8f9e8671
+daa8e22ef7b4db258e3a414a,DBAASP:4049,DBAASP,D55,02_code/data/sources/dbaasp_v1/raw/peptide_4049.json,907f3f1bdd61c7a4a4930c522768cab5c97df8982affd5776517670248b241b4
+a964912b40aa673cc41408d8,DBAASP:9494,DBAASP,"Mastoparan-L [A5I, A8R]",02_code/data/sources/dbaasp_v1/raw/peptide_9494.json,f54c0c0ff4eb5024416f2172a38a482ef9f8c6804c793c58ac6ed157b3986624
+c186b179400361e4fe44a7fb,DBAASP:10700,DBAASP,"Myxinidin [G1K, H3K, H4W, G9W, P11W]",02_code/data/sources/dbaasp_v1/raw/peptide_10700.json,767b95f84ef18e6767275405d3769c0fb23c24a9f828c653d6d98e90c960a570
+9fde435a340263b0aa40abfa,DBAASP:16470,DBAASP,"Magainin-2 [G1I,G3K,A9I,K10W]",02_code/data/sources/dbaasp_v1/raw/peptide_16470.json,094d93ffa8a410c01324f8c524592f2651aa1925a02955aceb78c5b32bacb9be
+f623e9e066cf619b398b8e67,DRAMP:DRAMP00336,DRAMP,,03_experiments/audits/dramp_verified_ecoli_mic_20261001_v5/raw/primary_assay_evidence.json,c8db481b4538ec2b7499fdd792f0b7d4420d9732d21eb9908bef86d53aa1d5ad
+07e2678c77046e64108ae252,DRAMP:DRAMP00337,DRAMP,,03_experiments/audits/dramp_verified_ecoli_mic_20261001_v5/raw/primary_assay_evidence.json,c8db481b4538ec2b7499fdd792f0b7d4420d9732d21eb9908bef86d53aa1d5ad
+c2f959043aa12e0f96ae85ab,DRAMP:DRAMP00338,DRAMP,,03_experiments/audits/dramp_verified_ecoli_mic_20261001_v5/raw/primary_assay_evidence.json,c8db481b4538ec2b7499fdd792f0b7d4420d9732d21eb9908bef86d53aa1d5ad
+cbdc5a5194e53c6bf4dc78ec,DRAMP:DRAMP21455,DRAMP,,03_experiments/audits/dramp_verified_ecoli_mic_20261001_v5/raw/primary_assay_evidence.json,c8db481b4538ec2b7499fdd792f0b7d4420d9732d21eb9908bef86d53aa1d5ad

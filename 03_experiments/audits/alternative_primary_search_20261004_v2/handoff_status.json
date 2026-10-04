@@ -1,0 +1,27 @@
+{
+  "status": "phase_b_c_d_e_audit_completed_admissions_zero",
+  "generated_at": "2026-10-04T05:42:07.831206+00:00",
+  "audit_directory": "03_experiments/audits/alternative_primary_search_20261004_v2",
+  "current_machine_state": "03_experiments/audits/mic_training_readiness_20261004_v22.json",
+  "current_mic_training_blocked": false,
+  "current_mic_status": "local_exploratory_training_independently_verified",
+  "formal_dual_task_status": "blocked",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "new_labels_released": 0,
+  "new_molecules_admitted": 0,
+  "new_training_executed": false,
+  "source_summary": {
+    "sources_inspected": 5,
+    "molecules_inspected": 13,
+    "pairwise_comparisons": 5629,
+    "admitted_to_dual_task": 0,
+    "admitted_to_mic": 0
+  },
+  "blocker_reasons": [
+    "Formal dual-task external cohort requires >=0.40 all-member Needleman-Wunsch isolation from all 417 development records. All inspected candidate sequences violate this threshold or overlap with development study IDs.",
+    "Candidate MIC measurements (Pandinin 2014, Hymenochirin 2012) fall into the intermediate censored zone (32 < MIC < 128 ug/ml) under protocol-mic-11 rules, precluding binary label assignment.",
+    "Candidate sequences from Corvus 2023 and Hymenochirin-1B carry C-terminal amidation, excluding them from the unmodified linear peptide domain (10-50 AA).",
+    "Goat cathelicidins (ChMAP-28 and mini-ChBac) have strong homology to existing MIC components (Component 4 and Component 0), precluding the formation of independent validation clusters."
+  ]
+}

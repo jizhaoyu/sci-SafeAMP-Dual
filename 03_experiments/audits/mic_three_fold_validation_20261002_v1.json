@@ -1,0 +1,73 @@
+{
+  "status": "three_fold_validation_passed_evidence_release_still_blocked",
+  "generated_at": "2026-10-02T09:30:16.986695+00:00",
+  "audit_protocol_id": "protocol-mic-06",
+  "cohort_version": "mic_three_fold_20261002_v1",
+  "independently_recomputed_pairs": 105,
+  "independently_rederived_observations": 22,
+  "fold_roles_verified": 45,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 9,
+      "validation_n": 6,
+      "train_positive": 2,
+      "train_negative": 7,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 1,
+      "train_n": 10,
+      "validation_n": 5,
+      "train_positive": 3,
+      "train_negative": 7,
+      "validation_positive": 1,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 2,
+      "train_n": 11,
+      "validation_n": 4,
+      "train_positive": 3,
+      "train_negative": 8,
+      "validation_positive": 1,
+      "validation_negative": 3,
+      "both_classes": true
+    }
+  ],
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "combined_components": 6,
+  "positive_bearing_components": 3,
+  "negative_bearing_components": 6,
+  "primary_sources_verified": 10,
+  "source_decisions_verified": 70,
+  "historical_frozen_manifests_verified": 6,
+  "current_state_documents_verified": 5,
+  "formal_status_unchanged": true,
+  "training_started": false,
+  "records_released_for_training": 0,
+  "script_sha256": "87dc0ff9c33f4ac625333dca7d434fa9e5193037c12dda13e301349ed7cf386c",
+  "inputs": {
+    "03_experiments\\audits\\mic_training_readiness_20261002_v10.json": "89c2b4f71ec87319499c18677aaac85deabf165033024145cf436bf68fc019a2",
+    "03_experiments\\audits\\mic_three_fold_20261002_v1\\manifest.json": "856df88b46f616f69e1f3974ad4ea2427b31d99affae0a2550d5ceb966ff18f7",
+    "03_experiments\\audits\\mic_extended_acid_cohort_20261002_v1\\manifest.json": "61df14410e5e3c2449ba84b55cc7f9228be0f4ddb6619231cfcdc15b1e12ee58",
+    "03_experiments\\audits\\mic_independent_sources_review_20261002_v1\\manifest.json": "b64d3b0b42bf80927bec737fbba4024b312ce559be78d100615865da95d6094c",
+    "03_experiments\\protocols\\protocol-mic-06.json": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+    "03_experiments\\audits\\protocol_mic_06_freeze_20261002_v1.json": "7bb8c2a1e82eede1bb24b13f25d6dbfa4aecc0eb44ae062ac9675e9713a7f67d",
+    "docs\\amendments\\PROTOCOL_MIC_06_THREE_FOLD.md": "b472d35297ae3ad84f438302c2e16b7180633c69dd7fbf453762462724d5df3c",
+    "02_code\\validate_mic_acid_progress.py": "93706882fc3a7cfe42f3d1ddcd6689efeb494078fc981097eeba87dc9696de0b",
+    "README.md": "174a45c1bcaaee8018e97540941086649f954ec32f45eb041a7c81dc349ab487",
+    "docs\\REMEDIATION_STATUS.md": "f036ae85c491419b22fe59d7e3f4df0e5ea2d5d12f85a39885b0b7bb43fd92a1",
+    "docs\\DOCUMENTATION_INDEX.md": "10edf3dfb1c0cda19e37804486bf9af8d10f0885a1ae6ca30cc5078ea2cad7d1",
+    "docs\\handoff\\TASK_STATE.md": "ef57259d1fea47dc6c35bb68613fa5b493ba9b8df08cf25ab1c7bd1f81a6277c",
+    "03_experiments\\audits\\multi_database_ecoli_mic_screen_20261001.md": "eb98367dbdb6eaf1126aee8226909c16f6b2a2324539bf523a8f1a32a962eedc"
+  },
+  "limitations": [
+    "This independently checks audit arithmetic and partitions, not complete primary-evidence release.",
+    "Each validation fold has only one or two positive molecules; no performance or clinical claim is authorized."
+  ]
+}

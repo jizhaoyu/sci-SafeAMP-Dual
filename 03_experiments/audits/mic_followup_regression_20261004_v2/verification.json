@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-04T03:19:12.916270+00:00",
+  "command": [
+    "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+    "-X",
+    "utf8",
+    "-m",
+    "pytest",
+    "tests/test_mic_followup_release.py",
+    "tests/test_mic_reviewed_training.py",
+    "tests/test_evidence_gate_repair.py",
+    "tests/test_protocol_contract.py",
+    "tests/test_isolation_diagnostics.py",
+    "-q",
+    "--junitxml=D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v2\\regression_results.xml"
+  ],
+  "exit_code": 0,
+  "stdout": "....................................................                     [100%]\n- generated xml file: D:\\桌面文件\\sci\\03_experiments\\audits\\mic_followup_regression_20261004_v2\\regression_results.xml -\n52 passed in 4.42s\n",
+  "stderr": "",
+  "xml_sha256": "d98bfae2d579e54b9c48d1b979af356867c149820eec00a74c807aca92940574"
+}

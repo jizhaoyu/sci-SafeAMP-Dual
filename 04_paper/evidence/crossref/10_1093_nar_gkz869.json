@@ -1,0 +1,1291 @@
+{
+  "url": "https://api.crossref.org/works/10.1093/nar/gkz869",
+  "retrieved_at": "2026-09-28T14:30:58.636842+00:00",
+  "metadata": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          17
+        ]
+      ],
+      "date-time": "2026-03-17T05:06:08Z",
+      "timestamp": 1773723968794,
+      "version": "3.50.1"
+    },
+    "reference-count": 68,
+    "publisher": "Oxford University Press (OUP)",
+    "issue": "D1",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              10
+            ]
+          ],
+          "date-time": "2019-10-10T00:00:00Z",
+          "timestamp": 1570665600000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "funder": [
+      {
+        "name": "Network of Centres of Excellence in Neurodegeneration (CoEN) Initiative"
+      },
+      {
+        "name": "BMBF Integrative Data Semantics",
+        "award": [
+          "031L0029B"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "031L0029B"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "KFO 296 Feto-maternal immune cross talk",
+        "award": [
+          "255154572"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "255154572"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "KFO 306 Primär Sklerosierende Cholangitis",
+        "award": [
+          "278045702"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "278045702"
+            ]
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [],
+    "published-print": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          8
+        ]
+      ]
+    },
+    "abstract": "<jats:title>Abstract</jats:title><jats:p>We present the Small RNA Expression Atlas (SEAweb), a web application that allows for the interactive querying, visualization and analysis of known and novel small RNAs across 10 organisms. It contains sRNA and pathogen expression information for over 4200 published samples with standardized search terms and ontologies. In addition, SEAweb allows for the interactive visualization and re-analysis of 879 differential expression and 514 classification comparisons. SEAweb's user model enables sRNA researchers to compare and re-analyze user-specific and published datasets, highlighting common and distinct sRNA expression patterns. We provide evidence for SEAweb's fidelity by (i) generating a set of 591 tissue specific miRNAs across 29 tissues, (ii) finding known and novel bacterial and viral infections across diseases and (iii) determining a Parkinson's disease-specific blood biomarker signature using novel data. We believe that SEAweb's simple semantic search interface, the flexible interactive reports and the user model with rich analysis capabilities will enable researchers to better understand the potential function and diagnostic value of sRNAs or pathogens across tissues, diseases and organisms.</jats:p>",
+    "DOI": "10.1093/nar/gkz869",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          1
+        ]
+      ],
+      "date-time": "2019-10-01T12:36:12Z",
+      "timestamp": 1569933372000
+    },
+    "page": "D204-D219",
+    "source": "Crossref",
+    "is-referenced-by-count": 17,
+    "title": [
+      "SEAweb: the small RNA Expression Atlas web application"
+    ],
+    "prefix": "10.1093",
+    "volume": "48",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0000-0002-7019-5486",
+        "authenticated-orcid": false,
+        "given": "Raza-Ur",
+        "family": "Rahman",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Anna-Maria",
+        "family": "Liebhoff",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Vikas",
+        "family": "Bansal",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          },
+          {
+            "name": "German Center for Neurodegenerative Diseases, 72076 Tübingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Maksims",
+        "family": "Fiosins",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          },
+          {
+            "name": "German Center for Neurodegenerative Diseases, 72076 Tübingen, Germany"
+          },
+          {
+            "name": "Genevention GmbH, 37079 Göttingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ashish",
+        "family": "Rajput",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Abdul",
+        "family": "Sattar",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Daniel S",
+        "family": "Magruder",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          },
+          {
+            "name": "Genevention GmbH, 37079 Göttingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sumit",
+        "family": "Madan",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fraunhofer Institute for Algorithms and Scientific Computing, Schloss Birlinghoven, 53757 Sankt Augustin, Germany"
+          },
+          {
+            "name": "Rheinische Friedrich-Wilhelms-Universität Bonn, 53113 Bonn, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ting",
+        "family": "Sun",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          },
+          {
+            "name": "Department of Neurogenetics, Max Planck Institute of Experimental Medicine, 37075 Göttingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Abhivyakti",
+        "family": "Gautam",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Sven",
+        "family": "Heins",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Timur",
+        "family": "Liwinski",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Medicine, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Jörn",
+        "family": "Bethune",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Claudia",
+        "family": "Trenkwalder",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Paracelsus-Elena-Klinik, 34128 Kassel, Germany"
+          },
+          {
+            "name": "Department of Neurosurgery, University Medical Center Göttingen, 37075 Göttingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Juliane",
+        "family": "Fluck",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Fraunhofer Institute for Algorithms and Scientific Computing, Schloss Birlinghoven, 53757 Sankt Augustin, Germany"
+          },
+          {
+            "name": "Institute of Geodesy and Geoinformation, University of Bonn, 53115 Bonn, Germany"
+          },
+          {
+            "name": "German National Library of Medicine (ZB MED) - Information Centre for Life Sciences, 53115 Bonn, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Brit",
+        "family": "Mollenhauer",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Paracelsus-Elena-Klinik, 34128 Kassel, Germany"
+          },
+          {
+            "name": "Institute of Neurology, University Medical Center Göttingen, 37075 Göttingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4366-5662",
+        "authenticated-orcid": false,
+        "given": "Stefan",
+        "family": "Bonn",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Institute of Medical Systems Biology, Center for Molecular Neurobiology, University Medical Center Hamburg-Eppendorf, 20251 Hamburg, Germany"
+          },
+          {
+            "name": "German Center for Neurodegenerative Diseases, 72076 Tübingen, Germany"
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "286",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          10
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "2020010521384115200_B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "56",
+        "DOI": "10.1373/clinchem.2014.221341",
+        "article-title": "Circulating microRNA biomarker studies: pitfalls and potential solutions",
+        "volume": "61",
+        "author": "Witwer",
+        "year": "2015",
+        "journal-title": "Clin. Chem."
+      },
+      {
+        "key": "2020010521384115200_B2",
+        "doi-asserted-by": "crossref",
+        "first-page": "567",
+        "DOI": "10.1101/gad.259077.115",
+        "article-title": "Viral noncoding RNAs: more surprises",
+        "volume": "29",
+        "author": "Tycowski",
+        "year": "2015",
+        "journal-title": "Genes Dev."
+      },
+      {
+        "key": "2020010521384115200_B3",
+        "doi-asserted-by": "crossref",
+        "first-page": "824",
+        "DOI": "10.3389/fmicb.2017.00824",
+        "article-title": "Viruses and miRNAs: more friends than foes",
+        "volume": "8",
+        "author": "Bruscella",
+        "year": "2017",
+        "journal-title": "Front. Microbiol."
+      },
+      {
+        "key": "2020010521384115200_B4",
+        "doi-asserted-by": "crossref",
+        "first-page": "431",
+        "DOI": "10.3389/fimmu.2016.00431",
+        "article-title": "Small non-coding RNAs: new insights in modulation of host immune response by intracellular bacterial pathogens",
+        "volume": "7",
+        "author": "Ahmed",
+        "year": "2016",
+        "journal-title": "Front. Immunol."
+      },
+      {
+        "key": "2020010521384115200_B5",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/gigascience/giy070",
+        "article-title": "MetaMap: an atlas of metatranscriptomic reads in human disease-related RNA-seq data",
+        "volume": "7",
+        "author": "Simon",
+        "year": "2018",
+        "journal-title": "Gigascience"
+      },
+      {
+        "key": "2020010521384115200_B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "D19",
+        "DOI": "10.1093/nar/gkq1019",
+        "article-title": "The sequence read archive",
+        "volume": "39",
+        "author": "Leinonen",
+        "year": "2011",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "D991",
+        "DOI": "10.1093/nar/gks1193",
+        "article-title": "NCBI GEO: archive for functional genomics data sets–update",
+        "volume": "41",
+        "author": "Barrett",
+        "year": "2013",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B8",
+        "doi-asserted-by": "crossref",
+        "first-page": "1554",
+        "DOI": "10.1093/bioinformatics/btx019",
+        "article-title": "miRmine: a database of human miRNA expression profiles",
+        "volume": "33",
+        "author": "Panwar",
+        "year": "2017",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2020010521384115200_B9",
+        "doi-asserted-by": "crossref",
+        "first-page": "1079",
+        "DOI": "10.1093/nar/gkw1031",
+        "article-title": "Large-scale analysis of microRNA expression, epi-transcriptomic features and biogenesis",
+        "volume": "45",
+        "author": "Vitsios",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B10",
+        "doi-asserted-by": "crossref",
+        "first-page": "D925",
+        "DOI": "10.1093/nar/gkw1084",
+        "article-title": "YM500v3: a database for small RNA sequencing in human cancer research",
+        "volume": "45",
+        "author": "Chung",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B11",
+        "doi-asserted-by": "crossref",
+        "first-page": "W36",
+        "DOI": "10.1093/nar/gky330",
+        "article-title": "SPAR: small RNA-seq portal for analysis of sequencing experiments",
+        "volume": "46",
+        "author": "Kuksa",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B12",
+        "doi-asserted-by": "crossref",
+        "first-page": "D726",
+        "DOI": "10.1093/nar/gkv1160",
+        "article-title": "ENCODE data at the ENCODE portal",
+        "volume": "44",
+        "author": "Sloan",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "D216",
+        "DOI": "10.1093/nar/gkv1188",
+        "article-title": "DASHR: database of small human noncoding RNAs",
+        "volume": "44",
+        "author": "Leung",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B14",
+        "doi-asserted-by": "crossref",
+        "first-page": "1033",
+        "DOI": "10.1093/bioinformatics/bty709",
+        "article-title": "DASHR 2.0: integrated database of human small non-coding RNA genes and mature products",
+        "volume": "35",
+        "author": "Kuksa",
+        "year": "2019",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2020010521384115200_B15",
+        "doi-asserted-by": "crossref",
+        "first-page": "D1070",
+        "DOI": "10.1093/nar/gkt1023",
+        "article-title": "HMDD v2.0: a database for experimentally supported human microRNA and disease associations",
+        "volume": "42",
+        "author": "Li",
+        "year": "2014",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B16",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.1186/s12859-018-2047-z",
+        "article-title": "Oasis 2: improved online analysis of small RNA-seq data",
+        "volume": "19",
+        "author": "Rahman",
+        "year": "2018",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2020010521384115200_B17",
+        "doi-asserted-by": "crossref",
+        "first-page": "D146",
+        "DOI": "10.1093/nar/gku1104",
+        "article-title": "miRDB: an online resource for microRNA target prediction and functional annotations",
+        "volume": "43",
+        "author": "Wong",
+        "year": "2015",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B18",
+        "doi-asserted-by": "crossref",
+        "first-page": "S14",
+        "DOI": "10.1186/1471-2105-6-S1-S14",
+        "article-title": "ProMiner: rule-based protein and gene entity recognition",
+        "volume": "6",
+        "author": "Hanisch",
+        "year": "2005",
+        "journal-title": "BMC Bioinformatics"
+      },
+      {
+        "key": "2020010521384115200_B19",
+        "doi-asserted-by": "crossref",
+        "first-page": "205",
+        "DOI": "10.12688/f1000research.4591.3",
+        "article-title": "Detecting miRNA mentions and relations in biomedical literature [version 3; peer review: 2 approved, 1 approved with reservations]",
+        "volume": "3",
+        "author": "Bagewadi",
+        "year": "2015",
+        "journal-title": "F1000Research"
+      },
+      {
+        "key": "2020010521384115200_B20",
+        "doi-asserted-by": "crossref",
+        "first-page": "baw136",
+        "DOI": "10.1093/database/baw136",
+        "article-title": "The BEL information extraction workflow (BELIEF): evaluation in the BioCreative V BEL and IAT track",
+        "volume": "2016",
+        "author": "Madan",
+        "year": "2016",
+        "journal-title": "Database."
+      },
+      {
+        "key": "2020010521384115200_B21",
+        "doi-asserted-by": "crossref",
+        "first-page": "550",
+        "DOI": "10.1186/s13059-014-0550-8",
+        "article-title": "Moderated estimation of fold change and dispersion for RNA-seq data with DESeq2",
+        "volume": "15",
+        "author": "Love",
+        "year": "2014",
+        "journal-title": "Genome Biol."
+      },
+      {
+        "key": "2020010521384115200_B22",
+        "doi-asserted-by": "crossref",
+        "first-page": "D68",
+        "DOI": "10.1093/nar/gkt1181",
+        "article-title": "miRBase: annotating high confidence microRNAs using deep sequencing data",
+        "volume": "42",
+        "author": "Kozomara",
+        "year": "2014",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B23",
+        "doi-asserted-by": "crossref",
+        "first-page": "D754",
+        "DOI": "10.1093/nar/gkx1098",
+        "article-title": "Ensembl 2018",
+        "volume": "46",
+        "author": "Zerbino",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B24",
+        "doi-asserted-by": "crossref",
+        "first-page": "D173",
+        "DOI": "10.1093/nar/gkm696",
+        "article-title": "piRNABank: a web resource on classified and clustered Piwi-interacting RNAs",
+        "volume": "36",
+        "author": "Sai Lakshmi",
+        "year": "2008",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B25",
+        "doi-asserted-by": "crossref",
+        "first-page": "D296",
+        "DOI": "10.1093/nar/gkx1067",
+        "article-title": "miRTarBase update 2018: a resource for experimentally validated microRNA-target interactions",
+        "volume": "46",
+        "author": "Chou",
+        "year": "2018",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B26",
+        "doi-asserted-by": "crossref",
+        "first-page": "D136",
+        "DOI": "10.1093/nar/gkr1178",
+        "article-title": "The NCBI Taxonomy database",
+        "volume": "40",
+        "author": "Federhen",
+        "year": "2012",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B27",
+        "doi-asserted-by": "crossref",
+        "first-page": "D507",
+        "DOI": "10.1093/nar/gkq968",
+        "article-title": "The BRENDA Tissue Ontology (BTO): the first all-integrating ontology of all organisms for enzyme sources",
+        "volume": "39",
+        "author": "Gremse",
+        "year": "2011",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B28",
+        "doi-asserted-by": "crossref",
+        "first-page": "D955",
+        "DOI": "10.1093/nar/gky1032",
+        "article-title": "Human disease ontology 2018 update: classification, content and workflow expansion",
+        "volume": "47",
+        "author": "Schriml",
+        "year": "2019",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B29",
+        "doi-asserted-by": "crossref",
+        "first-page": "44",
+        "DOI": "10.1186/s13326-016-0088-7",
+        "article-title": "The Cell Ontology 2016: enhanced content, modularization, and ontology interoperability",
+        "volume": "7",
+        "author": "Diehl",
+        "year": "2016",
+        "journal-title": "J. Biomed. Semantics"
+      },
+      {
+        "key": "2020010521384115200_B30",
+        "doi-asserted-by": "crossref",
+        "first-page": "37",
+        "DOI": "10.1186/2041-1480-5-37",
+        "article-title": "CLO: The cell line ontology",
+        "volume": "5",
+        "author": "Sarntivijai",
+        "year": "2014",
+        "journal-title": "J. Biomed. Semantics"
+      },
+      {
+        "key": "2020010521384115200_B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1112",
+        "DOI": "10.1093/bioinformatics/btq099",
+        "article-title": "Modeling sample variables with an Experimental Factor Ontology",
+        "volume": "26",
+        "author": "Malone",
+        "year": "2010",
+        "journal-title": "Bioinformatics"
+      },
+      {
+        "key": "2020010521384115200_B32",
+        "doi-asserted-by": "crossref",
+        "first-page": "187",
+        "DOI": "10.4137/BBI.S451",
+        "article-title": "Ontologies for bioinformatics",
+        "volume": "2",
+        "author": "Schuurman",
+        "year": "2008",
+        "journal-title": "Bioinform. Biol. Insights"
+      },
+      {
+        "key": "2020010521384115200_B33",
+        "doi-asserted-by": "crossref",
+        "first-page": "W155",
+        "DOI": "10.1093/nar/gkq331",
+        "article-title": "The ontology lookup service: bigger and better",
+        "volume": "38",
+        "author": "Côté",
+        "year": "2010",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B34",
+        "doi-asserted-by": "crossref",
+        "first-page": "3865",
+        "DOI": "10.1093/nar/gkw116",
+        "article-title": "Distribution of miRNA expression across human tissues",
+        "volume": "44",
+        "author": "Ludwig",
+        "year": "2016",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B35",
+        "doi-asserted-by": "crossref",
+        "first-page": "35",
+        "DOI": "10.1261/rna.804508",
+        "article-title": "Systematic evaluation of microRNA processing patterns in tissues, cell lines, and tumors",
+        "volume": "14",
+        "author": "Lee",
+        "year": "2008",
+        "journal-title": "RNA"
+      },
+      {
+        "key": "2020010521384115200_B36",
+        "doi-asserted-by": "crossref",
+        "first-page": "5150",
+        "DOI": "10.1038/srep05150",
+        "article-title": "Genome-wide survey of tissue-specific microRNA and transcription factor regulatory networks in 12 tissues",
+        "volume": "4",
+        "author": "Guo",
+        "year": "2014",
+        "journal-title": "Sci. Rep."
+      },
+      {
+        "key": "2020010521384115200_B37",
+        "doi-asserted-by": "crossref",
+        "first-page": "e0159956",
+        "DOI": "10.1371/journal.pone.0159956",
+        "article-title": "MicroRNAs Expression in the ileal pouch of patients with ulcerative colitis is robustly Up-Regulated and correlates with disease phenotypes",
+        "volume": "11",
+        "author": "Ben-Shachar",
+        "year": "2016",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2020010521384115200_B38",
+        "doi-asserted-by": "crossref",
+        "first-page": "655",
+        "DOI": "10.1007/s15010-015-0776-8",
+        "article-title": "Twenty-eight cases of Mycobacterium marinum infection: retrospective case series and literature review",
+        "volume": "43",
+        "author": "Johnson",
+        "year": "2015",
+        "journal-title": "Infection"
+      },
+      {
+        "key": "2020010521384115200_B39",
+        "doi-asserted-by": "crossref",
+        "first-page": "1268",
+        "DOI": "10.1038/ajg.2012.118",
+        "article-title": "Mycobacterium marinum: an increasingly common opportunistic infection in patients on infliximab",
+        "volume": "107",
+        "author": "Ferreira",
+        "year": "2012",
+        "journal-title": "Am. J. Gastroenterol."
+      },
+      {
+        "key": "2020010521384115200_B40",
+        "doi-asserted-by": "crossref",
+        "first-page": "82",
+        "DOI": "10.3934/microbiol.2015.1.82",
+        "article-title": "Current roles of specific bacteria in the pathogenesis of inflammatory bowel disease",
+        "volume": "1",
+        "author": "McMullen",
+        "year": "2015",
+        "journal-title": "AIMS Microbiol."
+      },
+      {
+        "key": "2020010521384115200_B41",
+        "doi-asserted-by": "crossref",
+        "first-page": "e7063",
+        "DOI": "10.1371/journal.pone.0007063",
+        "article-title": "High prevalence of Methanobrevibacter smithii and Methanosphaera stadtmanae detected in the human gut using an improved DNA detection protocol",
+        "volume": "4",
+        "author": "Dridi",
+        "year": "2009",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2020010521384115200_B42",
+        "doi-asserted-by": "crossref",
+        "first-page": "e99411",
+        "DOI": "10.1371/journal.pone.0099411",
+        "article-title": "The intestinal archaea Methanosphaera stadtmanae and Methanobrevibacter smithii activate human dendritic cells",
+        "volume": "9",
+        "author": "Bang",
+        "year": "2014",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2020010521384115200_B43",
+        "doi-asserted-by": "crossref",
+        "first-page": "e87734",
+        "DOI": "10.1371/journal.pone.0087734",
+        "article-title": "Increased prevalence of Methanosphaera stadtmanae in inflammatory bowel diseases",
+        "volume": "9",
+        "author": "Blais Lecours",
+        "year": "2014",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2020010521384115200_B44",
+        "doi-asserted-by": "crossref",
+        "first-page": "993",
+        "DOI": "10.1093/schbul/sby038",
+        "article-title": "The Emerging Immunogenetic Architecture of Schizophrenia",
+        "volume": "44",
+        "author": "Pouget",
+        "year": "2018",
+        "journal-title": "Schizophr. Bull."
+      },
+      {
+        "key": "2020010521384115200_B45",
+        "doi-asserted-by": "crossref",
+        "first-page": "360",
+        "DOI": "10.1093/ibd/izy235",
+        "article-title": "Increased burden of psychiatric disorders in inflammatory bowel disease",
+        "volume": "25",
+        "author": "Bernstein",
+        "year": "2019",
+        "journal-title": "Inflamm. Bowel Dis."
+      },
+      {
+        "key": "2020010521384115200_B46",
+        "doi-asserted-by": "crossref",
+        "first-page": "335",
+        "DOI": "10.3233/JAD-122350",
+        "article-title": "A study of small RNAs from cerebral neocortex of pathology-verified Alzheimer's disease, dementia with lewy bodies, hippocampal sclerosis, frontotemporal lobar dementia, and non-demented human controls",
+        "volume": "35",
+        "author": "Hébert",
+        "year": "2013",
+        "journal-title": "J. Alzheimers. Dis."
+      },
+      {
+        "key": "2020010521384115200_B47",
+        "doi-asserted-by": "crossref",
+        "first-page": "1825",
+        "DOI": "10.1007/s00705-013-1666-y",
+        "article-title": "Genome sequence of a chimpanzee herpesvirus and its relation to other primate alphaherpesviruses",
+        "volume": "158",
+        "author": "Severini",
+        "year": "2013",
+        "journal-title": "Arch. Virol."
+      },
+      {
+        "key": "2020010521384115200_B48",
+        "doi-asserted-by": "crossref",
+        "first-page": "673",
+        "DOI": "10.1017/S0033291713000494",
+        "article-title": "The prevalence and incidence of dementia with Lewy bodies: a systematic review of population and clinical studies",
+        "volume": "44",
+        "author": "Vann Jones",
+        "year": "2014",
+        "journal-title": "Psychol. Med."
+      },
+      {
+        "key": "2020010521384115200_B49",
+        "doi-asserted-by": "crossref",
+        "first-page": "1398",
+        "DOI": "10.1016/j.parkreldis.2015.10.009",
+        "article-title": "Neuroinflammation in Lewy body dementia",
+        "volume": "21",
+        "author": "Surendranathan",
+        "year": "2015",
+        "journal-title": "Parkinsonism Relat. Disord."
+      },
+      {
+        "key": "2020010521384115200_B50",
+        "doi-asserted-by": "crossref",
+        "first-page": "319",
+        "DOI": "10.3233/JAD-142853",
+        "article-title": "Herpes simplex virus type 1 and other pathogens are key causative factors in sporadic alzheimer's disease",
+        "volume": "48",
+        "author": "Harris",
+        "year": "2015",
+        "journal-title": "J. Alzheimers. Dis."
+      },
+      {
+        "key": "2020010521384115200_B51",
+        "doi-asserted-by": "crossref",
+        "first-page": "996",
+        "DOI": "10.2174/1570159X15666170313122937",
+        "article-title": "The infectious etiology of alzheimer's disease",
+        "volume": "15",
+        "author": "Sochocka",
+        "year": "2017",
+        "journal-title": "Curr. Neuropharmacol."
+      },
+      {
+        "key": "2020010521384115200_B52",
+        "doi-asserted-by": "crossref",
+        "first-page": "445",
+        "DOI": "10.1007/s12031-016-0828-2",
+        "article-title": "Neuroprotective role of MicroRNA-22 in a 6-Hydroxydopamine-Induced cell model of parkinson's disease via regulation of its target gene TRPM7",
+        "volume": "60",
+        "author": "Yang",
+        "year": "2016",
+        "journal-title": "J. Mol. Neurosci."
+      },
+      {
+        "key": "2020010521384115200_B53",
+        "doi-asserted-by": "crossref",
+        "first-page": "96",
+        "DOI": "10.1016/j.jbiotec.2011.01.023",
+        "article-title": "Identification of blood microRNAs associated to Parkinson's disease",
+        "volume": "152",
+        "author": "Margis",
+        "year": "2011",
+        "journal-title": "J. Biotechnol."
+      },
+      {
+        "key": "2020010521384115200_B54",
+        "doi-asserted-by": "crossref",
+        "first-page": "E2698",
+        "DOI": "10.3390/ijms18122698",
+        "article-title": "microRNAs in Parkinson's disease: From pathogenesis to novel diagnostic and therapeutic approaches",
+        "volume": "18",
+        "author": "Leggio",
+        "year": "2017",
+        "journal-title": "Int. J. Mol. Sci."
+      },
+      {
+        "key": "2020010521384115200_B55",
+        "doi-asserted-by": "crossref",
+        "first-page": "40",
+        "DOI": "10.3389/fnmol.2013.00040",
+        "article-title": "RISC in PD: the impact of microRNAs in Parkinson's disease cellular and molecular pathogenesis",
+        "volume": "6",
+        "author": "Heman-Ackah",
+        "year": "2013",
+        "journal-title": "Front. Mol. Neurosci."
+      },
+      {
+        "key": "2020010521384115200_B56",
+        "doi-asserted-by": "crossref",
+        "first-page": "W130",
+        "DOI": "10.1093/nar/gkx356",
+        "article-title": "WebGestalt 2017: a more comprehensive, powerful, flexible and interactive gene set enrichment analysis toolkit",
+        "volume": "45",
+        "author": "Wang",
+        "year": "2017",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B57",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.3389/fncom.2013.00013",
+        "article-title": "The energy cost of action potential propagation in dopamine neurons: clues to susceptibility in Parkinson's disease",
+        "volume": "7",
+        "author": "Pissadaki",
+        "year": "2013",
+        "journal-title": "Front. Comput. Neurosci."
+      },
+      {
+        "key": "2020010521384115200_B58",
+        "doi-asserted-by": "crossref",
+        "first-page": "1478",
+        "DOI": "10.1002/mds.25135",
+        "article-title": "Living on the edge with too many mouths to feed: why dopamine neurons die",
+        "volume": "27",
+        "author": "Bolam",
+        "year": "2012",
+        "journal-title": "Mov. Disord."
+      },
+      {
+        "key": "2020010521384115200_B59",
+        "doi-asserted-by": "crossref",
+        "first-page": "101",
+        "DOI": "10.1038/nrn.2016.178",
+        "article-title": "Selective neuronal vulnerability in Parkinson disease",
+        "volume": "18",
+        "author": "Surmeier",
+        "year": "2017",
+        "journal-title": "Nat. Rev. Neurosci."
+      },
+      {
+        "key": "2020010521384115200_B60",
+        "doi-asserted-by": "crossref",
+        "first-page": "e3652",
+        "DOI": "10.1371/journal.pone.0003652",
+        "article-title": "A miRNA signature of prion induced neurodegeneration",
+        "volume": "3",
+        "author": "Saba",
+        "year": "2008",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "2020010521384115200_B61",
+        "doi-asserted-by": "crossref",
+        "first-page": "36",
+        "DOI": "10.1186/1750-1326-4-36",
+        "article-title": "Upregulation of miRNA hsa-miR-342-3p in experimental and idiopathic prion disease",
+        "volume": "4",
+        "author": "Montag",
+        "year": "2009",
+        "journal-title": "Mol. Neurodegener."
+      },
+      {
+        "key": "2020010521384115200_B62",
+        "doi-asserted-by": "crossref",
+        "first-page": "963",
+        "DOI": "10.1016/j.cellsig.2010.10.020",
+        "article-title": "Apoptosis in Parkinson's disease: is p53 the missing link between genetic and sporadic Parkinsonism",
+        "volume": "23",
+        "author": "Alves da Costa",
+        "year": "2011",
+        "journal-title": "Cell. Signal."
+      },
+      {
+        "key": "2020010521384115200_B63",
+        "doi-asserted-by": "crossref",
+        "first-page": "E954",
+        "DOI": "10.3390/ijms17060954",
+        "article-title": "Roles of PTEN with DNA repair in parkinson's disease",
+        "volume": "17",
+        "author": "Ogino",
+        "year": "2016",
+        "journal-title": "Int. J. Mol. Sci."
+      },
+      {
+        "key": "2020010521384115200_B64",
+        "doi-asserted-by": "crossref",
+        "first-page": "NS20170181",
+        "DOI": "10.1042/NS20170181",
+        "article-title": "Inhibition of miR-181a promotes midbrain neuronal growth through a Smad1/5-dependent mechanism: implications for Parkinson's disease",
+        "volume": "2",
+        "author": "Hegarty",
+        "year": "2018",
+        "journal-title": "Neuronal. Signal."
+      },
+      {
+        "key": "2020010521384115200_B65",
+        "doi-asserted-by": "crossref",
+        "first-page": "e1004574",
+        "DOI": "10.1371/journal.pgen.1004574",
+        "article-title": "Dopamine signaling leads to loss of Polycomb repression and aberrant gene activation in experimental parkinsonism",
+        "volume": "10",
+        "author": "Södersten",
+        "year": "2014",
+        "journal-title": "PLoS Genet."
+      },
+      {
+        "key": "2020010521384115200_B66",
+        "doi-asserted-by": "crossref",
+        "first-page": "211",
+        "DOI": "10.1016/j.molmed.2013.02.003",
+        "article-title": "The BCL2 code to dopaminergic development and Parkinson's disease",
+        "volume": "19",
+        "author": "van der Heide",
+        "year": "2013",
+        "journal-title": "Trends Mol. Med."
+      },
+      {
+        "key": "2020010521384115200_B67",
+        "doi-asserted-by": "crossref",
+        "first-page": "W741",
+        "DOI": "10.1093/nar/gki475",
+        "article-title": "WebGestalt: an integrated system for exploring gene sets in various biological contexts",
+        "volume": "33",
+        "author": "Zhang",
+        "year": "2005",
+        "journal-title": "Nucleic Acids Res."
+      },
+      {
+        "key": "2020010521384115200_B68",
+        "doi-asserted-by": "crossref",
+        "first-page": "159",
+        "DOI": "10.1007/978-3-030-20242-2_14",
+        "volume-title": "Bioinformatics Research and Applications:Deep Learning and Random Forest-Based Augmentation of sRNA Expression Profiles",
+        "author": "Fiosina",
+        "year": "2019"
+      }
+    ],
+    "container-title": [
+      "Nucleic Acids Research"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/48/D1/D204/31697776/gkz869.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "syndication"
+      },
+      {
+        "URL": "http://academic.oup.com/nar/article-pdf/48/D1/D204/31697776/gkz869.pdf",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2023-09-21T03:51:54Z",
+      "timestamp": 1695268314000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://academic.oup.com/nar/article/48/D1/D204/5584526"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          10
+        ]
+      ]
+    },
+    "references-count": 68,
+    "journal-issue": {
+      "issue": "D1",
+      "published-online": {
+        "date-parts": [
+          [
+            2019,
+            10,
+            10
+          ]
+        ]
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2020,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1093/nar/gkz869",
+    "relation": {},
+    "ISSN": [
+      "0305-1048",
+      "1362-4962"
+    ],
+    "issn-type": [
+      {
+        "value": "0305-1048",
+        "type": "print"
+      },
+      {
+        "value": "1362-4962",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published-other": {
+      "date-parts": [
+        [
+          2020,
+          1,
+          8
+        ]
+      ]
+    },
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          10
+        ]
+      ]
+    }
+  }
+}

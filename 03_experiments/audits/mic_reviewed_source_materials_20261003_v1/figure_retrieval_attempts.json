@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://europepmc.org/articles/PMC12207908/bin/MLF2-4-275-g003.jpg",
+    "retrieved_at": "2026-10-03T08:24:59.872443+00:00",
+    "http_status": 403,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 5643,
+    "status": "no_verified_original_image"
+  },
+  {
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12207908/bin/MLF2-4-275-g003.jpg",
+    "retrieved_at": "2026-10-03T08:24:59.872443+00:00",
+    "http_status": 404,
+    "content_type": "text/html; charset=utf-8",
+    "bytes": 48716,
+    "status": "no_verified_original_image"
+  },
+  {
+    "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC12207908",
+    "retrieved_at": "2026-10-03T08:24:59.873410+00:00",
+    "http_status": 404,
+    "content_type": "text/html; charset=ISO-8859-1",
+    "bytes": 1588,
+    "status": "no_verified_original_image"
+  }
+]

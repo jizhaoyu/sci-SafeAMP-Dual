@@ -1,0 +1,14 @@
+{
+  "status": "sequence_screen_only",
+  "generated_at": "2026-10-01T05:56:42.008276+00:00",
+  "protocol_id": "protocol-amd-02",
+  "protocol_digest": "6bcf8993a08f8da1ebae4609f4ef9e4ebae7205257d136dfa059a1b93db4bc4c",
+  "candidate_input_sha256": "b9609c0a15d2788f323a592318370c778891fff45a4b8b44a91a9869c03cf683",
+  "development_input_sha256": "57ce763d21c55bdc397e72d3b2932d3a35c5ace4e9c86403b1b1623c3c559618",
+  "candidate_count": 10,
+  "development_count": 417,
+  "all_pairs_evaluated": 4170,
+  "candidates_violating_cutoff": 10,
+  "all_pairs_sha256": "9785b57b41cf99983213b7d62060dbd78ec90ec08aeb7bab1253147dd64d73f4",
+  "candidate_summary_sha256": "3096829847aee6910ad101844eb4076fffec41ff68f5de37e55c38f8dacf9b1f"
+}

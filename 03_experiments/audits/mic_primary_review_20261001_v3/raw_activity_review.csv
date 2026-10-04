@@ -1,0 +1,32 @@
+﻿record_id,peptide_name,raw_activity_id,target,database_mic,database_unit,database_note,database_derived_label,paper_mic,paper_unit,database_mic_matches_paper,curated_binary_observation_present
+DBAASP:25450,Equusin-4-9,202030,Escherichia coli AIC221,4,µM,,1.0,4,µmol/L,True,True
+DBAASP:25450,Equusin-4-9,202031,Escherichia coli AIC222,4,µM,CRE,1.0,4,µmol/L,True,True
+DBAASP:25450,Equusin-4-9,202029,Escherichia coli ATCC 11775,8,µM,,1.0,8,µmol/L,True,True
+DBAASP:25453,Mammuthusin-3-1,202063,Escherichia coli AIC221,16,µM,,1.0,16,µmol/L,True,True
+DBAASP:25453,Mammuthusin-3-1,202064,Escherichia coli AIC222,32,µM,CRE,,32,µmol/L,True,False
+DBAASP:25453,Mammuthusin-3-1,202062,Escherichia coli ATCC 11775,32,µM,,,32,µmol/L,True,False
+DBAASP:25470,Arctoterin-1-7,202250,Escherichia coli AIC221,32,µM,,,32,µmol/L,True,False
+DBAASP:25470,Arctoterin-1-7,202251,Escherichia coli AIC222,8,µM,VRE,1.0,8,µmol/L,True,True
+DBAASP:25470,Arctoterin-1-7,202249,Escherichia coli ATCC 11775,>64,µM,,,>64,µmol/L,True,False
+DBAASP:25491,Lophiosin-1-7,202481,Escherichia coli AIC221,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25491,Lophiosin-1-7,202482,Escherichia coli AIC222,>64,µM,CRE,0.0,>64,µmol/L,True,True
+DBAASP:25491,Lophiosin-1-7,202480,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25497,Hydrodamin-2-2,202547,Escherichia coli AIC221,32,µM,,,32,µmol/L,True,False
+DBAASP:25497,Hydrodamin-2-2,202548,Escherichia coli AIC222,64,µM,CRE,0.0,64,µmol/L,True,True
+DBAASP:25497,Hydrodamin-2-2,202546,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25504,Hydrodamin-2-9,202625,Escherichia coli AIC221,16,µM,,,16,µmol/L,True,False
+DBAASP:25504,Hydrodamin-2-9,202626,Escherichia coli AIC222,32,µM,CRE,,32,µmol/L,True,False
+DBAASP:25504,Hydrodamin-2-9,202624,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25508,Hydrodamin-3-2,202669,Escherichia coli AIC221,32,µM,,,32,µmol/L,True,False
+DBAASP:25508,Hydrodamin-3-2,202670,Escherichia coli AIC222,64,µM,CRE,0.0,64,µmol/L,True,True
+DBAASP:25508,Hydrodamin-3-2,202668,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25512,Hydrodamin-3-6,202713,Escherichia coli AIC221,16,µM,,,16,µmol/L,True,False
+DBAASP:25512,Hydrodamin-3-6,202714,Escherichia coli AIC222,16,µM,CRE,,16,µmol/L,True,False
+DBAASP:25512,Hydrodamin-3-6,202721,Escherichia coli AIC222,>64,µM,VRE,0.0,16,µmol/L,False,True
+DBAASP:25512,Hydrodamin-3-6,202712,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25545,Hesperelin-3-7,203074,Escherichia coli AIC221,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25545,Hesperelin-3-7,203075,Escherichia coli AIC222,>64,µM,CRE,0.0,>64,µmol/L,True,True
+DBAASP:25545,Hesperelin-3-7,203073,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True
+DBAASP:25563,Free-75diff-5,203271,Escherichia coli AIC221,64,µM,,0.0,64,µmol/L,True,True
+DBAASP:25563,Free-75diff-5,203272,Escherichia coli AIC222,>64,µM,CRE,0.0,>64,µmol/L,True,True
+DBAASP:25563,Free-75diff-5,203270,Escherichia coli ATCC 11775,>64,µM,,0.0,>64,µmol/L,True,True

@@ -1,0 +1,20 @@
+{
+  "dataset_doi": "10.17632/d8yzgtdrcp.3",
+  "landing_page": "https://data.mendeley.com/datasets/d8yzgtdrcp/3",
+  "version": 3,
+  "published": "2025-04-09",
+  "observation_method": "public page visible file table via browser",
+  "coa_filename": "COA_archaeasins.zip",
+  "coa_public_file_url": "https://data.mendeley.com/public-files/datasets/d8yzgtdrcp/files/b1307377-6e4d-4f63-b2c1-da070f075949/file_downloaded",
+  "same_public_file_identifier_as_v5": true,
+  "whole_dataset_versions_equal": null,
+  "explicit_mapping_file_shown_in_listing": false,
+  "other_listed_files": [
+    "Active_Archaea_EP_GO_frequency.tsv",
+    "DataS1_List of 12632 archaeasin sequences found by APEX.csv",
+    "Data S2_Archaeasins predicted active with source organisms.csv",
+    "DataS3_AA_percentage_mannwhitneyu_oneside_greater_pval_table.csv",
+    "DataS4_AA_percentage_mannwhitneyu_oneside_less_pval_table.csv"
+  ],
+  "license": "CC BY 4.0"
+}

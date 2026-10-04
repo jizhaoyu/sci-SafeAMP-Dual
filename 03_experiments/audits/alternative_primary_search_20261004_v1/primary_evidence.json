@@ -1,0 +1,4564 @@
+[
+  {
+    "source_id": "chmap2018",
+    "tables": [
+      {
+        "id": "T1",
+        "text": "Table 1 Comparison of IC 50  values determined for ChMAP-28 and melittin. Cell line HL-60 SKBR-3 A431 B16F1 HEK293T HEF NHA Peptide IC 50 , \u03bcM ChMAP-28 3.39 \u00b1 0.15 5.63 \u00b1 1.05 6.49 \u00b1 0.09 4.82 \u00b1 1.01 5.09 \u00b1 0.40 8.95 \u00b1 2.68 ND (>10) Melittin 1.86 \u00b1 0.03 2.03 \u00b10.09 1.09 \u00b1 0.17 1.46 \u00b1 0.07 1.42 \u00b1 0.18 1.64 \u00b1 0.10 1.83 \u00b1 0.15 IC 50  values are represented as the means \u00b1 standard deviations (SD) of at least three independent experiments. In the case of NHA cells, 50% inhibition was not reached even at the peptide concentration of 10 \u03bcM, thus the IC 50  value could not be determined.",
+        "rows": [
+          [
+            {
+              "text": "Cell line",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "HL-60",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "SKBR-3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "A431",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "B16F1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "HEK293T",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "HEF",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "NHA",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "7"
+            }
+          ],
+          [
+            {
+              "text": "Peptide",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "IC 50 , \u03bcM",
+              "rowspan": "1",
+              "colspan": "7"
+            }
+          ],
+          [
+            {
+              "text": "ChMAP-28",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "3.39 \u00b1 0.15",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "5.63 \u00b1 1.05",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "6.49 \u00b1 0.09",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4.82 \u00b1 1.01",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "5.09 \u00b1 0.40",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8.95 \u00b1 2.68",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "ND (>10)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Melittin",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.86 \u00b1 0.03",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2.03 \u00b10.09",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.09 \u00b1 0.17",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.46 \u00b1 0.07",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.42 \u00b1 0.18",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.64 \u00b1 0.10",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.83 \u00b1 0.15",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "sec5",
+        "title": "Hemolytic Activity Assay",
+        "text": "Hemolytic Activity Assay Hemolytic activity of ChMAP-28 and melittin was tested against fresh human red blood cells (hRBC) washed three times with phosphate buffered saline (PBS: 10 mM Na 2 HPO 4 , 1.76 mM K 2 HPO 4 , pH 7.4, containing 173 mM NaCl, and 2.7 mM KCl). Two-fold serial dilutions of the peptides solutions were then added to 50 \u03bcl aliquots of hRBC in PBS to adjust a final volume to 100 \u03bcl and hRBC concentration to 4% (v/v) in each well of a 96-well plate. The suspension was incubated for 1.5 h at 37\u00b0C under stirring at 1000 rpm. The plates were centrifuged at 2000  g  for 5 min. Supernatant aliquots of 50 \u03bcl were transferred into flat-bottomed 96-well microplates, and the release of hemoglobin was monitored by measuring the absorbance at 405 nm in a microplate reader (Eppendorf, Germany). hRBC in PBS and 0.1% Triton X-100 were used as negative and positive controls, respectively. Hemolytic activity was expressed as a percentage of hemolysis calculated according to the following equation: Hemolysis \u2009 ( % ) = ( OD 405 \u2009 sample \u2212 OD 405 0 % \u2009 lysis \u2009 control ) / ( OD 405 \u2009 100 % \u2009 lysis \u2009 control \u2212 OD 405 \u2009 0 % \u2009 lysis \u2009 control ) \u00d7 100 % Two experiments were performed with fresh hRBC from human blood samples of independent donors. The quantitative data were represented as average means with standard deviations."
+      },
+      {
+        "id": "sec11",
+        "title": "Synthesis of Microarrays",
+        "text": "Synthesis of Microarrays B3 microarray synthesizer (CustomArray, United States) was used for forty nucleotides-long oligonucleotide probe synthesis on CustomArray ECD 4X2K/12K slides. Synthesis was performed according to the manufacturer\u2019s recommendations. Two replicates of total 6020 unique oligonucleotide probes specific to 3706 human gene transcripts were placed on each chip. Chip design was performed using the Layout Designer software (CustomArray, United States). For the custom microchip, we used original oligonucleotide probe sequences of the Illumina HT 12 v4 platform."
+      },
+      {
+        "id": "sec16",
+        "title": "Expression and Purification of the Recombinant ChMAP-28",
+        "text": "Expression and Purification of the Recombinant ChMAP-28 To improve a yield of the recombinant peptide in  E. coli  and to facilitate its purification, ChMAP-28 was obtained as a part of the fusion protein with the  N -terminal octahistidine tag and the modified thioredoxin A (M37L). Following cell harvesting, sonication, preparative centrifugation of the cell lysate, affinity chromatography and specific CNBr cleavage of the fusion protein, the target peptide was purified by reversed-phase HPLC in a linear gradient of acetonitrile concentration. MALDI mass spectrometry analysis of the main fraction showed that the measured monoisotopic m/z (3364.2) matched well the calculated molecular mass of the protonated ion [M+H] +  of the ChMAP-28 (3364.0 Da) (Supplementary Figure  S1 ). The final yield of ChMAP-28 was \u223c3.1 mg per 1 l of bacterial culture."
+      },
+      {
+        "id": "sec17",
+        "title": "Hemolytic Activity of ChMAP-28",
+        "text": "Hemolytic Activity of ChMAP-28 The assay for hemolytic activity of ChMAP-28 was performed to determine the peptide effect on the integrity of red blood cells. This assay allows to assess an ability of the peptide to permeabilize cytoplasmic membrane of erythrocytes. Their lysis results in a detectable increase of the optical density caused by hemoglobin release into solution. For both ChMAP-28 and melittin, we used the detergent Triton X-100 as a positive control and the PBS buffer solution as a negative control. The results (Figure  1A ) evidence that ChMAP-28 has a low hemolytic activity (hemolysis less than 10%) at a concentration range up to 10 \u03bcM. The half-hemolysis concentration of ChMAP-28 determined in this study (\u223c100 \u03bcM) was \u223c20-fold higher than its IC 50  measured against the cancer cell lines and shown in Table  1 . In contrast, melittin caused 42% hemolysis at the peptide concentrations down to 1.5 \u03bcM. FIGURE 1 Toxicity of ChMAP-28 and melittin to normal human blood cells.  (A)  Concentration-dependent curve of ChMAP-28 and melittin toward PBMC assessed by MTT-test.  (B)  The hemolysis curve showing effects of ChMAP-28 and mellitin on human erythrocytes. The data represent the mean values \u00b1 SD of three independent series of triplicated experiments. Table 1 Comparison of IC 50  values determined for ChMAP-28 and melittin. Cell line HL-60 SKBR-3 A431 B16F1 HEK293T HEF NHA Peptide IC 50 , \u03bcM ChMAP-28 3.39 \u00b1 0.15 5.63 \u00b1 1.05 6.49 \u00b1 0.09 4.82 \u00b1 1.01 5.09 \u00b1 0.40 8.95 \u00b1 2.68 ND (>10) Melittin 1.86 \u00b1 0.03 2.03 \u00b10.09 1.09 \u00b1 0.17 1.46 \u00b1 0.07 1.42 \u00b1 0.18 1.64 \u00b1 0.10 1.83 \u00b1 0.15 IC 50  values are represented as the means \u00b1 standard deviations (SD) of at least three independent experiments. In the case of NHA cells, 50% inhibition was not reached even at the peptide concentration of 10 \u03bcM, thus the IC 50  value could not be determined."
+      }
+    ]
+  },
+  {
+    "source_id": "corvus2023",
+    "tables": [
+      {
+        "id": "Tab3",
+        "text": "Table 3 List of some of the major AMPs identified from  C. splendens  using APD3, CAMP  R3  and LAMP databases. Unigenes ID AMP CL35Contig1 Ubiquitin CL10522Contig1 Ubiquicidin CL516Contig1 Histone H2B 1/2/3/4/6 CL1Contig2038 Histone H4 CL17878Contig1 Histone H2B type 2-E CL10566Contig1 HNr (histone-derived) CL10566Contig1 Histone H2A CL516Contig2 Histone H3 CL63204Contig1 Beta-defensin (Fragment) CL60147Contig1 Gallinacin-2 CL64604Contig1 Gallinacin-13 CL59522Contig1 Gallinacin-5 CL1Contig2041 Beta-defensin 9 CL1Contig2041 Gallinacin 6 CL26196Contig1 Defensin-like fragment CL48257Contig1 Beta-amyloid peptide (1\u201342) CL60229Contig1 Beta-amyloid peptide (1\u201340) CL31589Contig1 Cathelicidin-2 CL8444Contig1 rtCATH-1b (cathelicidin, fish, animals) CL26031Contig1 Liver-expressed antimicrobial peptide 2 CL26031Contig1 Hepcidin CL23973Contig1 Neuropeptide Y CL44565Contig1 Enkelytin CL44565Contig1 Proenkephalin-A CL23973Contig1 Bradykinin CL44349Contig1 Vasoactive intestinal polypeptide CL52025Contig1 Vasostatin-1 CL44349Contig1 Calcitonin gene-related peptide CL540Contig1 Enhancer of rudimentary homolog CL22143Contig1 Ovotransferrin CL50263Contig1 CCL8 CL7703Contig1 Pleiotrophin-A CL50263Contig1 CXCL12 CL44565Contig1 Bombinin H7",
+        "rows": [
+          [
+            {
+              "text": "Unigenes ID",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "AMP",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL35Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Ubiquitin",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL10522Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Ubiquicidin",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL516Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Histone H2B 1/2/3/4/6",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL1Contig2038",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Histone H4",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL17878Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Histone H2B type 2-E",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL10566Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "HNr (histone-derived)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL10566Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Histone H2A",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL516Contig2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Histone H3",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL63204Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Beta-defensin (Fragment)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL60147Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Gallinacin-2",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL64604Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Gallinacin-13",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL59522Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Gallinacin-5",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL1Contig2041",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Beta-defensin 9",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL1Contig2041",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Gallinacin 6",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL26196Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Defensin-like fragment",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL48257Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Beta-amyloid peptide (1\u201342)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL60229Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Beta-amyloid peptide (1\u201340)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL31589Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Cathelicidin-2",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL8444Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "rtCATH-1b (cathelicidin, fish, animals)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL26031Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Liver-expressed antimicrobial peptide 2",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL26031Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Hepcidin",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL23973Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Neuropeptide Y",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL44565Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Enkelytin",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL44565Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Proenkephalin-A",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL23973Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Bradykinin",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL44349Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Vasoactive intestinal polypeptide",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL52025Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Vasostatin-1",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL44349Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Calcitonin gene-related peptide",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL540Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Enhancer of rudimentary homolog",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL22143Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Ovotransferrin",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL50263Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "CCL8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL7703Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Pleiotrophin-A",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL50263Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "CXCL12",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CL44565Contig1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Bombinin H7",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "Tab1",
+        "text": "Table 1 Raw read summary. Samples Total sequences Sequence length % GC Set1_R1.fastq.gz 23,785,322 76 47 Set1_R2.fastq.gz 23,785,322 76 47 Set2_R1.fastq.gz 59,779,517 100 51 Set2_R2.fastq.gz 59,779,517 100 51",
+        "rows": [
+          [
+            {
+              "text": "Samples",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Total sequences",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Sequence length",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "% GC",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Set1_R1.fastq.gz",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "23,785,322",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "76",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Set1_R2.fastq.gz",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "23,785,322",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "76",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Set2_R1.fastq.gz",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "59,779,517",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "100",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "51",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Set2_R2.fastq.gz",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "59,779,517",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "100",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "51",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "Tab2",
+        "text": "Table 2 Assembly statistics of transcripts and unigenes. Assembly statistics Transcripts Unigenes Total sequence length 353,951,778 126,484,523 Minimum sequence length 185 201 Maximum sequence length 38,885 38,887 Average sequence length 1030.40 1687.40 N10 7826 8828 N20 5796 6704 N30 4547 5370 N40 3603 4335 N50 2747 3467 Percent GC 46.62% 46.36%",
+        "rows": [
+          [
+            {
+              "text": "Assembly statistics",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Transcripts",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Unigenes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Total sequence length",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "353,951,778",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "126,484,523",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Minimum sequence length",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "185",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "201",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Maximum sequence length",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "38,885",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "38,887",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Average sequence length",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1030.40",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1687.40",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "N10",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "7826",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8828",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "N20",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "5796",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "6704",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "N30",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4547",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "5370",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "N40",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "3603",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4335",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "N50",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2747",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "3467",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Percent GC",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "46.62%",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "46.36%",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "Tab4",
+        "text": "Table 4 Primer sequences for real time PCR. Gene name Forward primer Reverse primer Avian beta-defensin 2 (AvBD-2) ACAGCCATGAAGATCCTTTACC GGCAAAGACAAACCTGGAGA Avian beta-defensin 13 (AvBD-13) CAGCAGTGCAGAAGCAACC ATTGCTGCAGCTCCCTTC Cathelicidin 2 (CATH-2) CCGTGGATTCCTACAACCAG TCCATCATGCTGAAGTTGAGTC \u03b2- actin CCCCACCTGAGCGTAAATACT CCTGCTTGCTGATCCACAT",
+        "rows": [
+          [
+            {
+              "text": "Gene name",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Forward primer",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Reverse primer",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Avian beta-defensin 2 (AvBD-2)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "ACAGCCATGAAGATCCTTTACC",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "GGCAAAGACAAACCTGGAGA",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Avian beta-defensin 13 (AvBD-13)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "CAGCAGTGCAGAAGCAACC",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "ATTGCTGCAGCTCCCTTC",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Cathelicidin 2 (CATH-2)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "CCGTGGATTCCTACAACCAG",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "TCCATCATGCTGAAGTTGAGTC",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "\u03b2- actin",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "CCCCACCTGAGCGTAAATACT",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "CCTGCTTGCTGATCCACAT",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "Sec5",
+        "title": "Antimicrobial peptide annotation",
+        "text": "Antimicrobial peptide annotation BLASTx results showed that 578 unigenes were annotated as AMPs in  C. splendens  using antimicrobial peptide databases APD3, CAMP R3 , and LAMP with an e-value: 1e\u22125 and similarity score of \u2265\u200980 (Tables  S2 ,  S3  and  S4 ). In this study, we obtained 63 AMPs belonging to more than 20 diverse families and functional classes. Among them, some of the major families were ubiquitin, histones, defensins, cathelicidins, amyloids, LEAP-2, transferrin, neuropeptides, enhancer of rudimentary homolog, hepcidin, and chemokines (Table  3 ). The workflow for the analysis of transcriptome data and AMP annotation is shown in Fig.\u00a0 3 . Figure 3 Workflow for transcriptome analysis and AMP annotation."
+      },
+      {
+        "id": "Sec10",
+        "title": "Antimicrobial activity",
+        "text": "Antimicrobial activity The MIC of  Corvus  CATH-2 was determined for three strains of bacteria such as  S. aureus ,  E. coli , and  B. cereus . Although the tested organisms were susceptible to  Corvus  CATH-2, MIC values were found to be 18.87\u00a0\u03bcM for  S. aureus , 22.64\u00a0\u03bcM for  E. coli  and 25.16\u00a0\u03bcM for  B. cereus  (Fig.\u00a0 14 ) . Figure 14 Antimicrobial activity of  Corvus  CATH-2 against  B. cereus ,  E. coli  and  S. aureus . Data shown are mean\u2009\u00b1\u2009standard deviation from three independent experiments. Inoculum (respective strains)\u2014positive control."
+      },
+      {
+        "id": "Sec11",
+        "title": "Hemolytic activity",
+        "text": "Hemolytic activity The hemolytic activity of AMPs against human RBC is generally considered as an indication of their toxicity towards mammalian cells 52 , 53 . The synthesized peptide induced 22% hemolysis at a concentration up to 62.89\u00a0\u00b5M (Fig.\u00a0 15 ). Figure 15 Hemolytic activity of  Corvus  CATH-2 against human erythrocytes. Data shown are mean\u2009\u00b1\u2009standard deviation from three independent experiments. 0.1% Triton\u2014positive control, PBS\u2014negative control."
+      },
+      {
+        "id": "Sec25",
+        "title": "Peptide synthesis",
+        "text": "Peptide synthesis The mature peptide was synthesized by Fmoc solid-phase synthesis (SPPS) strategy using specific automated peptide synthesizer Autopep-001A 130 . The peptide was amidated at the C-terminus as previous research has shown that amidation at the C-terminal of the peptide is strongly linked to its stability 66 . To provide a C-terminus free carboxyl group of activated amino acid for strong and detachable covalent bonding, 4-(2\u2032,4\u2032-Dimethoxyphenyl-Fmoc-aminomethyl) phenoxy resin 100\u2013200 mesh was used. Carboxylic group of N-terminal protected amino acid was activated and peptide amide coupling with the growing solid-phase system was initiated. Deprotection was performed using 20% piperidine in dimethylformamide. The final form of resin was washed with MeOH, CHCl3, and hexane, and dried. A combination of TFA (95%): TIS (2.5%): water (2.5%) was used to remove the peptide from polymer resin and side-chain protecting groups. The synthesized peptide was extracted from the solution using excess peroxide-free pure cold diethyl ether, which was subsequently rinsed seven times with diethyl ether prior to centrifugation to remove residual scavengers and protecting groups. The crude peptide was diluted in 5% acetonitrile solution, and the peptide purity was analyzed to be higher than 95% using reverse-phase HPLC on an RPC18 column (M/s Shimadzu Corporation, Japan). The molecular mass of the synthesized peptide was measured using ESI\u2013MS."
+      },
+      {
+        "id": "Sec27",
+        "title": "Antimicrobial assay",
+        "text": "Antimicrobial assay Antimicrobial activity of the peptide against a few clinically important bacterial strains, namely  Escherichia coli  (MTCC 739),  Staphylococcus aureus  (MTCC 737), and  Bacillus cereus  (clinical isolate) was determined by a modified broth dilution assay as described previously 88 . The peptide\u2019s minimum inhibitory concentration (MIC) was measured. The bacterial strains were cultured in fresh Mueller Hinton (MH) broth at 37\u00a0\u00b0C to mid-log phase and then diluted with MH broth to a final concentration of approximately 5\u2009\u00d7\u200910 5 \u00a0CFU/ml. The peptide was subjected to serial dilutions in MH broth. Equal volumes (50\u00a0\u03bcl) of serially diluted concentrations of peptide and bacterial inoculums were poured to each well of a sterile 96-well microtitre plate. The positive and negative controls were broth with and without bacteria control, respectively. After incubation for 18\u00a0h at 37\u00a0\u00b0C, the optical density at 595\u00a0nm was determined using Enspire multimode plate reader from Perkin Elmer Inc. (Waltham, MA, USA). The assays were performed in triplicates with three biological replicates per experiment."
+      },
+      {
+        "id": "Sec28",
+        "title": "Haemolytic assay",
+        "text": "Haemolytic assay The cytotoxicity of the synthesized peptide was measured using human erythrocytes 50 , 134 , 135 . Stored blood from the blood bank was used for the study. Erythrocytes were collected by the centrifugation of whole blood at 1000\u00d7 g  for 5\u00a0min at 4\u00a0\u00b0C. The collected erythrocytes were washed 3 times with PBS, and the precipitates were resuspended to 2% in PBS. Equal volumes (100\u00a0\u03bcl) of both erythrocytes suspension and twofold serial dilution of the synthetic peptide were added to 96 well plate. Positive and negative controls were erythrocytes suspended in Triton X-100 (0.1%) and PBS, respectively. After 1\u00a0h of incubation at 37\u00a0\u00b0C, the plate was centrifuged for 5\u00a0min at 1000\u00d7 g . The supernatant was then transferred to a new plate and the haemoglobin release of was determined by monitoring the absorbance at 414\u00a0nm using Enspire Multimode plate reader from Perkin Elmer Inc. (Waltham, MA, USA). The assays were performed in triplicates with three biological replicates per experiment. The following equation was used to calculate the percentage of hemolysis: % hemolysis = A 414 nm in CATH-2 - A 414 nm in PBS / A 414 nm in 0.1 % Triton X- 100 - A 414 nm in PBS \u00d7 100 %"
+      }
+    ]
+  },
+  {
+    "source_id": "goat_antibacterial2018",
+    "tables": [
+      {
+        "id": "T1",
+        "text": "Table 1 Bacterial strains used in this study. Bacterial strain Characteristics (source, antibiotic resistance) Micrococcus luteus  B-1314 Laboratory strain (VKM collection) Bacillus subtilis  B-886 Laboratory strain (VKM collection) Enterococcus faecalis  ATCC 29212 Laboratory strain (ATCC collection) Staphylococcus aureus  ATCC 29213 Laboratory strain (ATCC collection) Staphylococcus aureus  209P Laboratory strain (ATCC collection) Escherichia coli  DH10B Cloning strain (Invitrogen) Escherichia coli  BL21 (DE3) Expression strain (Novagen) Escherichia coli  BL21 Star (DE3) Expression strain (Novagen) Escherichia coli  ML-35p Laboratory strain (ATCC collection) Escherichia coli  C600 Laboratory strain (ATCC collection) Escherichia coli  (XDR CI 1057) Extensively drug resistant clinical isolate (urine, urinary tract infection; ESBL+) Escherichia coli  (CI 214) Clinical isolate (urine, acute pyelonephritis) Klebsiella pneumoniae  (CI 287) Clinical isolate \u2217 Klebsiella pneumoniae  (XDR CI 1056) Extensively drug resistant clinical isolate (urine, urinary tract infection; ESBL+) Enterobacter cloacae  (XDR CI 4172) Extensively drug resistant clinical isolate \u2217  (MBL+) Acinetobacter baumannii  (XDR CI 2675) Extensively drug resistant clinical isolate \u2217  (MBL+) Pseudomonas aeruginosa  PAO1 Laboratory strain (ATCC collection) Pseudomonas aeruginosa  (XDR CI 1049) Extensively drug resistant clinical isolate (urine, kidney stone disease; MBL+) Proteus mirabilis  (XDR CI 3423) Extensively drug resistant clinical isolate \u2217  (MBL+) CI, clinical isolate;  \u2217 , no data available on strain source; XDR, extensively drug resistant strain; ESBL+, extended spectrum beta-lactamase producing strain; MBL+, metallo-beta-lactamase producing strain .",
+        "rows": [
+          [
+            {
+              "text": "Bacterial strain",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Characteristics (source, antibiotic resistance)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Micrococcus luteus  B-1314",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (VKM collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Bacillus subtilis  B-886",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (VKM collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Enterococcus faecalis  ATCC 29212",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (ATCC collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Staphylococcus aureus  ATCC 29213",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (ATCC collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Staphylococcus aureus  209P",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (ATCC collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  DH10B",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Cloning strain (Invitrogen)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  BL21 (DE3)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Expression strain (Novagen)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  BL21 Star (DE3)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Expression strain (Novagen)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  ML-35p",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (ATCC collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  C600",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (ATCC collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  (XDR CI 1057)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Extensively drug resistant clinical isolate (urine, urinary tract infection; ESBL+)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Escherichia coli  (CI 214)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Clinical isolate (urine, acute pyelonephritis)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Klebsiella pneumoniae  (CI 287)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Clinical isolate \u2217",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Klebsiella pneumoniae  (XDR CI 1056)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Extensively drug resistant clinical isolate (urine, urinary tract infection; ESBL+)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Enterobacter cloacae  (XDR CI 4172)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Extensively drug resistant clinical isolate \u2217  (MBL+)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Acinetobacter baumannii  (XDR CI 2675)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Extensively drug resistant clinical isolate \u2217  (MBL+)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pseudomonas aeruginosa  PAO1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Laboratory strain (ATCC collection)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pseudomonas aeruginosa  (XDR CI 1049)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Extensively drug resistant clinical isolate (urine, kidney stone disease; MBL+)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Proteus mirabilis  (XDR CI 3423)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Extensively drug resistant clinical isolate \u2217  (MBL+)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "T2",
+        "text": "Table 2 Antibacterial activity of goat cathelicidins and melittin. Strain sbmA/yaiW \u2217\u2217 Minimum inhibitory concentration (\u03bcM) \u2217 Melittin ChMAP-28 mini-ChBac7.5N\u03b1 mini-ChBac7.5N\u03b1(1\u201316) Without NaCl 0.9% NaCl Without NaCl 0.9% NaCl Without NaCl 0.9% NaCl Without NaCl 0.9% NaCl M. luteus  B-1314 -/- 0.25 0.5 0.25 0.5 0.125 0.5 1 8 B. subtilis  B-886 -/- 0.5 0.5 0.25 1 0.25 4 1 >32 E. faecalis  ATCC 29212 -/- 1 1 4 >8 >32 >32 >32 >32 S. aureus  ATCC 29213 -/- 1 1 1 2 8 >32 >32 >32 S. aureus  209P -/- 2 16 0.06 0.5 2 16 8 >32 E. coli  C600 +/+ 4 8 0.06 0.125 2 4 2 16 E. coli  ML-35p +/+ 2 8 0.06 0.06 0.5 4 0.5 8 P. aeruginosa  PAO1 -/- 4 8 0.25 1 2 >32 16 >32 A. baumannii  (XDR CI 2675) +/- 2 8 0.03 0.25 2 >32 4 >32 K. pneumoniae  (CI 287) +/+ 4 16 0.125 0.5 4 16 4 >32 E. cloacae  (XDR CI 4172) +/+ 2 8 0.125 0.25 1 4 1 >32 \u2217 Antibacterial testing was performed in the Mueller-Hinton broth at 37\u00b0C. \u2217\u2217 The presence of genes encoding the membrane transporters SbmA and YaiW that affect sensitivity to proline-rich antimicrobial peptides ( Arnold et al., 2014 ).",
+        "rows": [
+          [
+            {
+              "text": "Strain",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "sbmA/yaiW \u2217\u2217",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Minimum inhibitory concentration (\u03bcM) \u2217",
+              "rowspan": "1",
+              "colspan": "8"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Melittin",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "ChMAP-28",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "mini-ChBac7.5N\u03b1",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "mini-ChBac7.5N\u03b1(1\u201316)",
+              "rowspan": "1",
+              "colspan": "2"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "M. luteus  B-1314",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "B. subtilis  B-886",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. faecalis  ATCC 29212",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "S. aureus  ATCC 29213",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "S. aureus  209P",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  C600",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+/+",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  ML-35p",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+/+",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "P. aeruginosa  PAO1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "A. baumannii  (XDR CI 2675)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+/-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.03",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "K. pneumoniae  (CI 287)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+/+",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. cloacae  (XDR CI 4172)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+/+",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "T3",
+        "text": "Table 3 Synergy between goat cathelicidins ChMAP-28 and mini-ChBac7.5N\u03b1. Strain ChMAP-28 mini-ChBac7.5N\u03b1 FICI \u2217 Synergy MIC A [A] FIC A MIC B [B] FIC B E. coli  BL21 (DE3) 0.06 0.015 0.25 8 1 0.125 0.375 Yes E. coli  ML-35p 0.06 0.008 0.125 4 1 0.25 0.375 Yes E. coli  C600 0.125 0.015-0.03 0.125-0.25 4 1 0.25 0.375-0.5 Yes E. coli  (XDR CI 1057) 0.125 0.008 0.063 8 2 0.25 0.313 Yes E. coli  (CI 214) 0.06 0.015 0.25 >64 4 0.031 0.281 Yes E. cloacae  (XDR CI 4172) 0.25 0.03 0.125 4 0.5 0.125 0.25 Yes K. pneumoniae  (CI 287) 0.5 0.06 0.125 16 2 0.125 0.25 Yes A. baumannii  (XDR CI 2675) 0.25 0.03 0.125 >32 0.5 0.008 0.133 Yes P. aeruginosa  PAO1 0.125 0.06 0.5 >32 8 0.125 0.625 No S. aureus  209P 0.5 0.03 0.063 16 2 0.125 0.188 Yes \u2217 The estimation of synergistic effects between cathelicidins was performed by calculating the fractional inhibitory concentration index (FICI) according to the equation: FICI = FIC A  + FIC B  = [\u00c0]/MIC \u00c0  + [B]/MIC B , where MIC \u00c0  and MIC B  are the MICs of individual peptides, while [A] and [B] are the MICs of A and B when used together. A synergistic effect was defined at a FICI \u2264 0.5 .",
+        "rows": [
+          [
+            {
+              "text": "Strain",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "ChMAP-28",
+              "rowspan": "1",
+              "colspan": "3"
+            },
+            {
+              "text": "mini-ChBac7.5N\u03b1",
+              "rowspan": "1",
+              "colspan": "3"
+            },
+            {
+              "text": "FICI \u2217",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Synergy",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC A",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "[A]",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FIC A",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC B",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "[B]",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FIC B",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  BL21 (DE3)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.015",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.375",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  ML-35p",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.008",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.375",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  C600",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.015-0.03",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125-0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.375-0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  (XDR CI 1057)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.008",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.063",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.313",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  (CI 214)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.015",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">64",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.031",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.281",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. cloacae  (XDR CI 4172)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.03",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "K. pneumoniae  (CI 287)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "A. baumannii  (XDR CI 2675)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.03",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.008",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.133",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "P. aeruginosa  PAO1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.625",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "No",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "S. aureus  209P",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.03",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.063",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.188",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Yes",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "T4",
+        "text": "Table 4 Antibacterial activity of goat cathelicidins and polymyxin B against  E. coli  strains obtained after selection experiment. Strain Minimum inhibitory concentration (\u03bcM) Polymyxin B ChMAP-28 mini-ChBac7.5N\u03b1 E. coli  XDR CI 1057 (0 days) 0.125 0.125 8 E. coli  XDR CI 1057 (26 days without antimicrobial agent) 0.125 0.125 8 E. coli  XDR CI 1057 (26 days with polymyxin B) >128 0.25 64 E. coli  XDR CI 1057 (26 days with mini-ChBac7.5N\u03b1) 0.125 0.125 >128 E. coli  XDR CI 1057 (26 days with synergy combination) 0.06 0.125 8",
+        "rows": [
+          [
+            {
+              "text": "Strain",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Minimum inhibitory concentration (\u03bcM)",
+              "rowspan": "1",
+              "colspan": "3"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Polymyxin B",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "ChMAP-28",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "mini-ChBac7.5N\u03b1",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (0 days)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (26 days without antimicrobial agent)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (26 days with polymyxin B)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">128",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "64",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (26 days with mini-ChBac7.5N\u03b1)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">128",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (26 days with synergy combination)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.06",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "T5",
+        "text": "Table 5 Effect of salt on activity of goat cathelicidins against  E. coli  strain obtained after 26 days selection in the presence of mini-ChBac7.5N\u03b1. Strain Minimum inhibitory concentration (\u03bcM) ChMAP-28 mini-ChBac7.5N\u03b1 mini-ChBac7.5N\u03b1(1-16) Without salt With 0.9% NaCl Without salt With 0.9% NaCl Without salt With 0.9% NaCl E. coli  XDR CI 1057 (26 days without antimicrobial agent) 0.125 0.125 1 8 2 16 E. coli  XDR CI 1057 (26 days with mini-ChBac7.5N\u03b1) 0.125 0.125 1 >256 16 >256",
+        "rows": [
+          [
+            {
+              "text": "Strain",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Minimum inhibitory concentration (\u03bcM)",
+              "rowspan": "1",
+              "colspan": "6"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "ChMAP-28",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "mini-ChBac7.5N\u03b1",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "mini-ChBac7.5N\u03b1(1-16)",
+              "rowspan": "1",
+              "colspan": "2"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without salt",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "With 0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without salt",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "With 0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Without salt",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "With 0.9% NaCl",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (26 days without antimicrobial agent)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "E. coli  XDR CI 1057 (26 days with mini-ChBac7.5N\u03b1)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.125",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">256",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "16",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">256",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": null,
+        "title": "Expression and Purification of the Antimicrobial Peptides",
+        "text": "Expression and Purification of the Antimicrobial Peptides The recombinant plasmids for expression of the goat cathelicidins were constructed with the use of pET-based vector as described previously ( Panteleev and Ovchinnikova, 2017 ). The target peptides were expressed in  E. coli  BL21 (DE3) as chimeric proteins that included 8 \u00d7 His tag, the  E. coli  thioredoxin A with the M37L substitution (TrxL), methionine residue, and a mature cathelicidin. The ChMAP-28 amino acid sequence was translated from mRNA for the corresponding precursor protein (GenBank:  AJ243126.1 ) as a 27-residue peptide without the C-terminal glycine, a common amidation signal in cathelicidins. The transformed  E. coli  BL21 (DE3) cells were grown up to OD 600  1.0 at 37\u00b0C in lysogeny broth (LB) containing 20 mM glucose, 1 mM MgSO 4 , and 0.1 mM CaCl 2 , 100 \u03bcg/ml of ampicillin and then were induced with isopropyl \u03b2- D -1-thiogalactopyranoside (IPTG) at a final concentration of 0.3 mM. The cells were cultivated for 5 h at 30\u00b0C with intense agitation. Then the cells were pelleted by centrifugation and sonicated in immobilized metal affinity chromatography (IMAC) loading buffer containing 6 M guanidine hydrochloride. The clarified lysate was applied on a column packed with Ni Sepharose (GE Healthcare). The recombinant protein was eluted with the buffer containing 0.5 M imidazole. Then the eluate containing the fusion protein was acidified (up to pH 1.0) and cleaved by 100-fold molar excess of cyanogen bromide over methionine for 20 h at 25\u00b0C in the dark. The reaction products were lyophilized, dissolved in water, titrated to pH 5.0, and loaded on a semi-preparative Reprosil-pur C18-AQ column (10 mm \u00d7 250 mm, 5-\u03bcm particle size, Dr. Maisch GmbH). Reversed-phase high-performance liquid chromatography (RP-HPLC) was performed with a linear gradient of acetonitrile in water containing 0.1% trifluoroacetic acid. The peaks were monitored at 214 and 280 nm. The collected fractions were analyzed by MALDI-TOF mass-spectrometry using Reflex III instrument (Bruker Daltonics). The fractions containing the target peptides were lyophilized and dissolved in water. The synthetic melittin (>98% pure) was kindly provided by Dr. Sergey V. Sychev (M.M. Shemyakin and Yu. A. Ovchinnikov Institute of Bioorganic Chemistry of the Russian Academy of Sciences, Moscow, Russia). The recombinant tachyplesin-1 was obtained as described previously ( Panteleev and Ovchinnikova, 2017 ). The peptides concentrations were estimated using UV absorbance."
+      },
+      {
+        "id": null,
+        "title": "Hemolysis and Cytotoxicity Assay",
+        "text": "Hemolysis and Cytotoxicity Assay Hemolytic activity of the peptides was tested against the fresh suspension of human red blood cells (hRBC) using the hemoglobin release assay as described previously ( Panteleev et al., 2016 ). Three experiments were performed with the hRBC from blood samples obtained from independent donors. The obtained data were represented as average means with standard deviations. The cytotoxicity of the peptides against HEK293T (transformed human embryonic kidney cells) and HEF (human embryonic fibroblasts) cell lines was studied using the colorimetric 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide (MTT) dye reduction assay according to ( Panteleev and Ovchinnikova, 2017 ). Three independent experiments were performed for each peptide. Half maximal inhibitory concentration (IC 50 ) values were estimated as described previously ( Kuzmin et al., 2018 )."
+      },
+      {
+        "id": null,
+        "title": "Antimicrobial Assay",
+        "text": "Antimicrobial Assay Antimicrobial assay was performed as described previously ( Panteleev et al., 2017b ). Briefly, mid-log phase bacterial test cultures were diluted with the 2\u00d7 Mueller-Hinton broth (MH, Sigma) supplemented with 1.8% NaCl or without it so that to reach a final cell concentration of 10 6  CFU/ml. 50 \u03bcl aliquots of the obtained bacterial suspension were added to 50 \u03bcl of the peptide solutions serially diluted with 0.1% water solution of bovine serum albumin (BSA) in 96-well flat-bottom polystyrene microplates (Eppendorf #0030730011). After incubation at 37\u00b0C and 900 rpm for 24 h the minimum inhibitory concentrations (MIC) were determined as the lowest peptide concentrations that prevented growth of a test microorganism observed as visible turbidity. The results were expressed as the median values determined on the basis of at least three independent experiments performed in triplicate."
+      },
+      {
+        "id": null,
+        "title": "Bacterial Membranes Permeability Assay",
+        "text": "Bacterial Membranes Permeability Assay To examine an ability of the peptides to affect the barrier function of outer and inner membranes of Gram-negative bacteria, we slightly modified the previously described procedure ( Shamova et al., 2016 ) with the use of the  E. coli  ML-35p strain constitutively expressing cytoplasmic \u03b2-galactosidase and lacking lactose permease, and also containing \u03b2-lactamase in the periplasmic space. The state of the  E. coli  ML-35p outer and cytoplasmic membranes was assessed based on their permeability to chromogenic markers nitrocefin (Calbiochem-Novabiochem) and  o -nitrophenyl-\u03b2- D -galactopyranoside (ONPG, AppliChem) which are the \u03b2-lactamase and \u03b2-galactosidase substrates, respectively. The cells were incubated in the TSB medium at 37\u00b0C for 16 h, washed three times with 10 mM sodium phosphate buffer (pH 7.4) to remove residual growth media, diluted to the concentration of 2.5 \u00d7 10 8  CFU/ml. The experiments were performed in 10 mM sodium phosphate buffer with or without 0.9% NaCl. The final concentration of  E. coli  ML-35p cells was of 2.5 \u00d7 10 7  CFU/ml. The concentrations of ONPG and nitrocefin were of 2.5 mM and 20 \u03bcM, respectively. Peptide samples were placed in the wells of a 96-well plate with non-binding surface (NBS, Corning #3641), and the optical density (OD) of the solution rising due to the appearance of the hydrolyzed nitrocefin or ONPG was measured at 540 and 405 nm, respectively, using the Multiskan EX microplate reader (Thermo Fisher Scientific). The final volume in each well was 200 \u03bcl. The experiments were performed at 37\u00b0C under stirring at 300 rpm. Control experiments were performed under the same conditions without addition of a peptide. Three independent experiments were performed, and the curve pattern was similar for all three series."
+      },
+      {
+        "id": null,
+        "title": "Genetic Analysis of Bacterial Strains",
+        "text": "Genetic Analysis of Bacterial Strains The  sbmA  and  yaiW  genes encoding the  E. coli  inner or outer membrane proteins, respectively, as well as a regulatory part of their common operon were amplified by polymerase chain reaction (PCR) using gene-specific primers (Supplementary Figure  S3 ). Individual bacterial colonies of the tested strain were picked up from Petri dish and used as a template for PCR. The following components were mixed for the PCR: 2 \u03bcl of 10\u00d7 Encyclo buffer (Evrogen), 0.4 \u03bcl of 50\u00d7 Encyclo DNA polymerase (Evrogen), 10 \u03bcM forward primer, 10 \u03bcM reverse primer, 0.2 mM dNTPs, bacterial cells on inoculation loop, and water diluting to the total volume of 20 \u03bcl. Amplification was carried out on a thermocycler using: initial denaturation (95\u00b0C, 10 min), 25 amplification cycles (94\u00b0C, 30 s; 55\u00b0C, 40 s; 72\u00b0C, 90 s), and final elongation (72\u00b0C, 10 min). The products were separated by electrophoresis on 1.5% agarose gel (4 V/cm) and visualized on a UV trans-illuminator. The PCR products were purified from agarose gel and inserted into pGEM-T vector (Promega). The ligation products were transformed into the chemically competent  E. coli  DH10B cells. Plasmid DNA was isolated from overnight cultures of single white colonies on LB agar plates supplemented with ampicillin (100 \u03bcg/ml), using Plasmid Miniprep kit (Evrogen). The plasmids were sequenced on both strands using the ABI PRISM 3100-Avant automatic sequencer (Applied Biosystems). At least two independent experiments were performed with each strain to prove the obtained results."
+      },
+      {
+        "id": null,
+        "title": "Expression and Purification of the Recombinant Peptides",
+        "text": "Expression and Purification of the Recombinant Peptides Natural goat cathelicidins do not undergo significant post-translational modifications, therefore heterologous expression in  E. coli  of the peptides fused with a carrier protein seems to be a reasonable approach for their production. The goat cathelicidins were produced using the same protocol. To facilitate the purification process and improve final yield, the recombinant peptides were obtained as fusion proteins with the N-terminal 8\u00d7His tag and thioredoxin A which was approved to be an effective carrier protein for different peptide scaffolds having antibacterial activity ( Li, 2011 ). The peptides were purified by a downstream process including IMAC of the clarified total cell lysate, cleavage of the fusion protein with cyanogen bromide, and fine purification by RP-HPLC (Supplementary Figure  S1 ). Final yields of ChMAP-28, mini-ChBac7.5N\u03b1, and mini-ChBac7.5N\u03b1(1\u201316) were 3.4, 9.2, and 7.5 mg per 1 l of the culture medium, respectively. The obtained recombinant cathelicidins were analyzed by MALDI-TOF mass-spectrometry. The measured m/z values of the cathelicidins matched the corresponding calculated molecular masses (Supplementary Table  S1 )."
+      },
+      {
+        "id": null,
+        "title": "Antimicrobial Activity of Goat Cathelicidins",
+        "text": "Antimicrobial Activity of Goat Cathelicidins Amphiphilic AMPs are known to be adsorbed on plastic surfaces ( Wiegand et al., 2008 ). For these reason, serial dilutions of the peptides were performed in the presence of BSA in the growth medium in order to minimize this effect. MICs of goat cathelicidins and melittin against Gram-positive and Gram-negative bacteria are presented in Table  2 . It was reported that Pro-rich AMPs have high antimicrobial activity against Gram-negative bacteria and are less active or inactive against most Gram-positive bacteria. In whole, our results confirmed this. It is noteworthy that the medium formulation as well markedly affects the activity values of Pro-rich AMPs. Antibacterial activities of some insect Pro-rich AMPs was low when tested in the presence of a salt, which might inhibit absorption of the peptides to the bacterial surface ( Gennaro et al., 2002 ). Therefore, the salt influence on the antibacterial activity was investigated in this study. Indeed, the presence of 0.9% NaCl resulted in several-fold decrease in the activity of mini-bactenecins against all the strains tested. The shortened analog mini-ChBac7.5N\u03b1(1\u201316) was shown to be less active and more salt-sensitive as compared with the wild-type mini-ChBac7.5N\u03b1. Interestingly, antibacterial activities of the peptides were similar when tested in a salt-free medium against Gram-negative bacteria  E. coli, Acinetobacter baumannii, Klebsiella pneumoniae , and  Enterobacter cloacae . In contrast to the other tested strains, these bacteria have the ABC transport system based on the homodimeric cytoplasmic membrane protein SbmA. In  E. coli  the cytoplasmic membrane protein SbmA and outer membrane lipoprotein YaiW participate in transport of some Pro-rich AMPs and bacteriocins ( Arnold et al., 2014 ). Mutation or deletion of either SbmA or YaiW significantly decreased the ability of the Bac7 to internalize, and significantly reduced susceptibility to the peptide ( Arnold et al., 2014 ). Our results indicated that the presence of the C-terminal fragment PRPRPR did not influence the efficiency of the peptide translocation via SbmA transporter in a salt-free medium, but could play a key role when acting against SbmA-deficient bacteria (e.g., Gram-positive bacteria) or applying in the presence of a salt. Previous study of the Pro-rich pig cathelicidin PR-39 revealed that an activity of the full length peptide was hardly affected by 100 mM NaCl while the shortened peptide derivatives lacked most of their antimicrobial properties under the same conditions ( Veldhuizen et al., 2014 ). It is likely that the observed effect occurs due to electrostatic interactions between positively charged peptides and negatively charged bacterial membranes. Antimicrobial activity of mini-bactenecins seems to be a function of a total charge of the peptide rather than of a charge density and overall hydrophobicity, since mini-ChBac7.5N\u03b1(1\u201316) has both higher charge-to-length ratio and longer retention time in reversed-phase HPLC (Supplementary Figure  S1 ) than the wild-type mini-ChBac7.5N\u03b1. A total charge could be important at initial stages of Pro-rich AMPs interaction with bacteria, i.e., during the primary electrostatic attraction followed by displacement of divalent cations cross-bridging LPS on the cell surface, that destabilized the membrane and led to the peptide self-promoted uptake. Table 2 Antibacterial activity of goat cathelicidins and melittin. Strain sbmA/yaiW \u2217\u2217 Minimum inhibitory concentration (\u03bcM) \u2217 Melittin ChMAP-28 mini-ChBac7.5N\u03b1 mini-ChBac7.5N\u03b1(1\u201316) Without NaCl 0.9% NaCl Without NaCl 0.9% NaCl Without NaCl 0.9% NaCl Without NaCl 0.9% NaCl M. luteus  B-1314 -/- 0.25 0.5 0.25 0.5 0.125 0.5 1 8 B. subtilis  B-886 -/- 0.5 0.5 0.25 1 0.25 4 1 >32 E. faecalis  ATCC 29212 -/- 1 1 4 >8 >32 >32 >32 >32 S. aureus  ATCC 29213 -/- 1 1 1 2 8 >32 >32 >32 S. aureus  209P -/- 2 16 0.06 0.5 2 16 8 >32 E. coli  C600 +/+ 4 8 0.06 0.125 2 4 2 16 E. coli  ML-35p +/+ 2 8 0.06 0.06 0.5 4 0.5 8 P. aeruginosa  PAO1 -/- 4 8 0.25 1 2 >32 16 >32 A. baumannii  (XDR CI 2675) +/- 2 8 0.03 0.25 2 >32 4 >32 K. pneumoniae  (CI 287) +/+ 4 16 0.125 0.5 4 16 4 >32 E. cloacae  (XDR CI 4172) +/+ 2 8 0.125 0.25 1 4 1 >32 \u2217 Antibacterial testing was performed in the Mueller-Hinton broth at 37\u00b0C. \u2217\u2217 The presence of genes encoding the membrane transporters SbmA and YaiW that affect sensitivity to proline-rich antimicrobial peptides ( Arnold et al., 2014 ). Cathelicidin ChMAP-28 exhibited significantly more potent antibacterial activity (\u226516-fold higher) than melittin against most strains tested. ChMAP-28 was shown to be less sensitive to high ionic strength as compared with mini-bactenecins. ChMAP-28 and last line antibiotics polymyxin B and meropenem were tested against extensively drug resistant clinical isolates of Gram-negative bacteria which belong to \u201cESKAPE\u201d pathogens:  E. coli, K. pneumoniae, A. baumannii, P. aeruginosa, E. cloacae, P. mirabilis  (Supplementary Table  S2 ). Generally, ChMAP-28 exhibited a potent antimicrobial activity comparable with that or even higher than that of the above mentioned control antibiotics. The peptide was shown to effectively kill all the bacteria including polymyxin- and meropenem-resistant strains, thus arguing against cross-resistance to the peptide."
+      },
+      {
+        "id": null,
+        "title": "Inhibition of  in vitro  Protein Synthesis in  E. coli",
+        "text": "Inhibition of  in vitro  Protein Synthesis in  E. coli Taking into account the reported data on the mechanism of action of proline-rich AMPs and the inability of mini-ChBac7.5N\u03b1 to disrupt cytoplasmic membrane integrity, we tested an ability of this peptide and other antimicrobial compounds to inhibit protein biosynthesis  in vitro . The experiment was carried out using the bacterial cell-free protein synthesis system expressing the green fluorescent protein (GFP). The results obtained for streptomycin with IC 50  value of 0.2 \u03bcM and a full inhibition of >1 \u03bcM correspond with the published data ( Krizsan et al., 2014 ) (Figure  5A ). IC 50  for mini-ChBac7.5N\u03b1 was of \u223c1 \u03bcM which is comparable to that of conventional inhibitors of bacterial translation \u2013 streptomycin and erythromycin. Apart from that, the values of IC 50  for mini-ChBac7.5N\u03b1 were similar to those of its homologs \u2013 the Bac7 fragments ( Seefeldt et al., 2016 ), and also to the previously determined MICs against  E. coli  (see Table  2 ). It should be noted that the mini-ChBac7.5N\u03b1(1\u201316) fragment inhibits biosynthesis twice less effectively than the wild-type mini-ChBac7.5N\u03b1 that might account for the reduction of antibacterial activity. Interestingly, the cathelicidin ChMAP-28 also affects protein biosynthesis, but at much higher concentrations than its MIC. It seems that ChMAP-28 ability to inhibit translation is due to a non-specific interaction with nucleic acids. This assumption is supported by the fact that tachyplesin-1, which is known to bind DNA ( Yonezawa et al., 1992 ), demonstrates a comparable level of inhibition. For several cationic AMPs, e.g., for indolicidin (bovine tryptophan-rich cathelicidin), binding to DNA is considered to be one of the mechanisms of their antimicrobial action. AMP-DNA binding induces aggregation and interferes with the process of replication ( Hsu et al., 2005 ). It was shown that both goat cathelicidins bound plasmid DNA at a mass ratio of 1:1 (Figures  5B,C ). In addition, ribosome-binding is supposed to be the main factor responsible for bacterial growth inhibition by the  Bos taurus  cathelicidin Bac7. Comparing our results with known data on Bac7 and bearing in mind a high homology degree between mini-ChBac7.5N\u03b1 and the N-terminal fragment of Bac7, we assume that the main target for mini-ChBac7.5N\u03b1 is also the 70S ribosome. Data obtained allow us to conclude that two goat cathelicidins \u2013 ChMAP-28 and mini-ChBac7.5N\u03b1 possess essentially different mechanisms of antimicrobial action: ChMAP-28 preferentially acts by increasing cytoplasmic membrane permeability, while mini-ChBac7.5N\u03b1 specifically inhibits bacterial translation. FIGURE 5 Effects of goat cathelicidins, tachyplesin-1, and conventional antibiotics at different concentrations on the fluorescence resulting from the  in vitro  translation of EGFP with the use of  E. coli  BL21 (DE3) Star cell extract  (A) . Data are the mean \u00b1 SD of at least three independent experiments performed in triplicate. ChMAP-28  (B)  and mini-ChBac7.5N\u03b1  (C)  binding to DNA was examined by electrophoretic mobility shift assay (EMSA). Various amounts of the peptides were incubated with 100 ng of the pUC19 plasmid DNA, and DNA binding was assessed by the peptide influence on the electrophoretic mobility of DNA. DNA-to-peptide weight ratios are indicated on the horizontal axis. Lane M shows the DNA molecular size marker (500\u201310,000 bp)."
+      }
+    ]
+  },
+  {
+    "source_id": "pandinin2014",
+    "tables": [
+      {
+        "id": "pone-0101742-t001",
+        "text": "Table 1 Physicochemical properties of Pin2 and Pin2 variants. Molecular Weight (Da) Peptide Sequence GRAVY AMF \u03bcHrel Q RT (min) Theoretical Experimental \u00a7 \n \n Pin2 \n FWGALAKGALKLIPSLFSSFSKKD 0.329 0.4283 0.48 +3 30.6 2612.1 2612.0 \n Pin2 [G] \n FWGALAKGALKLIGSLFSSFSKKD 0.379 0.4296 0.49 +3 40.1 2572.0 2572.0 \n Pin2 [GPG] \n FWGALAKGALKLIGPGSLFSSFSKKD 0.273 0.4369 0.28 +3 27.6 2726.2 2727.0 \n Pin2  \n [14] \n FWGLKGLKKFSKKL \u22120.357 0.4271 0.51 +5 18.5 1680.1 1680.0 \n Pin2  \n [17] \n FWGLKGLKGPGKFSKKL \u22120.435 0.4453 0.35 +5 17.2 1891.3 1891.3 \n GRAVY, Sequence Grand average of hydropathicity, calculated using the Expasy ProtParam tool ( \n http://web.expasy.org/protparam/ \n ), according to Kyte and Doolittle, 1982  \n [44] \n . \n \n AMF, Average Molecular Flexibility values were calculated according to Liu  \n et al \n ., 2008  \n [45] \n . \n \n \u03bcHrel, Relative Hydrophobic Moment, a value of 0.5 thus indicates that the peptide has about 50% of the maximum possible amphipathicity. Calculated using HydroCalc ( \n http://www.bbcm.univ.trieste.it/~tossi/HydroCalc/HydroMCalc.html \n ). \n \n Q, Net charge. \n \n RT, Retention Time in minutes. \n \n (\u00a7)Mass Spectrometry, ESI-MS (Finnigan LCQ DUO  ion trap mass spectrometer, San Jos\u00e9, CA, USA). \n",
+        "rows": [
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Molecular Weight (Da)",
+              "rowspan": "1",
+              "colspan": "2"
+            }
+          ],
+          [
+            {
+              "text": "Peptide",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Sequence",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "GRAVY",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "AMF",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\u03bcHrel",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Q",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "RT (min)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Theoretical",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Experimental \u00a7 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "\n Pin2 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FWGALAKGALKLIPSLFSSFSKKD",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.329",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.4283",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.48",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "30.6",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2612.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2612.0",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "\n Pin2 [G] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FWGALAKGALKLIGSLFSSFSKKD",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.379",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.4296",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.49",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "40.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2572.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2572.0",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "\n Pin2 [GPG] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FWGALAKGALKLIGPGSLFSSFSKKD",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.273",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.4369",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.28",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "27.6",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2726.2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2727.0",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "\n Pin2  \n [14] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FWGLKGLKKFSKKL",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\u22120.357",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.4271",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.51",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "18.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1680.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1680.0",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "\n Pin2  \n [17] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "FWGLKGLKGPGKFSKKL",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\u22120.435",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.4453",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.35",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "17.2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1891.3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1891.3",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "pone-0101742-t002",
+        "text": "Table 2 Alignment of the sequences of Pin2  [14]  and Pin2  [17]  with the sequence of other antimicrobial peptides. Peptide UniProtKB ID Origin Sequence \u2021 \n AA Identity (%) Q Reference Pin2  [14] \n - Synthetic \n -FWG\u2014LKGLKKFS---KKL-------- \n 14 - +5 This work Pin2 P83240 \n Pandinus imperator \n \n -FWGALAKGALKLI---PSLFSSFSKKD \n 24 50.0 +3 \n [15] \n CPF-SE3 P84386 \n Silurana epitropicalis \n \n GFLGSLLKTGLKVG---SNLL------- \n 18 50.0 +3 \n [46] \n CE-MA \u00a7 \n - Synthetic \n -KWK\u2014LFKKIKFLHSAKKF-------- \n 17 47.4 +7 \n [47] \n Macropin 1 \n Macropis fulvipes \n \n ---G\u2014-FGMALKLL---KKVL------- \n 13 47.1 +3 \n [48] \n Mastoparam P69034 \n Mischocyttarus phthisicus \n \n INW---LKLGKKMM---SAL-------- \n 14 47.1 +3 \n [49] \n Japonicin 1 B3VZU2 \n Rana chensinensis \n \n -FFP\u2014LALLCKVF---KKC-------- \n 14 46.7 +3 \n [50] \n Pin2  [17] \n Synthetic \n -FWG-LKGLKGP------GKFSKKL \n 17 - +5 This work Pin2 P83240 \n Pandinus imperator \n \n -FWGALAKGALKLIPSLFSSFSKKD \n 24 54.2 +3 \n [15] \n Ponericin W5 P82427 \n Pachycondyla goeldii \n \n -FWGALIKGAAKLIPSVVGLFKKKQ \n 24 50.0 +5 \n [23] \n CPF-SE3 P84386 \n Silurana epitropicalis \n \n GFLGSLLKTGLK-----VGSNLL\u2014 \n 18 47.6 +3 \n [46] \n NRC-15 - \n Glyptocephalus cynoglossus L \n \n GFWGKLFKLGLHG----IGLLHLHL \n 21 47.6 +2 \n [51] \n Brevinin 1RTb D1MIZ6 \n Amolops ricketti \n \n -FLGSLLGLVGKVVPTLFCKISKKC \n 24 45.8 +4 \n [52] \n Brevinin 1AUa - \n Rana aurora aurora \n \n -FLPILAGLAAKLVPKVFCSITKKC \n 24 44.0 +4 \n [53] \n Maxinin H39 Q58T55 \n Bombina maxima \n \n -ILGPVLGLVGNAL----GGLIKKL \n 20 42.9 +2 \n [54] \n \u2021 \n , The sequence alignment was obtained using the on line program ClustawlW2 ( \n http://www.ebi.ac.uk/Tools/msa/clustalw2/ \n ). \n \n AA, Number of amino acids. \n \n Identity (%), sequence identity in percentage. \n \n Q, Net Charge. \n \n \u00a7, Cecropin A (residues 1\u20138)/Magainin 2b (residues 4\u201312) hybrid. \n",
+        "rows": [
+          [
+            {
+              "text": "Peptide",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "UniProtKB ID",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Origin",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Sequence \u2021 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "AA",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Identity (%)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Q",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Reference",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2  [14] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Synthetic",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FWG\u2014LKGLKKFS---KKL-------- \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "14",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "This work",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "P83240",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Pandinus imperator \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FWGALAKGALKLI---PSLFSSFSKKD \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "24",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "50.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [15] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CPF-SE3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "P84386",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Silurana epitropicalis \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n GFLGSLLKTGLKVG---SNLL------- \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "18",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "50.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [46] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CE-MA \u00a7 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Synthetic",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -KWK\u2014LFKKIKFLHSAKKF-------- \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "17",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47.4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+7",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [47] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Macropin 1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Macropis fulvipes \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n ---G\u2014-FGMALKLL---KKVL------- \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "13",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [48] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Mastoparam",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "P69034",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Mischocyttarus phthisicus \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n INW---LKLGKKMM---SAL-------- \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "14",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [49] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Japonicin 1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "B3VZU2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Rana chensinensis \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FFP\u2014LALLCKVF---KKC-------- \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "14",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "46.7",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [50] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2  [17] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Synthetic",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FWG-LKGLKGP------GKFSKKL \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "17",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "This work",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "P83240",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Pandinus imperator \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FWGALAKGALKLIPSLFSSFSKKD \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "24",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "54.2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [15] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Ponericin W5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "P82427",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Pachycondyla goeldii \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FWGALIKGAAKLIPSVVGLFKKKQ \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "24",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "50.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [23] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "CPF-SE3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "P84386",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Silurana epitropicalis \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n GFLGSLLKTGLK-----VGSNLL\u2014 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "18",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47.6",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [46] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "NRC-15",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Glyptocephalus cynoglossus L \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n GFWGKLFKLGLHG----IGLLHLHL \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "21",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "47.6",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [51] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Brevinin 1RTb",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "D1MIZ6",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Amolops ricketti \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FLGSLLGLVGKVVPTLFCKISKKC \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "24",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "45.8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [52] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Brevinin 1AUa",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "-",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Rana aurora aurora \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -FLPILAGLAAKLVPKVFCSITKKC \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "24",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "44.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [53] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Maxinin H39",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Q58T55",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Bombina maxima \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n -ILGPVLGLVGNAL----GGLIKKL \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "20",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "42.9",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "+2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n [54] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "pone-0101742-t003",
+        "text": "Table 3 Antimicrobial and hemolytic activities of Pin2 and the Pin2 variants. MIC (\u00b5M) Peptide Assay \n E. coli \n \n S. aureus \n Hemolysis (IC 50 ) \u2021 \n Pin2 MHA 18.8 37.5 3.3 [1.9\u20135.7] MHB 12.5 12.5 Pin2 [G] MHA 12.5 12.5 1.4 [0.4\u20134.3] MHB 12.5 12.5 Pin2 [GPG] MHA 25 25 46.6 [34\u201364] * \n MHB 12.5 12.5 Pin2  [14] \n MHA 25 >300 418.4 [291\u2013602] * \n MHB 25 >25 \u2020 \n Pin2  [17] \n MHA 25 80 NO MHB >25 \u2020 \n >25 MHA, Mueller-Hinton Agar. MHB: Mueller Hinton Broth. \u2021 Mean and 95% confidence intervals, values expressed in \u00b5M. *The numeric IC 50  value was obtained from the Boltzmann sigmoid equation fit. \u2020 Bacteriostatic effect. NO means no observed hemolytic activity at 100 \u00b5M.",
+        "rows": [
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC (\u00b5M)",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Peptide",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Assay",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n E. coli \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n S. aureus \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "Hemolysis (IC 50 ) \u2021 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHA",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "18.8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "37.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "3.3 [1.9\u20135.7]",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHB",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2 [G]",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHA",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1.4 [0.4\u20134.3]",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHB",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2 [GPG]",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHA",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "46.6 [34\u201364] * \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHB",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "12.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2  [14] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHA",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">300",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "418.4 [291\u2013602] * \n",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHB",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">25 \u2020 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2  [17] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHA",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "80",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "NO",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MHB",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">25 \u2020 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": ">25",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      },
+      {
+        "id": "pone-0101742-t004",
+        "text": "Table 4 Antimicrobial activity of Pin2 and the Pin2 variants on two strains of  M. tuberculosis . \n Mycobacterium tuberculosis  H37Rv \n Mycobacterium tuberculosis  MDR * \n Peptide MW (Da) MIC (\u00b5g/mL) MIC (\u00b5M) MIC (\u00b5g/mL) MIC (\u00b5M) Pin2 2,612.1 57.7\u00b122.3 22.1\u00b18.6 86.5 33.1 Pin2 [G] 2,572.0 48.1 18.7 48.1 18.7 Pin2 [GPG] 2,762.2 80.1\u00b124.8 29\u00b19 48.1 17.4 Pin2  [14] \n 1,680.1 20\u00b16.2 11.92\u00b13.7 10\u00b13.1 6\u00b11.8 Pin2  [17] \n 1,891.3 22\u00b14.9 11.65\u00b12.59 28.0\u00b19.8 14.8\u00b15.2 Ethambutol \u00a7 \n 204.3 0.5 2.5 20 97 Isoniazid 137.1 24\u00b18.8 175.1\u00b163.9 6\u00b12.2 43.8\u00b116 Rifampicin \u00a7 \n 823.0 0.4 0.5 32 38.9 \n The MIC values were calculated using the Resazurin dye reduction method, 500,000 bacteria per well were evaluated. \n \n \u00a7, MIC values reported by Rastogi, et al., 1996  \n [55] \n . \n \n *, Clinically isolated strain characterized with resistance to rifampicin and isoniazid in UIMZ-IMSS, Zacatecas, Mexico. \n",
+        "rows": [
+          [
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "\n Mycobacterium tuberculosis  H37Rv",
+              "rowspan": "1",
+              "colspan": "2"
+            },
+            {
+              "text": "\n Mycobacterium tuberculosis  MDR * \n",
+              "rowspan": "1",
+              "colspan": "2"
+            }
+          ],
+          [
+            {
+              "text": "Peptide",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MW (Da)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC (\u00b5g/mL)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC (\u00b5M)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC (\u00b5g/mL)",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "MIC (\u00b5M)",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2,612.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "57.7\u00b122.3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "22.1\u00b18.6",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "86.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "33.1",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2 [G]",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2,572.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "48.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "18.7",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "48.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "18.7",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2 [GPG]",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2,762.2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "80.1\u00b124.8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "29\u00b19",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "48.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "17.4",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2  [14] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1,680.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "20\u00b16.2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "11.92\u00b13.7",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "10\u00b13.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "6\u00b11.8",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Pin2  [17] \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "1,891.3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "22\u00b14.9",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "11.65\u00b12.59",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "28.0\u00b19.8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "14.8\u00b15.2",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Ethambutol \u00a7 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "204.3",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "2.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "20",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "97",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Isoniazid",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "137.1",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "24\u00b18.8",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "175.1\u00b163.9",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "6\u00b12.2",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "43.8\u00b116",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ],
+          [
+            {
+              "text": "Rifampicin \u00a7 \n",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "823.0",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.4",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "0.5",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "32",
+              "rowspan": "1",
+              "colspan": "1"
+            },
+            {
+              "text": "38.9",
+              "rowspan": "1",
+              "colspan": "1"
+            }
+          ]
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "id": "s2c",
+        "title": "Solid phase peptide synthesis",
+        "text": "Solid phase peptide synthesis Pin2 and Pin2 variants were chemically synthesized by a solid-phase method using the Fmoc methodology on an Applied Biosystems 433A peptide synthesizer. Fmoc-Asp(otBu) or Fmoc-Leu(otBu)-Wang resins were used to provide a free carboxyl at the C-terminus of the Pin2 and its variants. Cleavage and deprotection of peptides, from resins and from protecting side chain groups, were performed using a chemical mixture composed of 1 g crystalline phenol, 0.2 g imidazole, 1 mL thioanisol, 0.5 mL 1,2-ethanedithiol in 20 mL trifluoroacetic acid (TFA). The resin was removed by filtration, and the deprotected peptides in solution were precipitated using cold ethyl ether. The precipitated peptides were washed twice with cold diethyl ether to remove remaining scavengers and protecting groups. Each crude synthetic peptide was then dissolved in a 10% aqueous acetonitrile solution and separated by reverse phase HPLC (RP-HPLC) on a semipreparative C 18  column (10\u00d7250 mm, Vydac, USA). Cationic exchange chromatography and C 18  analytical RP-HPLC were further used to purify the synthetic peptides, after all purification steps, the final purity of the peptides was higher than 95%. The molecular masses of the synthetic peptides were obtained by mass spectrometry using a LCQ DUO ion trap mass spectrometer (Finnigan, San Jose, USA) with and ESI source from 2.1 to 3.1 kV."
+      },
+      {
+        "id": "s2d",
+        "title": "Antimicrobial assays",
+        "text": "Antimicrobial assays Minimal inhibitory concentrations (MIC) and growth inhibition curves were obtained using pure peptides in the presence of bacteria using two different methods, agar diffusion susceptibility assays and broth microdilution assays in accordance to the procedures from the Clinical and Laboratory Standards Institute (CLSI,  http://www.clsi.org ). The agar diffusion susceptibility assay was performed using 10 mL of Mueller-Hinton agar (MHA) underlay on a Petri dish plate, while at the same time, 0.1 mL aliquot of a mid-logarithmic-phase (1\u00d710 8  CFU/mL in MHB with A 625nm \u200a=\u200a0.5) culture, was inoculated in a sterile tube containing 9.9 mL of non solidified MHA and mixed. The content of the tube was overlaid in the previously poured MHA Petri dish. Then 5 \u00b5L aliquots of a diluted antimicrobial peptide at 300, 100, 80, 50, 37.5, 25, 18.8, 12.5, 6.25, 3.1 and 1.6 \u00b5M were subsequently loaded into the overlay gel. Samples were incubated overnight at 37\u00b0C. The antimicrobial activity was determined by measuring clear zone diameters or halos observed around each peptide concentration in cultured MH Petri dishes. Peptide MICs were defined as the lowest peptide concentration with a clear zone halo. Broth microdilution assays were performed using stock solutions of Pin2 [G], Pin2 [GPG], Pin2  [14]  or Pin2  [17]  antimicrobial peptide diluted serially from 25 to 0.4 \u00b5M to a final volume of 200 \u00b5L, placed in polypropylene microtubes and vacuum dried. Next a volume of 200 \u00b5L aliquots of the bacterial suspension (1\u00d710 5  CFU/mL) in MHB was dispensed into each of the polypropylene microtubes and mixed with the diluted antimicrobial peptide. Then each was transferred into a well of a 96-well microtiter plate and bacterial growth was evaluated by measuring absorbance every 2 h until 10 h of incubation time at 37\u00b0C. The optical density (OD) of each well was measured at 625 nm in an ELISA reader (BioRad, model 450, Hercules, CA, USA). The positive control contained only the bacterial suspension, and the negative control contained only sterile culture medium. The resulting MICs were defined as the lowest peptide concentration that showed zero visible growth or absence of growth, that is growth inhibition (100%). The minimal inhibitory concentrations (MIC) values were the mean result of three independent experiments."
+      },
+      {
+        "id": "s2f",
+        "title": "Hemolytic assays",
+        "text": "Hemolytic assays Hemolytic activity was determined by incubating suspensions of human red blood cells with serial dilutions of each selected peptides. Red blood cells were rinsed several times in PBS by centrifugation for 3 min at 3,000  g  until the OD of the supernatant reached the OD of the control (PBS only). Red blood cells were counted by a hemocytometer and adjusted to 7.7\u00d710 6 \u00b10.3\u00d710 6  cells/mL. Red blood cells were then incubated at room temperature for 1 h in 10% Triton X-100 (positive control), in PBS (blank), or with amphipathic peptides at concentrations of 0.4, 0.8, 1.6, 3.1, 6.2, 12.5 and 25 \u00b5M, only for Pin2  [14]  and Pin2  [17]  the 50 and 100 \u00b5M concentrations were evaluated. The samples were then centrifuged at 10,000  g  for 5 min, the supernatant was separated from the pellet, and its absorbance measured at 570 nm. The relative optical density compared to that of the suspension treated with 10% Triton X-100 was defined as the percentage of hemolysis."
+      },
+      {
+        "id": "s3b",
+        "title": "Peptide chemical synthesis and purification",
+        "text": "Peptide chemical synthesis and purification The chemical synthesis of Pin2 and its variants was performed using a 0.1 mmol Fmoc chemistry. The crude synthetic peptide Pin2 and its variants were uniformly purified by RP-HPLC. As a result of the amino acid substitution and deletions in the primary structure of Pin2, the elution times of the Pin2 variants under RP-HPLC were shorter compared to the parental peptide except for Pin2 [G] ( \n Figure 2 \n ). All purified Pin2 variants were proved to have the expected molecular masses. For instance, the experimental  versus  the theoretical masses expected were 2,612.0/2,612.1 for the native Pin2, 2,572.0/2,572.0 for Pin2 [G], 2,727.0/2,726.2 for Pin2 [GPG], 1,680.0/1,680.1 for Pin2  [14] , and 1,891.3/1,891.3 for Pin2  [17] . As a consequence of the substitution and deletions in the primary structure of Pin2, the retention times (RT) under RP-HPLC changed, for instance the Pin2 [G] variant showed a RT of 40.1 min indicating a more hydrophobic molecule respect to Pin2 (RT of 30.6 min). Also, the less hydrophobic character of Pin2 [GPG] variant showed a RT of 27.6 min, while the RT of the short variants Pin2  [14]  and Pin2  [17]  were 18.5 and 17.2 min, respectively. The hydrophobic nature of the Pin2 variants observed by the experimental RT under RP-HPLC agreed to the theoretical hydrophobic character calculated using the GRAVY values. The amino acid sequences and some physicochemical properties of these peptides are listed in  table 1 . Once confirmed the identity of all synthesized peptides, their secondary structure was analyzed as well as their antimicrobial and hemolytic properties were observed. Figure 2 RP-HPLC purification of Pin2 and the variants characterized in this report. A. Pin2, B. Pin2 [G], C. Pin2 [GPG], D. Pin2  [14]  and E. Pin2  [17] ."
+      },
+      {
+        "id": "s3d",
+        "title": "Antimicrobial activities in Mueller-Hinton Agar and Mueller-Hinton Broth",
+        "text": "Antimicrobial activities in Mueller-Hinton Agar and Mueller-Hinton Broth The Gram-positive bacterium  S. aureus  is one of the main concerns in several topical infections while the Gram-negative bacterium  E. coli  is present in many gastrointestinal infections and other infection diseases. In agar culture media, the antimicrobial activity of Pin2 and Pin2 variants were tested against  S. aureus  and  E. coli . Pin2 [G] variant displayed the highest antimicrobial activity with a MIC value of 12.5 \u00b5M, towards both  S. aureus  and  E. coli  ( \n Table 3 \n ). Both parental Pin2 and Pin2 [GPG] showed MIC values of 37.5 and 25 \u00b5M for  S. aureus , and 18.8 and 25 \u00b5M for  E. coli , respectively. However the short variants Pin2  [14]  and Pin2  [17]  had MIC values >300 and 80 \u00b5M towards  S. aureus , respectively, but they both Pin2  [14]  and Pin2  [17]  were more active towards  E. coli  with MIC values of 25 \u00b5M. Table 3 Antimicrobial and hemolytic activities of Pin2 and the Pin2 variants. MIC (\u00b5M) Peptide Assay \n E. coli \n \n S. aureus \n Hemolysis (IC 50 ) \u2021 \n Pin2 MHA 18.8 37.5 3.3 [1.9\u20135.7] MHB 12.5 12.5 Pin2 [G] MHA 12.5 12.5 1.4 [0.4\u20134.3] MHB 12.5 12.5 Pin2 [GPG] MHA 25 25 46.6 [34\u201364] * \n MHB 12.5 12.5 Pin2  [14] \n MHA 25 >300 418.4 [291\u2013602] * \n MHB 25 >25 \u2020 \n Pin2  [17] \n MHA 25 80 NO MHB >25 \u2020 \n >25 MHA, Mueller-Hinton Agar. MHB: Mueller Hinton Broth. \u2021 Mean and 95% confidence intervals, values expressed in \u00b5M. *The numeric IC 50  value was obtained from the Boltzmann sigmoid equation fit. \u2020 Bacteriostatic effect. NO means no observed hemolytic activity at 100 \u00b5M. In broth culture media, the bacterial growth of both  S. aureus  and  E. coli  was observed in the presence of serial concentrations of all Pin2 variants from 25 to 0.4 \u00b5M ( \n Figure 4 \n ). Most of the synthetic peptides showed bactericidal or bacteriostatic antimicrobial activity against the two strains with MIC values of 12.5 and 25 \u00b5M. Pin2 [G] and Pin2 [GPG] showed MIC values of 12.5 \u00b5M for both  E. coli  and  S. aureus  ( \n Figures 4A, 4B, 4E and 4F \n ). The short variant Pin2  [14]  had a MIC value of 25 \u00b5M against  E. coli  ( \n Figure 4C \n ) but a bacteriostatic effect at 25 \u00b5M against  S. aureus  ( \n Figure 4G \n ). Finally, the short variant Pin2  [17]  only showed bacteriostatic effect on  E. coli  at 25 \u00b5M ( \n Figure 4D \n ), and no antimicrobial activity towards  S. aureus  was observed ( \n Figure 4H \n ).  \n Table 3 \n  summarizes the MIC values observed for Pin2 and its synthetic variants. Figure 4 Antimicrobial activity of the Pin2 variants against  E. coli  ATCC 25922 and  S. aureus  ATCC 25923. \n E. coli  antimicrobial activity, A. Pin2 [G], B. Pin2 [GPG], C. Pin2  [14] , and D. Pin2  [17] .  S. aureus  antimicrobial activity, E. Pin2 [G], F. Pin2 [GPG], G. Pin2  [14] , and H. Pin2  [17] . The concentration of peptides used was from 0.4 to 25 \u00b5M (n\u200a=\u200a3)."
+      },
+      {
+        "id": "s3f",
+        "title": "Hemolytic activity of Pin2 variants",
+        "text": "Hemolytic activity of Pin2 variants The hemolytic assays of Pin2 and the Pin2 variants on human erythrocytes ( \n Figure 5 \n ) showed that the parental peptides Pin2 as the Pin2 [G] variant at 25 \u00b5M had the highest hemolytic activities of all five peptides evaluated, with a 91% and a 100% of hemolysis, respectively. However at the same concentration the Pin2 [GPG] variant showed only a 30% of hemolysis, indicating that the insertion of the GPG motif is relevant for hemolytic activity reduction. The two short variants had not hemolytic effects at 25 \u00b5M. Furthermore, they were assayed up to 100 \u00b5M observing that the peptide Pin2  [14]  showed 25% of hemolysis, while Pin2  [17]  did not show any hemolytic effect at such concentration. The statistical analysis is shown in table S1 in  file S1 . Figure 5 Hemolytic activity in human red blood cells. Data are the average of at least four independent experiments. Error bars represent the standard deviations."
+      }
+    ]
+  }
+]

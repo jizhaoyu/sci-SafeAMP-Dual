@@ -1,0 +1,67 @@
+{
+  "screen_only": true,
+  "source": {
+    "doi": "10.1016/j.bbrc.2004.05.141",
+    "pmid": "15207717",
+    "url": "https://doi.org/10.1016/j.bbrc.2004.05.141",
+    "retrieved_copy": "conlon_2004_ascaphin_primary_article.pdf",
+    "table": "Tables 1 and 2",
+    "note": "Candidate observations transcribed for screening. These records are rejected and must not be used as external-cohort input."
+  },
+  "records": [
+    {
+      "id": "Conlon2004_Ascaphin3",
+      "seq": "GFRDVLKGAAKAFVKTVAGHIANI",
+      "termini": "free N-terminus; free C-terminal carboxylate",
+      "source_form": "endogenous peptide purified from Ascaphus truei skin secretion",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "6",
+          "raw_unit": "uM",
+          "conditions": "Mueller-Hinton broth; inoculum 50 uL of 10^6 CFU/mL log-phase culture; 18 h at 37 C",
+          "reference": "doi:10.1016/j.bbrc.2004.05.141; Table 1"
+        },
+        {
+          "endpoint": "hemo",
+          "target_organism_or_cell": "human erythrocytes from healthy donors",
+          "metric_name": "HC50",
+          "raw_value": ">200",
+          "raw_unit": "uM",
+          "conditions": "2 x 10^7 washed erythrocytes in 100 uL DPBS, pH 7.4; 1 h at 37 C; tested peptide concentration range 1-200 uM",
+          "reference": "doi:10.1016/j.bbrc.2004.05.141; Table 1"
+        }
+      ],
+      "screen_disposition": "rejected: same primary study PMID 15207717 occurs in development records; maximum protocol-amd-02 alignment identity to development members is 0.958333, above 0.40"
+    },
+    {
+      "id": "Conlon2004_Ascaphin7",
+      "seq": "GFKDWIKGAAKKLIKTVASAIANQ",
+      "termini": "free N-terminus; free C-terminal carboxylate",
+      "source_form": "endogenous peptide purified from Ascaphus truei skin secretion",
+      "observations": [
+        {
+          "endpoint": "amp",
+          "target_organism_or_cell": "Escherichia coli ATCC 25922",
+          "metric_name": "MIC",
+          "raw_value": "3",
+          "raw_unit": "uM",
+          "conditions": "Mueller-Hinton broth; inoculum 50 uL of 10^6 CFU/mL log-phase culture; 18 h at 37 C",
+          "reference": "doi:10.1016/j.bbrc.2004.05.141; Table 1"
+        },
+        {
+          "endpoint": "hemo",
+          "target_organism_or_cell": "human erythrocytes from healthy donors",
+          "metric_name": "HC50",
+          "raw_value": ">200",
+          "raw_unit": "uM",
+          "conditions": "2 x 10^7 washed erythrocytes in 100 uL DPBS, pH 7.4; 1 h at 37 C; tested peptide concentration range 1-200 uM",
+          "reference": "doi:10.1016/j.bbrc.2004.05.141; Table 1"
+        }
+      ],
+      "screen_disposition": "rejected: same primary study PMID 15207717 occurs in development records; maximum protocol-amd-02 alignment identity to development members is 0.708333, above 0.40"
+    }
+  ]
+}

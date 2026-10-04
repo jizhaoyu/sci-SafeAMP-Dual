@@ -1,0 +1,35 @@
+{
+  "status": "candidate_primary_evidence_verified_not_released",
+  "generated_at": "2026-10-02T06:35:52.843983+00:00",
+  "paper": {
+    "pmid": "35735615",
+    "pmcid": "PMC9221748",
+    "doi": "10.3390/cimb44060174",
+    "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9221748/fullTextXML",
+    "license": "CC BY 4.0"
+  },
+  "original_molecules_reviewed": 5,
+  "original_MIC_observations": 8,
+  "candidate_molecules": 3,
+  "candidate_observations": 4,
+  "excluded_molecules": 2,
+  "reviewed_similarity_pairs": 114,
+  "reviewed_similarity_edges_at_0_40": 3,
+  "records_released_for_training": 0,
+  "script_sha256": "700dc8222d7e8a22b0e71b2cb1ee20369b1fcd1ed9eea5dceb1e3f67896c5845",
+  "inputs": {
+    "03_experiments\\audits\\mic_primary_candidate_sources_20261002_v1\\PMC9221748.xml": "711469c8b20611059bf3bbc3e21615e2248c771a31d8af21dd528a3f96ef0b17",
+    "03_experiments\\audits\\mic_reviewed_subset_groups_20261002_v2\\candidate_molecules.csv": "f32beab42a712aac21de051efa64b081fe2153cc27c5cad480e5154d65048dc4",
+    "03_experiments\\audits\\mic_only_cohort_20261001_v9\\molecule_components.csv": "868c58ae525a47146532f2c71c7c0bc779d68d6bb3d9a0889e7eb9044f2be2f8",
+    "02_code\\audit_mic_primary_hirsch2020.py": "8d9f8e1df33c2b52877536557a4e38deb7351edbf6b531cbd3049e4bd18d9a57",
+    "02_code\\research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350",
+    "02_code\\research_protocol_config.py": "d21ccf0a1088be675591878490cd9c4a90a43c5ec0da5af78541901725c25a72"
+  },
+  "outputs": {
+    "record_review.csv": "7d1fbd5cc41ae89e75c04201b5da8ff36dc0bdcacba326e37237350be8cd71e3",
+    "primary_assays.csv": "26117caf2a276b0e46efb5c49717773cfbae1c8a89cb9ab334ec5daaf02e0dfc",
+    "similarity_reviewed.csv": "929a5c620984bdefd43c3fbe3ce888f536bf06277007f051ccd2447471609a02",
+    "similarity_historical.csv": "c1c65ad7c53ba58388e93e3e08697cd73ca8b668de15aced0bba1c9e84e95188",
+    "report.md": "51b1c69f7dfdaeabca10f065480cde4892a88c5c2e6ff5217954440337cd0e70"
+  }
+}

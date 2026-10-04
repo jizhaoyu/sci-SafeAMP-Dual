@@ -1,0 +1,115 @@
+{
+  "status": "feasible_for_training_review",
+  "generated_at": "2026-10-01T08:55:44.336283+00:00",
+  "protocol_id": "protocol-mic-01",
+  "protocol_sha256": "d54227ebb5380039cd07f6ddc979561ef6f99efaecdb7644267e6c7d00dffb97",
+  "protocol_path": "03_experiments\\protocols\\protocol-mic-01.json",
+  "existing_records_path": "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv",
+  "existing_records_sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "existing_record_count": 417,
+  "supplement_records_path": "03_experiments\\audits\\dramp_verified_ecoli_mic_20261001_v5\\records.csv",
+  "supplement_records_sha256": "43e6fa66709f9babcf661b8830c7041cdd2bcc0cc74332fb3bfe5456d7db5f37",
+  "supplement_record_count": 4,
+  "combined_evidence_gate": {
+    "status": "passed",
+    "detail": "421 provenance records passed raw-assay validation and label re-derivation."
+  },
+  "eligible_record_count_before_exact_sequence_merge": 395,
+  "unique_labeled_molecule_count": 395,
+  "amp_label_counts": {
+    "0": 138,
+    "1": 257
+  },
+  "primary_study_identifier_count": 296,
+  "source_dataset_record_counts": {
+    "DBAASP": 391,
+    "DRAMP": 4
+  },
+  "homology": {
+    "possible_pairs": 77815,
+    "above_cutoff_pairs": 1182,
+    "component_count": 90,
+    "largest_component": 293,
+    "largest_component_fraction": 0.7417721518987341
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_molecules": 102,
+      "validation_molecules": 293,
+      "train_positive": 47,
+      "train_negative": 55,
+      "validation_positive": 210,
+      "validation_negative": 83,
+      "train_components": 89,
+      "validation_components": 1,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 1,
+      "train_molecules": 370,
+      "validation_molecules": 25,
+      "train_positive": 245,
+      "train_negative": 125,
+      "validation_positive": 12,
+      "validation_negative": 13,
+      "train_components": 69,
+      "validation_components": 21,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 2,
+      "train_molecules": 370,
+      "validation_molecules": 25,
+      "train_positive": 246,
+      "train_negative": 124,
+      "validation_positive": 11,
+      "validation_negative": 14,
+      "train_components": 67,
+      "validation_components": 23,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 3,
+      "train_molecules": 369,
+      "validation_molecules": 26,
+      "train_positive": 245,
+      "train_negative": 124,
+      "validation_positive": 12,
+      "validation_negative": 14,
+      "train_components": 67,
+      "validation_components": 23,
+      "shared_components": 0,
+      "gate_passed": true
+    },
+    {
+      "fold": 4,
+      "train_molecules": 369,
+      "validation_molecules": 26,
+      "train_positive": 245,
+      "train_negative": 124,
+      "validation_positive": 12,
+      "validation_negative": 14,
+      "train_components": 68,
+      "validation_components": 22,
+      "shared_components": 0,
+      "gate_passed": true
+    }
+  ],
+  "blockers": [],
+  "warnings": [
+    "Severe fold-size imbalance from an indivisible homology component: largest component=293 of 395 molecules (74.2%); validation fold sizes=[293, 25, 25, 26, 26]. Preserve all-member isolation and review the estimand before model training."
+  ],
+  "training_started": false,
+  "model_results_generated": false,
+  "outputs": {
+    "evidence_inventory": "03_experiments\\audits\\mic_only_cohort_20261001_v2\\evidence_inventory.csv",
+    "exclusions": "03_experiments\\audits\\mic_only_cohort_20261001_v2\\exclusions.csv",
+    "molecule_components": "03_experiments\\audits\\mic_only_cohort_20261001_v2\\molecule_components.csv",
+    "all_member_similarity": "03_experiments\\audits\\mic_only_cohort_20261001_v2\\all_member_similarity.csv",
+    "fold_assignments": "03_experiments\\audits\\mic_only_cohort_20261001_v2\\fold_assignments.csv"
+  }
+}

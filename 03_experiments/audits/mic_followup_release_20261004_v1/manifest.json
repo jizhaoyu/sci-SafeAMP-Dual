@@ -1,0 +1,34 @@
+{
+  "status": "ready_for_protocol_freeze",
+  "generated_at": "2026-10-04T02:58:48.978946+00:00",
+  "candidate_molecules_reviewed": 17,
+  "molecules_evidence_approved": 16,
+  "observations_evidence_approved": 23,
+  "new_candidates_reviewed": 2,
+  "new_candidates_released": 1,
+  "primary_evidence_gate": "passed",
+  "fixed_partition_gate": "passed",
+  "blockers": [],
+  "training_started": false,
+  "inputs": {
+    "03_experiments/audits/mic_training_readiness_20261003_v20.json": "15d32dafbab6a256f30d3dcecf8d2a9c87292e854bd78e6cb4ef1a9e67efeec7",
+    "02_code/mic_followup_release.py": "d9a9e1c7d383d1b111dc3e651a0e9bf5ef91c27d41d4635eb67ed25a8171124c",
+    "03_experiments/audits/mic_source_expansion_acquisition_20261002_v1/raw/bmap2025.xml": "6f9ff4fd2e4717576da2b0ad83a053c15ef023b2ba9ccba3eeed689e0e8a4e76",
+    "03_experiments/audits/mic_followup_source_retrieval_20261004_v1/bmap_figure_1.jpeg": "c4f0f07f3c4df75955ffbb034f165da2ea4eaef8cbb54e42d10adf636810c815",
+    "03_experiments/audits/mic_followup_source_retrieval_20261004_v1/acquisition.json": "7cca538dfc1fbaacff5c7dc5eeeb233671de84648d1dff00e144da5683c618bc",
+    "03_experiments/audits/mic_three_fold_primary_release_20261002_v1/manifest.json": "6fbcb7730b650795ed20f4d6fe3be2d564979578c0e39af7a73dde7d0dee7190"
+  },
+  "outputs": {
+    "candidate_decisions.csv": "e0315f19220f7aa6dc2616d169d375dd0fcb4edf088f760ebc4d100a76f0a9f0",
+    "partition_audit.json": "2e154365e2ef797823b8eb8f32309e67751e70744d132f5870457b4412c03154",
+    "cohort/all_member_similarity.csv": "c547992901922ae0feb6de817ecc394df3d6ba54f68daa23af057587e2cf55ab",
+    "cohort/candidate_molecules.csv": "ee7fea142e30cad7e6d2a8418df1eee2d26bf2f81ac116245a4f81c82680cefe",
+    "cohort/candidate_observations.csv": "5fc53b54a959f3da772506a12e43d63d0fe6433366781102c006a5255d86692c",
+    "cohort/fold_roles.csv": "48de81a3510733a6cc31282caefa8ca17f3695936a8fea670501af8fa02ac5b8",
+    "cohort/manifest.json": "dcee4855497aa2141940f7ec440dd27c2ccb03c1525e3c294159f47bc50d08cc",
+    "evidence/assay_evidence_review.csv": "5fc53b54a959f3da772506a12e43d63d0fe6433366781102c006a5255d86692c",
+    "evidence/manifest.json": "68c2f28df6c0bbf0c53ba95d151f301c34f06576450a4487bc5d1564bedd93be",
+    "evidence/molecule_evidence_review.csv": "255d67d145ef3db0343115bc8d29ce72de182dcabfad8ad767f2d1d71e832579",
+    "evidence/source_review.csv": "47f4c3813a84db62b0cd38b3e664c5b7b068c48c9144daf6df9f7dc0786fdca4"
+  }
+}

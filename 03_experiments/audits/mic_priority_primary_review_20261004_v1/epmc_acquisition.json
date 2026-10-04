@@ -1,0 +1,31 @@
+[
+  {
+    "pmcid": "PMC12408343",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12408343/supplementaryFiles",
+    "retrieved_at": "2026-10-04T04:20:02.686805+00:00",
+    "error": "The read operation timed out"
+  },
+  {
+    "pmcid": "PMC13109931",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13109931/supplementaryFiles",
+    "retrieved_at": "2026-10-04T04:20:02.686805+00:00",
+    "content_type": "application/zip",
+    "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13109931/supplementaryFiles",
+    "bytes": 1391628,
+    "sha256": "51fe64a1570f60aff29fd301c93d1f5eea1b665761345514ed5795f4cb8330e3",
+    "valid_zip": true,
+    "members": [
+      "sciadv.ads8932-f4.jpg",
+      "sciadv.ads8932_sm.pdf",
+      "sciadv.ads8932-f2.jpg",
+      "sciadv.ads8932-f3.gif",
+      "sciadv.ads8932-f5.gif",
+      "sciadv.ads8932-f4.gif",
+      "sciadv.ads8932-f2.gif",
+      "sciadv.ads8932-f1.jpg",
+      "sciadv.ads8932-f1.gif",
+      "sciadv.ads8932-f3.jpg",
+      "sciadv.ads8932-f5.jpg"
+    ]
+  }
+]

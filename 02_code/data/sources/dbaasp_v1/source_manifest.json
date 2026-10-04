@@ -1,0 +1,30 @@
+{
+  "status": "downloaded",
+  "created_at": "2026-09-28T14:24:52.092293+00:00",
+  "database_url": "https://dbaasp.org",
+  "listed_records": 25542,
+  "eligible_listing_records": 8490,
+  "selected_records": 1200,
+  "selection": "smallest SHA256(safeamp-source-v1:ID)",
+  "limit": 1200,
+  "endpoint_definitions": {
+    "amp": "E. coli MIC <=32 vs >=128 ug/ml",
+    "hemo": "Human erythrocyte HC50 <=100 vs >=250 ug/ml"
+  },
+  "license": "Database reuse terms require author review before redistribution; raw downloads retained locally.",
+  "retained_records": 417,
+  "records_sha256": "57ce763d21c55bdc397e72d3b2932d3a35c5ace4e9c86403b1b1623c3c559618",
+  "label_counts": {
+    "amp": {
+      "1.0": 253,
+      "0.0": 138,
+      "nan": 26
+    },
+    "hemo": {
+      "nan": 355,
+      "0.0": 44,
+      "1.0": 18
+    }
+  },
+  "external_source_present": false
+}

@@ -1,0 +1,45 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-01T13:17:19.952045+00:00",
+  "supersedes": "03_experiments/audits/mic_training_readiness_20261001_v2.json",
+  "training_protocol_id": "protocol-mic-05",
+  "training_protocol_sha256": "8a3533fc64047e679e72d9e07f59d295f44e8c5905da7e822df27210960df24a",
+  "training_protocol_path": "03_experiments\\protocols\\protocol-mic-05.json",
+  "source_manifest": "03_experiments\\audits\\mic_training_source_20261001_v1\\manifest.json",
+  "source_manifest_sha256": "1b1dccd2c080356dea86dd07584305e0c5ca729b9fdc5b4fecf5f9bae7dac70e",
+  "cohort_manifest": "03_experiments\\audits\\mic_only_cohort_20261001_v9\\manifest.json",
+  "cohort_manifest_sha256": "45a8e72912911c9e80621ca0302ff7d8bbfb06e3c95ebbf67c234bf4e0162f83",
+  "study_manifest": "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\manifest.json",
+  "study_manifest_sha256": "a4851578826e0035972d8b61a8eb70cb244bcd5e7373dc9b3872b2ac20516e0d",
+  "fold_assignments": "03_experiments\\audits\\mic_study_disjoint_20261001_v5\\fold_assignments.csv",
+  "fold_assignments_sha256": "ea5307e848934de3b2fba644f94a4b21c0e3e067d3199283c75c5cf770e16c17",
+  "primary_review_manifest": "03_experiments\\audits\\mic_primary_review_20261001_v3\\manifest.json",
+  "primary_review_manifest_sha256": "cf37d1d7feb1ff549ca9a80db6e9e398cc1108e977d8b2a736686c319d6b7c48",
+  "primary_review_conflicting_raw_observations": 1,
+  "molecule_count": 324,
+  "class_counts": {
+    "0": 107,
+    "1": 217
+  },
+  "fold_sizes": {
+    "0": 19,
+    "1": 18,
+    "2": 249,
+    "3": 19,
+    "4": 19
+  },
+  "homology_plus_study_components": 60,
+  "largest_component": 249,
+  "warnings": [
+    "Highly imbalanced study-disjoint folds: sizes=[19, 18, 249, 19, 19]; largest combined component=249/324."
+  ],
+  "blockers": [
+    "Primary-study MIC target verification incomplete for 458 assay observations; protocol-mic-05 is withheld until a new immutable evidence audit and training protocol are approved.",
+    "Primary-paper comparison found 1 conflicting raw DBAASP MIC observation(s); see the versioned activity review."
+  ],
+  "training_started": false,
+  "formal_dual_task_status": "blocked",
+  "formal_status_sha256": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "scope": "MIC-only exploratory baseline; training withheld pending primary-study verification",
+  "training_command": null
+}

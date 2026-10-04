@@ -1,0 +1,3300 @@
+/* ============================== 第 1 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0001: import React, { useState, useEffect, useRef } from 'react';
+0002: import { Target, Download, Zap, RefreshCw, ShoppingCart, Activity, FileText } from 'lucide-react';
+0003: import { apiClient, errorMessage } from '../api/client';
+0004: import { useAppStore } from '../store/useAppStore';
+0005: import { useNavigate } from 'react-router-dom';
+0006: interface ResiduePoint {
+0007:   idx: number;
+0008:   residue: string;
+0009:   angle_deg: number;
+0010:   cx: number;
+0011:   cy: number;
+0012:   category: string;
+0013:   color: string;
+0014: }
+0015: interface HelicalWheelData {
+0016:   sequence: string;
+0017:   length: number;
+0018:   residues: ResiduePoint[];
+0019:   hydrophobic_moment: number;
+0020:   moment_angle_deg: number;
+0021:   net_charge: number;
+0022:   mean_hydrophobicity: number;
+0023: }
+0024: export default function HelicalWheelStudio() {
+0025:   const { activeSequence, addToCart, setActivePeptide } = useAppStore();
+0026:   const [seq, setSeq] = useState(activeSequence);
+0027:   const [loading, setLoading] = useState(false);
+0028:   const [wheelData, setWheelData] = useState<HelicalWheelData | null>(null);
+0029:   const [errorMsg, setErrorMsg] = useState('');
+0030:   const svgRef = useRef<SVGSVGElement | null>(null);
+0031:   const navigate = useNavigate();
+0032:   const handleFetchWheel = async (targetSeq: string) => {
+0033:     const cleaned = targetSeq.trim().replace(/\s/g, '').toUpperCase();
+0034:     if (!cleaned) {
+0035:       setErrorMsg('请输入有效的多肽序列');
+0036:       return;
+0037:     }
+0038:     setErrorMsg('');
+0039:     setLoading(true);
+0040:     try {
+0041:       const res = await apiClient.post<HelicalWheelData>('/api/helical_wheel', {
+0042:         sequence: cleaned
+0043:       });
+0044:       const raw = res.data as any;
+0045:       setWheelData({ ...raw, residues: raw.residues.map((r: any) => {
+0046:         const radius = 120 - 30 * Math.floor((r.pos - 1) / 18);
+0047:         const angle = r.angle_deg * Math.PI / 180;
+0048:         return { ...r, idx: r.pos - 1, residue: r.aa, cx: 160 + radius * Math.sin(angle), cy: 160 - radius * Math.cos(angle) };
+0049:       }) });
+0050:     } catch (err: any) {
+0051:       setWheelData(null);
+0052:       setErrorMsg(errorMessage(err));
+
+
+/* ============================== 第 2 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0053:     } finally {
+0054:       setLoading(false);
+0055:     }
+0056:   };
+0057:   useEffect(() => {
+0058:     if (activeSequence) {
+0059:       // oxlint-disable-next-line react/set-state-in-effect
+0060:       setSeq(activeSequence);
+0061:       handleFetchWheel(activeSequence);
+0062:     }
+0063:   }, [activeSequence]);
+0064:   const handleExportPNG = () => {
+0065:     if (!svgRef.current) return;
+0066:     const svgElement = svgRef.current;
+0067:     const svgString = new XMLSerializer().serializeToString(svgElement);
+0068:     const canvas = document.createElement('canvas');
+0069:     canvas.width = 640;
+0070:     canvas.height = 640;
+0071:     const ctx = canvas.getContext('2d');
+0072:     if (!ctx) return;
+0073:     const img = new Image();
+0074:     const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+0075:     const url = URL.createObjectURL(svgBlob);
+0076:     img.onload = () => {
+0077:       ctx.fillStyle = '#ffffff';
+0078:       ctx.fillRect(0, 0, canvas.width, canvas.height);
+0079:       ctx.drawImage(img, 0, 0, 640, 640);
+0080:       const pngUrl = canvas.toDataURL('image/png');
+0081:       const downloadLink = document.createElement('a');
+0082:       downloadLink.href = pngUrl;
+0083:       downloadLink.download = `HelicalWheel_${seq.slice(0, 8)}_${Date.now()}.png`;
+0084:       downloadLink.click();
+0085:       URL.revokeObjectURL(url);
+0086:     };
+0087:     img.src = url;
+0088:   };
+0089:   // Eisenberg moment vector endpoints
+0090:   const cx0 = 160;
+0091:   const cy0 = 160;
+0092:   const momentLen = wheelData ? Math.min(100, Math.max(25, wheelData.hydrophobic_moment * 180)) : 50;
+0093:   const momentRad = wheelData ? (wheelData.moment_angle_deg * Math.PI) / 180 : 0;
+0094:   const arrowX = cx0 + momentLen * Math.sin(momentRad);
+0095:   const arrowY = cy0 - momentLen * Math.cos(momentRad);
+0096:   return (
+0097:     <div className="flex flex-col gap-6">
+0098:       {/* Studio Header */}
+0099:       <div className="border-b border-slate-200 dark:border-slate-800 pb-4">
+0100:         <h2 className="text-xl font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2">
+0101:           <Zap className="text-amber-500" size={22} />
+0102:           螺旋轮构象与两亲性投影室 (Schiffer-Edmundson Helical Wheel Studio)
+0103:         </h2>
+0104:         <p className="text-xs text-slate-500 mt-1">
+
+
+/* ============================== 第 3 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0105:           按每残基 100° 的理想螺旋假设绘制理化属性投影；每 18 个残基换一显示环以避免重叠，径向层仅用于排版，不代表真实结构或膜作用机制。
+0106:         </p>
+0107:       </div>
+0108:       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+0109:         {/* Left Controls & Properties */}
+0110:         <div className="lg:col-span-5 flex flex-col gap-4">
+0111:           <div className="lab-panel p-4 flex flex-col gap-3">
+0112:             <span className="lab-label">输入分析序列</span>
+0113:             <div className="flex gap-2">
+0114:               <input
+0115:                 type="text"
+0116:                 value={seq}
+0117:                 onChange={(e) => setSeq(e.target.value)}
+0118:                 placeholder="输入多肽序列 (例如 GIGAVLKVLTTGLPALISWIKRKRQQ)"
+0119:                 className="lab-input font-mono text-xs uppercase flex-1"
+0120:               />
+0121:               <button
+0122:                 type="button"
+0123:                 onClick={() => handleFetchWheel(seq)}
+0124:                 disabled={loading}
+0125:                 className="btn-lab-primary px-3 py-2 text-xs flex items-center gap-1.5 whitespace-nowrap"
+0126:               >
+0127:                 {loading ? <RefreshCw size={14} className="animate-spin" /> : <Target size={14} />}
+0128:                 <span>投影 (Project)</span>
+0129:               </button>
+0130:             </div>
+0131:             {errorMsg && (
+0132:               <div className="text-xs text-rose-600 bg-rose-50 dark:bg-rose-950/40 p-2.5 rounded border border-rose-200 dark:border-rose-900">
+0133:                 {errorMsg}
+0134:               </div>
+0135:             )}
+0136:           </div>
+0137:           {/* Physicochemical Property Cards */}
+0138:           {wheelData && (
+0139:             <div className="lab-panel p-4 flex flex-col gap-3">
+0140:               <span className="lab-label">生物物理特征计算矩阵</span>
+0141:               <div className="grid grid-cols-2 gap-2 text-xs">
+0142:                 <div className="p-2.5 rounded bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+0143:                   <div className="text-[11px] text-slate-500">序列全长 (Length)</div>
+0144:                   <div className="text-base font-bold font-mono text-slate-800 dark:text-slate-200">{wheelData.length} AA</div>
+0145:                 </div>
+0146:                 <div className="p-2.5 rounded bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+0147:                   <div className="text-[11px] text-slate-500">净电荷 (pH 7.4)</div>
+0148:                   <div className={`text-base font-bold font-mono ${wheelData.net_charge >= 0 ? 'text-blue-600 dark:text-blue-400' : 'text-rose-600 dark:text-rose-400'}`}>
+0149:                     {wheelData.net_charge > 0 ? `+${wheelData.net_charge.toFixed(1)}` : wheelData.net_charge.toFixed(1)}
+0150:                   </div>
+0151:                 </div>
+0152:                 <div className="p-2.5 rounded bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+0153:                   <div className="text-[11px] text-slate-500">两亲性力矩 (Eisenberg μH)</div>
+0154:                   <div className="text-base font-bold font-mono text-amber-600 dark:text-amber-400">
+0155:                     {wheelData.hydrophobic_moment.toFixed(3)}
+0156:                   </div>
+
+
+/* ============================== 第 4 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0157:                 </div>
+0158:                 <div className="p-2.5 rounded bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+0159:                   <div className="text-[11px] text-slate-500">平均疏水性 (Kyte-Doolittle)</div>
+0160:                   <div className="text-base font-bold font-mono text-slate-800 dark:text-slate-200">
+0161:                     {wheelData.mean_hydrophobicity.toFixed(2)}
+0162:                   </div>
+0163:                 </div>
+0164:               </div>
+0165:               {/* Action Buttons */}
+0166:               <div className="flex items-center gap-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+0167:                 <button
+0168:                   type="button"
+0169:                   onClick={() => {
+0170:                     addToCart({
+0171:                       sequence: wheelData.sequence,
+0172:                       name: 'Wheel-Analyzed',
+0173:                       p_amp: 0.9,
+0174:                       p_hemo: 0.5,
+0175:                       tsi: 0.7,
+0176:                     });
+0177:                   }}
+0178:                   className="btn-lab-secondary text-xs px-2.5 py-1.5 flex items-center gap-1"
+0179:                 >
+0180:                   <ShoppingCart size={13} /> 存入候选库
+0181:                 </button>
+0182:                 <button
+0183:                   type="button"
+0184:                   onClick={() => {
+0185:                     setActivePeptide(wheelData.sequence, 'Wheel-Target');
+0186:                     navigate('/evolution');
+0187:                   }}
+0188:                   className="btn-lab-secondary text-xs px-2.5 py-1.5 flex items-center gap-1 text-purple-600 dark:text-purple-400"
+0189:                 >
+0190:                   <Activity size={13} /> 送去突变
+0191:                 </button>
+0192:                 <button
+0193:                   type="button"
+0194:                   onClick={() => {
+0195:                     setActivePeptide(wheelData.sequence, 'Wheel-Target');
+0196:                     navigate('/report');
+0197:                   }}
+0198:                   className="btn-lab-secondary text-xs px-2.5 py-1.5 flex items-center gap-1 text-blue-600 dark:text-blue-400"
+0199:                 >
+0200:                   <FileText size={13} /> 评估报告
+0201:                 </button>
+0202:               </div>
+0203:             </div>
+0204:           )}
+0205:           {/* Color Legend */}
+0206:           <div className="lab-panel p-4 flex flex-col gap-2 text-xs">
+0207:             <span className="lab-label">残基极性与电荷着色规范</span>
+0208:             <div className="grid grid-cols-2 gap-2 text-slate-600 dark:text-slate-400">
+
+
+/* ============================== 第 5 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0209:               <div className="flex items-center gap-2">
+0210:                 <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#38bdf8' }}></span>
+0211:                 <span>碱性正电 (Basic: R, K, H)</span>
+0212:               </div>
+0213:               <div className="flex items-center gap-2">
+0214:                 <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#f43f5e' }}></span>
+0215:                 <span>酸性负电 (Acidic: D, E)</span>
+0216:               </div>
+0217:               <div className="flex items-center gap-2">
+0218:                 <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#f59e0b' }}></span>
+0219:                 <span>强疏水性 (Hydrophobic: L, I, V, F, W)</span>
+0220:               </div>
+0221:               <div className="flex items-center gap-2">
+0222:                 <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#fbbf24' }}></span>
+0223:                 <span>中度疏水 (Moderate: A, M, C)</span>
+0224:               </div>
+0225:               <div className="flex items-center gap-2">
+0226:                 <span className="w-3 h-3 rounded-full" style={{ backgroundColor: '#10b981' }}></span>
+0227:                 <span>极性不带电 (Polar: S, T, N, Q, Y, G, P)</span>
+0228:               </div>
+0229:             </div>
+0230:           </div>
+0231:         </div>
+0232:         {/* Right Section: SVG Helical Wheel Canvas */}
+0233:         <div className="lg:col-span-7 flex flex-col gap-4">
+0234:           <div className="lab-panel p-5 flex flex-col items-center justify-center min-h-[440px] relative">
+0235:             <div className="w-full flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-2 mb-2">
+0236:               <span className="lab-label">Schiffer-Edmundson 100° 二维矢量投影图</span>
+0237:               <button
+0238:                 type="button"
+0239:                 onClick={handleExportPNG}
+0240:                 disabled={!wheelData}
+0241:                 className="btn-lab-secondary text-xs px-2.5 py-1 flex items-center gap-1.5 disabled:opacity-40"
+0242:               >
+0243:                 <Download size={13} /> 导出高清 PNG
+0244:               </button>
+0245:             </div>
+0246:             {loading ? (
+0247:               <div className="py-24 text-center text-slate-400 flex flex-col items-center justify-center gap-2">
+0248:                 <RefreshCw size={24} className="animate-spin text-amber-500" />
+0249:                 <span className="text-xs">计算残基空间角与两亲性力矩中...</span>
+0250:               </div>
+0251:             ) : !wheelData ? (
+0252:               <div className="py-24 text-center text-slate-400 text-xs">
+0253:                 请输入多肽序列后点击“投影”以生成螺旋轮。
+0254:               </div>
+0255:             ) : (
+0256:               <div className="w-full max-w-[420px] aspect-square flex items-center justify-center p-2">
+0257:                 <svg 
+0258:                   ref={svgRef}
+0259:                   viewBox="0 0 320 320" 
+0260:                   className="w-full h-full select-none"
+
+
+/* ============================== 第 6 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0261:                 >
+0262:                   <defs>
+0263:                     <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+0264:                       <path d="M 0 0 L 10 5 L 0 10 z" fill="#f59e0b" />
+0265:                     </marker>
+0266:                   </defs>
+0267:                   {/* Concentric Guide Circles */}
+0268:                   <circle cx="160" cy="160" r="120" fill="none" stroke="#cbd5e1" strokeWidth="1" strokeDasharray="3,3" className="dark:stroke-slate-800" />
+0269:                   <circle cx="160" cy="160" r="70" fill="none" stroke="#e2e8f0" strokeWidth="1" strokeDasharray="2,2" className="dark:stroke-slate-800/60" />
+0270:                   <circle cx="160" cy="160" r="3" fill="#94a3b8" />
+0271:                   {/* 18-Spoke Angular Rays */}
+0272:                   {Array.from({ length: 18 }).map((_, s) => {
+0273:                     const rayAngle = (s * 20 * Math.PI) / 180;
+0274:                     const rx = 160 + 120 * Math.sin(rayAngle);
+0275:                     const ry = 160 - 120 * Math.cos(rayAngle);
+0276:                     return (
+0277:                       <line 
+0278:                         key={s} 
+0279:                         x1="160" y1="160" x2={rx} y2={ry} 
+0280:                         stroke="#f1f5f9" strokeWidth="0.7" 
+0281:                         className="dark:stroke-slate-800/40" 
+0282:                       />
+0283:                     );
+0284:                   })}
+0285:                   {/* Consecutive Backbone Connection Lines */}
+0286:                   {wheelData.residues.map((r, i) => {
+0287:                     if (i === 0) return null;
+0288:                     const prev = wheelData.residues[i - 1];
+0289:                     return (
+0290:                       <line
+0291:                         key={`line-${i}`}
+0292:                         x1={prev.cx}
+0293:                         y1={prev.cy}
+0294:                         x2={r.cx}
+0295:                         y2={r.cy}
+0296:                         stroke="#94a3b8"
+0297:                         strokeWidth="1"
+0298:                         opacity="0.5"
+0299:                       />
+0300:                     );
+0301:                   })}
+0302:                   {/* Eisenberg Hydrophobic Moment Vector Arrow */}
+0303:                   <line
+0304:                     x1={cx0}
+0305:                     y1={cy0}
+0306:                     x2={arrowX}
+0307:                     y2={arrowY}
+0308:                     stroke="#f59e0b"
+0309:                     strokeWidth="2.5"
+0310:                     markerEnd="url(#arrow)"
+0311:                   />
+0312:                   <text 
+
+
+/* ============================== 第 7 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0313:                     x={arrowX + 8} 
+0314:                     y={arrowY + 4} 
+0315:                     fill="#f59e0b" 
+0316:                     fontSize="9" 
+0317:                     fontWeight="bold" 
+0318:                     fontFamily="monospace"
+0319:                   >
+0320:                     μH ({wheelData.hydrophobic_moment.toFixed(2)})
+0321:                   </text>
+0322:                   {/* Residue Circles */}
+0323:                   {wheelData.residues.map((r) => (
+0324:                     <g key={`res-${r.idx}`} className="cursor-pointer">
+0325:                       <circle
+0326:                         cx={r.cx}
+0327:                         cy={r.cy}
+0328:                         r="11"
+0329:                         fill={r.color}
+0330:                         stroke="#ffffff"
+0331:                         strokeWidth="1.5"
+0332:                         className="shadow-md"
+0333:                       />
+0334:                       <text
+0335:                         x={r.cx}
+0336:                         y={r.cy + 3.5}
+0337:                         fill="#ffffff"
+0338:                         fontSize="9"
+0339:                         fontWeight="bold"
+0340:                         fontFamily="monospace"
+0341:                         textAnchor="middle"
+0342:                       >
+0343:                         {r.residue}
+0344:                       </text>
+0345:                       <text
+0346:                         x={r.cx + (r.cx > 160 ? 13 : -13)}
+0347:                         y={r.cy + 3}
+0348:                         fill="#64748b"
+0349:                         fontSize="7"
+0350:                         fontFamily="monospace"
+0351:                         textAnchor={r.cx > 160 ? 'start' : 'end'}
+0352:                       >
+0353:                         {r.idx + 1}
+0354:                       </text>
+0355:                     </g>
+0356:                   ))}
+0357:                 </svg>
+0358:               </div>
+0359:             )}
+0360:           </div>
+0361:         </div>
+0362:       </div>
+0363:     </div>
+0364:   );
+
+
+/* ============================== 第 8 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0365: }
+0366: import { useState, useEffect, useRef } from 'react';
+0367: import { apiClient, errorMessage, submitBatchJob, getBatchJob, cancelBatchJob, type BatchJobResponse } from '../api/client';
+0368: import { useAppStore } from '../store/useAppStore';
+0369: type Mode = 'screening' | 'evolution' | 'report';
+0370: type Residue = { pos: number; aa: string; hydrophobicity: number; charge: number };
+0371: type Score = { sequence: string; amp_probability: number; hemo_probability: number; ranking_score?: number; therapeutic_safety_index?: number; residues: Residue[]; provenance?: Record<string, unknown> };
+0372: type Candidate = { mutation: string; mutated_seq: string; amp_prob: number; hemo_prob: number; tsi: number; rationale: string };
+0373: type Report = { standard_markdown_report: string; provenance: Record<string, unknown> };
+0374: const titles = { screening: '双任务研究预测', evolution: '探索性突变排序', report: '计算研究报告' };
+0375: function parseSequences(input: string): string[] {
+0376:   const lines = input.split(/\r?\n/).map(x => x.trim()).filter(Boolean);
+0377:   if (!lines.some(x => x.startsWith('>'))) return lines;
+0378:   const sequences: string[] = [];
+0379:   let current = '';
+0380:   for (const line of lines) {
+0381:     if (line.startsWith('>')) {
+0382:       if (current) sequences.push(current);
+0383:       current = '';
+0384:     } else {
+0385:       current += line;
+0386:     }
+0387:   }
+0388:   if (current) sequences.push(current);
+0389:   return sequences;
+0390: }
+0391: const statusConfig: Record<string, { label: string; badgeClass: string }> = {
+0392:   queued: { label: '队列中', badgeClass: 'bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300 border-amber-300 dark:border-amber-700' },
+0393:   running: { label: '执行中', badgeClass: 'bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300 border-blue-300 dark:border-blue-700' },
+0394:   completed: { label: '已完成', badgeClass: 'bg-emerald-100 text-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700' },
+0395:   cancelled: { label: '已取消', badgeClass: 'bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-300 border-slate-300 dark:border-slate-700' },
+0396:   failed: { label: '失败', badgeClass: 'bg-rose-100 text-rose-800 dark:bg-rose-900/40 dark:text-rose-300 border-rose-300 dark:border-rose-700' },
+0397: };
+0398: export default function ResearchStudio({ mode }: { mode: Mode }) {
+0399:   const { activeSequence, addToCart } = useAppStore();
+0400:   const [input, setInput] = useState(activeSequence);
+0401:   const [pending, setPending] = useState(false);
+0402:   const [error, setError] = useState('');
+0403:   const [scores, setScores] = useState<Score[]>([]);
+0404:   const [candidates, setCandidates] = useState<Candidate[] | null>(null);
+0405:   const [report, setReport] = useState<Report | null>(null);
+0406:   const [provenance, setProvenance] = useState<Record<string, unknown> | null>(null);
+0407:   // Batch job async queue states
+0408:   const [asyncQueueMode, setAsyncQueueMode] = useState(false);
+0409:   const [activeJobId, setActiveJobId] = useState<string | null>(null);
+0410:   const [jobProgress, setJobProgress] = useState<{
+0411:     completed: number;
+0412:     total: number;
+0413:     failed_count: number;
+0414:     status: BatchJobResponse['status'] | string;
+0415:   } | null>(null);
+0416:   const [jobErrors, setJobErrors] = useState<Array<{ index: number; sequence: string; error: string }>>([]);
+
+
+/* ============================== 第 9 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0417:   const pollIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+0418:   const stopPolling = () => {
+0419:     if (pollIntervalRef.current) {
+0420:       clearInterval(pollIntervalRef.current);
+0421:       pollIntervalRef.current = null;
+0422:     }
+0423:   };
+0424:   useEffect(() => {
+0425:     return () => {
+0426:       stopPolling();
+0427:     };
+0428:   }, []);
+0429:   async function handleCancelJob() {
+0430:     if (!activeJobId) return;
+0431:     try {
+0432:       await cancelBatchJob(activeJobId);
+0433:       stopPolling();
+0434:       setJobProgress(prev => (prev ? { ...prev, status: 'cancelled' } : null));
+0435:       setActiveJobId(null);
+0436:       setPending(false);
+0437:       setError('作业已被用户取消。');
+0438:     } catch (err) {
+0439:       setError(errorMessage(err));
+0440:     }
+0441:   }
+0442:   async function run() {
+0443:     stopPolling();
+0444:     setError('');
+0445:     setScores([]);
+0446:     setCandidates(null);
+0447:     setReport(null);
+0448:     setProvenance(null);
+0449:     setActiveJobId(null);
+0450:     setJobProgress(null);
+0451:     setJobErrors([]);
+0452:     const sequences = parseSequences(input);
+0453:     if (!sequences.length || (mode !== 'screening' && sequences.length !== 1)) {
+0454:       setError(mode === 'screening' ? '请输入至少一条序列。' : '此功能每次接收一条序列。');
+0455:       return;
+0456:     }
+0457:     setPending(true);
+0458:     try {
+0459:       if (mode === 'screening') {
+0460:         const useAsync = sequences.length > 15 || asyncQueueMode;
+0461:         if (useAsync) {
+0462:           const job = await submitBatchJob(sequences);
+0463:           const jobId = job.job_id;
+0464:           setActiveJobId(jobId);
+0465:           setJobProgress({
+0466:             completed: 0,
+0467:             total: job.total || sequences.length,
+0468:             failed_count: 0,
+
+
+/* ============================== 第 10 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0469:             status: 'queued',
+0470:           });
+0471:           // Poll getBatchJob(jobId) every 800ms
+0472:           pollIntervalRef.current = setInterval(async () => {
+0473:             try {
+0474:               const res = await getBatchJob(jobId);
+0475:               setJobProgress({
+0476:                 completed: res.completed,
+0477:                 total: res.total,
+0478:                 failed_count: res.failed_count,
+0479:                 status: res.status,
+0480:               });
+0481:               if (res.status === 'completed') {
+0482:                 stopPolling();
+0483:                 setActiveJobId(null);
+0484:                 setPending(false);
+0485:                 setScores(res.results as Score[]);
+0486:                 if (res.results?.[0]?.provenance) {
+0487:                   setProvenance(res.results[0].provenance);
+0488:                 }
+0489:                 if (res.errors && res.errors.length > 0) {
+0490:                   setJobErrors(res.errors);
+0491:                 }
+0492:               } else if (res.status === 'failed') {
+0493:                 stopPolling();
+0494:                 setActiveJobId(null);
+0495:                 setPending(false);
+0496:                 if (res.errors && res.errors.length > 0) {
+0497:                   setJobErrors(res.errors);
+0498:                   setError(`作业执行失败: ${res.errors[0]?.error || '未知错误'}`);
+0499:                 } else {
+0500:                   setError('作业执行失败。');
+0501:                 }
+0502:               } else if (res.status === 'cancelled') {
+0503:                 stopPolling();
+0504:                 setActiveJobId(null);
+0505:                 setPending(false);
+0506:                 setError('作业已取消。');
+0507:               }
+0508:             } catch (pollErr) {
+0509:               console.error('Polling error:', pollErr);
+0510:             }
+0511:           }, 800);
+0512:           return;
+0513:         } else {
+0514:           const { data } = await apiClient.post<Score[]>('/api/predict_batch', { sequences });
+0515:           setScores(data);
+0516:           setProvenance(data[0]?.provenance ?? null);
+0517:           setPending(false);
+0518:         }
+0519:       } else if (mode === 'evolution') {
+0520:         const { data } = await apiClient.post('/api/ai_optimize', { sequence: sequences[0] });
+
+
+/* ============================== 第 11 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0521:         setCandidates(data.solutions);
+0522:         setProvenance(data.provenance);
+0523:         setPending(false);
+0524:       } else {
+0525:         const { data } = await apiClient.post<Report>('/api/ai_report', { sequence: sequences[0] });
+0526:         setReport(data);
+0527:         setProvenance(data.provenance);
+0528:         setPending(false);
+0529:       }
+0530:     } catch (err) {
+0531:       stopPolling();
+0532:       setActiveJobId(null);
+0533:       setPending(false);
+0534:       setError(errorMessage(err));
+0535:     }
+0536:   }
+0537:   function exportResult() {
+0538:     const content = report?.standard_markdown_report ?? JSON.stringify({ scores, candidates, provenance }, null, 2);
+0539:     const blob = new Blob([content], { type: report ? 'text/markdown;charset=utf-8' : 'application/json' });
+0540:     const url = URL.createObjectURL(blob);
+0541:     const link = document.createElement('a');
+0542:     link.href = url;
+0543:     link.download = 'safeamp-research.' + (report ? 'md' : 'json');
+0544:     link.click();
+0545:     URL.revokeObjectURL(url);
+0546:   }
+0547:   function exportCSV() {
+0548:     if (!scores.length) return;
+0549:     const header = 'Sequence,Length,P_AMP,P_Hemo,RankingScore\n';
+0550:     const rows = scores.map(s => {
+0551:       const score = s.ranking_score ?? s.therapeutic_safety_index ?? (s.amp_probability * (1 - s.hemo_probability));
+0552:       return `"${s.sequence}",${s.sequence.length},${s.amp_probability.toFixed(4)},${s.hemo_probability.toFixed(4)},${score.toFixed(4)}`;
+0553:     }).join('\n');
+0554:     const blob = new Blob([header + rows], { type: 'text/csv;charset=utf-8;' });
+0555:     const url = URL.createObjectURL(blob);
+0556:     const link = document.createElement('a');
+0557:     link.href = url;
+0558:     link.download = `safeamp-screening-results-${Date.now()}.csv`;
+0559:     link.click();
+0560:     URL.revokeObjectURL(url);
+0561:   }
+0562:   return (
+0563:     <div className="flex flex-col gap-5">
+0564:       <h2 className="text-xl font-bold">{titles[mode]}</h2>
+0565:       <div className="lab-panel p-4 text-sm space-y-2">
+0566:         <p>适用范围：10–50 个标准氨基酸、未修饰序列。抗菌端点为大肠杆菌 MIC；溶血端点为人红细胞 HC50。</p>
+0567:         <p>概率对应预定义实验标签，不是杀菌率或临床安全性。排序分数 P(amp) × (1 − P(hemo)) 不代表治疗窗口。</p>
+0568:         {mode === 'evolution' && <p>候选由同一预测器产生并评分，仅供探索；分数提高不是独立验证，也不能证明实测降毒或活性保留。</p>}
+0569:         {mode === 'report' && <p>报告在本地生成，记录运行来源与局限；尚无已核实的本项目发表记录可供引用。</p>}
+0570:       </div>
+0571:       <div className="lab-panel p-4 space-y-3">
+0572:         <label htmlFor={'research-' + mode} className="lab-label">
+
+
+/* ============================== 第 12 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0573:           {mode === 'screening' ? '序列 / 多行 FASTA（最多 128 条）' : '单条序列'}
+0574:         </label>
+0575:         <textarea
+0576:           id={'research-' + mode}
+0577:           rows={mode === 'screening' ? 6 : 3}
+0578:           className="lab-input w-full font-mono text-sm"
+0579:           value={input}
+0580:           onChange={e => setInput(e.target.value)}
+0581:         />
+0582:         {mode === 'screening' && (
+0583:           <div className="flex items-center justify-between pt-1">
+0584:             <label className="inline-flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400 cursor-pointer select-none">
+0585:               <input
+0586:                 type="checkbox"
+0587:                 checked={asyncQueueMode}
+0588:                 onChange={e => setAsyncQueueMode(e.target.checked)}
+0589:                 className="rounded border-slate-300 text-blue-600 focus:ring-blue-500"
+0590:               />
+0591:               <span>异步作业队列模式（&gt;15 条序列自动启用）</span>
+0592:             </label>
+0593:             <span className="text-xs text-slate-400 font-mono">
+0594:               已输入 {parseSequences(input).length} 条序列
+0595:             </span>
+0596:           </div>
+0597:         )}
+0598:         <div className="flex items-center gap-3">
+0599:           <button
+0600:             className="btn-lab-primary px-4 py-2 disabled:opacity-50"
+0601:             disabled={pending}
+0602:             onClick={run}
+0603:           >
+0604:             {pending ? '处理中…' : '运行' + titles[mode]}
+0605:           </button>
+0606:         </div>
+0607:         {error && <p role="alert" className="text-rose-600 dark:text-rose-300 break-words">{error}</p>}
+0608:       </div>
+0609:       {/* Laboratory-style Batch Progress Card */}
+0610:       {jobProgress && (
+0611:         <div className="lab-panel p-4 space-y-3 border-blue-200 dark:border-blue-900 bg-blue-50/20 dark:bg-blue-950/10">
+0612:           <div className="flex items-center justify-between">
+0613:             <div className="flex items-center gap-2">
+0614:               <span className="text-sm font-semibold text-slate-800 dark:text-slate-200">
+0615:                 批量作业监视器 {activeJobId ? `[${activeJobId}]` : ''}
+0616:               </span>
+0617:               <span className={`px-2.5 py-0.5 text-xs font-semibold rounded-full border ${statusConfig[jobProgress.status]?.badgeClass ?? 'bg-slate-100 text-slate-700 border-slate-300'}`}>
+0618:                 {statusConfig[jobProgress.status]?.label ?? jobProgress.status}
+0619:               </span>
+0620:             </div>
+0621:             {activeJobId && (jobProgress.status === 'queued' || jobProgress.status === 'running') && (
+0622:               <button
+0623:                 type="button"
+0624:                 className="btn-lab-secondary text-xs px-3 py-1 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-950/30 border-rose-200 dark:border-rose-800"
+
+
+/* ============================== 第 13 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0625:                 onClick={handleCancelJob}
+0626:               >
+0627:                 取消作业
+0628:               </button>
+0629:             )}
+0630:           </div>
+0631:           <div className="space-y-1.5">
+0632:             <div className="flex justify-between text-xs font-mono text-slate-600 dark:text-slate-400">
+0633:               <span>已完成 {jobProgress.completed} / {jobProgress.total} (失败: {jobProgress.failed_count})</span>
+0634:               <span>{jobProgress.total > 0 ? Math.round((jobProgress.completed / jobProgress.total) * 100) : 0}%</span>
+0635:             </div>
+0636:             <div className="w-full bg-slate-200 dark:bg-slate-700 rounded-full h-2.5 overflow-hidden">
+0637:               <div
+0638:                 className="bg-blue-600 dark:bg-blue-500 h-2.5 rounded-full transition-all duration-300 ease-out"
+0639:                 style={{ width: `${jobProgress.total > 0 ? (jobProgress.completed / jobProgress.total) * 100 : 0}%` }}
+0640:               />
+0641:             </div>
+0642:           </div>
+0643:         </div>
+0644:       )}
+0645:       {/* Batch Job Error Alert Box */}
+0646:       {jobErrors.length > 0 && (
+0647:         <div role="alert" className="lab-panel p-4 border-rose-300 dark:border-rose-800 bg-rose-50/50 dark:bg-rose-950/20 text-rose-900 dark:text-rose-200 space-y-2">
+0648:           <div className="font-semibold text-sm flex items-center gap-2">
+0649:             <span>⚠️ 存在未通过计算的异常序列（共 {jobErrors.length} 条）：</span>
+0650:           </div>
+0651:           <ul className="list-disc list-inside text-xs space-y-1 font-mono max-h-48 overflow-y-auto">
+0652:             {jobErrors.map((err, idx) => (
+0653:               <li key={idx}>
+0654:                 {err.index >= 0 ? `序号 #${err.index + 1}` : '系统'}
+0655:                 {err.sequence ? ` [${err.sequence}...]` : ''}: {err.error}
+0656:               </li>
+0657:             ))}
+0658:           </ul>
+0659:         </div>
+0660:       )}
+0661:       {/* Scores Result Header & Export Bar */}
+0662:       {scores.length > 0 && (
+0663:         <div className="flex flex-wrap items-center justify-between gap-3 p-3 lab-panel bg-slate-50/50 dark:bg-slate-800/30">
+0664:           <div className="text-sm font-semibold text-slate-700 dark:text-slate-300">
+0665:             筛选结果列表（已完成 {scores.length} 条序列预测）
+0666:           </div>
+0667:           <div className="flex items-center gap-2">
+0668:             <button type="button" className="btn-lab-secondary text-xs px-3 py-1.5" onClick={exportCSV}>
+0669:               导出 CSV 表格
+0670:             </button>
+0671:             <button type="button" className="btn-lab-secondary text-xs px-3 py-1.5" onClick={exportResult}>
+0672:               导出 JSON 记录
+0673:             </button>
+0674:           </div>
+0675:         </div>
+0676:       )}
+
+
+/* ============================== 第 14 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0677:       {/* Result Cards */}
+0678:       {scores.map((s, i) => {
+0679:         const score = s.ranking_score ?? s.therapeutic_safety_index ?? (s.amp_probability * (1 - s.hemo_probability));
+0680:         return (
+0681:           <div className="lab-panel p-4 space-y-3" key={i}>
+0682:             <p className="font-mono break-all">{s.sequence}</p>
+0683:             <p>抗菌标签概率 {s.amp_probability.toFixed(4)} · 溶血标签概率 {s.hemo_probability.toFixed(4)} · 排序分数 {score.toFixed(4)}</p>
+0684:             <p className="text-sm text-slate-500">残基理化属性提示（固定规则，不是梯度归因或机制解释）</p>
+0685:             <div className="flex flex-wrap gap-1">
+0686:               {s.residues.map(r => (
+0687:                 <span
+0688:                   key={r.pos}
+0689:                   title={'位置 ' + r.pos + '; KD 疏水性 ' + r.hydrophobicity + '; 电荷估计 ' + r.charge}
+0690:                   className={'px-2 py-1 rounded font-mono ' + (r.hydrophobicity > 0 ? 'bg-amber-100 text-amber-950 dark:bg-amber-950/60 dark:text-amber-200' : 'bg-blue-100 text-blue-950 dark:bg-blue-950/60 dark:text-blue-200')}
+0691:                 >
+0692:                   {r.aa}<sub>{r.pos}</sub>
+0693:                 </span>
+0694:               ))}
+0695:             </div>
+0696:             <button
+0697:               className="btn-lab-secondary px-3 py-1"
+0698:               onClick={() => addToCart({
+0699:                 sequence: s.sequence,
+0700:                 name: 'Research candidate',
+0701:                 p_amp: s.amp_probability,
+0702:                 p_hemo: s.hemo_probability,
+0703:                 tsi: score,
+0704:                 run_id: String(s.provenance?.run_id ?? 'research-run'),
+0705:               })}
+0706:             >
+0707:               存入候选库
+0708:             </button>
+0709:           </div>
+0710:         );
+0711:       })}
+0712:       {candidates !== null && (
+0713:         <div className="lab-panel p-4 space-y-3">
+0714:           {!candidates.length && <p>未找到满足当前计算筛选条件的候选；这不表明原序列安全或最优。</p>}
+0715:           {candidates.map(c => (
+0716:             <div key={c.mutation} className="border-b border-slate-200 dark:border-slate-700 pb-3">
+0717:               <strong>{c.mutation}</strong>
+0718:               <p className="font-mono break-all">{c.mutated_seq}</p>
+0719:               <p>抗菌标签概率 {c.amp_prob.toFixed(4)} · 溶血标签概率 {c.hemo_prob.toFixed(4)} · 排序分数 {c.tsi.toFixed(4)}</p>
+0720:               <p>{c.rationale}</p>
+0721:             </div>
+0722:           ))}
+0723:         </div>
+0724:       )}
+0725:       {report && (
+0726:         <pre className="lab-panel p-4 whitespace-pre-wrap break-words text-sm">
+0727:           {report.standard_markdown_report}
+0728:         </pre>
+
+
+/* ============================== 第 15 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0729:       )}
+0730:       {provenance && (
+0731:         <div className="lab-panel p-4 space-y-3">
+0732:           <h3>运行来源</h3>
+0733:           <pre className="text-xs whitespace-pre-wrap break-words">{JSON.stringify(provenance, null, 2)}</pre>
+0734:           <div className="flex flex-wrap gap-2">
+0735:             <button className="btn-lab-secondary px-3 py-2" onClick={exportResult}>
+0736:               导出研究记录 (JSON)
+0737:             </button>
+0738:             {scores.length > 0 && (
+0739:               <button className="btn-lab-secondary px-3 py-2" onClick={exportCSV}>
+0740:                 导出筛选结果 (CSV)
+0741:               </button>
+0742:             )}
+0743:           </div>
+0744:         </div>
+0745:       )}
+0746:     </div>
+0747:   );
+0748: }
+0749: import React, { useState } from 'react';
+0750: import { Settings, X, Key, Sliders, ShieldAlert, Check, RotateCcw, Eye, EyeOff } from 'lucide-react';
+0751: import { useAppStore } from '../store/useAppStore';
+0752: interface Props {
+0753:   isOpen: boolean;
+0754:   onClose: () => void;
+0755: }
+0756: const PROVIDER_PRESETS: Record<string, { apiBase: string; modelName: string; label: string }> = {
+0757:   deepseek: {
+0758:     label: 'DeepSeek (默认)',
+0759:     apiBase: 'https://api.deepseek.com/v1',
+0760:     modelName: 'deepseek-chat',
+0761:   },
+0762:   openai: {
+0763:     label: 'OpenAI',
+0764:     apiBase: 'https://api.openai.com/v1',
+0765:     modelName: 'gpt-4o',
+0766:   },
+0767:   anthropic: {
+0768:     label: 'Anthropic Claude',
+0769:     apiBase: 'https://api.anthropic.com/v1',
+0770:     modelName: 'claude-3-5-sonnet-20241022',
+0771:   },
+0772:   ollama: {
+0773:     label: 'Ollama (本地私有部署)',
+0774:     apiBase: 'http://localhost:11434/v1',
+0775:     modelName: 'llama3:latest',
+0776:   },
+0777:   custom: {
+0778:     label: '自定义提供商 (Custom)',
+0779:     apiBase: '',
+0780:     modelName: '',
+
+
+/* ============================== 第 16 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0781:   },
+0782: };
+0783: export function SettingsModal({ isOpen, onClose }: Props) {
+0784:   const {
+0785:     llmProvider,
+0786:     apiKey,
+0787:     apiBase,
+0788:     modelName,
+0789:     temperature,
+0790:     setLLMConfig,
+0791:   } = useAppStore();
+0792:   const [provider, setProvider] = useState(llmProvider || 'deepseek');
+0793:   const [key, setKey] = useState(apiKey || '');
+0794:   const [base, setBase] = useState(apiBase || 'https://api.deepseek.com/v1');
+0795:   const [model, setModel] = useState(modelName || 'deepseek-chat');
+0796:   const [temp, setTemp] = useState(temperature ?? 0.0);
+0797:   const [showKey, setShowKey] = useState(false);
+0798:   const [savedSuccess, setSavedSuccess] = useState(false);
+0799:   if (!isOpen) return null;
+0800:   const handleProviderChange = (newProvider: string) => {
+0801:     setProvider(newProvider);
+0802:     const preset = PROVIDER_PRESETS[newProvider];
+0803:     if (preset && newProvider !== 'custom') {
+0804:       setBase(preset.apiBase);
+0805:       setModel(preset.modelName);
+0806:     }
+0807:   };
+0808:   const handleSave = () => {
+0809:     setLLMConfig({
+0810:       llmProvider: provider,
+0811:       apiKey: key.trim(),
+0812:       apiBase: base.trim(),
+0813:       modelName: model.trim(),
+0814:       temperature: temp,
+0815:     });
+0816:     setSavedSuccess(true);
+0817:     setTimeout(() => {
+0818:       setSavedSuccess(false);
+0819:       onClose();
+0820:     }, 600);
+0821:   };
+0822:   const handleReset = () => {
+0823:     const defaultPreset = PROVIDER_PRESETS['deepseek'];
+0824:     setProvider('deepseek');
+0825:     setKey('');
+0826:     setBase(defaultPreset.apiBase);
+0827:     setModel(defaultPreset.modelName);
+0828:     setTemp(0.0);
+0829:     setLLMConfig({
+0830:       llmProvider: 'deepseek',
+0831:       apiKey: '',
+0832:       apiBase: defaultPreset.apiBase,
+
+
+/* ============================== 第 17 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0833:       modelName: defaultPreset.modelName,
+0834:       temperature: 0.0,
+0835:     });
+0836:   };
+0837:   return (
+0838:     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-xs p-4" role="dialog" aria-modal="true" aria-label="配置中心">
+0839:       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-2xl w-full max-w-xl max-h-[90vh] flex flex-col animate-in fade-in zoom-in-95 duration-150">
+0840:         {/* Header */}
+0841:         <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50/50 dark:bg-slate-800/50">
+0842:           <div className="flex items-center gap-2.5 text-slate-800 dark:text-slate-100 font-semibold text-base">
+0843:             <Settings size={20} className="text-blue-600 dark:text-blue-400" />
+0844:             <span>配置中心 · 可拔插模型设置</span>
+0845:           </div>
+0846:           <button
+0847:             onClick={onClose}
+0848:             className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1 rounded-md transition-colors"
+0849:           >
+0850:             <X size={18} />
+0851:           </button>
+0852:         </div>
+0853:         {/* Content */}
+0854:         <div className="p-6 overflow-y-auto flex-1 space-y-4">
+0855:           {/* Research Governance Banner */}
+0856:           <div className="p-3.5 rounded-lg border border-amber-200 dark:border-amber-900/60 bg-amber-50/70 dark:bg-amber-950/20 text-xs text-amber-900 dark:text-amber-300 space-y-1.5">
+0857:             <div className="flex items-center gap-2 font-semibold">
+0858:               <ShieldAlert size={16} className="text-amber-600 dark:text-amber-400 shrink-0" />
+0859:               <span>科研安全与确定性规范 (Research Provenance & Isolation)</span>
+0860:             </div>
+0861:             <p className="leading-relaxed">
+0862:               SafeAMP-Dual 报告工坊优先采用本地确定性算法（Evidence-Bounded Local Engine）以确保科研可重复性与序列防泄露。设置外部大模型仅用于辅助报告文本生成，生物物理打分与突变筛选严格由本地 ESM-2 驱动。
+0863:             </p>
+0864:           </div>
+0865:           {/* Provider Selection */}
+0866:           <div className="space-y-1.5">
+0867:             <label className="lab-label">大模型服务提供商 (LLM Provider)</label>
+0868:             <select
+0869:               value={provider}
+0870:               onChange={(e) => handleProviderChange(e.target.value)}
+0871:               className="lab-input text-xs"
+0872:             >
+0873:               {Object.entries(PROVIDER_PRESETS).map(([keyVal, preset]) => (
+0874:                 <option key={keyVal} value={keyVal}>
+0875:                   {preset.label}
+0876:                 </option>
+0877:               ))}
+0878:             </select>
+0879:           </div>
+0880:           {/* Model Name */}
+0881:           <div className="space-y-1.5">
+0882:             <label className="lab-label">模型标识 (Model Identifier)</label>
+0883:             <input
+0884:               type="text"
+
+
+/* ============================== 第 18 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0885:               value={model}
+0886:               onChange={(e) => setModel(e.target.value)}
+0887:               placeholder="例如 deepseek-chat 或 gpt-4o"
+0888:               className="lab-input font-mono text-xs"
+0889:             />
+0890:           </div>
+0891:           {/* API Base URL */}
+0892:           <div className="space-y-1.5">
+0893:             <label className="lab-label">接口服务地址 (API Base URL)</label>
+0894:             <input
+0895:               type="text"
+0896:               value={base}
+0897:               onChange={(e) => setBase(e.target.value)}
+0898:               placeholder="https://api.deepseek.com/v1"
+0899:               className="lab-input font-mono text-xs"
+0900:             />
+0901:           </div>
+0902:           {/* API Key */}
+0903:           <div className="space-y-1.5">
+0904:             <div className="flex items-center justify-between">
+0905:               <label className="lab-label flex items-center gap-1">
+0906:                 <Key size={12} />
+0907:                 <span>API 访问凭证 (API Key)</span>
+0908:               </label>
+0909:               <button
+0910:                 type="button"
+0911:                 onClick={() => setShowKey(!showKey)}
+0912:                 className="text-[11px] text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 flex items-center gap-1"
+0913:               >
+0914:                 {showKey ? <EyeOff size={12} /> : <Eye size={12} />}
+0915:                 <span>{showKey ? '隐藏' : '显示'}</span>
+0916:               </button>
+0917:             </div>
+0918:             <input
+0919:               type={showKey ? 'text' : 'password'}
+0920:               value={key}
+0921:               onChange={(e) => setKey(e.target.value)}
+0922:               placeholder="sk-..."
+0923:               className="lab-input font-mono text-xs"
+0924:             />
+0925:             <p className="text-[11px] text-slate-400">
+0926:               凭证仅保存在浏览器本地会话与客户端缓存中，不上传至公共网络。
+0927:             </p>
+0928:           </div>
+0929:           {/* Temperature Slider */}
+0930:           <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800">
+0931:             <div className="flex items-center justify-between">
+0932:               <label className="lab-label flex items-center gap-1 mb-0">
+0933:                 <Sliders size={12} />
+0934:                 <span>采样温度 (Temperature): {temp.toFixed(1)}</span>
+0935:               </label>
+0936:               <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+
+
+/* ============================== 第 19 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0937:                 {temp === 0.0 ? '0.0 (确定性输出)' : temp < 0.5 ? '低发散度' : '高探索度'}
+0938:               </span>
+0939:             </div>
+0940:             <input
+0941:               type="range"
+0942:               min="0.0"
+0943:               max="1.0"
+0944:               step="0.1"
+0945:               value={temp}
+0946:               onChange={(e) => setTemp(parseFloat(e.target.value))}
+0947:               className="w-full accent-blue-600 cursor-pointer"
+0948:             />
+0949:             <div className="flex justify-between text-[10px] text-slate-400 font-mono">
+0950:               <span>0.0 (严谨科研报告)</span>
+0951:               <span>0.5 (平衡)</span>
+0952:               <span>1.0 (高度多样化)</span>
+0953:             </div>
+0954:           </div>
+0955:         </div>
+0956:         {/* Footer */}
+0957:         <div className="px-6 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 flex items-center justify-between">
+0958:           <button
+0959:             type="button"
+0960:             onClick={handleReset}
+0961:             className="text-xs text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 flex items-center gap-1 hover:underline"
+0962:           >
+0963:             <RotateCcw size={13} />
+0964:             <span>恢复默认</span>
+0965:           </button>
+0966:           <div className="flex items-center gap-2">
+0967:             <button
+0968:               type="button"
+0969:               onClick={onClose}
+0970:               className="btn-lab-secondary text-xs px-3 py-1.5"
+0971:             >
+0972:               取消
+0973:             </button>
+0974:             <button
+0975:               type="button"
+0976:               onClick={handleSave}
+0977:               className="btn-lab-primary text-xs px-4 py-1.5 flex items-center gap-1.5"
+0978:             >
+0979:               {savedSuccess ? <Check size={14} /> : null}
+0980:               <span>{savedSuccess ? '已保存配置' : '保存设置'}</span>
+0981:             </button>
+0982:           </div>
+0983:         </div>
+0984:       </div>
+0985:     </div>
+0986:   );
+0987: }
+0988: import React from 'react';
+
+
+/* ============================== 第 20 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+0989: import { ShoppingCart, X, Trash2, Download, Activity, Zap, FileText } from 'lucide-react';
+0990: import { useNavigate } from 'react-router-dom';
+0991: import { useAppStore } from '../store/useAppStore';
+0992: interface Props {
+0993:   isOpen: boolean;
+0994:   onClose: () => void;
+0995: }
+0996: export const PeptideCartModal: React.FC<Props> = ({ isOpen, onClose }) => {
+0997:   const { cart, removeFromCart, clearCart, setActivePeptide } = useAppStore();
+0998:   const navigate = useNavigate();
+0999:   if (!isOpen) return null;
+1000:   const handleExportCSV = () => {
+1001:     if (cart.length === 0) return;
+1002:     const header = 'Sequence,Name,P_AMP,P_Hemo,ComputationalRankingScore,AddedAt\n';
+1003:     const rows = cart.map(c => `"${c.sequence}","${c.name}",${c.p_amp},${c.p_hemo},${c.tsi},"${c.addedAt}"`).join('\n');
+1004:     const blob = new Blob([header + rows], { type: 'text/csv;charset=utf-8;' });
+1005:     const url = URL.createObjectURL(blob);
+1006:     const link = document.createElement('a');
+1007:     link.href = url;
+1008:     link.download = `SafeAMP_Candidate_Library_${Date.now()}.csv`;
+1009:     link.click();
+1010:     URL.revokeObjectURL(url);
+1011:   };
+1012:   const handleSendToEvolution = (seq: string, name: string) => {
+1013:     setActivePeptide(seq, name);
+1014:     onClose();
+1015:     navigate('/evolution');
+1016:   };
+1017:   const handleSendToWheel = (seq: string, name: string) => {
+1018:     setActivePeptide(seq, name);
+1019:     onClose();
+1020:     navigate('/wheel');
+1021:   };
+1022:   const handleSendToReport = (seq: string, name: string) => {
+1023:     setActivePeptide(seq, name);
+1024:     onClose();
+1025:     navigate('/report');
+1026:   };
+1027:   return (
+1028:     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-slate-900/60 backdrop-blur-xs p-4">
+1029:       <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl shadow-2xl w-full max-w-3xl max-h-[85vh] flex flex-col animate-in fade-in zoom-in-95 duration-150">
+1030:         {/* Header */}
+1031:         <div className="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between bg-slate-50/50 dark:bg-slate-800/50">
+1032:           <div className="flex items-center gap-2.5 text-slate-800 dark:text-slate-100 font-semibold text-base">
+1033:             <ShoppingCart size={20} className="text-blue-600 dark:text-blue-400" />
+1034:             <span>候选多肽暂存库 (Candidate Peptide Library)</span>
+1035:             <span className="text-xs bg-blue-100 text-blue-800 dark:bg-blue-900/60 dark:text-blue-300 px-2 py-0.5 rounded-full font-mono">
+1036:               {cart.length} 序列
+1037:             </span>
+1038:           </div>
+1039:           <button onClick={onClose} className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1 rounded-md">
+1040:             <X size={18} />
+
+
+/* ============================== 第 21 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1041:           </button>
+1042:         </div>
+1043:         {/* List Content */}
+1044:         <div className="p-6 overflow-y-auto flex-1 divide-y divide-slate-100 dark:divide-slate-800">
+1045:           {cart.length === 0 ? (
+1046:             <div className="py-12 text-center text-slate-400 dark:text-slate-600 flex flex-col items-center justify-center gap-3">
+1047:               <ShoppingCart size={40} className="stroke-[1.5]" />
+1048:               <p className="text-sm">暂存库为空。在筛选台或突变实验室中点击“存入候选库”即可暂存分子。</p>
+1049:             </div>
+1050:           ) : (
+1051:             cart.map(item => (
+1052:               <div key={item.id} className="py-3.5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 group">
+1053:                 <div className="min-w-0 flex-1">
+1054:                   <div className="flex items-center gap-2 mb-1">
+1055:                     <span className="text-xs font-semibold text-slate-800 dark:text-slate-200">{item.name}</span>
+1056:                     <span className="text-[10px] text-slate-400 font-mono">({item.sequence.length} AA)</span>
+1057:                     <span className={`text-[10px] px-1.5 py-0.2 rounded font-mono font-medium ${
+1058:                       item.tsi >= 0.5 
+1059:                         ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800' 
+1060:                         : 'bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-400 border border-rose-200 dark:border-rose-800'
+1061:                     }`}>
+1062:                       {item.run_id ? '排序分数: ' + item.tsi.toFixed(3) : '未关联验证运行，需重新预测'}
+1063:                     </span>
+1064:                   </div>
+1065:                   <div className="font-mono text-xs text-slate-600 dark:text-slate-300 break-all select-all">
+1066:                     {item.sequence}
+1067:                   </div>
+1068:                   <div className="flex items-center gap-4 text-[11px] text-slate-500 font-mono mt-1">
+1069:                     <span>P_AMP: {item.run_id ? item.p_amp.toFixed(3) : '未计算'}</span>
+1070:                     <span>P_Hemo: {item.run_id ? item.p_hemo.toFixed(3) : '未计算'}</span>
+1071:                     <span>添加时间: {item.addedAt}</span>
+1072:                   </div>
+1073:                 </div>
+1074:                 <div className="flex items-center gap-1.5 shrink-0 self-end sm:self-center">
+1075:                   <button 
+1076:                     onClick={() => handleSendToEvolution(item.sequence, item.name)} 
+1077:                     title="送入突变实验室"
+1078:                     className="p-1.5 text-xs text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-950/50 rounded border border-purple-200 dark:border-purple-800 flex items-center gap-1"
+1079:                   >
+1080:                     <Activity size={13} /> 突变
+1081:                   </button>
+1082:                   <button 
+1083:                     onClick={() => handleSendToWheel(item.sequence, item.name)} 
+1084:                     title="绘制螺旋轮构象"
+1085:                     className="p-1.5 text-xs text-amber-600 dark:text-amber-400 hover:bg-amber-50 dark:hover:bg-amber-950/50 rounded border border-amber-200 dark:border-amber-800 flex items-center gap-1"
+1086:                   >
+1087:                     <Zap size={13} /> 螺旋
+1088:                   </button>
+1089:                   <button 
+1090:                     onClick={() => handleSendToReport(item.sequence, item.name)} 
+1091:                     title="生成计算研究报告"
+1092:                     className="p-1.5 text-xs text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-950/50 rounded border border-blue-200 dark:border-blue-800 flex items-center gap-1"
+
+
+/* ============================== 第 22 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1093:                   >
+1094:                     <FileText size={13} /> 报告
+1095:                   </button>
+1096:                   <button 
+1097:                     onClick={() => removeFromCart(item.id)} 
+1098:                     title="删除"
+1099:                     className="p-1.5 text-slate-400 hover:text-rose-600 dark:hover:text-rose-400 rounded transition-colors"
+1100:                   >
+1101:                     <Trash2 size={14} />
+1102:                   </button>
+1103:                 </div>
+1104:               </div>
+1105:             ))
+1106:           )}
+1107:         </div>
+1108:         {/* Footer */}
+1109:         <div className="px-6 py-4 border-t border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-800/50 flex items-center justify-between">
+1110:           <button 
+1111:             type="button"
+1112:             onClick={clearCart}
+1113:             disabled={cart.length === 0}
+1114:             className="text-xs text-rose-600 dark:text-rose-400 hover:underline disabled:opacity-40"
+1115:           >
+1116:             清空库
+1117:           </button>
+1118:           <div className="flex items-center gap-3">
+1119:             <button 
+1120:               type="button"
+1121:               onClick={handleExportCSV}
+1122:               disabled={cart.length === 0}
+1123:               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 bg-white dark:bg-slate-800 hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg shadow-2xs transition-colors disabled:opacity-40"
+1124:             >
+1125:               <Download size={13} /> 导出为 CSV
+1126:             </button>
+1127:             <button 
+1128:               type="button"
+1129:               onClick={onClose} 
+1130:               className="px-4 py-1.5 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-xs transition-colors"
+1131:             >
+1132:               完成
+1133:             </button>
+1134:           </div>
+1135:         </div>
+1136:       </div>
+1137:     </div>
+1138:   );
+1139: };
+1140: import React, { Component, type ErrorInfo, type ReactNode } from 'react';
+1141: import { AlertTriangle, RotateCcw } from 'lucide-react';
+1142: interface Props {
+1143:   children: ReactNode;
+1144:   fallbackTitle?: string;
+
+
+/* ============================== 第 23 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1145: }
+1146: interface State {
+1147:   hasError: boolean;
+1148:   error: Error | null;
+1149: }
+1150: export class ErrorBoundary extends Component<Props, State> {
+1151:   public state: State = {
+1152:     hasError: false,
+1153:     error: null,
+1154:   };
+1155:   public static getDerivedStateFromError(error: Error): State {
+1156:     return { hasError: true, error };
+1157:   }
+1158:   public componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+1159:     console.error('Uncaught error in UI component:', error, errorInfo);
+1160:   }
+1161:   public handleReset = () => {
+1162:     this.setState({ hasError: false, error: null });
+1163:   };
+1164:   public render() {
+1165:     if (this.state.hasError) {
+1166:       return (
+1167:         <div className="p-6 my-4 rounded-xl border border-rose-200 dark:border-rose-900 bg-rose-50/70 dark:bg-rose-950/30 text-rose-900 dark:text-rose-200 space-y-3">
+1168:           <div className="flex items-center gap-2">
+1169:             <AlertTriangle className="text-rose-600 dark:text-rose-400" size={20} />
+1170:             <h3 className="font-semibold text-base">
+1171:               {this.props.fallbackTitle || '页面组件运行异常'}
+1172:             </h3>
+1173:           </div>
+1174:           <p className="text-xs text-rose-700 dark:text-rose-300 font-mono break-all">
+1175:             {this.state.error?.message || '发生了未捕获的渲染错误'}
+1176:           </p>
+1177:           <div className="flex items-center gap-3 pt-2">
+1178:             <button
+1179:               type="button"
+1180:               onClick={this.handleReset}
+1181:               className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-white bg-rose-600 hover:bg-rose-700 rounded-lg transition-colors cursor-pointer"
+1182:             >
+1183:               <RotateCcw size={14} />
+1184:               <span>重试该组件</span>
+1185:             </button>
+1186:             <button
+1187:               type="button"
+1188:               onClick={() => window.location.reload()}
+1189:               className="px-3 py-1.5 text-xs font-semibold text-rose-700 dark:text-rose-300 bg-white dark:bg-slate-800 border border-rose-300 dark:border-rose-800 hover:bg-rose-100 dark:hover:bg-slate-700 rounded-lg transition-colors cursor-pointer"
+1190:             >
+1191:               刷新整个页面
+1192:             </button>
+1193:           </div>
+1194:         </div>
+1195:       );
+1196:     }
+
+
+/* ============================== 第 24 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1197:     return this.props.children;
+1198:   }
+1199: }
+1200: import { create } from 'zustand';
+1201: import { persist } from 'zustand/middleware';
+1202: export interface CartPeptide {
+1203:   id: string;
+1204:   sequence: string;
+1205:   name: string;
+1206:   p_amp: number;
+1207:   p_hemo: number;
+1208:   tsi: number;
+1209:   is_short?: boolean;
+1210:   addedAt: string;
+1211:   run_id?: string;
+1212: }
+1213: interface AppState {
+1214:   // 可拔插大模型配置 (Pluggable Model Config)
+1215:   llmProvider: string;
+1216:   apiKey: string;
+1217:   apiBase: string;
+1218:   modelName: string;
+1219:   temperature: number;
+1220:   setLLMConfig: (config: Partial<Pick<AppState, 'llmProvider' | 'apiKey' | 'apiBase' | 'modelName' | 'temperature'>>) => void;
+1221:   // 跨模块流通分子 (Active Peptide across Studios)
+1222:   activeSequence: string;
+1223:   activePeptideName: string;
+1224:   setActivePeptide: (seq: string, name?: string) => void;
+1225:   // 候选分子库 (Peptide Cart)
+1226:   cart: CartPeptide[];
+1227:   addToCart: (peptide: Omit<CartPeptide, 'id' | 'addedAt'>) => boolean;
+1228:   removeFromCart: (id: string) => void;
+1229:   clearCart: () => void;
+1230: }
+1231: export const useAppStore = create<AppState>()(
+1232:   persist(
+1233:     (set, get) => ({
+1234:       llmProvider: 'deepseek',
+1235:       apiKey: '',
+1236:       apiBase: 'https://api.deepseek.com/v1',
+1237:       modelName: 'deepseek-chat',
+1238:       temperature: 0.0,
+1239:       setLLMConfig: (config) => set((state) => ({ ...state, ...config })),
+1240:       activeSequence: 'GIGAVLKVLTTGLPALISWIKRKRQQ',
+1241:       activePeptideName: 'Melittin (蜂毒素)',
+1242:       setActivePeptide: (seq, name) => set({ 
+1243:         activeSequence: seq.trim().toUpperCase(), 
+1244:         activePeptideName: name || 'Custom Peptide' 
+1245:       }),
+1246:       cart: [],
+1247:       addToCart: (peptide) => {
+1248:         const { cart } = get();
+
+
+/* ============================== 第 25 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1249:         const exists = cart.some(p => p.sequence === peptide.sequence);
+1250:         if (exists) return false;
+1251:         const newEntry: CartPeptide = {
+1252:           ...peptide,
+1253:           id: `${Date.now()}-${Math.random().toString(36).substr(2, 4)}`,
+1254:           addedAt: new Date().toLocaleTimeString(),
+1255:         };
+1256:         set({ cart: [newEntry, ...cart] });
+1257:         return true;
+1258:       },
+1259:       removeFromCart: (id) => set((state) => ({ cart: state.cart.filter(p => p.id !== id) })),
+1260:       clearCart: () => set({ cart: [] }),
+1261:     }),
+1262:     {
+1263:       name: 'safeamp-lab-workspace-v3',
+1264:       version: 4,
+1265:       partialize: (state) => ({
+1266:         activeSequence: state.activeSequence,
+1267:         activePeptideName: state.activePeptideName,
+1268:         cart: state.cart,
+1269:         llmProvider: state.llmProvider,
+1270:         apiKey: state.apiKey,
+1271:         apiBase: state.apiBase,
+1272:         modelName: state.modelName,
+1273:         temperature: state.temperature,
+1274:       }),
+1275:       migrate: (state: any) => ({
+1276:         activeSequence: state?.activeSequence ?? '',
+1277:         activePeptideName: state?.activePeptideName ?? '',
+1278:         cart: (Array.isArray(state?.cart) ? state.cart : []) as CartPeptide[],
+1279:         llmProvider: state?.llmProvider ?? 'deepseek',
+1280:         apiKey: state?.apiKey ?? '',
+1281:         apiBase: state?.apiBase ?? 'https://api.deepseek.com/v1',
+1282:         modelName: state?.modelName ?? 'deepseek-chat',
+1283:         temperature: state?.temperature ?? 0.0,
+1284:       }),
+1285:     }
+1286:   )
+1287: );
+1288: import axios from 'axios';
+1289: export const apiClient = axios.create({
+1290:   baseURL: '/',
+1291:   timeout: 30000,
+1292:   headers: {
+1293:     'Content-Type': 'application/json',
+1294:   },
+1295: });
+1296: export function errorMessage(error: unknown): string {
+1297:   if (!axios.isAxiosError(error)) return error instanceof Error ? error.message : '请求失败';
+1298:   if (error.code === 'ECONNABORTED' || error.message.includes('timeout')) {
+1299:     return '请求超时（超过 30 秒），请检查网络连接或后端服务器状态。';
+1300:   }
+
+
+/* ============================== 第 26 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1301:   if (!error.response && error.request) {
+1302:     return '无法连接到后端服务，请确认本地后端已启动（端口 8000/8090）。';
+1303:   }
+1304:   const detail = error.response?.data?.detail;
+1305:   if (typeof detail === 'string') return detail;
+1306:   if (Array.isArray(detail)) return detail.map(item => item.msg ?? '输入不合法').join('; ');
+1307:   if (detail?.code === 'MODEL_NOT_VALIDATED') return '模型不可用：' + detail.message;
+1308:   return detail?.message ?? error.message ?? '请求失败';
+1309: }
+1310: export interface BatchJobResponse {
+1311:   job_id: string;
+1312:   status: 'queued' | 'running' | 'completed' | 'failed' | 'cancelled';
+1313:   total: number;
+1314:   completed: number;
+1315:   failed_count: number;
+1316:   results: any[];
+1317:   errors: Array<{ index: number; sequence: string; error: string }>;
+1318:   created_at: number;
+1319:   updated_at: number;
+1320: }
+1321: export async function submitBatchJob(sequences: string[]): Promise<{ job_id: string; status: string; total: number }> {
+1322:   const res = await apiClient.post('/api/batch_jobs', { sequences });
+1323:   return res.data;
+1324: }
+1325: export async function getBatchJob(jobId: string): Promise<BatchJobResponse> {
+1326:   const res = await apiClient.get(`/api/batch_jobs/${jobId}`);
+1327:   return res.data;
+1328: }
+1329: export async function cancelBatchJob(jobId: string): Promise<{ job_id: string; status: string }> {
+1330:   const res = await apiClient.delete(`/api/batch_jobs/${jobId}`);
+1331:   return res.data;
+1332: }
+1333: import React, { useState, useEffect } from 'react';
+1334: import { BrowserRouter, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
+1335: import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
+1336: import { apiClient } from './api/client';
+1337: import { Activity, Beaker, Dna, FileBarChart, Settings, ShoppingCart, Zap, Sun, Moon } from 'lucide-react';
+1338: import { useAppStore } from './store/useAppStore';
+1339: import ScreeningStudio from './pages/ScreeningStudio';
+1340: import EvolutionStudio from './pages/EvolutionStudio';
+1341: import HelicalWheelStudio from './pages/HelicalWheelStudio';
+1342: import ReportStudio from './pages/ReportStudio';
+1343: import { SettingsModal } from './components/SettingsModal';
+1344: import { PeptideCartModal } from './components/PeptideCartModal';
+1345: import { ErrorBoundary } from './components/ErrorBoundary';
+1346: const queryClient = new QueryClient();
+1347: const NavTab = ({ to, icon: Icon, label, isActive }: { to: string, icon: any, label: string, isActive: boolean }) => (
+1348:   <NavLink to={to}>
+1349:     <div className={`flex items-center gap-2 px-3 py-2 rounded-md text-xs font-semibold transition-all ${
+1350:       isActive 
+1351:         ? 'bg-blue-600 text-white shadow-xs' 
+1352:         : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800'
+
+
+/* ============================== 第 27 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1353:     }`}>
+1354:       <Icon size={15} />
+1355:       <span>{label}</span>
+1356:     </div>
+1357:   </NavLink>
+1358: );
+1359: const GlobalHeader = ({ 
+1360:   isDark, 
+1361:   toggleDark, 
+1362:   openSettings, 
+1363:   openCart 
+1364: }: { 
+1365:   isDark: boolean; 
+1366:   toggleDark: () => void; 
+1367:   openSettings: () => void; 
+1368:   openCart: () => void; 
+1369: }) => {
+1370:   const { cart } = useAppStore();
+1371:   const status = useQuery({ queryKey: ['research-status'], queryFn: async () => (await apiClient.get('/api/system_status')).data, refetchInterval: 30000, retry: false });
+1372:   const ready = status.data?.status === 'healthy';
+1373:   return (
+1374:     <header className="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-b border-slate-200 dark:border-slate-800 px-6 py-2.5">
+1375:       <div className="max-w-7xl mx-auto flex flex-wrap gap-2 items-center justify-between">
+1376:         {/* Brand */}
+1377:         <div className="flex items-center gap-3">
+1378:           <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-xs">
+1379:             <Dna size={18} />
+1380:           </div>
+1381:           <div>
+1382:             <div className="flex items-center gap-2">
+1383:               <h1 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">SafeAMP-Dual Research</h1>
+1384:               <span className="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 px-1.5 py-0.2 rounded font-mono font-medium">
+1385:                 v4.0.0
+1386:               </span>
+1387:             </div>
+1388:             <p className="text-[10px] text-slate-400 dark:text-slate-500 font-mono tracking-wider uppercase">
+1389:               计算生物学与抗微生物肽工程实验工作台
+1390:             </p>
+1391:           </div>
+1392:         </div>
+1393:         {/* System Online Badges */}
+1394:         <div role="status" className={'text-xs px-2 py-1 rounded border ' + (ready ? 'text-emerald-700 border-emerald-500' : 'text-amber-700 border-amber-500')} title={status.data?.reason ?? ''}>
+1395:           {status.isPending ? '检查模型状态…' : ready ? '研究模型已通过运行校验' : '研究模型不可用'}
+1396:         </div>
+1397:         {/* Global Action Tools */}
+1398:         <div className="flex items-center gap-2">
+1399:           <button
+1400:             type="button"
+1401:             onClick={toggleDark}
+1402:             title="切换日间/夜间模式"
+1403:             className="p-1.5 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+1404:           >
+
+
+/* ============================== 第 28 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1405:             {isDark ? <Sun size={16} /> : <Moon size={16} />}
+1406:           </button>
+1407:           <button
+1408:             type="button"
+1409:             onClick={openSettings}
+1410:             title="配置中心 (可拔插模型设置)"
+1411:             className="p-1.5 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 rounded-md hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1 text-xs"
+1412:           >
+1413:             <Settings size={16} />
+1414:             <span className="hidden sm:inline">配置中心</span>
+1415:           </button>
+1416:           <button
+1417:             type="button"
+1418:             onClick={openCart}
+1419:             title="查看暂存的候选多肽分子库"
+1420:             className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-700 transition-colors"
+1421:           >
+1422:             <ShoppingCart size={14} />
+1423:             <span>分子库</span>
+1424:             <span className="bg-blue-600 text-white text-[10px] px-1.5 py-0.2 rounded-full font-mono">
+1425:               {cart.length}
+1426:             </span>
+1427:           </button>
+1428:         </div>
+1429:       </div>
+1430:     </header>
+1431:   );
+1432: };
+1433: const Layout = () => {
+1434:   const location = useLocation();
+1435:   const [isDark, setIsDark] = useState(false);
+1436:   const [settingsOpen, setSettingsOpen] = useState(false);
+1437:   const [cartOpen, setCartOpen] = useState(false);
+1438:   useEffect(() => {
+1439:     if (isDark) {
+1440:       document.documentElement.classList.add('dark');
+1441:     } else {
+1442:       document.documentElement.classList.remove('dark');
+1443:     }
+1444:   }, [isDark]);
+1445:   return (
+1446:     <div className="min-h-screen flex flex-col bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-200">
+1447:       <GlobalHeader 
+1448:         isDark={isDark} 
+1449:         toggleDark={() => setIsDark(!isDark)} 
+1450:         openSettings={() => setSettingsOpen(true)}
+1451:         openCart={() => setCartOpen(true)}
+1452:       />
+1453:       <SettingsModal isOpen={settingsOpen} onClose={() => setSettingsOpen(false)} />
+1454:       <PeptideCartModal isOpen={cartOpen} onClose={() => setCartOpen(false)} />
+1455:       {/* Main Studio Navigation Bar */}
+1456:       <div className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
+
+
+/* ============================== 第 29 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1457:         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center gap-2 overflow-x-auto">
+1458:           <NavTab to="/" icon={Beaker} label="1. 高通量协同筛选" isActive={location.pathname === '/'} />
+1459:           <NavTab to="/evolution" icon={Activity} label="2. 探索性突变排序" isActive={location.pathname === '/evolution'} />
+1460:           <NavTab to="/wheel" icon={Zap} label="3. 螺旋轮与两亲投影" isActive={location.pathname === '/wheel'} />
+1461:           <NavTab to="/report" icon={FileBarChart} label="4. 科研报告与导出" isActive={location.pathname === '/report'} />
+1462:         </div>
+1463:       </div>
+1464:       {/* Main Workstation Canvas */}
+1465:       <main className="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6">
+1466:         <p className="mb-5 p-3 rounded border border-amber-300 dark:border-amber-800 bg-amber-50 dark:bg-amber-950/40 text-amber-950 dark:text-amber-200 text-sm">纯计算研究原型。当前数据、来源隔离与实验产物通过校验后才能预测；理化图示不依赖预测模型，也不能证明真实构象或安全性。</p>
+1467:         <ErrorBoundary fallbackTitle="科研工作台页面组件运行异常">
+1468:           <Outlet />
+1469:         </ErrorBoundary>
+1470:       </main>
+1471:       {/* Scientific Lab Footer */}
+1472:       <footer className="border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 py-3 text-center text-[11px] text-slate-400 font-mono">
+1473:         SafeAMP-Dual · Computational research prototype · No clinical validation
+1474:       </footer>
+1475:     </div>
+1476:   );
+1477: };
+1478: export default function App() {
+1479:   return (
+1480:     <QueryClientProvider client={queryClient}>
+1481:       <BrowserRouter>
+1482:         <Routes>
+1483:           <Route path="/" element={<Layout />}>
+1484:             <Route index element={<ScreeningStudio />} />
+1485:             <Route path="evolution" element={<EvolutionStudio />} />
+1486:             <Route path="wheel" element={<HelicalWheelStudio />} />
+1487:             <Route path="report" element={<ReportStudio />} />
+1488:           </Route>
+1489:         </Routes>
+1490:       </BrowserRouter>
+1491:     </QueryClientProvider>
+1492:   );
+1493: }
+1494: .counter {
+1495:   font-size: 16px;
+1496:   padding: 5px 10px;
+1497:   border-radius: 5px;
+1498:   color: var(--accent);
+1499:   background: var(--accent-bg);
+1500:   border: 2px solid transparent;
+1501:   transition: border-color 0.3s;
+1502:   margin-bottom: 24px;
+1503:   &:hover {
+1504:     border-color: var(--accent-border);
+1505:   }
+1506:   &:focus-visible {
+1507:     outline: 2px solid var(--accent);
+1508:     outline-offset: 2px;
+
+
+/* ============================== 第 30 页 / 共 60 页 【SafeAMP-Dual V1.0 前端交互模块】 ============================== */
+1509:   }
+1510: }
+1511: .hero {
+1512:   position: relative;
+1513:   .base,
+1514:   .framework,
+1515:   .vite {
+1516:     inset-inline: 0;
+1517:     margin: 0 auto;
+1518:   }
+1519:   .base {
+1520:     width: 170px;
+1521:     position: relative;
+1522:     z-index: 0;
+1523:   }
+1524:   .framework,
+1525:   .vite {
+1526:     position: absolute;
+1527:   }
+1528:   .framework {
+1529:     z-index: 1;
+1530:     top: 34px;
+1531:     height: 28px;
+1532:     transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
+1533:       scale(1.4);
+1534:   }
+1535:   .vite {
+1536:     z-index: 0;
+1537:     top: 107px;
+1538:     height: 26px;
+1539:     width: auto;
+1540:     transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
+1541:       scale(0.8);
+1542:   }
+1543: }
+1544: #center {
+1545:   display: flex;
+1546:   flex-direction: column;
+1547:   gap: 25px;
+1548:   place-content: center;
+1549:   place-items: center;
+1550:   flex-grow: 1;
+1551:   @media (max-width: 1024px) {
+1552:     padding: 32px 20px 24px;
+1553:     gap: 18px;
+1554:   }
+1555: }
+1556: #next-steps {
+1557:   display: flex;
+1558:   border-top: 1px solid var(--border);
+1559:   text-align: left;
+1560:   & > div {
+
+
+/* ============================== 第 31 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1561: """
+1562: feature_extractor.py
+1563: 提取多肽序列的理化特征 (Physicochemical Descriptors) 与 ESM-2 嵌入特征。
+1564: 完全自包含，无冗余外部依赖，支持轻量高效运行。
+1565: """
+1566: import math
+1567: from typing import Dict, List, Tuple
+1568: import numpy as np
+1569: # 20 种标准天然氨基酸列表
+1570: STANDARD_AMINO_ACIDS = [
+1571:     'A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L',
+1572:     'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y'
+1573: ]
+1574: # Kyte-Doolittle 疏水性标度 (Hydropathy scale)
+1575: KYTE_DOOLITTLE = {
+1576:     'A': 1.8, 'C': 2.5, 'D': -3.5, 'E': -3.5, 'F': 2.8,
+1577:     'G': -0.4, 'H': -3.2, 'I': 4.5, 'K': -3.9, 'L': 3.8,
+1578:     'M': 1.9, 'N': -3.5, 'P': -1.6, 'Q': -3.5, 'R': -4.5,
+1579:     'S': -0.8, 'T': -0.7, 'V': 4.2, 'W': -0.9, 'Y': -1.3
+1580: }
+1581: # 氨基酸分子量 (Da)
+1582: MOLECULAR_WEIGHTS = {
+1583:     'A': 89.09, 'C': 121.16, 'D': 133.10, 'E': 147.13, 'F': 165.19,
+1584:     'G': 75.07, 'H': 155.16, 'I': 131.18, 'K': 146.19, 'L': 131.18,
+1585:     'M': 149.21, 'N': 132.12, 'P': 115.13, 'Q': 146.15, 'R': 174.20,
+1586:     'S': 105.09, 'T': 119.12, 'V': 117.15, 'W': 204.23, 'Y': 181.19
+1587: }
+1588: # 氨基酸 pKa 值与荷电倾向 (用于估计 pH 7.4 净电荷)
+1589: # 正电荷: K, R, H (部分); 负电荷: D, E
+1590: CHARGE_ESTIMATE = {
+1591:     'K': 1.0, 'R': 1.0, 'H': 0.1,
+1592:     'D': -1.0, 'E': -1.0
+1593: }
+1594: # Boman 指数 (蛋白质结合潜力指标, kcal/mol)
+1595: BOMAN_INDEX_MAP = {
+1596:     'L': -4.92, 'I': -4.92, 'V': -4.04, 'F': -2.98, 'W': -2.33,
+1597:     'A': -1.81, 'M': -1.45, 'C': -1.28, 'G': -0.94, 'Y': -0.14,
+1598:     'T': 2.57, 'S': 3.40, 'H': 4.66, 'Q': 5.54, 'K': 5.55,
+1599:     'N': 6.64, 'E': 6.81, 'D': 8.72, 'R': 9.38, 'P': 0.0
+1600: }
+1601: def clean_sequence(seq: str) -> str:
+1602:     """Normalize whitespace/case only; never silently edit molecular identity."""
+1603:     if not isinstance(seq, str):
+1604:         raise ValueError('Sequence must be a string.')
+1605:     cleaned = ''.join(seq.split()).upper()
+1606:     if not 3 <= len(cleaned) <= 1022:
+1607:         raise ValueError('Sequence length must be between 3 and 1022 residues.')
+1608:     invalid = set(cleaned) - set(STANDARD_AMINO_ACIDS)
+1609:     if invalid:
+1610:         raise ValueError('Noncanonical residues or non-sequence characters are not supported.')
+1611:     return cleaned
+1612: def compute_amino_acid_composition(seq: str) -> np.ndarray:
+
+
+/* ============================== 第 32 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1613:     """计算 20 维氨基酸组成频率 (Amino Acid Composition, AAC)"""
+1614:     length = len(seq)
+1615:     counts = {aa: 0 for aa in STANDARD_AMINO_ACIDS}
+1616:     for aa in seq:
+1617:         if aa in counts:
+1618:             counts[aa] += 1
+1619:     return np.array([counts[aa] / length for aa in STANDARD_AMINO_ACIDS], dtype=np.float32)
+1620: def compute_physicochemical_properties(seq: str) -> np.ndarray:
+1621:     """
+1622:     计算多肽核心物理化学特征 (8 维关键特征):
+1623:     1. 序列长度 (Length)
+1624:     2. 平均疏水性 (Mean Hydrophobicity)
+1625:     3. 净电荷 (Net Charge at pH 7.4)
+1626:     4. 电荷密度 (Charge Density)
+1627:     5. 总分子量 (Molecular Weight / 1000)
+1628:     6. 疏水残基比率 (Hydrophobic Ratio)
+1629:     7. 阳离子残基比率 (Cationic Ratio: K, R)
+1630:     8. Boman 指数 (结合潜力)
+1631:     """
+1632:     length = len(seq)
+1633:     # 疏水性统计
+1634:     hydro_values = [KYTE_DOOLITTLE.get(aa, 0.0) for aa in seq]
+1635:     mean_hydro = float(np.mean(hydro_values))
+1636:     hydrophobic_count = sum(1 for aa in seq if KYTE_DOOLITTLE.get(aa, 0.0) > 0.0)
+1637:     hydro_ratio = hydrophobic_count / length
+1638:     # 净电荷与阳离子比率
+1639:     net_charge = sum(CHARGE_ESTIMATE.get(aa, 0.0) for aa in seq)
+1640:     charge_density = net_charge / length
+1641:     cationic_count = sum(1 for aa in seq if aa in ['K', 'R'])
+1642:     cationic_ratio = cationic_count / length
+1643:     # 分子量 (减去脱水缩合产生的 (n-1)*18.0152 Da)
+1644:     mw = sum(MOLECULAR_WEIGHTS.get(aa, 110.0) for aa in seq) - (length - 1) * 18.0152
+1645:     mw_scaled = mw / 1000.0
+1646:     # Boman Index
+1647:     boman_idx = sum(BOMAN_INDEX_MAP.get(aa, 0.0) for aa in seq) / length
+1648:     features = [
+1649:         float(length) / 50.0,    # 归一化长度 (常见短肽 10~50)
+1650:         mean_hydro / 4.5,        # 归一化疏水性
+1651:         net_charge / 10.0,       # 归一化电荷
+1652:         charge_density,          # 电荷密度
+1653:         mw_scaled / 5.0,         # 归一化分子量
+1654:         hydro_ratio,             # 疏水残基比例
+1655:         cationic_ratio,          # 阳离子残基比例
+1656:         boman_idx / 5.0          # Boman 结合指数
+1657:     ]
+1658:     return np.array(features, dtype=np.float32)
+1659: def compute_dipeptide_top_features(seq: str, top_k: int = 16) -> np.ndarray:
+1660:     """
+1661:     提取高频关键二肽组成 (Dipeptide Composition, DPC)
+1662:     在抗菌肽中，带正电氨基酸与疏水氨基酸的交替出现 (如 KL, LK, RR, FL, LA) 是重要特征。
+1663:     """
+1664:     key_pairs = [
+
+
+/* ============================== 第 33 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1665:         'KL', 'LK', 'KK', 'LL', 'FL', 'LF', 'FA', 'AF',
+1666:         'KR', 'RK', 'IL', 'LI', 'AL', 'LA', 'GV', 'VG'
+1667:     ]
+1668:     if len(seq) < 2:
+1669:         return np.zeros(len(key_pairs), dtype=np.float32)
+1670:     total_pairs = len(seq) - 1
+1671:     pair_counts = {p: 0 for p in key_pairs}
+1672:     for i in range(total_pairs):
+1673:         pair = seq[i:i+2]
+1674:         if pair in pair_counts:
+1675:             pair_counts[pair] += 1
+1676:     return np.array([pair_counts[p] / total_pairs for p in key_pairs], dtype=np.float32)
+1677: def extract_handcrafted_features(seq: str) -> np.ndarray:
+1678:     """
+1679:     提取全部手工先验特征:
+1680:     AAC (20维) + 理化属性 (8维) + 关键二肽 (16维) = 共 44 维生物先验特征
+1681:     """
+1682:     cleaned = clean_sequence(seq)
+1683:     aac = compute_amino_acid_composition(cleaned)
+1684:     phys = compute_physicochemical_properties(cleaned)
+1685:     dpc = compute_dipeptide_top_features(cleaned)
+1686:     return np.concatenate([aac, phys, dpc])
+1687: class ESMFeatureExtractor:
+1688:     """Official fair-esm encoder. Synthetic fallback is explicit and test-only."""
+1689:     def __init__(self, model_name: str = 'esm2_t6_8M_UR50D', embedding_dim: int = 320, allow_fallback: bool = False):
+1690:         if model_name != 'esm2_t6_8M_UR50D' or embedding_dim != 320:
+1691:             raise ValueError('Only the declared ESM-2 8M / 320-dimensional encoder is supported.')
+1692:         self.allow_fallback = allow_fallback
+1693:         self.feature_version = 'esm2-t6-8M-phys44-v2'
+1694:         self.model_name, self.embedding_dim = model_name, embedding_dim
+1695:         self.real_esm_available, self.backend = False, 'synthetic-test-only'
+1696:         self.model = self.tokenizer = self.batch_converter = None
+1697:         self.load_errors = []
+1698:         try:
+1699:             import esm
+1700:             self.model, self.alphabet = esm.pretrained.esm2_t6_8M_UR50D()
+1701:             self.model.eval()
+1702:             self.batch_converter = self.alphabet.get_batch_converter()
+1703:             self.real_esm_available, self.backend = True, 'fair-esm'
+1704:         except Exception as exc:
+1705:             self.load_errors.append(type(exc).__name__)
+1706:             if not allow_fallback:
+1707:                 raise RuntimeError('Real ESM-2 encoder unavailable; formal inference is disabled.') from exc
+1708:     def extract_sequence_embedding(self, seq: str) -> Tuple[np.ndarray, np.ndarray]:
+1709:         """
+1710:         返回:
+1711:         - pooled_embedding: 整体序列的池化特征向量 (embedding_dim 维)
+1712:         - residue_embeddings: 每个残基的特征矩阵 (L x embedding_dim)
+1713:         """
+1714:         cleaned = clean_sequence(seq)
+1715:         L = len(cleaned)
+1716:         if self.real_esm_available and self.backend == "transformers":
+
+
+/* ============================== 第 34 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1717:             import torch
+1718:             inputs = self.tokenizer(cleaned, return_tensors="pt")
+1719:             with torch.no_grad():
+1720:                 outputs = self.model(**inputs)
+1721:                 # outputs.last_hidden_state: (1, L + 2, 320)
+1722:                 # 去除 <cls> (index 0) 和 <eos> (index L+1)
+1723:                 token_representations = outputs.last_hidden_state[0, 1:L+1, :].cpu().numpy()
+1724:                 pooled = token_representations.mean(axis=0)
+1725:                 return pooled.astype(np.float32), token_representations.astype(np.float32)
+1726:         elif self.real_esm_available and self.backend == "fair-esm":
+1727:             import torch
+1728:             data = [("protein", cleaned)]
+1729:             batch_labels, batch_strs, batch_tokens = self.batch_converter(data)
+1730:             with torch.no_grad():
+1731:                 results = self.model(batch_tokens, repr_layers=[6], return_contacts=False)
+1732:                 token_representations = results["representations"][6][0, 1:L+1].detach().cpu().numpy()
+1733:                 pooled = token_representations.mean(axis=0)
+1734:                 return pooled.astype(np.float32), token_representations.astype(np.float32)
+1735:         else:
+1736:             if not self.allow_fallback:
+1737:                 raise RuntimeError('Synthetic embeddings are forbidden in research mode.')
+1738:             # 确定性仿生伪嵌入 (基于氨基酸位置演化与理化先验矩阵生成 320 维特征)
+1739:             # 保证相同序列输出严格一致，同时保持语义距离与理化相关性
+1740:             rng = np.random.RandomState(seed=sum(ord(c) * (i + 1) for i, c in enumerate(cleaned)) % 1000000007)
+1741:             residue_embeddings = []
+1742:             handcrafted = extract_handcrafted_features(cleaned)
+1743:             # 使用氨基酸理化和 AAC 投射到 320 维
+1744:             proj_matrix = rng.randn(len(handcrafted), self.embedding_dim) * 0.1
+1745:             base_repr = np.dot(handcrafted, proj_matrix)
+1746:             for i, aa in enumerate(cleaned):
+1747:                 pos_weight = math.sin((i + 1) / (L + 1) * math.pi)
+1748:                 hydro = KYTE_DOOLITTLE.get(aa, 0.0)
+1749:                 charge = CHARGE_ESTIMATE.get(aa, 0.0)
+1750:                 res_vec = base_repr + pos_weight * 0.2 + hydro * 0.15 + charge * 0.25
+1751:                 residue_embeddings.append(res_vec)
+1752:             res_mat = np.array(residue_embeddings, dtype=np.float32)
+1753:             pooled = res_mat.mean(axis=0)
+1754:             return pooled, res_mat
+1755: if __name__ == "__main__":
+1756:     test_seq = "GIGAVLKVLTTGLPALISWIKRKRQQ"  # 蜂毒素 Melittin
+1757:     print(f"测试序列: {test_seq}")
+1758:     phys_feat = extract_handcrafted_features(test_seq)
+1759:     print(f"手工理化特征维度: {phys_feat.shape} (预期 44 维)")
+1760:     extractor = ESMFeatureExtractor()
+1761:     pooled_emb, res_emb = extractor.extract_sequence_embedding(test_seq)
+1762:     print(f"ESM 嵌入特征维度: {pooled_emb.shape} (预期 320 维)")
+1763:     print(f"残基级嵌入矩阵维度: {res_emb.shape} (预期 {len(test_seq)} x 320)")
+1764:     print("特征提取器功能验证成功！")
+1765: """
+1766: helical_wheel.py
+1767: 计算基于 Schiffer-Edmundson 100° 投影模型的 α-螺旋轮构象数据与 Eisenberg 疏水力矩。
+1768: 为 SafeAMP-Dual 3.0 工作站提供高精度物理化学与几何投影支持。
+
+
+/* ============================== 第 35 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1769: """
+1770: import os
+1771: import sys
+1772: import math
+1773: from typing import Dict, List, Tuple, Any
+1774: import numpy as np
+1775: # 确保能正确引用当前目录下的 feature_extractor 模块
+1776: _CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+1777: if _CURRENT_DIR not in sys.path:
+1778:     sys.path.insert(0, _CURRENT_DIR)
+1779: from feature_extractor import clean_sequence, KYTE_DOOLITTLE, CHARGE_ESTIMATE
+1780: def get_residue_category(aa: str) -> Tuple[str, str]:
+1781:     """
+1782:     根据 Kyte-Doolittle 疏水性与电荷倾向返回氨基酸生信色彩分类:
+1783:     - basic: 碱性阳离子 (天蓝 #38bdf8)
+1784:     - acidic: 酸性阴离子 (玫红 #f43f5e)
+1785:     - hydrophobic: 强疏水 (橙黄 #f59e0b)
+1786:     - moderate: 中度疏水 (淡黄 #fbbf24)
+1787:     - polar: 极性中性 (草绿 #10b981)
+1788:     Returns:
+1789:         (category_name, hex_color)
+1790:     """
+1791:     charge = CHARGE_ESTIMATE.get(aa, 0.0)
+1792:     hydro = KYTE_DOOLITTLE.get(aa, 0.0)
+1793:     if charge > 0:
+1794:         return "basic", "#38bdf8"
+1795:     elif charge < 0:
+1796:         return "acidic", "#f43f5e"
+1797:     elif hydro >= 1.8:
+1798:         return "hydrophobic", "#f59e0b"
+1799:     elif hydro > 0:
+1800:         return "moderate", "#fbbf24"
+1801:     else:
+1802:         return "polar", "#10b981"
+1803: def compute_helical_wheel_data(seq: str, radius: float = 120.0) -> Dict[str, Any]:
+1804:     """
+1805:     计算基于 Schiffer-Edmundson 100 度投影模型的螺旋轮构象数据及 Eisenberg 两亲疏水力矩。
+1806:     Args:
+1807:         seq: 多肽单字母序列
+1808:         radius: 螺旋轮投影半径 (默认 120.0，中心坐标为 (160.0, 160.0))
+1809:     Returns:
+1810:         Dict 包含:
+1811:             - sequence: 清理后的大写序列
+1812:             - length: 序列长度
+1813:             - residues: 残基投影列表 (pos, aa, angle_deg, x, y, category, color, hydrophobicity, charge)
+1814:             - hydrophobic_moment: Eisenberg 疏水力矩模长 (μH)
+1815:             - moment_angle_deg: 疏水力矩指向角度 (0~360°, 12点钟为 0°, 顺时针)
+1816:             - hydrophobic_angle_span: 疏水面跨度角度
+1817:             - net_charge: pH 7.4 净电荷估计
+1818:             - mean_hydrophobicity: 平均 Kyte-Doolittle 疏水性
+1819:     """
+1820:     cleaned = clean_sequence(seq)
+
+
+/* ============================== 第 36 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1821:     L = len(cleaned)
+1822:     residues: List[Dict[str, Any]] = []
+1823:     sum_x = 0.0
+1824:     sum_y = 0.0
+1825:     hydro_angles = []
+1826:     for idx, aa in enumerate(cleaned):
+1827:         # Schiffer-Edmundson 投影：每个残基在圆周上顺时针步进 100°
+1828:         angle_deg = (idx * 100.0) % 360.0
+1829:         angle_rad = math.radians(angle_deg)
+1830:         # 极坐标转换为笛卡尔坐标 (以 (160.0, 160.0) 为圆心，12点钟方向为 0°)
+1831:         cx = 160.0 + radius * math.sin(angle_rad)
+1832:         cy = 160.0 - radius * math.cos(angle_rad)
+1833:         category, color = get_residue_category(aa)
+1834:         hydro = KYTE_DOOLITTLE.get(aa, 0.0)
+1835:         charge = CHARGE_ESTIMATE.get(aa, 0.0)
+1836:         # 归一化疏水性贡献向量 (KD 标度从 -4.5 到 4.5 归一化至 0.0 ~ 1.0)
+1837:         h_norm = (hydro + 4.5) / 9.0
+1838:         sum_x += h_norm * math.sin(angle_rad)
+1839:         sum_y += -h_norm * math.cos(angle_rad)
+1840:         if hydro > 0:
+1841:             hydro_angles.append(angle_deg)
+1842:         residues.append({
+1843:             "pos": idx + 1,
+1844:             "aa": aa,
+1845:             "angle_deg": round(angle_deg, 1),
+1846:             "x": round(cx, 1),
+1847:             "y": round(cy, 1),
+1848:             "category": category,
+1849:             "color_category": category,
+1850:             "color": color,
+1851:             "hydrophobicity": float(hydro),
+1852:             "charge": float(charge)
+1853:         })
+1854:     # Eisenberg 疏水力矩模长
+1855:     moment_mag = math.sqrt(sum_x ** 2 + sum_y ** 2) / (L + 1e-6)
+1856:     # 疏水力矩方向 (以 12点钟为 0°，顺时针 0~360°)
+1857:     moment_angle_deg = (math.degrees(math.atan2(sum_x, -sum_y)) + 360.0) % 360.0
+1858:     # 计算疏水面角度跨度 (Hydrophobic arc span)
+1859:     if len(hydro_angles) >= 2:
+1860:         # 计算所有疏水残基相对于力矩矢量的角偏离
+1861:         diffs = [abs((a - moment_angle_deg + 180.0) % 360.0 - 180.0) for a in hydro_angles]
+1862:         hydro_span = min(360.0, 2.0 * max(diffs))
+1863:     elif len(hydro_angles) == 1:
+1864:         hydro_span = 20.0
+1865:     else:
+1866:         hydro_span = 0.0
+1867:     net_charge = sum(CHARGE_ESTIMATE.get(aa, 0.0) for aa in cleaned)
+1868:     mean_hydro = float(np.mean([KYTE_DOOLITTLE.get(aa, 0.0) for aa in cleaned]))
+1869:     return {
+1870:         "sequence": cleaned,
+1871:         "length": L,
+1872:         "residues": residues,
+
+
+/* ============================== 第 37 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1873:         "hydrophobic_moment": round(moment_mag, 4),
+1874:         "moment_angle_deg": round(moment_angle_deg, 1),
+1875:         "hydrophobic_angle_span": round(hydro_span, 1),
+1876:         "net_charge": round(net_charge, 2),
+1877:         "mean_hydrophobicity": round(mean_hydro, 2)
+1878:     }
+1879: """Exploratory sequence ranking and fixed physicochemical property displays.
+1880: No function in this module establishes clinical safety or experimental efficacy.
+1881: """
+1882: import sys
+1883: import copy
+1884: from typing import List, Dict, Tuple, Optional
+1885: import numpy as np
+1886: import torch
+1887: from feature_extractor import (
+1888:     clean_sequence, extract_handcrafted_features, ESMFeatureExtractor,
+1889:     STANDARD_AMINO_ACIDS, KYTE_DOOLITTLE, CHARGE_ESTIMATE, BOMAN_INDEX_MAP
+1890: )
+1891: from model_dual_task import SafeAMPDualNet
+1892: class AIPeptideOptimizer:
+1893:     def __init__(self, model: SafeAMPDualNet, extractor: ESMFeatureExtractor, device: str = "cpu"):
+1894:         self.model = model
+1895:         self.extractor = extractor
+1896:         self.device = torch.device(device)
+1897:         self.model.to(self.device)
+1898:         self.model.eval()
+1899:     def evaluate_sequence(self, seq: str) -> Tuple[float, float, float]:
+1900:         """评估单条序列的 P_AMP, P_Hemo, TSI"""
+1901:         cleaned = clean_sequence(seq)
+1902:         p_emb, _ = self.extractor.extract_sequence_embedding(cleaned)
+1903:         p_phys = extract_handcrafted_features(cleaned)
+1904:         t_esm = torch.tensor(p_emb, device=self.device).unsqueeze(0)
+1905:         t_phys = torch.tensor(p_phys, device=self.device).unsqueeze(0)
+1906:         with torch.no_grad():
+1907:             p_amp, p_hemo, tsi = self.model.predict_probabilities(t_esm, t_phys)
+1908:         return float(p_amp[0]), float(p_hemo[0]), float(tsi[0])
+1909:     def compute_residue_attributions(self, seq: str) -> List[Dict]:
+1910:         """Compatibility method name: fixed properties, never model attribution."""
+1911:         return [{'pos': i + 1, 'aa': aa, 'hydrophobicity': KYTE_DOOLITTLE[aa],
+1912:                  'charge': CHARGE_ESTIMATE.get(aa, 0.),
+1913:                  'hydrophobicity_band': 'high' if KYTE_DOOLITTLE[aa] > 2.5 else 'positive' if KYTE_DOOLITTLE[aa] > 0 else 'nonpositive'}
+1914:                 for i, aa in enumerate(clean_sequence(seq))]
+1915:     def optimize_mutations(self, seq: str, top_k: int = 3) -> List[Dict]:
+1916:         """
+1917:         单点候选搜索；固定概率筛选条件仅用于探索性计算排序。
+1918:         """
+1919:         cleaned = clean_sequence(seq)
+1920:         orig_amp, orig_hemo, orig_tsi = self.evaluate_sequence(cleaned)
+1921:         # Prespecified substitutions at hydrophobic sites; no mechanistic inference.
+1922:         substitute_candidates = ['K', 'R', 'A', 'S', 'G']
+1923:         tested_variants = []
+1924:         # 1. 单点突变扫描 (Single Point Mutation)
+
+
+/* ============================== 第 38 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1925:         for i, original_aa in enumerate(cleaned):
+1926:             # 优先扫描中高疏水性的位点
+1927:             if KYTE_DOOLITTLE.get(original_aa, 0.0) <= 0.5 and original_aa not in ['L', 'F', 'I', 'V', 'W']:
+1928:                 continue
+1929:             for sub_aa in substitute_candidates:
+1930:                 if sub_aa == original_aa:
+1931:                     continue
+1932:                 mut_seq = cleaned[:i] + sub_aa + cleaned[i+1:]
+1933:                 m_amp, m_hemo, m_tsi = self.evaluate_sequence(mut_seq)
+1934:                 # Score-only constraints; 0.85 does not mean 85% measured killing.
+1935:                 if m_amp >= 0.85 and m_hemo < orig_hemo and m_tsi > orig_tsi:
+1936:                     gain = m_tsi - orig_tsi
+1937:                     tested_variants.append({
+1938:                         "mutation": f"{original_aa}{i+1}{sub_aa}",
+1939:                         "pos": i + 1,
+1940:                         "original_aa": original_aa,
+1941:                         "mutated_aa": sub_aa,
+1942:                         "mutated_seq": mut_seq,
+1943:                         "amp_prob": round(m_amp, 4),
+1944:                         "hemo_prob": round(m_hemo, 4),
+1945:                         "tsi": round(m_tsi, 4),
+1946:                         "tsi_gain": round(gain, 4),
+1947:                         "hemo_probability_change": round(m_hemo - orig_hemo, 4),
+1948:                         "rationale": "该候选仅改善当前模型的计算排序分数；不代表实测降毒、活性保留或膜机制已得到证实。",
+1949:                         "validation_status": "exploratory_same_model_scoring"
+1950:                     })
+1951:         # 按 TSI 收益降序排列
+1952:         tested_variants.sort(key=lambda x: x["tsi"], reverse=True)
+1953:         return tested_variants[:top_k]
+1954:     def generate_scientific_report(self, seq: str) -> Dict:
+1955:         """Return measured-source model scores without clinical or mechanistic inference."""
+1956:         import hashlib
+1957:         cleaned = clean_sequence(seq)
+1958:         a, h, score = self.evaluate_sequence(cleaned)
+1959:         attrs = self.compute_residue_attributions(cleaned)
+1960:         report_id = 'RESEARCH-' + hashlib.sha256(cleaned.encode()).hexdigest()[:12]
+1961:         metrics = {'amp_probability': a, 'hemo_probability': h,
+1962:                    'ranking_score': score, 'therapeutic_safety_index': score,
+1963:                    'net_charge': float(sum(CHARGE_ESTIMATE.get(x, 0.) for x in cleaned)),
+1964:                    'mean_hydrophobicity': float(np.mean([KYTE_DOOLITTLE[x] for x in cleaned])),
+1965:                    'high_hydrophobicity_residue_count': sum(x['hydrophobicity_band']=='high' for x in attrs),
+1966:                    'positive_hydrophobicity_residue_count': sum(x['hydrophobicity_band']=='positive' for x in attrs),
+1967:                    'nonpositive_hydrophobicity_residue_count': sum(x['hydrophobicity_band']=='nonpositive' for x in attrs)}
+1968:         text = (f'# Computational research report {report_id}\n\n'
+1969:                 f'AMP endpoint score: {a:.6f}\nHemolysis endpoint score: {h:.6f}\n'
+1970:                 f'Exploratory ranking score: {score:.6f}\n\n'
+1971:                 'Scores refer to the declared model endpoints, not measured killing rates, '
+1972:                 'clinical safety, therapeutic windows, or mechanisms. Residue coloring is '
+1973:                 'a fixed physicochemical heuristic, not model gradient attribution. '
+1974:                 'No laboratory experiment was performed by this service. '
+1975:                 'Same-model candidate scoring is not independent validation.')
+1976:         return {'report_id': report_id, 'protocol_version': 'research-v1',
+
+
+/* ============================== 第 39 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+1977:                 'sequence': cleaned, 'length': len(cleaned), 'metrics': metrics,
+1978:                 'clinical_tier': 'Not clinically validated', 'tier_code': 'Research-only',
+1979:                 'disposition': '计算结果待独立验证', 'disposition_badge': 'warning',
+1980:                 'mechanism_model': 'Not established',
+1981:                 'mechanism_deduction': '理化提示不能证明膜作用机制或临床安全性。',
+1982:                 'residue_attributions': attrs, 'attribution_type': 'physicochemical_heuristic',
+1983:                 'ai_mutation_solutions': [], 'standard_markdown_report': text}
+1984: if __name__ == '__main__':
+1985:     import os
+1986:     from inference_runtime import ResearchRuntime
+1987:     runtime = ResearchRuntime(os.environ.get('SAFEAMP_RUN_DIR')).load()
+1988:     optimizer = AIPeptideOptimizer(runtime, runtime.extractor)
+1989:     print(optimizer.generate_scientific_report('GIGAVLKVLTTGLPALISWIKRKRQQ')['standard_markdown_report'])
+1990: """Asynchronous batch task manager for high-throughput prediction jobs."""
+1991: import threading
+1992: import uuid
+1993: from concurrent.futures import ThreadPoolExecutor
+1994: from datetime import datetime, timezone
+1995: from enum import Enum
+1996: from typing import Any, Callable, Dict, List, Optional
+1997: class BatchJobStatus(str, Enum):
+1998:     QUEUED = "queued"
+1999:     RUNNING = "running"
+2000:     COMPLETED = "completed"
+2001:     FAILED = "failed"
+2002:     CANCELLED = "cancelled"
+2003: class BatchTaskManager:
+2004:     """Manages thread-safe asynchronous execution of batch prediction jobs."""
+2005:     def __init__(self, max_workers: int = 4):
+2006:         self.max_workers = max_workers
+2007:         self._executor = ThreadPoolExecutor(max_workers=max_workers)
+2008:         self._lock = threading.Lock()
+2009:         self._jobs: Dict[str, Dict[str, Any]] = {}
+2010:     @staticmethod
+2011:     def _current_timestamp() -> str:
+2012:         return datetime.now(timezone.utc).isoformat()
+2013:     def submit_job(self, sequences: List[str], worker_fn: Callable[[str], Any]) -> str:
+2014:         job_id = f"job-{uuid.uuid4().hex[:12]}"
+2015:         now = self._current_timestamp()
+2016:         with self._lock:
+2017:             self._jobs[job_id] = {
+2018:                 "job_id": job_id,
+2019:                 "status": BatchJobStatus.QUEUED.value,
+2020:                 "total": len(sequences),
+2021:                 "completed": 0,
+2022:                 "failed_count": 0,
+2023:                 "results": [],
+2024:                 "errors": [],
+2025:                 "created_at": now,
+2026:                 "updated_at": now,
+2027:                 "_cancel_flag": False,
+2028:                 "_sequences": list(sequences),
+
+
+/* ============================== 第 40 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2029:                 "_worker_fn": worker_fn,
+2030:             }
+2031:         self._executor.submit(self._execute_job, job_id)
+2032:         return job_id
+2033:     def _execute_job(self, job_id: str) -> None:
+2034:         with self._lock:
+2035:             job = self._jobs.get(job_id)
+2036:             if job is None:
+2037:                 return
+2038:             if job["_cancel_flag"]:
+2039:                 job["status"] = BatchJobStatus.CANCELLED.value
+2040:                 job["updated_at"] = self._current_timestamp()
+2041:                 return
+2042:             job["status"] = BatchJobStatus.RUNNING.value
+2043:             job["updated_at"] = self._current_timestamp()
+2044:             sequences = list(job["_sequences"])
+2045:             worker_fn = job["_worker_fn"]
+2046:         try:
+2047:             for idx, seq in enumerate(sequences):
+2048:                 with self._lock:
+2049:                     if job["_cancel_flag"]:
+2050:                         job["status"] = BatchJobStatus.CANCELLED.value
+2051:                         job["updated_at"] = self._current_timestamp()
+2052:                         return
+2053:                 try:
+2054:                     res = worker_fn(seq)
+2055:                     with self._lock:
+2056:                         if job["_cancel_flag"]:
+2057:                             job["status"] = BatchJobStatus.CANCELLED.value
+2058:                             job["updated_at"] = self._current_timestamp()
+2059:                             return
+2060:                         job["results"].append(res)
+2061:                         job["completed"] += 1
+2062:                         job["updated_at"] = self._current_timestamp()
+2063:                 except Exception as exc:
+2064:                     with self._lock:
+2065:                         if job["_cancel_flag"]:
+2066:                             job["status"] = BatchJobStatus.CANCELLED.value
+2067:                             job["updated_at"] = self._current_timestamp()
+2068:                             return
+2069:                         job["errors"].append({
+2070:                             "index": idx,
+2071:                             "sequence": seq[:15],
+2072:                             "error": str(exc),
+2073:                         })
+2074:                         job["failed_count"] += 1
+2075:                         job["completed"] += 1
+2076:                         job["updated_at"] = self._current_timestamp()
+2077:             with self._lock:
+2078:                 if job["_cancel_flag"]:
+2079:                     job["status"] = BatchJobStatus.CANCELLED.value
+2080:                 else:
+
+
+/* ============================== 第 41 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2081:                     job["status"] = BatchJobStatus.COMPLETED.value
+2082:                 job["updated_at"] = self._current_timestamp()
+2083:         except Exception as fatal_exc:
+2084:             with self._lock:
+2085:                 job["status"] = BatchJobStatus.FAILED.value
+2086:                 job["errors"].append({
+2087:                     "index": -1,
+2088:                     "sequence": "",
+2089:                     "error": f"Fatal execution error: {str(fatal_exc)}",
+2090:                 })
+2091:                 job["updated_at"] = self._current_timestamp()
+2092:     def get_status(self, job_id: str) -> Optional[Dict[str, Any]]:
+2093:         with self._lock:
+2094:             job = self._jobs.get(job_id)
+2095:             if job is None:
+2096:                 return None
+2097:             return {
+2098:                 k: (list(v) if isinstance(v, list) else v)
+2099:                 for k, v in job.items()
+2100:                 if not k.startswith("_")
+2101:             }
+2102:     def cancel_job(self, job_id: str) -> bool:
+2103:         with self._lock:
+2104:             job = self._jobs.get(job_id)
+2105:             if job is None:
+2106:                 return False
+2107:             job["_cancel_flag"] = True
+2108:             job["status"] = BatchJobStatus.CANCELLED.value
+2109:             job["updated_at"] = self._current_timestamp()
+2110:             return True
+2111:     def shutdown(self, wait: bool = True) -> None:
+2112:         self._executor.shutdown(wait=wait)
+2113: """Lazy, fail-closed loading of a completed, provenance-validated ensemble."""
+2114: from pathlib import Path
+2115: import numpy as np
+2116: import torch
+2117: from scipy.special import expit, logit
+2118: from feature_extractor import ESMFeatureExtractor
+2119: from model_dual_task import SafeAMPDualNet
+2120: from research_utils import read_json, sha256
+2121: class ModelUnavailable(RuntimeError):
+2122:     pass
+2123: class ResearchRuntime:
+2124:     def __init__(self,run_dir=None):
+2125:         self.run_dir=Path(run_dir) if run_dir else None
+2126:         self.extractor=None;self.members=[];self.metadata={};self.error=None
+2127:     def load(self):
+2128:         if self.members:return self
+2129:         try:
+2130:             if self.run_dir is None:raise ModelUnavailable('No validated research run configured (SAFEAMP_RUN_DIR).')
+2131:             manifest=read_json(self.run_dir/'manifest.json')
+2132:             if manifest.get('status')!='completed' or manifest.get('dataset_manifest',{}).get('status')!='validated':
+
+
+/* ============================== 第 42 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2133:                 raise ModelUnavailable('Research run or dataset did not pass validation.')
+2134:             if sha256(self.run_dir/'predictions.csv')!=manifest.get('predictions_sha256'):
+2135:                 raise ModelUnavailable('Prediction artifact checksum mismatch.')
+2136:             checkpoints=manifest.get('checkpoints',[])
+2137:             if len(checkpoints)!=3 or {c['seed'] for c in checkpoints}!={11,23,42}:
+2138:                 raise ModelUnavailable('Complete three-seed ensemble required.')
+2139:             for c in checkpoints:
+2140:                 path=(self.run_dir/c['path']).resolve()
+2141:                 if not path.is_relative_to(self.run_dir.resolve()) or sha256(path)!=c['sha256']:
+2142:                     raise ModelUnavailable('Model checkpoint checksum mismatch.')
+2143:             for module in ['feature_extractor.py','model_dual_task.py']:
+2144:                 if manifest.get('code_hashes',{}).get(module)!=sha256(Path(__file__).parent/module):
+2145:                     raise ModelUnavailable('Feature or architecture implementation changed since training.')
+2146:             extractor=ESMFeatureExtractor()
+2147:             feature=manifest['features']
+2148:             esm_file=Path(torch.hub.get_dir())/'checkpoints/esm2_t6_8M_UR50D.pt'
+2149:             if (not extractor.real_esm_available or extractor.backend!=feature['backend']
+2150:                 or extractor.feature_version!=feature['version'] or sha256(esm_file)!=feature['esm_sha256']):
+2151:                 raise ModelUnavailable('Feature encoder provenance mismatch.')
+2152:             members=[]
+2153:             for c in checkpoints:
+2154:                 ck=torch.load(self.run_dir/c['path'],map_location='cpu',weights_only=True)
+2155:                 if ck['features']!=feature or ck['seed']!=c['seed']:
+2156:                     raise ModelUnavailable('Checkpoint metadata mismatch.')
+2157:                 config=ck['config']
+2158:                 if config!=manifest['config']:
+2159:                     raise ModelUnavailable('Checkpoint configuration differs from run manifest.')
+2160:                 for prefix,size in [('esm',320),('phys',44)]:
+2161:                     mean,scale=np.asarray(ck[prefix+'_mean']),np.asarray(ck[prefix+'_scale'])
+2162:                     if mean.shape!=(size,) or scale.shape!=(size,) or not np.isfinite(mean).all() or not np.isfinite(scale).all() or (scale<=0).any():
+2163:                         raise ModelUnavailable('Invalid saved preprocessing parameters.')
+2164:                 if len(ck['calibration'])!=2 or not all(np.isfinite([v['coefficient'],v['intercept']]).all() for v in ck['calibration']):
+2165:                     raise ModelUnavailable('Invalid saved calibration parameters.')
+2166:                 model=SafeAMPDualNet(hidden_dim=config['hidden_dim'],dropout_rate=config['dropout'])
+2167:                 model.load_state_dict(ck['state_dict'],strict=True);model.eval()
+2168:                 if any(not torch.isfinite(p).all() for p in model.parameters()):
+2169:                     raise ModelUnavailable('Non-finite model parameters.')
+2170:                 members.append((model,ck))
+2171:             self.members=members;self.extractor=extractor
+2172:             self.metadata={'run_id':self.run_dir.name,'backend':feature['backend'],'feature_version':feature['version'],
+2173:                            'seeds':[11,23,42],'score_type':'computational_ranking_score','clinical_validation':False,
+2174:                            'model_kind':'mean_of_three_calibrated_seed_predictions',
+2175:                            'amp_endpoint':'E. coli MIC <=32 vs >=128 ug/ml','hemo_endpoint':'Human erythrocyte HC50 <=100 vs >=250 ug/ml'}
+2176:             self.error=None
+2177:         except Exception as exc:
+2178:             self.error=str(exc);self.members=[];self.extractor=None
+2179:             raise ModelUnavailable(str(exc)) from exc
+2180:         return self
+2181:     def status(self):
+2182:         try:self.load()
+2183:         except ModelUnavailable:pass
+2184:         ready=bool(self.members)
+
+
+/* ============================== 第 43 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2185:         return {'status':'healthy' if ready else 'unavailable','reason':self.error,
+2186:                 'esm_model':{'name':'ESM-2 8M','backend':self.metadata.get('backend','unavailable'),'status':'Loaded' if ready else 'Unavailable'},
+2187:                 'dual_task_model':{'name':'SafeAMP-Dual research ensemble','weights_loaded':ready,'status':'Validated' if ready else 'Not validated'},
+2188:                 'mutation_engine':{'name':'Exploratory scoring','status':'Ready' if ready else 'Disabled'},'provenance':self.metadata}
+2189:     def to(self,device):return self
+2190:     def eval(self):return self
+2191:     @torch.no_grad()
+2192:     def predict_probabilities(self,x_esm,x_phys):
+2193:         self.load()
+2194:         e=x_esm.detach().cpu().numpy();p=x_phys.detach().cpu().numpy();values=[]
+2195:         for model,ck in self.members:
+2196:             es=(e-np.asarray(ck['esm_mean']))/np.asarray(ck['esm_scale'])
+2197:             ph=(p-np.asarray(ck['phys_mean']))/np.asarray(ck['phys_scale'])
+2198:             a,h,_=model(torch.tensor(es,dtype=torch.float32),torch.tensor(ph,dtype=torch.float32))
+2199:             raw=np.column_stack([torch.sigmoid(a).numpy(),torch.sigmoid(h).numpy()])
+2200:             for t,c in enumerate(ck['calibration']):
+2201:                 raw[:,t]=expit(c['coefficient']*logit(np.clip(raw[:,t],1e-6,1-1e-6))+c['intercept'])
+2202:             values.append(raw)
+2203:         mean=np.mean(values,axis=0)
+2204:         return mean[:,0],mean[:,1],mean[:,0]*(1-mean[:,1])
+2205: """Unified biological assay measurement representation and label derivation.
+2206: Separates raw measurements from discrete labels:
+2207: - measurement_present: Whether an assay record exists.
+2208: - endpoint_eligible: Whether target species/cell, metric, and units match criteria.
+2209: - label_observed: Whether a definitive binary label is derived.
+2210: Unknown reasons:
+2211: - not_measured
+2212: - incompatible_target
+2213: - incompatible_endpoint
+2214: - unsupported_unit
+2215: - ambiguous_censoring
+2216: - intermediate_range
+2217: - conflicting_measurements
+2218: - unsupported_modification
+2219: - unresolved_evidence
+2220: """
+2221: from dataclasses import dataclass, field, asdict
+2222: import json
+2223: import math
+2224: from pathlib import Path
+2225: import re
+2226: from typing import Optional, Any
+2227: from feature_extractor import MOLECULAR_WEIGHTS, STANDARD_AMINO_ACIDS, clean_sequence
+2228: from research_utils import sha256
+2229: POSITIVE_CUTOFF_AMP = 32.0   # E. coli MIC <= 32 ug/ml
+2230: NEGATIVE_CUTOFF_AMP = 128.0  # E. coli MIC >= 128 ug/ml
+2231: POSITIVE_CUTOFF_HEMO = 100.0  # Human erythrocytes HC50 <= 100 ug/ml
+2232: NEGATIVE_CUTOFF_HEMO = 250.0  # Human erythrocytes HC50 >= 250 ug/ml
+2233: def parse_measurement_bounds(value_str: Any) -> Optional[tuple[float, float, str]]:
+2234:     """Parse numeric concentration bounds and operator.
+2235:     Returns (low, high, operator_type) or None if unparseable.
+2236:     operator_type in: 'exact', 'less_equal', 'greater_equal', 'interval'
+
+
+/* ============================== 第 44 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2237:     """
+2238:     if value_str is None:
+2239:         return None
+2240:     text = str(value_str).strip().replace('≤', '<=').replace('≥', '>=')
+2241:     number = r'(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][+-]?\d+)?'
+2242:     # Check operator + number: <= X, < X, >= X, > X, = X, X
+2243:     m = re.fullmatch(r'([<>]=?|=)?\s*(' + number + r')', text)
+2244:     if m:
+2245:         op = m.group(1) or '='
+2246:         try:
+2247:             x = float(m.group(2))
+2248:         except ValueError:
+2249:             return None
+2250:         if x <= 0 or math.isnan(x) or math.isinf(x):
+2251:             return None
+2252:         if op in ('<=', '<'):
+2253:             return 0.0, x, 'less_equal'
+2254:         if op in ('>=', '>'):
+2255:             return x, math.inf, 'greater_equal'
+2256:         return x, x, 'exact'
+2257:     # Check interval: X - Y or X – Y
+2258:     m_int = re.fullmatch(r'(' + number + r')\s*[-–]\s*(' + number + r')', text)
+2259:     if m_int:
+2260:         try:
+2261:             low, high = float(m_int.group(1)), float(m_int.group(2))
+2262:         except ValueError:
+2263:             return None
+2264:         if 0 < low <= high and not (math.isnan(low) or math.isnan(high) or math.isinf(low) or math.isinf(high)):
+2265:             return low, high, 'interval'
+2266:     return None
+2267: def calculate_mw(sequence: str) -> float:
+2268:     """Calculate monoisotopic molecular weight of canonical linear peptide."""
+2269:     return sum(MOLECULAR_WEIGHTS[aa] for aa in sequence) - 18.0152 * (len(sequence) - 1)
+2270: def normalize_concentration_to_ug_ml(low: float, high: float, unit_str: str, sequence: str) -> Optional[tuple[float, float]]:
+2271:     """Convert concentration to ug/mL based on sequence molecular weight."""
+2272:     u = unit_str.replace('μ', 'u').replace('µ', 'u').lower().replace(' ', '')
+2273:     if u in ('ug/ml', 'mg/l', 'mcg/ml'):
+2274:         factor = 1.0
+2275:     elif u in ('um', 'micromolar', 'umol/l'):
+2276:         mw = calculate_mw(sequence)
+2277:         factor = mw / 1000.0  # (umol / L) * (g / mol) = ug / mL
+2278:     else:
+2279:         return None
+2280:     high_conv = math.inf if math.isinf(high) else high * factor
+2281:     return low * factor, high_conv
+2282: @dataclass
+2283: class SingleAssayObservation:
+2284:     endpoint: str            # 'amp' or 'hemo'
+2285:     target_organism_or_cell: str
+2286:     metric_name: str         # 'MIC', 'HC50', etc.
+2287:     raw_value: str
+2288:     raw_unit: str
+
+
+/* ============================== 第 45 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2289:     conditions: str = ''
+2290:     reference: str = ''
+2291:     # Derived properties
+2292:     eligible: bool = False
+2293:     ineligibility_reason: str = ''
+2294:     normalized_low_ug_ml: Optional[float] = None
+2295:     normalized_high_ug_ml: Optional[float] = None
+2296:     derived_label: Optional[int] = None   # 1, 0, or None
+2297: @dataclass
+2298: class StandardizedMoleculeRecord:
+2299:     record_id: str
+2300:     sequence: str
+2301:     source_dataset: str
+2302:     source_accession: str
+2303:     source_url: str
+2304:     source_role: str = 'development'
+2305:     evidence_reference: str = ''
+2306:     modifications: str = 'none'
+2307:     evidence_type: str = 'experimental'
+2308:     is_synthetic: bool = False
+2309:     raw_path: str = ''
+2310:     raw_sha256: str = ''
+2311:     observations: list[SingleAssayObservation] = field(default_factory=list)
+2312:     # Aggregated binary labels
+2313:     amp_label: Optional[int] = None
+2314:     hemo_label: Optional[int] = None
+2315:     amp_unknown_reasons: list[str] = field(default_factory=list)
+2316:     hemo_unknown_reasons: list[str] = field(default_factory=list)
+2317: def evaluate_assay_for_amp(assay: SingleAssayObservation, sequence: str) -> None:
+2318:     """Evaluate observation against E. coli MIC criteria."""
+2319:     if not any(assay.target_organism_or_cell.lower().startswith(ec) for ec in ['escherichia coli', 'e. coli']):
+2320:         assay.eligible = False
+2321:         assay.ineligibility_reason = 'incompatible_target'
+2322:         return
+2323:     if assay.metric_name.upper() not in ('MIC', 'MINIMUM INHIBITORY CONCENTRATION'):
+2324:         assay.eligible = False
+2325:         assay.ineligibility_reason = 'incompatible_endpoint'
+2326:         return
+2327:     parsed = parse_measurement_bounds(assay.raw_value)
+2328:     if parsed is None:
+2329:         assay.eligible = False
+2330:         assay.ineligibility_reason = 'ambiguous_censoring'
+2331:         return
+2332:     low, high, op = parsed
+2333:     conv = normalize_concentration_to_ug_ml(low, high, assay.raw_unit, sequence)
+2334:     if conv is None:
+2335:         assay.eligible = False
+2336:         assay.ineligibility_reason = 'unsupported_unit'
+2337:         return
+2338:     norm_low, norm_high = conv
+2339:     assay.normalized_low_ug_ml = norm_low
+2340:     assay.normalized_high_ug_ml = norm_high
+
+
+/* ============================== 第 46 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2341:     assay.eligible = True
+2342:     # Cutoffs: <= 32 positive, >= 128 negative
+2343:     if norm_high <= POSITIVE_CUTOFF_AMP:
+2344:         assay.derived_label = 1
+2345:     elif norm_low >= NEGATIVE_CUTOFF_AMP:
+2346:         assay.derived_label = 0
+2347:     else:
+2348:         assay.derived_label = None
+2349:         assay.ineligibility_reason = 'intermediate_range'
+2350: def evaluate_assay_for_hemo(assay: SingleAssayObservation, sequence: str) -> None:
+2351:     """Evaluate observation against Human Erythrocyte HC50 criteria."""
+2352:     target_clean = assay.target_organism_or_cell.lower()
+2353:     if 'human' not in target_clean or not any(rbc in target_clean for rbc in ['erythrocyte', 'red blood', 'rbc']):
+2354:         assay.eligible = False
+2355:         assay.ineligibility_reason = 'incompatible_target'
+2356:         return
+2357:     metric_clean = assay.metric_name.upper().replace(' ', '')
+2358:     if metric_clean not in ('HC50', '50%HEMOLYSIS', '50%HAEMOLYSIS'):
+2359:         assay.eligible = False
+2360:         assay.ineligibility_reason = 'incompatible_endpoint'
+2361:         return
+2362:     parsed = parse_measurement_bounds(assay.raw_value)
+2363:     if parsed is None:
+2364:         assay.eligible = False
+2365:         assay.ineligibility_reason = 'ambiguous_censoring'
+2366:         return
+2367:     low, high, op = parsed
+2368:     conv = normalize_concentration_to_ug_ml(low, high, assay.raw_unit, sequence)
+2369:     if conv is None:
+2370:         assay.eligible = False
+2371:         assay.ineligibility_reason = 'unsupported_unit'
+2372:         return
+2373:     norm_low, norm_high = conv
+2374:     assay.normalized_low_ug_ml = norm_low
+2375:     assay.normalized_high_ug_ml = norm_high
+2376:     assay.eligible = True
+2377:     # Cutoffs: <= 100 positive, >= 250 negative
+2378:     if norm_high <= POSITIVE_CUTOFF_HEMO:
+2379:         assay.derived_label = 1
+2380:     elif norm_low >= NEGATIVE_CUTOFF_HEMO:
+2381:         assay.derived_label = 0
+2382:     else:
+2383:         assay.derived_label = None
+2384:         assay.ineligibility_reason = 'intermediate_range'
+2385: def process_molecule_record(record: StandardizedMoleculeRecord) -> tuple[Optional[dict], Optional[str]]:
+2386:     """Validate sequence, evaluate observations, aggregate labels, and check conflicts."""
+2387:     clean_seq = clean_sequence(record.sequence)
+2388:     if not (10 <= len(clean_seq) <= 50) or set(clean_seq) - set(STANDARD_AMINO_ACIDS):
+2389:         return None, 'noncanonical_or_length'
+2390:     record.sequence = clean_seq
+2391:     amp_labels = set()
+2392:     hemo_labels = set()
+
+
+/* ============================== 第 47 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2393:     amp_reasons = []
+2394:     hemo_reasons = []
+2395:     for obs in record.observations:
+2396:         if obs.endpoint == 'amp':
+2397:             evaluate_assay_for_amp(obs, clean_seq)
+2398:             if obs.derived_label is not None:
+2399:                 amp_labels.add(obs.derived_label)
+2400:             elif obs.ineligibility_reason:
+2401:                 amp_reasons.append(obs.ineligibility_reason)
+2402:         elif obs.endpoint == 'hemo':
+2403:             evaluate_assay_for_hemo(obs, clean_seq)
+2404:             if obs.derived_label is not None:
+2405:                 hemo_labels.add(obs.derived_label)
+2406:             elif obs.ineligibility_reason:
+2407:                 hemo_reasons.append(obs.ineligibility_reason)
+2408:     # Determine final labels
+2409:     if len(amp_labels) == 1:
+2410:         record.amp_label = next(iter(amp_labels))
+2411:     elif len(amp_labels) > 1:
+2412:         record.amp_label = None
+2413:         record.amp_unknown_reasons.append('conflicting_measurements')
+2414:     else:
+2415:         record.amp_label = None
+2416:         record.amp_unknown_reasons.extend(amp_reasons or ['not_measured'])
+2417:     if len(hemo_labels) == 1:
+2418:         record.hemo_label = next(iter(hemo_labels))
+2419:     elif len(hemo_labels) > 1:
+2420:         record.hemo_label = None
+2421:         record.hemo_unknown_reasons.append('conflicting_measurements')
+2422:     else:
+2423:         record.hemo_label = None
+2424:         record.hemo_unknown_reasons.extend(hemo_reasons or ['not_measured'])
+2425:     if record.amp_label is None and record.hemo_label is None:
+2426:         return None, 'missing_or_conflicting_endpoints'
+2427:     # Build row matching REQUIRED contract
+2428:     row = {
+2429:         'record_id': record.record_id,
+2430:         'seq': record.sequence,
+2431:         'amp': record.amp_label,
+2432:         'hemo': record.hemo_label,
+2433:         'source_dataset': record.source_dataset,
+2434:         'source_accession': record.source_accession,
+2435:         'source_url': record.source_url,
+2436:         'evidence_reference': record.evidence_reference,
+2437:         'label_basis': 'Ecoli_MIC_ugml_32_128;human_HC50_ugml_100_250;conflicts_missing',
+2438:         'assay_conditions': json.dumps([asdict(o) for o in record.observations if o.eligible], ensure_ascii=False),
+2439:         'modifications': record.modifications,
+2440:         'evidence_type': record.evidence_type,
+2441:         'is_synthetic': record.is_synthetic,
+2442:         'source_role': record.source_role,
+2443:         'raw_path': record.raw_path,
+2444:         'raw_sha256': record.raw_sha256,
+
+
+/* ============================== 第 48 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2445:     }
+2446:     return row, None
+2447: """Request tracking middleware and structured audit logging."""
+2448: import json
+2449: import threading
+2450: import time
+2451: import uuid
+2452: from pathlib import Path
+2453: from typing import Any, Dict, List, Optional
+2454: from starlette.middleware.base import BaseHTTPMiddleware, RequestResponseEndpoint
+2455: from starlette.requests import Request
+2456: from starlette.responses import Response
+2457: from research_utils import ROOT, utc_now
+2458: AUDIT_LOG_FILE = ROOT / "output" / "audit" / "api_audit.jsonl"
+2459: _file_lock = threading.Lock()
+2460: class AuditLogMiddleware(BaseHTTPMiddleware):
+2461:     """FastAPI/Starlette middleware for X-Request-ID propagation, latency timing,
+2462:     and structured JSONL audit logging.
+2463:     """
+2464:     def __init__(self, app, log_file: Optional[Path] = None):
+2465:         super().__init__(app)
+2466:         self._custom_log_file = Path(log_file) if log_file is not None else None
+2467:         self._lock = _file_lock
+2468:     @property
+2469:     def log_file(self) -> Path:
+2470:         if self._custom_log_file is not None:
+2471:             return self._custom_log_file
+2472:         # Allow dynamic monkeypatching of module-level AUDIT_LOG_FILE
+2473:         return AUDIT_LOG_FILE
+2474:     def _append_log(self, entry: Dict[str, Any]) -> None:
+2475:         target_file = self.log_file
+2476:         target_file.parent.mkdir(parents=True, exist_ok=True)
+2477:         line = json.dumps(entry, ensure_ascii=False) + "\n"
+2478:         with self._lock:
+2479:             with open(target_file, "a", encoding="utf-8") as f:
+2480:                 f.write(line)
+2481:     async def dispatch(self, request: Request, call_next: RequestResponseEndpoint) -> Response:
+2482:         raw_id = request.headers.get("x-request-id")
+2483:         request_id = raw_id.strip() if raw_id and raw_id.strip() else f"req-{uuid.uuid4().hex[:12]}"
+2484:         start_time = time.perf_counter()
+2485:         client_ip = request.client.host if request.client else "unknown"
+2486:         try:
+2487:             response = await call_next(request)
+2488:             duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
+2489:             response.headers["X-Request-ID"] = request_id
+2490:             log_entry = {
+2491:                 "timestamp": utc_now(),
+2492:                 "request_id": request_id,
+2493:                 "method": request.method,
+2494:                 "path": request.url.path,
+2495:                 "status_code": response.status_code,
+2496:                 "duration_ms": duration_ms,
+
+
+/* ============================== 第 49 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2497:                 "client_ip": client_ip,
+2498:             }
+2499:             self._append_log(log_entry)
+2500:             return response
+2501:         except Exception as exc:
+2502:             duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
+2503:             log_entry = {
+2504:                 "timestamp": utc_now(),
+2505:                 "request_id": request_id,
+2506:                 "method": request.method,
+2507:                 "path": request.url.path,
+2508:                 "status_code": 500,
+2509:                 "duration_ms": duration_ms,
+2510:                 "client_ip": client_ip,
+2511:                 "error_type": type(exc).__name__,
+2512:             }
+2513:             try:
+2514:                 self._append_log(log_entry)
+2515:             except Exception:
+2516:                 pass
+2517:             raise
+2518: def read_audit_logs(log_file: Optional[Path] = None) -> List[Dict[str, Any]]:
+2519:     """Read all structured audit log entries from the specified or default file."""
+2520:     path = Path(log_file) if log_file is not None else AUDIT_LOG_FILE
+2521:     if not path.is_file():
+2522:         return []
+2523:     with _file_lock:
+2524:         content = path.read_text(encoding="utf-8")
+2525:     entries = []
+2526:     for line in content.splitlines():
+2527:         line = line.strip()
+2528:         if line:
+2529:             entries.append(json.loads(line))
+2530:     return entries
+2531: """Cache public Crossref metadata; flag mismatches without inventing citations."""
+2532: import argparse
+2533: from difflib import SequenceMatcher
+2534: import json
+2535: from pathlib import Path
+2536: import re
+2537: import time
+2538: import unicodedata
+2539: import urllib.parse
+2540: import urllib.request
+2541: from research_utils import ROOT,write_json,utc_now
+2542: def entries(text):
+2543:     blocks=[]
+2544:     for m in re.finditer(r'@\w+\s*\{([^,]+),',text):
+2545:         level=1;i=m.end()
+2546:         while i<len(text) and level:
+2547:             level+=(text[i]=='{')-(text[i]=='}');i+=1
+2548:         body=text[m.end():i-1];fields={}
+
+
+/* ============================== 第 50 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2549:         for field in ['title','doi','year','author']:
+2550:             f=re.search(r'\b'+field+r'\s*=\s*\{',body,re.I)
+2551:             if f:
+2552:                 start=f.end();j=start;depth=1
+2553:                 while j<len(body) and depth:
+2554:                     depth+=(body[j]=='{')-(body[j]=='}');j+=1
+2555:                 fields[field]=' '.join(body[start:j-1].split())
+2556:         blocks.append({'key':m.group(1),'text':text[m.start():i],**fields})
+2557:     return blocks
+2558: def normalized(s):return re.sub(r'[^a-z0-9]+','',unicodedata.normalize('NFKD',s.lower()))
+2559: def get_metadata(doi,folder):
+2560:     name=re.sub(r'[^a-zA-Z0-9]+','_',doi)+'.json';path=folder/name
+2561:     if path.exists():return json.loads(path.read_text(encoding='utf-8'))
+2562:     url='https://api.crossref.org/works/'+urllib.parse.quote(doi,safe='/')
+2563:     for attempt in range(3):
+2564:         try:
+2565:             req=urllib.request.Request(url,headers={'User-Agent':'SafeAMP-citation-audit/1.0'})
+2566:             with urllib.request.urlopen(req,timeout=20) as r:payload=json.load(r)['message']
+2567:             write_json(path,{'url':url,'retrieved_at':utc_now(),'metadata':payload})
+2568:             return json.loads(path.read_text(encoding='utf-8'))
+2569:         except Exception:
+2570:             if attempt==2:raise
+2571:             time.sleep(2*(attempt+1))
+2572: def audit(bib,output):
+2573:     output=Path(output);output.mkdir(parents=True,exist_ok=True);rows=[]
+2574:     for entry in entries(Path(bib).read_text(encoding='utf-8-sig')):
+2575:         row={'key':entry['key'],'expected_title':entry.get('title'),'doi':entry.get('doi'),
+2576:              'claim_support':'not_checked','status':'no_doi_requires_primary_source_check'}
+2577:         if entry.get('doi'):
+2578:             try:
+2579:                 response=get_metadata(entry['doi'],output/'crossref');actual=response['metadata']
+2580:                 title=actual.get('title',[''])[0]
+2581:                 similarity=SequenceMatcher(None,normalized(entry.get('title','')),normalized(title)).ratio()
+2582:                 expected_authors=[normalized(x.split(',')[0]) for x in entry.get('author','').split(' and ') if x.strip()!='others']
+2583:                 resolved_authors=[normalized(x.get('family',x.get('name',''))) for x in actual.get('author',[])]
+2584:                 authors_match=bool(expected_authors) and expected_authors==resolved_authors[:len(expected_authors)]
+2585:                 years={str(actual[k]['date-parts'][0][0]) for k in ['published','published-print','published-online','issued'] if actual.get(k,{}).get('date-parts')}
+2586:                 year_match=entry.get('year') in years
+2587:                 text_quality='replacement_character_requires_publisher_check' if '\ufffd' in title else 'ok'
+2588:                 row.update(resolved_title=title,title_similarity=similarity,metadata_text_quality=text_quality,metadata_path=str((output/'crossref'/ (re.sub(r'[^a-zA-Z0-9]+','_',entry['doi'])+'.json')).relative_to(ROOT)),
+2589:                            author_metadata_match=authors_match,year_metadata_match=year_match,
+2590:                            status='metadata_match_pending_claim_review' if similarity>=.98 and authors_match and year_match and text_quality=='ok' else 'metadata_mismatch')
+2591:             except Exception as e:row.update(status='lookup_failed',reason=str(e))
+2592:         rows.append(row)
+2593:         write_json(output/'reference_audit.json',{'checked_at':utc_now(),'all_claims_verified':False,'entries':rows})
+2594:         print(entry['key'],row['status'],flush=True)
+2595:         time.sleep(.2)
+2596:     return rows
+2597: if __name__=='__main__':
+2598:     p=argparse.ArgumentParser(description=__doc__)
+2599:     p.add_argument('--bib',type=Path,default=ROOT/'04_paper/references.bib')
+2600:     p.add_argument('--output',type=Path,default=ROOT/'04_paper/evidence')
+
+
+/* ============================== 第 51 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2601:     a=p.parse_args();audit(a.bib,a.output.resolve())
+2602: """Build unified and strictly isolated development and external cohorts.
+2603: Combines:
+2604: - Development cohort: DBAASP v1 (417 experimental records)
+2605: - External cohort: Separately sourced experimental records with full assay provenance
+2606: Applies:
+2607: 1. Exact sequence deduplication against development cohort.
+2608: 2. Literature / PMID / DOI overlap checking against development cohort.
+2609: 3. Orthogonal homology isolation under CD-HIT standard (Protocol Amendment 01).
+2610: 4. Full provenance tracking, raw file checksums, and exclusion auditing.
+2611: """
+2612: import argparse
+2613: import json
+2614: from pathlib import Path
+2615: from typing import Optional
+2616: import numpy as np
+2617: import pandas as pd
+2618: from feature_extractor import clean_sequence
+2619: from cdhit_cluster import cdhit_cluster_sequences
+2620: from research_data import sequence_identity, validate_records, REQUIRED, TASKS
+2621: from research_utils import ROOT, sha256, utc_now, write_json
+2622: def extract_dev_pmids_and_dois(dev_df: pd.DataFrame) -> tuple[set[str], set[str]]:
+2623:     pmids, dois = set(), set()
+2624:     for ref_str in dev_df["evidence_reference"].dropna():
+2625:         try:
+2626:             articles = json.loads(ref_str) if isinstance(ref_str, str) else []
+2627:             for art in articles:
+2628:                 pubmed = art.get("pubmed") if isinstance(art.get("pubmed"), dict) else {}
+2629:                 pmid = pubmed.get("pubmedId") or art.get("pubmedId") or art.get("pmid")
+2630:                 if pmid:
+2631:                     pmids.add(str(pmid).strip())
+2632:                 doi = art.get("doi")
+2633:                 if doi:
+2634:                     dois.add(str(doi).lower().strip())
+2635:         except Exception:
+2636:             pass
+2637:     return pmids, dois
+2638: def extract_record_pmids_and_dois(row) -> tuple[set[str], set[str]]:
+2639:     pmids, dois = set(), set()
+2640:     ref_str = getattr(row, "evidence_reference", None)
+2641:     if ref_str and not pd.isna(ref_str):
+2642:         try:
+2643:             articles = json.loads(ref_str) if isinstance(ref_str, str) else []
+2644:             for art in articles:
+2645:                 if isinstance(art, dict):
+2646:                     pubmed = art.get("pubmed") if isinstance(art.get("pubmed"), dict) else {}
+2647:                     pmid = pubmed.get("pubmedId") or art.get("pubmedId") or art.get("pmid")
+2648:                     if pmid:
+2649:                         pmids.add(str(pmid).strip())
+2650:                     doi = art.get("doi")
+2651:                     if doi:
+2652:                         dois.add(str(doi).lower().strip())
+
+
+/* ============================== 第 52 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2653:         except Exception:
+2654:             pass
+2655:     url = getattr(row, "source_url", "")
+2656:     if url and "doi.org/" in str(url):
+2657:         doi_part = str(url).split("doi.org/")[-1].strip().lower()
+2658:         if doi_part:
+2659:             dois.add(doi_part)
+2660:     return pmids, dois
+2661: def build_cohorts(
+2662:     dev_records_path: Path,
+2663:     output_dir: Path,
+2664:     external_records_path: Optional[Path] = None,
+2665:     cutoff: float = 0.40,
+2666:     identity_mode: str = "max",
+2667: ) -> pd.DataFrame:
+2668:     if external_records_path is None:
+2669:         raise ValueError("An external candidate records file must be explicitly provided via --external; handwritten default entries are forbidden.")
+2670:     output_dir = Path(output_dir)
+2671:     output_dir.mkdir(parents=True, exist_ok=True)
+2672:     # 1. Load Development Cohort
+2673:     dev_records_path = Path(dev_records_path)
+2674:     dev_df = pd.read_csv(dev_records_path)
+2675:     validate_records(dev_df, verify_raw=True)
+2676:     dev_seqs = list(set(dev_df["seq"].map(clean_sequence)))
+2677:     dev_pmids, dev_dois = extract_dev_pmids_and_dois(dev_df)
+2678:     # Compute CD-HIT representatives of development cohort
+2679:     _, dev_reps, _ = cdhit_cluster_sequences(dev_seqs, cutoff=cutoff, min_length_ratio=0.50)
+2680:     print(f"[Build Cohorts] Development cohort loaded: {len(dev_df)} records, {len(dev_reps)} CD-HIT cluster representatives.")
+2681:     # 2. Load and Validate External Cohort
+2682:     external_records_path = Path(external_records_path)
+2683:     if not external_records_path.is_file():
+2684:         raise FileNotFoundError(f"External records file not found: {external_records_path}")
+2685:     ext_candidates = pd.read_csv(external_records_path)
+2686:     validate_records(ext_candidates, verify_raw=True)
+2687:     external_records = []
+2688:     exclusions = []
+2689:     for row in ext_candidates.itertuples():
+2690:         eid = getattr(row, "record_id")
+2691:         try:
+2692:             seq = clean_sequence(getattr(row, "seq"))
+2693:         except Exception:
+2694:             exclusions.append({"id": eid, "reason": "noncanonical_amino_acid"})
+2695:             continue
+2696:         if not (10 <= len(seq) <= 50):
+2697:             exclusions.append({"id": eid, "reason": "length_out_of_range"})
+2698:             continue
+2699:         if seq in dev_seqs:
+2700:             exclusions.append({"id": eid, "reason": "exact_sequence_overlap_with_development"})
+2701:             continue
+2702:         # Check literature overlap against development
+2703:         row_pmids, row_dois = extract_record_pmids_and_dois(row)
+2704:         pmid_overlap = row_pmids & dev_pmids
+
+
+/* ============================== 第 53 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2705:         doi_overlap = row_dois & dev_dois
+2706:         if pmid_overlap or doi_overlap:
+2707:             exclusions.append({
+2708:                 "id": eid,
+2709:                 "reason": f"literature_overlap_with_development (pmid={pmid_overlap}, doi={doi_overlap})"
+2710:             })
+2711:             continue
+2712:         # Check homology isolation against development
+2713:         if identity_mode == "max":
+2714:             max_id = max(
+2715:                 (sequence_identity(seq, d, identity_mode="max") for d in dev_seqs),
+2716:                 default=0.0
+2717:             )
+2718:         else:
+2719:             max_id = max(
+2720:                 (sequence_identity(seq, r) for r in dev_reps
+2721:                  if len(seq)/len(r) >= 0.50 and len(r)/len(seq) >= 0.50),
+2722:                 default=0.0
+2723:             )
+2724:         if max_id >= cutoff:
+2725:             exclusions.append({"id": eid, "reason": f"homology_cross_isolation_violation_{max_id:.3f}"})
+2726:             continue
+2727:         external_records.append({col: getattr(row, col) for col in REQUIRED})
+2728:     ext_df = pd.DataFrame(external_records, columns=REQUIRED)
+2729:     print(f"[Build Cohorts] External cohort curated: {len(ext_df)} records (AMP pos={(ext_df['amp']==1).sum()}, neg={(ext_df['amp']==0).sum()}; Hemo pos={(ext_df['hemo']==1).sum()}, neg={(ext_df['hemo']==0).sum()}).")
+2730:     # Combine development and external cohorts
+2731:     combined_df = pd.concat([dev_df, ext_df], ignore_index=True)
+2732:     combined_records_path = output_dir / "records.csv"
+2733:     combined_df.to_csv(combined_records_path, index=False)
+2734:     write_json(output_dir / "exclusions.json", exclusions)
+2735:     manifest = {
+2736:         "status": "cohorts_built",
+2737:         "created_at": utc_now(),
+2738:         "total_records": len(combined_df),
+2739:         "development_records": len(dev_df),
+2740:         "external_records": len(ext_df),
+2741:         "cutoff": cutoff,
+2742:         "identity_mode": identity_mode,
+2743:         "development_cdhit_clusters": len(dev_reps),
+2744:         "records_sha256": sha256(combined_records_path),
+2745:         "external_exclusions": len(exclusions),
+2746:     }
+2747:     write_json(output_dir / "manifest.json", manifest)
+2748:     print(f"[Build Cohorts] Combined dataset written to {combined_records_path} (Total: {len(combined_df)} records).")
+2749:     return combined_df
+2750: if __name__ == "__main__":
+2751:     p = argparse.ArgumentParser()
+2752:     p.add_argument("--dev", type=Path, required=True)
+2753:     p.add_argument("--external", type=Path, required=True)
+2754:     p.add_argument("--output", type=Path, required=True)
+2755:     p.add_argument("--cutoff", type=float, default=0.40)
+2756:     p.add_argument("--identity-mode", type=str, default="max")
+
+
+/* ============================== 第 54 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2757:     a = p.parse_args()
+2758:     build_cohorts(a.dev, a.output, external_records_path=a.external, cutoff=a.cutoff, identity_mode=a.identity_mode)
+2759: """Create an immutable candidate source without unsupported external labels."""
+2760: import argparse
+2761: from pathlib import Path
+2762: import pandas as pd
+2763: from evidence_validation import validate_source_evidence
+2764: from research_data import ResearchDataError, validate_records
+2765: from research_utils import sha256, utc_now, write_json
+2766: def curate_evidence_clean_source(records_path: Path, output_dir: Path) -> dict:
+2767:     records_path, output_dir = Path(records_path), Path(output_dir)
+2768:     if output_dir.exists():
+2769:         raise ValueError('Output exists; use a new versioned source directory.')
+2770:     records = validate_records(pd.read_csv(records_path), verify_raw=False)
+2771:     try:
+2772:         validate_source_evidence(records)
+2773:         failures = []
+2774:     except ResearchDataError as exc:
+2775:         if not exc.evidence_audit:
+2776:             raise
+2777:         failures = exc.evidence_audit['failures']
+2778:     failed_ids = {failure['record_id'] for failure in failures}
+2779:     if any(record_id.startswith('RAW_FILE:') for record_id in failed_ids):
+2780:         raise ResearchDataError('Raw source integrity failure cannot be repaired by excluding records.')
+2781:     if any(records.set_index('record_id').loc[record_id, 'source_role'] != 'external' for record_id in failed_ids):
+2782:         raise ResearchDataError('Development evidence failure requires source review, not automatic exclusion.')
+2783:     accepted = records[~records.record_id.isin(failed_ids)].copy()
+2784:     accepted_audit = validate_source_evidence(accepted)
+2785:     output_dir.mkdir(parents=True)
+2786:     accepted.to_csv(output_dir / 'records.csv', index=False)
+2787:     write_json(output_dir / 'exclusions.json', failures)
+2788:     write_json(output_dir / 'evidence_audit.json', accepted_audit)
+2789:     manifest = {
+2790:         'status': 'candidate' if accepted.source_role.eq('external').any() else 'blocked_no_external_cohort',
+2791:         'created_at': utc_now(),
+2792:         'input_records': str(records_path.resolve()),
+2793:         'input_records_sha256': sha256(records_path),
+2794:         'records_sha256': sha256(output_dir / 'records.csv'),
+2795:         'exclusions_sha256': sha256(output_dir / 'exclusions.json'),
+2796:         'evidence_audit_sha256': sha256(output_dir / 'evidence_audit.json'),
+2797:         'development_records': int(accepted.source_role.eq('development').sum()),
+2798:         'external_records': int(accepted.source_role.eq('external').sum()),
+2799:         'excluded_unsupported_external_records': len(failures),
+2800:     }
+2801:     write_json(output_dir / 'source_manifest.json', manifest)
+2802:     return manifest
+2803: if __name__ == '__main__':
+2804:     parser = argparse.ArgumentParser(description=__doc__)
+2805:     parser.add_argument('--records', type=Path, required=True)
+2806:     parser.add_argument('--output', type=Path, required=True)
+2807:     args = parser.parse_args()
+2808:     print(curate_evidence_clean_source(args.records, args.output))
+
+
+/* ============================== 第 55 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2809: """Provenance validation and all-member homology-separated research partitions.
+2810: The alignment is an explicitly defined Needleman-Wunsch implementation, not CD-HIT.
+2811: Connected components keep every above-cutoff pair in the same partition. A giant
+2812: component or insufficient class coverage is a failed feasibility check, not license
+2813: to relax the cutoff or silently discard observations.
+2814: """
+2815: import argparse
+2816: from collections import Counter
+2817: import hashlib
+2818: import json
+2819: import re
+2820: from pathlib import Path
+2821: import numpy as np
+2822: import pandas as pd
+2823: from sklearn.model_selection import StratifiedGroupKFold
+2824: from feature_extractor import clean_sequence
+2825: from research_utils import ROOT, sha256, write_json, utc_now
+2826: TASKS = ('amp', 'hemo')
+2827: REQUIRED = ('record_id', 'seq', 'amp', 'hemo', 'source_dataset', 'source_accession',
+2828:             'source_url', 'evidence_reference', 'label_basis', 'assay_conditions',
+2829:             'modifications', 'evidence_type', 'is_synthetic', 'source_role', 'raw_path', 'raw_sha256')
+2830: class ResearchDataError(ValueError):
+2831:     def __init__(self, message, evidence_audit=None):
+2832:         super().__init__(message)
+2833:         self.evidence_audit = evidence_audit
+2834: def validate_records(frame, verify_raw=True):
+2835:     missing = set(REQUIRED) - set(frame.columns)
+2836:     if missing:
+2837:         raise ResearchDataError('Missing provenance columns: ' + ', '.join(sorted(missing)))
+2838:     df = frame.copy()
+2839:     if df.empty or df.record_id.isna().any() or df.record_id.duplicated().any():
+2840:         raise ResearchDataError('Record identifiers must be present, unique and nonempty.')
+2841:     for col in set(REQUIRED) - set(TASKS):
+2842:         if df[col].isna().any() or df[col].astype(str).str.strip().eq('').any():
+2843:             raise ResearchDataError(f'Missing evidence in {col}.')
+2844:     if not df.is_synthetic.astype(str).str.lower().isin(['false', '0']).all():
+2845:         raise ResearchDataError('Synthetic records cannot enter research evaluation.')
+2846:     if not df.evidence_type.eq('experimental').all():
+2847:         raise ResearchDataError('Only experimental evidence is accepted; unannotated is not negative.')
+2848:     if not df.modifications.eq('none').all():
+2849:         raise ResearchDataError('Modified peptides need a separately specified representation.')
+2850:     if not df.source_role.isin(['development', 'external']).all():
+2851:         raise ResearchDataError('Unknown source role.')
+2852:     for task in TASKS:
+2853:         df[task] = pd.to_numeric(df[task], errors='raise')
+2854:         if not df[task].dropna().isin([0, 1]).all():
+2855:             raise ResearchDataError('Observed labels must be binary; unknown labels must be blank.')
+2856:         observed=df[task].notna()
+2857:         if task+'_observed' in df and not df[task+'_observed'].astype(str).str.lower().eq('true').equals(observed):
+2858:             raise ResearchDataError('Observed-label flag disagrees with missing label state.')
+2859:         df[task+'_observed']=observed
+2860:     if df[list(TASKS)].isna().all(axis=1).any():
+
+
+/* ============================== 第 56 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2861:         raise ResearchDataError('Every included record needs at least one measured endpoint.')
+2862:     df['seq'] = df.seq.map(clean_sequence)
+2863:     if not df.seq.str.len().between(10, 50).all():
+2864:         raise ResearchDataError('Prespecified research domain is 10–50 canonical residues.')
+2865:     if verify_raw:
+2866:         from evidence_validation import validate_source_evidence
+2867:         validate_source_evidence(df)
+2868:     return df
+2869: def consolidate_records(df):
+2870:     """Merge identical molecules; conflicting measured labels become unknown."""
+2871:     rows, excluded = [], []
+2872:     for seq, group in df.groupby('seq', sort=True):
+2873:         labels = {}
+2874:         conflicts = []
+2875:         for task in TASKS:
+2876:             observed = group[task].dropna().unique()
+2877:             labels[task] = float(observed[0]) if len(observed) == 1 else np.nan
+2878:             if len(observed) > 1:
+2879:                 conflicts.append(task)
+2880:         if len(set(group.source_role)) > 1:
+2881:             excluded.append({'record_ids': group.record_id.tolist(), 'reason': 'exact development/external overlap'})
+2882:             continue
+2883:         if all(pd.isna(v) for v in labels.values()):
+2884:             excluded.append({'record_ids': group.record_id.tolist(), 'reason': 'no unambiguous label'})
+2885:             continue
+2886:         rows.append({'sample_id': hashlib.sha256(seq.encode()).hexdigest()[:24], 'seq': seq, **labels,
+2887:                      **{task+'_observed':not pd.isna(labels[task]) for task in TASKS},
+2888:                      'source_role': group.source_role.iloc[0],
+2889:                      'source_datasets': '|'.join(sorted(set(group.source_dataset))),
+2890:                      'record_ids': json.dumps(group.record_id.tolist()), 'conflicts': '|'.join(conflicts)})
+2891:     return pd.DataFrame(rows), excluded
+2892: def sequence_length_ratio(a: str, b: str) -> float:
+2893:     if not a or not b:
+2894:         raise ResearchDataError('Empty sequence cannot have length ratio.')
+2895:     return min(len(a), len(b)) / max(len(a), len(b))
+2896: def sequence_identity(a, b, *, identity_mode='min'):
+2897:     """Global NW identity with a frozen traceback and explicit denominator."""
+2898:     if not a or not b:
+2899:         raise ResearchDataError('Empty sequence cannot be aligned.')
+2900:     if identity_mode not in ('min', 'max', 'alignment'):
+2901:         raise ResearchDataError(f"Unknown identity_mode: '{identity_mode}', expected 'min', 'max' or 'alignment'.")
+2902:     # Canonical orientation makes traceback tie handling symmetric.
+2903:     if a > b:
+2904:         a, b = b, a
+2905:     n, m = len(a), len(b)
+2906:     # Track the traceback-equivalent number of matches, preferring diagonal ties.
+2907:     prev = [-2*j for j in range(m+1)]
+2908:     pm = [0]*(m+1)
+2909:     pl = list(range(m+1))
+2910:     for i, aa in enumerate(a, 1):
+2911:         cur, cm = [-2*i] + [0]*m, [0]*(m+1)
+2912:         cl = [i] + [0]*m
+
+
+/* ============================== 第 57 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2913:         for j, bb in enumerate(b, 1):
+2914:             diag = prev[j-1] + (2 if aa == bb else -1)
+2915:             up, left = prev[j]-2, cur[j-1]-2
+2916:             if diag >= up and diag >= left:
+2917:                 cur[j], cm[j] = diag, pm[j-1] + (aa == bb)
+2918:                 cl[j] = pl[j-1] + 1
+2919:             elif up >= left:
+2920:                 cur[j], cm[j] = up, pm[j]
+2921:                 cl[j] = pl[j] + 1
+2922:             else:
+2923:                 cur[j], cm[j] = left, cm[j-1]
+2924:                 cl[j] = cl[j-1] + 1
+2925:         prev, pm, pl = cur, cm, cl
+2926:     matches = pm[-1]
+2927:     denom = {'min': min(n, m), 'max': max(n, m), 'alignment': pl[-1]}[identity_mode]
+2928:     return matches / denom
+2929: def homology_components(sequences, cutoff=0.40, *, identity_mode='min'):
+2930:     if not 0 < cutoff <= 1:
+2931:         raise ResearchDataError('Identity cutoff must be in (0, 1].')
+2932:     parent = list(range(len(sequences)))
+2933:     counts = [Counter(s) for s in sequences]
+2934:     def find(i):
+2935:         while parent[i] != i:
+2936:             parent[i] = parent[parent[i]]
+2937:             i = parent[i]
+2938:         return i
+2939:     if identity_mode not in ('min', 'max', 'alignment'):
+2940:         raise ResearchDataError(f'Unknown identity mode: {identity_mode}')
+2941:     checked, edges = 0, 0
+2942:     for i, a in enumerate(sequences):
+2943:         for j in range(i):
+2944:             denom = min(len(a), len(sequences[j])) if identity_mode == 'min' else max(len(a), len(sequences[j]))
+2945:             if sum((counts[i] & counts[j]).values()) / denom < cutoff:
+2946:                 continue
+2947:             checked += 1
+2948:             if sequence_identity(a, sequences[j], identity_mode=identity_mode) >= cutoff:
+2949:                 parent[find(i)] = find(j)
+2950:                 edges += 1
+2951:     roots = [find(i) for i in range(len(parent))]
+2952:     ids = {v: k for k, v in enumerate(sorted(set(roots)))}
+2953:     return np.array([ids[r] for r in roots]), {
+2954:         'possible_pairs': len(sequences) * (len(sequences) - 1) // 2,
+2955:         'aligned_pairs': checked, 'above_cutoff_pairs': edges, 'groups': len(ids),
+2956:         'identity_mode': identity_mode,
+2957:     }
+2958: def source_study_ids(row):
+2959:     """Extract DOI/PMID identifiers from a record's declared primary references."""
+2960:     refs = str(row.evidence_reference)
+2961:     identifiers = {f'doi:{doi.lower().rstrip(".,;)}")}' for doi in re.findall(r'10\.\d{4,9}/[^\s"<>]+', refs, re.I)}
+2962:     identifiers.update(f'pmid:{pmid}' for pmid in re.findall(r'PMID\s*[:=]\s*(\d+)', refs, re.I))
+2963:     try:
+2964:         payload = json.loads(refs)
+
+
+/* ============================== 第 58 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+2965:     except (TypeError, ValueError):
+2966:         payload = None
+2967:     def visit(value):
+2968:         if isinstance(value, dict):
+2969:             for key, item in value.items():
+2970:                 if key.lower() == 'doi' and item:
+2971:                     identifiers.add(f'doi:{str(item).lower().strip()}')
+2972:                 elif key.lower() in ('pubmedid', 'pmid') and item:
+2973:                     identifiers.add(f'pmid:{str(item).strip()}')
+2974:                 visit(item)
+2975:         elif isinstance(value, list):
+2976:             for item in value:
+2977:                 visit(item)
+2978:     visit(payload)
+2979:     return identifiers
+2980: def assert_study_independence(records):
+2981:     """External records must not reuse a development cohort's primary study."""
+2982:     dev_studies = set().union(*(source_study_ids(row) for row in records[records.source_role.eq('development')].itertuples()))
+2983:     for row in records[records.source_role.eq('external')].itertuples():
+2984:         overlap = source_study_ids(row) & dev_studies
+2985:         if overlap:
+2986:             raise ResearchDataError(f'External record {row.record_id} shares a development study: {sorted(overlap)}')
+2987: def analyze_homology(records, spec):
+2988:     """Build all-member components and retain every development/external pair score."""
+2989:     df, exclusions = consolidate_records(records)
+2990:     if df.empty:
+2991:         raise ResearchDataError('No eligible molecules after consolidation.')
+2992:     if spec.clustering_method == 'transitive':
+2993:         cluster_ids, summary = homology_components(
+2994:             df.seq.tolist(), spec.cutoff, identity_mode=spec.membership_identity
+2995:         )
+2996:         df['cluster_id'] = cluster_ids
+2997:         df['representative_sample_id'] = df['sample_id']
+2998:     elif spec.clustering_method == 'greedy_nw':
+2999:         from cdhit_cluster import cdhit_cluster_sequences
+3000:         cluster_ids, reps, summary = cdhit_cluster_sequences(
+3001:             df.seq.tolist(), cutoff=spec.cutoff, min_length_ratio=spec.min_length_ratio
+3002:         )
+3003:         df['cluster_id'] = cluster_ids
+3004:         rep_map = {c_idx: df.loc[df.seq.eq(rep_seq), 'sample_id'].iloc[0] for c_idx, rep_seq in enumerate(reps)}
+3005:         df['representative_sample_id'] = df['cluster_id'].map(rep_map)
+3006:     else:
+3007:         raise ResearchDataError(f'Unknown clustering method: {spec.clustering_method}')
+3008:     pairs = []
+3009:     dev = df[df.source_role.eq('development')]
+3010:     ext = df[df.source_role.eq('external')]
+3011:     for a in ext.itertuples():
+3012:         for b in dev.itertuples():
+3013:             identity = sequence_identity(a.seq, b.seq, identity_mode=spec.cross_identity)
+3014:             pairs.append({
+3015:                 'external_sample_id': a.sample_id,
+3016:                 'development_sample_id': b.sample_id,
+
+
+/* ============================== 第 59 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+3017:                 'identity': identity,
+3018:                 'violates_cutoff': identity >= spec.cutoff,
+3019:             })
+3020:     cross_pairs = pd.DataFrame(pairs, columns=[
+3021:         'external_sample_id', 'development_sample_id', 'identity', 'violates_cutoff'
+3022:     ])
+3023:     audit = {
+3024:         'protocol_id': spec.protocol_id,
+3025:         'identity_mode': spec.cross_identity,
+3026:         'cutoff': spec.cutoff,
+3027:         'development_samples': len(dev),
+3028:         'external_samples': len(ext),
+3029:         'cross_pairs_evaluated': len(cross_pairs),
+3030:         'cross_pair_violations': int(cross_pairs.violates_cutoff.sum()),
+3031:         'clustering_summary': summary,
+3032:         'largest_cluster': int(df.groupby('cluster_id').size().max()),
+3033:     }
+3034:     return df, exclusions, cross_pairs, audit
+3035: def assert_cross_isolation(left, right, cutoff=0.40, *, protocol=None):
+3036:     if protocol is None:
+3037:         mode = 'min'
+3038:         scope = 'all_members'
+3039:         min_len_ratio = 0.0
+3040:     else:
+3041:         if isinstance(protocol, str):
+3042:             from research_protocol_config import get_protocol
+3043:             spec = get_protocol(protocol)
+3044:         else:
+3045:             spec = protocol
+3046:         mode = spec.cross_identity
+3047:         scope = spec.cross_scope
+3048:         cutoff = spec.cutoff
+3049:         min_len_ratio = spec.min_length_ratio
+3050:     if scope == 'all_members':
+3051:         for a in left.itertuples():
+3052:             ca = Counter(a.seq)
+3053:             for b in right.itertuples():
+3054:                 if min_len_ratio > 0 and sequence_length_ratio(a.seq, b.seq) < min_len_ratio:
+3055:                     continue
+3056:                 denom = min(len(a.seq), len(b.seq)) if mode == 'min' else max(len(a.seq), len(b.seq))
+3057:                 if sum((ca & Counter(b.seq)).values()) / denom < cutoff:
+3058:                     continue
+3059:                 sim = sequence_identity(a.seq, b.seq, identity_mode=mode)
+3060:                 if sim >= cutoff:
+3061:                     raise ResearchDataError(f'Cross-partition sequence similarity violates {cutoff}: {a.sample_id} / {b.sample_id}')
+3062:     elif scope == 'members_to_representatives':
+3063:         left_reps = left[left.sample_id == left.representative_sample_id] if 'representative_sample_id' in left else left
+3064:         right_reps = right[right.sample_id == right.representative_sample_id] if 'representative_sample_id' in right else right
+3065:         for a in left.itertuples():
+3066:             ca = Counter(a.seq)
+3067:             for r in right_reps.itertuples():
+3068:                 if min_len_ratio > 0 and sequence_length_ratio(a.seq, r.seq) < min_len_ratio:
+
+
+/* ============================== 第 60 页 / 共 60 页 【SafeAMP-Dual V1.0 后端计算模块】 ============================== */
+3069:                     continue
+3070:                 denom = min(len(a.seq), len(r.seq)) if mode == 'min' else max(len(a.seq), len(r.seq))
+3071:                 if sum((ca & Counter(r.seq)).values()) / denom < cutoff:
+3072:                     continue
+3073:                 sim = sequence_identity(a.seq, r.seq, identity_mode=mode)
+3074:                 if sim >= cutoff:
+3075:                     raise ResearchDataError(f'Cross-partition sequence similarity violates {cutoff}: {a.sample_id} / rep {r.sample_id}')
+3076: def require_classes(df, context):
+3077:     for task in TASKS:
+3078:         if set(df[task].dropna().unique()) != {0, 1}:
+3079:             raise ResearchDataError(f'{context}: both measured classes required for {task}.')
+3080: def partition(df, folds=5, seed=42):
+3081:     if df.empty:
+3082:         raise ResearchDataError('No eligible experimental records.')
+3083:     out = df.copy()
+3084:     dev = out[out.source_role.eq('development')]
+3085:     ext = out[out.source_role.eq('external')]
+3086:     if ext.empty:
+3087:         raise ResearchDataError('A separately sourced external cohort is required.')
+3088:     col = 'source_datasets' if 'source_datasets' in dev else ('source_dataset' if 'source_dataset' in dev else None)
+3089:     if col:
+3090:         dev_sources = set('|'.join(dev[col].astype(str)).split('|'))
+3091:         ext_sources = set('|'.join(ext[col].astype(str)).split('|'))
+3092:         if dev_sources & ext_sources:
+3093:             raise ResearchDataError('External source cannot also supply development records.')
+3094:     if set(dev.cluster_id) & set(ext.cluster_id):
+3095:         raise ResearchDataError('Development/external cohorts contain homologous sequences.')
+3096:     if len(set(dev.cluster_id)) < folds+1:
+3097:         raise ResearchDataError('Insufficient independent homology groups for five-fold development plus holdout.')
+3098:     strata = dev.amp.fillna(-1).astype(int).astype(str) + '_' + dev.hemo.fillna(-1).astype(int).astype(str)
+3099:     outer = StratifiedGroupKFold(n_splits=folds+1, shuffle=True, random_state=seed)
+3100:     development_idx, test_idx = next(outer.split(dev, strata, dev.cluster_id))
+3101:     development, test = dev.iloc[development_idx], dev.iloc[test_idx]
+3102:     require_classes(development, 'Development'); require_classes(test, 'Independent test'); require_classes(ext, 'External test')
+3103:     out['split'], out['fold'] = 'external', -1
+3104:     out.loc[test.index, 'split'] = 'test'
+3105:     out.loc[development.index, 'split'] = 'development'
+3106:     labels = development.amp.fillna(-1).astype(int).astype(str) + '_' + development.hemo.fillna(-1).astype(int).astype(str)
+3107:     cv = StratifiedGroupKFold(n_splits=folds, shuffle=True, random_state=seed)
+3108:     for fold, (a, b) in enumerate(cv.split(development, labels, development.cluster_id)):
+3109:         require_classes(development.iloc[a], f'Fold {fold} training'); require_classes(development.iloc[b], f'Fold {fold} validation')
+3110:         out.loc[development.iloc[b].index, 'fold'] = fold
+3111:     return out
+3112: def validate_partition(df, cutoff=.40, *, protocol=None):
+3113:     if df.loc[df.split.eq('external'),'source_role'].ne('external').any() or df.loc[df.split.ne('external'),'source_role'].ne('development').any():
+3114:         raise ResearchDataError('Prepared split changed the declared source role.')
+3115:     if set(df.split) != {'development', 'test', 'external'}:
+3116:         raise ResearchDataError('Development, test and external partitions are required.')
+3117:     if set(df.loc[df.split.eq('development'), 'fold']) != set(range(5)):
+3118:         raise ResearchDataError('Exactly five development folds are required.')
+3119:     if df.sample_id.duplicated().any() or df.seq.duplicated().any():
+3120:         raise ResearchDataError('Duplicate molecule in prepared partitions.')
+
+

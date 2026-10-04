@@ -1,0 +1,69 @@
+{
+  "protocol_id": "protocol-mic-06",
+  "protocol_version": 1,
+  "status": "frozen_for_three_fold_feasibility_audit_only",
+  "frozen_date": "2026-10-02",
+  "authorization": "User explicitly chose prospective protocol revision to assess three folds while retaining real evidence and zero leakage in this conversation.",
+  "parent_protocol_id": "protocol-mic-01",
+  "parent_protocol_path": "03_experiments/protocols/protocol-mic-01.json",
+  "parent_protocol_file_sha256": "e08405f9898db258c0069ed7b8f8977fa0ac4335b37c3abeaf33261d765b8298",
+  "design_context": {
+    "candidate_cohort_manifest": "03_experiments/audits/mic_extended_acid_cohort_20261002_v1/manifest.json",
+    "candidate_cohort_manifest_sha256": "61df14410e5e3c2449ba84b55cc7f9228be0f4ddb6619231cfcdc15b1e12ee58",
+    "previous_readiness": "03_experiments/audits/mic_training_readiness_20261002_v9.json",
+    "previous_readiness_sha256": "656704e15e854ef345a73b4815cb298de496f5af390f7b79482a153ab377e56a",
+    "reason": "Only three indivisible components contain a positive MIC label. Assess a smaller exploratory validation design without changing evidence, molecules, similarity, or label boundaries.",
+    "informed_by_previous_feasibility_counts": true,
+    "model_performance_used_to_choose_design": false,
+    "candidate_selection_after_split": "forbidden"
+  },
+  "scope": "small-sample exploratory E. coli MIC classification; no dual-task, clinical efficacy, external validation or publication authorization",
+  "task": "binary_prediction_of_escherichia_coli_mic",
+  "target_organism": "Escherichia coli",
+  "assay_endpoint": "minimum inhibitory concentration (MIC)",
+  "raw_measurement_normalization": "linear canonical sequence molecular weight; micromolar to micrograms per milliliter",
+  "label_rule": {
+    "positive_if_upper_bound_ug_ml_lte": 32.0,
+    "negative_if_lower_bound_ug_ml_gte": 128.0,
+    "otherwise": "unknown_excluded_from_binary_training"
+  },
+  "molecule_domain": {
+    "min_length_aa": 10,
+    "max_length_aa": 50,
+    "alphabet": "20 canonical amino acids",
+    "backbone": "linear",
+    "modifications": "none; sequences with unsupported/noncanonical modifications are excluded"
+  },
+  "evidence_requirements": [
+    "primary experimental MIC observation for the declared peptide sequence",
+    "identified Escherichia coli target strain or isolate",
+    "raw value, unit, and traceable primary study reference",
+    "binary label independently re-derived from the raw assay observation"
+  ],
+  "duplicate_policy": "merge exact sequences; opposite derived MIC labels are a blocking unresolved conflict",
+  "similarity": {
+    "algorithm": "global Needleman-Wunsch",
+    "match_score": 2,
+    "mismatch_score": -1,
+    "gap_score": -2,
+    "traceback_tie_break": "diagonal_then_up_then_left",
+    "identity": "number of identical aligned residues divided by number of alignment columns",
+    "gap_columns": "mismatch",
+    "comparison_scope": "all unique molecule pairs",
+    "cutoff": 0.4,
+    "grouping": "transitive connected components; every component remains within one fold"
+  },
+  "primary_study_grouping": "All molecule and observation study aliases are joined transitively with all-member homology components; no study crosses folds.",
+  "validation": {
+    "method": "StratifiedGroupKFold",
+    "folds": 3,
+    "shuffle": true,
+    "seed": 42,
+    "require_both_classes_in_each_validation_fold": true,
+    "require_both_classes_in_each_training_complement": true,
+    "external_holdout_required": false,
+    "retry_seeds_or_fold_parameters": "forbidden"
+  },
+  "changed_fields_from_parent": ["validation.folds: 5 -> 3"],
+  "release_gate": "This amendment authorizes only one fixed three-fold feasibility audit. Training additionally requires a complete primary-evidence release and a separate immutable training protocol. Any failed scientific gate keeps training blocked."
+}

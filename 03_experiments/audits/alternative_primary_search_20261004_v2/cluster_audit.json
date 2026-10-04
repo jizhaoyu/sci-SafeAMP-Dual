@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-04T05:42:07.831206+00:00",
+  "audit_protocol": "protocol-mic-11",
+  "formal_dual_task_dev_count": 417,
+  "mic_candidate_count": 16,
+  "new_candidates_analyzed": 13,
+  "findings": {
+    "pandinin2014": {
+      "formal_dev_status": "BLOCKED: 5 of 5 peptides have >=0.40 homology conflicts with formal dev set (matches DBAASP:948 at 1.000).",
+      "mic_cohort_status": "BLOCKED: All MIC measurements fall into intermediate zone (32.15 - 68.16 ug/ml), generating 0 binary labels."
+    },
+    "corvus2023": {
+      "formal_dev_status": "EXCLUDED: Chemical modification (C-terminal amidation via Rink amide resin).",
+      "mic_cohort_status": "EXCLUDED: Does not match unmodified linear peptide domain."
+    },
+    "chmap2018": {
+      "formal_dev_status": "BLOCKED: Exact sequence and study overlap with formal dev set DBAASP:12306.",
+      "mic_cohort_status": "BLOCKED: Anticancer assay only, no E. coli MIC table."
+    },
+    "goat_antibacterial2018": {
+      "formal_dev_status": "BLOCKED: Primary study for formal dev set DBAASP:12306.",
+      "mic_cohort_status": "BLOCKED: ChMAP-28 has 0.6071 identity to BMAP-27B (merges into Component 4, not an independent component); mini-ChBac has 0.6400 identity to component 0 (Bac7 family) and 24 conflicts with formal dev set."
+    },
+    "hymenochirin2012": {
+      "formal_dev_status": "BLOCKED: 5 of 5 peptides violate the 0.40 threshold against formal dev set (up to 0.8276 with DBAASP:14150).",
+      "mic_cohort_status": "BLOCKED: Hymenochirin-1B is C-terminally amidated. Hymenochirin-2B to 5B have E. coli MIC values of 56.35 - 114.43 ug/ml, which are intermediate and non-releasable."
+    }
+  },
+  "conclusion": "No candidate peptide satisfies both evidence provenance and isolation/label rules. Admitted candidates = 0. Formal dual-task remains BLOCKED."
+}

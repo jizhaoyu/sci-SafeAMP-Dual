@@ -1,0 +1,75 @@
+{
+  "protocol_id": "protocol-mic-08",
+  "protocol_version": 1,
+  "status": "frozen_for_source_expansion_audit_only",
+  "frozen_date": "2026-10-02",
+  "authorization": "User asked to continue after the completed small-sample MIC baseline; this version authorizes evidence expansion audits only, retaining strict scientific boundaries.",
+  "scope": "Follow-up exploratory primary-source MIC evidence expansion; no new model fitting, external validation, dual-task release, deployment or submission authorization.",
+  "parent_science_protocol": "protocol-mic-06",
+  "parent_science_protocol_path": "03_experiments/protocols/protocol-mic-06.json",
+  "parent_science_protocol_sha256": "5303817532e1b8b0fc3670e2110594ccb4d13aec6af314425a3879efe3441f44",
+  "existing_molecules": "03_experiments/audits/mic_three_fold_20261002_v1/candidate_molecules.csv",
+  "existing_molecules_sha256": "d2ad54b302ce677360df3b4a37c26a40f53e01ea6a4ac5e4e441e1461bd0a3a2",
+  "existing_observations": "03_experiments/audits/mic_three_fold_20261002_v1/candidate_observations.csv",
+  "existing_training_state": "03_experiments/audits/mic_training_readiness_20261002_v12.json",
+  "existing_training_state_sha256": "93eb09daf496be6aa6389e9f4049d679e76c9bc4c458b19fdb26bda4420569f5",
+  "design_context": {
+    "original_baseline_performance_already_known": true,
+    "research_stage": "follow-up exploration, not a retroactive preregistration of the completed baseline",
+    "selection_by_model_predictions_feature_attributions_or_error_identity": "forbidden",
+    "search_for_both_activity_classes": true,
+    "new_protocol_required_before_any_new_training": true
+  },
+  "search": {
+    "primary_discovery_channels": ["PubMed/Europe PMC", "OpenAlex and original publisher literature"],
+    "themes": [
+      "antimicrobial peptide Escherichia coli MIC Wang resin",
+      "antimicrobial peptide Escherichia coli MIC free carboxyl terminus",
+      "proline rich peptide Escherichia coli MIC free acid",
+      "peptide dataset Escherichia coli minimum inhibitory concentration synthesis"
+    ],
+    "batch_limit_primary_studies": 12,
+    "date_range": "all publication dates available at the recorded search time",
+    "screen_order": "source retrieval order recorded in the search ledger; no ordering by model scores or MIC-derived label",
+    "selection_unit": "a primary measurement study and all its peptide rows with traceable E. coli MIC endpoints",
+    "duplicate_studies": "record and join publication aliases; prior reviewed studies are not new independent evidence",
+    "search_exhaustiveness_claim": false
+  },
+  "evidence_requirements": [
+    "Original measurement article or supplement with sequence and chemical-form support; database annotations and predictions remain discovery leads only",
+    "Identified Escherichia coli strain or isolate and MIC endpoint",
+    "Raw concentration with censoring marker, unit, experimental conditions as reported and precise source locator",
+    "Explicit free N terminus and free carboxyl C terminus or unambiguous synthesis evidence for the actually measured molecule",
+    "Record raw source URL, retrieval time, checksum, license text and unresolved reuse restrictions",
+    "Review all corresponding peptide rows in a selected study; retain missing, conflicting and excluded observations"
+  ],
+  "molecule_domain": {
+    "min_length_aa": 10,
+    "max_length_aa": 50,
+    "alphabet": "20 canonical amino acids",
+    "backbone": "linear L peptide",
+    "modifications": "none; free N terminus and C-terminal carboxyl; unsupported chemistry is excluded or withheld"
+  },
+  "label_rule": {
+    "positive_if_upper_bound_ug_ml_lte": 32.0,
+    "negative_if_lower_bound_ug_ml_gte": 128.0,
+    "otherwise": "unknown_excluded_from_binary_training",
+    "raw_measurement_normalization": "linear canonical average molecular weight; preserve original censoring inequalities",
+    "unmeasured_records": "never assume negative",
+    "conflicts": "merge exact unmodified molecules and retain all observed endpoints; incompatible derived labels or unresolved source conflicts prevent whole-molecule release"
+  },
+  "grouping_and_validation": {
+    "similarity": "inherit protocol-mic-06 exact global alignment scores, tie breaking and alignment-column identity",
+    "cutoff": 0.4,
+    "comparison_scope": "all unique admitted candidate molecules including the existing 15",
+    "groups": "transitive closure of all homology edges plus all primary-measurement study aliases",
+    "method": "StratifiedGroupKFold",
+    "folds": 3,
+    "shuffle": true,
+    "seed": 42,
+    "require_both_classes_per_partition": true,
+    "retry_seeds_or_remove_bridging_molecules_to_pass": false,
+    "evaluation_scope": "feasibility audit only, no model fitting"
+  },
+  "release_gate": "Candidate eligibility decisions and complete evidence review must precede partitioning. This audit cannot release any new molecule for training; separate complete evidence release and a new immutable training protocol are mandatory. Failed evidence or structural gates remain blocked without mutating the existing completed baseline."
+}

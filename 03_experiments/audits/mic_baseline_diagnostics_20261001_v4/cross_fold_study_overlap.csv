@@ -1,0 +1,34 @@
+reference_scope,study_id,molecules,folds,fold_count,titles,years,source_datasets
+assay_linked_references,pmid:17051220,22,0|1|2|3|4,5,A linguistic model for the rational design of antimicrobial peptides.,2006,DBAASP
+assay_linked_references,doi:10.1038/s42256-026-01237-5,10,0|1|2|3,4,A generative artificial intelligence approach for peptide antibiotic optimization,2026,DBAASP
+assay_linked_references,pmid:42206144,10,0|1|2|3,4,A generative artificial intelligence approach for peptide antibiotic optimization,2026,DBAASP
+assay_linked_references,pmid:36551368,7,0|1|3,3,Associating Biological Activity and Predicted Structure of Antimicrobial Peptides from Amphibians and Insects | Associating Biological Activity and Predicted Structure of Antimicrobial Peptides from Amphibians and Insects.,2022,DBAASP
+assay_linked_references,pmid:40645962,5,0|3,2,Computational exploration of global venoms for antimicrobial discovery with Venomics artificial intelligence,2025,DBAASP
+assay_linked_references,pmid:18342399,3,1|4,2,Bovine hemoglobin: an attractive source of antibacterial peptides,2008,DBAASP
+assay_linked_references,pmid:29259134,3,0|4,2,Computational antimicrobial peptide design and evaluation against multidrug-resistant clinical isolates of bacteria.,2018,DBAASP
+assay_linked_references,pmid:33465691,3,0|4,2,"Generation of antimicrobial peptides Leg1 and Leg2 from chickpea storage protein, active against food spoilage bacteria and foodborne pathogens.",2021,DBAASP
+assay_linked_references,pmid:38404711,3,0|3,2,The limits of prediction: Why intrinsically disordered regions challenge our understanding of antimicrobial peptides,2024,DBAASP
+assay_linked_references,pmid:30623204,2,1|2,2,Discovery and identification of antimicrobial peptides in Sichuan pepper (Zanthoxylum bungeanum Maxim) seeds by peptidomics and bioinformatics.,2019,DBAASP
+assay_linked_references,pmid:37523405,2,1|2,2,Novel integrated computational AMP discovery approaches highlight diversity in the helminth AMP repertoire.,2023,DBAASP
+assay_linked_references,pmid:38791374,2,0|1,2,"Blap-6, a Novel Antifungal Peptide from the Chinese Medicinal Beetle Blaps rhynchopetera against Cryptococcus neoformans",2024,DBAASP
+assay_linked_references,pmid:38843834,2,1|4,2,Discovery of antimicrobial peptides in the global microbiome with machine learning,2024,DBAASP
+assay_linked_references,pmid:38911757,2,0|2,2,QSAR Reveals Decreased Lipophilicity of Polar Residues Determines the Selectivity of Antimicrobial Peptide Activity.,2024,DBAASP
+assay_linked_references,pmid:39908380,2,0|2,2,Artificial intelligence using a latent diffusion model enables the generation of diverse and potent antimicrobial peptides,2025,DBAASP
+assay_linked_references,pmid:42380318,2,0|2,2,Deep learning-driven integrated pipeline for de novo design and synthesis of antimicrobial peptides,2026,DBAASP
+declared_references,pmid:17051220,22,0|1|2|3|4,5,A linguistic model for the rational design of antimicrobial peptides.,2006,DBAASP
+declared_references,nan,17,0|2|4,3,,,
+declared_references,doi:10.1038/s42256-026-01237-5,10,0|1|2|3,4,A generative artificial intelligence approach for peptide antibiotic optimization,2026,DBAASP
+declared_references,pmid:42206144,10,0|1|2|3,4,A generative artificial intelligence approach for peptide antibiotic optimization,2026,DBAASP
+declared_references,pmid:36551368,7,0|1|3,3,Associating Biological Activity and Predicted Structure of Antimicrobial Peptides from Amphibians and Insects | Associating Biological Activity and Predicted Structure of Antimicrobial Peptides from Amphibians and Insects.,2022,DBAASP
+declared_references,pmid:40645962,5,0|3,2,Computational exploration of global venoms for antimicrobial discovery with Venomics artificial intelligence,2025,DBAASP
+declared_references,pmid:18342399,3,1|4,2,Bovine hemoglobin: an attractive source of antibacterial peptides,2008,DBAASP
+declared_references,pmid:29259134,3,0|4,2,Computational antimicrobial peptide design and evaluation against multidrug-resistant clinical isolates of bacteria.,2018,DBAASP
+declared_references,pmid:33465691,3,0|4,2,"Generation of antimicrobial peptides Leg1 and Leg2 from chickpea storage protein, active against food spoilage bacteria and foodborne pathogens.",2021,DBAASP
+declared_references,pmid:38404711,3,0|3,2,The limits of prediction: Why intrinsically disordered regions challenge our understanding of antimicrobial peptides,2024,DBAASP
+declared_references,pmid:30623204,2,1|2,2,Discovery and identification of antimicrobial peptides in Sichuan pepper (Zanthoxylum bungeanum Maxim) seeds by peptidomics and bioinformatics.,2019,DBAASP
+declared_references,pmid:37523405,2,1|2,2,Novel integrated computational AMP discovery approaches highlight diversity in the helminth AMP repertoire.,2023,DBAASP
+declared_references,pmid:38791374,2,0|1,2,"Blap-6, a Novel Antifungal Peptide from the Chinese Medicinal Beetle Blaps rhynchopetera against Cryptococcus neoformans",2024,DBAASP
+declared_references,pmid:38843834,2,1|4,2,Discovery of antimicrobial peptides in the global microbiome with machine learning,2024,DBAASP
+declared_references,pmid:38911757,2,0|2,2,QSAR Reveals Decreased Lipophilicity of Polar Residues Determines the Selectivity of Antimicrobial Peptide Activity.,2024,DBAASP
+declared_references,pmid:39908380,2,0|2,2,Artificial intelligence using a latent diffusion model enables the generation of diverse and potent antimicrobial peptides,2025,DBAASP
+declared_references,pmid:42380318,2,0|2,2,Deep learning-driven integrated pipeline for de novo design and synthesis of antimicrobial peptides,2026,DBAASP

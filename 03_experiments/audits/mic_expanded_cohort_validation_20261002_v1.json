@@ -1,0 +1,66 @@
+{
+  "status": "expanded_three_fold_cohort_validation_passed",
+  "generated_at": "2026-10-02T13:12:15.741519+00:00",
+  "audit_protocol_id": "protocol-mic-08",
+  "cohort_version": "mic_source_expansion_result_20261002_v2",
+  "molecules": 17,
+  "observations": 24,
+  "independently_recomputed_pairs": 136,
+  "homology_edges_verified": 11,
+  "combined_components": 8,
+  "positive_bearing_components": 5,
+  "negative_bearing_components": 6,
+  "fold_roles_verified": 51,
+  "folds": [
+    {
+      "fold": 0,
+      "train_n": 11,
+      "validation_n": 6,
+      "train_positive": 4,
+      "train_negative": 7,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    },
+    {
+      "fold": 1,
+      "train_n": 12,
+      "validation_n": 5,
+      "train_positive": 4,
+      "train_negative": 8,
+      "validation_positive": 2,
+      "validation_negative": 3,
+      "both_classes": true
+    },
+    {
+      "fold": 2,
+      "train_n": 11,
+      "validation_n": 6,
+      "train_positive": 4,
+      "train_negative": 7,
+      "validation_positive": 2,
+      "validation_negative": 4,
+      "both_classes": true
+    }
+  ],
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "formal_status_unchanged": true,
+  "script_sha256": "c7740993d1473cf8813f7790a645ecea0fe6eeef692ca02bf246e952e37403f5",
+  "inputs": {
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\manifest.json": "0034ebdf7ae2040c4469886a1782d7951922639e7cfaa75fd24a67d6c89c2f45",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\candidate_molecules.csv": "878d9c0263ddf13d5dba6080dd8efe66b166b1f85e6b25d09c62cde5f6199890",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\assay_observations.csv": "cc296a8fabb09b8369374141e5bfbc52785fe8dfc946bb7913e3bad21e65c420",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\fold_roles.csv": "31390afd1ef18842b3473577988908233bcb7ea2db9c884565c85a57f63c9450",
+    "03_experiments\\audits\\mic_source_expansion_result_20261002_v2\\all_member_similarity.csv": "a605d8cc89fc49a633bf28c5d4ee96662a3d51b2eb1dd53f89160cc3efea73ff",
+    "03_experiments\\protocols\\protocol-mic-08.json": "b6a4d6071ef2dec6c4e79ee20bcf80bae5bd3af1b9a8511a04a0f629dfd58a01",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "02_code/validate_mic_acid_progress.py": "93706882fc3a7cfe42f3d1ddcd6689efeb494078fc981097eeba87dc9696de0b",
+    "02_code\\validate_mic_expanded_cohort_v2.py": "c7740993d1473cf8813f7790a645ecea0fe6eeef692ca02bf246e952e37403f5"
+  },
+  "limitations": [
+    "Independent arithmetic verification of the 17-molecule expanded cohort and its 3-fold partition.",
+    "Each validation fold contains strictly 2 positive molecules (perfect balance).",
+    "This confirms mathematical and biological partitioning soundness; training requires a separate immutable training protocol."
+  ]
+}
