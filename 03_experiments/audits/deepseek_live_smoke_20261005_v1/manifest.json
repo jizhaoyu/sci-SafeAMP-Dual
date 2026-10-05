@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-05T06:48:00.300119+00:00",
+  "files": {
+    "summary.json": "ecf37f67553223ccd165a68ff3bb1a40e9c4fc0b9e3c5a891b37b6b867cd51e2",
+    "connectivity\\audit.json": "58509351d99270f217c7de8d658f93bd9e129c94f65b1c8f4d178f83618a673c",
+    "connectivity\\request.json": "cce27ac9294c3c8e20b5b9aa39cbab07c742cd7d07fc721bf450b65012420106",
+    "connectivity\\response.json": "e0a7c84cf53e964d8716f3f336698fa77dda1a94d227c0db749a644df6d9d655",
+    "synthetic_report\\audit.json": "8b18aeb42305367a9f7382872d9b013a257cdb5a4a0fa214613c7178dee8c204",
+    "synthetic_report\\request.json": "a2e032f184fd862fa7b312e29a3c3d416b45b2dd0530d30710583b66bf4fd307",
+    "synthetic_report\\response.json": "dbd08433d232b0bc28b2888a788b862bf0d6db32f09a4490671cffafbf513ada"
+  },
+  "source_entry_sha256": "ea201f889d95767568cb7c4ef8eac882c02f2f4e4b0af90bf899dcfc8bb19ad8",
+  "configuration_secret_stored": false
+}

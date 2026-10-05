@@ -1,0 +1,27 @@
+{
+  "status": "corrected_prescreen_evidence_review_pending",
+  "generated_at": "2026-10-04T06:55:16.139732+00:00",
+  "supersedes_audit_status": "03_experiments/audits/alternative_primary_search_20261004_v2/handoff_status.json",
+  "current_machine_state": "03_experiments/audits/mic_training_readiness_20261004_v22.json",
+  "current_mic_status": "local_exploratory_training_independently_verified",
+  "current_mic_training_blocked": false,
+  "formal_dual_task_status": "blocked",
+  "training_protocol_id": "protocol-mic-11",
+  "data_version": "mic_followup_release_20261004_v1",
+  "new_molecules_admitted": 0,
+  "new_labels_released": 0,
+  "new_training_executed": false,
+  "formal_results_available": false,
+  "publication_ready": false,
+  "source_summary": {
+    "candidate_input_sequences": 13,
+    "pairwise_comparisons": 5629,
+    "formal_conflict_candidate_inputs": 13
+  },
+  "new_cohort_partition_gate": "not_run; primary_evidence_review_incomplete",
+  "limitations": [
+    "Findings apply only to this batch; unverified identities are prescreen inputs.",
+    "Shared MIC components require merging plus source grouping and full fixed-fold audit.",
+    "No conclusion about exhaustion of public experimental data is supported."
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "script_sha256": "ad44a9fdf22c9bd3a43c18b39b1dac752a8aaba2cd543b827955ddd7fe0d464b",
+  "source_file": "03_experiments/audits/hc50_primary_followup_20261004_v1/acquisition/raw/pmid_41735465.xml",
+  "source_sha256": "77d67db1d2682b13e3a84d60fde103f9a223350ea9498ac8b13b8086b8118464",
+  "outputs": {
+    "source_acquisition.json": "37a8f895739cbed1659ff74eb3e580c8918007023c6db084d4ccbbe77e79a761",
+    "raw/41598_2026_40997_MOESM1_ESM.docx": "023035b643f65f41824856b279300fb28c9ccde2a50c714c171c70cf37648474",
+    "raw/41598_2026_40997_MOESM2_ESM.docx": "5855998c3418d9527b3b8ce247143aa5d82e135ff15151a3c5930e937be0b8e2",
+    "raw/41598_2026_40997_MOESM3_ESM.docx": "7ae4f1635a15ad44e0e250ee2fa9fc7cc137e22dd4502e404e27b039949ab0d5"
+  },
+  "formal_release": false
+}

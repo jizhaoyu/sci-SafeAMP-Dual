@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-10-05T03:51:00.051645+00:00",
+  "status": "passed",
+  "checks": {
+    "current_scope_records.csv": true,
+    "scope_exclusions.csv": true,
+    "merged_candidate_decisions.csv": true,
+    "summary_except_generation_time": true,
+    "report_except_generation_time": true,
+    "both_verifications_passed": true
+  },
+  "allowed_difference": "generation timestamp only"
+}

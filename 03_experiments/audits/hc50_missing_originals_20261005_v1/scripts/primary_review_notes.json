@@ -1,0 +1,20 @@
+{
+  "review_mode": "agent_original_source_review",
+  "independent_human_review": false,
+  "visual_review": {
+    "source": "acquisition/raw/pmid_27818338_author_accepted.pdf",
+    "pdf_pages_inspected": [11, 19, 30, 31, 32],
+    "sequence_figure": "Figure 1, PDF page 32; native embedded figure and enlarged sequence detail inspected",
+    "images": ["visual/salmon_page_11.png", "visual/salmon_page_19.png", "visual/salmon_page_30.png", "visual/salmon_page_31.png", "visual/salmon_page_32.png", "visual/salmon_figure1_native.png", "visual/salmon_figure1_sequences.png", "visual/salmon_figure1_sequence_detail.png"],
+    "note": "Manual sequence transcription is an agent visual reading, not independent human verification. Fragment names are retained as printed; their numbers are not used to infer missing residues."
+  },
+  "salmon": [
+    {"candidate_id": "HIST_DRAMP20860", "source_name": "TT(1-35)", "source_sequence": "KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA", "mw_da": "3451.8", "mic_column": 1},
+    {"candidate_id": "HIST_DRAMP20863", "source_name": "rtCATH2(1-40)", "source_sequence": "KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI", "mw_da": "4184.7", "mic_column": 4},
+    {"candidate_id": "HIST_DRAMP20864", "source_name": "SF(18-45)", "source_sequence": "KFRSNGRHGSGSRLGGGSLIGRPGGGS", "mw_da": "2611.8", "mic_column": 5},
+    {"candidate_id": "HIST_DRAMP20862", "source_name": "rtCATH2(5-40)", "source_sequence": "RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI", "mw_da": "3686.1", "mic_column": 3},
+    {"candidate_id": "HIST_DRAMP20859", "source_name": "TT(1-24)", "source_sequence": "KFRTRRSKSSSNGGRKGSKG", "mw_da": "2510.8", "mic_column": 0}
+  ],
+  "ant_candidate_id": "DBAASP_19356",
+  "dhvar_candidate_id": "DBAASP_497"
+}

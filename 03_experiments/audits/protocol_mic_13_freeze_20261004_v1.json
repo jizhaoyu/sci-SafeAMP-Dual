@@ -1,0 +1,22 @@
+{
+  "protocol_id": "protocol-mic-13",
+  "frozen_at": "2026-10-04T07:15:37.682111+00:00",
+  "protocol_file_sha256": "1767c85507d85e7a2ce0cbbeb99a6f352a52ffabd544b184f180b994e55955b7",
+  "training_entry_sha256": "148fad9a91dc8cc5a459091d6906b15959ac05f7ecfb8de4aaad38926e2f956a",
+  "model_training_started": false,
+  "dependency_sha256": {
+    "02_code/train_mic_reviewed_baseline.py": "db5d2a7be92a49475f70927960eee8a7491d629ae40367b674accf88c5afe4e1",
+    "02_code/train_mic_three_fold_v2.py": "3b906d727f799cbac9437b9a93ba73382e23fef623e4d19cf1d56e7ec5ac9955",
+    "02_code/train_mic_baselines.py": "456f8517c919b8e31426782f317fe3e0a8030407ffaf92b5461932a5389cb3dd",
+    "02_code/research_evidence_gate.py": "9ea4c62d006dca98c5bf433bbfc62e78134b088bc2a5cafe8c39ec0b18f21a77",
+    "02_code/feature_extractor.py": "cd0f8d7318f88ecb4f8e53bb1d0c44a3b286fed9c0380b06de5101c77f4b82e4",
+    "02_code/public_data.py": "08b51ce8548b0d0a1cdbcaffa59edb59920572b9c649c1324d164beabd5209ea",
+    "02_code/research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350",
+    "02_code/research_utils.py": "2b3f8a7e34f55ad4ee15a471854a77323ff3cfd12a8dce0996cc33f37b8ba0a8",
+    "02_code/mic_followup_release.py": "d9a9e1c7d383d1b111dc3e651a0e9bf5ef91c27d41d4635eb67ed25a8171124c",
+    "02_code/prepare_goat_mic_followup.py": "d4a9fe4a460a7f7829e1d8709c636de71209dddac9e646d6125640d949260224",
+    "02_code/repair_alternative_primary_audit.py": "64eff0c32d535385dc5c078743026a6406866ea83b7cb34bf24708ed9b1393bd",
+    "02_code/validate_mic_acid_progress.py": "93706882fc3a7cfe42f3d1ddcd6689efeb494078fc981097eeba87dc9696de0b",
+    "02_code/validate_mic_three_fold_run.py": "251758d72134ee9433f4f482b85c017f34203396333dfddb42c9b78868655915"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T07:21:35.841682+00:00",
+  "protocol_id": "protocol-mic-11",
+  "models_reloaded": 9,
+  "oof_rows_independently_recomputed": 48,
+  "fit_calls_during_validation": 0,
+  "scaler_training_range_verified": true,
+  "pooled_descriptive_metrics": [
+    {
+      "model": "dummy_prior",
+      "n": 16,
+      "positive": 5,
+      "negative": 11,
+      "AUPRC": 0.3,
+      "AUROC": 0.4636363636363636,
+      "MCC_at_0_5": 0.0,
+      "balanced_accuracy_at_0_5": 0.5,
+      "accuracy_at_0_5": 0.6875
+    },
+    {
+      "model": "logistic_regression",
+      "n": 16,
+      "positive": 5,
+      "negative": 11,
+      "AUPRC": 0.3162987012987013,
+      "AUROC": 0.45454545454545453,
+      "MCC_at_0_5": -0.32387513781564786,
+      "balanced_accuracy_at_0_5": 0.36363636363636365,
+      "accuracy_at_0_5": 0.5
+    },
+    {
+      "model": "random_forest",
+      "n": 16,
+      "positive": 5,
+      "negative": 11,
+      "AUPRC": 0.3080952380952381,
+      "AUROC": 0.43636363636363634,
+      "MCC_at_0_5": -0.16363636363636364,
+      "balanced_accuracy_at_0_5": 0.4181818181818182,
+      "accuracy_at_0_5": 0.5
+    }
+  ],
+  "formal_results_available": false,
+  "publication_ready": false,
+  "inputs": {
+    "03_experiments/protocols/protocol-mic-11.json": "9a511e960d07a21b0bdf0bf6afbd6e7189f740b31f47e24a9e86f4e3b25ba072",
+    "03_experiments/audits/protocol_mic_11_freeze_20261004_v1.json": "86a0d45c0ec2aedbe0b84c258f1e1a18c7a5e415e07a4846f8ccfa64f51f7205",
+    "03_experiments/runs/mic_followup_baseline_20261004_v1/manifest.json": "ca4a7d958436cc9008612627d1c2756a1601bc1304d572d3d96e62cd89f8cc07",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "02_code/train_mic_followup_baseline.py": "e77dda56e9967ab2401cb41255712a3302ce483106b5ad6ce93642024b82cd6a",
+    "03_experiments/audits/mic_followup_run_validation_20261004_v3_declared_metrics.json": "7473f73da7234b87703e830152b4c5db5133bd488cd23385e07cc4955627e56d",
+    "02_code/validate_mic_followup_run.py": "67bd7bc8d49348bf47c290f8456448c11f37c92b4d2c2ea10ed2708749953e28"
+  },
+  "run_directory": "03_experiments/runs/mic_followup_baseline_20261004_v1",
+  "confusion_counts": [
+    {
+      "model": "dummy_prior",
+      "TP": 0,
+      "FP": 0,
+      "TN": 11,
+      "FN": 5
+    },
+    {
+      "model": "logistic_regression",
+      "TP": 0,
+      "FP": 3,
+      "TN": 8,
+      "FN": 5
+    },
+    {
+      "model": "random_forest",
+      "TP": 1,
+      "FP": 4,
+      "TN": 7,
+      "FN": 4
+    }
+  ],
+  "independent_validator": "02_code/validate_mic_followup_run.py",
+  "metric_schema_resolution": "Compare all frozen declared numeric columns; independently report confusion counts absent from the training schema.",
+  "declared_metrics_validation": "03_experiments/audits/mic_followup_run_validation_20261004_v3_declared_metrics.json"
+}

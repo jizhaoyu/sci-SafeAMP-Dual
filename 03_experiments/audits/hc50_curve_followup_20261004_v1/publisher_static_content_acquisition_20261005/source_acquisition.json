@@ -1,0 +1,44 @@
+[
+  {
+    "requested_file": "41598_2026_40997_MOESM1_ESM.docx",
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM1_ESM.docx",
+    "url_basis": "Standard public Springer static-content route; DOI and filename from primary XML; constructed URL, not an observed hyperlink",
+    "retrieved_at": "2026-10-05T02:07:57.007346+00:00",
+    "license": "not yet reviewed; acquisition does not grant redistribution rights",
+    "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM1_ESM.docx",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "status": "expected_format_requires_content_review",
+    "file": "raw/41598_2026_40997_MOESM1_ESM.docx",
+    "sha256": "023035b643f65f41824856b279300fb28c9ccde2a50c714c171c70cf37648474",
+    "bytes": 29778
+  },
+  {
+    "requested_file": "41598_2026_40997_MOESM2_ESM.docx",
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM2_ESM.docx",
+    "url_basis": "Standard public Springer static-content route; DOI and filename from primary XML; constructed URL, not an observed hyperlink",
+    "retrieved_at": "2026-10-05T02:07:58.354246+00:00",
+    "license": "not yet reviewed; acquisition does not grant redistribution rights",
+    "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM2_ESM.docx",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "status": "expected_format_requires_content_review",
+    "file": "raw/41598_2026_40997_MOESM2_ESM.docx",
+    "sha256": "5855998c3418d9527b3b8ce247143aa5d82e135ff15151a3c5930e937be0b8e2",
+    "bytes": 39561
+  },
+  {
+    "requested_file": "41598_2026_40997_MOESM3_ESM.docx",
+    "url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM3_ESM.docx",
+    "url_basis": "Standard public Springer static-content route; DOI and filename from primary XML; constructed URL, not an observed hyperlink",
+    "retrieved_at": "2026-10-05T02:07:59.693550+00:00",
+    "license": "not yet reviewed; acquisition does not grant redistribution rights",
+    "final_url": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM3_ESM.docx",
+    "http_status": 200,
+    "content_type": "application/octet-stream",
+    "status": "expected_format_requires_content_review",
+    "file": "raw/41598_2026_40997_MOESM3_ESM.docx",
+    "sha256": "7ae4f1635a15ad44e0e250ee2fa9fc7cc137e22dd4502e404e27b039949ab0d5",
+    "bytes": 26574
+  }
+]

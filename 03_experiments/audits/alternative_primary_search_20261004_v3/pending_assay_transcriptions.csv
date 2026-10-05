@@ -1,0 +1,9 @@
+﻿candidate_name,source_id,target,raw_mic,raw_unit,converted_ugml,label_rule_outcome,derived_label,decision,released_for_training
+ChMAP-28,goat_antibacterial2018,Escherichia coli C600,0.06,µM,0.2,positive_le_32,,pending_primary_assay_review; previous_label_untrusted,False
+mini-ChBac7.5Nα,goat_antibacterial2018,Escherichia coli C600,2.0,µM,5.82,positive_le_32,,pending_primary_assay_review; previous_label_untrusted,False
+mini-ChBac7.5Nα(1-16),goat_antibacterial2018,Escherichia coli C600,2.0,µM,4.27,positive_le_32,,pending_primary_assay_review; previous_label_untrusted,False
+Hymenochirin-1B,hymenochirin2012,Escherichia coli ATCC 25726,20.0,µM,61.24,excluded_amidation,,pending_primary_assay_review; previous_label_untrusted,False
+Hymenochirin-2B,hymenochirin2012,Escherichia coli ATCC 25726,20.0,µM,59.47,intermediate_censored,,pending_primary_assay_review; previous_label_untrusted,False
+Hymenochirin-3B,hymenochirin2012,Escherichia coli ATCC 25726,20.0,µM,56.35,intermediate_censored,,pending_primary_assay_review; previous_label_untrusted,False
+Hymenochirin-4B,hymenochirin2012,Escherichia coli ATCC 25726,20.0,µM,57.31,intermediate_censored,,pending_primary_assay_review; previous_label_untrusted,False
+Hymenochirin-5B,hymenochirin2012,Escherichia coli ATCC 25726,40.0,µM,114.43,intermediate_censored,,pending_primary_assay_review; previous_label_untrusted,False

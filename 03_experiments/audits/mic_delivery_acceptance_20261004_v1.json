@@ -1,0 +1,348 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T10:09:02.539352+00:00",
+  "engineering_delivery_accepted": true,
+  "bundle_directory": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1",
+  "manifest_sha256": "f8b8606dc807279cc78c6728260f6d3d7da463f2416bf47e8d3bafbdf1789ed3",
+  "state_path": "03_experiments/audits/mic_training_readiness_20261004_v26.json",
+  "state_sha256": "404e9d90166564ec9c7543022853ae694dabc9022d913fa5d8e10f3b842a2da1",
+  "state_updated": false,
+  "protocol_id": "protocol-mic-13",
+  "documents_verified": 5,
+  "immutable_files_verified": 95,
+  "packaged_runtime_sha256": "2042ce8e639a341b54c6b4c437a562e3ec9d49ea1f5f54263eb7c09579bb6961",
+  "offline_validation": {
+    "status": "passed",
+    "generated_at": "2026-10-04T10:09:02.511579+00:00",
+    "protocol_id": "protocol-mic-13",
+    "manifest_sha256": "f8b8606dc807279cc78c6728260f6d3d7da463f2416bf47e8d3bafbdf1789ed3",
+    "models_reloaded": 9,
+    "oof_rows_independently_recomputed": 51,
+    "fit_calls_during_validation": 0,
+    "scaler_training_range_verified": true,
+    "fold_metrics": [
+      {
+        "model": "logistic_regression",
+        "fold": 0,
+        "n": 6,
+        "positive": 2,
+        "negative": 4,
+        "AUPRC": 0.3666666666666667,
+        "AUROC": 0.375,
+        "MCC_at_0_5": -0.31622776601683794,
+        "balanced_accuracy_at_0_5": 0.375,
+        "accuracy_at_0_5": 0.5,
+        "TP": 0,
+        "FP": 1,
+        "TN": 3,
+        "FN": 2
+      },
+      {
+        "model": "random_forest",
+        "fold": 0,
+        "n": 6,
+        "positive": 2,
+        "negative": 4,
+        "AUPRC": 0.3666666666666667,
+        "AUROC": 0.375,
+        "MCC_at_0_5": -0.5,
+        "balanced_accuracy_at_0_5": 0.25,
+        "accuracy_at_0_5": 0.3333333333333333,
+        "TP": 0,
+        "FP": 2,
+        "TN": 2,
+        "FN": 2
+      },
+      {
+        "model": "dummy_prior",
+        "fold": 0,
+        "n": 6,
+        "positive": 2,
+        "negative": 4,
+        "AUPRC": 0.3333333333333333,
+        "AUROC": 0.5,
+        "MCC_at_0_5": 0.0,
+        "balanced_accuracy_at_0_5": 0.5,
+        "accuracy_at_0_5": 0.6666666666666666,
+        "TP": 0,
+        "FP": 0,
+        "TN": 4,
+        "FN": 2
+      },
+      {
+        "model": "logistic_regression",
+        "fold": 1,
+        "n": 7,
+        "positive": 2,
+        "negative": 5,
+        "AUPRC": 0.6428571428571428,
+        "AUROC": 0.5,
+        "MCC_at_0_5": 0.6454972243679028,
+        "balanced_accuracy_at_0_5": 0.75,
+        "accuracy_at_0_5": 0.8571428571428571,
+        "TP": 1,
+        "FP": 0,
+        "TN": 5,
+        "FN": 1
+      },
+      {
+        "model": "random_forest",
+        "fold": 1,
+        "n": 7,
+        "positive": 2,
+        "negative": 5,
+        "AUPRC": 0.6666666666666666,
+        "AUROC": 0.6,
+        "MCC_at_0_5": 0.6454972243679028,
+        "balanced_accuracy_at_0_5": 0.75,
+        "accuracy_at_0_5": 0.8571428571428571,
+        "TP": 1,
+        "FP": 0,
+        "TN": 5,
+        "FN": 1
+      },
+      {
+        "model": "dummy_prior",
+        "fold": 1,
+        "n": 7,
+        "positive": 2,
+        "negative": 5,
+        "AUPRC": 0.2857142857142857,
+        "AUROC": 0.5,
+        "MCC_at_0_5": 0.0,
+        "balanced_accuracy_at_0_5": 0.5,
+        "accuracy_at_0_5": 0.7142857142857143,
+        "TP": 0,
+        "FP": 0,
+        "TN": 5,
+        "FN": 2
+      },
+      {
+        "model": "logistic_regression",
+        "fold": 2,
+        "n": 4,
+        "positive": 2,
+        "negative": 2,
+        "AUPRC": 0.41666666666666663,
+        "AUROC": 0.0,
+        "MCC_at_0_5": -0.5773502691896258,
+        "balanced_accuracy_at_0_5": 0.25,
+        "accuracy_at_0_5": 0.25,
+        "TP": 1,
+        "FP": 2,
+        "TN": 0,
+        "FN": 1
+      },
+      {
+        "model": "random_forest",
+        "fold": 2,
+        "n": 4,
+        "positive": 2,
+        "negative": 2,
+        "AUPRC": 0.8333333333333333,
+        "AUROC": 0.75,
+        "MCC_at_0_5": 0.5773502691896258,
+        "balanced_accuracy_at_0_5": 0.75,
+        "accuracy_at_0_5": 0.75,
+        "TP": 2,
+        "FP": 1,
+        "TN": 1,
+        "FN": 0
+      },
+      {
+        "model": "dummy_prior",
+        "fold": 2,
+        "n": 4,
+        "positive": 2,
+        "negative": 2,
+        "AUPRC": 0.5,
+        "AUROC": 0.5,
+        "MCC_at_0_5": 0.0,
+        "balanced_accuracy_at_0_5": 0.5,
+        "accuracy_at_0_5": 0.5,
+        "TP": 0,
+        "FP": 0,
+        "TN": 2,
+        "FN": 2
+      }
+    ],
+    "pooled_descriptive_metrics": [
+      {
+        "model": "dummy_prior",
+        "n": 17,
+        "positive": 6,
+        "negative": 11,
+        "AUPRC": 0.3154492566257272,
+        "AUROC": 0.4090909090909091,
+        "MCC_at_0_5": 0.0,
+        "balanced_accuracy_at_0_5": 0.5,
+        "accuracy_at_0_5": 0.6470588235294118,
+        "TP": 0,
+        "FP": 0,
+        "TN": 11,
+        "FN": 6
+      },
+      {
+        "model": "logistic_regression",
+        "n": 17,
+        "positive": 6,
+        "negative": 11,
+        "AUPRC": 0.37797659856483384,
+        "AUROC": 0.45454545454545453,
+        "MCC_at_0_5": 0.06356417261637282,
+        "balanced_accuracy_at_0_5": 0.5303030303030303,
+        "accuracy_at_0_5": 0.5882352941176471,
+        "TP": 2,
+        "FP": 3,
+        "TN": 8,
+        "FN": 4
+      },
+      {
+        "model": "random_forest",
+        "n": 17,
+        "positive": 6,
+        "negative": 11,
+        "AUPRC": 0.43156288156288153,
+        "AUROC": 0.5757575757575758,
+        "MCC_at_0_5": 0.22727272727272727,
+        "balanced_accuracy_at_0_5": 0.6136363636363636,
+        "accuracy_at_0_5": 0.6470588235294118,
+        "TP": 3,
+        "FP": 3,
+        "TN": 8,
+        "FN": 3
+      }
+    ],
+    "scope": "admitted_cohort_oof_replay_only",
+    "formal_results_available": false,
+    "publication_ready": false
+  },
+  "source_provenance": {
+    "closure_scope": "source/acquisition/release manifests with outputs: input/output digests; historical certificates: preserve immutable JSON references only, not old document inventories",
+    "permission_scope": "local research handoff; public redistribution not authorized by this package",
+    "current_release_protected_bindings_verified": 45,
+    "historical_source_input_mismatch_count": 1,
+    "unverified_historical_certificate_reference_count": 10,
+    "historical_source_input_mismatches": [
+      {
+        "manifest": "03_experiments/audits/mic_reviewed_release_20261003_v2/manifest.json",
+        "input": "02_code/mic_reviewed_release.py",
+        "historical_sha256": "89650c86410416b83417046fb7f83b5aa97895ff2065203af7aab561ab522691",
+        "current_sha256": "a105f268e5c771b654bfa894331ddf982fd58efb48cd0c246b46b332a145d0d1",
+        "scope": "historical source snapshot unavailable; not verified or reproducible"
+      }
+    ],
+    "unverified_historical_certificate_references": [
+      {
+        "certificate": "03_experiments/audits/mic_three_fold_validation_20261002_v1.json",
+        "input": "03_experiments\\audits\\multi_database_ecoli_mic_screen_20261001.md",
+        "historical_sha256": "eb98367dbdb6eaf1126aee8226909c16f6b2a2324539bf523a8f1a32a962eedc",
+        "current_sha256": "2e32fac294a6cbe83c44ae7b215c60a156a0d8daa74e8fe3e34665390235f670",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_three_fold_validation_20261002_v1.json",
+        "input": "README.md",
+        "historical_sha256": "174a45c1bcaaee8018e97540941086649f954ec32f45eb041a7c81dc349ab487",
+        "current_sha256": "e7960fc7b15941cdc259c96b6ebfa9dfeed2eafad036e497c762668b20347882",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_three_fold_validation_20261002_v1.json",
+        "input": "docs\\DOCUMENTATION_INDEX.md",
+        "historical_sha256": "10edf3dfb1c0cda19e37804486bf9af8d10f0885a1ae6ca30cc5078ea2cad7d1",
+        "current_sha256": "e92e7f0e22d9529e9c6d6b7fe1bbff12f03bc5c51bbdd49677c805724e93684b",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_three_fold_validation_20261002_v1.json",
+        "input": "docs\\REMEDIATION_STATUS.md",
+        "historical_sha256": "f036ae85c491419b22fe59d7e3f4df0e5ea2d5d12f85a39885b0b7bb43fd92a1",
+        "current_sha256": "a1cc78f507748dc1b6a64a17a81243785e9631920f50f834f86f6b2170bc3df2",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_three_fold_validation_20261002_v1.json",
+        "input": "docs\\handoff\\TASK_STATE.md",
+        "historical_sha256": "ef57259d1fea47dc6c35bb68613fa5b493ba9b8df08cf25ab1c7bd1f81a6277c",
+        "current_sha256": "a8dbf22cba92c2f881fe1216f36210cb9ebd058bd930993de132f59f26ba76d8",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_training_readiness_20261003_v18.json",
+        "input": "02_code/mic_reviewed_release.py",
+        "historical_sha256": "89650c86410416b83417046fb7f83b5aa97895ff2065203af7aab561ab522691",
+        "current_sha256": "a105f268e5c771b654bfa894331ddf982fd58efb48cd0c246b46b332a145d0d1",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_training_readiness_20261003_v18.json",
+        "input": "02_code/tests/test_mic_reviewed_training.py",
+        "historical_sha256": "5a64d7b523726a0789dc61d064d9431a9c1e07cd06410db665389de4822458e9",
+        "current_sha256": "92307ea89f9974fc2059a2f68a20eb8ec404ea413c12f5b5160ca87a71832141",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_training_readiness_20261003_v18.json",
+        "input": "02_code/train_mic_reviewed_baseline.py",
+        "historical_sha256": "65fb306f1c9e665c6e280791c3dd8c281d4b41c12e2d210fd493af214c37c78e",
+        "current_sha256": "db5d2a7be92a49475f70927960eee8a7491d629ae40367b674accf88c5afe4e1",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_training_readiness_20261003_v18.json",
+        "input": "docs/superpowers/plans/2026-10-03-mic-evidence-release-and-training.md",
+        "historical_sha256": "eef11da3aab5c5c0707a363dc1abfec695e21d7c45176ef438076ee39f18fdd5",
+        "current_sha256": "9df3519c18281d68858e47dc1effeb86b89ba58b1e0cebfc3b0f82dee4f524ca",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      },
+      {
+        "certificate": "03_experiments/audits/mic_training_readiness_20261003_v19.json",
+        "input": "docs/superpowers/plans/2026-10-03-mic-evidence-release-and-training.md",
+        "historical_sha256": "eef11da3aab5c5c0707a363dc1abfec695e21d7c45176ef438076ee39f18fdd5",
+        "current_sha256": "9df3519c18281d68858e47dc1effeb86b89ba58b1e0cebfc3b0f82dee4f524ca",
+        "status": "unverified historical reference; historical snapshot unavailable"
+      }
+    ],
+    "limitations": [
+      "Source files are retained; this acceptance does not verify all inputs of every historical certificate.",
+      "Historical source/document bytes missing from their earlier snapshots remain unverified and cannot support historical reproducibility claims.",
+      "Current v26 inputs, protocol-13 dependencies, current release protected bindings and original verified run outputs were checked against their immutable digests."
+    ]
+  },
+  "reference_run": "D:\\桌面文件\\sci\\03_experiments\\runs\\mic_goat_baseline_20261004_v2",
+  "reference_run_comparisons": {
+    "oof_predictions.csv": {
+      "rows": 51,
+      "values_and_order_equal": true,
+      "absolute_tolerance": 1e-12
+    },
+    "fold_metrics.csv": {
+      "rows": 9,
+      "values_and_order_equal": true,
+      "absolute_tolerance": 1e-12
+    },
+    "pooled_descriptive_metrics.csv": {
+      "rows": 3,
+      "values_and_order_equal": true,
+      "absolute_tolerance": 1e-12
+    },
+    "fixed_features.npy": {
+      "shape": [
+        17,
+        44
+      ],
+      "values_and_order_equal": true,
+      "absolute_tolerance": 1e-12
+    }
+  },
+  "formal_dual_task_status": "blocked",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "new_scientific_experiment": false,
+  "independent_human_review_claimed": false,
+  "historical_fixed_inventory_checks": {
+    "applicable_to_current_cohort": false,
+    "reason": "Historical publisher/tests assert the frozen 16-molecule inventory; v26 admits 17 molecules and 42 assay-table mentions. Their sources and assertions remain unchanged."
+  }
+}

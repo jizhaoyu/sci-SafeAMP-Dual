@@ -20,6 +20,10 @@ def write_json(path, data):
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 def main():
+    raise RuntimeError(
+        'Deprecated v2 audit: use 02_code/repair_alternative_primary_audit.py '
+        'repair --output NEW_DIRECTORY. Historical outputs must not be overwritten.'
+    )
     dev_path = PROJECT / '03_experiments/prepared/amd02_evidence_clean_20261001/records.csv'
     mic_path = PROJECT / '03_experiments/audits/mic_followup_release_20261004_v1/cohort/candidate_molecules.csv'
     mic_sources_path = PROJECT / '03_experiments/audits/mic_followup_release_20261004_v1/evidence/source_review.csv'

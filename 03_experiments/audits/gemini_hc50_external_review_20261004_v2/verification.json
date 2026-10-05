@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-04T12:44:11.996408+00:00",
+  "output_manifest_sha256": "3804cc1f919d2a1002caf1ae2edee11031fde85631bf4c6454d0d5084d0a5186",
+  "independent_development_pairs": 34194,
+  "independent_internal_pairs": 3321,
+  "algorithm": "2-D scores plus explicit diagonal/up/left traceback; gaps in denominator",
+  "protected_v1_files": 33,
+  "protected_input_files": 30,
+  "formal_status": "blocked",
+  "eligible_external": 0,
+  "meaning": "Evidence repair consistency verified; does not approve formal cohort or submission"
+}

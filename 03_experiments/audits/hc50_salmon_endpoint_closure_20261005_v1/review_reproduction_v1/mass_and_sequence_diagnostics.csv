@@ -1,0 +1,6 @@
+﻿candidate_id,name,publisher_figure_sequence,sequence_length,accepted_figure_agreement,inventory_sequence_agreement,conditional_linear_free_termini_average_mass_da,source_table_mass_da,source_minus_conditional_mass_da,formal_identity_release,used_for_label_conversion
+HIST_DRAMP20859,TT(1-24),KFRTRRSKSSSNGGRKGSKG,20,True,True,2181.4312,2510.8,329.3688,False,False
+HIST_DRAMP20860,TT(1-35),KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA,35,True,True,3451.7932,3451.8,0.0068,False,False
+HIST_DRAMP20862,rtCATH2(5-40),RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI,36,True,False,3686.1380,3686.1,-0.0380,False,False
+HIST_DRAMP20863,rtCATH2(1-40),KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI,40,True,True,4184.7672,4184.7,-0.0672,False,False
+HIST_DRAMP20864,SF(18-45),KFRSNGRHGSGSRLGGGSLIGRPGGGS,27,True,True,2611.8848,2611.8,-0.0848,False,False

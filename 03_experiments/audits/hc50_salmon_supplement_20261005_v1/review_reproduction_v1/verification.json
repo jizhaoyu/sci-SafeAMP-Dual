@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-05T03:15:33.788128+00:00",
+  "status": "passed",
+  "review_manifest_sha256": "bb40b37a234c0bbea96785bb270414c5746715df07a178f70d13a8bff3e2d1f9",
+  "verification_script_sha256": "c98e4c69c750d7391c0c7d643809494b77dc201443548600d5165b9b54451638",
+  "protected_files_checked": 249,
+  "inputs_checked": 20,
+  "outputs_checked": 8,
+  "followup_candidates_checked": 5,
+  "merged_candidates_checked": 78,
+  "unchanged_other_candidates": 73,
+  "docx_media_pixel_matches": 3,
+  "database_source_fields_checked": 15,
+  "single_point_observations_checked": 4,
+  "identity_correction_proposals_checked": 1,
+  "full_docx_page_layout_verified": false,
+  "independent_human_review": false,
+  "formal_external_released": 0,
+  "model_fit_calls": 0,
+  "limitation": "Bound source/coverage/media checks; no numerical graph digitization, formal molecule clearance, or independent human review"
+}

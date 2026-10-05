@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-10-04T11:11:08.543626+00:00",
+  "checks": [
+    {
+      "scope": "current",
+      "exit_code": 0,
+      "status": "passed",
+      "legacy_documents": "incompatible",
+      "output": "D:/桌面文件/sci/03_experiments/audits/mic_project_check_current_20261004_v2.json",
+      "sha256": "09e6b2bd10cac0ad192895cb1f0281dbde6ca227ba5f2b9708f446b1275f9ebd",
+      "json_stdout_verified": true
+    },
+    {
+      "scope": "all",
+      "exit_code": 1,
+      "status": "failed",
+      "legacy_documents": "incompatible",
+      "output": "D:/桌面文件/sci/03_experiments/audits/mic_project_check_all_20261004_v1.json",
+      "sha256": "eba41caa297d792e603609329a8d6763f496f3ee6f27ca2d5e9fff573cb00b1a",
+      "json_stdout_verified": true
+    }
+  ],
+  "original_delivery_zip_unchanged": true,
+  "earlier_current_v1_stdout_consumption": "failed_GBK_utf8_decode; artifact preserved"
+}

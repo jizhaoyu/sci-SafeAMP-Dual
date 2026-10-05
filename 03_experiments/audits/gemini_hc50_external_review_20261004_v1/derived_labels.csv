@@ -1,0 +1,167 @@
+assay_id,candidate_id,endpoint,raw_numeric_low,raw_numeric_high,raw_unit,neutral_mw,standardized_low_ugml,standardized_high_ugml,derivation_rule,derived_label,decision_rationale
+HIST_DRAMP21637_MIC,HIST_DRAMP21637,MIC,,,unknown,2475.6279400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21637_HEMO,HIST_DRAMP21637,HC50,,,unknown,2475.6279400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21647_MIC,HIST_DRAMP21647,MIC,,,unknown,1984.1517399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21647_HEMO,HIST_DRAMP21647,HC50,,,unknown,1984.1517399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20807_MIC,HIST_DRAMP20807,MIC,,,unknown,4108.960140000001,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP20807_HEMO,HIST_DRAMP20807,HC50,,,unknown,4108.960140000001,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21643_MIC,HIST_DRAMP21643,MIC,,,unknown,2405.6407400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21643_HEMO,HIST_DRAMP21643,HC50,,,unknown,2405.6407400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP29065_MIC,HIST_DRAMP29065,MIC,,,unknown,2222.67324,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP29065_HEMO,HIST_DRAMP29065,HC50,,,unknown,2222.67324,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21638_MIC,HIST_DRAMP21638,MIC,,,unknown,2354.5310400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21638_HEMO,HIST_DRAMP21638,HC50,,,unknown,2354.5310400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21640_MIC,HIST_DRAMP21640,MIC,,,unknown,1935.1210399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21640_HEMO,HIST_DRAMP21640,HC50,,,unknown,1935.1210399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21646_MIC,HIST_DRAMP21646,MIC,,,unknown,2448.6241400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21646_HEMO,HIST_DRAMP21646,HC50,,,unknown,2448.6241400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20860_MIC,HIST_DRAMP20860,MIC,,,unknown,3451.7716400000013,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20860_HEMO,HIST_DRAMP20860,HC50,,,unknown,3451.7716400000013,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21634_MIC,HIST_DRAMP21634,MIC,,,unknown,1974.0691399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21634_HEMO,HIST_DRAMP21634,HC50,,,unknown,1974.0691399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21639_MIC,HIST_DRAMP21639,MIC,,,unknown,2368.58404,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21639_HEMO,HIST_DRAMP21639,HC50,,,unknown,2368.58404,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21636_MIC,HIST_DRAMP21636,MIC,,,unknown,2411.67504,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21636_HEMO,HIST_DRAMP21636,HC50,,,unknown,2411.67504,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21641_MIC,HIST_DRAMP21641,MIC,,,unknown,2056.13154,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21641_HEMO,HIST_DRAMP21641,HC50,,,unknown,2056.13154,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP29144_MIC,HIST_DRAMP29144,MIC,,,µg/ml,2226.70824,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP29144_HEMO,HIST_DRAMP29144,HC50,,,µM,2226.70824,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20968_MIC,HIST_DRAMP20968,MIC,,,unknown,3144.8208400000003,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20968_HEMO,HIST_DRAMP20968,HC50,,,unknown,3144.8208400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21304_MIC,HIST_DRAMP21304,MIC,,,unknown,2847.4557400000003,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21304_HEMO,HIST_DRAMP21304,HC50,,,unknown,2847.4557400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21648_MIC,HIST_DRAMP21648,MIC,,,unknown,2279.53404,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21648_HEMO,HIST_DRAMP21648,HC50,,,unknown,2279.53404,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21029_MIC,HIST_DRAMP21029,MIC,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21029_HEMO,HIST_DRAMP21029,HC50,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21030_MIC,HIST_DRAMP21030,MIC,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21030_HEMO,HIST_DRAMP21030,HC50,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21031_MIC,HIST_DRAMP21031,MIC,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21031_HEMO,HIST_DRAMP21031,HC50,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21032_MIC,HIST_DRAMP21032,MIC,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21032_HEMO,HIST_DRAMP21032,HC50,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21033_MIC,HIST_DRAMP21033,MIC,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21033_HEMO,HIST_DRAMP21033,HC50,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21034_MIC,HIST_DRAMP21034,MIC,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21034_HEMO,HIST_DRAMP21034,HC50,,,unknown,2969.31884,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21303_MIC,HIST_DRAMP21303,MIC,,,unknown,2847.4557400000003,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21303_HEMO,HIST_DRAMP21303,HC50,,,unknown,2847.4557400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP29097_MIC,HIST_DRAMP29097,MIC,,,unknown,2337.6313400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP29097_HEMO,HIST_DRAMP29097,HC50,,,unknown,2337.6313400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21632_MIC,HIST_DRAMP21632,MIC,,,unknown,2539.9468400000005,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21632_HEMO,HIST_DRAMP21632,HC50,,,unknown,2539.9468400000005,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21644_MIC,HIST_DRAMP21644,MIC,,,unknown,2278.50294,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21644_HEMO,HIST_DRAMP21644,HC50,,,unknown,2278.50294,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20863_MIC,HIST_DRAMP20863,MIC,,,unknown,4184.713340000001,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20863_HEMO,HIST_DRAMP20863,HC50,,,unknown,4184.713340000001,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20804_MIC,HIST_DRAMP20804,MIC,,,unknown,1646.84214,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20804_HEMO,HIST_DRAMP20804,HC50,,,unknown,1646.84214,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20864_MIC,HIST_DRAMP20864,MIC,,,unknown,2611.8336400000007,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20864_HEMO,HIST_DRAMP20864,HC50,,,unknown,2611.8336400000007,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20967_MIC,HIST_DRAMP20967,MIC,,,unknown,955.1325399999998,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20967_HEMO,HIST_DRAMP20967,HC50,,,unknown,955.1325399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21645_MIC,HIST_DRAMP21645,MIC,,,unknown,2128.2572400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: non_mic_endpoint
+HIST_DRAMP21645_HEMO,HIST_DRAMP21645,HC50,,,unknown,2128.2572400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20862_MIC,HIST_DRAMP20862,MIC,,,unknown,3599.0165400000005,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20862_HEMO,HIST_DRAMP20862,HC50,,,unknown,3599.0165400000005,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP20859_MIC,HIST_DRAMP20859,MIC,,,unknown,2181.4193400000004,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP20859_HEMO,HIST_DRAMP20859,HC50,,,unknown,2181.4193400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21420_MIC,HIST_DRAMP21420,MIC,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21420_HEMO,HIST_DRAMP21420,HC50,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21421_MIC,HIST_DRAMP21421,MIC,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21421_HEMO,HIST_DRAMP21421,HC50,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21422_MIC,HIST_DRAMP21422,MIC,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21422_HEMO,HIST_DRAMP21422,HC50,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21423_MIC,HIST_DRAMP21423,MIC,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21423_HEMO,HIST_DRAMP21423,HC50,,,unknown,2259.82414,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+HIST_DRAMP21455_MIC,HIST_DRAMP21455,MIC,,,unknown,3363.9033400000003,,,unresolvable_or_disqualified,unknown,
+HIST_DRAMP21455_HEMO,HIST_DRAMP21455,HC50,,,unknown,3363.9033400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_hemo_endpoint
+DBAASP_10544_HEMO,DBAASP_10544,HC50,198.06464,198.06464,µM,3090.6160400000003,612.1417533408256,612.1417533408256,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 612.14 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_10544_MIC,DBAASP_10544,MIC,,,none,3090.6160400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_10605_HEMO,DBAASP_10605,HC50,,,µM,2295.7452400000006,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_percentage_endpoint
+DBAASP_10605_MIC,DBAASP_10605,MIC,2.29583,2.29583,µM,2295.7452400000006,5.270640794349202,5.270640794349202,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 5.27 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_12163_HEMO,DBAASP_12163,HC50,34.65957,34.65957,µM,3148.7446400000003,109.13413526220481,109.13413526220481,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [109.13, 109.13413526220481] in indeterminate band (100, 250)"
+DBAASP_12163_MIC,DBAASP_12163,MIC,,,none,3148.7446400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_12211_HEMO,DBAASP_12211,HC50,43.43752,43.43752,µM,3102.5471400000006,134.76695344469283,134.76695344469283,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [134.77, 134.76695344469283] in indeterminate band (100, 250)"
+DBAASP_12211_MIC,DBAASP_12211,MIC,,,none,3102.5471400000006,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_12233_HEMO,DBAASP_12233,HC50,106.43664,106.43664,µM,2313.75894,246.26872734356164,246.26872734356164,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [246.27, 246.26872734356164] in indeterminate band (100, 250)"
+DBAASP_12233_MIC,DBAASP_12233,MIC,0.57846,0.57846,µM,2313.75894,1.3384169964324,1.3384169964324,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 1.34 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_13515_HEMO,DBAASP_13515,HC50,162.27914,162.27914,µM,2682.22524,435.26920523349366,435.26920523349366,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 435.27 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_13515_MIC,DBAASP_13515,MIC,2.6823,2.6823,µM,2682.22524,7.194532761252002,7.194532761252002,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 7.19 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_14205_HEMO,DBAASP_14205,HC50,143.37433,143.37433,µM,2919.5297399999995,418.58562038757407,418.58562038757407,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 418.59 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_14205_MIC,DBAASP_14205,MIC,26.31258,26.31258,µM,2919.5297399999995,76.82035984612918,76.82035984612918,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [76.82, 76.82035984612918] in indeterminate band (32, 128)"
+DBAASP_1470_HEMO,DBAASP_1470,HC50,11.40525,11.40525,µM,2277.96004,25.98070374621,25.98070374621,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 25.98 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_1470_MIC,DBAASP_1470,MIC,0.0,34.21575,µM,2277.96004,0.0,77.94211123862999,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [0.00, 77.94211123862999] in indeterminate band (32, 128)"
+DBAASP_15043_HEMO,DBAASP_15043,HC50,36.4464,36.4464,µM,3636.527040000001,132.538319110656,132.538319110656,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [132.54, 132.538319110656] in indeterminate band (100, 250)"
+DBAASP_15043_MIC,DBAASP_15043,MIC,2.2779,2.2779,µM,3636.527040000001,8.283644944416,8.283644944416,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 8.28 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_17198_HEMO,DBAASP_17198,HC50,70.1024,70.1024,µM,2189.6167400000004,153.497388554176,153.497388554176,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [153.50, 153.497388554176] in indeterminate band (100, 250)"
+DBAASP_17198_MIC,DBAASP_17198,MIC,,,none,2189.6167400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_17203_HEMO,DBAASP_17203,HC50,153.53792,153.53792,µM,2396.9303400000003,368.01969878849286,368.01969878849286,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 368.02 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_17203_MIC,DBAASP_17203,MIC,,,none,2396.9303400000003,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_1886_HEMO,DBAASP_1886,HC50,295.26074,295.26074,µM,3929.651640000001,1160.271851168614,1160.271851168614,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 1160.27 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_1886_MIC,DBAASP_1886,MIC,295.26074,295.26074,µM,3929.651640000001,1160.271851168614,1160.271851168614,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 1160.27 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_1893_HEMO,DBAASP_1893,HC50,255.909,255.909,µM,3408.0004400000003,872.1379845999601,872.1379845999601,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 872.14 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_1893_MIC,DBAASP_1893,MIC,511.818,511.818,µM,3408.0004400000003,1744.2759691999202,1744.2759691999202,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 1744.28 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_19356_HEMO,DBAASP_19356,HC50,119.68494,119.68494,µM,2480.0022400000007,296.8189192942657,296.8189192942657,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 296.82 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_19356_MIC,DBAASP_19356,MIC,25.8,51.6,µM,2480.0022400000007,63.98405779200002,127.96811558400005,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [63.98, 127.96811558400005] in indeterminate band (32, 128)"
+DBAASP_19706_HEMO,DBAASP_19706,HC50,280.544,280.544,µM,2191.6740400000003,614.86100187776,614.86100187776,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 614.86 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_19706_MIC,DBAASP_19706,MIC,1.095875,1.095875,µM,2191.6740400000003,2.401800788585,2.401800788585,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 2.40 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_20562_HEMO,DBAASP_20562,HC50,60.0,60.0,µg/ml,1790.0416400000004,60.0,60.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 60.00 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_20562_MIC,DBAASP_20562,MIC,256.0,256.0,µg/ml,1790.0416400000004,256.0,256.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 256.00 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_20565_HEMO,DBAASP_20565,HC50,75.0,75.0,µg/ml,1760.0174400000003,75.0,75.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 75.00 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_20565_MIC,DBAASP_20565,MIC,128.0,128.0,µg/ml,1760.0174400000003,128.0,128.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 128.00 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_20571_HEMO,DBAASP_20571,HC50,190.0,190.0,µg/ml,1856.1547400000002,190.0,190.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [190.00, 190.0] in indeterminate band (100, 250)"
+DBAASP_20571_MIC,DBAASP_20571,MIC,32.0,32.0,µg/ml,1856.1547400000002,32.0,32.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 32.00 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_20579_HEMO,DBAASP_20579,HC50,265.0,265.0,µg/ml,1699.9690400000002,265.0,265.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 265.00 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_20579_MIC,DBAASP_20579,MIC,32.0,32.0,µg/ml,1699.9690400000002,32.0,32.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 32.00 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_2261_HEMO,DBAASP_2261,HC50,100.0,100.0,µg/ml,2268.75804,100.0,100.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 100.00 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_2261_MIC,DBAASP_2261,MIC,0.06,0.06,µg/ml,2268.75804,0.06,0.06,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 0.06 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_2262_HEMO,DBAASP_2262,HC50,100.0,100.0,µg/ml,1254.4060399999998,100.0,100.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 100.00 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_2262_MIC,DBAASP_2262,MIC,,,none,1254.4060399999998,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_2453_HEMO,DBAASP_2453,HC50,23.158592,23.158592,µM,3079.4674400000004,71.31613002024449,71.31613002024449,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 71.32 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_2453_MIC,DBAASP_2453,MIC,,,none,3079.4674400000004,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_25709_HEMO,DBAASP_25709,HC50,127.57184,127.57184,µM,3985.4827399999995,508.4353664300415,508.4353664300415,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 508.44 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_25709_MIC,DBAASP_25709,MIC,127.57184,inf,µM,3985.4827399999995,508.4353664300415,inf,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 508.44 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_25712_HEMO,DBAASP_25712,HC50,103.51648,103.51648,µM,3233.77104,334.74859518673924,334.74859518673924,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 334.75 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_25712_MIC,DBAASP_25712,MIC,25.87912,25.87912,µM,3233.77104,83.68714879668481,83.68714879668481,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [83.69, 83.68714879668481] in indeterminate band (32, 128)"
+DBAASP_3536_HEMO,DBAASP_3536,HC50,26.1339,26.1339,µM,2609.2852400000006,68.19079953363602,68.19079953363602,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 68.19 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_3536_MIC,DBAASP_3536,MIC,44.42763,44.42763,µM,2609.2852400000006,115.92435920718123,115.92435920718123,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [115.92, 115.92435920718123] in indeterminate band (32, 128)"
+DBAASP_3568_HEMO,DBAASP_3568,HC50,339.72,339.72,µM,3392.087340000001,1152.3599111448004,1152.3599111448004,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 1152.36 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_3568_MIC,DBAASP_3568,MIC,169.86,169.86,µM,3392.087340000001,576.1799555724002,576.1799555724002,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 576.18 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_4227_HEMO,DBAASP_4227,HC50,12.7467,12.7467,µM,2545.2430400000007,32.44344945796801,32.44344945796801,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 32.44 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_4227_MIC,DBAASP_4227,MIC,25.4934,25.4934,µM,2545.2430400000007,64.88689891593602,64.88689891593602,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [64.89, 64.88689891593602] in indeterminate band (32, 128)"
+DBAASP_4230_HEMO,DBAASP_4230,HC50,402.2541,402.2541,µM,2975.5533400000004,1196.9285307836942,1196.9285307836942,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 1196.93 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_4230_MIC,DBAASP_4230,MIC,59.5932,59.5932,µM,2975.5533400000004,177.32274530128802,177.32274530128802,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 177.32 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_4283_HEMO,DBAASP_4283,HC50,82.751,82.751,µM,3308.892440000001,273.8141583024401,273.8141583024401,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 273.81 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_4283_MIC,DBAASP_4283,MIC,264.8032,inf,µM,3308.892440000001,876.2053065678083,inf,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 876.21 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_4285_HEMO,DBAASP_4285,HC50,155.10315,155.10315,µM,2988.3583400000007,463.5037918627711,463.5037918627711,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 463.50 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_4285_MIC,DBAASP_4285,MIC,239.08,inf,µM,2988.3583400000007,714.4567119272002,inf,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 714.46 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_4287_HEMO,DBAASP_4287,HC50,78.8919,78.8919,µM,3092.6781400000004,243.98725455306604,243.98725455306604,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [243.99, 243.98725455306604] in indeterminate band (100, 250)"
+DBAASP_4287_MIC,DBAASP_4287,MIC,20.41908,20.41908,µM,3092.6781400000004,63.149642354911215,63.149642354911215,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [63.15, 63.149642354911215] in indeterminate band (32, 128)"
+DBAASP_4676_HEMO,DBAASP_4676,HC50,80.0,80.0,µg/ml,1720.1214400000003,80.0,80.0,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 80.00 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_4676_MIC,DBAASP_4676,MIC,0.6,0.6,µg/ml,1720.1214400000003,0.6,0.6,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 0.60 µg/mL <= 32 µg/mL -> amp=1
+DBAASP_497_HEMO,DBAASP_497,HC50,94.8804,94.8804,µM,1855.3193399999996,176.03344110693592,176.03344110693592,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [176.03, 176.03344110693592] in indeterminate band (100, 250)"
+DBAASP_497_MIC,DBAASP_497,MIC,,,none,1855.3193399999996,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_5235_HEMO,DBAASP_5235,HC50,84.57585,84.57585,µM,3085.5945400000005,260.9667809758591,260.9667809758591,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 260.97 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_5235_MIC,DBAASP_5235,MIC,,,none,3085.5945400000005,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_6545_HEMO,DBAASP_6545,HC50,25.879728,25.879728,µM,2310.6140400000004,59.79806286818113,59.79806286818113,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",1,HC50 upper bound 59.80 µg/mL <= 100 µg/mL -> hemo=1 (toxic)
+DBAASP_6545_MIC,DBAASP_6545,MIC,23.1069,inf,µM,2310.6140400000004,53.391127560876,inf,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [53.39, inf] in indeterminate band (32, 128)"
+DBAASP_726_HEMO,DBAASP_726,HC50,63.25156,63.25156,µM,1856.2610399999996,117.41140654722237,117.41140654722237,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [117.41, 117.41140654722237] in indeterminate band (100, 250)"
+DBAASP_726_MIC,DBAASP_726,MIC,,,none,1856.2610399999996,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_8197_HEMO,DBAASP_8197,HC50,175.94412,175.94412,µM,2144.59424,377.3287463138688,377.3287463138688,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",0,HC50 lower bound 377.33 µg/mL >= 250 µg/mL -> hemo=0 (low hemolysis)
+DBAASP_8197_MIC,DBAASP_8197,MIC,,,none,2144.59424,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+DBAASP_8374_HEMO,DBAASP_8374,HC50,,,µM,2495.0981400000005,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_percentage_endpoint
+DBAASP_8374_MIC,DBAASP_8374,MIC,249.919,249.919,µM,2495.0981400000005,623.5724320506602,623.5724320506602,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",0,MIC lower bound 623.57 µg/mL >= 128 µg/mL -> amp=0
+DBAASP_9865_HEMO,DBAASP_9865,HC50,,,µM,3000.68714,,,unresolvable_or_disqualified,unknown,Observation disqualified: disqualified_percentage_endpoint
+DBAASP_9865_MIC,DBAASP_9865,MIC,,,none,3000.68714,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+PMC_42653830_MIC,PMC_42653830,MIC,16.0,16.0,µg/ml,1739.06654,16.0,16.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 16.00 µg/mL <= 32 µg/mL -> amp=1
+PMC_42653830_HEMO,PMC_42653830,HC50,,,none,1739.06654,,,unresolvable_or_disqualified,unknown,Observation disqualified: animal_rbc
+PMC_42650737_MIC,PMC_42650737,MIC,1.0,1.0,µg/ml,1434.86124,1.0,1.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 1.00 µg/mL <= 32 µg/mL -> amp=1
+PMC_42650737_HEMO,PMC_42650737,HC50,,,none,1434.86124,,,unresolvable_or_disqualified,unknown,Observation disqualified: missing
+PMC_42370696_MIC,PMC_42370696,MIC,4.0,4.0,µg/ml,1479.89194,4.0,4.0,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",1,MIC upper bound 4.00 µg/mL <= 32 µg/mL -> amp=1
+PMC_42370696_HEMO,PMC_42370696,HC50,,,none,1479.89194,,,unresolvable_or_disqualified,unknown,Observation disqualified: animal_rbc
+PMC_42221479_MIC,PMC_42221479,MIC,11.4,11.4,µM,4211.84614,48.015045996,48.015045996,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [48.02, 48.015045996] in indeterminate band (32, 128)"
+PMC_42221479_HEMO,PMC_42221479,HC50,,,none,4211.84614,,,unresolvable_or_disqualified,unknown,Observation disqualified: animal_rbc
+PMC_40864826_MIC,PMC_40864826,MIC,24.8,inf,µM,2529.11454,62.722040592000006,inf,"MIC_amp_threshold: upper<=32 -> 1, lower>=128 -> 0",unknown,"MIC range [62.72, inf] in indeterminate band (32, 128)"
+PMC_40864826_HEMO,PMC_40864826,HC50,41.87,41.87,µM,2529.11454,105.8940257898,105.8940257898,"HC50_hemo_threshold: upper<=100 -> 1, lower>=250 -> 0",unknown,"HC50 range [105.89, 105.8940257898] in indeterminate band (100, 250)"

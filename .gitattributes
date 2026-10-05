@@ -1,0 +1,11 @@
+# Audited sources and outputs must retain the bytes used in their SHA256 bindings.
+# Disable automatic LF/CRLF conversion; do not renormalize historical files.
+* whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+.gitattributes -text
+02_code/** -text
+03_experiments/audits/** -text
+03_experiments/protocols/** -text
+03_experiments/runs/** -text
+04_paper/reports/** -text
+README.md -text
+docs/** -text

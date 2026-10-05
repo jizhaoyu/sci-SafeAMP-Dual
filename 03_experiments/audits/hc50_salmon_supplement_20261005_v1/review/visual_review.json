@@ -1,0 +1,68 @@
+{
+  "notes": {
+    "review_mode": "agent_original_source_and_embedded_figure_review",
+    "independent_human_review": false,
+    "supplement_url_basis": "Derived public Elsevier CDN URL from verified article PII, followed by DOCX content and main-paper cross-reference verification; not claimed observed article-page attachment link",
+    "s1_visual_findings": {
+      "image": "inspection/s1_image.png",
+      "source_media": "word/media/image1.tiff",
+      "experimental_bars_at_100_uM": [
+        "TT(1-24)",
+        "TT(1-35)",
+        "STF(1-37)",
+        "rtCATH2(5-40)",
+        "SF(18-45)"
+      ],
+      "in_scope_candidate_ids": [
+        "HIST_DRAMP20859",
+        "HIST_DRAMP20860",
+        "HIST_DRAMP20862",
+        "HIST_DRAMP20864"
+      ],
+      "rtCATH2_1_40_bar_present": false,
+      "control": "SMAP-29 bars shown at 100 and 10 uM; do not attribute the 10 uM point to each experimental peptide",
+      "interpretation": "Experimental peptide bars visibly below the 50% line; no percent digitization, fitted dose-response, or numerical HC50 inferred",
+      "caption_display_discrepancy": "Caption mentions each peptide at 10 and 100 uM; displayed graph has experimental peptides at 100 uM and only SMAP-29 at 10 uM"
+    },
+    "other_images_reviewed": [
+      "inspection/supplement_image2.png",
+      "inspection/supplement_image3.png"
+    ],
+    "document_rendering": "Current host soffice unavailable. All three embedded TIFF figures were rendered with existing PyMuPDF and inspected; captions read directly from DOCX XML. Full DOCX page layout was not verified.",
+    "sequence_correction_candidate": "HIST_DRAMP20862",
+    "corroborated_sequence": "RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI",
+    "correction_scope": "Separate unreleased identity proposal only; historical inventory and assay labels unchanged"
+  },
+  "images": [
+    {
+      "source_media": "word/media/image1.tiff",
+      "extracted_file": "inspection/image1.tiff",
+      "extracted_sha256": "2c026f562c5fd4415d45cf173394d97c56840abca59747c9e5b73bcde490cf0c",
+      "render": "inspection/s1_image.png",
+      "render_sha256": "ee180c04b0dbc7b4cf4d9df72648ecf92f109b440e2188645caa7e0412f7e23b",
+      "width": 476,
+      "height": 449,
+      "agent_visually_inspected": true
+    },
+    {
+      "source_media": "word/media/image2.tiff",
+      "extracted_file": "inspection/image2.tiff",
+      "extracted_sha256": "a6f247aced823ede69152a4792acf66e5200633d60515fdae46e90dc6acd6ca1",
+      "render": "inspection/supplement_image2.png",
+      "render_sha256": "f124c6b7b591d89f765985006845115a23bc7152fb4e1fe4d8b81bc975ba9999",
+      "width": 415,
+      "height": 250,
+      "agent_visually_inspected": true
+    },
+    {
+      "source_media": "word/media/image3.tiff",
+      "extracted_file": "inspection/image3.tiff",
+      "extracted_sha256": "6caa8a636ff2783a57a6a5368fed780eba379e092b9c84a501ec433d53399a72",
+      "render": "inspection/supplement_image3.png",
+      "render_sha256": "d784732b9a2de9f81e28f0c2bac093e0681e4625070c550e07091bd9028d352d",
+      "width": 443,
+      "height": 390,
+      "agent_visually_inspected": true
+    }
+  ]
+}

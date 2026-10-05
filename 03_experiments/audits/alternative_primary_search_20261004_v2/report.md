@@ -1,5 +1,9 @@
 # 替代原始测定检索与证据审查报告 (第二轮)
 
+> **此为历史 v2，存在转录错误及过度结论，不能作为准入依据。**
+> 当前修正报告与状态见 `../alternative_primary_search_20261004_v3/`。
+> “全部历史候选均泄漏”和“同源组件合并即拒绝扩充”的结论已撤回；原文留存用于追溯。
+
 > **审计执行时间**：2026-10-04（Asia/Shanghai）  
 > **审计目录**：[`03_experiments/audits/alternative_primary_search_20261004_v2/`](file:///D:/桌面文件/sci/03_experiments/audits/alternative_primary_search_20261004_v2/)  
 > **审查模式**：公开实测数据证据审查与全员同源拓扑隔离门禁（Agent Primary Source Review）  

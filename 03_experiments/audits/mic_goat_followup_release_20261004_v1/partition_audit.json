@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T07:06:30.981211+00:00",
+  "molecules": 17,
+  "observations": 42,
+  "pairs_recomputed": 136,
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "blockers": [],
+  "model_fitting_performed": false
+}

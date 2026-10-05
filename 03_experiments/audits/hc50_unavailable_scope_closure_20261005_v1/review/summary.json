@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-10-05T03:49:39.079556+00:00",
+  "data_version": "hc50_unavailable_scope_closure_20261005_v1",
+  "protocol_id": "protocol-amd-02",
+  "previous_review_manifest_sha256": "6983d6ae7ec52103061674dd076448fb8fb32027bc45ae9e5f1dae8e0d52b815",
+  "scope_change_basis": "explicit user decision",
+  "user_request": "这37条如果找不到就不找了,或者直接去掉",
+  "historical_candidate_records": 78,
+  "current_screened_scope_records": 41,
+  "archived_unavailable_original_records": 37,
+  "archived_source_identifier_pairs": 25,
+  "active_original_search_tasks": 0,
+  "resume_archived_search_requires_new_user_request": true,
+  "current_scope_decision_counts": {
+    "current_source_insufficient_for_dual_release": 22,
+    "pending": 10,
+    "excluded_by_known_molecular_form": 9
+  },
+  "historical_merged_decision_counts": {
+    "current_source_insufficient_for_dual_release": 22,
+    "pending": 10,
+    "excluded_from_current_scope_original_unavailable": 37,
+    "excluded_by_known_molecular_form": 9
+  },
+  "remaining_evidence_followup_records": 32,
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "homology_boundary": ">=0.40 unchanged",
+  "training_state_changed": false,
+  "model_fit_calls": 0,
+  "network_requests": 0,
+  "independent_human_review": false,
+  "meaning": "Scope exclusion only; missing evidence is not a negative assay label or proof of experimental absence."
+}

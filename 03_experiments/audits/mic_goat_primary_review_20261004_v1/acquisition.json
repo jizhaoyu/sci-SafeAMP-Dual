@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-10-04T06:59:37.396547+00:00",
+  "doi": "10.3389/fmicb.2018.02983",
+  "pmid": "30555455",
+  "pmcid": "PMC6284057",
+  "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6284057/supplementaryFiles",
+  "license_as_reported_in_primary_xml": "CC BY 4.0",
+  "review_mode": "agent_original_source_review; no human signoff claimed",
+  "prior_primary_sha256": "01b43c8a0b91e6521354227a7e584c84c64400f235cf6b52ef7c4cb0cd3d0bd6",
+  "supplement_acquired": true,
+  "archive_members": [
+    "fmicb-09-02983-g004.gif",
+    "fmicb-09-02983-g001.jpg",
+    "fmicb-09-02983-g005.gif",
+    "fmicb-09-02983-g001.gif",
+    "fmicb-09-02983-g003.gif",
+    "fmicb-09-02983-g002.gif",
+    "fmicb-09-02983-g006.jpg",
+    "fmicb-09-02983-g007.jpg",
+    "fmicb-09-02983-g002.jpg",
+    "fmicb-09-02983-g005.jpg",
+    "fmicb-09-02983-g003.jpg",
+    "Data_Sheet_1.docx",
+    "fmicb-09-02983-g006.gif",
+    "fmicb-09-02983-g004.jpg",
+    "fmicb-09-02983-g007.gif"
+  ],
+  "docx_archive_member": "Data_Sheet_1.docx",
+  "finished_at": "2026-10-04T07:00:35.303092+00:00",
+  "outputs": {
+    "raw/Data_Sheet_1.docx": "1c0f9791a89c3e4dc04ccbf32602edae761defc5bb27d1394301005af3060596",
+    "raw/goat_antibacterial2018.xml": "01b43c8a0b91e6521354227a7e584c84c64400f235cf6b52ef7c4cb0cd3d0bd6",
+    "raw/official_supplement.zip": "b4ae391c48de846913e1ae5096e0ace126a406f8f1c1eabbe54c2e58731d4916"
+  },
+  "acquisition_script_sha256": "30a9430b701ff1878837028ae4ef464dc91048900f9718508066b6efbe8bb653"
+}

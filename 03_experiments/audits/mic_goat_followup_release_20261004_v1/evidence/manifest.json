@@ -1,0 +1,30 @@
+{
+  "status": "passed_for_local_exploratory_training_protocol_review",
+  "generated_at": "2026-10-04T07:06:31.012886+00:00",
+  "full_release_review_complete": true,
+  "molecules_evidence_approved": 17,
+  "observations_evidence_approved": 42,
+  "cohort_manifest_sha256": "ce5f09e83b74d92a884e823d36f57e6b4292b4dfc5407b33f29f3aa4f213e235",
+  "inputs": {
+    "02_code/prepare_goat_mic_followup.py": "d4a9fe4a460a7f7829e1d8709c636de71209dddac9e646d6125640d949260224",
+    "03_experiments/audits/mic_goat_primary_review_20261004_v1/acquisition.json": "b63f835bd70f87c519d514cf338f59a287b28542fb742f1015dd5ef3782b997a",
+    "03_experiments/audits/mic_goat_primary_review_20261004_v1/raw/goat_antibacterial2018.xml": "01b43c8a0b91e6521354227a7e584c84c64400f235cf6b52ef7c4cb0cd3d0bd6",
+    "03_experiments/audits/mic_goat_primary_review_20261004_v1/raw/Data_Sheet_1.docx": "1c0f9791a89c3e4dc04ccbf32602edae761defc5bb27d1394301005af3060596",
+    "03_experiments/audits/mic_goat_primary_review_20261004_v1/Data_Sheet_1.pdf": "8295fe8e90224e4970a3608490fd2d02734c3f379293191d0a63714f3c548150",
+    "03_experiments/audits/mic_goat_primary_review_20261004_v1/supplement-review-2.png": "5767cbed0e23dac122e9f28bc7ca9ce1429f9c3ac267d873ffefa220f63b1b50",
+    "03_experiments/audits/mic_followup_release_20261004_v1/manifest.json": "9bc45c0d2242f2bfd282177221fff35301f4deb86867546bef5677bf5fe177f2",
+    "03_experiments/audits/mic_training_readiness_20261004_v22.json": "67fcb7ce81a3957ba468084b6b7e24732fe4e761476e0dbfd6b22655fb42aab1",
+    "02_code/mic_followup_release.py": "d9a9e1c7d383d1b111dc3e651a0e9bf5ef91c27d41d4635eb67ed25a8171124c",
+    "02_code/public_data.py": "08b51ce8548b0d0a1cdbcaffa59edb59920572b9c649c1324d164beabd5209ea",
+    "02_code/research_data.py": "9a5d92a8bbb54bbb938a6a3cb0c0c798a9e14e72942f53a9f1b74b1e5b047350",
+    "02_code/validate_mic_acid_progress.py": "93706882fc3a7cfe42f3d1ddcd6689efeb494078fc981097eeba87dc9696de0b"
+  },
+  "records_released_for_training": 0,
+  "training_started": false,
+  "independent_human_review_claimed": false,
+  "outputs": {
+    "assay_evidence_review.csv": "87da51eaa7133e51b932352f6faee8b88beac4493e6bcb4ca8a6efb3f432aaef",
+    "molecule_evidence_review.csv": "27e932bc3f63a9202b2cd63bd96b1bd4fc975d0ffd38910e91eb21e08b802820",
+    "source_review.csv": "fe44af8699cb975a9136e68622086436d497e43869767352ba0b8bf8fd451459"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-04T13:18:19.555911+00:00",
+  "review_mode": "agent_original_source_review",
+  "independent_human_review": false,
+  "candidate_records": 78,
+  "source_groups": 42,
+  "metadata_pmids": 41,
+  "original_sources_acquired": 13,
+  "candidates_endpoint_screened": 20,
+  "candidate_access_gaps": 58,
+  "explicit_human_hc50_observations": 8,
+  "decision_counts": {
+    "pending": 70,
+    "excluded_by_known_molecular_form": 8
+  },
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "training_state_changed": false,
+  "new_models_trained": 0,
+  "protocol_id": "protocol-amd-02 (unchanged)",
+  "data_version": "hc50_primary_followup_20261004_v1",
+  "sequence_homology_threshold": ">=0.40 (unchanged)",
+  "acquisition_manifest_sha256": "b84791fc994078261fc50036176869ba39051e77c44e6f6e02e2946c518e7435"
+}

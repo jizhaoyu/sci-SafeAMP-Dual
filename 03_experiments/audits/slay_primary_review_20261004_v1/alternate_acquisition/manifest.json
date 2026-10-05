@@ -1,0 +1,9 @@
+{
+  "outputs": {
+    "source_acquisition.json": "0a812a2cf5e887331f5411af136126958798be737ae89d3c3d863ed1e41836b5"
+  },
+  "script_sha256": "7b66bfc591772aaa22614c44e10dc7dfc2514c8e14e7a504cc70cb71f34145f2",
+  "pdf_url_basis": "Europe PMC metadata for PMID 29307492",
+  "publisher_pii_basis": "DOI resolver redirect for 10.1016/j.cell.2017.12.009",
+  "evidence_release_performed": false
+}

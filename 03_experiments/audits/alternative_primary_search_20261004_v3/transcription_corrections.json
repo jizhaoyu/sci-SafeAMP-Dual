@@ -1,0 +1,23 @@
+[
+  {
+    "candidate_name": "Pin2[14]",
+    "field": "mw",
+    "old_value": "1693.1",
+    "corrected_value": 1680.1,
+    "source_location": "Table 1; theoretical molecular weight (Da)"
+  },
+  {
+    "candidate_name": "Pin2[17]",
+    "field": "seq",
+    "old_value": "FWGALAKGLKKFSKKL",
+    "corrected_value": "FWGLKGLKGPGKFSKKL",
+    "source_location": "Table 1; theoretical molecular weight (Da)"
+  },
+  {
+    "candidate_name": "Pin2[17]",
+    "field": "mw",
+    "old_value": "1849.3",
+    "corrected_value": 1891.3,
+    "source_location": "Table 1; theoretical molecular weight (Da)"
+  }
+]

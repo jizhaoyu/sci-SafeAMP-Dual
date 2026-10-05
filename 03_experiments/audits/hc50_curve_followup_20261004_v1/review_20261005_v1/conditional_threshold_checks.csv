@@ -1,0 +1,9 @@
+﻿candidate_id,repeat,endpoint,operator,reported_value_uM,source_reported_mw_g_per_mol,conditional_value_ug_per_ml,calculation_basis,threshold_interpretation,formal_label,formal_release
+DBAASP_25709,1,human_hemolysis_50_percent_censored,>,32,3985.541,127.537312,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",unknown,,False
+DBAASP_25709,1,MIC,>,32,3985.541,127.537312,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",unknown,,False
+DBAASP_25709,2,human_hemolysis_50_percent_censored,>,32,3985.541,127.537312,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",unknown,,False
+DBAASP_25709,2,MIC,>,32,3985.541,127.537312,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",unknown,,False
+DBAASP_25712,1,human_hemolysis_50_percent_censored,>,32,3233.819,103.482208,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",unknown,,False
+DBAASP_25712,1,MIC,=,8,3233.819,25.870552,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",positive_if_mass_and_identity_accepted,,False
+DBAASP_25712,2,human_hemolysis_50_percent_censored,>,32,3233.819,103.482208,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",unknown,,False
+DBAASP_25712,2,MIC,=,8,3233.819,25.870552,"Supplement S1 reported molecular weight; conditional only, complete molecular form not verified",positive_if_mass_and_identity_accepted,,False

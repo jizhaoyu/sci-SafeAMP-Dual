@@ -1,0 +1,29 @@
+[
+  {
+    "requested_file": "41598_2026_40997_MOESM1_ESM.docx",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM1_ESM.docx",
+    "retrieved_at": "2026-10-04T14:03:50.242830+00:00",
+    "transport": "requests; TLS verification enabled",
+    "license": "not yet reviewed",
+    "status": "request_failed",
+    "error": "SSLError: HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM1_ESM.docx (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+  },
+  {
+    "requested_file": "41598_2026_40997_MOESM2_ESM.docx",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM2_ESM.docx",
+    "retrieved_at": "2026-10-04T14:03:53.262690+00:00",
+    "transport": "requests; TLS verification enabled",
+    "license": "not yet reviewed",
+    "status": "request_failed",
+    "error": "SSLError: HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM2_ESM.docx (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+  },
+  {
+    "requested_file": "41598_2026_40997_MOESM3_ESM.docx",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM3_ESM.docx",
+    "retrieved_at": "2026-10-04T14:03:53.762545+00:00",
+    "transport": "requests; TLS verification enabled",
+    "license": "not yet reviewed",
+    "status": "request_failed",
+    "error": "SSLError: HTTPSConnectionPool(host='static-content.springer-cdn.com', port=443): Max retries exceeded with url: /esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM3_ESM.docx (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)')))"
+  }
+]

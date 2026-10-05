@@ -1,0 +1,24 @@
+[
+  {
+    "requested_file": "europepmc_manuscript.pdf",
+    "url": "https://europepmc.org/articles/PMC5786472?pdf=render",
+    "retrieved_at": "2026-10-04T13:43:00.481930+00:00",
+    "license": "not_verified; local original-source review only",
+    "pmid": "29307492",
+    "pmcid": "PMC5786472",
+    "doi": "10.1016/j.cell.2017.12.009",
+    "status": "request_failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "requested_file": "publisher_article.html",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0092867417314514",
+    "retrieved_at": "2026-10-04T13:43:01.851659+00:00",
+    "license": "not_verified; local original-source review only",
+    "pmid": "29307492",
+    "pmcid": "PMC5786472",
+    "doi": "10.1016/j.cell.2017.12.009",
+    "status": "request_failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  }
+]

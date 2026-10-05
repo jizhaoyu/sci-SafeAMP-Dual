@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-10-04T13:50:25.688167+00:00",
+  "data_version": "slay_primary_review_20261004_v1",
+  "protocol_id": "protocol-amd-02",
+  "homology_boundary": ">=0.40 unchanged",
+  "review_mode": "agent_original_source_review",
+  "independent_human_review": false,
+  "fixed_batch_candidates": 14,
+  "sequence_matches": 14,
+  "new_measurement_studies_reviewed": 1,
+  "mbc_observations": 28,
+  "numeric_mic_observations_released": 0,
+  "new_numeric_human_hc50_observations": 0,
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "model_fit_calls": 0,
+  "training_state_changed": false,
+  "supplement_s2_s3_status": "not_acquired; PMC non-PDF challenge; alternate public routes 403",
+  "merged_candidate_records": 78,
+  "merged_decision_counts": {
+    "current_source_insufficient_for_dual_release": 14,
+    "pending": 56,
+    "excluded_by_known_molecular_form": 8
+  },
+  "merged_candidates_endpoint_screened": 34,
+  "remaining_original_access_gaps": 44,
+  "prior_explicit_human_hc50_observations": 8
+}

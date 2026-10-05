@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-10-05T03:15:34.294966+00:00",
+  "status": "passed",
+  "identical_outputs": {
+    "candidate_decisions.csv": true,
+    "merged_candidate_decisions.csv": true,
+    "sequence_identity_review.csv": true,
+    "identity_correction_proposal.csv": true,
+    "single_point_observations.csv": true,
+    "visual_review.json": true
+  },
+  "summary_equal_except": [
+    "generated_at"
+  ],
+  "review_manifest_sha256": "5ec38cf298a87e9c647d1769808d37d568d2659e9921c006570030b37e319d91",
+  "reproduction_manifest_sha256": "bb40b37a234c0bbea96785bb270414c5746715df07a178f70d13a8bff3e2d1f9",
+  "model_fit_calls": 0
+}

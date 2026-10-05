@@ -1,0 +1,34 @@
+{
+  "case": "synthetic_report",
+  "started_at": "2026-10-05T06:47:59.545836+00:00",
+  "http_status": 200,
+  "transport_passed": true,
+  "response_schema_passed": true,
+  "output_contract_passed": true,
+  "passed": true,
+  "provider_request_id": null,
+  "response_id": "ae41c583-c754-4495-b853-b3e9ecbfc73b",
+  "returned_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 91,
+    "total_tokens": 268,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 177
+  },
+  "response_characters": 364,
+  "contract_checks": {
+    "json_valid": true,
+    "fixture_preserved": true,
+    "summary_exact": true,
+    "limitations_exact": true,
+    "no_unknown_fields": true,
+    "passed": true
+  },
+  "duration_seconds_full_response": 0.6928,
+  "completed_at": "2026-10-05T06:48:00.238529+00:00"
+}

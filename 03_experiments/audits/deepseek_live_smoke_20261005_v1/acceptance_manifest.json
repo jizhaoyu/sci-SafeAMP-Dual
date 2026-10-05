@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-05T06:51:38.456326+00:00",
+  "status": "passed",
+  "real_api_calls": 2,
+  "api_and_output_contracts_passed": true,
+  "offline_regressions_passed": 32,
+  "credential_scan_passed": true,
+  "protected_research_hashes_passed": true,
+  "five_current_status_blocks_consistent": true,
+  "web_deepseek_integration_tested": false,
+  "credential_rotation_performed": false,
+  "files": {
+    "manifest.json": "14ca526562d5404ab3518d404911dd47c7c3ce8c44f369239e2f3700f39eb8f2",
+    "offline_regressions.xml": "bc45d64b0b953b43bf1db6a8413c90844e5c57516ea70723192fa97cd2ba1fbd",
+    "README.md": "17809fe2c8b73c944651ba28ecc3217edc8481baa423838d6c4f0bb84c85b33f",
+    "summary.json": "ecf37f67553223ccd165a68ff3bb1a40e9c4fc0b9e3c5a891b37b6b867cd51e2",
+    "connectivity\\audit.json": "58509351d99270f217c7de8d658f93bd9e129c94f65b1c8f4d178f83618a673c",
+    "connectivity\\request.json": "cce27ac9294c3c8e20b5b9aa39cbab07c742cd7d07fc721bf450b65012420106",
+    "connectivity\\response.json": "e0a7c84cf53e964d8716f3f336698fa77dda1a94d227c0db749a644df6d9d655",
+    "synthetic_report\\audit.json": "8b18aeb42305367a9f7382872d9b013a257cdb5a4a0fa214613c7178dee8c204",
+    "synthetic_report\\request.json": "a2e032f184fd862fa7b312e29a3c3d416b45b2dd0530d30710583b66bf4fd307",
+    "synthetic_report\\response.json": "dbd08433d232b0bc28b2888a788b862bf0d6db32f09a4490671cffafbf513ada"
+  },
+  "sources": {
+    "02_code/deepseek_real_evaluation.py": "1feddd2a750b2a7c4a403ee08910604f42a389833bc81032e77a91ab44371259",
+    "02_code/deepseek_live_smoke.py": "ea201f889d95767568cb7c4ef8eac882c02f2f4e4b0af90bf899dcfc8bb19ad8",
+    "02_code/tests/test_deepseek_live_smoke.py": "0580fc7135771d640d8e06197a03a3193f51fda4452efb202646c362e077ae14",
+    "docs/superpowers/plans/2026-10-05-deepseek-live-smoke.md": "6a527e8825545b69e9c9dc74ad4cfd190d18536c70accc7361b90de871188db6"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "requested_file": "figure_5.jpg",
+  "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4c58/5786472/3656c80cfe5b/nihms926512f5.jpg",
+  "retrieved_at": "2026-10-04T13:44:35.422307+00:00",
+  "license": "not_verified; local original-source review only",
+  "pmid": "29307492",
+  "pmcid": "PMC5786472",
+  "doi": "10.1016/j.cell.2017.12.009",
+  "final_url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/4c58/5786472/3656c80cfe5b/nihms926512f5.jpg",
+  "http_status": 200,
+  "content_type": "image/jpeg",
+  "status": "response_archived_not_validated_original",
+  "file": "raw/figure_5.jpg",
+  "sha256": "0ab9ad08e8075cde61c773e9ea1cf600605152eb975c374a5cd13d5ea348e2a6",
+  "bytes": 64529
+}

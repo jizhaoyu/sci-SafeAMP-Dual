@@ -1,5 +1,11 @@
 # SafeAMP-Dual 计算生物学研究交付报告 (GPT 续接版)
 
+> **复核更正：历史 v2 报告有转录错误与过度结论，不能作为准入依据。**
+> 当前纠正结果见 `03_experiments/audits/alternative_primary_search_20261004_v3/report.md` 和对应 `handoff_status.json`。
+> “全部历史候选均泄漏”和“归入已有 MIC 组件即可拒绝”的结论撤回。历史正文保留以供追溯。
+
+> **后续进度**：山羊肽审查已新增合格 ChMAP-28，并完成 `protocol-mic-13` 下的 17 分子固定基线和独立复核。当前状态为 `mic_training_readiness_20261004_v26.json`；详见 [后续交付](MIC_GOAT_FOLLOWUP_20261004.md)。下文的“本轮准入 0”仅描述历史 v2，不代表当前结果。
+
 > **交付日期**：2026-10-04（Asia/Shanghai）  
 > **工作区目录**：`D:\桌面文件\sci`  
 > **执行环境**：Windows / PowerShell (pwsh) / Python 3.11  

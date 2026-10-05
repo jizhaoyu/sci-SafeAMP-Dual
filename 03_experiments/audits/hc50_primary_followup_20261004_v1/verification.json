@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "verified_at": "2026-10-04T13:21:33.976646+00:00",
+  "review_manifest_sha256": "a9532b01b58682421330abb4b4e7e41c9aae4b5cc1d2726bcbcc0e4e720968e1",
+  "candidate_records_checked": 78,
+  "human_hc50_records_checked": 8,
+  "numeric_table_cells_independently_rechecked": 6,
+  "pdf_review": "agent visual review with pinned page images; not independent human review",
+  "bound_new_file_hashes_checked": 32,
+  "protected_v2_and_states_checked": 20,
+  "historical_input_files_checked": 30,
+  "historical_v1_files_checked": 33,
+  "formal_evidence_release": false,
+  "formal_scientific_status": "blocked",
+  "verifier_sha256": "ca94f22d509e71e5cb13d3d26903c29d4a85840fd1e9f5d67716418ab2ddb26e"
+}

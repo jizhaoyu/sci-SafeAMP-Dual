@@ -1,0 +1,10 @@
+{
+  "generated_by": "acquire_publisher_supplements.py",
+  "script_sha256": "8a3ba36d2e0a4669d2d607179df7ca038c4b0a7cc8115ce783960e1a8f32ae22",
+  "source_file": "03_experiments/audits/hc50_primary_followup_20261004_v1/acquisition/raw/pmid_41735465.xml",
+  "source_sha256": "77d67db1d2682b13e3a84d60fde103f9a223350ea9498ac8b13b8086b8118464",
+  "outputs": {
+    "source_acquisition.json": "13397e38410eebd2ecbcb463f560d9e8095164677c427c97ac6fc4f342a556cc"
+  },
+  "formal_release": false
+}

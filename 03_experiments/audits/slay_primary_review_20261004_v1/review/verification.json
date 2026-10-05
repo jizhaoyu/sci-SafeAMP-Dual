@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-10-04T13:52:02.746683+00:00",
+  "status": "passed",
+  "scope": "provenance, fixed candidate coverage, source cells and endpoint guards; not independent human review",
+  "review_manifest_sha256": "997fc0e593b86acba732b427aaa202d35c6b9b9650f7a7b39eb5b3a80333095a",
+  "verifier_sha256": "1cf52655e9b9e7b3ac10ab3e5886eb4defe77924cfd2c29178c681a5265829d0",
+  "protected_files_checked": 107,
+  "input_files_checked": 15,
+  "review_outputs_checked": 9,
+  "candidates_checked": 14,
+  "merged_candidates_checked": 78,
+  "sequence_cells_checked": 14,
+  "mbc_cells_checked": 28,
+  "model_fit_calls": 0,
+  "formal_release": false
+}

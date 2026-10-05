@@ -3,22 +3,61 @@
 <!-- RESEARCH_STATUS_CURRENT_START -->
 ## 当前研究状态（机器生成）
 
-状态来源：`03_experiments/audits/mic_training_readiness_20261004_v22.json`。生成时间：2026-10-04T03:22:58.044963+00:00（UTC）。
-数据版本：`mic_followup_release_20261004_v1`；数据目录：`03_experiments/audits/mic_followup_release_20261004_v1`；审查协议：`protocol-mic-08`。
-训练协议：`protocol-mic-11`；当前状态：`local_exploratory_training_independently_verified`。
+状态来源：`03_experiments/audits/mic_training_readiness_20261004_v26.json`。生成时间：2026-10-04T07:17:45.230443+00:00（UTC）。
+数据版本：`mic_goat_followup_release_20261004_v1`；数据目录：`03_experiments/audits/mic_goat_followup_release_20261004_v1`；审查协议：`protocol-mic-06`。
+训练协议：`protocol-mic-13`；当前状态：`local_exploratory_training_independently_verified`。
 
 | 状态 | 当前结论 |
 |---|---|
-| 证据准入 | 16 分子、23 观察；BMAP-27B 原图 CREC6 单株测定准入；Piscidin 1 继续暂缓 |
-| 全员及研究隔离 | 120 对；固定三折 seed=42；跨折同源 0、跨折主要研究 0；各训练/验证含两类 |
-| 训练执行 | 固定 LR/RF/Dummy 三折完成，9 个模型、48 条 OOF |
-| 独立复核 | passed；禁止 fit，重载 9 模型并复算全部 OOF 与指标 |
+| 证据准入 | 17 分子、42 条测定表述；6 阳性、11 阴性；ChMAP-28 新增准入，两条 mini-ChBac 因正负标签冲突未释放 |
+| 全员及研究隔离 | 136 对、7 组件；固定三折 seed=42；跨折同源 0、跨折测量研究 0；各训练/验证含两类 |
+| 训练执行 | 固定 LR/RF/Dummy 三折完成，9 个模型、51 条 OOF；training_blocked=false |
+| 独立复核 | passed；禁止 fit，重载 9 模型并复算全部 OOF、指标及缩放器训练范围 |
 | 原双任务 | blocked；protocol-amd-02；正式运行 none |
 | 正式结果 / 投稿就绪 | false / false |
 
-旧 15 分子基线保留。旧 Gemini 17 分子扩充队列的证据准入声明已撤销，历史计算产物不能替代当前原始证据。
-本轮是历史性能已知后的小样本探索；没有独立外部验证或临床泛化结论。
+运行目录：`03_experiments/runs/mic_goat_baseline_20261004_v2`；复核：`03_experiments/audits/mic_goat_run_validation_20261004_v1.json`。
+42 条为测定表格提及数，不代表 42 次独立实验。各分子只产生一个训练样本。
+protocol-mic-12 首次运行因指标函数绑定缺失中断，失败产物保留；protocol-mic-13 仅修复技术入口，科学定义与参数不变。
+原 16 分子已验证基线保留；以下旧正文为历史快照，不能覆盖本状态块或支撑当前证据放行。
+本轮是历史性能已知后的小样本探索，没有独立外部验证、临床泛化或投稿批准。
 <!-- RESEARCH_STATUS_CURRENT_END -->
+
+<!-- PROJECT_CLOSEOUT_CURRENT_START -->
+## 本批结案与交付（机器审计）
+
+状态来源：`03_experiments/audits/project_closeout_20261005_v1/review/project_delivery_status.json`；生成时间：2026-10-05T05:05:20.652390+00:00（UTC）；版本：`project_closeout_20261005_v1`。
+证据协议：`protocol-amd-02`；MIC训练协议：`protocol-mic-13`；MIC状态来源仍为`03_experiments/audits/mic_training_readiness_20261004_v26.json`。
+
+- 本批外部证据审查：已结案；30条不准入、11条形式排除、37条缺原文归档；合格外部0，当前检索待办0。
+- 跨队列隔离：`not_run_no_evidence_eligible_records`；没有把未执行记为通过。
+- MIC探索工程交付：现有17样本/9模型/51OOF冻结包本轮复核通过，零fit，工作区外ZIP运行通过。
+- 原双任务：`blocked`；原研究目标未完成；正式结果/投稿就绪：`false`/`false`。
+
+交接入口：[项目收尾与交付指南](D:/桌面文件/sci/docs/handoff/PROJECT_CLOSEOUT_20261005.md)。证据结案表和本轮运行检查见状态来源所列目录；历史MIC机器状态块保留。
+<!-- PROJECT_CLOSEOUT_CURRENT_END -->
+
+## MIC 训练工程交付
+
+固定方案的训练复现、九个折模型、证据包和离线 OOF 复核接口见 [交付说明](docs/handoff/MIC_TRAINING_DELIVERY_20261004.md)。交付命令复用 `protocol-mic-13` 的科学门禁；原双任务仍保持上述状态。
+
+当前工程检查：`python 02_code/check_mic_project.py --scope current`。命令输出可解析 JSON，并报告历史检查不兼容和正式双任务状态；默认范围还要求历史发布器兼容，当前会非零退出。范围和使用方式见 [当前版本检查说明](docs/handoff/MIC_PROJECT_CHECK_20261004.md)。
+
+## HC50 与外部队列证据跟进
+
+前两批历史检查点：[首批公开原文审查](03_experiments/audits/hc50_primary_followup_20261004_v1/review_v2/report.md)与[SLAY 本批审查](03_experiments/audits/slay_primary_review_20261004_v1/review/report.md)当时累计筛查既定 78 条候选中的 34 条，44 条缺原文。SLAY 的 14 条序列与原文一致，保存的 28 条大肠杆菌测定是 MBC；Figure 5C 为单点溶血，不能替代 HC50。S2/S3 尚未取得；本批正式外部新增为 0，当前训练与原双任务状态以页首机器状态为准。[本批覆盖及摘要核查](03_experiments/audits/slay_primary_review_20261004_v1/review/verification.json)通过，未声称独立人工评审。
+
+2026-10-05 [曲线与补充表跟进](03_experiments/audits/hc50_curve_followup_20261004_v1/review_20261005_v1/report.md)进一步复核其中4条已初筛候选，取得三份黑水虻补充表并核对两个分子的人RBC删失端点及大肠杆菌MIC。删失下界不足以确定当前HC50类别，完整分子形式仍待核实；NHill 的 MIC 条件下界 >127.537312 µg/mL 不四舍五入成 >=128 阴性。CT7 因原文明确二硫键形式排除，ToAP2 保留图文冲突。该批历史检查点累计筛查34/78，正式外部新增0；[覆盖与摘要核查](03_experiments/audits/hc50_curve_followup_20261004_v1/review_20261005_v1/verification.json)通过。
+
+原文获取检查点（2026-10-05 02:51:43 UTC）：[缺失原文跟进](03_experiments/audits/hc50_missing_originals_20261005_v1/review/report.md)对44条/28个来源保存40次公开请求，取得3篇原文并新增筛查7条，累计41/78、37条仍缺原文。找到1条真实人HC50范围，但类别无法确定；另有1条原图序列冲突及培养基条件差异。正式外部新增0，原双任务仍blocked；既有MIC训练状态未改。[原值/覆盖/摘要核查](03_experiments/audits/hc50_missing_originals_20261005_v1/review/verification.json)及[本地复跑比较](03_experiments/audits/hc50_missing_originals_20261005_v1/reproduction_check.json)均通过，未声称独立人工评审。
+
+补充图检查点（2026-10-05 03:12:27 UTC）：[鲑鱼论文S1与身份跟进](03_experiments/audits/hc50_salmon_supplement_20261005_v1/review/report.md)取得出版方S1–S3，并查看三张内嵌原图。S1补齐4条既有候选的100 µM人RBC单点图，未展示rtCATH2(1-40)，不转换为数值HC50。36残基序列得到两篇原始论文支持，保存未准入的身份更正提案；另记录数据库长度字段与TT(1-24)质量冲突。累计仍41/78、37条缺原文；正式外部新增0、双任务仍blocked、既有MIC训练不变。[来源/原图/覆盖/摘要核查](03_experiments/audits/hc50_salmon_supplement_20261005_v1/review/verification.json)和[复跑比较](03_experiments/audits/hc50_salmon_supplement_20261005_v1/reproduction_check.json)通过。DOCX整页排版未核查，未声称独立人工评审。
+
+正式图检查点（2026-10-05 03:31:45 UTC）：[鲑鱼五候选HC50与正式图核查](03_experiments/audits/hc50_salmon_endpoint_closure_20261005_v1/review/report.md)取得出版方正式Figure 1，五条序列与作者稿一致；TT(1-24)仍为20残基，表中质量冲突未解决。两篇相关原始研究使用鱼红细胞与不同分子，拒绝转用为人HC50；另两篇引用原文未取得，未推断全网无数据。保存8个查询和逐命中决定，累计仍41/78、37条缺原文，正式外部新增0，双任务仍blocked，MIC训练不变。[来源/质量/覆盖/摘要核查](03_experiments/audits/hc50_salmon_endpoint_closure_20261005_v1/review/verification.json)及[复跑比较](03_experiments/audits/hc50_salmon_endpoint_closure_20261005_v1/reproduction_check.json)通过；未声称独立人工评审。
+
+范围收缩检查点（2026-10-05 03:49:39 UTC，版本`hc50_unavailable_scope_closure_20261005_v1`，协议`protocol-amd-02`）：按用户决定，[缺原文37条退出本轮审查](03_experiments/audits/hc50_unavailable_scope_closure_20261005_v1/review/report.md)，停止继续检索，保留来源和历史78条追溯清单。当时保留[41条已筛查范围](03_experiments/audits/hc50_unavailable_scope_closure_20261005_v1/review/current_scope_records.csv)：22条来源不足、10条待证据复核、9条已按形式排除；这些不是41条合格训练记录。历史37条访问缺口归档，当前这37条的继续检索待办为0。正式外部新增0、原双任务仍blocked，既有MIC训练不变；不将缺失证据改成阴性。[范围/摘要核查](03_experiments/audits/hc50_unavailable_scope_closure_20261005_v1/review/verification.json)见本批输出。
+
+历史候选跟进检查点（2026-10-05 04:00:01 UTC，版本`hc50_remaining_evidence_followup_20261005_v1`，协议`protocol-amd-02`）：[32条缺口分类与17条来源跟进](03_experiments/audits/hc50_remaining_evidence_followup_20261005_v1/review/report.md)从原文确认两条银纳米颗粒缀合受测对象，按现行未修饰单体规则排除。当前[41条已筛查范围](03_experiments/audits/hc50_remaining_evidence_followup_20261005_v1/review/current_scope_records.csv)为22条来源不足、8条待复核、11条形式排除，仍有证据问题的记录30条。SLAY两份补充表仍未取得；PLP2表格和方法引用核对通过，RBC种属及人HC50仍未确认。已归档37条未重新检索，正式外部新增0，双任务仍blocked，MIC探索状态未变。[覆盖/原表/摘要核查](03_experiments/audits/hc50_remaining_evidence_followup_20261005_v1/review/verification.json)通过；复跑结果见[比较记录](03_experiments/audits/hc50_remaining_evidence_followup_20261005_v1/reproduction_check.json)。
 
 ## 历史记录（旧准入声明已由上述审查状态替代）
 

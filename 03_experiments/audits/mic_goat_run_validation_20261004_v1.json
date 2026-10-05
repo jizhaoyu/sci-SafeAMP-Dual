@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T07:16:00.290081+00:00",
+  "protocol_id": "protocol-mic-13",
+  "models_reloaded": 9,
+  "oof_rows_independently_recomputed": 51,
+  "fit_calls_during_validation": 0,
+  "scaler_training_range_verified": true,
+  "pooled_descriptive_metrics": [
+    {
+      "model": "dummy_prior",
+      "n": 17,
+      "positive": 6,
+      "negative": 11,
+      "AUPRC": 0.3154492566257272,
+      "AUROC": 0.4090909090909091,
+      "MCC_at_0_5": 0.0,
+      "balanced_accuracy_at_0_5": 0.5,
+      "accuracy_at_0_5": 0.6470588235294118,
+      "TP": 0,
+      "FP": 0,
+      "TN": 11,
+      "FN": 6
+    },
+    {
+      "model": "logistic_regression",
+      "n": 17,
+      "positive": 6,
+      "negative": 11,
+      "AUPRC": 0.37797659856483384,
+      "AUROC": 0.45454545454545453,
+      "MCC_at_0_5": 0.06356417261637282,
+      "balanced_accuracy_at_0_5": 0.5303030303030303,
+      "accuracy_at_0_5": 0.5882352941176471,
+      "TP": 2,
+      "FP": 3,
+      "TN": 8,
+      "FN": 4
+    },
+    {
+      "model": "random_forest",
+      "n": 17,
+      "positive": 6,
+      "negative": 11,
+      "AUPRC": 0.43156288156288153,
+      "AUROC": 0.5757575757575758,
+      "MCC_at_0_5": 0.22727272727272727,
+      "balanced_accuracy_at_0_5": 0.6136363636363636,
+      "accuracy_at_0_5": 0.6470588235294118,
+      "TP": 3,
+      "FP": 3,
+      "TN": 8,
+      "FN": 3
+    }
+  ],
+  "run_manifest_sha256": "2d7eb9c0cd610f6d2adaee7bddf87d1551c4e89d598d8b4b05787fa934245534",
+  "protocol_sha256": "1767c85507d85e7a2ce0cbbeb99a6f352a52ffabd544b184f180b994e55955b7",
+  "freeze_sha256": "eb4c8d0e2392fb5dc0bcaa3cc7bf562294db0d0f234540aa79dbcb9f84b68e92",
+  "run_directory": "03_experiments/runs/mic_goat_baseline_20261004_v2",
+  "formal_results_available": false,
+  "publication_ready": false
+}

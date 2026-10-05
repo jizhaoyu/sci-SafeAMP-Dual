@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-10-05T02:55:19.043293+00:00",
+  "status": "passed",
+  "review_manifest_sha256": "1aea65ac2dc895316a528e48d262842f9ced3ea51e24a88229d4741a6be5f735",
+  "verification_script_sha256": "c365c84a68b1b1c97924277beee60edd7012daed04ff30b18b47cd5874731385",
+  "protected_files_checked": 180,
+  "inputs_checked": 45,
+  "outputs_checked": 9,
+  "batch_candidates_checked": 44,
+  "research_sources_checked": 28,
+  "merged_candidates_checked": 78,
+  "unchanged_outside_batch_candidates": 34,
+  "pdf_table_cells_spatially_checked": 6,
+  "html_sequence_mass_and_assay_cells_checked": 5,
+  "conditional_conversions_checked": 4,
+  "declared_visual_pages": 5,
+  "visual_artifacts_hash_checked": 8,
+  "sequence_transcriptions_independently_human_verified": false,
+  "formal_external_released": 0,
+  "model_fit_calls": 0,
+  "formal_scientific_status": "blocked",
+  "limitation": "Coverage/source-cell/hash verification; not independent human review or scientific gate clearance"
+}

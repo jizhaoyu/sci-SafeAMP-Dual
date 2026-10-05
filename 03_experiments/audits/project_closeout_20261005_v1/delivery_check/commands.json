@@ -1,0 +1,36 @@
+[
+  {
+    "command": "verify",
+    "argv": [
+      "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\888\\AppData\\Local\\Temp\\mic_closeout_validation_z_dluwmd\\bundle\\runtime.py",
+      "verify",
+      "--bundle",
+      "C:\\Users\\888\\AppData\\Local\\Temp\\mic_closeout_validation_z_dluwmd\\bundle",
+      "--manifest-sha256",
+      "f8b8606dc807279cc78c6728260f6d3d7da463f2416bf47e8d3bafbdf1789ed3"
+    ],
+    "working_directory": "C:\\Users\\888\\AppData\\Local\\Temp\\mic_closeout_validation_z_dluwmd",
+    "exit_code": 0
+  },
+  {
+    "command": "replay",
+    "argv": [
+      "C:\\Users\\888\\AppData\\Local\\Programs\\Python\\Python311\\python.exe",
+      "-I",
+      "-B",
+      "C:\\Users\\888\\AppData\\Local\\Temp\\mic_closeout_validation_z_dluwmd\\bundle\\runtime.py",
+      "replay",
+      "--bundle",
+      "C:\\Users\\888\\AppData\\Local\\Temp\\mic_closeout_validation_z_dluwmd\\bundle",
+      "--manifest-sha256",
+      "f8b8606dc807279cc78c6728260f6d3d7da463f2416bf47e8d3bafbdf1789ed3",
+      "--sample-id",
+      "3e656d2ae8d48ae33078fcd4"
+    ],
+    "working_directory": "C:\\Users\\888\\AppData\\Local\\Temp\\mic_closeout_validation_z_dluwmd",
+    "exit_code": 0
+  }
+]

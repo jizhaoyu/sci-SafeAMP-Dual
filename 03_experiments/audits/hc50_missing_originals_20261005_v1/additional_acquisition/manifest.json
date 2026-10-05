@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-10-05T02:43:50.468966+00:00",
+  "inputs": {
+    "acquisition/manifest.json": "a829b8466cc678a9854c27ddf69f830f2ee649795e860355994f43199a9e1159"
+  },
+  "scripts": {
+    "03_experiments/audits/hc50_missing_originals_20261005_v1/scripts/acquire_sources.py": "73640b3eb1c6f9fbe62e203f377721e86daa33cf160285167f658ccef5adefbc",
+    "03_experiments/audits/hc50_missing_originals_20261005_v1/scripts/acquire_additional.py": "ff0c7efd3e30f490fbc0779cc11c09a769f9cd11b512346f7c7f21e9a9ccff40"
+  },
+  "outputs": {
+    "source_acquisition.json": "2260342345ba08679a0a21d1a45876763f602270132ccd1fc67dbf134bbca482",
+    "raw/pmid_22467870_bioc.xml": "3acc5f4c51ec704cd708d3379196db9f66442a96c9bf275773710e0de0196b52"
+  },
+  "formal_release": false,
+  "model_fit_calls": 0
+}

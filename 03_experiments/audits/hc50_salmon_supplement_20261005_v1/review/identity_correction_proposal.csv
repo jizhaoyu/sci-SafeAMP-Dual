@@ -1,0 +1,2 @@
+﻿candidate_id,historical_inventory_sequence,proposed_source_sequence,proposed_length,corroboration,status,formal_release,constraint
+HIST_DRAMP20862,RRGKDSGGPKMGRKNSKGGWRGRPGSGRPGFGSGI,RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI,36,2016 Figure 1 visual reading plus 2006 primary Methods; full 2016 rtCATH2(1-40) suffix matches,identity_correction_proposal_unreleased,False,Historical inventory untouched; proposed identity requires complete molecule/assay review and renewed isolation before any dataset use

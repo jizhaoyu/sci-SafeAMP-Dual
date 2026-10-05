@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-05T03:15:32.872639+00:00",
+  "data_version": "hc50_salmon_supplement_20261005_v1",
+  "protocol_id": "protocol-amd-02",
+  "homology_boundary": ">=0.40 unchanged",
+  "review_mode": "agent_original_source_and_embedded_figure_review",
+  "independent_human_review": false,
+  "followed_up_existing_candidates": 5,
+  "new_candidates_endpoint_screened": 0,
+  "verified_publisher_supplement_documents": 1,
+  "primary_sequence_corroboration_papers": 1,
+  "human_single_point_observations": 4,
+  "human_exact_hc50_values": 0,
+  "identity_correction_proposals": 1,
+  "database_length_internal_conflicts": 2,
+  "merged_candidate_records": 78,
+  "merged_candidates_endpoint_screened": 41,
+  "remaining_original_access_gaps": 37,
+  "merged_decision_counts": {
+    "current_source_insufficient_for_dual_release": 22,
+    "pending": 47,
+    "excluded_by_known_molecular_form": 9
+  },
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "model_fit_calls": 0,
+  "training_state_changed": false,
+  "supplement_access_gap_resolved": true,
+  "full_docx_page_layout_verified": false
+}

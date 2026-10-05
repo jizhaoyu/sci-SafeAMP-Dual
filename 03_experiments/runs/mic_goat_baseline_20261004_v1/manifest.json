@@ -1,0 +1,16 @@
+{
+  "status": "failed_incomplete_run",
+  "generated_at": "2026-10-04T07:15:10.405127+00:00",
+  "protocol_id": "protocol-mic-12",
+  "training_started": true,
+  "models_saved_before_failure": 1,
+  "complete_oof_available": false,
+  "error_type": "NameError",
+  "error_message": "name 'compute_metrics' is not defined",
+  "failure_phase": "fold 0 logistic regression metrics after fit and model save",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "outputs": {
+    "fold_models/logistic_regression_fold0.joblib": "69458a023d3a33f8ce00b789e68471e44dbb1c1ba7005558edc2ec53f1240a25"
+  }
+}

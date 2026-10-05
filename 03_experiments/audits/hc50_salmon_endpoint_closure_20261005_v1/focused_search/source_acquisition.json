@@ -1,0 +1,50 @@
+[
+  {
+    "requested_file": "fragment_names_biological.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=cathelicidin+AND+%28%22TT%281-24%29%22+OR+%22TT%281-35%29%22+OR+%22SF%2818-45%29%22+OR+%22rtCATH2%281-40%29%22+OR+%22rtCATH2%285-40%29%22%29&format=json&resultType=core&pageSize=100",
+    "pmid": "",
+    "doi": "",
+    "role": "discovery/metadata; incomplete full-text indexing cannot establish evidence absence",
+    "retrieved_at": "2026-10-05T03:27:19.992597+00:00",
+    "license": "pending primary-source review",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=cathelicidin+AND+%28%22TT%281-24%29%22+OR+%22TT%281-35%29%22+OR+%22SF%2818-45%29%22+OR+%22rtCATH2%281-40%29%22+OR+%22rtCATH2%285-40%29%22%29&format=json&resultType=core&pageSize=100",
+    "http_status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "status": "response_archived_requires_full_text_check",
+    "file": "raw/fragment_names_biological.json",
+    "sha256": "11ad58daa0f89eafbc0edf127c55cf93c9b5fa0dff924a44aa39fede7d363270",
+    "bytes": 270
+  },
+  {
+    "requested_file": "literal_sequences.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22KFRTRRSKSSSNGGRKGSKG%22+OR+%22KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA%22+OR+%22KFRSNGRHGSGSRLGGGSLIGRPGGGS%22+OR+%22RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI%22+OR+%22KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI%22%29&format=json&resultType=core&pageSize=100",
+    "pmid": "",
+    "doi": "",
+    "role": "discovery/metadata; incomplete full-text indexing cannot establish evidence absence",
+    "retrieved_at": "2026-10-05T03:27:19.993597+00:00",
+    "license": "pending primary-source review",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22KFRTRRSKSSSNGGRKGSKG%22+OR+%22KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA%22+OR+%22KFRSNGRHGSGSRLGGGSLIGRPGGGS%22+OR+%22RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI%22+OR+%22KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI%22%29&format=json&resultType=core&pageSize=100",
+    "http_status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "status": "response_archived_requires_full_text_check",
+    "file": "raw/literal_sequences.json",
+    "sha256": "6e6595d8092f2e541ef1384e8f7075bf6b13a52ebcd5107342c3967025aea861",
+    "bytes": 6629
+  },
+  {
+    "requested_file": "index_control_2016.json",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A27818338+AND+SRC%3AMED&format=json&resultType=core&pageSize=100",
+    "pmid": "",
+    "doi": "",
+    "role": "discovery/metadata; incomplete full-text indexing cannot establish evidence absence",
+    "retrieved_at": "2026-10-05T03:27:19.995594+00:00",
+    "license": "pending primary-source review",
+    "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A27818338+AND+SRC%3AMED&format=json&resultType=core&pageSize=100",
+    "http_status": 200,
+    "content_type": "application/json;charset=UTF-8",
+    "status": "response_archived_requires_full_text_check",
+    "file": "raw/index_control_2016.json",
+    "sha256": "e8d4e5ae6f6481b857ce7e2d4893c0465cf97af0fc3fd38eb9504a908c423d13",
+    "bytes": 9402
+  }
+]

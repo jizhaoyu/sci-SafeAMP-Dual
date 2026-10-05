@@ -1,0 +1,28 @@
+{
+  "id": "ae41c583-c754-4495-b853-b3e9ecbfc73b",
+  "object": "chat.completion",
+  "created": 1791182878,
+  "model": "deepseek-flash",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"fixture_kind\": \"synthetic_engineering_fixture\", \"engineering_records\": 12, \"artifact_verified\": true, \"formal_research_status\": \"blocked\", \"eligible_external_records\": 0, \"publication_ready\": false, \"summary\": \"Synthetic fixture; not research results.\", \"limitations\": [\"Artifact verification does not release blocked research.\", \"Publication is not approved.\"]}"
+      },
+      "logprobs": null,
+      "finish_reason": "stop"
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 177,
+    "completion_tokens": 91,
+    "total_tokens": 268,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 177
+  },
+  "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+}

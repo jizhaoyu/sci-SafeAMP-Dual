@@ -1,0 +1,2 @@
+candidate_id,sequence,pmcid,raw_hc50,unit,standardized_hc50_ugml,hemo_label,molecular_form,source_file,source_location,mass_basis,paired_mic_label
+PMC_40864826,FLGALFKVASKLVPAAICSFSKKC,PMC12412326,41.87,µM,105.89513366999999,unknown,c_terminal_amide; Rana-box motif reported; covalent topology not independently confirmed,03_experiments/audits/gemini_hc50_external_review_20261004_v2/raw/PMC12412326.xml,sec3dot6-cimb-47-00673/HC50; Figure 7,primary Table 1 reported molecular weight; mass convention not specified,unknown

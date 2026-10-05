@@ -1,0 +1,15 @@
+{
+  "status": "passed_local_consistency",
+  "submission_ready": false,
+  "independent_human_review": false,
+  "bound_bundle_files_checked": 394,
+  "primary_source_files_checked": 10,
+  "report_claim_anchors_checked": 33,
+  "pooled_model_rows_checked": 3,
+  "fold_model_rows_checked": 9,
+  "model_fit_calls": 0,
+  "runtime_reexecuted_in_report_stage": false,
+  "scope": "file bindings, draft claim anchors, links and exact formatted tables; not new scientific evidence approval",
+  "generated_at": "2026-10-05T06:29:09.398078+00:00",
+  "report_manifest_sha256": "242efb80c99ca4a5886428d5c4885a51346208dd87cea4f848b09d257243ad53"
+}

@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-10-05T02:55:19.541812+00:00",
+  "status": "passed",
+  "identical_outputs": {
+    "candidate_decisions.csv": true,
+    "merged_candidate_decisions.csv": true,
+    "source_review.csv": true,
+    "sequence_identity_review.csv": true,
+    "raw_assay_observations.csv": true,
+    "response_review.json": true,
+    "visual_review.json": true
+  },
+  "summary_equal_except": [
+    "generated_at",
+    "review_output_version"
+  ],
+  "review_manifest_sha256": "7dca526dcc1cb94907cab5a2a1d99d0c2e8984d3e252ede7bf94d50b3f95b392",
+  "reproduction_manifest_sha256": "1aea65ac2dc895316a528e48d262842f9ced3ea51e24a88229d4741a6be5f735",
+  "production_verification_sha256": "504d699085efaff5fcbe743b27b5cfe92acc6caaa61b9fabe52b360aa85cff53",
+  "reproduction_verification_sha256": "93aa520342fb909ab0bbad1b1551580f808eea58fc40ec62de095f6d323e344e",
+  "model_fit_calls": 0
+}

@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-10-04T13:19:59.840920+00:00",
+  "inputs": {
+    "acquisition/manifest.json": "b84791fc994078261fc50036176869ba39051e77c44e6f6e02e2946c518e7435",
+    "scripts/review_sources_v2.py": "09ff4055c9c80f4847a87697d459ae1c165552407361314b8b7c4518092780b2",
+    "metadata_review_notes.json": "e848fab37ec67657c0f7dda8b52c6e9ed71966d5021f426acb0d90cfebded615",
+    "additional_metadata/manifest.json": "228d4a6f450608c83f309ab88fa28afc52e831bc2cc516192c4eb51b58cb39d4",
+    "inspection/ecp_page_2.png": "5e8b09a757e5ac371b647e26310364d758ba0d9e630c0dae566ed02b0abf24a9",
+    "inspection/ecp_page_3.png": "8f531c8a03ae8e4c293e31788a2ca54e69f289f158bd562f1c612d9bc2cd0ebb"
+  },
+  "protected": {
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/assay_observations.csv": "a7b91f659c8998eb6218ce3ce4f1dc2480a521028e2a016e145751598f0ccdae",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/audit_summary.json": "2b5c5f4a948c5022b6346fa55bc4aa4e2733171fde258e698bbbddeb873d2fcd",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/candidate_similarity.csv": "e8c79342b13db680f09a04a61ca1570806e5013e925a6e2d33accd1fecb2ffee",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/conflicts.csv": "afc13dd41e754fbd1f009bd986e2efd348a2ff0008d25a03359a2e98750793d7",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/derived_labels.csv": "82d72fb77e7e494cda8f7aed15f979a75413ba03be084e2834633e0bfd68f101",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/eligible_external_candidates.csv": "afc13dd41e754fbd1f009bd986e2efd348a2ff0008d25a03359a2e98750793d7",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/excluded_or_pending.csv": "bc8f56a856bc0381cb77e2287d1975cb980652f16a51b8ddf115407eb6a00ce1",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/external_candidate_decisions.csv": "bc8f56a856bc0381cb77e2287d1975cb980652f16a51b8ddf115407eb6a00ce1",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/hc50_verified_pool.csv": "57dfada6e216a790fefbe033a61d362c67df7f07e5afdd1300ecf538966a97d7",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/historical_exposure.csv": "13c7fc6a70f6a3f41af451d1224d8c9b29be8ec9f3e81d16e30bd6bae695ac37",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/manifest.json": "3804cc1f919d2a1002caf1ae2edee11031fde85631bf4c6454d0d5084d0a5186",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/molecule_review.csv": "3a671dac1963d40338d2bacf262b641cedbcae579b2d2da3ac63af93b8abb377",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/README.md": "0f0f54519eccba70631bab0b5631a32f50497a76deb3ef199cf55dffc62420db",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/report.md": "601e1635cef7e7fe41312721245e521bf7744e2acca52c9af93f0a2900444f5d",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/search_log.csv": "45c148828b41c9f3ec9f003596aa80a30cd4a63b29a432a809211a97836e43fc",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/similarity_to_development.csv": "394e4d795d85e1683d8da189412d4cd17aa43cbc05143e3a6f7ce3c50a2d5ee9",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/source_manifest.csv": "a72a185b4fe635b383806d4e9753c32b0a6ba73b25932c055e9da3864e3683e1",
+    "03_experiments/audits/gemini_hc50_external_review_20261004_v2/results/study_aliases.csv": "9ce231aff05b50bfb189b78d2f4ee83ab088cc8c8f4680874c6d36c11ec5276d",
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments/audits/mic_training_readiness_20261004_v26.json": "404e9d90166564ec9c7543022853ae694dabc9022d913fa5d8e10f3b842a2da1"
+  },
+  "outputs": {
+    "candidate_decisions.csv": "aefb3fd549e1954338102ca4f555a84a1486f05263ecde4266561bf80d95ebff",
+    "original_human_hc50_observations.csv": "e8308fa0cb2326ea63ee57870b8f58e769ffba3174579e3e1465945160cc861f",
+    "paired_original_mic_observations.csv": "6b9656256d2a5dfc793f995f8704c7204aba85b336d2d60382f7d08e3da50f22",
+    "report.md": "38c377d2a59b2cab089d1f0c71aff85dd0973cf6cd0d249905e8288df632f075",
+    "source_access_gaps.csv": "87321cc7a3d7096d29774a41f071d2836ea6fd45165527f8e2f31da9a7e2d7fc",
+    "source_region_excerpts.json": "aaf82ae5392ed76cdfc773a0657716c114f66bd0258f5330f867c2717be923dc",
+    "summary.json": "0a50d39ba36b997b6e0cfbbce6671cfed5b8ea261c3ec61e54694d062abee8a4"
+  }
+}

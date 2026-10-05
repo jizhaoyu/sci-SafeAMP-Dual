@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-10-05T05:08:44.782357+00:00",
+  "status": "passed",
+  "review_manifest_sha256": "3ac49bf713077bbc8bc46b5c68784d2c4aada84f50ad43453f8c77edb71a0abe",
+  "protected_files_checked": 785,
+  "input_files_checked": 9,
+  "output_files_checked": 8,
+  "final_decisions_checked": 30,
+  "retained_records": 41,
+  "historical_records": 78,
+  "archived_or_form_excluded_unchanged": 48,
+  "eligible_external_records": 0,
+  "isolation_not_claimed_passed": true,
+  "mic_current_document_blocks_unchanged": 5,
+  "model_fit_calls": 0,
+  "formal_dual_task_status": "blocked",
+  "original_objective_completed": false
+}

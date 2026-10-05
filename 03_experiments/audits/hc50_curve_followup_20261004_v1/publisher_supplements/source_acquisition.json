@@ -1,0 +1,29 @@
+[
+  {
+    "requested_file": "41598_2026_40997_MOESM1_ESM.docx",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM1_ESM.docx",
+    "url_basis": "Publisher standard public ESM route; DOI and attachment filename from primary XML; not an observed hyperlink",
+    "retrieved_at": "2026-10-04T14:03:10.680836+00:00",
+    "license": "not yet reviewed; acquisition does not grant redistribution rights",
+    "status": "request_failed",
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>"
+  },
+  {
+    "requested_file": "41598_2026_40997_MOESM2_ESM.docx",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM2_ESM.docx",
+    "url_basis": "Publisher standard public ESM route; DOI and attachment filename from primary XML; not an observed hyperlink",
+    "retrieved_at": "2026-10-04T14:03:12.145760+00:00",
+    "license": "not yet reviewed; acquisition does not grant redistribution rights",
+    "status": "request_failed",
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>"
+  },
+  {
+    "requested_file": "41598_2026_40997_MOESM3_ESM.docx",
+    "url": "https://static-content.springer-cdn.com/esm/art%3A10.1038%2Fs41598-026-40997-3/MediaObjects/41598_2026_40997_MOESM3_ESM.docx",
+    "url_basis": "Publisher standard public ESM route; DOI and attachment filename from primary XML; not an observed hyperlink",
+    "retrieved_at": "2026-10-04T14:03:12.855526+00:00",
+    "license": "not yet reviewed; acquisition does not grant redistribution rights",
+    "status": "request_failed",
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>"
+  }
+]

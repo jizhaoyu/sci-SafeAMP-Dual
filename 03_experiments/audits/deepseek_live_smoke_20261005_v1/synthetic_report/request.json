@@ -1,0 +1,19 @@
+{
+  "model": "deepseek-chat",
+  "temperature": 0,
+  "stream": false,
+  "max_tokens": 512,
+  "response_format": {
+    "type": "json_object"
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are testing report formatting with a synthetic engineering fixture, not real research. Return JSON only. Copy all fixture keys and values exactly. Add only summary and limitations with these exact values: {\"summary\": \"Synthetic fixture; not research results.\", \"limitations\": [\"Artifact verification does not release blocked research.\", \"Publication is not approved.\"]}. Do not invent evidence, measurements, citations or approvals."
+    },
+    {
+      "role": "user",
+      "content": "Create a short JSON report from this fictional fixture:\n{\"fixture_kind\": \"synthetic_engineering_fixture\", \"engineering_records\": 12, \"artifact_verified\": true, \"formal_research_status\": \"blocked\", \"eligible_external_records\": 0, \"publication_ready\": false}"
+    }
+  ]
+}

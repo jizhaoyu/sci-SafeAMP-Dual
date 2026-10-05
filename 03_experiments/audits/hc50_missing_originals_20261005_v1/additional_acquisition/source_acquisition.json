@@ -1,0 +1,41 @@
+[
+  {
+    "requested_file": "pmid_16753133_public.pdf",
+    "url": "https://citeseerx.ist.psu.edu/document?doi=9ab656eae275ec38d64cb3695aabcf32528ccfe1&repid=rep1&type=pdf",
+    "pmid": "16753133",
+    "doi": "10.1016/j.bbamem.2006.03.010",
+    "role": "public manuscript; observed exact-title search result",
+    "retrieved_at": "2026-10-05T02:43:45.603105+00:00",
+    "license": "pending primary-source review",
+    "status": "request_failed",
+    "error": "URLError: <urlopen error [SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1006)>"
+  },
+  {
+    "requested_file": "pmid_10338113_publisher.pdf",
+    "url": "https://febs.onlinelibrary.wiley.com/doi/pdf/10.1016/S0014-5793%2899%2900411-1",
+    "pmid": "10338113",
+    "doi": "10.1016/s0014-5793(99)00411-1",
+    "role": "publisher PDF link observed in CiNii metadata",
+    "retrieved_at": "2026-10-05T02:43:48.790882+00:00",
+    "license": "pending primary-source review",
+    "status": "request_failed",
+    "http_status": 403,
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "requested_file": "pmid_22467870_bioc.xml",
+    "url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC3366795/unicode",
+    "pmid": "22467870",
+    "doi": "10.1074/jbc.m111.338970",
+    "role": "official BioC; one later retry after rate-limited first attempt",
+    "retrieved_at": "2026-10-05T02:43:49.395519+00:00",
+    "license": "pending primary-source review",
+    "final_url": "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_xml/PMC3366795/unicode",
+    "http_status": 200,
+    "content_type": "text/html",
+    "status": "response_archived_requires_full_text_check",
+    "file": "raw/pmid_22467870_bioc.xml",
+    "sha256": "3acc5f4c51ec704cd708d3379196db9f66442a96c9bf275773710e0de0196b52",
+    "bytes": 6148
+  }
+]

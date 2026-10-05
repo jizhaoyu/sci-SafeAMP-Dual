@@ -1,0 +1,20 @@
+{
+  "review_mode": "agent_original_source_and_embedded_figure_review",
+  "independent_human_review": false,
+  "supplement_url_basis": "Derived public Elsevier CDN URL from verified article PII, followed by DOCX content and main-paper cross-reference verification; not claimed observed article-page attachment link",
+  "s1_visual_findings": {
+    "image": "inspection/s1_image.png",
+    "source_media": "word/media/image1.tiff",
+    "experimental_bars_at_100_uM": ["TT(1-24)", "TT(1-35)", "STF(1-37)", "rtCATH2(5-40)", "SF(18-45)"],
+    "in_scope_candidate_ids": ["HIST_DRAMP20859", "HIST_DRAMP20860", "HIST_DRAMP20862", "HIST_DRAMP20864"],
+    "rtCATH2_1_40_bar_present": false,
+    "control": "SMAP-29 bars shown at 100 and 10 uM; do not attribute the 10 uM point to each experimental peptide",
+    "interpretation": "Experimental peptide bars visibly below the 50% line; no percent digitization, fitted dose-response, or numerical HC50 inferred",
+    "caption_display_discrepancy": "Caption mentions each peptide at 10 and 100 uM; displayed graph has experimental peptides at 100 uM and only SMAP-29 at 10 uM"
+  },
+  "other_images_reviewed": ["inspection/supplement_image2.png", "inspection/supplement_image3.png"],
+  "document_rendering": "Current host soffice unavailable. All three embedded TIFF figures were rendered with existing PyMuPDF and inspected; captions read directly from DOCX XML. Full DOCX page layout was not verified.",
+  "sequence_correction_candidate": "HIST_DRAMP20862",
+  "corroborated_sequence": "RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI",
+  "correction_scope": "Separate unreleased identity proposal only; historical inventory and assay labels unchanged"
+}

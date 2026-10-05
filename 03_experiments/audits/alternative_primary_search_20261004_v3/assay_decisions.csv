@@ -1,0 +1,11 @@
+﻿candidate_name,condition,raw_mic,raw_cell,location,source_id,raw_unit,molecular_weight_da,lower_bound_ugml,upper_bound_ugml,upper_unbounded,derived_label,label_outcome,review_scope,released_for_training
+Pin2,MHA,18.8,18.8,Table 3; XML row 3; E. coli column,pandinin2014,uM,2612.1,49.10748,49.10748,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2,MHB,12.5,12.5,Table 3; XML row 4; E. coli column,pandinin2014,uM,2612.1,32.65125,32.65125,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[G],MHA,12.5,12.5,Table 3; XML row 5; E. coli column,pandinin2014,uM,2572.0,32.15,32.15,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[G],MHB,12.5,12.5,Table 3; XML row 6; E. coli column,pandinin2014,uM,2572.0,32.15,32.15,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[GPG],MHA,25,25,Table 3; XML row 7; E. coli column,pandinin2014,uM,2726.2,68.155,68.155,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[GPG],MHB,12.5,12.5,Table 3; XML row 8; E. coli column,pandinin2014,uM,2726.2,34.0775,34.0775,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[14],MHA,25,25,Table 3; XML row 9; E. coli column,pandinin2014,uM,1680.1,42.0025,42.0025,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[14],MHB,25,25,Table 3; XML row 10; E. coli column,pandinin2014,uM,1680.1,42.0025,42.0025,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[17],MHA,25,25,Table 3; XML row 11; E. coli column,pandinin2014,uM,1891.3,47.2825,47.2825,False,,unknown,original_table_transcription; complete_release_review_pending,False
+Pin2[17],MHB,>25,>25 †,Table 3; XML row 12; E. coli column,pandinin2014,uM,1891.3,47.2825,,True,,unknown,original_table_transcription; complete_release_review_pending,False

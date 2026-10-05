@@ -1,0 +1,12 @@
+{
+  "observed_link_source": "acquisition\\raw\\pmc_article.html",
+  "source_sha256": "efbf0666d440a2ec138c146985cf72a9d3dc6aa033a9b76c83193bb20101a55f",
+  "outputs": {
+    "source_acquisition.json": "a0aa4fda47f3ae192e3396f4b1562115a411f6b2f406355a42be02666f117103",
+    "raw/figure_5.jpg": "0ab9ad08e8075cde61c773e9ea1cf600605152eb975c374a5cd13d5ea348e2a6"
+  },
+  "script_sha256": "43cd0dcdc505eaede70c2efc049939cbdcb355b1693034d52b14d052456f51b0",
+  "previous_manifest_sha256": "ca2e77292102ee7b9b6eaf33879051901c23b527c999d896bc90400fa5a85c7c",
+  "correction": "Initial manifest inadvertently included its empty self-hash while open. Source files unchanged; old manifest retained.",
+  "repair_script_sha256": "ecf98dfe0433ba152b2a469aa45b1839ab0242d6f797f45e4d4c5e693618874e"
+}

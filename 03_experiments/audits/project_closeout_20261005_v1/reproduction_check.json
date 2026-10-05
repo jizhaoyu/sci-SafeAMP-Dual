@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-10-05T05:10:19.038608+00:00",
+  "status": "passed",
+  "checks": {
+    "final_evidence_decisions.csv": true,
+    "current_scope_records.csv": true,
+    "merged_candidate_decisions.csv": true,
+    "eligible_external_records.csv": true,
+    "mic_all_model_metrics.csv": true,
+    "state_except_generation_time": true,
+    "report_except_generation_time": true,
+    "navigation_block_except_time_and_output_reference": true,
+    "both_verifications_passed": true
+  },
+  "allowed_difference": "generation timestamp; output directory reference in generated navigation block only"
+}

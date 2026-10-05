@@ -1,0 +1,45 @@
+{
+  "review_mode": "agent original-source and publisher-figure review; not independent human review",
+  "publisher_figure": "acquisition/raw/publisher_figure1_large.jpg",
+  "publisher_figure_sha256": "7cd25e60d85cd20f5bbc5be425a5ecd23ffc1c359ca15eacd5ffb42e692b2202",
+  "visual_transcriptions": {
+    "HIST_DRAMP20859": "KFRTRRSKSSSNGGRKGSKG",
+    "HIST_DRAMP20860": "KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA",
+    "HIST_DRAMP20862": "RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI",
+    "HIST_DRAMP20863": "KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI",
+    "HIST_DRAMP20864": "KFRSNGRHGSGSRLGGGSLIGRPGGGS"
+  },
+  "figure_conclusion": "Publisher Figure 1 agrees with prior accepted-manuscript transcription. TT(1-24) still displays 20 residues. Its source Table 1 mass discrepancy remains unresolved; no name-based completion is allowed.",
+  "primary_screens": [
+    {
+      "file": "acquisition/raw/chang2005_pmc.html",
+      "doi": "10.1128/IAI.73.8.5053-5064.2005",
+      "title_marker": "Identification of a Novel Cathelicidin Gene",
+      "location": "Hemolytic activity Methods; Results; Figure 6",
+      "molecule": "rt CATH_1(R151-V186), not the five reviewed fragments",
+      "rbc_species": "rainbow trout",
+      "identity_marker": "rt CATH_1(R151-V186)",
+      "target_marker": "rainbow trout erythrocytes",
+      "decision": "wrong RBC species and different molecule; no human HC50 transfer",
+      "license": "PMC full text accessible; redistribution license not confirmed, original capture for provenance only"
+    },
+    {
+      "file": "acquisition/raw/bridle2011_pmc.html",
+      "doi": "10.1371/journal.pone.0023417",
+      "title_marker": "Evidence of an Antimicrobial-Immunomodulatory Role",
+      "location": "Haemolytic activity Methods; Results; Figure 4",
+      "molecule": "asCATH1 and asCATH2, not the five reviewed fragments",
+      "rbc_species": "Atlantic salmon",
+      "identity_marker": "asCATH2",
+      "target_marker": "Atlantic salmon erythrocytes",
+      "decision": "wrong RBC species and different molecules; no human HC50 transfer",
+      "license": "Article states Creative Commons Attribution License; captured notice does not specify version"
+    }
+  ],
+  "limitations": [
+    "Scocchi 2009 and Zhang 2015 have verified metadata but usable full text was not obtained in this batch; do not claim they lack human HC50.",
+    "2016 Crossref metadata has no update-to or relation entry at capture time; this does not prove absence of a published correction.",
+    "Name-query punctuation produced unrelated matches. Full-text/sequence search omits some supplements and cannot prove worldwide absence of evidence.",
+    "Theoretical masses assume linear chains and free termini. They diagnose consistency only; molecular form is not released and no label or concentration conversion follows."
+  ]
+}

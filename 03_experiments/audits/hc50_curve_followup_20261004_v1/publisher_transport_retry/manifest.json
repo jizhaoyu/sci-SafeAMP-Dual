@@ -1,0 +1,7 @@
+{
+  "outputs": {
+    "source_acquisition.json": "cc54c7f3c1ebf6222f14655d499dbd93c08247a6c83bad65a00f01dcc71ef785"
+  },
+  "formal_release": false,
+  "transport_retry_basis": "Same public URLs; normal TLS verified request; no challenge solved"
+}

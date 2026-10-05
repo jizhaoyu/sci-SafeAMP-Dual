@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-10-05T04:01:43.374596+00:00",
+  "status": "passed",
+  "review_manifest_sha256": "393b14195aa1c9283cfddc6efd00d1f3cf0e89f5029ca89e66ab1f9f7f4923c5",
+  "protected_files_checked": 361,
+  "input_files_checked": 11,
+  "output_files_checked": 7,
+  "gap_records_checked": 32,
+  "followup_decisions_checked": 17,
+  "unchanged_outside_scope": 61,
+  "archived_records_unchanged": 37,
+  "original_table_cell_checks": "PLP2 MIC/hemolysis and method identifiers; conjugate identity/aliases",
+  "new_form_exclusions": 2,
+  "current_document_blocks_unchanged": 5,
+  "formal_release": false,
+  "model_fit_calls": 0,
+  "limitation": "Program replay uses same primary text checks; not independent human review."
+}

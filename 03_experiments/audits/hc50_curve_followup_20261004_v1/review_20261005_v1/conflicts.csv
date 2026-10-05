@@ -1,0 +1,7 @@
+﻿candidate_id,issue,evidence,resolution
+DBAASP_19706,hemolysis_exposure_conflict,Figure 2 caption 1.5 h; Methods 3.3 120 min,unresolved; no exact HC50 derived
+DBAASP_19706,approximation_is_not_exact_hc50,Results describe almost 50% at 128 µM; tachyplesin-1 HC50 is a different molecule,CT7 numeric HC50 left missing
+DBAASP_9865,figure_and_narrative_disagree,Figure 3A solid ToAP2 curve appears near/below 50%; Results say above 50%; open-square ToAP2S1 is distinct,"unresolved; no curve fit, numerical digitization or HC50 assignment"
+DBAASP_25709,mic_boundary_cannot_be_rounded_up,>32 µM × 3985.541 / 1000 = >127.537312 µg/mL; negative boundary is >=128,unknown conditional MIC label; not rounded to 128
+DBAASP_25709|DBAASP_25712,rbc_lower_bound_below_negative_threshold,RBC IC50 >32 µM; conditional bounds >127.537312 and >103.482208 µg/mL do not reach >=250,HC50 labels remain unknown; bounds are not exact values
+DBAASP_25709|DBAASP_25712,structure_class_is_not_covalent_identity,S1 gives Alo/Defensin classes but lacks explicit termini and covalent disulfide confirmation,molecular form remains pending; cysteine count not used to fabricate bonds

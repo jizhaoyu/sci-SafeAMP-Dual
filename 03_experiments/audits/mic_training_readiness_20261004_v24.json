@@ -1,0 +1,33 @@
+{
+  "status": "new_training_failed_previous_verified_baseline_preserved",
+  "generated_at": "2026-10-04T07:15:10.407121+00:00",
+  "supersedes": "03_experiments/audits/mic_training_readiness_20261004_v23.json",
+  "training_blocked": true,
+  "training_started": true,
+  "blockers": [
+    "name 'compute_metrics' is not defined"
+  ],
+  "training_protocol_id": "protocol-mic-12",
+  "data_version": "mic_goat_followup_release_20261004_v1",
+  "records_released_for_training": 42,
+  "evidence_molecules": 17,
+  "inputs": {
+    "03_experiments/audits/mic_goat_followup_release_20261004_v1/cohort/manifest.json": "ce5f09e83b74d92a884e823d36f57e6b4292b4dfc5407b33f29f3aa4f213e235",
+    "03_experiments/audits/mic_goat_followup_release_20261004_v1/evidence/manifest.json": "5e064c8ac423c2285e8ab67916911932ac670df3872fd0035f7e6be1e886383b",
+    "03_experiments/audits/mic_goat_release_validation_20261004_v2.json": "e4aefc2317f128c2c0c1f38092ae0d4a2ed88dbaad058cc2dd43a46ba9198087",
+    "03_experiments/audits/mic_goat_followup_release_20261004_v1/cohort/candidate_molecules.csv": "c61beb5ff8ef92375c9eb5f164896f306906c1ff24424a1ec876e6f71a8d2655",
+    "03_experiments/audits/mic_goat_followup_release_20261004_v1/cohort/candidate_observations.csv": "87da51eaa7133e51b932352f6faee8b88beac4493e6bcb4ca8a6efb3f432aaef",
+    "03_experiments/audits/mic_goat_followup_release_20261004_v1/cohort/fold_roles.csv": "2caadf2eb0ea5252de2ddbc80f48f303424ff36db7c7cce9481037e4fc02430f",
+    "03_experiments/audits/mic_goat_followup_release_20261004_v1/manifest.json": "f97eda074096e63b78f326b1088ef8cb5998d779e00d136ab8510779459bd275",
+    "03_experiments/audits/mic_training_readiness_20261004_v23.json": "6e834cb57c5c0d8433303d5fc25a0bde8616d10e71118f295e33ac9cfe824d0c",
+    "03_experiments/runs/mic_goat_baseline_20261004_v1/manifest.json": "2ecdd5add480fb61679dc14c12b6e19dec3450f2740c6297e4eab66b84c6e0d5"
+  },
+  "training_entry_sha256": "928e4f18240160a456a4de029f4ed72f879cf1ada758b59915e2fbe29d9e2392",
+  "formal_dual_task_status": "blocked",
+  "formal_results_available": false,
+  "publication_ready": false,
+  "training_execution_status": "failed",
+  "result_verification_status": "not_started",
+  "run_directory": "03_experiments/runs/mic_goat_baseline_20261004_v1",
+  "current_mic_baseline_status": "local_exploratory_training_independently_verified"
+}

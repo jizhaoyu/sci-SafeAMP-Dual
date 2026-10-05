@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-10-05T03:32:37.716481+00:00",
+  "status": "passed",
+  "exact_content_outputs": 7,
+  "comparisons": {
+    "candidate_decisions.csv": true,
+    "figure_review.json": true,
+    "mass_and_sequence_diagnostics.csv": true,
+    "merged_candidate_decisions.csv": true,
+    "primary_endpoint_screen.csv": true,
+    "search_coverage.csv": true,
+    "search_hit_review.csv": true,
+    "summary_without_generation_time": true,
+    "report_without_generation_time": true,
+    "both_verifications_passed": true
+  },
+  "allowed_difference": "generation timestamp only",
+  "formal_release": false,
+  "model_fit_calls": 0
+}

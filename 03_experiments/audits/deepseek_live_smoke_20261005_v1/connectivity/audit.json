@@ -1,0 +1,30 @@
+{
+  "case": "connectivity",
+  "started_at": "2026-10-05T06:47:58.703514+00:00",
+  "http_status": 200,
+  "transport_passed": true,
+  "response_schema_passed": true,
+  "output_contract_passed": true,
+  "passed": true,
+  "provider_request_id": null,
+  "response_id": "bb884d2f-08aa-47d8-82f6-5754342dbe94",
+  "returned_model": "deepseek-flash",
+  "finish_reason": "stop",
+  "usage": {
+    "prompt_tokens": 33,
+    "completion_tokens": 8,
+    "total_tokens": 41,
+    "prompt_tokens_details": {
+      "cached_tokens": 0
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 33
+  },
+  "response_characters": 22,
+  "contract_checks": {
+    "exact_marker": true,
+    "passed": true
+  },
+  "duration_seconds_full_response": 0.8402,
+  "completed_at": "2026-10-05T06:47:59.543824+00:00"
+}

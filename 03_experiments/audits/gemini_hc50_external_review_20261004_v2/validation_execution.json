@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T12:45:23.718487+00:00",
+  "new_test_count": 19,
+  "existing_test_count": 32,
+  "results_manifest_sha256": "3804cc1f919d2a1002caf1ae2edee11031fde85631bf4c6454d0d5084d0a5186",
+  "commands": [
+    {
+      "name": "new_regressions",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "output": "test_actual_gates_require_all_conditions (__main__.EvidenceAuditTests.test_actual_gates_require_all_conditions) ... ok\r\ntest_arg2_primary_sequence_mic_and_rabbit_target (__main__.EvidenceAuditTests.test_arg2_primary_sequence_mic_and_rabbit_target) ... ok\r\ntest_bad_manifest_anchor_prevents_output_creation (__main__.EvidenceAuditTests.test_bad_manifest_anchor_prevents_output_creation) ... ok\r\ntest_brevinin_censored_mic_and_hc50_unknown (__main__.EvidenceAuditTests.test_brevinin_censored_mic_and_hc50_unknown) ... ok\r\ntest_censored_and_threshold_boundaries (__main__.EvidenceAuditTests.test_censored_and_threshold_boundaries) ... ok\r\ntest_conflicting_labels_block (__main__.EvidenceAuditTests.test_conflicting_labels_block) ... ok\r\ntest_dermatoxin_primary_sequence_and_all_ecoli_assays (__main__.EvidenceAuditTests.test_dermatoxin_primary_sequence_and_all_ecoli_assays) ... ok\r\ntest_doi_alias_normalization (__main__.EvidenceAuditTests.test_doi_alias_normalization) ... ok\r\ntest_end_to_end_no_fit_and_tampered_artifact_rejected (__main__.EvidenceAuditTests.test_end_to_end_no_fit_and_tampered_artifact_rejected) ... ok\r\ntest_existing_output_rejected_before_reading_inputs (__main__.EvidenceAuditTests.test_existing_output_rejected_before_reading_inputs) ... ok\r\ntest_gap_and_duplicate_alignment (__main__.EvidenceAuditTests.test_gap_and_duplicate_alignment) ... ok\r\ntest_han_no_effect_not_invented_numeric_mic (__main__.EvidenceAuditTests.test_han_no_effect_not_invented_numeric_mic) ... ok\r\ntest_input_tampering_is_rejected_by_real_preflight (__main__.EvidenceAuditTests.test_input_tampering_is_rejected_by_real_preflight) ... ok\r\ntest_missing_coverage_and_path_escape_rejected (__main__.EvidenceAuditTests.test_missing_coverage_and_path_escape_rejected) ... ok\r\ntest_non_ecoli_mic_cannot_make_label (__main__.EvidenceAuditTests.test_non_ecoli_mic_cannot_make_label) ... ok\r\ntest_single_concentration_and_cell_death_not_hc50 (__main__.EvidenceAuditTests.test_single_concentration_and_cell_death_not_hc50) ... ok\r\ntest_unknown_units_or_mass_not_guessed (__main__.EvidenceAuditTests.test_unknown_units_or_mass_not_guessed) ... ok\r\ntest_unverified_measurement_cannot_make_label (__main__.EvidenceAuditTests.test_unverified_measurement_cannot_make_label) ... ok\r\ntest_zero_point_four_actual_alignment_is_blocked (__main__.EvidenceAuditTests.test_zero_point_four_actual_alignment_is_blocked) ... ok\r\n\r\n----------------------------------------------------------------------\r\nRan 19 tests in 3.918s\r\n\r\nOK\r\n"
+    },
+    {
+      "name": "existing_related_regressions",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true,
+      "output": "................................                                         [100%]\r\n32 passed in 1.12s\r\n"
+    },
+    {
+      "name": "output_overwrite_refused",
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "passed": true,
+      "output": "Traceback (most recent call last):\r\n  File \"D:\\�����ļ�\\sci\\03_experiments\\audits\\gemini_hc50_external_review_20261004_v2\\scripts\\evidence_audit.py\", line 444, in <module>\r\n    result = run(args.input_manifest.resolve(), args.input_sha256, args.output)\r\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\r\n  File \"D:\\�����ļ�\\sci\\03_experiments\\audits\\gemini_hc50_external_review_20261004_v2\\scripts\\evidence_audit.py\", line 297, in run\r\n    raise FileExistsError(f'Refusing existing output: {output}')\r\nFileExistsError: Refusing existing output: D:\\�����ļ�\\sci\\03_experiments\\audits\\gemini_hc50_external_review_20261004_v2\\results\r\n"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "status": "evidence_review_complete_partition_passed",
+  "generated_at": "2026-10-04T07:06:31.012886+00:00",
+  "supersedes": "03_experiments/audits/mic_training_readiness_20261004_v22.json",
+  "audit_protocol_id": "protocol-mic-06",
+  "previous_training_protocol_id": "protocol-mic-11",
+  "new_training_protocol_id": null,
+  "data_version": "mic_goat_followup_release_20261004_v1",
+  "new_molecules_evidence_approved": 1,
+  "molecules": 17,
+  "observations": 42,
+  "component_counts": {
+    "total": 7,
+    "positive": 4,
+    "negative": 6
+  },
+  "training_blocked": true,
+  "training_started": false,
+  "blockers": [
+    "New protocol and freeze required before new training"
+  ],
+  "current_mic_baseline_status": "local_exploratory_training_independently_verified",
+  "formal_dual_task_status": "blocked",
+  "formal_results_available": false,
+  "publication_ready": false
+}

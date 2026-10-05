@@ -1,0 +1,31 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-04T12:43:07.114078+00:00",
+  "protocol_id": "protocol-amd-02",
+  "review_method": "agent_primary_source_review; not independent human approval",
+  "model_fit_calls": 0,
+  "formal_state_modified": false,
+  "counts": {
+    "candidate_records": 83,
+    "distinct_nonempty_sequences": 75,
+    "primary_sequence_verified": 4,
+    "missing_sequence": 1,
+    "pending_primary_article_review": 78,
+    "assay_observations": 168,
+    "verified_human_hc50": 1,
+    "eligible_external": 0,
+    "candidate_development_comparisons": 34194,
+    "candidate_internal_comparisons": 3321,
+    "provisional_inventory_homology_failed": 26,
+    "provisional_inventory_homology_passed": 56,
+    "alias_overlap_detected": 3
+  },
+  "limitations": [
+    "No new web search; repairs five archived XMLs and 78 unverified inventory leads.",
+    "Han-Def1 tested construct sequence not confirmed; omitted from alignment, never imputed.",
+    "No alias match does not prove original measurement-source independence.",
+    "Unverified inventory alignments are provisional; formal eligibility remains zero."
+  ],
+  "input_manifest": "03_experiments/audits/gemini_hc50_external_review_20261004_v2/input_manifest.json",
+  "input_manifest_sha256": "e08370d9a391a849aa690470dc7574b13b07130727727daa76d60330b57d0e85"
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "generated_at": "2026-10-04T07:12:42.837490+00:00",
+  "molecules": 17,
+  "observations": 42,
+  "pairs_recomputed": 136,
+  "cross_fold_homology_edges": 0,
+  "cross_fold_primary_studies": 0,
+  "blockers": [],
+  "model_fitting_performed": false,
+  "complete_primary_mentions_rechecked": 45,
+  "candidate_conflict_policy_verified": true,
+  "fixed_split_reproduced": true,
+  "evidence_release_manifest_sha256": "5e064c8ac423c2285e8ab67916911932ac670df3872fd0035f7e6be1e886383b",
+  "cohort_manifest_sha256": "ce5f09e83b74d92a884e823d36f57e6b4292b4dfc5407b33f29f3aa4f213e235",
+  "release_manifest_sha256": "f97eda074096e63b78f326b1088ef8cb5998d779e00d136ab8510779459bd275",
+  "validator_sha256": "928e4f18240160a456a4de029f4ed72f879cf1ada758b59915e2fbe29d9e2392",
+  "model_fit_calls": 0,
+  "visual_source_review": "agent table review; no independent human assessment claimed"
+}

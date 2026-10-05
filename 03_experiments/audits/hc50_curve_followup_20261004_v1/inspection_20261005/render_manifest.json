@@ -1,0 +1,27 @@
+{
+  "method": "Existing LibreOffice headless PDF export then PyMuPDF 2x raster; no DOCX source edited",
+  "bundled_render_helper": "Failed to produce PDF; direct existing LibreOffice export succeeded",
+  "pages": [
+    {
+      "source_pdf": "pdf/41598_2026_40997_MOESM1_ESM.pdf",
+      "source_pdf_sha256": "8bb10e070f3dce65d61e340050664af20c0087fa6fd35799610563969a83a660",
+      "page": 1,
+      "image": "41598_2026_40997_MOESM1_ESM_page_1.png",
+      "image_sha256": "057bbdce398120df4adc1f54a9935ca32e0f88f2c0a46082c832772c45ff0aeb"
+    },
+    {
+      "source_pdf": "pdf/41598_2026_40997_MOESM2_ESM.pdf",
+      "source_pdf_sha256": "838bac4ffd3f44dadac1b2b1a340e09b3b241bc0e3358b921e730b2d979fc867",
+      "page": 1,
+      "image": "41598_2026_40997_MOESM2_ESM_page_1.png",
+      "image_sha256": "35ead38b7c3eec26bbf6c13d2e9fb9a7a89254bc46c5619f301e0ab8207d7819"
+    },
+    {
+      "source_pdf": "pdf/41598_2026_40997_MOESM3_ESM.pdf",
+      "source_pdf_sha256": "870087bde6b73441a5f5f1cae0ad72c2d2807fa9d8b6df48194229ad916d6882",
+      "page": 1,
+      "image": "41598_2026_40997_MOESM3_ESM_page_1.png",
+      "image_sha256": "767f4f4245daeb9024a28d4e9bc6de1f7cf1b37b7950f25fb904eb3c103b009f"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "status": "local_exploratory_three_fold_training_completed",
+  "generated_at": "2026-10-04T07:32:24.507137+00:00",
+  "protocol_id": "protocol-mic-13",
+  "protocol_sha256": "1767c85507d85e7a2ce0cbbeb99a6f352a52ffabd544b184f180b994e55955b7",
+  "freeze_sha256": "eb4c8d0e2392fb5dc0bcaa3cc7bf562294db0d0f234540aa79dbcb9f84b68e92",
+  "cohort_manifest_sha256": "ce5f09e83b74d92a884e823d36f57e6b4292b4dfc5407b33f29f3aa4f213e235",
+  "evidence_release_manifest_sha256": "5e064c8ac423c2285e8ab67916911932ac670df3872fd0035f7e6be1e886383b",
+  "molecules": 17,
+  "observations": 42,
+  "folds": 3,
+  "oof_rows": 51,
+  "models": [
+    "logistic_regression",
+    "random_forest",
+    "dummy_prior"
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0",
+    "joblib": "1.5.3"
+  },
+  "training_started": true,
+  "formal_results_available": false,
+  "publication_ready": false,
+  "outputs": {
+    "fixed_features.npy": "47c9d152589d65508c55ff68a070261e8cacb7d585568c2dfe33965a5852ce3b",
+    "fold_metrics.csv": "c7f6840b469a8d832a7d7636b24c0af8ed330ba4720f09864deafa3b3f855e4f",
+    "fold_models/dummy_prior_fold0.joblib": "13ddd0847bb11f4bdcfeb5c839506a6915c6f8f2a191bfc5f4ecb11fd157d52b",
+    "fold_models/dummy_prior_fold1.joblib": "1b00b05eb25d79ff73840576629d91b2957f96e0f5efe4a0016296fb8bcb8854",
+    "fold_models/dummy_prior_fold2.joblib": "2c338f49cc1804ecbadd5153bff3c3b4481eddc43b4adba8a5104d4b10daae93",
+    "fold_models/logistic_regression_fold0.joblib": "69458a023d3a33f8ce00b789e68471e44dbb1c1ba7005558edc2ec53f1240a25",
+    "fold_models/logistic_regression_fold1.joblib": "b1d8095531d5f47d04f610a10279b81547ceed34e9fca7e10817d543de3a0677",
+    "fold_models/logistic_regression_fold2.joblib": "e2a83b11712330934d941e33e742a56ba091429cb4b23ae9289ff42eff980ea5",
+    "fold_models/random_forest_fold0.joblib": "276ba3044e0239af13efb26f8d0b8d4bdef55b16e4d47562f5e9e9dc92cd70a4",
+    "fold_models/random_forest_fold1.joblib": "069738d93bdc2ac8fd8cc1d73be68daa14a9f3eab9e8a6e34a6aa103418d5103",
+    "fold_models/random_forest_fold2.joblib": "8431836d5630af0899a4fb105107d780eea85241ffa2b16c1410599843816bce",
+    "oof_predictions.csv": "7a54db9d12810d1ae538a4480df72859584e4e20d9c744e507b0d49eeabfc3bc",
+    "pooled_descriptive_metrics.csv": "efb59376bfdf13b78a2492824928ec7df64166a7a879fc14b68ec47ca8b3c00f",
+    "report.md": "357fa907a88beb6d92be7158dbfabcf7bc8937a966e8a26315a452e4a6ed8897"
+  }
+}

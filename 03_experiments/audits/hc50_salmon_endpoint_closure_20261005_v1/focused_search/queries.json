@@ -1,0 +1,9 @@
+{
+  "queries": {
+    "fragment_names_biological": "cathelicidin AND (\"TT(1-24)\" OR \"TT(1-35)\" OR \"SF(18-45)\" OR \"rtCATH2(1-40)\" OR \"rtCATH2(5-40)\")",
+    "literal_sequences": "(\"KFRTRRSKSSSNGGRKGSKG\" OR \"KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA\" OR \"KFRSNGRHGSGSRLGGGSLIGRPGGGS\" OR \"RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI\" OR \"KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI\")",
+    "index_control_2016": "EXT_ID:27818338 AND SRC:MED"
+  },
+  "page_size": 100,
+  "limitations": "Names containing punctuation produced unrelated hits in first query; retain original results and screen explicitly. Sequence search and name search do not cover unindexed supplementary material."
+}

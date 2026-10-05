@@ -1,0 +1,88 @@
+{
+  "generated_at": "2026-10-05T06:48:00.295122+00:00",
+  "status": "passed",
+  "endpoint": "https://api.deepseek.com/v1/chat/completions",
+  "requested_model": "deepseek-chat",
+  "credential_source": "selected_env_file",
+  "actual_network_calls": 2,
+  "cases": [
+    {
+      "case": "connectivity",
+      "started_at": "2026-10-05T06:47:58.703514+00:00",
+      "http_status": 200,
+      "transport_passed": true,
+      "response_schema_passed": true,
+      "output_contract_passed": true,
+      "passed": true,
+      "provider_request_id": null,
+      "response_id": "bb884d2f-08aa-47d8-82f6-5754342dbe94",
+      "returned_model": "deepseek-flash",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 33,
+        "completion_tokens": 8,
+        "total_tokens": 41,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 33
+      },
+      "response_characters": 22,
+      "contract_checks": {
+        "exact_marker": true,
+        "passed": true
+      },
+      "duration_seconds_full_response": 0.8402,
+      "completed_at": "2026-10-05T06:47:59.543824+00:00"
+    },
+    {
+      "case": "synthetic_report",
+      "started_at": "2026-10-05T06:47:59.545836+00:00",
+      "http_status": 200,
+      "transport_passed": true,
+      "response_schema_passed": true,
+      "output_contract_passed": true,
+      "passed": true,
+      "provider_request_id": null,
+      "response_id": "ae41c583-c754-4495-b853-b3e9ecbfc73b",
+      "returned_model": "deepseek-flash",
+      "finish_reason": "stop",
+      "usage": {
+        "prompt_tokens": 177,
+        "completion_tokens": 91,
+        "total_tokens": 268,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 177
+      },
+      "response_characters": 364,
+      "contract_checks": {
+        "json_valid": true,
+        "fixture_preserved": true,
+        "summary_exact": true,
+        "limitations_exact": true,
+        "no_unknown_fields": true,
+        "passed": true
+      },
+      "duration_seconds_full_response": 0.6928,
+      "completed_at": "2026-10-05T06:48:00.238529+00:00"
+    }
+  ],
+  "protected_research_files_unchanged": true,
+  "protected_sha256": {
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments/deliveries/mic_baseline_20261004_v1/manifest.json": "f8b8606dc807279cc78c6728260f6d3d7da463f2416bf47e8d3bafbdf1789ed3",
+    "03_experiments/deliveries/mic_baseline_20261004_v1.zip": "858f6aa9a09dfc822b6a7c155a629ae13caf0e2c922abe3448d81119e3491b2b"
+  },
+  "real_research_data_uploaded": false,
+  "peptide_sequences_uploaded": false,
+  "model_fit_calls": 0,
+  "synthetic_fixture_only": true,
+  "web_report_endpoint_deepseek_integration_tested": false,
+  "formal_dual_task_status": "blocked",
+  "publication_ready": false,
+  "credential_rotation_performed": false
+}

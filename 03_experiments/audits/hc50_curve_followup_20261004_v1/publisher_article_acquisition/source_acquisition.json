@@ -1,0 +1,14 @@
+{
+  "requested_file": "nature_primary.html",
+  "url": "https://www.nature.com/articles/s41598-026-40997-3",
+  "url_basis": "DOI publisher URL verified by primary article metadata",
+  "retrieved_at": "2026-10-04T14:04:19.879499+00:00",
+  "license": "not yet reviewed; acquisition does not grant redistribution rights",
+  "final_url": "https://www.nature.com/articles/s41598-026-40997-3",
+  "http_status": 200,
+  "content_type": "text/html; charset=utf-8",
+  "status": "response_requires_review",
+  "file": "raw/nature_primary.html",
+  "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+  "bytes": 3038
+}

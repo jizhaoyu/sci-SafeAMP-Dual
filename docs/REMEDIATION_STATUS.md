@@ -3,22 +3,39 @@
 <!-- RESEARCH_STATUS_CURRENT_START -->
 ## 当前研究状态（机器生成）
 
-状态来源：`03_experiments/audits/mic_training_readiness_20261004_v22.json`。生成时间：2026-10-04T03:22:58.044963+00:00（UTC）。
-数据版本：`mic_followup_release_20261004_v1`；数据目录：`03_experiments/audits/mic_followup_release_20261004_v1`；审查协议：`protocol-mic-08`。
-训练协议：`protocol-mic-11`；当前状态：`local_exploratory_training_independently_verified`。
+状态来源：`03_experiments/audits/mic_training_readiness_20261004_v26.json`。生成时间：2026-10-04T07:17:45.230443+00:00（UTC）。
+数据版本：`mic_goat_followup_release_20261004_v1`；数据目录：`03_experiments/audits/mic_goat_followup_release_20261004_v1`；审查协议：`protocol-mic-06`。
+训练协议：`protocol-mic-13`；当前状态：`local_exploratory_training_independently_verified`。
 
 | 状态 | 当前结论 |
 |---|---|
-| 证据准入 | 16 分子、23 观察；BMAP-27B 原图 CREC6 单株测定准入；Piscidin 1 继续暂缓 |
-| 全员及研究隔离 | 120 对；固定三折 seed=42；跨折同源 0、跨折主要研究 0；各训练/验证含两类 |
-| 训练执行 | 固定 LR/RF/Dummy 三折完成，9 个模型、48 条 OOF |
-| 独立复核 | passed；禁止 fit，重载 9 模型并复算全部 OOF 与指标 |
+| 证据准入 | 17 分子、42 条测定表述；6 阳性、11 阴性；ChMAP-28 新增准入，两条 mini-ChBac 因正负标签冲突未释放 |
+| 全员及研究隔离 | 136 对、7 组件；固定三折 seed=42；跨折同源 0、跨折测量研究 0；各训练/验证含两类 |
+| 训练执行 | 固定 LR/RF/Dummy 三折完成，9 个模型、51 条 OOF；training_blocked=false |
+| 独立复核 | passed；禁止 fit，重载 9 模型并复算全部 OOF、指标及缩放器训练范围 |
 | 原双任务 | blocked；protocol-amd-02；正式运行 none |
 | 正式结果 / 投稿就绪 | false / false |
 
-旧 15 分子基线保留。旧 Gemini 17 分子扩充队列的证据准入声明已撤销，历史计算产物不能替代当前原始证据。
-本轮是历史性能已知后的小样本探索；没有独立外部验证或临床泛化结论。
+运行目录：`03_experiments/runs/mic_goat_baseline_20261004_v2`；复核：`03_experiments/audits/mic_goat_run_validation_20261004_v1.json`。
+42 条为测定表格提及数，不代表 42 次独立实验。各分子只产生一个训练样本。
+protocol-mic-12 首次运行因指标函数绑定缺失中断，失败产物保留；protocol-mic-13 仅修复技术入口，科学定义与参数不变。
+原 16 分子已验证基线保留；以下旧正文为历史快照，不能覆盖本状态块或支撑当前证据放行。
+本轮是历史性能已知后的小样本探索，没有独立外部验证、临床泛化或投稿批准。
 <!-- RESEARCH_STATUS_CURRENT_END -->
+
+<!-- PROJECT_CLOSEOUT_CURRENT_START -->
+## 本批结案与交付（机器审计）
+
+状态来源：`03_experiments/audits/project_closeout_20261005_v1/review/project_delivery_status.json`；生成时间：2026-10-05T05:05:20.652390+00:00（UTC）；版本：`project_closeout_20261005_v1`。
+证据协议：`protocol-amd-02`；MIC训练协议：`protocol-mic-13`；MIC状态来源仍为`03_experiments/audits/mic_training_readiness_20261004_v26.json`。
+
+- 本批外部证据审查：已结案；30条不准入、11条形式排除、37条缺原文归档；合格外部0，当前检索待办0。
+- 跨队列隔离：`not_run_no_evidence_eligible_records`；没有把未执行记为通过。
+- MIC探索工程交付：现有17样本/9模型/51OOF冻结包本轮复核通过，零fit，工作区外ZIP运行通过。
+- 原双任务：`blocked`；原研究目标未完成；正式结果/投稿就绪：`false`/`false`。
+
+交接入口：[项目收尾与交付指南](D:/桌面文件/sci/docs/handoff/PROJECT_CLOSEOUT_20261005.md)。证据结案表和本轮运行检查见状态来源所列目录；历史MIC机器状态块保留。
+<!-- PROJECT_CLOSEOUT_CURRENT_END -->
 
 ## 历史记录（旧准入声明已由上述审查状态替代）
 

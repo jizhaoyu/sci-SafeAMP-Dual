@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-05T03:50:59.571424+00:00",
+  "status": "passed",
+  "review_manifest_sha256": "8f96b896501960948ffdd94735b7732f7b281bb154e9105d77eca404e3c37c02",
+  "protected_files_checked": 344,
+  "output_files_checked": 5,
+  "retained_records_unchanged": 41,
+  "scope_exclusion_records": 37,
+  "source_identifier_pairs": 25,
+  "historical_traceability_records": 78,
+  "current_document_blocks_unchanged": 5,
+  "formal_external_released": 0,
+  "model_fit_calls": 0
+}

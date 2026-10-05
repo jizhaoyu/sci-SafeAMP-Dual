@@ -1,0 +1,6 @@
+﻿candidate_id,pmid,endpoint,target,value_original,unit_original,location,source_sha256,formal_label
+DBAASP_20562,36442155,MIC,E. coli ATCC 25922,256,µg/mL,"Table 1 row 3e, E. coli column; section 4.3.1",24a3df2e7867c9694c8415d9e467a3f433a408533c093ed69acbcdb023e92b8b,not_released
+DBAASP_20565,36442155,MIC,E. coli ATCC 25922,128,µg/mL,"Table 1 row 4c, E. coli column; section 4.3.1",24a3df2e7867c9694c8415d9e467a3f433a408533c093ed69acbcdb023e92b8b,not_released
+DBAASP_20571,36442155,MIC,E. coli ATCC 25922,32,µg/mL,"Table 1 row 7a, E. coli column; section 4.3.1",24a3df2e7867c9694c8415d9e467a3f433a408533c093ed69acbcdb023e92b8b,not_released
+DBAASP_20579,36442155,MIC,E. coli ATCC 25922,32,µg/mL,"Table 1 row 6a, E. coli column; section 4.3.1",24a3df2e7867c9694c8415d9e467a3f433a408533c093ed69acbcdb023e92b8b,not_released
+DBAASP_6545,21696142,reported_MIC100,E. coli BL2 (as printed),>10,µM,PDF page 3 Table 2 row 3; page 5 MIC determination; 4 h exposure and overnight plating,6e64241a1f61e19da88ed76b83d95cc56a6bd62e2240709ba67424609eb05435,not_released_assay_definition_requires_review

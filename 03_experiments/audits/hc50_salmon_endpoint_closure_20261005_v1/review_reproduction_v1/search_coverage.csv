@@ -1,0 +1,9 @@
+﻿query_name,query,source_file,hit_count,captured_records,truncated,limitation
+exact_fragments,"(""TT(1-24)"" OR ""TT(1-35)"" OR ""SF(18-45)"" OR ""rtCATH2(1-40)"" OR ""rtCATH2(5-40)"")",acquisition/raw/exact_fragments.json,5,5,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+rtcath_hemolysis,"""rtCATH2"" AND (hemolysis OR haemolysis OR erythrocytes OR HC50)",acquisition/raw/rtcath_hemolysis.json,3,3,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+grayling_hemolysis,"(grayling OR ""Thymallus thymallus"") AND cathelicidin AND (hemolysis OR haemolysis OR HC50)",acquisition/raw/grayling_hemolysis.json,3,3,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+pmid19168146,EXT_ID:19168146 AND SRC:MED,acquisition/raw/pmid19168146.json,1,1,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+pmid25876762,EXT_ID:25876762 AND SRC:MED,acquisition/raw/pmid25876762.json,1,1,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+fragment_names_biological,"cathelicidin AND (""TT(1-24)"" OR ""TT(1-35)"" OR ""SF(18-45)"" OR ""rtCATH2(1-40)"" OR ""rtCATH2(5-40)"")",focused_search/raw/fragment_names_biological.json,0,0,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+literal_sequences,"(""KFRTRRSKSSSNGGRKGSKG"" OR ""KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA"" OR ""KFRSNGRHGSGSRLGGGSLIGRPGGGS"" OR ""RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI"" OR ""KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI"")",focused_search/raw/literal_sequences.json,1,1,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements
+index_control_2016,EXT_ID:27818338 AND SRC:MED,focused_search/raw/index_control_2016.json,1,1,False,Discovery coverage only; no proof of absence in unindexed full texts/supplements

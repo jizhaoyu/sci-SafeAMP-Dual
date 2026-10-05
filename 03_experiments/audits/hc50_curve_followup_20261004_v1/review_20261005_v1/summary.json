@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-05T02:28:18.811273+00:00",
+  "data_version": "hc50_curve_followup_20261004_v1",
+  "review_output_version": "review_20261005_v1",
+  "review_mode": "agent_original_source_review",
+  "independent_human_review": false,
+  "fixed_batch_candidates": 4,
+  "sequence_matches": 4,
+  "primary_studies_followed_up": 3,
+  "supplementary_documents_acquired_and_visually_reviewed": 3,
+  "new_distinct_human_hemolysis_50_percent_censored_molecules": 2,
+  "censored_human_rbc_repeat_observations": 4,
+  "new_exact_hc50_values": 0,
+  "paired_ecoli_mic_repeat_observations": 4,
+  "ct7_ecoli_table_rows": 6,
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "protocol_id": "protocol-amd-02",
+  "homology_boundary": ">=0.40 unchanged",
+  "training_state_changed": false,
+  "model_fit_calls": 0,
+  "merged_candidate_records": 78,
+  "merged_decision_counts": {
+    "current_source_insufficient_for_dual_release": 15,
+    "pending": 54,
+    "excluded_by_known_molecular_form": 9
+  },
+  "merged_candidates_endpoint_screened": 34,
+  "remaining_original_access_gaps": 44
+}

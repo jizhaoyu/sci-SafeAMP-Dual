@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-10-04T07:17:45.229494+00:00",
+  "original_document_sha256": {
+    "README.md": "5c0d6b85c656e6312c835e36c9d1c93add30aad3dc7d9742973bbc95a353e4f5",
+    "docs/REMEDIATION_STATUS.md": "0b533e0bc13841a09b5abede775367c43b91a48a94d3fd6d9a7abb08de2c0dec",
+    "docs/DOCUMENTATION_INDEX.md": "07bd8c86a37c7fb4dcb3e53728856b1b199c68c075a2629e34fca075a1b08571",
+    "docs/handoff/TASK_STATE.md": "d92a2b3a8a53f9d736faa5c508e19335439ea9fc80536229def4725fc9cc24d2",
+    "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md": "c506bbbd28b340ec5254572c05c6f058597c4da32070b71f4d128f0d5d6ddda8"
+  },
+  "outputs": {
+    "README.md": "5c0d6b85c656e6312c835e36c9d1c93add30aad3dc7d9742973bbc95a353e4f5",
+    "docs/REMEDIATION_STATUS.md": "0b533e0bc13841a09b5abede775367c43b91a48a94d3fd6d9a7abb08de2c0dec",
+    "docs/DOCUMENTATION_INDEX.md": "07bd8c86a37c7fb4dcb3e53728856b1b199c68c075a2629e34fca075a1b08571",
+    "docs/handoff/TASK_STATE.md": "d92a2b3a8a53f9d736faa5c508e19335439ea9fc80536229def4725fc9cc24d2",
+    "03_experiments/audits/multi_database_ecoli_mic_screen_20261001.md": "c506bbbd28b340ec5254572c05c6f058597c4da32070b71f4d128f0d5d6ddda8"
+  }
+}

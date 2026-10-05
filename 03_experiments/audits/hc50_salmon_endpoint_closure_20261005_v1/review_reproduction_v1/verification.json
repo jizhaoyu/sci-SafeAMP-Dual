@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-10-05T03:32:37.153886+00:00",
+  "status": "passed",
+  "review_manifest_sha256": "9e084e5eadcdcc194300acd154a7e14833a6cf404bd81b0b74efcc83146bf21b",
+  "verifier_sha256": "7e70e0992e8d786fc7d035b4700608592209380ae7b35e366e00c741b757d38a",
+  "protected_files_checked": 292,
+  "input_files_checked": 27,
+  "output_files_checked": 9,
+  "five_followup_records": 5,
+  "cumulative_records": 78,
+  "unchanged_outside_scope": 73,
+  "conditional_mass_checks": 5,
+  "publisher_figure_bindings": 1,
+  "primary_wrong_target_transfer_rejections": 2,
+  "search_queries_checked": 8,
+  "unrelated_search_hits_rejected": 5,
+  "model_fit_calls": 0,
+  "independent_human_review": false,
+  "limitations": "Checks bind agent visual review; they do not independently transcribe the image or establish worldwide absence of evidence."
+}

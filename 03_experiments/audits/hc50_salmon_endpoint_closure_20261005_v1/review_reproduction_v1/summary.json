@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-05T03:31:57.114547+00:00",
+  "data_version": "hc50_salmon_endpoint_closure_20261005_v1",
+  "protocol_id": "protocol-amd-02",
+  "review_mode": "agent original-source and publisher-figure review; not independent human review",
+  "independent_human_review": false,
+  "existing_candidates_followed_up": 5,
+  "additional_candidates_screened": 0,
+  "new_primary_fulltexts_screened_for_transfer": 2,
+  "publisher_figure_sequence_checks": 5,
+  "human_exact_hc50_values_added": 0,
+  "identity_release_count": 0,
+  "tt_1_24_conflict_resolved": false,
+  "merged_candidate_records": 78,
+  "merged_candidates_endpoint_screened": 41,
+  "remaining_original_access_gaps": 37,
+  "merged_decision_counts": {
+    "current_source_insufficient_for_dual_release": 22,
+    "pending": 47,
+    "excluded_by_known_molecular_form": 9
+  },
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "homology_boundary": ">=0.40 unchanged",
+  "model_fit_calls": 0,
+  "training_state_changed": false,
+  "search_queries": 8,
+  "all_search_pages_fully_captured": true,
+  "conclusion_scope": "No qualifying human HC50 added from sources actually inspected; worldwide absence is not established."
+}

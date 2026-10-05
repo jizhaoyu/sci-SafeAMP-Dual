@@ -1,0 +1,15 @@
+{
+  "source": "acquisition/raw/publisher_figure1_large.jpg",
+  "sha256": "7cd25e60d85cd20f5bbc5be425a5ecd23ffc1c359ca15eacd5ffb42e692b2202",
+  "width": 3543,
+  "height": 2556,
+  "agent_visually_inspected": true,
+  "independent_human_review": false,
+  "transcriptions": {
+    "HIST_DRAMP20859": "KFRTRRSKSSSNGGRKGSKG",
+    "HIST_DRAMP20860": "KFRTRRSKSSSNGGRKGSKGGSKGRPGSGSSIAGA",
+    "HIST_DRAMP20862": "RRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI",
+    "HIST_DRAMP20863": "KIRTRRGKDSGGPKMGRKNSKGGWRGRPGSGSRPGFGSGI",
+    "HIST_DRAMP20864": "KFRSNGRHGSGSRLGGGSLIGRPGGGS"
+  }
+}

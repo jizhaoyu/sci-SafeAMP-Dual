@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-10-05T02:30:27.155542+00:00",
+  "status": "passed",
+  "scope": "read-only coverage, raw DOCX XML cells, censoring, conditional arithmetic and provenance; not independent human review",
+  "review_manifest_sha256": "bc3e1786b8f0290fc626deb5a844a12d8c7b9b0e1221f4187e349de02d655eb8",
+  "verifier_sha256": "ae4203a62ccf63e79210b04b2bf17bf5a4e50d1ccae4b5484b4f3f4585f0dcbf",
+  "protected_files_checked": 133,
+  "input_files_checked": 35,
+  "output_files_checked": 10,
+  "candidate_records_checked": 4,
+  "merged_records_checked": 78,
+  "supplementary_assay_cells_checked": 8,
+  "ct7_ecoli_cells_checked": 6,
+  "ct7_not_determined_cells_preserved": 2,
+  "conditional_calculations_checked": 8,
+  "rendered_source_pages_checked": 3,
+  "model_fit_calls": 0,
+  "formal_release": false
+}

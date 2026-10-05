@@ -1,0 +1,187 @@
+{
+  "generated_at": "2026-10-04T06:55:16.139732+00:00",
+  "summary": [
+    {
+      "candidate_name": "Pin2",
+      "reference_cohort": "formal_417",
+      "max_identity": 1.0,
+      "violating_pairs": 5,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Pin2",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3333333333333333,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Pin2[G]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.9583333333333334,
+      "violating_pairs": 4,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Pin2[G]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3333333333333333,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Pin2[GPG]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.9615384615384616,
+      "violating_pairs": 5,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Pin2[GPG]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3076923076923077,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Pin2[14]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.5,
+      "violating_pairs": 16,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Pin2[14]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3888888888888889,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Pin2[17]",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.5416666666666666,
+      "violating_pairs": 9,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Pin2[17]",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3684210526315789,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "ChMAP-28",
+      "reference_cohort": "formal_417",
+      "max_identity": 1.0,
+      "violating_pairs": 5,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "ChMAP-28",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.6071428571428571,
+      "violating_pairs": 1,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "mini-ChBac7.5Nα",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.9545454545454546,
+      "violating_pairs": 24,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "mini-ChBac7.5Nα",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.64,
+      "violating_pairs": 5,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "mini-ChBac7.5Nα(1-16)",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.875,
+      "violating_pairs": 24,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "mini-ChBac7.5Nα(1-16)",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.6111111111111112,
+      "violating_pairs": 6,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Hymenochirin-1B",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.4117647058823529,
+      "violating_pairs": 2,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Hymenochirin-1B",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3793103448275862,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Hymenochirin-2B",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.8275862068965517,
+      "violating_pairs": 2,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Hymenochirin-2B",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.3103448275862069,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Hymenochirin-3B",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.6551724137931034,
+      "violating_pairs": 1,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Hymenochirin-3B",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.35714285714285715,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Hymenochirin-4B",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.6896551724137931,
+      "violating_pairs": 1,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Hymenochirin-4B",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.35714285714285715,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    },
+    {
+      "candidate_name": "Hymenochirin-5B",
+      "reference_cohort": "formal_417",
+      "max_identity": 0.5172413793103449,
+      "violating_pairs": 2,
+      "interpretation": "external_isolation_check"
+    },
+    {
+      "candidate_name": "Hymenochirin-5B",
+      "reference_cohort": "mic_16",
+      "max_identity": 0.32142857142857145,
+      "violating_pairs": 0,
+      "interpretation": "merge_required_when_conflict; not_an_admission_decision"
+    }
+  ]
+}

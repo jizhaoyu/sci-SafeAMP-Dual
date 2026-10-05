@@ -11,6 +11,8 @@ def text(node):
     return ' '.join(node.itertext()).strip() if node is not None else ''
 
 def main():
+    if (ROOT / 'primary_evidence.json').exists():
+        raise FileExistsError('Refusing to overwrite historical evidence extraction')
     evidence = []
     
     # 1. XML sources

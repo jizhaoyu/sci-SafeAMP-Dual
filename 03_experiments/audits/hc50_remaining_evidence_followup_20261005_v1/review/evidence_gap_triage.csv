@@ -1,0 +1,33 @@
+﻿candidate_id,name,pmid,doi,previous_screen_status,gap_category,next_evidence_requirement,formal_release,archived_37_reopened
+HIST_DRAMP21637,SLAY-P7,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21647,SLAY-P17,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP20807,A1P394-428,27542832,10.1186/s12866-016-0799-z,animal_rbc_only,non_human_RBC,已审查来源种属不符；需要同一分子的独立人HC50原始测定,False,False
+HIST_DRAMP21643,SLAY-P13,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP29065,AMPR-11(derived from Romo1),32291307,10.1128/mbio.03258-19,animal_rbc_only,non_human_RBC,已审查来源种属不符；需要同一分子的独立人HC50原始测定,False,False
+HIST_DRAMP21638,SLAY-P8,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21640,SLAY-P10,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21646,SLAY-P16,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP20860,TT(1-35),27818338,10.1016/j.fsi.2016.11.004,publisher_figure_and_cited_primary_followup_reviewed,single_point_or_missing_HC50; identity_or_condition_unresolved,本轮不重复已完成的正式图检索；按上一批具体身份/培养基冲突保留,False,False
+HIST_DRAMP21634,SLAY-P4,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21639,SLAY-P9,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21636,SLAY-P6,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21641,SLAY-P11,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21648,SLAY-P18,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21632,SLAY-P2,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP21644,SLAY-P14,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP20863,rtCATH2(1-40),27818338,10.1016/j.fsi.2016.11.004,publisher_figure_and_cited_primary_followup_reviewed,single_point_or_missing_HC50; identity_or_condition_unresolved,本轮不重复已完成的正式图检索；按上一批具体身份/培养基冲突保留,False,False
+HIST_DRAMP20804,AI-hemocidins 2 (Hb-1  truncated peptide),28661457,10.3390/md15070205,endpoint_and_species_conflict,HC10_not_HC50; RBC_species_conflict,解决原文物种矛盾仍不能把HC10变成HC50,False,False
+HIST_DRAMP20864,SF(18-45),27818338,10.1016/j.fsi.2016.11.004,publisher_figure_and_cited_primary_followup_reviewed,single_point_or_missing_HC50; identity_or_condition_unresolved,本轮不重复已完成的正式图检索；按上一批具体身份/培养基冲突保留,False,False
+HIST_DRAMP21645,SLAY-P15,29307492,10.1016/j.cell.2017.12.009,primary_mbc_and_single_point_hemolysis_reviewed,MBC_not_MIC; single_point_not_HC50; form_unconfirmed,SLAY S2/S3仍未取得；本轮有限公开路径结束，保留原端点不符结论,False,False
+HIST_DRAMP20862,rtCATH2(5-40),27818338,10.1016/j.fsi.2016.11.004,publisher_figure_and_cited_primary_followup_reviewed,single_point_or_missing_HC50; identity_or_condition_unresolved,本轮不重复已完成的正式图检索；按上一批具体身份/培养基冲突保留,False,False
+HIST_DRAMP20859,TT(1-24),27818338,10.1016/j.fsi.2016.11.004,publisher_figure_and_cited_primary_followup_reviewed,single_point_or_missing_HC50; identity_or_condition_unresolved,本轮不重复已完成的正式图检索；按上一批具体身份/培养基冲突保留,False,False
+HIST_DRAMP21420,AY1C (Derived from AY1),30872680,10.1038/s41598-019-41005-7,endpoint_mismatch,MIC80_not_MIC; missing_HC50,游离肽保留端点不符；两个明确银纳米颗粒缀合物按形式排除,False,False
+HIST_DRAMP21421,AY1C-AgNP (Derived from AY1),30872680,10.1038/s41598-019-41005-7,endpoint_mismatch,MIC80_not_MIC; missing_HC50,游离肽保留端点不符；两个明确银纳米颗粒缀合物按形式排除,False,False
+HIST_DRAMP21422,CAY1 (Derived from AY1),30872680,10.1038/s41598-019-41005-7,endpoint_mismatch,MIC80_not_MIC; missing_HC50,游离肽保留端点不符；两个明确银纳米颗粒缀合物按形式排除,False,False
+HIST_DRAMP21423,CAY1-AgNP (Derived from AY1),30872680,10.1038/s41598-019-41005-7,endpoint_mismatch,MIC80_not_MIC; missing_HC50,游离肽保留端点不符；两个明确银纳米颗粒缀合物按形式排除,False,False
+HIST_DRAMP21455,"PLP2 (Insects, animals)",30658410,10.3390/toxins11010050,single_concentration_hemolysis,single_point_not_HC50; RBC_species_unconfirmed,方法论文全文未取得；保留种属未知，不借用其他pilosulin测定,False,False
+DBAASP_19356,M-poneritoxin-Nc1a,34302796,10.1016/j.bcp.2021.114693,primary_human_hc50_range_and_ecoli_mic_reviewed,threshold_interval_unresolved; MIC_category_gap,真实范围不取平均、不选端点；原测定不能按当前规则确定类别,False,False
+DBAASP_25709,NHill_AD_C49215,41735465,10.1038/s41598-026-40997-3,supplement_sequence_and_censored_endpoints_reviewed,censored_HC50_bound_insufficient; form_unconfirmed,现有删失下界不足；不能四舍五入或调阈值放行,False,False
+DBAASP_25712,Hill_BB_C7985,41735465,10.1038/s41598-026-40997-3,supplement_sequence_and_censored_endpoints_reviewed,censored_HC50_bound_insufficient; form_unconfirmed,现有删失下界不足；不能四舍五入或调阈值放行,False,False
+DBAASP_497,Dhvar3,16940535,10.1128/jvi.00796-06,primary_molecular_identity_only_reviewed,target_endpoints_missing,该已审查论文无所需目标端点；细胞/病毒测定不转用,False,False
+DBAASP_9865,ToAP2,27917162,10.3389/fmicb.2016.01844,original_sequence_and_curve_conflict_reviewed,HC50_text_figure_conflict; fungal_MIC_not_Ecoli_MIC; form_unconfirmed,需解决图文冲突并提供对应E.coli测定；不转用真菌MIC,False,False

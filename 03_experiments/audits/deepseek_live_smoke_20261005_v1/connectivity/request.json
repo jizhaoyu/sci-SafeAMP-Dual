@@ -1,0 +1,16 @@
+{
+  "model": "deepseek-chat",
+  "temperature": 0,
+  "stream": false,
+  "max_tokens": 32,
+  "messages": [
+    {
+      "role": "system",
+      "content": "This is an API connectivity check. Return only the exact marker requested, without Markdown."
+    },
+    {
+      "role": "user",
+      "content": "Return exactly DEEPSEEK_CONNECTION_OK"
+    }
+  ]
+}

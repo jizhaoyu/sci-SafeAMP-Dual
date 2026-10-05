@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-10-04T13:17:33+00:00",
+  "reviewer": "agent_public_source_metadata_review",
+  "independent_human_review": false,
+  "entries": [
+    {
+      "candidate_id": "DBAASP_14205",
+      "source_url": "https://link.springer.com/article/10.1007/s00049-019-00287-z",
+      "access_method": "web tool opened original publisher page; separate urllib response is not the article",
+      "verified_doi": "10.1007/s00049-019-00287-z",
+      "verified_title": "Functional characterization of two novel peptides and their analogs identified from the skin secretion of Indosylvirana aurantiaca, an endemic frog species of Western Ghats, India",
+      "publisher_date": "2019-08-19",
+      "journal": "Chemoecology",
+      "volume": "29",
+      "pages": "179–187",
+      "publisher_access_notice": "subscription preview; original measurement rows not reviewed",
+      "pmid": "",
+      "formal_assay_release": false
+    },
+    {
+      "candidate_id": "HIST_DRAMP20968",
+      "source_url": "https://pubmed.ncbi.nlm.nih.gov/28258530/",
+      "local_metadata_source": "acquisition/raw/europepmc_metadata.json; MED 28258530 abstractText",
+      "finding": "Original article abstract explicitly reports HC50 300 µg/mL. The prior not-reported statement is contradicted; this remains an abstract lead, not a formally released assay.",
+      "formal_assay_release": false
+    }
+  ]
+}

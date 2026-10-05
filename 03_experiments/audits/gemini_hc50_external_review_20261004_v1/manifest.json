@@ -1,0 +1,147 @@
+{
+  "audit_version": "gemini_hc50_external_review_20261004_v1",
+  "generated_at": "2026-10-04T12:15:56.350524+00:00",
+  "protocol_id": "protocol-amd-02",
+  "audit_protocol_id": "protocol-amd-03",
+  "status": "blocked",
+  "inputs": {
+    "records_csv": {
+      "path": "03_experiments/prepared/amd02_evidence_clean_20261001/records.csv",
+      "sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37"
+    },
+    "candidate_primary_audit_csv": {
+      "path": "03_experiments/audits/dramp_dual_task_primary_audit_20261003_v1/candidate_primary_audit.csv",
+      "sha256": "238bcddfa569687b2740314e56476a5b9ae84cdb3e6af97bbd87acaaae98e672"
+    },
+    "mic_goat_cohort_csv": {
+      "path": "03_experiments/audits/mic_goat_followup_release_20261004_v1/cohort/candidate_molecules.csv",
+      "sha256": "c61beb5ff8ef92375c9eb5f164896f306906c1ff24424a1ec876e6f71a8d2655"
+    }
+  },
+  "scripts": {
+    "analyze_dbaasp_hemo50.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\analyze_dbaasp_hemo50.py",
+      "sha256": "78eb40e6766826b6d0bbf482cbf96cab7be9d88babed081a599ababefba04dad"
+    },
+    "audit_dbaasp_dual_candidates.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\audit_dbaasp_dual_candidates.py",
+      "sha256": "f1317cb1e25cbc2bbe40accca323bcbb100a3e3ea51b8974079f5423deb85355"
+    },
+    "audit_pipeline.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\audit_pipeline.py",
+      "sha256": "1f963655a0c0ec98bb96d338c025a6daa023c296756281ab1f777736882c7e54"
+    },
+    "build_manifest.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\build_manifest.py",
+      "sha256": "afb66c6983497db736d54dbca5fb2236f6193ec06e44d00ef6a57bb8def634ec"
+    },
+    "fetch_open_access_pmc.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\fetch_open_access_pmc.py",
+      "sha256": "32e47cdb111a3054e1af0f3a788eff08aed31da3158f0bba93e560fd3e63717f"
+    },
+    "inspect_candidate_details.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\inspect_candidate_details.py",
+      "sha256": "2ff57a4e95503c69ab0064aa50b51071177cad4beda1e1d96ba7c6e3bee94e4b"
+    },
+    "inspect_historical_39.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\inspect_historical_39.py",
+      "sha256": "b86569460e307cdf6f8309c9992e9bf9c634eee6d309b51f34f3acd3618bb5c4"
+    },
+    "inspect_peptides_in_pmc.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\inspect_peptides_in_pmc.py",
+      "sha256": "c0bd9cc89b6032aa566588d263b9c610de4ca4e03315a7f2bde8c29d26462240"
+    },
+    "parse_pmc_xmls.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\parse_pmc_xmls.py",
+      "sha256": "4a4bc02e541f44010f7c9f829fe3eed7e66e3cffc26a36246940fccecf89ebae"
+    },
+    "test_audit_rules.py": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\scripts\\test_audit_rules.py",
+      "sha256": "cceea2695058834535183bd1c32aa7f16af33c92b889b8c507636549bd11fe65"
+    }
+  },
+  "raw_files": {
+    "PMC12412326.xml": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\raw\\PMC12412326.xml",
+      "sha256": "4ef8b76e12b7bfa76c1099ef050353ac58b7e69f000a9ebac8cda0ec0c3dfdd5"
+    },
+    "PMC13216044.xml": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\raw\\PMC13216044.xml",
+      "sha256": "135f73d7a5b149685fb4f747a7df7ffec4c6dae4f5008fc01817d33b280a5cd3"
+    },
+    "PMC13436381.xml": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\raw\\PMC13436381.xml",
+      "sha256": "38334a539d63c34d76cf469122edccc0911725f06e31fc6d91b08fa0ddc889c0"
+    },
+    "PMC13510277.xml": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\raw\\PMC13510277.xml",
+      "sha256": "4e865d5a6663e5154f580bd961a81bf8242cf7770bb410ed66598f13154fdbab"
+    },
+    "PMC13515218.xml": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\raw\\PMC13515218.xml",
+      "sha256": "23e6d1445afb8d3e9cd37e96897b6b89de9b8b3101116a023317d485d988b63d"
+    }
+  },
+  "outputs": {
+    "assay_observations.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\assay_observations.csv",
+      "sha256": "24513037ae08e3f339174df9c8829b5bb33749cf81338e497de1b10c19237ab0"
+    },
+    "candidate_similarity.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\candidate_similarity.csv",
+      "sha256": "b2a90673d186b9ce9ff3dbb7f855aaecb046efbfa9f65bc4fe69daf157e3694d"
+    },
+    "conflicts.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\conflicts.csv",
+      "sha256": "51dfe6f02af853462b54d4cbaebd17cd82b34ebdfe2d7812a460ea11e3d52a37"
+    },
+    "derived_labels.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\derived_labels.csv",
+      "sha256": "f84a4b4ad431d4459fcd0ef951321258077443b84f36ae874b6a5f41ec4f5c6f"
+    },
+    "eligible_external_candidates.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\eligible_external_candidates.csv",
+      "sha256": "7eb70257593da06f682a3ddda54a9d260d4fc514f645237f5ca74b08f8da61a6"
+    },
+    "excluded_or_pending.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\excluded_or_pending.csv",
+      "sha256": "6a9c6ed08eabb43d4fcbba98ad91f8653a23b0e35e12d3c7400a487c88cbd363"
+    },
+    "external_candidate_decisions.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\external_candidate_decisions.csv",
+      "sha256": "6b5053424b76a1d80ad3473e6226fdbeccee22adff138b94d5344af7ea64d0b7"
+    },
+    "hc50_verified_pool.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\hc50_verified_pool.csv",
+      "sha256": "6737b3b4869865f01026dd7df3f8a5161b144ed4d1a9d90a6f7edfa670f97e84"
+    },
+    "historical_exposure.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\historical_exposure.csv",
+      "sha256": "d2e461f3c0e2b2ce4f8bd167493c2500662e85400ae0a27be6dc947b352c2ee3"
+    },
+    "molecule_review.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\molecule_review.csv",
+      "sha256": "e782449b8ba7b5d53f8266473a63f80150488a5522aa4c135b9e16ab44afe24b"
+    },
+    "search_log.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\search_log.csv",
+      "sha256": "80919f5160837ce15327ec088f289c1e57d552db6926aed6bb69c1361d2a260d"
+    },
+    "similarity_to_development.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\similarity_to_development.csv",
+      "sha256": "69796da76ab31ab96c3bb113af9b1ec1d47d83e04fe067a878eb1a9a21a1db5c"
+    },
+    "source_manifest.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\source_manifest.csv",
+      "sha256": "b5faebf1a6a236caa12b820206361c06d6018bf85e9dc4f2f36d7de2d3a24988"
+    },
+    "study_aliases.csv": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\study_aliases.csv",
+      "sha256": "4555c37bfeb79998f2f3815f1c94db5420efc792560eb8c8fc09616d8cc77c49"
+    },
+    "audit_summary.json": {
+      "path": "03_experiments\\audits\\gemini_hc50_external_review_20261004_v1\\audit_summary.json",
+      "sha256": "5f69dcefdeddd687fbcb2add6e5014c0fb60cbcf2490268b9dcada813e62ac66"
+    }
+  }
+}

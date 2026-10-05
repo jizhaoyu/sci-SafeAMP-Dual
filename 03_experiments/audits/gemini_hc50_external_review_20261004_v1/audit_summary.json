@@ -1,0 +1,59 @@
+{
+  "status": "blocked",
+  "generated_at": "2026-10-04T12:13:01.448955+00:00",
+  "protocol_id": "protocol-amd-02",
+  "audit_protocol_id": "protocol-amd-03",
+  "review_method": "agent_primary_source_review",
+  "formal_state_modified": false,
+  "model_fit_calls": 0,
+  "inputs": {
+    "development_records": {
+      "path": "03_experiments\\prepared\\amd02_evidence_clean_20261001\\records.csv",
+      "sha256": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+      "total_records": 417
+    },
+    "historical_candidates": {
+      "path": "03_experiments\\audits\\dramp_dual_task_primary_audit_20261003_v1\\candidate_primary_audit.csv",
+      "sha256": "238bcddfa569687b2740314e56476a5b9ae84cdb3e6af97bbd87acaaae98e672",
+      "total_records": 39
+    }
+  },
+  "counts": {
+    "total_candidates_evaluated": 83,
+    "unique_sequences": 76,
+    "total_assay_observations": 166,
+    "unique_primary_studies": 47,
+    "pool_a_human_rbc_hc50_verified_molecules": 1,
+    "pool_a_molecules_missing_paired_mic": 0,
+    "pool_b_dual_task_candidates_evaluated": 83,
+    "pool_b_eligible_candidates": 0,
+    "pool_b_homology_isolation_failed_molecules": 26,
+    "pool_b_homology_isolation_passed_molecules": 57,
+    "pool_b_connected_components": 0
+  },
+  "gate_results": {
+    "gate_1_chemical_identity_and_linear_unmodified": {
+      "passed": 40,
+      "failed": 43
+    },
+    "gate_2_dual_endpoint_threshold_resolvability": {
+      "passed": 0,
+      "failed": 83
+    },
+    "gate_3_all_member_homology_isolation_cutoff_0_40": {
+      "passed": 57,
+      "failed": 26
+    },
+    "gate_4_study_independence": {
+      "passed": 80,
+      "failed": 3
+    }
+  },
+  "final_blocker_reasons": [
+    "Pool B eligible count is 0: No candidate satisfies all four gates (linear unmodified monomer, paired quantitative E. coli MIC & human RBC HC50 with resolved binary labels, study independence, and all-member NW identity < 0.40 against all 417 development records).",
+    "C-terminal amidation (Rink amide resin synthesis) and disulfide loop topologies (Rana box, defensins, cyclotides) disqualify majority of dual-activity peptide literature.",
+    "Historical DRAMP candidates lack quantitative HC50 (report single-concentration % hemolysis or qualitative activity) and report MBC rather than microdilution MIC.",
+    "39 DBAASP candidate records lack primary literature verification and remain pending_primary_article_review.",
+    "Formal dual-task status remains blocked."
+  ]
+}

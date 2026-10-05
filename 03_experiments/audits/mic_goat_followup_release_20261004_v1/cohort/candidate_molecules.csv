@@ -1,0 +1,18 @@
+﻿sample_id,seq,amp,record_ids,source_datasets,study_ids,review_component,component
+3e656d2ae8d48ae33078fcd4,PRLPRIPRLPRYPRYPRWPRHPT,0,"[""DBAASP:18059""]",DBAASP,pmid:33790103,5,0
+cf6ae302bad088280f27436e,PRYPRWPRHPT,0,"[""DBAASP:18063""]",DBAASP,pmid:33790103,5,0
+0bad315d1aa3eae62114431b,RLPRYPRYPRWPRHPT,0,"[""DBAASP:18062""]",DBAASP,pmid:33790103,5,0
+ed685c495abdd9ecc7e33057,GFLKKVGKKLEGASDLTRDATIQTIAVAQAAANVAATAKQG,0,"[""PMID32344933:EtCec3-OH""]",original_primary_article,doi:10.3390/microorganisms8050626|pmid:32344933,4,6
+16032d07b187aa447eea3ada,GNNRPVYIPRPRPPHPRL,1,"[""PMID35735615:Api801""]",original_primary_article,doi:10.3390/cimb44060174|pmid:35735615,5,0
+8a7ea548dccd036db56d8c94,GNNRPIYIPRPRPPHPRPIRV,1,"[""PMID35735615:Api805""]",original_primary_article,doi:10.3390/cimb44060174|pmid:35735615,5,0
+f74052fb265151ecb406d09f,MNNRPIYIPRPRPPHPAL,0,"[""PMID35735615:Api810""]",original_primary_article,doi:10.3390/cimb44060174|pmid:35735615,5,0
+30d336eea06d769ed6f05aad,GLFDIVKKVVGAIGSL,0,"[""DOI10.1016.j.bbamem.2010.11.025:Aurein2.3-COOH""]",original_primary_source,doi:10.1016/j.bbamem.2010.11.025,2,3
+d109526ef5b890b80697cd3c,KLALKLALKALKAALKLA,0,"[""KIT1000012217:MAP-COOH""]",original_primary_source,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,3,5
+e76bde35dfd8fa7886701176,KIAGKIAKIAGKIAKIAGKIA,1,"[""KIT1000012217:MSI-103-COOH""]",original_primary_source,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,3,5
+b6caa1581eac8732cdb884da,GMASKAGAIAGKIAKVALKAL,0,"[""KIT1000012217:PGLa-COOH""]",original_primary_source,doi:10.1351/pac200779040717|doi:10.5445/IR/1000012217|kit:1000012217,3,5
+22092d5d5213faf8a6e05acc,GGGRWRWRWKKKKK,0,"[""PMC8203924:2, G3(RW)3K5""]",original_primary_source,doi:10.3389/fmicb.2021.624465|pmid:34140932,0,1
+2b0ec81407d11aecb6cba260,VRRFPWWWPFLRR,1,"[""PMC3782441:Tritrpticin""]",original_primary_source,doi:10.1371/journal.pone.0075582|pmid:24086578,1,2
+c40ac96f1bb92d284d5fb9fc,GGGKKKKKRWRWRW,0,"[""PMC8203924:1, G3K5(RW)3""]",original_primary_source,doi:10.3389/fmicb.2021.624465|pmid:34140932,0,1
+d8c1766a857b483a3880c7df,YHDRPPPRPFKH,0,"[""PMC3782441:12PhD1""]",original_primary_source,doi:10.1371/journal.pone.0075582|pmid:24086578,1,2
+5445b7b645f69b6d7f8abdf3,GRFKRLRKKLKKLFKKLSPVIPLLHLG,1,"[""bmap2025:Figure1:CREC6""]",original_primary_article,doi:10.1002/mlf2.70020|pmid:40600060|pmcid:PMC12207908,,4
+a03b75fcf1934661d3cbc793,GRFKRFRKKLKRLWHKVGPFVGPILHY,1,"[""goat2018:mention:0"", ""goat2018:mention:1"", ""goat2018:mention:6"", ""goat2018:mention:7"", ""goat2018:mention:12"", ""goat2018:mention:14"", ""goat2018:mention:16"", ""goat2018:mention:18"", ""goat2018:mention:20"", ""goat2018:mention:22"", ""goat2018:mention:24"", ""goat2018:mention:26"", ""goat2018:mention:28"", ""goat2018:mention:30"", ""goat2018:mention:32"", ""goat2018:mention:33"", ""goat2018:mention:38"", ""goat2018:mention:39"", ""goat2018:mention:44""]",original_primary_article,doi:10.3389/fmicb.2018.02983|pmid:30555455|pmcid:PMC6284057,,4

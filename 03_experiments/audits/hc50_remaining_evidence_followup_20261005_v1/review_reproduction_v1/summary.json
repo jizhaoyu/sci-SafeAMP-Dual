@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-10-05T04:00:21.367045+00:00",
+  "data_version": "hc50_remaining_evidence_followup_20261005_v1",
+  "protocol_id": "protocol-amd-02",
+  "historical_records": 78,
+  "current_screened_scope_records": 41,
+  "archived_unavailable_original_records": 37,
+  "archived_37_search_restarted": false,
+  "gap_triage_records": 32,
+  "source_followup_records": 17,
+  "new_known_form_exclusions": 2,
+  "remaining_evidence_followup_records": 30,
+  "current_scope_decision_counts": {
+    "current_source_insufficient_for_dual_release": 22,
+    "pending": 8,
+    "excluded_by_known_molecular_form": 11
+  },
+  "historical_decision_counts": {
+    "current_source_insufficient_for_dual_release": 22,
+    "pending": 8,
+    "excluded_from_current_scope_original_unavailable": 37,
+    "excluded_by_known_molecular_form": 11
+  },
+  "network_requests": 6,
+  "usable_slay_supplement_pdfs_added": 0,
+  "plp_rbc_species_confirmed": false,
+  "numeric_human_hc50_added": 0,
+  "formal_external_released": 0,
+  "formal_scientific_status": "blocked",
+  "training_state_changed": false,
+  "model_fit_calls": 0,
+  "independent_human_review": false,
+  "review_mode": "agent original JATS review and public access follow-up; no independent human review"
+}

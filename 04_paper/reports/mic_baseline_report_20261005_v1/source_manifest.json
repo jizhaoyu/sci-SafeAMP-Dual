@@ -1,0 +1,230 @@
+{
+  "schema_version": "1.0",
+  "human_verification_pending": true,
+  "sources": [
+    {
+      "evidence_id": "E001",
+      "title": "project_delivery_status.json",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\audits\\project_closeout_20261005_v1\\review\\project_delivery_status.json",
+      "sha256": "cad243f41eeead1abf3dc168ec3fa5d6c9114adfaeddb399783eb8b0d8eb99d4",
+      "locator": "本批结案状态；全部字段",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E002",
+      "title": "mic_training_readiness_20261004_v26.json",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\audits\\mic_training_readiness_20261004_v26.json",
+      "sha256": "404e9d90166564ec9c7543022853ae694dabc9022d913fa5d8e10f3b842a2da1",
+      "locator": "MIC v26；全部字段",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E003",
+      "title": "protocol.json",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\protocol.json",
+      "sha256": "1767c85507d85e7a2ce0cbbeb99a6f352a52ffabd544b184f180b994e55955b7",
+      "locator": "冻结协议；标签、比对、模型、环境、时间与探索声明",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E004",
+      "title": "candidate_molecules.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\cohort\\candidate_molecules.csv",
+      "sha256": "c61beb5ff8ef92375c9eb5f164896f306906c1ff24424a1ec876e6f71a8d2655",
+      "locator": "17 行；sample_id、amp、study_ids、component",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E005",
+      "title": "fold_roles.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\cohort\\fold_roles.csv",
+      "sha256": "2caadf2eb0ea5252de2ddbc80f48f303424ff36db7c7cce9481037e4fc02430f",
+      "locator": "全部折角色；训练/验证及类别",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E006",
+      "title": "pooled_descriptive_metrics.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\run\\pooled_descriptive_metrics.csv",
+      "sha256": "efb59376bfdf13b78a2492824928ec7df64166a7a879fc14b68ec47ca8b3c00f",
+      "locator": "三个模型全部合并指标及计数",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E007",
+      "title": "fold_metrics.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\run\\fold_metrics.csv",
+      "sha256": "c7f6840b469a8d832a7d7636b24c0af8ed330ba4720f09864deafa3b3f855e4f",
+      "locator": "九个折模型全部指标及计数",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E008",
+      "title": "independent_partition_validation.json",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\release\\independent_partition_validation.json",
+      "sha256": "babaae184b5195406f20daa28498b04e7fcaf64c0ccc35090b99a6e485567019",
+      "locator": "全员隔离、标签冲突及代理复核范围",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E009",
+      "title": "summary.json",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\audits\\project_closeout_20261005_v1\\delivery_check\\summary.json",
+      "sha256": "dc46989ad9ca63eb75ffe7b636c235f6c3b8818f1e022aa6194c083bdfbf712d",
+      "locator": "已有工作区外运行验收；时间、摘要、9 模型、51 OOF、fit=0",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E010",
+      "title": "train_mic_baselines.py",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\evidence\\workspace_sources\\02_code\\train_mic_baselines.py",
+      "sha256": "456f8517c919b8e31426782f317fe3e0a8030407ffaf92b5461932a5389cb3dd",
+      "locator": "compute_metrics；AP、AUROC、阈值与其他指标实现",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E011",
+      "title": "feature_extractor.py",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\evidence\\workspace_sources\\02_code\\feature_extractor.py",
+      "sha256": "cd0f8d7318f88ecb4f8e53bb1d0c44a3b286fed9c0380b06de5101c77f4b82e4",
+      "locator": "extract_handcrafted_features 及三个手工特征函数",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E012",
+      "title": "source_index.json",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\evidence\\source_index.json",
+      "sha256": "9478c0ec980e88d16b4a2c3f94fdbb989e06e4d67e42b44837177d047db4115f",
+      "locator": "sources；原文定位、别名及限制；包含方法文献",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E013",
+      "title": "molecule_evidence_review.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\evidence\\molecule_evidence_review.csv",
+      "sha256": "27e932bc3f63a9202b2cd63bd96b1bd4fc975d0ffd38910e91eb21e08b802820",
+      "locator": "分子身份及准入审查",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E014",
+      "title": "candidate_observations.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\cohort\\candidate_observations.csv",
+      "sha256": "87da51eaa7133e51b932352f6faee8b88beac4493e6bcb4ca8a6efb3f432aaef",
+      "locator": "42 条表述；原值、单位、对象、条件、标签与来源",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E015",
+      "title": "merged_candidate_decisions.csv",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\audits\\project_closeout_20261005_v1\\review\\merged_candidate_decisions.csv",
+      "sha256": "f5bcd275fd7a15ae88705553ba47a9d9f97ad026085d58e51909b5fdfb1f5c99",
+      "locator": "78 条最终决定；30/11/37，非生物学标签",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    },
+    {
+      "evidence_id": "E016",
+      "title": "LICENSE_NOTICE.md",
+      "source_type": "local_frozen_research_artifact",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\deliveries\\mic_baseline_20261004_v1\\LICENSE_NOTICE.md",
+      "sha256": "8182d1db7cfed094afffec01980e761491e78d45d8274492f3d776d6c6029bb0",
+      "locator": "本地交接及逐项许可限制",
+      "verification": {
+        "status": "unverified_by_accountable_human",
+        "source_opened_by_agent": true,
+        "verified_by": null,
+        "verified_on": null
+      }
+    }
+  ]
+}
