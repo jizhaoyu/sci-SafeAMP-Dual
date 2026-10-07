@@ -28,6 +28,8 @@ class SlidingWindowRateLimiter:
             self.limits = {
                 "/api/ai_report": (6, 60),
                 "/api/ai_optimize": (6, 60),
+                "/api/llm/test_connection": (6, 60),
+                "/api/dti/optimize_lead": (6, 60),
                 "/api/predict_batch": (30, 60),
                 "/api/batch_jobs": (30, 60),
                 "/api/": (120, 60),

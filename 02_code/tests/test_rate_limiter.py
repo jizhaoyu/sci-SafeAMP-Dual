@@ -56,3 +56,16 @@ def test_rate_limiter_separate_ips_and_tiers():
 
     # IP 1 still has quota for general API
     assert limiter.check_rate_limit("1.1.1.1", "/api/predict_batch")[0] is True
+
+
+def test_optimize_lead_route_is_strictly_rate_limited():
+    limiter = SlidingWindowRateLimiter()
+    for _ in range(6):
+        allowed, _, _, limit = limiter.check_rate_limit("1.2.3.4", "/api/dti/optimize_lead")
+        assert allowed is True
+        assert limit == 6
+    allowed, remaining, retry_after, limit = limiter.check_rate_limit("1.2.3.4", "/api/dti/optimize_lead")
+    assert allowed is False
+    assert remaining == 0
+    assert retry_after > 0
+    assert limit == 6
