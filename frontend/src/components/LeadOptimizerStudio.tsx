@@ -11,10 +11,7 @@ import {
   Check, 
   PlusCircle, 
   Cpu, 
-  Layers, 
-  ShieldCheck, 
   AlertCircle, 
-  FileText, 
   Compass, 
   Zap,
   Info

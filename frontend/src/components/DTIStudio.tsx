@@ -1,35 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { 
   ShieldCheck, 
-  Target, 
-  Database, 
-  Cpu, 
-  TrendingUp, 
   CheckCircle2, 
   AlertCircle, 
   Sparkles, 
-  Layers, 
-  Info,
-  ChevronRight,
-  FlaskConical,
-  BarChart3,
-  Dna
+  FlaskConical, 
+  BarChart3
 } from 'lucide-react';
 import { 
-  fetchDTIStatus, 
   fetchDTIDrugs, 
   fetchDTITargets, 
   predictDTIAffinity, 
   profileKinasePanel,
   type DTIDrug, 
   type DTITarget, 
-  type DTIStatus, 
   type DTIPredictionResult,
   type KinomeProfileItem
 } from '../api/dtiClient';
 
 export default function DTIStudio() {
-  const [status, setStatus] = useState<DTIStatus | null>(null);
   const [drugs, setDrugs] = useState<DTIDrug[]>([]);
   const [targets, setTargets] = useState<DTITarget[]>([]);
   
@@ -49,8 +38,6 @@ export default function DTIStudio() {
   const [activeTab, setActiveTab] = useState<'predict' | 'profiling' | 'leaderboard'>('predict');
 
   useEffect(() => {
-    fetchDTIStatus().then(setStatus).catch(err => console.error('Status fetch error:', err));
-    
     fetchDTIDrugs().then(data => {
       setDrugs(data);
       if (data.length > 0) {
