@@ -33,4 +33,8 @@ Pre-flight: Phase 1 tasks defined and executed.
   - Tests: `02_code/tests/test_kinase_conformation_adapter.py` (4/4 PASSED)
   - Features: 药物结合模式分类 (Type I / Type II / Covalent)、激酶活化环 DFG 翻转热力学重组能估算、诱导契合结合自由能补偿 (解析 BCR-ABL 对比 EGFR 选择性机制)。
 
-Status: Phase 1 & Phase 2 Complete and Verified. Ready for Phase 3.
+- [x] Task 3.1: MM-GBSA 热力学粗粒度物理引擎与微扰修正器 (`02_code/thermodynamic_physics_engine.py`)
+  - Tests: `02_code/tests/test_thermodynamic_physics_engine.py` (3/3 PASSED)
+  - Features: 第一性原理结合自由能分解 (MM + GB + SA - T*Delta_S)、环感知可旋转键构象熵惩罚、Still 广义玻恩极性溶剂化与疏水表面脱溶剂化能、物理 Delta-Learning 校准。
+
+Status: Phase 1 & Phase 2 Complete; Phase 3 in progress (Task 3.1 done).
