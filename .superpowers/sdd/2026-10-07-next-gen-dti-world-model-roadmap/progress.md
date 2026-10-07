@@ -37,4 +37,8 @@ Pre-flight: Phase 1 tasks defined and executed.
   - Tests: `02_code/tests/test_thermodynamic_physics_engine.py` (3/3 PASSED)
   - Features: 第一性原理结合自由能分解 (MM + GB + SA - T*Delta_S)、环感知可旋转键构象熵惩罚、Still 广义玻恩极性溶剂化与疏水表面脱溶剂化能、物理 Delta-Learning 校准。
 
-Status: Phase 1 & Phase 2 Complete; Phase 3 in progress (Task 3.1 done).
+- [x] Task 3.2: 基于集成方差的主动学习推荐引擎 (`02_code/active_learning_recommender.py`)
+  - Tests: `02_code/tests/test_active_learning_recommender.py` (2/2 PASSED)
+  - Features: 贝叶斯获取函数 (Expected Improvement, UCB, Max Uncertainty)、四象限探索与利用分类、湿实验高信息增益验证分子清单自动导出。
+
+Status: All 3 Phases Complete and Fully Verified (24/24 Tests Passed, Check MIC Exit 0, Frontend 0 Errors).
