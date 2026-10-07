@@ -29,4 +29,8 @@ Pre-flight: Phase 1 tasks defined and executed.
   - Tests: `02_code/tests/test_equivariant_pocket_matcher.py` (5/5 PASSED)
   - Features: RBF 连续距离展开、软化 Lennard-Jones 位阻势能、铰链区定向氢键几何匹配、EGFR T790M 耐药突变空间位阻敏化、Kabsch 3-点唯一取向刚体对齐、PyTorch `EquivariantPocketMatcherNN`。
 
-Status: Phase 1 Complete; Phase 2 in progress (Tasks 2.1 & 2.2 done).
+- [x] Task 2.3: 激酶 DFG 构象翻转自适应与诱导契合打分模块 (`02_code/kinase_conformation_adapter.py`)
+  - Tests: `02_code/tests/test_kinase_conformation_adapter.py` (4/4 PASSED)
+  - Features: 药物结合模式分类 (Type I / Type II / Covalent)、激酶活化环 DFG 翻转热力学重组能估算、诱导契合结合自由能补偿 (解析 BCR-ABL 对比 EGFR 选择性机制)。
+
+Status: Phase 1 & Phase 2 Complete and Verified. Ready for Phase 3.
