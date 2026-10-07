@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Settings, X, Key, Sliders, ShieldAlert, Check, RotateCcw, Eye, EyeOff } from 'lucide-react';
 import { useAppStore } from '../store/useAppStore';
+import { ModelConnectionTest } from './ModelConnectionTest';
 
 interface Props {
   isOpen: boolean;
@@ -36,6 +37,10 @@ const PROVIDER_PRESETS: Record<string, { apiBase: string; modelName: string; lab
 };
 
 export function SettingsModal({ isOpen, onClose }: Props) {
+  return isOpen ? <SettingsDialog onClose={onClose} /> : null;
+}
+
+function SettingsDialog({ onClose }: Pick<Props, 'onClose'>) {
   const {
     llmProvider,
     apiKey,
@@ -52,10 +57,12 @@ export function SettingsModal({ isOpen, onClose }: Props) {
   const [temp, setTemp] = useState(temperature ?? 0.0);
   const [showKey, setShowKey] = useState(false);
   const [savedSuccess, setSavedSuccess] = useState(false);
-
-  if (!isOpen) return null;
+  const [configRevision, setConfigRevision] = useState(0);
+  const saveTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  useEffect(() => () => { if (saveTimer.current) clearTimeout(saveTimer.current); }, []);
 
   const handleProviderChange = (newProvider: string) => {
+    setConfigRevision((value) => value + 1);
     setProvider(newProvider);
     const preset = PROVIDER_PRESETS[newProvider];
     if (preset && newProvider !== 'custom') {
@@ -73,26 +80,20 @@ export function SettingsModal({ isOpen, onClose }: Props) {
       temperature: temp,
     });
     setSavedSuccess(true);
-    setTimeout(() => {
+    saveTimer.current = setTimeout(() => {
       setSavedSuccess(false);
       onClose();
     }, 600);
   };
 
   const handleReset = () => {
+    setConfigRevision((value) => value + 1);
     const defaultPreset = PROVIDER_PRESETS['deepseek'];
     setProvider('deepseek');
     setKey('');
     setBase(defaultPreset.apiBase);
     setModel(defaultPreset.modelName);
     setTemp(0.0);
-    setLLMConfig({
-      llmProvider: 'deepseek',
-      apiKey: '',
-      apiBase: defaultPreset.apiBase,
-      modelName: defaultPreset.modelName,
-      temperature: 0.0,
-    });
   };
 
   return (
@@ -107,6 +108,7 @@ export function SettingsModal({ isOpen, onClose }: Props) {
           </div>
           <button
             onClick={onClose}
+            aria-label="关闭配置中心"
             className="text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 p-1 rounded-md transition-colors"
           >
             <X size={18} />
@@ -123,7 +125,7 @@ export function SettingsModal({ isOpen, onClose }: Props) {
               <span>科研安全与确定性规范 (Research Provenance & Isolation)</span>
             </div>
             <p className="leading-relaxed">
-              SafeAMP-Dual 报告工坊优先采用本地确定性算法（Evidence-Bounded Local Engine）以确保科研可重复性与序列防泄露。设置外部大模型仅用于辅助报告文本生成，生物物理打分与突变筛选严格由本地 ESM-2 驱动。
+              科研报告接口仍采用本地证据约束流程，并独立检查模型门禁。当前外部大模型配置仅用于中性连接测试，尚未接入研究报告生成；连接成功不会解除研究阻断。
             </p>
           </div>
 
@@ -131,6 +133,7 @@ export function SettingsModal({ isOpen, onClose }: Props) {
           <div className="space-y-1.5">
             <label className="lab-label">大模型服务提供商 (LLM Provider)</label>
             <select
+              aria-label="大模型服务提供商"
               value={provider}
               onChange={(e) => handleProviderChange(e.target.value)}
               className="lab-input text-xs"
@@ -148,8 +151,9 @@ export function SettingsModal({ isOpen, onClose }: Props) {
             <label className="lab-label">模型标识 (Model Identifier)</label>
             <input
               type="text"
+              aria-label="模型标识"
               value={model}
-              onChange={(e) => setModel(e.target.value)}
+              onChange={(e) => { setModel(e.target.value); setConfigRevision((value) => value + 1); }}
               placeholder="例如 deepseek-chat 或 gpt-4o"
               className="lab-input font-mono text-xs"
             />
@@ -160,8 +164,9 @@ export function SettingsModal({ isOpen, onClose }: Props) {
             <label className="lab-label">接口服务地址 (API Base URL)</label>
             <input
               type="text"
+              aria-label="接口服务地址"
               value={base}
-              onChange={(e) => setBase(e.target.value)}
+              onChange={(e) => { setBase(e.target.value); setConfigRevision((value) => value + 1); }}
               placeholder="https://api.deepseek.com/v1"
               className="lab-input font-mono text-xs"
             />
@@ -185,15 +190,18 @@ export function SettingsModal({ isOpen, onClose }: Props) {
             </div>
             <input
               type={showKey ? 'text' : 'password'}
+              aria-label="API 访问凭证"
               value={key}
-              onChange={(e) => setKey(e.target.value)}
+              onChange={(e) => { setKey(e.target.value); setConfigRevision((value) => value + 1); }}
               placeholder="sk-..."
               className="lab-input font-mono text-xs"
             />
             <p className="text-[11px] text-slate-400">
-              凭证仅保存在浏览器本地会话与客户端缓存中，不上传至公共网络。
+              凭证仅保存在当前页面内存，不写入浏览器持久缓存；刷新页面后需重新填写。点击连接测试会将其发送给对应官方服务商。
             </p>
           </div>
+
+          <ModelConnectionTest key={configRevision} provider={provider} apiKey={key} base={base} model={model} />
 
           {/* Temperature Slider */}
           <div className="space-y-2 pt-2 border-t border-slate-100 dark:border-slate-800">
@@ -203,7 +211,7 @@ export function SettingsModal({ isOpen, onClose }: Props) {
                 <span>采样温度 (Temperature): {temp.toFixed(1)}</span>
               </label>
               <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
-                {temp === 0.0 ? '0.0 (确定性输出)' : temp < 0.5 ? '低发散度' : '高探索度'}
+                {temp === 0.0 ? '0.0 (低随机性)' : temp < 0.5 ? '低发散度' : '高探索度'}
               </span>
             </div>
             <input
@@ -220,6 +228,7 @@ export function SettingsModal({ isOpen, onClose }: Props) {
               <span>0.5 (平衡)</span>
               <span>1.0 (高度多样化)</span>
             </div>
+            <p className="text-[11px] text-slate-400">此参数为保存配置；连接测试固定使用温度 0，不受此滑块影响。</p>
           </div>
 
         </div>
@@ -245,6 +254,7 @@ export function SettingsModal({ isOpen, onClose }: Props) {
             <button
               type="button"
               onClick={handleSave}
+              disabled={savedSuccess}
               className="btn-lab-primary text-xs px-4 py-1.5 flex items-center gap-1.5"
             >
               {savedSuccess ? <Check size={14} /> : null}

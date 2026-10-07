@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import { apiClient, errorMessage, submitBatchJob, getBatchJob, cancelBatchJob, type BatchJobResponse } from '../api/client';
 import { useAppStore } from '../store/useAppStore';
+import { useResearchStatus } from '../api/researchStatus';
+import { Link } from 'react-router-dom';
 
 type Mode = 'screening' | 'evolution' | 'report';
 type Residue = { pos: number; aa: string; hydrophobicity: number; charge: number };
@@ -36,6 +38,7 @@ const statusConfig: Record<string, { label: string; badgeClass: string }> = {
 
 export default function ResearchStudio({ mode }: { mode: Mode }) {
   const { activeSequence, addToCart } = useAppStore();
+  const modelStatus = useResearchStatus();
   const [input, setInput] = useState(activeSequence);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState('');
@@ -85,6 +88,10 @@ export default function ResearchStudio({ mode }: { mode: Mode }) {
   }
 
   async function run() {
+    if (!modelStatus.ready) {
+      setError(modelStatus.message);
+      return;
+    }
     stopPolling();
     setError('');
     setScores([]);
@@ -217,6 +224,18 @@ export default function ResearchStudio({ mode }: { mode: Mode }) {
     <div className="flex flex-col gap-5">
       <h2 className="text-xl font-bold">{titles[mode]}</h2>
 
+      {!modelStatus.ready && <section id="dual-task-readiness" role="status" className="lab-panel p-4 border-amber-200 dark:border-amber-900 bg-amber-50/60 dark:bg-amber-950/20 text-sm space-y-2">
+        <p className="font-semibold text-amber-900 dark:text-amber-200">{modelStatus.label}</p>
+        <p>{modelStatus.message}</p>
+        <p className="text-xs text-slate-600 dark:text-slate-400">DeepSeek 连接测试单独验证文本接口；这里的双任务模型需要同时支持 MIC 与 HC50。已完成的 MIC 单任务基线与此流程分别交付。</p>
+        <div className="flex flex-wrap items-center gap-3 text-xs">
+          <button type="button" className="btn-lab-secondary disabled:opacity-50" disabled={modelStatus.isFetching} onClick={() => { void modelStatus.refetch(); }}>
+            {modelStatus.isFetching ? '检查中…' : '重新检查模型状态'}
+          </button>
+          <Link to="/wheel" className="text-blue-700 dark:text-blue-300 underline">使用理化图示</Link>
+        </div>
+      </section>}
+
       <div className="lab-panel p-4 text-sm space-y-2">
         <p>适用范围：10–50 个标准氨基酸、未修饰序列。抗菌端点为大肠杆菌 MIC；溶血端点为人红细胞 HC50。</p>
         <p>概率对应预定义实验标签，不是杀菌率或临床安全性。排序分数 P(amp) × (1 − P(hemo)) 不代表治疗窗口。</p>
@@ -255,11 +274,12 @@ export default function ResearchStudio({ mode }: { mode: Mode }) {
 
         <div className="flex items-center gap-3">
           <button
-            className="btn-lab-primary px-4 py-2 disabled:opacity-50"
-            disabled={pending}
+            className="btn-lab-primary px-4 py-2 disabled:opacity-50 disabled:cursor-not-allowed"
+            disabled={pending || !modelStatus.ready}
+            aria-describedby={!modelStatus.ready ? 'dual-task-readiness' : undefined}
             onClick={run}
           >
-            {pending ? '处理中…' : '运行' + titles[mode]}
+            {pending ? '处理中…' : !modelStatus.ready ? modelStatus.label : '运行' + titles[mode]}
           </button>
         </div>
 

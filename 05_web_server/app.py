@@ -14,7 +14,9 @@ def favicon():
     return Response(status_code=204)
 
 @app.get('/')
+@app.get('/dti')
 @app.get('/evolution')
+@app.get('/amp-screening')
 @app.get('/wheel')
 @app.get('/report')
 def index_page():

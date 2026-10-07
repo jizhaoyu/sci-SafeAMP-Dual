@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, NavLink, Outlet, useLocation } from 'react-router-dom';
-import { QueryClient, QueryClientProvider, useQuery } from '@tanstack/react-query';
-import { apiClient } from './api/client';
-import { Activity, Beaker, Dna, FileBarChart, Settings, ShoppingCart, Zap, Sun, Moon } from 'lucide-react';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { useResearchStatus } from './api/researchStatus';
+import { Beaker, Dna, FileBarChart, Settings, ShoppingCart, Zap, Sun, Moon, FlaskConical, Sparkles } from 'lucide-react';
 import { useAppStore } from './store/useAppStore';
 
+import DTIStudioPage from './pages/DTIStudioPage';
 import ScreeningStudio from './pages/ScreeningStudio';
 import EvolutionStudio from './pages/EvolutionStudio';
 import HelicalWheelStudio from './pages/HelicalWheelStudio';
@@ -40,8 +41,8 @@ const GlobalHeader = ({
   openCart: () => void; 
 }) => {
   const { cart } = useAppStore();
-  const status = useQuery({ queryKey: ['research-status'], queryFn: async () => (await apiClient.get('/api/system_status')).data, refetchInterval: 30000, retry: false });
-  const ready = status.data?.status === 'healthy';
+  const status = useResearchStatus();
+  const ready = status.ready;
 
   return (
     <header className="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-xs border-b border-slate-200 dark:border-slate-800 px-6 py-2.5">
@@ -54,20 +55,20 @@ const GlobalHeader = ({
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">SafeAMP-Dual Research</h1>
+              <h1 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">SafeAMP-Dual & DTI Research</h1>
               <span className="text-[10px] bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 px-1.5 py-0.2 rounded font-mono font-medium">
-                v4.0.0
+                v4.2.0
               </span>
             </div>
             <p className="text-[10px] text-slate-400 dark:text-slate-500 font-mono tracking-wider uppercase">
-              计算生物学与抗微生物肽工程实验工作台
+              计算生物学 · 药物—靶标亲和力预测 (DAVIS) 与多肽工程工作台
             </p>
           </div>
         </div>
 
         {/* System Online Badges */}
-        <div role="status" className={'text-xs px-2 py-1 rounded border ' + (ready ? 'text-emerald-700 border-emerald-500' : 'text-amber-700 border-amber-500')} title={status.data?.reason ?? ''}>
-          {status.isPending ? '检查模型状态…' : ready ? '研究模型已通过运行校验' : '研究模型不可用'}
+        <div role="status" className={'text-xs px-2 py-1 rounded border ' + (ready ? 'text-emerald-700 border-emerald-500' : 'text-amber-700 border-amber-500')} title={ready ? status.label : status.message}>
+          {status.label}
         </div>
 
         {/* Global Action Tools */}
@@ -139,10 +140,11 @@ const Layout = () => {
       {/* Main Studio Navigation Bar */}
       <div className="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-7xl mx-auto px-6 py-1.5 flex items-center gap-2 overflow-x-auto">
-          <NavTab to="/" icon={Beaker} label="1. 高通量协同筛选" isActive={location.pathname === '/'} />
-          <NavTab to="/evolution" icon={Activity} label="2. 探索性突变排序" isActive={location.pathname === '/evolution'} />
-          <NavTab to="/wheel" icon={Zap} label="3. 螺旋轮与两亲投影" isActive={location.pathname === '/wheel'} />
-          <NavTab to="/report" icon={FileBarChart} label="4. 科研报告与导出" isActive={location.pathname === '/report'} />
+          <NavTab to="/" icon={FlaskConical} label="1. DTI 激酶亲和力预测 (DAVIS 基准)" isActive={location.pathname === '/' || location.pathname === '/dti'} />
+          <NavTab to="/evolution" icon={Sparkles} label="2. AI 分子智能改构与进化 (Lead Optimizer)" isActive={location.pathname === '/evolution'} />
+          <NavTab to="/amp-screening" icon={Beaker} label="3. 抗菌肽协同筛选 (历史原型)" isActive={location.pathname === '/amp-screening'} />
+          <NavTab to="/wheel" icon={Zap} label="4. 螺旋轮与两亲投影" isActive={location.pathname === '/wheel'} />
+          <NavTab to="/report" icon={FileBarChart} label="5. 科研报告与导出" isActive={location.pathname === '/report'} />
         </div>
       </div>
 
@@ -156,7 +158,7 @@ const Layout = () => {
       
       {/* Scientific Lab Footer */}
       <footer className="border-t border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 py-3 text-center text-[11px] text-slate-400 font-mono">
-        SafeAMP-Dual · Computational research prototype · No clinical validation
+        SafeAMP-Dual & DTI · Computational research prototype · No clinical validation
       </footer>
     </div>
   );
@@ -168,7 +170,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<ScreeningStudio />} />
+            <Route index element={<DTIStudioPage />} />
+            <Route path="dti" element={<DTIStudioPage />} />
+            <Route path="amp-screening" element={<ScreeningStudio />} />
             <Route path="evolution" element={<EvolutionStudio />} />
             <Route path="wheel" element={<HelicalWheelStudio />} />
             <Route path="report" element={<ReportStudio />} />

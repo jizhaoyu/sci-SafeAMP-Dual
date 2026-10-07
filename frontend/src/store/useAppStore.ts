@@ -1,4 +1,4 @@
-import { create } from 'zustand';
+﻿import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 
 export interface CartPeptide {
@@ -11,6 +11,7 @@ export interface CartPeptide {
   is_short?: boolean;
   addedAt: string;
   run_id?: string;
+  item_type?: 'peptide' | 'small_molecule';
 }
 
 interface AppState {
@@ -70,13 +71,12 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: 'safeamp-lab-workspace-v3',
-      version: 4,
+      version: 5,
       partialize: (state) => ({
         activeSequence: state.activeSequence,
         activePeptideName: state.activePeptideName,
         cart: state.cart,
         llmProvider: state.llmProvider,
-        apiKey: state.apiKey,
         apiBase: state.apiBase,
         modelName: state.modelName,
         temperature: state.temperature,
@@ -86,11 +86,12 @@ export const useAppStore = create<AppState>()(
         activePeptideName: state?.activePeptideName ?? '',
         cart: (Array.isArray(state?.cart) ? state.cart : []) as CartPeptide[],
         llmProvider: state?.llmProvider ?? 'deepseek',
-        apiKey: state?.apiKey ?? '',
         apiBase: state?.apiBase ?? 'https://api.deepseek.com/v1',
         modelName: state?.modelName ?? 'deepseek-chat',
         temperature: state?.temperature ?? 0.0,
       }),
+      // Also discard credentials in a cache already carrying version 5.
+      merge: (persisted, current) => ({ ...current, ...(persisted as Partial<AppState>), apiKey: '' }),
     }
   )
 );

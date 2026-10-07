@@ -1,2 +1,5 @@
-import ResearchStudio from '../components/ResearchStudio';
-export default function EvolutionStudio() { return <ResearchStudio mode="evolution" />; }
+import LeadOptimizerStudio from '../components/LeadOptimizerStudio';
+
+export default function EvolutionStudio() {
+  return <LeadOptimizerStudio />;
+}

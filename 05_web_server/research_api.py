@@ -1,4 +1,5 @@
 """Research endpoints. Missing validated evidence is an explicit HTTP 503."""
+import json
 import os
 from pathlib import Path
 import sys
@@ -18,11 +19,14 @@ from batch_task_manager import BatchTaskManager
 from audit_logger import AuditLogMiddleware
 from rate_limiter import SlidingWindowRateLimiter
 from feature_cache import SequenceFeatureCache
+from llm_connection import check_connection, ConnectionCheckError
+from starlette.concurrency import run_in_threadpool
+from dti_endpoints import router as dti_router
 
 SERVER_START_TIME = time.time()
 rate_limiter = SlidingWindowRateLimiter()
 
-app=FastAPI(title='SafeAMP-Dual research prototype',version='4.1.0')
+app=FastAPI(title='SafeAMP-Dual & DTI research prototype',version='4.2.0')
 app.add_middleware(
     CORSMiddleware,
     allow_origins=['*'],
@@ -31,6 +35,7 @@ app.add_middleware(
     allow_headers=['*'],
 )
 app.add_middleware(AuditLogMiddleware)
+app.include_router(dti_router)
 
 @app.middleware("http")
 async def rate_limit_middleware(request: Request, call_next):
@@ -64,6 +69,24 @@ async def rate_limit_middleware(request: Request, call_next):
 
 runtime=ResearchRuntime(os.environ.get('SAFEAMP_RUN_DIR'))
 batch_manager=BatchTaskManager(max_workers=2)
+
+@app.post('/api/llm/test_connection')
+async def api_llm_test_connection(request: Request):
+    # Manual decoding keeps FastAPI validation errors from echoing credentials.
+    body = bytearray()
+    async for chunk in request.stream():
+        if len(body) + len(chunk) > 8192:
+            return JSONResponse(status_code=413, content={'code': 'CONFIG_TOO_LARGE', 'message': '配置请求过大。'}, headers={'Cache-Control': 'no-store'})
+        body.extend(chunk)
+    try:
+        data = json.loads(body)
+    except (ValueError, UnicodeError):
+        return JSONResponse(status_code=422, content={'code': 'INVALID_CONFIG', 'message': '配置必须为合法 JSON。'}, headers={'Cache-Control': 'no-store'})
+    try:
+        result = await run_in_threadpool(check_connection, data)
+        return JSONResponse(content=result, headers={'Cache-Control': 'no-store'})
+    except ConnectionCheckError as exc:
+        return JSONResponse(status_code=exc.status, content={'code': exc.code, 'message': exc.message}, headers={'Cache-Control': 'no-store'})
 
 class SequenceRequest(BaseModel):
     sequence: str=Field(min_length=3,max_length=4096)
@@ -101,14 +124,21 @@ def api_health():
     return {
         "status": "healthy",
         "service": "SafeAMP-Dual-Backend",
-        "version": "4.1.0",
+        "version": "4.2.0",
         "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
         "checks": {
             "api_gateway": "ok",
             "process": "alive",
             "feature_cache": "ready",
             "batch_manager": "ready" if batch_manager else "offline",
+            "dti_runtime": "ready",
         },
+        "dti_benchmark": {
+            "protocol": "protocol-dti-01",
+            "benchmark": "DAVIS Kinome",
+            "models": ["dummy_mean", "ridge", "hist_gradient_boosting", "mlp"],
+            "status": "ready"
+        }
     }
 
 @app.get('/api/ready')
@@ -146,7 +176,7 @@ def api_metrics():
 
     return {
         "service": "SafeAMP-Dual",
-        "version": "4.1.0",
+        "version": "4.2.0",
         "uptime_seconds": round(time.time() - SERVER_START_TIME, 2),
         "feature_cache": stats,
         "batch_jobs": {

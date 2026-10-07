@@ -19,7 +19,7 @@ export function errorMessage(error: unknown): string {
   const detail = error.response?.data?.detail;
   if (typeof detail === 'string') return detail;
   if (Array.isArray(detail)) return detail.map(item => item.msg ?? '输入不合法').join('; ');
-  if (detail?.code === 'MODEL_NOT_VALIDATED') return '模型不可用：' + detail.message;
+  if (detail?.code === 'MODEL_NOT_VALIDATED') return '双任务模型未就绪：运行产物尚未完成配置或未通过校验，请重新检查模型状态。';
   return detail?.message ?? error.message ?? '请求失败';
 }
 
@@ -49,4 +49,3 @@ export async function cancelBatchJob(jobId: string): Promise<{ job_id: string; s
   const res = await apiClient.delete(`/api/batch_jobs/${jobId}`);
   return res.data;
 }
-
