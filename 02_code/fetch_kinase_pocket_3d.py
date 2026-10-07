@@ -60,7 +60,7 @@ class Ligand3DModel:
     bonds: List[Tuple[int, int, int]]
 
 
-def model_kinase_pocket_3d(sequence: str, dfg_conformation: str = "dfg_in") -> Pocket3DModel:
+def model_kinase_pocket_3d(sequence: str, dfg_conformation: str = "dfg_in", gatekeeper_override: Optional[str] = None) -> Pocket3DModel:
     """
     Construct canonical 3D Cartesian coordinates for the ATP-binding cleft of a kinase.
     Based on structural biology geometry of catalytic protein kinase domains.
@@ -88,9 +88,20 @@ def model_kinase_pocket_3d(sequence: str, dfg_conformation: str = "dfg_in") -> P
 
     # 2. Gatekeeper residue (controls access to hydrophobic back pocket)
     gk_pos = max(0, hinge_pos - 3)
-    gk_res = clean_seq[gk_pos] if gk_pos < length else "T"
+    gk_res = gatekeeper_override if gatekeeper_override else (clean_seq[gk_pos] if gk_pos < length else "T")
     pocket_atoms.append(PocketAtom(gk_res, "CA", "C", -2.5, 3.2, -1.0, VDW_RADII['C'], 0.0, is_gatekeeper=True))
     pocket_atoms.append(PocketAtom(gk_res, "CB", "C", -3.2, 4.2, -1.8, VDW_RADII['C'], 0.0, is_gatekeeper=True))
+    if gk_res == 'M': # Bulky Met sidechain pointing towards binding cavity (e.g. T790M resistance)
+        pocket_atoms.append(PocketAtom(gk_res, "CG", "C", -2.2, 3.8, -2.4, VDW_RADII['C'], 0.0, is_gatekeeper=True))
+        pocket_atoms.append(PocketAtom(gk_res, "SD", "S", -1.1, 3.0, -1.5, VDW_RADII['S'], -0.1, is_gatekeeper=True))
+        pocket_atoms.append(PocketAtom(gk_res, "CE", "C", -0.4, 3.5, -0.1, VDW_RADII['C'], 0.0, is_gatekeeper=True))
+    elif gk_res in ('F', 'Y'):
+        pocket_atoms.append(PocketAtom(gk_res, "CG", "C", -2.4, 4.5, -2.5, VDW_RADII['C'], 0.0, is_gatekeeper=True))
+        pocket_atoms.append(PocketAtom(gk_res, "CD1", "C", -1.2, 4.1, -1.8, VDW_RADII['C'], 0.0, is_gatekeeper=True))
+        pocket_atoms.append(PocketAtom(gk_res, "CZ", "C", -0.6, 3.2, -1.0, VDW_RADII['C'], 0.0, is_gatekeeper=True))
+    elif gk_res == 'T':
+        pocket_atoms.append(PocketAtom(gk_res, "OG1", "O", -3.8, 3.4, -2.6, VDW_RADII['O'], -0.5, is_gatekeeper=True))
+        pocket_atoms.append(PocketAtom(gk_res, "CG2", "C", -4.2, 5.0, -1.2, VDW_RADII['C'], 0.0, is_gatekeeper=True))
 
     # 3. Catalytic Lysine (from VAIK motif)
     lys_res = "K"

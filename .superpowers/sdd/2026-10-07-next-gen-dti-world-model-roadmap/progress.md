@@ -25,4 +25,8 @@ Pre-flight: Phase 1 tasks defined and executed.
   - Tests: `02_code/tests/test_kinase_pocket_3d.py` (2/2 PASSED)
   - Features: Classical Multidimensional Scaling + Distance Geometry relaxation for 3D coordinates, kinase pocket atom extraction.
 
-Status: Phase 1 Complete; Phase 2 in progress (Task 2.1 done).
+- [x] Task 2.2: SE(3) 等变几何图匹配网络 (`02_code/equivariant_pocket_matcher.py`)
+  - Tests: `02_code/tests/test_equivariant_pocket_matcher.py` (5/5 PASSED)
+  - Features: RBF 连续距离展开、软化 Lennard-Jones 位阻势能、铰链区定向氢键几何匹配、EGFR T790M 耐药突变空间位阻敏化、Kabsch 3-点唯一取向刚体对齐、PyTorch `EquivariantPocketMatcherNN`。
+
+Status: Phase 1 Complete; Phase 2 in progress (Tasks 2.1 & 2.2 done).
