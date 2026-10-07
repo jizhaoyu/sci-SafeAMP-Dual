@@ -101,6 +101,21 @@ class DTIInferenceRuntime:
                         if k not in self.metrics_summary:
                             self.metrics_summary[k] = v
 
+        # Also load world-model enhanced models if available
+        wm_run_dir = self.root / "03_experiments/runs/dti_davis_worldmodel_20261008_v1"
+        if wm_run_dir.exists():
+            wm_models_dir = wm_run_dir / "models"
+            p = wm_models_dir / "worldmodel_stacked_ensemble.joblib"
+            if p.exists():
+                self.models["worldmodel_stacked_ensemble"] = joblib.load(p)
+            wm_metrics_file = wm_run_dir / "metrics_summary.json"
+            if wm_metrics_file.exists():
+                with wm_metrics_file.open("r", encoding="utf-8") as f:
+                    wm_summary = json.load(f)
+                    for k, v in wm_summary.get("models", {}).items():
+                        if k not in self.metrics_summary:
+                            self.metrics_summary[k] = v
+
         # Load common drug titles if available
         drug_names_file = self.features_dir / "drug_names.json"
         drug_names = {}
@@ -278,8 +293,12 @@ class DTIInferenceRuntime:
         clean_seq = "".join(target_sequence.split()).upper()
 
         # Feature extraction dynamically matching model architecture
+        is_worldmodel = (model_name == "worldmodel_stacked_ensemble")
         is_enhanced_model = (model_name in ["stacked_ensemble", "ridge_alpha10"])
-        if is_enhanced_model:
+        if is_worldmodel:
+            from extract_worldmodel_features import extract_worldmodel_pair_features
+            X = extract_worldmodel_pair_features(drug_smiles, clean_seq).reshape(1, -1)
+        elif is_enhanced_model:
             d_feat = extract_enhanced_drug_features(drug_smiles)
             t_feat = extract_enhanced_kinase_features(clean_seq)
             X = np.concatenate([d_feat, t_feat], axis=0).reshape(1, -1).astype(np.float32)
