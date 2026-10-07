@@ -87,7 +87,7 @@ export async function fetchDTITargets(): Promise<DTITarget[]> {
 export async function predictDTIAffinity(
   drug_smiles: string,
   target_sequence: string,
-  model_name: string = 'ridge'
+  model_name: string = 'stacked_ensemble'
 ): Promise<DTIPredictionResult> {
   const res = await fetch('/api/dti/predict', {
     method: 'POST',
@@ -103,7 +103,7 @@ export async function predictDTIAffinity(
 
 export async function profileKinasePanel(
   drug_smiles: string,
-  model_name: string = 'ridge'
+  model_name: string = 'stacked_ensemble'
 ): Promise<KinomeProfileItem[]> {
   const res = await fetch('/api/dti/profile_panel', {
     method: 'POST',

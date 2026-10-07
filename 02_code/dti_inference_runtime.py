@@ -200,7 +200,7 @@ class DTIInferenceRuntime:
             "status": "ready" if len(self.models) > 0 else "uninitialized",
             "protocol_id": self.protocol.get("protocol_id", "protocol-dti-01"),
             "models_available": list(self.models.keys()),
-            "default_model": "ridge",
+            "default_model": "stacked_ensemble" if "stacked_ensemble" in self.models else "ridge",
             "num_drugs": len(self.drugs),
             "num_targets": len(self.targets),
             "total_benchmark_pairs": 25772,
@@ -269,10 +269,10 @@ class DTIInferenceRuntime:
 
         return domain, max_d_sim, max_t_sim
 
-    def predict(self, drug_smiles: str, target_sequence: str, model_name: str = "ridge") -> dict:
+    def predict(self, drug_smiles: str, target_sequence: str, model_name: str = "stacked_ensemble") -> dict:
         self.load()
         if model_name not in self.models:
-            model_name = "ridge"
+            model_name = "stacked_ensemble" if "stacked_ensemble" in self.models else "ridge"
 
         model = self.models[model_name]
         clean_seq = "".join(target_sequence.split()).upper()
@@ -347,7 +347,7 @@ class DTIInferenceRuntime:
             "warning": "本预测由 DAVIS 冻结基准模型生成，供学术科研探索参考，非临床试验或医疗给药依据。"
         }
 
-    def profile_kinase_panel(self, drug_smiles: str, model_name: str = "ridge") -> List[dict]:
+    def profile_kinase_panel(self, drug_smiles: str, model_name: str = "stacked_ensemble") -> List[dict]:
         """Screen input molecule across the 16-kinase diversity panel to establish selectivity profile."""
         self.load()
         results = []
