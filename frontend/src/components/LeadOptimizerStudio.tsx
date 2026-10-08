@@ -20,7 +20,10 @@ import {
   HelpCircle,
   Box,
   Palette,
-  ShieldCheck
+  ShieldCheck,
+  FileText,
+  RefreshCw,
+  CheckCircle2
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
@@ -28,13 +31,19 @@ import {
   optimizeLeadMolecule,
   evaluateActiveLearning,
   fetchADMETProperties,
+  generateWetlabDispatch,
+  fetchAcademicReport,
+  submitWetlabFeedback,
   type DTIDrug, 
   type DTITarget, 
   type DTIOptimizeResult,
   type CandidateDerivative,
   type ActiveLearningReport,
   type ActiveLearningCandidate,
-  type ADMETProperties
+  type ADMETProperties,
+  type WetlabDispatchResult,
+  type AcademicReportResult,
+  type WetlabFeedbackResult
 } from '../api/dtiClient';
 import { useAppStore } from '../store/useAppStore';
 import { computeDrugLikeness, computeQuickSAScore } from '../utils/cheminformatics';
@@ -42,6 +51,8 @@ import { Molecule2DViewer } from './Molecule2DViewer';
 import { KinasePocketViewer3D } from './KinasePocketViewer3D';
 import { MoleculeSketcherModal } from './MoleculeSketcherModal';
 import { ADMETRadarModal } from './ADMETRadarModal';
+import { WetlabDispatchModal } from './WetlabDispatchModal';
+import { AcademicReportModal } from './AcademicReportModal';
 
 const PRESET_EXAMPLES = [
   {
@@ -134,6 +145,93 @@ export default function LeadOptimizerStudio() {
       console.error('Failed to load ADMET:', err);
     } finally {
       setAdmetLoading(false);
+    }
+  };
+
+  // Wet-lab Dispatch Modal
+  const [dispatchModalOpen, setDispatchModalOpen] = useState(false);
+  const [dispatchResult, setDispatchResult] = useState<WetlabDispatchResult | null>(null);
+  const [dispatchLoading, setDispatchLoading] = useState(false);
+
+  const handleOpenDispatch = async () => {
+    if (!optimizeResult) return;
+    setDispatchModalOpen(true);
+    setDispatchLoading(true);
+    try {
+      const res = await generateWetlabDispatch({
+        target_name: optimizeResult.target_name,
+        baseline: optimizeResult.baseline,
+        candidates: optimizeResult.candidates
+      });
+      setDispatchResult(res);
+    } catch (err) {
+      console.error('Failed to generate wetlab dispatch:', err);
+    } finally {
+      setDispatchLoading(false);
+    }
+  };
+
+  // Academic Report Modal
+  const [reportModalOpen, setReportModalOpen] = useState(false);
+  const [reportData, setReportData] = useState<AcademicReportResult | null>(null);
+  const [reportLoading, setReportLoading] = useState(false);
+
+  const handleOpenReport = async () => {
+    if (!optimizeResult) return;
+    setReportModalOpen(true);
+    setReportLoading(true);
+    try {
+      const res = await fetchAcademicReport({
+        target_name: optimizeResult.target_name,
+        baseline: optimizeResult.baseline,
+        candidates: optimizeResult.candidates,
+        active_learning: activeLearningReport
+      });
+      setReportData(res);
+    } catch (err) {
+      console.error('Failed to generate academic report:', err);
+    } finally {
+      setReportLoading(false);
+    }
+  };
+
+  // Wet-lab Feedback Calibration State
+  const [feedbackSubmitting, setFeedbackSubmitting] = useState(false);
+  const [feedbackResult, setFeedbackResult] = useState<WetlabFeedbackResult | null>(null);
+  const [inputMeasuredKd, setInputMeasuredKd] = useState<string>('12.5');
+  const [showFeedbackPanel, setShowFeedbackPanel] = useState(false);
+
+  const handleSubmitFeedback = async (targetCandSmiles?: string, targetCandName?: string) => {
+    if (!optimizeResult || !optimizeResult.candidates.length) return;
+    const kdVal = parseFloat(inputMeasuredKd);
+    if (isNaN(kdVal) || kdVal <= 0) return;
+
+    setFeedbackSubmitting(true);
+    const targetSmiles = targetCandSmiles || optimizeResult.candidates[0].smiles;
+    const targetName = targetCandName || optimizeResult.candidates[0].name;
+
+    try {
+      const res = await submitWetlabFeedback({
+        target_name: optimizeResult.target_name,
+        candidates: optimizeResult.candidates,
+        measurements: [{
+          name: targetName,
+          smiles: targetSmiles,
+          measured_kd_nM: kdVal,
+          notes: 'Wet-lab in vitro assay feedback'
+        }],
+        y_best_reference: optimizeResult.baseline.predicted_pkd
+      });
+      setFeedbackResult(res);
+      // Update optimizeResult candidates with calibrated ones
+      setOptimizeResult({
+        ...optimizeResult,
+        candidates: res.calibrated_candidates
+      });
+    } catch (err) {
+      console.error('Failed to submit wet-lab feedback:', err);
+    } finally {
+      setFeedbackSubmitting(false);
     }
   };
 
@@ -803,27 +901,115 @@ export default function LeadOptimizerStudio() {
               </button>
             </div>
 
-            {resultViewTab === 'active_learning' && activeLearningReport && (
-              <div className="flex items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setShowFeedbackPanel(!showFeedbackPanel)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring transition-colors ${
+                  showFeedbackPanel 
+                    ? 'bg-indigo-600 text-white' 
+                    : 'bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100'
+                }`}
+              >
+                <RefreshCw size={13} className={feedbackResult ? 'text-emerald-400' : ''} />
+                <span>{feedbackResult ? '已完成湿法校准' : '湿实验数据回流'}</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleOpenDispatch}
+                className="px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring transition-colors"
+                title="生成并导出 96 孔板布局与液体处理机 (Echo/Tecan) 清单"
+              >
+                <Grid size={13} />
+                <span>96 孔板投产清单</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleOpenReport}
+                className="px-3 py-1.5 rounded-lg bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring transition-colors"
+                title="生成学术研究报告全文及马库什专利通式交底书"
+              >
+                <FileText size={13} />
+                <span>生成学术交付报告</span>
+              </button>
+              {resultViewTab === 'active_learning' && activeLearningReport && (
+                <>
+                  <button
+                    type="button"
+                    onClick={handleExportActiveLearningCSV}
+                    className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring"
+                  >
+                    <Download size={13} />
+                    <span>导出验证清单 (CSV)</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleCopyMarkdownReport}
+                    className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring"
+                  >
+                    {copiedReport ? <Check size={13} className="text-emerald-500" /> : <Copy size={13} />}
+                    <span>{copiedReport ? '已复制报告' : '复制学术总结'}</span>
+                  </button>
+                </>
+              )}
+            </div>
+          </div>
+
+          {/* 湿实验实测数据回流与模型重校准面板 */}
+          {showFeedbackPanel && (
+            <div className="p-4 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/40 dark:bg-slate-900/80 space-y-3 animate-in fade-in duration-200">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2">
+                  <RefreshCw size={15} className={`text-indigo-600 ${feedbackSubmitting ? 'animate-spin' : ''}`} />
+                  <h4 className="text-xs font-bold text-slate-900 dark:text-slate-100">
+                    湿实验生化测定数据回流与先导物局部空间经验贝叶斯重校准
+                  </h4>
+                </div>
                 <button
                   type="button"
-                  onClick={handleExportActiveLearningCSV}
-                  className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring"
+                  onClick={() => setShowFeedbackPanel(false)}
+                  className="text-xs text-slate-400 hover:text-slate-600 cursor-pointer"
                 >
-                  <Download size={13} />
-                  <span>导出验证清单 (CSV)</span>
-                </button>
-                <button
-                  type="button"
-                  onClick={handleCopyMarkdownReport}
-                  className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring"
-                >
-                  {copiedReport ? <Check size={13} className="text-emerald-500" /> : <Copy size={13} />}
-                  <span>{copiedReport ? '已复制报告' : '复制学术总结'}</span>
+                  收起
                 </button>
               </div>
-            )}
-          </div>
+              <div className="flex flex-wrap items-center gap-3 text-xs">
+                <span className="text-slate-600 dark:text-slate-300">
+                  选定实测分子: <strong className="text-slate-900 dark:text-slate-100">{optimizeResult.candidates[0]?.name}</strong>
+                </span>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-slate-500">实测 Kd (nM):</span>
+                  <input
+                    type="number"
+                    step="0.1"
+                    value={inputMeasuredKd}
+                    onChange={e => setInputMeasuredKd(e.target.value)}
+                    className="w-24 px-2 py-1 bg-white dark:bg-slate-800 border border-slate-300 dark:border-slate-700 rounded text-xs font-mono text-slate-900 dark:text-slate-100"
+                  />
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setInputMeasuredKd('12.0')}
+                  className="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 dark:hover:bg-slate-600 text-slate-700 dark:text-slate-200 text-[11px] font-medium transition-colors cursor-pointer"
+                >
+                  填入模拟实测 12.0 nM
+                </button>
+                <button
+                  type="button"
+                  onClick={() => handleSubmitFeedback()}
+                  disabled={feedbackSubmitting}
+                  className="px-3.5 py-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-lg text-xs shadow-xs flex items-center gap-1.5 transition-colors cursor-pointer focus-ring"
+                >
+                  {feedbackSubmitting ? '正在贝叶斯重校准...' : '提交实测数据并重排阶梯榜'}
+                </button>
+              </div>
+              {feedbackResult && (
+                <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-[11px] text-emerald-800 dark:text-emerald-200 font-medium leading-relaxed">
+                  ✓ {feedbackResult.narrative}
+                </div>
+              )}
+            </div>
+          )}
 
           {/* TAB 1: 候选分子改构阶梯呈现列表 */}
           {resultViewTab === 'ladder' && (
@@ -869,6 +1055,16 @@ export default function LeadOptimizerStudio() {
                             <span className="text-[10px] px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
                               {cand.modification_type}
                             </span>
+                            {cand.is_experimentally_verified && (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-600 text-white font-bold flex items-center gap-1 shadow-2xs">
+                                <CheckCircle2 size={11} /> 湿实验已测定 (Verified)
+                              </span>
+                            )}
+                            {cand.rank_shift !== undefined && cand.rank_shift > 0 && (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-bold flex items-center gap-0.5 font-mono">
+                                ↑ 排名上升 {cand.rank_shift} 位
+                              </span>
+                            )}
                             {isBest && (
                               <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-semibold flex items-center gap-1">
                                 <Sparkles size={11} /> 最优演进方案
@@ -977,13 +1173,27 @@ export default function LeadOptimizerStudio() {
                         {/* 3. 右侧：定量指标与亲和力增益 */}
                         <div className="flex lg:flex-col items-center lg:items-end justify-between lg:justify-center border-t lg:border-t-0 lg:border-l border-slate-100 dark:border-slate-800 pt-3 lg:pt-0 lg:pl-4 min-w-[150px]">
                           <div className="text-left lg:text-right">
-                            <span className="text-[10px] text-slate-400 uppercase font-mono block">预测定量 pKd</span>
-                            <span className="text-xl font-bold font-mono text-slate-900 dark:text-slate-100">
-                              {cand.predicted_pkd}
-                            </span>
-                            <span className="block text-xs font-mono text-slate-500">
-                              Kd: <strong>{cand.predicted_kd_nM} nM</strong>
-                            </span>
+                            {cand.calibrated_pkd !== undefined ? (
+                              <>
+                                <span className="text-[10px] text-indigo-500 uppercase font-mono block font-bold">贝叶斯校准 pKd</span>
+                                <span className="text-xl font-black font-mono text-indigo-600 dark:text-indigo-400">
+                                  {cand.calibrated_pkd}
+                                </span>
+                                <span className="block text-xs font-mono text-slate-500">
+                                  Kd: <strong>{cand.calibrated_kd_nM} nM</strong> (原 {cand.predicted_pkd})
+                                </span>
+                              </>
+                            ) : (
+                              <>
+                                <span className="text-[10px] text-slate-400 uppercase font-mono block">预测定量 pKd</span>
+                                <span className="text-xl font-bold font-mono text-slate-900 dark:text-slate-100">
+                                  {cand.predicted_pkd}
+                                </span>
+                                <span className="block text-xs font-mono text-slate-500">
+                                  Kd: <strong>{cand.predicted_kd_nM} nM</strong>
+                                </span>
+                              </>
+                            )}
                           </div>
 
                           <div className="text-right mt-2">
@@ -1228,6 +1438,22 @@ export default function LeadOptimizerStudio() {
         admet={currentAdmet}
         moleculeName={currentAdmetName}
         loading={admetLoading}
+      />
+
+      {/* 湿实验 96 孔板投产清单与移液规程模态框 */}
+      <WetlabDispatchModal
+        isOpen={dispatchModalOpen}
+        onClose={() => setDispatchModalOpen(false)}
+        dispatchResult={dispatchResult}
+        loading={dispatchLoading}
+      />
+
+      {/* 学术交付评估报告与专利交底书生成模态框 */}
+      <AcademicReportModal
+        isOpen={reportModalOpen}
+        onClose={() => setReportModalOpen(false)}
+        reportData={reportData}
+        loading={reportLoading}
       />
     </div>
   );

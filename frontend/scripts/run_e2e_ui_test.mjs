@@ -290,6 +290,62 @@ async function runE2EUIAutomation() {
       await page.waitForTimeout(400);
     }
 
+    // Test 96-Well Wetlab Dispatch Modal
+    console.log('  Testing 96-Well Wetlab Dispatch Modal...');
+    const dispatchBtn = page.locator('button', { hasText: '96 孔板投产清单' }).first();
+    if (await dispatchBtn.isVisible()) {
+      await dispatchBtn.click();
+      await page.waitForTimeout(700);
+      const dispatchModalTitle = page.locator('text=湿实验 96 孔板投产清单与移液规程').first();
+      await dispatchModalTitle.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  Wetlab Dispatch Modal rendered!');
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '13_wetlab_96_well_dispatch.png') });
+      console.log('  Screenshot saved: 13_wetlab_96_well_dispatch.png');
+
+      const closeDispatch = page.locator('button', { hasText: '完成查看' }).first();
+      await closeDispatch.click();
+      await page.waitForTimeout(400);
+    }
+
+    // Test Academic Research Report Modal
+    console.log('  Testing Academic Report Modal...');
+    const reportBtn = page.locator('button', { hasText: '生成学术交付报告' }).first();
+    if (await reportBtn.isVisible()) {
+      await reportBtn.click();
+      await page.waitForTimeout(800);
+      const reportModalTitle = page.locator('text=学术交付评估报告与专利交底书生成器').first();
+      await reportModalTitle.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  Academic Report Modal rendered!');
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '14_academic_research_report.png') });
+      console.log('  Screenshot saved: 14_academic_research_report.png');
+
+      const closeReport = page.locator('button', { hasText: '完成查看' }).first();
+      await closeReport.click();
+      await page.waitForTimeout(400);
+    }
+
+    // Test Wet-lab Feedback Calibration Loop
+    console.log('  Testing Wet-lab Feedback Calibration Loop...');
+    const feedbackToggleBtn = page.locator('button', { hasText: '湿实验数据回流' }).first();
+    if (await feedbackToggleBtn.isVisible()) {
+      await feedbackToggleBtn.click();
+      await page.waitForTimeout(400);
+      const fillDemoBtn = page.locator('button', { hasText: '填入模拟实测 12.0 nM' }).first();
+      if (await fillDemoBtn.isVisible()) {
+        await fillDemoBtn.click();
+        await page.waitForTimeout(300);
+      }
+      const submitFeedbackBtn = page.locator('button', { hasText: '提交实测数据并重排阶梯榜' }).first();
+      await submitFeedbackBtn.click();
+      await page.waitForTimeout(1500);
+
+      const feedbackSuccessBanner = page.locator('text=成功闭环回流').first();
+      await feedbackSuccessBanner.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  Empirical Bayes feedback calibration verified!');
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '15_wetlab_feedback_calibrated.png') });
+      console.log('  Screenshot saved: 15_wetlab_feedback_calibrated.png');
+    }
+
     // Switch to Active Learning Matrix Tab
     const alTabBtn = page.locator('button', { hasText: '贝叶斯主动学习探索/利用矩阵' }).first();
     await alTabBtn.click();

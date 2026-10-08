@@ -2,7 +2,7 @@
 import logging
 import sys
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Dict, Any
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
@@ -358,6 +358,81 @@ def predict_dti_admet(req: ADMETRequest):
     except Exception as exc:
         logger.exception("Failed to predict ADMET properties")
         raise HTTPException(status_code=422, detail=f"ADMET成药性解算失败: {str(exc)}") from exc
+
+
+class DTIWetlabDispatchRequest(BaseModel):
+    target_name: str = Field("Target Kinase", max_length=100)
+    baseline: Dict[str, Any]
+    candidates: List[Dict[str, Any]]
+    plate_barcode: Optional[str] = None
+
+
+@router.post("/wetlab_dispatch")
+def generate_wetlab_dispatch_plate(req: DTIWetlabDispatchRequest):
+    """Generate 96-well microplate layout, priority tiers, liquid-handling controls, and CSV manifest."""
+    try:
+        from wetlab_dispatch_generator import generate_96_well_dispatch
+        return generate_96_well_dispatch(
+            target_name=req.target_name,
+            baseline=req.baseline,
+            candidates=req.candidates,
+            plate_barcode=req.plate_barcode
+        )
+    except Exception as exc:
+        logger.exception("Failed to generate wetlab dispatch plate")
+        raise HTTPException(status_code=422, detail=f"96孔板投产清单解算失败: {str(exc)}") from exc
+
+
+class DTIAcademicReportRequest(BaseModel):
+    target_name: str = Field("Target Kinase", max_length=100)
+    baseline: Dict[str, Any]
+    candidates: List[Dict[str, Any]]
+    biophysics: Optional[Dict[str, Any]] = None
+    admet: Optional[Dict[str, Any]] = None
+    active_learning: Optional[Dict[str, Any]] = None
+    author: Optional[str] = "SafeAMP-Dual BioAI Laboratory"
+
+
+@router.post("/academic_report")
+def generate_dti_report(req: DTIAcademicReportRequest):
+    """Generate comprehensive academic research brief and patent disclosure in Markdown and printable HTML."""
+    try:
+        from dti_report_generator import generate_dti_academic_report
+        return generate_dti_academic_report(
+            target_name=req.target_name,
+            baseline=req.baseline,
+            candidates=req.candidates,
+            biophysics=req.biophysics,
+            admet=req.admet,
+            active_learning=req.active_learning,
+            author=req.author or "SafeAMP-Dual BioAI Laboratory"
+        )
+    except Exception as exc:
+        logger.exception("Failed to generate academic report")
+        raise HTTPException(status_code=422, detail=f"学术报告解算生成失败: {str(exc)}") from exc
+
+
+class DTIWetlabFeedbackRequest(BaseModel):
+    target_name: str = Field("Target Kinase", max_length=100)
+    candidates: List[Dict[str, Any]]
+    measurements: List[Dict[str, Any]]
+    y_best_reference: Optional[float] = 7.50
+
+
+@router.post("/wetlab_feedback")
+def calibrate_wetlab_feedback(req: DTIWetlabFeedbackRequest):
+    """Recalibrate predictions, shrink uncertainties, and re-rank candidates with wet-lab experimental feedback."""
+    try:
+        from wetlab_feedback_calibrator import calibrate_with_wetlab_feedback
+        return calibrate_with_wetlab_feedback(
+            target_name=req.target_name,
+            candidates=req.candidates,
+            measurements=req.measurements,
+            y_best_reference=req.y_best_reference or 7.50
+        )
+    except Exception as exc:
+        logger.exception("Failed to calibrate wetlab feedback")
+        raise HTTPException(status_code=422, detail=f"湿实验实测反馈校准失败: {str(exc)}") from exc
 
 
 

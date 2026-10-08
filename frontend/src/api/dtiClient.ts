@@ -173,6 +173,15 @@ export interface CandidateDerivative {
   sa_label?: string;
   sa_color?: string;
   admet?: ADMETProperties;
+  uncertainty_sigma?: number;
+  calibrated_pkd?: number;
+  calibrated_kd_nM?: number;
+  delta_calibration?: number;
+  calibrated_uncertainty_sigma?: number;
+  calibrated_ei?: number;
+  calibrated_ucb?: number;
+  is_experimentally_verified?: boolean;
+  rank_shift?: number;
 }
 
 export interface DTIOptimizeResult {
@@ -384,6 +393,139 @@ export async function fetchADMETProperties(drug_smiles: string): Promise<ADMETPr
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: 'Network error' }));
     throw new Error(err.detail || 'ADMET 属性预测解算失败');
+  }
+  return res.json();
+}
+
+export interface WetlabDispatchWell {
+  plate_barcode: string;
+  well_id: string;
+  row: string;
+  col: number;
+  compound_id: string;
+  compound_name: string;
+  smiles: string;
+  target_name: string;
+  compound_type: 'positive_control' | 'candidate_derivative' | 'negative_control' | string;
+  priority_tier: string;
+  priority_color: 'emerald' | 'blue' | 'amber' | 'slate' | string;
+  predicted_pkd: number;
+  predicted_kd_nM: number;
+  delta_pkd?: number;
+  sa_score: number;
+  sa_tier: string;
+  admet_health_score: number;
+  herg_risk: string;
+  solubility_logs: number;
+  stock_solvent: string;
+  stock_concentration: string;
+  stock_volume_ul: number;
+  recommended_assay_top_uM: number;
+  dilution_series: string;
+}
+
+export interface WetlabDispatchResult {
+  plate_barcode: string;
+  target_name: string;
+  total_wells: number;
+  candidates_count: number;
+  tier1_count: number;
+  tier2_count: number;
+  tier3_count: number;
+  average_sa_score: number;
+  average_admet_health: number;
+  wells: WetlabDispatchWell[];
+  csv_content: string;
+}
+
+export async function generateWetlabDispatch(params: {
+  target_name: string;
+  baseline: any;
+  candidates: any[];
+  plate_barcode?: string;
+}): Promise<WetlabDispatchResult> {
+  const res = await fetch('/api/dti/wetlab_dispatch', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || '生成 96 孔板投产清单失败');
+  }
+  return res.json();
+}
+
+export interface AcademicReportResult {
+  markdown_report: string;
+  html_report: string;
+  target_name: string;
+  generated_at: string;
+}
+
+export async function fetchAcademicReport(params: {
+  target_name: string;
+  baseline: any;
+  candidates: any[];
+  biophysics?: any;
+  admet?: any;
+  active_learning?: any;
+  author?: string;
+}): Promise<AcademicReportResult> {
+  const res = await fetch('/api/dti/academic_report', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || '生成学术报告失败');
+  }
+  return res.json();
+}
+
+export interface WetlabMeasurement {
+  name?: string;
+  smiles: string;
+  measured_kd_nM: number;
+  measured_pkd?: number;
+  notes?: string;
+}
+
+export interface WetlabFeedbackResult {
+  status: string;
+  target_name: string;
+  assayed_count: number;
+  updated_y_best: number;
+  mae: number;
+  rmse: number;
+  mean_bias: number;
+  assayed_evaluations: Array<{
+    name: string;
+    smiles: string;
+    pred_pkd: number;
+    meas_pkd: number;
+    residual: number;
+  }>;
+  calibrated_candidates: CandidateDerivative[];
+  promoted_candidates: CandidateDerivative[];
+  narrative: string;
+}
+
+export async function submitWetlabFeedback(params: {
+  target_name: string;
+  candidates: any[];
+  measurements: WetlabMeasurement[];
+  y_best_reference?: number;
+}): Promise<WetlabFeedbackResult> {
+  const res = await fetch('/api/dti/wetlab_feedback', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || '湿实验实测反馈校准失败');
   }
   return res.json();
 }
