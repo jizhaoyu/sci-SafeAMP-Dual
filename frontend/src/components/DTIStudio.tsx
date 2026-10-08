@@ -16,7 +16,8 @@ import {
   ChevronUp,
   Award,
   Palette,
-  TestTube
+  TestTube,
+  Zap
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
@@ -42,6 +43,7 @@ import { ADMETRadarModal } from './ADMETRadarModal';
 import { ClinicalTargetSelectorModal } from './ClinicalTargetSelectorModal';
 import { DeNovoPocketGeneratorModal } from './DeNovoPocketGeneratorModal';
 import { RetrosynthesisModal } from './RetrosynthesisModal';
+import { VirtualScreeningModal } from './VirtualScreeningModal';
 
 const PRESET_PAIRS = [
   {
@@ -228,6 +230,9 @@ export default function DTIStudio() {
   const [retroSmiles, setRetroSmiles] = useState<string>('');
   const [retroMolName, setRetroMolName] = useState<string>('目标小分子');
 
+  // Phase 3: Ultra-Large Virtual Screening states
+  const [isScreeningModalOpen, setIsScreeningModalOpen] = useState<boolean>(false);
+
   const handleOpenRetrosynthesis = (smi: string, name: string) => {
     setRetroSmiles(smi);
     setRetroMolName(name);
@@ -238,6 +243,12 @@ export default function DTIStudio() {
     setDrugSmiles(candidate.smiles);
     setSelectedDrugId('');
     setIsDeNovoModalOpen(false);
+  };
+
+  const handleSelectScreeningHit = (hit: any) => {
+    setDrugSmiles(hit.smiles);
+    setSelectedDrugId('');
+    setIsScreeningModalOpen(false);
   };
 
   const handleSelectClinicalTarget = (rec: ClinicalTargetRecord) => {
@@ -489,6 +500,16 @@ export default function DTIStudio() {
                 <TestTube size={14} className="text-emerald-200" />
                 <span>AI 逆合成路线规划</span>
                 <span className="text-[10px] bg-white/20 px-1 py-0.2 rounded font-bold">CAS</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsScreeningModalOpen(true)}
+                className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white shrink-0 font-semibold shadow-xs transition-all cursor-pointer flex items-center gap-1.5"
+                title="超大规模虚拟筛选引擎：商业现货分子库三级漏斗（指纹极速初筛 → 世界模型精筛 → Butina 多样性聚类）"
+              >
+                <Zap size={14} className="text-yellow-300 animate-pulse" />
+                <span>超大规模虚拟筛选</span>
+                <span className="text-[10px] bg-white/20 px-1 py-0.2 rounded font-bold">Phase 3</span>
               </button>
               {PRESET_PAIRS.map((item, idx) => (
                 <button
@@ -1356,6 +1377,15 @@ export default function DTIStudio() {
         onClose={() => setIsRetroModalOpen(false)}
         smiles={retroSmiles}
         moleculeName={retroMolName}
+      />
+
+      {/* Phase 3: 超大规模虚拟筛选引擎与商业分子库海选模态框 */}
+      <VirtualScreeningModal
+        isOpen={isScreeningModalOpen}
+        onClose={() => setIsScreeningModalOpen(false)}
+        initialTargetSymbol={customTargetSymbol}
+        onViewRetrosynthesis={handleOpenRetrosynthesis}
+        onSelectLead={handleSelectScreeningHit}
       />
     </div>
   );

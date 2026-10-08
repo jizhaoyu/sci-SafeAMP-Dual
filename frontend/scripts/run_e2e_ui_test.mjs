@@ -314,6 +314,49 @@ async function runE2EUIAutomation() {
       }
     }
 
+    // -------------------------------------------------------------
+    // Phase 3 Step: Test Ultra-Large Virtual Screening Engine
+    // -------------------------------------------------------------
+    console.log('  Testing Phase 3: Ultra-Large Virtual Screening Engine...');
+    await page.evaluate(() => window.scrollTo(0, 0));
+    await page.waitForTimeout(400);
+
+    const screeningBtn = page.locator('button', { hasText: '超大规模虚拟筛选' }).first();
+    await screeningBtn.waitFor({ state: 'visible', timeout: 5000 });
+    await screeningBtn.click();
+    await page.waitForTimeout(800);
+
+    const screeningHeader = page.locator('text=超大规模商业现货分子库虚拟筛选工作台').first();
+    await screeningHeader.waitFor({ state: 'visible', timeout: 8000 });
+    console.log('  Virtual Screening Modal rendered!');
+
+    // Snapshot 20: Pre-screening config dialog
+    await page.screenshot({ path: path.join(ARTIFACTS_DIR, '20_ultra_large_virtual_screening.png') });
+    console.log('  Screenshot saved: 20_ultra_large_virtual_screening.png');
+
+    // Click Run Virtual Screening button
+    const runScreenBtn = page.locator('button', { hasText: '启动高通量虚拟筛选' }).first();
+    await runScreenBtn.waitFor({ state: 'visible', timeout: 5000 });
+    await runScreenBtn.click();
+    console.log('  Triggered virtual screening funnel...');
+
+    // Wait for screening results KPI & Hits cards
+    const hitsResults = page.locator('text=淘选 Hits / 骨架簇').first();
+    await hitsResults.waitFor({ state: 'visible', timeout: 15000 });
+    console.log('  Screening completed: Hits found and clustered with Butina algorithm!');
+    await page.waitForTimeout(1000);
+
+    // Snapshot 21: Virtual screening Hits explorer
+    await page.screenshot({ path: path.join(ARTIFACTS_DIR, '21_virtual_screening_hits_explorer.png') });
+    console.log('  Screenshot saved: 21_virtual_screening_hits_explorer.png');
+
+    // Close Virtual Screening Modal
+    const closeScreenBtn = page.locator('button[aria-label="关闭筛选工作台"]').first();
+    if (await closeScreenBtn.isVisible()) {
+      await closeScreenBtn.click();
+      await page.waitForTimeout(400);
+    }
+
     // Test Kinome Selectivity Profiling Tab
     console.log('  Testing Kinome Profiling Tab...');
     const kinomeTabBtn = page.locator('button', { hasText: '激酶选择性谱 (Kinome Panel)' }).first();

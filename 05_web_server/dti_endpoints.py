@@ -547,6 +547,48 @@ def retrosynthesis_route_planning(req: RetrosynthesisRequest):
         raise HTTPException(status_code=422, detail=f"逆合成路线规划失败: {str(exc)}") from exc
 
 
+class VirtualScreeningRequest(BaseModel):
+    target_symbol: str = Field(..., min_length=1, max_length=50, description="Target kinase symbol or mutant e.g. ABL1, EGFR-T790M")
+    target_sequence: Optional[str] = Field(None, max_length=4096, description="Optional custom target sequence")
+    library_id: Optional[str] = Field("kinase_privileged", description="Screening library ID: kinase_privileged, enamine_diversity, fda_approved_derivatives")
+    custom_compounds: Optional[List[Dict[str, Any]]] = Field(None, description="Optional custom compounds list with id, name, smiles")
+    max_hits: Optional[int] = Field(15, ge=1, le=100, description="Maximum top hits to report")
+    min_pkd_threshold: Optional[float] = Field(5.0, ge=3.0, le=12.0, description="Minimum pKd cutoff threshold")
+    diversity_cutoff: Optional[float] = Field(0.40, ge=0.1, le=0.9, description="Butina clustering Tanimoto distance cutoff")
+
+
+@router.get("/screening_libraries")
+def list_screening_libraries():
+    """List available pre-indexed commercial virtual screening libraries and their statistics."""
+    try:
+        from virtual_screening_engine import get_screening_libraries_metadata
+        return get_screening_libraries_metadata()
+    except Exception as exc:
+        logger.exception("Failed to retrieve screening libraries")
+        raise HTTPException(status_code=422, detail=f"分子库列表获取失败: {str(exc)}") from exc
+
+
+@router.post("/virtual_screen")
+def execute_virtual_screening(req: VirtualScreeningRequest):
+    """Execute high-throughput hierarchical virtual screening on commercial libraries or custom compounds."""
+    try:
+        from virtual_screening_engine import screen_virtual_library
+        result = screen_virtual_library(
+            target_symbol=req.target_symbol,
+            target_sequence=req.target_sequence,
+            library_id=req.library_id or "kinase_privileged",
+            custom_compounds=req.custom_compounds,
+            max_hits=req.max_hits or 15,
+            min_pkd_threshold=req.min_pkd_threshold or 5.0,
+            diversity_cutoff=req.diversity_cutoff or 0.40
+        )
+        return result
+    except Exception as exc:
+        logger.exception("Virtual screening failed")
+        raise HTTPException(status_code=422, detail=f"虚拟筛选执行失败: {str(exc)}") from exc
+
+
+
 
 
 

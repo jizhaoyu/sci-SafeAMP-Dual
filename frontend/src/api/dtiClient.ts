@@ -709,3 +709,79 @@ export async function planRetrosynthesisRoute(req: {
   }
   return res.json();
 }
+
+export interface ScreeningLibraryMeta {
+  id: string;
+  name: string;
+  description: string;
+  total_compounds: number;
+  average_mw: number;
+  vendor_source: string;
+}
+
+export interface VirtualScreeningHit {
+  rank: number;
+  compound_id: string;
+  name: string;
+  smiles: string;
+  cluster_id: number;
+  is_cluster_representative: boolean;
+  predicted_pkd: number;
+  predicted_kd_nM: number;
+  delta_g_bind_kcal: number;
+  sa_score: number;
+  sa_label: string;
+  molecular_weight: number;
+  clogp: number;
+  cas_number: string;
+  vendor_source: string;
+  key_interactions: string[];
+}
+
+export interface VirtualScreeningResult {
+  status: string;
+  target_symbol: string;
+  is_mutant_target: boolean;
+  gatekeeper_residue: string;
+  library_id: string;
+  library_name: string;
+  total_screened: number;
+  stage1_passed: number;
+  stage2_passed: number;
+  total_hits: number;
+  num_clusters: number;
+  screening_time_seconds: number;
+  throughput_cpd_per_sec: number;
+  hits: VirtualScreeningHit[];
+  cluster_distribution: Record<string, number>;
+  affinity_distribution: Record<string, number>;
+  summary: string;
+}
+
+export async function fetchScreeningLibraries(): Promise<ScreeningLibraryMeta[]> {
+  const res = await fetch('/api/dti/screening_libraries');
+  if (!res.ok) throw new Error('获取商业筛选分子库失败');
+  return res.json();
+}
+
+export async function runVirtualScreening(req: {
+  target_symbol: string;
+  target_sequence?: string;
+  library_id?: string;
+  custom_compounds?: Array<{ id?: string; name?: string; smiles: string }>;
+  max_hits?: number;
+  min_pkd_threshold?: number;
+  diversity_cutoff?: number;
+}): Promise<VirtualScreeningResult> {
+  const res = await fetch('/api/dti/virtual_screen', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(req)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: '虚拟筛选执行失败' }));
+    throw new Error(err.detail || '虚拟筛选执行失败');
+  }
+  return res.json();
+}
+

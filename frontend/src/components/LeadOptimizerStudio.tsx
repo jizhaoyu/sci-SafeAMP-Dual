@@ -58,6 +58,7 @@ import { AcademicReportModal } from './AcademicReportModal';
 import { ClinicalTargetSelectorModal } from './ClinicalTargetSelectorModal';
 import { DeNovoPocketGeneratorModal } from './DeNovoPocketGeneratorModal';
 import { RetrosynthesisModal } from './RetrosynthesisModal';
+import { VirtualScreeningModal } from './VirtualScreeningModal';
 
 
 const PRESET_EXAMPLES = [
@@ -258,6 +259,15 @@ export default function LeadOptimizerStudio() {
   const handleSelectDeNovoCandidate = (candidate: any) => {
     setDrugSmiles(candidate.smiles);
     setIsDeNovoModalOpen(false);
+  };
+
+  // Phase 3: Ultra-Large Virtual Screening states
+  const [isScreeningModalOpen, setIsScreeningModalOpen] = useState(false);
+
+  const handleSelectScreeningHit = (hit: any) => {
+    setDrugSmiles(hit.smiles);
+    setDrugDisplayName(hit.name || '海选筛选苗头分子');
+    setIsScreeningModalOpen(false);
   };
 
   const hasLLMConfigured = Boolean(apiKey && apiKey.trim().length > 0);
@@ -518,7 +528,18 @@ export default function LeadOptimizerStudio() {
                 <label className="text-xs font-semibold text-slate-700 dark:text-slate-300">
                   从 DAVIS 基准抑制剂中快速选择
                 </label>
-                <span className="text-[11px] text-slate-400 font-mono">共 {drugs.length} 种已注册药物</span>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsScreeningModalOpen(true)}
+                    className="text-xs bg-blue-500/10 hover:bg-blue-500/20 text-blue-600 dark:text-blue-400 border border-blue-500/30 px-2 py-0.5 rounded-md flex items-center gap-1 font-semibold transition-colors cursor-pointer"
+                    title="从 Enamine / 商业激酶分子库中超大规模虚拟筛选获得先导 Hits"
+                  >
+                    <Zap size={12} className="text-yellow-500 animate-pulse" />
+                    <span>商业库海选 Hits</span>
+                  </button>
+                  <span className="text-[11px] text-slate-400 font-mono">共 {drugs.length} 种已注册药物</span>
+                </div>
               </div>
               <select
                 aria-label="从 DAVIS 基准抑制剂中快速选择"
@@ -1561,6 +1582,15 @@ export default function LeadOptimizerStudio() {
         onClose={() => setIsRetroModalOpen(false)}
         smiles={retroSmiles}
         moleculeName={retroMolName}
+      />
+
+      {/* Phase 3: 超大规模虚拟筛选引擎与商业分子库海选模态框 */}
+      <VirtualScreeningModal
+        isOpen={isScreeningModalOpen}
+        onClose={() => setIsScreeningModalOpen(false)}
+        initialTargetSymbol={targetName}
+        onViewRetrosynthesis={handleOpenRetrosynthesis}
+        onSelectLead={handleSelectScreeningHit}
       />
     </div>
   );
