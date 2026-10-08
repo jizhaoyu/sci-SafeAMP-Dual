@@ -501,5 +501,52 @@ def search_clinical_targets_external(req: TargetSearchRequest):
         raise HTTPException(status_code=422, detail=f"靶点检索失败: {str(exc)}") from exc
 
 
+class DeNovoGenerateRequest(BaseModel):
+    target_symbol: str = Field(..., min_length=1, max_length=50, description="Target kinase symbol or mutant e.g. ABL1, ABL1-T315I, EGFR-T790M")
+    target_sequence: Optional[str] = Field(None, max_length=4096, description="Optional custom kinase catalytic sequence")
+    generation_mode: Optional[str] = Field("scaffold_hopping", description="Generation mode: scaffold_hopping, gatekeeper_bypasser, pocket_growth")
+    num_candidates: Optional[int] = Field(6, ge=1, le=12, description="Number of candidates to generate")
+    novelty_floor: Optional[float] = Field(0.30, ge=0.0, le=0.9, description="Minimum IP novelty threshold")
+
+
+class RetrosynthesisRequest(BaseModel):
+    smiles: str = Field(..., min_length=2, max_length=2048, description="Target small molecule SMILES")
+    molecule_name: Optional[str] = Field("Target Molecule", description="Target molecule display name")
+
+
+@router.post("/de_novo_generate")
+def de_novo_pocket_generation(req: DeNovoGenerateRequest):
+    """Generate 3D-pocket conditioned small molecules with high IP novelty and MM-GBSA binding evaluation."""
+    try:
+        from pocket_de_novo_generator import generate_de_novo_pocket_molecules
+        result = generate_de_novo_pocket_molecules(
+            target_symbol=req.target_symbol,
+            target_sequence=req.target_sequence,
+            generation_mode=req.generation_mode or "scaffold_hopping",
+            num_candidates=req.num_candidates or 6,
+            novelty_floor=req.novelty_floor or 0.30
+        )
+        return result
+    except Exception as exc:
+        logger.exception("De novo pocket generation failed")
+        raise HTTPException(status_code=422, detail=f"从头分子生成失败: {str(exc)}") from exc
+
+
+@router.post("/retrosynthesis_plan")
+def retrosynthesis_route_planning(req: RetrosynthesisRequest):
+    """Plan multi-step retrosynthesis route with commercial CAS precursors and reaction conditions."""
+    try:
+        from retrosynthesis_planner import plan_retrosynthesis_route
+        result = plan_retrosynthesis_route(
+            smiles=req.smiles,
+            molecule_name=req.molecule_name
+        )
+        return result
+    except Exception as exc:
+        logger.exception("Retrosynthesis planning failed")
+        raise HTTPException(status_code=422, detail=f"逆合成路线规划失败: {str(exc)}") from exc
+
+
+
 
 

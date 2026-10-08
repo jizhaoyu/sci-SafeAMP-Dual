@@ -253,6 +253,67 @@ async function runE2EUIAutomation() {
       console.log('  Screenshot saved: 17_ponatinib_abl1_t315i_prediction.png');
     }
 
+    // -------------------------------------------------------------
+    // Phase 2 Step: Test 3D Pocket De Novo Diffusion & IP Hopping
+    // -------------------------------------------------------------
+    console.log('  Testing Phase 2: 3D Pocket De Novo Diffusion & Scaffold Hopping...');
+    const deNovoBtn = page.locator('button', { hasText: '3D 口袋从头生成与骨架跃迁' }).first();
+    if (await deNovoBtn.isVisible()) {
+      await deNovoBtn.click();
+      await page.waitForTimeout(600);
+      
+      const deNovoHeader = page.locator('text=3D 口袋从头分子扩散生成与骨架跃迁工作台').first();
+      await deNovoHeader.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  3D Pocket De Novo Modal rendered!');
+
+      // Click generate button
+      const runGenBtn = page.locator('button', { hasText: '启动 3D 口袋从头生成' }).first();
+      await runGenBtn.click();
+      console.log('  Triggered de novo molecular generation algorithm...');
+      
+      // Wait for candidate cards to appear
+      const candidateCard = page.locator('text=IP 新颖度').first();
+      await candidateCard.waitFor({ state: 'visible', timeout: 10000 });
+      console.log('  De Novo candidate molecules generated and scored with MM-GBSA & IP novelty!');
+
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '18_de_novo_pocket_generation.png') });
+      console.log('  Screenshot saved: 18_de_novo_pocket_generation.png');
+
+      // -------------------------------------------------------------
+      // Phase 2 Step: Test AI Retrosynthesis Route Planner
+      // -------------------------------------------------------------
+      console.log('  Testing Phase 2: AI Computer-Aided Retrosynthesis Route Planner...');
+      const retroRouteBtn = page.locator('button', { hasText: 'AI 计算机辅助逆合成路线' }).first();
+      if (await retroRouteBtn.isVisible()) {
+        await retroRouteBtn.click();
+        await page.waitForTimeout(800);
+
+        const retroHeader = page.locator('text=AI 计算机辅助逆合成路线规划').first();
+        await retroHeader.waitFor({ state: 'visible', timeout: 6000 });
+
+        const precursorSec = page.locator('text=商业现货起始原料清单').first();
+        await precursorSec.waitFor({ state: 'visible', timeout: 6000 });
+        console.log('  AI Retrosynthesis route plan rendered with CAS precursors and reaction steps!');
+
+        await page.screenshot({ path: path.join(ARTIFACTS_DIR, '19_ai_retrosynthesis_route.png') });
+        console.log('  Screenshot saved: 19_ai_retrosynthesis_route.png');
+
+        // Close Retrosynthesis Modal
+        const closeRetroBtn = page.locator('button').filter({ has: page.locator('svg.lucide-x') }).last();
+        if (await closeRetroBtn.isVisible()) {
+          await closeRetroBtn.click();
+          await page.waitForTimeout(400);
+        }
+      }
+
+      // Close De Novo Modal
+      const closeDeNovoBtn = page.locator('button').filter({ has: page.locator('svg.lucide-x') }).first();
+      if (await closeDeNovoBtn.isVisible()) {
+        await closeDeNovoBtn.click();
+        await page.waitForTimeout(400);
+      }
+    }
+
     // Test Kinome Selectivity Profiling Tab
     console.log('  Testing Kinome Profiling Tab...');
     const kinomeTabBtn = page.locator('button', { hasText: '激酶选择性谱 (Kinome Panel)' }).first();

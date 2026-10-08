@@ -23,7 +23,8 @@ import {
   ShieldCheck,
   FileText,
   RefreshCw,
-  CheckCircle2
+  CheckCircle2,
+  TestTube
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
@@ -55,6 +56,8 @@ import { ADMETRadarModal } from './ADMETRadarModal';
 import { WetlabDispatchModal } from './WetlabDispatchModal';
 import { AcademicReportModal } from './AcademicReportModal';
 import { ClinicalTargetSelectorModal } from './ClinicalTargetSelectorModal';
+import { DeNovoPocketGeneratorModal } from './DeNovoPocketGeneratorModal';
+import { RetrosynthesisModal } from './RetrosynthesisModal';
 
 
 const PRESET_EXAMPLES = [
@@ -238,6 +241,23 @@ export default function LeadOptimizerStudio() {
     } finally {
       setFeedbackSubmitting(false);
     }
+  };
+
+  // Phase 2: De Novo Pocket Generation & Retrosynthesis Route Planner states
+  const [isDeNovoModalOpen, setIsDeNovoModalOpen] = useState(false);
+  const [isRetroModalOpen, setIsRetroModalOpen] = useState(false);
+  const [retroSmiles, setRetroSmiles] = useState('');
+  const [retroMolName, setRetroMolName] = useState('先导化合物');
+
+  const handleOpenRetrosynthesis = (smi: string, name: string) => {
+    setRetroSmiles(smi);
+    setRetroMolName(name);
+    setIsRetroModalOpen(true);
+  };
+
+  const handleSelectDeNovoCandidate = (candidate: any) => {
+    setDrugSmiles(candidate.smiles);
+    setIsDeNovoModalOpen(false);
   };
 
   const hasLLMConfigured = Boolean(apiKey && apiKey.trim().length > 0);
@@ -548,14 +568,37 @@ export default function LeadOptimizerStudio() {
                   <Dna size={16} className="text-indigo-600" />
                   <span>靶点激酶受体 (Target Kinase Receptor)</span>
                 </h3>
-                <button
-                  type="button"
-                  onClick={() => setIsTargetModalOpen(true)}
-                  className="text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 border border-indigo-500/30 px-2 py-0.5 rounded-md flex items-center gap-1 font-semibold transition-colors cursor-pointer"
-                  title="从 60+ 临床抗肿瘤激酶与耐药突变体知识库中选择靶点与序列"
-                >
-                  <span>🏛️ 60+ 临床靶点库</span>
-                </button>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => setIsDeNovoModalOpen(true)}
+                    className="text-xs bg-purple-500/10 hover:bg-purple-500/20 text-purple-600 dark:text-purple-400 border border-purple-500/30 px-2 py-0.5 rounded-md flex items-center gap-1 font-semibold transition-colors cursor-pointer"
+                    title="3D 口袋从头分子扩散生成与骨架跃迁"
+                  >
+                    <Sparkles size={12} className="text-amber-400 animate-pulse" />
+                    <span>3D 从头生成</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleOpenRetrosynthesis(
+                      drugSmiles || 'CC1=C(C=C(C=C1)C#CC2=CN=CC=C2)C(=O)NC3=CC(=C(C=C3)CN4CCN(CC4)C)C(F)(F)F',
+                      targetName ? `${targetName} 先导化合物` : '先导化合物'
+                    )}
+                    className="text-xs bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-600 dark:text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-md flex items-center gap-1 font-semibold transition-colors cursor-pointer"
+                    title="AI 计算机辅助逆合成路线规划"
+                  >
+                    <TestTube size={12} />
+                    <span>逆合成规划</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setIsTargetModalOpen(true)}
+                    className="text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 border border-indigo-500/30 px-2 py-0.5 rounded-md flex items-center gap-1 font-semibold transition-colors cursor-pointer"
+                    title="从 60+ 临床抗肿瘤激酶与耐药突变体知识库中选择靶点与序列"
+                  >
+                    <span>🏛️ 60+ 临床靶点库</span>
+                  </button>
+                </div>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -780,6 +823,17 @@ export default function LeadOptimizerStudio() {
                     <span className="font-mono font-bold">
                       {optimizeResult.baseline.admet ? `${Math.round(optimizeResult.baseline.admet.admet_health_score)} 分` : '查看雷达'}
                     </span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => handleOpenRetrosynthesis(optimizeResult.baseline.smiles, drugDisplayName)}
+                    className="w-full mt-1.5 flex items-center justify-between px-2.5 py-1 rounded-lg bg-emerald-50/80 dark:bg-emerald-950/40 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 border border-emerald-200/80 dark:border-emerald-800 text-emerald-700 dark:text-emerald-300 text-[11px] font-semibold transition-colors cursor-pointer"
+                  >
+                    <span className="flex items-center gap-1.5">
+                      <TestTube size={12} className="text-emerald-600 dark:text-emerald-400" />
+                      <span>AI 逆合成路线:</span>
+                    </span>
+                    <span className="font-mono font-bold">CAS 路线</span>
                   </button>
                 </div>
               </div>
@@ -1171,6 +1225,15 @@ export default function LeadOptimizerStudio() {
                             </button>
                             <button
                               type="button"
+                              onClick={() => handleOpenRetrosynthesis(cand.smiles, cand.name)}
+                              className="p-1.5 rounded bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 transition-colors shrink-0 text-xs flex items-center gap-1 font-medium cursor-pointer focus-ring"
+                              title="AI 计算机辅助逆合成路线规划 (CAS 原料、工艺条件与收率)"
+                            >
+                              <TestTube size={14} />
+                              <span className="text-[10px]">逆合成</span>
+                            </button>
+                            <button
+                              type="button"
                               onClick={() => handleSaveToCart(cand)}
                               className="p-1.5 rounded bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 transition-colors shrink-0 text-xs flex items-center gap-1 font-medium cursor-pointer focus-ring"
                               title="存入候选分子暂存库"
@@ -1481,6 +1544,23 @@ export default function LeadOptimizerStudio() {
           setTargetSequence(rec.catalytic_sequence_snippet);
         }}
         currentTargetSymbol={targetName}
+      />
+
+      {/* Phase 2: 3D 口袋从头分子扩散生成与骨架跃迁模态框 */}
+      <DeNovoPocketGeneratorModal
+        isOpen={isDeNovoModalOpen}
+        onClose={() => setIsDeNovoModalOpen(false)}
+        initialTargetSymbol={targetName}
+        onViewRetrosynthesis={handleOpenRetrosynthesis}
+        onSelectCandidate={handleSelectDeNovoCandidate}
+      />
+
+      {/* Phase 2: AI 计算机辅助逆合成路线规划模态框 */}
+      <RetrosynthesisModal
+        isOpen={isRetroModalOpen}
+        onClose={() => setIsRetroModalOpen(false)}
+        smiles={retroSmiles}
+        moleculeName={retroMolName}
       />
     </div>
   );

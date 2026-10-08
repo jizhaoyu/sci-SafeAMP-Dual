@@ -15,7 +15,8 @@ import {
   ChevronDown,
   ChevronUp,
   Award,
-  Palette
+  Palette,
+  TestTube
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
@@ -39,6 +40,8 @@ import { KinasePocketViewer3D } from './KinasePocketViewer3D';
 import { MoleculeSketcherModal } from './MoleculeSketcherModal';
 import { ADMETRadarModal } from './ADMETRadarModal';
 import { ClinicalTargetSelectorModal } from './ClinicalTargetSelectorModal';
+import { DeNovoPocketGeneratorModal } from './DeNovoPocketGeneratorModal';
+import { RetrosynthesisModal } from './RetrosynthesisModal';
 
 const PRESET_PAIRS = [
   {
@@ -218,6 +221,24 @@ export default function DTIStudio() {
   // 60+ Clinical Targets Modal states
   const [isTargetModalOpen, setIsTargetModalOpen] = useState<boolean>(false);
   const [customTargetSymbol, setCustomTargetSymbol] = useState<string>('ABL1');
+
+  // Phase 2: De Novo Pocket Generation & Retrosynthesis Route Planner states
+  const [isDeNovoModalOpen, setIsDeNovoModalOpen] = useState<boolean>(false);
+  const [isRetroModalOpen, setIsRetroModalOpen] = useState<boolean>(false);
+  const [retroSmiles, setRetroSmiles] = useState<string>('');
+  const [retroMolName, setRetroMolName] = useState<string>('目标小分子');
+
+  const handleOpenRetrosynthesis = (smi: string, name: string) => {
+    setRetroSmiles(smi);
+    setRetroMolName(name);
+    setIsRetroModalOpen(true);
+  };
+
+  const handleSelectDeNovoCandidate = (candidate: any) => {
+    setDrugSmiles(candidate.smiles);
+    setSelectedDrugId('');
+    setIsDeNovoModalOpen(false);
+  };
 
   const handleSelectClinicalTarget = (rec: ClinicalTargetRecord) => {
     setCustomTargetSymbol(rec.symbol);
@@ -445,6 +466,29 @@ export default function DTIStudio() {
               >
                 <span>🏛️ 60+ 临床靶点与耐药库</span>
                 <span className="text-[10px] bg-white/20 px-1 py-0.2 rounded">全量</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsDeNovoModalOpen(true)}
+                className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white shrink-0 font-semibold shadow-xs transition-all cursor-pointer flex items-center gap-1.5"
+                title="3D 口袋从头分子扩散生成与骨架跃迁 (Scaffold Hopping & Gatekeeper Bypasser)"
+              >
+                <Sparkles size={14} className="text-amber-300 animate-pulse" />
+                <span>3D 口袋从头生成与骨架跃迁</span>
+                <span className="text-[10px] bg-white/20 px-1 py-0.2 rounded font-bold">Phase 2</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => handleOpenRetrosynthesis(
+                  drugSmiles || 'CC1=C(C=C(C=C1)C#CC2=CN=CC=C2)C(=O)NC3=CC(=C(C=C3)CN4CCN(CC4)C)C(F)(F)F',
+                  customTargetSymbol ? `${customTargetSymbol} 抑制剂先导物` : '当前分子'
+                )}
+                className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white shrink-0 font-semibold shadow-xs transition-all cursor-pointer flex items-center gap-1.5"
+                title="AI 计算机辅助逆合成路线规划 (CAS 商业现货原料、工艺收率与条件)"
+              >
+                <TestTube size={14} className="text-emerald-200" />
+                <span>AI 逆合成路线规划</span>
+                <span className="text-[10px] bg-white/20 px-1 py-0.2 rounded font-bold">CAS</span>
               </button>
               {PRESET_PAIRS.map((item, idx) => (
                 <button
@@ -810,14 +854,25 @@ export default function DTIStudio() {
                         </span>
                       </div>
                     </div>
-                    <button
-                      type="button"
-                      onClick={handleOpenAdmet}
-                      className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-xs flex items-center gap-1.5 transition-all cursor-pointer focus-ring shrink-0"
-                    >
-                      <ShieldCheck size={13} />
-                      <span>查看 ADMET 雷达</span>
-                    </button>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <button
+                        type="button"
+                        onClick={() => handleOpenRetrosynthesis(drugSmiles, `${customTargetSymbol || '当前靶点'} 抑制剂`)}
+                        className="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold shadow-xs flex items-center gap-1.5 transition-all cursor-pointer focus-ring"
+                        title="AI 计算机辅助逆合成路线规划 (CAS 商业原料、反应条件与收率)"
+                      >
+                        <TestTube size={13} />
+                        <span>逆合成路线</span>
+                      </button>
+                      <button
+                        type="button"
+                        onClick={handleOpenAdmet}
+                        className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-xs flex items-center gap-1.5 transition-all cursor-pointer focus-ring"
+                      >
+                        <ShieldCheck size={13} />
+                        <span>查看 ADMET 雷达</span>
+                      </button>
+                    </div>
                   </div>
 
                   {/* 3D 微观几何与热力学物理自由能透视卡片 */}
@@ -1284,6 +1339,23 @@ export default function DTIStudio() {
         onClose={() => setIsTargetModalOpen(false)}
         onSelectTarget={handleSelectClinicalTarget}
         currentTargetSymbol={customTargetSymbol}
+      />
+
+      {/* Phase 2: 3D 口袋从头分子扩散生成与骨架跃迁模态框 */}
+      <DeNovoPocketGeneratorModal
+        isOpen={isDeNovoModalOpen}
+        onClose={() => setIsDeNovoModalOpen(false)}
+        initialTargetSymbol={customTargetSymbol}
+        onViewRetrosynthesis={handleOpenRetrosynthesis}
+        onSelectCandidate={handleSelectDeNovoCandidate}
+      />
+
+      {/* Phase 2: AI 计算机辅助逆合成路线规划模态框 */}
+      <RetrosynthesisModal
+        isOpen={isRetroModalOpen}
+        onClose={() => setIsRetroModalOpen(false)}
+        smiles={retroSmiles}
+        moleculeName={retroMolName}
       />
     </div>
   );

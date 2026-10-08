@@ -606,5 +606,106 @@ export async function searchClinicalTargets(query: string): Promise<{
   return res.json();
 }
 
+export interface DeNovoCandidate {
+  candidate_id: string;
+  name: string;
+  smiles: string;
+  generation_mode: string;
+  design_rationale: string;
+  molecular_weight: number;
+  clogp: number;
+  predicted_pkd: number;
+  predicted_kd_nM: number;
+  delta_g_bind_kcal: number;
+  sa_score: number;
+  sa_label: string;
+  ip_novelty_score: number;
+  nearest_fda_drug: string;
+  nearest_similarity: number;
+  synthetic_feasibility: string;
+  key_interactions_predicted: string[];
+}
 
+export interface DeNovoPocketResult {
+  status: string;
+  target_symbol: string;
+  is_mutant_target: boolean;
+  gatekeeper_residue: string;
+  generation_mode: string;
+  generation_mode_label: string;
+  total_generated: number;
+  candidates: DeNovoCandidate[];
+  summary: string;
+}
 
+export interface CommercialPrecursor {
+  reagent_id: string;
+  name: string;
+  cas_number: string;
+  smiles: string;
+  estimated_cost: string;
+  suppliers: string[];
+  commercial_purity: string;
+}
+
+export interface ReactionStep {
+  step_number: number;
+  step_title: string;
+  reaction_type: string;
+  reactants: string[];
+  reactant_smiles: string[];
+  product_name: string;
+  product_smiles: string;
+  catalyst_and_bases: string;
+  solvent_and_conditions: string;
+  estimated_yield_percent: number;
+  operational_difficulty: string;
+  purification_method: string;
+}
+
+export interface RetrosynthesisRoutePlan {
+  target_molecule_name: string;
+  target_smiles: string;
+  total_steps: number;
+  route_convergence: string;
+  cumulative_yield_percent: number;
+  atom_economy_rating: string;
+  commercial_precursors: CommercialPrecursor[];
+  synthesis_steps: ReactionStep[];
+  expert_chemist_evaluation: string;
+}
+
+export async function generateDeNovoMolecules(req: {
+  target_symbol: string;
+  target_sequence?: string;
+  generation_mode?: 'scaffold_hopping' | 'gatekeeper_bypasser' | 'pocket_growth';
+  num_candidates?: number;
+  novelty_floor?: number;
+}): Promise<DeNovoPocketResult> {
+  const res = await fetch('/api/dti/de_novo_generate', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(req)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: '从头分子生成失败' }));
+    throw new Error(err.detail || '从头分子生成失败');
+  }
+  return res.json();
+}
+
+export async function planRetrosynthesisRoute(req: {
+  smiles: string;
+  molecule_name?: string;
+}): Promise<RetrosynthesisRoutePlan> {
+  const res = await fetch('/api/dti/retrosynthesis_plan', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(req)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: '逆合成规划失败' }));
+    throw new Error(err.detail || '逆合成规划失败');
+  }
+  return res.json();
+}
