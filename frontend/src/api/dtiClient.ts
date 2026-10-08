@@ -185,3 +185,105 @@ export async function optimizeLeadMolecule(
   }
   return res.json();
 }
+
+export interface DTIModelMeta {
+  id: string;
+  name: string;
+  badge: string;
+  badge_color: string;
+  desc: string;
+  is_recommended: boolean;
+  train_ci: number;
+  train_mae: number;
+  cold_target_ci: number;
+  cold_drug_ci: number;
+}
+
+export async function fetchDTIModels(): Promise<DTIModelMeta[]> {
+  const res = await fetch('/api/dti/models');
+  if (!res.ok) throw new Error('Failed to fetch DTI models');
+  return res.json();
+}
+
+export interface MMGBSABreakdown {
+  delta_g_bind: number;
+  delta_e_vdw: number;
+  delta_e_elec: number;
+  delta_g_gb: number;
+  delta_g_sa: number;
+  minus_t_delta_s: number;
+  phys_predicted_pkd: number;
+  rotatable_bonds: number;
+  buried_sasa: number;
+}
+
+export interface BiophysicsInsights {
+  binding_mode: string;
+  binding_mode_label: string;
+  preferred_conformation: string;
+  dfg_flip_penalty_kcal: number;
+  induced_fit_score: number;
+  base_dock_score: number;
+  hinge_score: number;
+  gatekeeper_clash: number;
+  mmgbsa: MMGBSABreakdown;
+}
+
+export async function fetchBiophysicsInsights(
+  drug_smiles: string,
+  target_sequence: string,
+  gatekeeper_override?: string
+): Promise<BiophysicsInsights> {
+  const res = await fetch('/api/dti/biophysics_insights', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ drug_smiles, target_sequence, gatekeeper_override })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || 'Biophysics insights failed');
+  }
+  return res.json();
+}
+
+export interface ActiveLearningCandidate {
+  smiles: string;
+  name: string;
+  mean_pkd: number;
+  uncertainty_sigma: number;
+  expected_improvement: number;
+  ucb_score: number;
+  quadrant: string;
+  quadrant_label: string;
+  recommendation_reason: string;
+}
+
+export interface ActiveLearningReport {
+  target_name: string;
+  total_evaluated: number;
+  y_best_reference: number;
+  confident_hits: ActiveLearningCandidate[];
+  breakthrough_hypotheses: ActiveLearningCandidate[];
+  high_information_gain_blindspots: ActiveLearningCandidate[];
+  known_inactives: ActiveLearningCandidate[];
+  markdown_summary: string;
+}
+
+export async function evaluateActiveLearning(params: {
+  target_sequence: string;
+  target_name?: string;
+  candidates: Array<{ name: string; smiles: string }>;
+  y_best?: number;
+}): Promise<ActiveLearningReport> {
+  const res = await fetch('/api/dti/active_learning', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params)
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || 'Active learning evaluation failed');
+  }
+  return res.json();
+}
+

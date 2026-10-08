@@ -14,16 +14,22 @@ import {
   AlertCircle, 
   Compass, 
   Zap,
-  Info
+  Info,
+  Grid,
+  Download,
+  HelpCircle
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
   fetchDTITargets, 
   optimizeLeadMolecule,
+  evaluateActiveLearning,
   type DTIDrug, 
   type DTITarget, 
   type DTIOptimizeResult,
-  type CandidateDerivative
+  type CandidateDerivative,
+  type ActiveLearningReport,
+  type ActiveLearningCandidate
 } from '../api/dtiClient';
 import { useAppStore } from '../store/useAppStore';
 import { computeDrugLikeness } from '../utils/cheminformatics';
@@ -78,15 +84,21 @@ export default function LeadOptimizerStudio() {
   const [targetName, setTargetName] = useState<string>('ABL1 (激酶靶点)');
   const [optimizationGoal, setOptimizationGoal] = useState<string>(OPTIMIZATION_GOALS[0].value);
   const [customInstruction, setCustomInstruction] = useState<string>('');
-  const [evalModel, setEvalModel] = useState<string>('stacked_ensemble');
+  const [evalModel, setEvalModel] = useState<string>('worldmodel_stacked_ensemble');
 
   // Execution states
   const [isOptimizing, setIsOptimizing] = useState<boolean>(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [optimizeResult, setOptimizeResult] = useState<DTIOptimizeResult | null>(null);
   
+  // Active Learning states
+  const [activeLearningReport, setActiveLearningReport] = useState<ActiveLearningReport | null>(null);
+  const [isLoadingActiveLearning, setIsLoadingActiveLearning] = useState<boolean>(false);
+  const [resultViewTab, setResultViewTab] = useState<'ladder' | 'active_learning'>('ladder');
+  
   // UI interaction states
   const [copiedId, setCopiedId] = useState<string | null>(null);
+  const [copiedReport, setCopiedReport] = useState<boolean>(false);
   const [cartSuccessId, setCartSuccessId] = useState<string | null>(null);
 
   const hasLLMConfigured = Boolean(apiKey && apiKey.trim().length > 0);
@@ -96,7 +108,6 @@ export default function LeadOptimizerStudio() {
     fetchDTIDrugs().then(data => {
       setDrugs(data);
       if (data.length > 0) {
-        // Find Dasatinib or take first
         const dasatinib = data.find(d => d.name.toLowerCase().includes('dasatinib')) || data[0];
         setDrugSmiles(dasatinib.smiles);
         setDrugDisplayName(dasatinib.name);
@@ -107,7 +118,6 @@ export default function LeadOptimizerStudio() {
     fetchDTITargets().then(data => {
       setTargets(data);
       if (data.length > 0) {
-        // Find ABL1 or take first
         const abl1 = data.find(t => t.id.toUpperCase().includes('ABL1') || t.id.toLowerCase().includes('abl')) || data[0];
         setTargetSequence(abl1.sequence);
         setTargetName(abl1.id);
@@ -139,7 +149,6 @@ export default function LeadOptimizerStudio() {
     setOptimizationGoal(preset.goal);
     setCustomInstruction(preset.instruction);
     
-    // Find matching target if available
     const matchedTarget = targets.find(t => t.id.toUpperCase().includes(preset.targetSymbol.toUpperCase()));
     if (matchedTarget) {
       setTargetSequence(matchedTarget.sequence);
@@ -155,6 +164,7 @@ export default function LeadOptimizerStudio() {
     setErrorMsg(null);
     setIsOptimizing(true);
     setOptimizeResult(null);
+    setActiveLearningReport(null);
 
     try {
       const payload: any = {
@@ -177,6 +187,24 @@ export default function LeadOptimizerStudio() {
 
       const res = await optimizeLeadMolecule(payload);
       setOptimizeResult(res);
+
+      // Auto-trigger Active Learning evaluation for all generated candidates
+      if (res.candidates && res.candidates.length > 0) {
+        setIsLoadingActiveLearning(true);
+        evaluateActiveLearning({
+          target_sequence: targetSequence.trim(),
+          target_name: targetName || 'Target Kinase',
+          candidates: res.candidates.map(c => ({ name: c.name, smiles: c.smiles })),
+          y_best: res.baseline.predicted_pkd
+        }).then(report => {
+          setActiveLearningReport(report);
+        }).catch(alErr => {
+          console.warn('Active learning evaluation note:', alErr);
+        }).finally(() => {
+          setIsLoadingActiveLearning(false);
+        });
+      }
+
     } catch (err: any) {
       setErrorMsg(err.message || '优化执行失败，请检查输入格式或网络状态。');
     } finally {
@@ -194,7 +222,7 @@ export default function LeadOptimizerStudio() {
     addToCart({
       sequence: candidate.smiles,
       name: candidate.name,
-      p_amp: 0.95, // 占位保持类型兼容
+      p_amp: 0.95,
       p_hemo: 0.05,
       tsi: candidate.predicted_pkd,
     });
@@ -202,25 +230,54 @@ export default function LeadOptimizerStudio() {
     setTimeout(() => setCartSuccessId(null), 2000);
   };
 
+  const handleExportActiveLearningCSV = () => {
+    if (!activeLearningReport) return;
+    const allCands: ActiveLearningCandidate[] = [
+      ...activeLearningReport.confident_hits,
+      ...activeLearningReport.breakthrough_hypotheses,
+      ...activeLearningReport.high_information_gain_blindspots,
+      ...activeLearningReport.known_inactives
+    ];
+    const header = 'Candidate_Name,SMILES,Mean_pKd,Uncertainty_Sigma,Expected_Improvement_EI,UCB_Score,Quadrant,Recommendation\n';
+    const rows = allCands.map(c => 
+      `"${c.name}","${c.smiles}",${c.mean_pkd.toFixed(3)},${c.uncertainty_sigma.toFixed(3)},${c.expected_improvement.toFixed(4)},${c.ucb_score.toFixed(3)},"${c.quadrant_label}","${c.recommendation_reason}"`
+    ).join('\n');
+    const blob = new Blob([header + rows], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute('download', `active_learning_matrix_${targetName.replace(/\s+/g, '_')}_${Date.now()}.csv`);
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  const handleCopyMarkdownReport = () => {
+    if (!activeLearningReport) return;
+    navigator.clipboard.writeText(activeLearningReport.markdown_summary);
+    setCopiedReport(true);
+    setTimeout(() => setCopiedReport(false), 2000);
+  };
+
   return (
     <div className="space-y-6">
       {/* 顶部标题与工作机制横幅 */}
-      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-xs">
+      <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-6 shadow-sm">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div>
             <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-xs">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 via-indigo-600 to-emerald-500 flex items-center justify-center text-white shadow-md">
                 <Sparkles size={20} />
               </div>
               <div>
                 <h2 className="text-lg font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
-                  <span>AI 先导化合物智能改构与分子进化工作台</span>
+                  <span>AI 先导化合物智能改构与贝叶斯主动学习工作台</span>
                   <span className="text-[10px] uppercase font-mono px-2 py-0.5 rounded bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">
-                    Lead Optimizer Studio
+                    Lead Optimizer Studio 2.0
                   </span>
                 </h2>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  生成式药化微调假说 · 经典启发式结构变换 · DAVIS 冻结基准模型即时定量打分
+                  生成式药化微调假说 · 第二代生物世界模型双盲打分 · 贝叶斯主动学习探索/利用四象限决策闭环
                 </p>
               </div>
             </div>
@@ -229,8 +286,8 @@ export default function LeadOptimizerStudio() {
           {/* 模式状态徽章 */}
           <div className="flex items-center gap-2 self-start md:self-auto">
             {hasLLMConfigured ? (
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-300">
-                <Cpu size={15} className="text-emerald-600 dark:text-emerald-400" />
+              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800 text-xs text-emerald-800 dark:text-emerald-300">
+                <Cpu size={16} className="text-emerald-600 dark:text-emerald-400" />
                 <div className="text-left">
                   <span className="font-semibold">已连接大模型生成模式</span>
                   <span className="block text-[10px] text-emerald-600 dark:text-emerald-400 font-mono">
@@ -239,8 +296,8 @@ export default function LeadOptimizerStudio() {
                 </div>
               </div>
             ) : (
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-sky-50 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-800 text-xs text-sky-800 dark:text-sky-300">
-                <Zap size={15} className="text-sky-600 dark:text-sky-400" />
+              <div className="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-sky-50 dark:bg-sky-950/40 border border-sky-200 dark:border-sky-800 text-xs text-sky-800 dark:text-sky-300">
+                <Zap size={16} className="text-sky-600 dark:text-sky-400" />
                 <div className="text-left">
                   <span className="font-semibold">内置经典药化启发式引擎</span>
                   <span className="block text-[10px] text-sky-600 dark:text-sky-400">
@@ -256,30 +313,30 @@ export default function LeadOptimizerStudio() {
         <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800/80 grid grid-cols-1 md:grid-cols-3 gap-3 text-xs text-slate-600 dark:text-slate-400">
           <div className="flex items-start gap-2">
             <span className="w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-300 flex items-center justify-center shrink-0 font-bold font-mono text-[11px]">1</span>
-            <span><strong>结构衍生物生成</strong>：基于药效团电子等排体、氟扫描、增溶侧链或 LLM 深度药化推理提出改构 SMILES。</span>
+            <span><strong>结构衍生物生成</strong>：基于药效团电子等排体、氟扫描、增溶侧链或 LLM 深度药化推理提出改构分子。</span>
           </div>
           <div className="flex items-start gap-2">
             <span className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 flex items-center justify-center shrink-0 font-bold font-mono text-[11px]">2</span>
-            <span><strong>冻结模型定量打分</strong>：严禁大模型捏造预测数值，所有候选分子均输入双盲隔离训练的 Ridge 基准模型即时评测。</span>
+            <span><strong>世界模型定量打分</strong>：严禁虚假捏造，所有候选分子均输入双盲隔离训练的第二代生物世界模型即时评测。</span>
           </div>
           <div className="flex items-start gap-2">
             <span className="w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-300 flex items-center justify-center shrink-0 font-bold font-mono text-[11px]">3</span>
-            <span><strong>增益阶梯呈现</strong>：计算 ΔpKd、Kd 结合增益倍数与亲和力等级跃迁，并可一键送入分子库暂存或跨模块分析。</span>
+            <span><strong>主动学习贝叶斯闭环</strong>：四象限划分“高置信领头物”与“高信息增益认知盲区”，指导湿实验降本增效。</span>
           </div>
         </div>
       </div>
 
       {/* 预设经典场景快捷选择 */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
-        <span className="text-slate-400 dark:text-slate-500 font-medium shrink-0 flex items-center gap-1">
-          <Compass size={13} /> 经典改构探索场景：
+        <span className="text-slate-400 dark:text-slate-500 font-medium shrink-0 flex items-center gap-1.5">
+          <Compass size={14} className="text-blue-500" /> 经典改构探索场景：
         </span>
         {PRESET_EXAMPLES.map((item, idx) => (
           <button
             key={idx}
             type="button"
             onClick={() => applyPreset(item)}
-            className="px-2.5 py-1 rounded-md bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 shrink-0 transition-colors shadow-2xs font-medium"
+            className="px-3 py-1.5 rounded-lg bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 shrink-0 transition-colors shadow-2xs font-medium cursor-pointer focus-ring"
           >
             {item.label}
           </button>
@@ -291,7 +348,7 @@ export default function LeadOptimizerStudio() {
         
         {/* 左侧：母体小分子与受体激酶设定 (7 cols) */}
         <div className="lg:col-span-7 space-y-4">
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-xs space-y-4">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs space-y-4">
             <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2.5">
               <FlaskConical size={16} className="text-blue-600" />
               <span>先导母体抑制剂 (Lead Mother Molecule)</span>
@@ -306,7 +363,7 @@ export default function LeadOptimizerStudio() {
               </div>
               <select
                 aria-label="从 DAVIS 基准抑制剂中快速选择"
-                className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium focus:ring-2 focus:ring-blue-500"
+                className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium focus-ring"
                 onChange={handleSelectDrug}
                 value={drugs.find(d => d.smiles === drugSmiles)?.id || ''}
               >
@@ -331,7 +388,7 @@ export default function LeadOptimizerStudio() {
                 value={drugSmiles}
                 onChange={e => setDrugSmiles(e.target.value)}
                 placeholder="例如：CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=CC(=NC(=N3)C)N4CCN(CC4)CCO"
-                className="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 font-mono text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-blue-500"
+                className="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 font-mono text-slate-800 dark:text-slate-200 focus-ring"
               />
             </div>
 
@@ -352,7 +409,7 @@ export default function LeadOptimizerStudio() {
                     value={targetName}
                     onChange={e => setTargetName(e.target.value)}
                     placeholder="如：ABL1, EGFR, BRAF"
-                    className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-medium"
+                    className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200 font-medium focus-ring"
                   />
                 </div>
                 <div>
@@ -361,7 +418,7 @@ export default function LeadOptimizerStudio() {
                   </label>
                   <select
                     aria-label="从 379 种 DAVIS 激酶库预选"
-                    className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus:ring-2 focus:ring-indigo-500"
+                    className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 focus-ring font-medium"
                     onChange={handleSelectTarget}
                     value={targets.find(t => t.id === targetName)?.id || ''}
                   >
@@ -386,8 +443,8 @@ export default function LeadOptimizerStudio() {
                   rows={3}
                   value={targetSequence}
                   onChange={e => setTargetSequence(e.target.value)}
-                  placeholder="如：MLEICLKLVGCKSKKGLSSSSSCYLEEALQRPVASDFEPQGLSEAARWNSKENLLAGPSENDPNLFVALYDFVASGDNTLSITKGEKLRVLGYNHNGEWCEAQTKNGQGWVPSNYITPVNSLEKHSWYHGPVSRNAAEYLLSSGINGSFLVRESESSPGQRSISLRYEGRVYHYRINTASDGKLYVSSESRFNTLAELVHHHSTVADGLITTLHYPAPKRNKPTVYGVSPNYDKWEMERTDITMKHKLGGGQYGEVYEGVWKKYSLTVAVKTLKEDTMEVEEFLKEAAVMKEIKHPNLVQLLGVCTREPPFYIITEFMTYGNLLDYLRECNRQEVNAVVLLYMATQISSAMEYLEKKNFIHRDLAARNCLVGENHLVKVADFGLSRLMTGDTYTAHAGAKFPIKWTAPESLAYNKFSIKSDVWAFGVLLWEIATYGMSPYPGIDLSQVYELLEKDYRMERPEGCPEKVYELMRACWQWNPSDRPSFAEIHQAFETMFQESSISDEVEKELGKQGVRGAVSTLLQAPELPTKTRTSRRAAEHRDTTDVPEMPHSKGQGESDPLDHEPAVSPLLPRKERGPPEGGLNEDERLLPKDKKTNLFSALIKKKKKTAPTPPKRSSSFREMDGQPERRGAGEEEGRDISNGALAFTPLDTADPAKSPKPSNGAGVPNGALRESGGSGFRSPHLWKKSSTLTSSRLATGEEEGGGSSSKRFLRSCSASCVPHGAKDTEWRSVTLPRDLQSTGRQFDSSTFGGHKSEKPALPRKRAGENRSDQVTRGTVTPPPRLVKKNEEAADEVFKDIMESSPGSSPPNLTPKPLRRQVTVAPASGLPHKEEAEKGSALGTPAAAEPVTPTSKAGSGAPGGTSKGPAEESRVRRHKHSSESPGRDKGKLSRLKPAPPPPPAASAGKAGGKPSQSPSQEAAGEAVLGAKTKATSLVDAVNSDAAKPSQPGEGLKKPVLPATPKPQSAKPSGTPISPAPVPSTLPSASSALAGDQPSSTAFIPLISTRVSLRKTRQPPERIASGAITKGVVLDSTEALCLAISRNSEQMASHSAVLEAGKNLYTFCVSYVDSIQQMRNKFAFREAINKLENNLRELQICPATAGSGPAATQDFSKLLSSVKEISDIVQR"
-                  className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 font-mono text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-indigo-500"
+                  placeholder="输入氨基酸序列..."
+                  className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 font-mono text-slate-800 dark:text-slate-200 focus-ring uppercase"
                 />
               </div>
             </div>
@@ -397,7 +454,7 @@ export default function LeadOptimizerStudio() {
 
         {/* 右侧：改构目标与执行控制 (5 cols) */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-xs space-y-4 flex flex-col justify-between h-full">
+          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs space-y-4 flex flex-col justify-between h-full">
             <div className="space-y-4">
               <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2 border-b border-slate-100 dark:border-slate-800 pb-2.5">
                 <Sparkles size={16} className="text-amber-500" />
@@ -413,7 +470,7 @@ export default function LeadOptimizerStudio() {
                   aria-label="核心优化目标"
                   value={optimizationGoal}
                   onChange={e => setOptimizationGoal(e.target.value)}
-                  className="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium focus-ring"
                 >
                   {OPTIMIZATION_GOALS.map(g => (
                     <option key={g.value} value={g.value}>{g.label}</option>
@@ -427,11 +484,11 @@ export default function LeadOptimizerStudio() {
                   自定义药化设计指令 (Custom Prompt / Instruction)
                 </label>
                 <textarea
-                  rows={3}
+                  rows={2}
                   value={customInstruction}
                   onChange={e => setCustomInstruction(e.target.value)}
                   placeholder="例如：在苯环无阻碍位点探查卤素结合；引入碱性中心；保持激酶铰链区双氢键供体-受体骨架..."
-                  className="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200 focus:ring-2 focus:ring-blue-500"
+                  className="w-full text-xs p-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-200 focus-ring"
                 />
                 <p className="text-[11px] text-slate-400 mt-1">
                   {hasLLMConfigured 
@@ -449,11 +506,12 @@ export default function LeadOptimizerStudio() {
                   aria-label="亲和力定量打分基准模型"
                   value={evalModel}
                   onChange={e => setEvalModel(e.target.value)}
-                  className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium"
+                  className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium focus-ring"
                 >
-                  <option value="stacked_ensemble">★ Stacking 集成模型 [最新 · 激酶口袋增强 + 元融合 CI=0.7571]</option>
-                  <option value="ridge">Ridge 岭回归 [经典基准 · 双盲冷启动 CI=0.7262]</option>
-                  <option value="ridge_alpha10">Ridge α=10 [强正则化 · 双盲外推稳健 CI=0.7004]</option>
+                  <option value="worldmodel_stacked_ensemble">★ 第二代生物世界模型 (Stacking 集成) [权威推荐 · 双盲 CI 0.8652]</option>
+                  <option value="worldmodel_unimol_esm">Uni-Mol 3D + ESM-2 基础世界模型 [3D 几何构象 CI 0.8340]</option>
+                  <option value="stacked_ensemble">第一代 Stacking 集成模型 [经典口袋融合 CI 0.7571]</option>
+                  <option value="ridge">Ridge 岭回归 [经典基准 · 双盲冷启动 CI 0.7262]</option>
                   <option value="hist_gradient_boosting">HistGBM [梯度提升树 · 非线性已知域拟合]</option>
                 </select>
               </div>
@@ -472,21 +530,21 @@ export default function LeadOptimizerStudio() {
                 type="button"
                 onClick={handleRunOptimization}
                 disabled={isOptimizing}
-                className={`w-full py-3 px-4 rounded-xl font-semibold text-xs flex items-center justify-center gap-2 shadow-sm transition-all ${
+                className={`w-full py-3 px-4 rounded-xl font-semibold text-xs flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer focus-ring ${
                   isOptimizing
                     ? 'bg-blue-400 text-white cursor-not-allowed'
-                    : 'bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white hover:shadow-md active:scale-[0.99]'
+                    : 'bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600 hover:from-blue-700 hover:to-emerald-700 text-white hover:shadow-md active:scale-[0.99]'
                 }`}
               >
                 {isOptimizing ? (
                   <>
                     <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                    <span>正在进行 AI 药化改构推理与基准定量打分...</span>
+                    <span>正在进行 AI 药化改构推理与世界模型打分...</span>
                   </>
                 ) : (
                   <>
                     <Sparkles size={16} />
-                    <span>开始 AI 智能改构与定量亲和力评估 (Run Lead Optimization)</span>
+                    <span>开始智能改构与贝叶斯主动学习评估 (Run Lead Optimization)</span>
                   </>
                 )}
               </button>
@@ -518,7 +576,7 @@ export default function LeadOptimizerStudio() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
             
             {/* 母体基准 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs flex flex-col justify-between">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs flex flex-col justify-between">
               <div>
                 <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                   先导母体基准 (Baseline Lead)
@@ -542,7 +600,7 @@ export default function LeadOptimizerStudio() {
             </div>
 
             {/* 评估候选衍生数量 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                 生成与打分衍生分子
               </span>
@@ -561,7 +619,7 @@ export default function LeadOptimizerStudio() {
             </div>
 
             {/* 最佳改构方案 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                 最佳优化分子方案
               </span>
@@ -577,7 +635,7 @@ export default function LeadOptimizerStudio() {
             </div>
 
             {/* 最大亲和力增益 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-4 shadow-xs">
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
               <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
                 最高亲和力增益 ΔpKd
               </span>
@@ -609,159 +667,376 @@ export default function LeadOptimizerStudio() {
 
           </div>
 
-          {/* 候选分子改构阶梯呈现列表 */}
-          <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-5 shadow-xs space-y-4">
-            <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-              <div className="flex items-center gap-2">
-                <TrendingUp size={18} className="text-blue-600" />
-                <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">
-                  改构衍生分子阶梯排行榜 (Molecular Evolution Ladder)
-                </h3>
-              </div>
-              <span className="text-xs text-slate-400 font-mono">按预测 pKd 亲和力高低严格降序排列</span>
+          {/* 切换展示模式：阶梯排行榜 vs 主动学习四象限矩阵 */}
+          <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-2">
+            <div className="flex gap-2">
+              <button
+                type="button"
+                onClick={() => setResultViewTab('ladder')}
+                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer focus-ring ${
+                  resultViewTab === 'ladder'
+                    ? 'bg-blue-600 text-white shadow-xs'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                }`}
+              >
+                <TrendingUp size={14} />
+                <span>分子阶梯排行榜 (Ladder View)</span>
+              </button>
+              
+              <button
+                type="button"
+                onClick={() => setResultViewTab('active_learning')}
+                className={`px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 cursor-pointer focus-ring ${
+                  resultViewTab === 'active_learning'
+                    ? 'bg-emerald-600 text-white shadow-xs'
+                    : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200'
+                }`}
+              >
+                <Grid size={14} />
+                <span>贝叶斯主动学习探索/利用矩阵 (Active Learning Matrix)</span>
+                {isLoadingActiveLearning && (
+                  <div className="w-3 h-3 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                )}
+              </button>
             </div>
 
-            <div className="space-y-3">
-              {optimizeResult.candidates.map((cand, idx) => {
-                const isBest = idx === 0 && cand.delta_pkd > 0;
-                const dl = computeDrugLikeness(cand.smiles);
+            {resultViewTab === 'active_learning' && activeLearningReport && (
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleExportActiveLearningCSV}
+                  className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring"
+                >
+                  <Download size={13} />
+                  <span>导出验证清单 (CSV)</span>
+                </button>
+                <button
+                  type="button"
+                  onClick={handleCopyMarkdownReport}
+                  className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold flex items-center gap-1.5 cursor-pointer focus-ring"
+                >
+                  {copiedReport ? <Check size={13} className="text-emerald-500" /> : <Copy size={13} />}
+                  <span>{copiedReport ? '已复制报告' : '复制学术总结'}</span>
+                </button>
+              </div>
+            )}
+          </div>
 
-                return (
-                  <div
-                    key={cand.id}
-                    className={`p-4 rounded-xl border transition-all ${
-                      isBest 
-                        ? 'border-emerald-300 dark:border-emerald-800 bg-emerald-50/20 dark:bg-emerald-950/10 shadow-xs'
-                        : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700'
-                    }`}
-                  >
-                    <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
-                      {/* 1. 左侧：方案信息、机理与成药性评估 */}
-                      <div className="space-y-2.5 flex-1 min-w-0">
-                        <div className="flex flex-wrap items-center gap-2">
-                          <span className={`w-6 h-6 rounded-md flex items-center justify-center font-mono font-bold text-xs ${
-                            isBest 
-                              ? 'bg-emerald-600 text-white' 
-                              : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
-                          }`}>
-                            #{idx + 1}
-                          </span>
-                          <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
-                            {cand.name}
-                          </h4>
-                          <span className="text-[10px] px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
-                            {cand.modification_type}
-                          </span>
-                          {isBest && (
-                            <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-semibold flex items-center gap-1">
-                              <Sparkles size={11} /> 最优演进方案
+          {/* TAB 1: 候选分子改构阶梯呈现列表 */}
+          {resultViewTab === 'ladder' && (
+            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs space-y-4">
+              <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                <div className="flex items-center gap-2">
+                  <TrendingUp size={18} className="text-blue-600" />
+                  <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                    改构衍生分子阶梯排行榜 (Molecular Evolution Ladder)
+                  </h3>
+                </div>
+                <span className="text-xs text-slate-400 font-mono">按预测 pKd 亲和力高低严格降序排列</span>
+              </div>
+
+              <div className="space-y-3">
+                {optimizeResult.candidates.map((cand, idx) => {
+                  const isBest = idx === 0 && cand.delta_pkd > 0;
+                  const dl = computeDrugLikeness(cand.smiles);
+
+                  return (
+                    <div
+                      key={cand.id}
+                      className={`p-4 rounded-xl border transition-all ${
+                        isBest 
+                          ? 'border-emerald-300 dark:border-emerald-800 bg-emerald-50/20 dark:bg-emerald-950/10 shadow-xs'
+                          : 'border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/60 hover:border-slate-300 dark:hover:border-slate-700'
+                      }`}
+                    >
+                      <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                        {/* 1. 左侧：方案信息、机理与成药性评估 */}
+                        <div className="space-y-2.5 flex-1 min-w-0">
+                          <div className="flex flex-wrap items-center gap-2">
+                            <span className={`w-6 h-6 rounded-md flex items-center justify-center font-mono font-bold text-xs ${
+                              isBest 
+                                ? 'bg-emerald-600 text-white' 
+                                : 'bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300'
+                            }`}>
+                              #{idx + 1}
                             </span>
-                          )}
-                        </div>
-
-                        {/* 药效团与机理阐述 */}
-                        <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
-                          <strong className="text-slate-900 dark:text-slate-200 block mb-0.5 text-[11px] font-semibold">
-                            🔬 药化改构依据与空间互作假说：
-                          </strong>
-                          {cand.rationale}
-                        </div>
-
-                        {/* 成药性指标 (Lipinski Rule of 5) 诊断条 */}
-                        <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 p-2 rounded-lg bg-slate-50/60 dark:bg-slate-950/40 border border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-slate-600 dark:text-slate-400">
-                          <span>MW: <strong className="text-slate-800 dark:text-slate-200">{dl.mw}</strong> g/mol</span>
-                          <span>LogP: <strong className="text-slate-800 dark:text-slate-200">{dl.logp}</strong></span>
-                          <span>TPSA: <strong className="text-slate-800 dark:text-slate-200">{dl.tpsa}</strong> Å²</span>
-                          <span>HBD/HBA: <strong className="text-slate-800 dark:text-slate-200">{dl.hbd}/{dl.hba}</strong></span>
-                          <span className={`text-[10px] px-1.5 py-0.2 rounded font-sans font-medium ${
-                            dl.badge_color === 'emerald'
-                              ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
-                              : dl.badge_color === 'amber'
-                              ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200 dark:border-amber-800'
-                              : 'bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
-                          }`}>
-                            {dl.druglikeness_tier}
-                          </span>
-                        </div>
-
-                        {/* SMILES 代码与复制 */}
-                        <div className="flex items-center gap-2">
-                          <div className="flex-1 bg-slate-100 dark:bg-slate-950 rounded px-2.5 py-1.5 font-mono text-[11px] text-slate-600 dark:text-slate-300 truncate">
-                            {cand.smiles}
+                            <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100">
+                              {cand.name}
+                            </h4>
+                            <span className="text-[10px] px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
+                              {cand.modification_type}
+                            </span>
+                            {isBest && (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 font-semibold flex items-center gap-1">
+                                <Sparkles size={11} /> 最优演进方案
+                              </span>
+                            )}
                           </div>
-                          <button
-                            type="button"
-                            onClick={() => handleCopySmiles(cand.id, cand.smiles)}
-                            className="p-1.5 rounded bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors shrink-0 text-xs flex items-center gap-1"
-                            title="复制 SMILES 字符串"
-                          >
-                            {copiedId === cand.id ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
-                            <span className="text-[10px]">{copiedId === cand.id ? '已复制' : '复制'}</span>
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => handleSaveToCart(cand)}
-                            className="p-1.5 rounded bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 transition-colors shrink-0 text-xs flex items-center gap-1 font-medium"
-                            title="存入候选分子暂存库"
-                          >
-                            {cartSuccessId === cand.id ? <Check size={14} className="text-emerald-600" /> : <PlusCircle size={14} />}
-                            <span className="text-[10px]">{cartSuccessId === cand.id ? '已存入' : '存入分子库'}</span>
-                          </button>
-                        </div>
-                      </div>
 
-                      {/* 2. 中间：2D 骨架拓扑结构图 */}
-                      <div className="shrink-0 flex items-center justify-center self-center lg:self-stretch">
-                        <Molecule2DViewer smiles={cand.smiles} name={cand.name} width={170} height={110} />
-                      </div>
-
-                      {/* 3. 右侧：定量指标与亲和力增益 */}
-                      <div className="flex lg:flex-col items-center lg:items-end justify-between lg:justify-center border-t lg:border-t-0 lg:border-l border-slate-100 dark:border-slate-800 pt-3 lg:pt-0 lg:pl-4 min-w-[150px]">
-                        <div className="text-left lg:text-right">
-                          <span className="text-[10px] text-slate-400 uppercase font-mono block">预测定量 pKd</span>
-                          <span className="text-xl font-bold font-mono text-slate-900 dark:text-slate-100">
-                            {cand.predicted_pkd}
-                          </span>
-                          <span className="block text-xs font-mono text-slate-500">
-                            Kd: <strong>{cand.predicted_kd_nM} nM</strong>
-                          </span>
-                        </div>
-
-                        <div className="text-right mt-2">
-                          <div className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold font-mono ${
-                            cand.status_code === 'improved'
-                              ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
-                              : cand.status_code === 'decreased'
-                              ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300'
-                              : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
-                          }`}>
-                            {cand.status_code === 'improved' && <ArrowUpRight size={13} />}
-                            {cand.status_code === 'decreased' && <ArrowDownRight size={13} />}
-                            {cand.status_code === 'neutral' && <Minus size={13} />}
-                            <span>{cand.delta_pkd > 0 ? `+${cand.delta_pkd}` : cand.delta_pkd} pKd</span>
+                          {/* 药效团与机理阐述 */}
+                          <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/60 border border-slate-100 dark:border-slate-800 text-xs text-slate-700 dark:text-slate-300 leading-relaxed">
+                            <strong className="text-slate-900 dark:text-slate-200 block mb-0.5 text-[11px] font-semibold">
+                              🔬 药化改构依据与空间互作假说：
+                            </strong>
+                            {cand.rationale}
                           </div>
-                          <span className="block text-[10px] text-slate-400 mt-0.5">
-                            {cand.status} ({cand.fold_change}x)
-                          </span>
+
+                          {/* 成药性指标 (Lipinski Rule of 5) 诊断条 */}
+                          <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 p-2 rounded-lg bg-slate-50/60 dark:bg-slate-950/40 border border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-slate-600 dark:text-slate-400">
+                            <span>MW: <strong className="text-slate-800 dark:text-slate-200">{dl.mw}</strong> g/mol</span>
+                            <span>LogP: <strong className="text-slate-800 dark:text-slate-200">{dl.logp}</strong></span>
+                            <span>TPSA: <strong className="text-slate-800 dark:text-slate-200">{dl.tpsa}</strong> Å²</span>
+                            <span>HBD/HBA: <strong className="text-slate-800 dark:text-slate-200">{dl.hbd}/{dl.hba}</strong></span>
+                            <span className={`text-[10px] px-1.5 py-0.2 rounded font-sans font-medium ${
+                              dl.badge_color === 'emerald'
+                                ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
+                                : dl.badge_color === 'amber'
+                                ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200 dark:border-amber-800'
+                                : 'bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
+                            }`}>
+                              {dl.druglikeness_tier}
+                            </span>
+                          </div>
+
+                          {/* SMILES 代码与复制 */}
+                          <div className="flex items-center gap-2">
+                            <div className="flex-1 bg-slate-100 dark:bg-slate-950 rounded px-2.5 py-1.5 font-mono text-[11px] text-slate-600 dark:text-slate-300 truncate">
+                              {cand.smiles}
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => handleCopySmiles(cand.id, cand.smiles)}
+                              className="p-1.5 rounded bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-600 dark:text-slate-300 transition-colors shrink-0 text-xs flex items-center gap-1 cursor-pointer focus-ring"
+                              title="复制 SMILES 字符串"
+                            >
+                              {copiedId === cand.id ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
+                              <span className="text-[10px]">{copiedId === cand.id ? '已复制' : '复制'}</span>
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleSaveToCart(cand)}
+                              className="p-1.5 rounded bg-blue-50 dark:bg-blue-950/40 border border-blue-200 dark:border-blue-800 hover:bg-blue-100 dark:hover:bg-blue-900/60 text-blue-700 dark:text-blue-300 transition-colors shrink-0 text-xs flex items-center gap-1 font-medium cursor-pointer focus-ring"
+                              title="存入候选分子暂存库"
+                            >
+                              {cartSuccessId === cand.id ? <Check size={14} className="text-emerald-600" /> : <PlusCircle size={14} />}
+                              <span className="text-[10px]">{cartSuccessId === cand.id ? '已存入' : '存入分子库'}</span>
+                            </button>
+                          </div>
                         </div>
 
-                        <div className="text-right mt-2">
-                          <span className={`text-[10px] px-2 py-0.5 rounded font-medium ${
-                            cand.affinity_tier_code === 'high_affinity'
-                              ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800'
-                              : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
-                          }`}>
-                            {cand.affinity_tier}
-                          </span>
+                        {/* 2. 中间：2D 骨架拓扑结构图 */}
+                        <div className="shrink-0 flex items-center justify-center self-center lg:self-stretch">
+                          <Molecule2DViewer smiles={cand.smiles} name={cand.name} width={170} height={110} />
                         </div>
+
+                        {/* 3. 右侧：定量指标与亲和力增益 */}
+                        <div className="flex lg:flex-col items-center lg:items-end justify-between lg:justify-center border-t lg:border-t-0 lg:border-l border-slate-100 dark:border-slate-800 pt-3 lg:pt-0 lg:pl-4 min-w-[150px]">
+                          <div className="text-left lg:text-right">
+                            <span className="text-[10px] text-slate-400 uppercase font-mono block">预测定量 pKd</span>
+                            <span className="text-xl font-bold font-mono text-slate-900 dark:text-slate-100">
+                              {cand.predicted_pkd}
+                            </span>
+                            <span className="block text-xs font-mono text-slate-500">
+                              Kd: <strong>{cand.predicted_kd_nM} nM</strong>
+                            </span>
+                          </div>
+
+                          <div className="text-right mt-2">
+                            <div className={`inline-flex items-center gap-1 px-2.5 py-1 rounded-md text-xs font-bold font-mono ${
+                              cand.status_code === 'improved'
+                                ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300'
+                                : cand.status_code === 'decreased'
+                                ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/60 dark:text-amber-300'
+                                : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                            }`}>
+                              {cand.status_code === 'improved' && <ArrowUpRight size={13} />}
+                              {cand.status_code === 'decreased' && <ArrowDownRight size={13} />}
+                              {cand.status_code === 'neutral' && <Minus size={13} />}
+                              <span>{cand.delta_pkd > 0 ? `+${cand.delta_pkd}` : cand.delta_pkd} pKd</span>
+                            </div>
+                            <span className="block text-[10px] text-slate-400 mt-0.5">
+                              {cand.status} ({cand.fold_change}x)
+                            </span>
+                          </div>
+
+                          <div className="text-right mt-2">
+                            <span className={`text-[10px] px-2 py-0.5 rounded font-medium ${
+                              cand.affinity_tier_code === 'high_affinity'
+                                ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800'
+                                : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
+                            }`}>
+                              {cand.affinity_tier}
+                            </span>
+                          </div>
+                        </div>
+
                       </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
 
+          {/* TAB 2: 主动学习四象限探索/利用矩阵 */}
+          {resultViewTab === 'active_learning' && (
+            <div className="space-y-4">
+              {activeLearningReport ? (
+                <div className="space-y-4">
+                  {/* 四象限概览卡片 */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5">
+                    
+                    {/* Q1: 高置信度领头物 */}
+                    <div className="p-4 rounded-xl border border-emerald-200 dark:border-emerald-800/80 bg-emerald-50/30 dark:bg-emerald-950/20 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5">
+                          <Check size={14} className="text-emerald-600" />
+                          高置信度领头物 (Hits)
+                        </span>
+                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-600 text-white font-mono">
+                          {activeLearningReport.confident_hits.length}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                        高预测均值 μ + 低不确定性 σ。模型极度确信的优质产物，优先直接推进体外激酶结合测定。
+                      </p>
+                    </div>
+
+                    {/* Q2: 突破假说 */}
+                    <div className="p-4 rounded-xl border border-blue-200 dark:border-blue-800/80 bg-blue-50/30 dark:bg-blue-950/20 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-blue-800 dark:text-blue-300 flex items-center gap-1.5">
+                          <Sparkles size={14} className="text-blue-600" />
+                          突破假说 (Breakthrough)
+                        </span>
+                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-600 text-white font-mono">
+                          {activeLearningReport.breakthrough_hypotheses.length}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                        高期望提升 (Top EI)。具有冲刺皮摩尔 (pM) 级别超高亲和力的非凡探索空间。
+                      </p>
+                    </div>
+
+                    {/* Q3: 认知盲区 */}
+                    <div className="p-4 rounded-xl border border-amber-200 dark:border-amber-800/80 bg-amber-50/30 dark:bg-amber-950/20 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
+                          <HelpCircle size={14} className="text-amber-600" />
+                          认知盲区 (High-Info)
+                        </span>
+                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-600 text-white font-mono">
+                          {activeLearningReport.high_information_gain_blindspots.length}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                        极高不确定性 σ。湿实验反馈能最大化消除模型认知盲区，具有顶级信息增益价值。
+                      </p>
+                    </div>
+
+                    {/* Q4: 确定性无效物 */}
+                    <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/60 space-y-2">
+                      <div className="flex items-center justify-between">
+                        <span className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
+                          <Minus size={14} className="text-slate-400" />
+                          确定性无效物 (Inactives)
+                        </span>
+                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-500 text-white font-mono">
+                          {activeLearningReport.known_inactives.length}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                        低均值 μ + 低不确定性 σ。结合极弱且高度确信无效，直接规避，节省实验经费。
+                      </p>
+                    </div>
+
+                  </div>
+
+                  {/* 候选分子四象限决策明细表 */}
+                  <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-5 shadow-xs space-y-4">
+                    <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
+                      <div>
+                        <h4 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                          <Grid size={16} className="text-emerald-600" />
+                          贝叶斯获取函数评分与象限排布
+                        </h4>
+                        <p className="text-xs text-slate-500 mt-0.5">
+                          当前参考最优母体基准 $y_{'{'}best{'}'}$ = {activeLearningReport.y_best_reference.toFixed(3)} pKd
+                        </p>
+                      </div>
+                      <span className="text-xs text-slate-400 font-mono">
+                        共评估 {activeLearningReport.total_evaluated} 个分子
+                      </span>
+                    </div>
+
+                    <div className="overflow-x-auto">
+                      <table className="w-full text-left text-xs border-collapse">
+                        <thead>
+                          <tr className="bg-slate-50 dark:bg-slate-800/60 border-b border-slate-200 dark:border-slate-700 text-slate-700 dark:text-slate-300">
+                            <th className="p-3 font-bold">候选分子名称</th>
+                            <th className="p-3 font-bold">象限分类</th>
+                            <th className="p-3 font-bold">预测均值 (μ)</th>
+                            <th className="p-3 font-bold">不确定性 (σ)</th>
+                            <th className="p-3 font-bold text-blue-600 dark:text-blue-400">期望提升 (EI)</th>
+                            <th className="p-3 font-bold">UCB 上界得分</th>
+                            <th className="p-3 font-bold">湿实验推荐理由</th>
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-slate-100 dark:divide-slate-800">
+                          {[
+                            ...activeLearningReport.confident_hits,
+                            ...activeLearningReport.breakthrough_hypotheses,
+                            ...activeLearningReport.high_information_gain_blindspots,
+                            ...activeLearningReport.known_inactives
+                          ].map((cand, cIdx) => (
+                            <tr key={cIdx} className="hover:bg-slate-50/60 dark:hover:bg-slate-800/40 transition-colors">
+                              <td className="p-3">
+                                <div className="font-bold text-slate-900 dark:text-slate-100">{cand.name}</div>
+                                <div className="font-mono text-[10px] text-slate-400 truncate max-w-[200px]">{cand.smiles}</div>
+                              </td>
+                              <td className="p-3">
+                                <span className={`px-2 py-0.5 rounded-full text-[10px] font-semibold ${
+                                  cand.quadrant === 'confident_hits'
+                                    ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'
+                                    : cand.quadrant === 'breakthrough_hypotheses'
+                                    ? 'bg-blue-100 text-blue-800 dark:bg-blue-950 dark:text-blue-300'
+                                    : cand.quadrant === 'high_uncertainty_exploration'
+                                    ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
+                                    : 'bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                                }`}>
+                                  {cand.quadrant_label}
+                                </span>
+                              </td>
+                              <td className="p-3 font-mono font-bold text-slate-800 dark:text-slate-200">
+                                {cand.mean_pkd.toFixed(3)}
+                              </td>
+                              <td className="p-3 font-mono text-slate-500">
+                                ±{cand.uncertainty_sigma.toFixed(3)}
+                              </td>
+                              <td className="p-3 font-mono text-blue-600 dark:text-blue-400 font-bold">
+                                {cand.expected_improvement.toFixed(4)}
+                              </td>
+                              <td className="p-3 font-mono font-medium">
+                                {cand.ucb_score.toFixed(3)}
+                              </td>
+                              <td className="p-3 text-[11px] text-slate-600 dark:text-slate-400 max-w-xs">
+                                {cand.recommendation_reason}
+                              </td>
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              ) : (
+                <div className="p-12 text-center text-xs text-slate-400 border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-2xl bg-white dark:bg-slate-900">
+                  <Grid size={36} className="mx-auto text-slate-300 dark:text-slate-600 mb-2" />
+                  <span>正在计算主动学习获取函数或暂无分子数据...</span>
+                </div>
+              )}
             </div>
-          </div>
+          )}
 
         </div>
       )}
@@ -770,10 +1045,10 @@ export default function LeadOptimizerStudio() {
       <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/30 text-xs text-slate-500 dark:text-slate-400 space-y-1">
         <div className="flex items-center gap-1.5 font-semibold text-slate-700 dark:text-slate-300">
           <Info size={14} className="text-blue-500" />
-          <span>科学自律与计算验证声明</span>
+          <span>科学自律与贝叶斯主动学习声明</span>
         </div>
         <p className="leading-relaxed">
-          本工作台为纯计算辅助设计系统。衍生分子的 SMILES 与假说由药化启发式引擎或用户配置的大模型生成，定量亲和力评估一律由经过双盲冷启动协议（Dual-Cold Split）独立训练和密码学哈希审计的 Ridge 冻结基准模型计算。所有预测增益均属计算先导探索，不可替代湿法生化活性（Kd/IC50）与晶体结构测定。
+          本工作台为纯计算辅助设计系统。衍生分子的 SMILES 与假说由药化启发式引擎或用户配置的大模型生成，定量亲和力评估一律由第二代生物世界模型（Uni-Mol 3D 几何构象 + ESM-2 进化表征）或严格留出训练的 Ridge 冻结基准模型计算。贝叶斯主动学习获取函数用于指引湿实验投产优先级，不可替代湿法生化活性（Kd/IC50）与晶体结构测定。
         </p>
       </div>
 
