@@ -600,68 +600,68 @@ export default function LeadOptimizerStudio() {
             </div>
 
             {/* 评估候选衍生数量 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
-                生成与打分衍生分子
+            <div className="precision-card rounded-2xl p-4 shadow-sm space-y-1">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block font-mono">
+                GENERATED CANDIDATES
               </span>
               <div className="flex items-baseline gap-2">
-                <span className="text-2xl font-bold font-mono text-blue-600 dark:text-blue-400">
+                <span className="text-3xl font-black font-mono text-sky-600 dark:text-sky-400 glow-cyan-text">
                   {optimizeResult.summary.candidates_evaluated}
                 </span>
-                <span className="text-xs text-slate-500">个候选设计</span>
+                <span className="text-xs text-slate-500 font-medium">个衍生方案</span>
               </div>
-              <div className="text-xs text-slate-500 mt-1">
-                工作模式: <span className="font-mono text-slate-700 dark:text-slate-300">{optimizeResult.mode}</span>
+              <div className="text-[11px] text-slate-500 mt-1">
+                生成引擎: <span className="font-mono text-slate-700 dark:text-slate-300 font-bold">{optimizeResult.mode}</span>
               </div>
-              <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-blue-50 dark:bg-blue-950/40 text-blue-700 dark:text-blue-300 font-mono">
-                打分模型: {optimizeResult.model_used}
+              <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-md bg-sky-50 dark:bg-sky-950/60 text-sky-700 dark:text-sky-300 font-mono border border-sky-200 dark:border-sky-800">
+                评估模型: {optimizeResult.model_used}
               </span>
             </div>
 
             {/* 最佳改构方案 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
-                最佳优化分子方案
+            <div className="precision-card rounded-2xl p-4 shadow-sm space-y-1">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block font-mono">
+                TOP CANDIDATE SCHEME
               </span>
-              <div className="text-base font-bold text-slate-800 dark:text-slate-100 truncate" title={optimizeResult.summary.best_candidate}>
+              <div className="text-base font-bold text-slate-900 dark:text-slate-100 truncate" title={optimizeResult.summary.best_candidate}>
                 {optimizeResult.summary.best_candidate}
               </div>
-              <div className="text-xs text-emerald-600 dark:text-emerald-400 font-semibold mt-1 font-mono">
+              <div className="text-xs text-emerald-600 dark:text-emerald-400 font-bold mt-1 font-mono glow-emerald-text">
                 预测最优 Kd: {optimizeResult.summary.best_kd_nM} nM
               </div>
-              <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 font-semibold">
-                最高增益候选
+              <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-semibold border border-emerald-200 dark:border-emerald-800">
+                最高综合亲和力
               </span>
             </div>
 
             {/* 最大亲和力增益 */}
-            <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-4 shadow-xs">
-              <span className="text-[11px] font-semibold text-slate-400 uppercase tracking-wider block mb-1">
-                最高亲和力增益 ΔpKd
+            <div className="precision-card rounded-2xl p-4 shadow-sm space-y-1">
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block font-mono">
+                MAX AFFINITY GAIN (ΔpKd)
               </span>
               <div className="flex items-baseline gap-2">
-                <span className={`text-2xl font-bold font-mono ${
+                <span className={`text-3xl font-black font-mono ${
                   optimizeResult.summary.max_affinity_gain_pkd > 0 
-                    ? 'text-emerald-600 dark:text-emerald-400' 
+                    ? 'text-emerald-600 dark:text-emerald-400 glow-emerald-text' 
                     : 'text-slate-600 dark:text-slate-400'
                 }`}>
                   {optimizeResult.summary.max_affinity_gain_pkd > 0 ? `+${optimizeResult.summary.max_affinity_gain_pkd}` : optimizeResult.summary.max_affinity_gain_pkd}
                 </span>
-                <span className="text-xs text-slate-500 font-mono">pKd 单位</span>
+                <span className="text-xs text-slate-500 font-mono">pKd</span>
               </div>
-              <div className="text-xs text-slate-500 mt-1">
+              <div className="text-[11px] text-slate-500 mt-1">
                 {optimizeResult.summary.max_affinity_gain_pkd > 0 ? (
-                  <span className="text-emerald-600 font-semibold flex items-center gap-1">
-                    <ArrowUpRight size={13} /> 亲和结合力显著增强
+                  <span className="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
+                    <ArrowUpRight size={13} /> 结合自由能增益驱动
                   </span>
                 ) : (
                   <span className="text-slate-500 flex items-center gap-1">
-                    <Minus size={13} /> 与母体基本相当
+                    <Minus size={13} /> 与先导母体相当
                   </span>
                 )}
               </div>
-              <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-mono">
-                靶点: {optimizeResult.target_name}
+              <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-md bg-slate-100 dark:bg-slate-800/90 text-slate-600 dark:text-slate-400 font-mono border border-slate-200 dark:border-slate-700">
+                靶标: {optimizeResult.target_name}
               </span>
             </div>
 
@@ -887,65 +887,65 @@ export default function LeadOptimizerStudio() {
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3.5">
                     
                     {/* Q1: 高置信度领头物 */}
-                    <div className="p-4 rounded-xl border border-emerald-200 dark:border-emerald-800/80 bg-emerald-50/30 dark:bg-emerald-950/20 space-y-2">
+                    <div className="p-4 rounded-xl border border-emerald-300 dark:border-emerald-700/60 bg-gradient-to-br from-emerald-50/80 via-white to-emerald-50/30 dark:from-emerald-950/40 dark:via-slate-900/60 dark:to-slate-950/80 space-y-2 shadow-2xs relative overflow-hidden">
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-bold text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5">
-                          <Check size={14} className="text-emerald-600" />
+                          <Check size={14} className="text-emerald-600 dark:text-emerald-400" />
                           高置信度领头物 (Hits)
                         </span>
-                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-emerald-600 text-white font-mono">
+                        <span className="px-2 py-0.5 rounded-md text-xs font-bold bg-emerald-600 text-white font-mono shadow-xs">
                           {activeLearningReport.confident_hits.length}
                         </span>
                       </div>
-                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
                         高预测均值 μ + 低不确定性 σ。模型极度确信的优质产物，优先直接推进体外激酶结合测定。
                       </p>
                     </div>
 
                     {/* Q2: 突破假说 */}
-                    <div className="p-4 rounded-xl border border-blue-200 dark:border-blue-800/80 bg-blue-50/30 dark:bg-blue-950/20 space-y-2">
+                    <div className="p-4 rounded-xl border border-sky-300 dark:border-sky-700/60 bg-gradient-to-br from-sky-50/80 via-white to-sky-50/30 dark:from-sky-950/40 dark:via-slate-900/60 dark:to-slate-950/80 space-y-2 shadow-2xs relative overflow-hidden">
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-blue-800 dark:text-blue-300 flex items-center gap-1.5">
-                          <Sparkles size={14} className="text-blue-600" />
+                        <span className="text-xs font-bold text-sky-800 dark:text-sky-300 flex items-center gap-1.5">
+                          <Sparkles size={14} className="text-sky-600 dark:text-sky-400" />
                           突破假说 (Breakthrough)
                         </span>
-                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-blue-600 text-white font-mono">
+                        <span className="px-2 py-0.5 rounded-md text-xs font-bold bg-sky-600 text-white font-mono shadow-xs">
                           {activeLearningReport.breakthrough_hypotheses.length}
                         </span>
                       </div>
-                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
                         高期望提升 (Top EI)。具有冲刺皮摩尔 (pM) 级别超高亲和力的非凡探索空间。
                       </p>
                     </div>
 
                     {/* Q3: 认知盲区 */}
-                    <div className="p-4 rounded-xl border border-amber-200 dark:border-amber-800/80 bg-amber-50/30 dark:bg-amber-950/20 space-y-2">
+                    <div className="p-4 rounded-xl border border-amber-300 dark:border-amber-700/60 bg-gradient-to-br from-amber-50/80 via-white to-amber-50/30 dark:from-amber-950/40 dark:via-slate-900/60 dark:to-slate-950/80 space-y-2 shadow-2xs relative overflow-hidden">
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-bold text-amber-800 dark:text-amber-300 flex items-center gap-1.5">
-                          <HelpCircle size={14} className="text-amber-600" />
+                          <HelpCircle size={14} className="text-amber-600 dark:text-amber-400" />
                           认知盲区 (High-Info)
                         </span>
-                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-amber-600 text-white font-mono">
+                        <span className="px-2 py-0.5 rounded-md text-xs font-bold bg-amber-500 text-slate-950 font-mono font-bold shadow-xs">
                           {activeLearningReport.high_information_gain_blindspots.length}
                         </span>
                       </div>
-                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
                         极高不确定性 σ。湿实验反馈能最大化消除模型认知盲区，具有顶级信息增益价值。
                       </p>
                     </div>
 
                     {/* Q4: 确定性无效物 */}
-                    <div className="p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/60 space-y-2">
+                    <div className="p-4 rounded-xl border border-slate-300 dark:border-slate-750 bg-gradient-to-br from-slate-100/80 via-white to-slate-50/30 dark:from-slate-900/80 dark:via-slate-900/40 dark:to-slate-950/80 space-y-2 shadow-2xs relative overflow-hidden">
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                           <Minus size={14} className="text-slate-400" />
                           确定性无效物 (Inactives)
                         </span>
-                        <span className="px-2 py-0.5 rounded-full text-xs font-bold bg-slate-500 text-white font-mono">
+                        <span className="px-2 py-0.5 rounded-md text-xs font-bold bg-slate-500 text-white font-mono shadow-xs">
                           {activeLearningReport.known_inactives.length}
                         </span>
                       </div>
-                      <p className="text-[11px] text-slate-600 dark:text-slate-400">
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
                         低均值 μ + 低不确定性 σ。结合极弱且高度确信无效，直接规避，节省实验经费。
                       </p>
                     </div>

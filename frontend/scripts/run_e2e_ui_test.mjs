@@ -137,6 +137,10 @@ async function runE2EUIAutomation() {
     await biophysicsCard.waitFor({ state: 'visible', timeout: 8000 });
     console.log('  Received prediction output & 3D Biophysics MM-GBSA card!');
 
+    // Scroll to top of predictions to capture both Hero and Biophysics
+    await page.evaluate(() => window.scrollTo(0, 80));
+    await page.waitForTimeout(400);
+
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, '02_dti_prediction_output.png') });
     console.log('  Screenshot saved: 02_dti_prediction_output.png');
 
@@ -184,6 +188,11 @@ async function runE2EUIAutomation() {
     await evoResultHero.waitFor({ state: 'visible', timeout: 15000 });
     console.log('  Optimization results returned!');
 
+    // Scroll to molecular ladder
+    const ladderViewHeading = page.locator('text=分子阶梯排行榜 (Ladder View)').first();
+    await ladderViewHeading.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(400);
+
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, '05_lead_evolution_ladder.png') });
     console.log('  Screenshot saved: 05_lead_evolution_ladder.png');
 
@@ -195,6 +204,9 @@ async function runE2EUIAutomation() {
     const alCards = page.locator('text=高置信度领头物 (Hits)').first();
     await alCards.waitFor({ state: 'visible', timeout: 8000 });
     console.log('  Active Learning 4-Quadrant Matrix rendered!');
+
+    await alTabBtn.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(400);
 
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, '06_active_learning_matrix.png') });
     console.log('  Screenshot saved: 06_active_learning_matrix.png');

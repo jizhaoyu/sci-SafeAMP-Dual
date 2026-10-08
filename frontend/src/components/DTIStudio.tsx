@@ -605,43 +605,82 @@ export default function DTIStudio() {
             {/* Right Result Display Section (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
               {result ? (
-                <div className="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-md space-y-5 animate-in fade-in duration-300">
-                  <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
-                    <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-1.5">
-                      <Sparkles className="text-amber-500" size={16} />
-                      预测推断与结合评分 (Affinity Output)
+                <div className="precision-card p-6 rounded-2xl shadow-xl space-y-5 animate-in fade-in duration-300 hud-bracket">
+                  <div className="flex items-center justify-between border-b border-slate-200/80 dark:border-slate-800/80 pb-3">
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                      <div className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" />
+                      <span>预测推断与结合评分 (Affinity Output)</span>
                     </h3>
-                    <span className="text-[11px] px-2.5 py-0.5 rounded-full font-mono font-bold bg-blue-100 dark:bg-blue-950 text-blue-700 dark:text-blue-300">
+                    <span className="text-[10px] px-2.5 py-0.5 rounded-md font-mono font-bold bg-sky-50 dark:bg-sky-950/80 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800">
                       {result.model_used.toUpperCase()}
                     </span>
                   </div>
 
-                  {/* Score Hero Panel */}
-                  <div className="p-5 rounded-2xl bg-gradient-to-b from-blue-50/50 to-indigo-50/30 dark:from-slate-800/80 dark:to-slate-800/40 border border-blue-200/60 dark:border-slate-700 text-center space-y-2">
-                    <div className="text-xs text-slate-500 font-medium">预测负对数亲和力 (pKd)</div>
-                    <div className="text-4xl font-extrabold text-blue-600 dark:text-blue-400 font-mono tracking-tight">
-                      {result.predicted_pkd.toFixed(3)}
+                  {/* High-Precision Spectral Bio-Gauge Hero */}
+                  <div className="p-5 rounded-2xl bg-gradient-to-b from-sky-50/70 via-white to-slate-50/50 dark:from-slate-900/90 dark:via-slate-900/60 dark:to-slate-950/90 border border-sky-200/70 dark:border-sky-900/40 shadow-inner space-y-3">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-slate-500 dark:text-slate-400 font-medium">预测负对数亲和力 (pKd)</span>
+                      <span className="text-[10px] font-mono px-2 py-0.5 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400">
+                        DAVIS Scale [5.0 - 10.8]
+                      </span>
+                    </div>
+
+                    <div className="flex items-baseline justify-center gap-2 py-1">
+                      <div className="text-5xl font-black text-sky-600 dark:text-sky-400 font-mono tracking-tight glow-cyan-text">
+                        {result.predicted_pkd.toFixed(3)}
+                      </div>
+                      <span className="text-xs font-mono text-slate-400">pKd</span>
+                    </div>
+
+                    {/* Affinity Spectral Continuum Bar */}
+                    <div className="space-y-1.5 pt-1">
+                      <div className="relative w-full h-2 rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden">
+                        <div 
+                          className="absolute inset-0 bg-gradient-to-r from-slate-400 via-amber-400 to-emerald-400 opacity-80"
+                        />
+                        {/* Needle Indicator */}
+                        <div 
+                          className="absolute top-0 bottom-0 w-1.5 bg-slate-950 dark:bg-white shadow-sm transition-all duration-500 -translate-x-1/2"
+                          style={{ left: `${Math.max(0, Math.min(100, ((result.predicted_pkd - 5.0) / 5.5) * 100))}%` }}
+                        />
+                      </div>
+                      <div className="flex justify-between text-[9px] font-mono text-slate-400">
+                        <span>5.0 (弱结合/基底)</span>
+                        <span>7.0 (微摩尔-纳摩尔)</span>
+                        <span>9.0 (超强靶向)</span>
+                        <span>10.5+</span>
+                      </div>
                     </div>
                     
-                    <div className="pt-3 border-t border-slate-200 dark:border-slate-700 flex items-center justify-around text-xs">
-                      <div>
-                        <span className="text-slate-400 block text-[10px]">解离常数 (Kd)</span>
-                        <span className="font-mono font-bold text-slate-800 dark:text-slate-200 text-sm">
+                    {/* Thermodynamic & Physical Metrics Divider */}
+                    <div className="pt-3 border-t border-slate-200/70 dark:border-slate-800/80 grid grid-cols-2 gap-3 text-xs">
+                      <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-center">
+                        <span className="text-slate-400 block text-[10px] font-medium">解离平衡常数 (Kd)</span>
+                        <span className="font-mono font-bold text-slate-800 dark:text-slate-100 text-sm">
                           {result.predicted_kd_nM < 1000 
                             ? `${result.predicted_kd_nM.toFixed(1)} nM` 
                             : `${(result.predicted_kd_nM / 1000).toFixed(2)} μM`}
                         </span>
+                        <span className="text-[9px] text-slate-400 block font-mono mt-0.5">
+                          ~{(result.predicted_kd_nM * 1000).toFixed(0)} pM
+                        </span>
                       </div>
-                      <div>
-                        <span className="text-slate-400 block text-[10px]">亲和力分级</span>
-                        <span className={`font-semibold px-2.5 py-0.5 rounded-full text-xs ${
-                          result.affinity_tier_code === 'high_affinity'
-                            ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300'
-                            : result.affinity_tier_code === 'moderate_affinity'
-                            ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
-                            : 'bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300'
-                        }`}>
-                          {result.affinity_tier}
+
+                      <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/60 border border-slate-100 dark:border-slate-800 text-center">
+                        <span className="text-slate-400 block text-[10px] font-medium">亲和力活性分级</span>
+                        <div className="mt-1">
+                          <span className={`font-semibold px-2.5 py-0.5 rounded-full text-xs inline-block ${
+                            result.affinity_tier_code === 'high_affinity'
+                              ? 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700/60'
+                              : result.affinity_tier_code === 'moderate_affinity'
+                              ? 'bg-amber-100 text-amber-800 dark:bg-amber-950/80 dark:text-amber-300 border border-amber-300 dark:border-amber-700/60'
+                              : 'bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300 border border-slate-300 dark:border-slate-700'
+                          }`}>
+                            {result.affinity_tier}
+                          </span>
+                        </div>
+                        <span className="text-[9px] text-slate-400 block font-mono mt-1">
+                          ΔG° ≈ {(-1.363 * result.predicted_pkd).toFixed(2)} kcal/mol
                         </span>
                       </div>
                     </div>
@@ -649,101 +688,109 @@ export default function DTIStudio() {
 
                   {/* 3D 微观几何与热力学物理自由能透视卡片 */}
                   {biophysicsInsights ? (
-                    <div className="p-4 rounded-xl border border-indigo-200 dark:border-indigo-900/60 bg-indigo-50/30 dark:bg-indigo-950/20 space-y-3">
+                    <div className="p-4 rounded-xl border border-indigo-200/80 dark:border-indigo-900/60 bg-gradient-to-br from-indigo-50/40 via-white to-blue-50/30 dark:from-slate-900/90 dark:via-indigo-950/30 dark:to-slate-900/90 space-y-3.5 shadow-2xs">
                       <div className="flex items-center justify-between border-b border-indigo-100 dark:border-indigo-900/40 pb-2">
-                        <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-900 dark:text-indigo-200">
-                          <Activity size={14} className="text-indigo-600 dark:text-indigo-400" />
+                        <div className="flex items-center gap-1.5 text-xs font-bold text-indigo-950 dark:text-indigo-200">
+                          <Activity size={14} className="text-indigo-500 animate-pulse" />
                           <span>3D 诱导契合与 MM-GBSA 物理透视</span>
                         </div>
-                        <span className="text-[10px] font-mono px-2 py-0.5 rounded bg-indigo-100 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 font-semibold">
+                        <span className="text-[10px] font-mono px-2 py-0.5 rounded-md bg-indigo-100 dark:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 font-semibold border border-indigo-200 dark:border-indigo-800">
                           {biophysicsInsights.binding_mode_label}
                         </span>
                       </div>
 
+                      {/* 构象与口袋几何芯片 */}
                       <div className="grid grid-cols-2 gap-2 text-xs">
-                        <div className="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                        <div className="p-2.5 rounded-xl bg-white dark:bg-slate-950/70 border border-slate-200/80 dark:border-slate-800/80">
                           <span className="text-slate-400 text-[10px] block">诱导契合构象模式</span>
-                          <span className="font-bold text-slate-800 dark:text-slate-200">
+                          <span className="font-bold text-slate-800 dark:text-slate-200 flex items-center gap-1 mt-0.5">
+                            <span className={`w-1.5 h-1.5 rounded-full ${biophysicsInsights.preferred_conformation.includes('Type I') ? 'bg-emerald-500' : 'bg-amber-500'}`} />
                             {biophysicsInsights.preferred_conformation}
                           </span>
-                          <span className="text-[10px] text-slate-400 block mt-0.5">
+                          <span className="text-[10px] text-slate-400 block mt-1 font-mono">
                             DFG 翻转惩罚: {biophysicsInsights.dfg_flip_penalty_kcal.toFixed(2)} kcal
                           </span>
                         </div>
-                        <div className="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800">
+                        <div className="p-2.5 rounded-xl bg-white dark:bg-slate-950/70 border border-slate-200/80 dark:border-slate-800/80">
                           <span className="text-slate-400 text-[10px] block">铰链区与门控位阻</span>
-                          <span className="font-bold text-slate-800 dark:text-slate-200">
+                          <span className="font-bold text-slate-800 dark:text-slate-200 block mt-0.5">
                             Hinge: {biophysicsInsights.hinge_score.toFixed(2)}
                           </span>
-                          <span className="text-[10px] text-slate-400 block mt-0.5">
+                          <span className="text-[10px] text-slate-400 block mt-1 font-mono">
                             Clash 惩罚: {biophysicsInsights.gatekeeper_clash.toFixed(2)}
                           </span>
                         </div>
                       </div>
 
-                      {/* MM-GBSA 能量分解表 */}
-                      <div className="p-2.5 rounded-lg bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 space-y-1.5">
+                      {/* 第一性原理 MM-GBSA 能量沉降台阶与分解 */}
+                      <div className="p-3 rounded-xl bg-white dark:bg-slate-950/70 border border-slate-200/80 dark:border-slate-800/80 space-y-2">
                         <div className="text-[11px] font-semibold text-slate-700 dark:text-slate-300 flex items-center justify-between">
-                          <span className="flex items-center gap-1">
-                            <Flame size={12} className="text-amber-500" />
-                            MM-GBSA 自由能物理分解：
+                          <span className="flex items-center gap-1.5">
+                            <Flame size={13} className="text-amber-500" />
+                            <span>MM-GBSA 自由能物理分解：</span>
                           </span>
-                          <span className="font-mono text-emerald-600 dark:text-emerald-400 font-bold">
+                          <span className="font-mono text-emerald-600 dark:text-emerald-400 font-bold glow-emerald-text text-xs">
                             ΔG = {biophysicsInsights.mmgbsa.delta_g_bind.toFixed(2)} kcal/mol
                           </span>
                         </div>
-                        <div className="grid grid-cols-4 gap-1 text-center font-mono text-[10px] pt-1">
-                          <div className="p-1 rounded bg-slate-50 dark:bg-slate-800/80">
-                            <span className="text-slate-400 block">ΔEvdw</span>
-                            <span className="font-bold">{biophysicsInsights.mmgbsa.delta_e_vdw.toFixed(1)}</span>
+
+                        {/* First-Principles Energy Decomposition Chips */}
+                        <div className="grid grid-cols-4 gap-1.5 text-center font-mono text-[10px] pt-1">
+                          <div className="p-1.5 rounded-lg bg-emerald-50/60 dark:bg-emerald-950/30 border border-emerald-200/60 dark:border-emerald-800/40">
+                            <span className="text-emerald-700 dark:text-emerald-400 block text-[9px]">ΔEvdw (引力)</span>
+                            <span className="font-bold text-emerald-900 dark:text-emerald-200">{biophysicsInsights.mmgbsa.delta_e_vdw.toFixed(1)}</span>
                           </div>
-                          <div className="p-1 rounded bg-slate-50 dark:bg-slate-800/80">
-                            <span className="text-slate-400 block">ΔEelec</span>
-                            <span className="font-bold">{biophysicsInsights.mmgbsa.delta_e_elec.toFixed(1)}</span>
+                          <div className="p-1.5 rounded-lg bg-sky-50/60 dark:bg-sky-950/30 border border-sky-200/60 dark:border-sky-800/40">
+                            <span className="text-sky-700 dark:text-sky-400 block text-[9px]">ΔEelec (静电)</span>
+                            <span className="font-bold text-sky-900 dark:text-sky-200">{biophysicsInsights.mmgbsa.delta_e_elec.toFixed(1)}</span>
                           </div>
-                          <div className="p-1 rounded bg-slate-50 dark:bg-slate-800/80">
-                            <span className="text-slate-400 block">ΔGsolv</span>
-                            <span className="font-bold">{(biophysicsInsights.mmgbsa.delta_g_gb + biophysicsInsights.mmgbsa.delta_g_sa).toFixed(1)}</span>
+                          <div className="p-1.5 rounded-lg bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200/60 dark:border-amber-800/40">
+                            <span className="text-amber-700 dark:text-amber-400 block text-[9px]">ΔGsolv (溶剂)</span>
+                            <span className="font-bold text-amber-900 dark:text-amber-200">{(biophysicsInsights.mmgbsa.delta_g_gb + biophysicsInsights.mmgbsa.delta_g_sa).toFixed(1)}</span>
                           </div>
-                          <div className="p-1 rounded bg-slate-50 dark:bg-slate-800/80">
-                            <span className="text-slate-400 block">-TΔS</span>
-                            <span className="font-bold">{biophysicsInsights.mmgbsa.minus_t_delta_s.toFixed(1)}</span>
+                          <div className="p-1.5 rounded-lg bg-rose-50/60 dark:bg-rose-950/30 border border-rose-200/60 dark:border-rose-800/40">
+                            <span className="text-rose-700 dark:text-rose-400 block text-[9px]">-TΔS (熵罚)</span>
+                            <span className="font-bold text-rose-900 dark:text-rose-200">{biophysicsInsights.mmgbsa.minus_t_delta_s.toFixed(1)}</span>
                           </div>
                         </div>
-                        <div className="text-[10px] text-slate-400 flex justify-between pt-0.5">
-                          <span>可旋转键: {biophysicsInsights.mmgbsa.rotatable_bonds} 个</span>
+
+                        <div className="text-[10px] text-slate-400 flex justify-between pt-1 border-t border-slate-100 dark:border-slate-800/60 font-mono">
+                          <span>可旋转键自由度: {biophysicsInsights.mmgbsa.rotatable_bonds} 键</span>
                           <span>埋藏疏水 SASA: {biophysicsInsights.mmgbsa.buried_sasa.toFixed(1)} Å²</span>
                         </div>
                       </div>
                     </div>
                   ) : isLoading ? (
-                    <div className="p-4 rounded-xl border border-dashed border-slate-200 dark:border-slate-800 flex items-center justify-center gap-2 text-xs text-slate-400">
-                      <div className="w-3.5 h-3.5 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
-                      <span>正在计算 3D 几何诱导契合与 MM-GBSA 物理自由能...</span>
+                    <div className="p-5 rounded-xl border border-dashed border-sky-300 dark:border-sky-800/80 bg-sky-50/20 dark:bg-sky-950/20 flex flex-col items-center justify-center gap-2 text-xs text-sky-600 dark:text-sky-400">
+                      <div className="w-5 h-5 border-2 border-sky-500 border-t-transparent rounded-full animate-spin" />
+                      <span>正在解算 3D 几何诱导契合与 MM-GBSA 第一性原理自由能...</span>
                     </div>
                   ) : null}
 
                   {/* Domain & Zero-Leakage Badge */}
-                  <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 space-y-2">
+                  <div className="p-3.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50/60 dark:bg-slate-900/60 space-y-2">
                     <div className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center justify-between">
-                      <span>拓扑评估域诊断：</span>
-                      <span className="text-blue-600 dark:text-blue-400 font-mono text-[11px]">
+                      <span className="flex items-center gap-1.5">
+                        <ShieldCheck size={14} className="text-emerald-500" />
+                        <span>拓扑评估域诊断：</span>
+                      </span>
+                      <span className="text-sky-600 dark:text-sky-400 font-mono text-[11px] font-bold">
                         {result.domain}
                       </span>
                     </div>
                     
-                    <div className="text-xs text-slate-600 dark:text-slate-400">
+                    <div className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                       {result.domain_label}
                     </div>
 
                     <div className="grid grid-cols-2 gap-2 text-[11px] pt-1 text-slate-500 font-mono">
-                      <div className="bg-slate-50 dark:bg-slate-800 p-2 rounded">
+                      <div className="bg-white dark:bg-slate-950/70 p-2 rounded-lg border border-slate-200/50 dark:border-slate-800">
                         训练药物最高相似度:
                         <span className="block font-bold text-slate-800 dark:text-slate-200 mt-0.5">
                           {(result.max_drug_similarity_to_train * 100).toFixed(1)}%
                         </span>
                       </div>
-                      <div className="bg-slate-50 dark:bg-slate-800 p-2 rounded">
+                      <div className="bg-white dark:bg-slate-950/70 p-2 rounded-lg border border-slate-200/50 dark:border-slate-800">
                         训练激酶最高同源度:
                         <span className="block font-bold text-slate-800 dark:text-slate-200 mt-0.5">
                           {(result.max_target_similarity_to_train * 100).toFixed(1)}%
@@ -759,24 +806,24 @@ export default function DTIStudio() {
                         该模型在此领域基准实测可靠性：
                       </div>
                       <div className="grid grid-cols-3 gap-2 text-center text-[11px] font-mono">
-                        <div className="p-2 rounded bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
-                          <span className="text-slate-400 block text-[10px]">RMSE 均方根误差</span>
+                        <div className="p-2 rounded-lg bg-slate-50 dark:bg-slate-900/80 border border-slate-200/60 dark:border-slate-800">
+                          <span className="text-slate-400 block text-[10px]">RMSE 误差</span>
                           <span className="font-bold">{result.domain_benchmark_metrics.rmse?.toFixed(4)}</span>
                         </div>
-                        <div className="p-2 rounded bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
-                          <span className="text-slate-400 block text-[10px]">Pearson r 相关性</span>
+                        <div className="p-2 rounded-lg bg-slate-50 dark:bg-slate-900/80 border border-slate-200/60 dark:border-slate-800">
+                          <span className="text-slate-400 block text-[10px]">Pearson r</span>
                           <span className="font-bold">{result.domain_benchmark_metrics.pearson_r?.toFixed(4)}</span>
                         </div>
-                        <div className="p-2 rounded bg-slate-50 dark:bg-slate-800 border border-slate-100 dark:border-slate-700">
+                        <div className="p-2 rounded-lg bg-slate-50 dark:bg-slate-900/80 border border-slate-200/60 dark:border-slate-800">
                           <span className="text-slate-400 block text-[10px]">CI 一致性指数</span>
-                          <span className="font-bold text-blue-600 dark:text-blue-400">{result.domain_benchmark_metrics.concordance_index?.toFixed(4)}</span>
+                          <span className="font-bold text-sky-600 dark:text-sky-400">{result.domain_benchmark_metrics.concordance_index?.toFixed(4)}</span>
                         </div>
                       </div>
                     </div>
                   )}
 
                   {/* Provenance Alert */}
-                  <div className="text-[11px] text-slate-400 border-t border-slate-100 dark:border-slate-800 pt-3 space-y-1">
+                  <div className="text-[11px] text-slate-400 border-t border-slate-200/60 dark:border-slate-800/80 pt-3 space-y-1">
                     <div>基准协议：<span className="font-mono text-slate-500">{result.provenance.protocol}</span></div>
                     <div>训练运行：<span className="font-mono text-slate-500">{result.provenance.training_run}</span></div>
                     <div className="text-amber-600 dark:text-amber-400 pt-1">{result.warning}</div>
@@ -784,10 +831,12 @@ export default function DTIStudio() {
 
                 </div>
               ) : (
-                <div className="h-full min-h-[380px] flex flex-col items-center justify-center p-8 bg-slate-50/50 dark:bg-slate-900/50 border-2 border-dashed border-slate-200 dark:border-slate-800 rounded-2xl text-center">
-                  <FlaskConical size={40} className="text-slate-300 dark:text-slate-600 mb-3" />
-                  <h4 className="text-sm font-bold text-slate-700 dark:text-slate-300">等待输入执行推断</h4>
-                  <p className="text-xs text-slate-400 mt-1 max-w-xs leading-relaxed">
+                <div className="h-full min-h-[380px] flex flex-col items-center justify-center p-8 bg-slate-50/50 dark:bg-slate-900/40 border-2 border-dashed border-slate-200 dark:border-slate-800/80 rounded-2xl text-center">
+                  <div className="w-16 h-16 rounded-2xl bg-sky-50 dark:bg-slate-800 flex items-center justify-center text-sky-600 dark:text-sky-400 mb-3 shadow-inner">
+                    <FlaskConical size={32} />
+                  </div>
+                  <h4 className="text-sm font-bold text-slate-700 dark:text-slate-200">等待输入执行推断</h4>
+                  <p className="text-xs text-slate-400 mt-1.5 max-w-xs leading-relaxed">
                     在左侧选择或输入小分子与激酶序列后，点击“执行单点结合亲和力预测”，系统将实时输出负对数亲和力 (pKd)、解离常数 (Kd)、3D 诱导契合构象与第一性原理自由能物理分解。
                   </p>
                 </div>

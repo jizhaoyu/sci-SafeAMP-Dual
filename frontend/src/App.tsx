@@ -30,21 +30,24 @@ const NavTab = ({
   isActive: boolean; 
 }) => (
   <NavLink to={to} className="shrink-0 cursor-pointer">
-    <div className={`flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium transition-all duration-200 cursor-pointer ${
+    <div className={`relative flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs transition-all duration-200 cursor-pointer select-none ${
       isActive 
-        ? 'bg-blue-600 text-white shadow-xs font-semibold' 
-        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-800/80'
+        ? 'bg-sky-600 text-white shadow-md shadow-sky-500/25 font-semibold dark:bg-sky-500 dark:text-slate-950' 
+        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 hover:bg-slate-100/80 dark:hover:bg-slate-800/70'
     }`}>
-      <Icon size={15} className={isActive ? 'text-white' : 'text-slate-500 dark:text-slate-400'} />
-      <span>{label}</span>
+      <Icon size={15} className={isActive ? 'text-white dark:text-slate-950' : 'text-slate-400 dark:text-slate-500'} />
+      <span className="tracking-tight">{label}</span>
       {tag && (
-        <span className={`text-[10px] px-1.5 py-0.2 rounded font-mono font-normal transition-colors ${
+        <span className={`text-[10px] px-1.5 py-0.5 rounded font-mono font-medium transition-colors ${
           isActive 
-            ? 'bg-blue-700/80 text-blue-100' 
-            : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+            ? 'bg-sky-700/80 text-sky-100 dark:bg-sky-600/90 dark:text-slate-950' 
+            : 'bg-slate-100 dark:bg-slate-800/90 text-slate-500 dark:text-slate-400 border border-slate-200/50 dark:border-slate-700/50'
         }`}>
           {tag}
         </span>
+      )}
+      {isActive && (
+        <span className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-8 h-[2px] bg-sky-500 rounded-full dark:bg-sky-400 shadow-[0_0_8px_rgba(56,189,248,0.8)]" />
       )}
     </div>
   </NavLink>
@@ -66,35 +69,41 @@ const GlobalHeader = ({
   const ready = status.ready;
 
   return (
-    <header className="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-4 sm:px-6 py-2.5 transition-colors">
+    <header className="sticky top-0 z-40 bg-white/90 dark:bg-slate-950/85 backdrop-blur-xl border-b border-slate-200/80 dark:border-slate-800/80 px-4 sm:px-6 py-2.5 transition-colors shadow-2xs">
       <div className="max-w-7xl mx-auto flex flex-wrap gap-3 items-center justify-between">
         
         {/* Brand */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-xs">
-            <Dna size={18} />
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-sky-600 via-blue-600 to-indigo-600 flex items-center justify-center text-white shadow-md shadow-sky-500/20 ring-1 ring-white/20">
+            <Dna size={18} className="animate-pulse-subtle" />
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h1 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100">SafeAMP-Dual & DTI Studio</h1>
-              <span className="text-[10px] bg-blue-50 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-800/60 px-1.5 py-0.2 rounded font-mono font-medium">
-                v4.3.0
+              <h1 className="text-sm font-bold tracking-tight text-slate-900 dark:text-slate-100 font-sans">
+                SafeAMP-Dual & DTI Studio
+              </h1>
+              <span className="text-[10px] bg-sky-50 dark:bg-sky-950/80 text-sky-700 dark:text-sky-300 border border-sky-200 dark:border-sky-800/70 px-1.5 py-0.2 rounded font-mono font-medium tracking-wide">
+                v4.3.0 · Stacking CI 0.865
               </span>
             </div>
-            <p className="text-[10px] text-slate-500 dark:text-slate-400 font-mono tracking-wider">
-              生物世界模型 · 激酶结合亲和力预测 (DAVIS) 与多肽工程工作台
+            <p className="text-[10px] text-slate-500 dark:text-slate-400 font-mono tracking-wide flex items-center gap-1.5">
+              <span>第二代生物世界模型</span>
+              <span className="text-slate-300 dark:text-slate-700">/</span>
+              <span>激酶靶向亲和力 (DAVIS)</span>
+              <span className="text-slate-300 dark:text-slate-700">/</span>
+              <span>物理诱导契合透视</span>
             </p>
           </div>
         </div>
 
         {/* System Online Badge */}
-        <div role="status" className={`text-xs px-2.5 py-1 rounded-full border flex items-center gap-1.5 font-medium transition-colors ${
+        <div role="status" className={`text-xs px-2.5 py-1 rounded-full border flex items-center gap-1.5 font-medium transition-all shadow-2xs ${
           ready 
-            ? 'text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700/60 bg-emerald-50 dark:bg-emerald-950/40' 
-            : 'text-amber-700 dark:text-amber-300 border-amber-300 dark:border-amber-700/60 bg-amber-50 dark:bg-amber-950/40'
+            ? 'text-emerald-700 dark:text-emerald-300 border-emerald-300 dark:border-emerald-700/60 bg-emerald-50/80 dark:bg-emerald-950/40' 
+            : 'text-amber-700 dark:text-amber-300 border-amber-300 dark:border-amber-700/60 bg-amber-50/80 dark:bg-amber-950/40'
         }`} title={ready ? status.label : status.message}>
-          <span className={`w-2 h-2 rounded-full ${ready ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`} />
-          <span>{status.label}</span>
+          <span className={`w-2 h-2 rounded-full ${ready ? 'bg-emerald-500 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]' : 'bg-amber-500'}`} />
+          <span className="font-mono text-[11px]">{status.label}</span>
         </div>
 
         {/* Global Action Tools */}
@@ -103,18 +112,18 @@ const GlobalHeader = ({
             type="button"
             onClick={toggleDark}
             title="切换日间/夜间模式"
-            className="p-2 text-slate-500 hover:text-slate-700 dark:hover:text-slate-300 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer focus-ring"
+            className="p-2 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 transition-colors cursor-pointer focus-ring"
           >
-            {isDark ? <Sun size={15} /> : <Moon size={15} />}
+            {isDark ? <Sun size={15} className="text-amber-400" /> : <Moon size={15} className="text-slate-600" />}
           </button>
           
           <button
             type="button"
             onClick={openSettings}
             title="配置中心 (大模型连接与密钥管理)"
-            className="p-1.5 px-2.5 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 transition-colors flex items-center gap-1.5 text-xs font-medium cursor-pointer focus-ring"
+            className="p-1.5 px-2.5 text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800/80 border border-slate-200 dark:border-slate-800 transition-colors flex items-center gap-1.5 text-xs font-medium cursor-pointer focus-ring shadow-2xs"
           >
-            <Settings size={14} className="text-slate-500" />
+            <Settings size={14} className="text-slate-500 dark:text-slate-400" />
             <span className="hidden sm:inline">模型配置</span>
           </button>
 
@@ -122,11 +131,11 @@ const GlobalHeader = ({
             type="button"
             onClick={openCart}
             title="查看暂存的候选分子库"
-            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-lg border border-slate-200 dark:border-slate-700 transition-colors cursor-pointer focus-ring"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800/90 hover:bg-slate-200/80 dark:hover:bg-slate-700/80 rounded-lg border border-slate-200 dark:border-slate-750 transition-all cursor-pointer focus-ring shadow-2xs"
           >
-            <ShoppingCart size={14} />
+            <ShoppingCart size={14} className="text-slate-500 dark:text-slate-400" />
             <span>分子库</span>
-            <span className="bg-blue-600 text-white text-[10px] px-1.5 py-0.2 rounded-full font-mono">
+            <span className="bg-sky-600 dark:bg-sky-500 text-white dark:text-slate-950 text-[10px] px-1.5 py-0.2 rounded-full font-mono font-bold">
               {cart.length}
             </span>
           </button>

@@ -4,91 +4,193 @@
 
 @layer base {
   :root {
-    /* Light Mode Variables - Lab Style */
+    /* Ultra-clean Precision Lab Theme - Light */
     --bg-color: #f8fafc;
-    --text-color: #334155;
+    --text-color: #1e293b;
     --panel-bg: #ffffff;
     --panel-border: #e2e8f0;
-    --primary-blue: #0ea5e9;
-    --border-radius: 0.5rem;
+    --primary-blue: #0284c7;
+    --border-radius: 0.625rem;
+    --glow-cyan: 2, 132, 199;
+    --glow-emerald: 16, 185, 129;
   }
 
   .dark {
-    /* Dark Mode Variables - Lab Style */
-    --bg-color: #0f172a;
-    --text-color: #cbd5e1;
-    --panel-bg: #1e293b;
-    --panel-border: #334155;
+    /* Quantum-Bio Precision Observatory - Dark */
+    --bg-color: #070d18;
+    --text-color: #e2e8f0;
+    --panel-bg: #0d1627;
+    --panel-border: #1e293b;
     --primary-blue: #38bdf8;
+    --glow-cyan: 56, 189, 248;
+    --glow-emerald: 52, 211, 153;
   }
 
   body {
     background-color: var(--bg-color);
     color: var(--text-color);
     @apply font-sans transition-colors duration-200 antialiased;
+    background-image: 
+      radial-gradient(rgba(14, 165, 233, 0.04) 1px, transparent 1px),
+      radial-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    background-size: 24px 24px, 48px 48px;
+    background-position: 0 0, 12px 12px;
+  }
+
+  .dark body {
+    background-image: 
+      radial-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+      radial-gradient(rgba(30, 41, 59, 0.3) 1px, transparent 1px);
+    background-size: 28px 28px, 56px 56px;
+    background-position: 0 0, 14px 14px;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight text-slate-800 dark:text-slate-200;
+    @apply font-semibold tracking-tight text-slate-900 dark:text-slate-100;
   }
   
   .font-mono {
-    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-feature-settings: 'tnum' 1, 'zero' 1;
   }
 }
 
 @layer components {
+  /* Precision Laboratory Panels */
   .lab-panel {
     background-color: var(--panel-bg);
     border: 1px solid var(--panel-border);
     border-radius: var(--border-radius);
-    @apply shadow-sm transition-colors duration-200;
+    @apply shadow-sm transition-all duration-200 relative;
   }
-  
+
+  .lab-panel-glow {
+    background-color: var(--panel-bg);
+    border: 1px solid var(--panel-border);
+    border-radius: var(--border-radius);
+    @apply shadow-sm transition-all duration-300 relative;
+  }
+  .lab-panel-glow:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 20px -5px rgba(56, 189, 248, 0.15);
+  }
+
+  .precision-card {
+    @apply lab-panel backdrop-blur-md;
+    border-color: rgba(226, 232, 240, 0.9);
+  }
+  .dark .precision-card {
+    background: linear-gradient(180deg, rgba(15, 23, 42, 0.85) 0%, rgba(10, 16, 31, 0.95) 100%);
+    border-color: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+  }
+
+  /* Precision HUD Gauge elements */
+  .hud-bracket {
+    position: relative;
+  }
+  .hud-bracket::before {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid var(--primary-blue);
+    border-left: 2px solid var(--primary-blue);
+    pointer-events: none;
+  }
+  .hud-bracket::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 6px;
+    height: 6px;
+    border-bottom: 2px solid var(--primary-blue);
+    border-right: 2px solid var(--primary-blue);
+    pointer-events: none;
+  }
+
+  /* Buttons */
   .btn-lab {
-    @apply inline-flex items-center justify-center font-medium text-sm rounded-md transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-1;
+    @apply inline-flex items-center justify-center font-medium text-xs sm:text-sm rounded-lg transition-all duration-150 focus:outline-none focus:ring-2 focus:ring-offset-1 select-none active:scale-[0.98];
   }
   
   .btn-lab-primary {
-    @apply btn-lab bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500 border border-transparent dark:bg-blue-600 dark:hover:bg-blue-500;
+    @apply btn-lab bg-gradient-to-r from-sky-600 to-blue-600 text-white hover:from-sky-500 hover:to-blue-500 shadow-sm shadow-blue-500/20 border border-blue-400/30 focus:ring-sky-500 dark:from-sky-500 dark:to-blue-600;
+  }
+
+  .btn-lab-cyber {
+    @apply btn-lab bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 font-bold hover:from-cyan-400 hover:to-blue-500 shadow-md shadow-cyan-500/20 border border-cyan-300/40 focus:ring-cyan-400;
   }
   
   .btn-lab-secondary {
-    @apply btn-lab bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 focus:ring-slate-200 dark:bg-slate-800 dark:text-slate-200 dark:border-slate-600 dark:hover:bg-slate-700;
+    @apply btn-lab bg-white text-slate-700 border border-slate-300 hover:bg-slate-50 focus:ring-slate-200 dark:bg-slate-800/90 dark:text-slate-200 dark:border-slate-700 dark:hover:bg-slate-700 dark:hover:border-slate-600 shadow-sm;
+  }
+
+  .btn-lab-ghost {
+    @apply btn-lab text-slate-600 hover:text-slate-900 hover:bg-slate-100 dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800/80;
   }
   
   .lab-input {
-    @apply w-full bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-600 rounded-md px-3 py-2 text-slate-900 dark:text-slate-100 font-mono text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors placeholder:text-slate-400;
+    @apply w-full bg-white dark:bg-slate-950/80 border border-slate-300 dark:border-slate-700/80 rounded-lg px-3 py-2 text-slate-900 dark:text-slate-100 font-mono text-sm focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 transition-all placeholder:text-slate-400 shadow-sm;
+  }
+
+  .shadow-2xs {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  }
+
+  .drop-shadow-2xs {
+    filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.05));
   }
   
   .lab-label {
-    @apply block text-xs font-semibold text-slate-600 dark:text-slate-400 uppercase tracking-wider mb-1;
+    @apply block text-xs font-semibold text-slate-600 dark:text-slate-300 uppercase tracking-wider mb-1;
   }
 
   .focus-ring {
-    @apply focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500;
+    @apply focus:outline-none focus:ring-2 focus:ring-sky-500/50 focus:border-sky-500;
   }
 
   .card-interactive {
-    @apply transition-all duration-200 hover:shadow-md hover:border-blue-400/60 dark:hover:border-blue-500/50 cursor-pointer;
+    @apply transition-all duration-200 hover:shadow-md hover:border-sky-400/60 dark:hover:border-sky-500/60 cursor-pointer;
   }
 
   .badge-pill {
     @apply inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[11px] font-medium border;
   }
+
+  /* Scientific Glow Highlights */
+  .glow-cyan-text {
+    text-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+  }
+  .glow-emerald-text {
+    text-shadow: 0 0 12px rgba(52, 211, 153, 0.4);
+  }
+  .glow-amber-text {
+    text-shadow: 0 0 12px rgba(251, 191, 36, 0.4);
+  }
 }
 
-/* Custom Scrollbar - Clean */
+/* Custom Scrollbar - Precision Laboratory */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
   background: transparent; 
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 dark:bg-slate-600 rounded-full;
+  @apply bg-slate-300/80 dark:bg-slate-700/80 rounded-full hover:bg-slate-400 dark:hover:bg-slate-600 transition-colors;
 }
-::-webkit-scrollbar-thumb:hover {
-  @apply bg-slate-400 dark:bg-slate-500;
+
+/* Animated subtle pulse for telemetry */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
