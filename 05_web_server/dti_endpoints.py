@@ -344,4 +344,20 @@ def get_kinase_pocket_structure(req: DTIPocketRequest):
         raise HTTPException(status_code=422, detail=f"3D 口袋结构解算失败: {str(exc)}") from exc
 
 
+class ADMETRequest(BaseModel):
+    drug_smiles: str = Field(..., min_length=2, max_length=2048, description="SMILES string of molecule")
+
+
+@router.post("/predict_admet")
+def predict_dti_admet(req: ADMETRequest):
+    """Predict ADMET pharmacokinetic, safety, and drug-likeness health profile."""
+    try:
+        from admet_predictor import predict_admet_properties
+        result = predict_admet_properties(req.drug_smiles)
+        return result.to_dict()
+    except Exception as exc:
+        logger.exception("Failed to predict ADMET properties")
+        raise HTTPException(status_code=422, detail=f"ADMET成药性解算失败: {str(exc)}") from exc
+
+
 

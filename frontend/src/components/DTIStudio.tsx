@@ -24,16 +24,19 @@ import {
   predictDTIAffinity, 
   profileKinasePanel,
   fetchBiophysicsInsights,
+  fetchADMETProperties,
   type DTIDrug, 
   type DTITarget, 
   type DTIModelMeta,
   type DTIPredictionResult,
   type KinomeProfileItem,
-  type BiophysicsInsights
+  type BiophysicsInsights,
+  type ADMETProperties
 } from '../api/dtiClient';
 import { Molecule2DViewer } from './Molecule2DViewer';
 import { KinasePocketViewer3D } from './KinasePocketViewer3D';
 import { MoleculeSketcherModal } from './MoleculeSketcherModal';
+import { ADMETRadarModal } from './ADMETRadarModal';
 
 const PRESET_PAIRS = [
   {
@@ -182,6 +185,25 @@ export default function DTIStudio() {
   const [biophysicsInsights, setBiophysicsInsights] = useState<BiophysicsInsights | null>(null);
   const [profileResults, setProfileResults] = useState<KinomeProfileItem[] | null>(null);
   const [activeTab, setActiveTab] = useState<'predict' | 'profiling' | 'leaderboard'>('predict');
+
+  // ADMET modal states
+  const [admetModalOpen, setAdmetModalOpen] = useState<boolean>(false);
+  const [currentAdmet, setCurrentAdmet] = useState<ADMETProperties | null>(null);
+  const [admetLoading, setAdmetLoading] = useState<boolean>(false);
+
+  const handleOpenAdmet = async () => {
+    if (!drugSmiles.trim()) return;
+    setAdmetModalOpen(true);
+    setAdmetLoading(true);
+    try {
+      const data = await fetchADMETProperties(drugSmiles.trim());
+      setCurrentAdmet(data);
+    } catch (err) {
+      console.error('Failed to load ADMET:', err);
+    } finally {
+      setAdmetLoading(false);
+    }
+  };
 
   useEffect(() => {
     // 1. Fetch Drugs
@@ -403,6 +425,15 @@ export default function DTIStudio() {
                     <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">小分子激酶抑制剂配体 (Small Molecule)</h3>
                   </div>
                   <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={handleOpenAdmet}
+                      className="text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 border border-indigo-500/30 px-2.5 py-1 rounded-lg flex items-center gap-1.5 transition-colors cursor-pointer font-medium"
+                      title="查看当前小分子的多维 ADMET 成药性雷达图"
+                    >
+                      <ShieldCheck size={13} />
+                      <span>ADMET 雷达</span>
+                    </button>
                     <button
                       type="button"
                       onClick={() => setIsSketcherOpen(true)}
@@ -698,6 +729,34 @@ export default function DTIStudio() {
                         </span>
                       </div>
                     </div>
+                  </div>
+
+                  {/* ADMET 成药性与毒理雷达卡片 */}
+                  <div className="p-3.5 rounded-xl border border-indigo-200/80 dark:border-indigo-900/60 bg-gradient-to-r from-indigo-50/50 via-white to-blue-50/40 dark:from-slate-900/90 dark:via-indigo-950/20 dark:to-slate-900/90 flex items-center justify-between shadow-2xs">
+                    <div className="flex items-center gap-2.5">
+                      <div className="p-2 rounded-xl bg-indigo-600 text-white shadow-xs">
+                        <ShieldCheck size={16} />
+                      </div>
+                      <div>
+                        <div className="text-xs font-bold text-slate-800 dark:text-slate-100 flex items-center gap-1.5">
+                          <span>多维成药性与 ADMET 药代毒理评估</span>
+                          <span className="text-[10px] px-1.5 py-0.2 rounded bg-indigo-100 dark:bg-indigo-950 text-indigo-700 dark:text-indigo-300 font-mono">
+                            QSAR & Physics
+                          </span>
+                        </div>
+                        <span className="text-[11px] text-slate-500 dark:text-slate-400 block mt-0.5">
+                          hERG 心脏安全、Caco-2 膜透性、Delaney LogS、CYP3A4/2D6 抑制等 5 维雷达
+                        </span>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={handleOpenAdmet}
+                      className="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold shadow-xs flex items-center gap-1.5 transition-all cursor-pointer focus-ring shrink-0"
+                    >
+                      <ShieldCheck size={13} />
+                      <span>查看 ADMET 雷达</span>
+                    </button>
                   </div>
 
                   {/* 3D 微观几何与热力学物理自由能透视卡片 */}
@@ -1146,6 +1205,15 @@ export default function DTIStudio() {
           setSelectedDrugId('');
         }}
         title="配体分子结构手绘画板"
+      />
+
+      {/* 多维成药性与 ADMET 药代毒理评估雷达模态框 */}
+      <ADMETRadarModal
+        isOpen={admetModalOpen}
+        onClose={() => setAdmetModalOpen(false)}
+        admet={currentAdmet}
+        moleculeName={drugs.find(d => d.id === selectedDrugId)?.name || '当前小分子配体'}
+        loading={admetLoading}
       />
     </div>
   );

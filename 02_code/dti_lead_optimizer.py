@@ -11,6 +11,7 @@ import numpy as np
 from dti_inference_runtime import DTIInferenceRuntime
 from test_molecular_similarity import get_morgan_fingerprint
 from synthetic_accessibility import compute_sa_score
+from admet_predictor import predict_admet_properties
 
 logger = logging.getLogger(__name__)
 
@@ -52,6 +53,30 @@ MEDCHEM_RULES = [
         "modification_type": "氢键受体增强 (Nitrile Bioisosterism)",
         "description": "引入刚性弱吸电子氰基（-C#N），与激酶催化口袋铰链区主链 NH 形成定向极性相互作用。",
         "transform": lambda s: _sub_phenyl(s, 'c{n}ccc(C#N)cc{n}') if re.search(r'c([0-9])ccccc\1', s) else (s + 'C#N' if 'c' in s else s)
+    },
+    {
+        "name": "丙烯酰胺共价结合弹头 (Acrylamide Covalent Warhead)",
+        "modification_type": "共价不可逆结合 (Targeted Covalent Warhead)",
+        "description": "引入亲电性丙烯酰胺弹头（-NC(=O)C=C），与特定激酶催化边缘半胱氨酸（如 EGFR Cys797 / BTK Cys481）发生 Michael 加成形成永久不可逆共价抑制。",
+        "transform": lambda s: _sub_phenyl(s, 'c{n}ccc(NC(=O)C=C)cc{n}') if re.search(r'c([0-9])ccccc\1', s) else s + 'NC(=O)C=C'
+    },
+    {
+        "name": "芳基脲变构深腔延伸 (Aryl Urea DFG-out Motif)",
+        "modification_type": "Type-II 变构深腔延伸 (Allosteric Pocket Extension)",
+        "description": "引入经典芳基脲桥联骨架（索拉非尼/瑞戈非尼模式），诱导活化环翻转变构（DFG-out），深入填充变构腔以提升对目标激酶的选择性窗口。",
+        "transform": lambda s: _sub_phenyl(s, 'c{n}ccc(NC(=O)Nc1ccc(Cl)cc1)cc{n}') if re.search(r'c([0-9])ccccc\1', s) else s
+    },
+    {
+        "name": "环丙基代谢刚性化 (Cyclopropyl Metabolic Stiffener)",
+        "modification_type": "构象限制与代谢保护 (Conformational Rigidity)",
+        "description": "引入小体积脂环三元环丙基取代，减小分子自由旋转键自由度，降低结合熵罚（-TΔS）并显著改善微粒体代谢清除稳定性。",
+        "transform": lambda s: s.replace('N(C)C', 'NC1CC1', 1) if 'N(C)C' in s else s.replace('(C)', '(C1CC1)', 1)
+    },
+    {
+        "name": "氧杂环丁烷极性置换 (Oxetane Bioisostere)",
+        "modification_type": "亲水性增效与脂水平衡 (Solubility Tuning)",
+        "description": "作为经典亲水电子等排体，氧杂环丁烷四元环具备高偶极矩，在不增加亲脂性负担的前提下大幅优化水溶性与 hERG 心脏通道安全性。",
+        "transform": lambda s: _sub_phenyl(s, 'c{n}ccc(C1COC1)cc{n}') if re.search(r'c([0-9])ccccc\1', s) else s
     }
 ]
 
@@ -271,6 +296,7 @@ class DTILeadOptimizer:
                     status_code = "neutral"
 
                 sa_info = compute_sa_score(c_smiles)
+                admet_info = predict_admet_properties(c_smiles).to_dict()
 
                 scored_candidates.append({
                     "id": f"cand_{idx + 1}",
@@ -290,7 +316,8 @@ class DTILeadOptimizer:
                     "sa_score": sa_info["sa_score"],
                     "sa_tier": sa_info["sa_tier"],
                     "sa_label": sa_info["sa_label"],
-                    "sa_color": sa_info["sa_color"]
+                    "sa_color": sa_info["sa_color"],
+                    "admet": admet_info
                 })
             except Exception as e:
                 continue
@@ -301,6 +328,7 @@ class DTILeadOptimizer:
         best_cand = scored_candidates[0] if scored_candidates else None
         max_gain = round(best_cand["delta_pkd"], 3) if best_cand else 0.0
         base_sa = compute_sa_score(drug_smiles)
+        base_admet = predict_admet_properties(drug_smiles).to_dict()
 
         return {
             "mode": mode_used,
@@ -317,7 +345,8 @@ class DTILeadOptimizer:
                 "sa_score": base_sa["sa_score"],
                 "sa_tier": base_sa["sa_tier"],
                 "sa_label": base_sa["sa_label"],
-                "sa_color": base_sa["sa_color"]
+                "sa_color": base_sa["sa_color"],
+                "admet": base_admet
             },
             "candidates": scored_candidates,
             "summary": {

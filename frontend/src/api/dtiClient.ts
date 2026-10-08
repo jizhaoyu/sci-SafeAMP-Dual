@@ -117,6 +117,42 @@ export async function profileKinasePanel(
   return res.json();
 }
 
+export interface ADMETProperties {
+  smiles: string;
+  solubility_logs: number;
+  solubility_mg_ml: number;
+  solubility_tier: 'high' | 'moderate' | 'poor' | string;
+  solubility_label: string;
+  caco2_papp: number;
+  caco2_tier: 'high' | 'moderate' | 'low' | string;
+  caco2_label: string;
+  log_bb: number;
+  bbb_tier: 'cns_penetrant' | 'cns_balanced' | 'cns_impermeant' | string;
+  bbb_label: string;
+  cyp3a4_inhibition: 'low_risk' | 'moderate_risk' | 'high_risk' | string;
+  cyp3a4_label: string;
+  cyp2d6_inhibition: 'low_risk' | 'moderate_risk' | 'high_risk' | string;
+  cyp2d6_label: string;
+  herg_pic50: number;
+  herg_risk: 'low' | 'medium' | 'high' | string;
+  herg_label: string;
+  herg_color: 'emerald' | 'amber' | 'rose' | string;
+  admet_health_score: number;
+  radar_scores: {
+    solubility: number;
+    permeability: number;
+    herg_safety: number;
+    cyp_stability: number;
+    synthesis_sa: number;
+  };
+  traffic_lights: {
+    solubility: string;
+    permeability: string;
+    herg_safety: string;
+    cyp_stability: string;
+  };
+}
+
 export interface CandidateDerivative {
   id: string;
   name: string;
@@ -136,6 +172,7 @@ export interface CandidateDerivative {
   sa_tier?: string;
   sa_label?: string;
   sa_color?: string;
+  admet?: ADMETProperties;
 }
 
 export interface DTIOptimizeResult {
@@ -154,6 +191,7 @@ export interface DTIOptimizeResult {
     sa_tier?: string;
     sa_label?: string;
     sa_color?: string;
+    admet?: ADMETProperties;
   };
   candidates: CandidateDerivative[];
   summary: {
@@ -333,6 +371,19 @@ export async function fetchKinasePocketStructure(
   if (!res.ok) {
     const err = await res.json().catch(() => ({ detail: 'Network error' }));
     throw new Error(err.detail || '3D 口袋结构解算失败');
+  }
+  return res.json();
+}
+
+export async function fetchADMETProperties(drug_smiles: string): Promise<ADMETProperties> {
+  const res = await fetch('/api/dti/predict_admet', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ drug_smiles })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || 'ADMET 属性预测解算失败');
   }
   return res.json();
 }

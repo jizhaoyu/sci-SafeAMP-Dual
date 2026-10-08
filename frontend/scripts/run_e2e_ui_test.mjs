@@ -187,6 +187,23 @@ async function runE2EUIAutomation() {
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, '02_dti_prediction_output.png') });
     console.log('  Screenshot saved: 02_dti_prediction_output.png');
 
+    // Test ADMET Radar Modal in DTI Studio
+    console.log('  Testing ADMET Radar Modal in DTI Studio...');
+    const admetBtn = page.locator('button', { hasText: '查看 ADMET 雷达' }).first();
+    if (await admetBtn.isVisible()) {
+      await admetBtn.click();
+      await page.waitForTimeout(600);
+      const admetModalTitle = page.locator('text=ADMET 成药性与药代毒理全景雷达').first();
+      await admetModalTitle.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  ADMET Radar Modal is open!');
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '11_admet_radar_modal.png') });
+      console.log('  Screenshot saved: 11_admet_radar_modal.png');
+
+      const closeAdmetBtn = page.locator('button', { hasText: '完成查看' }).first();
+      await closeAdmetBtn.click();
+      await page.waitForTimeout(400);
+    }
+
     // Test Kinome Selectivity Profiling Tab
     console.log('  Testing Kinome Profiling Tab...');
     const kinomeTabBtn = page.locator('button', { hasText: '激酶选择性谱 (Kinome Panel)' }).first();
@@ -256,6 +273,22 @@ async function runE2EUIAutomation() {
 
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, '05_lead_evolution_ladder.png') });
     console.log('  Screenshot saved: 05_lead_evolution_ladder.png');
+
+    // Test ADMET button on candidate in ladder view
+    const candAdmetBtn = page.locator('button', { hasText: '成药雷达' }).first();
+    if (await candAdmetBtn.isVisible()) {
+      await candAdmetBtn.click();
+      await page.waitForTimeout(600);
+      const candAdmetTitle = page.locator('text=ADMET 成药性与药代毒理全景雷达').first();
+      await candAdmetTitle.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  Candidate ADMET Radar Modal is open!');
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '12_candidate_admet_radar.png') });
+      console.log('  Screenshot saved: 12_candidate_admet_radar.png');
+
+      const closeCandAdmet = page.locator('button', { hasText: '完成查看' }).first();
+      await closeCandAdmet.click();
+      await page.waitForTimeout(400);
+    }
 
     // Switch to Active Learning Matrix Tab
     const alTabBtn = page.locator('button', { hasText: '贝叶斯主动学习探索/利用矩阵' }).first();

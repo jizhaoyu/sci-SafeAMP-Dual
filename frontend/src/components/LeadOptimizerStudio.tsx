@@ -19,25 +19,29 @@ import {
   Download,
   HelpCircle,
   Box,
-  Palette
+  Palette,
+  ShieldCheck
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
   fetchDTITargets, 
   optimizeLeadMolecule,
   evaluateActiveLearning,
+  fetchADMETProperties,
   type DTIDrug, 
   type DTITarget, 
   type DTIOptimizeResult,
   type CandidateDerivative,
   type ActiveLearningReport,
-  type ActiveLearningCandidate
+  type ActiveLearningCandidate,
+  type ADMETProperties
 } from '../api/dtiClient';
 import { useAppStore } from '../store/useAppStore';
 import { computeDrugLikeness, computeQuickSAScore } from '../utils/cheminformatics';
 import { Molecule2DViewer } from './Molecule2DViewer';
 import { KinasePocketViewer3D } from './KinasePocketViewer3D';
 import { MoleculeSketcherModal } from './MoleculeSketcherModal';
+import { ADMETRadarModal } from './ADMETRadarModal';
 
 const PRESET_EXAMPLES = [
   {
@@ -107,6 +111,31 @@ export default function LeadOptimizerStudio() {
   const [isSketcherOpen, setIsSketcherOpen] = useState<boolean>(false);
   const [showPocket3D, setShowPocket3D] = useState<boolean>(false);
   const [active3DPair, setActive3DPair] = useState<{ drugName: string; smiles: string } | null>(null);
+
+  // ADMET modal states
+  const [admetModalOpen, setAdmetModalOpen] = useState<boolean>(false);
+  const [currentAdmet, setCurrentAdmet] = useState<ADMETProperties | null>(null);
+  const [currentAdmetName, setCurrentAdmetName] = useState<string>('');
+  const [admetLoading, setAdmetLoading] = useState<boolean>(false);
+
+  const handleOpenAdmet = async (moleculeName: string, smiles: string, precomputedAdmet?: ADMETProperties) => {
+    setCurrentAdmetName(moleculeName);
+    if (precomputedAdmet) {
+      setCurrentAdmet(precomputedAdmet);
+      setAdmetModalOpen(true);
+      return;
+    }
+    setAdmetModalOpen(true);
+    setAdmetLoading(true);
+    try {
+      const data = await fetchADMETProperties(smiles);
+      setCurrentAdmet(data);
+    } catch (err) {
+      console.error('Failed to load ADMET:', err);
+    } finally {
+      setAdmetLoading(false);
+    }
+  };
 
   const hasLLMConfigured = Boolean(apiKey && apiKey.trim().length > 0);
 
@@ -623,6 +652,22 @@ export default function LeadOptimizerStudio() {
                     ({optimizeResult.baseline.sa_label || computeQuickSAScore(optimizeResult.baseline.smiles).sa_label.split(' ')[0]})
                   </span>
                 </div>
+                {/* ADMET Health Radar Trigger */}
+                <div className="mt-2">
+                  <button
+                    type="button"
+                    onClick={() => handleOpenAdmet(drugDisplayName, optimizeResult.baseline.smiles, optimizeResult.baseline.admet)}
+                    className="w-full flex items-center justify-between px-2.5 py-1 rounded-lg bg-indigo-50/80 dark:bg-indigo-950/40 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 border border-indigo-200/80 dark:border-indigo-800 text-indigo-700 dark:text-indigo-300 text-[11px] font-semibold transition-colors cursor-pointer"
+                  >
+                    <span className="flex items-center gap-1.5">
+                      <ShieldCheck size={12} className="text-indigo-600 dark:text-indigo-400" />
+                      <span>ADMET 健康分:</span>
+                    </span>
+                    <span className="font-mono font-bold">
+                      {optimizeResult.baseline.admet ? `${Math.round(optimizeResult.baseline.admet.admet_health_score)} 分` : '查看雷达'}
+                    </span>
+                  </button>
+                </div>
               </div>
               <div className="mt-2 flex items-center justify-between gap-2">
                 <span className="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-mono truncate max-w-[120px]">
@@ -865,6 +910,16 @@ export default function LeadOptimizerStudio() {
                             }`}>
                               {cand.sa_label || computeQuickSAScore(cand.smiles).sa_label}
                             </span>
+                            {cand.admet && (
+                              <button
+                                type="button"
+                                onClick={() => handleOpenAdmet(cand.name, cand.smiles, cand.admet)}
+                                className="inline-flex items-center gap-1 px-2 py-0.5 rounded font-sans text-[10px] font-bold bg-indigo-50 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 transition-colors cursor-pointer"
+                              >
+                                <ShieldCheck size={11} className="text-indigo-500" />
+                                <span>ADMET: {Math.round(cand.admet.admet_health_score)}分 ({cand.admet.herg_risk === 'low' ? '心脏安全' : '中度预警'})</span>
+                              </button>
+                            )}
                           </div>
 
                           {/* SMILES 代码与复制 */}
@@ -880,6 +935,15 @@ export default function LeadOptimizerStudio() {
                             >
                               {copiedId === cand.id ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
                               <span className="text-[10px]">{copiedId === cand.id ? '已复制' : '复制'}</span>
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => handleOpenAdmet(cand.name, cand.smiles, cand.admet)}
+                              className="p-1.5 rounded bg-indigo-50 dark:bg-indigo-950/40 border border-indigo-200 dark:border-indigo-800 hover:bg-indigo-100 dark:hover:bg-indigo-900/60 text-indigo-700 dark:text-indigo-300 transition-colors shrink-0 text-xs flex items-center gap-1 font-medium cursor-pointer focus-ring"
+                              title="查看成药性雷达图与多维 ADMET 药代毒理评估"
+                            >
+                              <ShieldCheck size={14} />
+                              <span className="text-[10px]">成药雷达</span>
                             </button>
                             <button
                               type="button"
@@ -1155,6 +1219,15 @@ export default function LeadOptimizerStudio() {
           setDrugDisplayName('自定义手绘分子');
         }}
         title="先导物分子手绘画板"
+      />
+
+      {/* 多维成药性与 ADMET 药代毒理评估雷达模态框 */}
+      <ADMETRadarModal
+        isOpen={admetModalOpen}
+        onClose={() => setAdmetModalOpen(false)}
+        admet={currentAdmet}
+        moleculeName={currentAdmetName}
+        loading={admetLoading}
       />
     </div>
   );
