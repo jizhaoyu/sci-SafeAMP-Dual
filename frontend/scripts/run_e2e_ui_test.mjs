@@ -101,15 +101,47 @@ async function runE2EUIAutomation() {
     console.log('  Screenshot saved: 01_home_screen.png');
 
     // -------------------------------------------------------------
-    // Step 2: DTI Studio Automation
+    // Step 2: DTI Studio, Molecule Sketcher & 3D Pocket Viewer Automation
     // -------------------------------------------------------------
-    console.log('[3/6] Step 2: Testing DTI Studio & Prediction Workflow...');
+    console.log('[3/6] Step 2: Testing DTI Studio, Sketcher & 3D Pocket Viewer...');
     // Ensure we are on DTI Tab
     const dtiTab = page.locator('a[href="/"]').first();
     await dtiTab.click();
     await page.waitForTimeout(500);
 
-    // Verify World Model is present and select preset
+    // Test Molecule Sketcher Modal
+    console.log('  Testing Molecule Sketcher Modal...');
+    const sketcherBtn = page.locator('button', { hasText: '分子手绘画板' }).first();
+    if (await sketcherBtn.isVisible()) {
+      await sketcherBtn.click();
+      await page.waitForTimeout(500);
+
+      // Verify sketcher modal rendered
+      const sketcherModalTitle = page.locator('text=配体分子结构手绘画板').first();
+      await sketcherModalTitle.waitFor({ state: 'visible', timeout: 5000 });
+
+      // Click a scaffold preset: 吡啶环
+      const pyridineBtn = page.locator('button', { hasText: '吡啶环' }).first();
+      if (await pyridineBtn.isVisible()) {
+        await pyridineBtn.click();
+        await page.waitForTimeout(400);
+      }
+
+      // Check real-time SA Score & Ro5 indicators
+      const saScoreText = page.locator('text=合成可达性 (SA Score)').first();
+      await saScoreText.waitFor({ state: 'visible', timeout: 3000 });
+
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '08_molecule_sketcher_modal.png') });
+      console.log('  Screenshot saved: 08_molecule_sketcher_modal.png');
+
+      // Click apply to studio
+      const applyBtn = page.locator('button', { hasText: '应用并填入分析面板' }).first();
+      await applyBtn.click();
+      await page.waitForTimeout(500);
+      console.log('  Applied sketched molecule into studio successfully.');
+    }
+
+    // Verify World Model is present and select preset Dasatinib -> ABL1
     const presetBtn = page.locator('button', { hasText: '达沙替尼 → ABL1' }).first();
     await presetBtn.waitFor({ state: 'visible', timeout: 5000 });
     await presetBtn.click();
@@ -136,6 +168,17 @@ async function runE2EUIAutomation() {
     const biophysicsCard = page.locator('text=3D 诱导契合与 MM-GBSA 物理透视').first();
     await biophysicsCard.waitFor({ state: 'visible', timeout: 8000 });
     console.log('  Received prediction output & 3D Biophysics MM-GBSA card!');
+
+    // Wait for 3D Pocket Viewer WebGL Canvas
+    const pocket3DTitle = page.locator('text=催化结合口袋 3D 微观构象').first();
+    await pocket3DTitle.waitFor({ state: 'visible', timeout: 10000 });
+    console.log('  Received 3D Kinase Pocket WebGL Viewer!');
+
+    // Scroll to 3D Pocket Viewer to capture high-res snapshot
+    await pocket3DTitle.scrollIntoViewIfNeeded();
+    await page.waitForTimeout(1000);
+    await page.screenshot({ path: path.join(ARTIFACTS_DIR, '09_3d_kinase_pocket_viewer.png') });
+    console.log('  Screenshot saved: 09_3d_kinase_pocket_viewer.png');
 
     // Scroll to top of predictions to capture both Hero and Biophysics
     await page.evaluate(() => window.scrollTo(0, 80));
@@ -188,6 +231,24 @@ async function runE2EUIAutomation() {
     await evoResultHero.waitFor({ state: 'visible', timeout: 15000 });
     console.log('  Optimization results returned!');
 
+    // Check SA Score in Baseline Lead Card
+    const saLeadText = page.locator('text=SA 可达性:').first();
+    await saLeadText.waitFor({ state: 'visible', timeout: 3000 });
+    console.log('  Verified Baseline Lead SA Score badge.');
+
+    // Test 3D Pocket Button on Candidate in Ladder View
+    const pocketBtn = page.locator('button', { hasText: '3D 口袋' }).first();
+    if (await pocketBtn.isVisible()) {
+      await pocketBtn.click();
+      await page.waitForTimeout(800);
+      const pocketModalHeader = page.locator('text=3D 激酶结合口袋原子级微观互作').first();
+      await pocketModalHeader.waitFor({ state: 'visible', timeout: 5000 });
+      await pocketModalHeader.scrollIntoViewIfNeeded();
+      await page.waitForTimeout(800);
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '10_lead_candidate_3d_pocket.png') });
+      console.log('  Screenshot saved: 10_lead_candidate_3d_pocket.png');
+    }
+
     // Scroll to molecular ladder
     const ladderViewHeading = page.locator('text=分子阶梯排行榜 (Ladder View)').first();
     await ladderViewHeading.scrollIntoViewIfNeeded();
@@ -204,6 +265,11 @@ async function runE2EUIAutomation() {
     const alCards = page.locator('text=高置信度领头物 (Hits)').first();
     await alCards.waitFor({ state: 'visible', timeout: 8000 });
     console.log('  Active Learning 4-Quadrant Matrix rendered!');
+
+    // Verify SA score column exists in active learning table
+    const saColHeader = page.locator('text=SA 合成可达性').first();
+    await saColHeader.waitFor({ state: 'visible', timeout: 3000 });
+    console.log('  Verified Active Learning table SA score column.');
 
     await alTabBtn.scrollIntoViewIfNeeded();
     await page.waitForTimeout(400);

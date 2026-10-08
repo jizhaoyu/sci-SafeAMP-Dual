@@ -1,4 +1,13 @@
-# SafeAMP-Dual：可追溯的计算研究原型
+# SafeAMP-Dual & DTI 全平台计算研究与先导分子改构工作台
+
+> **平台最新进展 (2026-10-08)**：已全面落地 **Phase 1 药化微观与交互升级**：  
+> 1. **3D 激酶结合口袋微观氢键互作渲染器 (`KinasePocketViewer3D`)**：基于 3Dmol.js WebGL，高清呈现 ABL1 (2GQG)、EGFR (1M17)、BRAF (4MNE) 等靶点催化口袋残基、DFG-in/out 构象与铰链区主链氢键网络；  
+> 2. **分子结构交互手绘画板 (`MoleculeSketcherModal`)**：支持常见芳香/杂环骨架模板一键植入、修饰基团笔刷追加、实时 2D 拓扑渲染与 SMILES 双向实时同步；  
+> 3. **合成可达性评分引擎 (`SA Score 1.0~10.0`)**：基于 Ertl & Schuffenhauer 原理，在先导物改构阶梯榜与贝叶斯主动学习探索/利用矩阵中全链路标定合成难度。  
+> 📖 **[小白新手零门槛使用手册 (USER_MANUAL_BEGINNER_GUIDE.md)](docs/USER_MANUAL_BEGINNER_GUIDE.md)**  
+> 📚 **[点击查看全局文档体系总索引 (DOCUMENTATION_INDEX.md)](docs/DOCUMENTATION_INDEX.md)**  
+> 📄 **[学术论文手稿 (MANUSCRIPT_DTI_DAVIS_STACKED_FRAMEWORK.md)](04_paper/MANUSCRIPT_DTI_DAVIS_STACKED_FRAMEWORK.md)**  
+> 📊 **[项目执行与答辩简报 (EXECUTIVE_RESEARCH_BRIEF_20261007.md)](04_paper/EXECUTIVE_RESEARCH_BRIEF_20261007.md)**
 
 <!-- RESEARCH_STATUS_CURRENT_START -->
 ## 当前研究状态（机器生成）

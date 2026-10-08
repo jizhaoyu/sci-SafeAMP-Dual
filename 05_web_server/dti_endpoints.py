@@ -323,3 +323,25 @@ def optimize_dti_lead(req: DTIOptimizeLeadRequest):
         raise HTTPException(status_code=422, detail="先导化合物优化执行失败，请检查输入分子与靶点序列的合法性。") from exc
 
 
+class DTIPocketRequest(BaseModel):
+    target_name: str = Field("ABL1", min_length=1, max_length=100)
+    drug_name: Optional[str] = Field("Dasatinib", max_length=200)
+    drug_smiles: Optional[str] = Field(None, max_length=2048)
+
+
+@router.post("/pocket_structure")
+def get_kinase_pocket_structure(req: DTIPocketRequest):
+    """Retrieve 3D kinase catalytic pocket structure and key residue annotations for 3Dmol.js rendering."""
+    try:
+        from kinase_pocket_structure_service import get_kinase_pocket_3d
+        return get_kinase_pocket_3d(
+            target_name=req.target_name,
+            drug_name=req.drug_name,
+            drug_smiles=req.drug_smiles
+        )
+    except Exception as exc:
+        logger.exception("Failed to retrieve 3D pocket structure")
+        raise HTTPException(status_code=422, detail=f"3D 口袋结构解算失败: {str(exc)}") from exc
+
+
+

@@ -14,7 +14,8 @@ import {
   Compass,
   ChevronDown,
   ChevronUp,
-  Award
+  Award,
+  Palette
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
@@ -31,6 +32,8 @@ import {
   type BiophysicsInsights
 } from '../api/dtiClient';
 import { Molecule2DViewer } from './Molecule2DViewer';
+import { KinasePocketViewer3D } from './KinasePocketViewer3D';
+import { MoleculeSketcherModal } from './MoleculeSketcherModal';
 
 const PRESET_PAIRS = [
   {
@@ -169,6 +172,7 @@ export default function DTIStudio() {
   const [targetSequence, setTargetSequence] = useState<string>('');
   const [modelName, setModelName] = useState<string>('worldmodel_stacked_ensemble');
   const [show2DStructure, setShow2DStructure] = useState<boolean>(true);
+  const [isSketcherOpen, setIsSketcherOpen] = useState<boolean>(false);
   
   // Loading & Result states
   const [isLoading, setIsLoading] = useState<boolean>(false);
@@ -398,15 +402,25 @@ export default function DTIStudio() {
                     </div>
                     <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">小分子激酶抑制剂配体 (Small Molecule)</h3>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => setShow2DStructure(!show2DStructure)}
-                    className="text-xs text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 cursor-pointer"
-                  >
-                    <Atom size={13} />
-                    <span>{show2DStructure ? '收起 2D 骨架' : '展开 2D 骨架'}</span>
-                    {show2DStructure ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
-                  </button>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setIsSketcherOpen(true)}
+                      className="text-xs bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 px-2.5 py-1 rounded-lg flex items-center gap-1.5 transition-colors cursor-pointer font-medium"
+                    >
+                      <Palette size={13} />
+                      <span>分子手绘画板</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => setShow2DStructure(!show2DStructure)}
+                      className="text-xs text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 cursor-pointer"
+                    >
+                      <Atom size={13} />
+                      <span>{show2DStructure ? '收起 2D 骨架' : '展开 2D 骨架'}</span>
+                      {show2DStructure ? <ChevronUp size={12} /> : <ChevronDown size={12} />}
+                    </button>
+                  </div>
                 </div>
 
                 <div className="space-y-3">
@@ -757,6 +771,16 @@ export default function DTIStudio() {
                         <div className="text-[10px] text-slate-400 flex justify-between pt-1 border-t border-slate-100 dark:border-slate-800/60 font-mono">
                           <span>可旋转键自由度: {biophysicsInsights.mmgbsa.rotatable_bonds} 键</span>
                           <span>埋藏疏水 SASA: {biophysicsInsights.mmgbsa.buried_sasa.toFixed(1)} Å²</span>
+                        </div>
+
+                        {/* 3D 激酶微观催化口袋互作与氢键渲染器 */}
+                        <div className="pt-2">
+                          <KinasePocketViewer3D
+                            targetName={targets.find(t => t.id === selectedTargetId)?.id || 'ABL1'}
+                            drugName={drugs.find(d => d.id === selectedDrugId)?.name || 'Dasatinib'}
+                            drugSmiles={drugSmiles}
+                            className="w-full"
+                          />
                         </div>
                       </div>
                     </div>
@@ -1111,6 +1135,18 @@ export default function DTIStudio() {
           </div>
         </div>
       )}
+
+      {/* 分子结构手绘画板模态框 */}
+      <MoleculeSketcherModal
+        isOpen={isSketcherOpen}
+        onClose={() => setIsSketcherOpen(false)}
+        initialSmiles={drugSmiles}
+        onApply={(s) => {
+          setDrugSmiles(s);
+          setSelectedDrugId('');
+        }}
+        title="配体分子结构手绘画板"
+      />
     </div>
   );
 }

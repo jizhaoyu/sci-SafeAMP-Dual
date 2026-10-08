@@ -132,6 +132,10 @@ export interface CandidateDerivative {
   domain: string;
   status: string;
   status_code: 'improved' | 'neutral' | 'decreased';
+  sa_score?: number;
+  sa_tier?: string;
+  sa_label?: string;
+  sa_color?: string;
 }
 
 export interface DTIOptimizeResult {
@@ -146,6 +150,10 @@ export interface DTIOptimizeResult {
     affinity_tier: string;
     affinity_tier_code: string;
     domain: string;
+    sa_score?: number;
+    sa_tier?: string;
+    sa_label?: string;
+    sa_color?: string;
   };
   candidates: CandidateDerivative[];
   summary: {
@@ -256,6 +264,10 @@ export interface ActiveLearningCandidate {
   quadrant: string;
   quadrant_label: string;
   recommendation_reason: string;
+  sa_score?: number;
+  sa_tier?: string;
+  sa_label?: string;
+  sa_color?: string;
 }
 
 export interface ActiveLearningReport {
@@ -286,4 +298,43 @@ export async function evaluateActiveLearning(params: {
   }
   return res.json();
 }
+
+export interface PocketHydrogenBond {
+  donor: string;
+  acceptor: string;
+  distance: number;
+}
+
+export interface PocketStructureResult {
+  status: string;
+  target_name: string;
+  drug_name: string;
+  pdb_code: string;
+  resolution_info: string;
+  binding_mode: string;
+  dfg_conformation_label: string;
+  hinge_residue: string;
+  gatekeeper_residue: string;
+  key_hydrogen_bonds: PocketHydrogenBond[];
+  pdb_content: string;
+  num_atoms: number;
+}
+
+export async function fetchKinasePocketStructure(
+  target_name: string = 'ABL1',
+  drug_name?: string,
+  drug_smiles?: string
+): Promise<PocketStructureResult> {
+  const res = await fetch('/api/dti/pocket_structure', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ target_name, drug_name, drug_smiles })
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: 'Network error' }));
+    throw new Error(err.detail || '3D 口袋结构解算失败');
+  }
+  return res.json();
+}
+
 

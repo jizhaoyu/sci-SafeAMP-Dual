@@ -17,7 +17,9 @@ import {
   Info,
   Grid,
   Download,
-  HelpCircle
+  HelpCircle,
+  Box,
+  Palette
 } from 'lucide-react';
 import { 
   fetchDTIDrugs, 
@@ -32,8 +34,10 @@ import {
   type ActiveLearningCandidate
 } from '../api/dtiClient';
 import { useAppStore } from '../store/useAppStore';
-import { computeDrugLikeness } from '../utils/cheminformatics';
+import { computeDrugLikeness, computeQuickSAScore } from '../utils/cheminformatics';
 import { Molecule2DViewer } from './Molecule2DViewer';
+import { KinasePocketViewer3D } from './KinasePocketViewer3D';
+import { MoleculeSketcherModal } from './MoleculeSketcherModal';
 
 const PRESET_EXAMPLES = [
   {
@@ -100,6 +104,9 @@ export default function LeadOptimizerStudio() {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [copiedReport, setCopiedReport] = useState<boolean>(false);
   const [cartSuccessId, setCartSuccessId] = useState<string | null>(null);
+  const [isSketcherOpen, setIsSketcherOpen] = useState<boolean>(false);
+  const [showPocket3D, setShowPocket3D] = useState<boolean>(false);
+  const [active3DPair, setActive3DPair] = useState<{ drugName: string; smiles: string } | null>(null);
 
   const hasLLMConfigured = Boolean(apiKey && apiKey.trim().length > 0);
 
@@ -381,7 +388,17 @@ export default function LeadOptimizerStudio() {
                 <label className="text-xs font-semibold text-slate-700 dark:text-slate-300">
                   先导物 SMILES 规范表达式
                 </label>
-                <span className="text-[10px] text-slate-400 font-mono">长度: {drugSmiles.length} 字符</span>
+                <div className="flex items-center gap-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsSketcherOpen(true)}
+                    className="text-xs bg-cyan-500/10 hover:bg-cyan-500/20 text-cyan-600 dark:text-cyan-400 border border-cyan-500/30 px-2.5 py-0.5 rounded-md flex items-center gap-1 transition-colors cursor-pointer font-medium"
+                  >
+                    <Palette size={12} />
+                    <span>打开手绘画板</span>
+                  </button>
+                  <span className="text-[10px] text-slate-400 font-mono">长度: {drugSmiles.length} 字符</span>
+                </div>
               </div>
               <textarea
                 rows={2}
@@ -590,6 +607,22 @@ export default function LeadOptimizerStudio() {
                 <div className="text-xs text-slate-500 mt-1 font-mono">
                   Kd: <strong>{optimizeResult.baseline.predicted_kd_nM} nM</strong> · {optimizeResult.baseline.affinity_tier}
                 </div>
+                {/* SA Score Display */}
+                <div className="mt-1 flex items-center gap-1.5 text-[11px] font-mono">
+                  <span className="text-slate-400">SA 可达性:</span>
+                  <strong className={
+                    (optimizeResult.baseline.sa_score ?? computeQuickSAScore(optimizeResult.baseline.smiles).sa_score) <= 3.5
+                      ? 'text-emerald-500'
+                      : (optimizeResult.baseline.sa_score ?? computeQuickSAScore(optimizeResult.baseline.smiles).sa_score) <= 5.0
+                      ? 'text-cyan-500'
+                      : 'text-amber-500'
+                  }>
+                    {(optimizeResult.baseline.sa_score ?? computeQuickSAScore(optimizeResult.baseline.smiles).sa_score).toFixed(2)}
+                  </strong>
+                  <span className="text-[10px] text-slate-500">
+                    ({optimizeResult.baseline.sa_label || computeQuickSAScore(optimizeResult.baseline.smiles).sa_label.split(' ')[0]})
+                  </span>
+                </div>
               </div>
               <div className="mt-2 flex items-center justify-between gap-2">
                 <span className="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 font-mono truncate max-w-[120px]">
@@ -666,6 +699,31 @@ export default function LeadOptimizerStudio() {
             </div>
 
           </div>
+
+          {/* 3D 激酶催化口袋微观互作观测窗 (若被用户触发展开) */}
+          {showPocket3D && (
+            <div className="p-4 rounded-2xl bg-slate-900 border border-slate-700/80 shadow-lg space-y-2">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold text-white flex items-center gap-2">
+                  <Box size={15} className="text-purple-400" />
+                  <span>3D 激酶结合口袋原子级微观互作：{active3DPair?.drugName || drugDisplayName} + {targetName}</span>
+                </span>
+                <button
+                  type="button"
+                  onClick={() => setShowPocket3D(false)}
+                  className="text-xs px-2.5 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors"
+                >
+                  收起 3D 观测窗
+                </button>
+              </div>
+              <KinasePocketViewer3D
+                targetName={targetName.split(' ')[0]}
+                drugName={active3DPair?.drugName || drugDisplayName}
+                drugSmiles={active3DPair?.smiles || drugSmiles}
+                className="w-full"
+              />
+            </div>
+          )}
 
           {/* 切换展示模式：阶梯排行榜 vs 主动学习四象限矩阵 */}
           <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-2">
@@ -781,20 +839,31 @@ export default function LeadOptimizerStudio() {
                             {cand.rationale}
                           </div>
 
-                          {/* 成药性指标 (Lipinski Rule of 5) 诊断条 */}
+                          {/* 成药性指标 (Lipinski Rule of 5) 与合成可达性 (SA Score) 诊断条 */}
                           <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 p-2 rounded-lg bg-slate-50/60 dark:bg-slate-950/40 border border-slate-100 dark:border-slate-800/80 text-[11px] font-mono text-slate-600 dark:text-slate-400">
                             <span>MW: <strong className="text-slate-800 dark:text-slate-200">{dl.mw}</strong> g/mol</span>
                             <span>LogP: <strong className="text-slate-800 dark:text-slate-200">{dl.logp}</strong></span>
                             <span>TPSA: <strong className="text-slate-800 dark:text-slate-200">{dl.tpsa}</strong> Å²</span>
                             <span>HBD/HBA: <strong className="text-slate-800 dark:text-slate-200">{dl.hbd}/{dl.hba}</strong></span>
-                            <span className={`text-[10px] px-1.5 py-0.2 rounded font-sans font-medium ${
-                              dl.badge_color === 'emerald'
-                                ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800'
-                                : dl.badge_color === 'amber'
-                                ? 'bg-amber-50 text-amber-700 dark:bg-amber-950/40 dark:text-amber-300 border border-amber-200 dark:border-amber-800'
-                                : 'bg-rose-50 text-rose-700 dark:bg-rose-950/40 dark:text-rose-300 border border-rose-200 dark:border-rose-800'
+                            <span>
+                              SA 可达性: <strong className={
+                                (cand.sa_score ?? computeQuickSAScore(cand.smiles).sa_score) <= 3.5
+                                  ? 'text-emerald-500'
+                                  : (cand.sa_score ?? computeQuickSAScore(cand.smiles).sa_score) <= 5.0
+                                  ? 'text-cyan-500'
+                                  : 'text-amber-500'
+                              }>
+                                {(cand.sa_score ?? computeQuickSAScore(cand.smiles).sa_score).toFixed(2)}
+                              </strong>
+                            </span>
+                            <span className={`text-[10px] px-1.5 py-0.2 rounded font-sans font-medium border ${
+                              (cand.sa_tier || computeQuickSAScore(cand.smiles).sa_tier) === 'easy'
+                                ? 'bg-emerald-500/10 text-emerald-300 border-emerald-500/30'
+                                : (cand.sa_tier || computeQuickSAScore(cand.smiles).sa_tier) === 'moderate'
+                                ? 'bg-cyan-500/10 text-cyan-300 border-cyan-500/30'
+                                : 'bg-amber-500/10 text-amber-300 border-amber-500/30'
                             }`}>
-                              {dl.druglikeness_tier}
+                              {cand.sa_label || computeQuickSAScore(cand.smiles).sa_label}
                             </span>
                           </div>
 
@@ -811,6 +880,18 @@ export default function LeadOptimizerStudio() {
                             >
                               {copiedId === cand.id ? <Check size={14} className="text-emerald-600" /> : <Copy size={14} />}
                               <span className="text-[10px]">{copiedId === cand.id ? '已复制' : '复制'}</span>
+                            </button>
+                            <button
+                              type="button"
+                              onClick={() => {
+                                setActive3DPair({ drugName: cand.name, smiles: cand.smiles });
+                                setShowPocket3D(true);
+                              }}
+                              className="p-1.5 rounded bg-purple-50 dark:bg-purple-950/40 border border-purple-200 dark:border-purple-800 hover:bg-purple-100 dark:hover:bg-purple-900/60 text-purple-700 dark:text-purple-300 transition-colors shrink-0 text-xs flex items-center gap-1 font-medium cursor-pointer focus-ring"
+                              title="观测候选物与靶点激酶催化口袋的 3D 微观构象"
+                            >
+                              <Box size={14} />
+                              <span className="text-[10px]">3D 口袋</span>
                             </button>
                             <button
                               type="button"
@@ -961,7 +1042,7 @@ export default function LeadOptimizerStudio() {
                           贝叶斯获取函数评分与象限排布
                         </h4>
                         <p className="text-xs text-slate-500 mt-0.5">
-                          当前参考最优母体基准 $y_{'{'}best{'}'}$ = {activeLearningReport.y_best_reference.toFixed(3)} pKd
+                          当前参考最优母体基准 y* (y_best) = {activeLearningReport.y_best_reference.toFixed(3)} pKd
                         </p>
                       </div>
                       <span className="text-xs text-slate-400 font-mono">
@@ -979,6 +1060,7 @@ export default function LeadOptimizerStudio() {
                             <th className="p-3 font-bold">不确定性 (σ)</th>
                             <th className="p-3 font-bold text-blue-600 dark:text-blue-400">期望提升 (EI)</th>
                             <th className="p-3 font-bold">UCB 上界得分</th>
+                            <th className="p-3 font-bold text-emerald-600 dark:text-emerald-400">SA 合成可达性</th>
                             <th className="p-3 font-bold">湿实验推荐理由</th>
                           </tr>
                         </thead>
@@ -1019,6 +1101,17 @@ export default function LeadOptimizerStudio() {
                               <td className="p-3 font-mono font-medium">
                                 {cand.ucb_score.toFixed(3)}
                               </td>
+                              <td className="p-3 font-mono">
+                                <span className={`px-2 py-0.5 rounded text-[11px] font-bold border ${
+                                  (cand.sa_tier || computeQuickSAScore(cand.smiles).sa_tier) === 'easy'
+                                    ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/30'
+                                    : (cand.sa_tier || computeQuickSAScore(cand.smiles).sa_tier) === 'moderate'
+                                    ? 'bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-500/30'
+                                    : 'bg-amber-500/10 text-amber-600 dark:text-amber-400 border-amber-500/30'
+                                }`}>
+                                  {(cand.sa_score ?? computeQuickSAScore(cand.smiles).sa_score).toFixed(2)}
+                                </span>
+                              </td>
                               <td className="p-3 text-[11px] text-slate-600 dark:text-slate-400 max-w-xs">
                                 {cand.recommendation_reason}
                               </td>
@@ -1052,6 +1145,17 @@ export default function LeadOptimizerStudio() {
         </p>
       </div>
 
+      {/* 分子结构手绘画板模态框 */}
+      <MoleculeSketcherModal
+        isOpen={isSketcherOpen}
+        onClose={() => setIsSketcherOpen(false)}
+        initialSmiles={drugSmiles}
+        onApply={(s) => {
+          setDrugSmiles(s);
+          setDrugDisplayName('自定义手绘分子');
+        }}
+        title="先导物分子手绘画板"
+      />
     </div>
   );
 }

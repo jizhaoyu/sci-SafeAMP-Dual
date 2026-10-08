@@ -8,6 +8,8 @@ from research_api import app
 DIST = Path(__file__).resolve().parents[1] / 'frontend' / 'dist'
 if (DIST / 'assets').is_dir():
     app.mount('/assets', StaticFiles(directory=DIST / 'assets'), name='assets')
+if (DIST / 'vendor').is_dir():
+    app.mount('/vendor', StaticFiles(directory=DIST / 'vendor'), name='vendor')
 
 @app.get('/favicon.ico')
 def favicon():

@@ -116,6 +116,66 @@ export function computeDrugLikeness(smiles: string): DrugLikenessResult {
   };
 }
 
+export interface QuickSAResult {
+  sa_score: number;
+  sa_tier: 'easy' | 'moderate' | 'difficult' | 'extremely_difficult';
+  sa_label: string;
+  sa_color: 'emerald' | 'cyan' | 'amber' | 'rose';
+}
+
+export function computeQuickSAScore(smiles: string): QuickSAResult {
+  const s = smiles.trim();
+  if (!s) {
+    return { sa_score: 3.0, sa_tier: 'easy', sa_label: '容易合成 (商业原料/温和反应)', sa_color: 'emerald' };
+  }
+  let score = 2.0;
+  // Size penalty
+  const numHeavy = (s.match(/[A-Za-z]/g) || []).length;
+  if (numHeavy > 35) score += (numHeavy - 35) * 0.08;
+  if (numHeavy < 15) score -= 0.3;
+
+  // Ring penalty
+  const ringMatches = s.match(/[0-9]/g) || [];
+  const numRings = Math.floor(ringMatches.length / 2);
+  if (numRings > 3) score += (numRings - 3) * 0.6;
+  if (numRings > 5) score += 1.2;
+
+  // Stereocenters (@, @@)
+  const stereocenters = (s.match(/@@?/g) || []).length;
+  score += stereocenters * 0.45;
+
+  // Heteroatoms
+  const hetero = (s.match(/[NOSFPClBrI]/g) || []).length;
+  if (hetero > 8) score += (hetero - 8) * 0.15;
+
+  // Clamping
+  const finalScore = Math.max(1.0, Math.min(10.0, Math.round(score * 100) / 100));
+
+  let tier: 'easy' | 'moderate' | 'difficult' | 'extremely_difficult' = 'easy';
+  let label = '容易合成 (商业原料/温和反应)';
+  let color: 'emerald' | 'cyan' | 'amber' | 'rose' = 'emerald';
+
+  if (finalScore <= 3.5) {
+    tier = 'easy';
+    label = '容易合成 (商业原料/温和反应)';
+    color = 'emerald';
+  } else if (finalScore <= 5.0) {
+    tier = 'moderate';
+    label = '中等难度 (常规 3~5 步有机反应)';
+    color = 'cyan';
+  } else if (finalScore <= 7.0) {
+    tier = 'difficult';
+    label = '合成复杂 (多立体中心/多环)';
+    color = 'amber';
+  } else {
+    tier = 'extremely_difficult';
+    label = '极难合成 (复杂全合成路线)';
+    color = 'rose';
+  }
+
+  return { sa_score: finalScore, sa_tier: tier, sa_label: label, sa_color: color };
+}
+
 export function exportSmallMoleculesCSV(
   molecules: Array<{
     name: string;

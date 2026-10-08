@@ -13,6 +13,7 @@ import numpy as np
 from scipy.stats import norm
 
 from dti_inference_runtime import DTIInferenceRuntime
+from synthetic_accessibility import compute_sa_score
 
 
 @dataclass
@@ -27,6 +28,11 @@ class CandidateEvaluation:
     quadrant: str                       # "confident_hits", "breakthrough_hypotheses", "epistemic_blindspots", "known_inactives"
     quadrant_label: str
     recommendation_reason: str
+    sa_score: float = 3.0
+    sa_tier: str = "easy"
+    sa_label: str = "容易合成 (商业原料/温和反应)"
+    sa_color: str = "emerald"
+
 
 
 @dataclass
@@ -158,6 +164,8 @@ def evaluate_active_learning_pool(
             q_label = "象限 IV: 确定性无效分子"
             reason = "模型一致确定无结合活性，建议直接排除以节约实验成本。"
 
+        sa_meta = compute_sa_score(smiles)
+
         evaluated.append(CandidateEvaluation(
             smiles=smiles,
             name=name,
@@ -167,7 +175,11 @@ def evaluate_active_learning_pool(
             ucb_score=round(ucb, 3),
             quadrant=quadrant,
             quadrant_label=q_label,
-            recommendation_reason=reason
+            recommendation_reason=reason,
+            sa_score=sa_meta.sa_score,
+            sa_tier=sa_meta.sa_tier,
+            sa_label=sa_meta.sa_label,
+            sa_color=sa_meta.sa_color
         ))
 
     # Split into quadrants and sort by respective priority metric

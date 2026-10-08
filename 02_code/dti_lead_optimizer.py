@@ -10,6 +10,7 @@ import numpy as np
 
 from dti_inference_runtime import DTIInferenceRuntime
 from test_molecular_similarity import get_morgan_fingerprint
+from synthetic_accessibility import compute_sa_score
 
 logger = logging.getLogger(__name__)
 
@@ -269,6 +270,8 @@ class DTILeadOptimizer:
                     status = "亲和力基本持平"
                     status_code = "neutral"
 
+                sa_info = compute_sa_score(c_smiles)
+
                 scored_candidates.append({
                     "id": f"cand_{idx + 1}",
                     "name": cand["name"],
@@ -283,7 +286,11 @@ class DTILeadOptimizer:
                     "affinity_tier_code": pred["affinity_tier_code"],
                     "domain": pred["domain"],
                     "status": status,
-                    "status_code": status_code
+                    "status_code": status_code,
+                    "sa_score": sa_info["sa_score"],
+                    "sa_tier": sa_info["sa_tier"],
+                    "sa_label": sa_info["sa_label"],
+                    "sa_color": sa_info["sa_color"]
                 })
             except Exception as e:
                 continue
@@ -293,6 +300,7 @@ class DTILeadOptimizer:
 
         best_cand = scored_candidates[0] if scored_candidates else None
         max_gain = round(best_cand["delta_pkd"], 3) if best_cand else 0.0
+        base_sa = compute_sa_score(drug_smiles)
 
         return {
             "mode": mode_used,
@@ -305,7 +313,11 @@ class DTILeadOptimizer:
                 "predicted_kd_nM": base_kd,
                 "affinity_tier": baseline_pred["affinity_tier"],
                 "affinity_tier_code": baseline_pred["affinity_tier_code"],
-                "domain": baseline_pred["domain"]
+                "domain": baseline_pred["domain"],
+                "sa_score": base_sa["sa_score"],
+                "sa_tier": base_sa["sa_tier"],
+                "sa_label": base_sa["sa_label"],
+                "sa_color": base_sa["sa_color"]
             },
             "candidates": scored_candidates,
             "summary": {
