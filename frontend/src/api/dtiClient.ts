@@ -530,4 +530,81 @@ export async function submitWetlabFeedback(params: {
   return res.json();
 }
 
+export interface ClinicalTargetRecord {
+  symbol: string;
+  parent_symbol: string;
+  name: string;
+  uniprot_id: string;
+  family: string;
+  is_mutant: boolean;
+  mutation_type?: string;
+  mutation_description?: string;
+  pdb_code: string;
+  resolution: string;
+  binding_mode_typical: string;
+  hinge_residue: string;
+  gatekeeper_residue: string;
+  dfg_motif: string;
+  indications: string[];
+  approved_drugs: string[];
+  chembl_id?: string;
+  sequence_length: number;
+  catalytic_sequence_snippet: string;
+  clinical_phase_highest: string;
+  enrichment?: {
+    uniprot_id: string;
+    chembl_id: string;
+    database_cross_references: {
+      uniprot_url: string;
+      chembl_target_url?: string;
+      pdb_rcsb_search: string;
+    };
+    biological_process: string[];
+    subcellular_location: string;
+    provenance: string;
+  };
+}
+
+export async function getClinicalTargets(params?: {
+  family?: string;
+  include_mutants?: boolean;
+  search?: string;
+}): Promise<ClinicalTargetRecord[]> {
+  const query = new URLSearchParams();
+  if (params?.family) query.set('family', params.family);
+  if (params?.include_mutants !== undefined) query.set('include_mutants', String(params.include_mutants));
+  if (params?.search) query.set('search', params.search);
+
+  const res = await fetch(`/api/dti/clinical_targets?${query.toString()}`);
+  if (!res.ok) {
+    throw new Error('获取临床靶点库失败');
+  }
+  return res.json();
+}
+
+export async function getClinicalTargetDetail(symbol: string): Promise<ClinicalTargetRecord> {
+  const res = await fetch(`/api/dti/clinical_target/${encodeURIComponent(symbol)}`);
+  if (!res.ok) {
+    throw new Error(`获取靶点 ${symbol} 详情失败`);
+  }
+  return res.json();
+}
+
+export async function searchClinicalTargets(query: string): Promise<{
+  query: string;
+  total_hits: number;
+  results: ClinicalTargetRecord[];
+}> {
+  const res = await fetch('/api/dti/search_targets', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ query })
+  });
+  if (!res.ok) {
+    throw new Error('靶点检索失败');
+  }
+  return res.json();
+}
+
+
 

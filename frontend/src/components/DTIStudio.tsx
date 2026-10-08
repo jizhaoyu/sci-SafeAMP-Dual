@@ -31,50 +31,74 @@ import {
   type DTIPredictionResult,
   type KinomeProfileItem,
   type BiophysicsInsights,
-  type ADMETProperties
+  type ADMETProperties,
+  type ClinicalTargetRecord
 } from '../api/dtiClient';
 import { Molecule2DViewer } from './Molecule2DViewer';
 import { KinasePocketViewer3D } from './KinasePocketViewer3D';
 import { MoleculeSketcherModal } from './MoleculeSketcherModal';
 import { ADMETRadarModal } from './ADMETRadarModal';
+import { ClinicalTargetSelectorModal } from './ClinicalTargetSelectorModal';
 
 const PRESET_PAIRS = [
   {
-    label: '达沙替尼 → ABL1',
+    label: '达沙替尼 → ABL1 (野生型)',
     drugName: 'Dasatinib',
     targetName: 'ABL1',
     smiles: 'CC1=C(C(=CC=C1)Cl)NC(=O)C2=CN=C(S2)NC3=CC(=NC(=N3)C)N4CCN(CC4)CCO',
     desc: '双靶点高活性 BCR-ABL/SRC 抑制剂'
   },
   {
-    label: '吉非替尼 → EGFR',
+    label: '普纳替尼 → ABL1-T315I (超级耐药突变)',
+    drugName: 'Ponatinib',
+    targetName: 'ABL1-T315I',
+    smiles: 'CC1=C(C=C(C=C1)C#CC2=CN=CC=C2)C(=O)NC3=CC(=C(C=C3)CN4CCN(CC4)C)C(F)(F)F',
+    desc: '克服 T315I 庞大异亮氨酸门控空间位阻的新一代三炔基激酶抑制剂'
+  },
+  {
+    label: '奥希替尼 → EGFR-T790M (一代耐药门控突变)',
+    drugName: 'Osimertinib',
+    targetName: 'EGFR-T790M',
+    smiles: 'CN1CCN(CC1)C2=CC(=C(C=C2)NC(=O)C=C)NC3=NC=CC(=N3)C4=CN(C5=CC=CC=C54)C',
+    desc: '第三代不可逆共价抑制剂，克服 T790M 门控突变'
+  },
+  {
+    label: '吉非替尼 → EGFR (野生型)',
     drugName: 'Gefitinib',
     targetName: 'EGFR',
     smiles: 'COC1=C(C=C2C(=C1)N=CN=C2NC3=CC(=C(C=C3)F)Cl)OCCCN4CCOCC4',
     desc: '第一代 EGFR 酪氨酸激酶抑制剂'
   },
   {
-    label: '伊马替尼 → ABL1',
-    drugName: 'Imatinib',
-    targetName: 'ABL1',
-    smiles: 'CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5',
-    desc: '开创靶向治疗时代的经典 Type II 抑制剂'
+    label: '吡妥布替尼 → BTK-C481S (共价耐药突变)',
+    drugName: 'Pirtobrutinib',
+    targetName: 'BTK-C481S',
+    smiles: 'CC(C)NC(=O)C1=CC(=C(C=C1)F)NC2=NC=C(C(=N2)C3=CC=CC=C3)C4=CC=C(C=C4)F',
+    desc: '高选择性非共价可逆 BTK 抑制剂，有效克服 C481S 耐药'
   },
   {
-    label: '索拉非尼 → BRAF',
-    drugName: 'Sorafenib',
-    targetName: 'BRAF',
-    smiles: 'CNC(=O)C1=NC=CC(=C1)OC2=CC=C(C=C2)NC(=O)NC3=CC(=C(C=C3)Cl)C(F)(F)F',
-    desc: '多靶点激酶抑制剂，阻断 RAF/MEK/ERK 通路'
+    label: '维莫非尼 → BRAF-V600E (恶性黑色素瘤驱动)',
+    drugName: 'Vemurafenib',
+    targetName: 'BRAF-V600E',
+    smiles: 'CCCS(=O)(=O)NC1=C(C(=C(C=C1)F)C(=O)C2=CNC3=C2C=C(C=N3)C4=CC=C(C=C4)Cl)F',
+    desc: '高选择性 BRAF V600E 组成型活化抑制剂'
   },
   {
-    label: '厄洛替尼 → EGFR',
-    drugName: 'Erlotinib',
-    targetName: 'EGFR',
-    smiles: 'COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC',
-    desc: '强效可逆 EGFR 酪氨酸激酶抑制剂'
+    label: '洛拉替尼 → ALK-G1202R (溶剂前沿耐药突变)',
+    drugName: 'Lorlatinib',
+    targetName: 'ALK-G1202R',
+    smiles: 'CC1CC2=C(C=CC(=C2)F)OCC(N3CCC(C3=O)N1)C4=CC=C(C=N4)C#N',
+    desc: '紧凑型大环第三代 ALK 抑制剂，有效跨越 G1202R 精氨酸位阻'
+  },
+  {
+    label: '帕博西尼 → CDK4 (细胞周期核心靶点)',
+    drugName: 'Palbociclib',
+    targetName: 'CDK4',
+    smiles: 'CC1=C(C(=O)N(C2=NC(=NC=C12)NC3=NC=C(C=C3)N4CCNCC4)C5CCCC5)C(=O)C',
+    desc: '高选择性 CDK4/6 周期蛋白依赖性激酶抑制剂'
   }
 ];
+
 
 const FALLBACK_MODELS: DTIModelMeta[] = [
   {
@@ -191,6 +215,19 @@ export default function DTIStudio() {
   const [currentAdmet, setCurrentAdmet] = useState<ADMETProperties | null>(null);
   const [admetLoading, setAdmetLoading] = useState<boolean>(false);
 
+  // 60+ Clinical Targets Modal states
+  const [isTargetModalOpen, setIsTargetModalOpen] = useState<boolean>(false);
+  const [customTargetSymbol, setCustomTargetSymbol] = useState<string>('ABL1');
+
+  const handleSelectClinicalTarget = (rec: ClinicalTargetRecord) => {
+    setCustomTargetSymbol(rec.symbol);
+    setTargetSequence(rec.catalytic_sequence_snippet);
+    const matching = targets.find(t => t.id.toUpperCase() === rec.symbol.toUpperCase() || t.id.toUpperCase() === rec.parent_symbol.toUpperCase());
+    if (matching) {
+      setSelectedTargetId(matching.id);
+    }
+  };
+
   const handleOpenAdmet = async () => {
     if (!drugSmiles.trim()) return;
     setAdmetModalOpen(true);
@@ -204,6 +241,7 @@ export default function DTIStudio() {
       setAdmetLoading(false);
     }
   };
+
 
   useEffect(() => {
     // 1. Fetch Drugs
@@ -252,15 +290,17 @@ export default function DTIStudio() {
 
   const handleApplyPreset = (preset: typeof PRESET_PAIRS[0]) => {
     setDrugSmiles(preset.smiles);
+    setCustomTargetSymbol(preset.targetName);
     const matchedDrug = drugs.find(d => d.name.toLowerCase().includes(preset.drugName.toLowerCase()));
     if (matchedDrug) setSelectedDrugId(matchedDrug.id);
 
-    const matchedTarget = targets.find(t => t.id.toUpperCase().includes(preset.targetName.toUpperCase()));
+    const matchedTarget = targets.find(t => t.id.toUpperCase() === preset.targetName.toUpperCase() || t.id.toUpperCase().includes(preset.targetName.toUpperCase()));
     if (matchedTarget) {
       setSelectedTargetId(matchedTarget.id);
       setTargetSequence(matchedTarget.sequence);
     }
   };
+
 
   const handlePredict = async () => {
     if (!drugSmiles.trim() || !targetSequence.trim()) {
@@ -397,6 +437,15 @@ export default function DTIStudio() {
                 <Compass size={14} className="text-blue-500" />
                 快捷载入经典靶药对：
               </span>
+              <button
+                type="button"
+                onClick={() => setIsTargetModalOpen(true)}
+                className="px-3 py-1.5 rounded-lg bg-gradient-to-r from-cyan-600 to-indigo-600 hover:from-cyan-500 hover:to-indigo-500 text-white shrink-0 font-semibold shadow-xs transition-all cursor-pointer flex items-center gap-1.5"
+                title="打开 60+ 临床抗肿瘤激酶与核心耐药突变体知识库 (EGFR T790M, ABL1 T315I, BTK C481S 等)"
+              >
+                <span>🏛️ 60+ 临床靶点与耐药库</span>
+                <span className="text-[10px] bg-white/20 px-1 py-0.2 rounded">全量</span>
+              </button>
               {PRESET_PAIRS.map((item, idx) => (
                 <button
                   key={idx}
@@ -409,6 +458,7 @@ export default function DTIStudio() {
                 </button>
               ))}
             </div>
+
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
@@ -511,8 +561,19 @@ export default function DTIStudio() {
                     </div>
                     <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100">人类催化激酶靶点 (Kinase Domain Target)</h3>
                   </div>
-                  <span className="text-xs text-slate-500 font-mono">ESM-2 进化表征 + 催化口袋几何提取</span>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setIsTargetModalOpen(true)}
+                      className="text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 border border-indigo-500/30 px-2.5 py-1 rounded-lg flex items-center gap-1.5 transition-colors cursor-pointer font-medium"
+                      title="从 60+ 临床抗肿瘤激酶与耐药突变体知识库中选择"
+                    >
+                      <span>🏛️ 60+ 临床靶点库</span>
+                    </button>
+                    <span className="text-xs text-slate-500 font-mono hidden sm:inline">ESM-2 进化表征 + 催化口袋几何提取</span>
+                  </div>
                 </div>
+
 
                 <div className="space-y-3">
                   <div>
@@ -835,11 +896,12 @@ export default function DTIStudio() {
                         {/* 3D 激酶微观催化口袋互作与氢键渲染器 */}
                         <div className="pt-2">
                           <KinasePocketViewer3D
-                            targetName={targets.find(t => t.id === selectedTargetId)?.id || 'ABL1'}
+                            targetName={customTargetSymbol || targets.find(t => t.id === selectedTargetId)?.id || 'ABL1'}
                             drugName={drugs.find(d => d.id === selectedDrugId)?.name || 'Dasatinib'}
                             drugSmiles={drugSmiles}
                             className="w-full"
                           />
+
                         </div>
                       </div>
                     </div>
@@ -1215,6 +1277,15 @@ export default function DTIStudio() {
         moleculeName={drugs.find(d => d.id === selectedDrugId)?.name || '当前小分子配体'}
         loading={admetLoading}
       />
+
+      {/* 60+ 临床抗肿瘤激酶与耐药突变体知识库模态框 */}
+      <ClinicalTargetSelectorModal
+        isOpen={isTargetModalOpen}
+        onClose={() => setIsTargetModalOpen(false)}
+        onSelectTarget={handleSelectClinicalTarget}
+        currentTargetSymbol={customTargetSymbol}
+      />
     </div>
   );
 }
+

@@ -435,4 +435,71 @@ def calibrate_wetlab_feedback(req: DTIWetlabFeedbackRequest):
         raise HTTPException(status_code=422, detail=f"湿实验实测反馈校准失败: {str(exc)}") from exc
 
 
+@router.get("/clinical_targets")
+def get_clinical_targets(
+    family: Optional[str] = None,
+    include_mutants: bool = True,
+    search: Optional[str] = None
+):
+    """Retrieve catalog of 60+ curated clinical oncology kinases and key resistance mutants."""
+    try:
+        from target_knowledge_hub import get_all_clinical_targets
+        return get_all_clinical_targets(
+            family=family,
+            include_mutants=include_mutants,
+            search_query=search
+        )
+    except Exception as exc:
+        logger.exception("Failed to retrieve clinical targets")
+        raise HTTPException(status_code=422, detail=f"临床靶点库获取失败: {str(exc)}") from exc
+
+
+@router.get("/clinical_target/{symbol}")
+def get_clinical_target_profile(symbol: str):
+    """Retrieve full clinical profile, resistance mechanism, approved drugs, and UniProt/ChEMBL cross-references."""
+    try:
+        from target_knowledge_hub import get_clinical_target_by_symbol, fetch_uniprot_chembl_enrichment
+        rec = get_clinical_target_by_symbol(symbol)
+        if not rec:
+            raise HTTPException(status_code=404, detail=f"靶点 {symbol} 未在临床激酶库中收录")
+        enrichment = fetch_uniprot_chembl_enrichment(rec["uniprot_id"], rec.get("chembl_id"))
+        return {
+            **rec,
+            "enrichment": enrichment
+        }
+    except HTTPException:
+        raise
+    except Exception as exc:
+        logger.exception("Failed to retrieve target detail")
+        raise HTTPException(status_code=422, detail=f"靶点详情获取失败: {str(exc)}") from exc
+
+
+class TargetSearchRequest(BaseModel):
+    query: str = Field(..., min_length=1, max_length=100)
+
+
+@router.post("/search_targets")
+def search_clinical_targets_external(req: TargetSearchRequest):
+    """Search clinical targets and query UniProt / ChEMBL for bioactivity cross-references."""
+    try:
+        from target_knowledge_hub import get_all_clinical_targets, fetch_uniprot_chembl_enrichment
+        hits = get_all_clinical_targets(search_query=req.query)
+        enriched_hits = []
+        for h in hits[:10]:
+            enrichment = fetch_uniprot_chembl_enrichment(h["uniprot_id"], h.get("chembl_id"))
+            enriched_hits.append({
+                **h,
+                "enrichment": enrichment
+            })
+        return {
+            "query": req.query,
+            "total_hits": len(hits),
+            "results": enriched_hits
+        }
+    except Exception as exc:
+        logger.exception("Target search failed")
+        raise HTTPException(status_code=422, detail=f"靶点检索失败: {str(exc)}") from exc
+
+
+
 

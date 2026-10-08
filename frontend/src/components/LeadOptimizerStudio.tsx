@@ -43,7 +43,8 @@ import {
   type ADMETProperties,
   type WetlabDispatchResult,
   type AcademicReportResult,
-  type WetlabFeedbackResult
+  type WetlabFeedbackResult,
+  type ClinicalTargetRecord
 } from '../api/dtiClient';
 import { useAppStore } from '../store/useAppStore';
 import { computeDrugLikeness, computeQuickSAScore } from '../utils/cheminformatics';
@@ -53,6 +54,8 @@ import { MoleculeSketcherModal } from './MoleculeSketcherModal';
 import { ADMETRadarModal } from './ADMETRadarModal';
 import { WetlabDispatchModal } from './WetlabDispatchModal';
 import { AcademicReportModal } from './AcademicReportModal';
+import { ClinicalTargetSelectorModal } from './ClinicalTargetSelectorModal';
+
 
 const PRESET_EXAMPLES = [
   {
@@ -101,7 +104,9 @@ export default function LeadOptimizerStudio() {
   const [drugDisplayName, setDrugDisplayName] = useState<string>('Custom Lead');
   const [targetSequence, setTargetSequence] = useState<string>('');
   const [targetName, setTargetName] = useState<string>('ABL1 (激酶靶点)');
+  const [isTargetModalOpen, setIsTargetModalOpen] = useState<boolean>(false);
   const [optimizationGoal, setOptimizationGoal] = useState<string>(OPTIMIZATION_GOALS[0].value);
+
   const [customInstruction, setCustomInstruction] = useState<string>('');
   const [evalModel, setEvalModel] = useState<string>('worldmodel_stacked_ensemble');
 
@@ -538,12 +543,23 @@ export default function LeadOptimizerStudio() {
 
             {/* 靶点激酶 */}
             <div className="pt-2 border-t border-slate-100 dark:border-slate-800 space-y-3">
-              <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
-                <Dna size={16} className="text-indigo-600" />
-                <span>靶点激酶受体 (Target Kinase Receptor)</span>
-              </h3>
+              <div className="flex items-center justify-between">
+                <h3 className="text-sm font-bold text-slate-900 dark:text-slate-100 flex items-center gap-2">
+                  <Dna size={16} className="text-indigo-600" />
+                  <span>靶点激酶受体 (Target Kinase Receptor)</span>
+                </h3>
+                <button
+                  type="button"
+                  onClick={() => setIsTargetModalOpen(true)}
+                  className="text-xs bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-600 dark:text-indigo-400 border border-indigo-500/30 px-2 py-0.5 rounded-md flex items-center gap-1 font-semibold transition-colors cursor-pointer"
+                  title="从 60+ 临床抗肿瘤激酶与耐药突变体知识库中选择靶点与序列"
+                >
+                  <span>🏛️ 60+ 临床靶点库</span>
+                </button>
+              </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+
                 <div>
                   <label className="text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1 block">
                     靶点名称 / 激酶代号
@@ -1455,6 +1471,18 @@ export default function LeadOptimizerStudio() {
         reportData={reportData}
         loading={reportLoading}
       />
+
+      {/* 60+ 临床抗肿瘤激酶与耐药突变体知识库模态框 */}
+      <ClinicalTargetSelectorModal
+        isOpen={isTargetModalOpen}
+        onClose={() => setIsTargetModalOpen(false)}
+        onSelectTarget={(rec) => {
+          setTargetName(rec.symbol);
+          setTargetSequence(rec.catalytic_sequence_snippet);
+        }}
+        currentTargetSymbol={targetName}
+      />
     </div>
   );
+
 }

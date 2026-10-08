@@ -204,9 +204,59 @@ async function runE2EUIAutomation() {
       await page.waitForTimeout(400);
     }
 
+    // Test 60+ Clinical Targets Knowledge Hub Modal
+    console.log('  Testing 60+ Clinical Targets Knowledge Hub Modal...');
+    const clinicalTargetsBtn = page.locator('button', { hasText: '60+ 临床靶点与耐药库' }).first();
+    if (await clinicalTargetsBtn.isVisible()) {
+      await clinicalTargetsBtn.click();
+      await page.waitForTimeout(600);
+      const modalHeader = page.locator('text=临床抗肿瘤激酶与耐药突变体知识库').first();
+      await modalHeader.waitFor({ state: 'visible', timeout: 5000 });
+      console.log('  Clinical Targets Knowledge Hub Modal rendered!');
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '16_clinical_targets_knowledge_modal.png') });
+      console.log('  Screenshot saved: 16_clinical_targets_knowledge_modal.png');
+
+      // Click tab "🔥 核心耐药突变体"
+      const mutantTab = page.locator('button', { hasText: '核心耐药突变体' }).first();
+      if (await mutantTab.isVisible()) {
+        await mutantTab.click();
+        await page.waitForTimeout(400);
+      }
+
+      // Search for T790M
+      const searchBox = page.locator('input[placeholder*="搜索基因符号"]').first();
+      if (await searchBox.isVisible()) {
+        await searchBox.fill('T790M');
+        await page.waitForTimeout(400);
+      }
+
+      // Select EGFR-T790M
+      const loadTargetBtn = page.locator('button', { hasText: '载入靶点' }).first();
+      if (await loadTargetBtn.isVisible()) {
+        await loadTargetBtn.click();
+        await page.waitForTimeout(500);
+        console.log('  Selected and loaded target "EGFR-T790M" into studio.');
+      }
+    }
+
+    // Test clinical resistance preset: Ponatinib -> ABL1-T315I
+    const ponatinibPreset = page.locator('button', { hasText: '普纳替尼 → ABL1-T315I' }).first();
+    if (await ponatinibPreset.isVisible()) {
+      await ponatinibPreset.click();
+      console.log('  Clicked clinical resistance preset "普纳替尼 → ABL1-T315I"');
+      await page.waitForTimeout(500);
+
+      const predictBtn = page.locator('button', { hasText: '执行单点结合亲和力预测' }).first();
+      await predictBtn.click();
+      await page.waitForTimeout(2000);
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '17_ponatinib_abl1_t315i_prediction.png') });
+      console.log('  Screenshot saved: 17_ponatinib_abl1_t315i_prediction.png');
+    }
+
     // Test Kinome Selectivity Profiling Tab
     console.log('  Testing Kinome Profiling Tab...');
     const kinomeTabBtn = page.locator('button', { hasText: '激酶选择性谱 (Kinome Panel)' }).first();
+
     await kinomeTabBtn.click();
     await page.waitForTimeout(400);
 
