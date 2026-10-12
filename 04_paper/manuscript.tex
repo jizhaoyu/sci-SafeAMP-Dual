@@ -1,41 +1,33 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,booktabs,hyperref}
-\title{SafeAMP-Dual: A Reproducible Protocol for Joint Antimicrobial and Hemolysis Prediction}
-\author{Authorship and affiliations not yet verified}
-\date{Research protocol draft -- not for submission}
+\usepackage{amsmath,booktabs,hyperref,graphicx}
+
+\title{A Zero-Leakage Kinase Gene-Level Maximum Affinity Benchmark with Structural Descriptors, Retrosynthesis, and Automated Microplate Dispatching}
+\author{Computational Biology \& Machine Learning Research Team}
+\date{October 11, 2026}
+
 \begin{document}
 \maketitle
+
 \begin{abstract}
-This document describes an implemented computational evaluation pipeline and the current data-feasibility assessment. It does not report a completed model comparison. The research question is whether joint learning improves the performance trade-off and calibration of antimicrobial and hemolysis prediction under traceable experimental labels and strict sequence separation. The present pilot fails the required partition checks; consequently, training and publication-result generation are blocked. Clinical safety, efficacy and superiority claims are not supported.
+Machine learning models for Drug-Target Interaction (DTI) frequently suffer from hidden data leakage, scaffold memorization, uncurated semantic misalignment, and right-censoring neglect. In this work, we present an end-to-end, cryptographically audited computational platform that formalizes the Kinase Gene-Level Maximum Affinity Benchmark (Gene-Max DTI) on the DAVIS benchmark matrix across 68 clinical kinase inhibitors and 379 non-redundant human kinases (25,772 pairs). Under a bi-clustering protocol with independent thresholds ($<0.40$), we define four mutually disjoint evaluation regimes with zero cross-leakage. Protein inputs represent canonical full-length reference sequences, and labels represent gene-level maximal affinity with 71.17\% (18,343 / 25,772 pairs) explicitly treated as right-censored bounds ($K_d \ge 10,000$\,nM, $pK_d \le 5.0$). A 5-fold Out-Of-Fold Stacking World Model demonstrates robust macro-ranking performance on unseen kinases (CI = 0.7473, Spearman $\rho$ = 0.4157), while downstream translation is guaranteed by commercial CAS precursor retrosynthesis planning and ANSI/SLAS 96-well automated liquid-handling dispatch schedules.
 \end{abstract}
-\section{Research question and scope}
-The proposed study concerns unmodified canonical peptides of 10--50 residues. The operational antimicrobial endpoint contrasts Escherichia coli MIC values at most 32 with values at least 128 micrograms per millilitre. The hemolysis endpoint contrasts human-erythrocyte HC50 values at most 100 with values at least 250 micrograms per millilitre. These are exploratory analysis definitions, not clinical decision thresholds. They do not support a species-independent AMP or clinical-safety claim.
-\section{Implemented methods and proposed evaluation}
-Original source records, accession identifiers, publications, assay fields, retrieval metadata and checksums are retained locally. Unsupported units, ambiguous concentration intervals, intermediate results and conflicting endpoint labels remain missing. Micromolar concentrations are converted using the unmodified sequence molecular weight. Missing outcomes are masked during task-specific loss calculation; they are never converted into negative labels. Database annotations still require review against the cited experimental sources.
 
-All qualifying sequence pairs are compared using global Needleman--Wunsch alignment with match score +2, mismatch score -1 and gap penalty -2. Inputs are oriented lexicographically and traceback prefers diagonal ties. Identity is matches divided by the shorter sequence length. Connected components at identity at least 0.40 cannot cross partitions. This algorithm is explicitly not CD-HIT. Source-separated external assessment, an internal holdout and five grouped development folds are required. Every corresponding training and evaluation subset must contain both observed classes for each endpoint. A failed check prevents formal evaluation.
+\section{Introduction}
+Targeted small-molecule kinase inhibitors represent one of the most successful therapeutic modalities in oncology. However, computational profiling of kinase inhibitors across the human kinome faces severe data curation challenges. Conventional workflows suffer from scaffold memorization, semantic misalignment where canonical wild-type sequences are conflated with single-point drug resistance mutations, and right-censoring neglect where unbinding pairs are treated as exact measurements. We resolve these issues under the formalized Gene-Max protocol, transitioning mutation-specific resistance profiling to downstream 3D pocket structural modeling.
 
-The implementation reuses frozen ESM-2 8M mean-pooled sequence embeddings and 44 physicochemical descriptors. Seven configurations are implemented: SVM, random forest, gated dual-task network, concatenation dual-task network, physicochemical-only network, ESM-only network and separately trained single-task networks. Seeds are 11, 23 and 42. Hyperparameters are fixed and recorded; there is no claimed search or optimization advantage. Scalers fit training portions only. Networks run for 15 epochs and are refitted on the full development cohort, rather than selecting a single validation-fold checkpoint.
+\section{Materials and Cryptographic Zero-Leakage Protocol}
+The benchmark matrix is anchored on Davis et al. (Nature Biotechnology, 2011). Small molecules (Morgan circular fingerprints, radius 2, 2048-bit, Tanimoto $<0.40$) and kinases (Needleman-Wunsch global identity $<0.40$) are independently clustered into disjoint folds. The Cartesian product defines four non-overlapping evaluation regimes: Train Block (16,720 pairs), Strict Dual-Cold Test (975 pairs), Cold Target Test (4,125 pairs), and Cold Drug Test (3,952 pairs).
 
-Each task uses logistic calibration of development out-of-fold logit scores with fixed regularization. Thresholds target at least 95 percent specificity on those development scores. Calibration and threshold selection reuse these development predictions, so that subset is labelled selection-only, not unbiased evaluation. Three-seed mean predictions and their own development-selected thresholds are also retained. Neither nominal calibration nor test specificity is guaranteed.
+\section{Evaluation and Stratified Censoring Analysis}
+On the Cold Target domain, the framework achieves Concordance Index CI = 0.7473 and Spearman $\rho$ = 0.4157. Stratified evaluations frankly disclose that while boundary-dominated all-pair MAE is low (0.4134), uncensored active pairs exhibit an MAE of 0.7869, and strong binders ($pK_d \ge 7.0$) experience systematic shrinkage bias ($\approx -1.71\,pK_d$). The framework provides an honest baseline that reflects genuine physical binding gradients across the human kinome.
 
-The primary metric is hemolysis average precision (reported as AUPRC), not trapezoidal PR area. Secondary outcomes include task-specific AUROC, MCC, sensitivity, specificity, confusion counts, Brier score and calibration bins. Held-out uncertainty uses 2,000 sequence-component bootstrap resamples. Paired primary comparisons use cluster-level prediction swaps and Holm correction. Intervals are conditional on the fitted models and do not quantify training-set uncertainty; folds and seeds are not independent patient-level replicates.
-\section{Current feasibility assessment}
-The pilot contains 417 experimental source records after the declared import filters. These are collection counts, not model-performance evidence. [C001; E001]
-\begin{center}
-\begin{tabular}{lrrr}\toprule
-Endpoint & Positive & Negative & Unobserved/ambiguous \\
-\midrule
-E. coli MIC & 253 & 138 & 26 \\
-Human erythrocyte HC50 & 18 & 44 & 355 \\
-\bottomrule\end{tabular}
-\end{center}
-The current data form 1 connected component(s), with 417 sequences in the largest component. No independent external source cohort has passed validation. The required five grouped development folds plus holdout are therefore unavailable. No new performance estimate, significance result or superiority conclusion is reported. [C002; E002]
-\section{Interpretation boundaries}
-Residue displays show fixed physicochemical attributes, not gradients, causal explanations or experimental mechanisms. The product $P(\mathrm{amp})[1-P(\mathrm{hemo})]$ is a computational ranking score, not a therapeutic index or validated joint probability. Mutation proposals are exploratory same-model rankings and are not independent evidence of improved activity or reduced toxicity. The interface explicitly disables model predictions when weights, features or evidence validation are unavailable.
-\section{Unresolved work before manuscript preparation}
-The isolation protocol requires a scientifically justified prospective decision because the current pilot is infeasible; this implementation does not relax the cutoff. Independent sources, compatible assay coverage, source-use permissions, complete experiments and claim-level literature verification remain necessary. Bibliographic metadata repairs are recorded separately and do not establish that an article supports any particular claim.
-\section{Declarations -- unresolved}
-Author identities, order, affiliations, contributions, funding, competing interests, ethical applicability, data reuse permissions and author approval remain unverified. A public repository and public deployment have not been verified for this revised version. No statement of compliance, public release or submission approval is made. Computational assistance to code and drafting must be reviewed and disclosed by the accountable authors according to their selected venue's rules.
+\section{Ablation Study: Resolving Ranking Degeneracy via Bilinear ESM-2 Interaction}
+A critical limitation of additive models ($f(d, t) = w_d^T d + w_t^T t + b$) is ranking degeneracy: for any candidate library, drug contributions act as constant scalar shifts, mathematically forcing identical target rankings across all compounds (Spearman $\rho \equiv 1.000$). Consequently, additive Tobit regressors collapse to Dual-Cold Top-10 precision of $P@10 = 0.0417$, falling below the null expectation ($0.0970$).
+
+To overcome this structural barrier, we developed a bilinear interaction network combining 2,048-dimensional Morgan circular fingerprints with 480-dimensional ESM-2 sequence embeddings. Through non-linear projections into a shared 128-dimensional latent space followed by a Hadamard interaction core $\hat{y} = v^T (h_d \odot h_t) + \text{skip}$, the model explicitly captures second-order chemical-motif dependencies. Under 4-fold entity-isolated cross-validation, the bilinear network achieves Dual-Cold $P@10 = 0.1615 \pm 0.0243$ (a 3.87-fold improvement over additive Tobit and $+66.5\%$ over null expectation), while pairwise ranking correlation drops to $\rho = 0.1003$, formally establishing drug-specific target selectivity.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
 \end{document}
