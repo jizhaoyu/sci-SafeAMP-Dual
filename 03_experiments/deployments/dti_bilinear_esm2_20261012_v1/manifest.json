@@ -1,0 +1,22 @@
+{
+  "model_id": "bilinear_esm2_interaction",
+  "version": "dti_bilinear_esm2_20261012_v1",
+  "architecture": "BilinearInteractionDTI",
+  "feature_dimension": 2528,
+  "drug_feature_dimension": 2048,
+  "target_feature_dimension": 480,
+  "files": {
+    "model.pt": "644a83ca54b645980dbc84c3d7a7eaeeb1102ebe51158302ef498c082d3f512d",
+    "target_features_esm2.npy": "f4cedb48e82050f3cb3be8546ace5cb2017cd220214a7a46026ab1f080211982",
+    "target_ids.json": "e6ff029bb132bbd69baec6186671abbb1b7ad20ea0462c43e515142e2e5cc25a",
+    "drug_features.npy": "8e7c734ce04d8a65814bdfcffdc0aef564bc888e9efd060d4caccfd1d2811d63",
+    "drug_ids.json": "30d4bb743ebf02461ec7805497640a0e752578a382a38bed5fb3fb282ee8ede0"
+  },
+  "metrics": {
+    "dual_cold_p10": 0.1615,
+    "cold_drug_p10": 0.2885,
+    "cold_target_p10": 0.1981,
+    "mean_ranking_spearman": 0.1003,
+    "dual_cold_ap": 0.2846
+  }
+}

@@ -1,4 +1,5 @@
 """FastAPI router for DTI affinity prediction, kinome profiling, and benchmark exploration."""
+import json
 import logging
 import sys
 from pathlib import Path
@@ -6,8 +7,11 @@ from typing import List, Optional, Dict, Any
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel, Field
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "02_code"))
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "02_code"))
+sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dti_inference_runtime import DTIInferenceRuntime
+from dti_evidence import get_evidence_status, evidence_for_result
 
 router = APIRouter(prefix="/api/dti", tags=["DTI Kinase Affinity"])
 dti_runtime = DTIInferenceRuntime()
@@ -17,7 +21,7 @@ logger = logging.getLogger(__name__)
 class DTIPredictionRequest(BaseModel):
     drug_smiles: str = Field(..., min_length=2, max_length=2048, description="SMILES string of the small molecule")
     target_sequence: str = Field(..., min_length=10, max_length=4096, description="Amino acid sequence of the target kinase")
-    model_name: Optional[str] = Field("stacked_ensemble", description="Model name (stacked_ensemble, ridge_alpha10, ridge, hist_gradient_boosting, mlp, dummy_mean)")
+    model_name: Optional[str] = Field(None, description="Model name; omit to use the verified F1 Ridge default when deployed")
 
 
 class DTIBatchPredictionRequest(BaseModel):
@@ -26,7 +30,7 @@ class DTIBatchPredictionRequest(BaseModel):
 
 class DTIProfileRequest(BaseModel):
     drug_smiles: str = Field(..., min_length=2, max_length=2048, description="SMILES string of the small molecule")
-    model_name: Optional[str] = Field("stacked_ensemble", description="Profiling model name")
+    model_name: Optional[str] = Field(None, description="Profiling model name")
 
 
 class DTIOptimizeLeadRequest(BaseModel):
@@ -43,6 +47,11 @@ class DTIOptimizeLeadRequest(BaseModel):
 def get_dti_status():
     """Get DTI runtime status, protocol metadata, and baseline metrics."""
     return dti_runtime.get_status()
+
+@router.get('/evidence_status')
+def get_dti_evidence_status():
+    """Read published review status without loading a model or running prediction."""
+    return get_evidence_status()
 
 
 @router.get("/drugs")
@@ -68,6 +77,12 @@ def list_dti_targets():
     return [
         {
             "id": t["id"],
+            "canonical_gene_symbol": t.get("canonical_gene_symbol", t["id"]),
+            "standard_display_name": t.get("standard_display_name", f"{t['id']} (Gene-Max)"),
+            "is_misleading_mutation_label": t.get("is_misleading_mutation_label", False),
+            "misleading_label_type": t.get("misleading_label_type", "none"),
+            "target_semantic_type": t.get("target_semantic_type", "Gene-level maximal affinity representative"),
+            "curation_note": t.get("curation_note", ""),
             "length": t["length"],
             "sequence": t["sequence"],
             "fold": t["fold"],
@@ -84,8 +99,9 @@ def predict_dti_affinity(req: DTIPredictionRequest):
         result = dti_runtime.predict(
             drug_smiles=req.drug_smiles,
             target_sequence=req.target_sequence,
-            model_name=req.model_name or "stacked_ensemble"
+            model_name=req.model_name
         )
+        result['research_evidence'] = evidence_for_result()
         return result
     except Exception as exc:
         raise HTTPException(status_code=422, detail=f"Prediction failed: {str(exc)}") from exc
@@ -100,11 +116,12 @@ def predict_dti_affinity_batch(req: DTIBatchPredictionRequest):
             res = dti_runtime.predict(
                 drug_smiles=item.drug_smiles,
                 target_sequence=item.target_sequence,
-                model_name=item.model_name or "stacked_ensemble"
+                model_name=item.model_name
             )
+            res['research_evidence'] = evidence_for_result()
             results.append(res)
         except Exception as exc:
-            results.append({"error": str(exc)})
+            results.append({"error": f"Prediction failed: {str(exc)}", "status": "failed"})
     return results
 
 
@@ -112,107 +129,126 @@ def predict_dti_affinity_batch(req: DTIBatchPredictionRequest):
 def profile_dti_kinase_panel(req: DTIProfileRequest):
     """Screen small molecule against representative 16-kinase diversity panel to assess selectivity."""
     try:
-        return dti_runtime.profile_kinase_panel(
+        results = dti_runtime.profile_kinase_panel(
             drug_smiles=req.drug_smiles,
-            model_name=req.model_name or "stacked_ensemble"
+            model_name=req.model_name
         )
+        evidence = evidence_for_result()
+        for result in results:
+            result['research_evidence'] = evidence
+        return results
     except Exception as exc:
         raise HTTPException(status_code=422, detail=f"Kinome profiling failed: {str(exc)}") from exc
 
 
 @router.get("/models")
 def list_dti_models():
-    """List all available inference models with descriptive metadata and recommended flags."""
+    """List all available inference models with honest, verified metrics from rigorous benchmark."""
     dti_runtime.load()
+
+    if "f1_ridge" in dti_runtime.model_registration_errors:
+        raise HTTPException(status_code=503, detail="F1模型校验失败，请检查部署文件；未静默替换默认模型。")
+    # Load verified rigorous metrics summary if available
+    rigorous_metrics_path = ROOT / "03_experiments/runs/dti_davis_rigorous_20261009_v1/metrics_summary.json"
+    metrics_data = {}
+    if rigorous_metrics_path.exists():
+        try:
+            with open(rigorous_metrics_path, "r", encoding="utf-8") as f:
+                metrics_data = json.load(f).get("models", {})
+        except Exception:
+            metrics_data = {}
+
+    def get_dom_metric(m_id: str, dom: str, metric_name: str) -> Optional[float]:
+        bare_id = m_id.replace("rigorous_", "")
+        sub = metrics_data.get(bare_id) or metrics_data.get(m_id)
+        if sub and dom in sub.get("domains", {}):
+            val = sub["domains"][dom].get(metric_name)
+            return float(val) if val is not None else None
+        return None
+
+    benchmark_ver = "dti_davis_rigorous_20261009_v1" if metrics_data else "unverified"
+
     models_meta = [
         {
-            "id": "worldmodel_stacked_ensemble",
-            "name": "★ 第二代生物世界模型 (WorldModel Stacked Ensemble)",
-            "badge": "最新旗舰 · CI 0.8652",
+            "id": "rigorous_stacked_ensemble",
+            "name": "Stacking 堆叠集成 (GroupKFold 实体分组验证)",
+            "badge": f"历史基准 · 双冷CI {get_dom_metric('stacked_ensemble', 'strict_dual_cold_test', 'concordance_index') or '未核实'}",
             "badge_color": "emerald",
-            "desc": "千万级 Uni-Mol 3D 构象流形 + ESM-2 进化全长保守性表征",
+            "desc": "历史复合特征集成，按20261009版本的评价范围解读。",
+            "benchmark_version": benchmark_ver,
             "is_recommended": True,
-            "train_ci": 0.8652,
-            "train_mae": 0.3120,
-            "cold_target_ci": 0.7447,
-            "cold_drug_ci": 0.7619
+            "train_ci": get_dom_metric("stacked_ensemble", "train_block", "concordance_index"),
+            "dual_cold_ci": get_dom_metric("stacked_ensemble", "strict_dual_cold_test", "concordance_index"),
+            "cold_target_ci": get_dom_metric("stacked_ensemble", "cold_target_test", "concordance_index"),
+            "cold_drug_ci": get_dom_metric("stacked_ensemble", "cold_drug_test", "concordance_index")
         },
         {
-            "id": "stacked_ensemble",
-            "name": "第一代 Stacking 经典集成",
-            "badge": "经典基线 · CI 0.7571",
-            "badge_color": "blue",
-            "desc": "2D Morgan 指纹 + 激酶催化深腔 100 维特征元学习融合",
-            "is_recommended": False,
-            "train_ci": 0.8494,
-            "train_mae": 0.3442,
-            "cold_target_ci": 0.7289,
-            "cold_drug_ci": 0.7504
-        },
-        {
-            "id": "ridge_alpha10",
-            "name": "Ridge α=10 (强正则化)",
-            "badge": "双盲泛化最优",
+            "id": "rigorous_ridge_alpha50",
+            "name": "Ridge α=50 (强正则化线性)",
+            "badge": f"历史基准 · 双冷CI {get_dom_metric('ridge_alpha50', 'strict_dual_cold_test', 'concordance_index') or '未核实'}",
             "badge_color": "indigo",
-            "desc": "高维特征强 L2 收缩，抗严重外推分布偏移",
+            "desc": "历史复合特征Ridge，保留为显式可选的比较模型。",
+            "benchmark_version": benchmark_ver,
             "is_recommended": False,
-            "train_ci": 0.8315,
-            "train_mae": 0.3951,
-            "cold_target_ci": 0.7281,
-            "cold_drug_ci": 0.7504
+            "train_ci": get_dom_metric("ridge_alpha50", "train_block", "concordance_index"),
+            "dual_cold_ci": get_dom_metric("ridge_alpha50", "strict_dual_cold_test", "concordance_index"),
+            "cold_target_ci": get_dom_metric("ridge_alpha50", "cold_target_test", "concordance_index"),
+            "cold_drug_ci": get_dom_metric("ridge_alpha50", "cold_drug_test", "concordance_index")
         },
         {
-            "id": "ridge",
-            "name": "Ridge 标准岭回归",
-            "badge": "经典线性基准",
+            "id": "rigorous_ridge_alpha10",
+            "name": "Ridge α=10 (标准岭回归)",
+            "badge": f"历史基准 · 冷药CI {get_dom_metric('ridge_alpha10', 'cold_drug_test', 'concordance_index') or '未核实'}",
             "badge_color": "slate",
-            "desc": "线性特征映射标准基准标尺",
+            "desc": "历史线性基准，按对应版本和评价域比较。",
+            "benchmark_version": benchmark_ver,
             "is_recommended": False,
-            "train_ci": 0.8241,
-            "train_mae": 0.4082,
-            "cold_target_ci": 0.7180,
-            "cold_drug_ci": 0.7262
+            "train_ci": get_dom_metric("ridge_alpha10", "train_block", "concordance_index"),
+            "dual_cold_ci": get_dom_metric("ridge_alpha10", "strict_dual_cold_test", "concordance_index"),
+            "cold_target_ci": get_dom_metric("ridge_alpha10", "cold_target_test", "concordance_index"),
+            "cold_drug_ci": get_dom_metric("ridge_alpha10", "cold_drug_test", "concordance_index")
         },
         {
-            "id": "hist_gradient_boosting",
-            "name": "HistGBM 梯度提升树",
-            "badge": "非线性树模型",
+            "id": "rigorous_hist_gradient_boosting",
+            "name": "HistGBM 梯度提升决策树",
+            "badge": f"历史基准 · 双冷CI {get_dom_metric('hist_gradient_boosting', 'strict_dual_cold_test', 'concordance_index') or '未核实'}",
             "badge_color": "amber",
-            "desc": "高效分箱直方图梯度提升决策树",
+            "desc": "历史梯度提升模型；各输入域的性能按登记指标解读。",
+            "benchmark_version": benchmark_ver,
             "is_recommended": False,
-            "train_ci": 0.8450,
-            "train_mae": 0.3512,
-            "cold_target_ci": 0.7102,
-            "cold_drug_ci": 0.7155
+            "train_ci": get_dom_metric("hist_gradient_boosting", "train_block", "concordance_index"),
+            "dual_cold_ci": get_dom_metric("hist_gradient_boosting", "strict_dual_cold_test", "concordance_index"),
+            "cold_target_ci": get_dom_metric("hist_gradient_boosting", "cold_target_test", "concordance_index"),
+            "cold_drug_ci": get_dom_metric("hist_gradient_boosting", "cold_drug_test", "concordance_index")
         },
         {
-            "id": "mlp",
-            "name": "MLP 深度多层感知机",
-            "badge": "深度神经网络",
+            "id": "rigorous_random_forest",
+            "name": "Random Forest 随机森林",
+            "badge": f"历史基准 · 冷靶CI {get_dom_metric('random_forest', 'cold_target_test', 'concordance_index') or '未核实'}",
             "badge_color": "purple",
-            "desc": "非线性特征交叉隐藏层深度表征",
+            "desc": "历史随机森林模型，不将单域排名扩展为所有新输入的优势。",
+            "benchmark_version": benchmark_ver,
             "is_recommended": False,
-            "train_ci": 0.8390,
-            "train_mae": 0.3621,
-            "cold_target_ci": 0.7051,
-            "cold_drug_ci": 0.7090
-        },
-        {
-            "id": "dummy_mean",
-            "name": "Dummy 统计基准",
-            "badge": "均值绝对下界",
-            "badge_color": "rose",
-            "desc": "常数预测对比标尺",
-            "is_recommended": False,
-            "train_ci": 0.5000,
-            "train_mae": 0.5512,
-            "cold_target_ci": 0.5000,
-            "cold_drug_ci": 0.5000
+            "train_ci": get_dom_metric("random_forest", "train_block", "concordance_index"),
+            "dual_cold_ci": get_dom_metric("random_forest", "strict_dual_cold_test", "concordance_index"),
+            "cold_target_ci": get_dom_metric("random_forest", "cold_target_test", "concordance_index"),
+            "cold_drug_ci": get_dom_metric("random_forest", "cold_drug_test", "concordance_index")
         }
     ]
-    # Filter only available models
+    # Filter only verified, available models in runtime
     avail = set(dti_runtime.models.keys())
-    return [m for m in models_meta if m["id"] in avail]
+    matched = [m for m in models_meta if m["id"] in avail]
+    for metadata in matched:
+        source = metrics_data.get(metadata["id"].replace("rigorous_", ""), {})
+        metadata["metrics_by_domain"] = source.get("domains", {})
+        metadata["evaluation_scope"] = "历史登记基准；按模型版本解读，非独立盲测。"
+    if dti_runtime.f1_predictor is not None and "f1_ridge" in avail:
+        for metadata in matched:
+            metadata["is_recommended"] = False
+        matched.insert(0, dti_runtime.f1_predictor.model_metadata())
+    if getattr(dti_runtime, "bilinear_predictor", None) is not None and "bilinear_esm2_interaction" in avail:
+        matched.insert(1, dti_runtime.bilinear_predictor.model_metadata())
+    return matched
 
 
 class BiophysicsInsightRequest(BaseModel):
@@ -296,6 +332,7 @@ def evaluate_active_learning(req: ActiveLearningPoolRequest):
             "breakthrough_hypotheses": [c.__dict__ for c in report.breakthrough_hypotheses],
             "high_information_gain_blindspots": [c.__dict__ for c in report.high_information_gain_blindspots],
             "known_inactives": [c.__dict__ for c in report.known_inactives],
+            "research_evidence": evidence_for_result(),
             "markdown_summary": report.export_markdown()
         }
     except Exception as exc:
@@ -304,23 +341,26 @@ def evaluate_active_learning(req: ActiveLearningPoolRequest):
 
 
 @router.post("/optimize_lead")
+@router.post("/optimize-lead")
 def optimize_dti_lead(req: DTIOptimizeLeadRequest):
     """AI-assisted and heuristic lead molecular optimization and quantitative affinity scoring loop."""
     try:
         from dti_lead_optimizer import DTILeadOptimizer
         optimizer = DTILeadOptimizer(dti_runtime)
-        return optimizer.optimize(
+        result = optimizer.optimize(
             drug_smiles=req.drug_smiles,
             target_sequence=req.target_sequence,
             target_name=req.target_name or "Target Kinase",
             optimization_goal=req.optimization_goal or "提升亲和力与结合强度",
             custom_instruction=req.custom_instruction or "",
-            model_name=req.model_name or "worldmodel_stacked_ensemble",
+            model_name=req.model_name,
             llm_config=req.llm_config
         )
+        result['research_evidence'] = evidence_for_result()
+        return result
     except Exception as exc:
         logger.exception("Lead optimization failed")
-        raise HTTPException(status_code=422, detail="先导化合物优化执行失败，请检查输入分子与靶点序列的合法性。") from exc
+        raise HTTPException(status_code=422, detail=f"先导化合物优化执行失败: {str(exc)}") from exc
 
 
 class DTIPocketRequest(BaseModel):
@@ -391,6 +431,7 @@ class DTIAcademicReportRequest(BaseModel):
     admet: Optional[Dict[str, Any]] = None
     active_learning: Optional[Dict[str, Any]] = None
     author: Optional[str] = "SafeAMP-Dual BioAI Laboratory"
+    model_used: Optional[str] = Field(None, max_length=100)
 
 
 @router.post("/academic_report")
@@ -398,7 +439,7 @@ def generate_dti_report(req: DTIAcademicReportRequest):
     """Generate comprehensive academic research brief and patent disclosure in Markdown and printable HTML."""
     try:
         from dti_report_generator import generate_dti_academic_report
-        return generate_dti_academic_report(
+        result = generate_dti_academic_report(
             target_name=req.target_name,
             baseline=req.baseline,
             candidates=req.candidates,
@@ -407,6 +448,24 @@ def generate_dti_report(req: DTIAcademicReportRequest):
             active_learning=req.active_learning,
             author=req.author or "SafeAMP-Dual BioAI Laboratory"
         )
+        evidence = evidence_for_result()
+        notice = evidence['message']
+        review_date = evidence.get('reviewed_at') or '无法确认'
+        metric_state = '未评估' if evidence['status'] == 'available' else '无法确认'
+        model_used = req.model_used or '未报告'
+        template_notice = '本报告为模板草稿；缺失的结构、自由能或ADMET输入可能使用模板默认值，这些字段不是已确认的计算或实验结果。'
+        diagnostic = evidence.get('model_diagnostics', {}).get(model_used)
+        limitation_notice = ('已有冻结F1版本诊断：' + diagnostic['summary'] + ' 当前报告使用的模型版本尚未核对。') if diagnostic else ''
+        result['research_evidence'] = evidence
+        result['model_used'] = model_used
+        result['markdown_report'] = f'## 报告状态：待人工与实验复核\n\n{template_notice}\n\n调用方记录的亲和力模型：{model_used}。\n\n{limitation_notice}\n\n' + result['markdown_report'] + f'\n\n## 研究证据与适用范围\n\n{notice}\n\n证据复核日期：{review_date}。外部评价指标：{metric_state}。\n'
+        from html import escape
+        banner = f'<aside style="padding:16px;border:1px solid #d97706;color:#78350f;background:#fffbeb"><strong>研究证据与适用范围 · 待复核草稿</strong><p>{escape(notice)}</p><p>{template_notice}</p><p>{escape(limitation_notice)}</p><p>调用方记录的亲和力模型：{escape(model_used)}。证据复核日期：{escape(review_date)}。外部评价指标：{metric_state}。</p></aside>'
+        import re
+        result['html_report'], inserted = re.subn(r'(<body\b[^>]*>)', lambda match: match.group(1) + banner, result['html_report'], count=1, flags=re.IGNORECASE)
+        if not inserted:
+            result['html_report'] = banner + result['html_report']
+        return result
     except Exception as exc:
         logger.exception("Failed to generate academic report")
         raise HTTPException(status_code=422, detail=f"学术报告解算生成失败: {str(exc)}") from exc
@@ -586,9 +645,3 @@ def execute_virtual_screening(req: VirtualScreeningRequest):
     except Exception as exc:
         logger.exception("Virtual screening failed")
         raise HTTPException(status_code=422, detail=f"虚拟筛选执行失败: {str(exc)}") from exc
-
-
-
-
-
-
