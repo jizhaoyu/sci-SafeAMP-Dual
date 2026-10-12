@@ -1,0 +1,27 @@
+{
+  "timestamp": "2026-10-12T18:22:27",
+  "device": "cpu",
+  "device_name": "CPU (Smoke)",
+  "parameter_count": 430210,
+  "model_size_mb": 1.6411209106445312,
+  "vram_peak_mb": 6.564483642578125,
+  "t4_limit_mb": 16384.0,
+  "vram_safe": true,
+  "throughputs": {
+    "bs_64": {
+      "batch_size": 64,
+      "samples_per_sec": 39999.99999185093,
+      "ms_per_batch": 1.600000000325963
+    },
+    "bs_256": {
+      "batch_size": 256,
+      "samples_per_sec": 65641.02565826828,
+      "ms_per_batch": 3.899999998975545
+    },
+    "bs_1024": {
+      "batch_size": 1024,
+      "samples_per_sec": 87521.3675008157,
+      "ms_per_batch": 11.700000002747402
+    }
+  }
+}

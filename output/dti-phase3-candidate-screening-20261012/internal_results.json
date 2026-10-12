@@ -1,0 +1,518 @@
+{
+  "timestamp": "2026-10-12T18:20:36",
+  "folds": 4,
+  "total_rows": 15704,
+  "models": [
+    "HGBContinuousBaseline",
+    "LogRegCandidateClassifier",
+    "HGBBinaryClassifier"
+  ],
+  "fold_results": [
+    {
+      "fold": 0,
+      "domain_metrics": {
+        "val_dual_cold": {
+          "constant_expectation": 0.05870445344129555,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.1,
+              "macro_p30": 0.07179487179487179,
+              "macro_ap": 0.20833951979120846,
+              "c_index": 0.49376181331844365,
+              "rmse_uncensored": 1.2826066288249662,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.06923076923076922,
+              "macro_p30": 0.05897435897435898,
+              "macro_ap": 0.1555193191119226,
+              "c_index": 0.4927016799906437,
+              "rmse_uncensored": 6.319690787066809,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.06923076923076922,
+              "macro_p30": 0.05384615384615384,
+              "macro_ap": 0.11525774781924354,
+              "c_index": 0.4737626433160669,
+              "rmse_uncensored": 6.319015162025817,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_drug_cold": {
+          "constant_expectation": 0.07488087134104834,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.29999999999999993,
+              "macro_p30": 0.1846153846153846,
+              "macro_ap": 0.2744742292861982,
+              "c_index": 0.5553212461555475,
+              "rmse_uncensored": 1.3437445806265513,
+              "ap_eligible_drugs": 12,
+              "ap_excluded_drugs": 1,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.13846153846153847,
+              "macro_p30": 0.1205128205128205,
+              "macro_ap": 0.14282319773657748,
+              "c_index": 0.525910716408901,
+              "rmse_uncensored": 6.402808985318828,
+              "ap_eligible_drugs": 12,
+              "ap_excluded_drugs": 1,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.2846153846153846,
+              "macro_p30": 0.1717948717948718,
+              "macro_ap": 0.2515812471371988,
+              "c_index": 0.5440641403101504,
+              "rmse_uncensored": 6.382627170227567,
+              "ap_eligible_drugs": 12,
+              "ap_excluded_drugs": 1,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_target_cold": {
+          "constant_expectation": 0.05904183535762481,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.19230769230769232,
+              "macro_p30": 0.10854700854700855,
+              "macro_ap": 0.42785872965313737,
+              "c_index": 0.7992953037739129,
+              "rmse_uncensored": 1.0335983190954299,
+              "ap_eligible_drugs": 33,
+              "ap_excluded_drugs": 6,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.10256410256410256,
+              "macro_p30": 0.09401709401709403,
+              "macro_ap": 0.22425541986229733,
+              "c_index": 0.7404032008361099,
+              "rmse_uncensored": 6.29634138090718,
+              "ap_eligible_drugs": 33,
+              "ap_excluded_drugs": 6,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.16923076923076924,
+              "macro_p30": 0.10769230769230773,
+              "macro_ap": 0.3649167215777294,
+              "c_index": 0.7566722661067913,
+              "rmse_uncensored": 6.294365702814695,
+              "ap_eligible_drugs": 33,
+              "ap_excluded_drugs": 6,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "domain_metrics": {
+        "val_dual_cold": {
+          "constant_expectation": 0.10121457489878544,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.11538461538461539,
+              "macro_p30": 0.1358974358974359,
+              "macro_ap": 0.17800785812907396,
+              "c_index": 0.6490180633007411,
+              "rmse_uncensored": 1.646851959757654,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.13846153846153844,
+              "macro_p30": 0.11794871794871796,
+              "macro_ap": 0.1708379109399061,
+              "c_index": 0.6420515641801495,
+              "rmse_uncensored": 6.641471828535995,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.13846153846153847,
+              "macro_p30": 0.10512820512820513,
+              "macro_ap": 0.21141724813097953,
+              "c_index": 0.5708861603607659,
+              "rmse_uncensored": 6.651737386286883,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_drug_cold": {
+          "constant_expectation": 0.10108917631041524,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.4153846153846154,
+              "macro_p30": 0.2897435897435897,
+              "macro_ap": 0.4167068771781921,
+              "c_index": 0.715986770039131,
+              "rmse_uncensored": 1.6773712537365797,
+              "ap_eligible_drugs": 13,
+              "ap_excluded_drugs": 0,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.34615384615384615,
+              "macro_p30": 0.23333333333333336,
+              "macro_ap": 0.28433184759279856,
+              "c_index": 0.6555548674143662,
+              "rmse_uncensored": 6.75957884693193,
+              "ap_eligible_drugs": 13,
+              "ap_excluded_drugs": 0,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.3923076923076923,
+              "macro_p30": 0.2692307692307692,
+              "macro_ap": 0.3870024749353857,
+              "c_index": 0.6445634666052698,
+              "rmse_uncensored": 6.726966636220575,
+              "ap_eligible_drugs": 13,
+              "ap_excluded_drugs": 0,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_target_cold": {
+          "constant_expectation": 0.0597165991902834,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.09487179487179488,
+              "macro_p30": 0.0811965811965812,
+              "macro_ap": 0.216197450981446,
+              "c_index": 0.7733286504616551,
+              "rmse_uncensored": 1.081029880551025,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.07692307692307694,
+              "macro_p30": 0.07692307692307693,
+              "macro_ap": 0.12154599384689732,
+              "c_index": 0.7283551173697113,
+              "rmse_uncensored": 6.247608944084344,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.10512820512820514,
+              "macro_p30": 0.08034188034188035,
+              "macro_ap": 0.23788312252363808,
+              "c_index": 0.739907947438059,
+              "rmse_uncensored": 6.271195328173812,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "domain_metrics": {
+        "val_dual_cold": {
+          "constant_expectation": 0.05128205128205129,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.1153846153846154,
+              "macro_p30": 0.07179487179487179,
+              "macro_ap": 0.15936512843665926,
+              "c_index": 0.5750166287623819,
+              "rmse_uncensored": 1.2235280502601018,
+              "ap_eligible_drugs": 12,
+              "ap_excluded_drugs": 1,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.07692307692307691,
+              "macro_p30": 0.07692307692307691,
+              "macro_ap": 0.17784996577442266,
+              "c_index": 0.5680783523385815,
+              "rmse_uncensored": 6.156438507133654,
+              "ap_eligible_drugs": 12,
+              "ap_excluded_drugs": 1,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.04615384615384615,
+              "macro_p30": 0.06923076923076922,
+              "macro_ap": 0.12633376020257672,
+              "c_index": 0.5433044835922907,
+              "rmse_uncensored": 6.203673973312333,
+              "ap_eligible_drugs": 12,
+              "ap_excluded_drugs": 1,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_drug_cold": {
+          "constant_expectation": 0.04947475432056929,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.38461538461538464,
+              "macro_p30": 0.20512820512820512,
+              "macro_ap": 0.4878757489906277,
+              "c_index": 0.6632587711754617,
+              "rmse_uncensored": 1.1189145377566194,
+              "ap_eligible_drugs": 10,
+              "ap_excluded_drugs": 3,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.16153846153846155,
+              "macro_p30": 0.1358974358974359,
+              "macro_ap": 0.20593524765984417,
+              "c_index": 0.5836003251455845,
+              "rmse_uncensored": 6.149557880720395,
+              "ap_eligible_drugs": 10,
+              "ap_excluded_drugs": 3,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.36153846153846153,
+              "macro_p30": 0.19487179487179487,
+              "macro_ap": 0.45890834695736943,
+              "c_index": 0.6202556454935382,
+              "rmse_uncensored": 6.148680385965818,
+              "ap_eligible_drugs": 10,
+              "ap_excluded_drugs": 3,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_target_cold": {
+          "constant_expectation": 0.06666666666666665,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.1564102564102564,
+              "macro_p30": 0.10256410256410256,
+              "macro_ap": 0.2702171177168273,
+              "c_index": 0.7681364442407699,
+              "rmse_uncensored": 1.1209934998888509,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.11794871794871795,
+              "macro_p30": 0.08803418803418804,
+              "macro_ap": 0.18801505331452859,
+              "c_index": 0.7372390898987194,
+              "rmse_uncensored": 6.360322639311022,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.15641025641025638,
+              "macro_p30": 0.09658119658119657,
+              "macro_ap": 0.34439326100299783,
+              "c_index": 0.7353481887246696,
+              "rmse_uncensored": 6.387479737525808,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "domain_metrics": {
+        "val_dual_cold": {
+          "constant_expectation": 0.06153846153846154,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.07692307692307693,
+              "macro_p30": 0.08974358974358973,
+              "macro_ap": 0.1363576754053637,
+              "c_index": 0.589406604747162,
+              "rmse_uncensored": 1.5779652031940639,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.13076923076923075,
+              "macro_p30": 0.07692307692307691,
+              "macro_ap": 0.14851372767298954,
+              "c_index": 0.5008359133126935,
+              "rmse_uncensored": 6.521484025674918,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.0923076923076923,
+              "macro_p30": 0.09487179487179485,
+              "macro_ap": 0.1597315905491787,
+              "c_index": 0.5822549019607843,
+              "rmse_uncensored": 6.524288618110514,
+              "ap_eligible_drugs": 11,
+              "ap_excluded_drugs": 2,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_drug_cold": {
+          "constant_expectation": 0.050491358861402914,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.23846153846153847,
+              "macro_p30": 0.1564102564102564,
+              "macro_ap": 0.22401828118158498,
+              "c_index": 0.6607173789790258,
+              "rmse_uncensored": 1.3905838631998373,
+              "ap_eligible_drugs": 13,
+              "ap_excluded_drugs": 0,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.13846153846153847,
+              "macro_p30": 0.0923076923076923,
+              "macro_ap": 0.1458725429755376,
+              "c_index": 0.5121749633305606,
+              "rmse_uncensored": 6.382736299092077,
+              "ap_eligible_drugs": 13,
+              "ap_excluded_drugs": 0,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.1846153846153846,
+              "macro_p30": 0.13076923076923078,
+              "macro_ap": 0.21156490110174728,
+              "c_index": 0.638722218576463,
+              "rmse_uncensored": 6.360897800553526,
+              "ap_eligible_drugs": 13,
+              "ap_excluded_drugs": 0,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        },
+        "val_target_cold": {
+          "constant_expectation": 0.0905982905982906,
+          "model_scores": {
+            "HGBContinuousBaseline": {
+              "macro_p10": 0.20769230769230773,
+              "macro_p30": 0.14358974358974358,
+              "macro_ap": 0.3550393232369423,
+              "c_index": 0.7780168480292874,
+              "rmse_uncensored": 1.2203575548269798,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "LogRegCandidateClassifier": {
+              "macro_p10": 0.20512820512820512,
+              "macro_p30": 0.12051282051282051,
+              "macro_ap": 0.22631106018026048,
+              "c_index": 0.7284655145222996,
+              "rmse_uncensored": 6.464583754723674,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            },
+            "HGBBinaryClassifier": {
+              "macro_p10": 0.19487179487179487,
+              "macro_p30": 0.14273504273504273,
+              "macro_ap": 0.2953457588574343,
+              "c_index": 0.7506587352637333,
+              "rmse_uncensored": 6.474143870902133,
+              "ap_eligible_drugs": 32,
+              "ap_excluded_drugs": 7,
+              "dual_track_passed": true,
+              "max_discrepancy": 0.0
+            }
+          }
+        }
+      }
+    }
+  ],
+  "summary": {
+    "HGBContinuousBaseline": {
+      "mean_dual_cold_p10": 0.10192307692307694,
+      "std_dual_cold_p10": 0.01574106302283164,
+      "mean_dual_cold_ap": 0.17051754544057635,
+      "std_dual_cold_ap": 0.026352797070724864,
+      "mean_dual_cold_c_index": 0.5768007775321822
+    },
+    "LogRegCandidateClassifier": {
+      "mean_dual_cold_p10": 0.10384615384615384,
+      "std_dual_cold_p10": 0.03100868364730211,
+      "mean_dual_cold_ap": 0.16318023087481023,
+      "std_dual_cold_ap": 0.011700823381412529,
+      "mean_dual_cold_c_index": 0.5509168774555171
+    },
+    "HGBBinaryClassifier": {
+      "mean_dual_cold_p10": 0.08653846153846154,
+      "std_dual_cold_p10": 0.0341312295178824,
+      "mean_dual_cold_ap": 0.15318508667549463,
+      "std_dual_cold_ap": 0.037394244566570464,
+      "mean_dual_cold_c_index": 0.542552047307477
+    },
+    "constant_expectation": {
+      "mean_dual_cold_p10": 0.06818488529014846,
+      "std_dual_cold_p10": 0.019433989103346233
+    },
+    "circuit_breaker_triggered": false,
+    "best_model": "LogRegCandidateClassifier",
+    "beaten_constant_reference": true
+  }
+}
