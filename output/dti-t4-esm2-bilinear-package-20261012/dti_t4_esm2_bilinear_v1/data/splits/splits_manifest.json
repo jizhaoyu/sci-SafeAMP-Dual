@@ -1,0 +1,34 @@
+[
+  {
+    "fold": 0,
+    "file": "fold_0.json",
+    "train_size": 8814,
+    "val_drug_cold_size": 2938,
+    "val_target_cold_size": 2964,
+    "val_dual_cold_size": 988
+  },
+  {
+    "fold": 1,
+    "file": "fold_1.json",
+    "train_size": 8814,
+    "val_drug_cold_size": 2938,
+    "val_target_cold_size": 2964,
+    "val_dual_cold_size": 988
+  },
+  {
+    "fold": 2,
+    "file": "fold_2.json",
+    "train_size": 8853,
+    "val_drug_cold_size": 2951,
+    "val_target_cold_size": 2925,
+    "val_dual_cold_size": 975
+  },
+  {
+    "fold": 3,
+    "file": "fold_3.json",
+    "train_size": 8853,
+    "val_drug_cold_size": 2951,
+    "val_target_cold_size": 2925,
+    "val_dual_cold_size": 975
+  }
+]
