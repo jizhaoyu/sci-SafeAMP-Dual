@@ -156,7 +156,7 @@ async function runE2EUIAutomation() {
     }
 
     // Trigger Prediction
-    const predictBtn = page.locator('button', { hasText: '执行单点结合亲和力预测' }).first();
+    const predictBtn = page.locator('button', { hasText: '开始预测' }).first();
     await predictBtn.click();
     console.log('  Triggered single-point affinity prediction...');
 
@@ -239,18 +239,20 @@ async function runE2EUIAutomation() {
       }
     }
 
-    // Test clinical resistance preset: Ponatinib -> ABL1-T315I
-    const ponatinibPreset = page.locator('button', { hasText: '普纳替尼 → ABL1-T315I' }).first();
-    if (await ponatinibPreset.isVisible()) {
-      await ponatinibPreset.click();
-      console.log('  Clicked clinical resistance preset "普纳替尼 → ABL1-T315I"');
+    // Test clinical resistance preset: Osimertinib -> EGFR-T790M
+    const osimertinibPreset = page.locator('button', { hasText: '奥希替尼 → EGFR-T790M' }).first();
+    if (await osimertinibPreset.isVisible()) {
+      await osimertinibPreset.click();
+      console.log('  Clicked clinical resistance preset "奥希替尼 → EGFR-T790M"');
       await page.waitForTimeout(500);
 
-      const predictBtn = page.locator('button', { hasText: '执行单点结合亲和力预测' }).first();
-      await predictBtn.click();
-      await page.waitForTimeout(2000);
-      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '17_ponatinib_abl1_t315i_prediction.png') });
-      console.log('  Screenshot saved: 17_ponatinib_abl1_t315i_prediction.png');
+      const predictBtn2 = page.locator('button', { hasText: '开始预测' }).first();
+      if (await predictBtn2.isVisible()) {
+        await predictBtn2.click();
+        await page.waitForTimeout(2000);
+      }
+      await page.screenshot({ path: path.join(ARTIFACTS_DIR, '17_osimertinib_egfr_t790m_prediction.png') });
+      console.log('  Screenshot saved: 17_osimertinib_egfr_t790m_prediction.png');
     }
 
     // -------------------------------------------------------------
@@ -321,8 +323,14 @@ async function runE2EUIAutomation() {
     await page.evaluate(() => window.scrollTo(0, 0));
     await page.waitForTimeout(400);
 
-    const screeningBtn = page.locator('button', { hasText: '超大规模虚拟筛选' }).first();
-    await screeningBtn.waitFor({ state: 'visible', timeout: 5000 });
+    const drawerSummary = page.locator('summary').filter({ hasText: '更多研究工具' }).first();
+    if (await drawerSummary.isVisible()) {
+      await drawerSummary.click();
+      await page.waitForTimeout(400);
+    }
+
+    const screeningBtn = page.getByRole('button', { name: /超大虚拟海选|超大规模虚拟筛选/ }).first();
+    await screeningBtn.waitFor({ state: 'visible', timeout: 8000 });
     await screeningBtn.click();
     await page.waitForTimeout(800);
 
@@ -373,7 +381,7 @@ async function runE2EUIAutomation() {
     console.log('  Screenshot saved: 03_kinome_selectivity_profile.png');
 
     // Test Benchmark Leaderboard Tab
-    const leaderboardBtn = page.locator('button', { hasText: '四大域基准天梯榜' }).first();
+    const leaderboardBtn = page.locator('button', { hasText: /模型基准对比|四大域基准天梯榜/ }).first();
     await leaderboardBtn.click();
     await page.waitForTimeout(400);
     await page.screenshot({ path: path.join(ARTIFACTS_DIR, '04_davis_benchmark_leaderboard.png') });
@@ -467,13 +475,17 @@ async function runE2EUIAutomation() {
     if (await reportBtn.isVisible()) {
       await reportBtn.click();
       await page.waitForTimeout(800);
-      const reportModalTitle = page.locator('text=学术交付评估报告与专利交底书生成器').first();
-      await reportModalTitle.waitFor({ state: 'visible', timeout: 5000 });
+      const reportModalDialog = page.getByRole('dialog', { name: '计算生物学学术评估报告' });
+      const downloadMdBtn = page.getByRole('button', { name: '下载 .md', exact: true });
+      await Promise.race([
+        reportModalDialog.waitFor({ state: 'visible', timeout: 6000 }),
+        downloadMdBtn.waitFor({ state: 'visible', timeout: 6000 })
+      ]);
       console.log('  Academic Report Modal rendered!');
       await page.screenshot({ path: path.join(ARTIFACTS_DIR, '14_academic_research_report.png') });
       console.log('  Screenshot saved: 14_academic_research_report.png');
 
-      const closeReport = page.locator('button', { hasText: '完成查看' }).first();
+      const closeReport = page.locator('button[aria-label="关闭报告"], button:has-text("完成查看")').first();
       await closeReport.click();
       await page.waitForTimeout(400);
     }
@@ -505,7 +517,7 @@ async function runE2EUIAutomation() {
     await alTabBtn.click();
     await page.waitForTimeout(800);
 
-    const alCards = page.locator('text=高置信度领头物 (Hits)').first();
+    const alCards = page.getByText(/模型优先候选|高置信度领头物|突破假说/).first();
     await alCards.waitFor({ state: 'visible', timeout: 8000 });
     console.log('  Active Learning 4-Quadrant Matrix rendered!');
 

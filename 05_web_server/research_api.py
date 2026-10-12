@@ -1,6 +1,7 @@
 """Research endpoints. Missing validated evidence is an explicit HTTP 503."""
 import json
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 from pathlib import Path
 import sys
 import time

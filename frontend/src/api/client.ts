@@ -16,6 +16,20 @@ export function errorMessage(error: unknown): string {
   if (!error.response && error.request) {
     return '无法连接到后端服务，请确认本地后端已启动（端口 8000/8090）。';
   }
+  if (error.response?.status === 429) {
+    const retryAfter = error.response.headers?.['retry-after'] || error.response.headers?.['Retry-After'];
+    const retryMsg = retryAfter ? `，请等待 ${retryAfter} 秒后重试` : '，请稍候重试';
+    return `请求过于频繁（HTTP 429 限流）${retryMsg}。系统正在保护后端计算资源。`;
+  }
+  if (error.response?.status === 503) {
+    const detail = error.response?.data?.detail;
+    const reason = error.response?.data?.reason;
+    const msg = typeof detail === 'string' ? detail : (detail?.message || reason || '服务未就绪');
+    if (typeof msg === 'string' && (msg.includes('SAFEAMP_RUN_DIR') || msg.includes('No validated research run'))) {
+      return '双任务模型未就绪 (503)：尚未配置通过校验的研究产物 (SAFEAMP_RUN_DIR)。';
+    }
+    return `服务暂不可用 (503): ${msg}`;
+  }
   const detail = error.response?.data?.detail;
   if (typeof detail === 'string') return detail;
   if (Array.isArray(detail)) return detail.map(item => item.msg ?? '输入不合法').join('; ');

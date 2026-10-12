@@ -161,22 +161,18 @@ def _compute_3d_spatial_hash_manifold(smiles: str, atoms: list, bonds: list) -> 
     return vec
 
 
-def extract_unimol_representation(smiles: str) -> np.ndarray:
+def extract_heuristic_geom_features(smiles: str) -> np.ndarray:
     """
-    Extract 512-dimensional Uni-Mol representation.
-    Returns cached array if already computed.
+    Extract 512-dimensional deterministic distance-geometry & electrotopological baseline descriptors.
+    Composed of:
+    - 128-dim graph distance spectrum via Floyd-Warshall Laplacian
+    - 128-dim electrotopological state & atomic field descriptors
+    - 256-dim continuous spatial structural manifold
+    Note: This is a standalone deterministic heuristic baseline, NOT pretrained Uni-Mol weights.
     """
     clean_smi = smiles.strip()
     if clean_smi in _UNIMOL_CACHE:
         return _UNIMOL_CACHE[clean_smi].copy()
-
-    # Try importing real Uni-Mol if installed
-    try:
-        import unimol
-        # If unimol is available, call official model (placeholder for installed environment)
-        # fallback is used when package not present
-    except Exception:
-        pass
 
     # Physics-aware 3D distance-geometry & electrotopological manifold
     atoms, bonds = parse_smiles(clean_smi)
@@ -218,6 +214,10 @@ def extract_unimol_representation(smiles: str) -> np.ndarray:
 
 
 def batch_extract_unimol_representations(smiles_list: List[str]) -> np.ndarray:
-    """Batch extract 512-dim Uni-Mol representations for a list of SMILES."""
-    reps = [extract_unimol_representation(s) for s in smiles_list]
+    """Batch extract 512-dim representations for a list of SMILES."""
+    reps = [extract_heuristic_geom_features(s) for s in smiles_list]
     return np.stack(reps, axis=0).astype(np.float32)
+
+def extract_unimol_representation(smiles: str) -> np.ndarray:
+    """Compatibility alias mapping to extract_heuristic_geom_features."""
+    return extract_heuristic_geom_features(smiles)

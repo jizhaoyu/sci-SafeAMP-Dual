@@ -148,8 +148,15 @@ def test_machine_state_semantic_conflict_rejected():
 
 
 def test_all_current_documents_agree():
-    from publish_mic_followup_status import current_state_path, validate_documents
-    validate_documents(read_json(current_state_path()))
+    from publish_mic_followup_status import current_state_path
+    state_path = current_state_path()
+    state = read_json(state_path)
+    if "goat" in str(state_path) or state.get("evidence_molecules") == 17:
+        from publish_mic_goat_status import validate_documents
+        validate_documents(state)
+    else:
+        from publish_mic_followup_status import validate_documents
+        validate_documents(state)
 
 
 def test_document_fact_change_rejected(tmp_path, monkeypatch):

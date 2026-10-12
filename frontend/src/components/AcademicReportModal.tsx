@@ -6,9 +6,7 @@ import {
   Copy, 
   Check, 
   Printer, 
-  ExternalLink,
-  BookOpen,
-  Sparkles
+  BookOpen
 } from 'lucide-react';
 import type { AcademicReportResult } from '../api/dtiClient';
 
@@ -25,10 +23,10 @@ export const AcademicReportModal: React.FC<AcademicReportModalProps> = ({
   reportData,
   loading = false
 }) => {
-  if (!isOpen) return null;
-
   const [activeTab, setActiveTab] = useState<'markdown' | 'print_preview'>('markdown');
   const [copiedMd, setCopiedMd] = useState(false);
+
+  if (!isOpen) return null;
 
   const handleCopyMarkdown = () => {
     if (!reportData) return;
@@ -47,6 +45,7 @@ export const AcademicReportModal: React.FC<AcademicReportModalProps> = ({
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   const handleTriggerPrint = () => {
@@ -68,6 +67,9 @@ export const AcademicReportModal: React.FC<AcademicReportModalProps> = ({
       onClick={onClose}
     >
       <div 
+        role="dialog"
+        aria-modal="true"
+        aria-label="计算生物学学术评估报告"
         className="relative w-full max-w-5xl max-h-[92vh] flex flex-col bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
@@ -80,14 +82,14 @@ export const AcademicReportModal: React.FC<AcademicReportModalProps> = ({
             <div>
               <div className="flex items-center gap-2">
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                  学术交付评估报告与专利交底书生成器
+                  计算研究报告与交底材料草稿
                 </h3>
                 <span className="px-2 py-0.5 text-xs font-semibold rounded-full bg-blue-100 text-blue-800 dark:bg-blue-950/80 dark:text-blue-300 border border-blue-200 dark:border-blue-800">
-                  Publication & Patent Ready
+                  待人工与实验复核
                 </span>
               </div>
               <p className="text-xs text-slate-500 dark:text-slate-400">
-                靶点: <span className="font-semibold text-slate-700 dark:text-slate-300">{reportData?.target_name}</span> · 包含自由能分解、ADMET 毒理与马库什通式声明
+                靶点: <span className="font-semibold text-slate-700 dark:text-slate-300">{reportData?.target_name}</span> · 模板草稿，参数来源与结论需逐项核查
               </p>
             </div>
           </div>
@@ -116,6 +118,7 @@ export const AcademicReportModal: React.FC<AcademicReportModalProps> = ({
             </button>
             <button
               onClick={onClose}
+              aria-label="关闭报告"
               className="p-2 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
               <X className="w-5 h-5" />

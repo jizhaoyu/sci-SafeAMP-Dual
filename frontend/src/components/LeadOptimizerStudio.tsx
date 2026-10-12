@@ -48,6 +48,10 @@ import {
   type ClinicalTargetRecord
 } from '../api/dtiClient';
 import { useAppStore } from '../store/useAppStore';
+import { useDTIModelStatus } from '../api/researchStatus';
+import { useDTIEvidenceStatus, evidenceNotice, evidenceCSVValues, EVIDENCE_CSV_HEADERS, csvLine, researchCopy, evidenceMarkdown, predictionScoreBand, PREDICTION_SCOPE_NOTICE } from '../api/dtiEvidence';
+import { DTIEvidencePanel } from './DTIEvidencePanel';
+import { DTIModelLimitations } from './DTIModelLimitations';
 import { computeDrugLikeness, computeQuickSAScore } from '../utils/cheminformatics';
 import { Molecule2DViewer } from './Molecule2DViewer';
 import { KinasePocketViewer3D } from './KinasePocketViewer3D';
@@ -112,7 +116,12 @@ export default function LeadOptimizerStudio() {
   const [optimizationGoal, setOptimizationGoal] = useState<string>(OPTIMIZATION_GOALS[0].value);
 
   const [customInstruction, setCustomInstruction] = useState<string>('');
-  const [evalModel, setEvalModel] = useState<string>('worldmodel_stacked_ensemble');
+  const [chosenModel, setEvalModel] = useState<string>('');
+  const modelStatus = useDTIModelStatus();
+  const evidence = useDTIEvidenceStatus();
+  const registeredModels = modelStatus.ready ? modelStatus.data ?? [] : [];
+  const evalModel = registeredModels.some(model => model.id === chosenModel)
+    ? chosenModel : (registeredModels.find(model => model.is_recommended)?.id ?? registeredModels[0]?.id ?? '');
 
   // Execution states
   const [isOptimizing, setIsOptimizing] = useState<boolean>(false);
@@ -191,6 +200,7 @@ export default function LeadOptimizerStudio() {
     setReportLoading(true);
     try {
       const res = await fetchAcademicReport({
+        model_used: optimizeResult.model_used,
         target_name: optimizeResult.target_name,
         baseline: optimizeResult.baseline,
         candidates: optimizeResult.candidates,
@@ -407,10 +417,9 @@ export default function LeadOptimizerStudio() {
       ...activeLearningReport.high_information_gain_blindspots,
       ...activeLearningReport.known_inactives
     ];
-    const header = 'Candidate_Name,SMILES,Mean_pKd,Uncertainty_Sigma,Expected_Improvement_EI,UCB_Score,Quadrant,Recommendation\n';
-    const rows = allCands.map(c => 
-      `"${c.name}","${c.smiles}",${c.mean_pkd.toFixed(3)},${c.uncertainty_sigma.toFixed(3)},${c.expected_improvement.toFixed(4)},${c.ucb_score.toFixed(3)},"${c.quadrant_label}","${c.recommendation_reason}"`
-    ).join('\n');
+    const reportEvidence = activeLearningReport.research_evidence ?? evidence.data;
+    const header = csvLine(['Candidate_Name', 'SMILES', 'Mean_pKd', 'Model_Dispersion_Sigma', 'Expected_Improvement_EI', 'UCB_Score', 'Quadrant', 'Recommendation', 'Lead_Optimization_Model_ID', 'Active_Learning_Model_ID', ...EVIDENCE_CSV_HEADERS]) + '\n';
+    const rows = allCands.map(c => csvLine([c.name, c.smiles, c.mean_pkd.toFixed(3), c.uncertainty_sigma.toFixed(3), c.expected_improvement.toFixed(4), c.ucb_score.toFixed(3), researchCopy(c.quadrant_label), researchCopy(c.recommendation_reason), optimizeResult?.model_used ?? 'unknown', activeLearningReport.model_used ?? 'not_reported', ...evidenceCSVValues(reportEvidence, optimizeResult?.model_used)])).join('\n');
     const blob = new Blob([header + rows], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
@@ -419,11 +428,12 @@ export default function LeadOptimizerStudio() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    URL.revokeObjectURL(url);
   };
 
   const handleCopyMarkdownReport = () => {
     if (!activeLearningReport) return;
-    navigator.clipboard.writeText(activeLearningReport.markdown_summary);
+    navigator.clipboard.writeText(researchCopy(activeLearningReport.markdown_summary) + evidenceMarkdown(activeLearningReport.research_evidence ?? evidence.data, optimizeResult?.model_used));
     setCopiedReport(true);
     setTimeout(() => setCopiedReport(false), 2000);
   };
@@ -446,7 +456,7 @@ export default function LeadOptimizerStudio() {
                   </span>
                 </h2>
                 <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
-                  生成式药化微调假说 · 第二代生物世界模型双盲打分 · 贝叶斯主动学习探索/利用四象限决策闭环
+                  生成式药化微调假说 · 注册模型计算打分 · 主动学习探索/利用候选排序
                 </p>
               </div>
             </div>
@@ -486,14 +496,16 @@ export default function LeadOptimizerStudio() {
           </div>
           <div className="flex items-start gap-2">
             <span className="w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-300 flex items-center justify-center shrink-0 font-bold font-mono text-[11px]">2</span>
-            <span><strong>世界模型定量打分</strong>：严禁虚假捏造，所有候选分子均输入双盲隔离训练的第二代生物世界模型即时评测。</span>
+            <span><strong>模型计算打分</strong>：候选分子由所选注册模型预测亲和力；历史基准表现与独立外部证据分别呈现。</span>
           </div>
           <div className="flex items-start gap-2">
             <span className="w-5 h-5 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-300 flex items-center justify-center shrink-0 font-bold font-mono text-[11px]">3</span>
-            <span><strong>主动学习贝叶斯闭环</strong>：四象限划分“高置信领头物”与“高信息增益认知盲区”，指导湿实验降本增效。</span>
+            <span><strong>主动学习候选排序</strong>：结合预测均值与模型分散度划分模型优先候选和探索候选，供后续实验决策参考。</span>
           </div>
         </div>
       </div>
+
+      <DTIEvidencePanel modelId={evalModel} modelHash={registeredModels.find(model => model.id === evalModel)?.model_sha256} />
 
       {/* 预设经典场景快捷选择 */}
       <div className="flex items-center gap-2 overflow-x-auto pb-1 text-xs">
@@ -732,12 +744,10 @@ export default function LeadOptimizerStudio() {
                   onChange={e => setEvalModel(e.target.value)}
                   className="w-full text-xs p-2 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-slate-100 font-medium focus-ring"
                 >
-                  <option value="worldmodel_stacked_ensemble">★ 第二代生物世界模型 (Stacking 集成) [权威推荐 · 双盲 CI 0.8652]</option>
-                  <option value="worldmodel_unimol_esm">Uni-Mol 3D + ESM-2 基础世界模型 [3D 几何构象 CI 0.8340]</option>
-                  <option value="stacked_ensemble">第一代 Stacking 集成模型 [经典口袋融合 CI 0.7571]</option>
-                  <option value="ridge">Ridge 岭回归 [经典基准 · 双盲冷启动 CI 0.7262]</option>
-                  <option value="hist_gradient_boosting">HistGBM [梯度提升树 · 非线性已知域拟合]</option>
+                  {!modelStatus.ready && <option value="">{modelStatus.label}</option>}
+                  {modelStatus.ready && modelStatus.data?.map(model => <option key={model.id} value={model.id}>{model.name}{model.is_recommended ? '（服务默认）' : ''}</option>)}
                 </select>
+                <p className="mt-2 text-xs text-slate-500 dark:text-slate-400">{modelStatus.message}。服务默认仅表示运行配置；外部评价状态见研究证据面板。</p>
               </div>
             </div>
 
@@ -753,7 +763,7 @@ export default function LeadOptimizerStudio() {
               <button
                 type="button"
                 onClick={handleRunOptimization}
-                disabled={isOptimizing}
+                disabled={isOptimizing || !modelStatus.ready || !evalModel}
                 className={`w-full py-3 px-4 rounded-xl font-semibold text-xs flex items-center justify-center gap-2 shadow-sm transition-all cursor-pointer focus-ring ${
                   isOptimizing
                     ? 'bg-blue-400 text-white cursor-not-allowed'
@@ -782,6 +792,8 @@ export default function LeadOptimizerStudio() {
       {/* 结果呈现区域 */}
       {optimizeResult && (
         <div className="space-y-5 animate-in fade-in slide-in-from-bottom-3 duration-300">
+          <p className="rounded-xl border border-amber-200 p-3 text-sm text-amber-900 dark:border-amber-800 dark:text-amber-200">{evidenceNotice(optimizeResult.research_evidence ?? evidence.data)} 实际打分模型：{optimizeResult.model_used}。</p>
+          <DTIModelLimitations modelId={optimizeResult.model_used} evidence={optimizeResult.research_evidence ?? evidence.data} />
           
           {/* 降级警示提示条 */}
           {optimizeResult.mode === 'heuristic_fallback' && (
@@ -811,8 +823,9 @@ export default function LeadOptimizerStudio() {
                   </span>
                   <span className="text-xs text-slate-500 font-mono">pKd</span>
                 </div>
+                <p className="mt-2 text-xs leading-relaxed text-slate-600 dark:text-slate-300">{PREDICTION_SCOPE_NOTICE}</p>
                 <div className="text-xs text-slate-500 mt-1 font-mono">
-                  Kd: <strong>{optimizeResult.baseline.predicted_kd_nM} nM</strong> · {optimizeResult.baseline.affinity_tier}
+                  换算 Kd: <strong>{optimizeResult.baseline.predicted_kd_nM} nM</strong> · {predictionScoreBand(optimizeResult.baseline.predicted_pkd)}
                 </div>
                 {/* SA Score Display */}
                 <div className="mt-1 flex items-center gap-1.5 text-[11px] font-mono">
@@ -894,17 +907,17 @@ export default function LeadOptimizerStudio() {
                 {optimizeResult.summary.best_candidate}
               </div>
               <div className="text-xs text-emerald-600 dark:text-emerald-400 font-bold mt-1 font-mono glow-emerald-text">
-                预测最优 Kd: {optimizeResult.summary.best_kd_nM} nM
+                模型排序对应 Kd: {optimizeResult.summary.best_kd_nM} nM
               </div>
               <span className="inline-block mt-2 text-[10px] px-2 py-0.5 rounded-md bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-semibold border border-emerald-200 dark:border-emerald-800">
-                最高综合亲和力
+                按模型分数排序 · 实验未确认
               </span>
             </div>
 
             {/* 最大亲和力增益 */}
             <div className="precision-card rounded-2xl p-4 shadow-sm space-y-1">
               <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block font-mono">
-                MAX AFFINITY GAIN (ΔpKd)
+                MODEL SCORE CHANGE (ΔpKd)
               </span>
               <div className="flex items-baseline gap-2">
                 <span className={`text-3xl font-black font-mono ${
@@ -919,7 +932,7 @@ export default function LeadOptimizerStudio() {
               <div className="text-[11px] text-slate-500 mt-1">
                 {optimizeResult.summary.max_affinity_gain_pkd > 0 ? (
                   <span className="text-emerald-600 dark:text-emerald-400 font-semibold flex items-center gap-1">
-                    <ArrowUpRight size={13} /> 结合自由能增益驱动
+                    <ArrowUpRight size={13} /> 模型分数增加，实验改善未确认
                   </span>
                 ) : (
                   <span className="text-slate-500 flex items-center gap-1">
@@ -1112,7 +1125,7 @@ export default function LeadOptimizerStudio() {
                     改构衍生分子阶梯排行榜 (Molecular Evolution Ladder)
                   </h3>
                 </div>
-                <span className="text-xs text-slate-400 font-mono">按预测 pKd 亲和力高低严格降序排列</span>
+                <span className="text-xs text-slate-400 font-mono">按模型 pKd 分数排序，实验活性未确认</span>
               </div>
 
               <div className="space-y-3">
@@ -1275,22 +1288,22 @@ export default function LeadOptimizerStudio() {
                           <div className="text-left lg:text-right">
                             {cand.calibrated_pkd !== undefined ? (
                               <>
-                                <span className="text-[10px] text-indigo-500 uppercase font-mono block font-bold">贝叶斯校准 pKd</span>
+                                <span className="text-[10px] text-indigo-500 uppercase font-mono block font-bold">反馈更新 pKd</span>
                                 <span className="text-xl font-black font-mono text-indigo-600 dark:text-indigo-400">
                                   {cand.calibrated_pkd}
                                 </span>
                                 <span className="block text-xs font-mono text-slate-500">
-                                  Kd: <strong>{cand.calibrated_kd_nM} nM</strong> (原 {cand.predicted_pkd})
+                                  换算 Kd: <strong>{cand.calibrated_kd_nM} nM</strong> (原分数 {cand.predicted_pkd})
                                 </span>
                               </>
                             ) : (
                               <>
-                                <span className="text-[10px] text-slate-400 uppercase font-mono block">预测定量 pKd</span>
+                                <span className="text-[10px] text-slate-400 uppercase font-mono block">模型分数 pKd</span>
                                 <span className="text-xl font-bold font-mono text-slate-900 dark:text-slate-100">
                                   {cand.predicted_pkd}
                                 </span>
                                 <span className="block text-xs font-mono text-slate-500">
-                                  Kd: <strong>{cand.predicted_kd_nM} nM</strong>
+                                  换算 Kd: <strong>{cand.predicted_kd_nM} nM</strong>
                                 </span>
                               </>
                             )}
@@ -1310,17 +1323,17 @@ export default function LeadOptimizerStudio() {
                               <span>{cand.delta_pkd > 0 ? `+${cand.delta_pkd}` : cand.delta_pkd} pKd</span>
                             </div>
                             <span className="block text-[10px] text-slate-400 mt-0.5">
-                              {cand.status} ({cand.fold_change}x)
+                              模型分数变化 · 换算比 {cand.fold_change}x
                             </span>
                           </div>
 
                           <div className="text-right mt-2">
                             <span className={`text-[10px] px-2 py-0.5 rounded font-medium ${
-                              cand.affinity_tier_code === 'high_affinity'
+                              cand.predicted_pkd >= 7
                                 ? 'bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800'
                                 : 'bg-blue-50 text-blue-700 dark:bg-blue-950/40 dark:text-blue-400 border border-blue-200 dark:border-blue-800'
                             }`}>
-                              {cand.affinity_tier}
+                              预测分数区间：{predictionScoreBand(cand.predicted_pkd)}
                             </span>
                           </div>
                         </div>
@@ -1346,14 +1359,14 @@ export default function LeadOptimizerStudio() {
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-bold text-emerald-800 dark:text-emerald-300 flex items-center gap-1.5">
                           <Check size={14} className="text-emerald-600 dark:text-emerald-400" />
-                          高置信度领头物 (Hits)
+                          模型优先候选 (Hits)
                         </span>
                         <span className="px-2 py-0.5 rounded-md text-xs font-bold bg-emerald-600 text-white font-mono shadow-xs">
                           {activeLearningReport.confident_hits.length}
                         </span>
                       </div>
                       <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
-                        高预测均值 μ + 低不确定性 σ。模型极度确信的优质产物，优先直接推进体外激酶结合测定。
+                        高预测均值 μ + 低模型分散度 σ。可优先考虑实验核查，尚未确认实际结合效果。
                       </p>
                     </div>
 
@@ -1369,7 +1382,7 @@ export default function LeadOptimizerStudio() {
                         </span>
                       </div>
                       <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
-                        高期望提升 (Top EI)。具有冲刺皮摩尔 (pM) 级别超高亲和力的非凡探索空间。
+                        高计算期望提升 (Top EI)。适合作为探索假说，仍需确认结构可行性与实验亲和力。
                       </p>
                     </div>
 
@@ -1385,7 +1398,7 @@ export default function LeadOptimizerStudio() {
                         </span>
                       </div>
                       <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
-                        极高不确定性 σ。湿实验反馈能最大化消除模型认知盲区，具有顶级信息增益价值。
+                        高模型分散度 σ。可考虑补充实验数据，探索模型判断差异较大的区域。
                       </p>
                     </div>
 
@@ -1394,14 +1407,14 @@ export default function LeadOptimizerStudio() {
                       <div className="flex items-center justify-between">
                         <span className="text-xs font-bold text-slate-700 dark:text-slate-300 flex items-center gap-1.5">
                           <Minus size={14} className="text-slate-400" />
-                          确定性无效物 (Inactives)
+                          模型低优先候选 (Low Priority)
                         </span>
                         <span className="px-2 py-0.5 rounded-md text-xs font-bold bg-slate-500 text-white font-mono shadow-xs">
                           {activeLearningReport.known_inactives.length}
                         </span>
                       </div>
                       <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed">
-                        低均值 μ + 低不确定性 σ。结合极弱且高度确信无效，直接规避，节省实验经费。
+                        低预测均值 μ + 低模型分散度 σ。当前模型排序较低，实际活性仍需实验判断。
                       </p>
                     </div>
 
@@ -1431,7 +1444,7 @@ export default function LeadOptimizerStudio() {
                             <th className="p-3 font-bold">候选分子名称</th>
                             <th className="p-3 font-bold">象限分类</th>
                             <th className="p-3 font-bold">预测均值 (μ)</th>
-                            <th className="p-3 font-bold">不确定性 (σ)</th>
+                            <th className="p-3 font-bold">模型分散度 (σ)</th>
                             <th className="p-3 font-bold text-blue-600 dark:text-blue-400">期望提升 (EI)</th>
                             <th className="p-3 font-bold">UCB 上界得分</th>
                             <th className="p-3 font-bold text-emerald-600 dark:text-emerald-400">SA 合成可达性</th>
@@ -1460,7 +1473,7 @@ export default function LeadOptimizerStudio() {
                                     ? 'bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300'
                                     : 'bg-slate-200 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
                                 }`}>
-                                  {cand.quadrant_label}
+                                  {researchCopy(cand.quadrant_label)}
                                 </span>
                               </td>
                               <td className="p-3 font-mono font-bold text-slate-800 dark:text-slate-200">
@@ -1487,7 +1500,7 @@ export default function LeadOptimizerStudio() {
                                 </span>
                               </td>
                               <td className="p-3 text-[11px] text-slate-600 dark:text-slate-400 max-w-xs">
-                                {cand.recommendation_reason}
+                                {researchCopy(cand.recommendation_reason)}
                               </td>
                             </tr>
                           ))}
@@ -1515,7 +1528,7 @@ export default function LeadOptimizerStudio() {
           <span>科学自律与贝叶斯主动学习声明</span>
         </div>
         <p className="leading-relaxed">
-          本工作台为纯计算辅助设计系统。衍生分子的 SMILES 与假说由药化启发式引擎或用户配置的大模型生成，定量亲和力评估一律由第二代生物世界模型（Uni-Mol 3D 几何构象 + ESM-2 进化表征）或严格留出训练的 Ridge 冻结基准模型计算。贝叶斯主动学习获取函数用于指引湿实验投产优先级，不可替代湿法生化活性（Kd/IC50）与晶体结构测定。
+          本工作台提供计算辅助设计。改构假说由药化启发式引擎或用户配置的大模型生成，亲和力由注册模型预测；实际模型以结果记录为准。主动学习排序仅供实验候选选择参考，模型分散度不等同于实验验证的置信区间。{evidenceNotice(evidence.data)}
         </p>
       </div>
 

@@ -1,4 +1,6 @@
 """Serve the existing React research workstation and provenance-gated API."""
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 from pathlib import Path
 from fastapi import HTTPException
 from fastapi.responses import FileResponse, Response

@@ -92,5 +92,8 @@ def read_audit_logs(log_file: Optional[Path] = None) -> List[Dict[str, Any]]:
     for line in content.splitlines():
         line = line.strip()
         if line:
-            entries.append(json.loads(line))
+            try:
+                entries.append(json.loads(line))
+            except json.JSONDecodeError:
+                continue
     return entries

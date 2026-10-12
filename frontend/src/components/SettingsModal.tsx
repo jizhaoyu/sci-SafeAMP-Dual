@@ -197,7 +197,7 @@ function SettingsDialog({ onClose }: Pick<Props, 'onClose'>) {
               className="lab-input font-mono text-xs"
             />
             <p className="text-[11px] text-slate-400">
-              凭证仅保存在当前页面内存，不写入浏览器持久缓存；刷新页面后需重新填写。点击连接测试会将其发送给对应官方服务商。
+              凭证仅保存在当前页面内存，不写入浏览器持久缓存；刷新页面后需重新填写。点击连接测试会经本地后端发送给所配置的服务商。
             </p>
           </div>
 

@@ -54,7 +54,15 @@ def parse_smiles(smiles: str):
             
     return atoms, bonds
 
+import hashlib
+
+def _deterministic_hash(val) -> int:
+    """Compute cross-process 100% deterministic 32-bit hash regardless of PYTHONHASHSEED."""
+    s = str(val).encode('utf-8')
+    return int.from_bytes(hashlib.md5(s).digest()[:4], byteorder='big')
+
 def get_morgan_fingerprint(smiles: str, radius=2, n_bits=2048):
+    """Compute deterministic circular Weisfeiler-Lehman fingerprint (2048 bits)."""
     atoms, bonds = parse_smiles(smiles)
     n = len(atoms)
     adj = defaultdict(list)
@@ -66,7 +74,7 @@ def get_morgan_fingerprint(smiles: str, radius=2, n_bits=2048):
     curr_env = []
     for i, (sym, arom) in enumerate(atoms):
         deg = len(adj[i])
-        curr_env.append(hash((sym.upper(), arom, deg)) & 0xFFFFFFFF)
+        curr_env.append(_deterministic_hash((sym.upper(), arom, deg)))
         
     features = set(curr_env)
     
@@ -74,7 +82,7 @@ def get_morgan_fingerprint(smiles: str, radius=2, n_bits=2048):
         next_env = []
         for i in range(n):
             nbr_info = tuple(sorted((b, curr_env[v]) for v, b in adj[i]))
-            h = hash((curr_env[i], nbr_info)) & 0xFFFFFFFF
+            h = _deterministic_hash((curr_env[i], nbr_info))
             next_env.append(h)
             features.add(h)
         curr_env = next_env

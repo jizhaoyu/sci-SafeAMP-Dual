@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { 
   X, 
   Grid, 
@@ -6,11 +6,7 @@ import {
   Copy, 
   Check, 
   FlaskConical, 
-  Layers, 
-  Info,
-  CheckCircle2,
-  AlertCircle,
-  ExternalLink
+  Info
 } from 'lucide-react';
 import type { WetlabDispatchResult, WetlabDispatchWell } from '../api/dtiClient';
 
@@ -30,13 +26,11 @@ export const WetlabDispatchModal: React.FC<WetlabDispatchModalProps> = ({
   dispatchResult,
   loading = false
 }) => {
-  if (!isOpen) return null;
-
   const [selectedWell, setSelectedWell] = useState<WetlabDispatchWell | null>(null);
   const [copiedCsv, setCopiedCsv] = useState(false);
 
   // Map wells by well_id for O(1) lookup
-  const wellMap = React.useMemo(() => {
+  const wellMap = useMemo(() => {
     const map = new Map<string, WetlabDispatchWell>();
     if (dispatchResult?.wells) {
       for (const w of dispatchResult.wells) {
@@ -45,6 +39,8 @@ export const WetlabDispatchModal: React.FC<WetlabDispatchModalProps> = ({
     }
     return map;
   }, [dispatchResult]);
+
+  if (!isOpen) return null;
 
   const handleDownloadCSV = () => {
     if (!dispatchResult) return;
@@ -71,6 +67,9 @@ export const WetlabDispatchModal: React.FC<WetlabDispatchModalProps> = ({
       onClick={onClose}
     >
       <div 
+        role="dialog"
+        aria-modal="true"
+        aria-label="湿实验 96 孔板投产清单与移液规程"
         className="relative w-full max-w-5xl max-h-[92vh] flex flex-col bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl overflow-hidden"
         onClick={e => e.stopPropagation()}
       >
@@ -112,6 +111,7 @@ export const WetlabDispatchModal: React.FC<WetlabDispatchModalProps> = ({
             </button>
             <button
               onClick={onClose}
+              aria-label="关闭投产面板"
               className="p-2 rounded-lg text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
               <X className="w-5 h-5" />

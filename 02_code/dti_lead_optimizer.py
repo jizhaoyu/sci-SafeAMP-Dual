@@ -104,7 +104,7 @@ def generate_heuristic_candidates(smiles: str) -> List[dict]:
             continue
 
     # Fallback if regex transformations failed on non-standard smiles
-    if len(candidates) < 2:
+    if len(candidates) < 4:
         for suffix, name, desc in [
             ("(F)", "单氟取代物", "芳环引入氟原子"),
             ("(C(F)(F)F)", "三氟甲基修饰物", "引入疏水 CF3 基团"),

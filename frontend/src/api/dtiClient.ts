@@ -1,3 +1,5 @@
+import type { DTIEvidenceStatus } from './dtiEvidence';
+
 export interface DTIDrug {
   id: string;
   name: string;
@@ -8,6 +10,12 @@ export interface DTIDrug {
 
 export interface DTITarget {
   id: string;
+  canonical_gene_symbol?: string;
+  standard_display_name?: string;
+  is_misleading_mutation_label?: boolean;
+  misleading_label_type?: string;
+  target_semantic_type?: string;
+  curation_note?: string;
   length: number;
   sequence: string;
   fold: number;
@@ -25,6 +33,10 @@ export interface DomainMetrics {
 export interface DTIStatus {
   status: string;
   protocol_id: string;
+  plan_a_protocol?: string;
+  target_semantic_definition?: string;
+  censoring_threshold_kd?: number;
+  censoring_threshold_pkd?: number;
   models_available: string[];
   default_model: string;
   num_drugs: number;
@@ -37,6 +49,7 @@ export interface DTIStatus {
 }
 
 export interface DTIPredictionResult {
+  research_evidence?: DTIEvidenceStatus;
   predicted_pkd: number;
   predicted_kd_nM: number;
   affinity_tier: string;
@@ -52,11 +65,17 @@ export interface DTIPredictionResult {
     protocol: string;
     benchmark: string;
     training_run: string;
+    model_version?: string;
+    model_sha256?: string;
+    feature_version?: string;
+    seed?: number;
+    evaluation_scope?: string;
   };
   warning: string;
 }
 
 export interface KinomeProfileItem {
+  research_evidence?: DTIEvidenceStatus;
   kinase_name: string;
   length: number;
   predicted_pkd: number;
@@ -87,7 +106,7 @@ export async function fetchDTITargets(): Promise<DTITarget[]> {
 export async function predictDTIAffinity(
   drug_smiles: string,
   target_sequence: string,
-  model_name: string = 'stacked_ensemble'
+  model_name?: string
 ): Promise<DTIPredictionResult> {
   const res = await fetch('/api/dti/predict', {
     method: 'POST',
@@ -103,7 +122,7 @@ export async function predictDTIAffinity(
 
 export async function profileKinasePanel(
   drug_smiles: string,
-  model_name: string = 'stacked_ensemble'
+  model_name?: string
 ): Promise<KinomeProfileItem[]> {
   const res = await fetch('/api/dti/profile_panel', {
     method: 'POST',
@@ -185,6 +204,7 @@ export interface CandidateDerivative {
 }
 
 export interface DTIOptimizeResult {
+  research_evidence?: DTIEvidenceStatus;
   mode: string;
   fallback_reason?: string | null;
   target_name: string;
@@ -242,16 +262,25 @@ export async function optimizeLeadMolecule(
 }
 
 export interface DTIModelMeta {
+  model_sha256?: string;
   id: string;
   name: string;
   badge: string;
   badge_color: string;
   desc: string;
   is_recommended: boolean;
-  train_ci: number;
-  train_mae: number;
-  cold_target_ci: number;
-  cold_drug_ci: number;
+  benchmark_version?: string;
+  model_version?: string;
+  feature_dimension?: number;
+  seed?: number;
+  five_seed_ci_mean?: number;
+  evaluation_scope?: string;
+  metrics_by_domain?: Record<string, DomainMetrics & { n?: number }>;
+  train_ci: number | null;
+  train_mae?: number | null;
+  dual_cold_ci?: number | null;
+  cold_target_ci: number | null;
+  cold_drug_ci: number | null;
 }
 
 export async function fetchDTIModels(): Promise<DTIModelMeta[]> {
@@ -318,6 +347,8 @@ export interface ActiveLearningCandidate {
 }
 
 export interface ActiveLearningReport {
+  research_evidence?: DTIEvidenceStatus;
+  model_used?: string;
   target_name: string;
   total_evaluated: number;
   y_best_reference: number;
@@ -457,6 +488,8 @@ export async function generateWetlabDispatch(params: {
 }
 
 export interface AcademicReportResult {
+  research_evidence?: DTIEvidenceStatus;
+  model_used?: string;
   markdown_report: string;
   html_report: string;
   target_name: string;
@@ -464,6 +497,7 @@ export interface AcademicReportResult {
 }
 
 export async function fetchAcademicReport(params: {
+  model_used?: string;
   target_name: string;
   baseline: any;
   candidates: any[];
@@ -784,4 +818,3 @@ export async function runVirtualScreening(req: {
   }
   return res.json();
 }
-

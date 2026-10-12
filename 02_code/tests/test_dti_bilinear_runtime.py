@@ -62,3 +62,20 @@ def test_bilinear_model_exposed_in_api():
     bilinear_entry = next(m for m in models if m["id"] == "bilinear_esm2_interaction")
     assert "双线性" in bilinear_entry["name"]
     assert bilinear_entry["metrics_by_domain"]["strict_dual_cold_test"]["p10"] == 0.1615
+
+
+def test_bilinear_predict_endpoint(runtime):
+    from dti_endpoints import predict_dti_affinity, DTIPredictionRequest
+    imatinib = "CC1=C(C=C(C=C1)NC(=O)C2=CC=C(C=C2)CN3CCN(CC3)C)NC4=NC=CC(=N4)C5=CN=CC=C5"
+    abl1_seq = runtime.targets["ABL1p"]["sequence"]
+
+    req = DTIPredictionRequest(
+        drug_smiles=imatinib,
+        target_sequence=abl1_seq,
+        model_name="bilinear_esm2_interaction"
+    )
+    res = predict_dti_affinity(req)
+    assert res["model_used"] == "bilinear_esm2_interaction"
+    assert "research_evidence" in res
+    assert 5.0 <= res["predicted_pkd"] <= 9.0
+
