@@ -23,9 +23,6 @@
 }
 .workflow-navigation a:hover { border-color: var(--primary-blue); }
 .studio-action-bar {
-  position: sticky;
-  top: 65px;
-  z-index: 20;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
