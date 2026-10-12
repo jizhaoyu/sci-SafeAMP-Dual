@@ -1,11 +1,13 @@
 """4-Fold Training & Evaluation script for BilinearInteractionDTI on Cloud T4 GPU.
 
 Evaluates candidate screening (P@10, P@30, AP, C-index) and ranking diversity
-across 4 entity-isolated folds on NVIDIA T4.
+across 4 entity-isolated folds on NVIDIA T4 with checkpoint resume and auto-export.
 """
 import argparse
 import json
+import os
 import time
+import zipfile
 from pathlib import Path
 from typing import Dict, List, Any
 import numpy as np
@@ -70,9 +72,8 @@ def evaluate_domain(model, device, drug_feats, target_feats, rows_subset, di_sub
             out = model(d_x, t_x)
             scores.append(out.squeeze(1).cpu().numpy())
             
-    scores = np.concatenate(scores)
+    scores = np.concatenate(scores) if scores else np.array([])
     y_bin = np.array([r['binary_label'] for r in rows_subset])
-    y_cont = np.array([r['encoded_pKd'] for r in rows_subset])
     
     unique_drugs = sorted({r['drug_id'] for r in rows_subset})
     p10_list, p30_list, ap_list = [], [], []
@@ -87,7 +88,7 @@ def evaluate_domain(model, device, drug_feats, target_feats, rows_subset, di_sub
         p10_list.append(compute_top_k(d_scores, d_pos, 10))
         p30_list.append(compute_top_k(d_scores, d_pos, 30))
         
-        # AP
+        # AP (only defined when positive labels exist)
         if d_pos.sum() > 0:
             ap_list.append(float(average_precision_score(d_pos, d_scores)))
             
@@ -117,17 +118,75 @@ def evaluate_domain(model, device, drug_feats, target_feats, rows_subset, di_sub
     }
 
 
+def export_results_zip(root: Path, final_report: dict):
+    """Automatically packages evaluation outcomes and checkpoints into a ZIP archive."""
+    ts = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
+    zip_name = f"DTI_T4_results_{ts}.zip"
+    zip_path = root / zip_name
+    
+    # Write summary Markdown
+    summary_md = root / "t4_summary.md"
+    summary = final_report['summary']
+    md_content = f"""# DTI T4 Bilinear Interaction Training Results
+
+- **Run Timestamp**: {final_report['timestamp']}
+- **Device**: {final_report['device_name']} ({final_report['device']})
+- **Epochs per Fold**: {final_report['epochs']} | **Batch Size**: {final_report['batch_size']}
+
+## Key Screening Metrics Summary
+| Metric | Value | Reference / Notes |
+|---|---|---|
+| **Dual-Cold P@10** | **{summary['mean_dual_cold_p10']:.4f} +/- {summary['std_dual_cold_p10']:.4f}** | Primary candidate screening accuracy |
+| **Cold-Drug P@10** | {summary['mean_cold_drug_p10']:.4f} | Single-entity cold drug scenario |
+| **Cold-Target P@10** | {summary['mean_cold_target_p10']:.4f} | Single-entity cold target scenario |
+| **Dual-Cold AP** | {f"{summary['mean_dual_cold_ap']:.4f}" if summary['mean_dual_cold_ap'] is not None else 'N/A'} | Macro AP across eligible drugs |
+| **Ranking Diversity (Spearman)** | **{summary['mean_ranking_spearman']:.4f}** | <0.85 confirms drug-specific ranking |
+| **Ranking Degeneracy Broken** | **{summary['ranking_diversity_verified']}** | Breaks linear additive identical rank bug |
+
+## Decision Gate
+- **Breakthrough Gate (P@10 >= 0.1500)**: {'MET' if summary['mean_dual_cold_p10'] >= 0.15 else 'NOT MET'}
+- **Diversity Gate (Spearman < 0.85)**: {'MET' if summary['mean_ranking_spearman'] and summary['mean_ranking_spearman'] < 0.85 else 'PENDING'}
+"""
+    summary_md.write_text(md_content, encoding='utf-8')
+    
+    files_to_pack = [
+        root / 't4_results.json',
+        summary_md,
+    ]
+    log_file = root / 't4_training.log'
+    if log_file.exists():
+        files_to_pack.append(log_file)
+        
+    for ckpt in (root / 'checkpoints').glob('*'):
+        if ckpt.is_file():
+            files_to_pack.append(ckpt)
+            
+    with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
+        for p in files_to_pack:
+            if p.exists():
+                arcname = p.relative_to(root)
+                zf.write(p, arcname)
+                
+    print("\n" + "=" * 70)
+    print(">>> TRAINING & EVALUATION COMPLETED SUCCESSFULLY! <<<")
+    print(f"RESULTS ARCHIVE GENERATED: {zip_path.name} ({zip_path.stat().st_size / 1024:.1f} KB)")
+    print(f"FULL LOCAL PATH: {zip_path.resolve()}")
+    print("ACTION: Download this ZIP file back to your local machine, then STOP the cloud instance.")
+    print("=" * 70 + "\n")
+
+
 def train():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--epochs', type=int, default=20)
+    parser = argparse.ArgumentParser(description="T4 Bilinear DTI Trainer")
+    parser.add_argument('--epochs', type=int, default=25)
     parser.add_argument('--batch_size', type=int, default=256)
     parser.add_argument('--lr', type=float, default=1e-3)
-    parser.add_argument('--smoke', action='store_true', help='Quick smoke run')
+    parser.add_argument('--smoke', action='store_true', help='Quick smoke run with 1 epoch')
     args = parser.parse_args()
 
     CKPT_DIR.mkdir(parents=True, exist_ok=True)
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    print(f"Executing on: {device} (Name: {torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'})")
+    device_name = torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU'
+    print(f"Executing on: {device} (Device Name: {device_name})")
 
     # Load assets
     drug_feats = np.load(DATA_DIR / 'drug_features.npy')
@@ -147,12 +206,26 @@ def train():
 
     epochs = 1 if args.smoke else args.epochs
     fold_results = []
-    
     print(f"Starting T4 4-fold training ({epochs} epochs/fold, batch_size={args.batch_size})...")
 
     for item in manifest:
         fold = item['fold']
-        print(f"\n--- Fold {fold} ---")
+        print(f"\n==================== [Fold {fold}/4] ====================")
+        fold_ckpt_meta = CKPT_DIR / f'fold_{fold}_result.json'
+        
+        # Checkpoint Resume Check
+        if fold_ckpt_meta.exists():
+            try:
+                with fold_ckpt_meta.open('r', encoding='utf-8') as f:
+                    saved_fold_res = json.load(f)
+                print(f"[CHECKPOINT HIT] Fold {fold} already completed. Loaded from {fold_ckpt_meta.name}")
+                p10_loaded = saved_fold_res['val_dual_cold']['macro_p10']
+                print(f"  Loaded Dual-Cold P@10: {p10_loaded:.4f}")
+                fold_results.append(saved_fold_res)
+                continue
+            except Exception as e:
+                print(f"[CHECKPOINT WARNING] Failed to read {fold_ckpt_meta} ({e}); re-running fold {fold}...")
+
         with (SPLITS_DIR / f'fold_{fold}.json').open(encoding='utf-8') as f:
             split_data = json.load(f)
 
@@ -203,7 +276,8 @@ def train():
                 best_dual_p10 = p10
                 torch.save(model.state_dict(), best_ckpt)
 
-            print(f"Epoch {ep:2d}/{epochs:2d} | Train Loss: {ep_loss:.4f} | Dual-Cold P@10: {p10:.4f} | Best: {best_dual_p10:.4f}")
+            dur = time.monotonic() - t0
+            print(f"Epoch {ep:2d}/{epochs:2d} | Train Loss: {ep_loss:.4f} | Dual-Cold P@10: {p10:.4f} | Best: {best_dual_p10:.4f} | {dur:.1f}s")
 
         # Final evaluation of best checkpoint on all domains
         if best_ckpt.exists():
@@ -216,14 +290,19 @@ def train():
         target_res = evaluate_domain(model, device, drug_feats, target_feats,
                                      [pairs[i] for i in target_val_idx], di_all[target_val_idx], ti_all[target_val_idx])
 
-        fold_results.append({
+        fold_res_entry = {
             'fold': fold,
             'val_dual_cold': dual_res,
             'val_drug_cold': drug_res,
             'val_target_cold': target_res
-        })
+        }
+        with fold_ckpt_meta.open('w', encoding='utf-8') as f:
+            json.dump(fold_res_entry, f, indent=2)
+            
+        print(f"[CHECKPOINT SAVED] Fold {fold} finished & saved to {fold_ckpt_meta.name}")
+        fold_results.append(fold_res_entry)
 
-    # Summary
+    # Global summary across all 4 folds
     p10_dual = [f['val_dual_cold']['macro_p10'] for f in fold_results]
     p10_drug = [f['val_drug_cold']['macro_p10'] for f in fold_results]
     p10_target = [f['val_target_cold']['macro_p10'] for f in fold_results]
@@ -237,13 +316,13 @@ def train():
         'mean_cold_target_p10': float(np.mean(p10_target)),
         'mean_dual_cold_ap': float(np.mean(ap_dual)) if ap_dual else None,
         'mean_ranking_spearman': float(np.mean(spearmans)) if spearmans else None,
-        'ranking_diversity_verified': bool(np.mean(spearmans) < 0.90) if spearmans else False
+        'ranking_diversity_verified': bool(np.mean(spearmans) < 0.85) if spearmans else False
     }
 
     final_report = {
         'timestamp': time.strftime('%Y-%m-%dT%H:%M:%S'),
         'device': str(device),
-        'device_name': torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'CPU',
+        'device_name': device_name,
         'epochs': epochs,
         'batch_size': args.batch_size,
         'fold_results': fold_results,
@@ -253,11 +332,24 @@ def train():
     with (ROOT / 't4_results.json').open('w', encoding='utf-8') as f:
         json.dump(final_report, f, indent=2)
 
-    print(f"\nT4 Training Completed! Summary:\n"
+    print(f"\nT4 Training Summary:\n"
           f"  Dual-Cold P@10: {summary['mean_dual_cold_p10']:.4f} +/- {summary['std_dual_cold_p10']:.4f}\n"
           f"  Cold-Drug P@10: {summary['mean_cold_drug_p10']:.4f}\n"
+          f"  Cold-Target P@10: {summary['mean_cold_target_p10']:.4f}\n"
           f"  Ranking Spearman Diversity: {summary['mean_ranking_spearman']}\n"
-          f"Results saved to {ROOT / 't4_results.json'}")
+          f"  Diversity Verified (<0.85): {summary['ranking_diversity_verified']}\n")
+
+    # Export results archive
+    export_results_zip(ROOT, final_report)
+
+    # Clean PID file on successful exit
+    pid_file = ROOT / 'train.pid'
+    if pid_file.exists():
+        try:
+            if int(pid_file.read_text().strip()) == os.getpid():
+                pid_file.unlink()
+        except Exception:
+            pass
 
 
 if __name__ == '__main__':

@@ -1,0 +1,27 @@
+{
+  "fold": 3,
+  "val_dual_cold": {
+    "macro_p10": 0.19230769230769232,
+    "macro_p30": 0.12307692307692307,
+    "macro_ap": 0.26268947454195757,
+    "ap_eligible_drugs": 11,
+    "ap_excluded_drugs": 2,
+    "mean_ranking_spearman": 0.07078805120910385
+  },
+  "val_drug_cold": {
+    "macro_p10": 0.1846153846153846,
+    "macro_p30": 0.14358974358974358,
+    "macro_ap": 0.1949149874013511,
+    "ap_eligible_drugs": 13,
+    "ap_excluded_drugs": 0,
+    "mean_ranking_spearman": 0.008954201026327076
+  },
+  "val_target_cold": {
+    "macro_p10": 0.28974358974358977,
+    "macro_p30": 0.158974358974359,
+    "macro_ap": 0.4714609227629964,
+    "ap_eligible_drugs": 32,
+    "ap_excluded_drugs": 7,
+    "mean_ranking_spearman": -0.018150782361308678
+  }
+}
