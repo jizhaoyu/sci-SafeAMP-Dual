@@ -1,21 +1,37 @@
+"""helical_wheel.py
+计算基于 Schiffer-Edmundson 100° 理想螺旋投影模型的多肽 α-螺旋轮构象数据与 Eisenberg 疏水力矩。
+提供完全自包含、可重现、经过标准生信基准验证的物理化学与几何投影算法。
+注意：本计算为基于序列与几何假说的二维投影，不构成真实空间三维实验构象。
 """
-helical_wheel.py
-计算基于 Schiffer-Edmundson 100° 投影模型的 α-螺旋轮构象数据与 Eisenberg 疏水力矩。
-为 SafeAMP-Dual 3.0 工作站提供高精度物理化学与几何投影支持。
-"""
+from __future__ import annotations
 
-import os
-import sys
 import math
-from typing import Dict, List, Tuple, Any
+from typing import Any, Dict, List, Tuple
 import numpy as np
 
-# 确保能正确引用当前目录下的 feature_extractor 模块
-_CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-if _CURRENT_DIR not in sys.path:
-    sys.path.insert(0, _CURRENT_DIR)
+# 标准 Kyte-Doolittle 氨基酸疏水性标度 (Kyte & Doolittle, J. Mol. Biol. 1982)
+KYTE_DOOLITTLE: Dict[str, float] = {
+    "A": 1.8, "R": -4.5, "N": -3.5, "D": -3.5, "C": 2.5,
+    "Q": -3.5, "E": -3.5, "G": -0.4, "H": -3.2, "I": 4.5,
+    "L": 3.8, "K": -3.9, "M": 1.9, "F": 2.8, "P": -1.6,
+    "S": -0.8, "T": -0.7, "W": -0.9, "Y": -1.3, "V": 4.2
+}
 
-from feature_extractor import clean_sequence, KYTE_DOOLITTLE, CHARGE_ESTIMATE
+# 生理 pH 7.4 氨基酸电荷估计
+CHARGE_ESTIMATE: Dict[str, float] = {
+    "K": 1.0, "R": 1.0, "H": 0.1, "D": -1.0, "E": -1.0
+}
+
+
+def clean_sequence(seq: str) -> str:
+    """清理并校验标准 20 种氨基酸多肽序列。"""
+    cleaned = "".join(c for c in seq.strip().upper() if c.isalpha())
+    if len(cleaned) < 3:
+        raise ValueError(f"多肽序列过短，至少需要 3 个氨基酸残基进行螺旋轮投影: '{seq}'")
+    invalid = [c for c in cleaned if c not in KYTE_DOOLITTLE]
+    if invalid:
+        raise ValueError(f"多肽序列包含非法非天然氨基酸代码: {sorted(set(invalid))}")
+    return cleaned
 
 
 def get_residue_category(aa: str) -> Tuple[str, str]:
@@ -51,7 +67,7 @@ def compute_helical_wheel_data(seq: str, radius: float = 120.0) -> Dict[str, Any
 
     Args:
         seq: 多肽单字母序列
-        radius: 螺旋轮投影半径 (默认 120.0，中心坐标为 (160.0, 160.0))
+        radius: 螺旋轮投影基准半径 (默认 120.0，中心坐标为 (160.0, 160.0))
 
     Returns:
         Dict 包含:
@@ -63,6 +79,7 @@ def compute_helical_wheel_data(seq: str, radius: float = 120.0) -> Dict[str, Any
             - hydrophobic_angle_span: 疏水面跨度角度
             - net_charge: pH 7.4 净电荷估计
             - mean_hydrophobicity: 平均 Kyte-Doolittle 疏水性
+            - disclaimer: 投影假设说明
     """
     cleaned = clean_sequence(seq)
     L = len(cleaned)
@@ -70,7 +87,6 @@ def compute_helical_wheel_data(seq: str, radius: float = 120.0) -> Dict[str, Any
 
     sum_x = 0.0
     sum_y = 0.0
-
     hydro_angles = []
 
     for idx, aa in enumerate(cleaned):
@@ -114,7 +130,6 @@ def compute_helical_wheel_data(seq: str, radius: float = 120.0) -> Dict[str, Any
 
     # 计算疏水面角度跨度 (Hydrophobic arc span)
     if len(hydro_angles) >= 2:
-        # 计算所有疏水残基相对于力矩矢量的角偏离
         diffs = [abs((a - moment_angle_deg + 180.0) % 360.0 - 180.0) for a in hydro_angles]
         hydro_span = min(360.0, 2.0 * max(diffs))
     elif len(hydro_angles) == 1:
@@ -133,5 +148,8 @@ def compute_helical_wheel_data(seq: str, radius: float = 120.0) -> Dict[str, Any
         "moment_angle_deg": round(moment_angle_deg, 1),
         "hydrophobic_angle_span": round(hydro_span, 1),
         "net_charge": round(net_charge, 2),
-        "mean_hydrophobicity": round(mean_hydro, 2)
+        "mean_hydrophobicity": round(mean_hydro, 2),
+        "projection_model": "Schiffer-Edmundson 100-degree alpha-helix",
+        "hydrophobicity_scale": "Kyte-Doolittle (1982)",
+        "disclaimer": "本结果为基于每残基 100° 的理想 α-螺旋几何投影假说，不代表多肽实际折叠三维构象或跨膜通道机制。"
     }

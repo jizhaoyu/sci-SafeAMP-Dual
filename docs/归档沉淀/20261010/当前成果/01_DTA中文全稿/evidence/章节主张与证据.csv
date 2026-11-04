@@ -1,0 +1,12 @@
+﻿claim_id,section,claim_scope,source_ids,status,limitation
+F001,摘要、2.1、2.2,dataset facts and numeric label convention,"E003,E013",已核对,边界语义和版本差异原因未知
+F002,2.3,"actual split rules, coverage and train sizes","E004,E005,E006",代码/实际清单核对,ID隔离不代表所有泄漏路径消失
+F003,2.4、2.6,"feature identities, dimensions and sequence handling","E007,E008,E009,E014",代码及官方模型表核对,不称标准Morgan、真实Uni-Mol或实测口袋
+F004,2.5、2.7,"fixed parameters, NNLS and descriptive interval definition","E005,E010,E011",已核对,参数历史探索、元层分数为拟合诊断
+F005,3.1、表1,raw precision primary effect and corrected OOF diagnostics,"E001,E002,E011",检查点独立重算,区别任务和元层拟合；不作显著性
+F006,3.2、表2、表6,base/ensemble results and saved NNLS coefficients,"E001,E002",已核对,系数不是概率、重要性或已证实机制
+F007,3.3、表3,feature ablation including corrected F2 Ridge,"E001,E002",已核对,seed42探索性，不作普适否定
+F008,3.4、表4–5,sequence and domain results,"E001,E002",已核对,没有等效检验，不是因果衰减估计
+F009,4.1,readonly D/A final prediction differences,"E005,E011",本次额外产物核对,不等于新预设假设检验
+F010,4.2–4.5,possible explanations and mathematical properties,"E005,E007,E009",理论推导/待验证假说,不作已验证生物机制或保证改进
+F011,5、8,"limits, pending declarations and human responsibility","E010,E012,E019",状态/审计范围记录,不是期刊许可或人工已签认

@@ -1,0 +1,5 @@
+﻿feature,drug_base,drug_heuristic,target_statistics,esm2,dimension
+F1,2056,0,100,0,2156
+F2,2056,0,100,320,2476
+F3,2056,512,100,0,2668
+F4,2056,512,100,320,2988

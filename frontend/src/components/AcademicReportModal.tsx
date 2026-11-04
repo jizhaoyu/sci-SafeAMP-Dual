@@ -184,7 +184,7 @@ export const AcademicReportModal: React.FC<AcademicReportModalProps> = ({
 
         {/* Footer */}
         <div className="px-6 py-3 border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/60 flex items-center justify-between text-xs text-slate-500">
-          <span>SafeAMP-Dual Automated Research Publication Framework</span>
+          <span>DTI Automated Research Publication Framework</span>
           <button
             onClick={onClose}
             className="px-4 py-1.5 text-xs font-bold text-white bg-slate-800 hover:bg-slate-900 dark:bg-slate-700 dark:hover:bg-slate-600 rounded-lg transition-colors"

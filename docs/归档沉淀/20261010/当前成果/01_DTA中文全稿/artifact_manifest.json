@@ -1,0 +1,114 @@
+{
+  "status": "draft_pending_author_review",
+  "submission_ready": false,
+  "files": {
+    "README.md": "8a7a6fade6a6c991a0e83bdf53324961553f33ee257e75a77fab04f4fc418754",
+    "references.bib": "2ab7f889c954c44dc45a582ae6f592caddb213763de21835e52612e2a9c224df",
+    "主张与证据表_继承图注编号.md": "8aded4e7117c8294fe71b9409eb103bc5f8546fe601010da126ebd439a83416a",
+    "交付摘要.md": "1d4936761316b2ab70cf8a4840e51a510ed00bf1bf71c9ee0caa8e0585460d74",
+    "任务书事实核对与执行说明.md": "58b5b903c8fd053091d717e92969a8928da88b8ad20e989392f9f7ff3b1de9f5",
+    "参考文献核验.md": "70a04edfe1b91c1f281fa48aa3964a63482f840c6f6d6192f5c78aae58dd5b3a",
+    "图注与图表说明.md": "47df54c763217eb1d143fc74f3f79f7ea650ad18006f673f6b25b3cfc0a27f80",
+    "论文全稿_中文.md": "5a235108b306bd50b947118212b2dfe7d962f2cc4ee0d0948f7e8dc954b9119f",
+    "论文全稿_中文_排版源.md": "02c41f77258336315ded95440e7df4d783675744f7f80d141056f99320beede0",
+    "evidence\\claims_figure_captions.csv": "f99830c0fd7c89039229c4b393f99c1651dd2041c0b1761a932577e22d9d7132",
+    "evidence\\numeric_basis.json": "1fa0f8aeff4d71136555fb08b71c3fbc7a2b67da552015d457c5b8bb5cb759c9",
+    "evidence\\source_manifest.json": "1e5ef7b341aa3218ec58873f8c962f4496dba38f167b12debfc70eef1e7c021b",
+    "evidence\\任务书数值差异.csv": "36592632d6705c824551e1a11334c9e271102b804fe1043f0f78f2aa80c52cad",
+    "evidence\\章节主张与证据.csv": "6dc4e5fbfb42cfe216b6652b3d1f3dc96641f1283cb0580c5058050839c63d1c",
+    "figures\\F1_primary_comparison.png": "4d7e5e96fef33e0695daede193216281772c960ef9d08845e003038eff128bc1",
+    "figures\\F1_primary_comparison.svg": "29a35123a5a52bf4a580bab19f916322d4b4cb145e616391d5c76060ff84f35e",
+    "figures\\F2_model_comparison.png": "247fc02a8b4b6103f2dbab1e6b4d4acaa780ced4f4b9f4a2da40176752e6832e",
+    "figures\\F2_model_comparison.svg": "7d78ec3df3885221bbc4ae1a95bafeb19e2337ed0b4b2e02cc3f73b137661eb1",
+    "figures\\F3_feature_ablation.png": "14dc8ded62266886542742225acdf9c0ea9ee1ff20d4ccd29eaf06a605135551",
+    "figures\\F3_feature_ablation.svg": "45a0027a6b0a03e0c9069cec3efbba428fd6f905a60e795b1c93d8bd39ff91d8",
+    "figures\\F4_long_sequence_comparison.png": "71dd4fe076cde22ed72708cd479bf445314350389185178d8399ba807d176167",
+    "figures\\F4_long_sequence_comparison.svg": "99c614c0e75a21500b9f45cc8a2891546163077aa060d9f38918e53ba6b7c564",
+    "figures\\figure_manifest.json": "4453f1d3121467c85bc9dd9ef7e8f9fc0b0b4a0769c55378ded79addf7229896",
+    "reproduction\\finalize_and_verify.py": "a2be09e700a327f1f91ceff051ccac118605314e34364eca1dbbd0f75c029787",
+    "reproduction\\prepare_full_draft.py": "6c5d84de6c7a5f152f159453d35cd9f854c4b56fe17cd5dde667b0506ed4bf8b",
+    "reproduction\\verification_report.json": "30852fe83ac4b5444b02109a2f2aa9ee1f01e572f68225aadfe470e74ab21623",
+    "tables\\S1_all_76_experiments.csv": "302131a37e02960352a55059f9fa0ad5797d444bd849d78685148f61dbfe30ea",
+    "tables\\T1_primary_seed_pairs.csv": "c744692c01de3ab3cc35e203d97d807d882f03119d19578420991e33cb80fc30",
+    "tables\\T2_primary_effect_intervals.csv": "f63ab162f0a460b5e6c18ae066ebd93d635fb15624112a426b5dbbd0abcfc802",
+    "tables\\T3_models_all_seeds.csv": "6964c82eb15031ed425c1cf3acb50eb21f6a46ea2e86839abab6184cf3557daf",
+    "tables\\T4_feature_ablation_seed42.csv": "4e09bc2eb031d0b96619df11aea2f7d0a2d70e9ea20cd8603cd46983827c12ca",
+    "tables\\T5_sequence_handling_seed42.csv": "049261784a733b51cb357248773d0985eeb26540831c8e8fc1b9c6310bf949cc",
+    "tables\\T6_domains_seed42.csv": "705b21701e0c4a966892a1b26f5708ead0af6d2e79f5f6017c7a4e9bf28b1b36",
+    "tables\\T7_data_partitions.csv": "011d8ec36c88b203e60f36ebebde6c1dbeed5eb989ab92275071a5e480df9510",
+    "tables\\T8_feature_dimensions.csv": "700a23e702cef7211ad1d8dcb82e1442ecfecc80f99ed84d2659d4763cdc57c6",
+    "tables\\表1_五种子主比较.csv": "cff83fdb55f8893e7449ad4d3267ca98d2e357ed76f99b137a44c65138609803",
+    "tables\\表1_五种子主比较.md": "80c25bd7429e163dd326e4bd676c552e819c611cb48b9f2bea6a55eb01f427bc",
+    "tables\\表2_F4基模型与集成.csv": "049bfae8438c27ea327993eb63dfe9f6ae074c57ac300bbdffe4fb095a4dfcbd",
+    "tables\\表2_F4基模型与集成.md": "b5b645b98721ee88ba728cbadbd67b48dcb0b9b152757be68f5b3dd46c5022e8",
+    "tables\\表3_特征消融.csv": "f4c4f0b5595cfd15459963a4f8297ec372ca33102902df962b7ebac52b535222",
+    "tables\\表3_特征消融.md": "f997210a9051b597f80c9ef9734ea4aa82c3b7b6db596f606caf39b5e3be31ba",
+    "tables\\表4_长序列对照.csv": "173e233e6bce4a5726603eb198f316dd4bbd2f4804faebf37d3d120907b30eff",
+    "tables\\表4_长序列对照.md": "e57cb88be3ec2c598aca1dd6f1eef9751434d9df13ba8f817912415de8cf0a2d",
+    "tables\\表5_分域结果.csv": "cc3790d8290627f30d89fc7e490f52a88a0b41ccd17d2d183b97be1418758f62",
+    "tables\\表5_分域结果.md": "8d53e6f38701dee1378769a213469b343770fa51693bd1e5c41b9dc12c2e9747",
+    "tables\\表6_NNLS原始系数.csv": "9137494234d65f9cb591a80a2abdb157b4765ccbc486ea015f6cb35790443913",
+    "tables\\表6_NNLS原始系数.md": "aa3585b9c488bede8a6c8b9eacab261233d83e23b06dec277faa0cb51467e666"
+  },
+  "verification": {
+    "status": "PASS",
+    "manuscript_body_excluding_tables": {
+      "chinese_characters": 10643,
+      "english_word_tokens": 368,
+      "numeric_tokens": 264,
+      "combined_count_estimate": 11275
+    },
+    "abstract": {
+      "chinese_characters": 622,
+      "english_word_tokens": 21,
+      "numeric_tokens": 24,
+      "combined_count_estimate": 667
+    },
+    "section_counts": {
+      "1 引言": {
+        "chinese_characters": 1745,
+        "english_word_tokens": 21,
+        "numeric_tokens": 10,
+        "combined_count_estimate": 1776
+      },
+      "2 材料与方法": {
+        "chinese_characters": 3185,
+        "english_word_tokens": 147,
+        "numeric_tokens": 124,
+        "combined_count_estimate": 3456
+      },
+      "3 结果与实证分析": {
+        "chinese_characters": 1203,
+        "english_word_tokens": 79,
+        "numeric_tokens": 65,
+        "combined_count_estimate": 1347
+      },
+      "4 深入讨论": {
+        "chinese_characters": 2885,
+        "english_word_tokens": 62,
+        "numeric_tokens": 26,
+        "combined_count_estimate": 2973
+      },
+      "5 研究局限性": {
+        "chinese_characters": 608,
+        "english_word_tokens": 9,
+        "numeric_tokens": 6,
+        "combined_count_estimate": 623
+      },
+      "6 结论": {
+        "chinese_characters": 221,
+        "english_word_tokens": 7,
+        "numeric_tokens": 3,
+        "combined_count_estimate": 231
+      }
+    },
+    "tables": 6,
+    "references": 4,
+    "fit_calls": 0,
+    "new_experiments": false,
+    "publication_ready": false,
+    "human_verification": "pending",
+    "latex_format_checks": "PASS",
+    "numeric_checks": "PASS"
+  }
+}

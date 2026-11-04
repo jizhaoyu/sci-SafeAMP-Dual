@@ -1,0 +1,79 @@
+[
+  {
+    "figure_id": "F1_primary_comparison",
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "png_pixels": [
+      3360,
+      1350
+    ],
+    "tables": [
+      "T1_primary_seed_pairs.csv",
+      "T2_primary_effect_intervals.csv"
+    ],
+    "description": "Paired points for each seed and two 95% percentile descriptive intervals crossing zero.",
+    "journal_requirements": "not_selected",
+    "status": "provisional_author_review_pending",
+    "uncertainty": "defined in captions; no p-values",
+    "transformations": "existing values only; no filtering by outcome, no fit, no smoothing"
+  },
+  {
+    "figure_id": "F2_model_comparison",
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "png_pixels": [
+      2400,
+      1350
+    ],
+    "tables": [
+      "T3_models_all_seeds.csv"
+    ],
+    "description": "All five seed values per model; Ridge exceeds the other current F4 models.",
+    "journal_requirements": "not_selected",
+    "status": "provisional_author_review_pending",
+    "uncertainty": "defined in captions; no p-values",
+    "transformations": "existing values only; no filtering by outcome, no fit, no smoothing"
+  },
+  {
+    "figure_id": "F3_feature_ablation",
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "png_pixels": [
+      2640,
+      1410
+    ],
+    "tables": [
+      "T4_feature_ablation_seed42.csv"
+    ],
+    "description": "Four feature sets for all four model outputs, including adverse and model-dependent effects.",
+    "journal_requirements": "not_selected",
+    "status": "provisional_author_review_pending",
+    "uncertainty": "defined in captions; no p-values",
+    "transformations": "existing values only; no filtering by outcome, no fit, no smoothing"
+  },
+  {
+    "figure_id": "F4_long_sequence_comparison",
+    "formats": [
+      "png",
+      "svg"
+    ],
+    "png_pixels": [
+      2460,
+      1380
+    ],
+    "tables": [
+      "T5_sequence_handling_seed42.csv"
+    ],
+    "description": "L1 and L2 point estimates for all models on the same fifteen unseen long targets.",
+    "journal_requirements": "not_selected",
+    "status": "provisional_author_review_pending",
+    "uncertainty": "defined in captions; no p-values",
+    "transformations": "existing values only; no filtering by outcome, no fit, no smoothing"
+  }
+]

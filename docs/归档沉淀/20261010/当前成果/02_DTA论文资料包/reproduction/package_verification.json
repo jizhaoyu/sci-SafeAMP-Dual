@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "claims": 18,
+  "claim_tags_used": 18,
+  "local_sources_sha_match": true,
+  "original_artifact_bindings": 98,
+  "figure_pngs": 4,
+  "figure_svgs": 4,
+  "visual_review": "Four figures manually viewed; F1 labels adjusted and re-viewed.",
+  "publication_status": "not_submission_ready",
+  "human_source_verification": "pending",
+  "fit_calls": 0,
+  "inputs_modified": false,
+  "new_experiments": false
+}

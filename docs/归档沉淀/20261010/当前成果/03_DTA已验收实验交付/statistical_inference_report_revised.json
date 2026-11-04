@@ -1,0 +1,202 @@
+{
+  "report_version": "v5.0-revised-20261009",
+  "primary_comparison": {
+    "description": "Stacking (Design D 25-block bicluster) vs Stacking (Design A pair 5-fold) across 5 seeds on strict_dual_cold_test (975 pairs)",
+    "overall_sample_bootstrap": {
+      "primary_point_estimate_delta": 0.07018400588529985,
+      "point_ci_design_d_by_seed": {
+        "42": 0.6817063758919344,
+        "123": 0.6284859344041811,
+        "456": 0.6744535562285338,
+        "789": 0.6556558002247607,
+        "1024": 0.620497452260921
+      },
+      "point_ci_design_a_by_seed": {
+        "42": 0.5790927431183965,
+        "123": 0.582432560511624,
+        "456": 0.5857949442385894,
+        "789": 0.581507340828365,
+        "1024": 0.5810515008868569
+      },
+      "seed_level_diffs": [
+        0.10261363277353786,
+        0.04605337389255715,
+        0.0886586119899444,
+        0.0741484593963957,
+        0.03944595137406415
+      ],
+      "std_design_d_ddof1": 0.027134801951935628,
+      "std_design_a_ddof1": 0.0024586730520308837,
+      "training_stochasticity_diff_std_ddof1": 0.027091622588812463,
+      "b_requested": 1000,
+      "b_valid": 1000,
+      "valid_rate": 1.0,
+      "percentile_95_descriptive_interval": [
+        -0.0009639929116691974,
+        0.1572888822863466
+      ],
+      "interval_status": "valid",
+      "scientific_interpretation": "Descriptive percentile interval under finite entity clustering (13 drugs x 75 targets). Zero p-values. Interval contains 0; strictly reported as no statistically distinguishable generalization difference, avoiding claims of confirmatory superiority or statistical equivalence."
+    },
+    "active_subset_pkd_gt_5_bootstrap": {
+      "primary_point_estimate_delta": 0.030647276542418323,
+      "point_ci_design_d_by_seed": {
+        "42": 0.5258356890974266,
+        "123": 0.515635473435724,
+        "456": 0.5302072100952991,
+        "789": 0.5321598228076823,
+        "1024": 0.5218430332527031
+      },
+      "point_ci_design_a_by_seed": {
+        "42": 0.49430245096610614,
+        "123": 0.4941858770728295,
+        "456": 0.49494360737912746,
+        "789": 0.4929618511934252,
+        "1024": 0.4960510593652552
+      },
+      "seed_level_diffs": [
+        0.031533238131320473,
+        0.021449596362894507,
+        0.03526360271617168,
+        0.03919797161425703,
+        0.025791973887447917
+      ],
+      "std_design_d_ddof1": 0.006645382949703134,
+      "std_design_a_ddof1": 0.0011297748507379463,
+      "training_stochasticity_diff_std_ddof1": 0.007130586687770247,
+      "b_requested": 1000,
+      "b_valid": 1000,
+      "valid_rate": 1.0,
+      "percentile_95_descriptive_interval": [
+        -0.003347065548602349,
+        0.09165920328109704
+      ],
+      "interval_status": "valid",
+      "scientific_interpretation": "Descriptive percentile interval under finite entity clustering (13 drugs x 75 targets). Zero p-values. Interval contains 0; strictly reported as no statistically distinguishable generalization difference, avoiding claims of confirmatory superiority or statistical equivalence."
+    }
+  },
+  "secondary_rq1_ablation_f1_to_f4": {
+    "description": "Single-variable feature module ablation under Design D (seed 42) on strict_dual_cold_test (975 pairs)",
+    "F1_baseline_2156d": {
+      "status": "valid",
+      "n": 975,
+      "rmse": 0.797513,
+      "mae": 0.531241,
+      "pearson_r": 0.407312,
+      "spearman_rho": 0.406675,
+      "concordance_index": 0.728798,
+      "ci_status": "valid",
+      "pred_mean": 5.378471,
+      "pred_std": 0.296578
+    },
+    "F2_esm2_2476d": {
+      "status": "valid",
+      "n": 975,
+      "rmse": 0.80751,
+      "mae": 0.534192,
+      "pearson_r": 0.377906,
+      "spearman_rho": 0.392401,
+      "concordance_index": 0.720399,
+      "ci_status": "valid",
+      "pred_mean": 5.368294,
+      "pred_std": 0.300215
+    },
+    "F3_geom_2668d": {
+      "status": "valid",
+      "n": 975,
+      "rmse": 0.843853,
+      "mae": 0.581179,
+      "pearson_r": 0.254555,
+      "spearman_rho": 0.315032,
+      "concordance_index": 0.674255,
+      "ci_status": "valid",
+      "pred_mean": 5.42181,
+      "pred_std": 0.294317
+    },
+    "F4_composite_2988d": {
+      "status": "valid",
+      "n": 975,
+      "rmse": 0.839589,
+      "mae": 0.558089,
+      "pearson_r": 0.268793,
+      "spearman_rho": 0.32908,
+      "concordance_index": 0.681706,
+      "ci_status": "valid",
+      "pred_mean": 5.382929,
+      "pred_std": 0.276479
+    },
+    "esm2_marginal_gain_ci": -0.008399,
+    "geom_marginal_gain_ci": -0.054543,
+    "full_composite_gain_ci": -0.047092,
+    "model_dependent_note": "Ablation reflects empirical impact in current fixed shallow Stacking. Ridge with F3 achieved CI=0.7247 vs F1 Ridge 0.7245 (+0.0003); geometry effect is architecture-dependent."
+  },
+  "secondary_rq2_sequence_handling": {
+    "description": "L1 (Truncated 1022) vs L2 (Sliding Window Full) on 15 unseen long targets in cold_target_test (825 pairs)",
+    "L1_truncated_1022": {
+      "status": "valid",
+      "n": 825,
+      "rmse": 0.595345,
+      "mae": 0.408245,
+      "pearson_r": 0.585313,
+      "spearman_rho": 0.496083,
+      "concordance_index": 0.79003,
+      "ci_status": "valid",
+      "pred_mean": 5.452716,
+      "pred_std": 0.465204
+    },
+    "L2_sliding_window_full": {
+      "status": "valid",
+      "n": 825,
+      "rmse": 0.594549,
+      "mae": 0.403951,
+      "pearson_r": 0.584085,
+      "spearman_rho": 0.48953,
+      "concordance_index": 0.78628,
+      "ci_status": "valid",
+      "pred_mean": 5.444522,
+      "pred_std": 0.466983
+    },
+    "delta_ci_l2_minus_l1": -0.00375,
+    "statistical_limitation_note": "Observed point difference is -0.003750. Limited to 15 unseen targets; reported as empirical magnitude without claims of statistical equivalence."
+  },
+  "domain_decay_gradient_stacking_seed42": {
+    "description": "Empirical performance across distinct test sets under seed 42",
+    "strict_dual_cold_test": {
+      "status": "valid",
+      "n": 975,
+      "rmse": 0.839589,
+      "mae": 0.558089,
+      "pearson_r": 0.268793,
+      "spearman_rho": 0.32908,
+      "concordance_index": 0.681706,
+      "ci_status": "valid",
+      "pred_mean": 5.382929,
+      "pred_std": 0.276479
+    },
+    "cold_drug_test": {
+      "status": "valid",
+      "n": 3952,
+      "rmse": 0.826606,
+      "mae": 0.534462,
+      "pearson_r": 0.436007,
+      "spearman_rho": 0.477515,
+      "concordance_index": 0.748009,
+      "ci_status": "valid",
+      "pred_mean": 5.395881,
+      "pred_std": 0.352966
+    },
+    "cold_target_test": {
+      "status": "valid",
+      "n": 4125,
+      "rmse": 0.62091,
+      "mae": 0.395792,
+      "pearson_r": 0.496122,
+      "spearman_rho": 0.414325,
+      "concordance_index": 0.746004,
+      "ci_status": "valid",
+      "pred_mean": 5.35628,
+      "pred_std": 0.421368
+    }
+  },
+  "postprocess_execution_time_sec": 5.43
+}

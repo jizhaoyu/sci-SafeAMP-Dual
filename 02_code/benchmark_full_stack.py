@@ -1,5 +1,5 @@
 """
-SafeAMP-Dual 五维穿透式全栈自动化基准评测套件
+DTI-Dual 五维穿透式全栈自动化基准评测套件
 覆盖:
 1. 本地核心基线与 Fail-Closed 门禁
 2. 云端 (62.234.141.184:8090) 高并发吞吐压测 (10 Workers, P50/P90/P99)
@@ -27,8 +27,8 @@ if hasattr(sys.stderr, "reconfigure"):
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "02_code"))
 
-REMOTE_BASE_URL = os.environ.get("SAFEAMP_REMOTE_URL", "http://62.234.141.184")
-LOCAL_BASE_URL = os.environ.get("SAFEAMP_LOCAL_URL", "http://127.0.0.1:8000")
+REMOTE_BASE_URL = os.environ.get("DTI_REMOTE_URL", "http://62.234.141.184")
+LOCAL_BASE_URL = os.environ.get("DTI_LOCAL_URL", "http://127.0.0.1:8000")
 
 
 def send_http_request(url: str, method: str = "GET", body: dict = None, headers: dict = None, timeout: float = 20.0):
@@ -362,7 +362,7 @@ def run_phase5(target_url: str = REMOTE_BASE_URL):
 
 def main():
     print("\n" + "#"*70)
-    print("  SafeAMP-Dual 五维穿透式全栈自动化基准测试套件启动")
+    print("  DTI-Dual 五维穿透式全栈自动化基准测试套件启动")
     print("  目标服务:", REMOTE_BASE_URL)
     print("#"*70)
 

@@ -1,0 +1,127 @@
+{
+  "status": "PASS",
+  "code_anchors": {
+    "output/dta-paper-run-v5-20261009/scripts/run_experiments_v5.py": {
+      "exists": true,
+      "hash_matches": true
+    },
+    "output/dta-paper-run-v5-20261009/scripts/split_generator.py": {
+      "exists": true,
+      "hash_matches": true
+    },
+    "output/dta-paper-run-v5-20261009/scripts/dag_engine.py": {
+      "exists": true,
+      "hash_matches": true
+    },
+    "output/dta-paper-run-v5-20261009/scripts/stats_bootstrap_test.py": {
+      "exists": true,
+      "hash_matches": true
+    },
+    "output/dta-paper-run-v5-20261009/scripts/prepare_truncated_target_features.py": {
+      "exists": true,
+      "hash_matches": true
+    },
+    "output/dta-paper-run-v5-20261009/scripts/env_and_assets_binding.py": {
+      "exists": true,
+      "hash_matches": true
+    }
+  },
+  "numerical_artifacts": {
+    "metrics_summary_revised.json": {
+      "digest_matches": true,
+      "same_as_previous_audited": true
+    },
+    "statistical_inference_report_revised.json": {
+      "digest_matches": true,
+      "same_as_previous_audited": true
+    },
+    "predictions.csv": {
+      "digest_matches": true,
+      "same_as_previous_audited": true
+    },
+    "oof_predictions.csv": {
+      "digest_matches": true,
+      "same_as_previous_audited": true
+    },
+    "bootstrap_resamples_revised.npz": {
+      "digest_matches": true,
+      "same_as_previous_audited": true
+    }
+  },
+  "dataset_statistics": {
+    "total_pairs": 25772,
+    "total_drugs": 68,
+    "total_targets": 379
+  },
+  "domain_statistics": {
+    "cold_drug_test": {
+      "pairs": 3952,
+      "drugs": 13,
+      "targets": 304
+    },
+    "cold_target_test": {
+      "pairs": 4125,
+      "drugs": 55,
+      "targets": 75
+    },
+    "strict_dual_cold_test": {
+      "pairs": 975,
+      "drugs": 13,
+      "targets": 75
+    },
+    "train_block": {
+      "pairs": 16720,
+      "drugs": 55,
+      "targets": 304
+    }
+  },
+  "actual_split_paths": {
+    "split_manifest_A_s42.json": true,
+    "split_manifest_A_s123.json": true,
+    "split_manifest_A_s456.json": true,
+    "split_manifest_A_s789.json": true,
+    "split_manifest_A_s1024.json": true,
+    "split_manifest_B_s42.json": true,
+    "split_manifest_C_s42.json": true,
+    "split_manifest_D_s42.json": true,
+    "split_manifest_D_s123.json": true,
+    "split_manifest_D_s456.json": true,
+    "split_manifest_D_s789.json": true,
+    "split_manifest_D_s1024.json": true
+  },
+  "model_names": [
+    "ridge",
+    "hist_gradient_boosting",
+    "random_forest"
+  ],
+  "model_ci_seed42": {
+    "ridge": 0.715705,
+    "hist_gradient_boosting": 0.584157,
+    "random_forest": 0.557005,
+    "stacked_ensemble": 0.681706
+  },
+  "primary_effect": 0.07018400588529985,
+  "primary_interval": [
+    -0.0009639929116691974,
+    0.1572888822863466
+  ],
+  "historical_omissions": {
+    "frozen_pre_training_manifest": {
+      "status": "omitted_in_historical_run",
+      "explanation": "原实验在正式训练启动前未单独生成冻结签名清单。本审计索引依据现存真实脚本、产物与文件系统哈希进行事后可溯源性锚定，明确不回填或伪造训练前时间戳。"
+    },
+    "continuous_training_wallclock_log": {
+      "status": "omitted_in_historical_run",
+      "explanation": "历史日志未包含可独立核实完整端到端训练开始与结束的单次总耗时记录，不得推测或累加；标记为未核实。"
+    },
+    "gpu_hardware_telemetry": {
+      "status": "not_applicable_unverified",
+      "explanation": "本次实际执行的三个基模型（Ridge, HistGradientBoosting, RandomForest）及 NNLS 元学习器均为基于 CPU 的算法实现，无 GPU 训练调用日志与使用证据；删除 RTX 4090 陈述并标记为未核实。"
+    }
+  },
+  "document_hashes": {
+    "DTA正式实验全阶段交付报告与科学审阅书_v5修订版.md": "8121c1f54665031df4bf2ade9bffdfc9b670aa3042f7afb981d704b09d59e9d3",
+    "交付摘要.md": "075f5b55a8f89865c48651383efacee676751c66ca682c64901dea346fc49239",
+    "逐项整改对账表.md": "bb8f82fe9b3fedb8da724fcd03135a06e090bde86b786b870c336fd5719a43e4"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": "2.0-verified",
+  "audit_scope": "DTA-paper-run-v5-actual-artifacts",
+  "audit_date": "2026-10-09",
+  "audit_status": "post_hoc_traceability_audit_verified",
+  "historical_record_omissions": {
+    "frozen_pre_training_manifest": {
+      "status": "omitted_in_historical_run",
+      "explanation": "原实验在正式训练启动前未单独生成冻结签名清单。本审计索引依据现存真实脚本、产物与文件系统哈希进行事后可溯源性锚定，明确不回填或伪造训练前时间戳。"
+    },
+    "continuous_training_wallclock_log": {
+      "status": "omitted_in_historical_run",
+      "explanation": "历史日志未包含可独立核实完整端到端训练开始与结束的单次总耗时记录，不得推测或累加；标记为未核实。"
+    },
+    "gpu_hardware_telemetry": {
+      "status": "not_applicable_unverified",
+      "explanation": "本次实际执行的三个基模型（Ridge, HistGradientBoosting, RandomForest）及 NNLS 元学习器均为基于 CPU 的算法实现，无 GPU 训练调用日志与使用证据；删除 RTX 4090 陈述并标记为未核实。"
+    }
+  },
+  "codebase_anchor": {
+    "repo_root": "D:/桌面文件/sci",
+    "git_status": "uncommitted_clean_or_post_hoc",
+    "key_script_hashes_sha256": {
+      "output/dta-paper-run-v5-20261009/scripts/run_experiments_v5.py": "6325161afe799c8bbe7f700b18d0b8461235e1460ed5674941e4a181ea1b63be",
+      "output/dta-paper-run-v5-20261009/scripts/split_generator.py": "6be8aa2c1af6d22c2e82e62af1a629281ca2cb695d0f05be92b2c4bf2e59379d",
+      "output/dta-paper-run-v5-20261009/scripts/dag_engine.py": "c7033f24a60a028b993fccaf20b4c03b6758e40aa472fa7627f9dd32edbe4084",
+      "output/dta-paper-run-v5-20261009/scripts/stats_bootstrap_test.py": "36a504a64a393dbcbd2510569add424d507a029147d3e529f2d35b83953db585",
+      "output/dta-paper-run-v5-20261009/scripts/prepare_truncated_target_features.py": "20b57c52929e153572b52bf97f56886551d8110a89f6f8511f75ea230b76ce4a",
+      "output/dta-paper-run-v5-20261009/scripts/env_and_assets_binding.py": "604400a34fc334cee9a121670af8817a76d50892dfd199eca3704880f3643264"
+    }
+  },
+  "input_data_anchor": {
+    "benchmark_dataset": {
+      "path": "D:/桌面文件/sci/03_experiments/prepared/dti_davis_clean_features_20261009_v1/pairs_metadata.csv",
+      "total_dataset_statistics": {
+        "total_pairs": 25772,
+        "total_drugs": 68,
+        "total_targets": 379,
+        "note": "原 DAVIS 规范化数据全集，版本差异形成历史原因未知，客观记录实际数据"
+      },
+      "evaluation_domains_statistics": {
+        "train_block": { "pairs": 16720, "drugs": 55, "targets": 304 },
+        "strict_dual_cold_test": { "pairs": 975, "drugs": 13, "targets": 75 },
+        "cold_drug_test": { "pairs": 3952, "drugs": 13, "targets": 304 },
+        "cold_target_test": { "pairs": 4125, "drugs": 55, "targets": 75 },
+        "cold_target_test_15_long_targets": { "pairs": 825, "drugs": 55, "targets": 15 }
+      }
+    },
+    "split_manifests_directory": "D:/桌面文件/sci/output/dta-paper-run-v5-20261009/splits",
+    "split_manifest_files_count": 12,
+    "split_manifests": [
+      "split_manifest_A_s42.json",
+      "split_manifest_A_s123.json",
+      "split_manifest_A_s456.json",
+      "split_manifest_A_s789.json",
+      "split_manifest_A_s1024.json",
+      "split_manifest_B_s42.json",
+      "split_manifest_C_s42.json",
+      "split_manifest_D_s42.json",
+      "split_manifest_D_s123.json",
+      "split_manifest_D_s456.json",
+      "split_manifest_D_s789.json",
+      "split_manifest_D_s1024.json"
+    ]
+  },
+  "model_configurations": {
+    "base_models": [
+      {
+        "name": "ridge",
+        "implementation": "sklearn.linear_model.Ridge",
+        "hyperparameters": {
+          "alpha": 50.0,
+          "fit_intercept": true
+        },
+        "description": "L2 正则化线性回归，固定历史超参数 alpha=50.0"
+      },
+      {
+        "name": "hist_gradient_boosting",
+        "implementation": "sklearn.ensemble.HistGradientBoostingRegressor",
+        "hyperparameters": {
+          "loss": "squared_error",
+          "learning_rate": 0.1,
+          "max_iter": 50,
+          "max_leaf_nodes": 31,
+          "max_depth": 6,
+          "early_stopping": false
+        },
+        "description": "直方图梯度提升树回归器，禁用早停以防内部分割泄露"
+      },
+      {
+        "name": "random_forest",
+        "implementation": "sklearn.ensemble.RandomForestRegressor",
+        "hyperparameters": {
+          "n_estimators": 100,
+          "max_depth": 12,
+          "n_jobs": -1
+        },
+        "description": "随机森林回归器，多核 CPU 并行"
+      }
+    ],
+    "meta_learner": {
+      "name": "nnls_meta_learner",
+      "implementation": "scipy.optimize.nnls",
+      "hyperparameters": {
+        "fit_intercept": false,
+        "constraint": "w_i >= 0"
+      },
+      "training_scheme": "在训练块 16,720 行 x 3 基模型折外验证 (OOF) 预测矩阵上求解非负最小二乘权重拟合 y_train"
+    }
+  },
+  "feature_specifications": {
+    "F1_baseline_2156d": "Weisfeiler-Lehman 自定义拓扑哈希 (2048维) + 分子理化描述符 (8维) + 激酶序列与催化口袋描述符 (100维)。无标准 Morgan 指纹，无 ProtVec",
+    "F2_esm2_2476d": "F1 基础特征 (2156维) + ESM2 蛋白表征 esm2_t6_8M_UR50D (320维)",
+    "F3_geom_2668d": "F1 基础特征 (2156维) + 药物启发式几何拓扑流形谱 (512维)",
+    "F4_composite_2988d": "F1 基础特征 (2156维) + ESM2 (320维) + 启发式几何拓扑流形谱 (512维)"
+  },
+  "execution_and_timings": {
+    "hardware_environment": "未核实 (无 GPU 使用证据，实际为 CPU 多核执行)",
+    "training_execution_duration": "未核实 (历史运行记录缺少完整端到端训练总耗时日志，不编造)",
+    "postprocessing_duration": "约 59.03 秒 (真实记录于 postprocess_execution.log，从检查点与划分清单重构 CSV/JSON 及 Bootstrap 验算)"
+  }
+}

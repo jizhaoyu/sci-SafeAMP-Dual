@@ -225,46 +225,78 @@ def screen_virtual_library(
 
     # 4. Stage 2: Deep Stacked Ensemble & MM-GBSA Evaluation
     evaluated_hits = []
+    failed_candidates = []
+
     for _, cpd in stage1_candidates:
         smi = cpd["smiles"]
-        pred_pkd = 6.5
-        pred_kd_nM = 316.0
+        pred_pkd: Optional[float] = None
+        pred_kd_nM: Optional[float] = None
+        prediction_status = "failed"
+        failure_reason = None
         
         if runtime is not None:
             try:
                 rt_pred = runtime.predict(drug_smiles=smi, target_sequence=clean_seq, model_name="stacked_ensemble")
                 pred_pkd = round(float(rt_pred["predicted_pkd"]), 2)
                 pred_kd_nM = round(float(rt_pred["predicted_kd_nM"]), 2)
-            except Exception:
-                pred_pkd = round(6.5 + (hash(smi) % 25) * 0.1, 2)
-                pred_kd_nM = round(math.pow(10, 9.0 - pred_pkd), 2)
+                prediction_status = "success"
+            except Exception as exc:
+                prediction_status = "failed"
+                failure_reason = f"Model prediction failed: {str(exc)}"
         else:
-            pred_pkd = round(6.5 + (hash(smi) % 25) * 0.1, 2)
-            pred_kd_nM = round(math.pow(10, 9.0 - pred_pkd), 2)
+            prediction_status = "failed"
+            failure_reason = "DTI runtime is unavailable"
 
+        if prediction_status == "failed" or pred_pkd is None or pred_kd_nM is None:
+            failed_candidates.append({
+                "compound_id": cpd.get("id", f"FAIL-{len(failed_candidates)+1:03d}"),
+                "name": cpd.get("name", "Screening Compound"),
+                "smiles": smi,
+                "provenance": "unavailable",
+                "status": "failed",
+                "failure_reason": failure_reason or "Unknown failure"
+            })
+            continue
+
+        raw_pkd = pred_pkd
+        raw_kd = pred_kd_nM
+        heuristic_bonus = 0.0
+        heuristic_rationale = None
+        adjusted_pkd = raw_pkd
+        adjusted_kd = raw_kd
+
+        # Mutant heuristic bonus kept separate from raw model prediction
         if is_mutant and "C#C" in smi:
-            pred_pkd = round(pred_pkd + 0.6, 2)
-            pred_kd_nM = round(math.pow(10, 9.0 - pred_pkd), 2)
+            heuristic_bonus = 0.6
+            adjusted_pkd = round(raw_pkd + heuristic_bonus, 2)
+            adjusted_kd = round(math.pow(10, 9.0 - adjusted_pkd), 2)
+            heuristic_rationale = "门控突变(如T315I)线性炔键空间避障启发式加分"
 
-        # Physical free energy and SA score
-        delta_g_bind = round(-1.363 * pred_pkd, 2)
+        # Physical free energy (first-principles computed descriptor from raw model score)
+        delta_g_bind = round(-1.363 * raw_pkd, 2)
         sa_res = compute_sa_score(smi)
         sa = round(sa_res.sa_score, 2)
         sa_lbl = sa_res.sa_label or "常规合成路线"
 
-        # Key interactions
-        interactions = [
-            f"与 {t_clean} 铰链区核心主链形成强供受氢键对",
-            f"疏水表面积埋藏完整，有效填充 ATP 催化中心",
-            f"门控位点 ({gatekeeper}) 空间契合良好，无严重范德华碰撞"
+        # Qualitative binding hypotheses (explicitly marked as design hypotheses, not confirmed experimental/crystallographic contacts)
+        hypotheses = [
+            f"[设计假说] 与 {t_clean} 铰链区核心主链可能形成供受氢键",
+            f"[设计假说] 疏水结构表面可能填塞 ATP 催化中心",
+            f"[设计假说] 门控位点 ({gatekeeper}) 空间契合推测（需晶体或实验验证）"
         ]
 
         evaluated_hits.append({
             "compound_id": cpd.get("id", f"HIT-{len(evaluated_hits)+1:03d}"),
             "name": cpd.get("name", "Screening Hit"),
             "smiles": smi,
-            "predicted_pkd": pred_pkd,
-            "predicted_kd_nM": pred_kd_nM,
+            "predicted_pkd": raw_pkd,
+            "predicted_kd_nM": raw_kd,
+            "provenance": "model_prediction",
+            "model_name": "stacked_ensemble",
+            "heuristic_adjustment": heuristic_bonus,
+            "heuristic_adjusted_pkd": adjusted_pkd,
+            "heuristic_adjusted_kd_nM": adjusted_kd,
+            "heuristic_rationale": heuristic_rationale,
             "delta_g_bind_kcal": delta_g_bind,
             "sa_score": sa,
             "sa_label": sa_lbl,
@@ -272,41 +304,45 @@ def screen_virtual_library(
             "clogp": round(cpd.get("clogp", 3.0), 2),
             "cas_number": cpd.get("cas", "商业现货"),
             "vendor_source": vendor,
-            "key_interactions": interactions
+            "key_interactions": hypotheses,
+            "key_interactions_provenance": "design_hypothesis",
+            "key_interactions_note": "未经实验或高精度晶体结构复核的计算推测假说"
         })
 
-    # Sort evaluated hits by binding affinity (highest pKd / lowest delta_g)
+    # Sort evaluated hits by binding affinity (lowest delta_g / highest raw pKd)
     evaluated_hits.sort(key=lambda h: (h["delta_g_bind_kcal"], -h["predicted_pkd"]))
     
-    # Filter by threshold, but ensure at least top candidates are kept if threshold is too strict
+    # Filter by threshold without silently overriding threshold if zero hits pass
     filtered_hits = [h for h in evaluated_hits if h["predicted_pkd"] >= min_pkd_threshold]
-    if len(filtered_hits) < min(3, len(evaluated_hits)):
-        filtered_hits = evaluated_hits[:max_hits]
+    excluded_below_threshold = [h for h in evaluated_hits if h["predicted_pkd"] < min_pkd_threshold]
     stage2_passed = len(filtered_hits)
-    evaluated_hits = filtered_hits
 
     # 5. Stage 3: Butina Diversity Clustering
-    hit_smiles = [h["smiles"] for h in evaluated_hits]
-    clusters, representatives = butina_cluster_compounds(hit_smiles, cutoff=diversity_cutoff)
+    if len(filtered_hits) > 0:
+        hit_smiles = [h["smiles"] for h in filtered_hits]
+        clusters, representatives = butina_cluster_compounds(hit_smiles, cutoff=diversity_cutoff)
 
-    # Assign cluster_id and is_representative
-    rep_set = set(representatives)
-    cluster_map = {}
-    for c_id, members in enumerate(clusters, 1):
-        for m in members:
-            cluster_map[m] = c_id
+        # Assign cluster_id and is_representative
+        rep_set = set(representatives)
+        cluster_map = {}
+        for c_id, members in enumerate(clusters, 1):
+            for m in members:
+                cluster_map[m] = c_id
 
-    final_hits = []
-    for idx, hit in enumerate(evaluated_hits):
-        hit["rank"] = idx + 1
-        hit["cluster_id"] = cluster_map.get(idx, 1)
-        hit["is_cluster_representative"] = (idx in rep_set)
-        final_hits.append(hit)
+        final_hits = []
+        for idx, hit in enumerate(filtered_hits):
+            hit["rank"] = idx + 1
+            hit["cluster_id"] = cluster_map.get(idx, 1)
+            hit["is_cluster_representative"] = (idx in rep_set)
+            final_hits.append(hit)
 
-    # Cap to max_hits
-    reported_hits = final_hits[:max_hits]
+        reported_hits = final_hits[:max_hits]
+    else:
+        clusters, representatives = [], []
+        reported_hits = []
+
     elapsed = max(0.001, round(time.time() - start_time, 3))
-    throughput = round(total_screened / elapsed, 1)
+    throughput = round(total_screened / elapsed, 1) if elapsed > 0 else 0.0
 
     # Cluster distribution stats
     cluster_counts: Dict[str, int] = {}
@@ -321,8 +357,18 @@ def screen_virtual_library(
         "微摩尔亲和力 (> 1 µM)": sum(1 for h in reported_hits if h["predicted_kd_nM"] >= 1000)
     }
 
+    if total_screened > 0 and len(evaluated_hits) == 0:
+        status_code = "no_valid_result"
+        summary = f"针对 {t_clean} 激酶完成虚拟筛选评估，但全部 {total_screened} 个候选分子预测失败或无法加载模型，未产生有效结果。"
+    elif len(reported_hits) == 0:
+        status_code = "no_valid_result" if len(evaluated_hits) == 0 else "success"
+        summary = f"针对 {t_clean} 激酶完成虚拟筛选评估（{total_screened} 个候选分子），无分子达到预设门限 (pKd ≥ {min_pkd_threshold})。"
+    else:
+        status_code = "success"
+        summary = f"针对 {t_clean} 激酶结合口袋，在【{lib_name}】完成虚拟筛选（{total_screened} 个现货小分子，成功评估 {len(evaluated_hits)} 个）。经多级漏斗过滤与 Butina 聚类，筛选出 {len(reported_hits)} 个跨越 {len(clusters)} 个多样性骨架簇的高活性苗头化合物 (Hits)。"
+
     return {
-        "status": "success",
+        "status": status_code,
         "target_symbol": t_clean,
         "is_mutant_target": is_mutant,
         "gatekeeper_residue": gatekeeper,
@@ -331,6 +377,9 @@ def screen_virtual_library(
         "total_screened": total_screened,
         "stage1_passed": stage1_passed,
         "stage2_passed": stage2_passed,
+        "failed_screened": len(failed_candidates),
+        "failed_compounds": failed_candidates,
+        "excluded_below_threshold": excluded_below_threshold,
         "total_hits": len(reported_hits),
         "num_clusters": len(clusters),
         "screening_time_seconds": elapsed,
@@ -338,5 +387,9 @@ def screen_virtual_library(
         "hits": reported_hits,
         "cluster_distribution": cluster_counts,
         "affinity_distribution": affinity_counts,
-        "summary": f"针对 {t_clean} 激酶结合口袋，在【{lib_name}】完成超大规模虚拟筛选（{total_screened} 个现货小分子）。经三级递进漏斗过滤与 Butina 聚类，成功淘选出 {len(reported_hits)} 个跨越 {len(clusters)} 个多样性骨架簇的高活性苗头化合物 (Hits)，平均预测 Kd 达到纳摩尔级。"
+        "summary": summary
     }
+
+
+# Backwards compatibility alias
+virtual_screen_pipeline = screen_virtual_library

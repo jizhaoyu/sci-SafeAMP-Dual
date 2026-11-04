@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "review_id": "dti-public-only-closure-20261011",
+  "reviewed_at": "2026-10-11",
+  "scope_label": "本阶段8条优先外部候选（已完成复核）",
+  "reviewed_count": 8,
+  "confirmed_point_count": 5,
+  "admitted_count": 5,
+  "external_evaluation_completed": true,
+  "human_review": "certified",
+  "evaluation_model": "bilinear_esm2_interaction",
+  "source_scope_sha256": "1368abeee9a977201bd1b39764b2985e97d8b6db76a18ce9b712cd5f08d52b49",
+  "model_diagnostics": {
+    "f1_ridge": {
+      "reviewed_at": "2026-10-11",
+      "model_sha256": "8d12fbf950db6206cabbb4d2f648c7f123a2ddaae44eba381eace822c1e00082",
+      "diagnosis_sha256": "02259d6b0944b5add364abeba072f2beb9eddb31f3421ff736d4c6f24f9296b2",
+      "scope": "existing_DAVIS_diagnostic",
+      "high_affinity_count": 620,
+      "high_affinity_mae_pkd": 2.627879074266426,
+      "summary": "F1 Ridge缺少药物—靶点交互项，不能表达不同药物各自的靶点排序；已有DAVIS诊断发现高亲和力系统性低估，不宜据此精确估计高亲和Kd或判断靶点选择性。"
+    }
+  },
+  "candidates": [
+    {"id": "bindingdb_202610_articles_line_75507", "label": "PS653 · PDK1", "status": "admitted", "point_confirmed": true, "reason": "已对齐 PDB 5LVL 催化域序列，野生型构建体与原图 1.25 μM 确认绑定，正式准入。"},
+    {"id": "bindingdb_202610_articles_line_73889", "label": "DAS-BODIPY · 鸡Src", "status": "admitted", "point_confirmed": true, "reason": "BODIPY 探针结构已固化，对齐 PDB 4YBK 酶切序列，原图 Kd 0.50 nM 确认准入。"},
+    {"id": "bindingdb_202610_articles_line_73890", "label": "DAS-DFGO-II-BODIPY · 鸡Src", "status": "admitted", "point_confirmed": true, "reason": "BODIPY 探针结构已固化，对齐 PDB 4YBK 酶切序列，原图 Kd 2.8 nM 确认准入。"},
+    {"id": "bindingdb_202610_articles_line_73891", "label": "DAS-BODIPY · 人ABL", "status": "admitted", "point_confirmed": true, "reason": "BODIPY 探针结构已固化，对齐 PDB 4YC8 酶切序列，原图 Kd 0.15 nM 确认准入。"},
+    {"id": "bindingdb_202610_articles_line_73892", "label": "DAS-DFGO-II-BODIPY · 人ABL", "status": "admitted", "point_confirmed": true, "reason": "BODIPY 探针结构已固化，对齐 PDB 4YC8 酶切序列，原图 Kd 0.75 nM 确认准入。"},
+    {"id": "bindingdb_202610_articles_line_74077", "label": "Felodipine · Aurora线索", "status": "excluded", "point_confirmed": false, "reason": "无一手原始实验图表支撑，样品与靶点对应未确认，规范排除。"},
+    {"id": "bindingdb_202610_articles_line_74078", "label": "PTK66 · Aurora线索1", "status": "excluded", "point_confirmed": false, "reason": "无一手原始实验图表支撑，样品与靶点对应未确认，规范排除。"},
+    {"id": "bindingdb_202610_articles_line_74079", "label": "PTK66 · Aurora线索2", "status": "excluded", "point_confirmed": false, "reason": "无一手原始实验图表支撑，样品与靶点对应未确认，规范排除。"}
+  ]
+}

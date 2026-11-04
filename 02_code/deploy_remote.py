@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Automated remote deployment pipeline and post-deployment verification for SafeAMP.
+"""Automated remote deployment pipeline and post-deployment verification for DTI.
 
 Usage:
     python 02_code/deploy_remote.py [--host 62.234.141.184] [--user ubuntu] [--skip-build] [--verify-only]
@@ -45,29 +45,29 @@ def upload_and_deploy(host: str, user: str):
     print(f"=== [Phase 2/4] Uploading Release Payload to {target} ===")
 
     # 1. Prepare remote temp dir
-    run_cmd(["ssh", "-o", "BatchMode=yes", target, "rm -rf /tmp/safeamp_deploy && mkdir -p /tmp/safeamp_deploy/dist"])
+    run_cmd(["ssh", "-o", "BatchMode=yes", target, "rm -rf /tmp/dti_deploy && mkdir -p /tmp/dti_deploy/dist"])
 
     # 2. Upload files
     files_to_upload = [
         ROOT_DIR / "05_web_server" / "rate_limiter.py",
         ROOT_DIR / "02_code" / "patch_remote_app.py",
-        ROOT_DIR / "safeamp.conf",
+        ROOT_DIR / "dti.conf",
         ROOT_DIR / "remote_deploy.sh",
     ]
     for file_path in files_to_upload:
         if not file_path.exists():
             print(f"[ERROR] Required deploy file missing: {file_path}")
             sys.exit(1)
-        run_cmd(["scp", str(file_path), f"{target}:/tmp/safeamp_deploy/{file_path.name}"])
+        run_cmd(["scp", str(file_path), f"{target}:/tmp/dti_deploy/{file_path.name}"])
 
     # 3. Upload frontend dist
     dist_dir = ROOT_DIR / "frontend" / "dist"
     if dist_dir.exists():
         print("Uploading frontend dist directory...")
-        run_cmd(["scp", "-r", f"{dist_dir}/.", f"{target}:/tmp/safeamp_deploy/dist/"])
+        run_cmd(["scp", "-r", f"{dist_dir}/.", f"{target}:/tmp/dti_deploy/dist/"])
 
     print(f"=== [Phase 3/4] Executing Remote Deployment Script on {target} ===")
-    res = run_cmd(["ssh", target, "bash /tmp/safeamp_deploy/remote_deploy.sh"])
+    res = run_cmd(["ssh", target, "bash /tmp/dti_deploy/remote_deploy.sh"])
     print(res.stdout)
 
 def verify_endpoints(host: str) -> bool:
@@ -84,7 +84,7 @@ def verify_endpoints(host: str) -> bool:
     for check in checks:
         url = f"{base_url}{check['path']}"
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": "SafeAMP-Deploy-Verifier/1.0"})
+            req = urllib.request.Request(url, headers={"User-Agent": "DTI-Deploy-Verifier/1.0"})
             start = time.monotonic()
             with urllib.request.urlopen(req, timeout=10) as response:
                 duration = round((time.monotonic() - start) * 1000, 1)
@@ -117,7 +117,7 @@ def verify_endpoints(host: str) -> bool:
     return all_passed
 
 def main():
-    parser = argparse.ArgumentParser(description="Deploy SafeAMP to remote server and verify.")
+    parser = argparse.ArgumentParser(description="Deploy DTI to remote server and verify.")
     parser.add_argument("--host", default="62.234.141.184", help="Remote server IP or hostname")
     parser.add_argument("--user", default="ubuntu", help="Remote SSH username")
     parser.add_argument("--skip-build", action="store_true", help="Skip frontend build")

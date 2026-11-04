@@ -201,12 +201,26 @@ export interface CandidateDerivative {
   calibrated_ucb?: number;
   is_experimentally_verified?: boolean;
   rank_shift?: number;
+  source?: 'heuristic_rule' | 'llm_generative' | string;
+  scaffold_type?: string;
+  parent_similarity?: number;
 }
 
 export interface DTIOptimizeResult {
   research_evidence?: DTIEvidenceStatus;
   mode: string;
   fallback_reason?: string | null;
+  audit_metrics?: {
+    total_candidates_evaluated: number;
+    validity_rate: number;
+    scaffold_retention_count: number;
+    scaffold_hopping_count: number;
+    improved_candidates_count: number;
+    max_affinity_gain_pkd: number;
+    average_affinity_delta_pkd: number;
+    mean_pairwise_diversity: number;
+    llm_audit?: any;
+  };
   target_name: string;
   model_used: string;
   baseline: {
@@ -238,6 +252,7 @@ export interface DTIOptimizeParams {
   optimization_goal?: string;
   custom_instruction?: string;
   model_name?: string;
+  generation_mode?: 'heuristic' | 'llm' | 'hybrid';
   llm_config?: {
     provider?: string;
     api_key?: string;
@@ -762,6 +777,12 @@ export interface VirtualScreeningHit {
   is_cluster_representative: boolean;
   predicted_pkd: number;
   predicted_kd_nM: number;
+  provenance?: string;
+  model_name?: string;
+  heuristic_adjustment?: number;
+  heuristic_adjusted_pkd?: number;
+  heuristic_adjusted_kd_nM?: number;
+  heuristic_rationale?: string | null;
   delta_g_bind_kcal: number;
   sa_score: number;
   sa_label: string;
@@ -770,6 +791,8 @@ export interface VirtualScreeningHit {
   cas_number: string;
   vendor_source: string;
   key_interactions: string[];
+  key_interactions_provenance?: string;
+  key_interactions_note?: string;
 }
 
 export interface VirtualScreeningResult {
@@ -782,6 +805,15 @@ export interface VirtualScreeningResult {
   total_screened: number;
   stage1_passed: number;
   stage2_passed: number;
+  failed_screened?: number;
+  failed_compounds?: Array<{
+    compound_id: string;
+    name: string;
+    smiles: string;
+    provenance: string;
+    status: string;
+    failure_reason: string;
+  }>;
   total_hits: number;
   num_clusters: number;
   screening_time_seconds: number;
@@ -818,3 +850,49 @@ export async function runVirtualScreening(req: {
   }
   return res.json();
 }
+
+export interface SupplementaryPackageFileEntry {
+  path: string;
+  size_bytes: number;
+  sha256: string;
+  mime_type: string;
+}
+
+export interface SupplementaryPackageResult {
+  package_id: string;
+  package_dir: string;
+  zip_path: string;
+  zip_sha256: string;
+  total_files: number;
+  created_at: string;
+  manifest: {
+    package_id: string;
+    created_at: string;
+    author: string;
+    total_files: number;
+    files: SupplementaryPackageFileEntry[];
+  };
+}
+
+export async function exportSupplementaryPackage(params: {
+  task_id?: string;
+  result_payload?: any;
+  target_name?: string;
+  author?: string;
+}): Promise<SupplementaryPackageResult> {
+  const res = await fetch('/api/dti/export_supplementary_package', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(params),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({ detail: '科研交付包生成失败' }));
+    throw new Error(err.detail || '科研交付包生成失败');
+  }
+  return res.json();
+}
+
+export function getDownloadPackageUrl(package_id: string): string {
+  return `/api/dti/download_package/${package_id}`;
+}
+

@@ -1,0 +1,5 @@
+﻿domain,pairs,drugs,targets,pkd_gt_5_pairs,is_disjoint_partition
+cold_drug_test,3952,13,304,1288,True
+cold_target_test,4125,55,75,1010,True
+strict_dual_cold_test,975,13,75,263,True
+train_block,16720,55,304,4868,True

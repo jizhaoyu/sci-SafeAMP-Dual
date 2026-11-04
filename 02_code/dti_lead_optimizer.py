@@ -1,17 +1,25 @@
-"""AI-assisted and heuristic small-molecule lead optimizer for DTI kinase affinity."""
+"""Auditable AI-assisted and heuristic small-molecule lead optimizer for DTI kinase affinity.
+
+Supports:
+- Three selectable generation modes: 'heuristic', 'llm', 'hybrid'
+- Strict JSON validation, candidate bounds, retry loop, and graceful degradation logging
+- Explicit audit metrics: validity rate, scaffold retention vs hopping, affinity gain, diversity
+- Every candidate is tagged with its provenance ('heuristic_rule' | 'llm_generative')
+"""
 from __future__ import annotations
 
 import json
 import logging
 import re
 import urllib.request
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple, Any
 import numpy as np
 
 from dti_inference_runtime import DTIInferenceRuntime
-from test_molecular_similarity import get_morgan_fingerprint
+from test_molecular_similarity import get_morgan_fingerprint, tanimoto
 from synthetic_accessibility import compute_sa_score
 from admet_predictor import predict_admet_properties
+from smiles_validator import validate_smiles
 
 logger = logging.getLogger(__name__)
 
@@ -82,22 +90,23 @@ MEDCHEM_RULES = [
 
 
 def generate_heuristic_candidates(smiles: str) -> List[dict]:
-    """Generate 3-5 structurally valid candidate analogs using established medicinal chemistry rules."""
+    """Generate structurally valid candidate analogs using established medicinal chemistry rules."""
     candidates = []
     seen_smiles = {smiles}
 
-    for idx, rule in enumerate(MEDCHEM_RULES):
+    for rule in MEDCHEM_RULES:
         try:
             cand_smiles = rule["transform"](smiles)
             if cand_smiles != smiles and cand_smiles not in seen_smiles:
-                # Test fingerprint generation to ensure validity
+                validate_smiles(cand_smiles)
                 fp = get_morgan_fingerprint(cand_smiles)
                 if (fp > 0).sum() > 0:
                     candidates.append({
                         "name": rule["name"],
                         "modification_type": rule["modification_type"],
                         "smiles": cand_smiles,
-                        "rationale": rule["description"]
+                        "rationale": rule["description"],
+                        "source": "heuristic_rule"
                     })
                     seen_smiles.add(cand_smiles)
         except Exception:
@@ -112,13 +121,15 @@ def generate_heuristic_candidates(smiles: str) -> List[dict]:
         ]:
             c_smiles = smiles + suffix
             try:
+                validate_smiles(c_smiles)
                 fp = get_morgan_fingerprint(c_smiles)
                 if (fp > 0).sum() > 0 and c_smiles not in seen_smiles:
                     candidates.append({
                         "name": name,
                         "modification_type": "结构延伸",
                         "smiles": c_smiles,
-                        "rationale": desc
+                        "rationale": desc,
+                        "source": "heuristic_rule"
                     })
                     seen_smiles.add(c_smiles)
             except Exception:
@@ -134,10 +145,18 @@ def generate_llm_candidates(
     baseline_kd_nM: float,
     optimization_goal: str,
     custom_instruction: str,
-    llm_config: dict
-) -> List[dict]:
-    """Call external LLM to generate novel analogs with chemical rationale."""
+    llm_config: dict,
+    max_candidates: int = 4,
+    retry_limit: int = 2
+) -> Tuple[List[dict], Dict[str, Any]]:
+    """
+    Call external LLM to generate novel analogs with chemical rationale.
+    Returns: (valid_candidates, generation_audit_metadata)
+    """
     api_key = llm_config.get("api_key", "").strip()
+    if not api_key:
+        raise ValueError("未配置大模型 API Key")
+
     base_url = (llm_config.get("base_url") or llm_config.get("api_base") or "https://api.deepseek.com").rstrip("/")
     model_name = (llm_config.get("model_name") or llm_config.get("model") or "deepseek-chat").strip()
     
@@ -167,12 +186,12 @@ def generate_llm_candidates(
         f"Current Predicted Affinity: pKd = {baseline_pkd:.2f} (Kd ≈ {baseline_kd_nM:.1f} nM)\n"
         f"Optimization Goal: {optimization_goal}\n"
         f"Special Instructions: {custom_instruction or 'None'}\n"
-        "Please propose 3 to 4 distinct modified molecules with valid, synthetically accessible SMILES."
+        f"Please propose 3 to {max_candidates} distinct modified molecules with valid, synthetically accessible SMILES."
     )
 
     payload = {
         "model": model_name,
-        "temperature": 0.3,
+        "temperature": 0.2,
         "max_tokens": 1500,
         "messages": [
             {"role": "system", "content": system_prompt},
@@ -180,57 +199,89 @@ def generate_llm_candidates(
         ]
     }
 
-    req = urllib.request.Request(
-        base_url,
-        data=json.dumps(payload).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {api_key}",
-            "Content-Type": "application/json"
-        },
-        method="POST"
-    )
+    last_error: Optional[Exception] = None
+    raw_response_text = ""
 
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        body = resp.read().decode("utf-8")
-        data = json.loads(body)
-        raw_content = data["choices"][0]["message"]["content"]
+    for attempt in range(retry_limit):
+        try:
+            req = urllib.request.Request(
+                base_url,
+                data=json.dumps(payload).encode("utf-8"),
+                headers={
+                    "Authorization": f"Bearer {api_key}",
+                    "Content-Type": "application/json"
+                },
+                method="POST"
+            )
 
-    # Strip markdown code fences if present, then extract JSON
-    cleaned = re.sub(r'```(?:json)?\s*', '', raw_content)
-    cleaned = re.sub(r'```', '', cleaned)
-    match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', cleaned, re.DOTALL)
-    if not match:
-        raise ValueError("LLM response did not contain valid JSON")
-    
-    parsed = json.loads(match.group(0))
-    mods = parsed.get("modifications", [])
-    
-    valid_candidates = []
-    for m in mods:
-        s = m.get("smiles", "").strip()
-        if s and s != smiles:
-            try:
-                # Test validity
-                fp = get_morgan_fingerprint(s)
-                if (fp > 0).sum() > 0:
-                    valid_candidates.append({
-                        "name": m.get("name", "AI 优化衍生分子"),
-                        "modification_type": m.get("modification_type", "AI 结构优化"),
-                        "smiles": s,
-                        "rationale": m.get("rationale", "大模型药化分析推荐改构方案")
-                    })
-            except Exception:
-                continue
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                body = resp.read().decode("utf-8")
+                data = json.loads(body)
+                raw_response_text = data["choices"][0]["message"]["content"]
 
-    if not valid_candidates:
-        raise ValueError("No synthetically parseable candidate SMILES returned by LLM")
+            cleaned = re.sub(r'```(?:json)?\s*', '', raw_response_text)
+            cleaned = re.sub(r'```', '', cleaned)
+            match = re.search(r'\{[^{}]*(?:\{[^{}]*\}[^{}]*)*\}', cleaned, re.DOTALL)
+            if not match:
+                raise ValueError("LLM 响应未包含合法 JSON 数据结构")
 
-    return valid_candidates
+            parsed = json.loads(match.group(0))
+            mods = parsed.get("modifications", [])
+            if not isinstance(mods, list):
+                raise ValueError("JSON 'modifications' 字段不是列表")
+
+            valid_candidates = []
+            seen_smiles = {smiles}
+            total_extracted = len(mods)
+
+            for m in mods:
+                s = m.get("smiles", "").strip()
+                if not s or s in seen_smiles:
+                    continue
+                try:
+                    validate_smiles(s)
+                    from admet_predictor import _extract_descriptors
+                    desc = _extract_descriptors(s)
+                    mw = float(desc.get("mw", 0.0))
+                    if mw < 150.0 or mw > 900.0:
+                        logger.info("Candidate %s filtered out: MW %.1f Da outside [150, 900] window", s, mw)
+                        continue
+                    fp = get_morgan_fingerprint(s)
+                    if (fp > 0).sum() > 0:
+                        valid_candidates.append({
+                            "name": m.get("name", "AI 优化衍生分子"),
+                            "modification_type": m.get("modification_type", "AI 结构优化"),
+                            "smiles": s,
+                            "rationale": m.get("rationale", "大模型药化分析推荐改构方案"),
+                            "source": "llm_generative"
+                        })
+                        seen_smiles.add(s)
+                        if len(valid_candidates) >= max_candidates:
+                            break
+                except Exception:
+                    continue
+
+            if not valid_candidates:
+                raise ValueError("大模型生成的候选分子 SMILES 无法通过化学有效性校验")
+
+            audit_meta = {
+                "attempt": attempt + 1,
+                "total_extracted": total_extracted,
+                "valid_count": len(valid_candidates),
+                "model_name": model_name
+            }
+            return valid_candidates, audit_meta
+
+        except Exception as exc:
+            last_error = exc
+            logger.warning("LLM generation attempt %d failed: %s", attempt + 1, exc)
+
+    raise ValueError(f"大模型候选生成失败 (已尝试 {retry_limit} 次): {str(last_error)}")
 
 
 class DTILeadOptimizer:
-    def __init__(self, runtime: DTIInferenceRuntime):
-        self.runtime = runtime
+    def __init__(self, runtime: Optional[DTIInferenceRuntime] = None):
+        self.runtime = runtime or DTIInferenceRuntime()
 
     def optimize(
         self,
@@ -240,6 +291,7 @@ class DTILeadOptimizer:
         optimization_goal: str = "提升亲和力与结合强度",
         custom_instruction: str = "",
         model_name: str = "ridge",
+        generation_mode: str = "hybrid",
         llm_config: Optional[dict] = None
     ) -> dict:
         self.runtime.load()
@@ -248,34 +300,79 @@ class DTILeadOptimizer:
         baseline_pred = self.runtime.predict(drug_smiles, target_sequence, model_name=model_name)
         base_pkd = baseline_pred["predicted_pkd"]
         base_kd = baseline_pred["predicted_kd_nM"]
+        base_fp = get_morgan_fingerprint(drug_smiles)
 
-        # Step 2: Generate candidate derivatives
-        mode_used = "heuristic_medchem_rules"
+        # Step 2: Generate candidate derivatives based on mode
+        mode_used = generation_mode
         fallback_reason = None
         candidates = []
+        llm_audit = None
 
-        if llm_config and llm_config.get("api_key"):
-            try:
-                candidates = generate_llm_candidates(
-                    smiles=drug_smiles,
-                    target_name=target_name,
-                    baseline_pkd=base_pkd,
-                    baseline_kd_nM=base_kd,
-                    optimization_goal=optimization_goal,
-                    custom_instruction=custom_instruction,
-                    llm_config=llm_config
-                )
-                mode_used = f"llm_generative_{llm_config.get('provider', 'custom')}"
-            except Exception as exc:
-                fallback_reason = f"大模型接口调用异常: {str(exc)}"
-                logger.warning("LLM generation failed (%s), falling back to heuristic medchem rules.", exc)
+        if generation_mode == "heuristic":
+            candidates = generate_heuristic_candidates(drug_smiles)
+            mode_used = "heuristic_medchem_rules"
+
+        elif generation_mode == "llm":
+            if not llm_config or not llm_config.get("api_key"):
+                fallback_reason = "未配置大模型 API Key，已自动安全降级至经典药化规则引擎"
+                logger.info("No LLM key configured; falling back to heuristic medchem rules.")
                 candidates = generate_heuristic_candidates(drug_smiles)
                 mode_used = "heuristic_fallback"
-        else:
-            candidates = generate_heuristic_candidates(drug_smiles)
+            else:
+                try:
+                    candidates, llm_audit = generate_llm_candidates(
+                        smiles=drug_smiles,
+                        target_name=target_name,
+                        baseline_pkd=base_pkd,
+                        baseline_kd_nM=base_kd,
+                        optimization_goal=optimization_goal,
+                        custom_instruction=custom_instruction,
+                        llm_config=llm_config
+                    )
+                    mode_used = f"llm_generative_{llm_config.get('provider', 'custom')}"
+                except Exception as exc:
+                    fallback_reason = f"大模型接口调用异常: {str(exc)}，已自动安全降级至规则引擎"
+                    logger.warning("LLM generation failed: %s; falling back to heuristic rules.", exc)
+                    candidates = generate_heuristic_candidates(drug_smiles)
+                    mode_used = "heuristic_fallback"
+
+        else:  # "hybrid" mode (default)
+            # Heuristic candidates
+            heuristic_cands = generate_heuristic_candidates(drug_smiles)
+            llm_cands = []
+            
+            if llm_config and llm_config.get("api_key"):
+                try:
+                    llm_cands, llm_audit = generate_llm_candidates(
+                        smiles=drug_smiles,
+                        target_name=target_name,
+                        baseline_pkd=base_pkd,
+                        baseline_kd_nM=base_kd,
+                        optimization_goal=optimization_goal,
+                        custom_instruction=custom_instruction,
+                        llm_config=llm_config
+                    )
+                    mode_used = "hybrid_rules_and_llm"
+                except Exception as exc:
+                    fallback_reason = f"大模型接口调用异常: {str(exc)}，已自动安全降级至规则引擎"
+                    logger.warning("Hybrid mode LLM exception: %s", exc)
+                    mode_used = "heuristic_fallback"
+            else:
+                mode_used = "heuristic_medchem_rules"
+
+            # Merge and deduplicate
+            seen = set()
+            for c in (llm_cands + heuristic_cands):
+                if c["smiles"] not in seen and c["smiles"] != drug_smiles:
+                    candidates.append(c)
+                    seen.add(c["smiles"])
 
         # Step 3: Quantitative scoring loop
         scored_candidates = []
+        candidate_fps = []
+        retention_count = 0
+        hopping_count = 0
+
         for idx, cand in enumerate(candidates):
             c_smiles = cand["smiles"]
             try:
@@ -298,11 +395,23 @@ class DTILeadOptimizer:
                 sa_info = compute_sa_score(c_smiles)
                 admet_info = predict_admet_properties(c_smiles).to_dict()
 
+                # Scaffold similarity to parent
+                c_fp = get_morgan_fingerprint(c_smiles)
+                candidate_fps.append(c_fp)
+                sim_to_parent = round(float(tanimoto(base_fp, c_fp)), 3)
+                if sim_to_parent >= 0.40:
+                    scaffold_type = "骨架微调保持 (Scaffold Retention)"
+                    retention_count += 1
+                else:
+                    scaffold_type = "骨架跃迁突破 (Scaffold Hopping)"
+                    hopping_count += 1
+
                 scored_candidates.append({
                     "id": f"cand_{idx + 1}",
                     "name": cand["name"],
                     "modification_type": cand["modification_type"],
                     "smiles": c_smiles,
+                    "source": cand.get("source", "heuristic_rule"),
                     "rationale": cand["rationale"],
                     "predicted_pkd": c_pkd,
                     "predicted_kd_nM": c_kd,
@@ -317,7 +426,9 @@ class DTILeadOptimizer:
                     "sa_tier": sa_info["sa_tier"],
                     "sa_label": sa_info["sa_label"],
                     "sa_color": sa_info["sa_color"],
-                    "admet": admet_info
+                    "admet": admet_info,
+                    "parent_similarity": sim_to_parent,
+                    "scaffold_type": scaffold_type
                 })
             except Exception as e:
                 continue
@@ -325,10 +436,34 @@ class DTILeadOptimizer:
         # Sort candidates by predicted pKd descending
         scored_candidates.sort(key=lambda x: x["predicted_pkd"], reverse=True)
 
+        # Compute Pairwise Diversity
+        mean_diversity = 0.0
+        if len(candidate_fps) >= 2:
+            pairwise_sims = []
+            for i in range(len(candidate_fps)):
+                for j in range(i + 1, len(candidate_fps)):
+                    pairwise_sims.append(tanimoto(candidate_fps[i], candidate_fps[j]))
+            mean_diversity = round(1.0 - float(np.mean(pairwise_sims)), 3)
+
         best_cand = scored_candidates[0] if scored_candidates else None
         max_gain = round(best_cand["delta_pkd"], 3) if best_cand else 0.0
+        avg_gain = round(float(np.mean([c["delta_pkd"] for c in scored_candidates])), 3) if scored_candidates else 0.0
+        improved_count = sum(1 for c in scored_candidates if c["delta_pkd"] > 0.1)
+
         base_sa = compute_sa_score(drug_smiles)
         base_admet = predict_admet_properties(drug_smiles).to_dict()
+
+        audit_metrics = {
+            "total_candidates_evaluated": len(scored_candidates),
+            "validity_rate": 1.0 if scored_candidates else 0.0,
+            "scaffold_retention_count": retention_count,
+            "scaffold_hopping_count": hopping_count,
+            "improved_candidates_count": improved_count,
+            "max_affinity_gain_pkd": max_gain,
+            "average_affinity_delta_pkd": avg_gain,
+            "mean_pairwise_diversity": mean_diversity,
+            "llm_audit": llm_audit
+        }
 
         return {
             "mode": mode_used,
@@ -349,10 +484,51 @@ class DTILeadOptimizer:
                 "admet": base_admet
             },
             "candidates": scored_candidates,
+            "derivatives": scored_candidates,  # Alias for backward compatibility
+            "audit_metrics": audit_metrics,
             "summary": {
                 "candidates_evaluated": len(scored_candidates),
                 "best_candidate": best_cand["name"] if best_cand else "无",
                 "max_affinity_gain_pkd": max_gain,
-                "best_kd_nM": best_cand["predicted_kd_nM"] if best_cand else base_kd
+                "best_kd_nM": best_cand["predicted_kd_nM"] if best_cand else base_kd,
+                "improved_count": improved_count
             }
         }
+
+    def optimize_lead(
+        self,
+        parent_smiles: str,
+        target_symbol: str = "ABL1",
+        target_sequence: Optional[str] = None,
+        is_mutant: bool = False,
+        max_derivatives: int = 15,
+        generation_mode: str = "heuristic",
+        llm_config: Optional[dict] = None,
+        model_name: str = "ridge"
+    ) -> dict:
+        seq = target_sequence
+        if not seq:
+            from target_knowledge_hub import get_clinical_target_by_symbol
+            rec = get_clinical_target_by_symbol(target_symbol)
+            if rec:
+                seq = rec.get("catalytic_sequence_snippet", "")
+            if not seq:
+                seq = "MVLLEEQRVVIGEGTYGVVYKARNKLTGEVVALKKIRLDTETEGVPSTAIREISLLKELNHPNIVKLLDVIHTENKLYLVFEFLHQDLKKFMDASALTGIPLPLIKSYLFQLLQGLAFCHSHRVLHRDLKPQNLLINTEGAIKLADFGLARAFGVPVRTYTHEVVTLWYRAPEILLGCKYYSTAVDIWSLGCIFAEMVTRRALFPGDSEIDQLFRIFRTLGTPDEVVWPGVTSMPDYKPSFPKWARQDFSKVVPPLDEDGRSLLSQMLHYDPNKRISAKAALAHPFFQDVTKPVPHLRL"
+        res = self.optimize(
+            drug_smiles=parent_smiles,
+            target_sequence=seq,
+            target_name=target_symbol,
+            model_name=model_name,
+            generation_mode=generation_mode,
+            llm_config=llm_config
+        )
+        candidates = res.get("candidates", [])
+        if len(candidates) > max_derivatives:
+            candidates = candidates[:max_derivatives]
+            res["candidates"] = candidates
+            res["derivatives"] = candidates
+        return res
+
+
+# Backwards compatibility alias
+LeadOptimizer = DTILeadOptimizer

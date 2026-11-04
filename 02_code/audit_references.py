@@ -35,7 +35,7 @@ def get_metadata(doi,folder):
     url='https://api.crossref.org/works/'+urllib.parse.quote(doi,safe='/')
     for attempt in range(3):
         try:
-            req=urllib.request.Request(url,headers={'User-Agent':'SafeAMP-citation-audit/1.0'})
+            req=urllib.request.Request(url,headers={'User-Agent':'DTI-citation-audit/1.0'})
             with urllib.request.urlopen(req,timeout=20) as r:payload=json.load(r)['message']
             write_json(path,{'url':url,'retrieved_at':utc_now(),'metadata':payload})
             return json.loads(path.read_text(encoding='utf-8'))

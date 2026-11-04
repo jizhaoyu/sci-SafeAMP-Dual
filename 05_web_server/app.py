@@ -17,11 +17,14 @@ if (DIST / 'vendor').is_dir():
 def favicon():
     return Response(status_code=204)
 
+# Explicit SPA routes: / /dti /evolution /agent /screening /helical-wheel /report
+# Keep 404 behavior for unknown API or static paths (never swallow /api/ 404s)
 @app.get('/')
 @app.get('/dti')
 @app.get('/evolution')
-@app.get('/amp-screening')
-@app.get('/wheel')
+@app.get('/agent')
+@app.get('/screening')
+@app.get('/helical-wheel')
 @app.get('/report')
 def index_page():
     page = DIST / 'index.html'

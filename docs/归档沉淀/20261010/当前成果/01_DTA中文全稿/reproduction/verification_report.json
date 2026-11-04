@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "manuscript_body_excluding_tables": {
+    "chinese_characters": 10643,
+    "english_word_tokens": 368,
+    "numeric_tokens": 264,
+    "combined_count_estimate": 11275
+  },
+  "abstract": {
+    "chinese_characters": 622,
+    "english_word_tokens": 21,
+    "numeric_tokens": 24,
+    "combined_count_estimate": 667
+  },
+  "section_counts": {
+    "1 引言": {
+      "chinese_characters": 1745,
+      "english_word_tokens": 21,
+      "numeric_tokens": 10,
+      "combined_count_estimate": 1776
+    },
+    "2 材料与方法": {
+      "chinese_characters": 3185,
+      "english_word_tokens": 147,
+      "numeric_tokens": 124,
+      "combined_count_estimate": 3456
+    },
+    "3 结果与实证分析": {
+      "chinese_characters": 1203,
+      "english_word_tokens": 79,
+      "numeric_tokens": 65,
+      "combined_count_estimate": 1347
+    },
+    "4 深入讨论": {
+      "chinese_characters": 2885,
+      "english_word_tokens": 62,
+      "numeric_tokens": 26,
+      "combined_count_estimate": 2973
+    },
+    "5 研究局限性": {
+      "chinese_characters": 608,
+      "english_word_tokens": 9,
+      "numeric_tokens": 6,
+      "combined_count_estimate": 623
+    },
+    "6 结论": {
+      "chinese_characters": 221,
+      "english_word_tokens": 7,
+      "numeric_tokens": 3,
+      "combined_count_estimate": 231
+    }
+  },
+  "tables": 6,
+  "references": 4,
+  "fit_calls": 0,
+  "new_experiments": false,
+  "publication_ready": false,
+  "human_verification": "pending",
+  "latex_format_checks": "PASS",
+  "numeric_checks": "PASS"
+}

@@ -3,7 +3,7 @@
 来源开源仓库：[K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills)  
 安装位置：`C:\Users\888\.gemini\config\skills\`（全局自动发现，随需加载）
 
-针对本项目 **“计算生物学 + 多肽 AI 预测与逆向分子工程 + SCI 论文成稿”**，已精选并成功装载以下 **9 大核心科研技能**：
+针对本项目 **“计算生物学 + 药物–靶点亲和力预测 (DTA/DTI) 与先导分子优化 + SCI 论文成稿”**，已精选并成功装载以下 **9 大核心科研技能**：
 
 ---
 

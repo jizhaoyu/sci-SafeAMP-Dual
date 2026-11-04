@@ -4,7 +4,7 @@
 **Date:** October 11, 2026 (Revised under Plan A Gene-Max Protocol)  
 **Repository Working Directory:** `D:/桌面文件/sci/`  
 **Protocol Digest:** `protocol-dti-01` (Plan A Gene-Max Kinase Benchmark, SHA256: `d54e81d2...`)  
-**System Delivery:** SafeAMP-Dual & DTI Studio 5.0  
+**System Delivery:** DTI Research Studio 5.0  
 **Verification Status:** Cryptographically Audited & Playwright E2E UI Verified (Exit 0)
 
 ---
@@ -325,7 +325,7 @@ All code and data integrity gates were audited via `check_mic_project.py --scope
 
 ## 9. Discussion and Conclusion
 
-We have introduced SafeAMP-Dual & DTI Studio 5.0, a unified platform that bridges the historical divide between computational affinity prediction, chemical synthesis feasibility, and wet-lab experimental iteration. 
+We have introduced DTI Research Studio 5.0, a unified platform that bridges the historical divide between computational affinity prediction, chemical synthesis feasibility, and wet-lab experimental iteration. 
 
 Key scientific takeaways from our rigorous audit and formalization include:
 1. **Gene-Max Paradigm Resolution**: By formalizing the **Kinase Gene-Level Maximum Affinity Benchmark (Gene-Max DTI)**, we resolve historical data curation ambiguities where canonical wild-type sequences were erroneously cited as drug-resistance mutants. Machine learning models operating on sequence descriptors reliably predict macro-level affinity potential across the human kinome, while mutation-specific resistance profiling appropriately shifts to 3D pocket steric modeling.

@@ -1,0 +1,137 @@
+{
+  "primary_outer": {
+    "primary_point_estimate_delta": 0.07018400588529985,
+    "point_ci_design_d_by_seed": {
+      "42": 0.6817063758919344,
+      "123": 0.6284859344041811,
+      "456": 0.6744535562285338,
+      "789": 0.6556558002247607,
+      "1024": 0.620497452260921
+    },
+    "point_ci_design_a_by_seed": {
+      "42": 0.5790927431183965,
+      "123": 0.582432560511624,
+      "456": 0.5857949442385894,
+      "789": 0.581507340828365,
+      "1024": 0.5810515008868569
+    },
+    "seed_level_diffs": [
+      0.10261363277353786,
+      0.04605337389255715,
+      0.0886586119899444,
+      0.0741484593963957,
+      0.03944595137406415
+    ],
+    "std_design_d_ddof1": 0.027134801951935628,
+    "std_design_a_ddof1": 0.0024586730520308837,
+    "training_stochasticity_diff_std_ddof1": 0.027091622588812463,
+    "b_requested": 1000,
+    "b_valid": 1000,
+    "valid_rate": 1.0,
+    "percentile_95_descriptive_interval": [
+      -0.0009639929116691974,
+      0.1572888822863466
+    ],
+    "interval_status": "valid",
+    "scientific_interpretation": "Descriptive percentile interval under finite entity clustering (13 drugs x 75 targets). Zero p-values. Interval contains 0; strictly reported as no statistically distinguishable generalization difference, avoiding claims of confirmatory superiority or statistical equivalence."
+  },
+  "oof_diagnostic_means": {
+    "D外层CI": 0.6521598238020662,
+    "A外层CI": 0.5819758179167663,
+    "D减A外层CI": 0.07018400588529985,
+    "D元层拟合诊断CI": 0.6277544104513256,
+    "A元层拟合诊断CI": 0.8341774281433361
+  },
+  "oof_diagnostic_sds": {
+    "D外层CI": 0.027134801951935628,
+    "A外层CI": 0.0024586730520308837,
+    "D减A外层CI": 0.027091622588812463,
+    "D元层拟合诊断CI": 0.022881035600929057,
+    "A元层拟合诊断CI": 0.0010721641205748266
+  },
+  "corrections": [
+    {
+      "项目": "F2 Ridge CI",
+      "任务书": "0.721201",
+      "已验收实际": "0.715267",
+      "证据": "EXP-ABL-F2-RIDGE-S42/eval_overall"
+    },
+    {
+      "项目": "A元层拟合诊断CI均值",
+      "任务书": "0.725424",
+      "已验收实际": "0.834177",
+      "证据": "SET-A-S*.npz OOF独立重算"
+    },
+    {
+      "项目": "D元层拟合诊断CI均值",
+      "任务书": "0.589021",
+      "已验收实际": "0.627754",
+      "证据": "SET-D-S*.npz OOF独立重算"
+    },
+    {
+      "项目": "seed42外层差值",
+      "任务书": "0.102613",
+      "已验收实际": "0.102614",
+      "证据": "高精度CI先相减再四舍五入"
+    },
+    {
+      "项目": "seed789外层差值",
+      "任务书": "0.074149",
+      "已验收实际": "0.074148",
+      "证据": "高精度CI先相减再四舍五入"
+    },
+    {
+      "项目": "seed1024外层差值",
+      "任务书": "0.039445",
+      "已验收实际": "0.039446",
+      "证据": "高精度CI先相减再四舍五入"
+    },
+    {
+      "项目": "HistGBM外层指标",
+      "任务书": "RMSE0.8987/MAE0.6115/r0.0987/rho0.1512",
+      "已验收实际": "与当前JSON一致，不应误改",
+      "证据": "EXP-MAIN-D-HGB-S42/eval_overall"
+    }
+  ],
+  "base_prediction_difference_d_vs_a": [
+    {
+      "seed": 42,
+      "RIDGE": 0.0003552436828613281,
+      "HGB": 0.0,
+      "RF": 3.552713678800501e-15
+    },
+    {
+      "seed": 123,
+      "RIDGE": 0.0003552436828613281,
+      "HGB": 0.0,
+      "RF": 3.552713678800501e-15
+    },
+    {
+      "seed": 456,
+      "RIDGE": 0.0003552436828613281,
+      "HGB": 0.0,
+      "RF": 2.6645352591003757e-15
+    },
+    {
+      "seed": 789,
+      "RIDGE": 0.0003552436828613281,
+      "HGB": 0.0,
+      "RF": 3.552713678800501e-15
+    },
+    {
+      "seed": 1024,
+      "RIDGE": 0.0,
+      "HGB": 0.0,
+      "RF": 3.552713678800501e-15
+    }
+  ],
+  "fit_calls": 0,
+  "scope": "read-only manuscript preparation checks",
+  "input_hashes": {
+    "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\metrics_summary_revised.json": "b8c0c92319bc6e4ecc03e51b5a105d78fd0148ac61841f10d9dc0c8f3f92805b",
+    "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\statistical_inference_report_revised.json": "baaede8206ca7339198c5faa6477dd8e005a9710de4aaaef40c718acab7ba394",
+    "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\predictions\\predictions.csv": "fcfd3f681b92fc33e533601ed419e437a13a3b2ba94e4ba0e971225e484731bb",
+    "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\predictions\\oof_predictions.csv": "c1a11c74b6bd7c1c842fe509f8fbdb554f5f8dc9c0788704c11254bdb8f0d65d",
+    "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\postprocessing\\bootstrap_resamples_revised.npz": "30309d397a1a73d5c43d3cfc9ff4bba97bb260c4aba4f16c789213d3f68a8afa"
+  }
+}

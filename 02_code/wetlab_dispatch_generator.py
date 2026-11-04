@@ -33,12 +33,12 @@ def generate_96_well_dispatch(
     wells: List[Dict[str, Any]] = []
 
     # 1. Well A01: Positive Reference Control (Baseline Lead, e.g. Dasatinib)
-    base_smiles = baseline.get("smiles", "")
-    base_pkd = float(baseline.get("predicted_pkd", 7.0))
-    base_kd = float(baseline.get("predicted_kd_nM", 100.0))
-    base_sa = float(baseline.get("sa_score", 3.0))
+    base_smiles = baseline.get("smiles") or ""
+    base_pkd = float(baseline.get("predicted_pkd")) if baseline.get("predicted_pkd") is not None else 7.0
+    base_kd = float(baseline.get("predicted_kd_nM")) if baseline.get("predicted_kd_nM") is not None else round(10 ** (9 - base_pkd), 2)
+    base_sa = float(baseline.get("sa_score")) if baseline.get("sa_score") is not None else 3.0
 
-    base_admet = baseline.get("admet") or predict_admet_properties(base_smiles).to_dict()
+    base_admet = baseline.get("admet") or (predict_admet_properties(base_smiles).to_dict() if base_smiles else {})
 
     wells.append({
         "plate_barcode": barcode,
@@ -67,15 +67,13 @@ def generate_96_well_dispatch(
     })
 
     # 2. Sort candidate derivatives by affinity gain and SA feasibility
-    sorted_cands = sorted(
-        candidates,
-        key=lambda c: (
-            float(c.get("delta_pkd", 0.0)) > 0,
-            float(c.get("predicted_pkd", 0.0)),
-            -float(c.get("sa_score", 5.0))
-        ),
-        reverse=True
-    )
+    def _cand_sort_key(c):
+        d_val = float(c.get("delta_pkd")) if (c.get("delta_pkd") is not None and c.get("delta_pkd") != "") else 0.0
+        p_val = float(c.get("predicted_pkd")) if (c.get("predicted_pkd") is not None and c.get("predicted_pkd") != "") else 0.0
+        s_val = float(c.get("sa_score")) if (c.get("sa_score") is not None and c.get("sa_score") != "") else 5.0
+        return (d_val > 0, p_val, -s_val)
+
+    sorted_cands = sorted(candidates, key=_cand_sort_key, reverse=True)
 
     # 3. Assign wells sequentially from A02 up to H11 (94 candidate capacity)
     # H12 is reserved for Negative Control (DMSO Vehicle)
@@ -88,13 +86,19 @@ def generate_96_well_dispatch(
             break
 
         well_id = _format_well(curr_row, curr_col)
-        delta_pkd = float(cand.get("delta_pkd", 0.0))
-        c_pkd = float(cand.get("predicted_pkd", 7.0))
-        c_kd = float(cand.get("predicted_kd_nM", 100.0))
+        delta_pkd = float(cand.get("delta_pkd")) if (cand.get("delta_pkd") is not None and cand.get("delta_pkd") != "") else 0.0
+        c_pkd = float(cand.get("predicted_pkd")) if (cand.get("predicted_pkd") is not None and cand.get("predicted_pkd") != "") else 7.0
+        c_kd = float(cand.get("predicted_kd_nM")) if (cand.get("predicted_kd_nM") is not None and cand.get("predicted_kd_nM") != "") else round(10 ** (9 - c_pkd), 2)
         c_smiles = cand.get("smiles", "")
-        
-        sa_score = float(cand.get("sa_score", compute_sa_score(c_smiles).sa_score))
-        c_admet = cand.get("admet") or predict_admet_properties(c_smiles).to_dict()
+
+        sa_val = cand.get("sa_score")
+        if sa_val is not None and sa_val != "":
+            sa_score = float(sa_val)
+        elif c_smiles:
+            sa_score = float(compute_sa_score(c_smiles).sa_score)
+        else:
+            sa_score = 3.0
+        c_admet = cand.get("admet") or (predict_admet_properties(c_smiles).to_dict() if c_smiles else {})
 
         if delta_pkd >= 0.20 and sa_score <= 4.5:
             tier = "Tier 1 (High Confidence Hit)"

@@ -101,8 +101,9 @@ def _extract_descriptors(smiles: str) -> Dict[str, float]:
     num_double = len(re.findall(r'=', s))
     num_triple = len(re.findall(r'#', s))
     num_rings = len(re.findall(r'[0-9]', s)) // 2
+    num_aromatic_double = len(re.findall(r'[cnosp]', sub_hal)) // 2
     
-    approx_h = max(0, num_c * 2 + 2 - num_double * 2 - num_triple * 4 - num_rings * 2)
+    approx_h = max(0, num_c * 2 + 2 - (num_double + num_aromatic_double) * 2 - num_triple * 4 - num_rings * 2)
     mw = (num_c * 12.011 + num_n * 14.007 + num_o * 15.999 + num_f * 18.998 +
           num_cl * 35.45 + num_br * 79.904 + num_s * 32.06 + num_p * 30.974 + approx_h * 1.008)
     

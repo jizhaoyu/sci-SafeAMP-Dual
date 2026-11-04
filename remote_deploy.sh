@@ -1,43 +1,43 @@
 #!/usr/bin/env bash
 # ==============================================================================
-# SafeAMP Remote Deployment & Hot-Reload Script
+# DTI Remote Deployment & Hot-Reload Script
 # Target: Ubuntu 22.04/24.04 LTS (Tencent Cloud VM)
 # ==============================================================================
 
 set -euo pipefail
 
-SERVER_DIR="/home/ubuntu/safeamp-server"
+SERVER_DIR="/home/ubuntu/dti-server"
 BACKUP_DIR="/home/ubuntu/backups/deploy_$(date +%Y%m%d_%H%M%S)"
-ENV_PYTHON="/home/ubuntu/safeamp-env/bin/python3"
+ENV_PYTHON="/home/ubuntu/dti-env/bin/python3"
 
 echo "=== [1/6] Initializing Deployment & Backup ==="
 mkdir -p "${BACKUP_DIR}"
 if [ -d "${SERVER_DIR}" ]; then
     cp -r "${SERVER_DIR}/app.py" "${BACKUP_DIR}/" 2>/dev/null || true
-    if [ -f "/etc/nginx/sites-available/safeamp.conf" ]; then
-        cp "/etc/nginx/sites-available/safeamp.conf" "${BACKUP_DIR}/safeamp.conf"
+    if [ -f "/etc/nginx/sites-available/dti.conf" ]; then
+        cp "/etc/nginx/sites-available/dti.conf" "${BACKUP_DIR}/dti.conf"
     fi
     echo "Backup successfully saved to: ${BACKUP_DIR}"
 fi
 
 echo "=== [2/6] Installing Rate Limiter & Backend Updates ==="
-if [ -f "/tmp/safeamp_deploy/rate_limiter.py" ]; then
-    cp "/tmp/safeamp_deploy/rate_limiter.py" "${SERVER_DIR}/rate_limiter.py"
+if [ -f "/tmp/dti_deploy/rate_limiter.py" ]; then
+    cp "/tmp/dti_deploy/rate_limiter.py" "${SERVER_DIR}/rate_limiter.py"
     chmod 644 "${SERVER_DIR}/rate_limiter.py"
     chown ubuntu:ubuntu "${SERVER_DIR}/rate_limiter.py"
     echo "Installed rate_limiter.py"
 fi
 
-if [ -f "/tmp/safeamp_deploy/patch_remote_app.py" ]; then
-    python3 "/tmp/safeamp_deploy/patch_remote_app.py" "${SERVER_DIR}/app.py"
+if [ -f "/tmp/dti_deploy/patch_remote_app.py" ]; then
+    python3 "/tmp/dti_deploy/patch_remote_app.py" "${SERVER_DIR}/app.py"
     chmod 644 "${SERVER_DIR}/app.py"
     chown ubuntu:ubuntu "${SERVER_DIR}/app.py"
 fi
 
 echo "=== [3/6] Deploying Hardened Nginx Configuration ==="
-if [ -f "/tmp/safeamp_deploy/safeamp.conf" ]; then
-    sudo cp "/tmp/safeamp_deploy/safeamp.conf" "/etc/nginx/sites-available/safeamp.conf"
-    sudo ln -sf "/etc/nginx/sites-available/safeamp.conf" "/etc/nginx/sites-enabled/safeamp.conf"
+if [ -f "/tmp/dti_deploy/dti.conf" ]; then
+    sudo cp "/tmp/dti_deploy/dti.conf" "/etc/nginx/sites-available/dti.conf"
+    sudo ln -sf "/etc/nginx/sites-available/dti.conf" "/etc/nginx/sites-enabled/dti.conf"
     echo "Testing Nginx configuration..."
     sudo nginx -t
     echo "Reloading Nginx service..."
@@ -46,16 +46,16 @@ if [ -f "/tmp/safeamp_deploy/safeamp.conf" ]; then
 fi
 
 echo "=== [4/6] Updating Frontend Dist Build ==="
-if [ -d "/tmp/safeamp_deploy/dist" ]; then
+if [ -d "/tmp/dti_deploy/dist" ]; then
     mkdir -p "${SERVER_DIR}/frontend/dist"
-    cp -r /tmp/safeamp_deploy/dist/* "${SERVER_DIR}/frontend/dist/"
+    cp -r /tmp/dti_deploy/dist/* "${SERVER_DIR}/frontend/dist/"
     chown -R ubuntu:ubuntu "${SERVER_DIR}/frontend"
     echo "Frontend SPA distribution refreshed."
 fi
 
-echo "=== [5/6] Restarting SafeAMP Systemd Service ==="
+echo "=== [5/6] Restarting DTI Systemd Service ==="
 sudo systemctl daemon-reload
-sudo systemctl restart safeamp
+sudo systemctl restart dti
 
 echo "Waiting for service initialization and ESM model loading (up to 25s)..."
 for i in $(seq 1 12); do
@@ -67,11 +67,11 @@ for i in $(seq 1 12); do
 done
 
 echo "=== [6/6] Verifying Service Health & Observability ==="
-if systemctl is-active --quiet safeamp; then
-    echo "[SUCCESS] safeamp.service is ACTIVE (running)!"
+if systemctl is-active --quiet dti; then
+    echo "[SUCCESS] dti.service is ACTIVE (running)!"
 else
-    echo "[ERROR] safeamp.service failed to start! Dumping logs:"
-    sudo journalctl -u safeamp -n 30 --no-pager
+    echo "[ERROR] dti.service failed to start! Dumping logs:"
+    sudo journalctl -u dti -n 30 --no-pager
     exit 1
 fi
 
@@ -87,4 +87,4 @@ echo "Probing public HTTP Nginx endpoint /api/health..."
 PUBLIC_RESP=$(curl -s -m 5 http://127.0.0.1/api/health || echo "FAILED")
 echo "Public Nginx Probe: ${PUBLIC_RESP}"
 
-echo "=== SafeAMP Remote Deployment Finished Successfully! ==="
+echo "=== DTI Remote Deployment Finished Successfully! ==="

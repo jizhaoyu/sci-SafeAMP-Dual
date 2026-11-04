@@ -32,7 +32,7 @@ def _generate_synthetic_pocket_pdb(
     lines = [
         f"HEADER    KINASE CATALYTIC DOMAIN POCKET           {target_name.upper():<4}",
         f"TITLE     INDUCED-FIT COMPLEX OF {target_name.upper()} WITH {drug_label.upper()}",
-        f"REMARK    FIRST-PRINCIPLES POCKET GEOMETRY BY SAFEAMP-DUAL WORLD MODEL 5.0",
+        f"REMARK    FIRST-PRINCIPLES POCKET GEOMETRY BY DTI WORLD MODEL 5.0",
         f"REMARK    BINDING MODE: {binding_mode.upper()} | GATEKEEPER: {gk_res_3}"
     ]
 

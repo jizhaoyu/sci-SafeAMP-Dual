@@ -332,7 +332,7 @@ export const ClinicalTargetSelectorModal: React.FC<ClinicalTargetSelectorModalPr
             共筛选出 <strong className="text-cyan-400">{filteredTargets.length}</strong> 个靶标条目
           </span>
           <span className="text-[11px] text-slate-500">
-            SafeAMP-Dual 5.0 临床肿瘤药物基因组数据库 · UniProtKB / Swiss-Prot / ChEMBL 深度映射
+            DTI 5.0 临床肿瘤药物基因组数据库 · UniProtKB / Swiss-Prot / ChEMBL 深度映射
           </span>
         </div>
       </div>

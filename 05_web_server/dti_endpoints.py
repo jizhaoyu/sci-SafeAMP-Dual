@@ -41,6 +41,7 @@ class DTIOptimizeLeadRequest(BaseModel):
     custom_instruction: Optional[str] = Field("", description="Custom medicinal chemistry instruction")
     model_name: Optional[str] = Field("stacked_ensemble", description="Scoring model name")
     llm_config: Optional[dict] = Field(None, description="Optional LLM connection config from frontend settings")
+    generation_mode: Optional[str] = Field("hybrid", description="Generation mode: heuristic, llm, or hybrid")
 
 
 @router.get("/status")
@@ -354,7 +355,8 @@ def optimize_dti_lead(req: DTIOptimizeLeadRequest):
             optimization_goal=req.optimization_goal or "提升亲和力与结合强度",
             custom_instruction=req.custom_instruction or "",
             model_name=req.model_name,
-            llm_config=req.llm_config
+            llm_config=req.llm_config,
+            generation_mode=req.generation_mode or "hybrid"
         )
         result['research_evidence'] = evidence_for_result()
         return result
@@ -430,7 +432,7 @@ class DTIAcademicReportRequest(BaseModel):
     biophysics: Optional[Dict[str, Any]] = None
     admet: Optional[Dict[str, Any]] = None
     active_learning: Optional[Dict[str, Any]] = None
-    author: Optional[str] = "SafeAMP-Dual BioAI Laboratory"
+    author: Optional[str] = "DTI BioAI Laboratory"
     model_used: Optional[str] = Field(None, max_length=100)
 
 
@@ -446,14 +448,15 @@ def generate_dti_report(req: DTIAcademicReportRequest):
             biophysics=req.biophysics,
             admet=req.admet,
             active_learning=req.active_learning,
-            author=req.author or "SafeAMP-Dual BioAI Laboratory"
+            author=req.author or "DTI BioAI Laboratory",
+            model_name=req.model_used
         )
         evidence = evidence_for_result()
         notice = evidence['message']
         review_date = evidence.get('reviewed_at') or '无法确认'
         metric_state = '未评估' if evidence['status'] == 'available' else '无法确认'
         model_used = req.model_used or '未报告'
-        template_notice = '本报告为模板草稿；缺失的结构、自由能或ADMET输入可能使用模板默认值，这些字段不是已确认的计算或实验结果。'
+        template_notice = '本报告为模板草稿；模板默认值、缺失的结构、自由能或ADMET输入在报告中已明确标注为缺失，不可作为已确认的计算或实验结果。'
         diagnostic = evidence.get('model_diagnostics', {}).get(model_used)
         limitation_notice = ('已有冻结F1版本诊断：' + diagnostic['summary'] + ' 当前报告使用的模型版本尚未核对。') if diagnostic else ''
         result['research_evidence'] = evidence
@@ -492,6 +495,45 @@ def calibrate_wetlab_feedback(req: DTIWetlabFeedbackRequest):
     except Exception as exc:
         logger.exception("Failed to calibrate wetlab feedback")
         raise HTTPException(status_code=422, detail=f"湿实验实测反馈校准失败: {str(exc)}") from exc
+
+
+class SupplementaryPackageRequest(BaseModel):
+    task_id: Optional[str] = Field(None, description="Async task ID to export")
+    result_payload: Optional[Dict[str, Any]] = Field(None, description="Direct result payload")
+    target_name: Optional[str] = Field(None, description="Target kinase name")
+    author: Optional[str] = Field("DTI BioAI Research Team", description="Author or Laboratory")
+
+
+@router.post("/export_supplementary_package")
+def export_supplementary_package(req: SupplementaryPackageRequest):
+    """Generate peer-review grade supplementary dataset package (ZIP with figures, tables, manifest, SHA256SUMS)."""
+    try:
+        from supplementary_dataset_generator import SupplementaryDatasetGenerator
+        gen = SupplementaryDatasetGenerator()
+        res = gen.generate_package(
+            task_id=req.task_id,
+            result_payload=req.result_payload,
+            target_name=req.target_name,
+            author=req.author or "DTI BioAI Research Team"
+        )
+        return res
+    except Exception as exc:
+        logger.exception("Failed to export supplementary dataset package")
+        raise HTTPException(status_code=422, detail=f"科研交付包生成失败: {str(exc)}") from exc
+
+
+@router.get("/download_package/{package_id}")
+def download_supplementary_package(package_id: str):
+    """Download generated supplementary package ZIP archive."""
+    from fastapi.responses import FileResponse
+    zip_path = Path(__file__).resolve().parents[1] / "output" / "supplementary_packages" / f"{package_id}.zip"
+    if not zip_path.exists():
+        raise HTTPException(status_code=404, detail="Requested supplementary package not found.")
+    return FileResponse(
+        path=str(zip_path),
+        filename=f"Supplementary_Materials_{package_id}.zip",
+        media_type="application/zip"
+    )
 
 
 @router.get("/clinical_targets")

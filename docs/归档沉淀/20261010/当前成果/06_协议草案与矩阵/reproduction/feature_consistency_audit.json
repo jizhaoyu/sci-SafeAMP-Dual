@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "sample_counts": {
+    "drugs": 10,
+    "targets": 6
+  },
+  "target_entities_metadata": [
+    {
+      "id": "CDK2",
+      "expected_len": 298,
+      "category": "short_kinase"
+    },
+    {
+      "id": "SRC",
+      "expected_len": 536,
+      "category": "medium_kinase"
+    },
+    {
+      "id": "MET(Y1235D)",
+      "expected_len": 1390,
+      "category": "long_mutant_kinase"
+    },
+    {
+      "id": "INSR",
+      "expected_len": 1382,
+      "category": "long_kinase"
+    },
+    {
+      "id": "EGFR(T790M)",
+      "expected_len": 1210,
+      "category": "long_mutant_kinase"
+    },
+    {
+      "id": "MTOR",
+      "expected_len": 2549,
+      "category": "ultra_long_kinase"
+    }
+  ],
+  "shape_checks": {
+    "drug_shape": [
+      2568
+    ],
+    "target_shape": [
+      420
+    ],
+    "finite_values_all": true
+  },
+  "pooling_mechanism_note": "Sliding window (window=1022, step=512) equal-weighted window mean pooling. Overlapping residues have higher effective weight. Does not prove 3D catalytic site conformation restoration.",
+  "sampling_limitation": "No tight boundary entities (1021/1023 aa) included in sample.",
+  "p1_runtime_sec": 4.61,
+  "p2_runtime_sec": 4.68,
+  "max_cross_proc_delta": 0.0,
+  "max_offline_delta": 0.0,
+  "cross_proc_deltas": {
+    "drug_5291": 0.0,
+    "drug_44259": 0.0,
+    "drug_123631": 0.0,
+    "drug_126565": 0.0,
+    "drug_151194": 0.0,
+    "drug_153999": 0.0,
+    "drug_156414": 0.0,
+    "drug_3038522": 0.0,
+    "drug_6918454": 0.0,
+    "drug_10184653": 0.0,
+    "target_CDK2": 0.0,
+    "target_SRC": 0.0,
+    "target_MET(Y1235D)": 0.0,
+    "target_INSR": 0.0,
+    "target_EGFR(T790M)": 0.0,
+    "target_MTOR": 0.0
+  },
+  "offline_deltas": {
+    "drug_5291": 0.0,
+    "drug_44259": 0.0,
+    "drug_123631": 0.0,
+    "drug_126565": 0.0,
+    "drug_151194": 0.0,
+    "drug_153999": 0.0,
+    "drug_156414": 0.0,
+    "drug_3038522": 0.0,
+    "drug_6918454": 0.0,
+    "drug_10184653": 0.0,
+    "target_CDK2": 0.0,
+    "target_SRC": 0.0,
+    "target_MET(Y1235D)": 0.0,
+    "target_INSR": 0.0,
+    "target_EGFR(T790M)": 0.0,
+    "target_MTOR": 0.0
+  }
+}

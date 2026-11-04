@@ -4,7 +4,7 @@ from pathlib import Path
 import re
 import sys
 
-TARGET_APP = Path(sys.argv[1] if len(sys.argv) > 1 else "/home/ubuntu/safeamp-server/app.py")
+TARGET_APP = Path(sys.argv[1] if len(sys.argv) > 1 else "/home/ubuntu/dti-server/app.py")
 
 RATE_LIMITER_SNIPPET = """
 import time
@@ -49,7 +49,7 @@ def api_health():
     \"\"\"Standardized health and liveness probe for monitoring and load balancers.\"\"\"
     return {
         "status": "ok",
-        "service": "safeamp-api",
+        "service": "dti-api",
         "version": "2.5.0",
         "timestamp": time.time(),
         "uptime_seconds": round(time.time() - server_start_time, 2),
@@ -62,7 +62,7 @@ def api_health():
 
 @app.get("/api/metrics")
 def api_metrics():
-    \"\"\"Real-time observability metrics for SafeAMP server.\"\"\"
+    \"\"\"Real-time observability metrics for DTI server.\"\"\"
     limiter_stats = rate_limiter.get_stats()
     return {
         "uptime_seconds": round(time.time() - server_start_time, 2),

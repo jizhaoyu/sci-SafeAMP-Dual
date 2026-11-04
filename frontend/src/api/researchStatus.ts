@@ -2,64 +2,6 @@ import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { apiClient, errorMessage } from './client';
 
-export interface ResearchStatus {
-  status: string;
-  reason?: string | null;
-  dual_task_model?: { weights_loaded?: boolean };
-}
-
-export function researchUnavailableMessage(reason?: string | null): string {
-  if (reason?.includes('No validated research run configured') || reason?.includes('SAFEAMP_RUN_DIR')) {
-    return '尚未配置通过校验的双任务模型运行产物 (SAFEAMP_RUN_DIR)。需要先完成双任务数据准入、训练与结果复核，才能启用预测。';
-  }
-  return '双任务模型运行产物尚未通过校验，预测、突变排序和研究报告生成暂不可用。';
-}
-
-export function useResearchStatus() {
-  const query = useQuery({
-    queryKey: ['research-status'],
-    queryFn: async () => (await apiClient.get<ResearchStatus>('/api/system_status')).data,
-    refetchInterval: 30000,
-    staleTime: 10000,
-    retry: false,
-  });
-
-  const err = query.error;
-  const is429 = axios.isAxiosError(err) && err.response?.status === 429;
-  const is503 = axios.isAxiosError(err) && err.response?.status === 503;
-  const isOffline = axios.isAxiosError(err) && !err.response && !!err.request;
-
-  const ready = !query.isError && query.data?.status === 'healthy' && query.data?.dual_task_model?.weights_loaded === true;
-
-  let label: string;
-  let message: string;
-
-  if (query.isPending) {
-    label = '检查双任务模型状态…';
-    message = '正在检查双任务模型状态，请稍候。';
-  } else if (is429) {
-    label = '双任务请求受限 (429)';
-    message = errorMessage(err);
-  } else if (is503) {
-    label = '双任务模型未就绪 (503)';
-    message = errorMessage(err);
-  } else if (isOffline) {
-    label = '后端服务离线';
-    message = '无法连接到后端服务，请确认本地后端已启动（端口 8000/8090）。';
-  } else if (query.isError) {
-    label = '双任务模型状态无法确认';
-    message = errorMessage(err);
-  } else if (ready) {
-    label = '双任务模型已通过运行校验';
-    message = '双任务模型已就绪，可进行 MIC 与 HC50 筛选。';
-  } else {
-    label = '双任务模型未就绪';
-    message = researchUnavailableMessage(query.data?.reason);
-  }
-
-  return { ...query, ready, is429, is503, isOffline, message, label };
-}
-
 export function useDTIModelStatus() {
   const query = useQuery({
     queryKey: ['dti-models-status'],

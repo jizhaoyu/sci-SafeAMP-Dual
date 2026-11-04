@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "matrix_rows": 76,
+  "dependency_resolution": "PASS",
+  "dependency_feature_seed_matching": "PASS",
+  "acyclic": true,
+  "totals": {
+    "param_selection_fits": 0,
+    "oof_fits": 735,
+    "meta_fits": 17,
+    "final_refits": 51,
+    "total_fits": 803
+  },
+  "estimated_fit_seconds": 4053.2999999999997,
+  "pure_inference_rows": 8,
+  "primary_seeds": [
+    42,
+    123,
+    456,
+    789,
+    1024
+  ],
+  "declared_split_formula_checks": [
+    {
+      "seed": 42,
+      "unique_oof_pairs": 16720,
+      "blocks": 25
+    },
+    {
+      "seed": 123,
+      "unique_oof_pairs": 16720,
+      "blocks": 25
+    },
+    {
+      "seed": 456,
+      "unique_oof_pairs": 16720,
+      "blocks": 25
+    },
+    {
+      "seed": 789,
+      "unique_oof_pairs": 16720,
+      "blocks": 25
+    },
+    {
+      "seed": 1024,
+      "unique_oof_pairs": 16720,
+      "blocks": 25
+    }
+  ],
+  "source_hashes": {
+    "evidence.csv": "33df51eb127081752b573eb5c611d3a464fc4850b07f5ef43e7b41ed6491721f",
+    "交付摘要.md": "1bb50a5eadd26d4053f852fa3e86908cc47f315a19092742487f102319c94f70",
+    "协议复审报告.md": "0953d0dd234c47f08084f90cb55a91cd3e394e5524b53e6396f2778eba6ad240",
+    "实验协议草案.md": "b1887d7f77834705a4c0c5f23a7a360e6e466333a0fabbb09fd545aa81c590f4",
+    "实验矩阵.csv": "2bad6497c11d3aeccfc6dac41859940393d499ad022dc6f0a4c555d1390c52ec",
+    "资格检查与待审决策.md": "76dfe2e0f5683ac7dfd25612b1bb058a3df4ad296a8703b67a02dd05c4dd73fc"
+  }
+}

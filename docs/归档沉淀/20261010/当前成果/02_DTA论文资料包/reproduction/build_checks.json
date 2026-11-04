@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "table_row_counts": {
+    "T1_primary_seed_pairs.csv": 5,
+    "T2_primary_effect_intervals.csv": 2,
+    "T3_models_all_seeds.csv": 20,
+    "T4_feature_ablation_seed42.csv": 16,
+    "T5_sequence_handling_seed42.csv": 8,
+    "T6_domains_seed42.csv": 12,
+    "T7_data_partitions.csv": 4,
+    "T8_feature_dimensions.csv": 4
+  },
+  "experiments_in_supplement": 76,
+  "figure_count": 4,
+  "fit_calls": 0,
+  "feature_extraction_calls": 0,
+  "inputs_hash_checked": true,
+  "python": "3.11.9",
+  "matplotlib": "3.10.9",
+  "numerical_stage": "accepted artifacts reused; no new scientific experiment"
+}

@@ -405,7 +405,14 @@ export const VirtualScreeningModal: React.FC<VirtualScreeningModalProps> = ({
                             <span className="text-xs font-bold text-emerald-400 font-mono">
                               {hit.predicted_kd_nM < 1000 ? `${hit.predicted_kd_nM} nM` : `${(hit.predicted_kd_nM / 1000).toFixed(2)} µM`}
                             </span>
-                            <span className="text-[9px] text-slate-500 block">pKd {hit.predicted_pkd}</span>
+                            <span className="text-[9px] text-slate-500 block">
+                              pKd {hit.predicted_pkd}
+                              {hit.heuristic_adjustment && hit.heuristic_adjustment > 0 ? (
+                                <span className="text-amber-400 font-semibold ml-1" title={hit.heuristic_rationale || "突变启发式加分"}>
+                                  (+{hit.heuristic_adjustment} 启发)
+                                </span>
+                              ) : null}
+                            </span>
                           </div>
 
                           <div className="p-2 rounded-lg bg-slate-900/60 border border-slate-800">

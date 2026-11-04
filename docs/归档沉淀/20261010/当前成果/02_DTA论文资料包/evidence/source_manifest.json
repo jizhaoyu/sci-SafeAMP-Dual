@@ -1,0 +1,671 @@
+{
+  "human_verification_required": true,
+  "sources": [
+    {
+      "evidence_id": "E001",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\metrics_summary_revised.json",
+      "sha256": "b8c0c92319bc6e4ecc03e51b5a105d78fd0148ac61841f10d9dc0c8f3f92805b",
+      "locator": "experiment_id -> eval_overall/oof_diagnostic",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E002",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-20261009\\statistical_inference_report_revised.json",
+      "sha256": "baaede8206ca7339198c5faa6477dd8e005a9710de4aaaef40c718acab7ba394",
+      "locator": "primary_comparison and secondary comparisons",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E003",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\03_experiments\\prepared\\dti_davis_clean_features_20261009_v1\\pairs_metadata.csv",
+      "sha256": "f8c8e61a1485732a9f7f6148ae1a5b8d0b32df9fecaf54098991727529265a1e",
+      "locator": "domain/drug_id/target_id/pkd",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E004",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-protocol-v5\\实验矩阵.csv",
+      "sha256": "2bad6497c11d3aeccfc6dac41859940393d499ad022dc6f0a4c555d1390c52ec",
+      "locator": "76 experiment IDs, feature/version/seed/dependencies",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E005",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\scripts\\run_experiments_v5.py",
+      "sha256": "6325161afe799c8bbe7f700b18d0b8461235e1460ed5674941e4a181ea1b63be",
+      "locator": "DTADataLoader/get_base_model/execute_all_experiments",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E006",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\scripts\\split_generator.py",
+      "sha256": "6be8aa2c1af6d22c2e82e62af1a629281ca2cb695d0f05be92b2c4bf2e59379d",
+      "locator": "generate_design_a/b/c/d",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E007",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\02_code\\extract_dti_davis_enhanced_features.py",
+      "sha256": "ef6bfdc4a45a6ddc4d5b8e29b4c58c791979ce553c2922fde9d20b0965620e35",
+      "locator": "extract_enhanced_drug_features/extract_enhanced_kinase_features",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E008",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\02_code\\extract_unimol_features.py",
+      "sha256": "5d73fce609bfa5a4bd95d97f457b2a11873a27e031256381078a1d4fd9819bf4",
+      "locator": "extract_heuristic_geom_features and component functions",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E009",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\02_code\\extract_esm_kinase_features.py",
+      "sha256": "7219252cc932c6564f77fa00727d82474c3e8f4c40e85fc71f9211c07a074840",
+      "locator": "extract_esm_kinase_representation",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E010",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\preflight\\frozen_execution_contract.json",
+      "sha256": "8377b1f87dd21fd04404c467886a2b2eeb1d4f4671809de2acaf015f257213ee",
+      "locator": "assets_binding/model_configurations/environment",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E011",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-independent-review-20261009\\independent-results.json",
+      "sha256": "730220cfe8b10ba9c4d15eadf385148bd7b27791c87b5a8062c7c79f78b85235",
+      "locator": "independent bootstrap/model/split/numerical checks",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E012",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-revised-v2-independent-review-20261009\\DTA修订交付v2独立验收结论_本轮通过.md",
+      "sha256": "1c603a65d645f8cf004849409b1bcfa3ed37375061dd2f59c9e783a1613def8d",
+      "locator": "bounded acceptance and remaining limitations",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E013",
+      "type": "external",
+      "title": "DeepDTA original paper",
+      "url": "https://arxiv.org/html/1801.10193v2",
+      "locator": "Data sets/Table 1/Equation 1",
+      "accessed_at": "2026-10-09",
+      "agent_check_status": "primary_full_text_opened",
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E014",
+      "type": "external",
+      "title": "ESM official repository",
+      "url": "https://github.com/facebookresearch/esm",
+      "locator": "Pre-trained models table/ESM-2 citation",
+      "accessed_at": "2026-10-09",
+      "agent_check_status": "official_document_opened",
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E015",
+      "type": "external",
+      "title": "Scientific Agent Skills",
+      "url": "https://arxiv.org/abs/2609.00065",
+      "locator": "metadata and abstract",
+      "accessed_at": "2026-10-09",
+      "agent_check_status": "primary_metadata_opened",
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E016",
+      "type": "external",
+      "title": "Davis original study",
+      "url": "https://www.nature.com/articles/nbt.1990",
+      "locator": "not verified due access restriction",
+      "accessed_at": "2026-10-09",
+      "agent_check_status": "access_failed_not_used_to_verify_claims",
+      "human_verified": false,
+      "status": "pending_author_verification"
+    },
+    {
+      "evidence_id": "E019",
+      "type": "local",
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-manuscript-prep-v1-20261009\\evidence\\preparation_status.json",
+      "sha256": "99ef87a334e4e24949f531135d518cf9d7279e9767bb1b989887c14bac8a36c2",
+      "locator": "draft status and author/venue confirmation fields",
+      "agent_checked": true,
+      "human_verified": false,
+      "status": "pending_author_verification"
+    }
+  ],
+  "artifact_bindings": [
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_audit_summary.json",
+      "sha256": "7fe605fcf8d09af915b0497c01728fc6ea66fd7ad2c44041cb90ae7a94bf79e5",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_A_s1024.json",
+      "sha256": "199fd7f7cde2047379db5c714e498678e3f2668e5e1730b83ffc6d986f68dff5",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_A_s123.json",
+      "sha256": "c6dccba95b202263928099dd32236c10e47a6ff7cfc766a2bb68e71d649847d7",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_A_s42.json",
+      "sha256": "5fe06414ab6dcfbd07734d00191c902a0e0cebc4435ceded24c4c82d24b4c829",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_A_s456.json",
+      "sha256": "27c385f6f19a083807db2e728a05214810133652f7cbec3a159e0a7bf6f14d27",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_A_s789.json",
+      "sha256": "7bb20ecfc57d071cf7d9e6e6a3f8eccb80ab6b26513f21060bc05869169e0591",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_B_s42.json",
+      "sha256": "728c3ea2ed95e90252d77534ae0b60606d9971c019dcd72b7832e87f70a3cd1e",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_C_s42.json",
+      "sha256": "be1e8a524056f3ab94401ac8ec12fdc1989ecc41ba08e0a47f285a348fcf666c",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_D_s1024.json",
+      "sha256": "147bdd8e619c55e27f7629bb42c87555b90791581d5d70b4d7b06afdc425b5f3",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_D_s123.json",
+      "sha256": "4fbc04b9178bd6611b7e22c77177aa9da81258cf027a9a782524e4358fe2b35b",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_D_s42.json",
+      "sha256": "4ec9565dcd72cf9128bb8739a8be3dcb54ed4fd8a4eaa1b5c48cbbb02da90530",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_D_s456.json",
+      "sha256": "d7116ce285144f66377a6032d3a91d8fe0117a76893d867bcc89de42585bdbaa",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\splits\\split_manifest_D_s789.json",
+      "sha256": "c5786aaed1235d1aaa0744d3c19c1505241e61eb69f348454945a744c5f8935a",
+      "role": "splits"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-A-S1024.npz",
+      "sha256": "0775dec52c326275adabb9523e7375dc9e3e7592ad06b9347a12337d14d0cf05",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-A-S123.npz",
+      "sha256": "8ae7c183b72c9fff9071d5a2eccfe687254781bc58f35b25a8ab7401e6298e6c",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-A-S42.npz",
+      "sha256": "9d661ed12cc7df1eb094be077f3e083f7ccbb24bc0d0f9daddff8a7043a2c975",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-A-S456.npz",
+      "sha256": "e8599a7bb9437d90550f2057bfb03642db853ba1ed28654a2cf49142107543d6",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-A-S789.npz",
+      "sha256": "0fba227cdce2ac962b0b0d877bf401e841c342aacddf958dd9dbd9762fad782f",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-ABL-F1-S42.npz",
+      "sha256": "d3e75e1a40514c3b4c1917f9bd4b669c5e112e002d303d2e7e1a7cb786299184",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-ABL-F2-S42.npz",
+      "sha256": "7338f0be6f5be612b133540b605f0ee45551c92b1ea5751707ae180956e4c144",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-ABL-F3-S42.npz",
+      "sha256": "885af5cff0900dd4cbe5e50144a033b057018001d394534db282f89824b0209a",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-B-S42.npz",
+      "sha256": "7c0efe695558b33bee6d567f73fd6bdbef289983a149a369b27e1a6394e7aa9c",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-C-S42.npz",
+      "sha256": "bc4461be3e604251a061d9666d2764b63bb4d94663c8a1459024c2ac4efd296b",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-D-S1024.npz",
+      "sha256": "0616fca35d97ae36ccffa03e4511f2a95c813dcfe375765fd9e5a154f074e288",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-D-S123.npz",
+      "sha256": "c358c1931ea941cb8ca655abf8ef6a37887b41c4f542bfead6078ec0f8bfb53b",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-D-S42.npz",
+      "sha256": "7adaaf5dee8b27c96c0ca471dc6de09e853d0ac9b3dae48592a69396b0479f7f",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-D-S456.npz",
+      "sha256": "5ea1fadce13f0392bfe2f045d15be3e0ad6bd2bb8d6c170e014571e499045c2c",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-D-S789.npz",
+      "sha256": "8f05ad4be6ac386e098b5ea5b274217a08363ed5e224c4c77a85caad5201f679",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-SEQ-TRUNC-S42.npz",
+      "sha256": "c5267ab91d531aedc80faa30bd8459433b0850d3c257b443e5c9cde876216c59",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\checkpoints\\SET-SEQ-WINDOW-S42.npz",
+      "sha256": "5eec1bc49a92ade3ab895a579895c1506f472ed4ed8395df4836fe6158a0b8f1",
+      "role": "checkpoints"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F1-HGB-S42.joblib",
+      "sha256": "e155b76e5ceab4b363a1c638e01ffa85298c986153f5bef8198decece9320d6f",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F1-RF-S42.joblib",
+      "sha256": "5a0b263c947492078696d0a88ff05d1ed0b61d7794b1c243c458d93134ec4f34",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F1-RIDGE-S42.joblib",
+      "sha256": "19683c7d2c9caca7dd93203d15dd7bfc0140ff94ed0c94d0da686aa932011db4",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F1-STACK-S42_weights.json",
+      "sha256": "e37b8a6614ef0560d36abf1474f43cd38caca08a49a0419a027b9c2d11c73046",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F2-HGB-S42.joblib",
+      "sha256": "ab139b6538521340bcaab2014cabd9f7cf9c440c202c0e0aa5fb93bc7bf23f40",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F2-RF-S42.joblib",
+      "sha256": "f4dc0c863b045fcc285022ce645e595d88a5d931e0ea4e4a120935f9316ef2a2",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F2-RIDGE-S42.joblib",
+      "sha256": "10f291ae4be6b6f928243028d846b7641ab21aab9d7c4acea1e958b5d14fc597",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F2-STACK-S42_weights.json",
+      "sha256": "0d8a9cd9da06d92636b541d039cbeb2f1cba8c5d082f45563a279ddb219b3ed1",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F3-HGB-S42.joblib",
+      "sha256": "a7deecfa62667303c2c2624a4cce63dc2352991b4c171a6fc5c96822b2e1cc33",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F3-RF-S42.joblib",
+      "sha256": "c4a5f527db68681436c9c754992c6899706657ca8e845fff36d3d13e0c383a56",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F3-RIDGE-S42.joblib",
+      "sha256": "c0473f345247a404ae2370458c181b5fa9bc5a15590610e665537eb0353d7e94",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-ABL-F3-STACK-S42_weights.json",
+      "sha256": "0c6a537e881f44635eb4f34048a7bde807fb5260c915b52bb46d9b7a14d02d3b",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-HGB-S1024.joblib",
+      "sha256": "11f577817c4f096a98aaec6d510db3e51fe5fd5ed428e9d6484cd8cc0e7dd3df",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-HGB-S123.joblib",
+      "sha256": "b4a93a808e677621adab85c7257f1859ff28e179a6dfc2522f8be04b75317bb9",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-HGB-S42.joblib",
+      "sha256": "1795b39bcb9303e28d2b33cb2e07ee8ca18b8b2b8d465942de7ea75896f50546",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-HGB-S456.joblib",
+      "sha256": "67e827ebb5035a0852d6e0894b54ff61cc321b05b60201fbd1e870c6e91a5059",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-HGB-S789.joblib",
+      "sha256": "d4830ac57672b3130b5cb1bc20d5c0c8ab2a9e297cba227c09cd13adff26f267",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RF-S1024.joblib",
+      "sha256": "3ecd1380a3723583fc1f36d47ca33d640f3f3a43c404056c87ef8cabd67b4c92",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RF-S123.joblib",
+      "sha256": "f556ed90bca83108060013004f914061761acc2061b72c7e8c975cba7ce93582",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RF-S42.joblib",
+      "sha256": "63340c9d7595d38bd91485fb449e2e688b016f244292cc7d37f316d022cfcaed",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RF-S456.joblib",
+      "sha256": "6a55c8363c84552784ec7db313ab9a28f2c77c133ec8cfbf5b13b98b31a39cc9",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RF-S789.joblib",
+      "sha256": "42b2d54898a87d356e26b033ce073264a3f07e50503c01c925196c50d5746cd7",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RIDGE-S1024.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RIDGE-S123.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RIDGE-S42.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RIDGE-S456.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-RIDGE-S789.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-STACK-S1024_weights.json",
+      "sha256": "548d9f10c6558d49ab78e4ca59af02d137db4f834be53d8e74b1e746babd240b",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-STACK-S123_weights.json",
+      "sha256": "156b3c334d15495a98be5b69756e1b376bb3b36d3956a4f3e00345f42d9ae0e3",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-STACK-S42_weights.json",
+      "sha256": "7c39e322bacdbc9a30c991998a8858c281ff4bf58c092186650910a59ff6ac6a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-STACK-S456_weights.json",
+      "sha256": "ef982cce9402f5054c8b986e8c9688934c79aa65a75c1702a57c70fbf74b3a0e",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-A-STACK-S789_weights.json",
+      "sha256": "8f80bd0a31272bfcc11b19b20c13c1541d575b21143b3890505f3f1f543855ef",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-B-HGB-S42.joblib",
+      "sha256": "1795b39bcb9303e28d2b33cb2e07ee8ca18b8b2b8d465942de7ea75896f50546",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-B-RF-S42.joblib",
+      "sha256": "63340c9d7595d38bd91485fb449e2e688b016f244292cc7d37f316d022cfcaed",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-B-RIDGE-S42.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-B-STACK-S42_weights.json",
+      "sha256": "df2ac351f83ac8b89138ce369607aebb8d55a6d210edf3120783cb00b55f301b",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-C-HGB-S42.joblib",
+      "sha256": "1795b39bcb9303e28d2b33cb2e07ee8ca18b8b2b8d465942de7ea75896f50546",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-C-RF-S42.joblib",
+      "sha256": "63340c9d7595d38bd91485fb449e2e688b016f244292cc7d37f316d022cfcaed",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-C-RIDGE-S42.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-C-STACK-S42_weights.json",
+      "sha256": "18fd615cf2e6a4027b6fafe7f0e3a5561f6bf370335bed7f3cfe95801671cdb0",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-HGB-S1024.joblib",
+      "sha256": "11f577817c4f096a98aaec6d510db3e51fe5fd5ed428e9d6484cd8cc0e7dd3df",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-HGB-S123.joblib",
+      "sha256": "b4a93a808e677621adab85c7257f1859ff28e179a6dfc2522f8be04b75317bb9",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-HGB-S42.joblib",
+      "sha256": "1795b39bcb9303e28d2b33cb2e07ee8ca18b8b2b8d465942de7ea75896f50546",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-HGB-S456.joblib",
+      "sha256": "67e827ebb5035a0852d6e0894b54ff61cc321b05b60201fbd1e870c6e91a5059",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-HGB-S789.joblib",
+      "sha256": "d4830ac57672b3130b5cb1bc20d5c0c8ab2a9e297cba227c09cd13adff26f267",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RF-S1024.joblib",
+      "sha256": "3ecd1380a3723583fc1f36d47ca33d640f3f3a43c404056c87ef8cabd67b4c92",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RF-S123.joblib",
+      "sha256": "eb0f7eff933b1e47c822440cabf1475194a86f44ba7a06de3e550096528576fa",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RF-S42.joblib",
+      "sha256": "ea5d856d33e1561e72113f37f204ca10126dd1c18d0807d11fe85f222c6e1f8c",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RF-S456.joblib",
+      "sha256": "8dd8a990cf541778e3d14a3384ae773a40c31e9b85208aa2a40d2af1ac6f9d0f",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RF-S789.joblib",
+      "sha256": "d2cbb937cdc26186b14736f255108bd0f1a6970f9f581fe86eff6fe114d16f37",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RIDGE-S1024.joblib",
+      "sha256": "0421798227915e1b7fbfe8082c20547b19751b6578de29619a71ef121e9bd53a",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RIDGE-S123.joblib",
+      "sha256": "c6cb2bd5dba00f415eddd982e0a4a81b0727b9a760f8c60aa163e60261dbab53",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RIDGE-S42.joblib",
+      "sha256": "c6cb2bd5dba00f415eddd982e0a4a81b0727b9a760f8c60aa163e60261dbab53",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RIDGE-S456.joblib",
+      "sha256": "c6cb2bd5dba00f415eddd982e0a4a81b0727b9a760f8c60aa163e60261dbab53",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-RIDGE-S789.joblib",
+      "sha256": "c6cb2bd5dba00f415eddd982e0a4a81b0727b9a760f8c60aa163e60261dbab53",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-STACK-S1024_weights.json",
+      "sha256": "da0dc379cf118c48bba1eb7d9bf3b89d33e484be6eadde91b6876da395baf7c2",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-STACK-S123_weights.json",
+      "sha256": "bf08fa60bd6fe1369b234552520890d3b0104682e1f5ca99eeecf0170f07de9d",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-STACK-S42_weights.json",
+      "sha256": "0389ec266f143dfd700167ce1e69b31418f889a5653bb16e35ca231c81deac3d",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-STACK-S456_weights.json",
+      "sha256": "56cf442ce1126e65952ad926b046f1f048ae5c33fe31722da670df4d7510e0cd",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-MAIN-D-STACK-S789_weights.json",
+      "sha256": "f5e739f5d3e6c6f673f72882e3c4724df6a4796ba8f0722c7d2b14bd733d1012",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-TRUNC-HGB-S42.joblib",
+      "sha256": "9092d3bffae8974bbc2861ec8e8adad5efa117aca80695f6c2c6db82133cae24",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-TRUNC-RF-S42.joblib",
+      "sha256": "cbe543fd0fd4bcc0bb500ce71008718ef2d7e2f6f69fe68ed0d6044e9348a386",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-TRUNC-RIDGE-S42.joblib",
+      "sha256": "57b85260dd85597047c12af171ea58a441eca5838cd90d62da3c77f16805d6fb",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-TRUNC-STACK-S42_weights.json",
+      "sha256": "94ab35bbc4fbb8610be087ce23a999043f4052aee978b4c8777e78c496ba5d60",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-WINDOW-HGB-S42.joblib",
+      "sha256": "ab139b6538521340bcaab2014cabd9f7cf9c440c202c0e0aa5fb93bc7bf23f40",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-WINDOW-RF-S42.joblib",
+      "sha256": "f4dc0c863b045fcc285022ce645e595d88a5d931e0ea4e4a120935f9316ef2a2",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-WINDOW-RIDGE-S42.joblib",
+      "sha256": "10f291ae4be6b6f928243028d846b7641ab21aab9d7c4acea1e958b5d14fc597",
+      "role": "models"
+    },
+    {
+      "path": "D:\\桌面文件\\sci\\output\\dta-paper-run-v5-20261009\\models\\EXP-SEQ-WINDOW-STACK-S42_weights.json",
+      "sha256": "1a7fbbf2f54a8062aa2b7344b7f6f3695ee324a254142ab3d6e48f224b42c35f",
+      "role": "models"
+    }
+  ]
+}

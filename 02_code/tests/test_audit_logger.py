@@ -14,7 +14,6 @@ sys.path.insert(0, str(ROOT / "05_web_server"))
 
 import audit_logger
 from audit_logger import AUDIT_LOG_FILE, AuditLogMiddleware, read_audit_logs
-from inference_runtime import ResearchRuntime
 import research_api
 
 
@@ -77,18 +76,17 @@ def test_custom_request_id_preserved():
 
 def test_audit_log_records_error_status(monkeypatch):
     """Test that 422 and 503 error status codes are accurately recorded in audit log."""
-    monkeypatch.setattr(research_api, "runtime", ResearchRuntime())
+    monkeypatch.setattr(research_api, "runtime", research_api.DTISystemStatus())
     client = TestClient(research_api.app)
 
     # 422 Unprocessable Entity
-    res_422 = client.post("/api/predict_batch", json={"sequences": []})
+    res_422 = client.post("/api/dti/predict", json={})
     assert res_422.status_code == 422
     req_422 = res_422.headers.get("x-request-id")
     assert req_422 is not None
 
     # 503 Model Unavailable
-    seq = "ACDEFGHIKLMNPQ"
-    res_503 = client.post("/api/predict_batch", json={"sequences": [seq]})
+    res_503 = client.get("/api/ready")
     assert res_503.status_code == 503
     req_503 = res_503.headers.get("x-request-id")
     assert req_503 is not None
@@ -97,12 +95,12 @@ def test_audit_log_records_error_status(monkeypatch):
     entries_422 = [e for e in logs if e.get("request_id") == req_422]
     assert len(entries_422) == 1
     assert entries_422[0]["status_code"] == 422
-    assert entries_422[0]["path"] == "/api/predict_batch"
+    assert entries_422[0]["path"] == "/api/dti/predict"
 
     entries_503 = [e for e in logs if e.get("request_id") == req_503]
     assert len(entries_503) == 1
     assert entries_503[0]["status_code"] == 503
-    assert entries_503[0]["path"] == "/api/predict_batch"
+    assert entries_503[0]["path"] == "/api/ready"
 
 
 def test_audit_log_records_unhandled_exception(tmp_path):

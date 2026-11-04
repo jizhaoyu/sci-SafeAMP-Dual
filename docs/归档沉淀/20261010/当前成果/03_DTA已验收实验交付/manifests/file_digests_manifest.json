@@ -1,0 +1,29 @@
+{
+  "metrics_summary_revised.json": {
+    "path": "metrics_summary_revised.json",
+    "size_bytes": 106790,
+    "sha256": "b8c0c92319bc6e4ecc03e51b5a105d78fd0148ac61841f10d9dc0c8f3f92805b"
+  },
+  "statistical_inference_report_revised.json": {
+    "path": "statistical_inference_report_revised.json",
+    "size_bytes": 7079,
+    "sha256": "baaede8206ca7339198c5faa6477dd8e005a9710de4aaaef40c718acab7ba394"
+  },
+  "predictions.csv": {
+    "path": "predictions/predictions.csv",
+    "size_bytes": 31160130,
+    "rows": 97408,
+    "sha256": "fcfd3f681b92fc33e533601ed419e437a13a3b2ba94e4ba0e971225e484731bb"
+  },
+  "oof_predictions.csv": {
+    "path": "predictions/oof_predictions.csv",
+    "size_bytes": 333856579,
+    "rows": 1136960,
+    "sha256": "c1a11c74b6bd7c1c842fe509f8fbdb554f5f8dc9c0788704c11254bdb8f0d65d"
+  },
+  "bootstrap_resamples_revised.npz": {
+    "path": "postprocessing/bootstrap_resamples_revised.npz",
+    "size_bytes": 15617,
+    "sha256": "30309d397a1a73d5c43d3cfc9ff4bba97bb260c4aba4f16c789213d3f68a8afa"
+  }
+}

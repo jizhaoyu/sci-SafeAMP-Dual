@@ -25,15 +25,12 @@ export function errorMessage(error: unknown): string {
     const detail = error.response?.data?.detail;
     const reason = error.response?.data?.reason;
     const msg = typeof detail === 'string' ? detail : (detail?.message || reason || '服务未就绪');
-    if (typeof msg === 'string' && (msg.includes('SAFEAMP_RUN_DIR') || msg.includes('No validated research run'))) {
-      return '双任务模型未就绪 (503)：尚未配置通过校验的研究产物 (SAFEAMP_RUN_DIR)。';
-    }
     return `服务暂不可用 (503): ${msg}`;
   }
   const detail = error.response?.data?.detail;
   if (typeof detail === 'string') return detail;
   if (Array.isArray(detail)) return detail.map(item => item.msg ?? '输入不合法').join('; ');
-  if (detail?.code === 'MODEL_NOT_VALIDATED') return '双任务模型未就绪：运行产物尚未完成配置或未通过校验，请重新检查模型状态。';
+  if (detail?.code === 'MODEL_NOT_VALIDATED') return '模型未就绪：运行产物尚未完成配置或未通过校验，请重新检查模型状态。';
   return detail?.message ?? error.message ?? '请求失败';
 }
 

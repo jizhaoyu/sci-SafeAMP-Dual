@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "source_and_snapshot_sha256_checks": 614,
+  "current_file_sha256_checks": 112,
+  "document_ids_unique": true,
+  "snapshot_paths_unique": true,
+  "original_files_moved": 0,
+  "original_files_deleted": 0,
+  "binary_documents_byte_preserved": true,
+  "archive_excluded_from_own_inventory": true,
+  "remote_effects": false
+}

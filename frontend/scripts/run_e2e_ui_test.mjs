@@ -7,8 +7,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT_DIR = path.resolve(__dirname, '../..');
-const ARTIFACTS_DIR = path.resolve(__dirname, '../test-artifacts');
-const SERVER_URL = 'http://127.0.0.1:8000';
+const ARTIFACTS_DIR = process.env.SCI_E2E_ARTIFACTS_DIR || path.resolve(__dirname, '../test-artifacts');
+const SERVER_URL = process.env.SCI_E2E_URL || 'http://127.0.0.1:8000';
 
 if (!fs.existsSync(ARTIFACTS_DIR)) {
   fs.mkdirSync(ARTIFACTS_DIR, { recursive: true });
@@ -30,8 +30,11 @@ async function checkServerReady() {
 async function startServerIfNeeded() {
   const isUp = await checkServerReady();
   if (isUp) {
-    console.log('[E2E Setup] Backend server is already running on http://127.0.0.1:8000');
+    console.log(`[E2E Setup] Backend server is already running on ${SERVER_URL}`);
     return null;
+  }
+  if (process.env.SCI_E2E_URL) {
+    throw new Error(`Isolated test server is not ready: ${SERVER_URL}`);
   }
 
   console.log('[E2E Setup] Starting Python server in background...');

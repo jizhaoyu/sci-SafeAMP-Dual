@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { 
   Sparkles, 
   Dna, 
@@ -101,7 +102,9 @@ const OPTIMIZATION_GOALS = [
 ];
 
 export default function LeadOptimizerStudio() {
-  const { llmProvider, apiKey, apiBase, modelName, addToCart } = useAppStore();
+  const location = useLocation();
+  const navigate = useNavigate();
+  const { llmProvider, apiKey, apiBase, modelName, addToCart, activeEntity, activeTarget, setActiveSmallMolecule, setActiveTarget } = useAppStore();
   
   // Data lists
   const [drugs, setDrugs] = useState<DTIDrug[]>([]);
@@ -114,6 +117,33 @@ export default function LeadOptimizerStudio() {
   const [targetName, setTargetName] = useState<string>('ABL1 (激酶靶点)');
   const [isTargetModalOpen, setIsTargetModalOpen] = useState<boolean>(false);
   const [optimizationGoal, setOptimizationGoal] = useState<string>(OPTIMIZATION_GOALS[0].value);
+  const [generationMode, setGenerationMode] = useState<'heuristic' | 'llm' | 'hybrid'>('hybrid');
+
+  // 同步来自其他工作台（DTI / 智能体 / 分子库）的配体与靶点输入
+  useEffect(() => {
+    const routeState = location.state as {
+      drugSmiles?: string;
+      drugName?: string;
+      targetSymbol?: string;
+      targetSequence?: string;
+    } | null;
+
+    if (routeState?.drugSmiles) {
+      setDrugSmiles(routeState.drugSmiles);
+      if (routeState.drugName) setDrugDisplayName(routeState.drugName);
+    } else if (activeEntity?.kind === 'small_molecule' && activeEntity.smiles && !drugSmiles) {
+      setDrugSmiles(activeEntity.smiles);
+      if (activeEntity.name) setDrugDisplayName(activeEntity.name);
+    }
+
+    if (routeState?.targetSequence) {
+      setTargetSequence(routeState.targetSequence);
+      if (routeState.targetSymbol) setTargetName(routeState.targetSymbol);
+    } else if (activeTarget?.sequence && !targetSequence) {
+      setTargetSequence(activeTarget.sequence);
+      setTargetName(activeTarget.id || activeTarget.standardDisplayName);
+    }
+  }, [location.state, activeEntity, activeTarget]);
 
   const [customInstruction, setCustomInstruction] = useState<string>('');
   const [chosenModel, setEvalModel] = useState<string>('');
@@ -353,6 +383,7 @@ export default function LeadOptimizerStudio() {
         optimization_goal: optimizationGoal,
         custom_instruction: customInstruction.trim(),
         model_name: evalModel,
+        generation_mode: generationMode,
       };
 
       if (hasLLMConfigured) {
@@ -400,10 +431,20 @@ export default function LeadOptimizerStudio() {
   const handleSaveToCart = (candidate: CandidateDerivative) => {
     addToCart({
       sequence: candidate.smiles,
+      smiles: candidate.smiles,
       name: candidate.name,
-      p_amp: 0.95,
-      p_hemo: 0.05,
-      tsi: candidate.predicted_pkd,
+      kind: 'small_molecule',
+      item_type: 'small_molecule',
+      pkd: candidate.predicted_pkd,
+      sa_score: candidate.sa_score,
+      sa_tier: candidate.sa_tier || candidate.sa_label,
+      admet: candidate.admet,
+      target_symbol: optimizeResult?.target_name,
+      model_used: optimizeResult?.model_used,
+      parent_similarity: candidate.parent_similarity,
+      modification_type: candidate.modification_type,
+      scaffold_type: candidate.scaffold_type,
+      source: candidate.source || 'workspace_design',
     });
     setCartSuccessId(candidate.id);
     setTimeout(() => setCartSuccessId(null), 2000);
@@ -697,6 +738,55 @@ export default function LeadOptimizerStudio() {
                 <span>进化改构策略与药化约束</span>
               </h3>
 
+              {/* 生成模式选择 */}
+              <div>
+                <label className="text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 block">
+                  候选分子生成引擎模式 (Generation Mode)
+                </label>
+                <div className="grid grid-cols-3 gap-1.5 p-1 bg-slate-100 dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/60">
+                  <button
+                    type="button"
+                    onClick={() => setGenerationMode('heuristic')}
+                    className={`py-1.5 px-2 rounded-lg text-xs font-semibold transition-all cursor-pointer ${
+                      generationMode === 'heuristic'
+                        ? 'bg-white dark:bg-slate-900 text-blue-600 dark:text-blue-400 shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+                    }`}
+                  >
+                    经典药化规则
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setGenerationMode('hybrid')}
+                    className={`py-1.5 px-2 rounded-lg text-xs font-semibold transition-all cursor-pointer flex items-center justify-center gap-1 ${
+                      generationMode === 'hybrid'
+                        ? 'bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+                    }`}
+                  >
+                    <Sparkles size={12} />
+                    <span>混合驱动</span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setGenerationMode('llm')}
+                    className={`py-1.5 px-2 rounded-lg text-xs font-semibold transition-all cursor-pointer flex items-center justify-center gap-1 ${
+                      generationMode === 'llm'
+                        ? 'bg-white dark:bg-slate-900 text-purple-600 dark:text-purple-400 shadow-xs'
+                        : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200'
+                    }`}
+                  >
+                    <Cpu size={12} />
+                    <span>LLM 生成</span>
+                  </button>
+                </div>
+                <p className="text-[11px] text-slate-400 mt-1">
+                  {generationMode === 'hybrid' && '融合经典芳环修饰与 LLM 自由推理改构，兼具药效合理性与化学多样性。'}
+                  {generationMode === 'heuristic' && '严格使用经典药化反应与官能团等排规则，100% 可解释、无需调用外部大模型。'}
+                  {generationMode === 'llm' && '完全由 LLM 根据提示词与空间口袋假设生成分子，并通过 RDKit 语法和分子量自动清洗。'}
+                </p>
+              </div>
+
               {/* 优化目标下拉 */}
               <div>
                 <label className="text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5 block">
@@ -947,6 +1037,55 @@ export default function LeadOptimizerStudio() {
 
           </div>
 
+          {/* 生成多样性与骨架跃迁审计面板 */}
+          {optimizeResult.audit_metrics && (
+            <div className="p-4 rounded-2xl bg-gradient-to-r from-blue-50/60 via-slate-50 to-indigo-50/60 dark:from-slate-900/90 dark:via-slate-900 dark:to-indigo-950/30 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-wrap items-center justify-between gap-3">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-indigo-100 dark:bg-indigo-900/60 text-indigo-600 dark:text-indigo-400 flex items-center justify-center shrink-0">
+                  <Compass size={16} />
+                </div>
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs font-bold text-slate-800 dark:text-slate-200">
+                      AI 衍生多样性与骨架跃迁审计 (Generation Audit & Diversity)
+                    </span>
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800 font-mono">
+                      模式: {optimizeResult.mode}
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-slate-500">
+                    候选评估: <strong className="font-mono text-slate-700 dark:text-slate-300">{optimizeResult.audit_metrics.total_candidates_evaluated}</strong> 个 · 语法结构合法率: <strong className="font-mono text-emerald-600">{(optimizeResult.audit_metrics.validity_rate * 100).toFixed(0)}%</strong>
+                    {optimizeResult.audit_metrics.llm_audit && (
+                      <span className="ml-2 text-slate-400">
+                        (LLM 提取: {optimizeResult.audit_metrics.llm_audit.raw_llm_candidates_count ?? 0} 个，清洗入选: {optimizeResult.audit_metrics.llm_audit.valid_llm_candidates_count ?? 0} 个)
+                      </span>
+                    )}
+                  </span>
+                </div>
+              </div>
+              <div className="flex flex-wrap items-center gap-2 text-xs font-mono">
+                <div className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <span className="text-slate-400 text-[10px] mr-1">骨架保持:</span>
+                  <strong className="text-cyan-600 dark:text-cyan-400">{optimizeResult.audit_metrics.scaffold_retention_count}</strong>
+                </div>
+                <div className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <span className="text-slate-400 text-[10px] mr-1">骨架跃迁:</span>
+                  <strong className="text-amber-600 dark:text-amber-400">{optimizeResult.audit_metrics.scaffold_hopping_count}</strong>
+                </div>
+                <div className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <span className="text-slate-400 text-[10px] mr-1">分子对平均多样性:</span>
+                  <strong className="text-indigo-600 dark:text-indigo-400">{optimizeResult.audit_metrics.mean_pairwise_diversity}</strong>
+                </div>
+                <div className="px-2.5 py-1 rounded-lg bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700">
+                  <span className="text-slate-400 text-[10px] mr-1">平均 ΔpKd:</span>
+                  <strong className={optimizeResult.audit_metrics.average_affinity_delta_pkd > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-slate-600'}>
+                    {optimizeResult.audit_metrics.average_affinity_delta_pkd > 0 ? `+${optimizeResult.audit_metrics.average_affinity_delta_pkd}` : optimizeResult.audit_metrics.average_affinity_delta_pkd}
+                  </strong>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* 3D 激酶催化口袋微观互作观测窗 (若被用户触发展开) */}
           {showPocket3D && (
             <div className="p-4 rounded-2xl bg-slate-900 border border-slate-700/80 shadow-lg space-y-2">
@@ -1159,6 +1298,24 @@ export default function LeadOptimizerStudio() {
                             <span className="text-[10px] px-2 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
                               {cand.modification_type}
                             </span>
+                            {cand.source === 'llm_generative' ? (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-purple-100 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 font-semibold flex items-center gap-1">
+                                <Cpu size={10} /> LLM 辅助生成
+                              </span>
+                            ) : (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">
+                                经典药化规则
+                              </span>
+                            )}
+                            {cand.scaffold_type === 'scaffold_hopping' ? (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-amber-100 dark:bg-amber-900/50 text-amber-800 dark:text-amber-300 font-semibold font-mono" title={`与母体 Tanimoto 相似度: ${cand.parent_similarity ?? '-'}`}>
+                                骨架跃迁 ({cand.parent_similarity !== undefined ? `Sim ${cand.parent_similarity}` : 'Hopping'})
+                              </span>
+                            ) : cand.scaffold_type === 'scaffold_retention' ? (
+                              <span className="text-[10px] px-2 py-0.5 rounded bg-cyan-100 dark:bg-cyan-900/50 text-cyan-800 dark:text-cyan-300 font-semibold font-mono" title={`与母体 Tanimoto 相似度: ${cand.parent_similarity ?? '-'}`}>
+                                骨架保持 ({cand.parent_similarity !== undefined ? `Sim ${cand.parent_similarity}` : 'Retention'})
+                              </span>
+                            ) : null}
                             {cand.is_experimentally_verified && (
                               <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-600 text-white font-bold flex items-center gap-1 shadow-2xs">
                                 <CheckCircle2 size={11} /> 湿实验已测定 (Verified)

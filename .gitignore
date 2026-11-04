@@ -44,3 +44,15 @@ Thumbs.db
 !.vscode/extensions.json
 *.swp
 *.swo
+
+# Large binaries and archives
+*.zip
+*.tar.gz
+*.joblib
+
+# Output and runtime caches
+output/
+!output/audit/api_audit.jsonl
+.torch_blocked/
+.superpowers/
+

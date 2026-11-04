@@ -1,4 +1,4 @@
-# SafeAMP-Dual & DTI 全局文档体系总索引与科研知识枢纽
+# DTI 全局文档体系总索引与科研知识枢纽
 # Master Documentation Catalog & Knowledge Hub
 
 ## 2026-10-10 文档归档与当前 DTA 入口
@@ -11,7 +11,6 @@
 > **代码库根目录**: `D:/桌面文件/sci/`  
 > **系统当前状态**: 
 > * **DTI 激酶亲和力基准与改构平台**: **正式冻结并已上线运行** (Protocol `protocol-dti-01`, 5折 Stacking 训练完成，5/5 密码学审计 PASS)；
-> * **SafeAMP-Dual 历史多肽双任务**: 历史冻结保留状态 (`blocked`，受密码学审计保护，保持 100% 只读不可篡改)。
 
 ---
 
@@ -70,7 +69,6 @@ sci (项目根目录)
 ├── 04_paper/                          [模块 A: 学术成果、论文手稿与科研交付物]
 │   ├── MANUSCRIPT_DTI_DAVIS_STACKED_FRAMEWORK.md   # 完整学术论文手稿 (英文)
 │   ├── EXECUTIVE_RESEARCH_BRIEF_20261007.md         # 项目执行与答辩简报 (中英文)
-│   ├── research_status.json                         # 历史状态守护文件 (密码学锁死)
 │   └── reports/                                     # 历史小样本探索报告归档
 │
 ├── docs/                              [模块 B: 科学协议、修订案与全局索引]
@@ -131,7 +129,6 @@ sci (项目根目录)
 |---|---|---|---|
 | **MANUSCRIPT_DTI_DAVIS_STACKED_FRAMEWORK.md** | 英文 | **学术论文正式手稿**。包含完整 Abstract、严格双盲隔离证明、100 维激酶结构域催化基序特征构建、5 折 OOF Stacking 元回归体系、四大域 Benchmark 对照表、达沙替尼/ABL1 实测案例分析。 | [查看手稿](file:///d:/桌面文件/sci/04_paper/MANUSCRIPT_DTI_DAVIS_STACKED_FRAMEWORK.md) |
 | **EXECUTIVE_RESEARCH_BRIEF_20261007.md** | 中文 | **项目执行简报与答辩指南**。提炼全系统突破亮点、四大域全量对照矩阵、全流程代码路径索引及审稿人 3 大高频关切问题 (FAQ) 预案。 | [查看简报](file:///d:/桌面文件/sci/04_paper/EXECUTIVE_RESEARCH_BRIEF_20261007.md) |
-| **research_status.json** | 机器 | **历史多肽研究状态守护文件**。哈希受保护核心文件，记录历史 SafeAMP-Dual 门禁状态，严禁人为篡改。 | [查看状态](file:///d:/桌面文件/sci/04_paper/research_status.json) |
 
 ### 2. 科学基准协议与技术规范 (`docs/amendments/` & `03_experiments/protocols/`)
 
@@ -166,7 +163,6 @@ sci (项目根目录)
 ### 1. 验证 5 大受保护文件密码学哈希（防篡改核验）
 ```powershell
 $files = @(
-    "04_paper/research_status.json",
     "docs/amendments/PROTOCOL_AMD_04_DTI_DAVIS_BENCHMARK.md",
     "03_experiments/audits/dti_davis_acquisition_20261006_v2/davis.csv",
     "03_experiments/audits/dti_davis_isolation_review_20261006_v1/fold_memberships.json",

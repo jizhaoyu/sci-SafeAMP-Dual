@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "exit_code": 0,
+  "total_rows": 76,
+  "unique_ids": 76,
+  "missing_dependencies": 0,
+  "is_acyclic": true,
+  "breakdown": {
+    "param_selection_fits": 0,
+    "oof_fits": 735,
+    "meta_fits": 17,
+    "final_refits": 51,
+    "total_fits": 803,
+    "total_cost_sec": 4053.2999999999997,
+    "total_cost_min": 67.55
+  }
+}

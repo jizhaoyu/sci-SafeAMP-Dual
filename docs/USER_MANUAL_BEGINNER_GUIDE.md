@@ -1,5 +1,5 @@
-# SafeAMP-Dual & DTI Studio 零基础全功能实操指南 (从入门到精通)
-# The Complete Beginner-to-Pro Handbook for SafeAMP-Dual & DTI Studio 5.0
+# AI药物靶点亲和力预测平台 (DTI Studio) 零基础全功能实操指南 (从入门到精通)
+# The Complete Beginner-to-Pro Handbook for AI药物靶点亲和力预测平台 (DTI Studio) 5.0
 
 > **版本**：v5.0.0 (Release)  
 > **适用人群**：药学、生物医药、化学、计算机背景的科研人员，零基础科研入门小白  
@@ -236,4 +236,4 @@
   * **导出完整报告**：点击工具栏 **「生成学术报告与专利交底书」**，可一键打印为排版工整的正式文档。
 
 ---
-*祝您在 SafeAMP-Dual & DTI Studio 的科研探索与分子发现之旅中取得突破性成果！*
+*祝您在 AI药物靶点亲和力预测平台 (DTI Studio) 的科研探索与分子发现之旅中取得突破性成果！*

@@ -199,7 +199,7 @@ export function exportSmallMoleculesCSV(
   const url = URL.createObjectURL(blob);
   const link = document.createElement('a');
   link.href = url;
-  link.download = `SafeAMP_DTI_Small_Molecules_${Date.now()}.csv`;
+  link.download = `DTI_Small_Molecules_${Date.now()}.csv`;
   link.click();
   URL.revokeObjectURL(url);
 }

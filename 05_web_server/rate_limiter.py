@@ -19,7 +19,7 @@ class SlidingWindowRateLimiter:
         ----------
         limits : dict, optional
             Mapping from path prefix to (max_requests, window_seconds).
-            Defaults to production SafeAMP tiers:
+            Defaults to production DTI tiers:
             - AI generation (/api/ai_report, /api/ai_optimize): 6 req / 60s
             - Batch prediction (/api/predict_batch, /api/batch_jobs): 30 req / 60s
             - General API (/api/): 120 req / 60s

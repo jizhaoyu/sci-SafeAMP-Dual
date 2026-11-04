@@ -36,7 +36,7 @@
 }
 .studio-workspace [id] { scroll-margin-top: 180px; }
 .studio-workspace .grid > *, .studio-workspace .flex-1 { min-width: 0; }
-.studio-workspace button, header button { min-height: 44px; }
+.studio-workspace button:not(.btn-compact):not(.chip-pill):not(.tab-btn):not([data-compact="true"]), header button { min-height: 44px; }
 .studio-workspace input, .studio-workspace select, .studio-workspace textarea {
   min-height: 44px;
   font-size: 14px;
