@@ -1,0 +1,10 @@
+{
+  "outputs": {
+    "drugs.json": "765f2056b7b1f4472dd1aca5d9b2f2f0c2f92f08c7816550a6b1e0e24d325f80",
+    "inventory.json": "fe638605a40e332eccb4ba0d7b1c806f994d41f619a603584058d80eccf4d6b4",
+    "report.md": "8d975a25496df4f234ee92163c9ef817ae103d8401ab576880dde6d437163ce8",
+    "state.json": "ea047a509193a7dc2c5d730b2ce4579bd90149a8b18ad4a499c3e3e66cfea1c0",
+    "summary.json": "5486bfdb0208453337225d93a6654f1ddce1b475f24003aea78152e502845eb8",
+    "targets.json": "72abf195e2c66d7bcb35edbe862abb7e49d052a0a78fae4ebe5e465d98d332fa"
+  }
+}

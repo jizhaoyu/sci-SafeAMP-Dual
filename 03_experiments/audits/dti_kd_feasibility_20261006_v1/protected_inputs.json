@@ -1,0 +1,8 @@
+{
+  "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+  "03_experiments/prepared/amd02_evidence_clean_20261001/records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+  "03_experiments/prepared/amd02_evidence_clean_20261001/cluster_membership.csv": "a4de8c6ca73276990434d961cd7e37460d9c4b9885b1d10502dac5d44114bc4f",
+  "03_experiments/prepared/amd02_evidence_clean_20261001/manifest.json": "eb6dda5d81140944dbfebc797f8b3ce4b398d9487ddcb983c43255926ff8fbf5",
+  "03_experiments/audits/mic_training_readiness_20261004_v26.json": "404e9d90166564ec9c7543022853ae694dabc9022d913fa5d8e10f3b842a2da1",
+  "03_experiments/audits/project_closeout_20261005_v1/review/merged_candidate_decisions.csv": "f5bcd275fd7a15ae88705553ba47a9d9f97ad026085d58e51909b5fdfb1f5c99"
+}

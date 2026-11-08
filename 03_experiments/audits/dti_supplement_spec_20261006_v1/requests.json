@@ -1,0 +1,16 @@
+[
+  {
+    "filename": "bet_original_supplements.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5117811/supplementaryFiles",
+    "role": "original_supplements_exact_Kd_cells_and_constructs",
+    "pmid": "27775715",
+    "license_note": "Public manuscript permits academic text/data mining subject to original terms; retain actual license; no redistribution approval inferred."
+  },
+  {
+    "filename": "nos_original_supplements.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4139154/supplementaryFiles",
+    "role": "original_supplements_actual_inhibitor_identity_and_spectral_assay",
+    "pmid": "25089924",
+    "license_note": "Read original publication terms; database OA metadata is not a blanket redistribution license."
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-10-06T11:34:30.842157+00:00",
+  "scope": "Explicit public-source acquisition; identity, assay and license review pending",
+  "inputs": {
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_supplement_spec_20261006_v1\\requests.json": "1736bc9e89cdf9edcf377aa2649d5137750c29c3ac2b946edd86e6ec775a665a"
+  },
+  "producer_sha256": "2dcb27ac717456ac25693174aeddc2c7adac1601532c01bd92fde6057fe3c66b",
+  "helper_sha256": "f40d601a4c80571a19026f9849d872ba808aee32dc857e6b86d43b5b55c87ce6",
+  "records": [
+    {
+      "filename": "bet_original_supplements.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5117811/supplementaryFiles",
+      "role": "original_supplements_exact_Kd_cells_and_constructs",
+      "pmid": "27775715",
+      "license_note": "Public manuscript permits academic text/data mining subject to original terms; retain actual license; no redistribution approval inferred.",
+      "started_at": "2026-10-06T11:34:04.025590+00:00",
+      "evidence_release": false,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5117811/supplementaryFiles",
+      "content_type": "application/zip",
+      "status": "acquired_not_reviewed",
+      "sha256": "cb79744c7c497933db9f1cf8b9b2efc3fa969e1c5c24157392988c98e0d54a79",
+      "bytes": 174,
+      "finished_at": "2026-10-06T11:34:05.785429+00:00"
+    },
+    {
+      "filename": "nos_original_supplements.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4139154/supplementaryFiles",
+      "role": "original_supplements_actual_inhibitor_identity_and_spectral_assay",
+      "pmid": "25089924",
+      "license_note": "Read original publication terms; database OA metadata is not a blanket redistribution license.",
+      "started_at": "2026-10-06T11:34:04.026588+00:00",
+      "evidence_release": false,
+      "status": "acquisition_failed_no_release",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out",
+      "finished_at": "2026-10-06T11:34:30.842157+00:00"
+    }
+  ],
+  "labels_released": 0,
+  "model_fit_calls": 0
+}

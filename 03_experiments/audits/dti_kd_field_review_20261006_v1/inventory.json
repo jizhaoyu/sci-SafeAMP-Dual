@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-10-06T11:10:37.732912+00:00",
+  "scope": "All source TSV rows; database fields only, not primary-approved cohort",
+  "official_archive_md5_matches": true,
+  "archive_sha256": "727383bac35beed6bc5c55c40dfbd58ba023fa97a7f27dc1a61440c1ad54a2b7",
+  "source_member": "BindingDB_BindingDB_Articles.tsv",
+  "source_column_count": 640,
+  "sequence_field": "BindingDB Target Chain Sequence 1",
+  "counts": {
+    "all_measurement_rows": 93710,
+    "missing": 91060,
+    "exact_positive_numeric": 2490,
+    "non_exact_comparator_unapproved": 160,
+    "non_numeric_or_interval": 0,
+    "invalid_numeric": 0
+  },
+  "exact_kd_field_coverage": {
+    "ligand_id_present": 2490,
+    "smiles_present": 2490,
+    "first_chain_sequence_present": 2490,
+    "article_doi_present": 2338,
+    "pmid_present": 2478,
+    "article_doi_or_pmid_present": 2478,
+    "single_chain_declared": 2463,
+    "complete_metadata_single_chain": 2451
+  },
+  "unique_raw_ligand_ids": 1367,
+  "unique_first_chain_sequences": 455,
+  "unique_raw_article_doi_strings": 219,
+  "structure_standardized": false,
+  "protein_constructs_verified": false,
+  "study_aliases_resolved": false,
+  "independence_audited": false,
+  "observations_released": 0
+}

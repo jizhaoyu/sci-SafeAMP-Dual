@@ -1,0 +1,82 @@
+{
+  "version": "dti_f1_ridge_web_20261010_v1",
+  "model_id": "f1_ridge",
+  "seed": 123,
+  "feature_dimension": 2156,
+  "sklearn_version": "1.8.0",
+  "selection_reason": "First newly trained supplemental seed, not selected by outer score",
+  "source_archive": "D:\\桌面文件\\sci\\F1F4_results_20261010T060443_554744Z.zip",
+  "source_sha256": "de9a16eb3ef1a2ea33133c01955acce0f5959a15cc7f67ccaa5a43d06fa23650",
+  "files": {
+    "model.joblib": "8d12fbf950db6206cabbb4d2f648c7f123a2ddaae44eba381eace822c1e00082",
+    "drug_features.npy": "4e82ba4faabfe30e569b263d0390add13504167bf83ff916d7b89be52b98029d",
+    "target_features.npy": "389173a25bea6019788a9272527ecfc0e18e18f04fe5a65bbb9a1c893ad4a1c2",
+    "drug_ids.json": "209bd7b9c1d1836b3f267e73308c35808bea27b804228944f6b796064a0a4348",
+    "target_ids.json": "e6ff029bb132bbd69baec6186671abbb1b7ad20ea0462c43e515142e2e5cc25a",
+    "catalog.json": "4896d92376b885d0411b462f52f498312455ffcc59e81e58d255f17a40b5bf9e",
+    "reference_predictions.csv": "a63b04a965171db2f0bfed27a8e9329f94324712b58ef51b672f0f32304f790c"
+  },
+  "feature_code_sha256": {
+    "dti_f1_model.py": "4f2cb14e4a3eb2409a6eb7e19f48bdf0608bc00660af9b866fb608a7cb22abe3",
+    "extract_dti_davis_enhanced_features.py": "ef6bfdc4a45a6ddc4d5b8e29b4c58c791979ce553c2922fde9d20b0965620e35",
+    "test_molecular_similarity.py": "cb71795ecb260609aab68c087d4fb9a56793f031f34b19f1973c47f77adfc6af"
+  },
+  "metrics": {
+    "experiment_id": "SUP-F1-D-RIDGE-S123",
+    "model_id": "ridge",
+    "seed": 123,
+    "feature_version": "f1_baseline_2156d",
+    "inner_validation_design": "bicluster_group_kfold_25",
+    "evaluation_domain": "strict_dual_cold_test",
+    "eval_overall": {
+      "n": 975,
+      "ci": 0.7244740915922354,
+      "n_comparable_pairs": 221569,
+      "ci_status": "defined",
+      "rmse": 0.79740949855145,
+      "mae": 0.5532293894716825,
+      "pearson_r": 0.39971895157146375,
+      "spearman_rho": 0.39919703575823534,
+      "prediction_variance": 0.10065984341882075,
+      "p_values": "not_computed"
+    },
+    "eval_active_subset_pkd_gt_5": {
+      "n": 263,
+      "ci": 0.5783230845452161,
+      "n_comparable_pairs": 34313,
+      "ci_status": "defined",
+      "rmse": 1.3468744540588118,
+      "mae": 1.0507024895094823,
+      "pearson_r": 0.2310490448418781,
+      "spearman_rho": 0.23037288877381537,
+      "prediction_variance": 0.10004457979228143,
+      "p_values": "not_computed"
+    },
+    "oof_diagnostic": {
+      "n": 16720,
+      "ci": 0.5908055369461372,
+      "n_comparable_pairs": 69474976,
+      "ci_status": "defined",
+      "rmse": 0.8485800570845118,
+      "mae": 0.5787596129063818,
+      "pearson_r": 0.1417707994604921,
+      "spearman_rho": 0.16970424539206974,
+      "prediction_variance": 0.097054556307244,
+      "p_values": "not_computed"
+    },
+    "oof_note": "Base-model OOF diagnostic"
+  },
+  "five_seed_summary": {
+    "feature": "f1_baseline_2156d",
+    "model_id": "ridge",
+    "subset": "eval_overall",
+    "ci_mean": 0.7244704809788374,
+    "ci_seed_sd": 8.073576998592286e-06,
+    "rmse_mean": 0.7974095495429523,
+    "rmse_seed_sd": 1.1402046524021423e-07,
+    "mae_mean": 0.5532299363427701,
+    "mae_seed_sd": 1.2228409265371823e-06
+  },
+  "scientific_scope": "Exploratory DAVIS double-cold benchmark; no F1 cold-drug/target metric fabricated",
+  "training_started": false
+}

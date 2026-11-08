@@ -1,0 +1,866 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-title-group><journal-title>Biochemistry</journal-title><abbrev-journal-title>Biochemistry</abbrev-journal-title></journal-title-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC4138072</article-id><article-id pub-id-type="pmcaid">4138072</article-id><article-id pub-id-type="pmcaiid">4334208</article-id><article-id pub-id-type="pmid">25007099</article-id><article-id pub-id-type="doi">10.1021/bi5004519</article-id><article-id pub-id-type="nihmsid">NIHMS611945</article-id><title-group><article-title>Crystal Structure of <italic>Schistosoma mansoni</italic> Arginase, a Potential Drug Target for the Treatment of Schistosomiasis</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Hai</surname><given-names initials="Y">Yang</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Edwards</surname><given-names initials="JE">Jennifer
+E</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Van Zandt</surname><given-names initials="MC">Michael C</given-names></name><xref ref-type="aff" rid="aff3">§</xref></contrib><contrib><name name-style="western"><surname>Hoffmann</surname><given-names initials="KF">Karl F</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Christianson</surname><given-names initials="DW">David W</given-names></name><xref ref-type="aff" rid="aff1">†</xref><xref rid="cor1" ref-type="author-notes">*</xref></contrib></contrib-group><aff id="aff1"><label>†</label>Roy
+and Diana Vagelos Laboratories, Department of Chemistry, University of Pennsylvania, Philadelphia, Pennsylvania 19104-6323, United States</aff><aff id="aff2"><label>‡</label>Institute
+of Biological, Environmental and Rural Sciences, Aberystwyth University, Aberystwyth, Ceredigion SY23 3DA, United Kingdom</aff><aff id="aff3"><label>§</label>New
+England Discovery Partners, 23 Business Park Drive, Branford, Connecticut 06405, United States</aff><author-notes><fn id="cor1"><label>*</label><p>Telephone: (215) 898-5714. Fax: (215) 573-2112. E-mail: <email>chris@sas.upenn.edu</email>.</p></fn></author-notes><pub-date><day>9</day><month>7</month><year>2014</year></pub-date><volume>53</volume><issue>28</issue><fpage>4671</fpage><page-range>4671–4684</page-range><pub-history><event event-type="pmc-release"><date><day>9</day><month>7</month><year>2015</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2014 American
+Chemical Society</copyright-statement><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html" ext-link-type="uri">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bi5004519.pdf" content-type="pmc-pdf"><?cloudpmc-path 38f6/4334208/d5ac1c3fa47b/bi5004519.pdf?><?cloudpmc-bucket app?><?size 9190146?></self-uri><abstract id="abstract1"><title>Abstract</title><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="ab-tgr1" xlink:href="bi-2014-004519_0008.jpg"><?cloudpmc-path blobs/38f6/4334208/014422fcf4b6/bi-2014-004519_0008.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 562?><?original-width 611?><?scaled-height 562?><?scaled-width 611?></graphic><p>The
+X-ray crystal structure of arginase from <italic>Schistosoma
+mansoni</italic> (SmARG) and the structures of its complexes with
+several amino acid inhibitors have been determined at atomic resolution.
+SmARG is a binuclear manganese metalloenzyme that catalyzes the hydrolysis
+of <sc>l</sc>-arginine to form <sc>l</sc>-ornithine and urea, and
+this enzyme is upregulated in all forms of the parasite that interact
+with the human host. Current hypotheses suggest that parasitic arginases
+could play a role in host immune evasion by depleting pools of substrate <sc>l</sc>-arginine that would otherwise be utilized for NO biosynthesis
+and NO-dependent processes in the immune response. Although the amino
+acid sequence of SmARG is only 42% identical with that of human arginase
+I, residues important for substrate binding and catalysis are strictly
+conserved. In general, classical amino acid inhibitors such as 2(<italic>S</italic>)-amino-6-boronohexanoic acid (ABH) tend to bind more weakly
+to SmARG than to human arginase I despite identical inhibitor binding
+modes in each enzyme active site. The identification of a patch on
+the enzyme surface capable of accommodating the additional Cα
+substitutent of an α,α-disubstituted amino acid inhibitor
+suggests that such inhibitors could exhibit higher affinity and biological
+activity. The structures of SmARG complexed with two different α,α-disubstituted
+derivatives of ABH are presented and provide a proof of concept for
+this approach in the enhancement of enzyme–inhibitor affinity.</p></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-in-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Received 2014 Apr 14; Revised 2014 Jun 30; Issue date 2014 Jul 22.</p></sec></notes></front><body><p id="sec1">Schistosomiasis, also known
+as bilharzia or snail fever, is a neglected tropical disease caused
+by parasitic schistosomes (also known as blood flukes) indigenous
+to tropical and subtropical regions of the developing world.<sup><xref rid="ref1" ref-type="bibr">1</xref>−<xref rid="ref4" ref-type="bibr">4</xref></sup><italic>Biomphalaria</italic> freshwater snails serve as intermediate
+hosts for <italic>Schistosoma mansoni</italic> and release infectious
+larvae (cercariae), which burrow into human skin upon contact with
+contaminated water sources. After definitive host penetration, the
+parasite transforms into a schistosomulum that enters the circulation
+and migrates to the hepatic portal and mesenteric veins surrounding
+the liver. Here, schistosomula develop into sexually mature adults
+(male and female forms) that can evade immunity and thrive for many
+years.<sup><xref rid="ref5" ref-type="bibr">5</xref>−<xref rid="ref7" ref-type="bibr">7</xref></sup> Intravascular adult females produce hundreds of eggs
+daily during this time, which either cross the intestinal lumen to
+continue the lifecycle or circulate to the liver where they induce
+a robust host immunological response.<sup><xref rid="ref5" ref-type="bibr">5</xref></sup> Chronic
+inflammation of the liver ultimately results, leading to portal vein
+hypertension and severe hepatic fibrosis. Although schistosomiasis
+is usually treated effectively with praziquantel, currently believed
+to target schistosomal voltage-gated Ca<sup>2+</sup> channels,<sup><xref rid="ref8" ref-type="bibr">8</xref></sup> the continuous threat of praziquantel-resistant
+schistosomes portends an urgent need for alternative drug targets.<sup><xref rid="ref9" ref-type="bibr">9</xref>−<xref rid="ref12" ref-type="bibr">12</xref></sup></p><p>The binuclear manganese metalloenzyme arginase may comprise
+just
+such an alternative. Although arginase activity was first discovered
+in <italic>S. mansoni</italic> 50 years ago<sup><xref rid="ref13" ref-type="bibr">13</xref></sup> and implicated in <sc>l</sc>-proline biosynthesis,<sup><xref rid="ref14" ref-type="bibr">14</xref></sup><italic>S. mansoni</italic> arginase (SmARG) was not enzymatically
+characterized until recently.<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> The full-length
+mRNA for SmARG encodes a 364-residue protein with an amino acid sequence
+that is 42 and 40% identical with those of human arginases I and II,
+respectively, which catalyze the hydrolysis of <sc>l</sc>-arginine
+to yield <sc>l</sc>-ornithine and urea (Figure <xref rid="fig1" ref-type="fig">1</xref>a).<sup><xref rid="ref16" ref-type="bibr">16</xref>,<xref rid="ref17" ref-type="bibr">17</xref></sup> All residues important for catalysis by
+the human isozymes, including two histidine and four aspartate ligands
+to the binuclear manganese cluster, are strictly conserved in SmARG.
+Interestingly, SmARG exhibits a relatively high turnover number of
+537 s<sup>–1</sup>, approximately 2-fold higher than that measured
+for human arginase II and 20% higher than that reported for human
+arginase I.<sup><xref rid="ref18" ref-type="bibr">18</xref>,<xref rid="ref19" ref-type="bibr">19</xref></sup> Using a homology model of SmARG
+based on the crystal structure of human arginase I,<sup><xref rid="ref16" ref-type="bibr">16</xref></sup> Fitzpatrick and colleagues predicted the formation of a
+disulfide linkage between proximal residues C291 and C332 in the active
+site; the enzyme activity is significantly reduced in the presence
+of reducing agents, consistent with the potential functional relevance
+of a disulfide linkage.<sup><xref rid="ref15" ref-type="bibr">15</xref></sup></p><fig id="fig1" position="float"><?disp-level 1?><label>Figure 1</label><caption><p>(a) Reaction catalyzed
+by arginase. (b) Arginase inhibitors 2(<italic>S</italic>)-amino-6-boronohexanoic
+acid (ABH), <italic>S</italic>-(boronoethyl)-<sc>l</sc>-cysteine (BEC), <italic>N</italic>-hydroxy-<sc>l</sc>-arginine (NOHA), nor-<italic>N</italic>-hydroxy-<sc>l</sc>-arginine (nor-NOHA), (<italic>R</italic>)-2-amino-6-borono-2-[2-(piperidin-1-yl)ethyl]hexanoic
+acid (ABH<sub>PE</sub>), and (<italic>R</italic>)-2-amino-6-borono-2-[1-(3,4-dichlorobenzyl)piperidin-4-yl]hexanoic
+acid (ABH<sub>DP</sub>). Although ABH<sub>DP</sub> is shown as the
+single stereoisomer that binds to SmARG, the racemic mixture was utilized
+for the experiments described herein.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr1" xlink:href="bi-2014-004519_0010.jpg"><?cloudpmc-path blobs/38f6/4334208/25e18e329d74/bi-2014-004519_0010.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 4317?><?original-width 5285?><?scaled-height 617?><?scaled-width 755?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0010.gif"><?cloudpmc-path blobs/38f6/4334208/02c2bccc876d/bi-2014-004519_0010.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>SmARG is expressed in all life stages of the parasite that
+interact
+with the human host<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> and is hypothesized
+to play a role in immune evasion. By depleting the <sc>l</sc>-arginine
+substrate otherwise utilized for nitric oxide (NO) biosynthesis, SmARG
+can attenuate the anti-schistosomula NO-mediated immune response of
+classically activated macrophages.<sup><xref rid="ref20" ref-type="bibr">20</xref></sup> A
+similar strategy of arginase-facilitated immune evasion is exploited
+by <italic>Leishmania</italic> parasites in leishmaniasis,<sup><xref rid="ref21" ref-type="bibr">21</xref>−<xref rid="ref23" ref-type="bibr">23</xref></sup><italic>Helicobacter pylori</italic> in peptic ulcer disease,<sup><xref rid="ref24" ref-type="bibr">24</xref>,<xref rid="ref25" ref-type="bibr">25</xref></sup> and certain cancer tumor cells.<sup><xref rid="ref26" ref-type="bibr">26</xref>−<xref rid="ref29" ref-type="bibr">29</xref></sup> Accordingly, inhibition of SmARG
+might render the parasite more susceptible to the immune response.
+If so, then SmARG may comprise a new target for structure-based drug
+design in the treatment of schistosomiasis.<sup><xref rid="ref15" ref-type="bibr">15</xref></sup></p><p>As the first step in exploring the “druggability”
+of SmARG, we now report the X-ray crystal structures of the unliganded
+enzyme and its complexes with selected inhibitors (Figure <xref rid="fig1" ref-type="fig">1</xref>b), including the classical boronic acid amino acid
+inhibitors 2(<italic>S</italic>)-amino-6-boronohexanoic acid (ABH)<sup><xref rid="ref30" ref-type="bibr">30</xref></sup> and <italic>S</italic>-(boronoethyl)-<sc>l</sc>-cysteine (BEC).<sup><xref rid="ref31" ref-type="bibr">31</xref></sup> Additionally, we report
+crystal structures of SmARG complexes with the <italic>N</italic>-hydroxyguanidinium
+amino acids <italic>N</italic>-hydroxy-<sc>l</sc>-arginine (NOHA)<sup><xref rid="ref32" ref-type="bibr">32</xref></sup> and nor-<italic>N</italic>-hydroxy-<sc>l</sc>-arginine (nor-NOHA),<sup><xref rid="ref33" ref-type="bibr">33</xref></sup> as well as the
+simple amino acids <sc>l</sc>-ornithine (the catalytic product), <sc>l</sc>-lysine, and <sc>l</sc>-valine. Finally, to advance beyond
+classical amino acid inhibitor designs, we report the crystal structures
+of SmARG complexed with two novel α,α-disubstituted amino
+acid derivatives of ABH: (<italic>R</italic>)-2-amino-6-borono-2-[2-(piperidin-1-yl)ethyl]hexanoic
+acid (ABH<sub>PE</sub>)<sup><xref rid="ref34" ref-type="bibr">34</xref></sup> and (<italic>R</italic>)-2-amino-6-borono-2-[1-(3,4-dichlorobenzyl)piperidin-4-yl]hexanoic
+acid (ABH<sub>DP</sub>).<sup><xref rid="ref35" ref-type="bibr">35</xref></sup> The additional
+α-substituents of ABH<sub>PE</sub> and ABH<sub>DP</sub> make
+new interactions that enhance enzyme–inhibitor affinity. These
+studies illuminate structure–function relationships relevant
+to the understanding of catalysis by SmARG and provide a foundation
+for exploring the design of next-generation inhibitors targeting a
+distinctive new region of the protein surface.</p><sec id="sec2" disp-level="1"><title>Materials and Methods</title><sec id="sec2.1" disp-level="2"><title>Materials</title><p>Manganese(II) chloride tetrahydrate (≥99%), <sc>l</sc>-arginine,
+and α-isonitrosopropiophenone were purchased
+from Sigma. Tris(2-carboxyethyl)phosphine hydrochloride (98%, TCEP)
+was purchased from Gold Biotechnology. ABH was purchased from Enzo
+Life Sciences (Farmingdale, NY). NOHA, nor-NOHA, and BEC were purchased
+from Cayman Chemical Co. (Ann Arbor, MI). ABH<sub>PE</sub> and ABH<sub>DP</sub> were the generous gifts of New England Discovery Partners.
+A 30% (w/v) PEG 20000 solution, a 50% (w/v) PEG 3350 solution, a 50%
+(w/v) PEG 10000 solution, and a 100% Tacsimate (pH 7.0) solution were
+purchased from Hampton Research. All other chemicals were purchased
+from Fisher Scientific.</p></sec><sec id="sec2.2" disp-level="2"><title>Expression and Purification of SmARG</title><p>A silent mutation
+was introduced into the gene encoding wild-type SmARG prepared in
+a TOPO vector to eliminate a native NdeI site by using the QuickChange
+method (Stratagene) with the following oligonucleotide primers [sense,
+5′-GGT AAT ATG AGT CGG GCG GCA <underline>CAC</underline> ATG
+CAG CAG ACA AAA CAA TAA TCG-3′; antisense, 5′-CGA TTA
+TTG TTT TGT CTG CAT <underline>GTG</underline> TGC CGC CCG ACT CAT
+AAT ACC-3′ (underlined bases indicate the silent mutation)].
+The coding sequence for SmARG was then amplified by polymerase chain
+reaction (PCR) using oligonucleotide primers [sense, 5′-GCA
+GCA <underline>CAT</underline><underline>ATG</underline> ATG TTG
+AAA TCA GTC GCG ACC-3′; antisense, 5′-GCA GCA <underline>CTC</underline><underline>GAG</underline> TTA TTG TTT TGT CTG CAT
+GTG TGC-3′ (underlined bases represent the restriction enzyme
+recognition sites)]. The PCR product was subcloned into NdeI and XhoI
+sites of the pET-28a vector (Novagen Inc.), yielding an N-terminal
+hexahistidine tag, a thrombin cleavage site, and a linker (MGSSHHHHHHSSGLVPRGSHM).
+All DNA constructs were verified by DNA sequencing at the Perelman
+School of Medicine of the University of Pennsylvania.</p><p>SmARG
+was overexpressed in <italic>Escherichia coli</italic> BL21(DE3) cells.
+Transformed cell cultures were grown in Lysogeny-Broth (LB) medium
+supplemented with 50 μg/L kanamycin. Expression was induced
+by 1 mM isopropyl β-<sc>d</sc>-1-thiogalactopyranoside (IPTG)
+(Carbosynth) for 16 h at 20 °C when the OD<sub>600</sub> reached
+0.6–0.7. Cells were harvested by centrifugation at 6000<italic>g</italic> for 10 min. The cell pellet was resuspended in buffer
+A [50 mM K<sub>2</sub>HPO<sub>4</sub> (pH 8.0), 300 mM NaCl, 10% (v/v)
+glycerol, and 1 mM TCEP]. Cells were lysed by sonication on ice using
+a Sonifer 450 (Branson), and the cell lysate was clarified by centrifugation
+at 26895<italic>g</italic> for 1 h. Proteins were isolated from lysate
+by affinity chromatography with a Talon column (Clontech Laboratories,
+Mountain View, CA). After being washed with 10 column volumes of 20
+mM imidazole in buffer A, SmARG was eluted with a 200 mL gradient
+from 20 to 300 mM imidazole. Pooled fractions were concentrated and
+applied to a Superdex 200 preparative grade 26/60 size exclusion column
+(GE Healthcare) with buffer B [50 mM bicine (pH 8.5) and 100 μM
+MnCl<sub>2</sub>]. The estimated purity of SmARG was &gt;95% on the
+basis
+of sodium dodecyl sulfate–polyacrylamide gel electrophoresis.
+Although the N-terminal hexahistidine tag and linker segment contained
+a thrombin cleavage site, the recombinant enzyme was not treated with
+thrombin and hence contained a full-length N-terminus. The enzyme
+was concentrated to 40 mg/mL, flash-frozen with liquid nitrogen, and
+stored at −80 °C.</p><p>The C291A and C332A mutants of
+SmARG were prepared by PCR mutagenesis
+with the following primers (underlined bases indicate mutated codons):
+C291A, 5′-GAA GGT TTG AGA ATA <underline>GCT</underline> GAA
+GAA GTT TC-3′ (sense) and 5′-GAA ACT TCT TC<underline>A</underline><underline>GC</underline>T ATT CTC AAA CCT TC-3′
+(antisense); C332A, 5′-CAT ATT TTA AGA GCA <underline>GCT</underline> TTA GGC CAT TGT CG-3′ (sense) and 5′-CGA CAA TGG CCT
+AA<underline>A</underline><underline>GC</underline>T GCT CTT AAA
+ATA TG-3′ (antisense). Each mutant was purified as described
+above for the wild-type enzyme.</p></sec><sec id="sec2.3" disp-level="2"><title>Activity Assays</title><p>Arginase activity was assayed by a
+colorimetric assay developed by Archibald with slight modifications.<sup><xref rid="ref36" ref-type="bibr">36</xref></sup> Briefly, 0.5–50 mM <sc>l</sc>-arginine
+(pH 8.5) was added to a solution of 50 mM 4-(2-hydroxyethyl)piperazine-1-propanesulfonic
+acid (EPPS) (pH 8.5) and 100 μM MnCl<sub>2</sub>, and the reaction
+was initiated by adding 1 μM SmARG in a total volume of 200
+μL at 21 °C. The reaction was terminated after 1 min using
+30 μL of a 3:1 (v/v) concentrated acid/dye solution {H<sub>2</sub>SO<sub>4</sub>/H<sub>3</sub>PO<sub>4</sub>/H<sub>2</sub>O [1:3:1
+(v/v/v)] mixture with 245 mM α-isonitrosopropiophenone in ethanol}.
+Samples were heated to 90 °C for 1 h in a thermocycler to ensure
+complete reaction of urea with the dye. To quantify urea formation,
+the absorbance of each sample was assessed at a λ of 550 nm
+using a Tecan Infinite M1000 Pro Microplate Reader. Kinetic parameters
+were determined with Graphpad Prism (2008). The <italic>K</italic><sub>i</sub> values for ABH and NOHA were calculated using the modified
+Michaelis–Menten equation for competitive inhibition. All measurements
+were performed in triplicate.</p></sec><sec id="sec2.4" disp-level="2"><title>Isothermal Titration Calorimetry
+(ITC)</title><p>A MicroCal iTC<sub>200</sub> calorimeter (GE Healthcare)
+was used to measure the dissociation
+constants of SmARG–inhibitor complexes using previously reported
+procedures.<sup><xref rid="ref16" ref-type="bibr">16</xref>,<xref rid="ref31" ref-type="bibr">31</xref></sup> Briefly, SmARG was exhaustively
+dialyzed against 50 mM Bicine (pH 8.5), 100 μM MnCl<sub>2</sub>, and 1.0 mM TCEP [5% (v/v) DMSO was included in the dialysis buffer
+when SmARG was titrated with ABH<sub>PE</sub> and ABH<sub>DP</sub>]. The inhibitor (ABH, 0.547 mM; NOHA, 1.097 mM; nor-NOHA, 0.443
+mM; ABH<sub>PE</sub>, 0.410 mM; ABH<sub>DP</sub>, 0.436 mM) was dissolved
+in dialysis buffer. The inhibitor was titrated into the sample cell
+(0.2 mL) overfilled with SmARG (typically 20–40 μM) with
+sequential injections. An initial 0.2 μL injection was not used
+in the data analysis. Data analysis was performed using Origin version
+7.0. For SmARG complexes with nor-NOHA, ABH, ABH<sub>PE</sub>, and
+ABH<sub>DP</sub>, data were best fit assuming a single binding site.
+For the SmARG–NOHA complex, data were best fit with the equation
+describing two sets of independent sites, i.e., a model in which binding
+to one site (association constant <italic>K</italic><sub>1</sub>)
+has a higher affinity than binding to the second site (association
+constant <italic>K</italic><sub>2</sub>):</p><disp-formula id="ueq1"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" xlink:href="bi-2014-004519_m001.jpg"><?cloudpmc-path blobs/38f6/4334208/579d25c91c4f/bi-2014-004519_m001.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 39?><?original-width 218?><?scaled-height 39?><?scaled-width 218?></graphic></disp-formula><p>where <italic>Q</italic> is the heat evolved
+during the course of the reaction, [E]<sub>t</sub> is the total enzyme
+concentration, <italic>V</italic> is the cell volume, <italic>n</italic><sub>1</sub> is the number of inhibitor equivalents required to saturate
+the first binding site, <italic>n</italic><sub>2</sub> is the number
+of equivalents to saturate the second site, Δ<italic>H</italic><sub>1</sub> and Δ<italic>H</italic><sub>2</sub> are the enthalpies
+per mole of ligand of binding to the first and second sites, respectively,
+and [L] is the inhibitor concentration. Note that dissociation constants <italic>K</italic><sub>d1</sub> = 1/<italic>K</italic><sub>1</sub> and <italic>K</italic><sub>d2</sub> = 1/<italic>K</italic><sub>2</sub>.</p></sec><sec id="sec2.5" disp-level="2"><title>Crystallography</title><p>Unliganded SmARG crystals were prepared
+by the sitting drop vapor diffusion method at 4 °C. Typically,
+a 4 μL drop of a protein solution [10 mg/mL SmARG, 50 mM bicine
+(pH 8.5), and 100 μM MnCl<sub>2</sub>] was mixed with a 4 μL
+drop of a precipitant solution [12% (w/v) PEG 20000 and 0.1 M imidazole
+(pH 7.0)] and equilibrated against a 500 μL reservoir of a precipitant
+solution. Cubic crystals first appeared after 2 days and grew to maximal
+size in 3 days. To obtain crystals of the SmARG–<sc>l</sc>-ornithine,
+SmARG–<sc>l</sc>-valine, and SmARG–<sc>l</sc>-lysine
+complexes, unliganded SmARG crystals were soaked with each ligand
+(50 mM) in a 20 μL drop of a soaking solution [14% PEG 20000
+and 0.1 M imidazole (pH 7.0)] equilibrated against a 500 μL
+reservoir of a soaking solution for 24 h. To cocrystallize SmARG with
+the higher-affinity arginase inhibitors ABH, BEC, NOHA, and nor-NOHA,
+as well as the α,α-disubstituted amino acid inhibitors
+ABH<sub>PE</sub> and ABH<sub>DP</sub>, SmARG was incubated with each
+inhibitor (10 mM) on ice for 1 h before the crystallization experiment.
+Typically, a 1 μL drop of protein solution (9 mg/mL SmARG, 45
+mM bicine, 90 μM MnCl<sub>2</sub>, and 10 mM inhibitor) was
+added to a 1 μL drop of a precipitant solution [4% (v/v) Tacsimate
+(pH 7.0) and 12% (w/v) PEG 3350 for SmARG–ABH and SmARG–BEC
+complexes; 0.2 M potassium sodium tartrate tetrahydrate, 0.1 M Bis-Tris
+(pH 6.5), and 10% (w/v) PEG 10000 for the SmARG–NOHA complex;
+0.2 M <sc>l</sc>-proline, 0.1 M HEPES (pH 7.5), and 10% (w/v) PEG
+3350 for the SmARG–norNOHA complex; 0.1 M HEPES (pH 7.4) and
+12% (w/v) PEG 3350 for the SmARG–ABH<sub>PE</sub> complex;
+and 0.15 M CsCl and 13% (w/v) PEG 3350 for the SmARG–ABH<sub>DP</sub> complex] and equilibrated against a 100 μL reservoir
+of a precipitant solution. Cubic crystals appeared overnight and grew
+to maximal size in 3 days. All crystals were flash-cooled in liquid
+nitrogen after being transferred to a cryoprotectant solution consisting
+of mother liquor supplemented with 15–20% (v/v) glycerol.</p><p>X-ray diffraction data were collected on beamline X29 at the National
+Synchrotron Light Source (NSLS, Brookhaven National Laboratory, Upton,
+NY). Diffraction data were integrated and scaled with HKL2000.<sup><xref rid="ref37" ref-type="bibr">37</xref></sup> Data collection and reduction statistics are
+listed in Table <xref rid="tbl1" ref-type="table">1</xref>. All crystals belonged to
+space group <italic>P</italic>2<sub>1</sub>3 with four molecules in
+the asymmetric unit, each belonging to a separate SmARG trimer in
+the unit cell. The structure of unliganded SmARG was determined by
+molecular replacement using PHASER<sup><xref rid="ref38" ref-type="bibr">38</xref></sup> as
+implemented in the CCP4 suite of programs<sup><xref rid="ref39" ref-type="bibr">39</xref></sup> with the atomic coordinates of unliganded human arginase I (PDB
+entry 2ZAV)<sup><xref rid="ref40" ref-type="bibr">40</xref></sup> utilized as a search probe for rotation and
+translation function calculations. Iterative cycles of refinement
+and model building were performed using PHENIX and COOT, respectively.<sup><xref rid="ref41" ref-type="bibr">41</xref>,<xref rid="ref42" ref-type="bibr">42</xref></sup> The structures of SmARG–inhibitor complexes were determined
+thereafter by molecular replacement using the atomic coordinates of
+unliganded SmARG as a search probe. Solvent molecules and inhibitors
+were added in the final stages of refinement for each structure. The
+quality of each final model was verified with PROCHECK, and the secondary
+structure was defined with DSSP.<sup><xref rid="ref43" ref-type="bibr">43</xref>,<xref rid="ref44" ref-type="bibr">44</xref></sup> Disordered
+segments excluded from the final models include the N-terminal hexahistidine
+tag and its linker segment, residues M1–P17, surface loop K111–S119,
+and T362–Q364 at the C-terminus. Refinement statistics are
+listed in Table <xref rid="tbl1" ref-type="table">1</xref>. Protein structure figures
+were prepared with PyMol (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pymol.org" ext-link-type="uri">http://www.pymol.org</ext-link>) and PhotoshopCS.</p><table-wrap id="tbl1" position="float"><?disp-level 3?><label>Table 1</label><caption><title>Data Collection and Refinement Statistics
+of SmARG Complexes</title></caption><table frame="hsides" rules="groups" border="0"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th style="border:none;" align="center" colspan="1" rowspan="1"> </th><th style="border:none;" align="center" colspan="1" rowspan="1">unliganded</th><th style="border:none;" align="center" colspan="1" rowspan="1">ABH</th><th style="border:none;" align="center" colspan="1" rowspan="1">ABH<sub>PE</sub></th><th style="border:none;" align="center" colspan="1" rowspan="1">ABH<sub>DP</sub></th><th style="border:none;" align="center" colspan="1" rowspan="1">nor-NOHA</th><th style="border:none;" align="center" colspan="1" rowspan="1">NOHA</th><th style="border:none;" align="center" colspan="1" rowspan="1">BEC</th><th style="border:none;" align="center" colspan="1" rowspan="1"><sc>l</sc>-ornithine</th><th style="border:none;" align="center" colspan="1" rowspan="1"><sc>l</sc>-valine</th><th style="border:none;" align="center" colspan="1" rowspan="1"><sc>l</sc>-lysine</th></tr></thead><tbody><tr><td style="border:none;" align="left" colspan="1" rowspan="1">PDB entry</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3P</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3Q</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3S</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3R</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3U</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3T</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q3V</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q42</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q40</td><td style="border:none;" align="left" colspan="1" rowspan="1">4Q41</td></tr><tr><td colspan="11" style="border:none;" align="center" rowspan="1">Data Collection </td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">space group</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>P</italic>2<sub>1</sub>3</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">resolution
+(Å)</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.50</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.00</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.11</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.17</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.50</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.14</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.70</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.05</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.83</td><td style="border:none;" align="left" colspan="1" rowspan="1">2.20</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">no. of reflections measured (total/unique)</td><td style="border:none;" align="left" colspan="1" rowspan="1">468739/65315</td><td style="border:none;" align="left" colspan="1" rowspan="1">1358593/126488</td><td style="border:none;" align="left" colspan="1" rowspan="1">993349/106363</td><td style="border:none;" align="left" colspan="1" rowspan="1">1704963/96325</td><td style="border:none;" align="left" colspan="1" rowspan="1">382879/61714</td><td style="border:none;" align="left" colspan="1" rowspan="1">599891/102397</td><td style="border:none;" align="left" colspan="1" rowspan="1">198632/51489</td><td style="border:none;" align="left" colspan="1" rowspan="1">1458071/118020</td><td style="border:none;" align="left" colspan="1" rowspan="1">813401/163491</td><td style="border:none;" align="left" colspan="1" rowspan="1">659561/94329</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">unit cell parameters [<italic>a</italic> = <italic>b</italic> = <italic>c</italic> (Å)]</td><td style="border:none;" align="left" colspan="1" rowspan="1">178.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">178.2</td><td style="border:none;" align="left" colspan="1" rowspan="1">178.2</td><td style="border:none;" align="left" colspan="1" rowspan="1">177.5</td><td style="border:none;" align="left" colspan="1" rowspan="1">178.3</td><td style="border:none;" align="left" colspan="1" rowspan="1">177.8</td><td style="border:none;" align="left" colspan="1" rowspan="1">178.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">178.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">177.8</td><td style="border:none;" align="left" colspan="1" rowspan="1">177.4</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">completeness<xref rid="t1fn1" ref-type="table-fn"><sup>a</sup></xref> (%)</td><td style="border:none;" align="left" colspan="1" rowspan="1">99.9 (99.6)</td><td style="border:none;" align="left" colspan="1" rowspan="1">100 (99.9)</td><td style="border:none;" align="left" colspan="1" rowspan="1">98.5 (96.1)</td><td style="border:none;" align="left" colspan="1" rowspan="1">98.3 (92.5)</td><td style="border:none;" align="left" colspan="1" rowspan="1">94.4 (87.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">99.9 (99.6)</td><td style="border:none;" align="left" colspan="1" rowspan="1">98.8 (99.7)</td><td style="border:none;" align="left" colspan="1" rowspan="1">100 (100)</td><td style="border:none;" align="left" colspan="1" rowspan="1">99.9 (99.9)</td><td style="border:none;" align="left" colspan="1" rowspan="1">100 (100)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>I</italic>/σ<sub><italic>I</italic></sub><xref rid="t1fn1" ref-type="table-fn"><sup>a</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">13.7 (2.1)</td><td style="border:none;" align="left" colspan="1" rowspan="1">13.5 (3.1)</td><td style="border:none;" align="left" colspan="1" rowspan="1">14.7 (2.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">16.5 (2.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">18.2 (2.1)</td><td style="border:none;" align="left" colspan="1" rowspan="1">12.0 (2.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">10.5 (2.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">19.2 (3.8)</td><td style="border:none;" align="left" colspan="1" rowspan="1">14.1 (2.1)</td><td style="border:none;" align="left" colspan="1" rowspan="1">13.5 (3.5)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>R</italic><sub>sym</sub><xref rid="t1fn2" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">0.167 (0.834)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.153 (0.831)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.106 (0.757)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.165 (1.190)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.118 (0.712)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.150 (0.883)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.158 (0.655)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.130 (0.790)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.099 (0.813)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.123 (0.667)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>R</italic><sub>pim</sub><xref rid="t1fn3" ref-type="table-fn"><sup>c</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">0.066 (0.350)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.045 (0.262)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.031 (0.342)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.041 (0.376)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.047 (0.412)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.066 (0.420)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.088 (0.353)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.079 (0.175)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.044 (0.363)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.037 (0.222)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">redundancy</td><td style="border:none;" align="left" colspan="1" rowspan="1">7.2 (6.4)</td><td style="border:none;" align="left" colspan="1" rowspan="1">10.7 (9.8)</td><td style="border:none;" align="left" colspan="1" rowspan="1">9.3 (5.3)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.7 (10.1)</td><td style="border:none;" align="left" colspan="1" rowspan="1">6.3(3.6)</td><td style="border:none;" align="left" colspan="1" rowspan="1">5.9 (5.2)</td><td style="border:none;" align="left" colspan="1" rowspan="1">3.9 (3.6)</td><td style="border:none;" align="left" colspan="1" rowspan="1">12.4 (12.4)</td><td style="border:none;" align="left" colspan="1" rowspan="1">5.0 (5.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">7.0 (7.0)</td></tr><tr><td colspan="11" style="border:none;" align="center" rowspan="1">Refinement</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">no. of reflections
+(refinement/test set)</td><td style="border:none;" align="left" colspan="1" rowspan="1">65276/3303</td><td style="border:none;" align="left" colspan="1" rowspan="1">118487/5927</td><td style="border:none;" align="left" colspan="1" rowspan="1">106337/5301</td><td style="border:none;" align="left" colspan="1" rowspan="1">96490/4812</td><td style="border:none;" align="left" colspan="1" rowspan="1">61299/3100</td><td style="border:none;" align="left" colspan="1" rowspan="1">102353/5117</td><td style="border:none;" align="left" colspan="1" rowspan="1">51451/2636</td><td style="border:none;" align="left" colspan="1" rowspan="1">111704/5586</td><td style="border:none;" align="left" colspan="1" rowspan="1">152572/7678</td><td style="border:none;" align="left" colspan="1" rowspan="1">91351/4574</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1"><italic>R</italic><sub>work</sub>/<italic>R</italic><sub>free</sub> (%)<xref rid="t1fn4" ref-type="table-fn"><sup>d</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">17.7/21.4 (24.7/30.4)</td><td style="border:none;" align="left" colspan="1" rowspan="1">16.8/20.2 (20.1/24.5)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.3/20.6 (23.2/25.8)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.4/20.6 (24.9/29.4)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.4/22.5 (21.7/29.0)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.6/20.9 (24.8/29.2)</td><td style="border:none;" align="left" colspan="1" rowspan="1">16.7/21.7 (24.1/31.2)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.4/20.8 (20.4/23.5)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.4/19.5 (25.5/26.5)</td><td style="border:none;" align="left" colspan="1" rowspan="1">17.2/20.1 (23.5/26.1)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">no. of protein atoms<xref rid="t1fn5" ref-type="table-fn"><sup>e</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">10271</td><td style="border:none;" align="left" colspan="1" rowspan="1">10241</td><td style="border:none;" align="left" colspan="1" rowspan="1">10270</td><td style="border:none;" align="left" colspan="1" rowspan="1">10120</td><td style="border:none;" align="left" colspan="1" rowspan="1">10182</td><td style="border:none;" align="left" colspan="1" rowspan="1">10243</td><td style="border:none;" align="left" colspan="1" rowspan="1">10306</td><td style="border:none;" align="left" colspan="1" rowspan="1">10289</td><td style="border:none;" align="left" colspan="1" rowspan="1">10261</td><td style="border:none;" align="left" colspan="1" rowspan="1">10223</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">no. of solvent
+atoms</td><td style="border:none;" align="left" colspan="1" rowspan="1">495</td><td style="border:none;" align="left" colspan="1" rowspan="1">895</td><td style="border:none;" align="left" colspan="1" rowspan="1">849</td><td style="border:none;" align="left" colspan="1" rowspan="1">627</td><td style="border:none;" align="left" colspan="1" rowspan="1">390</td><td style="border:none;" align="left" colspan="1" rowspan="1">607</td><td style="border:none;" align="left" colspan="1" rowspan="1">353</td><td style="border:none;" align="left" colspan="1" rowspan="1">679</td><td style="border:none;" align="left" colspan="1" rowspan="1">1019</td><td style="border:none;" align="left" colspan="1" rowspan="1">397</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">no. of ligand atoms</td><td style="border:none;" align="left" colspan="1" rowspan="1">36</td><td style="border:none;" align="left" colspan="1" rowspan="1">88</td><td style="border:none;" align="left" colspan="1" rowspan="1">132</td><td style="border:none;" align="left" colspan="1" rowspan="1">173</td><td style="border:none;" align="left" colspan="1" rowspan="1">84</td><td style="border:none;" align="left" colspan="1" rowspan="1">127</td><td style="border:none;" align="left" colspan="1" rowspan="1">75</td><td style="border:none;" align="left" colspan="1" rowspan="1">72</td><td style="border:none;" align="left" colspan="1" rowspan="1">109</td><td style="border:none;" align="left" colspan="1" rowspan="1">56</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">no. of Mn<sup>2+</sup> ions</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">rmsd</td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">bonds (Å)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.005</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.010</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.006</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.009</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.009</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.006</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.005</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.008</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.009</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.009</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">angles (deg)</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.9</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.2</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.1</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.2</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.9</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.1</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.1</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.1</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">average <italic>B</italic> factor (Å<sup>2</sup>)</td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">main chain</td><td style="border:none;" align="left" colspan="1" rowspan="1">36</td><td style="border:none;" align="left" colspan="1" rowspan="1">30</td><td style="border:none;" align="left" colspan="1" rowspan="1">30</td><td style="border:none;" align="left" colspan="1" rowspan="1">32</td><td style="border:none;" align="left" colspan="1" rowspan="1">44</td><td style="border:none;" align="left" colspan="1" rowspan="1">29</td><td style="border:none;" align="left" colspan="1" rowspan="1">30</td><td style="border:none;" align="left" colspan="1" rowspan="1">32</td><td style="border:none;" align="left" colspan="1" rowspan="1">27</td><td style="border:none;" align="left" colspan="1" rowspan="1">47</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">side chain</td><td style="border:none;" align="left" colspan="1" rowspan="1">37</td><td style="border:none;" align="left" colspan="1" rowspan="1">34</td><td style="border:none;" align="left" colspan="1" rowspan="1">33</td><td style="border:none;" align="left" colspan="1" rowspan="1">34</td><td style="border:none;" align="left" colspan="1" rowspan="1">45</td><td style="border:none;" align="left" colspan="1" rowspan="1">32</td><td style="border:none;" align="left" colspan="1" rowspan="1">32</td><td style="border:none;" align="left" colspan="1" rowspan="1">36</td><td style="border:none;" align="left" colspan="1" rowspan="1">31</td><td style="border:none;" align="left" colspan="1" rowspan="1">50</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">solvent</td><td style="border:none;" align="left" colspan="1" rowspan="1">29</td><td style="border:none;" align="left" colspan="1" rowspan="1">34</td><td style="border:none;" align="left" colspan="1" rowspan="1">33</td><td style="border:none;" align="left" colspan="1" rowspan="1">30</td><td style="border:none;" align="left" colspan="1" rowspan="1">38</td><td style="border:none;" align="left" colspan="1" rowspan="1">30</td><td style="border:none;" align="left" colspan="1" rowspan="1">24</td><td style="border:none;" align="left" colspan="1" rowspan="1">35</td><td style="border:none;" align="left" colspan="1" rowspan="1">33</td><td style="border:none;" align="left" colspan="1" rowspan="1">43</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">Mn<sup>2+</sup> ions</td><td style="border:none;" align="left" colspan="1" rowspan="1">29</td><td style="border:none;" align="left" colspan="1" rowspan="1">21</td><td style="border:none;" align="left" colspan="1" rowspan="1">23</td><td style="border:none;" align="left" colspan="1" rowspan="1">24</td><td style="border:none;" align="left" colspan="1" rowspan="1">37</td><td style="border:none;" align="left" colspan="1" rowspan="1">24</td><td style="border:none;" align="left" colspan="1" rowspan="1">25</td><td style="border:none;" align="left" colspan="1" rowspan="1">26</td><td style="border:none;" align="left" colspan="1" rowspan="1">20</td><td style="border:none;" align="left" colspan="1" rowspan="1">37</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">ligands</td><td style="border:none;" align="left" colspan="1" rowspan="1">37</td><td style="border:none;" align="left" colspan="1" rowspan="1">34</td><td style="border:none;" align="left" colspan="1" rowspan="1">34</td><td style="border:none;" align="left" colspan="1" rowspan="1">45</td><td style="border:none;" align="left" colspan="1" rowspan="1">43</td><td style="border:none;" align="left" colspan="1" rowspan="1">42</td><td style="border:none;" align="left" colspan="1" rowspan="1">32</td><td style="border:none;" align="left" colspan="1" rowspan="1">40</td><td style="border:none;" align="left" colspan="1" rowspan="1">32</td><td style="border:none;" align="left" colspan="1" rowspan="1">52</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">Ramachandran plot (%)</td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td><td style="border:none;" align="left" colspan="1" rowspan="1"> </td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">allowed</td><td style="border:none;" align="left" colspan="1" rowspan="1">91.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">92.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">92.2</td><td style="border:none;" align="left" colspan="1" rowspan="1">91.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">90.5</td><td style="border:none;" align="left" colspan="1" rowspan="1">92.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">91.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">92.1</td><td style="border:none;" align="left" colspan="1" rowspan="1">91.5</td><td style="border:none;" align="left" colspan="1" rowspan="1">92.0</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">additionally allowed</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.6</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">7.8</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.6</td><td style="border:none;" align="left" colspan="1" rowspan="1">9.5</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.6</td><td style="border:none;" align="left" colspan="1" rowspan="1">7.9</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.5</td><td style="border:none;" align="left" colspan="1" rowspan="1">8.0</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">generously allowed</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.1</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td></tr><tr><td style="padding-left: 2em;" align="left" colspan="1" rowspan="1">disallowed</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.0</td></tr></tbody></table><table-wrap-foot><fn id="t1fn1"><label>a</label><p>Values in parentheses refer to data
+for the highest-resolution shell.</p></fn><fn id="t1fn2"><label>b</label><p><italic>R</italic><sub>sym</sub> = ∑<sub><italic>h</italic></sub>∑<sub><italic>i</italic></sub>|<italic>I</italic>(<italic>h</italic>)<sub><italic>i</italic></sub> – ⟨<italic>I</italic>(<italic>h</italic>)⟩|/∑<sub><italic>h</italic></sub>∑<sub><italic>i</italic></sub><italic>I</italic>(<italic>h</italic>)<sub><italic>i</italic></sub>, where <italic>I</italic>(<italic>h</italic>) is the intensity of reflection <italic>h</italic>, ∑<sub><italic>h</italic></sub> is the sum over
+all reflections, and ∑<sub><italic>i</italic></sub> is the
+sum over <italic>i</italic> measurements of reflection <italic>h</italic>.</p></fn><fn id="t1fn3"><label>c</label><p><italic>R</italic><sub>pim</sub> = ∑(1/<italic>n</italic> – 1)<sup>1/2</sup>|<italic>I</italic> – ⟨<italic>I</italic>⟩|/∑<italic>I</italic>, where <italic>n</italic> is the number of observations
+(redundancy) and ⟨<italic>I</italic>⟩ is the average
+intensity calculated from replicate data.</p></fn><fn id="t1fn4"><label>d</label><p><italic>R</italic><sub>work</sub> = ∑||<italic>F</italic><sub>o</sub>| – |<italic>F</italic><sub>c</sub>||/∑|<italic>F</italic><sub>o</sub>| for reflections
+contained in the working set. <italic>R</italic><sub>free</sub> =
+∑||<italic>F</italic><sub>o</sub>| – |<italic>F</italic><sub>c</sub>||/∑|<italic>F</italic><sub>o</sub>| for reflections
+contained in the test set held aside during refinement. |<italic>F</italic><sub>o</sub>| and |<italic>F</italic><sub>c</sub>| are the observed
+and calculated structure factor amplitudes, respectively.</p></fn><fn id="t1fn5"><label>e</label><p>Per asymmetric unit.</p></fn></table-wrap-foot></table-wrap></sec><sec id="sec2.6" disp-level="2"><title>SmARG Transcription Profile</title><p>Data
+from the 37632-element <italic>S. mansoni</italic> long-oligonucleotide
+DNA microarray studies of
+Fitzpatrick and colleagues<sup><xref rid="ref45" ref-type="bibr">45</xref></sup> were interrogated
+to find the expression profile of SmARG across 14 different life cycle
+stages. Raw and normalized fluorescence intensity values are available
+via Array Express under experimental accession number E-MEXP-2094.</p></sec><sec id="sec2.7" disp-level="2"><title>Helminth Fluorescence Bioassay</title><p>Mechanically transformed <italic>S. mansoni</italic> schistosomula were treated with the arginase
+inhibitors ABH (Enzo Life Sciences), NOHA (Sigma), and nor-NOHA (Enzo
+Life Sciences) at a final concentration of 100 μM and incubated
+for 24 h at 37 °C in a humidified environment containing 5% CO<sub>2</sub>. The viability of <italic>S. mansoni</italic> schistosomula
+subsequent to treatment was determined using the helminth fluorescence
+bioassay as previously described.<sup><xref rid="ref46" ref-type="bibr">46</xref></sup> All
+assays were performed in duplicate.</p></sec></sec><sec id="sec3" disp-level="1"><title>Results</title><sec id="sec3.1" disp-level="2"><title>SmARG Transcription
+Profile</title><p>The transcription profile
+of SmARG across 14 different <italic>S. mansoni</italic> life cycle
+stages (Figure <xref rid="fig2" ref-type="fig">2</xref>) confirms previously published
+semiquantitative reverse transcription PCR data showing that SmARG
+is maximally expressed in all life stages that interact with the definitive
+mammalian host but minimally expressed in life stages that interact
+with the intermediate snail host.<sup><xref rid="ref45" ref-type="bibr">45</xref></sup> Thus,
+the upregulation of SmARG is specific to human infection by <italic>S. mansoni</italic>. If SmARG plays an important role during human
+infection, it could serve as a new target for the treatment of schistosomal
+infections.</p><fig id="fig2" position="float"><?disp-level 3?><label>Figure 2</label><caption><p>Expression profile of SmARG across 14 different life cycle stages
+of <italic>S. mansoni</italic> shown following interrogation of the
+37632-element DNA microarray. Raw and normalized fluorescence intensity
+values are available via Array Express under experimental accession
+number E-MEXP-2094. Histograms represent the normalized mean fluorescence
+intensity ± the standard deviation of the mean.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr2" xlink:href="bi-2014-004519_0001.jpg"><?cloudpmc-path blobs/38f6/4334208/de9adae19628/bi-2014-004519_0001.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1540?><?original-width 1538?><?scaled-height 770?><?scaled-width 769?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0001.gif"><?cloudpmc-path blobs/38f6/4334208/4a2a3baa5a36/bi-2014-004519_0001.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="sec3.2" disp-level="2"><title>Activity Assays and ITC Measurements</title><p>Our measurements
+show that wild-type SmARG exhibits a turnover number (<italic>k</italic><sub>cat</sub>) of 330 ± 60 s<sup>–1</sup> and a <italic>K</italic><sub>M</sub> value of 12 ± 5 mM at pH 8.5 using Archibald’s
+colorimetric assay<sup><xref rid="ref36" ref-type="bibr">36</xref></sup> to quantify urea production
+in steady-state kinetic assays (Table <xref rid="tbl2" ref-type="table">2</xref>). These
+values are in reasonable agreement with previously reported values
+of 537 s<sup>–1</sup> and 17 mM, respectively, for a slightly
+different SmARG construct at pH 9.7 containing the remnant of an N-terminal
+glutathione <italic>S</italic>-transferase fusion tag<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> instead of the hexahistidine tag and linker utilized herein.
+These values are also comparable to those measured for human arginase
+I, although the <italic>K</italic><sub>M</sub> values of SmARG are
+slightly larger (4–6-fold) than the <italic>K</italic><sub>M</sub> value reported for the human enzyme (Table <xref rid="tbl2" ref-type="table">2</xref>).</p><table-wrap id="tbl2" position="float"><?disp-level 3?><label>Table 2</label><caption><title>Enzyme Kinetics and Inhibitor Binding
+Affinities</title></caption><table frame="hsides" rules="groups" border="0"><colgroup span="1"><col align="left" span="1"/><col align="char" char=" " span="1"/><col align="char" char=" " span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th style="border:none;" align="center" colspan="1" rowspan="1"> </th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>M</sub> (mM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>k</italic><sub>cat</sub> (s<sup>–1</sup>)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>k</italic><sub>cat</sub>/<italic>K</italic><sub>M</sub> (M<sup>–1</sup> s<sup>–1</sup>)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>i</sub> (ABH) (μM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>d</sub> (ABH) (μM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>i</sub> (NOHA) (μM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>d</sub> (NOHA) (μM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>d</sub> (nor-NOHA) (μM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>d</sub> (ABH<sub>PE</sub>) (μM)</th><th style="border:none;" align="center" colspan="1" rowspan="1"><italic>K</italic><sub>d</sub> (ABH<sub>DP</sub>) (μM)</th></tr></thead><tbody><tr><td style="border:none;" align="left" colspan="1" rowspan="1">wild-type SmARG<xref rid="t2fn1" ref-type="table-fn"><sup>a</sup></xref></td><td style="border:none;" align="center" colspan="1" rowspan="1">12 ± 5</td><td style="border:none;" align="center" colspan="1" rowspan="1">330 ± 60</td><td style="border:none;" align="left" colspan="1" rowspan="1">(3.0 ± 0.9) × 10<sup>4</sup></td><td style="border:none;" align="left" colspan="1" rowspan="1">1.8 ± 0.6</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.3 ± 0.2</td><td style="border:none;" align="left" colspan="1" rowspan="1">3.7 ± 0.8</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.33 ± 0.09, 13 ± 4</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.36 ± 0.08</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.26 ± 0.02</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.54 ± 0.08</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">C291A SmARG<xref rid="t2fn1" ref-type="table-fn"><sup>a</sup></xref></td><td style="border:none;" align="center" colspan="1" rowspan="1">90 ± 10</td><td style="border:none;" align="center" colspan="1" rowspan="1">110 ± 10</td><td style="border:none;" align="left" colspan="1" rowspan="1">(1.2 ± 0.3) × 10<sup>3</sup></td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">C332A SmARG<xref rid="t2fn1" ref-type="table-fn"><sup>a</sup></xref></td><td style="border:none;" align="center" colspan="1" rowspan="1">32 ± 9</td><td style="border:none;" align="center" colspan="1" rowspan="1">100 ± 20</td><td style="border:none;" align="left" colspan="1" rowspan="1">(3.3 ± 0.6) × 10<sup>3</sup></td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">SmARG<xref rid="t2fn2" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="center" colspan="1" rowspan="1">17</td><td style="border:none;" align="center" colspan="1" rowspan="1">537</td><td style="border:none;" align="left" colspan="1" rowspan="1">3.2 × 10<sup>4</sup></td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">human arginase I</td><td style="border:none;" align="center" colspan="1" rowspan="1">3 ± 1<xref rid="t2fn3" ref-type="table-fn"><sup>c</sup></xref></td><td style="border:none;" align="center" colspan="1" rowspan="1">340 ± 160<xref rid="t2fn3" ref-type="table-fn"><sup>c</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">(11 ± 2) × 10<sup>4</sup><xref rid="t2fn3" ref-type="table-fn"><sup>c</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">3.5<xref rid="t2fn4" ref-type="table-fn"><sup>d</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">0.005<xref rid="t2fn5" ref-type="table-fn"><sup>e</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">3.6<xref rid="t2fn6" ref-type="table-fn"><sup>f</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">0.517<xref rid="t2fn7" ref-type="table-fn"><sup>g</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td><td style="border:none;" align="left" colspan="1" rowspan="1">nd</td></tr></tbody></table><table-wrap-foot><fn id="t2fn1"><label>a</label><p>This study; determined by an enzyme
+assay at pH 8.5.</p></fn><fn id="t2fn2"><label>b</label><p>From ref (<xref rid="ref15" ref-type="bibr">15</xref>); determined by an enzyme
+assay at pH 9.7.</p></fn><fn id="t2fn3"><label>c</label><p>From ref (<xref rid="ref63" ref-type="bibr">63</xref>); determined by an enzyme
+assay at pH 8.5.</p></fn><fn id="t2fn4"><label>d</label><p>From ref (<xref rid="ref64" ref-type="bibr">64</xref>); determined by an enzyme
+assay at pH 9.5.</p></fn><fn id="t2fn5"><label>e</label><p>From ref (<xref rid="ref16" ref-type="bibr">16</xref>); <italic>K</italic><sub>d</sub> determined at
+pH 8.5 by isothermal titration calorimetry.</p></fn><fn id="t2fn6"><label>f</label><p>From ref (<xref rid="ref47" ref-type="bibr">47</xref>); <italic>K</italic><sub>d</sub> determined at
+pH 8.5 by surface plasmon resonance.</p></fn><fn id="t2fn7"><label>g</label><p>From ref (<xref rid="ref47" ref-type="bibr">47</xref>); <italic>K</italic><sub>d</sub> determined at
+pH 8.5 by surface plasmon resonance; however, isothermal titration
+calorimetry yielded a <italic>K</italic><sub>d</sub> of ∼50
+nM.</p></fn></table-wrap-foot></table-wrap><p>Steady-state kinetic
+analysis yields an inhibition constant (<italic>K</italic><sub>i</sub>) of 1.8 ± 0.6 μM for the SmARG–ABH
+complex, which is consistent with the ITC measurement of 1.3 ±
+0.2 μM for the dissociation constant (<italic>K</italic><sub>d</sub>) of this complex (Figure S1 of the <xref rid="notes-2" ref-type="sec">Supporting
+Information</xref>). Interestingly, ITC measurements indicate 260-fold
+tighter binding of ABH to human arginase I, but the inhibitory potencies
+of ABH against SmARG and human arginase I are comparable (Table <xref rid="tbl2" ref-type="table">2</xref>). The origin of the difference between <italic>K</italic><sub>i</sub> and <italic>K</italic><sub>d</sub> values
+is unknown.</p><p>ITC measurements indicate that <italic>K</italic><sub>d</sub> =
+0.36 ± 0.08 μM for the SmARG–nor-NOHA complex (Figure
+S1 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>). The
+binding of NOHA is slightly more complex, and ITC data are best fit
+by a model in which the binding affinity for the first site is higher
+(<italic>K</italic><sub>d</sub> = 0.33 ± 0.09 μM) than
+the binding affinity for the second site (<italic>K</italic><sub>d</sub> = 13 ± 4 μM). The location of the weaker binding site
+is unknown, because only the higher-affinity binding site is occupied
+in the crystal structure of the SmARG–NOHA complex (<italic>vide infra</italic>). Taken together, these data suggest that the <italic>N</italic>-hydroxyguanidinium moiety of nor-NOHA is ∼4-fold
+more effective as an inhibitor functional group targeting metal ion
+coordination than the tetrahedral boronate anion of ABH in binding
+to SmARG. This contrasts with human arginase I, which is preferentially
+inhibited (at least 10-fold) by ABH compared with nor-NOHA.<sup><xref rid="ref16" ref-type="bibr">16</xref>,<xref rid="ref47" ref-type="bibr">47</xref></sup> Possibly, these selectivity differences (summarized in Table <xref rid="tbl2" ref-type="table">2</xref>) could be exploited in developing inhibitors that
+preferentially block the parasitic enzyme.</p><p>Finally, ITC measurements
+indicate <italic>K</italic><sub>d</sub> values of 0.26 ± 0.02
+and 0.54 ± 0.08 μM for SmARG–ABH<sub>PE</sub> and
+−ABH<sub>DP</sub> complexes, respectively (Figure
+S1 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>). Notably,
+the additional α-substituent of these α,α-disubstituted
+amino acid inhibitors provides 2–5-fold enhancement of the
+affinity compared with that of the parent SmARG–ABH complex.</p></sec><sec id="sec3.3" disp-level="2"><title>Structure of Unliganded SmARG</title><p>The overall fold of the
+SmARG monomer is generally similar to that of unliganded human aginase
+I (PDB entry 2ZAV)<sup><xref rid="ref40" ref-type="bibr">40</xref></sup> with an rmsd of 1.1 Å for 271
+Cα atoms, which is consistent with the modest amino acid sequence
+identity of 42% between SmARG and human arginase I. SmARG oligomerizes
+to form a homotrimer (Figure <xref rid="fig3" ref-type="fig">3</xref>a) with a total
+buried surface area of 10980 Å<sup>2</sup> (31% of the total
+solvent-accessible surface area) as determined by PISA.<sup><xref rid="ref48" ref-type="bibr">48</xref></sup> As indicated by the sequence alignment with
+human arginase I, SmARG contains a 20-residue extension at the N-terminus
+and a 13-residue extension at the C-terminus, and a 12-residue insertion
+in the loop connecting α-helix B and β-strand 3.<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> The N-terminal extension (17 residues with the
+hexahistidine tag and its linker segment) and the inserted loop lack
+clearly defined electron density and are presumed to be disordered.
+Most of the C-terminal extension is fully ordered and contains two
+additional short α-helices previously unobserved in the crystal
+structures of arginases from other species. The S-shaped C-terminus
+is suggested to be important for oligomerization and mediates 54%
+of the intermonomer contact surface area in rat arginase I,<sup><xref rid="ref49" ref-type="bibr">49</xref></sup> although mutagenesis studies suggest that mutations
+in the C-terminus destabilize but do not necessarily prevent the trimerization
+of rat arginase I or human arginase I.<sup><xref rid="ref50" ref-type="bibr">50</xref>−<xref rid="ref52" ref-type="bibr">52</xref></sup> The unusually long C-terminal
+tail of SmARG is similarly responsible for the majority of subunit–subunit
+interactions; the 13-residue extension alone contributes ∼3900
+Å<sup>2</sup> of total buried surface area (36% of the total
+buried surface area) to trimer assembly.</p><fig id="fig3" position="float"><?disp-level 3?><label>Figure 3</label><caption><p>(a) Structure of the
+SmARG homotrimer. α-Helices are colored
+salmon, β-strands blue, and Mn<sup>2+</sup> ions purple. The
+elongated S-shaped C-terminus is colored magenta, and the disordered
+K111–S119 loop appears as a yellow dotted line. (b) Simulated
+annealing omit map contoured at 4.0σ of the metal-bound solvent
+molecules in unliganded SmARG. Atoms are color-coded as follows: white
+for C, blue for N, red for O, purple spheres for Mn<sup>2+</sup> ions,
+and red spheres for solvent molecules. Metal coordination and hydrogen
+bond interactions are represented by red and green dashed lines, respectively.
+(c) Superposition of unliganded SmARG (color-coded as in panel b,
+with black residue labels) and human arginase I (PDB entry 2ZAV; yellow for C, blue
+for N, red for O, pink spheres for Mn<sup>2+</sup> ions, and yellow
+spheres for solvent molecules with red residue labels).</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr3" xlink:href="bi-2014-004519_0002.jpg"><?cloudpmc-path blobs/38f6/4334208/d8da393c9c1d/bi-2014-004519_0002.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1853?><?original-width 1400?><?scaled-height 927?><?scaled-width 700?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0002.gif"><?cloudpmc-path blobs/38f6/4334208/92ba7ca79a15/bi-2014-004519_0002.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>The structure of the binuclear manganese cluster
+(Figure <xref rid="fig3" ref-type="fig">3</xref>b) is essentially identical to that
+observed in
+unliganded arginases from other species, such as human arginase I
+(Figure <xref rid="fig3" ref-type="fig">3</xref>c). Each Mn<sup>2+</sup> ion is coordinated
+in octahedral or distorted octahedral fashion by two nonprotein ligands
+and conserved metal binding residues. The metal-bridging nonprotein
+ligand is expected to be a hydroxide ion in the catalytically active
+state, and the Mn<sup>2+</sup><sub>A</sub>-bound nonprotein ligand
+is interpreted as a water molecule. This is similar to the identification
+of nonprotein metal ligands in unliganded human arginase I,<sup><xref rid="ref40" ref-type="bibr">40</xref></sup><italic>Bacillus caldovelox</italic> arginase,<sup><xref rid="ref53" ref-type="bibr">53</xref></sup> and <italic>Leishmania mexicana</italic> arginase.<sup><xref rid="ref54" ref-type="bibr">54</xref></sup> Most other inner active site residues are conserved
+in SmARG, except that T135 in human arginase I is conserved as S165
+in SmARG (Figure <xref rid="fig3" ref-type="fig">3</xref>c).</p><p>Although Fitzpatrick
+and colleagues suggest that the SmARG activity
+is dependent on a disulfide bond formed between C291 and C332 on the
+basis of homology modeling,<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> no disulfide
+bond is observed in the crystal structure, even though the Sγ
+atoms of C291 and C332 are only 3.5 Å apart and no reducing agents
+were included in crystallization buffers (Figure S2a of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>). It is clear, however,
+that SmARG activity is severely attenuated in the presence of reducing
+reagents such as TCEP (Figure S2b of the <xref rid="notes-2" ref-type="sec">Supporting
+Information</xref>). Our modeling studies indicate that side chain
+torsion angle χ<sub>2</sub> of C291 could be rotated by 54°
+to allow the formation of a disulfide bond with C332. The geometry
+of this disulfide linkage would be classified as -RHStaple, which
+corresponds to the geometry of allosteric disulfide linkages that
+regulate protein function by triggering reversible changes in protein
+tertiary structure.<sup><xref rid="ref55" ref-type="bibr">55</xref></sup> Even so, the side
+chain conformations of C291 and C332 would be unfavorable if this
+disulfide bond were formed.</p><p>To probe the functional importance
+of a possible disulfide linkage
+between C291 and C332, we prepared the C291A and C332A mutants of
+SmARG and measured their steady-state kinetics (Table <xref rid="tbl2" ref-type="table">2</xref>). These mutants are chemically incapable of forming a covalent
+linkage between residues 291 and 332; notably, however, these mutants
+exhibit significant residual activity (∼30% based on <italic>k</italic><sub>cat</sub>). Catalytic efficiencies (<italic>k</italic><sub>cat</sub>/<italic>K</italic><sub>M</sub>) are compromised 25-fold
+for C291A SmARG and only 9-fold for C332A SmARG. Thus, formation of
+a disulfide linkage between C291 and C332 is not required for catalysis
+but might be required for maximal catalytic function.</p></sec><sec id="sec3.4" disp-level="2"><title>Structures
+of Complexes of SmARG with Simple Amino Acids</title><p>The overall
+structure of SmARG in each complex with the amino acid
+inhibitors <sc>l</sc>-ornithine, <sc>l</sc>-valine, and <sc>l</sc>-lysine is essentially identical to the structure of unliganded SmARG;
+the rmsds between liganded and unliganded structures are 0.17 Å
+for 322 Cα atoms in the SmARG–<sc>l</sc>-ornithine complex,
+0.17 Å for 319 Cα atoms in the SmARG–<sc>l</sc>-valine
+complex, and 0.30 Å for 316 Cα atoms in the SmARG–<sc>l</sc>-lysine complex. As is evident in Figure <xref rid="fig4" ref-type="fig">4</xref>, the molecular recognition of the catalytic product <sc>l</sc>-ornithine,
+the product analogue <sc>l</sc>-lysine, and the weak inhibitor <sc>l</sc>-valine is dominated by three direct and four water-mediated
+hydrogen bonds that selectively accommodate the α-amino and
+α-carboxyl groups of an amino acid with <sc>l</sc>-stereochemistry.
+This hydrogen bond network comprises the <sc>l</sc>-amino acid recognition
+motif, as first observed in the rat arginase I–ABH complex.<sup><xref rid="ref56" ref-type="bibr">56</xref></sup></p><fig id="fig4" position="float"><?disp-level 3?><label>Figure 4</label><caption><p>Simulated annealing omit maps of amino acids bound in
+the active
+site of SmARG: (a) <sc>l</sc>-ornithine, contoured at 3.0σ;
+(b) <sc>l</sc>-valine, contoured at 3.0σ; and (c) <sc>l</sc>-lysine, contoured at 5.5σ. Atoms are color-coded as follows:
+white (protein) or yellow (inhibitor) for C, blue for N, red for O,
+green for B, purple spheres for Mn<sup>2+</sup> ions, and red spheres
+for solvent molecules. Metal coordination and hydrogen bond interactions
+are represented by red and green dashed lines, respectively. The α-amino
+and α-carboxyl groups of each amino acid make an array of direct
+and water-mediated hydrogen bonds with conserved protein residues
+D213, E216, N160, S165, S167, N169, and H171. These residues comprise
+the <sc>l</sc>-amino acid recognition motif.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr4" xlink:href="bi-2014-004519_0003.jpg"><?cloudpmc-path blobs/38f6/4334208/09feb471e0fc/bi-2014-004519_0003.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1841?><?original-width 1402?><?scaled-height 921?><?scaled-width 701?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0003.gif"><?cloudpmc-path blobs/38f6/4334208/50fc92649fd9/bi-2014-004519_0003.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="sec3.5" disp-level="2"><title>Structures of Complexes of SmARG with <italic>N</italic>-Hydroxyguanidinium
+Inhibitors</title><p>The overall structure of the SmARG–NOHA
+complex is essentially identical to that of unliganded SmARG, with
+an rmsd of 0.23 Å for 316 Cα atoms. The α-amino and
+α-carboxyl groups of NOHA hydrogen bond with the <sc>l</sc>-amino
+acid recognition motif, and the Nη-OH group interacts with the
+binuclear manganese cluster (Figure <xref rid="fig5" ref-type="fig">5</xref>a). Intriguingly,
+however, the electron density map indicates that the <italic>N</italic>-hydroxyguanidinium group binds with two alternative conformations.
+In the major conformation (refined with 75% occupancy), the Nη-OH
+group of NOHA displaces the metal-bridging hydroxide ion and symmetrically
+bridges the binuclear manganese cluster with an average Mn<sup>2+</sup>···O coordination distance of 1.8 Å, and the
+Mn<sup>2+</sup><sub>A</sub>–Mn<sup>2+</sup><sub>B</sub> separation
+increases from 3.1 to 3.3 Å. The η-NH<sub>2</sub> group
+of NOHA is oriented toward Mn<sup>2+</sup><sub>A</sub> (but does not
+coordinate) and donates a hydrogen bond to E307. This conformation
+is similar to that observed in the 2.9 Å resolution crystal structure
+of the rat arginase I–NOHA complex (PDB entry 1HQF).<sup><xref rid="ref57" ref-type="bibr">57</xref></sup></p><fig id="fig5" position="float"><?disp-level 3?><label>Figure 5</label><caption><p>(a) Simulated annealing omit map (contoured at 3.0σ) of the
+inhibitor NOHA that reveals that the hydroxyguanidinium group adopts
+two alternate conformations. Atoms are color-coded as in Figure <xref rid="fig4" ref-type="fig">4</xref>. Metal coordination and hydrogen bond interactions
+are represented by red and green dashed lines, respectively. Note
+that residue D213 adopts two alternate conformations. (b) Simulated
+annealing omit map (contoured at 3.0σ) of the inhibitor nor-NOHA.
+Atoms are color-coded as in Figure <xref rid="fig4" ref-type="fig">4</xref>. Metal
+coordination and hydrogen bond interactions are represented by red
+and green dashed lines, respectively.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr5" xlink:href="bi-2014-004519_0004.jpg"><?cloudpmc-path blobs/38f6/4334208/d201b08b3c81/bi-2014-004519_0004.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1214?><?original-width 1434?><?scaled-height 607?><?scaled-width 717?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0004.gif"><?cloudpmc-path blobs/38f6/4334208/0e35e2543fc6/bi-2014-004519_0004.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>In the minor conformation (refined with 25% occupancy), the
+Nη-OH
+group of NOHA displaces the Mn<sup>2+</sup><sub>A</sub>-bound water
+molecule with an average Mn<sup>2+</sup><sub>A</sub>···O
+coordination distance of 2.0 Å. The metal-bridging hydroxide
+ion must also be displaced to accommodate NOHA binding in this conformation,
+so both Mn<sup>2+</sup><sub>A</sub> and Mn<sup>2+</sup><sub>B</sub> exhibit square bipyramidal coordination geometry. Two hydrogen bonds
+are observed between SmARG and NOHA in its minor conformation: the
+Nη-H group of NOHA donates a hydrogen bond to D158, and the
+η-NH<sub>2</sub> group donates a hydrogen bond to T276. These
+interactions are similar to those observed in the 2.04 Å resolution
+crystal structure of the human arginase I–NOHA complex (PDB
+entry 3LP7)
+(Figure S3 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>).<sup><xref rid="ref47" ref-type="bibr">47</xref></sup></p><p>Finally, the overall structure
+of SmARG in its complex with nor-NOHA
+is essentially identical to that of unliganded SmARG, with an rmsd
+of 0.19 Å for 331 Cα atoms. The amino acid moiety of nor-NOHA
+is accommodated by the <sc>l</sc>-amino acid recognition motif, as
+observed for NOHA. However, in contrast with the binding of NOHA,
+the <italic>N</italic>-hydroxyguanidinium group of nor-NOHA binds
+with just a single conformation in which the Nζ-OH group displaces
+the metal-bridging hydroxide ion and bridges the binuclear manganese
+cluster with average Mn<sub>A</sub><sup>2+</sup>···O
+and Mn<sub>B</sub><sup>2+</sup>···O coordination distances
+of 1.9 and 2.2 Å, respectively (Figure <xref rid="fig5" ref-type="fig">5</xref>b). The ζ-NH group of nor-NOHA donates a hydrogen bond to D158,
+and the ζ-NH<sub>2</sub> group is oriented toward Mn<sup>2+</sup><sub>B</sub> (but does not coordinate) and donates a hydrogen bond
+to T276.</p></sec><sec id="sec3.6" disp-level="2"><title>Structures of Complexes of SmARG with Classical Boronic Acid
+Inhibitors</title><p>The crystal structure of the SmARG–ABH
+complex reveals that no significant conformational changes are triggered
+upon inhibitor binding, and the rmsd is 0.15 Å for 318 Cα
+atoms in comparison with the unliganded enzyme. The simulated annealing
+omit map in Figure <xref rid="fig6" ref-type="fig">6</xref> reveals that the boronic
+acid group of ABH undergoes nucleophilic attack, presumably by the
+metal-bridging hydroxide ion of the native enzyme, to form the tetrahedral
+boronate anion, which mimics the tetrahedral intermediate and its
+flanking transition states in the arginase reaction.<sup><xref rid="ref30" ref-type="bibr">30</xref></sup> The α-carboxylate group and α-amino group of
+ABH hydrogen bond with the <sc>l</sc>-amino acid recognition motif,
+as first observed in the crystal structure of the rat arginase I–ABH
+complex.<sup><xref rid="ref56" ref-type="bibr">56</xref></sup> This structure serves as a starting
+point for understanding structure–activity relationships for
+α,α-disubstituted ABH derivatives described below.</p><fig id="fig6" position="float"><?disp-level 3?><label>Figure 6</label><caption><p>Simulated annealing
+omit map (contoured at 3.0σ) of boronic
+acid inhibitor ABH. Atoms are color-coded as in Figure <xref rid="fig4" ref-type="fig">4</xref>. Metal coordination and hydrogen bond interactions are represented
+by red and green dashed lines, respectively.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr6" xlink:href="bi-2014-004519_0005.jpg"><?cloudpmc-path blobs/38f6/4334208/3ae8bfbd1ddb/bi-2014-004519_0005.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 652?><?original-width 1436?><?scaled-height 326?><?scaled-width 718?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0005.gif"><?cloudpmc-path blobs/38f6/4334208/32f34a7d0ee3/bi-2014-004519_0005.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>The crystal structure of the SmARG–BEC complex, although
+determined at a lower resolution of 2.7 Å, similarly reveals
+the binding of the tetrahedral boronate anion and an array of hydrogen
+bonds with the α-amino acid moiety (Figure S4 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>). No significant conformational
+changes are triggered upon inhibitor binding, and the rmsd is 0.26
+Å for 320 Cα atoms in comparison with the unliganded enzyme.
+Although fewer water molecules are observed in the active site because
+of the modest resolution, the structure of the SmARG–BEC complex
+is similar to that first observed in the rat arginase I–BEC
+complex.<sup><xref rid="ref31" ref-type="bibr">31</xref></sup></p></sec><sec id="sec3.7" disp-level="2"><title>Structures of Complexes
+of SmARG with α,α-Disubstituted
+Boronic Acid Inhibitors</title><p>The structure of the SmARG–ABH
+complex reveals that the Cα-H group of ABH can be substituted
+with an additional side chain capable of making additional interactions
+on the protein surface. To demonstrate the proof of concept, we have
+determined the crystal structures of SmARG complexes with the novel
+α,α-disubstituted amino acid inhibitors ABH<sub>PE</sub> and ABH<sub>DP</sub> (Figure <xref rid="fig1" ref-type="fig">1</xref>b). The overall
+structures of SmARG complexed with ABH<sub>PE</sub> and ABH<sub>DP</sub> are essentially identical to the structure of unliganded SmARG,
+with rmsds of 0.19 Å for 332 Cα atoms and 0.17 Å for
+330 Cα atoms, respectively. Although racemic ABH<sub>DP</sub> was used in the crystallization experiment with SmARG, the electron
+density map clearly shows that the stereoisomer corresponding to <sc>l</sc>-ABH binds exclusively in the active site. As shown in Figure <xref rid="fig7" ref-type="fig">7</xref>, the boronic acid moiety of each inhibitor undergoes
+nucleophilic attack by the metal-bridging hydroxide ion to form a
+tetrahedral boronate anion, as observed in the crystal structure of
+the parent SmARG–ABH complex (Figure <xref rid="fig6" ref-type="fig">6</xref>). However, in contrast with the SmARG–ABH complex, the additional
+α-substituents of ABH<sub>PE</sub> and ABH<sub>DP</sub> block
+the binding of water molecule W4; this water molecule ordinarily mediates
+a hydrogen bond between the inhibitor α-amino group and D213
+(Figure <xref rid="fig7" ref-type="fig">7</xref>c). Therefore, the <sc>l</sc>-amino
+acid recognition motif in the active site of SmARG is slightly compromised
+by the binding of α,α-disubstituted amino acid inhibitors.
+Regardless, the additional α-substituents of both ABH<sub>PE</sub> and ABH<sub>DP</sub> make additional interactions in the active
+site of SmARG, which presumably accounts for the affinity of these
+inhibitors being higher than that of ABH.</p><fig id="fig7" position="float"><?disp-level 3?><label>Figure 7</label><caption><p>Simulated annealing omit
+maps of α,α-disubstituted
+amino acid inhibitors: (a) ABH<sub>PE</sub>, contoured at 5.0σ,
+and (b) ABH<sub>DP</sub>, contoured at 3.0σ. Atoms are color-coded
+as in Figure <xref rid="fig4" ref-type="fig">4</xref> (dark green for Cl). Metal coordination
+and hydrogen bond interactions are represented by red and green dashed
+lines, respectively. Note that residue E58 from an adjacent monomer
+of the homotrimer adopts two alternate conformations (highlighted
+in cyan). (c) Superposition of the SmARG–ABH complex (white
+for C and Mn<sup>2+</sup>), the SmARG–ABH<sub>PE</sub> complex
+(salmon for C and Mn<sup>2+</sup>), and the SmARG–ABH<sub>DP</sub> complex (yellow for C and Mn<sup>2+</sup>).</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr7" xlink:href="bi-2014-004519_0006.jpg"><?cloudpmc-path blobs/38f6/4334208/d5c856cb41ab/bi-2014-004519_0006.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1451?><?original-width 1416?><?scaled-height 726?><?scaled-width 708?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0006.gif"><?cloudpmc-path blobs/38f6/4334208/d5e8df163a6a/bi-2014-004519_0006.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>In each enzyme–inhibitor complex, the piperidine ring
+exclusively
+adopts a chair conformation and its protonated tertiary amino group
+donates a hydrogen bond to D213 (purple dashed lines in panels a and
+b of Figure <xref rid="fig7" ref-type="fig">7</xref>; average N···O
+separations of 2.7 Å in the SmARG–ABH<sub>PE</sub> complex
+and 2.9 Å in the SmARG–ABH<sub>DP</sub> complex). Additionally,
+the dichlorobenzyl group of ABH<sub>DP</sub> interacts with E58 from
+an adjacent monomer (panels b and c of Figure <xref rid="fig7" ref-type="fig">7</xref>). Incomplete electron density for the dichlorobenzyl group of ABH<sub>DP</sub> and a higher average temperature factor (∼55 Å<sup>2</sup>) compared with that of the piperidine ring (∼30 Å<sup>2</sup>) suggest increased flexibility.</p><p>Structural comparison
+of the SmARG–ABH<sub>PE</sub> complex
+with the 1.30 Å resolution crystal structure of the human arginase
+I–ABH<sub>PE</sub> complex (PDB entry 4HWW)<sup><xref rid="ref34" ref-type="bibr">34</xref></sup> reveals striking differences in the conformation of the
+piperidine α-substituent of ABH<sub>PE</sub>, even though the
+parent ABH scaffold retains the same conformation in both structures
+(Figure <xref rid="fig8" ref-type="fig">8</xref>a). Van Zandt and colleagues note
+that the piperidine ring of ABH<sub>PE</sub> adopts two alternate
+conformations in the human arginase I–ABH<sub>PE</sub> complex:
+distorted boat (66%) and chair (33%).<sup><xref rid="ref34" ref-type="bibr">34</xref></sup> With the piperidine ring of ABH<sub>PE</sub> shifted farther from
+D183 in the human arginase I–ABH<sub>PE</sub> complex (D183
+of human arginase I corresponds to D213 of SmARG), it makes water-mediated
+hydrogen bonds with D183 and D181 through water molecules W1 and W4,
+instead of making a direct hydrogen bond as observed in the SmARG–ABH<sub>PE</sub> complex. More importantly, because of the conservation of
+water molecule W4, the <sc>l</sc>-amino acid recognition motif is
+intact in the human arginase I–ABH<sub>PE</sub> complex.</p><fig id="fig8" position="float"><?disp-level 3?><label>Figure 8</label><caption><p>(a) Superposition
+of the SmARG–ABH<sub>PE</sub> complex
+[white (protein) or yellow (inhibitor) for C] with the human arginase
+I–ABH<sub>PE</sub> complex (cyan for C; PDB entry 4HWW). (b) Superposition
+of the SmARG–ABH<sub>DP</sub> complex [white (protein) or yellow
+(inhibitor) for C] with the human arginase II–ABH<sub>DP1</sub> complex (cyan for C; PDB entry 4IXV). Selected hydrogen bonds are shown as
+purple dashed lines (SmARG) or black dashed lines (human arginases).
+Solvent molecules are shown as small red spheres; Mn<sup>2+</sup> ions
+are shown as purple and orange spheres in SmARG and human arginases,
+respectively. Black residue labels correspond to SmARG, and red labels
+correspond to the human arginases.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr8" xlink:href="bi-2014-004519_0007.jpg"><?cloudpmc-path blobs/38f6/4334208/98752e73e5ca/bi-2014-004519_0007.jpg?><?cloudpmc-bucket cdn?><?image-server-status LOAD_COMPLETED?><?original-height 1072?><?original-width 1412?><?scaled-height 536?><?scaled-width 706?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-004519_0007.gif"><?cloudpmc-path blobs/38f6/4334208/b74438af0246/bi-2014-004519_0007.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>Structural differences in the binding of an α,α-disubstituted
+amino acid are also revealed in the comparison of the SmARG–ABH<sub>DP</sub> complex with the complex between human arginase II and (<italic>R</italic>)-2-amino-6-borono-2-[1-(4-chlorobenzyl)piperidin-4-yl]hexanoate
+(ABH<sub>DP1</sub>, which differs from ABH<sub>DP</sub> by one chlorine
+atom on the pendant aromatic ring; PDB entry 4IXV)<sup><xref rid="ref35" ref-type="bibr">35</xref></sup> (Figure <xref rid="fig8" ref-type="fig">8</xref>b). Here, too, the parent
+ABH structures adopt similar conformations; however, significant conformational
+differences are observed for the additional α-substituents of
+ABH<sub>DP</sub> and ABH<sub>DP1</sub>. The piperidine ring of ABH<sub>DP1</sub> in the human arginase II–ABH<sub>DP1</sub> complex
+adopts a distorted boat conformation, with the piperidine amino group
+forming a water-mediated hydrogen bond with S155 (equivalent to T136
+in human arginases I and II), instead of hydrogen bonding with D213,
+as observed in the SmARG–ABH<sub>DP1</sub> complex. Additionally,
+the chlorobenzyl ring of ABH<sub>DP1</sub> does not interact with
+the protein.</p><p>Active site comparisons reveal that A166 (equivalent
+to T136 in
+human arginase I and S155 in human arginase II) is another nonconserved
+residue in SmARG (besides S165) that can interact with α,α-disubstituted
+amino acid inhibitors (Figure <xref rid="fig8" ref-type="fig">8</xref>). Interestingly,
+the corresponding residue is similarly nonpolar in two other parasitic
+arginases: P228 in <italic>Plasmodium falciparum</italic> arginase<sup><xref rid="ref58" ref-type="bibr">58</xref></sup> and V149 in <italic>L. mexicana</italic> arginase.<sup><xref rid="ref54" ref-type="bibr">54</xref></sup> Differences in polarity and size at this position
+between parasitic arginases and human arginases may be a contributing
+factor to the alternative binding modes of α,α-disubstituted
+amino acid inhibitors.</p></sec><sec id="sec3.8" disp-level="2"><title>Coculture of Schistosomula with ABH, NOHA,
+and nor-NOHA</title><p>The helminth fluorescence bioassay was utilized
+to assess the effect
+of SmARG inhibitors on schistosomula viability during continuous <italic>in vitro</italic> cocultivation. Despite the ability of these inhibitors
+to effectively bind to SmARG, no significant difference in parasite
+viability or morphology was observed during treatment with 100 μM
+ABH, NOHA, or nor-NOHA for 24 h (Figure S5 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>) or 72 h (data not shown). If the uptake
+of amino acid inhibitors is facile, this result suggests that any
+effect of SmARG inhibitors on parasite viability would require the
+presence of the human host.</p></sec></sec><sec id="sec4" disp-level="1"><title>Discussion</title><sec id="sec4.1" disp-level="2"><title>Biological
+Insight into SmARG as a Drug Target for Schistosomiasis</title><p>Using
+a 37632-element long-oligonucleotide DNA microarray, new <italic>S.
+mansoni</italic> anthelmintic drug targets were revealed through
+parasite life cyle transcriptomic profiling.<sup><xref rid="ref45" ref-type="bibr">45</xref></sup> Here, we show that one putative drug target, SmARG,<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> is maximally expressed in all life stages that interact
+with the definitive mammalian host but minimally expressed in life
+stages that interact with the intermediate snail host (Figure <xref rid="fig2" ref-type="fig">2</xref>). These data confirm previously published semiquantitative
+reverse transcription PCR data and indicate that the upregulation
+of SmARG is specific to human infection by <italic>S. mansoni</italic>. Curiously, however, SmARG is not secreted by cercariae or schistosomula,<sup><xref rid="ref15" ref-type="bibr">15</xref></sup> so the influence of <italic>S. mansoni</italic> infection on <sc>l</sc>-arginine concentrations in infected human
+tissues presumably arises from the facile transport of <sc>l</sc>-arginine
+into the parasite. The resultant depletion of host <sc>l</sc>-arginine
+pools allows immune evasion, because depressed <sc>l</sc>-arginine
+concentrations can result in lower NO concentrations produced by classically
+activated macrophages with known anti-schistosomula function.<sup><xref rid="ref59" ref-type="bibr">59</xref></sup></p><p>In principle, then, the inhibition of
+SmARG might possibly render the parasite more susceptible to host
+immunity during infection. Consistent with this hypothesis, the classical
+arginase inhibitors ABH, NOHA, and nor-NOHA do not affect parasite
+viability in the absence of the host (Figure S5 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>). The host immune response <italic>in vivo</italic> is presumably required for the maximal anthelmintic
+effect of an arginase inhibitor, as is the case for praziquantel.<sup><xref rid="ref60" ref-type="bibr">60</xref></sup></p></sec><sec id="sec4.2" disp-level="2"><title>Inhibitor Design Strategy for SmARG</title><p>Although the affinities
+of the classical arginase inhibitors ABH, NOHA, and nor-NOHA are in
+the low micromolar range (Table <xref rid="tbl2" ref-type="table">2</xref>), it is somewhat
+surprising that these affinities fall short of the nanomolar binding
+affinities reported for complexes with human arginase I.<sup><xref rid="ref16" ref-type="bibr">16</xref>,<xref rid="ref47" ref-type="bibr">47</xref></sup> The structural basis of the weaker affinity is not clear on the
+basis of analysis of the crystal structures, because each inhibitor
+makes essentially identical metal coordination and hydrogen bond interactions
+in the active site of SmARG compared with the active sites of mammalian
+enzymes. It is clear, however, that the best inhibitors of arginase
+from any species will bear side chains capable of metal ion coordination.
+This accounts for the generally weaker binding affinity of simple
+amino acids such as <sc>l</sc>-valine, <sc>l</sc>-ornithine, and <sc>l</sc>-lysine, which do not interact directly with the active site
+Mn<sup>2+</sup> ions (Figure <xref rid="fig4" ref-type="fig">4</xref>). Parenthetically,
+we note that this feature facilitates release of the <sc>l</sc>-ornithine
+product during catalysis.</p><p>The crystal structures of complexes
+of SmARG with ABH and nor-NOHA reveal that the tetrahedral boronate
+anion and the <italic>N</italic>-hydroxyguanidinium moiety serve as
+ideal functional groups for metal ion coordination and active site
+hydrogen bond interactions (Figures <xref rid="fig5" ref-type="fig">5</xref>b and <xref rid="fig6" ref-type="fig">6</xref>). The α-carboxylate and α-amino group
+of each inhibitor also make an array of hydrogen bond interactions
+with the <sc>l</sc>-amino acid recognition motif, and these hydrogen
+bonds similarly make an important contribution to enzyme–inhibitor
+affinity.<sup><xref rid="ref61" ref-type="bibr">61</xref></sup> Thus, in the quest to improve
+SmARG–inhibitor affinity and selectivity, these conserved features
+of enzyme–inhibitor recognition cannot be perturbed.</p><p>Inspection of the crystal structure of the SmARG–ABH complex
+(Figure <xref rid="fig6" ref-type="fig">6</xref>) revealed that the <sc>l</sc>-amino
+acid moiety is oriented such that the Cα-H group could be substituted
+with a longer side chain to generate an α,α-disubstituted
+amino acid capable of maintaining active site interactions with its
+“<sc>l</sc>-side chain” while engaging in new interactions
+on the protein surface with its “<sc>d</sc>-side chain”.
+The binding of ABH<sub>PE</sub> and ABH<sub>DP</sub> (Figure <xref rid="fig7" ref-type="fig">7</xref>) with 2- and 5-fold higher affinity, respectively
+(Figure S1 of the <xref rid="notes-2" ref-type="sec">Supporting Information</xref>), demonstrates the success of this strategy. Furthermore, structural
+comparisons of the region that accommodates the <sc>d</sc>-side chains
+of ABH<sub>PE</sub> and ABH<sub>DP</sub> indicate that this region,
+designated the “<sc>d</sc>-cleft” or “T136 region”,<sup><xref rid="ref62" ref-type="bibr">62</xref></sup> differs between SmARG and human arginase I.
+Specifically, the <sc>d</sc>-cleft of SmARG is much more nonpolar
+and perhaps would better accommodate hydrophobic <sc>d</sc>-side chains
+even longer than that of ABH<sub>DP</sub>. Therefore, α,α-disubstituted
+amino acid inhibitors based on the ABH or nor-NOHA scaffoldings with <sc>d</sc>-side chains even more extensive than that of ABH<sub>DP</sub> could be designed to further enhance binding affinity as well as
+selectivity against SmARG. Future studies in this regard will be reported
+in due course.</p></sec></sec><sec id="ack1" sec-type="ack" disp-level="1"><title>Acknowledgments</title><p>We thank Professors Edward D’Antonio and Mustafa Köksal
+for helpful advice and scientific discussions. Additionally, we thank
+the National Synchrotron Light Source at Brookhaven National Laboratory
+(beamline X29) for access to X-ray crystallographic data collection
+facilities. Finally, we thank New England Discovery Partners for the
+generous gift of samples of ABH<sub>PE</sub> and ABH<sub>DP</sub>.</p></sec><sec id="dl1" sec-type="glossary" disp-level="1"><title>Glossary</title><def-list><title>Abbreviations</title><def-item><term>ABH</term><def><p>2(<italic>S</italic>)-amino-6-boronohexanoic
+acid</p></def></def-item><def-item><term>ABH<sub>DP</sub></term><def><p>(<italic>R</italic>)-2-amino-6-borono-2-[1-(3,4-dichlorobenzyl)piperidin-4-yl]hexanoic
+acid</p></def></def-item><def-item><term>ABH<sub>DP1</sub></term><def><p>(<italic>R</italic>)-2-amino-6-borono-2-[1-(4-chlorobenzyl)piperidin-4-yl]hexanoate</p></def></def-item><def-item><term>ABH<sub>PE</sub></term><def><p>(<italic>R</italic>)-2-amino-6-borono-2-[2-(piperidin-1-yl)ethyl]hexanoic
+acid</p></def></def-item><def-item><term>BEC</term><def><p><italic>S</italic>-(2-boronoethyl)-<sc>l</sc>-cysteine</p></def></def-item><def-item><term>EPPS</term><def><p>4-(2-hydroxyethyl)piperazine-1-propanesulfonic
+acid</p></def></def-item><def-item><term>ITC</term><def><p>isothermal
+titration calorimetry</p></def></def-item><def-item><term>NOHA</term><def><p><italic>N</italic>-hydroxy-<sc>l</sc>-arginine</p></def></def-item><def-item><term>nor-NOHA</term><def><p>nor-<italic>N</italic>-hydroxy-<sc>l</sc>-arginine</p></def></def-item><def-item><term>PDB</term><def><p>Protein Data Bank</p></def></def-item><def-item><term>rmsd</term><def><p>root-mean-square deviation</p></def></def-item><def-item><term>TCEP</term><def><p>tris(2-carboxyethyl)phosphine hydrochloride.</p></def></def-item></def-list></sec><sec id="notes-2" disp-level="1"><title>Supporting Information Available</title><p>Isothermal titration
+calorimetry
+data for SmARG–inhibitor complexes, simulated annealing omit
+map of C291 and C332 in unliganded SmARG, superposition of the SmARG–NOHA
+complex with the human arginase I–NOHA complex, simulated annealing
+omit map of the SmARG–BEC complex, and helminth fluorescence
+bioassay data. This material is available free of charge via the Internet
+at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org" ext-link-type="uri">http://pubs.acs.org</ext-link>.</p></sec><sec id="notes-1" disp-level="1"><title>Accession Codes</title><p>The atomic coordinates
+and structure factors have been deposited in the Protein Data Bank:
+unliganded SmARG, 4Q3P; SmARG–ABH complex, 4Q3Q; SmARG–ABH<sub>PE</sub> complex, 4Q3S; SmARG–ABH<sub>DP</sub> complex, 4Q3R; SmARG–BEC complex, 4Q3V; SmARG–NOHA complex, 4Q3T; SmARG–nor-NOHA
+complex, 4Q3U; SmARG–<sc>l</sc>-ornithine complex, 4Q42; SmARG–<sc>l</sc>-lysine complex, 4Q41; SmARG–<sc>l</sc>-valine complex, 4Q40.</p></sec><sec id="notes-3" disp-level="1"><p>This
+work was
+supported by National Institutes of Health Grant GM49758, Wellcome
+Trust Grants WT084273 and WT078317, and the Welsh Government Knowledge
+Economy Skills Scholarship (KESS) program.</p></sec><sec id="NOTES-d1405e3273-autogenerated" disp-level="1"><p>The authors declare no
+competing financial interest.</p></sec><sec id="funding-statement1" xml:lang="en" disp-level="1"><title>Funding Statement</title><p>National Institutes of Health, United States</p></sec><sec id="sec21" disp-level="1"><title>Supplementary Material</title><supplementary-material id="sifile1" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bi5004519_si_001.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path 38f6/4334208/dc91eae094df/bi5004519_si_001.pdf?><?cloudpmc-bucket app?><?size 691282?><caption><p>bi5004519_si_001.pdf</p></caption></media></supplementary-material></sec><sec id="ref-list1" sec-type="ref-list" disp-level="1"><title>References</title><sec id="ref-list1_sec2" disp-level="2"><ref-list><ref id="ref1"><mixed-citation id="cit1"><named-content content-type="citation-string">Hotez P. J.; Savioli L.; Fenwick A. (2012) Neglected
+tropical diseases of the
+Middle East and North Africa: Review of their prevalence, distribution,
+and opportunities for control. PLoS Neglected
+Trop. Dis.
+6(2), e1475.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pntd.0001475"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3289601"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22389729"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=PLoS Neglected Trop. Dis.&amp;title=Neglected tropical diseases of the Middle East and North Africa: Review of their prevalence, distribution, and opportunities for control&amp;author=P. J. Hotez&amp;author=L. Savioli&amp;author=A. Fenwick&amp;volume=6&amp;issue=2&amp;publication_year=2012&amp;pages=e1475&amp;pmid=22389729&amp;doi=10.1371/journal.pntd.0001475&amp;"/></mixed-citation></ref><ref id="ref2"><mixed-citation id="cit2"><named-content content-type="citation-string">Pavlin B. I.; Kozarsky P.; Cetron M. S. (2012) Acute pulmonary
+schistosomiasis in
+travelers: Case report and review of the literature. Travel Medicine and Infectious Disease
+10, 209–219.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.tmaid.2012.06.001"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22981182"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Travel Medicine and Infectious Disease&amp;title=Acute pulmonary schistosomiasis in travelers: Case report and review of the literature&amp;author=B. I. Pavlin&amp;author=P. Kozarsky&amp;author=M. S. Cetron&amp;volume=10&amp;publication_year=2012&amp;pages=209-219&amp;pmid=22981182&amp;doi=10.1016/j.tmaid.2012.06.001&amp;"/></mixed-citation></ref><ref id="ref3"><mixed-citation id="cit3"><named-content content-type="citation-string">Gryseels B. (2012) Schistosomiasis. Infectious Disease
+Clinics of North America 
+26, 383–397.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.idc.2012.03.004"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22632645"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Infectious Disease Clinics of North America&amp;title=Schistosomiasis&amp;author=B. Gryseels&amp;volume=26&amp;publication_year=2012&amp;pages=383-397&amp;pmid=22632645&amp;doi=10.1016/j.idc.2012.03.004&amp;"/></mixed-citation></ref><ref id="ref4"><mixed-citation id="cit4"><named-content content-type="citation-string">Hams E.; Aviello G.; Fallon P. G. (2013) The schistosoma granuloma: Friend
+or foe?. Front. Immunol.
+4, 89.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.3389/fimmu.2013.00089"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3625856"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23596444"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Front. Immunol.&amp;title=The schistosoma granuloma: Friend or foe?&amp;author=E. Hams&amp;author=G. Aviello&amp;author=P. G. Fallon&amp;volume=4&amp;publication_year=2013&amp;pages=89&amp;pmid=23596444&amp;doi=10.3389/fimmu.2013.00089&amp;"/></mixed-citation></ref><ref id="ref5"><mixed-citation id="cit5"><named-content content-type="citation-string">Pearce E. J.; MacDonald A. S. (2002) The immunobiology of schistosomiasis. Nat. Rev. Immunol.
+2, 499–511.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nri843"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12094224"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Rev. Immunol.&amp;title=The immunobiology of schistosomiasis&amp;author=E. J. Pearce&amp;author=A. S. MacDonald&amp;volume=2&amp;publication_year=2002&amp;pages=499-511&amp;pmid=12094224&amp;doi=10.1038/nri843&amp;"/></mixed-citation></ref><ref id="ref6"><mixed-citation id="cit6"><named-content content-type="citation-string">Wynn T. A.; Thompson R. W.; Cheever A. W.; Mentink-Kane M. M. (2004) Immunopathogenesis
+of schistosomiasis. Immunol. Rev.
+201, 156–167.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.0105-2896.2004.00176.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15361239"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Immunol. Rev.&amp;title=Immunopathogenesis of schistosomiasis&amp;author=T. A. Wynn&amp;author=R. W. Thompson&amp;author=A. W. Cheever&amp;author=M. M. Mentink-Kane&amp;volume=201&amp;publication_year=2004&amp;pages=156-167&amp;pmid=15361239&amp;doi=10.1111/j.0105-2896.2004.00176.x&amp;"/></mixed-citation></ref><ref id="ref7"><mixed-citation id="cit7"><named-content content-type="citation-string">Anthony B. J.; Ramm G. A.; McManus D. P. (2012) Role of
+resident liver cells in the
+pathogenesis of schistosomiasis. Trends Parasitol.
+28, 572–579.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.pt.2012.09.005"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23099112"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Trends Parasitol.&amp;title=Role of resident liver cells in the pathogenesis of schistosomiasis&amp;author=B. J. Anthony&amp;author=G. A. Ramm&amp;author=D. P. McManus&amp;volume=28&amp;publication_year=2012&amp;pages=572-579&amp;pmid=23099112&amp;doi=10.1016/j.pt.2012.09.005&amp;"/></mixed-citation></ref><ref id="ref8"><mixed-citation id="cit8"><named-content content-type="citation-string">Greenberg R. M. (2005) Are Ca<sup>2+</sup> channels targets
+of praziquantel action?. Int. J. Parasitol.
+35, 1–9.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ijpara.2004.09.004"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15619510"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Int. J. Parasitol.&amp;title=Are Ca2+ channels targets of praziquantel action?&amp;author=R. M. Greenberg&amp;volume=35&amp;publication_year=2005&amp;pages=1-9&amp;pmid=15619510&amp;doi=10.1016/j.ijpara.2004.09.004&amp;"/></mixed-citation></ref><ref id="ref9"><mixed-citation id="cit9"><named-content content-type="citation-string">Cioli D.; Botros S. S.; Wheatcroft-Francklow K.; Mbaye A.; Southgate V.; Tchuenté L.-A.
+T.; Pica-Mattoccia L.; Troiani A. R.; el-Din S. H. S.; Sabra A.-N. A.; Albin J.; Engels D.; Doenhoff M. J. (2004) Determination of ED<sub>50</sub> values
+for praziquantel in praziquantel-resistant and -susceptible <italic>Schistosoma mansoni</italic> isolates. Int.
+J. Parasitol.
+34, 979–987.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ijpara.2004.05.001"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15217737"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Int. J. Parasitol.&amp;title=Determination of ED50 values for praziquantel in praziquantel-resistant and -susceptible Schistosoma mansoni isolates&amp;author=D. Cioli&amp;author=S. S. Botros&amp;author=K. Wheatcroft-Francklow&amp;author=A. Mbaye&amp;author=V. Southgate&amp;volume=34&amp;publication_year=2004&amp;pages=979-987&amp;pmid=15217737&amp;doi=10.1016/j.ijpara.2004.05.001&amp;"/></mixed-citation></ref><ref id="ref10"><mixed-citation id="cit10"><named-content content-type="citation-string">Pica-Mattoccia L.; Doenhoff M. J.; Valle C.; Basso A.; Troiani A.-R.; Liberti P.; Festucci A.; Guidi A.; Cioli D. (2009) Genetic analysis
+of decreased praziquantel sensitivity in a laboratory strain of <italic>Schistosoma mansoni</italic>. Acta Trop.
+111, 82–85.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.actatropica.2009.01.012"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19426668"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Trop.&amp;title=Genetic analysis of decreased praziquantel sensitivity in a laboratory strain of Schistosoma mansoni&amp;author=L. Pica-Mattoccia&amp;author=M. J. Doenhoff&amp;author=C. Valle&amp;author=A. Basso&amp;author=A.-R. Troiani&amp;volume=111&amp;publication_year=2009&amp;pages=82-85&amp;pmid=19426668&amp;doi=10.1016/j.actatropica.2009.01.012&amp;"/></mixed-citation></ref><ref id="ref11"><mixed-citation id="cit11"><named-content content-type="citation-string">Wang W.; Wang L.; Liang Y. S. (2012) Susceptibility
+or resistance of praziquantel
+in human schistosomiasis: A review. Parasitol.
+Res.
+111, 1871–1877.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1007/s00436-012-3151-z"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23052781"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Parasitol. Res.&amp;title=Susceptibility or resistance of praziquantel in human schistosomiasis: A review&amp;author=W. Wang&amp;author=L. Wang&amp;author=Y. S. Liang&amp;volume=111&amp;publication_year=2012&amp;pages=1871-1877&amp;pmid=23052781&amp;doi=10.1007/s00436-012-3151-z&amp;"/></mixed-citation></ref><ref id="ref12"><mixed-citation id="cit12"><named-content content-type="citation-string">Greenberg R. M. (2013) New approaches
+for understanding mechanisms of drug resistance in schistosomes. Parasitology
+140, 1534–1546.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1017/S0031182013000231"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3775338"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23552512"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Parasitology&amp;title=New approaches for understanding mechanisms of drug resistance in schistosomes&amp;author=R. M. Greenberg&amp;volume=140&amp;publication_year=2013&amp;pages=1534-1546&amp;pmid=23552512&amp;doi=10.1017/S0031182013000231&amp;"/></mixed-citation></ref><ref id="ref13"><mixed-citation id="cit13"><named-content content-type="citation-string">Senft A. W. (1963) Observations
+on amino acid metabolism of <italic>Schistosoma mansoni</italic> in
+a chemically defined medium. Ann. N.Y. Acad.
+Sci.
+113, 272–288.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1749-6632.1963.tb40670.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="14088698"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Ann. N.Y. Acad. Sci.&amp;title=Observations on amino acid metabolism of Schistosoma mansoni in a chemically defined medium&amp;author=A. W. Senft&amp;volume=113&amp;publication_year=1963&amp;pages=272-288&amp;pmid=14088698&amp;doi=10.1111/j.1749-6632.1963.tb40670.x&amp;"/></mixed-citation></ref><ref id="ref14"><mixed-citation id="cit14"><named-content content-type="citation-string">Senft A. W. (1966) Studies
+in arginine metabolism by schistosomes. I. Arginine uptake and lysis
+by <italic>Schistosoma mansoni</italic>. Comp.
+Biochem. Physiol.
+18, 209–216.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/0010-406x(66)90345-8"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="6007424"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Comp. Biochem. Physiol.&amp;title=Studies in arginine metabolism by schistosomes. I. Arginine uptake and lysis by Schistosoma mansoni&amp;author=A. W. Senft&amp;volume=18&amp;publication_year=1966&amp;pages=209-216&amp;pmid=6007424&amp;doi=10.1016/0010-406x(66)90345-8&amp;"/></mixed-citation></ref><ref id="ref15"><mixed-citation id="cit15"><named-content content-type="citation-string">Fitzpatrick J. M.; Fuentes J. M.; Chalmers I. W.; Wynn T. A.; Modolell M.; Hoffmann K. F.; Hesse M. (2009) <italic>Schistosoma mansoni</italic> arginase shares functional similarities with human orthologs but
+depends upon disulphide bridges for enzymatic activity. Int. J. Parasitol.
+39, 267–279.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ijpara.2008.06.015"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2756234"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18723022"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Int. J. Parasitol.&amp;title=Schistosoma mansoni arginase shares functional similarities with human orthologs but depends upon disulphide bridges for enzymatic activity&amp;author=J. M. Fitzpatrick&amp;author=J. M. Fuentes&amp;author=I. W. Chalmers&amp;author=T. A. Wynn&amp;author=M. Modolell&amp;volume=39&amp;publication_year=2009&amp;pages=267-279&amp;pmid=18723022&amp;doi=10.1016/j.ijpara.2008.06.015&amp;"/></mixed-citation></ref><ref id="ref16"><mixed-citation id="cit16"><named-content content-type="citation-string">Di
+Costanzo L.; Sabio G.; Mora A.; Rodriguez P. C.; Ochoa A. C.; Centeno F.; Christianson D. W. (2005) Crystal
+structure of human arginase I at 1.29-Å resolution and exploration
+of inhibition in the immune response. Proc.
+Natl. Acad. Sci. U.S.A.
+102, 13058–13063.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1073/pnas.0504027102"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC1201588"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16141327"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. Natl. Acad. Sci. U.S.A.&amp;title=Crystal structure of human arginase I at 1.29-Å resolution and exploration of inhibition in the immune response&amp;author=L. Di Costanzo&amp;author=G. Sabio&amp;author=A. Mora&amp;author=P. C. Rodriguez&amp;author=A. C. Ochoa&amp;volume=102&amp;publication_year=2005&amp;pages=13058-13063&amp;pmid=16141327&amp;doi=10.1073/pnas.0504027102&amp;"/></mixed-citation></ref><ref id="ref17"><mixed-citation id="cit17"><named-content content-type="citation-string">Cama E.; Colleluori D. M.; Emig F. A.; Shin H.; Kim S. W.; Kim N. N.; Traish A.; Ash D. E.; Christianson D. W. (2003) Human arginase
+II: Crystal structure and physiological role in male and female sexual
+arousal. Biochemistry
+42, 8445–8451.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi034340j"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12859189"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Human arginase II: Crystal structure and physiological role in male and female sexual arousal&amp;author=E. Cama&amp;author=D. M. Colleluori&amp;author=F. A. Emig&amp;author=H. Shin&amp;author=S. W. Kim&amp;volume=42&amp;publication_year=2003&amp;pages=8445-8451&amp;pmid=12859189&amp;doi=10.1021/bi034340j&amp;"/></mixed-citation></ref><ref id="ref18"><mixed-citation id="cit18"><named-content content-type="citation-string">Colleluori D. M.; Morris S. M. Jr.; Ash D. E. (2001) Expression,
+purification,
+and characterization of human type II arginase. Arch. Biochem. Biophys.
+389, 135–143.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1006/abbi.2001.2324"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11370664"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Arch. Biochem. Biophys.&amp;title=Expression, purification, and characterization of human type II arginase&amp;author=D. M. Colleluori&amp;author=S. M. Morris&amp;author=D. E. Ash&amp;volume=389&amp;publication_year=2001&amp;pages=135-143&amp;pmid=11370664&amp;doi=10.1006/abbi.2001.2324&amp;"/></mixed-citation></ref><ref id="ref19"><mixed-citation id="cit19"><named-content content-type="citation-string">Sabio G.; Mora A.; Rangel M. A.; Quesada A.; Marcos C. F.; Alonso J. C.; Soler G.; Centeno F. (2001) Glu-256 is a main structural
+determinant for oligomerisation of human arginase I. FEBS Lett.
+501, 161–165.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/s0014-5793(01)02650-3"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11470277"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=FEBS Lett.&amp;title=Glu-256 is a main structural determinant for oligomerisation of human arginase I&amp;author=G. Sabio&amp;author=A. Mora&amp;author=M. A. Rangel&amp;author=A. Quesada&amp;author=C. F. Marcos&amp;volume=501&amp;publication_year=2001&amp;pages=161-165&amp;pmid=11470277&amp;doi=10.1016/s0014-5793(01)02650-3&amp;"/></mixed-citation></ref><ref id="ref20"><mixed-citation id="cit20"><named-content content-type="citation-string">James S. L.; Glaven J. (1989) Macrophage cytotoxicity against schistosomula of <italic>Schistosoma mansoni</italic> involves arginine-dependent production
+of reactive nitrogen intermediates. J. Immunol.
+143, 4208–4212.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="2592772"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Immunol.&amp;title=Macrophage cytotoxicity against schistosomula of Schistosoma mansoni involves arginine-dependent production of reactive nitrogen intermediates&amp;author=S. L. James&amp;author=J. Glaven&amp;volume=143&amp;publication_year=1989&amp;pages=4208-4212&amp;pmid=2592772&amp;"/></mixed-citation></ref><ref id="ref21"><mixed-citation id="cit21"><named-content content-type="citation-string">Kropf P.; Herath S.; Weber V.; Modolell M.; Muller I. (2003) Factors influencing <italic>Leishmania
+major</italic> infection in IL-4-deficient BALB/c mice. Parasite Immunol.
+25, 439–447.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1111/j.1365-3024.2003.00655.x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="14651591"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Parasite Immunol.&amp;title=Factors influencing Leishmania major infection in IL-4-deficient BALB/c mice&amp;author=P. Kropf&amp;author=S. Herath&amp;author=V. Weber&amp;author=M. Modolell&amp;author=I. Muller&amp;volume=25&amp;publication_year=2003&amp;pages=439-447&amp;pmid=14651591&amp;doi=10.1111/j.1365-3024.2003.00655.x&amp;"/></mixed-citation></ref><ref id="ref22"><mixed-citation id="cit22"><named-content content-type="citation-string">Roberts S. C.; Tancer M. J.; Polinsky M. R.; Gibson K. M.; Heby O.; Ullman B. (2004) Arginase plays a pivotal role in polyamine precursor
+metabolism in <italic>Leishmania</italic>. Characterization of gene
+deletion mutants. J. Biol. Chem.
+279, 23668–23678.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M402042200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15023992"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Arginase plays a pivotal role in polyamine precursor metabolism in Leishmania. Characterization of gene deletion mutants&amp;author=S. C. Roberts&amp;author=M. J. Tancer&amp;author=M. R. Polinsky&amp;author=K. M. Gibson&amp;author=O. Heby&amp;volume=279&amp;publication_year=2004&amp;pages=23668-23678&amp;pmid=15023992&amp;doi=10.1074/jbc.M402042200&amp;"/></mixed-citation></ref><ref id="ref23"><mixed-citation id="cit23"><named-content content-type="citation-string">Gaur U.; Roberts S. C.; Dalvi R. P.; Corraliza I.; Ullman B.; Wilson M. E. (2007) An effect of parasite-encoded
+arginase
+on the outcome of murine cutaneous leishmaniasis. J. Immunol.
+179, 8446–8453.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.4049/jimmunol.179.12.8446"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18056391"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Immunol.&amp;title=An effect of parasite-encoded arginase on the outcome of murine cutaneous leishmaniasis&amp;author=U. Gaur&amp;author=S. C. Roberts&amp;author=R. P. Dalvi&amp;author=I. Corraliza&amp;author=B. Ullman&amp;volume=179&amp;publication_year=2007&amp;pages=8446-8453&amp;pmid=18056391&amp;doi=10.4049/jimmunol.179.12.8446&amp;"/></mixed-citation></ref><ref id="ref24"><mixed-citation id="cit24"><named-content content-type="citation-string">Gobert A.
+P.; McGee D. J.; Akhtar M.; Mendz G. L.; Newton J. C.; Cheng Y.; Mobley H. L. T.; Wilson K. T. (2001) <italic>Helicobacter
+pylori</italic> arginase inhibits nitric oxide production by eukaryotic
+cells: A strategy for bacterial survival. Proc.
+Natl. Acad. Sci. U.S.A.
+98, 13844–13849.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1073/pnas.241443798"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC61129"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11717441"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. Natl. Acad. Sci. U.S.A.&amp;title=Helicobacter pylori arginase inhibits nitric oxide production by eukaryotic cells: A strategy for bacterial survival&amp;author=A. P. Gobert&amp;author=D. J. McGee&amp;author=M. Akhtar&amp;author=G. L. Mendz&amp;author=J. C. Newton&amp;volume=98&amp;publication_year=2001&amp;pages=13844-13849&amp;pmid=11717441&amp;doi=10.1073/pnas.241443798&amp;"/></mixed-citation></ref><ref id="ref25"><mixed-citation id="cit25"><named-content content-type="citation-string">Zabaleta J.; McGee D. J.; Zea A. H.; Hernandez C. P.; Rodriguez P. C.; Sierra R. A.; Correa P.; Ochoa A. C. (2004) <italic>Helicobacter pylori</italic> arginase inhibits T cell proliferation
+and reduces the expression of the TCR ζ-chain (CD3ζ). J. Immunol.
+173, 586–593.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.4049/jimmunol.173.1.586"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15210820"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Immunol.&amp;title=Helicobacter pylori arginase inhibits T cell proliferation and reduces the expression of the TCR ζ-chain (CD3ζ)&amp;author=J. Zabaleta&amp;author=D. J. McGee&amp;author=A. H. Zea&amp;author=C. P. Hernandez&amp;author=P. C. Rodriguez&amp;volume=173&amp;publication_year=2004&amp;pages=586-593&amp;pmid=15210820&amp;doi=10.4049/jimmunol.173.1.586&amp;"/></mixed-citation></ref><ref id="ref26"><mixed-citation id="cit26"><named-content content-type="citation-string">Rodriguez P. C.; Zea A. H.; Culotta K. S.; Zabaleta J.; Ochoa J. B.; Ochoa A. C. (2002) Regulation of T cell receptor CD3ζ chain expression
+by l-arginine. J. Biol. Chem.
+277, 21123–21129.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M110675200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11950832"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Regulation of T cell receptor CD3ζ chain expression by l-arginine&amp;author=P. C. Rodriguez&amp;author=A. H. Zea&amp;author=K. S. Culotta&amp;author=J. Zabaleta&amp;author=J. B. Ochoa&amp;volume=277&amp;publication_year=2002&amp;pages=21123-21129&amp;pmid=11950832&amp;doi=10.1074/jbc.M110675200&amp;"/></mixed-citation></ref><ref id="ref27"><mixed-citation id="cit27"><named-content content-type="citation-string">Rodriguez P. C.; Zea A. H.; DeSalvo J.; Culotta K. S.; Zabaleta J.; Quiceno D. G.; Ochoa J. B.; Ochoa A. C. (2003) l-Arginine
+consumption by macrophages modulates the expression of CD3ζ
+chain in T lymphocytes. J. Immunol.
+171, 1232–1239.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.4049/jimmunol.171.3.1232"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12874210"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Immunol.&amp;title=l-Arginine consumption by macrophages modulates the expression of CD3ζ chain in T lymphocytes&amp;author=P. C. Rodriguez&amp;author=A. H. Zea&amp;author=J. DeSalvo&amp;author=K. S. Culotta&amp;author=J. Zabaleta&amp;volume=171&amp;publication_year=2003&amp;pages=1232-1239&amp;pmid=12874210&amp;doi=10.4049/jimmunol.171.3.1232&amp;"/></mixed-citation></ref><ref id="ref28"><mixed-citation id="cit28"><named-content content-type="citation-string">Rodriguez P. C.; Quiceno D. G.; Zabaleta J.; Ortiz B.; Zea A. H.; Piazuelo M. B.; Delgado A.; Correa P.; Brayer J.; Sotomayor E. M.; Antonia S.; Ochoa J. B.; Ochoa A. C. (2004) Arginase
+I production in the tumor microenvironment by mature myeloid cells
+inhibits T-cell receptor expression and antigen-specific T-cell responses. Cancer Res.
+64, 5839–5849.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1158/0008-5472.CAN-04-0465"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15313928"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Cancer Res.&amp;title=Arginase I production in the tumor microenvironment by mature myeloid cells inhibits T-cell receptor expression and antigen-specific T-cell responses&amp;author=P. C. Rodriguez&amp;author=D. G. Quiceno&amp;author=J. Zabaleta&amp;author=B. Ortiz&amp;author=A. H. Zea&amp;volume=64&amp;publication_year=2004&amp;pages=5839-5849&amp;pmid=15313928&amp;doi=10.1158/0008-5472.CAN-04-0465&amp;"/></mixed-citation></ref><ref id="ref29"><mixed-citation id="cit29"><named-content content-type="citation-string">Raber P.; Ochoa A. C.; Rodriguez P. C. (2012) Metabolism of l-arginine
+by myeloid-derived suppressor cells in cancer: Mechanisms of T cell
+suppression and therapeutic perspectives. Immunol.
+Invest.
+41, 614–634.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.3109/08820139.2012.680634"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3519282"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23017138"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Immunol. Invest.&amp;title=Metabolism of l-arginine by myeloid-derived suppressor cells in cancer: Mechanisms of T cell suppression and therapeutic perspectives&amp;author=P. Raber&amp;author=A. C. Ochoa&amp;author=P. C. Rodriguez&amp;volume=41&amp;publication_year=2012&amp;pages=614-634&amp;pmid=23017138&amp;doi=10.3109/08820139.2012.680634&amp;"/></mixed-citation></ref><ref id="ref30"><mixed-citation id="cit30"><named-content content-type="citation-string">Baggio R.; Elbaum D.; Kanyo Z. F.; Carroll P. J.; Cavalli R. C.; Ash D. E.; Christianson D. W. (1997) Inhibition
+of Mn<sup>2+</sup><sub>2</sub>-arginase by borate leads to the design
+of a transition state
+analogue inhibitor, 2(<italic>S</italic>)-amino-6-boronohexanoic acid. J. Am. Chem. Soc.
+119, 8107–8108.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Chem. Soc.&amp;title=Inhibition of Mn2+2-arginase by borate leads to the design of a transition state analogue inhibitor, 2(S)-amino-6-boronohexanoic acid&amp;author=R. Baggio&amp;author=D. Elbaum&amp;author=Z. F. Kanyo&amp;author=P. J. Carroll&amp;author=R. C. Cavalli&amp;volume=119&amp;publication_year=1997&amp;pages=8107-8108&amp;"/></mixed-citation></ref><ref id="ref31"><mixed-citation id="cit31"><named-content content-type="citation-string">Kim N. N.; Cox J. D.; Baggio R. F.; Emig F. A.; Mistry S. K.; Harper S. L.; Speicher D. W.; Morris S. M.; Ash D. E.; Traish A.; Christianson D. W. (2001) Probing erectile function: <italic>S</italic>-(2-Boronoethyl)-l-cysteine binds to arginase
+as a transition state analogue and enhances smooth muscle relaxation
+in human penile corpus cavernosum. Biochemistry
+40, 2678–2688.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi002317h"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11258879"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Probing erectile function: S-(2-Boronoethyl)-l-cysteine binds to arginase as a transition state analogue and enhances smooth muscle relaxation in human penile corpus cavernosum&amp;author=N. N. Kim&amp;author=J. D. Cox&amp;author=R. F. Baggio&amp;author=F. A. Emig&amp;author=S. K. Mistry&amp;volume=40&amp;publication_year=2001&amp;pages=2678-2688&amp;pmid=11258879&amp;doi=10.1021/bi002317h&amp;"/></mixed-citation></ref><ref id="ref32"><mixed-citation id="cit32"><named-content content-type="citation-string">Daghigh F.; Fukuto J. M.; Ash D. E. (1994) Inhibition
+of rat liver arginase
+by an intermediate in NO biosynthesis, N<sup>G</sup>-hydroxy-l-arginine: Implications for the regulation of nitric oxide biosynthesis
+by arginase. Biochem. Biophys. Res. Commun.
+202, 174–180.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1006/bbrc.1994.1909"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="8037711"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochem. Biophys. Res. Commun.&amp;title=Inhibition of rat liver arginase by an intermediate in NO biosynthesis, NG-hydroxy-l-arginine: Implications for the regulation of nitric oxide biosynthesis by arginase&amp;author=F. Daghigh&amp;author=J. M. Fukuto&amp;author=D. E. Ash&amp;volume=202&amp;publication_year=1994&amp;pages=174-180&amp;pmid=8037711&amp;doi=10.1006/bbrc.1994.1909&amp;"/></mixed-citation></ref><ref id="ref33"><mixed-citation id="cit33"><named-content content-type="citation-string">Custot J.; Moali C.; Brollo M.; Boucher J. L.; Delaforge M.; Mansuy D.; Tenu J. P.; Zimmermann J. L. (1997) The new
+α-amino acid <italic>N</italic><sup>ω</sup>-hydroxy-nor-l-arginine: A high-affinity inhibitor of arginase well adapted
+to bind to its manganese cluster. J. Am. Chem.
+Soc.
+119, 4086–4087.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Chem. Soc.&amp;title=The new α-amino acid Nω-hydroxy-nor-l-arginine: A high-affinity inhibitor of arginase well adapted to bind to its manganese cluster&amp;author=J. Custot&amp;author=C. Moali&amp;author=M. Brollo&amp;author=J. L. Boucher&amp;author=M. Delaforge&amp;volume=119&amp;publication_year=1997&amp;pages=4086-4087&amp;"/></mixed-citation></ref><ref id="ref34"><mixed-citation id="cit34"><named-content content-type="citation-string">Van
+Zandt M. C.; Whitehouse D. L.; Golebiowski A.; Ji M. K.; Zhang M.; Beckett R. P.; Jagdmann G. E.; Ryder T. R.; Sheeler R.; Andreoli M.; Conway B.; Mahboubi K.; D’Angelo G.; Mitschler A.; Cousido-Siah A.; Ruiz F. X.; Howard E. I.; Podjarny A. D.; Schroeter H. (2013) Discovery of (<italic>R</italic>)-2-amino-6-borono-(2-(2-piperidin-1-yl)ethyl)hexanoic
+acid and congeners as highly potent inhibitors of human arginases
+I and II for treatment of myocardial reperfusion injury. J. Med. Chem.
+56, 2568–2580.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm400014c"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23472952"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Discovery of (R)-2-amino-6-borono-(2-(2-piperidin-1-yl)ethyl)hexanoic acid and congeners as highly potent inhibitors of human arginases I and II for treatment of myocardial reperfusion injury&amp;author=M. C. Van Zandt&amp;author=D. L. Whitehouse&amp;author=A. Golebiowski&amp;author=M. K. Ji&amp;author=M. Zhang&amp;volume=56&amp;publication_year=2013&amp;pages=2568-2580&amp;pmid=23472952&amp;doi=10.1021/jm400014c&amp;"/></mixed-citation></ref><ref id="ref35"><mixed-citation id="cit35"><named-content content-type="citation-string">Golebiowski A.; Whitehouse D.; Beckett R. P.; Van Zandt M.; Ji M. K.; Ryder T. R.; Jagdmann E.; Andreoli M.; Lee Y.; Sheeler R.; Conway B.; Olczak J.; Mazur M.; Czestkowski W.; Piotrowska W.; Cousido-Siah A.; Ruiz F. X.; Mitschler A.; Podjarny A.; Schroeter H. (2013) Synthesis
+of quaternary α-amino acid-based arginase inhibitors via the
+Ugi reaction. Bioorg. Med. Chem. Lett.
+23, 4837–4841.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.bmcl.2013.06.092"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23886684"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Bioorg. Med. Chem. Lett.&amp;title=Synthesis of quaternary α-amino acid-based arginase inhibitors via the Ugi reaction&amp;author=A. Golebiowski&amp;author=D. Whitehouse&amp;author=R. P. Beckett&amp;author=M. Van Zandt&amp;author=M. K. Ji&amp;volume=23&amp;publication_year=2013&amp;pages=4837-4841&amp;pmid=23886684&amp;doi=10.1016/j.bmcl.2013.06.092&amp;"/></mixed-citation></ref><ref id="ref36"><mixed-citation id="cit36"><named-content content-type="citation-string">Archibald R. M. (1945) Colorimetric
+determination of urea. J. Biol. Chem.
+157, 507–518.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Colorimetric determination of urea&amp;author=R. M. Archibald&amp;volume=157&amp;publication_year=1945&amp;pages=507-518&amp;"/></mixed-citation></ref><ref id="ref37"><mixed-citation id="cit37"><named-content content-type="citation-string">Otwinowski Z.; Minor W. (1997) Processing of X-ray
+diffraction data collected in oscillation mode. Methods Enzymol.
+276, 307–326.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/S0076-6879(97)76066-X"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="27754618"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Methods Enzymol.&amp;title=Processing of X-ray diffraction data collected in oscillation mode&amp;author=Z. Otwinowski&amp;author=W. Minor&amp;volume=276&amp;publication_year=1997&amp;pages=307-326&amp;pmid=27754618&amp;doi=10.1016/S0076-6879(97)76066-X&amp;"/></mixed-citation></ref><ref id="ref38"><mixed-citation id="cit38"><named-content content-type="citation-string">McCoy A. J.; Grosse-Kunstleve R. W.; Storoni L. C.; Read R. J. (2005) Likelihood-enhanced
+fast translation functions. Acta Crystallogr.
+D61, 458–464.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444905001617"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15805601"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Likelihood-enhanced fast translation functions&amp;author=A. J. McCoy&amp;author=R. W. Grosse-Kunstleve&amp;author=L. C. Storoni&amp;author=R. J. Read&amp;volume=D61&amp;publication_year=2005&amp;pages=458-464&amp;pmid=15805601&amp;doi=10.1107/S0907444905001617&amp;"/></mixed-citation></ref><ref id="ref39"><mixed-citation id="cit39"><named-content content-type="citation-string"> (1994) The CCP4 suite: Programs for protein crystallography. Acta Crystallogr.
+D50, 760–763.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444994003112"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15299374"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=The CCP4 suite: Programs for protein crystallography&amp;volume=D50&amp;publication_year=1994&amp;pages=760-763&amp;pmid=15299374&amp;doi=10.1107/S0907444994003112&amp;"/></mixed-citation></ref><ref id="ref40"><mixed-citation id="cit40"><named-content content-type="citation-string">Di
+Costanzo L.; Pique M. E.; Christianson D. W. (2007) Crystal
+structure of human arginase I complexed with thiosemicarbazide reveals
+an unusual thiocarbonyl μ-sulfide ligand in the binuclear manganese
+cluster. J. Am. Chem. Soc.
+129, 6388–6389.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ja071567j"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2593847"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17469833"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Chem. Soc.&amp;title=Crystal structure of human arginase I complexed with thiosemicarbazide reveals an unusual thiocarbonyl μ-sulfide ligand in the binuclear manganese cluster&amp;author=L. Di Costanzo&amp;author=M. E. Pique&amp;author=D. W. Christianson&amp;volume=129&amp;publication_year=2007&amp;pages=6388-6389&amp;pmid=17469833&amp;doi=10.1021/ja071567j&amp;"/></mixed-citation></ref><ref id="ref41"><mixed-citation id="cit41"><named-content content-type="citation-string">Adams P. D.; Afonine P. V.; Bunkóczi G.; Chen V. B.; Davis I. W.; Echols N.; Headd J. J.; Hung L.-W.; Kapral G. J.; Grosse-Kunstleve R. W.; McCoy A. J.; Moriarty N. W.; Oeffner R.; Read R. J.; Richardson D. C.; Richardson J. S.; Terwilliger T. C.; Zwart P. H. (2010) PHENIX: A comprehensive Python-based
+system for macromolecular structure solution. Acta Crystallogr.
+D66, 213–221.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444909052925"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2815670"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20124702"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=PHENIX: A comprehensive Python-based system for macromolecular structure solution&amp;author=P. D. Adams&amp;author=P. V. Afonine&amp;author=G. Bunkóczi&amp;author=V. B. Chen&amp;author=I. W. Davis&amp;volume=D66&amp;publication_year=2010&amp;pages=213-221&amp;pmid=20124702&amp;doi=10.1107/S0907444909052925&amp;"/></mixed-citation></ref><ref id="ref42"><mixed-citation id="cit42"><named-content content-type="citation-string">Emsley P.; Lohkamp B.; Scott W. G.; Cowtan K. (2010) Features and development
+of Coot. Acta Crystallogr.
+D66, 486–501.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444910007493"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2852313"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20383002"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Features and development of Coot&amp;author=P. Emsley&amp;author=B. Lohkamp&amp;author=W. G. Scott&amp;author=K. Cowtan&amp;volume=D66&amp;publication_year=2010&amp;pages=486-501&amp;pmid=20383002&amp;doi=10.1107/S0907444910007493&amp;"/></mixed-citation></ref><ref id="ref43"><mixed-citation id="cit43"><named-content content-type="citation-string">Laskowski R. A.; MacArthur M. W.; Moss D. S.; Thornton J. M. (1993) PROCHECK:
+A program
+to check the stereochemical quality of protein structures. J. Appl. Crystallogr.
+26, 283–291.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Appl. Crystallogr.&amp;title=PROCHECK: A program to check the stereochemical quality of protein structures&amp;author=R. A. Laskowski&amp;author=M. W. MacArthur&amp;author=D. S. Moss&amp;author=J. M. Thornton&amp;volume=26&amp;publication_year=1993&amp;pages=283-291&amp;"/></mixed-citation></ref><ref id="ref44"><mixed-citation id="cit44"><named-content content-type="citation-string">Kabsch W.; Sander C. (1983) Dictionary of protein secondary structure: Pattern
+recognition of hydrogen-bonded and geometrical features. Biopolymers
+22, 2577–2637.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/bip.360221211"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="6667333"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biopolymers&amp;title=Dictionary of protein secondary structure: Pattern recognition of hydrogen-bonded and geometrical features&amp;author=W. Kabsch&amp;author=C. Sander&amp;volume=22&amp;publication_year=1983&amp;pages=2577-2637&amp;pmid=6667333&amp;doi=10.1002/bip.360221211&amp;"/></mixed-citation></ref><ref id="ref45"><mixed-citation id="cit45"><named-content content-type="citation-string">Fitzpatrick J. M.; Peak E.; Perally S.; Chalmers I. W.; Barrett J.; Yoshino T. P.; Ivens A. C.; Hoffmann K. F. (2009) Anti-schistosomal
+intervention targets identified by lifecycle transcriptomic analyses. PLoS Neglected Trop. Dis.
+3, e543.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pntd.0000543"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2764848"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19885392"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=PLoS Neglected Trop. Dis.&amp;title=Anti-schistosomal intervention targets identified by lifecycle transcriptomic analyses&amp;author=J. M. Fitzpatrick&amp;author=E. Peak&amp;author=S. Perally&amp;author=I. W. Chalmers&amp;author=J. Barrett&amp;volume=3&amp;publication_year=2009&amp;pages=e543&amp;pmid=19885392&amp;doi=10.1371/journal.pntd.0000543&amp;"/></mixed-citation></ref><ref id="ref46"><mixed-citation id="cit46"><named-content content-type="citation-string">Peak E.; Chalmers I. W.; Hoffmann K. F. (2010) Development and validation of a quantitative,
+high-throughput, fluorescent-based bioassay to detect schistosoma
+viability. PLoS Neglected Trop. Dis.
+4, e759.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1371/journal.pntd.0000759"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2910722"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20668553"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=PLoS Neglected Trop. Dis.&amp;title=Development and validation of a quantitative, high-throughput, fluorescent-based bioassay to detect schistosoma viability&amp;author=E. Peak&amp;author=I. W. Chalmers&amp;author=K. F. Hoffmann&amp;volume=4&amp;publication_year=2010&amp;pages=e759&amp;pmid=20668553&amp;doi=10.1371/journal.pntd.0000759&amp;"/></mixed-citation></ref><ref id="ref47"><mixed-citation id="cit47"><named-content content-type="citation-string">Di
+Costanzo L.; Ilies M.; Thorn K. J.; Christianson D. W. (2010) Inhibition
+of human arginase I by substrate and product analogues. Arch. Biochem. Biophys.
+496, 101–108.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.abb.2010.02.004"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2850953"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20153713"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Arch. Biochem. Biophys.&amp;title=Inhibition of human arginase I by substrate and product analogues&amp;author=L. Di Costanzo&amp;author=M. Ilies&amp;author=K. J. Thorn&amp;author=D. W. Christianson&amp;volume=496&amp;publication_year=2010&amp;pages=101-108&amp;pmid=20153713&amp;doi=10.1016/j.abb.2010.02.004&amp;"/></mixed-citation></ref><ref id="ref48"><mixed-citation id="cit48"><named-content content-type="citation-string">Krissinel E.; Henrick K. (2007) Inference of macromolecular assemblies from crystalline
+state. J. Mol. Biol.
+372, 774–797.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.jmb.2007.05.022"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="17681537"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Mol. Biol.&amp;title=Inference of macromolecular assemblies from crystalline state&amp;author=E. Krissinel&amp;author=K. Henrick&amp;volume=372&amp;publication_year=2007&amp;pages=774-797&amp;pmid=17681537&amp;doi=10.1016/j.jmb.2007.05.022&amp;"/></mixed-citation></ref><ref id="ref49"><mixed-citation id="cit49"><named-content content-type="citation-string">Kanyo Z. F.; Scolnick L. R.; Ash D. E.; Christianson D. W. (1996) Structure
+of a unique binuclear manganese cluster in arginase. Nature
+383, 554–557.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/383554a0"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="8849731"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nature&amp;title=Structure of a unique binuclear manganese cluster in arginase&amp;author=Z. F. Kanyo&amp;author=L. R. Scolnick&amp;author=D. E. Ash&amp;author=D. W. Christianson&amp;volume=383&amp;publication_year=1996&amp;pages=554-557&amp;pmid=8849731&amp;doi=10.1038/383554a0&amp;"/></mixed-citation></ref><ref id="ref50"><mixed-citation id="cit50"><named-content content-type="citation-string">Lavulo L. T.; Sossong T. M.; Brigham-Burke M. R.; Doyle M. L.; Cox J. D.; Christianson D. W.; Ash D. E. (2001) Subunit-subunit interactions in trimeric
+arginase: Generation of active monomers by mutation of a single amino
+acid. J. Biol. Chem.
+276, 14242–14248.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M010575200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11278703"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Subunit-subunit interactions in trimeric arginase: Generation of active monomers by mutation of a single amino acid&amp;author=L. T. Lavulo&amp;author=T. M. Sossong&amp;author=M. R. Brigham-Burke&amp;author=M. L. Doyle&amp;author=J. D. Cox&amp;volume=276&amp;publication_year=2001&amp;pages=14242-14248&amp;pmid=11278703&amp;doi=10.1074/jbc.M010575200&amp;"/></mixed-citation></ref><ref id="ref51"><mixed-citation id="cit51"><named-content content-type="citation-string">García D.; Uribe E.; Lobos M.; Orellana M. S.; Carvajal N. (2009) Studies on
+the functional significance of a C-terminal S-shaped motif in human
+arginase type I: Essentiality for cooperative effects. Arch. Biochem. Biophys.
+481, 16–20.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.abb.2008.10.015"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18957279"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Arch. Biochem. Biophys.&amp;title=Studies on the functional significance of a C-terminal S-shaped motif in human arginase type I: Essentiality for cooperative effects&amp;author=D. García&amp;author=E. Uribe&amp;author=M. Lobos&amp;author=M. S. Orellana&amp;author=N. Carvajal&amp;volume=481&amp;publication_year=2009&amp;pages=16-20&amp;pmid=18957279&amp;doi=10.1016/j.abb.2008.10.015&amp;"/></mixed-citation></ref><ref id="ref52"><mixed-citation id="cit52"><named-content content-type="citation-string">Mora A.; del Ara Rangel M.; Fuentes J. M.; Soler G.; Centeno F. (2000) Implications
+of the S-shaped domain in the quaternary structure of human arginase. Biochim. Biophys. Acta
+1476, 181–190.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/s0167-4838(99)00256-3"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10669784"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochim. Biophys. Acta&amp;title=Implications of the S-shaped domain in the quaternary structure of human arginase&amp;author=A. Mora&amp;author=M. del Ara Rangel&amp;author=J. M. Fuentes&amp;author=G. Soler&amp;author=F. Centeno&amp;volume=1476&amp;publication_year=2000&amp;pages=181-190&amp;pmid=10669784&amp;doi=10.1016/s0167-4838(99)00256-3&amp;"/></mixed-citation></ref><ref id="ref53"><mixed-citation id="cit53"><named-content content-type="citation-string">Bewley M. C.; Jeffrey P. D.; Patchett M. L.; Kanyo Z. F.; Baker E. N. (1999) Crystal
+structures of <italic>Bacillus caldovelox</italic> arginase in complex
+with substrate and inhibitors reveal new insights into activation,
+inhibition and catalysis in the arginase superfamily. Structure
+7, 435–448.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/s0969-2126(99)80056-2"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10196128"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Structure&amp;title=Crystal structures of Bacillus caldovelox arginase in complex with substrate and inhibitors reveal new insights into activation, inhibition and catalysis in the arginase superfamily&amp;author=M. C. Bewley&amp;author=P. D. Jeffrey&amp;author=M. L. Patchett&amp;author=Z. F. Kanyo&amp;author=E. N. Baker&amp;volume=7&amp;publication_year=1999&amp;pages=435-448&amp;pmid=10196128&amp;doi=10.1016/s0969-2126(99)80056-2&amp;"/></mixed-citation></ref><ref id="ref54"><mixed-citation id="cit54"><named-content content-type="citation-string">D’Antonio E. L.; Ullman B.; Roberts S. C.; Dixit U. G.; Wilson M. E.; Hai Y.; Christianson D. W. (2013) Crystal structure of arginase from <italic>Leishmania mexicana</italic> and implications for the inhibition
+of polyamine biosynthesis in parasitic infections. Arch. Biochem. Biophys.
+535, 163–176.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.abb.2013.03.015"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3683356"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23583962"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Arch. Biochem. Biophys.&amp;title=Crystal structure of arginase from Leishmania mexicana and implications for the inhibition of polyamine biosynthesis in parasitic infections&amp;author=E. L. D’Antonio&amp;author=B. Ullman&amp;author=S. C. Roberts&amp;author=U. G. Dixit&amp;author=M. E. Wilson&amp;volume=535&amp;publication_year=2013&amp;pages=163-176&amp;pmid=23583962&amp;doi=10.1016/j.abb.2013.03.015&amp;"/></mixed-citation></ref><ref id="ref55"><mixed-citation id="cit55"><named-content content-type="citation-string">Schmidt B.; Ho L.; Hogg P. J. (2006) Allosteric disulfide bonds. Biochemistry
+45, 7429–7433.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi0603064"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16768438"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Allosteric disulfide bonds&amp;author=B. Schmidt&amp;author=L. Ho&amp;author=P. J. Hogg&amp;volume=45&amp;publication_year=2006&amp;pages=7429-7433&amp;pmid=16768438&amp;doi=10.1021/bi0603064&amp;"/></mixed-citation></ref><ref id="ref56"><mixed-citation id="cit56"><named-content content-type="citation-string">Cox J. D.; Kim N. N.; Traish A. M.; Christianson D. W. (1999) Arginase-boronic
+acid complex highlights a physiological role in erectile function. Nat. Struct. Biol.
+6, 1043–1047.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/14929"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10542097"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Struct. Biol.&amp;title=Arginase-boronic acid complex highlights a physiological role in erectile function&amp;author=J. D. Cox&amp;author=N. N. Kim&amp;author=A. M. Traish&amp;author=D. W. Christianson&amp;volume=6&amp;publication_year=1999&amp;pages=1043-1047&amp;pmid=10542097&amp;doi=10.1038/14929&amp;"/></mixed-citation></ref><ref id="ref57"><mixed-citation id="cit57"><named-content content-type="citation-string">Cox J. D.; Cama E.; Colleluori D. M.; Pethe S.; Boucher J.-L.; Mansuy D.; Ash D. E.; Christianson D. W. (2001) Mechanistic
+and metabolic inferences from the binding of substrate analogues and
+products to arginase. Biochemistry
+40, 2689–2701.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi002318+"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11258880"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Mechanistic and metabolic inferences from the binding of substrate analogues and products to arginase&amp;author=J. D. Cox&amp;author=E. Cama&amp;author=D. M. Colleluori&amp;author=S. Pethe&amp;author=J.-L. Boucher&amp;volume=40&amp;publication_year=2001&amp;pages=2689-2701&amp;pmid=11258880&amp;doi=10.1021/bi002318+&amp;"/></mixed-citation></ref><ref id="ref58"><mixed-citation id="cit58"><named-content content-type="citation-string">Dowling D. P.; Ilies M.; Olszewski K. L.; Portugal S.; Mota M. M.; Llinás M.; Christianson D. W. (2010) Crystal structure of arginase from <italic>Plasmodium
+falciparum</italic> and implications for l-arginine
+depletion in malarial infection. Biochemistry
+49, 5600–5608.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi100390z"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2894275"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20527960"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Crystal structure of arginase from Plasmodium falciparum and implications for l-arginine depletion in malarial infection&amp;author=D. P. Dowling&amp;author=M. Ilies&amp;author=K. L. Olszewski&amp;author=S. Portugal&amp;author=M. M. Mota&amp;volume=49&amp;publication_year=2010&amp;pages=5600-5608&amp;pmid=20527960&amp;doi=10.1021/bi100390z&amp;"/></mixed-citation></ref><ref id="ref59"><mixed-citation id="cit59"><named-content content-type="citation-string">James S. L.; Glaven J. (1989) Macrophage cytotoxicity
+against schistosomula of <italic>Schistosoma mansoni</italic> involves
+arginine-dependent production
+of reactive nitrogen intermediates. J. Immunol.
+143, 4208–4212.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="2592772"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Immunol.&amp;title=Macrophage cytotoxicity against schistosomula of Schistosoma mansoni involves arginine-dependent production of reactive nitrogen intermediates&amp;author=S. L. James&amp;author=J. Glaven&amp;volume=143&amp;publication_year=1989&amp;pages=4208-4212&amp;pmid=2592772&amp;"/></mixed-citation></ref><ref id="ref60"><mixed-citation id="cit60"><named-content content-type="citation-string">Karanja D. M. S.; Hightower A. W.; Colley D. G.; Mwinzi P. N. M.; Galil K.; Andove J.; Secor W. E. (2002) Resistance to reinfection with <italic>Schistosoma
+mansoni</italic> in occupationally exposed adults and
+effect of HIV-1 co-infection on susceptibility to schistosomiasis:
+a longitudinal study. Lancet
+360, 592–596.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/S0140-6736(02)09781-7"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12241930"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Lancet&amp;title=Resistance to reinfection with Schistosoma mansoni in occupationally exposed adults and effect of HIV-1 co-infection on susceptibility to schistosomiasis: a longitudinal study&amp;author=D. M. S. Karanja&amp;author=A. W. Hightower&amp;author=D. G. Colley&amp;author=P. N. M. Mwinzi&amp;author=K. Galil&amp;volume=360&amp;publication_year=2002&amp;pages=592-596&amp;pmid=12241930&amp;doi=10.1016/S0140-6736(02)09781-7&amp;"/></mixed-citation></ref><ref id="ref61"><mixed-citation id="cit61"><named-content content-type="citation-string">Shishova E. Y.; Di Costanzo L.; Emig F. A.; Ash D. E.; Christianson D. W. (2009) Probing
+the specificity determinants of amino acid recognition by arginase. Biochemistry
+48, 121–131.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi801911v"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2665027"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19093830"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Probing the specificity determinants of amino acid recognition by arginase&amp;author=E. Y. Shishova&amp;author=L. Di Costanzo&amp;author=F. A. Emig&amp;author=D. E. Ash&amp;author=D. W. Christianson&amp;volume=48&amp;publication_year=2009&amp;pages=121-131&amp;pmid=19093830&amp;doi=10.1021/bi801911v&amp;"/></mixed-citation></ref><ref id="ref62"><mixed-citation id="cit62"><named-content content-type="citation-string">Ilies M.; Di Costanzo L.; Dowling D. P.; Thorn K. J.; Christianson D. W. (2011) Binding
+of α,α-disubstituted amino acids to arginase suggests
+new avenues for inhibitor design. J. Med. Chem.
+54, 5432–5443.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm200443b"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3150614"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21728378"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Binding of α,α-disubstituted amino acids to arginase suggests new avenues for inhibitor design&amp;author=M. Ilies&amp;author=L. Di Costanzo&amp;author=D. P. Dowling&amp;author=K. J. Thorn&amp;author=D. W. Christianson&amp;volume=54&amp;publication_year=2011&amp;pages=5432-5443&amp;pmid=21728378&amp;doi=10.1021/jm200443b&amp;"/></mixed-citation></ref><ref id="ref63"><mixed-citation id="cit63"><named-content content-type="citation-string">D’Antonio E. L.; Hai Y.; Christianson D. W. (2012) Structure
+and function of non-native
+metal clusters in human arginase I. Biochemistry
+51, 8399–8409.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi301145n"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3490219"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23061982"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Structure and function of non-native metal clusters in human arginase I&amp;author=E. L. D’Antonio&amp;author=Y. Hai&amp;author=D. W. Christianson&amp;volume=51&amp;publication_year=2012&amp;pages=8399-8409&amp;pmid=23061982&amp;doi=10.1021/bi301145n&amp;"/></mixed-citation></ref><ref id="ref64"><mixed-citation id="cit64"><named-content content-type="citation-string">Riley E.; Roberts S. C.; Ullman B. (2011) Inhibition
+profile of <italic>Leishmania
+mexicana</italic> arginase reveals differences with human arginase
+I. Int. J. Parasitol.
+41, 545–552.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/j.ijpara.2010.12.006"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3062745"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21232540"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Int. J. Parasitol.&amp;title=Inhibition profile of Leishmania mexicana arginase reveals differences with human arginase I&amp;author=E. Riley&amp;author=S. C. Roberts&amp;author=B. Ullman&amp;volume=41&amp;publication_year=2011&amp;pages=545-552&amp;pmid=21232540&amp;doi=10.1016/j.ijpara.2010.12.006&amp;"/></mixed-citation></ref></ref-list></sec></sec><sec id="_ad93_" xml:lang="en" sec-type="associated-data" disp-level="1"><title>Associated Data</title><sec id="_adsm93_" xml:lang="en" sec-type="supplementary-materials" disp-level="2"><title>Supplementary Materials</title><supplementary-material id="db_ds_supplementary-material1_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bi5004519_si_001.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path 38f6/4334208/dc91eae094df/bi5004519_si_001.pdf?><?cloudpmc-bucket app?><?size 691282?><caption><p>bi5004519_si_001.pdf</p></caption></media></supplementary-material></sec></sec></body></article>

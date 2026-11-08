@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-10-06T11:08:22.929598+00:00",
+  "records": [
+    {
+      "filename": "tdc_dti.html",
+      "url": "https://tdcommons.ai/multi_pred_tasks/dti/",
+      "role": "task_documentation",
+      "started_at": "2026-10-06T11:08:12.283361+00:00",
+      "evidence_approved": false,
+      "license_review": "pending",
+      "final_url": "https://tdcommons.ai/multi_pred_tasks/dti/",
+      "content_type": "text/html; charset=utf-8",
+      "status": "acquired_not_reviewed",
+      "sha256": "9abc84dc5a550fd5b2a17b44b4bd738e9b35a815b328800648c1f0abb99c0284",
+      "bytes": 23755,
+      "finished_at": "2026-10-06T11:08:13.490079+00:00"
+    },
+    {
+      "filename": "bindingdb_download.html",
+      "url": "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp",
+      "role": "download_index",
+      "started_at": "2026-10-06T11:08:13.490079+00:00",
+      "evidence_approved": false,
+      "license_review": "pending",
+      "final_url": "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp",
+      "content_type": "text/html;charset=UTF-8",
+      "status": "acquired_not_reviewed",
+      "sha256": "219820a8b1b186a1286daea48a6dfba383e5c6204fa162a2468fcae43965e2c5",
+      "bytes": 31917,
+      "finished_at": "2026-10-06T11:08:14.395670+00:00"
+    },
+    {
+      "filename": "davis_article.html",
+      "url": "https://www.nature.com/articles/nbt.1990",
+      "role": "original_article_locator_not_fulltext_approval",
+      "started_at": "2026-10-06T11:08:14.395670+00:00",
+      "evidence_approved": false,
+      "license_review": "pending",
+      "final_url": "https://www.nature.com/articles/nbt.1990",
+      "content_type": "text/html; charset=utf-8",
+      "status": "acquired_not_reviewed",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+      "bytes": 3038,
+      "finished_at": "2026-10-06T11:08:15.111292+00:00"
+    },
+    {
+      "filename": "BindingDB_BindingDB_Articles_202610_tsv.zip",
+      "url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202610_tsv.zip",
+      "role": "database_curated_article_subset_not_primary_approval",
+      "started_at": "2026-10-06T11:08:15.111292+00:00",
+      "evidence_approved": false,
+      "license_review": "pending",
+      "final_url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202610_tsv.zip",
+      "content_type": "application/zip",
+      "status": "acquired_not_reviewed",
+      "sha256": "727383bac35beed6bc5c55c40dfbd58ba023fa97a7f27dc1a61440c1ad54a2b7",
+      "bytes": 18271888,
+      "finished_at": "2026-10-06T11:08:21.650459+00:00"
+    },
+    {
+      "filename": "bindingdb_articles.md5",
+      "url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202610_tsv.md5",
+      "role": "official_archive_md5",
+      "started_at": "2026-10-06T11:08:21.651530+00:00",
+      "evidence_approved": false,
+      "license_review": "pending",
+      "final_url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202610_tsv.md5",
+      "content_type": null,
+      "status": "acquired_not_reviewed",
+      "sha256": "e5c8183d9a7814194143f1a37d8404a38ecc99f0b2223e2ea64a2ac01f03a948",
+      "bytes": 32,
+      "finished_at": "2026-10-06T11:08:22.929598+00:00"
+    }
+  ],
+  "producer_sha256": "f560fad07b38562902352c9533165e9762554ae9872d8322b6f9b60a3f7fb7c2",
+  "source_spec": [
+    [
+      "tdc_dti.html",
+      "https://tdcommons.ai/multi_pred_tasks/dti/",
+      "task_documentation"
+    ],
+    [
+      "bindingdb_download.html",
+      "https://www.bindingdb.org/rwd/bind/chemsearch/marvin/Download.jsp",
+      "download_index"
+    ],
+    [
+      "davis_article.html",
+      "https://www.nature.com/articles/nbt.1990",
+      "original_article_locator_not_fulltext_approval"
+    ],
+    [
+      "BindingDB_BindingDB_Articles_202610_tsv.zip",
+      "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202610_tsv.zip",
+      "database_curated_article_subset_not_primary_approval"
+    ],
+    [
+      "bindingdb_articles.md5",
+      "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_BindingDB_Articles_202610_tsv.md5",
+      "official_archive_md5"
+    ]
+  ]
+}

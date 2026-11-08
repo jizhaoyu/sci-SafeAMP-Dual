@@ -1,0 +1,121 @@
+{
+  "protocol_id": "protocol-dti-01",
+  "protocol_version": 1,
+  "status": "frozen_dti_davis_benchmark",
+  "frozen_at": "2026-10-06T12:55:00.000000+00:00",
+  "research_direction": "DTI",
+  "benchmark": "DAVIS",
+  "endpoint": {
+    "name": "pKd",
+    "unit": "-log10(M)",
+    "formula": "9.0 - log10(Kd_nM)",
+    "censoring_upper_limit_nM": 10000.0,
+    "censored_pKd_floor": 5.0,
+    "total_pairs": 25772,
+    "censored_pairs": 18343,
+    "active_pairs": 7429
+  },
+  "scientific_protocol_md": {
+    "path": "docs/amendments/PROTOCOL_AMD_04_DTI_DAVIS_BENCHMARK.md",
+    "sha256": "e3e58ceed579615f0f6fc5ed203ea5c9716f1bded89fa83c4741780a530fde23"
+  },
+  "source_data": {
+    "path": "03_experiments/audits/dti_davis_acquisition_20261006_v2/davis.csv",
+    "official_md5": "6c7949b81aea69e9d816db88602d771e",
+    "sha256": "d54e81d2b6172f5ea71dacc4d7615adaee1cfbabcefccc7f2b46c7c48c19a373",
+    "num_drugs": 68,
+    "num_targets": 379,
+    "total_pairs": 25772
+  },
+  "isolation_audit": {
+    "state_path": "03_experiments/audits/dti_davis_isolation_review_20261006_v1/state.json",
+    "state_sha256": "bba33bf705c192e21013735f44fe2ba3cf6734e56598c919d3ea1f93f9ef211c",
+    "fold_memberships_path": "03_experiments/audits/dti_davis_isolation_review_20261006_v1/fold_memberships.json",
+    "fold_memberships_sha256": "f74409e6d62f20fbb9ee9481cda4120c9fa4fa704d2817461ca595f8ada1b500",
+    "isolation_audit_path": "03_experiments/audits/dti_davis_isolation_review_20261006_v1/isolation_audit.json",
+    "isolation_audit_sha256": "758fc7b7039f60e5c84be32236022f453a40679aec602d34cb03776c865c89f5"
+  },
+  "domains": {
+    "train_block": {
+      "name": "seen_drug_seen_target",
+      "pairs": 16720,
+      "ratio": 0.6487661027471675,
+      "drugs_count": 55,
+      "targets_count": 304
+    },
+    "strict_dual_cold_test": {
+      "name": "unseen_drug_unseen_target",
+      "pairs": 975,
+      "ratio": 0.03783175539345025,
+      "drugs_count": 13,
+      "targets_count": 75,
+      "max_drug_similarity_to_train": 0.3333333432674408,
+      "max_target_identity_to_train": 0.39830508828163147,
+      "zero_leakage_proven": true
+    },
+    "cold_target_test": {
+      "name": "seen_drug_unseen_target",
+      "pairs": 4125,
+      "ratio": 0.16005742666459724,
+      "drugs_count": 55,
+      "targets_count": 75
+    },
+    "cold_drug_test": {
+      "name": "unseen_drug_seen_target",
+      "pairs": 3952,
+      "ratio": 0.15334471519478504,
+      "drugs_count": 13,
+      "targets_count": 304
+    }
+  },
+  "features_spec": {
+    "drug_extractor": "morgan_fingerprint_r2_2048",
+    "drug_dim": 2048,
+    "target_extractor": "amino_acid_composition_and_descriptors",
+    "target_dim": 28,
+    "combined_dim": 2076
+  },
+  "models": {
+    "dummy_mean": {
+      "strategy": "mean"
+    },
+    "ridge": {
+      "alpha": 1.0,
+      "random_state": 42
+    },
+    "hist_gradient_boosting": {
+      "max_iter": 50,
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "random_state": 42
+    },
+    "mlp": {
+      "hidden_layer_sizes": [128, 64],
+      "activation": "relu",
+      "max_iter": 50,
+      "early_stopping": true,
+      "random_state": 42
+    }
+  },
+  "metrics": [
+    "rmse",
+    "mae",
+    "pearson_r",
+    "spearman_rho",
+    "concordance_index"
+  ],
+  "environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.4",
+    "pandas": "3.0.2",
+    "scikit_learn": "1.8.0"
+  },
+  "protected_files": {
+    "04_paper/research_status.json": "846c1fc2452646f3df9c2055b0a4a1b5140132acc2433bb2c304b133b6e8012c",
+    "03_experiments/prepared/amd02_evidence_clean_20261001/records.csv": "ccec346bf88c6d3b2da57f058019fb10305019de5dca4ef3402949931ac71f37",
+    "03_experiments/prepared/amd02_evidence_clean_20261001/cluster_membership.csv": "a4de8c6ca73276990434d961cd7e37460d9c4b9885b1d10502dac5d44114bc4f",
+    "03_experiments/prepared/amd02_evidence_clean_20261001/manifest.json": "eb6dda5d81140944dbfebc797f8b3ce4b398d9487ddcb983c43255926ff8fbf5",
+    "03_experiments/audits/mic_training_readiness_20261004_v26.json": "404e9d90166564ec9c7543022853ae694dabc9022d913fa5d8e10f3b842a2da1",
+    "03_experiments/audits/project_closeout_20261005_v1/review/merged_candidate_decisions.csv": "f5bcd275fd7a15ae88705553ba47a9d9f97ad026085d58e51909b5fdfb1f5c99"
+  }
+}

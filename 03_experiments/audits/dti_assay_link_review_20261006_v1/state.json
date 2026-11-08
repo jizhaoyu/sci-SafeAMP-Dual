@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-10-06T11:22:25.329406+00:00",
+  "research_direction": "DTI",
+  "endpoint": "Kd",
+  "status": "assay_links_audited_primary_review_pending",
+  "training_ready": false,
+  "observations_released": 0,
+  "model_fit_calls": 0,
+  "split_audit": "not_computed",
+  "protocol_status": "not_frozen",
+  "predecessor": "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_field_review_20261006_v1\\state.json",
+  "summary_sha256": "c491fc52245e218d2f1bddb2ee3c6e241e955a89713ce0c4c0ed82fcbd1fa88f",
+  "outputs": {
+    "assay_evidence_pending.json": "8bcde99bf55eed1025db430f961a57859cbf7776f97d30eccfe97d4416282276",
+    "duplicate_reaction_ids.json": "3adcc30d57aec83e7e8e69a752ba3246607a898c6ec933d4adb65dcb13355bef",
+    "open_original_requests.json": "07270c7c2075725dd7d29b43129348442bd2040a959d4514f90aacaf8b44d185",
+    "repeated_pair_measurements.json": "d01945c2fef20f749e85a24905d54fbdc4d687da12e947bd59780f2b25b8811e",
+    "report.md": "a2d61de2c41a5ca9a3148b9f98d03f18d1725354377850eaf320142df4f6e8ed",
+    "source_review_pending.json": "26c1537e1a067f06072a873d3731b9d076335c41b902942eee437c9199921ef7",
+    "summary.json": "c491fc52245e218d2f1bddb2ee3c6e241e955a89713ce0c4c0ed82fcbd1fa88f"
+  }
+}

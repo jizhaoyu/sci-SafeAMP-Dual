@@ -1,0 +1,39 @@
+{
+  "version": "dti_davis_clean_features_20261009_v1",
+  "timestamp": "2026-10-09",
+  "drug_features": {
+    "dim": 2568,
+    "components": [
+      {
+        "name": "deterministic_morgan_ecfp",
+        "dim": 2048,
+        "algorithm": "Weisfeiler-Lehman + MD5 deterministic hashing"
+      },
+      {
+        "name": "physicochemical_descriptors",
+        "dim": 8,
+        "algorithm": "RDKit-compatible MW, LogP, TPSA, HBD, HBA, RotB, Rings, AromRings"
+      },
+      {
+        "name": "heuristic_geom_manifold",
+        "dim": 512,
+        "algorithm": "Floyd-Warshall Laplacian spectrum (128D) + Electrotopological state (128D) + Spatial structural manifold (256D)"
+      }
+    ]
+  },
+  "target_features": {
+    "dim": 420,
+    "components": [
+      {
+        "name": "enhanced_kinase_descriptors",
+        "dim": 100,
+        "algorithm": "Amino acid composition & catalytic pocket descriptors"
+      },
+      {
+        "name": "esm2_foundation_representation",
+        "dim": 320,
+        "algorithm": "fair-esm esm2_t6_8M_UR50D mean pooling with sliding-window full coverage (window=1022, step=512)"
+      }
+    ]
+  }
+}

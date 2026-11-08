@@ -1,0 +1,172 @@
+{
+  "generated_at": "2026-10-07T13:57:11.436444+00:00",
+  "protocol_id": "protocol-dti-01",
+  "meta_weights": {
+    "ridge_alpha10": 0.0,
+    "ridge_alpha50": 0.0,
+    "hist_gradient_boosting": 1.1724
+  },
+  "meta_intercept": -0.9314,
+  "models": {
+    "ridge_alpha10": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.6847,
+          "mae": 0.44,
+          "pearson_r": 0.5722,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.5288,
+          "spearman_p_value": 0.0,
+          "concordance_index": 0.7931
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8231,
+          "mae": 0.5694,
+          "pearson_r": 0.3257,
+          "pearson_p_value": 1.5893771070571476e-25,
+          "spearman_rho": 0.3235,
+          "spearman_p_value": 3.4800274785793074e-25,
+          "concordance_index": 0.6816
+        },
+        "cold_target_test": {
+          "rmse": 0.6628,
+          "mae": 0.4534,
+          "pearson_r": 0.4289,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.3596,
+          "spearman_p_value": 3.8766233072206126e-126,
+          "concordance_index": 0.7133
+        },
+        "cold_drug_test": {
+          "rmse": 0.7934,
+          "mae": 0.5445,
+          "pearson_r": 0.5161,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.5025,
+          "spearman_p_value": 6.23512081430798e-252,
+          "concordance_index": 0.7619
+        }
+      }
+    },
+    "ridge_alpha50": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.6945,
+          "mae": 0.4448,
+          "pearson_r": 0.5549,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.5161,
+          "spearman_p_value": 0.0,
+          "concordance_index": 0.7854
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8094,
+          "mae": 0.5555,
+          "pearson_r": 0.3651,
+          "pearson_p_value": 4.200435987716322e-32,
+          "spearman_rho": 0.356,
+          "spearman_p_value": 1.6924794856328746e-30,
+          "concordance_index": 0.6999
+        },
+        "cold_target_test": {
+          "rmse": 0.6507,
+          "mae": 0.4389,
+          "pearson_r": 0.4465,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.375,
+          "spearman_p_value": 6.987809595702359e-138,
+          "concordance_index": 0.7225
+        },
+        "cold_drug_test": {
+          "rmse": 0.802,
+          "mae": 0.5515,
+          "pearson_r": 0.5016,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.4901,
+          "spearman_p_value": 5.819658002894097e-238,
+          "concordance_index": 0.7547
+        }
+      }
+    },
+    "hist_gradient_boosting": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.5261,
+          "mae": 0.3304,
+          "pearson_r": 0.7923,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.6451,
+          "spearman_p_value": 0.0,
+          "concordance_index": 0.8652
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8738,
+          "mae": 0.5752,
+          "pearson_r": 0.1281,
+          "pearson_p_value": 6.071421076837075e-05,
+          "spearman_rho": 0.231,
+          "spearman_p_value": 2.8542920974361026e-13,
+          "concordance_index": 0.6278
+        },
+        "cold_target_test": {
+          "rmse": 0.6332,
+          "mae": 0.4183,
+          "pearson_r": 0.4789,
+          "pearson_p_value": 1.560654113736407e-235,
+          "spearman_rho": 0.4129,
+          "spearman_p_value": 1.4695196704801374e-169,
+          "concordance_index": 0.7447
+        },
+        "cold_drug_test": {
+          "rmse": 0.8329,
+          "mae": 0.5299,
+          "pearson_r": 0.4229,
+          "pearson_p_value": 3.143469238770584e-171,
+          "spearman_rho": 0.4479,
+          "spearman_p_value": 2.3346544847039967e-194,
+          "concordance_index": 0.732
+        }
+      }
+    },
+    "worldmodel_stacked_ensemble": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.5109,
+          "mae": 0.312,
+          "pearson_r": 0.7923,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.6451,
+          "spearman_p_value": 0.0,
+          "concordance_index": 0.8652
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8813,
+          "mae": 0.5706,
+          "pearson_r": 0.1281,
+          "pearson_p_value": 6.07140245847404e-05,
+          "spearman_rho": 0.231,
+          "spearman_p_value": 2.854291582045005e-13,
+          "concordance_index": 0.6278
+        },
+        "cold_target_test": {
+          "rmse": 0.6465,
+          "mae": 0.413,
+          "pearson_r": 0.4789,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.4129,
+          "spearman_p_value": 1.4688820792500823e-169,
+          "concordance_index": 0.7447
+        },
+        "cold_drug_test": {
+          "rmse": 0.8351,
+          "mae": 0.5201,
+          "pearson_r": 0.4229,
+          "pearson_p_value": 0.0,
+          "spearman_rho": 0.4479,
+          "spearman_p_value": 2.3365708931365495e-194,
+          "concordance_index": 0.732
+        }
+      }
+    }
+  }
+}

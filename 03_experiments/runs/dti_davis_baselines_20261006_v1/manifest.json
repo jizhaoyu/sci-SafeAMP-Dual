@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-10-06T12:52:24.304325+00:00",
+  "protocol_id": "protocol-dti-01",
+  "run_type": "predeclared_davis_baselines_training_and_evaluation",
+  "total_pairs_evaluated": 25772,
+  "models_trained": [
+    "dummy_mean",
+    "ridge",
+    "hist_gradient_boosting",
+    "mlp"
+  ],
+  "domains_evaluated": [
+    "train_block",
+    "strict_dual_cold_test",
+    "cold_target_test",
+    "cold_drug_test"
+  ],
+  "outputs": {
+    "metrics_summary.json": "ef5a5ccd1c09a35e6190b3f673b0c7b7f3676a3da216698750a653e4910f7d5b",
+    "predictions.csv": "52d26a340e3ec7146b1b39a327f84111a0c09b7f0792c9655401de5cd82d1d36",
+    "report.md": "9607f881935840c4a0625124bee2630570c2a86c886c2a631814b854889bdabe",
+    "models/dummy_mean.joblib": "a6fc28333b66b1aadc7e021c0221d77f9dbdef4dd30a848c0f5d45844b281277",
+    "models/ridge.joblib": "359fd59756a7e49143df4bdab385a3e4350c63453d6cac0da14908ce6c166b22",
+    "models/hist_gradient_boosting.joblib": "b68053a38c853eaab2f1f95571e94c53ff4dc65cb1e445c25eafecc8a6053aff",
+    "models/mlp.joblib": "a17f95de706192b609c2ca7b9a34a1e8b025cfc8d131d1f44d6e799573d3f7a0"
+  }
+}

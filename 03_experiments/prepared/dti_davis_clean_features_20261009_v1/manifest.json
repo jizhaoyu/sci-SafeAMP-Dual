@@ -1,0 +1,23 @@
+{
+  "dataset": "DAVIS",
+  "created_at": "2026-10-09",
+  "files": {
+    "drug_features.npy": {
+      "shape": [
+        68,
+        2568
+      ],
+      "sha256": "80dfbb574542cff199328516e787dd07615528970bd4cb6f170bb70f17ab714b"
+    },
+    "target_features.npy": {
+      "shape": [
+        379,
+        420
+      ],
+      "sha256": "cb54a108dccd60f54a684c08aacf1378ede650f5e41d2e83b612da5a0588e532"
+    },
+    "pairs_metadata.csv": {
+      "sha256": "f8c8e61a1485732a9f7f6148ae1a5b8d0b32df9fecaf54098991727529265a1e"
+    }
+  }
+}

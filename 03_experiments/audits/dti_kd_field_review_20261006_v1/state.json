@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-10-06T11:10:37.752418+00:00",
+  "research_direction": "DTI",
+  "endpoint": "Kd",
+  "status": "source_inventory_complete_evidence_review_pending",
+  "training_ready": false,
+  "protocol_status": "not_frozen",
+  "observations_released": 0,
+  "model_fit_calls": 0,
+  "split_audit": "not_computed",
+  "predecessor": "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\state.json",
+  "inputs": {
+    "D:\\桌面文件\\sci\\02_code\\dti_source_preflight.py": "f560fad07b38562902352c9533165e9762554ae9872d8322b6f9b60a3f7fb7c2",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\acquisition_manifest.json": "652129e80be474a76503215033789b55c97dd96112b4d7027519666e82e00030",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\tdc_dti.html": "9abc84dc5a550fd5b2a17b44b4bd738e9b35a815b328800648c1f0abb99c0284",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\bindingdb_download.html": "219820a8b1b186a1286daea48a6dfba383e5c6204fa162a2468fcae43965e2c5",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\davis_article.html": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\BindingDB_BindingDB_Articles_202610_tsv.zip": "727383bac35beed6bc5c55c40dfbd58ba023fa97a7f27dc1a61440c1ad54a2b7",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\bindingdb_articles.md5": "e5c8183d9a7814194143f1a37d8404a38ecc99f0b2223e2ea64a2ac01f03a948",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\state.json": "261ef9f67720fd64ea328ff4737b9232f487424a77cbe8ba5ff96043561808a7",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\verification.json": "629b56f706297860e4d808bea0fd1f97b5eab9d56e1a1fb296aa4b4e03e02247",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_kd_feasibility_20261006_v1\\protected_inputs.json": "feda87de5d59c536803d36c3b77a2859b52d741295c350b41d274db4d4dddf11"
+  },
+  "producer_sha256": "4ad5f64472cba010c1398ae6962b0deb64db2d61dcd37d56e030a68d9f4982b8",
+  "outputs": {
+    "columns.json": "d858d61c7d4c1310939e5509769f71e6f22c2039ec07ed31fd9f6db971f9d283",
+    "inventory.json": "9eb98090fea47917a264ec3f052ba75a8175c70de5770a4fc5f07d3e36518f50",
+    "kd_exact_observations.csv": "a8dc87a858a6532fe31247d218153c48458d251dfbb0d11efb3adb8bdbfce5c2",
+    "report.md": "87682c354cb1b2428e10792a8b40f68442bc387f0755287591fd16bae71648f5",
+    "study_inventory.json": "8bfc476d7ad53d0e74a8fc43f308824356b06a64a165c47945a6ea11236402ef",
+    "verification.json": "572a09110faa586351327d6494cf17cb7fb6c34ec811121a47686fe4cadf9832"
+  }
+}

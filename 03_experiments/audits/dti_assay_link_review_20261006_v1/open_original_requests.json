@@ -1,0 +1,154 @@
+[
+  {
+    "filename": "19320487.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC2669732/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "19320487",
+    "doi": "10.1021/jm801475n",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "22087650.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3295651/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "22087650",
+    "doi": "10.1186/1471-2091-12-59",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "23023261.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3480716/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "23023261",
+    "doi": "10.1038/nchembio.1081",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "23344974.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3594973/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "23344974",
+    "doi": "10.1002/cbic.201200521",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "23884422.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3772240/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "23884422",
+    "doi": "10.1074/jbc.m113.487777",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "24497639.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3979416/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "24497639",
+    "doi": "10.1074/jbc.m113.523019",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "24634223.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4002121/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "24634223",
+    "doi": "10.1074/jbc.m113.523183",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "24798337.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4140284/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "24798337",
+    "doi": "10.1074/jbc.m114.555052",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "25007099.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4138072/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "25007099",
+    "doi": "10.1021/bi5004519",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "25089924.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4139154/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "25089924",
+    "doi": "10.1021/bi500561h",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "25195011.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4687050/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "25195011",
+    "doi": "10.1038/nchembio.1629",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "25380506.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4263437/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "25380506",
+    "doi": "10.1021/bi500887n",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "25382253.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4431585/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "25382253",
+    "doi": "10.1002/cbic.201402512",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "25746232.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4845099/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "25746232",
+    "doi": "10.1021/cb500917m",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "27454933.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4990478/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "27454933",
+    "doi": "10.1038/nchembio.2134",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "27775715.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5117811/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "27775715",
+    "doi": "10.1038/nchembio.2209",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "27840070.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5119931/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "27840070",
+    "doi": "10.1016/j.chembiol.2016.10.008",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "28026162.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5320539/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "28026162",
+    "doi": "10.1021/acschembio.6b00962",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  },
+  {
+    "filename": "28314097.xml",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC5474694/fullTextXML",
+    "role": "official_original_fulltext_candidate",
+    "pmid": "28314097",
+    "doi": "10.1021/acschembio.7b00091",
+    "license_note": "Metadata OA only; inspect actual article identity/license and assay attribution before approval"
+  }
+]

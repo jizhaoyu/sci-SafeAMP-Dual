@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-06T12:42:17.618658+00:00",
+  "research_direction": "DTI",
+  "benchmark": "DAVIS",
+  "endpoint": "Kd",
+  "status": "davis_field_inventory_complete_pending_cold_isolation",
+  "training_ready": false,
+  "protocol_status": "not_frozen",
+  "observations_released": 0,
+  "model_fit_calls": 0,
+  "total_pairs": 25772,
+  "unique_drugs": 68,
+  "unique_targets": 379,
+  "predecessor": "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\state.json",
+  "outputs": {
+    "drugs.json": "765f2056b7b1f4472dd1aca5d9b2f2f0c2f92f08c7816550a6b1e0e24d325f80",
+    "inventory.json": "fe638605a40e332eccb4ba0d7b1c806f994d41f619a603584058d80eccf4d6b4",
+    "report.md": "8d975a25496df4f234ee92163c9ef817ae103d8401ab576880dde6d437163ce8",
+    "targets.json": "72abf195e2c66d7bcb35edbe862abb7e49d052a0a78fae4ebe5e465d98d332fa"
+  }
+}

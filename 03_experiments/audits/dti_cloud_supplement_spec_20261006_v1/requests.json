@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "bet_cloud_metadata.json",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5117811.1/PMC5117811.1.json",
+    "role": "official_cloud_metadata_exact_version_from_XML",
+    "pmid": "27775715",
+    "license_note": "Published/manuscript status and individual rights must be read from actual returned metadata."
+  },
+  {
+    "filename": "bet_cloud_objects.xml",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC5117811.1/",
+    "role": "official_public_object_inventory_candidate",
+    "pmid": "27775715",
+    "license_note": "Listing public objects is not evidence approval or blanket reuse permission."
+  },
+  {
+    "filename": "nos_cloud_metadata.json",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4139154.1/PMC4139154.1.json",
+    "role": "official_cloud_metadata_version_candidate",
+    "pmid": "25089924",
+    "license_note": "Version 1 is a locator candidate, requiring exact PMID and DOI verification."
+  },
+  {
+    "filename": "nos_cloud_objects.xml",
+    "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4139154.1/",
+    "role": "official_public_object_inventory_candidate",
+    "pmid": "25089924",
+    "license_note": "Public object names and sizes must be verified before any claimed supplement acquisition."
+  }
+]

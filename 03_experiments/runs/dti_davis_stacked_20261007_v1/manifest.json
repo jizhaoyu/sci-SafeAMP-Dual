@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-10-07T05:39:39.132187+00:00",
+  "protocol_id": "protocol-dti-01",
+  "outputs": {
+    "metrics_summary.json": "1ec38dd25d107a9640ecb4110d0c3ce5265fe3fed067102217d6457bbc09ec6d",
+    "predictions.csv": "e93f777bf86e9d76fdbfe244a743f2eae53758da1df5876569c31a931a26f4be",
+    "models/ridge_alpha1.joblib": "20cdada7fad7563a0c3a0e5b3ce178c5ca91561c528b65fbf55deee8945c38f7",
+    "models/ridge_alpha10.joblib": "5075d62a7039b36b11ab15a3a3931b37df77f51976ff3d6c0ce6a73f23a1595a",
+    "models/hist_gradient_boosting.joblib": "fde1d979e42e69569caefd92413cebe84449b9c2ff455ea6be447d82167eb16b",
+    "models/mlp.joblib": "14dc3a9aa8a682c14d61ac6a4684c49f1434dbb926d90b3cb1da73f4f2524ca0",
+    "models/meta_model.joblib": "80474c66fc2cabef571cd4eb8a360ea81206f384f9d8d8dcde9a84d2d1445def",
+    "models/stacked_ensemble.joblib": "e3c0835725ad1a31a962cc6e81f25bd19d78701b2eb460d68fb328f63ec1344e",
+    "models/ridge.joblib": "20cdada7fad7563a0c3a0e5b3ce178c5ca91561c528b65fbf55deee8945c38f7"
+  }
+}

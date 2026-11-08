@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-10-06T12:52:51.683229+00:00",
+  "run_dir": "D:\\桌面文件\\sci\\03_experiments\\runs\\dti_davis_baselines_20261006_v1",
+  "protocol_id": "protocol-dti-01",
+  "protected_files_check": "100% matched, 0 modifications",
+  "manifest_check": "100% bit-for-bit SHA-256 match across all outputs",
+  "domain_counts": {
+    "train_block": 16720,
+    "cold_target_test": 4125,
+    "cold_drug_test": 3952,
+    "strict_dual_cold_test": 975
+  },
+  "leakage_violations": 0,
+  "independent_recomputation_check": "PASS (RMSE, MAE, Pearson r, CI match < 1e-4)",
+  "models_verified": [
+    "dummy_mean",
+    "ridge",
+    "hist_gradient_boosting",
+    "mlp"
+  ]
+}

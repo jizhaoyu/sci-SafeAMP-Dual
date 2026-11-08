@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-10-06T11:38:38.152701+00:00",
+  "scope": "Explicit public-source acquisition; identity, assay and license review pending",
+  "inputs": {
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_supplement_spec_20261006_v2\\requests.json": "e57eca9e521916b8300f9bc56f48520ebf01d64e086f20603982aa0715c78e46"
+  },
+  "producer_sha256": "2dcb27ac717456ac25693174aeddc2c7adac1601532c01bd92fde6057fe3c66b",
+  "helper_sha256": "f40d601a4c80571a19026f9849d872ba808aee32dc857e6b86d43b5b55c87ce6",
+  "records": [
+    {
+      "filename": "bet_supplement_2.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5117811/bin/NIHMS807910-supplement-2.pdf",
+      "role": "exact_XML_named_supplement_public_repository_route_candidate",
+      "pmid": "27775715",
+      "license_note": "Derived instance route uses exact filename in acquired original XML. Validate actual document and identity; failure is not permission to bypass access controls.",
+      "started_at": "2026-10-06T11:38:10.242767+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5117811/bin/NIHMS807910-supplement-2.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "status": "acquisition_failed_no_release",
+      "error_type": "ValueError",
+      "error": "Linked resource did not return a PDF",
+      "finished_at": "2026-10-06T11:38:11.703473+00:00"
+    },
+    {
+      "filename": "bet_supplement_1.docx",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5117811/bin/NIHMS807910-supplement-1.docx",
+      "role": "exact_XML_named_supplement_public_repository_route_candidate",
+      "pmid": "27775715",
+      "license_note": "Prior supplement ZIP contains a zero-byte placeholder, not a usable DOCX. Validate bytes and actual document before review.",
+      "started_at": "2026-10-06T11:38:10.243833+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5117811/bin/NIHMS807910-supplement-1.docx",
+      "content_type": "text/html; charset=utf-8",
+      "status": "acquired_not_reviewed",
+      "sha256": "df09ce92f69ce96d146c6bbd0cec88837fc020ca029910ce0aa8e989413f2218",
+      "bytes": 1816,
+      "finished_at": "2026-10-06T11:38:12.020915+00:00"
+    },
+    {
+      "filename": "nos_supplement.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4139154/bin/bi500561h_si_001.pdf",
+      "role": "exact_XML_named_supplement_public_repository_route_candidate",
+      "pmid": "25089924",
+      "license_note": "Exact acquired XML filename; read original terms, no redistribution approval inferred.",
+      "started_at": "2026-10-06T11:38:11.704014+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4139154/bin/bi500561h_si_001.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "status": "acquisition_failed_no_release",
+      "error_type": "ValueError",
+      "error": "Linked resource did not return a PDF",
+      "finished_at": "2026-10-06T11:38:12.825716+00:00"
+    },
+    {
+      "filename": "rada_supplements.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3594973/supplementaryFiles",
+      "role": "actual_mutant_and_assay_supplement_candidate",
+      "pmid": "23344974",
+      "license_note": "Read actual documents and publication license before evidence approval.",
+      "started_at": "2026-10-06T11:38:12.020915+00:00",
+      "evidence_release": false,
+      "status": "acquisition_failed_no_release",
+      "error_type": "TimeoutError",
+      "error": "The read operation timed out",
+      "finished_at": "2026-10-06T11:38:38.152701+00:00"
+    },
+    {
+      "filename": "hdac6_supplements.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4990478/supplementaryFiles",
+      "role": "original_XML_confirmed_PMCID_supplement_candidate",
+      "pmid": "27454933",
+      "license_note": "Use only if PMCID agrees with bound source metadata; no article identity approval inferred.",
+      "started_at": "2026-10-06T11:38:12.825716+00:00",
+      "evidence_release": false,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4990478/supplementaryFiles",
+      "content_type": "application/zip",
+      "status": "acquired_not_reviewed",
+      "sha256": "b222d1b432ad7bcba8bc4bba7eabacf191d1e9567598f25bb5c13fcc3dde5ed4",
+      "bytes": 150,
+      "finished_at": "2026-10-06T11:38:15.652094+00:00"
+    }
+  ],
+  "labels_released": 0,
+  "model_fit_calls": 0
+}

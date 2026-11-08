@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?><article xml:lang="en" article-type="research-article"><front><journal-meta><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-title-group><journal-title>Biochemistry</journal-title><abbrev-journal-title>Biochemistry</abbrev-journal-title></journal-title-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC4139154</article-id><article-id pub-id-type="pmcaid">4139154</article-id><article-id pub-id-type="pmcaiid">4139154</article-id><article-id pub-id-type="pmid">25089924</article-id><article-id pub-id-type="doi">10.1021/bi500561h</article-id><title-group><article-title>The Mobility of a Conserved Tyrosine Residue Controls
+Isoform-Dependent Enzyme–Inhibitor Interactions in Nitric Oxide
+Synthases</article-title></title-group><contrib-group content-type="author"><contrib><name name-style="western"><surname>Li</surname><given-names initials="H">Huiying</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Jamal</surname><given-names initials="J">Joumana</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Delker</surname><given-names initials="S">Silvia</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Plaza</surname><given-names initials="C">Carla</given-names></name><xref ref-type="aff" rid="aff1">†</xref></contrib><contrib><name name-style="western"><surname>Ji</surname><given-names initials="H">Haitao</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Jing</surname><given-names initials="Q">Qing</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Huang</surname><given-names initials="H">He</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Kang</surname><given-names initials="S">Soosung</given-names></name><xref ref-type="aff" rid="aff2">‡</xref></contrib><contrib><name name-style="western"><surname>Silverman</surname><given-names initials="RB">Richard B</given-names></name><xref ref-type="aff" rid="aff2">‡</xref><xref rid="cor2" ref-type="author-notes">*</xref></contrib><contrib><name name-style="western"><surname>Poulos</surname><given-names initials="TL">Thomas L</given-names></name><xref ref-type="aff" rid="aff1">†</xref><xref rid="cor1" ref-type="author-notes">*</xref></contrib></contrib-group><aff id="aff1"><label>†</label>Departments
+of Molecular Biology and Biochemistry, Pharmaceutical Sciences, and
+Chemistry, University of California, Irvine, California 92697-3900, United States</aff><aff id="aff2"><label>‡</label>Department
+of Chemistry, Department of Molecular Biosciences, Chemistry of Life
+Processes Institute, and Center for Molecular Innovation and Drug
+Discovery, Northwestern University, 2145 Sheridan Road, Evanston, Illinois 60208-3113, United States</aff><author-notes><fn id="cor1"><label>*</label><p>E-mail: <email>poulos@uci.edu</email>. Phone: (949) 824-7020.</p></fn><fn id="cor2"><label>*</label><p>E-mail: <email>agman@chem.northwestern.edu</email>. Phone: (847) 491-5653. Fax: (847) 491-7713.</p></fn></author-notes><pub-date><day>4</day><month>8</month><year>2014</year></pub-date><volume>53</volume><issue>32</issue><fpage>5272</fpage><page-range>5272–5279</page-range><pub-history><event event-type="pmc-release"><date><day>4</day><month>8</month><year>2015</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2014 American
+Chemical Society</copyright-statement><license><license-p><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html" ext-link-type="uri">Terms of Use</ext-link></license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bi500561h.pdf" content-type="pmc-pdf"><?cloudpmc-path 00e8/4139154/3f5f1e8b8e98/bi500561h.pdf?><?cloudpmc-bucket app?><?size 5289723?></self-uri><abstract id="abstract1"><title>Abstract</title><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="ab-tgr1" xlink:href="bi-2014-00561h_0011.jpg"><?cloudpmc-path blobs/00e8/4139154/1abf939cf56b/bi-2014-00561h_0011.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 392?><?original-width 945?><?scaled-height 332?><?scaled-width 800?></graphic><p>Many pyrrolidine-based inhibitors
+highly selective for neuronal
+nitric oxide synthase (nNOS) over endothelial NOS (eNOS) exhibit dramatically
+different binding modes. In some cases, the inhibitor binds in a 180°
+flipped orientation in nNOS relative to eNOS. From the several crystal
+structures we have determined, we know that isoform selectivity correlates
+with the rotamer position of a conserved tyrosine residue that H-bonds
+with a heme propionate. In nNOS, this Tyr more readily adopts the
+out-rotamer conformation, while in eNOS, the Tyr tends to remain fixed
+in the original in-rotamer conformation. In the out-rotamer conformation,
+inhibitors are able to form better H-bonds with the protein and heme,
+thus increasing inhibitor potency. A segment of polypeptide that runs
+along the surface near the conserved Tyr has long been thought to
+be the reason for the difference in Tyr mobility. Although this segment
+is usually disordered in both eNOS and nNOS, sequence comparisons
+and modeling from a few structures show that this segment is structured
+quite differently in eNOS and nNOS. In this study, we have probed
+the importance of this surface segment near the Tyr by making a few
+mutants in the region followed by crystal structure determinations.
+In addition, because the segment near the conserved Tyr is highly
+ordered in iNOS, we also determined the structure of an iNOS–inhibitor
+complex. This new structure provides further insight into the critical
+role that mobility plays in isoform selectivity.</p></abstract><custom-meta-group><custom-meta><meta-name>status</meta-name><meta-value>released</meta-value></custom-meta><custom-meta><meta-name>display-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-in-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>is-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-journal-matter</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-scanned</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>is-retracted</meta-name><meta-value>no</meta-value></custom-meta></custom-meta-group></article-meta><notes notes-type="article-notes"><sec id="historyarticle-meta1" sec-type="history" disp-level="2"><p>Received 2014 May 10; Revised 2014 Jul 25; Issue date 2014 Aug 19.</p></sec></notes></front><body><p id="sec1">In an O<sub>2</sub>- and nicotinamide
+adenine dinucleotide phosphate-dependent reaction, nitric oxide synthase
+oxidizes <sc>l</sc>-arginine to <sc>l</sc>-citrulline and the important
+signaling molecule nitric oxide (NO).<sup><xref rid="ref1" ref-type="bibr">1</xref></sup> Mammals
+produce three NOS isoforms: neuronal NOS (nNOS), inducible NOS (iNOS),
+and endothelial NOS (eNOS). Each isoform participates in fundamental
+physiological functions in the nervous, immune, and cardiovascular
+systems.<sup><xref rid="ref2" ref-type="bibr">2</xref></sup> The over- and underproduction
+of NO is associated with various disease states; consequently, the
+development of NOS inhibitors is an important therapeutic goal.<sup><xref rid="ref3" ref-type="bibr">3</xref></sup> The focus of our research efforts<sup><xref rid="ref4" ref-type="bibr">4</xref>,<xref rid="ref5" ref-type="bibr">5</xref></sup> has been the development of nNOS selective inhibitors that can be
+used in treating neurodegenerative diseases, such as Alzheimer’s,
+Parkinson’s, and Huntington’s diseases.<sup><xref rid="ref6" ref-type="bibr">6</xref></sup> Isoform selectivity, however, is critical because blocking
+eNOS would interfere with the role NO plays in maintaining vascular
+tone and blood pressure.<sup><xref rid="ref7" ref-type="bibr">7</xref></sup></p><p>Achieving
+high isoform selectivity has been a challenge because
+the active sites of all three NOS isoforms are very similar.<sup><xref rid="ref8" ref-type="bibr">8</xref>−<xref rid="ref11" ref-type="bibr">11</xref></sup> Our previous work<sup><xref rid="ref12" ref-type="bibr">12</xref></sup> showed that a single
+amino acid difference, Asp597 in nNOS versus Asn368 in eNOS, is responsible
+for the ability of nNOS to bind a series of dipeptide inhibitors much
+more tightly than does eNOS.<sup><xref rid="ref13" ref-type="bibr">13</xref>,<xref rid="ref14" ref-type="bibr">14</xref></sup> Accumulated structural
+information formed the basis for a fragment-based inhibitor design
+approach resulting in pyrrolidine-containing inhibitors, which showed
+excellent potency and selectivity for nNOS over eNOS.<sup><xref rid="ref15" ref-type="bibr">15</xref></sup></p><p>Chirality at the 3′ and 4′ positions
+of compounds
+such as <bold>1</bold> (Table <xref rid="tbl1" ref-type="table">1</xref>) proved to
+be critically important for both potency and selectivity. (3<italic>S</italic>,4<italic>S</italic>)-<bold>1</bold> has the aminopyridine
+positioned in the active site where it interacts with Glu592 of nNOS,
+while Tyr706 is in its in-rotamer position. However, the more potent
+and selective (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>1</bold> binds in a 180° flipped mode with the aminopyridine
+moiety H-bonding to heme propionate D and Tyr706 adopting an out-rotamer
+conformation to make this binding mode feasible (Figure <xref rid="fig1" ref-type="fig">1</xref>).<sup><xref rid="ref16" ref-type="bibr">16</xref>,<xref rid="ref17" ref-type="bibr">17</xref></sup> These two binding possibilities
+have been achieved with a single compound that bears double-headed
+aminopyridine groups.<sup><xref rid="ref18" ref-type="bibr">18</xref>,<xref rid="ref19" ref-type="bibr">19</xref></sup> We have recently developed more
+pyrrolidine-based nNOS inhibitors, such as compounds (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> in
+Table <xref rid="tbl1" ref-type="table">1</xref>, that target heme propionate D and
+exhibit 2000- and 1400-fold selection for nNOS versus eNOS, respectively.<sup><xref rid="ref20" ref-type="bibr">20</xref></sup> The crystal structures revealed that these inhibitors
+interact with heme propionate D in nNOS with a conformation different
+from that in eNOS, mainly because a conserved Tyr residue, Tyr706
+in nNOS versus Tyr477 in eNOS, is able to adopt an out-rotamer conformation
+more easily in nNOS than in eNOS. This movement of the conserved Tyr
+is necessary to allow the inhibitor aminopyridine group to form tight
+bifurcated H-bonds with heme propionate D. The aim of this study is
+to determine whether the Tyr rotamer position is the sole determinant
+of isoform selectivity and identify the structural basis underlying
+the Tyr rotamer preference in nNOS versus eNOS.</p><table-wrap id="tbl1" position="float"><?disp-level 1?><label>Table 1</label><caption><title>Potencies and Selectivities of the
+NOS Inhibitors Discussed in This Study</title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="fx1" xlink:href="bi-2014-00561h_0010.jpg"><?cloudpmc-path blobs/00e8/4139154/c94f76b004ec/bi-2014-00561h_0010.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 4620?><?original-width 6466?><?scaled-height 857?><?scaled-width 1200?></graphic><table frame="hsides" rules="groups" border="0"><colgroup span="1"><col align="left" span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="char" char="." span="1"/><col align="left" span="1"/></colgroup><thead><tr><th style="border:none;" align="center" colspan="1" rowspan="1"> </th><th colspan="3" align="center" rowspan="1"><italic>K</italic><sub>i</sub> (μM)<xref rid="t1fn1" ref-type="table-fn"><sup>a</sup></xref><hr/></th><th colspan="2" align="center" rowspan="1">selectivity<xref rid="t1fn2" ref-type="table-fn"><sup>b</sup></xref><hr/></th><th style="border:none;" align="center" colspan="1" rowspan="1"> </th></tr><tr><th style="border:none;" align="center" colspan="1" rowspan="1">compound</th><th style="border:none;" align="center" colspan="1" rowspan="1">nNOS</th><th style="border:none;" align="center" colspan="1" rowspan="1">eNOS</th><th style="border:none;" align="center" colspan="1" rowspan="1">iNOS</th><th style="border:none;" align="center" colspan="1" rowspan="1">n/e</th><th style="border:none;" align="center" colspan="1" rowspan="1">n/i</th><th style="border:none;" align="center" colspan="1" rowspan="1">refs</th></tr></thead><tbody><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>1</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.0072</td><td style="border:none;" align="center" colspan="1" rowspan="1">19.2</td><td style="border:none;" align="center" colspan="1" rowspan="1">5.8</td><td style="border:none;" align="center" colspan="1" rowspan="1">2667</td><td style="border:none;" align="center" colspan="1" rowspan="1">806</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref17" ref-type="bibr">17</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(3<italic>S</italic>,4<italic>S</italic>)-<bold>1</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.116</td><td style="border:none;" align="center" colspan="1" rowspan="1">26.2</td><td style="border:none;" align="center" colspan="1" rowspan="1">7.5</td><td style="border:none;" align="center" colspan="1" rowspan="1">226</td><td style="border:none;" align="center" colspan="1" rowspan="1">65</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref17" ref-type="bibr">17</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.074</td><td style="border:none;" align="center" colspan="1" rowspan="1">148.9</td><td style="border:none;" align="center" colspan="1" rowspan="1">9.8</td><td style="border:none;" align="center" colspan="1" rowspan="1">2012</td><td style="border:none;" align="center" colspan="1" rowspan="1">132</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref20" ref-type="bibr">20</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.031</td><td style="border:none;" align="center" colspan="1" rowspan="1">45.2</td><td style="border:none;" align="center" colspan="1" rowspan="1">17.3</td><td style="border:none;" align="center" colspan="1" rowspan="1">1459</td><td style="border:none;" align="center" colspan="1" rowspan="1">558</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref20" ref-type="bibr">20</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>4</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.030</td><td style="border:none;" align="center" colspan="1" rowspan="1">33.5</td><td style="border:none;" align="center" colspan="1" rowspan="1">18.6</td><td style="border:none;" align="center" colspan="1" rowspan="1">1117</td><td style="border:none;" align="center" colspan="1" rowspan="1">619</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref20" ref-type="bibr">20</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>5</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.038</td><td style="border:none;" align="center" colspan="1" rowspan="1">26.1</td><td style="border:none;" align="center" colspan="1" rowspan="1">6.5</td><td style="border:none;" align="center" colspan="1" rowspan="1">687</td><td style="border:none;" align="center" colspan="1" rowspan="1">172</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref20" ref-type="bibr">20</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">(2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.0097</td><td style="border:none;" align="center" colspan="1" rowspan="1">6.7</td><td style="border:none;" align="center" colspan="1" rowspan="1">2.9</td><td style="border:none;" align="center" colspan="1" rowspan="1">693</td><td style="border:none;" align="center" colspan="1" rowspan="1">295</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref32" ref-type="bibr">32</xref>)</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">racemic <bold>7</bold></td><td style="border:none;" align="center" colspan="1" rowspan="1">0.030</td><td style="border:none;" align="center" colspan="1" rowspan="1">16.0</td><td style="border:none;" align="center" colspan="1" rowspan="1">2.8</td><td style="border:none;" align="center" colspan="1" rowspan="1">544</td><td style="border:none;" align="center" colspan="1" rowspan="1">95</td><td style="border:none;" align="left" colspan="1" rowspan="1">(<xref rid="ref33" ref-type="bibr">33</xref>), (<xref rid="ref34" ref-type="bibr">34</xref>)</td></tr></tbody></table><table-wrap-foot><fn id="t1fn1"><label>a</label><p>The apparent <italic>K</italic><sub>i</sub> values are
+represented as the means of two or more independent
+experiments in 100 mM HEPES buffer (pH 7.5) performed in duplicate
+with five or six data points each.<sup><xref rid="ref20" ref-type="bibr">20</xref></sup></p></fn><fn id="t1fn2"><label>b</label><p>n/e and n/i are the selectivity
+ratios of <italic>K</italic><sub>i</sub> (eNOS or iNOS) to <italic>K</italic><sub>i</sub> (nNOS).</p></fn></table-wrap-foot></table-wrap><fig id="fig1" position="float"><?disp-level 1?><label>Figure 1</label><caption><p>Two different modes of
+binding of <bold>1</bold> to nNOS depending
+on the chirality at positions 3′ and 4′ of the pyrrolidine.
+(A) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>1</bold> (PDB entry 3NLM(<xref rid="ref17" ref-type="bibr">17</xref>)) with its aminopyridine H-bonded with
+heme propionate D while Tyr706 is in an out-rotamer position. (B)
+(3<italic>S</italic>,4<italic>S</italic>)<italic>-</italic><bold>1</bold> (PDB entry 3NLK(<xref rid="ref17" ref-type="bibr">17</xref>)) with its aminopyridine H-bonded with
+Glu592 while Tyr706 is in an in-rotamer position. All figures were
+prepared with PyMol (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.pymol.org" ext-link-type="uri">http://www.pymol.org</ext-link>).</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr1" xlink:href="bi-2014-00561h_0002.jpg"><?cloudpmc-path blobs/00e8/4139154/838398cc0b84/bi-2014-00561h_0002.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 521?><?original-width 1309?><?scaled-height 260?><?scaled-width 654?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0002.gif"><?cloudpmc-path blobs/00e8/4139154/17bcec1ab413/bi-2014-00561h_0002.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><sec id="sec2" disp-level="1"><title>Experimental
+Procedures</title><sec id="sec2.1" disp-level="2"><title>Preparation of Bovine eNOS L111A and Y477A and Rat nNOS H341L
+and M336V/D597N Mutants</title><p>Three different point mutations,
+eNOS L111A, eNOS Y477A, and nNOS H341L, were prepared by the QuikChange
+protocol (Stratagene) via polymerase chain reaction using the pCWori
+vector as the template, which contains the gene of the corresponding
+full length wild type eNOS or nNOS. The resulting plasmids with the
+mutation were confirmed by sequencing of the entire coding region.
+The preparation of the rat nNOS double mutant, M336V/D597N, was as
+reported previously.<sup><xref rid="ref12" ref-type="bibr">12</xref></sup> Protein expression
+and purification of these full length eNOS or nNOS mutants were conducted
+using the established procedure reported previously.<sup><xref rid="ref9" ref-type="bibr">9</xref>,<xref rid="ref11" ref-type="bibr">11</xref></sup> The heme domain samples used for structural studies were generated
+by limited trypsinolysis of full length eNOS or nNOS, and the resulting
+fragments of the heme domain and FAD-containing domain were further
+separated by a Superdex 200 gel filtration column, as described previously.<sup><xref rid="ref9" ref-type="bibr">9</xref>,<xref rid="ref11" ref-type="bibr">11</xref></sup></p></sec><sec id="sec2.2" disp-level="2"><title>Inhibitor Complex Crystal Preparation</title><p>The rat nNOS
+heme domain (9 mg/mL, containing 20 mM histidine) or the bovine eNOS
+heme domain (12 mg/mL, containing 2 mM imidazole) was used for sitting
+drop vapor diffusion crystallization. Diffraction quality crystals
+were obtained after incubation for 2 days at 4 °C over the following
+reservoir solutions: for nNOS, 20–24% PEG3350, 100 mM MES (pH
+5.8), 140–200 mM ammonium acetate, 10% ethylene glycol, 5 mM
+GSH, and 35 μM SDS; for eNOS, 18–22% PEG3350, 100 mM
+cacodylate (pH 6.0), 150–200 mM magnesium acetate, and 5 mM
+TCEP. Fresh crystals were first passed stepwise through cryoprotectant
+solutions as described previously<sup><xref rid="ref9" ref-type="bibr">9</xref>,<xref rid="ref11" ref-type="bibr">11</xref></sup> and then soaked
+with 10 mM inhibitor for 4–6 h at 4 °C before being flash-cooled
+with liquid nitrogen.</p></sec><sec id="sec2.3" disp-level="2"><title>Spectral Binding Constants</title><p>In addition
+to the known
+inhibitory constants (<italic>K</italic><sub>i</sub> in Table <xref rid="tbl1" ref-type="table">1</xref>) obtained with the wild type rat nNOS or bovine
+eNOS full length enzymes, we also determined the spectral binding
+constants of inhibitors bound to the heme domain, wild type or mutants,
+which are the same samples used to obtain crystal structures. All
+of the inhibitors in this study are high-spin, type I inhibitors.
+The buffer consisted of 50 mM HEMES (pH 7.5), 10% glycerol, and 100
+mM NaCl, containing 1 mM imidazole (a low-spin, type II ligand). Inhibitor
+binding displaces the imidazole, resulting in a well-defined shift
+in the spectrum from low- to high-spin. The spectral shift was monitored
+for a few minutes at room temperature after each addition of increasing
+amounts of inhibitor to 5–6 μM protein. The differences
+in absorbance between the peak (390 nm) and trough (430 nm) were plotted
+against the inhibitor concentration. The data showing weaker binding
+to eNOS were usually fit well using SigmaPlot (Systat Software Inc.)
+with a hyperbolic one-site ligand binding equation. However, for inhibitors
+that bound more tightly to nNOS, a quadratic equation was needed for
+better fitting (Figure S1 of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>).<sup><xref rid="ref21" ref-type="bibr">21</xref></sup> The apparent <italic>K</italic><sub>s</sub> constants [<italic>K</italic><sub>s</sub>(app)] were further
+converted to <italic>K</italic><sub>s</sub> via the equation <italic>K</italic><sub>s</sub>(app) = <italic>K</italic><sub>s</sub>(1 +
+[imidazole]/<italic>K</italic><sub>d,imidazole</sub>) and are listed
+in Table <xref rid="tbl2" ref-type="table">2</xref>. The <italic>K</italic><sub>d</sub> values of imidazole for nNOS, eNOS, and iNOS are 160 μM,<sup><xref rid="ref22" ref-type="bibr">22</xref></sup> 150 μM,<sup><xref rid="ref23" ref-type="bibr">23</xref></sup> and
+42 μM,<sup><xref rid="ref24" ref-type="bibr">24</xref></sup> respectively.</p><table-wrap id="tbl2" position="float"><?disp-level 3?><label>Table 2</label><caption><title>Spectral Binding Constants (<italic>K</italic><sub>s</sub>, in micromolar)
+Determined with the NOS Heme
+Domain Proteins at 25 °C<xref rid="t2fn1" ref-type="table-fn"><sup>a</sup></xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/></colgroup><thead><tr><th style="border:none;" align="center" colspan="1" rowspan="1">inhibitor</th><th style="border:none;" align="center" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)-<bold>2</bold></th><th style="border:none;" align="center" colspan="1" rowspan="1">(3<italic>R</italic>,4<italic>R</italic>)-<bold>3</bold></th><th style="border:none;" align="center" colspan="1" rowspan="1">(2<italic>R</italic>,4<italic>S</italic>)-<bold>6</bold></th><th style="border:none;" align="center" colspan="1" rowspan="1"><bold>7</bold></th></tr></thead><tbody><tr><td style="border:none;" align="left" colspan="1" rowspan="1">wild type nNOS</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.212 ± 0.045</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.198 ± 0.018</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.050 ± 0.006</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.030 ± 0.004</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">nNOS M336V/D597N</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.93 ± 0.12</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.393 ± 0.024</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.153 ± 0.023</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.265 ± 0.029</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">nNOS H341L</td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">0.352 ± 0.018</td><td style="border:none;" align="left" colspan="1" rowspan="1">0.632 ± 0.198</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">wild type eNOS</td><td style="border:none;" align="left" colspan="1" rowspan="1">41.3 ± 3.5</td><td style="border:none;" align="left" colspan="1" rowspan="1">55.8 ± 6.4</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.60 ± 0.17</td><td style="border:none;" align="left" colspan="1" rowspan="1">10.6 ± 1.9</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">eNOS Y477A</td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">3.49 ± 0.24</td><td style="border:none;" align="left" colspan="1" rowspan="1">15.4 ± 1.2</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">eNOS L111A</td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">7.27 ± 0.32</td><td style="border:none;" align="left" colspan="1" rowspan="1">1.18 ± 0.29</td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">human iNOS</td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">N/D<xref rid="tbl2-fn1" ref-type="table-fn"><sup>b</sup></xref></td><td style="border:none;" align="left" colspan="1" rowspan="1">1.19 ± 0.29</td></tr></tbody></table><table-wrap-foot><fn id="t2fn1"><label>a</label><p>Details of the
+titration conditions
+are described in <xref rid="sec2" ref-type="sec">Experimental Procedures</xref>.
+Titration of the rat nNOS (or bovine eNOS) heme domain with each inhibitor
+was conducted in duplicate so that the mean <italic>K</italic><sub>s</sub> and the standard deviation could be reported in this table.</p></fn><fn id="tbl2-fn1"><label>b</label><p>Not determined.</p></fn></table-wrap-foot></table-wrap></sec><sec id="sec2.4" disp-level="2"><title>X-ray Diffraction Data Collection, Data Processing,
+and Structural
+Refinement</title><p>The cryogenic (100 K) X-ray diffraction data were
+collected remotely at the Stanford Synchrotron Radiation Lightsource
+(SSRL) or Advanced Light Source (ALS) through the data collection
+control software Blu-Ice<sup><xref rid="ref25" ref-type="bibr">25</xref></sup> and a crystal
+mounting robot. Raw CCD data frames were indexed, integrated, and
+scaled using HKL2000.<sup><xref rid="ref26" ref-type="bibr">26</xref></sup> The human iNOS
+diffraction data were collected at BL11-1 of SSRL using a Pilatus
+pixel array detector. The finely sliced (0.2° per frame) and
+highly redundant (160° in scanning angle) data were processed
+with XDS<sup><xref rid="ref27" ref-type="bibr">27</xref></sup> and scaled with Scala.<sup><xref rid="ref28" ref-type="bibr">28</xref></sup> Binding of inhibitors was detected by the initial
+difference Fourier maps calculated with REFMAC.<sup><xref rid="ref29" ref-type="bibr">29</xref></sup> The inhibitor molecules were then modeled in COOT<sup><xref rid="ref30" ref-type="bibr">30</xref></sup> and refined using REFMAC. Disordering in portions
+of inhibitors bound in the NOS active sites was often observed, sometimes
+resulting in poor density quality. However, partial structural features
+usually could still be visible if the contour level of the sigmaA-weighted
+2<italic>m</italic>|<italic>F</italic><sub>o</sub>| – <italic>D</italic>|<italic>F</italic><sub>c</sub>| map dropped to 0.5σ,
+which afforded the building of reasonable models into the disordered
+regions. Water molecules were added in REFMAC and checked by COOT.
+The TLS<sup><xref rid="ref31" ref-type="bibr">31</xref></sup> protocol was implemented in the
+final stage of refinements with each subunit as one TLS group. The
+omit <italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density maps were calculated by repeating the last round
+of TLS refinement with the inhibitor coordinate removed from the input
+PDB file to generate the map coefficients DELFWT and PHDELWT. The
+refined structures were validated in COOT before deposition in the
+PDB. The crystallographic data collection and structure refinement
+statistics are summarized in Table S1 of the <xref rid="notes-5" ref-type="sec">Supporting
+Information</xref>, with the PDB codes included.</p></sec></sec><sec id="sec3" disp-level="1"><title>Results and Discussion</title><sec id="sec3.1" disp-level="2"><title>Binding
+of (3<italic>R</italic>,4<italic>R</italic>)-Pyrrolidine
+Inhibitors to nNOS</title><p>Chemical structures of the compounds discussed
+in this study as well as their inhibitory potencies and selectivities
+are listed in Table <xref rid="tbl1" ref-type="table">1</xref>. To directly correlate
+the ligand binding affinity and the binding mode found in structures,
+the spectral binding constants of four compounds with various heme
+domain proteins are listed in Table <xref rid="tbl2" ref-type="table">2</xref>. Compared
+to the parental inhibitor (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>1</bold>, both (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> have the tail
+end hydrophobic phenyl ring replaced with a pyridine ring to introduce
+hydrogen bonds between the inhibitor and protein. These two inhibitors
+show good potency and high selectivity for nNOS over eNOS (Table <xref rid="tbl1" ref-type="table">1</xref>). As we have reported,<sup><xref rid="ref20" ref-type="bibr">20</xref></sup> the two (3<italic>R</italic>,4<italic>R</italic>)-inhibitors, <bold>2</bold> and <bold>3</bold>, bind to nNOS (Figure <xref rid="fig2" ref-type="fig">2</xref>) with the aminopyridine ring hydrogen bonded to heme propionate
+D and stacked with the Tyr706 side chain in its out-rotamer position.
+The pyridine ring at the other end of the inhibitor hydrogen bonds
+with Glu592. There are some variations with respect to how the pyrrolidine
+ring interacts with the protein. For (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> (Figure <xref rid="fig2" ref-type="fig">2</xref>A), the pyrrolidine ring bends down between heme propionate
+A and H<sub>4</sub>B, thereby hydrogen bonding to both through its
+ring nitrogen atom. This pyrrolidine binding position is identical
+to what has been observed for parental inhibitor (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>1</bold>.<sup><xref rid="ref16" ref-type="bibr">16</xref></sup> The pyrrolidine nitrogen atom occupies the position
+of a water molecule present in the substrate complex structures for
+both nNOS and eNOS (PDB entries 1OM4 and 2NSE). In the nNOS–<bold>3</bold> structure
+(Figure <xref rid="fig2" ref-type="fig">2</xref>B), however, this water molecule is
+still present, while the pyrrolidine of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> bends up but contacts
+the water molecule. Overall, (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> adopts a more extended conformation
+in the linker between the tail pyridine and the pyrrolidine rings,
+so that the position of the aminopyridine is at least 0.5 Å farther
+from the nNOS active site than that observed in the nNOS–<bold>1</bold> structure. Another difference between (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> is
+the orientation of the tail pyridine ring. In the nNOS–<bold>2</bold> structure, the ring is approximately parallel to heme pyrrole
+A, while the ring in the nNOS–<bold>3</bold> structure makes
+an ∼30° tilt from the heme plane. This is most likely
+because the extra methyl group on the pyridine in (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> imposes additional
+restraints on the ring orientation via its van der Waals contact with
+the Phe584 side chain. This additional contact may have created a
+binding affinity of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> slightly tighter than that of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold>.</p><fig id="fig2" position="float"><?disp-level 3?><label>Figure 2</label><caption><p>NNOS active
+site bound with (A) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> (PDB entry 3UFU(<xref rid="ref20" ref-type="bibr">20</xref>)) and (B)
+(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> (PDB entry 3UFV(<xref rid="ref20" ref-type="bibr">20</xref>)). The omit <italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density
+map for each inhibitor is shown at the 3.0σ contour level. Major
+hydrogen bonds are depicted as dashed lines.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr2" xlink:href="bi-2014-00561h_0003.jpg"><?cloudpmc-path blobs/00e8/4139154/14b526602191/bi-2014-00561h_0003.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 1210?><?original-width 644?><?scaled-height 1210?><?scaled-width 644?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0003.gif"><?cloudpmc-path blobs/00e8/4139154/c880d29af7fa/bi-2014-00561h_0003.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="sec3.2" disp-level="2"><title>Binding of (3<italic>R</italic>,4<italic>R</italic>)-Inhibitors
+to eNOS</title><p>Although (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> also bind to eNOS (Figure <xref rid="fig3" ref-type="fig">3</xref>) with the aminopyridine ring next to heme propionate
+D, Tyr477 remains in place and does not adopt the out-rotamer position
+as it does in nNOS. Therefore, the aminopyridine is able to form hydrogen
+bonds with only one oxygen atom of heme propionate D, whereas the
+2-amino group forms an H-bond with Asn340. The pyridine in the tail
+of either inhibitor makes a hydrogen bond with Glu363 similar to that
+seen in nNOS. The inability to form direct bifurcated H-bonds with
+the heme propionate D in eNOS is likely the main reason why (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and
+(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> bind to eNOS more poorly than to nNOS (Tables <xref rid="tbl1" ref-type="table">1</xref> and <xref rid="tbl2" ref-type="table">2</xref>). Both exhibit the weakest binding
+to eNOS among the compounds in this study, judging by both <italic>K</italic><sub>i</sub> and <italic>K</italic><sub>s</sub> (Tables <xref rid="tbl1" ref-type="table">1</xref> and <xref rid="tbl2" ref-type="table">2</xref>), while (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> gives
+the highest isoform selectivity. A concern was raised during the review
+about whether it is valid to correlate the inhibitory data (<italic>K</italic><sub>i</sub>), which were determined at pH 7.5 and room
+temperature, using full length enzymes, directly with the heme domain
+crystal structures obtained at lower pH values (pH 5.8 for nNOS and
+pH 6.0 for eNOS) and liquid nitrogen temperature (100 K). The spectral
+binding constants (<italic>K</italic><sub>s</sub>) determined with
+the heme domain protein at pH 7.5 and room temperature show a consistent
+trend with inhibitory <italic>K</italic><sub>i</sub> values, which
+indicates that the enzyme–inhibitor interaction and the accessibility
+of the inhibitor to the NOS active site are very similar, whether
+it is in the full length enzyme or the heme domain alone. The NOS
+heme active site has a wide open channel, which allows the soaking
+of small molecules into NOS crystals without crystal damage. The temperature
+issue is hard to address because the NOS crystal structures at room
+temperature are not available. The pH effects may not be a concern
+because the comparison of binding of the ligand to nNOS and eNOS is
+made in the same pH range (∼6.0).</p><fig id="fig3" position="float"><?disp-level 3?><label>Figure 3</label><caption><p>ENOS active site bound
+with (A) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (B) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold>. The omit <italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density map
+for each inhibitor is shown at the 3.0σ contour level. Major
+hydrogen bonds are depicted as dashed lines.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr3" xlink:href="bi-2014-00561h_0004.jpg"><?cloudpmc-path blobs/00e8/4139154/3bab0efbf78c/bi-2014-00561h_0004.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 1268?><?original-width 691?><?scaled-height 1268?><?scaled-width 691?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0004.gif"><?cloudpmc-path blobs/00e8/4139154/eed9b9d3ff3c/bi-2014-00561h_0004.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec><sec id="sec3.3" disp-level="2"><title>More Examples of Isoform-Dependent Binding Modes</title><p>Similar
+isoform-dependent inhibitor binding modes have been observed with
+other inhibitors. We have reported<sup><xref rid="ref20" ref-type="bibr">20</xref></sup> that
+(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>4</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>5</bold> bind to nNOS (Figure S2 of the <xref rid="notes-5" ref-type="sec">Supporting
+Information</xref>) in a double-headed mode with each of the heads
+hydrogen bonded with either the Glu592 side chain or heme propionate
+D. With eNOS, however, the two inhibitors do not form bifurcated hydrogen
+bonds to heme propionate D with the aminopyridine; instead, the aminopyridine
+stacks with the Tyr477 side chain that itself remains in the in-rotamer
+position to hydrogen bond with heme propionate D (Figure S3 of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>), which is similar to
+how (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> bind to eNOS (Figure <xref rid="fig3" ref-type="fig">3</xref>). We
+recently also reported pyrrolidine-based inhibitor (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold>, which provides
+another example.<sup><xref rid="ref32" ref-type="bibr">32</xref></sup> In nNOS, (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> makes hydrogen
+bonds with both aminopyridine rings, one to Glu592 and the other to
+heme propionate D (Figure S4A of the <xref rid="notes-5" ref-type="sec">Supporting
+Information</xref>). However, in eNOS, one aminopyridine hydrogen
+bonds with Glu363, but the second aminopyridine does not hydrogen
+bond with heme propionate D because Tyr477 does not rotate out of
+the way (Figure S4B of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>).</p></sec><sec id="sec3.4" disp-level="2"><title>Is the Tyr Position the Sole Determinant for Inhibitor Binding?</title><p>The common structural feature with these inhibitors is that the
+conserved Tyr adopts the out-rotamer conformation in nNOS, thus allowing
+one aminopyridine to form the bifurcated hydrogen bonds with heme
+propionate D, while in eNOS, the Tyr remains in the in-rotamer position.
+To determine if the Tyr side chain position is the sole determinant
+of the isoform-dependent inhibitor binding mode, we have prepared
+the eNOS Y477A mutant and determined crystal structures of the mutant
+bound with two inhibitors that do not disturb the Tyr477 rotamer in
+wild type eNOS. As shown in Figure <xref rid="fig4" ref-type="fig">4</xref>A, the
+binding mode of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> is the same as that in wild type eNOS (Figure <xref rid="fig3" ref-type="fig">3</xref>B); that is, the aminopyridine makes only one hydrogen
+bond with heme propionate D. The only difference is that the void
+left by the smaller side chain of Ala477 allows the aminopyridine
+ring to fill in the space, thereby losing its hydrogen bond to Asn430
+(Figure <xref rid="fig4" ref-type="fig">4</xref>A).</p><fig id="fig4" position="float"><?disp-level 3?><label>Figure 4</label><caption><p>eNOS Y447A mutant active site bound with
+(A) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> and (B) (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold>.
+The omit <italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density map for each inhibitor is shown at the 3.0σ
+contour level. Major hydrogen bonds are depicted as dashed lines.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr4" xlink:href="bi-2014-00561h_0005.jpg"><?cloudpmc-path blobs/00e8/4139154/39dfe999d6ba/bi-2014-00561h_0005.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 1197?><?original-width 704?><?scaled-height 1197?><?scaled-width 704?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0005.gif"><?cloudpmc-path blobs/00e8/4139154/b0e8414142b2/bi-2014-00561h_0005.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>In contrast, the structure of
+eNOS Y477A bound with (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> provides a
+clear-cut case in which the Tyr477 side chain alone fully controls
+how (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> binds, while in wild type eNOS, (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> cannot hydrogen bond
+with heme propionate D because the Tyr477 side chain blocks the position
+of heme propionate D. When the Tyr side chain is absent in the Y477A
+mutant, (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> is able to take the place of Tyr477 (Figure <xref rid="fig4" ref-type="fig">4</xref>B). This resembles the binding mode observed in
+the nNOS–<bold>6</bold> structure (Figure S3A of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>) but lacking the stacking
+interaction between the aminopyridine ring and the Tyr side chain.
+Interestingly, the determinations of <italic>K</italic><sub>s</sub> (Table <xref rid="tbl2" ref-type="table">2</xref>) indicate that being able to make
+bifurcated H-bonds from the aminopyridine to heme propionate D alone
+does not increase the affinity of (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> for eNOS Y477A compared to that
+of wild type eNOS. This implies that stacking of the aminopyridine
+ring with the Tyr side chain in its out-rotamer position also contributes
+to the binding of (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold>, which is the case in the nNOS–<bold>6</bold> structure (Figure S3A of the <xref rid="notes-5" ref-type="sec">Supporting
+Information</xref>). Removing the Tyr side chain does not lead to
+tighter binding even though it allows the inhibitor’s aminopyridine
+to H-bond with heme propionate D. Rather, allowing the Tyr to adopt
+an out-rotamer position is the key to better binding affinity for
+inhibitors discussed in this study.</p></sec><sec id="sec3.5" disp-level="2"><title>Reasons for the Different
+Tyr Mobilities</title><p>What remains
+to be explained is why the highly conserved Tyr residue, among different
+species and across the NOS isoforms, is more mobile in rat nNOS than
+in bovine eNOS. The protein environment near the Tyr is different
+in the two isoforms, with Met336 in nNOS versus Val106 in eNOS being
+one of the more obvious differences. When the aminopyridine hydrogen
+bonds with heme propionate D, Met336 is able to form more extensive
+contacts with the inhibitor in nNOS than would be possible for Val106
+in eNOS. This could help to provide the energetic incentive for the
+conserved Tyr to move away in nNOS. In addition, the larger Met336
+in nNOS may make it less favorable because of steric crowding of the
+inhibitor, such as (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold>, preventing adoption of the extended
+conformation, as observed in eNOS. To test this interpretation, we
+determined the structures of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> bound to the nNOS M336V/D597N
+mutant that mimics eNOS. There is very little difference in the way
+(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> binds to the mutant and wild type with the exception of the pyrrolidine
+moiety (Figure <xref rid="fig5" ref-type="fig">5</xref>A). More complex is how (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> binds
+to the nNOS mutant (Figure <xref rid="fig5" ref-type="fig">5</xref>B). Two alternate
+conformations are required to properly model the electron density
+for the aminopyridine and pyrrolidine rings. One conformation is the
+one already observed in the wild type nNOS–<bold>3</bold> structure
+with the pyrrolidine ring extending out and the aminopyridine forming
+bifurcated hydrogen bonds with heme propionate D. The other conformation
+is the same as that seen in the eNOS–<bold>3</bold> structure
+with the aminopyridine hydrogen bonded with both heme and Asn340.
+The Tyr706 side chain must have two alternate rotamer conformations
+to accommodate the inhibitor’s aminopyridine moiety in two
+different positions (Figure <xref rid="fig5" ref-type="fig">5</xref>B). Although the
+Met to Val substitution indeed has some impact on how the inhibitor
+interacts with the enzyme, we observed slightly weaker binding of
+(3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> to the nNOS M336V/D597N mutant (Table <xref rid="tbl2" ref-type="table">2</xref>), but inhibitor binding conformations in the nNOS M336V/D597N mutant
+do not fully mimic inhibitor conformations in the eNOS–<bold>2</bold> or −<bold>3</bold> structure.</p><fig id="fig5" position="float"><?disp-level 3?><label>Figure 5</label><caption><p>Active site of the nNOS
+M336V/D597N mutant bound with (A) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> and
+(B) (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold>. The aminopyridine and pyrrolidine moieties in (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> adopt
+two conformations (yellow and pink) in nNOS. The Tyr706 side chain
+also has two conformations to accommodate the inhibitor. The omit <italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density
+map is contoured at 3.0σ for each inhibitor. Major hydrogen
+bonds are depicted as dashed lines.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr5" xlink:href="bi-2014-00561h_0006.jpg"><?cloudpmc-path blobs/00e8/4139154/c702a17a17b6/bi-2014-00561h_0006.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 1199?><?original-width 704?><?scaled-height 1199?><?scaled-width 704?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0006.gif"><?cloudpmc-path blobs/00e8/4139154/8867163e1ae4/bi-2014-00561h_0006.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>What complicates the mobility of the conserved Tyr is that
+an extended
+segment of disordered polypeptide in both eNOS and nNOS (residues
+339–349 in nNOS or residues 109–120 in eNOS) differs
+in both sequence and length and thus could also contribute to dynamical
+differences in eNOS and nNOS. In the eNOS–<bold>3</bold> structure
+and a few others, we were able to observe density for a few more residues,
+and thus, we could model Arg109–Leu111 in the usually disordered
+region, as shown in Figure <xref rid="fig6" ref-type="fig">6</xref>. In addition,
+with some inhibitors, this region is visible in electron density maps
+of nNOS. One example is the nNOS structure (PDB entry 4JSH) where the normally
+disordered segment was fully modeled with the 2<italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density contoured
+at 0.5σ (Figure <xref rid="fig7" ref-type="fig">7</xref>). The backbone of the
+loop in nNOS resembles the fully ordered region observed in the human
+iNOS structure (PDB entry 1NSI); that is, residues from Pro338 to Thr342 form a 3<sub>10</sub> helix. This additional information shows that the backbone
+of this N-terminal portion in eNOS heme domain is packed more tightly
+against the C-terminal fragment where Tyr477 is located. Additional
+mutants in this region suggest that it is indeed how the backbone
+packs near the conserved Tyr but not specific amino acid differences
+that control the Tyr rotamer conformation. For example, Leu111 in
+eNOS is in position to possibly clash with the out-rotamer conformation
+of Tyr477, but the eNOS L111A mutant in complexes with (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> or (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>5</bold> shows
+that Tyr477 remains in place and does not adopt the out-rotamer conformation
+(Figure S5 of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>). The <italic>K</italic><sub>s</sub> of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> with eNOS L111A shows
+a binding affinity 7-fold tighter than that of wild type eNOS (Table <xref rid="tbl2" ref-type="table">2</xref>). Even though this mutation does not impact the
+Tyr477 side chain rotamer position, it may affect inhibitor binding
+by providing a distorted packing between the N-terminal portion and
+the Tyr477-residing C-terminal fragment that lines up the active site
+entrance. Another interaction unique in nNOS is His341 (Leu in eNOS),
+which H-bonds with heme propionate D; this could possibly weaken the
+Tyr706–heme propionate interaction, thus allowing Tyr706 to
+more easily adopt the out-rotamer conformation. However, Tyr706 in
+the H341L mutant complexed with (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>2</bold> or (2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> still adopts the out-rotamer
+conformation (Figure S6 of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>) just as it does in wild type nNOS. We did see weaker binding of
+(2<italic>R</italic>,4<italic>S</italic>)<italic>-</italic><bold>6</bold> to the H341L mutant of nNOS compared to that of the wild type in
+the <italic>K</italic><sub>s</sub> measurement, but the binding is
+still tighter than that to eNOS (Table <xref rid="tbl2" ref-type="table">2</xref>),
+which is consistent with the double-headed binding observed in the
+nNOS H341L–<bold>6</bold> structure.</p><fig id="fig6" position="float"><?disp-level 3?><label>Figure 6</label><caption><p>Superimposition of the
+nNOS–<bold>3</bold> structure (purple,
+shown as one subunit only) on the eNOS–<bold>3</bold> structure
+(green) locally around the heme active site (Pro565–Asp600
+in nNOS vs Pro336–Asp371 in eNOS). In nNOS, the loop after
+Pro338 is invisible, while in eNOS, the loop is ordered up to Leu111,
+as indicated by the 2<italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density contoured at 0.8σ. Different
+binding conformations of (3<italic>R</italic>,4<italic>R</italic>)<italic>-</italic><bold>3</bold> are shown with the Tyr residue swung out
+(nNOS, purple) or not (eNOS, green). The potential steric clash between
+Leu111 and Tyr477 in its assumed out-rotamer position is indicated
+by an arrow.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr6" xlink:href="bi-2014-00561h_0007.jpg"><?cloudpmc-path blobs/00e8/4139154/e0bafba51057/bi-2014-00561h_0007.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 600?><?original-width 750?><?scaled-height 600?><?scaled-width 750?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0007.gif"><?cloudpmc-path blobs/00e8/4139154/42cad7c73a45/bi-2014-00561h_0007.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><fig id="fig7" position="float"><?disp-level 3?><label>Figure 7</label><caption><p>Segment adjacent to the
+Tyr706-residing fragment. The normally
+disordered polypeptide (residues 339–349) becomes partially
+ordered in certain nNOS structures (PDB entry 4JSH). The 2<italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> electron density
+is contoured at 0.5σ around the 3<sub>10</sub> helix in the
+segment.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr7" xlink:href="bi-2014-00561h_0008.jpg"><?cloudpmc-path blobs/00e8/4139154/901eddfd6708/bi-2014-00561h_0008.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 601?><?original-width 750?><?scaled-height 601?><?scaled-width 750?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0008.gif"><?cloudpmc-path blobs/00e8/4139154/4049bfc5d6dd/bi-2014-00561h_0008.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig><p>One final example supporting the
+conformational mobility of the
+polypeptide and not specific amino acid differences as the key factor
+controlling the mobility of the conserved Tyr stems from the structure
+of human iNOS complexed with <bold>7</bold>. As noted, the backbone
+conformation of the polypeptide in this region is the same in both
+nNOS and iNOS, but in iNOS, this region is fully ordered with well-defined
+electron density. When <bold>7</bold> binds to nNOS, Tyr706 adopts
+the out-rotamer conformation, but in iNOS, the corresponding Tyr491
+remains in place (Figure <xref rid="fig8" ref-type="fig">8</xref>). Indeed, if Tyr491
+were to adopt the out-rotamer conformation, there would be potential
+steric clashes with Thr126 unless the Thr126 segment would move, which,
+apparently, does not happen in iNOS. Interestingly, Tyr491 of iNOS
+is more resistant to the out-rotamer position than is Tyr477 in eNOS
+because, when <bold>7</bold> binds, both Tyr477 in eNOS and Tyr706
+in nNOS adopt an out-rotamer position to allow one of the two aminopyridines
+of <bold>7</bold> to form bifurcated H-bonds with heme propionate
+D, as shown in Figure S7 of the <xref rid="notes-5" ref-type="sec">Supporting Information</xref>. Note, too, that <bold>7</bold> is a more potent inhibitor of iNOS
+than of eNOS but not of nNOS. We previously have shown that there
+is greater electrostatic stabilization of <bold>7</bold> bound to
+nNOS than eNOS because of a single amino acid difference: Asp597 in
+nNOS is Asn368 in eNOS (see Figures <xref rid="fig2" ref-type="fig">2</xref> and <xref rid="fig3" ref-type="fig">3</xref>).<sup><xref rid="ref12" ref-type="bibr">12</xref></sup> This residue is
+Asp382 in iNOS, which explains why <bold>7</bold> is ∼6-fold
+better at inhibiting iNOS than eNOS. However, <bold>7</bold> is an
+∼95-fold better inhibitor of nNOS than of iNOS. Because the
+electrostatic properties of iNOS and nNOS are so similar, the better
+potency of <bold>7</bold> for nNOS supports the view that the ability
+of the Tyr to adopt the out-rotamer conformation in nNOS plays a major
+role in inhibitor potency. The two main reasons why the out-rotamer
+conformation results in better potency are that H-bonds between the
+inhibitor aminopyridine and heme propionate are optimized and aromatic
+stacking occurs between the Tyr out-rotamer conformation and inhibitor
+aminopyridine.</p><fig id="fig8" position="float"><?disp-level 3?><label>Figure 8</label><caption><p>Active site of human iNOS with <bold>7</bold> bound. The
+omit <italic>F</italic><sub>o</sub> – <italic>F</italic><sub>c</sub> density
+map is contoured at 3.0σ for the inhibitor. Major hydrogen bonds
+are depicted as dashed lines. The second aminopyridine of <bold>7</bold> is far from heme propionate D, which itself makes an H-bond with
+Tyr491 in an in-rotamer position.</p></caption><alternatives><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="image" id="gr8" xlink:href="bi-2014-00561h_0009.jpg"><?cloudpmc-path blobs/00e8/4139154/dd9670192ebb/bi-2014-00561h_0009.jpg?><?cloudpmc-bucket cdn?><?image-server-status NEVER_LOAD?><?original-height 679?><?original-width 705?><?scaled-height 679?><?scaled-width 705?></graphic><graphic xmlns:xlink="http://www.w3.org/1999/xlink" content-type="thumb" xlink:href="bi-2014-00561h_0009.gif"><?cloudpmc-path blobs/00e8/4139154/21fc3d17d780/bi-2014-00561h_0009.gif?><?cloudpmc-bucket cdn?></graphic></alternatives></fig></sec></sec><sec id="sec4" disp-level="1"><title>Conclusions</title><p>The Tyr706 side chain in nNOS can easily
+adopt an out-rotamer position
+when pyrrolidine-based inhibitors bind to the active site, while Tyr477
+tends to remain in place in eNOS structures. The structural basis
+for this isoform-dependent difference in Tyr mobility cannot be attributed
+to any single residue in the often disordered region near the conserved
+Tyr. The backbone structure of this region is basically the same in
+nNOS and iNOS based on the available information. Even so, in iNOS
+this region exhibits well-defined electron density and clearly is
+more highly ordered than in nNOS. The out-rotamer position of the
+conserved Tyr requires flexibility in this region, which happens to
+be rigid in iNOS. This segment, however, adopts a different backbone
+structure in eNOS compared to iNOS and nNOS, and despite the relatively
+high mobility of this region, the polypeptide is closer to the conserved
+Tyr in eNOS, thus presenting a greater energy barrier to the conserved
+Tyr adopting the out-rotamer conformation. In addition, the Met336
+(nNOS) to Val106 (eNOS) substitution can influence the binding of
+inhibitors such as (3<italic>R</italic>,4<italic>R</italic>)-<bold>2</bold> and (3<italic>R</italic>,4<italic>R</italic>)-<bold>3</bold>. These different binding modes in nNOS and eNOS, caused by the Tyr
+residue mobility, have proven to be the basis for the sharp differences
+in inhibitor potency (Table <xref rid="tbl1" ref-type="table">1</xref>). Therefore,
+the mobility of this Tyr residue can be utilized in the future development
+of isoform selective NOS inhibitors.</p></sec><sec id="ack1" sec-type="ack" disp-level="1"><title>Acknowledgments</title><p>H.L. thanks Victoria S. Jasion and Yarrow Modrona for their
+help in X-ray data collection. We also thank the beamline staff at
+SSRL and ALS for their assistance during the remote X-ray diffraction
+data collection.</p></sec><sec id="dl1" sec-type="glossary" disp-level="1"><title>Glossary</title><def-list><title>Abbreviations</title><def-item><term>NO</term><def><p>nitric oxide</p></def></def-item><def-item><term>nNOS</term><def><p>neuronal nitric oxide synthase</p></def></def-item><def-item><term>iNOS</term><def><p>inducible nitric
+oxide synthase</p></def></def-item><def-item><term>eNOS</term><def><p>endothelial nitric oxide synthase</p></def></def-item><def-item><term>H<sub>4</sub>B</term><def><p>tetrahydrobiopterin</p></def></def-item><def-item><term>GSH</term><def><p>reduced glutathione</p></def></def-item><def-item><term>MES</term><def><p>2-(<italic>N</italic>-morpholino)ethanesulfonic acid</p></def></def-item><def-item><term>HEPES</term><def><p>2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic
+acid</p></def></def-item><def-item><term>TCEP</term><def><p>tris(2-carboxyethyl)phosphine</p></def></def-item><def-item><term>PDB</term><def><p>Protein Data Bank.</p></def></def-item></def-list></sec><sec id="notes-5" disp-level="1"><title>Supporting Information Available</title><p>Table
+of crystallographic data
+collection and structure refinement statistics (with PDB entries), <italic>K</italic><sub>s</sub> titration curve fittings, and other structural
+figures. This material is available free of charge via the Internet
+at <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://pubs.acs.org" ext-link-type="uri">http://pubs.acs.org</ext-link>.</p></sec><sec id="notes-4" disp-level="1"><title>Accession Codes</title><p>eNOS–<bold>2</bold>, 4CWV; eNOS–<bold>3</bold>, 4CWW; eNOS–<bold>4</bold>, 4CWX; eNOS–<bold>5</bold>, 4CWY; eNOS Y477A–<bold>3</bold>, 4CWZ; eNOS Y477A–<bold>6</bold>, 4CX0; eNOS L111A–<bold>3</bold>, 4CX1; eNOS L111A–<bold>5</bold>, 4CX2; nNOS M336V/D597N–<bold>2</bold>, 4CX3; nNOS
+M336V/D597N–<bold>3</bold>, 4CX4; nNOS H341L–<bold>2</bold>, 4CX5; nNOS H341L–<bold>6</bold>, 4CX6; iNOS–<bold>7</bold>, 4CX7.</p></sec><sec id="notes-1" disp-level="1"><title>Author Present Address</title><p><sup>§</sup> S.D.:
+Celgene, 4550 Towne Centre Ct., San Diego, CA 92121.</p></sec><sec id="notes-2" disp-level="1"><title>Author Present Address</title><p><sup>∥</sup> H.J.: Department of Chemistry, University of Utah, Salt Lake City,
+UT 84112.</p></sec><sec id="notes-3" disp-level="1"><p>This work was
+supported by National Institutes of Health Grants GM057353 to T.L.P.
+and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.ncbi.nlm.nih.gov/nuccore/GM049725" ext-link-type="uri">GM049725</ext-link> to R.B.S.</p></sec><sec id="NOTES-d270e2120-autogenerated" disp-level="1"><p>The authors declare
+no
+competing financial interest.</p></sec><sec id="funding-statement1" xml:lang="en" disp-level="1"><title>Funding Statement</title><p>National Institutes of Health, United States</p></sec><sec id="sec13" disp-level="1"><title>Supplementary Material</title><supplementary-material id="sifile1" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bi500561h_si_001.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path 00e8/4139154/0ecf99100a49/bi500561h_si_001.pdf?><?cloudpmc-bucket app?><?size 6653664?><caption><p>bi500561h_si_001.pdf</p></caption></media></supplementary-material></sec><sec id="ref-list1" sec-type="ref-list" disp-level="1"><title>References</title><sec id="ref-list1_sec2" disp-level="2"><ref-list><ref id="ref1"><mixed-citation id="cit1"><named-content content-type="citation-string">Stuehr D. J.; Griffith O. W. (1992) Mammalian nitric
+oxide synthases. Adv. Enzymol. Relat. Areas
+Mol. Biol.
+65, 287–346.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1002/9780470123119.ch8"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="1373932"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Adv. Enzymol. Relat. Areas Mol. Biol.&amp;title=Mammalian nitric oxide synthases&amp;author=D. J. Stuehr&amp;author=O. W. Griffith&amp;volume=65&amp;publication_year=1992&amp;pages=287-346&amp;pmid=1373932&amp;doi=10.1002/9780470123119.ch8&amp;"/></mixed-citation></ref><ref id="ref2"><mixed-citation id="cit2"><named-content content-type="citation-string">Moncada S.; Palmer R. M.; Higgs E. A. (1991) Nitric
+oxide: Physiology, pathophysiology,
+and pharmacology. Pharmacol. Rev.
+43, 109–142.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="1852778"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Pharmacol. Rev.&amp;title=Nitric oxide: Physiology, pathophysiology, and pharmacology&amp;author=S. Moncada&amp;author=R. M. Palmer&amp;author=E. A. Higgs&amp;volume=43&amp;publication_year=1991&amp;pages=109-142&amp;pmid=1852778&amp;"/></mixed-citation></ref><ref id="ref3"><mixed-citation id="cit3"><named-content content-type="citation-string">Hobbs A. J.; Higgs A.; Moncada S. (1999) Inhibition
+of nitric oxide synthase
+as a potential therapeutic target. Annu. Rev.
+Pharmacol. Toxicol.
+39, 191–220.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1146/annurev.pharmtox.39.1.191"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10331082"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Annu. Rev. Pharmacol. Toxicol.&amp;title=Inhibition of nitric oxide synthase as a potential therapeutic target&amp;author=A. J. Hobbs&amp;author=A. Higgs&amp;author=S. Moncada&amp;volume=39&amp;publication_year=1999&amp;pages=191-220&amp;pmid=10331082&amp;doi=10.1146/annurev.pharmtox.39.1.191&amp;"/></mixed-citation></ref><ref id="ref4"><mixed-citation id="cit4"><named-content content-type="citation-string">Silverman R. B. (2009) Design
+of selective neuronal nitric oxide synthase inhibitors for the prevention
+and treatment of neurodegenerative diseases. Acc. Chem. Res.
+42, 439–451.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ar800201v"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2765506"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="19154146"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acc. Chem. Res.&amp;title=Design of selective neuronal nitric oxide synthase inhibitors for the prevention and treatment of neurodegenerative diseases&amp;author=R. B. Silverman&amp;volume=42&amp;publication_year=2009&amp;pages=439-451&amp;pmid=19154146&amp;doi=10.1021/ar800201v&amp;"/></mixed-citation></ref><ref id="ref5"><mixed-citation id="cit5"><named-content content-type="citation-string">Poulos T. L.; Li H. (2013) Structural basis for isoform-selective inhibition in nitric oxide
+synthase. Acc. Chem. Res.
+46, 390–398.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ar300175n"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3835173"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="23030042"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acc. Chem. Res.&amp;title=Structural basis for isoform-selective inhibition in nitric oxide synthase&amp;author=T. L. Poulos&amp;author=H. Li&amp;volume=46&amp;publication_year=2013&amp;pages=390-398&amp;pmid=23030042&amp;doi=10.1021/ar300175n&amp;"/></mixed-citation></ref><ref id="ref6"><mixed-citation id="cit6"><named-content content-type="citation-string">Calabrese V.; Bates T. E.; Stella A. M. (2000) NO synthase and
+NO-dependent signal
+pathways in brain aging and neurodegenrative disorders: The role of
+oxidant/antioxidant balance. Neurochem. Res.
+25, 1315–1341.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1023/a:1007604414773"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11059804"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Neurochem. Res.&amp;title=NO synthase and NO-dependent signal pathways in brain aging and neurodegenrative disorders: The role of oxidant/antioxidant balance&amp;author=V. Calabrese&amp;author=T. E. Bates&amp;author=A. M. Stella&amp;volume=25&amp;publication_year=2000&amp;pages=1315-1341&amp;pmid=11059804&amp;doi=10.1023/a:1007604414773&amp;"/></mixed-citation></ref><ref id="ref7"><mixed-citation id="cit7"><named-content content-type="citation-string">Taddei S.; Virdis A.; Ghiadoni L.; Sudano I.; Salvetti A. (2001) Endothelial
+dysfunction in hypertension. J. Cardiovasc.
+Pharmacol.
+38(Suppl.
+2), S11–S14.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1097/00005344-200111002-00004"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11811368"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Cardiovasc. Pharmacol.&amp;title=Endothelial dysfunction in hypertension&amp;author=S. Taddei&amp;author=A. Virdis&amp;author=L. Ghiadoni&amp;author=I. Sudano&amp;author=A. Salvetti&amp;volume=38&amp;issue=Suppl. 2&amp;publication_year=2001&amp;pages=S11-S14&amp;pmid=11811368&amp;doi=10.1097/00005344-200111002-00004&amp;"/></mixed-citation></ref><ref id="ref8"><mixed-citation id="cit8"><named-content content-type="citation-string">Crane B. R.; Arvai A. S.; Ghosh D. K.; Wu C.; Getzoff E. D.; Stuehr D. J.; Tainer J. A. (1998) Structure of nitric oxide synthase
+oxygenase dimer with pterin and substrate. Science
+279, 2121–2126.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1126/science.279.5359.2121"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="9516116"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Science&amp;title=Structure of nitric oxide synthase oxygenase dimer with pterin and substrate&amp;author=B. R. Crane&amp;author=A. S. Arvai&amp;author=D. K. Ghosh&amp;author=C. Wu&amp;author=E. D. Getzoff&amp;volume=279&amp;publication_year=1998&amp;pages=2121-2126&amp;pmid=9516116&amp;doi=10.1126/science.279.5359.2121&amp;"/></mixed-citation></ref><ref id="ref9"><mixed-citation id="cit9"><named-content content-type="citation-string">Raman C. S.; Li H.; Martasek P.; Kral V.; Masters B. S.; Poulos T. L. (1998) Crystal
+structure of constitutive endothelial nitric oxide synthase: A paradigm
+for pterin function involving a novel metal center. Cell
+95, 939–950.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/s0092-8674(00)81718-3"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="9875848"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Cell&amp;title=Crystal structure of constitutive endothelial nitric oxide synthase: A paradigm for pterin function involving a novel metal center&amp;author=C. S. Raman&amp;author=H. Li&amp;author=P. Martasek&amp;author=V. Kral&amp;author=B. S. Masters&amp;volume=95&amp;publication_year=1998&amp;pages=939-950&amp;pmid=9875848&amp;doi=10.1016/s0092-8674(00)81718-3&amp;"/></mixed-citation></ref><ref id="ref10"><mixed-citation id="cit10"><named-content content-type="citation-string">Fischmann T. O.; Hruza A.; Niu X. D.; Fossetta J. D.; Lunn C. A.; Dolphin E.; Prongay A. J.; Reichert P.; Lundell D. J.; Narula S. K.; Weber P. C. (1999) Structural characterization of nitric
+oxide synthase isoforms reveals striking active-site conservation. Nat. Struct. Biol.
+6, 233–242.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/6675"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10074942"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Struct. Biol.&amp;title=Structural characterization of nitric oxide synthase isoforms reveals striking active-site conservation&amp;author=T. O. Fischmann&amp;author=A. Hruza&amp;author=X. D. Niu&amp;author=J. D. Fossetta&amp;author=C. A. Lunn&amp;volume=6&amp;publication_year=1999&amp;pages=233-242&amp;pmid=10074942&amp;doi=10.1038/6675&amp;"/></mixed-citation></ref><ref id="ref11"><mixed-citation id="cit11"><named-content content-type="citation-string">Li H.; Shimizu H.; Flinspach M.; Jamal J.; Yang W.; Xian M.; Cai T.; Wen E. Z.; Jia Q.; Wang P. G.; Poulos T. L. (2002) The novel
+binding mode of N-alkyl-N<italic>′</italic>-hydroxyguanidine
+to neuronal nitric oxide synthase
+provides mechanistic insights into NO biosynthesis. Biochemistry
+41, 13868–13875.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi020417c"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12437343"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=The novel binding mode of N-alkyl-N′-hydroxyguanidine to neuronal nitric oxide synthase provides mechanistic insights into NO biosynthesis&amp;author=H. Li&amp;author=H. Shimizu&amp;author=M. Flinspach&amp;author=J. Jamal&amp;author=W. Yang&amp;volume=41&amp;publication_year=2002&amp;pages=13868-13875&amp;pmid=12437343&amp;doi=10.1021/bi020417c&amp;"/></mixed-citation></ref><ref id="ref12"><mixed-citation id="cit12"><named-content content-type="citation-string">Flinspach M. L.; Li H.; Jamal J.; Yang W.; Huang H.; Hah J. M.; Gomez-Vidal J. A.; Litzinger E. A.; Silverman R. B.; Poulos T. L. (2004) Structural basis for dipeptide amide isoform-selective
+inhibition of neuronal nitric oxide synthase. Nat. Struct. Mol. Biol.
+11, 54–59.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1038/nsmb704"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="14718923"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Nat. Struct. Mol. Biol.&amp;title=Structural basis for dipeptide amide isoform-selective inhibition of neuronal nitric oxide synthase&amp;author=M. L. Flinspach&amp;author=H. Li&amp;author=J. Jamal&amp;author=W. Yang&amp;author=H. Huang&amp;volume=11&amp;publication_year=2004&amp;pages=54-59&amp;pmid=14718923&amp;doi=10.1038/nsmb704&amp;"/></mixed-citation></ref><ref id="ref13"><mixed-citation id="cit13"><named-content content-type="citation-string">Huang H.; Martasek P.; Roman L. J.; Silverman R. B. (2001) Synthesis
+and evaluation of dipeptide amides containing N<sup>ω</sup>-nitroarginine
+and d-2,4-diaminobutyric acids as inhibitors of neuronal
+nitric oxide synthase. J. Enzyme Inhib.
+16, 233–239.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1080/14756360109162371"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11697043"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Enzyme Inhib.&amp;title=Synthesis and evaluation of dipeptide amides containing Nω-nitroarginine and d-2,4-diaminobutyric acids as inhibitors of neuronal nitric oxide synthase&amp;author=H. Huang&amp;author=P. Martasek&amp;author=L. J. Roman&amp;author=R. B. Silverman&amp;volume=16&amp;publication_year=2001&amp;pages=233-239&amp;pmid=11697043&amp;doi=10.1080/14756360109162371&amp;"/></mixed-citation></ref><ref id="ref14"><mixed-citation id="cit14"><named-content content-type="citation-string">Huang H.; Martasek P.; Roman L. J.; Masters B. S.; Silverman R. B. (1999) N<sup>ω</sup>-Nitroarginine-containing
+dipeptide amides. Potent and highly selective
+inhibitors of neuronal nitric oxide synthase. J. Med. Chem.
+42, 3147–3153.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm990111c"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="10447959"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Nω-Nitroarginine-containing dipeptide amides. Potent and highly selective inhibitors of neuronal nitric oxide synthase&amp;author=H. Huang&amp;author=P. Martasek&amp;author=L. J. Roman&amp;author=B. S. Masters&amp;author=R. B. Silverman&amp;volume=42&amp;publication_year=1999&amp;pages=3147-3153&amp;pmid=10447959&amp;doi=10.1021/jm990111c&amp;"/></mixed-citation></ref><ref id="ref15"><mixed-citation id="cit15"><named-content content-type="citation-string">Ji H.; Stanton B. Z.; Igarashi J.; Li H.; Martasek P.; Roman L. J.; Poulos T. L.; Silverman R. B. (2008) Minimal
+pharmacophoric elements and fragment hopping, an approach directed
+at molecular diversity and isozyme selectivity. Design of selective
+neuronal nitric oxide synthase inhibitors. J.
+Am. Chem. Soc.
+130, 3900–3914.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ja0772041"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2929563"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="18321097"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Chem. Soc.&amp;title=Minimal pharmacophoric elements and fragment hopping, an approach directed at molecular diversity and isozyme selectivity. Design of selective neuronal nitric oxide synthase inhibitors&amp;author=H. Ji&amp;author=B. Z. Stanton&amp;author=J. Igarashi&amp;author=H. Li&amp;author=P. Martasek&amp;volume=130&amp;publication_year=2008&amp;pages=3900-3914&amp;pmid=18321097&amp;doi=10.1021/ja0772041&amp;"/></mixed-citation></ref><ref id="ref16"><mixed-citation id="cit16"><named-content content-type="citation-string">Delker S. L.; Ji H.; Li H.; Jamal J.; Fang J.; Xue F.; Silverman R. B.; Poulos T. L. (2010) Unexpected binding modes of nitric
+oxide synthase inhibitors effective in the prevention of a cerebral
+palsy phenotype in an animal model. J. Am. Chem.
+Soc.
+132, 5437–5442.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ja910228a"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3202968"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20337441"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Chem. Soc.&amp;title=Unexpected binding modes of nitric oxide synthase inhibitors effective in the prevention of a cerebral palsy phenotype in an animal model&amp;author=S. L. Delker&amp;author=H. Ji&amp;author=H. Li&amp;author=J. Jamal&amp;author=J. Fang&amp;volume=132&amp;publication_year=2010&amp;pages=5437-5442&amp;pmid=20337441&amp;doi=10.1021/ja910228a&amp;"/></mixed-citation></ref><ref id="ref17"><mixed-citation id="cit17"><named-content content-type="citation-string">Ji H.; Delker S. L.; Li H.; Martasek P.; Roman L. J.; Poulos T. L.; Silverman R. B. (2010) Exploration
+of the active site of
+neuronal nitric oxide synthase by the design and synthesis of pyrrolidinomethyl
+2-aminopyridine derivatives. J. Med. Chem.
+53, 7804–7824.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm100947x"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2978073"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20958055"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Exploration of the active site of neuronal nitric oxide synthase by the design and synthesis of pyrrolidinomethyl 2-aminopyridine derivatives&amp;author=H. Ji&amp;author=S. L. Delker&amp;author=H. Li&amp;author=P. Martasek&amp;author=L. J. Roman&amp;volume=53&amp;publication_year=2010&amp;pages=7804-7824&amp;pmid=20958055&amp;doi=10.1021/jm100947x&amp;"/></mixed-citation></ref><ref id="ref18"><mixed-citation id="cit18"><named-content content-type="citation-string">Delker S. L.; Xue F.; Li H.; Jamal J.; Silverman R. B.; Poulos T. L. (2010) Role of zinc in
+isoform-selective inhibitor binding
+to neuronal nitric oxide synthase. Biochemistry
+49, 10803–10810.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi1013479"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3193998"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21138269"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Role of zinc in isoform-selective inhibitor binding to neuronal nitric oxide synthase&amp;author=S. L. Delker&amp;author=F. Xue&amp;author=H. Li&amp;author=J. Jamal&amp;author=R. B. Silverman&amp;volume=49&amp;publication_year=2010&amp;pages=10803-10810&amp;pmid=21138269&amp;doi=10.1021/bi1013479&amp;"/></mixed-citation></ref><ref id="ref19"><mixed-citation id="cit19"><named-content content-type="citation-string">Xue F.; Fang J.; Delker S. L.; Li H.; Martasek P.; Roman L. J.; Poulos T. L.; Silverman R. B. (2011) Symmetric
+double-headed aminopyridines, a novel strategy for potent and membrane-permeable
+inhibitors of neuronal nitric oxide synthase. J. Med. Chem.
+54, 2039–2048.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm101071n"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3072459"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="21410186"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Symmetric double-headed aminopyridines, a novel strategy for potent and membrane-permeable inhibitors of neuronal nitric oxide synthase&amp;author=F. Xue&amp;author=J. Fang&amp;author=S. L. Delker&amp;author=H. Li&amp;author=P. Martasek&amp;volume=54&amp;publication_year=2011&amp;pages=2039-2048&amp;pmid=21410186&amp;doi=10.1021/jm101071n&amp;"/></mixed-citation></ref><ref id="ref20"><mixed-citation id="cit20"><named-content content-type="citation-string">Huang H.; Ji H.; Li H.; Jing Q.; Labby K. J.; Martasek P.; Roman L. J.; Poulos T. L.; Silverman R. B. (2012) Selective
+monocationic inhibitors of neuronal nitric oxide synthase. Binding
+mode insights from molecular dynamics simulations. J. Am. Chem. Soc.
+134, 11559–11572.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ja302269r"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3399929"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="22731813"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Am. Chem. Soc.&amp;title=Selective monocationic inhibitors of neuronal nitric oxide synthase. Binding mode insights from molecular dynamics simulations&amp;author=H. Huang&amp;author=H. Ji&amp;author=H. Li&amp;author=Q. Jing&amp;author=K. J. Labby&amp;volume=134&amp;publication_year=2012&amp;pages=11559-11572&amp;pmid=22731813&amp;doi=10.1021/ja302269r&amp;"/></mixed-citation></ref><ref id="ref21"><mixed-citation id="cit21"><named-content content-type="citation-string">Isin E. M.; Guengerich F. P. (2006) Kinetics and thermodynamics of ligand binding by cytochrome
+P450 3A4. J. Biol. Chem.
+281, 9127–9136.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M511375200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16467307"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Kinetics and thermodynamics of ligand binding by cytochrome P450 3A4&amp;author=E. M. Isin&amp;author=F. P. Guengerich&amp;volume=281&amp;publication_year=2006&amp;pages=9127-9136&amp;pmid=16467307&amp;doi=10.1074/jbc.M511375200&amp;"/></mixed-citation></ref><ref id="ref22"><mixed-citation id="cit22"><named-content content-type="citation-string">McMillan K.; Masters B. S. (1993) Optical difference spectrophotometry
+as a probe of
+rat brain nitric oxide synthase heme-substrate interaction. Biochemistry
+32, 9875–9880.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/bi00089a001"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="7691172"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Biochemistry&amp;title=Optical difference spectrophotometry as a probe of rat brain nitric oxide synthase heme-substrate interaction&amp;author=K. McMillan&amp;author=B. S. Masters&amp;volume=32&amp;publication_year=1993&amp;pages=9875-9880&amp;pmid=7691172&amp;doi=10.1021/bi00089a001&amp;"/></mixed-citation></ref><ref id="ref23"><mixed-citation id="cit23"><named-content content-type="citation-string">Berka V.; Chen P. F.; Tsai A. L. (1996) Spatial relationship between l-arginine and heme binding sites of endothelial nitric-oxide
+synthase. J. Biol. Chem.
+271, 33293–33300.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.271.52.33293"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="8969188"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Spatial relationship between l-arginine and heme binding sites of endothelial nitric-oxide synthase&amp;author=V. Berka&amp;author=P. F. Chen&amp;author=A. L. Tsai&amp;volume=271&amp;publication_year=1996&amp;pages=33293-33300&amp;pmid=8969188&amp;doi=10.1074/jbc.271.52.33293&amp;"/></mixed-citation></ref><ref id="ref24"><mixed-citation id="cit24"><named-content content-type="citation-string">Blasko E.; Glaser C. B.; Devlin J. J.; Xia W.; Feldman R. I.; Polokoff M. A.; Phillips G. B.; Whitlow M.; Auld D. S.; McMillan K.; Ghosh S.; Stuehr D. J.; Parkinson J. F. (2002) Mechanistic
+studies with potent and selective inducible nitric-oxide synthase
+dimerization inhibitors. J. Biol. Chem.
+277, 295–302.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1074/jbc.M105691200"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11689556"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Biol. Chem.&amp;title=Mechanistic studies with potent and selective inducible nitric-oxide synthase dimerization inhibitors&amp;author=E. Blasko&amp;author=C. B. Glaser&amp;author=J. J. Devlin&amp;author=W. Xia&amp;author=R. I. Feldman&amp;volume=277&amp;publication_year=2002&amp;pages=295-302&amp;pmid=11689556&amp;doi=10.1074/jbc.M105691200&amp;"/></mixed-citation></ref><ref id="ref25"><mixed-citation id="cit25"><named-content content-type="citation-string">McPhillips T. M.; McPhillips S. E.; Chiu H. J.; Cohen A. E.; Deacon A. M.; Ellis P. J.; Garman E.; Gonzalez A.; Sauter N. K.; Phizackerley R. P.; Soltis S. M.; Kuhn P. (2002) Blu-Ice and the Distributed
+Control System: Software for data acquisition and instrument control
+at macromolecular crystallography beamlines. J. Synchrotron Radiat.
+9, 401–406.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/s0909049502015170"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="12409628"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Synchrotron Radiat.&amp;title=Blu-Ice and the Distributed Control System: Software for data acquisition and instrument control at macromolecular crystallography beamlines&amp;author=T. M. McPhillips&amp;author=S. E. McPhillips&amp;author=H. J. Chiu&amp;author=A. E. Cohen&amp;author=A. M. Deacon&amp;volume=9&amp;publication_year=2002&amp;pages=401-406&amp;pmid=12409628&amp;doi=10.1107/s0909049502015170&amp;"/></mixed-citation></ref><ref id="ref26"><mixed-citation id="cit26"><named-content content-type="citation-string">Otwinowski Z.; Minor W. (1997) Processing of X-ray diffraction data collected in oscillation mode. Methods Enzymol.
+276, 307–326.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1016/S0076-6879(97)76066-X"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="27754618"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Methods Enzymol.&amp;title=Processing of X-ray diffraction data collected in oscillation mode&amp;author=Z. Otwinowski&amp;author=W. Minor&amp;volume=276&amp;publication_year=1997&amp;pages=307-326&amp;pmid=27754618&amp;doi=10.1016/S0076-6879(97)76066-X&amp;"/></mixed-citation></ref><ref id="ref27"><mixed-citation id="cit27"><named-content content-type="citation-string">Kabsch W. (2010) Xds. Acta Crystallogr.
+D66, 125–132.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444909047337"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC2815665"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="20124692"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Xds&amp;author=W. Kabsch&amp;volume=D66&amp;publication_year=2010&amp;pages=125-132&amp;pmid=20124692&amp;doi=10.1107/S0907444909047337&amp;"/></mixed-citation></ref><ref id="ref28"><mixed-citation id="cit28"><named-content content-type="citation-string">Evans P. R. (2006) Scaling
+and assessment of data quality. Acta Crystallogr.
+D62, 72–82.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444905036693"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="16369096"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Scaling and assessment of data quality&amp;author=P. R. Evans&amp;volume=D62&amp;publication_year=2006&amp;pages=72-82&amp;pmid=16369096&amp;doi=10.1107/S0907444905036693&amp;"/></mixed-citation></ref><ref id="ref29"><mixed-citation id="cit29"><named-content content-type="citation-string">Murshudov G. N.; Vagin A. A.; Dodson E. J. (1997) Refinement
+of Macromolecular Structures
+by the Maximum-Likelihood Method. Acta Crystallogr.
+D53, 240–255.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444996012255"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15299926"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Refinement of Macromolecular Structures by the Maximum-Likelihood Method&amp;author=G. N. Murshudov&amp;author=A. A. Vagin&amp;author=E. J. Dodson&amp;volume=D53&amp;publication_year=1997&amp;pages=240-255&amp;pmid=15299926&amp;doi=10.1107/S0907444996012255&amp;"/></mixed-citation></ref><ref id="ref30"><mixed-citation id="cit30"><named-content content-type="citation-string">Emsley P.; Cowtan K. (2004) Coot: Model-building
+tools for molecular graphics. Acta Crystallogr.
+D60, 2126–2132.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/S0907444904019158"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="15572765"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Coot: Model-building tools for molecular graphics&amp;author=P. Emsley&amp;author=K. Cowtan&amp;volume=D60&amp;publication_year=2004&amp;pages=2126-2132&amp;pmid=15572765&amp;doi=10.1107/S0907444904019158&amp;"/></mixed-citation></ref><ref id="ref31"><mixed-citation id="cit31"><named-content content-type="citation-string">Winn M. D.; Isupov M. N.; Murshudov G. N. (2001) Use of
+TLS parameters to model anisotropic
+displacements in macromolecular refinement. Acta Crystallogr.
+D57, 122–133.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1107/s0907444900014736"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="11134934"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Acta Crystallogr.&amp;title=Use of TLS parameters to model anisotropic displacements in macromolecular refinement&amp;author=M. D. Winn&amp;author=M. N. Isupov&amp;author=G. N. Murshudov&amp;volume=D57&amp;publication_year=2001&amp;pages=122-133&amp;pmid=11134934&amp;doi=10.1107/s0907444900014736&amp;"/></mixed-citation></ref><ref id="ref32"><mixed-citation id="cit32"><named-content content-type="citation-string">Jing Q.; Li H.; Roman L. J.; Martasek P.; Poulos T. L.; Silverman R. B. (2014) An Accessible
+Chiral Linker to Enhance Potency and Selectivity of Neuronal Nitric
+Oxide Synthase Inhibitors. ACS Med. Chem. Lett.
+5, 56–60.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/ml400381s"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3960082"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24660051"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=ACS Med. Chem. Lett.&amp;title=An Accessible Chiral Linker to Enhance Potency and Selectivity of Neuronal Nitric Oxide Synthase Inhibitors&amp;author=Q. Jing&amp;author=H. Li&amp;author=L. J. Roman&amp;author=P. Martasek&amp;author=T. L. Poulos&amp;volume=5&amp;publication_year=2014&amp;pages=56-60&amp;pmid=24660051&amp;doi=10.1021/ml400381s&amp;"/></mixed-citation></ref><ref id="ref33"><mixed-citation id="cit33"><named-content content-type="citation-string">Holden J. K.; Li H.; Jing Q.; Kang S.; Richo J.; Silverman R. B.; Poulos T. L. (2013) Structural and biological studies on bacterial nitric
+oxide synthase inhibitors. Proc. Natl. Acad.
+Sci. U.S.A.
+110, 18127–18131.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1073/pnas.1314080110"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC3831449"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24145412"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=Proc. Natl. Acad. Sci. U.S.A.&amp;title=Structural and biological studies on bacterial nitric oxide synthase inhibitors&amp;author=J. K. Holden&amp;author=H. Li&amp;author=Q. Jing&amp;author=S. Kang&amp;author=J. Richo&amp;volume=110&amp;publication_year=2013&amp;pages=18127-18131&amp;pmid=24145412&amp;doi=10.1073/pnas.1314080110&amp;"/></mixed-citation></ref><ref id="ref34"><mixed-citation id="cit34"><named-content content-type="citation-string">Kang S.; Tang W.; Li H.; Chreifi G.; Martasek P.; Roman L. J.; Poulos T. L.; Silverman R. B. (2014) Nitric
+oxide synthase inhibitors that interact with both heme propionate
+and tetrahydrobiopterin show high isoform selectivity. J. Med. Chem.
+57, 4282–4296.</named-content><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="doi" xlink:href="10.1021/jm5004182"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmcid" xlink:href="PMC4032192"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="pmid" xlink:href="24758147"/><ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="google-scholar" xlink:href="journal=J. Med. Chem.&amp;title=Nitric oxide synthase inhibitors that interact with both heme propionate and tetrahydrobiopterin show high isoform selectivity&amp;author=S. Kang&amp;author=W. Tang&amp;author=H. Li&amp;author=G. Chreifi&amp;author=P. Martasek&amp;volume=57&amp;publication_year=2014&amp;pages=4282-4296&amp;pmid=24758147&amp;doi=10.1021/jm5004182&amp;"/></mixed-citation></ref></ref-list></sec></sec><sec id="_ad93_" xml:lang="en" sec-type="associated-data" disp-level="1"><title>Associated Data</title><sec id="_adsm93_" xml:lang="en" sec-type="supplementary-materials" disp-level="2"><title>Supplementary Materials</title><supplementary-material id="db_ds_supplementary-material1_reqid_" position="float"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="bi500561h_si_001.pdf" mimetype="application" mime-subtype="pdf"><?cloudpmc-path 00e8/4139154/0ecf99100a49/bi500561h_si_001.pdf?><?cloudpmc-bucket app?><?size 6653664?><caption><p>bi500561h_si_001.pdf</p></caption></media></supplementary-material></sec></sec></body></article>

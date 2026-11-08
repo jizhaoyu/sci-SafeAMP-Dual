@@ -1,0 +1,836 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article article-type="research-article" xml:lang="EN" dtd-version="1.4"><front><journal-meta><journal-id journal-id-type="nlm-ta">ACS Chem Biol</journal-id><journal-id journal-id-type="iso-abbrev">ACS Chem. Biol</journal-id><journal-id journal-id-type="pmc-domain-id">822</journal-id><journal-id journal-id-type="pmc-domain">acssd</journal-id><journal-id journal-id-type="nlm-id">101282906</journal-id><journal-id journal-id-type="publisher-id">cb</journal-id><journal-title-group><journal-title>ACS Chemical Biology</journal-title></journal-title-group><issn pub-type="ppub">1554-8929</issn><issn pub-type="epub">1554-8937</issn><?publisher_abbrev acs?><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>ACS AuthorChoice</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC5320539</article-id><article-id pub-id-type="pmcid-ver">PMC5320539.1</article-id><article-id pub-id-type="pmcaid">5320539</article-id><article-id pub-id-type="pmcaiid">5320539</article-id><article-id pub-id-type="pmid">28026162</article-id><article-id pub-id-type="doi">10.1021/acschembio.6b00962</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group><subject>Articles</subject></subj-group></article-categories><title-group><article-title>hBfl-1/hNOXA Interaction Studies Provide New Insights on the Role of Bfl-1 in Cancer Cell Resistance and for the Design of Novel Anticancer Agents</article-title></title-group><contrib-group><contrib contrib-type="author" id="ath1"><name name-style="western"><surname>Barile</surname><given-names initials="E">Elisa</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath2"><name name-style="western"><surname>Marconi</surname><given-names initials="GD">Guya D.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath3"><name name-style="western"><surname>De</surname><given-names initials="SK">Surya K.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath4"><name name-style="western"><surname>Baggio</surname><given-names initials="C">Carlo</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath5"><name name-style="western"><surname>Gambini</surname><given-names initials="L">Luca</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath6"><name name-style="western"><surname>Salem</surname><given-names initials="AF">Ahmed F.</given-names></name><xref rid="aff1" ref-type="aff">†</xref></contrib><contrib contrib-type="author" id="ath7"><name name-style="western"><surname>Kashyap</surname><given-names initials="MK">Manoj K.</given-names></name><xref rid="aff2" ref-type="aff">‡</xref><xref rid="aff3" ref-type="aff">§</xref></contrib><contrib contrib-type="author" id="ath8"><name name-style="western"><surname>Castro</surname><given-names initials="JE">Januario E.</given-names></name><xref rid="aff2" ref-type="aff">‡</xref><xref rid="aff3" ref-type="aff">§</xref></contrib><contrib contrib-type="author" id="ath9"><name name-style="western"><surname>Kipps</surname><given-names initials="TJ">Thomas J.</given-names></name><xref rid="aff2" ref-type="aff">‡</xref><xref rid="aff3" ref-type="aff">§</xref></contrib><contrib contrib-type="author" corresp="yes" id="ath10"><name name-style="western"><surname>Pellecchia</surname><given-names initials="M">Maurizio</given-names></name><xref rid="cor1" ref-type="other">*</xref><xref rid="aff1" ref-type="aff">†</xref></contrib><aff id="aff1"><label>†</label>Division of Biomedical
+Sciences, School of Medicine, <institution>University
+of California, Riverside</institution>, 900 University Avenue, Riverside, California 92521, <country>United States</country></aff><aff id="aff2"><label>‡</label>Moores Cancer Center, <institution>University of California, San Diego</institution>, La Jolla, California 92093, <country>United States</country></aff><aff id="aff3"><label>§</label>CLL Research
+Consortium, and Department of Medicine, <institution>University of California, San Diego</institution>, La Jolla, California 92093, <country>United States</country></aff></contrib-group><author-notes><corresp id="cor1"><label>*</label>Phone: <phone>(951)-827-7829</phone>. E-mail: <email>maurizio.pellecchia@ucr.edu</email>.</corresp></author-notes><pub-date pub-type="epub"><day>18</day><month>11</month><year>2016</year></pub-date><pub-date pub-type="ppub"><day>17</day><month>02</month><year>2017</year></pub-date><volume>12</volume><issue>2</issue><issue-id pub-id-type="pmc-issue-id">288175</issue-id><fpage>444</fpage><lpage>455</lpage><history><date date-type="received"><day>31</day><month>10</month><year>2016</year></date><date date-type="accepted"><day>18</day><month>11</month><year>2016</year></date></history><pub-history><event event-type="pmc-release"><date><day>22</day><month>02</month><year>2017</year></date></event><event event-type="pmc-live"><date><day>23</day><month>02</month><year>2017</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-07-14 22:25:29.870"><day>14</day><month>07</month><year>2024</year></date></event></pub-history><permissions><copyright-statement>Copyright © 2016 American Chemical Society</copyright-statement><copyright-year>2016</copyright-year><copyright-holder>American Chemical Society</copyright-holder><license><license-p>This is an open access article published under an ACS AuthorChoice <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/page/policy/authorchoice_termsofuse.html">License</ext-link>, which permits copying and redistribution of the article or any adaptations for non-commercial purposes.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="cb6b00962.pdf"><?pdf-name cb6b00962.pdf?><?pdf-size 5803798?><?pdf-md5 e57fc768b2d2740914f644baab4c8a48?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:b2fb/5320539/e57fc768b2d2/cb6b00962.pdf?></self-uri><abstract><p content-type="toc-graphic"><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="ab-tgr1" position="float" orientation="portrait" xlink:href="cb-2016-00962a_0006.jpg"><?image-name cb-2016-00962a_0006.jpg?><?image-size 77631?><?image-md5 d29eafc7ead6152401ad301778df9d98?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 402?><?image-original-width 958?><?image-scaled-height 336?><?image-scaled-width 800?><?image-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/d29eafc7ead6/cb-2016-00962a_0006.jpg?><?thumb-name cb-2016-00962a_0006.gif?><?thumb-size 83298?><?thumb-md5 9b6ac93e8a3ff75073dad586cc775b4e?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 336?><?thumb-scaled-width 800?><?thumb-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/9b6ac93e8a3f/cb-2016-00962a_0006.gif?></graphic></p><p>Upregulation
+of antiapoptotic Bcl-2 proteins in certain tumors confers cancer cell
+resistance to chemotherapy or radiations. Members of the antiapoptotic
+Bcl-2 proteins, including Bcl-2, Mcl-1, Bcl-xL, Bcl-w, and Bfl-1,
+inhibit apoptosis by selectively binding to conserved α-helical
+regions, named BH3 domains, of pro-apoptotic proteins such as Bim,
+tBid, Bad, or NOXA. Five antiapoptotic proteins have been identified
+that interact with various selectivity with BH3 containing pro-apoptotic
+counterparts. Cancer cells present various and variable levels of
+these proteins, making the design of effective apoptosis based therapeutics
+challenging. Recently, BH3 profiling was introduced as a method to
+classify cancer cells based on their ability to resist apoptosis following
+exposure to selected BH3 peptides. However, these studies were based
+on binding affinities measured with model BH3 peptides and Bcl-2-proteins
+taken from mouse sequences. While the majority of these interactions
+are conserved between mice and humans, we found surprisingly that
+human NOXA binds to human Bfl-1 potently and covalently <italic toggle="yes">via</italic> conserved Cys residues, with over 2 orders of magnitude increased
+affinity over hMcl-1. Our data suggest that some assumptions of the
+original BH3 profiling need to be revisited and that perhaps further
+targeting efforts should be redirected toward Bfl-1, for which no
+suitable specific inhibitors or pharmacological tools have been reported.
+In this regard, we also describe the initial design and characterizations
+of novel covalent BH3-based agents that potently target Bfl-1. These
+molecules could provide a novel platform on which to design effective
+Bfl-1 targeting therapeutics.</p></abstract><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>document-id-old-9</meta-name><meta-value>cb6b00962</meta-value></custom-meta><custom-meta><meta-name>document-id-new-14</meta-name><meta-value>cb-2016-00962a</meta-value></custom-meta><custom-meta><meta-name>ccc-price</meta-name><meta-value/></custom-meta></custom-meta-group></article-meta></front><body><p id="sec1">Over the
+past two decades, efforts in the design of effective apoptosis based
+therapeutics targeting Bcl-2 family proteins have been based on detailed
+information on their expression and preferential affinity for pro-apoptotic
+BH3-containing proteins.<sup><xref ref-type="bibr" rid="ref1">1</xref>,<xref ref-type="bibr" rid="ref2">2</xref></sup> Antiapoptotic Bcl-2
+family proteins inhibit cancer cell death by forming stable heterodimers
+mediated by a conserved α-helical motif (termed BH3 domain)
+present on the surface of pro-apoptotic members of the same family.
+Five antiapoptotic Bcl-2 proteins, namely Bcl-2, Bcl-xL, Bcl-w, Mcl-1
+and Bfl-1, interact with various specificity with several BH3 containing
+pro-apoptotic counterparts, including Bax, Bim, Bad, tBid, and NOXA.
+The latter can be divided functionally in activators, sensitizers,
+and effectors.<sup><xref ref-type="bibr" rid="ref3">3</xref>,<xref ref-type="bibr" rid="ref4">4</xref></sup> The effectors, Bax and Bak, aided
+by the activators Bim and Bid, are believed to be the ultimate agents
+that cause MOMP (mitochondrial outer membrane permeabilization) by
+forming oligomers at the mitochondrial membrane, which result in the
+release of pro-apoptogenic molecules such as SMAC and cytochrome c.<sup><xref ref-type="bibr" rid="ref5">5</xref></sup> However, both the effectors and activators can
+be sequestered by antiapoptotic Bcl-2 proteins inhibiting cell death.
+Sensitizers, such as NOXA and Bad, function as cellular sentinels
+that respond to cellular damage, induced by chemotherapy, immunotherapy,
+or radiation in cancer cells, and by binding to antiapoptotic Bcl-2
+family proteins, displace the bound activators and/or the effectors,
+resulting in apoptosis.<sup><xref ref-type="bibr" rid="ref6">6</xref></sup></p><p>While the
+activators and the effectors are generally promiscuous in binding
+the antiapoptotic Bcl-2 proteins, the sensitizers have different specificity.
+For example, Bad binds potently to Bcl-2, Bcl-xL, and Bcl-w, while
+NOXA has been reported to preferentially bind to Mcl-1 and in minor
+part to Bfl-1.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> Bcl-2 proteins expression
+has been highly studied in both leukemia and lymphoma cell lines and
+primary cell samples,<sup><xref ref-type="bibr" rid="ref8">8</xref>−<xref ref-type="bibr" rid="ref10">10</xref></sup> and these studies culminated in 2016 with the approval
+by the FDA of Venetoclax,<sup><xref ref-type="bibr" rid="ref11">11</xref>−<xref ref-type="bibr" rid="ref14">14</xref></sup> a potent and selective Bcl-2 antagonist that does
+not interact significantly with other antiapoptotic Bcl-2 proteins
+such as Bcl-xl, Mcl-1, or Bfl-1. Accordingly, increased Mcl-1<sup><xref ref-type="bibr" rid="ref8">8</xref>,<xref ref-type="bibr" rid="ref15">15</xref></sup> expression has been correlated with resistance to Bcl-2 antagonists
+in primary tumors and cancer cell lines, and this observation ignited
+intense research efforts aimed at developing novel Mcl-1 targeting
+agents in the past few years.<sup><xref ref-type="bibr" rid="ref15">15</xref>−<xref ref-type="bibr" rid="ref26">26</xref></sup> The efficacy of these molecules as direct pro-apoptotic agents or
+as sensitizers for cancer cells to chemotherapy or immunotherapy,
+which act by activating cell death pathways in cancer cells, however,
+largely depends on the relative levels of antiapoptotic Bcl-2 proteins.<sup><xref ref-type="bibr" rid="ref27">27</xref></sup> Recently, BH3 profiling strategies have been
+reported and widely used as a way to classify tumors and cancer cell
+lines for their ability to respond to various BH3 peptides.<sup><xref ref-type="bibr" rid="ref28">28</xref>,<xref ref-type="bibr" rid="ref29">29</xref></sup> In one implementation, cells that release cytochrome c after exposure
+to Bad derived BH3 peptides are classified as expressing Bcl-2, Bcl-xl,
+and/or Bcl-w, given the affinity of Bad for these three proteins.
+NOXA derived BH3 peptides have been used in similar assays to detect
+the expression of Mcl-1 in tumor cells, given that these peptides
+bound preferentially Mcl-1 over Bfl-1 and do not interact significantly
+with other antiapoptotic Bcl-2 proteins.<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> While these and several other studies clearly point at Mcl-1 as
+a possible cause of resistance to Venetoclax and related antagonists
+in chronic lymphocytic leukemia (CLL), other studies suggested that
+Bfl-1 may have a more predominant role in resistance to both chemotherapy
+and Bcl-2 antagonists.<sup><xref ref-type="bibr" rid="ref23">23</xref>,<xref ref-type="bibr" rid="ref30">30</xref></sup></p><p>In this paper, we analyzed
+the interactions between NOXA, ABT-199 (Venetoclax), and Bim with
+four antiapoptotic Bcl-2 proteins, namely Bcl-2, Bc-xL, Mcl-1, and
+Bfl-1, using biochemical, biophysical, and cellular assays. Our studies
+resulted in the surprising observation that human NOXA derived BH3
+peptides, unlike the mouse derived peptides previously reported and
+commonly used for BH3 profiling, bound with high affinity to Bfl-1
+with over 2 orders of magnitude increased affinity over Mcl-1. We
+also found that this affinity is owed to a specific disulfide bridge
+between NOXA and Bfl-1 that occurs only in the human proteins and
+not in mice. We identified a human derived NOXA peptide that is exquisitely
+selective for Bfl-1, which could be used in BH3 profiling applications
+and/or perhaps as a template for the design of novel Bfl-1 antagonists.
+On the basis of these findings, our studies suggest that the emphasis
+on Mcl-1 may need to be revisited and that perhaps further efforts
+in deriving Bfl-1 specific antagonists is warranted, given that to
+date no valid small molecule compounds nor pharmacological tools have
+been reported. In addition, we also report on initial Bim-BH3-based
+cell permeable agents that, by covalently inhibiting Bfl-1, can serve
+as suitable stepping stones to derive potent Bfl-1 targeting compounds.
+Given the recent report by scientists at Genentech,<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> we also report a comparison between a cell-penetrating
+linear and a stapled version of these covalent peptides aimed at deriving
+cell active covalent Bfl-1 antagonists. In summary, our findings should
+facilitate further studies probing the role of Bfl-1 in the development
+of resistance in CLL, melanomas, and other tumors and for the development
+of novel apoptosis-based therapeutics.</p><sec id="sec2"><title>Results and Discussion</title><sec id="sec2.1"><title>Human
+NOXA Interacted with Human Bfl-1 Covalently and Potently, and with
+Higher Affinity Compared to Human Mcl-1</title><p>The interaction between
+pro- and antiapoptotic Bcl-2 proteins has been proven in several instances
+to be mediated by a conserved α-helical BH3 peptide on the surface
+of pro-apoptotic proteins that bound with various affinities and specificities
+to a BH3-binding groove present on the surface of antiapoptotic Bcl-2
+proteins. Hence, biophysical studies on several BH3 peptides in complex
+with various antiapoptotic Bcl-2 proteins have been reported over
+the past two decades.<sup><xref ref-type="bibr" rid="ref32">32</xref></sup></p><p>The X-ray
+structure of human Bfl-1 in complex with a BH3 peptide from NOXA (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A) was recently deposited
+in the protein data bank (PDB ID 3MQP). While the general positioning of the
+peptide into the BH3 binding groove of Bfl-1 largely resembled that
+of the previously reported complexes between other BH3 peptides and
+other antiapoptotic Bcl-2 family proteins (for example, mNOXA B/mMcl-1
+complex in <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>B; PDB ID 2JM6(<xref ref-type="bibr" rid="ref33">33</xref>)), we noticed that hBfl-1 presented
+a unique and peculiar structural feature. The conserved residue Cys
+25 in hNOXA (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A,C) was precisely juxtaposed to the conserved residue Cys 55 in
+human Bfl-1 (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A,C), to possibly form a disulfide bond. Accordingly, we found that
+a hNOXA BH3 peptide (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) and a human Bfl-1 recombinant construct that lacked the
+C-terminal transmembrane domain (hBfl-1ΔTm(1–149)) formed
+a covalent complex, as we could observe by SDS gel electrophoresis
+(<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>D). Moreover,
+further confirmation of covalent modification of hBfl-1 was obtained
+using MALDI TOF mass spectrometry, which demonstrated the expected
+mass increase when hNOXA was incubated with hBfl-1. Specifically,
+we observed the following masses: hBfl1Δ<italic toggle="yes">T</italic>M(1–149)
+= 19673.8 Da; hNOXA = 2463.0 Da; complex hBfl-1/hNOXA = 22134.4 Da,
+which is nearly identical (well within the accuracy of the method)
+to the exact expected theoretical mass of the covalent adduct, 22134.8
+Da (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>E).</p><fig id="fig1" position="float" orientation="portrait"><label>Figure 1</label><caption><p>Human NOXA
+interacted with human Bfl-1 covalently and potently, and with higher
+affinity compared to human Mcl-1. Panel A: Structure of hBfl-1 and
+hNOXA complex with a close-up view of the covalent bond between the
+Cys 55 of hBfl-1 and the N-terminal Cys of a hNOXA derived peptide
+(see sequence in <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) modeled on the hNOXA BH3 peptide cocrystallized with hBfl-1 (PDB
+ID: 3MQP). The
+newly formed bond is colored in orange, while hBfl-1 is represented
+by light blue ribbons and hNOXA peptide by pink sticks and ribbons.
+Panel B: Binding pose of a hNOXA derived peptide modeled on the hNOXA
+BH3 peptide cocrystallized with mMcl-1 (PDB ID: 2JM6)<sup>2</sup>. The
+close-up view shows the absence of a covalent interacting Cys residue
+in the BH3 hydrophobic cleft of mMcl-1, here represented by gray ribbons
+while hNOXA peptide by pink sticks and ribbons. Panel C: Sequence
+alignment of selected pro-apoptotic Bcl-2 proteins hBIK, hHRK, hBIM,
+hBAD, hBID, hBMF, hNOXA, and the hBAX subfamily proteins hBAX and
+hBAK (upper panel). Structural alignment (lower panel) of selected
+antiapoptotic Bcl-2 proteins hBfl-1, hMcl-1, hBcl-2, and hBcl-xL.
+Bcl-2 Homology (BH) regions belonging to pro-apoptotic and antiapoptotic
+proteins are included in pink and blue rectangular boxes, respectively.
+Interacting Cys residues present in both hBfl-1 (Cys 55) and hNOXA
+(Cys 25) are highlighted in yellow, while red-colored residues indicate
+strictly conserved residues of pro-apoptotic proteins. Panel D: SDS-PAGE
+gel electrophoresis followed by Coomassie staining of the hBfl-1 protein
+(10 μM) in the absence and presence of equimolar concentrations
+of a hNOXA derived peptide (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) at different time points (15 min, 30 min, 1h, 2h).
+Panel E: MALDI-TOF MS spectra of hBfl-1 collected in absence (blue)
+and presence (pink) of a hNOXA derived peptide (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) after 2 h incubation at RT and at a protein–ligand
+ratio of 1:2. Panel F: Cartoon representing the principle of the DELFIA
+assays. These assays were used to quantify the ability of our test
+peptides to displace a biotinylated BID BH3 peptide from hBfl-1, hMcl-1,
+hBcl-xL, and hBcl-2. Representative DELFIA dose–response curves
+relative to the hNOXA derived peptide (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) against these proteins are reported.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr1" position="float" orientation="portrait" xlink:href="cb-2016-00962a_0001.jpg"><?image-name cb-2016-00962a_0001.jpg?><?image-size 139431?><?image-md5 03691fba19fc6c7d708515e35e26ed96?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1665?><?image-original-width 2100?><?image-scaled-height 555?><?image-scaled-width 700?><?image-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/03691fba19fc/cb-2016-00962a_0001.jpg?><?thumb-name cb-2016-00962a_0001.gif?><?thumb-size 19677?><?thumb-md5 630e23306dcd9141aa2a9f8ff98a7590?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 79?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/630e23306dcd/cb-2016-00962a_0001.gif?></graphic></fig><table-wrap id="tbl1" position="float" orientation="portrait"><label>Table 1</label><caption><title>NOXA Derived Peptide
+Sequences and Relative IC<sub>50</sub> Values in a DELFIA Assay against
+the Bcl-2 Family Proteins hBfl-1, hMcl-1, hBcl-xL, and hBcl-2<xref rid="t1fn1" ref-type="table-fn">a</xref></title></caption><table frame="hsides" rules="groups" border="0"><colgroup span="1"><col align="left" span="1"/><col align="left" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/><col align="center" span="1"/></colgroup><thead><tr><th style="border:none;" align="center" colspan="1" rowspan="1"> </th><th style="border:none;" align="center" colspan="1" rowspan="1"> </th><th colspan="4" align="center" rowspan="1">DELFIA IC<sub>50</sub> (nM)<hr/></th></tr><tr><th style="border:none;" align="center" colspan="1" rowspan="1">compd ID</th><th style="border:none;" align="center" colspan="1" rowspan="1">aa sequence</th><th style="border:none;" align="center" colspan="1" rowspan="1">hBfl-1</th><th style="border:none;" align="center" colspan="1" rowspan="1">hMcl-1</th><th style="border:none;" align="center" colspan="1" rowspan="1">hBcl-xL</th><th style="border:none;" align="center" colspan="1" rowspan="1">hBcl-2</th></tr></thead><tbody><tr><td style="border:none;" align="left" colspan="1" rowspan="1">hNOXA</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-CATQLRRFGDKLNFRQKLLN-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">7.5 ± 2</td><td style="border:none;" align="center" colspan="1" rowspan="1">228 ± 1</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">homo_hNOXA</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-<italic toggle="yes">hC</italic>ATQLRRFGDKLNFRQKLLN-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">83 ± 11</td><td style="border:none;" align="center" colspan="1" rowspan="1">266 ± 31</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">λ_hNOXA</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-λATQLRRFGDKLNFRQKLLN-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">287 ± 69</td><td style="border:none;" align="center" colspan="1" rowspan="1">233 ± 25</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">hNOXAs</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-CATQLRRFGDKLN-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">15 ± 2</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">NOXA A</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-AELPPEFAAQLRKIGDKVYC-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">450 ± 1</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">NOXA B</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-PADLKDECAQLRRIGDKVNL-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">431 ± 35</td><td style="border:none;" align="center" colspan="1" rowspan="1">479 ± 28</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">C1A_hNOXAs</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-AATQLRRFGDKLN-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">&gt;1 μM</td><td style="border:none;" align="center" colspan="1" rowspan="1">n.t.</td><td style="border:none;" align="center" colspan="1" rowspan="1">n.t.</td></tr><tr><td style="border:none;" align="left" colspan="1" rowspan="1">cyc_hNOXA</td><td style="border:none;" align="left" colspan="1" rowspan="1">Ac-<italic toggle="yes">C</italic>ATQLRRFGDKLNFRQKLLNLISKLF<italic toggle="yes">C</italic>-NH<sub>2</sub></td><td style="border:none;" align="center" colspan="1" rowspan="1">86 ± 13</td><td style="border:none;" align="center" colspan="1" rowspan="1">344 ± 41</td><td style="border:none;" align="center" colspan="1" rowspan="1">n.t.</td><td style="border:none;" align="center" colspan="1" rowspan="1">n.t.</td></tr></tbody></table><table-wrap-foot><fn id="t1fn1"><label>a</label><p><italic toggle="yes">hC</italic> = homocysteine; λ = Dap-2-chloroacetamide; C1–C27
+in cyc-NOXA = disulfide bridge. n.t.: not tested. Values are the results
+of multiple measurements run in duplicates and represent the mean
+± SE.</p></fn></table-wrap-foot></table-wrap><p>Over the past
+several years, most laboratories have relayed on a fluorescence polarization
+assay to quantify the ability of Bcl-2 antagonists to displace FITC-labeled
+BH3 peptides. While this assay has been used with some success, we
+found that it is prone to producing false positives, owed to the indirect
+nature of the readout and the relatively narrow assay window. In fact,
+the assay relied on indirect measurements of the overall rotational
+diffusion times of the peptide in the free and bound state. Compounds
+with low solubility may have an effect on the solubility of the peptide,
+usually present in the assay well at relatively low (nanomolar) concentrations
+relative to test agents that could result in false positives, or artificially
+low or otherwise inaccurate inhibition constants. For these reasons,
+we opted to derive a more robust assay, as we recently reported.<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> Hence, we developed a panel of assays based
+on the DELFIA (Dissociation Enhanced Lanthanide Fluorescence Immunoassay)
+platform<sup><xref ref-type="bibr" rid="ref34">34</xref></sup> for hBcl-2ΔTm, hMcl-1ΔTm,
+hBcl-xLΔTm, and hBfl-1ΔTm (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>F). In these assays, a biotinylated Bid BH3
+peptide was captured on DELFIA streptavidin coated plates (see <xref rid="sec3" ref-type="other">Methods</xref>), while histidine tagged recombinant proteins
+were conjugated with a highly fluorescent Eu-tagged anti-His antibody
+(PerkinElmer, see <xref rid="sec3" ref-type="other">Methods</xref>). After washing
+steps, the displacement of the immuno-reaction complex from the assay
+well by a test molecule was detected by a decrease in fluorescence
+signal (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>F).<sup><xref ref-type="bibr" rid="ref34">34</xref></sup></p><p>Using this robust biochemical assay, we
+tested the ability of hNOXA BH3 peptide (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) to displace the binding of Bid-BH3 from
+selected antiapoptotic proteins. Not surprisingly, hNOXA did not show
+any appreciable affinity for both Bcl-2 and Bcl-xL, as previously
+reported,<sup><xref ref-type="bibr" rid="ref7">7</xref></sup> while it displayed a greater
+affinity for both hMcl-1 and hBfl-1. Mouse derived NOXA A peptide,
+commonly used to detect Mcl-1 in BH3 profiling,<sup><xref ref-type="bibr" rid="ref29">29</xref>,<xref ref-type="bibr" rid="ref35">35</xref>−<xref ref-type="bibr" rid="ref39">39</xref></sup> indeed interacted more potently, albeit with triple digit nanomolar
+affinity with hMcl-1 compared to hBfl-1 (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>). NOXA B on the contrary had similar relatively
+weak affinities for both human proteins (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>). This affinity trend followed what was
+reported previously using these mouse-derived NOXA peptides tested
+against mouse Mcl-1 and mouse Bfl-1. These previous studies originated
+the common knowledge that Mcl-1 has a greater affinity for NOXA than
+Bfl-1.<sup><xref ref-type="bibr" rid="ref7">7</xref>,<xref ref-type="bibr" rid="ref29">29</xref>,<xref ref-type="bibr" rid="ref35">35</xref>−<xref ref-type="bibr" rid="ref39">39</xref></sup> However, contrary to these observations, here we found that human
+NOXA displayed a dramatically greater affinity for human Bfl-1 than
+human Mcl-1. The increased affinity of human NOXA for human Bfl-1
+versus human Mcl-1 could be attributable to a covalent interaction
+between hBfl-1 and hNOXA. Such interaction was structurally unique
+and not present in other BH3 peptides (including mouse derived NOXA
+A peptide, for example) or in other antiapoptotic Bcl-2 proteins (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>C). The mouse derived
+NOXA B peptide did contain a Cys residue, but this did not appear
+to be at the proper position in the BH3 sequence for covalent interaction
+(<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>).</p><p>While
+submitting this manuscript, Huhn <italic toggle="yes">et al.</italic> reported
+on covalent stapled (but not the corresponding linear) NOXA and BIM
+peptides.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> However, we want to emphasize
+that a lack of quantitative information in these recent studies precluded
+the authors from making these critical observations on the relative
+affinities of hNOXA for hBfl-1 and hMcl-1. Because the binding of
+hNOXA for hBfl-1 was likely driven by the disulfide bridge formation,
+we derived a minimal peptide region (hNOXAs, <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) that retained a low nanomolar affinity
+for hBfl-1 (IC<sub>50</sub> = 15 nM) while no displacement was observed
+for this agent when tested against other antiapoptotic Bcl-2 family
+proteins including hMcl-1 (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) up to 1 μM. In agreement, mutating the Cys
+residue in hNOXA peptide resulted in an inactive molecule (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>, <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acschembio.6b00962/suppl_file/cb6b00962_si_001.pdf">Supporting Information Figure S1</ext-link>), further demonstrating the
+dependence of the disulfide bridge for the interaction between hBfl-1
+and hNOXA. The striking differences between mouse NOXA, possessing
+two BH3 domains (namely NOXA A and NOXA B), and human NOXA, having
+only one BH3 domain whose activity seemed dependent on a specific
+disulfide bridge formation with hBfl-1, may be due to different activation
+and regulation mechanisms of these proteins. While detailed structural
+studies on mouse or human NOXA have remained elusive, a recent report
+suggested that human NOXA was regulated by a specific phosphorylation
+event at Ser 13.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> A current hypothesis
+based on modeling studies suggested the presence of a phosphorylated,
+cytosolic, inactive version of NOXA that could bring the BH3 helix
+and the transmembrane helix together to form an α-hairpin.<sup><xref ref-type="bibr" rid="ref41">41</xref></sup> On the basis of such a model, we hypothesized
+that this conformation may be stabilized/regulated by an intramolecular
+disulfide bridge between Cys 25 in the BH3 domain and Cys 51 in the
+TM helix of hNOXA, also unique to this protein among the Bcl-2 family
+proteins. This structural motif was previously hypothesized, and it
+is present in nature in other proteins.<sup><xref ref-type="bibr" rid="ref42">42</xref></sup> To preliminarily test this hypothesis, we synthesized a truncated
+cyclic NOXA peptide (cyc_hNOXA, <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>), constituted by the BH3 helix from Cys 25 and the
+TM helix up to Cys 51 that are disulfide bridged. This “closed”
+conformation of the protein resulted in a significantly reduced affinity
+for hBfl-1 (IC<sub>50</sub> = 85.8 nM, <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) when tested side by side with the linear
+version. While still speculative, these preliminary studies may suggest
+that, in addition to phosphorylation of Ser13, a possible redox mechanism
+of regulation of hNOXA would involve the reduction of an intramolecular
+disulfide bridge that would expose the TM domain for translocation
+to the mitochondrial membrane. These observations would also explain
+the activation of NOXA (but not other pro-apoptotic factors) by UV
+radiation,<sup><xref ref-type="bibr" rid="ref43">43</xref></sup> given that UV may catalyze
+the opening of the disulfide bridge. In tumors cells, dysfunctional
+mitochondria can cause a shift from oxidative phosphorylation to active
+glycolysis that in turn increases ROS (reactive oxygen species) generation.
+Hence, under our hypotheses and observations, such altered redox potential
+in cancer cells could be a target for both hNOXA activation and/or
+hNOXA/hBfl-1 interactions.</p><p>In conclusion, our observations that
+hNOXA had greater affinity for hBfl-1 may have tremendous implications
+on defining the role of hBfl-1 in cancer cell resistance that thus
+far have been overlooked, despite several reports.<sup><xref ref-type="bibr" rid="ref15">15</xref>,<xref ref-type="bibr" rid="ref44">44</xref>,<xref ref-type="bibr" rid="ref45">45</xref></sup> Moreover, we have identified that hNOXA
+derived peptides can serve as hBfl-1 potent BH3 agents that can be
+generally used for profiling, perhaps complementing the recent work
+by Butterworth reporting an elegant application of molecules in BH3
+profiling,<sup><xref ref-type="bibr" rid="ref46">46</xref></sup> or to generate possibly cell
+permeable therapeutics such as stapled peptides<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> or using other cell permeabilization techniques. Finally,
+albeit speculative, our findings provide a structural framework for
+the possible regulation and activation of hNOXA <italic toggle="yes">via</italic> intra- and intermolecular disulfide bond formations that will require
+further investigations.</p></sec><sec id="sec2.2"><title>Introducing a Mild Michael Acceptor in Bim
+BH3 Peptide Produced a Potent, Covalent hBfl-1 Antagonist</title><p>Analysis of the crystal structure of hBfl-1 in complex with a hNOXA
+peptide revealed that the distance between the sulfur atoms of hNOXA
+Cys 25 and hBfl-1 Cys 55 was approximately 3.7 Å (<xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>A), although a second more
+distant rotamer for the side chain of Cys 55 in Bfl-1 was also deposited
+in the PDB ID 3MQP. Because of the presence of this second conformation in which Cys
+55 is more distant from Cys 25 in hNOXA, we synthesized and tested
+two additional hNOXA derived BH3 peptides (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) in which the conserved Cys 25 was replaced
+by either a homoCys (hence one carbon longer) or a mild Michael acceptor
+(Dap-2-chloroacetamide, hence two atoms longer than the Cys; <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>). By using the DELFIA
+displacement assay, hNOXA remained the most active against hBfl-1
+(<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>), although
+all peptides were able to covalently interact with hBfl-1 by SDS gel
+electrophoresis (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acschembio.6b00962/suppl_file/cb6b00962_si_001.pdf">Supporting Information Figure S2</ext-link>).</p><p>On the basis of these observations, we further analyzed
+the structure of the complex between BIM-BH3 and hBfl-1 (PDB ID 2VM6; <xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A).<sup><xref ref-type="bibr" rid="ref47">47</xref></sup> We chose the BIM residue Trp147 as a possible target for the introduction
+of a mild Michael acceptor to react covalently with hBfl-1, thus mimicking
+what we observed with hNOXA. The distance between the γ-carbon
+of the side chain of Trp147 and the sulfur atom of hBfl-1 Cys 55 is
+3.8 Å from the X-ray structure (PDB ID 2VM6;<sup><xref ref-type="bibr" rid="ref47">47</xref></sup><xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>A) and therefore represented an ideal place for the placement of
+a mild Michael acceptor. Our considerations in designing covalent
+peptides followed the general strategies as we recently reported while
+targeting the ubiquitin ligase SIAH interactions with a peptide derived
+by the protein Sip.<sup><xref ref-type="bibr" rid="ref48">48</xref></sup> On the basis of this
+experience, we introduced a Dap-2-chloroacetamide in lieu of Trp 147
+in a BIM BH3 peptide (<xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>). The resulting agent, 130E7 (<xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>), was tested against the four antiapoptotic
+Bcl-2 proteins using the DELFIA assays (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>C, <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>), side by side with the wild type BIM BH3 corresponding
+peptide (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) and
+the Bcl-2 selective antagonist ABT-199 (Venetoclax;<sup><xref ref-type="bibr" rid="ref14">14</xref></sup><xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>).
+The BIM BH3 peptide was cross-reactive with all four Bcl-2 proteins
+as previously reported, with IC<sub>50</sub>’s in the nanomolar
+range (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>C, <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>). However, the introduction
+of the Dap-2-chloroacetamide in the peptide resulted in an agent (130E7)
+that was more potent against hBfl-1 compared to the other Bcl-2 proteins
+tested, again owed to the covalent nature of these interactions. In
+comparison, ABT-199 resulted as the most potent against Bcl-2 and
+inactive against Bcl-xL, Mcl-1, and Bfl-1 (<xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>), again in agreement with what was recently
+reported for this agent.<sup><xref ref-type="bibr" rid="ref14">14</xref></sup> To further characterize
+the binding mode of 130E7 for hBfl-1, we tested its ability to form
+a covalent adduct <italic toggle="yes">in vitro</italic> (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>D,E). The molecule interacted with hBfl-1
+covalently as demonstrated by SDS gel electrophoresis (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>D). In addition, to further
+confirm the covalent modification of hBfl-1, we used MALDI TOF mass
+spectrometry, which demonstrated the expected mass increase when 130E7
+was incubated with hBfl-1 (<xref rid="fig2" ref-type="fig">Figure <xref rid="fig2" ref-type="fig">2</xref></xref>E). Specifically, we observed the following masses:
+hBfl1ΔTM(1–149) = 19673.8 Da; 130E7 = 2545.5 Da; complex
+hBfl-1/130E7 = 22182.6 Da (theoretical expected mass for the covalent
+adduct is 22183.3 Da). Therefore, these data identified that 130E7
+is a potent, covalent hBfl-1 antagonist.</p><fig id="fig2" position="float" orientation="portrait"><label>Figure 2</label><caption><p>Characterization of covalent
+hBIM derived peptides. Panel A: Structure of hBfl-1 in complex with
+hBIM (PDB ID: 2VM6). The close-up view shows the presence of a Trp residue in hBIM
+(Trp 147) that corresponds to Cys 25 in hNOXA (see <xref rid="fig1" ref-type="fig">Figure <xref rid="fig1" ref-type="fig">1</xref></xref>). hBfl-1 is represented by
+light-blue ribbons, while hBIM peptide is represented by purple sticks
+and ribbons. Panel B: Structure of the complex between hBfl-1 and
+a covalent hBIM derived peptide named 130E7 (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) with a close-up view of the covalent bond
+between the Cys 55 of hBfl-1 and the Dap-2-chloroacetamide in 130E7
+modeled on the hBIM BH3 peptide from the PDB ID 2VM6. The newly formed
+bond is colored in orange, while hBfl-1 is represented by light blue
+ribbons and 130E7 is depicted as green sticks and ribbons. Panel C:
+Dose–response DELFIA curves for the displacement of a BID peptide
+from the Bcl-2 family proteins hBfl-1, hMcl-1, hBcl-xL, and hBcl-2
+by compounds 130E7, 130E8 (hBIM), and ABT-199. The arrows emphasize
+differences in affinities against each of the tested proteins between
+130E7, ABT-199, and 130E8. The covalent agent 130E7 showed an increase
+in affinity only against Bfl-1, owed to the covalent interaction with
+Cys 55, while reduced affinities are observed between this agent and
+other Bcl-2 proteins lacking such residues in the BH3 binding groove.
+Panel D: SDS-PAGE gel electrophoresis followed by Coomassie staining
+of the hBfl-1 protein (10 μM) in absence and presence of equimolar
+concentrations of 130E7 at different time points (15 min, 30 min,
+1 h, 2 h). Panel E: MALDI-TOF MS spectra of hBfl1 collected in the
+absence (blue) and presence (green) of 130E7 after 2 h incubation
+at RT and at a protein–ligand ratio of 1:2.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr2" position="float" orientation="portrait" xlink:href="cb-2016-00962a_0002.jpg"><?image-name cb-2016-00962a_0002.jpg?><?image-size 126508?><?image-md5 4b5e517767c4510650bc3723ff03c918?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1551?><?image-original-width 2100?><?image-scaled-height 517?><?image-scaled-width 700?><?image-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/4b5e517767c4/cb-2016-00962a_0002.jpg?><?thumb-name cb-2016-00962a_0002.gif?><?thumb-size 22337?><?thumb-md5 ef8826fc5f488d2947a83f1d2e11c6b7?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 108?><?thumb-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/ef8826fc5f48/cb-2016-00962a_0002.gif?></graphic></fig><table-wrap id="tbl2" position="float" orientation="portrait"><label>Table 2</label><caption><title>BIM Derived Peptide Sequences and
+Relative IC<sub>50</sub> Values in a DELFIA Assay against the Bcl-2
+Family Proteins hBfl-1, hMcl-1, hBcl-xL, and hBcl-2<xref rid="t2fn1" ref-type="table-fn">a</xref></title></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="fx1" position="float" orientation="portrait" xlink:href="cb-2016-00962a_0005.jpg"><?image-name cb-2016-00962a_0005.jpg?><?image-size 124471?><?image-md5 014a884a02277a5f74e64ab06873c627?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 2338?><?image-original-width 6416?><?image-scaled-height 437?><?image-scaled-width 1200?><?image-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/014a884a0227/cb-2016-00962a_0005.jpg?><?thumb-name cb-2016-00962a_0005.gif?><?thumb-size 13581?><?thumb-md5 990cdd2b068ca6a332423429e8a8727e?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 73?><?thumb-scaled-width 200?><?thumb-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/990cdd2b068c/cb-2016-00962a_0005.gif?></graphic><table-wrap-foot><fn id="t2fn1"><label>a</label><p>λ = Dap-2-chloroacetamide, <italic toggle="yes">X</italic><sub><italic toggle="yes">i</italic></sub> and <italic toggle="yes">X</italic><sub><italic toggle="yes">i</italic>+4</sub> = (S)-2-(4′-pentenyl)alanine</p></fn></table-wrap-foot></table-wrap></sec><sec id="sec2.3"><title>Cell Permeable Covalent Bim-BH3 Mimetics
+Targeting Bfl-1: Biochemical and Biophysical Validation</title><p>To
+study the effect of hBfl-1 inhibition in cells, cell penetrating versions
+of 130E7 were designed and tested. Two parallel strategies were adopted
+either using an N-terminal cell penetrating sequence (130G4, <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>A) or by synthesizing
+a hydrocarbon stapled version of the agent (130D11, <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>B), similar to what was reported
+for the linear BIM BH3 peptide.<sup><xref ref-type="bibr" rid="ref49">49</xref>−<xref ref-type="bibr" rid="ref52">52</xref></sup> A similar covalent stapled peptide was reported while
+this manuscript was submitted,<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> using
+an acrylamide instead of a Dap-2-chloroacetamide as we report here.
+However, characterization of such an agent with respect to affinity
+and selectivity for Bcl-2 proteins has not been reported in detail,
+and the manuscript relied only on SDS page to prove the covalent interaction.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> Here, we carefully tested each molecule in DELFIA
+displacement assays against the selected antiapoptotic Bcl-2 proteins,
+in addition to SDS gel electrophoresis, MALDI TOF spectrometry, and
+isothermal titration calorimetry. Introducing a cell penetrating sequence
+at the N-terminus of 130E7 (resulting in agent 130G4; <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>A, <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>), or introducing a hydrocarbon staple in
+130E7 (resulting in the stapled peptide 130D11; <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>B, <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>), did not significantly alter their respective binding
+affinities for hBfl-1, likely driven by the covalent interactions
+(<xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>). However,
+the binding of the stapled 130D11 to other Bcl-2 proteins got somewhat
+reduced, in agreement with recent observations about the stapled version
+of BH3 peptides<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>C, <xref rid="tbl2" ref-type="other">Table <xref rid="tbl2" ref-type="other">2</xref></xref>). Surprisingly, these comparative data between linear
+and stapled versions of these covalent agents have not been reported
+by Huhn <italic toggle="yes">et al.</italic>(<xref ref-type="bibr" rid="ref40">40</xref>) The selectivity
+of the covalent interaction against hBfl-1 for both agents was further
+probed by SDS gel electrophoresis by incubating each agent with hBfl-1,
+hMcl-1, hBcl-2, or hBcl-xL as shown in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>D for 130G4 and in <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>E for 130D11. A new band for the adduct was
+observed only when hBfl-1, and not the other proteins, was exposed
+to the covalent agents (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>E,F). The new bands appeared at approximately the expected
+molecular weights: expected MW for hBfl-1/130G4 adduct, 24265 Da;
+expected MW for hBfl-1/130D11 adduct, 22183 Da (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref> E,F). In addition, and again in agreement
+with previous recent studies,<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> introduction
+of the hydrocarbon staple significantly reduced the solubility of
+the resulted agent, 130D11, as evident by 1D <sup>1</sup>H NMR (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>F). To further characterize
+the direct dissociation constants and the thermodynamics of binding
+of these agents to hBfl-1, we tested them using isothermal titration
+calorimetry (ITC; <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>G), resulting in <italic toggle="yes">K</italic><sub>d</sub> values in
+the low nanomolar range against hBfl-1 (2.6 and 23.0 nM, for 130E7
+and 130G4, respectively; <xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>G and <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acschembio.6b00962/suppl_file/cb6b00962_si_001.pdf">Table S2</ext-link>). However,
+likely due to its limited solubility, the binding of the hydrocarbon
+stapled version (130D11) to hBfl-1 was not detected under our experimental
+conditions (<xref rid="fig3" ref-type="fig">Figure <xref rid="fig3" ref-type="fig">3</xref></xref>G). In addition, the affinity for Bcl-2 and Bcl-xl also was significantly
+compromised in the stapled peptide, compared to the linear peptide,
+similar to what was recently reported.<sup><xref ref-type="bibr" rid="ref31">31</xref></sup> As mentioned, covalent stapled versions of NOXA and BIM derived
+peptides were reported while this manuscript was submitted; however,
+and surprisingly, no detailed quantitative information on the relative
+binding affinities between linear and stapled agents nor between covalent
+and noncovalent agents was reported.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup></p><fig id="fig3" position="float" orientation="portrait"><label>Figure 3</label><caption><p>Selectivity
+profiling and <italic toggle="yes">in vitro</italic> evaluation of two covalent
+cell penetrating peptides. Panel A: Cartoon representation of 130G4,
+derived by linking the N-terminus of 130E7 to a cell penetrating sequence
+constituted by five PRR repeats (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>). Panel B: Cartoon representation of 130D11, a hydrocarbon
+stapled derivative of 130E7 (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>). In the sequences of the peptides reported in panels
+A and B, we used the same abbreviations as in <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>: λ = Dap-2-chloroacetamide, <italic toggle="yes">X</italic><sub><italic toggle="yes">i</italic></sub> and <italic toggle="yes">X</italic><sub><italic toggle="yes">i</italic>+4</sub> = (S)-2-(4′-pentenyl)alanine. Panel
+C: Dose–response curves for the displacement of a BID peptide
+from the Bcl-2 family proteins hBfl-1, hMcl-1, hBcl-xL, and hBcl-2
+by compounds 130G4 and 130D11 in DELFIA assays. Panels D and E: NUPAGE
+gel electrophoresis followed by Coomassie staining of 130G4 and 130D11
+against selected Bcl-2 family proteins (hBfl-1, hBcl-xL, hBcl-2, hMcl-1)
+after 2 h incubation at RT and at a protein–ligand ratio of
+1:2. The noncovalent peptide 130E8 (<xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>) was used as negative control. Panel F:
+Superimposition of the amide region (6–9 ppm) in the 1D <sup>1</sup>H NMR spectra of 100 μM 130D11 (blue), 130G4 (red),
+and 130E7 (black) to address compounds’ solubility. The spectra
+were collected in PBS buffer at pH = 7.4 containing 10% D<sub>2</sub>O + 1% <italic toggle="yes">d</italic><sub>6</sub>-DMSO. 3-(Trimethylsilyl) propionic-2,2,3,3-d<sub>4</sub> acid (TMSP) at 11.1 μM has been used as an internal
+reference (0.0 ppm). Panel G: Isothermal titration calorimetry experiments
+of 130G4, 130D11, and 130E7 against hBfl-1. <italic toggle="yes">K</italic><sub>d</sub> values in the low nanomolar range were observed for 130G4
+and 130E7 (<italic toggle="yes">K</italic><sub>d</sub> = 23.0 nM and 2.6 nM, respectively)
+while, likely due to its limited solubility, no significant binding
+was observed for 130D11 under our experimental conditions. Similar
+data were obtained against other Bcl-2 family proteins (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acschembio.6b00962/suppl_file/cb6b00962_si_001.pdf">Supporting Information Table S2</ext-link>).</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr3" position="float" orientation="portrait" xlink:href="cb-2016-00962a_0003.jpg"><?image-name cb-2016-00962a_0003.jpg?><?image-size 130668?><?image-md5 3441363f200c029ec7bdb97d2ff77120?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1834?><?image-original-width 2100?><?image-scaled-height 611?><?image-scaled-width 700?><?image-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/3441363f200c/cb-2016-00962a_0003.jpg?><?thumb-name cb-2016-00962a_0003.gif?><?thumb-size 19682?><?thumb-md5 154d9530f6d0733452d77c2c12caa227?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 87?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/154d9530f6d0/cb-2016-00962a_0003.gif?></graphic></fig></sec><sec id="sec2.4"><title>Bfl-1 Inhibition Reverted Resistance to Apoptosis
+in Cell Lines and Primary CLL Cells</title><p>To further assess the
+ability of our hBfl-1 covalent antagonists to penetrate live cells,
+we tested them against HEK293 cells that were transfected with HA-tagged-wt-hBfl-1
+(Sino biologicals). In this assay, cell penetration by the agents
+and formation of the covalent adduct was visible by simple Western
+blot analysis owed to the increased molecular weight of the covalent
+complex. 130G4 was able to penetrate the cell membrane and form a
+covalent adduct with hBfl-1 in a dose dependent manner after exposure
+of transfected cells with the agents for 6 h, as suggested by the
+new band that has approximately an increase of 5 kDa in MW (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>A). On the contrary,
+reliable cell permeability data with the stapled peptide were difficult
+to obtain due to the limited solubility of the agent. Hence, for further
+cellular studies, we preferred 130G4 to the less soluble hydrocarbon
+stapled 130D11. Indeed, a similarly derived covalent BIM staple peptide
+recently reported was tested only at relatively high concentrations
+(40 μM) to detect cellular activity.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> In agreement, when tested against a melanoma cell line that expressed
+higher levels of both NOXA and Bfl-1 SKMEL-5,<sup><xref ref-type="bibr" rid="ref9">9</xref>,<xref ref-type="bibr" rid="ref53">53</xref></sup> we
+observed that while 130G4 was active in the low micromolar range,
+130D11 was inactive up to 10 μM. Indeed, cell activities for
+a similar stapled covalent peptide recently reported were obtained
+only at 40 μM.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> Hence, we subsequently
+tested 130G4 against the lymphoma cell line Raji, a line that expresses
+Bfl-1,<sup><xref ref-type="bibr" rid="ref53">53</xref></sup> and measured the specific induced
+apoptosis (SIA) by the agent when used alone or in combination with
+fludarabine or etoposide at different concentrations (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>C). In these experiments, 130G4
+had single agent activity with EC<sub>50</sub> values &lt;5 μM
+(<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>C). However,
+testing etoposide or fludarabine in the presence of 5 μM of
+130G4 dramatically sensitized this cell line to the agents (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>C). Similarly, we
+preliminarily tested the agent against primary cells isolated from
+patients affected by chronic lymphocytic leukemia (CLL) that are resistant
+to fludarabine or etoposide (<xref rid="fig4" ref-type="fig">Figure <xref rid="fig4" ref-type="fig">4</xref></xref>D). These experiments were conducted against the CLL
+cells alone or cocultured with stroma-NK-term cells to best reproduce
+the tumor environment. In both experiments 130G4 had similar single
+agent activity (EC<sub>50</sub> &lt; 5 μM), while both fludarabine
+and etoposide had limited activity. However, at the least, an additive
+effect was observed when the agents were used in combination, suggesting
+that 130G4 or agents with similar activity against Bfl-1 could be
+used in fludarabine resistant patients.</p><fig id="fig4" position="float" orientation="portrait"><label>Figure 4</label><caption><p>Cellular validation of
+compound 130G4. Panel A: Western-blot analysis of HEK293 cells transfected
+with N-HA-tagged hBfl-1 and treated for 6 h with increasing concentrations
+(10, 20, 30, 50 μM) of 130G4. Cells treated with DMSO only were
+loaded as negative controls. Samples were probed with an anti-HA antibody
+(see <xref rid="sec3" ref-type="other">Methods</xref>). Molecular weight shifts corresponding
+to the covalent adducts of hBfl-1 are indicated. Panel B: Viability
+dose–response curve of human malignant melanoma SKMEL-5 cells
+exposed for 24 h to different concentrations (from 0.4 to 100 μM)
+of the test compound 130G4. Antiproliferative activity was assessed
+using the ATPlite assay from PerkinElmer and normalized to control
+cells which were treated with the vehicle, DMSO. The reported IC<sub>50</sub> value was calculated by Prism5 (GraphPad). Panel C: Synergistic
+assay on Raji cell line derived cells incubated with the hBfl-1 inhibitor
+130G4 alone (1, 5, 10, 30 μM) or in combination with different
+concentrations of Fludarabine (F-ara-A, 1, 3, 10 μM) or Etoposide
+(10, 30, 90 μM) for 48 h at 37 °C in a CO<sub>2</sub> incubator.
+The <italic toggle="yes">in vitro</italic> cytotoxicity was measured using PI/DiOC<sub>6</sub> followed by flow cytometry data analysis, and the data were
+reported as % SIA (specific induced apoptosis, see <xref rid="sec3" ref-type="other">Methods</xref>). Panel D: Evaluation of a synergistic effect of 130G4
+with etoposide and fludarabine (F-ara-A) in CLL cells and CLL cells
+cocultured with stromal cell support. In the washout experiment, CLL
+cells alone or cocultured with stroma-NK-tert cells were incubated
+with the Bfl-1 inhibitor 130G4 alone or in combination with different
+concentrations of fludarabine (F-ara-A) or etoposide for 48 h at 37
+°C in CO<sub>2</sub> incubator. The <italic toggle="yes">in vitro</italic> cytotoxicity was measured in all the samples after 48 h using CD19/CD5/DioC6
+staining followed by flow cytometry data analysis, and the data were
+presented as % SIA (specific induced apoptosis). The two graphs in
+the panel represent data collected from two different CLL patients.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" id="gr4" position="float" orientation="portrait" xlink:href="cb-2016-00962a_0004.jpg"><?image-name cb-2016-00962a_0004.jpg?><?image-size 112955?><?image-md5 130ffcd9be0303c7b1d02b8e2c089341?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1841?><?image-original-width 2100?><?image-scaled-height 614?><?image-scaled-width 700?><?image-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/130ffcd9be03/cb-2016-00962a_0004.jpg?><?thumb-name cb-2016-00962a_0004.gif?><?thumb-size 18507?><?thumb-md5 964724573d88d5e20e45ab14f66f3c37?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 88?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/b2fb/5320539/964724573d88/cb-2016-00962a_0004.gif?></graphic></fig><p>Previous cellular and genetic
+studies implicated Bfl-1 as a critical Bcl-2 family protein responsible
+for the resistance to both chemotherapy and Bcl-2 antagonists treatment
+in CLL and in melanomas. However, misleading binding data using mouse
+NOXA derived BH3 peptides (NOXA A and NOXA B, <xref rid="tbl1" ref-type="other">Table <xref rid="tbl1" ref-type="other">1</xref></xref>), which bound more potently to Mcl-1, out-shadowed
+the role of Bfl-1 in cancer cells. Our studies also revealed a possible
+mechanism of interaction between hNOXA and hBfl-1 that we hypothesized
+being regulated by the formation of an intermolecular disulfide bridge
+with a Cys in the TM domain of the protein, in a cytosolic, inactive
+state of the protein. These observations, if confirmed, could have
+far reaching ramifications in deciphering a possible mechanism of
+redox-regulation of apoptosis in cells and may stimulate the design
+of novel covalent inhibitors that exploit the conserved Cys 55 in
+hBfl-1. To this end, our studies with our preliminarily derived cell-permeable
+covalent agent provide the necessary proof-of-concept data and represent
+a valuable stepping stone for the design of more drug like agents.</p></sec></sec><sec id="sec3"><title>Methods</title><sec id="sec3.1"><title>Protein Expression and
+Purification</title><sec id="sec3.1.1"><title>hBfl-1 Protein Expression</title><p>A modified
+pET21a vector encoding a human Bfl-1 fragment (residues 1–149)
+and an N-terminal His tag was used for these studies. Transformed
+Rosetta-gami (DE3) competent cells (Novagen) were transferred to Luria
+broth (LB) supplemented with the appropriate antibiotic and allowed
+to grow at 37 °C under shaking conditions. When the optical density
+reached 0.7, the culture was induced with 0.1 mM IPTG (isopropyl 1-thio-<sc>d</sc>-galactopyranoside) and the growing cells were left shaking
+overnight at 15 °C. Bacteria were collected and lysed at 4 °C.
+The overexpressed protein was purified using Ni<sup>2+</sup> affinity
+chromatography with a linear gradient of imidazole. The eluted fractions
+were dialyzed against a buffer containing 50 mM phosphate and 150
+mM NaCl, at pH = 6.5. Typical yields were 0.8 g/L. The final protein
+sequence was MHHHHHHSSGVDLGTENLYFQSMTDCEFGYIYRLAQDYLQCVLQIPQPGSGPSKTSRVLQNVAFSVQKEVEKNLKSCLDNVNVVSVDTARTLFNQVMEKEFEDGIINWGRIVTIFAFEGILIKKLLRQQIAPDVDTYKEISYFVAEFIMNNTGEWIRQNGGWENGFVKKFE.
+Similarly, <italic toggle="yes">h</italic>Bcl-xL samples were prepared and purified
+as described previously.<sup><xref ref-type="bibr" rid="ref54">54</xref></sup> Briefly, <italic toggle="yes">E. coli</italic> strain BL21 was transformed with the pET-21b plasmid
+(Novagen) carrying the gene coding for Bcl-xL Δ<italic toggle="yes">T</italic>M (Bcl-xL deletion mutant lacking the transmembrane domain). Bacteria
+were grown at 37 °C, and induction of protein expression was
+carried out when the OD<sub>600</sub> reached 0.6 with 1 mM IPTG for
+4 h at 37 °C. Following cell harvest and lysis by sonication, <italic toggle="yes">h</italic>Bcl-xL was purified using a Ni-affinity column (Amersham).
+The eluate was dialyzed against 40 mM phosphate buffer (pH = 7.5)
+and 150 mM NaCl. Likewise, the hMcl-1 (172–323) gene was inserted
+into a pET15b vector for expression in <italic toggle="yes">E. coli</italic>. Bacteria
+cultures were induced when OD<sub>600</sub> reached 0.6 with 1 mM
+IPTG and left shaking overnight at 20 °C. Similarly to hBfl-1
+and hBcl-Xl, hMcl-1 protein was purified using Ni<sup>2+</sup> affinity
+chromatography with a linear gradient of imidazole. Recombinant <italic toggle="yes">h</italic>Bcl-2 protein was purchased from Sino Biologicals.</p></sec></sec><sec id="sec3.2"><title>Agents and Peptides</title><p>Linear peptides were synthesized on
+a Liberty Blue microwave peptide synthesizer (CEM Corporation, NC)
+and a PS3 automated peptide synthesizer using Fmoc protocols. Stapled
+and covalent peptides reported in <xref rid="tbl1" ref-type="other">Tables <xref rid="tbl1" ref-type="other">1</xref></xref> and <xref rid="tbl2" ref-type="other">2</xref> were synthesized
+by InnoPep (San Diego, CA) following standard solid phase peptide
+synthetic procedures. Fmoc-Dap-2-chloroacetamide–OH was prepared
+and incorporated as a building block at the N-terminus of selected
+peptides in solid phase conditions.</p></sec><sec id="sec3.3"><title>Mass Spectrometry Analysis</title><p>Molecular weight analysis was done using an Autoflex II MALDI TOF/TOF
+(Bruker Daltonics).</p><p><italic toggle="yes">h</italic>Bfl-1 was incubated in
+the absence and in the presence of <italic toggle="yes">h</italic>NOXA and 130E7
+in a 1:2 ratio for 2 h. For mass spectroscopy analysis, equal volumes
+(2 μL) of each sample dissolved in the reaction buffer (16 mM
+phosphate, 50 mM NaCl, pH = 6.5) and MALDI Matrix solution (sinapic
+acid; 20 mg mL<sup>–1</sup> in 50% acetonitrile -0.1% trifluoroacetic
+acid solution) were cocrystallized on the MALDI target plate and allowed
+to air-dry for 10 min. Mass spectra were acquired and processed with
+FlexAnalysis 2.4. The control protein molecular weight spectra as
+well as the protein and peptide conjugated spectra are shown. The
+protein mass shift correlating to peptide molecular weight was observed
+in a conjugated sample. The data were further processed using the
+FlexAnalysis peak picking method. With our current instrumentation
+and these experimental conditions, we expect on average a variation
+in the observed molecular mass of about ±50 Da, depending on
+the presence of slightly different ionization states of side chains,
+the presence of different numbers of nature of counterions, etc.</p></sec><sec id="sec3.4"><title>DELFIA (Dissociation Enhanced Lanthanide Fluorescence Immunoassay)</title><p>One hundred microliters of a 600 ng/mL solution of biotin-BID (Biotin-lc-EDIIRNIARHLAQVGDSMDR-NH<sub>2</sub>, where lc indicates a hydrocarbon chain of six methylene
+groups, aminohexanoic acid) was added to each well of 96-well streptavidin-coated
+plates (PerkinElmer). After 2 h of incubation and elimination by three
+washing steps of the unbound biotin-BID peptide, 11 μL of a
+preincubated solution of the protein and a serial dilution of the
+test peptide were added to the assay plate, followed by the addition
+of 89 μL of a 1.56 nM solution of Eu–N1-labeled anti-6xHis
+Antibody (PerkinElmer). After 1 h of incubation at RT to allow the
+immunoreaction to complete, a second washing step allowed removal
+of the unbound protein in complex with Eu antibodies if displaced
+by a test compound. Subsequently, 200 μL of enhancement solution
+(PerkinElmer) was added to each well and fluorescence measured after
+10 min of incubation (excitation wavelength, 340 nm; emission wavelength,
+615 nm). The protein final concentrations, determined by titrations,
+were 15 nM for hBfl-1, 16 nM for hMcl-1, 7 nM for hBcl-2, and 8.5
+nM for hBcl-xL, while the antibody final concentration was 22.2 ng/well
+when compounds were tested against <italic toggle="yes">h</italic>Bfl-1, <italic toggle="yes">h</italic>Mcl-1, and <italic toggle="yes">h</italic>Bcl-xL and 14.8 ng/well in
+the presence of <italic toggle="yes">h</italic>Bcl-2. Each well received a final
+DMSO concentration equal to 1%. Protein, peptide, and antibody solutions
+were prepared in DELFIA assay buffer (PerkinElmer). Counts were normalized
+to control wells, which were treated with the vehicle, DMSO, and reported
+as % of inhibition. The reported IC<sub>50</sub> values were calculated
+by Prism5 (GraphPad).</p></sec><sec id="sec3.5"><title>Gel Electrophoresis</title><p>Synthetic peptides
+were incubated for 2 h and at equimolar concentration (10 μM)
+with human Bcl-2 family proteins (hBfl-1, hMcl-1, hBcl-2, hBcl-xL).
+Note that the paper from Huhn <italic toggle="yes">et al.</italic> used 40 μM
+protein and 120 μM peptides.<sup><xref ref-type="bibr" rid="ref40">40</xref></sup> Samples
+were subjected to gel electrophoresis with SDS-PAGE gel followed by
+treatment with Coomassie dye as a staining protocol. For protein band
+detection, the NuPAGE 12% bis-tris mini gels (Life Technologies) were
+stained with SymplyBlue SafeStain (Life Technologies) according to
+the manufacture’s protocol.</p></sec><sec id="sec3.6"><title>NMR Spectroscopy</title><p>NMR spectra were acquired on a 600 MHz Bruker Avance spectrometer
+equipped with a TCI cryoprobe. All NMR data were processed and analyzed
+using TOPSPIN2.1 (Bruker Biospin, Billerica, MA, USA) and SPARKY3.1
+(University of California, San Francisco, CA, USA). Solubility of
+test compounds was evaluated at 100 μM and in the following
+buffer conditions: PBS at a pH = 7.4 containing 10% D<sub>2</sub>O
++ 1% <italic toggle="yes">d</italic><sub>6</sub>-DMSO. 3-(Trimethylsilyl) propionic-2,2,3,3-d<sub>4</sub> acid (TMSP) at 11.1 μM was used as an internal reference
+(0.0 ppm).</p><sec id="sec3.6.1"><title>Isothermal Titration Calorimetry and Molecular Modeling</title><p>Isothermal titration calorimetry was performed on a VP-ITC calorimeter
+from Microcal (Northampton, MA, USA). When indicated, measurements
+were performed in a reverse fashion (i.e., the protein was titrated
+into the compound solution). All titrations were performed at 25 °C
+in PBS buffer supplemented with 10% DMSO. Experimental data were analyzed
+using Microcal Origin software provided by the ITC manufacturer (Microcal).
+Modeling studies and figures were prepared using Chimera (<uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.cgl.ucsf.edu/chimera">http://www.cgl.ucsf.edu/chimera</uri>).</p></sec></sec><sec id="sec3.7"><title>Cell Based Assays</title><sec id="sec3.7.1"><title>Antiproliferative Activity of SKMEL-5 Cells</title><p>Human malignant melanoma SKMEL-5 cells were obtained from the American
+Type Culture Collection (ATCC HTB-70, Manassas, VA, USA) and were
+maintained in 5% CO<sub>2</sub> at 37 °C and cultured in Eagle’s
+Minimum Essential Medium (EMEM; Cellgro) plus GlutaMAX supplemented
+with 10% fetal bovine serum (FBS; Omega Scientific) and 1% penicillin/streptomycin
+(Omega Scientific).</p><p>Approximately 30 000 cells were seeded
+into individual wells of a 96-well tissue culture plate and incubated
+for 24 h. Cells were replenished with fresh medium (0.1 mL/well; 5%
+FBS, no antibiotics) and exposed to triplicates of different concentration
+solutions (from 0.4 to 100 μM) of test compounds. The analyzed
+inhibitors were dissolved in DMSO, reaching a final DMSO concentration
+of 1%. After incubation for 24 h at 37 °C and 5% CO<sub>2</sub>, cell viability was assessed using ATPlite assay from PerkinElmer
+(Waltham, MA). Viability was normalized to control cells which were
+treated with the vehicle, DMSO. The reported IC<sub>50</sub> values
+were calculated by Prism5 (GraphPad).</p></sec><sec id="sec3.7.2"><title>Western Blot</title><p>Twenty-four
+hours before the transfection, HEK293T was plated into a six-well
+plate at a seeding density of 500 000 cells per well. At 90%
+confluence, cells were transfected with N-HA-tagged Bfl1 (Bcl-2-related
+protein A1, full length; organism, <italic toggle="yes">Homo sapiens</italic>;
+catalog number, HG10562-NY, Sino Biological Inc.), by using the jetPRIME
+transfection reagent (Polyplus). After 16 h, different concentrations
+of Bfl1 inhibitors were added to the cells at a final DMSO concentration
+of 1% and incubated for 6 h. Cells were then washed with cold PBS
+and lysed with lysis buffer (50 mM Tris-HCl, at a pH of 7.4, 150 mM
+NaCl, 1% NP-40, 1 mM EDTA) for 30 min on ice. Cell lysates were centrifuged
+at 13 000<italic toggle="yes">g</italic> for 30 min at 4 °C. The concentration
+of the protein content was determined using Bio-Rad protein assay
+solution. Equal amounts of cell lysate (40 μg) were resolved
+by SDS-PAGE and transferred to polyvinylidene difluoride (PVDF) membranes
+(PerkinElmer Life Sciences, Waltham, MA). Membranes were blocked with
+5% BSA/PBST for 2 h and incubated with primary antibodies (rabbit
+polyclonal anti-HA antibody, Santa Cruz cat#: sc-805, dilution 1:1000)
+overnight at 4 °C with shaking. Following three washes with PBST
+(PBS containing Tween 20, 0.02% v/v), membranes were incubated with
+the secondary antibody (IRDye 800CW Donkey anti-Rabbit, 1:10 000)
+for 1 h shaking at RT. Bound antibodies were detected with LICOR.</p></sec><sec id="sec3.7.3"><title>Raji Cell Culture</title><p>In the washout experiment, Raji cell line
+derived (20 000) cells were placed per well in a 96-well plate.
+The cells were incubated with the Bfl-1 inhibitor 130G4 alone or in
+combination with different concentrations of Fludarabine (F-ara-A)
+or etoposide for 48 h at 37 °C in CO<sub>2</sub> incubator. The <italic toggle="yes">in vitro</italic> cytotoxicity was measured in all the samples after
+48 h using PI/DiOC<sub>6</sub> followed by flow cytometry data analysis,
+and the data were reported as % SIA (specific induced apoptosis, see
+below).</p></sec><sec id="sec3.7.4"><title>Chronic Lymphocytic Leukemia (CLL) Sampling and Cell Culture</title><p>Peripheral blood mononuclear cells (PBMC) from patients with CLL
+were obtained from the CLL Research Consortium tissue bank. After
+CLL diagnosis was confirmed,<sup><xref ref-type="bibr" rid="ref55">55</xref></sup> patients
+provided written informed consent for blood sample collection. The
+institutional review board of the University of California, San Diego,
+approved the protocol. PBMCs were isolated by Ficoll-Hypaque gradient
+density centrifugation (Cat# 17-1440-03, GE Healthcare Life Science)
+and used fresh or viably frozen and stored in liquid nitrogen for
+later use.</p><p>PBMCs were separated from heparinized venous blood
+by density gradient centrifugation using Ficoll-Hypaque media (GE
+Healthcare). Samples with &gt;95% double positive cells for CD5 and
+CD19, as assessed by flow cytometry, were selected and used. Briefly,
+primary CLL-B leukemia cells derived from CLL patients were cultured
+in RPMI supplemented with 10% heat inactivated FBS (fetal bovine serum,
+catalog # FB-02, Omega Scientific, Tarzana, CA) and 1% antibiotic
+at a density of 3 × 10<sup>5</sup> cells per well in a total
+volume of 100 μL at 37 °C and 5% CO<sub>2</sub>. Primary
+CLL cells were cultured alone in 96-well round-bottom plates (catalog
+# 3596, Corning, NY) or cocultured with NK-tert stromal cells in 96-well
+flat bottom plates (catalog # 3799, Corning, NY) with a ratio of 20:1
+(NK-tert/CLL) by seeding 300 000 cells/well.<sup><xref ref-type="bibr" rid="ref56">56</xref></sup> The human mesenchymal NK-tert stromal cell line was derived
+from bone marrow. Stroma-NK-tert cells are fibroblast derived from
+human bone marrow and immortalized with human telomerase reverse transcriptase
+(hTERT) bearing exogene MFG-tsT-IRES-neo (RCB2350- RIKEN Bioresource
+Center, Japan). These cells were obtained from the RIKEN Cell Bank
+(RIKEN, Yokohama, Japan). NK-tert cells alone were maintained in DMEM
+(catalog # 10-017-CV, Corning Cellgrov, Manassas, VA 20109) supplemented
+with 10% FBS and 1% antibiotic.</p></sec><sec id="sec3.7.5"><title>Flow Cytometry</title><p>The flow cytometric data collection and analysis was carried out
+using FACScalibur (BD Biosciences, San Jose, CA) and FlowJo software
+(version 9, TreeStar Inc., Ashland, OR).</p></sec><sec id="sec3.7.6"><title>Detection of Apoptosis</title><p>For assessment of apoptotic cells, first cells alone or cocultured
+with stroma cell support were stained to select CLL-B with CD19/CD5
+antibodies to gate on CLL-B cells. The CLL-B cell specific staining
+was done using a 1:40 dilution of CD19-PerCP-Cy5.5 (catalog # 8045-0198,
+clone SJ25C1, eBioscience, San Diego) and a 1:50 dilution of APC mouse
+antihuman CD5 (catalog # 555355, clone UCHT2, BD Biosciences) specific
+antibodies. The staining was done at 4 °C for 30 min followed
+by washing using FACS buffer two times. Following that, apoptotic
+and viable cells were discriminated by staining the cells with a 1:1000
+dilution of 40uM 3,3′-dihexyloxacarbocyanine iodide (DiOC6;
+catalog #D-273, Molecular Probes, Eugene, OR, USA) for 30 min at 37
+°C. Following DiOC6 staining, samples were subjected to flow
+cytometry analysis.</p></sec><sec id="sec3.7.7"><title>Calculation of Specific Induced Apoptosis
+(SIA)</title><p>In order to discriminate the compound specific induced
+apoptosis vs background spontaneous cell death from <italic toggle="yes">in vitro</italic> culture conditions, we calculated the percentage of specific induced
+apoptosis (% SIA) using the following formula: % SIA = [(compound
+induced apoptosis – media only spontaneous apoptosis)/(100
+– media only spontaneous apoptosis)] × 100.</p></sec><sec id="sec3.7.8"><title>Statistical
+Analysis</title><p>The data sets were analyzed using GraphPad Prism
+software (v. 5.0c; San Diego, CA). The statistical significance was
+determined by using paired or unpaired Student’s <italic toggle="yes">t</italic> test or one-way ANOVA followed by Bonferroni correction’s
+multiple comparisons test. Statistical differences for the mean values
+are indicated as follows: *<italic toggle="yes">p</italic> &lt; 0.05; **<italic toggle="yes">p</italic> &lt; 0.01; ***<italic toggle="yes">p</italic> &lt; 0.001; ****<italic toggle="yes">p</italic> &lt; 0.0001. The IC<sub>50</sub> value was defined as
+the drug concentration that inhibits 50% cell growth compared with
+untreated controls and calculated by Graphpad Prism 6.0 software.
+Unless indicated, data are presented as the mean ± SEM.</p></sec></sec></sec></body><back><notes id="notes-1" notes-type="si"><title>Supporting Information Available</title><p>The Supporting Information
+is available free of charge on the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org">ACS Publications website</ext-link> at DOI: <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/abs/10.1021/acschembio.6b00962">10.1021/acschembio.6b00962</ext-link>.<list id="silist" list-type="simple"><list-item><p>Molecular weights,
+SDS-PAGE gel electrophoresis data, DELFIA assay curves, and <italic toggle="yes">K</italic><sub>d</sub> values derived by ITC experiments for selected
+peptides reported in the manuscript (<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="http://pubs.acs.org/doi/suppl/10.1021/acschembio.6b00962/suppl_file/cb6b00962_si_001.pdf">PDF</ext-link>)</p></list-item></list></p></notes><sec sec-type="supplementary-material"><title>Supplementary Material</title><supplementary-material content-type="local-data" id="sifile1" position="float" orientation="portrait"><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="cb6b00962_si_001.pdf" position="float" orientation="portrait"><?suppdata-name cb6b00962_si_001.pdf?><?suppdata-size 559723?><?suppdata-md5 52355bf54185804b8fb7315fdef97b77?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type pdf?><?suppdata-cloudpmc-urn urn:app:b2fb/5320539/52355bf54185/cb6b00962_si_001.pdf?><caption><p>cb6b00962_si_001.pdf</p></caption></media></supplementary-material></sec><notes notes-type="COI-statement" id="NOTES-d80e1439-autogenerated"><p>The authors declare
+no competing financial interest.</p></notes><ack><title>Acknowledgments</title><p>This work was supported
+in part by National Institutes of Health grant CA168517 (to M.P.),
+grant CA P01081534 Chronic Lymphocytic Leukemia (CLL) Research Consortium
+(to T.J.K., M.P., and J.E.C.), the UC San Diego Foundation Blood Cancer
+Research Fund (to T.J.K.), and the Bennett Family Foundation (to J.E.C.).
+M.P. holds the Daniel Hays Chair in Cancer Research at the School
+of Medicine at UCR. Molecular graphics and analyses were performed
+with the UCSF Chimera package (<uri xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="http://www.cgl.ucsf.edu/chimera">http://www.cgl.ucsf.edu/chimera</uri>). Chimera is developed by the Resource for Biocomputing, Visualization,
+and Informatics at the University of California, San Francisco (supported
+by NIGMS P41-GM103311). We also thank the Sanford-Burnham-Prebys Medical
+Discovery Institute (La Jolla, CA) Protein Analysis Facility supported
+by NIH grant CA030199 for support with earlier ITC measurements.</p></ack><ref-list><title>References</title><ref id="ref1"><mixed-citation publication-type="journal" id="cit1"><name name-style="western"><surname>Fesik</surname><given-names>S. W.</given-names></name> (<year>2005</year>) <article-title>Promoting apoptosis as a strategy
+for cancer drug discovery</article-title>. <source>Nat. Rev. Cancer</source>
+<volume>5</volume>, <fpage>876</fpage>–<lpage>885</lpage>. <pub-id pub-id-type="doi">10.1038/nrc1736</pub-id>.<pub-id pub-id-type="pmid">16239906</pub-id></mixed-citation></ref><ref id="ref2"><mixed-citation publication-type="journal" id="cit2"><name name-style="western"><surname>Opferman</surname><given-names>J. T.</given-names></name> (<year>2016</year>) <article-title>Attacking cancer’s Achilles
+heel: antagonism of anti-apoptotic BCL-2 family members</article-title>. <source>FEBS J.</source>
+<volume>283</volume>, <fpage>2661</fpage>–<lpage>2675</lpage>. <pub-id pub-id-type="doi">10.1111/febs.13472</pub-id>.<pub-id pub-id-type="pmid">26293580</pub-id><pub-id pub-id-type="pmcid">PMC4761532</pub-id></mixed-citation></ref><ref id="ref3"><mixed-citation publication-type="journal" id="cit3"><name name-style="western"><surname>Adams</surname><given-names>J. M.</given-names></name>; <name name-style="western"><surname>Cory</surname><given-names>S.</given-names></name> (<year>1998</year>) <article-title>The Bcl-2 protein family: arbiters of cell survival</article-title>. <source>Science</source>
+<volume>281</volume>, <fpage>1322</fpage>–<lpage>1326</lpage>. <pub-id pub-id-type="doi">10.1126/science.281.5381.1322</pub-id>.<pub-id pub-id-type="pmid">9735050</pub-id></mixed-citation></ref><ref id="ref4"><mixed-citation publication-type="journal" id="cit4"><name name-style="western"><surname>Czabotar</surname><given-names>P. E.</given-names></name>; <name name-style="western"><surname>Lessene</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Strasser</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Adams</surname><given-names>J. M.</given-names></name> (<year>2014</year>) <article-title>Control
+of apoptosis by the BCL-2 protein family: implications for physiology
+and therapy</article-title>. <source>Nat. Rev. Mol. Cell Biol.</source>
+<volume>15</volume>, <fpage>49</fpage>–<lpage>63</lpage>. <pub-id pub-id-type="doi">10.1038/nrm3722</pub-id>.<pub-id pub-id-type="pmid">24355989</pub-id></mixed-citation></ref><ref id="ref5"><mixed-citation publication-type="journal" id="cit5"><name name-style="western"><surname>Wei</surname><given-names>M. C.</given-names></name>; <name name-style="western"><surname>Zong</surname><given-names>W. X.</given-names></name>; <name name-style="western"><surname>Cheng</surname><given-names>E. H.</given-names></name>; <name name-style="western"><surname>Lindsten</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Panoutsakopoulou</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Ross</surname><given-names>A. J.</given-names></name>; <name name-style="western"><surname>Roth</surname><given-names>K. A.</given-names></name>; <name name-style="western"><surname>MacGregor</surname><given-names>G. R.</given-names></name>; <name name-style="western"><surname>Thompson</surname><given-names>C. B.</given-names></name>; <name name-style="western"><surname>Korsmeyer</surname><given-names>S. J.</given-names></name> (<year>2001</year>) <article-title>Proapoptotic
+BAX and BAK: a requisite gateway to mitochondrial dysfunction and
+death</article-title>. <source>Science</source>
+<volume>292</volume>, <fpage>727</fpage>–<lpage>730</lpage>. <pub-id pub-id-type="doi">10.1126/science.1059108</pub-id>.<pub-id pub-id-type="pmid">11326099</pub-id><pub-id pub-id-type="pmcid">PMC3049805</pub-id></mixed-citation></ref><ref id="ref6"><mixed-citation publication-type="journal" id="cit6"><name name-style="western"><surname>Croce</surname><given-names>C. M.</given-names></name>; <name name-style="western"><surname>Reed</surname><given-names>J. C.</given-names></name> (<year>2016</year>) <article-title>Finally, An Apoptosis-Targeting
+Therapeutic for Cancer</article-title>. <source>Cancer Res.</source>
+<volume>76</volume>, <fpage>5914</fpage>–<lpage>5920</lpage>. <pub-id pub-id-type="doi">10.1158/0008-5472.CAN-16-1248</pub-id>.<pub-id pub-id-type="pmid">27694602</pub-id><pub-id pub-id-type="pmcid">PMC5117672</pub-id></mixed-citation></ref><ref id="ref7"><mixed-citation publication-type="journal" id="cit7"><name name-style="western"><surname>Chen</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Willis</surname><given-names>S. N.</given-names></name>; <name name-style="western"><surname>Wei</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>B. J.</given-names></name>; <name name-style="western"><surname>Fletcher</surname><given-names>J. I.</given-names></name>; <name name-style="western"><surname>Hinds</surname><given-names>M. G.</given-names></name>; <name name-style="western"><surname>Colman</surname><given-names>P. M.</given-names></name>; <name name-style="western"><surname>Day</surname><given-names>C. L.</given-names></name>; <name name-style="western"><surname>Adams</surname><given-names>J. M.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>D. C.</given-names></name> (<year>2005</year>) <article-title>Differential targeting
+of prosurvival Bcl-2 proteins by their BH3-only ligands allows complementary
+apoptotic function</article-title>. <source>Mol. Cell</source>
+<volume>17</volume>, <fpage>393</fpage>–<lpage>403</lpage>. <pub-id pub-id-type="doi">10.1016/j.molcel.2004.12.030</pub-id>.<pub-id pub-id-type="pmid">15694340</pub-id></mixed-citation></ref><ref id="ref8"><mixed-citation publication-type="journal" id="cit8"><name name-style="western"><surname>Kitada</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Reed</surname><given-names>J. C.</given-names></name> (<year>2004</year>) <article-title>MCL-1 promoter insertions
+dial-up aggressiveness of chronic leukemia</article-title>. <source>J. Natl. Cancer Inst</source>
+<volume>96</volume>, <fpage>642</fpage>–<lpage>643</lpage>. <pub-id pub-id-type="doi">10.1093/jnci/djh153</pub-id>.<pub-id pub-id-type="pmid">15126592</pub-id></mixed-citation></ref><ref id="ref9"><mixed-citation publication-type="journal" id="cit9"><name name-style="western"><surname>Placzek</surname><given-names>W. J.</given-names></name>; <name name-style="western"><surname>Wei</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Kitada</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhai</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Reed</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Pellecchia</surname><given-names>M.</given-names></name> (<year>2010</year>) <article-title>A survey of
+the anti-apoptotic Bcl-2 subfamily expression in cancer types provides
+a platform to predict the efficacy of Bcl-2 antagonists in cancer
+therapy</article-title>. <source>Cell Death Dis.</source>
+<volume>1</volume>, <fpage>e40</fpage><pub-id pub-id-type="doi">10.1038/cddis.2010.18</pub-id>.<pub-id pub-id-type="pmid">21364647</pub-id><pub-id pub-id-type="pmcid">PMC3032312</pub-id></mixed-citation></ref><ref id="ref10"><mixed-citation publication-type="journal" id="cit10"><name name-style="western"><surname>Rogalinska</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Kilianska</surname><given-names>Z. M.</given-names></name> (<year>2012</year>) <article-title>Targeting Bcl-2 in CLL</article-title>. <source>Curr.
+Med. Chem.</source>
+<volume>19</volume>, <fpage>5109</fpage>–<lpage>5115</lpage>. <pub-id pub-id-type="doi">10.2174/092986712803530566</pub-id>.<pub-id pub-id-type="pmid">22856663</pub-id></mixed-citation></ref><ref id="ref11"><mixed-citation publication-type="journal" id="cit11"><name name-style="western"><surname>Del Poeta</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Postorino</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Pupo</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Del Principe</surname><given-names>M. I.</given-names></name>; <name name-style="western"><surname>Dal Bo</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Bittolo</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Buccisano</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Mariotti</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Iannella</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Maurillo</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Venditti</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Gattei</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>de Fabritiis</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Cantonetti</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Amadori</surname><given-names>S.</given-names></name> (<year>2016</year>) <article-title>Venetoclax: Bcl-2 inhibition for the treatment of chronic
+lymphocytic leukemia</article-title>. <source>Drugs Today (Barc)</source>
+<volume>52</volume>, <fpage>249</fpage>–<lpage>260</lpage>. <pub-id pub-id-type="doi">10.1358/dot.2016.52.4.2470954</pub-id>.<pub-id pub-id-type="pmid">27252989</pub-id></mixed-citation></ref><ref id="ref12"><mixed-citation publication-type="journal" id="cit12"><name name-style="western"><surname>Starr</surname><given-names>P.</given-names></name> (<year>2016</year>) <article-title>Venetoclax Shows Strong Activity
+in CLL</article-title>. <source>Am. Health Drug Benefits</source>
+<volume>9</volume>, <fpage>21</fpage>.<pub-id pub-id-type="pmid">27014415</pub-id><pub-id pub-id-type="pmcid">PMC4782240</pub-id></mixed-citation></ref><ref id="ref13"><mixed-citation publication-type="journal" id="cit13"><name name-style="western"><surname>Stilgenbauer</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Eichhorst</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Schetelig</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Coutre</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Seymour</surname><given-names>J. F.</given-names></name>; <name name-style="western"><surname>Munir</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Puvvada</surname><given-names>S. D.</given-names></name>; <name name-style="western"><surname>Wendtner</surname><given-names>C. M.</given-names></name>; <name name-style="western"><surname>Roberts</surname><given-names>A. W.</given-names></name>; <name name-style="western"><surname>Jurczak</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Mulligan</surname><given-names>S. P.</given-names></name>; <name name-style="western"><surname>Bottcher</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Mobasher</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Zhu</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Desai</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Chyla</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Verdugo</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Enschede</surname><given-names>S. H.</given-names></name>; <name name-style="western"><surname>Cerri</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Humerickhouse</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Gordon</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Hallek</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Wierda</surname><given-names>W. G.</given-names></name> (<year>2016</year>) <article-title>Venetoclax in relapsed or refractory chronic lymphocytic
+leukaemia with 17p deletion: a multicentre, open-label, phase 2 study</article-title>. <source>Lancet Oncol.</source>
+<volume>17</volume>, <fpage>768</fpage>–<lpage>778</lpage>. <pub-id pub-id-type="doi">10.1016/S1470-2045(16)30019-5</pub-id>.<pub-id pub-id-type="pmid">27178240</pub-id></mixed-citation></ref><ref id="ref14"><mixed-citation publication-type="journal" id="cit14"><name name-style="western"><surname>Souers</surname><given-names>A. J.</given-names></name>; <name name-style="western"><surname>Leverson</surname><given-names>J. D.</given-names></name>; <name name-style="western"><surname>Boghaert</surname><given-names>E. R.</given-names></name>; <name name-style="western"><surname>Ackler</surname><given-names>S. L.</given-names></name>; <name name-style="western"><surname>Catron</surname><given-names>N. D.</given-names></name>; <name name-style="western"><surname>Chen</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Dayton</surname><given-names>B. D.</given-names></name>; <name name-style="western"><surname>Ding</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Enschede</surname><given-names>S. H.</given-names></name>; <name name-style="western"><surname>Fairbrother</surname><given-names>W. J.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>D. C.</given-names></name>; <name name-style="western"><surname>Hymowitz</surname><given-names>S. G.</given-names></name>; <name name-style="western"><surname>Jin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Khaw</surname><given-names>S. L.</given-names></name>; <name name-style="western"><surname>Kovar</surname><given-names>P. J.</given-names></name>; <name name-style="western"><surname>Lam</surname><given-names>L. T.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Maecker</surname><given-names>H. L.</given-names></name>; <name name-style="western"><surname>Marsh</surname><given-names>K. C.</given-names></name>; <name name-style="western"><surname>Mason</surname><given-names>K. D.</given-names></name>; <name name-style="western"><surname>Mitten</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>Nimmer</surname><given-names>P. M.</given-names></name>; <name name-style="western"><surname>Oleksijew</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>C. H.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>C. M.</given-names></name>; <name name-style="western"><surname>Phillips</surname><given-names>D. C.</given-names></name>; <name name-style="western"><surname>Roberts</surname><given-names>A. W.</given-names></name>; <name name-style="western"><surname>Sampath</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Seymour</surname><given-names>J. F.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Sullivan</surname><given-names>G. M.</given-names></name>; <name name-style="western"><surname>Tahir</surname><given-names>S. K.</given-names></name>; <name name-style="western"><surname>Tse</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Wendt</surname><given-names>M. D.</given-names></name>; <name name-style="western"><surname>Xiao</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Xue</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Humerickhouse</surname><given-names>R. A.</given-names></name>; <name name-style="western"><surname>Rosenberg</surname><given-names>S. H.</given-names></name>; <name name-style="western"><surname>Elmore</surname><given-names>S. W.</given-names></name> (<year>2013</year>) <article-title>ABT-199, a potent
+and selective BCL-2 inhibitor, achieves antitumor activity while sparing
+platelets</article-title>. <source>Nat. Med.</source>
+<volume>19</volume>, <fpage>202</fpage>–<lpage>208</lpage>. <pub-id pub-id-type="doi">10.1038/nm.3048</pub-id>.<pub-id pub-id-type="pmid">23291630</pub-id></mixed-citation></ref><ref id="ref15"><mixed-citation publication-type="journal" id="cit15"><name name-style="western"><surname>Vogler</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Butterworth</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Majid</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Walewska</surname><given-names>R. J.</given-names></name>; <name name-style="western"><surname>Sun</surname><given-names>X. M.</given-names></name>; <name name-style="western"><surname>Dyer</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>Cohen</surname><given-names>G. M.</given-names></name> (<year>2009</year>) <article-title>Concurrent up-regulation of BCL-XL and BCL2A1 induces
+approximately 1000-fold resistance to ABT-737 in chronic lymphocytic
+leukemia</article-title>. <source>Blood</source>
+<volume>113</volume>, <fpage>4403</fpage>–<lpage>4413</lpage>. <pub-id pub-id-type="doi">10.1182/blood-2008-08-173310</pub-id>.<pub-id pub-id-type="pmid">19008458</pub-id></mixed-citation></ref><ref id="ref16"><mixed-citation publication-type="journal" id="cit16"><name name-style="western"><surname>Albershardt</surname><given-names>T. C.</given-names></name>; <name name-style="western"><surname>Salerni</surname><given-names>B. L.</given-names></name>; <name name-style="western"><surname>Soderquist</surname><given-names>R. S.</given-names></name>; <name name-style="western"><surname>Bates</surname><given-names>D. J.</given-names></name>; <name name-style="western"><surname>Pletnev</surname><given-names>A. A.</given-names></name>; <name name-style="western"><surname>Kisselev</surname><given-names>A. F.</given-names></name>; <name name-style="western"><surname>Eastman</surname><given-names>A.</given-names></name> (<year>2011</year>) <article-title>Multiple BH3
+mimetics antagonize antiapoptotic MCL1 protein by inducing the endoplasmic
+reticulum stress response and up-regulating BH3-only protein NOXA</article-title>. <source>J. Biol. Chem.</source>
+<volume>286</volume>, <fpage>24882</fpage>–<lpage>24895</lpage>. <pub-id pub-id-type="doi">10.1074/jbc.M111.255828</pub-id>.<pub-id pub-id-type="pmid">21628457</pub-id><pub-id pub-id-type="pmcid">PMC3137063</pub-id></mixed-citation></ref><ref id="ref17"><mixed-citation publication-type="journal" id="cit17"><name name-style="western"><surname>Bruncko</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Sheppard</surname><given-names>G. S.</given-names></name>; <name name-style="western"><surname>Phillips</surname><given-names>D. C.</given-names></name>; <name name-style="western"><surname>Tahir</surname><given-names>S. K.</given-names></name>; <name name-style="western"><surname>Xue</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Erickson</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Fidanze</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Fry</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Hasvold</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Jenkins</surname><given-names>G. J.</given-names></name>; <name name-style="western"><surname>Jin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Judge</surname><given-names>R. A.</given-names></name>; <name name-style="western"><surname>Kovar</surname><given-names>P. J.</given-names></name>; <name name-style="western"><surname>Madar</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Nimmer</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Park</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Petros</surname><given-names>A. M.</given-names></name>; <name name-style="western"><surname>Rosenberg</surname><given-names>S. H.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Song</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Sun</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Tao</surname><given-names>Z. F.</given-names></name>; <name name-style="western"><surname>Wang</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Xiao</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Tse</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Leverson</surname><given-names>J. D.</given-names></name>; <name name-style="western"><surname>Elmore</surname><given-names>S. W.</given-names></name>; <name name-style="western"><surname>Souers</surname><given-names>A. J.</given-names></name> (<year>2015</year>) <article-title>Structure-guided
+design of a series of MCL-1 inhibitors with high affinity and selectivity</article-title>. <source>J. Med. Chem.</source>
+<volume>58</volume>, <fpage>2180</fpage>–<lpage>2194</lpage>. <pub-id pub-id-type="doi">10.1021/jm501258m</pub-id>.<pub-id pub-id-type="pmid">25679114</pub-id></mixed-citation></ref><ref id="ref18"><mixed-citation publication-type="journal" id="cit18"><name name-style="western"><surname>Cohen</surname><given-names>N. A.</given-names></name>; <name name-style="western"><surname>Stewart</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Gavathiotis</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Tepper</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Bruekner</surname><given-names>S. R.</given-names></name>; <name name-style="western"><surname>Koss</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Opferman</surname><given-names>J. T.</given-names></name>; <name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name> (<year>2012</year>) <article-title>A competitive stapled
+peptide screen identifies a selective small molecule that overcomes
+MCL-1-dependent leukemia cell survival</article-title>. <source>Chem.
+Biol.</source>
+<volume>19</volume>, <fpage>1175</fpage>–<lpage>1186</lpage>. <pub-id pub-id-type="doi">10.1016/j.chembiol.2012.07.018</pub-id>.<pub-id pub-id-type="pmid">22999885</pub-id><pub-id pub-id-type="pmcid">PMC3582387</pub-id></mixed-citation></ref><ref id="ref19"><mixed-citation publication-type="journal" id="cit19"><name name-style="western"><surname>Nguyen</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Marcellus</surname><given-names>R. C.</given-names></name>; <name name-style="western"><surname>Roulston</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Watson</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Serfass</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Murthy Madiraju</surname><given-names>S. R.</given-names></name>; <name name-style="western"><surname>Goulet</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Viallet</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Belec</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Billot</surname><given-names>X.</given-names></name>; <name name-style="western"><surname>Acoca</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Purisima</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Wiegmans</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Cluse</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Johnstone</surname><given-names>R. W.</given-names></name>; <name name-style="western"><surname>Beauparlant</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Shore</surname><given-names>G. C.</given-names></name> (<year>2007</year>) <article-title>Small molecule obatoclax (GX15–070) antagonizes
+MCL-1 and overcomes MCL-1-mediated resistance to apoptosis</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<volume>104</volume>, <fpage>19512</fpage>–<lpage>19517</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0709443104</pub-id>.<pub-id pub-id-type="pmid">18040043</pub-id><pub-id pub-id-type="pmcid">PMC2148320</pub-id></mixed-citation></ref><ref id="ref20"><mixed-citation publication-type="journal" id="cit20"><name name-style="western"><surname>Richard</surname><given-names>D. J.</given-names></name>; <name name-style="western"><surname>Lena</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Bannister</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Blake</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Pierceall</surname><given-names>W. E.</given-names></name>; <name name-style="western"><surname>Carlson</surname><given-names>N. E.</given-names></name>; <name name-style="western"><surname>Keller</surname><given-names>C. E.</given-names></name>; <name name-style="western"><surname>Koenig</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>He</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Minond</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Mishra</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Cameron</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Spicer</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Hodder</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Cardone</surname><given-names>M. H.</given-names></name> (<year>2013</year>) <article-title>Hydroxyquinoline-derived
+compounds and analoguing of selective Mcl-1 inhibitors using a functional
+biomarker</article-title>. <source>Bioorg. Med. Chem.</source>
+<volume>21</volume>, <fpage>6642</fpage>–<lpage>6649</lpage>. <pub-id pub-id-type="doi">10.1016/j.bmc.2013.08.017</pub-id>.<pub-id pub-id-type="pmid">23993674</pub-id><pub-id pub-id-type="pmcid">PMC3831274</pub-id></mixed-citation></ref><ref id="ref21"><mixed-citation publication-type="journal" id="cit21"><name name-style="western"><surname>Varadarajan</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Vogler</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Butterworth</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Dinsdale</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name>; <name name-style="western"><surname>Cohen</surname><given-names>G. M.</given-names></name> (<year>2013</year>) <article-title>Evaluation and critical
+assessment of putative MCL-1 inhibitors</article-title>. <source>Cell
+Death Differ.</source>
+<volume>20</volume>, <fpage>1475</fpage>–<lpage>1484</lpage>. <pub-id pub-id-type="doi">10.1038/cdd.2013.79</pub-id>.<pub-id pub-id-type="pmid">23832116</pub-id><pub-id pub-id-type="pmcid">PMC3792441</pub-id></mixed-citation></ref><ref id="ref22"><mixed-citation publication-type="journal" id="cit22"><name name-style="western"><surname>Wei</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Stebbins</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Kitada</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Dash</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Placzek</surname><given-names>W.</given-names></name>; <name name-style="western"><surname>Rega</surname><given-names>M. F.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Cellitti</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Zhai</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Dahl</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Fisher</surname><given-names>P. B.</given-names></name>; <name name-style="western"><surname>Reed</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Pellecchia</surname><given-names>M.</given-names></name> (<year>2010</year>) <article-title>BI-97C1, an
+optically pure Apogossypol derivative as pan-active inhibitor of antiapoptotic
+B-cell lymphoma/leukemia-2 (Bcl-2) family proteins</article-title>. <source>J. Med. Chem.</source>
+<volume>53</volume>, <fpage>4166</fpage>–<lpage>4176</lpage>. <pub-id pub-id-type="doi">10.1021/jm1001265</pub-id>.<pub-id pub-id-type="pmid">20443627</pub-id><pub-id pub-id-type="pmcid">PMC2880850</pub-id></mixed-citation></ref><ref id="ref23"><mixed-citation publication-type="journal" id="cit23"><name name-style="western"><surname>Yecies</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Carlson</surname><given-names>N. E.</given-names></name>; <name name-style="western"><surname>Deng</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2010</year>) <article-title>Acquired resistance
+to ABT-737 in lymphoma cells that up-regulate MCL-1 and BFL-1</article-title>. <source>Blood</source>
+<volume>115</volume>, <fpage>3304</fpage>–<lpage>3313</lpage>. <pub-id pub-id-type="doi">10.1182/blood-2009-07-233304</pub-id>.<pub-id pub-id-type="pmid">20197552</pub-id><pub-id pub-id-type="pmcid">PMC2858493</pub-id></mixed-citation></ref><ref id="ref24"><mixed-citation publication-type="journal" id="cit24"><name name-style="western"><surname>Abulwerdi</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Liao</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Liu</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Azmi</surname><given-names>A. S.</given-names></name>; <name name-style="western"><surname>Aboukameel</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Mady</surname><given-names>A. S.</given-names></name>; <name name-style="western"><surname>Gulappa</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Cierpicki</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Owens</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Sun</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Stuckey</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Mohammad</surname><given-names>R. M.</given-names></name>; <name name-style="western"><surname>Nikolovska-Coleska</surname><given-names>Z.</given-names></name> (<year>2014</year>) <article-title>A novel small-molecule inhibitor
+of mcl-1 blocks pancreatic cancer growth in vitro and in vivo</article-title>. <source>Mol. Cancer Ther.</source>
+<volume>13</volume>, <fpage>565</fpage>–<lpage>575</lpage>. <pub-id pub-id-type="doi">10.1158/1535-7163.MCT-12-0767</pub-id>.<pub-id pub-id-type="pmid">24019208</pub-id><pub-id pub-id-type="pmcid">PMC4174574</pub-id></mixed-citation></ref><ref id="ref25"><mixed-citation publication-type="journal" id="cit25"><name name-style="western"><surname>Abulwerdi</surname><given-names>F. A.</given-names></name>; <name name-style="western"><surname>Liao</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Mady</surname><given-names>A. S.</given-names></name>; <name name-style="western"><surname>Gavin</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Shen</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Cierpicki</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Stuckey</surname><given-names>J. A.</given-names></name>; <name name-style="western"><surname>Showalter</surname><given-names>H. D.</given-names></name>; <name name-style="western"><surname>Nikolovska-Coleska</surname><given-names>Z.</given-names></name> (<year>2014</year>) <article-title>3-Substituted-N-(4-hydroxynaphthalen-1-yl)arylsulfonamides
+as a novel class of selective Mcl-1 inhibitors: structure-based design,
+synthesis, SAR, and biological evaluation</article-title>. <source>J.
+Med. Chem.</source>
+<volume>57</volume>, <fpage>4111</fpage>–<lpage>4133</lpage>. <pub-id pub-id-type="doi">10.1021/jm500010b</pub-id>.<pub-id pub-id-type="pmid">24749893</pub-id><pub-id pub-id-type="pmcid">PMC4033665</pub-id></mixed-citation></ref><ref id="ref26"><mixed-citation publication-type="journal" id="cit26"><name name-style="western"><surname>Wei</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>Q.</given-names></name>; <name name-style="western"><surname>Schreiber</surname><given-names>J. S.</given-names></name>; <name name-style="western"><surname>Parsels</surname><given-names>L. A.</given-names></name>; <name name-style="western"><surname>Abulwerdi</surname><given-names>F. A.</given-names></name>; <name name-style="western"><surname>Kausar</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Lawrence</surname><given-names>T. S.</given-names></name>; <name name-style="western"><surname>Sun</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>Nikolovska-Coleska</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Morgan</surname><given-names>M. A.</given-names></name> (<year>2015</year>) <article-title>Targeting mcl-1
+for radiosensitization of pancreatic cancers</article-title>. <source>Transl Oncol</source>
+<volume>8</volume>, <fpage>47</fpage>–<lpage>54</lpage>. <pub-id pub-id-type="doi">10.1016/j.tranon.2014.12.004</pub-id>.<pub-id pub-id-type="pmid">25749177</pub-id><pub-id pub-id-type="pmcid">PMC4350640</pub-id></mixed-citation></ref><ref id="ref27"><mixed-citation publication-type="journal" id="cit27"><name name-style="western"><surname>Arner</surname><given-names>E. S.</given-names></name>; <name name-style="western"><surname>Holmgren</surname><given-names>A.</given-names></name> (<year>2006</year>) <article-title>The thioredoxin system in cancer-introduction to a
+thematic volume of Seminars in Cancer Biology</article-title>. <source>Semin. Cancer Biol.</source>
+<volume>16</volume>, <fpage>419</fpage><pub-id pub-id-type="doi">10.1016/j.semcancer.2006.10.001</pub-id>.<pub-id pub-id-type="pmid">17101275</pub-id></mixed-citation></ref><ref id="ref28"><mixed-citation publication-type="journal" id="cit28"><name name-style="western"><surname>Certo</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Del Gaizo Moore</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Nishino</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Wei</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Korsmeyer</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Armstrong</surname><given-names>S. A.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2006</year>) <article-title>Mitochondria primed by death signals
+determine cellular addiction to antiapoptotic BCL-2 family members</article-title>. <source>Cancer Cell</source>
+<volume>9</volume>, <fpage>351</fpage>–<lpage>365</lpage>. <pub-id pub-id-type="doi">10.1016/j.ccr.2006.03.027</pub-id>.<pub-id pub-id-type="pmid">16697956</pub-id></mixed-citation></ref><ref id="ref29"><mixed-citation publication-type="journal" id="cit29"><name name-style="western"><surname>Del Gaizo Moore</surname><given-names>V.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2013</year>) <article-title>BH3 profiling--measuring integrated
+function of the mitochondrial apoptotic pathway to predict cell fate
+decisions</article-title>. <source>Cancer Lett.</source>
+<volume>332</volume>, <fpage>202</fpage>–<lpage>205</lpage>. <pub-id pub-id-type="doi">10.1016/j.canlet.2011.12.021</pub-id>.<pub-id pub-id-type="pmid">22230093</pub-id><pub-id pub-id-type="pmcid">PMC3770266</pub-id></mixed-citation></ref><ref id="ref30"><mixed-citation publication-type="journal" id="cit30"><name name-style="western"><surname>Olsson</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Norberg</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Okvist</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Derkow</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Choudhury</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Tobin</surname><given-names>G.</given-names></name>; <name name-style="western"><surname>Celsing</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Osterborg</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Rosenquist</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Jondal</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Osorio</surname><given-names>L. M.</given-names></name> (<year>2007</year>) <article-title>Upregulation
+of bfl-1 is a potential mechanism of chemoresistance in B-cell chronic
+lymphocytic leukaemia</article-title>. <source>Br. J. Cancer</source>
+<volume>97</volume>, <fpage>769</fpage>–<lpage>777</lpage>. <pub-id pub-id-type="doi">10.1038/sj.bjc.6603951</pub-id>.<pub-id pub-id-type="pmid">17726463</pub-id><pub-id pub-id-type="pmcid">PMC2360383</pub-id></mixed-citation></ref><ref id="ref31"><mixed-citation publication-type="journal" id="cit31"><name name-style="western"><surname>Okamoto</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Zobel</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Fedorova</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Quan</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Yang</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Fairbrother</surname><given-names>W. J.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>D. C.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>B. J.</given-names></name>; <name name-style="western"><surname>Deshayes</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Czabotar</surname><given-names>P. E.</given-names></name> (<year>2013</year>) <article-title>Stabilizing
+the pro-apoptotic BimBH3 helix (BimSAHB) does not necessarily enhance
+affinity or biological activity</article-title>. <source>ACS Chem. Biol.</source>
+<volume>8</volume>, <fpage>297</fpage>–<lpage>302</lpage>. <pub-id pub-id-type="doi">10.1021/cb3005403</pub-id>.<pub-id pub-id-type="pmid">23151250</pub-id></mixed-citation></ref><ref id="ref32"><mixed-citation publication-type="journal" id="cit32"><name name-style="western"><surname>Sivaraman</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Sivakumar</surname><given-names>D.</given-names></name> (<year>2016</year>) <article-title>A Review on
+Structures and Functions of Bcl-2 Family Proteins from Homo sapiens</article-title>. <source>Protein Pept. Lett.</source>
+<volume>23</volume>, <fpage>932</fpage><pub-id pub-id-type="doi">10.2174/0929866523666160719094636</pub-id>.<pub-id pub-id-type="pmid">27449944</pub-id></mixed-citation></ref><ref id="ref33"><mixed-citation publication-type="journal" id="cit33"><name name-style="western"><surname>Czabotar</surname><given-names>P. E.</given-names></name>; <name name-style="western"><surname>Lee</surname><given-names>E. F.</given-names></name>; <name name-style="western"><surname>van Delft</surname><given-names>M. F.</given-names></name>; <name name-style="western"><surname>Day</surname><given-names>C. L.</given-names></name>; <name name-style="western"><surname>Smith</surname><given-names>B. J.</given-names></name>; <name name-style="western"><surname>Huang</surname><given-names>D. C.</given-names></name>; <name name-style="western"><surname>Fairlie</surname><given-names>W. D.</given-names></name>; <name name-style="western"><surname>Hinds</surname><given-names>M. G.</given-names></name>; <name name-style="western"><surname>Colman</surname><given-names>P. M.</given-names></name> (<year>2007</year>) <article-title>Structural
+insights into the degradation of Mcl-1 induced by BH3 domains</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<volume>104</volume>, <fpage>6217</fpage>–<lpage>6222</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.0701297104</pub-id>.<pub-id pub-id-type="pmid">17389404</pub-id><pub-id pub-id-type="pmcid">PMC1851040</pub-id></mixed-citation></ref><ref id="ref34"><mixed-citation publication-type="journal" id="cit34"><name name-style="western"><surname>Rega</surname><given-names>M. F.</given-names></name>; <name name-style="western"><surname>Reed</surname><given-names>J. C.</given-names></name>; <name name-style="western"><surname>Pellecchia</surname><given-names>M.</given-names></name> (<year>2007</year>) <article-title>Robust lanthanide-based
+assays for the detection of anti-apoptotic Bcl-2-family protein antagonists</article-title>. <source>Bioorg. Chem.</source>
+<volume>35</volume>, <fpage>113</fpage>–<lpage>120</lpage>. <pub-id pub-id-type="doi">10.1016/j.bioorg.2006.07.006</pub-id>.<pub-id pub-id-type="pmid">16996562</pub-id></mixed-citation></ref><ref id="ref35"><mixed-citation publication-type="journal" id="cit35"><name name-style="western"><surname>Deng</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Carlson</surname><given-names>N.</given-names></name>; <name name-style="western"><surname>Takeyama</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Dal Cin</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Shipp</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2007</year>) <article-title>BH3 profiling identifies three distinct
+classes of apoptotic blocks to predict response to ABT-737 and conventional
+chemotherapeutic agents</article-title>. <source>Cancer Cell</source>
+<volume>12</volume>, <fpage>171</fpage>–<lpage>185</lpage>. <pub-id pub-id-type="doi">10.1016/j.ccr.2007.07.001</pub-id>.<pub-id pub-id-type="pmid">17692808</pub-id></mixed-citation></ref><ref id="ref36"><mixed-citation publication-type="journal" id="cit36"><name name-style="western"><surname>Montero</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2016</year>) <article-title>Dynamic BH3 profiling-poking
+cancer cells with a stick</article-title>. <source>Mol. Cell Oncol</source>
+<volume>3</volume>, <fpage>e1040144</fpage><pub-id pub-id-type="doi">10.1080/23723556.2015.1040144</pub-id>.<pub-id pub-id-type="pmid">27314085</pub-id><pub-id pub-id-type="pmcid">PMC4909438</pub-id></mixed-citation></ref><ref id="ref37"><mixed-citation publication-type="journal" id="cit37"><name name-style="western"><surname>Ryan</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2013</year>) <article-title>BH3 profiling in whole
+cells by fluorimeter or FACS</article-title>. <source>Methods</source>
+<volume>61</volume>, <fpage>156</fpage>–<lpage>164</lpage>. <pub-id pub-id-type="doi">10.1016/j.ymeth.2013.04.006</pub-id>.<pub-id pub-id-type="pmid">23607990</pub-id><pub-id pub-id-type="pmcid">PMC3686919</pub-id></mixed-citation></ref><ref id="ref38"><mixed-citation publication-type="journal" id="cit38"><name name-style="western"><surname>Ryan</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Montero</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Rocco</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2016</year>) <article-title>iBH3: simple, fixable BH3 profiling to determine apoptotic priming
+in primary tissue by flow cytometry</article-title>. <source>Biol. Chem.</source>
+<volume>397</volume>, <fpage>671</fpage>–<lpage>678</lpage>. <pub-id pub-id-type="doi">10.1515/hsz-2016-0107</pub-id>.<pub-id pub-id-type="pmid">26910743</pub-id></mixed-citation></ref><ref id="ref39"><mixed-citation publication-type="journal" id="cit39"><name name-style="western"><surname>Touzeau</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Ryan</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Guerriero</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Moreau</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Chonghaile</surname><given-names>T. N.</given-names></name>; <name name-style="western"><surname>Le Gouill</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Richardson</surname><given-names>P.</given-names></name>; <name name-style="western"><surname>Anderson</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Amiot</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Letai</surname><given-names>A.</given-names></name> (<year>2016</year>) <article-title>BH3 profiling
+identifies heterogeneous dependency on Bcl-2 family members in multiple
+myeloma and predicts sensitivity to BH3 mimetics</article-title>. <source>Leukemia</source>
+<volume>30</volume>, <fpage>761</fpage>–<lpage>764</lpage>. <pub-id pub-id-type="doi">10.1038/leu.2015.184</pub-id>.<pub-id pub-id-type="pmid">26174630</pub-id><pub-id pub-id-type="pmcid">PMC4714955</pub-id></mixed-citation></ref><ref id="ref40"><mixed-citation publication-type="journal" id="cit40"><name name-style="western"><surname>Huhn</surname><given-names>A. J.</given-names></name>; <name name-style="western"><surname>Guerra</surname><given-names>R. M.</given-names></name>; <name name-style="western"><surname>Harvey</surname><given-names>E. P.</given-names></name>; <name name-style="western"><surname>Bird</surname><given-names>G. H.</given-names></name>; <name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name> (<year>2016</year>) <article-title>Selective
+Covalent Targeting of Anti-Apoptotic BFL-1 by Cysteine-Reactive Stapled
+Peptide Inhibitors</article-title>. <source>Cell Chem. Biol.</source>
+<volume>23</volume>, <fpage>1123</fpage>–<lpage>1134</lpage>. <pub-id pub-id-type="doi">10.1016/j.chembiol.2016.07.022</pub-id>.<pub-id pub-id-type="pmid">27617850</pub-id><pub-id pub-id-type="pmcid">PMC5055752</pub-id></mixed-citation></ref><ref id="ref41"><mixed-citation publication-type="journal" id="cit41"><name name-style="western"><surname>Lowman</surname><given-names>X. H.</given-names></name>; <name name-style="western"><surname>McDonnell</surname><given-names>M. A.</given-names></name>; <name name-style="western"><surname>Kosloske</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Odumade</surname><given-names>O. A.</given-names></name>; <name name-style="western"><surname>Jenness</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Karim</surname><given-names>C. B.</given-names></name>; <name name-style="western"><surname>Jemmerson</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Kelekar</surname><given-names>A.</given-names></name> (<year>2010</year>) <article-title>The proapoptotic function of Noxa
+in human leukemia cells is regulated by the kinase Cdk5 and by glucose</article-title>. <source>Mol. Cell</source>
+<volume>40</volume>, <fpage>823</fpage>–<lpage>833</lpage>. <pub-id pub-id-type="doi">10.1016/j.molcel.2010.11.035</pub-id>.<pub-id pub-id-type="pmid">21145489</pub-id></mixed-citation></ref><ref id="ref42"><mixed-citation publication-type="journal" id="cit42"><name name-style="western"><surname>Starovasnik</surname><given-names>M. A.</given-names></name>; <name name-style="western"><surname>Braisted</surname><given-names>A. C.</given-names></name>; <name name-style="western"><surname>Wells</surname><given-names>J. A.</given-names></name> (<year>1997</year>) <article-title>Structural mimicry
+of a native protein by a minimized binding domain</article-title>. <source>Proc. Natl. Acad. Sci. U. S. A.</source>
+<volume>94</volume>, <fpage>10080</fpage>–<lpage>10085</lpage>. <pub-id pub-id-type="doi">10.1073/pnas.94.19.10080</pub-id>.<pub-id pub-id-type="pmid">9294166</pub-id><pub-id pub-id-type="pmcid">PMC23311</pub-id></mixed-citation></ref><ref id="ref43"><mixed-citation publication-type="journal" id="cit43"><name name-style="western"><surname>Naik</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Michalak</surname><given-names>E. M.</given-names></name>; <name name-style="western"><surname>Villunger</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Adams</surname><given-names>J. M.</given-names></name>; <name name-style="western"><surname>Strasser</surname><given-names>A.</given-names></name> (<year>2007</year>) <article-title>Ultraviolet radiation triggers apoptosis
+of fibroblasts and skin keratinocytes mainly via the BH3-only protein
+Noxa</article-title>. <source>J. Cell Biol.</source>
+<volume>176</volume>, <fpage>415</fpage>–<lpage>424</lpage>. <pub-id pub-id-type="doi">10.1083/jcb.200608070</pub-id>.<pub-id pub-id-type="pmid">17283183</pub-id><pub-id pub-id-type="pmcid">PMC2063977</pub-id></mixed-citation></ref><ref id="ref44"><mixed-citation publication-type="journal" id="cit44"><name name-style="western"><surname>Morales</surname><given-names>A. A.</given-names></name>; <name name-style="western"><surname>Olsson</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Celsing</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Osterborg</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Jondal</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Osorio</surname><given-names>L. M.</given-names></name> (<year>2005</year>) <article-title>High expression
+of bfl-1 contributes to the apoptosis resistant phenotype in B-cell
+chronic lymphocytic leukemia</article-title>. <source>Int. J. Cancer</source>
+<volume>113</volume>, <fpage>730</fpage>–<lpage>737</lpage>. <pub-id pub-id-type="doi">10.1002/ijc.20614</pub-id>.<pub-id pub-id-type="pmid">15499630</pub-id></mixed-citation></ref><ref id="ref45"><mixed-citation publication-type="journal" id="cit45"><name name-style="western"><surname>Vogler</surname><given-names>M.</given-names></name> (<year>2012</year>) <article-title>BCL2A1: the underdog in the BCL2
+family</article-title>. <source>Cell Death Differ.</source>
+<volume>19</volume>, <fpage>67</fpage>–<lpage>74</lpage>. <pub-id pub-id-type="doi">10.1038/cdd.2011.158</pub-id>.<pub-id pub-id-type="pmid">22075983</pub-id><pub-id pub-id-type="pmcid">PMC3252829</pub-id></mixed-citation></ref><ref id="ref46"><mixed-citation publication-type="journal" id="cit46"><name name-style="western"><surname>Butterworth</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Pettitt</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Varadarajan</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Cohen</surname><given-names>G. M.</given-names></name> (<year>2016</year>) <article-title>BH3 profiling and a toolkit of BH3-mimetic drugs predict
+anti-apoptotic dependence of cancer cells</article-title>. <source>Br.
+J. Cancer</source>
+<volume>114</volume>, <fpage>638</fpage>–<lpage>641</lpage>. <pub-id pub-id-type="doi">10.1038/bjc.2016.49</pub-id>.<pub-id pub-id-type="pmid">26954718</pub-id><pub-id pub-id-type="pmcid">PMC4800304</pub-id></mixed-citation></ref><ref id="ref47"><mixed-citation publication-type="journal" id="cit47"><name name-style="western"><surname>Herman</surname><given-names>M. D.</given-names></name>; <name name-style="western"><surname>Nyman</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Welin</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Lehtio</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Flodin</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Tresaugues</surname><given-names>L.</given-names></name>; <name name-style="western"><surname>Kotenyova</surname><given-names>T.</given-names></name>; <name name-style="western"><surname>Flores</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Nordlund</surname><given-names>P.</given-names></name> (<year>2008</year>) <article-title>Completing
+the family portrait of the anti-apoptotic Bcl-2 proteins: crystal
+structure of human Bfl-1 in complex with Bim</article-title>. <source>FEBS Lett.</source>
+<volume>582</volume>, <fpage>3590</fpage>–<lpage>3594</lpage>. <pub-id pub-id-type="doi">10.1016/j.febslet.2008.09.028</pub-id>.<pub-id pub-id-type="pmid">18812174</pub-id></mixed-citation></ref><ref id="ref48"><mixed-citation publication-type="journal" id="cit48"><name name-style="western"><surname>Stebbins</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Santelli</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Feng</surname><given-names>Y.</given-names></name>; <name name-style="western"><surname>De</surname><given-names>S. K.</given-names></name>; <name name-style="western"><surname>Purves</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Motamedchaboki</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Ronai</surname><given-names>Z. A.</given-names></name>; <name name-style="western"><surname>Liddington</surname><given-names>R. C.</given-names></name>; <name name-style="western"><surname>Pellecchia</surname><given-names>M.</given-names></name> (<year>2013</year>) <article-title>Structure-based design of covalent Siah inhibitors</article-title>. <source>Chem. Biol.</source>
+<volume>20</volume>, <fpage>973</fpage>–<lpage>982</lpage>. <pub-id pub-id-type="doi">10.1016/j.chembiol.2013.06.008</pub-id>.<pub-id pub-id-type="pmid">23891150</pub-id><pub-id pub-id-type="pmcid">PMC3763817</pub-id></mixed-citation></ref><ref id="ref49"><mixed-citation publication-type="journal" id="cit49"><name name-style="western"><surname>Bird</surname><given-names>G. H.</given-names></name>; <name name-style="western"><surname>Bernal</surname><given-names>F.</given-names></name>; <name name-style="western"><surname>Pitter</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name> (<year>2008</year>) <article-title>Synthesis and biophysical characterization of stabilized
+alpha-helices of BCL-2 domains</article-title>. <source>Methods Enzymol.</source>
+<volume>446</volume>, <fpage>369</fpage>–<lpage>386</lpage>. <pub-id pub-id-type="doi">10.1016/S0076-6879(08)01622-4</pub-id>.<pub-id pub-id-type="pmid">18603134</pub-id><pub-id pub-id-type="pmcid">PMC6384008</pub-id></mixed-citation></ref><ref id="ref50"><mixed-citation publication-type="journal" id="cit50"><name name-style="western"><surname>Bird</surname><given-names>G. H.</given-names></name>; <name name-style="western"><surname>Gavathiotis</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>LaBelle</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Katz</surname><given-names>S. G.</given-names></name>; <name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name> (<year>2014</year>) <article-title>Distinct BimBH3
+(BimSAHB) stapled peptides for structural and cellular studies</article-title>. <source>ACS Chem. Biol.</source>
+<volume>9</volume>, <fpage>831</fpage>–<lpage>837</lpage>. <pub-id pub-id-type="doi">10.1021/cb4003305</pub-id>.<pub-id pub-id-type="pmid">24358963</pub-id><pub-id pub-id-type="pmcid">PMC4131438</pub-id></mixed-citation></ref><ref id="ref51"><mixed-citation publication-type="journal" id="cit51"><name name-style="western"><surname>LaBelle</surname><given-names>J. L.</given-names></name>; <name name-style="western"><surname>Katz</surname><given-names>S. G.</given-names></name>; <name name-style="western"><surname>Bird</surname><given-names>G. H.</given-names></name>; <name name-style="western"><surname>Gavathiotis</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Stewart</surname><given-names>M. L.</given-names></name>; <name name-style="western"><surname>Lawrence</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Fisher</surname><given-names>J. K.</given-names></name>; <name name-style="western"><surname>Godes</surname><given-names>M.</given-names></name>; <name name-style="western"><surname>Pitter</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Kung</surname><given-names>A. L.</given-names></name>; <name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name> (<year>2012</year>) <article-title>A stapled BIM peptide
+overcomes apoptotic resistance in hematologic cancers</article-title>. <source>J. Clin. Invest.</source>
+<volume>122</volume>, <fpage>2018</fpage>–<lpage>2031</lpage>. <pub-id pub-id-type="doi">10.1172/JCI46231</pub-id>.<pub-id pub-id-type="pmid">22622039</pub-id><pub-id pub-id-type="pmcid">PMC3366394</pub-id></mixed-citation></ref><ref id="ref52"><mixed-citation publication-type="journal" id="cit52"><name name-style="western"><surname>Walensky</surname><given-names>L. D.</given-names></name>; <name name-style="western"><surname>Bird</surname><given-names>G. H.</given-names></name> (<year>2014</year>) <article-title>Hydrocarbon-stapled peptides: principles, practice,
+and progress</article-title>. <source>J. Med. Chem.</source>
+<volume>57</volume>, <fpage>6275</fpage>–<lpage>6288</lpage>. <pub-id pub-id-type="doi">10.1021/jm4011675</pub-id>.<pub-id pub-id-type="pmid">24601557</pub-id><pub-id pub-id-type="pmcid">PMC4136684</pub-id></mixed-citation></ref><ref id="ref53"><mixed-citation publication-type="journal" id="cit53"><name name-style="western"><surname>Hind</surname><given-names>C. K.</given-names></name>; <name name-style="western"><surname>Carter</surname><given-names>M. J.</given-names></name>; <name name-style="western"><surname>Harris</surname><given-names>C. L.</given-names></name>; <name name-style="western"><surname>Chan</surname><given-names>H. T.</given-names></name>; <name name-style="western"><surname>James</surname><given-names>S.</given-names></name>; <name name-style="western"><surname>Cragg</surname><given-names>M. S.</given-names></name> (<year>2015</year>) <article-title>Role of the pro-survival
+molecule Bfl-1 in melanoma</article-title>. <source>Int. J. Biochem.
+Cell Biol.</source>
+<volume>59</volume>, <fpage>94</fpage>–<lpage>102</lpage>. <pub-id pub-id-type="doi">10.1016/j.biocel.2014.11.015</pub-id>.<pub-id pub-id-type="pmid">25486183</pub-id></mixed-citation></ref><ref id="ref54"><mixed-citation publication-type="journal" id="cit54"><name name-style="western"><surname>Rega</surname><given-names>M. F.</given-names></name>; <name name-style="western"><surname>Wu</surname><given-names>B.</given-names></name>; <name name-style="western"><surname>Wei</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Zhang</surname><given-names>Z.</given-names></name>; <name name-style="western"><surname>Cellitti</surname><given-names>J. F.</given-names></name>; <name name-style="western"><surname>Pellecchia</surname><given-names>M.</given-names></name> (<year>2011</year>) <article-title>SAR by interligand
+nuclear overhauser effects (ILOEs) based discovery of acylsulfonamide
+compounds active against Bcl-x(L) and Mcl-1</article-title>. <source>J. Med. Chem.</source>
+<volume>54</volume>, <fpage>6000</fpage>–<lpage>6013</lpage>. <pub-id pub-id-type="doi">10.1021/jm200826s</pub-id>.<pub-id pub-id-type="pmid">21797225</pub-id><pub-id pub-id-type="pmcid">PMC3165075</pub-id></mixed-citation></ref><ref id="ref55"><mixed-citation publication-type="journal" id="cit55"><name name-style="western"><surname>Matutes</surname><given-names>E.</given-names></name>; <name name-style="western"><surname>Owusu-Ankomah</surname><given-names>K.</given-names></name>; <name name-style="western"><surname>Morilla</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Garcia Marco</surname><given-names>J.</given-names></name>; <name name-style="western"><surname>Houlihan</surname><given-names>A.</given-names></name>; <name name-style="western"><surname>Que</surname><given-names>T. H.</given-names></name>; <name name-style="western"><surname>Catovsky</surname><given-names>D.</given-names></name> (<year>1994</year>) <article-title>The immunological profile
+of B-cell disorders and proposal of a scoring system for the diagnosis
+of CLL</article-title>. <source>Leukemia</source>
+<volume>8</volume>, <fpage>1640</fpage>–<lpage>1645</lpage>.<pub-id pub-id-type="pmid">7523797</pub-id></mixed-citation></ref><ref id="ref56"><mixed-citation publication-type="journal" id="cit56"><name name-style="western"><surname>Kashyap</surname><given-names>M. K.</given-names></name>; <name name-style="western"><surname>Kumar</surname><given-names>D.</given-names></name>; <name name-style="western"><surname>Villa</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>La Clair</surname><given-names>J. J.</given-names></name>; <name name-style="western"><surname>Benner</surname><given-names>C.</given-names></name>; <name name-style="western"><surname>Sasik</surname><given-names>R.</given-names></name>; <name name-style="western"><surname>Jones</surname><given-names>H.</given-names></name>; <name name-style="western"><surname>Ghia</surname><given-names>E. M.</given-names></name>; <name name-style="western"><surname>Rassenti</surname><given-names>L. Z.</given-names></name>; <name name-style="western"><surname>Kipps</surname><given-names>T. J.</given-names></name>; <name name-style="western"><surname>Burkart</surname><given-names>M. D.</given-names></name>; <name name-style="western"><surname>Castro</surname><given-names>J. E.</given-names></name> (<year>2015</year>) <article-title>Targeting the spliceosome
+in chronic lymphocytic leukemia with the macrolides FD-895 and pladienolide-B</article-title>. <source>Haematologica</source>
+<volume>100</volume>, <fpage>945</fpage>–<lpage>954</lpage>. <pub-id pub-id-type="doi">10.3324/haematol.2014.122069</pub-id>.<pub-id pub-id-type="pmid">25862704</pub-id><pub-id pub-id-type="pmcid">PMC4486229</pub-id></mixed-citation></ref></ref-list></back></article>

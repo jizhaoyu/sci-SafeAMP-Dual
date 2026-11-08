@@ -1,0 +1,42 @@
+{
+  "dataset_name": "DAVIS",
+  "benchmark_source": "Therapeutics Data Commons / Nature Biotechnology 2011",
+  "total_pairs": 25772,
+  "unique_drugs": 68,
+  "unique_targets": 379,
+  "matrix_completeness": {
+    "expected_dense_pairs": 25772,
+    "observed_pairs": 25772,
+    "is_complete_dense_matrix": true,
+    "density_ratio": 1.0
+  },
+  "target_sequence_length_stats": {
+    "min": 244,
+    "max": 2549,
+    "mean": 744.8496042216359,
+    "median": 632
+  },
+  "binding_affinity_stats": {
+    "endpoint": "Kd",
+    "unit": "nM",
+    "min_kd_nM": 0.016,
+    "max_kd_nM": 10000.0,
+    "min_pKd": 5.0,
+    "max_pKd": 10.795880017344075,
+    "censored_limit_pairs (Kd == 10000 nM / pKd == 5.0)": 18343,
+    "censored_ratio": 0.7117414248021108,
+    "active_pairs (Kd < 10000 nM)": 7429,
+    "active_ratio": 0.28825857519788917,
+    "potent_sub_100nm_pairs (Kd <= 100 nM / pKd >= 7.0)": 1845,
+    "potent_sub_100nm_ratio": 0.07158932174452895,
+    "potent_sub_10nm_pairs (Kd <= 10 nM / pKd >= 8.0)": 637,
+    "potent_sub_1nm_pairs (Kd <= 1 nM / pKd >= 9.0)": 143
+  },
+  "scientific_audit_findings": {
+    "peptide_ligands_present": false,
+    "all_ligands_are_small_molecule_kinase_inhibitors": true,
+    "all_targets_are_human_catalytic_kinases": true,
+    "measurement_technology": "KinomeScan quantitative competitive binding assay",
+    "censoring_interpretation": "Values at exactly 10,000.0 nM represent assay ceiling (Kd > 10 uM / no binding at 10 uM screening concentration)"
+  }
+}

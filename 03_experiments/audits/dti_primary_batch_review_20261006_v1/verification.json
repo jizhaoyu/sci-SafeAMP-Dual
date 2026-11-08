@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-10-06T11:30:29.060461+00:00",
+  "passed": true,
+  "checks": {
+    "all_input_and_output_hashes_match": true,
+    "producer_hash_matches": true,
+    "all_89_decisions_unreleased": true,
+    "fp_11_means_match_original_table": true,
+    "fp_database_compound_is_parent_formula": true,
+    "targeted_coverage_checks": true
+  },
+  "scope": "Artifact hashes, 89-decision coverage and targeted FP table/compound identity check; not full molecular release, human review or model validation"
+}

@@ -1,0 +1,17 @@
+{
+  "status": "prepared",
+  "protocol_id": "protocol-dti-01",
+  "generated_at": "2026-10-07T13:55:11.888620+00:00",
+  "drug_feature_dim": 2568,
+  "target_feature_dim": 420,
+  "num_drugs": 68,
+  "num_targets": 379,
+  "total_pairs": 25772,
+  "outputs": {
+    "drug_features.npy": "53b3cb216bb0b5a6314a24743968f64df31ef292ecea939e7fed1459c3a32bdd",
+    "target_features.npy": "727ccaa0d3dbc8b9a2369868871bc77f1ee2a5a0d7a5fa39c2702324b362e9b6",
+    "drug_ids.json": "209bd7b9c1d1836b3f267e73308c35808bea27b804228944f6b796064a0a4348",
+    "target_ids.json": "e6ff029bb132bbd69baec6186671abbb1b7ad20ea0462c43e515142e2e5cc25a",
+    "pairs_metadata.csv": "f8c8e61a1485732a9f7f6148ae1a5b8d0b32df9fecaf54098991727529265a1e"
+  }
+}

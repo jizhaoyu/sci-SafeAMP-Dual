@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "protocol_id": "protocol-dti-01",
+  "generated_at": "2026-10-07T13:57:15.387421+00:00",
+  "models": [
+    "ridge_alpha10",
+    "ridge_alpha50",
+    "hist_gradient_boosting",
+    "worldmodel_stacked_ensemble"
+  ],
+  "outputs": {
+    "metrics_summary.json": "f3d64dcec46d9e1f2733dd649d7170d1fcf7c410c61c7e7974da8c141c5a1f06",
+    "models/worldmodel_stacked_ensemble.joblib": "50f81f8fe92c20026d4d01433d6b6441fee94fe87840aa5a4891dacb7a0ebb87"
+  }
+}

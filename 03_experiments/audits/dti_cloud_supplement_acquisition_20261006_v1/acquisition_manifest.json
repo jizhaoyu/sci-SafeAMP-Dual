@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-10-06T11:38:13.247094+00:00",
+  "scope": "Explicit public-source acquisition; identity, assay and license review pending",
+  "inputs": {
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_cloud_supplement_spec_20261006_v1\\requests.json": "13d8d62690471e76ed3661fd93f4d346f457022f0029185584f705048ec4c04c"
+  },
+  "producer_sha256": "2dcb27ac717456ac25693174aeddc2c7adac1601532c01bd92fde6057fe3c66b",
+  "helper_sha256": "f40d601a4c80571a19026f9849d872ba808aee32dc857e6b86d43b5b55c87ce6",
+  "records": [
+    {
+      "filename": "bet_cloud_metadata.json",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5117811.1/PMC5117811.1.json",
+      "role": "official_cloud_metadata_exact_version_from_XML",
+      "pmid": "27775715",
+      "license_note": "Published/manuscript status and individual rights must be read from actual returned metadata.",
+      "started_at": "2026-10-06T11:38:10.293437+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC5117811.1/PMC5117811.1.json",
+      "content_type": "binary/octet-stream",
+      "status": "acquired_not_reviewed",
+      "sha256": "9fd3c5aec84ff76403e039fe427a248f31a4aab5a7334cd4784f231ae56fb4d9",
+      "bytes": 1461,
+      "finished_at": "2026-10-06T11:38:12.293304+00:00"
+    },
+    {
+      "filename": "bet_cloud_objects.xml",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC5117811.1/",
+      "role": "official_public_object_inventory_candidate",
+      "pmid": "27775715",
+      "license_note": "Listing public objects is not evidence approval or blanket reuse permission.",
+      "started_at": "2026-10-06T11:38:10.294137+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC5117811.1/",
+      "content_type": "application/xml",
+      "status": "acquired_not_reviewed",
+      "sha256": "8c34eddaeb661e29ff458cbd2965b71a68ec28b910530020c9a9d672df90ea4b",
+      "bytes": 4022,
+      "finished_at": "2026-10-06T11:38:12.122449+00:00"
+    },
+    {
+      "filename": "nos_cloud_metadata.json",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4139154.1/PMC4139154.1.json",
+      "role": "official_cloud_metadata_version_candidate",
+      "pmid": "25089924",
+      "license_note": "Version 1 is a locator candidate, requiring exact PMID and DOI verification.",
+      "started_at": "2026-10-06T11:38:12.122449+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC4139154.1/PMC4139154.1.json",
+      "content_type": "binary/octet-stream",
+      "status": "acquired_not_reviewed",
+      "sha256": "c6578904bb12a80497e5c3740dc1d442f210cb199f823be1d5f573dcfbf51cc0",
+      "bytes": 1846,
+      "finished_at": "2026-10-06T11:38:13.056661+00:00"
+    },
+    {
+      "filename": "nos_cloud_objects.xml",
+      "url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4139154.1/",
+      "role": "official_public_object_inventory_candidate",
+      "pmid": "25089924",
+      "license_note": "Public object names and sizes must be verified before any claimed supplement acquisition.",
+      "started_at": "2026-10-06T11:38:12.293304+00:00",
+      "evidence_release": false,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC4139154.1/",
+      "content_type": "application/xml",
+      "status": "acquired_not_reviewed",
+      "sha256": "44d915eb8bd46b749277d4bf1ac87dbbcab7a713a82908f853b0b1b101384668",
+      "bytes": 4997,
+      "finished_at": "2026-10-06T11:38:13.246682+00:00"
+    }
+  ],
+  "labels_released": 0,
+  "model_fit_calls": 0
+}

@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-10-06T12:44:50.100258+00:00",
+  "benchmark": "DAVIS",
+  "total_pairs": 25772,
+  "n_drugs": 68,
+  "n_targets": 379,
+  "drug_clusters_count": 58,
+  "target_clusters_count": 197,
+  "cold_drug_max_leakage": 0.37962964177131653,
+  "cold_target_max_leakage": 0.3993231952190399,
+  "train_block_size": 16720,
+  "dual_cold_test_size": 975,
+  "inputs": {
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_field_review_20261006_v1\\state.json": "ea047a509193a7dc2c5d730b2ce4579bd90149a8b18ad4a499c3e3e66cfea1c0",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_field_review_20261006_v1\\drugs.json": "765f2056b7b1f4472dd1aca5d9b2f2f0c2f92f08c7816550a6b1e0e24d325f80",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_field_review_20261006_v1\\inventory.json": "fe638605a40e332eccb4ba0d7b1c806f994d41f619a603584058d80eccf4d6b4",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_field_review_20261006_v1\\report.md": "8d975a25496df4f234ee92163c9ef817ae103d8401ab576880dde6d437163ce8",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_field_review_20261006_v1\\targets.json": "72abf195e2c66d7bcb35edbe862abb7e49d052a0a78fae4ebe5e465d98d332fa",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\davis.csv": "d54e81d2b6172f5ea71dacc4d7615adaee1cfbabcefccc7f2b46c7c48c19a373",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\drug_sim_matrix.npy": "063640161f80bfef4881e3dfca3ce3aa9fb735849534e50b13032fbc6bd46f76",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\target_sim_matrix.npy": "b67cd02e90c5227650ae54a5c2cc70c85ed40c5c6c4f05c00b60f6f24673a1b9"
+  },
+  "producer_sha256": "f0dc2ae95c5b27f6529f839ed9e1313052eebb57367cdfad42cd6ebc3e244fea"
+}

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-10-06T12:42:17.620935+00:00",
+  "total_pairs": 25772,
+  "n_drugs": 68,
+  "n_targets": 379,
+  "is_complete_matrix": true,
+  "censored_ratio": 0.7117414248021108,
+  "active_ratio": 0.28825857519788917,
+  "inputs": {
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\state.json": "b1243c5ba23cf1e896a787cf26fb68212a5219fa4e2a141b8dd80d8d88afb0df",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\acquisition_manifest.json": "f94075148a846dc8cce34bda1554ab0dadce0f9562bd8dd63a274a17918806e6",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\davis.csv": "d54e81d2b6172f5ea71dacc4d7615adaee1cfbabcefccc7f2b46c7c48c19a373",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_acquisition_20261006_v2\\report.md": "c1ef4b5f459ac89124b47e7acb546cfd3ea3b859e791127b9c3168dc65e64b18"
+  },
+  "producer_sha256": "f19a09b1b72b98db6164107c9e01e7a79322b1b2b2c22b52cc28402cfa93a744"
+}

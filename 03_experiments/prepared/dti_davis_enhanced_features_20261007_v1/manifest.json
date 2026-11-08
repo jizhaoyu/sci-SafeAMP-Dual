@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-10-07T05:36:21.440096+00:00",
+  "protocol_id": "protocol-dti-01",
+  "outputs": {
+    "drug_features.npy": "a3f5260c66bbe6a0a0dc951b86bb8fe74d668b7304d72bf7805fbc4247516d8a",
+    "target_features.npy": "389173a25bea6019788a9272527ecfc0e18e18f04fe5a65bbb9a1c893ad4a1c2",
+    "drug_ids.json": "209bd7b9c1d1836b3f267e73308c35808bea27b804228944f6b796064a0a4348",
+    "target_ids.json": "e6ff029bb132bbd69baec6186671abbb1b7ad20ea0462c43e515142e2e5cc25a",
+    "pairs_metadata.csv": "f8c8e61a1485732a9f7f6148ae1a5b8d0b32df9fecaf54098991727529265a1e",
+    "feature_spec.json": "e7fae1955f653ead1f95d32d91b5def6f3a3f3d01fcf43099748f14d05f93749"
+  }
+}

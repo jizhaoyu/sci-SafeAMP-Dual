@@ -1,0 +1,116 @@
+{
+  "benchmark": "DAVIS",
+  "total_pairs": 25772,
+  "n_drugs": 68,
+  "n_targets": 379,
+  "drug_clustering": {
+    "method": "Morgan circular fingerprint (radius=2, bits=2048) Tanimoto similarity",
+    "threshold": 0.4,
+    "total_clusters": 58,
+    "max_cluster_size": 5,
+    "giant_component_present": false,
+    "five_fold_distribution": [
+      {
+        "fold": 1,
+        "drugs_count": 14,
+        "ratio": 0.20588235294117646,
+        "max_leakage_sim": 0.37962964177131653
+      },
+      {
+        "fold": 2,
+        "drugs_count": 14,
+        "ratio": 0.20588235294117646,
+        "max_leakage_sim": 0.37962964177131653
+      },
+      {
+        "fold": 3,
+        "drugs_count": 14,
+        "ratio": 0.20588235294117646,
+        "max_leakage_sim": 0.3333333432674408
+      },
+      {
+        "fold": 4,
+        "drugs_count": 13,
+        "ratio": 0.19117647058823528,
+        "max_leakage_sim": 0.31481480598449707
+      },
+      {
+        "fold": 5,
+        "drugs_count": 13,
+        "ratio": 0.19117647058823528,
+        "max_leakage_sim": 0.3333333432674408
+      }
+    ],
+    "max_cross_fold_similarity": 0.37962964177131653,
+    "zero_leakage_guaranteed": true
+  },
+  "target_clustering": {
+    "method": "Global Needleman-Wunsch sequence alignment (match=+2, mismatch=-1, gap=-2)",
+    "threshold": 0.4,
+    "total_clusters": 197,
+    "max_cluster_size": 11,
+    "giant_component_present": false,
+    "five_fold_distribution": [
+      {
+        "fold": 1,
+        "targets_count": 76,
+        "ratio": 0.20052770448548812,
+        "max_leakage_identity": 0.3993231952190399
+      },
+      {
+        "fold": 2,
+        "targets_count": 76,
+        "ratio": 0.20052770448548812,
+        "max_leakage_identity": 0.3993231952190399
+      },
+      {
+        "fold": 3,
+        "targets_count": 76,
+        "ratio": 0.20052770448548812,
+        "max_leakage_identity": 0.39530685544013977
+      },
+      {
+        "fold": 4,
+        "targets_count": 76,
+        "ratio": 0.20052770448548812,
+        "max_leakage_identity": 0.3958333432674408
+      },
+      {
+        "fold": 5,
+        "targets_count": 75,
+        "ratio": 0.19788918205804748,
+        "max_leakage_identity": 0.39830508828163147
+      }
+    ],
+    "max_cross_fold_identity": 0.3993231952190399,
+    "zero_leakage_guaranteed": true
+  },
+  "block_partition_regimes": {
+    "training_block (seen drug & seen target in train)": {
+      "pairs": 16720,
+      "ratio": 0.6487661027471675
+    },
+    "strict_dual_cold_test (unseen drug & unseen target)": {
+      "pairs": 975,
+      "ratio": 0.03783175539345025,
+      "unseen_drugs_count": 13,
+      "unseen_targets_count": 75,
+      "max_drug_similarity_to_train": 0.3333333432674408,
+      "max_target_identity_to_train": 0.39830508828163147
+    },
+    "cold_target_seen_drug_test": {
+      "pairs": 4125,
+      "ratio": 0.16005742666459724
+    },
+    "cold_drug_seen_target_test": {
+      "pairs": 3952,
+      "ratio": 0.15334471519478504
+    }
+  },
+  "feasibility_verdict": {
+    "cold_drug_cv_feasible": true,
+    "cold_target_cv_feasible": true,
+    "strict_dual_cold_block_split_feasible": true,
+    "zero_leakage_mathematically_proven": true
+  }
+}

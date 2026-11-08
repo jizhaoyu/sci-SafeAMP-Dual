@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-10-06T12:49:38.009799+00:00",
+  "status": "davis_features_extracted_ready_for_baselines",
+  "protocol_id": "protocol-dti-01",
+  "training_ready": false,
+  "total_pairs": 25772,
+  "domain_counts": {
+    "train_block": 16720,
+    "cold_target_test": 4125,
+    "cold_drug_test": 3952,
+    "strict_dual_cold_test": 975
+  },
+  "inputs": {
+    "protocol": "3726eab061a41acd3a89930e93eeabc15260c753b8024c4a49b41dca10931ff0",
+    "davis_csv": "d54e81d2b6172f5ea71dacc4d7615adaee1cfbabcefccc7f2b46c7c48c19a373",
+    "fold_memberships": "f74409e6d62f20fbb9ee9481cda4120c9fa4fa704d2817461ca595f8ada1b500"
+  },
+  "outputs": {
+    "drug_features.npy": "8e7c734ce04d8a65814bdfcffdc0aef564bc888e9efd060d4caccfd1d2811d63",
+    "target_features.npy": "e7538ea8c818087bcbf4bba5c3d84f72ca479422332135b10ea07557eb2006ef",
+    "drug_ids.json": "3ccf3a8903d69fa9b5b5f968243616c4effb789bfe4db6055d0e37b2a1e7d338",
+    "target_ids.json": "54e2997da801b70a4906bf515590b6e34e4826779dc1724a2c52d6e130e1a309",
+    "pairs_metadata.csv": "27b0c88fa636d531dac64e12505d8aea62def420824c3653ca1e26c6d57616e8",
+    "manifest.json": "563ded4f7e52ca0f87f1028aca57481077413f6558fd9d1f1319d19d8001728b"
+  }
+}

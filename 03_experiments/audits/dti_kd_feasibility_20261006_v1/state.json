@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-10-06T11:08:22.986246+00:00",
+  "research_direction": "DTI",
+  "endpoint": "Kd",
+  "status": "source_preflight_blocked",
+  "error": {
+    "type": "ValueError",
+    "message": "Required source fields absent: ['BindingDB Target Chain Sequence']"
+  },
+  "training_ready": false,
+  "observations_released": 0,
+  "model_fit_calls": 0,
+  "protocol_status": "not_frozen",
+  "split_audit": "not_computed",
+  "protected_files_unchanged": true,
+  "outputs": {
+    "acquisition_manifest.json": "652129e80be474a76503215033789b55c97dd96112b4d7027519666e82e00030",
+    "bindingdb_articles.md5": "e5c8183d9a7814194143f1a37d8404a38ecc99f0b2223e2ea64a2ac01f03a948",
+    "BindingDB_BindingDB_Articles_202610_tsv.zip": "727383bac35beed6bc5c55c40dfbd58ba023fa97a7f27dc1a61440c1ad54a2b7",
+    "bindingdb_download.html": "219820a8b1b186a1286daea48a6dfba383e5c6204fa162a2468fcae43965e2c5",
+    "columns.json": "d858d61c7d4c1310939e5509769f71e6f22c2039ec07ed31fd9f6db971f9d283",
+    "davis_article.html": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+    "protected_inputs.json": "feda87de5d59c536803d36c3b77a2859b52d741295c350b41d274db4d4dddf11",
+    "tdc_dti.html": "9abc84dc5a550fd5b2a17b44b4bd738e9b35a815b328800648c1f0abb99c0284",
+    "verification.json": "629b56f706297860e4d808bea0fd1f97b5eab9d56e1a1fb296aa4b4e03e02247"
+  },
+  "producer_sha256": "f560fad07b38562902352c9533165e9762554ae9872d8322b6f9b60a3f7fb7c2",
+  "next_stage": "Original-source, actual molecule/construct identity and assay review before isolation and protocol freeze"
+}

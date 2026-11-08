@@ -1,0 +1,34 @@
+{
+  "version": "dti_davis_rigorous_20261009_v1",
+  "created_at": "2026-10-09",
+  "input_features": {
+    "source_dir": "D:\\桌面文件\\sci\\03_experiments\\prepared\\dti_davis_clean_features_20261009_v1",
+    "features_dim": 2988,
+    "drug_features_dim": 2568,
+    "target_features_dim": 420
+  },
+  "serialized_models": {
+    "ridge_alpha10.joblib": "c53d4740c4d35c88d637063c555de4dcdaf37e24002731c31dafd565527156fb",
+    "ridge_alpha50.joblib": "f6f64d345fdb4beaea40dc3c86af20bd8497a8a2002d187a9dbd1635a7a600af",
+    "hist_gradient_boosting.joblib": "ef890c916dce336952aa7aa569c07e049303ceddb3a7da1c9709163d43f9d14b",
+    "random_forest.joblib": "12958a9f0b0e01c992aeec2572f0f7ed0f384dc604ca775918048dacaf973ae2",
+    "stacked_ensemble_meta.joblib": "4a8513d0242d51c918e0cd3fd5f9184d3dc20a67048131ab305e4f08cd44c9ee"
+  },
+  "files": {
+    "predictions.csv": {
+      "rows": 25772,
+      "path": "D:\\桌面文件\\sci\\03_experiments\\runs\\dti_davis_rigorous_20261009_v1\\predictions.csv"
+    },
+    "oof_predictions.csv": {
+      "rows": 16720,
+      "path": "D:\\桌面文件\\sci\\03_experiments\\runs\\dti_davis_rigorous_20261009_v1\\oof_predictions.csv"
+    },
+    "metrics_summary.json": {
+      "path": "D:\\桌面文件\\sci\\03_experiments\\runs\\dti_davis_rigorous_20261009_v1\\metrics_summary.json"
+    },
+    "cv_splits.json": {
+      "folds": 5,
+      "path": "D:\\桌面文件\\sci\\03_experiments\\runs\\dti_davis_rigorous_20261009_v1\\cv_splits.json"
+    }
+  }
+}

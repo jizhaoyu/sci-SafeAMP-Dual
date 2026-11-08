@@ -1,0 +1,1740 @@
+[
+  {
+    "observation_id": "bindingdb_202610_articles_line_70479",
+    "reaction_id": "262184",
+    "source_tsv_line": "70479",
+    "pmid": "25089924",
+    "raw_ligand_id": "130382",
+    "raw_kd_nM": " 212",
+    "raw_target_name": "Nitric oxide synthase, brain",
+    "raw_sequence_length": 1429,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70480",
+    "reaction_id": "262185",
+    "source_tsv_line": "70480",
+    "pmid": "25089924",
+    "raw_ligand_id": "130382",
+    "raw_kd_nM": " 1.93e+3",
+    "raw_target_name": "Isoform PNNOS of Nitric oxide synthase, brain (PNNOS) -973,I269V,M336V,D597N]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70481",
+    "reaction_id": "262186",
+    "source_tsv_line": "70481",
+    "pmid": "25089924",
+    "raw_ligand_id": "130382",
+    "raw_kd_nM": " 4.13e+4",
+    "raw_target_name": "Nitric oxide synthase, endothelial",
+    "raw_sequence_length": 1205,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70482",
+    "reaction_id": "262187",
+    "source_tsv_line": "70482",
+    "pmid": "25089924",
+    "raw_ligand_id": "130383",
+    "raw_kd_nM": " 198",
+    "raw_target_name": "Nitric oxide synthase, brain",
+    "raw_sequence_length": 1429,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70483",
+    "reaction_id": "262188",
+    "source_tsv_line": "70483",
+    "pmid": "25089924",
+    "raw_ligand_id": "130383",
+    "raw_kd_nM": " 393",
+    "raw_target_name": "Isoform PNNOS of Nitric oxide synthase, brain (PNNOS) -973,I269V,M336V,D597N]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70484",
+    "reaction_id": "262189",
+    "source_tsv_line": "70484",
+    "pmid": "25089924",
+    "raw_ligand_id": "130383",
+    "raw_kd_nM": " 5.58e+4",
+    "raw_target_name": "Nitric oxide synthase, endothelial",
+    "raw_sequence_length": 1205,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70485",
+    "reaction_id": "262190",
+    "source_tsv_line": "70485",
+    "pmid": "25089924",
+    "raw_ligand_id": "130383",
+    "raw_kd_nM": " 7.27e+3",
+    "raw_target_name": "Nitric oxide synthase, endothelial [1-973,L111A]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70486",
+    "reaction_id": "262191",
+    "source_tsv_line": "70486",
+    "pmid": "25089924",
+    "raw_ligand_id": "130384",
+    "raw_kd_nM": " 50",
+    "raw_target_name": "Nitric oxide synthase, brain",
+    "raw_sequence_length": 1429,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70487",
+    "reaction_id": "262192",
+    "source_tsv_line": "70487",
+    "pmid": "25089924",
+    "raw_ligand_id": "130384",
+    "raw_kd_nM": " 153",
+    "raw_target_name": "Isoform PNNOS of Nitric oxide synthase, brain (PNNOS) -973,I269V,M336V,D597N]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70488",
+    "reaction_id": "262193",
+    "source_tsv_line": "70488",
+    "pmid": "25089924",
+    "raw_ligand_id": "130384",
+    "raw_kd_nM": " 352",
+    "raw_target_name": "Isoform PNNOS of Nitric oxide synthase, brain (PNNOS) -973,I269V,H341L]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70489",
+    "reaction_id": "262194",
+    "source_tsv_line": "70489",
+    "pmid": "25089924",
+    "raw_ligand_id": "130384",
+    "raw_kd_nM": " 1.60e+3",
+    "raw_target_name": "Nitric oxide synthase, endothelial",
+    "raw_sequence_length": 1205,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70490",
+    "reaction_id": "262195",
+    "source_tsv_line": "70490",
+    "pmid": "25089924",
+    "raw_ligand_id": "130384",
+    "raw_kd_nM": " 3.49e+3",
+    "raw_target_name": "Nitric oxide synthase, endothelial [1-973,Y477A]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70491",
+    "reaction_id": "262196",
+    "source_tsv_line": "70491",
+    "pmid": "25089924",
+    "raw_ligand_id": "130384",
+    "raw_kd_nM": " 1.18e+3",
+    "raw_target_name": "Nitric oxide synthase, endothelial [1-973,L111A]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70492",
+    "reaction_id": "262197",
+    "source_tsv_line": "70492",
+    "pmid": "25089924",
+    "raw_ligand_id": "130385",
+    "raw_kd_nM": " 30",
+    "raw_target_name": "Nitric oxide synthase, brain",
+    "raw_sequence_length": 1429,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70493",
+    "reaction_id": "262198",
+    "source_tsv_line": "70493",
+    "pmid": "25089924",
+    "raw_ligand_id": "130385",
+    "raw_kd_nM": " 265",
+    "raw_target_name": "Isoform PNNOS of Nitric oxide synthase, brain (PNNOS) -973,I269V,M336V,D597N]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70494",
+    "reaction_id": "262199",
+    "source_tsv_line": "70494",
+    "pmid": "25089924",
+    "raw_ligand_id": "130385",
+    "raw_kd_nM": " 632",
+    "raw_target_name": "Isoform PNNOS of Nitric oxide synthase, brain (PNNOS) -973,I269V,H341L]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70495",
+    "reaction_id": "262200",
+    "source_tsv_line": "70495",
+    "pmid": "25089924",
+    "raw_ligand_id": "130385",
+    "raw_kd_nM": " 1.06e+4",
+    "raw_target_name": "Nitric oxide synthase, endothelial",
+    "raw_sequence_length": 1205,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70496",
+    "reaction_id": "262201",
+    "source_tsv_line": "70496",
+    "pmid": "25089924",
+    "raw_ligand_id": "130385",
+    "raw_kd_nM": " 1.54e+4",
+    "raw_target_name": "Nitric oxide synthase, endothelial [1-973,Y477A]",
+    "raw_sequence_length": 973,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_70497",
+    "reaction_id": "262202",
+    "source_tsv_line": "70497",
+    "pmid": "25089924",
+    "raw_ligand_id": "130385",
+    "raw_kd_nM": " 1.19e+3",
+    "raw_target_name": "Nitric oxide synthase, inducible",
+    "raw_sequence_length": 1153,
+    "formal_release": false,
+    "original_file_sha256": "03378cbbd8704ea6c5bbf8fceee2ff68c8748895e323707b4884e6a0cbd6fa69",
+    "decision": "spectral_binding_endpoint_and_actual_fragment_pending",
+    "location": "Table 2; Spectral Binding Constants; Experimental Procedures",
+    "original_endpoint": "imidazole_corrected_spectral_Ks",
+    "original_unit": "uM",
+    "reasons": [
+      "Original endpoint is Ks after an imidazole competition correction. Its equivalence to the selected protocol Kd must be justified, not assumed from the database column.",
+      "Binding measured heme-domain samples. Full-length sequences or nominal residue ranges do not by themselves identify the actual proteolytic fragment used.",
+      "Table 1 Ki and Table 2 Ks are separate endpoints; no interchange."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76010",
+    "reaction_id": "363872",
+    "source_tsv_line": "76010",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 27",
+    "raw_target_name": "Bromodomain-containing protein 2 [71-194]",
+    "raw_sequence_length": 124,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76011",
+    "reaction_id": "363873",
+    "source_tsv_line": "76011",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 18",
+    "raw_target_name": "Bromodomain-containing protein 2 [348-455]",
+    "raw_sequence_length": 108,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76012",
+    "reaction_id": "363874",
+    "source_tsv_line": "76012",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 5.6",
+    "raw_target_name": "Bromodomain-containing protein 2 [71-194,348-455]",
+    "raw_sequence_length": 232,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76013",
+    "reaction_id": "363875",
+    "source_tsv_line": "76013",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 14",
+    "raw_target_name": "Bromodomain-containing protein 3 [24-144]",
+    "raw_sequence_length": 121,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76014",
+    "reaction_id": "363876",
+    "source_tsv_line": "76014",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 19",
+    "raw_target_name": "Bromodomain-containing protein 3 [306-416]",
+    "raw_sequence_length": 111,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76015",
+    "reaction_id": "363877",
+    "source_tsv_line": "76015",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 14",
+    "raw_target_name": "Bromodomain-containing protein 3 [24-144,306-416]",
+    "raw_sequence_length": 232,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76016",
+    "reaction_id": "363878",
+    "source_tsv_line": "76016",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 14",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76017",
+    "reaction_id": "363879",
+    "source_tsv_line": "76017",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 8.2",
+    "raw_target_name": "Bromodomain-containing protein 4 [333-460]",
+    "raw_sequence_length": 128,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76018",
+    "reaction_id": "363880",
+    "source_tsv_line": "76018",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 7.3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76019",
+    "reaction_id": "363881",
+    "source_tsv_line": "76019",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 11",
+    "raw_target_name": "Isoform C of Bromodomain-containing protein 4 (Short)",
+    "raw_sequence_length": 722,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76020",
+    "reaction_id": "363882",
+    "source_tsv_line": "76020",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 47",
+    "raw_target_name": "Bromodomain testis-specific protein [21-137]",
+    "raw_sequence_length": 117,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76021",
+    "reaction_id": "363883",
+    "source_tsv_line": "76021",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 35",
+    "raw_target_name": "Bromodomain testis-specific protein [251-382]",
+    "raw_sequence_length": 132,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76022",
+    "reaction_id": "363884",
+    "source_tsv_line": "76022",
+    "pmid": "27775715",
+    "raw_ligand_id": "205429",
+    "raw_kd_nM": " 46",
+    "raw_target_name": "Bromodomain testis-specific protein [21-137,251-382]",
+    "raw_sequence_length": 249,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76049",
+    "reaction_id": "363911",
+    "source_tsv_line": "76049",
+    "pmid": "27775715",
+    "raw_ligand_id": "205430",
+    "raw_kd_nM": " 0.034",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76050",
+    "reaction_id": "363912",
+    "source_tsv_line": "76050",
+    "pmid": "27775715",
+    "raw_ligand_id": "205431",
+    "raw_kd_nM": " 0.01",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76051",
+    "reaction_id": "363913",
+    "source_tsv_line": "76051",
+    "pmid": "27775715",
+    "raw_ligand_id": "205432",
+    "raw_kd_nM": " 0.014",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76052",
+    "reaction_id": "363914",
+    "source_tsv_line": "76052",
+    "pmid": "27775715",
+    "raw_ligand_id": "205433",
+    "raw_kd_nM": " 0.029",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76053",
+    "reaction_id": "363915",
+    "source_tsv_line": "76053",
+    "pmid": "27775715",
+    "raw_ligand_id": "205434",
+    "raw_kd_nM": " 0.023",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76054",
+    "reaction_id": "363916",
+    "source_tsv_line": "76054",
+    "pmid": "27775715",
+    "raw_ligand_id": "205435",
+    "raw_kd_nM": " 0.026",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76055",
+    "reaction_id": "363917",
+    "source_tsv_line": "76055",
+    "pmid": "27775715",
+    "raw_ligand_id": "205438",
+    "raw_kd_nM": " 0.062",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76056",
+    "reaction_id": "363918",
+    "source_tsv_line": "76056",
+    "pmid": "27775715",
+    "raw_ligand_id": "205431",
+    "raw_kd_nM": " 0.024",
+    "raw_target_name": "Bromodomain-containing protein 4 [333-460]",
+    "raw_sequence_length": 128,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76057",
+    "reaction_id": "363919",
+    "source_tsv_line": "76057",
+    "pmid": "27775715",
+    "raw_ligand_id": "205430",
+    "raw_kd_nM": " 0.047",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76058",
+    "reaction_id": "363920",
+    "source_tsv_line": "76058",
+    "pmid": "27775715",
+    "raw_ligand_id": "205431",
+    "raw_kd_nM": " 0.0047",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76059",
+    "reaction_id": "363921",
+    "source_tsv_line": "76059",
+    "pmid": "27775715",
+    "raw_ligand_id": "205432",
+    "raw_kd_nM": " 0.0091",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76060",
+    "reaction_id": "363922",
+    "source_tsv_line": "76060",
+    "pmid": "27775715",
+    "raw_ligand_id": "205433",
+    "raw_kd_nM": " 0.0075",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76061",
+    "reaction_id": "363923",
+    "source_tsv_line": "76061",
+    "pmid": "27775715",
+    "raw_ligand_id": "205434",
+    "raw_kd_nM": " 0.0066",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76062",
+    "reaction_id": "363924",
+    "source_tsv_line": "76062",
+    "pmid": "27775715",
+    "raw_ligand_id": "205435",
+    "raw_kd_nM": " 0.0059",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168,333-460]",
+    "raw_sequence_length": 253,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76063",
+    "reaction_id": "363925",
+    "source_tsv_line": "76063",
+    "pmid": "27775715",
+    "raw_ligand_id": "205431",
+    "raw_kd_nM": " 0.013",
+    "raw_target_name": "Isoform C of Bromodomain-containing protein 4 (Short)",
+    "raw_sequence_length": 722,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76064",
+    "reaction_id": "363926",
+    "source_tsv_line": "76064",
+    "pmid": "27775715",
+    "raw_ligand_id": "205431",
+    "raw_kd_nM": " 0.039",
+    "raw_target_name": "Bromodomain testis-specific protein [21-137,251-382]",
+    "raw_sequence_length": 249,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76116",
+    "reaction_id": "363978",
+    "source_tsv_line": "76116",
+    "pmid": "27775715",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 39.5",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76117",
+    "reaction_id": "363979",
+    "source_tsv_line": "76117",
+    "pmid": "27775715",
+    "raw_ligand_id": "205431",
+    "raw_kd_nM": " 16.7",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_76118",
+    "reaction_id": "363980",
+    "source_tsv_line": "76118",
+    "pmid": "27775715",
+    "raw_ligand_id": "205453",
+    "raw_kd_nM": " 3.09",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-168]",
+    "raw_sequence_length": 125,
+    "formal_release": false,
+    "original_file_sha256": "257407e10f5d6395255c96324e8f2ca1c86575442822925c70775fa30d26c2d0",
+    "decision": "exact_value_ligand_and_assay_construct_join_pending",
+    "location": "Methods, Protein expression and purification, Isothermal Titration Calorimetry; Supplementary Table 1/Figure 4 pending",
+    "original_endpoint": "assay_specific_affinity_pending_cell_by_cell_confirmation",
+    "reasons": [
+      "Original distinguishes IC50, phage-displacement Kd and ITC Kd; bivalent binding introduces assay/stoichiometry context. Keep separate observations.",
+      "The reported tandem protein spans 1–463; database concatenated-domain sequence is not automatically the actual tested continuous construct.",
+      "Picomolar and nanomolar assay observations can coexist; do not claim a unit error without the exact supplementary cell."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79530",
+    "reaction_id": "397497",
+    "source_tsv_line": "79530",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 4.8e+3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79531",
+    "reaction_id": "397498",
+    "source_tsv_line": "79531",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 5.22e+4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,W81A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79532",
+    "reaction_id": "397499",
+    "source_tsv_line": "79532",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 1.12e+4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,P82A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79533",
+    "reaction_id": "397500",
+    "source_tsv_line": "79533",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 3.98e+4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,L94A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79534",
+    "reaction_id": "397501",
+    "source_tsv_line": "79534",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 8.5e+3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,Y139F]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79535",
+    "reaction_id": "397502",
+    "source_tsv_line": "79535",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 6.9e+3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D144A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79536",
+    "reaction_id": "397503",
+    "source_tsv_line": "79536",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 2.38e+4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D145A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79537",
+    "reaction_id": "397504",
+    "source_tsv_line": "79537",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 1.71e+4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,I246A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ],
+    "target_annotation_issue": "Raw name says I246A; original Table 1/2 says I146A. Raw domain sequence differs from WT at residue 146. Preserve raw name; no silent correction."
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79538",
+    "reaction_id": "397505",
+    "source_tsv_line": "79538",
+    "pmid": "24497639",
+    "raw_ligand_id": "227644",
+    "raw_kd_nM": " 7.27e+4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,M149A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "excluded_peptide_ligand_from_small_molecule_scope",
+    "location": "Table 1; Peptides; TR-FRET assay",
+    "original_endpoint": "histone_H4_peptide_competition_KD",
+    "reasons": [
+      "Actual ligand is the tetra-acetylated histone H4 peptide; preserve evidence but exclude from the selected small-molecule task."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79539",
+    "reaction_id": "397506",
+    "source_tsv_line": "79539",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 14.5",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79540",
+    "reaction_id": "397507",
+    "source_tsv_line": "79540",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 834.7",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,W81A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79541",
+    "reaction_id": "397508",
+    "source_tsv_line": "79541",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 229.3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,P82A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79542",
+    "reaction_id": "397509",
+    "source_tsv_line": "79542",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 85.3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,L94A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79543",
+    "reaction_id": "397510",
+    "source_tsv_line": "79543",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 474.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,Y97F]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79544",
+    "reaction_id": "397511",
+    "source_tsv_line": "79544",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 11.4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,Y139F]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79545",
+    "reaction_id": "397512",
+    "source_tsv_line": "79545",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 447.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,N140A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79546",
+    "reaction_id": "397513",
+    "source_tsv_line": "79546",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 56.6",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D144A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79547",
+    "reaction_id": "397514",
+    "source_tsv_line": "79547",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 15.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D145A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79548",
+    "reaction_id": "397515",
+    "source_tsv_line": "79548",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 414.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,I246A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ],
+    "target_annotation_issue": "Raw name says I246A; original Table 1/2 says I146A. Raw domain sequence differs from WT at residue 146. Preserve raw name; no silent correction."
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79549",
+    "reaction_id": "397516",
+    "source_tsv_line": "79549",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 267.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,M149A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "parent_ligand_attribution_rejected_probe_identity_pending",
+    "location": "Table 2 FP row; Fluorescence Polarization (FP); Figure 6A",
+    "original_endpoint": "JQ1_TAMRA_probe_KD",
+    "reasons": [
+      "FP measurements used a chemically labeled JQ1-TAMRA derivative. Raw compound identity is the parent JQ1; comparable probe affinity does not make it the same molecule."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79550",
+    "reaction_id": "397517",
+    "source_tsv_line": "79550",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 1.0",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79551",
+    "reaction_id": "397518",
+    "source_tsv_line": "79551",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 13.7",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,W81A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79552",
+    "reaction_id": "397519",
+    "source_tsv_line": "79552",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 3.64",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,P82A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79553",
+    "reaction_id": "397520",
+    "source_tsv_line": "79553",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 2.14",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,L94A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79554",
+    "reaction_id": "397521",
+    "source_tsv_line": "79554",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 10.5",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,Y97F]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79555",
+    "reaction_id": "397522",
+    "source_tsv_line": "79555",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 1.0",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,Y139F]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79556",
+    "reaction_id": "397523",
+    "source_tsv_line": "79556",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 8.6",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,N140A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79557",
+    "reaction_id": "397524",
+    "source_tsv_line": "79557",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 1.0",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D144A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79558",
+    "reaction_id": "397525",
+    "source_tsv_line": "79558",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 1.1",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D145A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79559",
+    "reaction_id": "397526",
+    "source_tsv_line": "79559",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 2.4",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,I246A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ],
+    "target_annotation_issue": "Raw name says I246A; original Table 1/2 says I146A. Raw domain sequence differs from WT at residue 146. Preserve raw name; no silent correction."
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79560",
+    "reaction_id": "397527",
+    "source_tsv_line": "79560",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 9.7",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,M149A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "thermal_model_derived_KD_and_construct_review_pending",
+    "location": "Table 2 TSA row; Thermal Shift Assay",
+    "original_endpoint": "thermal_model_derived_KD_at_reference_temperature",
+    "reasons": [
+      "Retain the measured stabilization experiment and fitted thermodynamic parameter separately; no automatic mixing with direct or competition affinity assays.",
+      "Actual purified protein identity and tag/domain representation require the cited construct record."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79561",
+    "reaction_id": "397528",
+    "source_tsv_line": "79561",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 105.7",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79562",
+    "reaction_id": "397529",
+    "source_tsv_line": "79562",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 174.1",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,P82A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79563",
+    "reaction_id": "397530",
+    "source_tsv_line": "79563",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 42.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,L94A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79564",
+    "reaction_id": "397531",
+    "source_tsv_line": "79564",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 61.3",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,Y139F]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79565",
+    "reaction_id": "397532",
+    "source_tsv_line": "79565",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 44.0",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D144A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79566",
+    "reaction_id": "397533",
+    "source_tsv_line": "79566",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 16.8",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,D145A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ]
+  },
+  {
+    "observation_id": "bindingdb_202610_articles_line_79567",
+    "reaction_id": "397534",
+    "source_tsv_line": "79567",
+    "pmid": "24497639",
+    "raw_ligand_id": "50365262",
+    "raw_kd_nM": " 112.0",
+    "raw_target_name": "Bromodomain-containing protein 4 [44-166,I246A]",
+    "raw_sequence_length": 123,
+    "formal_release": false,
+    "original_file_sha256": "e1cd22777da4bcca35119c8d182939919e55803859451682c14a26e48a1bc041",
+    "decision": "competition_KD_value_and_construct_review_pending",
+    "location": "Table 2 TR-FRET row; TR-FRET Competition Assay",
+    "original_endpoint": "competition_derived_KD",
+    "reasons": [
+      "Competition assay and original numeric table located; actual parent-ligand and tagged protein identities remain to be bound before approval."
+    ],
+    "target_annotation_issue": "Raw name says I246A; original Table 1/2 says I146A. Raw domain sequence differs from WT at residue 146. Preserve raw name; no silent correction."
+  }
+]

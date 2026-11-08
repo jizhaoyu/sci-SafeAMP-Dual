@@ -1,0 +1,4008 @@
+[
+  {
+    "raw_ligand_id": "14838",
+    "raw_sequence_sha256": "09f704dc979542e26b7082eb462d75c9d5a453b2eaf854fa2f02502c27e4a726",
+    "observations": [
+      {
+        "reaction_id": "27239",
+        "source_tsv_line": "27485",
+        "kd_nM": " 6",
+        "pmid": "14561086",
+        "article_doi": "10.1021/jm030120s",
+        "assay_keys": [
+          "1894_1"
+        ]
+      },
+      {
+        "reaction_id": "27239",
+        "source_tsv_line": "27494",
+        "kd_nM": " 6",
+        "pmid": "14561086",
+        "article_doi": "10.1021/jm030120s",
+        "assay_keys": [
+          "1894_1"
+        ]
+      },
+      {
+        "reaction_id": "27246",
+        "source_tsv_line": "27501",
+        "kd_nM": " 3.4",
+        "pmid": "14561087",
+        "article_doi": "10.1021/jm030121k",
+        "assay_keys": [
+          "1896_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "21008",
+    "raw_sequence_sha256": "b75060695513d21ac502da540921882c3e99fd716a491e99f6757d7b78b3c62b",
+    "observations": [
+      {
+        "reaction_id": "37793",
+        "source_tsv_line": "38029",
+        "kd_nM": " 0.45",
+        "pmid": "18266313",
+        "article_doi": "10.1021/jm070332f",
+        "assay_keys": [
+          "2471_1"
+        ]
+      },
+      {
+        "reaction_id": "38078",
+        "source_tsv_line": "38314",
+        "kd_nM": " 0.5",
+        "pmid": "17927164",
+        "article_doi": "10.1021/jm061465o",
+        "assay_keys": [
+          "2482_1"
+        ]
+      },
+      {
+        "reaction_id": "38126",
+        "source_tsv_line": "38362",
+        "kd_nM": " 0.5",
+        "pmid": "16686530",
+        "article_doi": "10.1021/jm050921q",
+        "assay_keys": [
+          "2484_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "21015",
+    "raw_sequence_sha256": "0d02f196f4e9e17724e195135c2d322934acb0f3188d944cb5c72e3f39bda6ee",
+    "observations": [
+      {
+        "reaction_id": "37801",
+        "source_tsv_line": "38037",
+        "kd_nM": " 0.5",
+        "pmid": "18266313",
+        "article_doi": "10.1021/jm070332f",
+        "assay_keys": [
+          "2471_1"
+        ]
+      },
+      {
+        "reaction_id": "38090",
+        "source_tsv_line": "38326",
+        "kd_nM": " 0.85",
+        "pmid": "17927164",
+        "article_doi": "10.1021/jm061465o",
+        "assay_keys": [
+          "2482_1"
+        ]
+      },
+      {
+        "reaction_id": "38143",
+        "source_tsv_line": "38379",
+        "kd_nM": " 0.85",
+        "pmid": "16686530",
+        "article_doi": "10.1021/jm050921q",
+        "assay_keys": [
+          "2484_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "5447",
+    "raw_sequence_sha256": "dbb4583267ad40a7dfd854ee3c44ce4be38e137d0570e3eb76cf1854a74e7246",
+    "observations": [
+      {
+        "reaction_id": "47427",
+        "source_tsv_line": "47746",
+        "kd_nM": " 53.5",
+        "pmid": "17349580",
+        "article_doi": "10.1016/j.ccr.2006.12.017",
+        "assay_keys": [
+          "2923_1"
+        ]
+      },
+      {
+        "reaction_id": "47433",
+        "source_tsv_line": "47752",
+        "kd_nM": " 35.3",
+        "pmid": "18227510",
+        "article_doi": "10.1073/pnas.0709662105",
+        "assay_keys": [
+          "2924_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "26105",
+    "raw_sequence_sha256": "dbb4583267ad40a7dfd854ee3c44ce4be38e137d0570e3eb76cf1854a74e7246",
+    "observations": [
+      {
+        "reaction_id": "47428",
+        "source_tsv_line": "47747",
+        "kd_nM": " 10.9",
+        "pmid": "17349580",
+        "article_doi": "10.1016/j.ccr.2006.12.017",
+        "assay_keys": [
+          "2923_1"
+        ]
+      },
+      {
+        "reaction_id": "47434",
+        "source_tsv_line": "47753",
+        "kd_nM": " 5.3",
+        "pmid": "18227510",
+        "article_doi": "10.1073/pnas.0709662105",
+        "assay_keys": [
+          "2924_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "5447",
+    "raw_sequence_sha256": "29db397b9cc10df9118c7ae8d7355bddc80f80a7669695fe65cab3bcb8710424",
+    "observations": [
+      {
+        "reaction_id": "47431",
+        "source_tsv_line": "47750",
+        "kd_nM": " 2.6",
+        "pmid": "17349580",
+        "article_doi": "10.1016/j.ccr.2006.12.017",
+        "assay_keys": [
+          "2923_1"
+        ]
+      },
+      {
+        "reaction_id": "47437",
+        "source_tsv_line": "47756",
+        "kd_nM": " 2.4",
+        "pmid": "18227510",
+        "article_doi": "10.1073/pnas.0709662105",
+        "assay_keys": [
+          "2924_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "26105",
+    "raw_sequence_sha256": "29db397b9cc10df9118c7ae8d7355bddc80f80a7669695fe65cab3bcb8710424",
+    "observations": [
+      {
+        "reaction_id": "47432",
+        "source_tsv_line": "47751",
+        "kd_nM": " 1.7",
+        "pmid": "17349580",
+        "article_doi": "10.1016/j.ccr.2006.12.017",
+        "assay_keys": [
+          "2923_1"
+        ]
+      },
+      {
+        "reaction_id": "47438",
+        "source_tsv_line": "47757",
+        "kd_nM": " 1.1",
+        "pmid": "18227510",
+        "article_doi": "10.1073/pnas.0709662105",
+        "assay_keys": [
+          "2924_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "22113",
+    "raw_sequence_sha256": "af08a7ff324698ac0c93d5fd04f80a3d35818f4c597b26ea95a3921c6103bdec",
+    "observations": [
+      {
+        "reaction_id": "64448",
+        "source_tsv_line": "60294",
+        "kd_nM": " 0.086",
+        "pmid": "18030989",
+        "article_doi": "10.1021/cb700166z",
+        "assay_keys": [
+          "3581_1"
+        ]
+      },
+      {
+        "reaction_id": "64450",
+        "source_tsv_line": "60296",
+        "kd_nM": " 0.034",
+        "pmid": "18030989",
+        "article_doi": "10.1021/cb700166z",
+        "assay_keys": [
+          "3581_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "34671",
+    "raw_sequence_sha256": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+    "observations": [
+      {
+        "reaction_id": "64488",
+        "source_tsv_line": "60334",
+        "kd_nM": " 492",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_1"
+        ]
+      },
+      {
+        "reaction_id": "64494",
+        "source_tsv_line": "60340",
+        "kd_nM": " 365",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "34905",
+    "raw_sequence_sha256": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+    "observations": [
+      {
+        "reaction_id": "64489",
+        "source_tsv_line": "60335",
+        "kd_nM": " 414",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_1"
+        ]
+      },
+      {
+        "reaction_id": "64495",
+        "source_tsv_line": "60341",
+        "kd_nM": " 202",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "36527",
+    "raw_sequence_sha256": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+    "observations": [
+      {
+        "reaction_id": "64490",
+        "source_tsv_line": "60336",
+        "kd_nM": " 585",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_1"
+        ]
+      },
+      {
+        "reaction_id": "64496",
+        "source_tsv_line": "60342",
+        "kd_nM": " 1000",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "31044",
+    "raw_sequence_sha256": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+    "observations": [
+      {
+        "reaction_id": "64491",
+        "source_tsv_line": "60337",
+        "kd_nM": " 365",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_1"
+        ]
+      },
+      {
+        "reaction_id": "64497",
+        "source_tsv_line": "60343",
+        "kd_nM": " 308",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "31040",
+    "raw_sequence_sha256": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+    "observations": [
+      {
+        "reaction_id": "64492",
+        "source_tsv_line": "60338",
+        "kd_nM": " 360",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_1"
+        ]
+      },
+      {
+        "reaction_id": "64498",
+        "source_tsv_line": "60344",
+        "kd_nM": " 928",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "36528",
+    "raw_sequence_sha256": "1e34f9f89f223ec78879ce06436449fdb4077140597c4fbb765250e74b5295f3",
+    "observations": [
+      {
+        "reaction_id": "64493",
+        "source_tsv_line": "60339",
+        "kd_nM": " 182",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_1"
+        ]
+      },
+      {
+        "reaction_id": "64499",
+        "source_tsv_line": "60345",
+        "kd_nM": " 566",
+        "pmid": "18785742",
+        "article_doi": "10.1021/cb800162x",
+        "assay_keys": [
+          "3586_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "31883",
+    "raw_sequence_sha256": "8e243e32883cfc5ef70c61b40fccb9f5c9241e4ff31f0797437cd643f82d9740",
+    "observations": [
+      {
+        "reaction_id": "64680",
+        "source_tsv_line": "60526",
+        "kd_nM": " 13",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64685",
+        "source_tsv_line": "60531",
+        "kd_nM": " 40",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64686",
+        "source_tsv_line": "60532",
+        "kd_nM": " 30",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50032675",
+    "raw_sequence_sha256": "8e243e32883cfc5ef70c61b40fccb9f5c9241e4ff31f0797437cd643f82d9740",
+    "observations": [
+      {
+        "reaction_id": "64681",
+        "source_tsv_line": "60527",
+        "kd_nM": " 36",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64682",
+        "source_tsv_line": "60528",
+        "kd_nM": " 7",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64683",
+        "source_tsv_line": "60529",
+        "kd_nM": " 26",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64684",
+        "source_tsv_line": "60530",
+        "kd_nM": " 42",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64687",
+        "source_tsv_line": "60533",
+        "kd_nM": " 51",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64688",
+        "source_tsv_line": "60534",
+        "kd_nM": " 28",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      },
+      {
+        "reaction_id": "64689",
+        "source_tsv_line": "60535",
+        "kd_nM": " 18",
+        "pmid": "9479476",
+        "article_doi": "10.1016/s1074-5521(98)90083-7",
+        "assay_keys": [
+          "3600_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "81298",
+    "raw_sequence_sha256": "2d1ea9acc8df2965da341a854df3a334d067a0d45c7814661502b19c1ce3196a",
+    "observations": [
+      {
+        "reaction_id": "153408",
+        "source_tsv_line": "61856",
+        "kd_nM": " 9e+1",
+        "pmid": "18022567",
+        "article_doi": "10.1016/j.chembiol.2007.10.011",
+        "assay_keys": [
+          "4616_1"
+        ]
+      },
+      {
+        "reaction_id": "153409",
+        "source_tsv_line": "61857",
+        "kd_nM": " 1.0e+2",
+        "pmid": "18022567",
+        "article_doi": "10.1016/j.chembiol.2007.10.011",
+        "assay_keys": [
+          "4616_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "81374",
+    "raw_sequence_sha256": "a602d6a1ae16fe547a41dd26ae5d2ae9d775814b79cedd426366e4d54d43a40c",
+    "observations": [
+      {
+        "reaction_id": "153615",
+        "source_tsv_line": "62062",
+        "kd_nM": " 13",
+        "pmid": "20189109",
+        "article_doi": "10.1016/j.chembiol.2010.01.008",
+        "assay_keys": [
+          "4630_1"
+        ]
+      },
+      {
+        "reaction_id": "153622",
+        "source_tsv_line": "62069",
+        "kd_nM": " 11",
+        "pmid": "20189109",
+        "article_doi": "10.1016/j.chembiol.2010.01.008",
+        "assay_keys": [
+          "4630_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "81507",
+    "raw_sequence_sha256": "935c1069c98bbba0ffeb89dab62db4398cde59c02f21cfb0943a5369f6f4a1bc",
+    "observations": [
+      {
+        "reaction_id": "154423",
+        "source_tsv_line": "62302",
+        "kd_nM": " 110000",
+        "pmid": "21513882",
+        "article_doi": "10.1016/j.chembiol.2011.02.011",
+        "assay_keys": [
+          "4652_1"
+        ]
+      },
+      {
+        "reaction_id": "154424",
+        "source_tsv_line": "62303",
+        "kd_nM": " 590000",
+        "pmid": "21513882",
+        "article_doi": "10.1016/j.chembiol.2011.02.011",
+        "assay_keys": [
+          "4652_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50065258",
+    "raw_sequence_sha256": "0175aea2355d81222ae41d7027b7a08c4304663717ba8c3e9f7fbb16d7a0db12",
+    "observations": [
+      {
+        "reaction_id": "171075",
+        "source_tsv_line": "63940",
+        "kd_nM": " 14.8",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      },
+      {
+        "reaction_id": "171077",
+        "source_tsv_line": "63942",
+        "kd_nM": " 27.0",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      },
+      {
+        "reaction_id": "171079",
+        "source_tsv_line": "63944",
+        "kd_nM": " 55.1",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      },
+      {
+        "reaction_id": "171081",
+        "source_tsv_line": "63946",
+        "kd_nM": " 372",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "84878",
+    "raw_sequence_sha256": "0175aea2355d81222ae41d7027b7a08c4304663717ba8c3e9f7fbb16d7a0db12",
+    "observations": [
+      {
+        "reaction_id": "171076",
+        "source_tsv_line": "63941",
+        "kd_nM": " 46.6",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      },
+      {
+        "reaction_id": "171078",
+        "source_tsv_line": "63943",
+        "kd_nM": " 60.0",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      },
+      {
+        "reaction_id": "171080",
+        "source_tsv_line": "63945",
+        "kd_nM": " 63.3",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      },
+      {
+        "reaction_id": "171082",
+        "source_tsv_line": "63947",
+        "kd_nM": " 157",
+        "pmid": "20665773",
+        "article_doi": "10.1002/cbic.201000339",
+        "assay_keys": [
+          "5014_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "85115",
+    "raw_sequence_sha256": "71376b3a50a1cc063e09d51d93e09c4aacc3b77edd60a922db188157a62b0de4",
+    "observations": [
+      {
+        "reaction_id": "174616",
+        "source_tsv_line": "64051",
+        "kd_nM": " 1.281e+5",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_1"
+        ]
+      },
+      {
+        "reaction_id": "174622",
+        "source_tsv_line": "64057",
+        "kd_nM": " 2.28e+4",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "85116",
+    "raw_sequence_sha256": "71376b3a50a1cc063e09d51d93e09c4aacc3b77edd60a922db188157a62b0de4",
+    "observations": [
+      {
+        "reaction_id": "174617",
+        "source_tsv_line": "64052",
+        "kd_nM": " 7.26e+4",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_1"
+        ]
+      },
+      {
+        "reaction_id": "174623",
+        "source_tsv_line": "64058",
+        "kd_nM": " 1.59e+4",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "85117",
+    "raw_sequence_sha256": "71376b3a50a1cc063e09d51d93e09c4aacc3b77edd60a922db188157a62b0de4",
+    "observations": [
+      {
+        "reaction_id": "174618",
+        "source_tsv_line": "64053",
+        "kd_nM": " 3.19e+4",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_1"
+        ]
+      },
+      {
+        "reaction_id": "174624",
+        "source_tsv_line": "64059",
+        "kd_nM": " 2.96e+4",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "85119",
+    "raw_sequence_sha256": "71376b3a50a1cc063e09d51d93e09c4aacc3b77edd60a922db188157a62b0de4",
+    "observations": [
+      {
+        "reaction_id": "174620",
+        "source_tsv_line": "64055",
+        "kd_nM": " 1.132e+5",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_1"
+        ]
+      },
+      {
+        "reaction_id": "174625",
+        "source_tsv_line": "64060",
+        "kd_nM": " 2.19e+4",
+        "pmid": "21337480",
+        "article_doi": "10.1002/cbic.201000413",
+        "assay_keys": [
+          "5102_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86115",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185050",
+        "source_tsv_line": "64587",
+        "kd_nM": " 3.00e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      },
+      {
+        "reaction_id": "185056",
+        "source_tsv_line": "64593",
+        "kd_nM": " 1.600e+6",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86116",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185052",
+        "source_tsv_line": "64589",
+        "kd_nM": " 2.400e+6",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      },
+      {
+        "reaction_id": "185057",
+        "source_tsv_line": "64594",
+        "kd_nM": " 3.000e+6",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86117",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185053",
+        "source_tsv_line": "64590",
+        "kd_nM": " 1.000e+6",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      },
+      {
+        "reaction_id": "185058",
+        "source_tsv_line": "64595",
+        "kd_nM": " 7.70e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86121",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185066",
+        "source_tsv_line": "64603",
+        "kd_nM": " 5.00e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      },
+      {
+        "reaction_id": "185069",
+        "source_tsv_line": "64606",
+        "kd_nM": " 5.40e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86122",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185067",
+        "source_tsv_line": "64604",
+        "kd_nM": " 4.0e+4",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      },
+      {
+        "reaction_id": "185070",
+        "source_tsv_line": "64607",
+        "kd_nM": " 9.2e+4",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86123",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185068",
+        "source_tsv_line": "64605",
+        "kd_nM": " 1.30e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      },
+      {
+        "reaction_id": "185071",
+        "source_tsv_line": "64608",
+        "kd_nM": " 1.70e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86124",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185076",
+        "source_tsv_line": "64613",
+        "kd_nM": " 2.10e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      },
+      {
+        "reaction_id": "185078",
+        "source_tsv_line": "64615",
+        "kd_nM": " 4.70e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86125",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185077",
+        "source_tsv_line": "64614",
+        "kd_nM": " 2.80e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      },
+      {
+        "reaction_id": "185079",
+        "source_tsv_line": "64616",
+        "kd_nM": " 1.000e+6",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "86129",
+    "raw_sequence_sha256": "78aa999dbe4609a1e93e1680d9cfd8d8330f31989552f13acb8e67d4c982eeb4",
+    "observations": [
+      {
+        "reaction_id": "185085",
+        "source_tsv_line": "64622",
+        "kd_nM": " 1.100e+6",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_2"
+        ]
+      },
+      {
+        "reaction_id": "185086",
+        "source_tsv_line": "64623",
+        "kd_nM": " 2.40e+5",
+        "pmid": "22417091",
+        "article_doi": "10.1021/jm201734r",
+        "assay_keys": [
+          "5399_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "28422",
+    "raw_sequence_sha256": "9870b3d85517dcf5560fbc1ea1e870b8f0394ed039ece54a3fc5549776d6116e",
+    "observations": [
+      {
+        "reaction_id": "200521",
+        "source_tsv_line": "65951",
+        "kd_nM": " 6.1e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200522",
+        "source_tsv_line": "65952",
+        "kd_nM": " 8.2e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200523",
+        "source_tsv_line": "65953",
+        "kd_nM": " 1.14e+4",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200524",
+        "source_tsv_line": "65954",
+        "kd_nM": " 1.66e+4",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200525",
+        "source_tsv_line": "65955",
+        "kd_nM": " 2.67e+4",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200536",
+        "source_tsv_line": "65966",
+        "kd_nM": " 4.72e+4",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200537",
+        "source_tsv_line": "65967",
+        "kd_nM": " 1.91e+4",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200538",
+        "source_tsv_line": "65968",
+        "kd_nM": " 1.07e+4",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200539",
+        "source_tsv_line": "65969",
+        "kd_nM": " 5.8e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50308984",
+    "raw_sequence_sha256": "9870b3d85517dcf5560fbc1ea1e870b8f0394ed039ece54a3fc5549776d6116e",
+    "observations": [
+      {
+        "reaction_id": "200526",
+        "source_tsv_line": "65956",
+        "kd_nM": " 7e+2",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200527",
+        "source_tsv_line": "65957",
+        "kd_nM": " 8e+2",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200528",
+        "source_tsv_line": "65958",
+        "kd_nM": " 1.1e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200529",
+        "source_tsv_line": "65959",
+        "kd_nM": " 1.6e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200530",
+        "source_tsv_line": "65960",
+        "kd_nM": " 2.5e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200540",
+        "source_tsv_line": "65970",
+        "kd_nM": " 2.9e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200541",
+        "source_tsv_line": "65971",
+        "kd_nM": " 2.2e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200542",
+        "source_tsv_line": "65972",
+        "kd_nM": " 1.3e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200543",
+        "source_tsv_line": "65973",
+        "kd_nM": " 9e+2",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50308984",
+    "raw_sequence_sha256": "70d7eb5558e0048ab61c10da5a06771efea5390dc7ec246f91724923bbcc9b48",
+    "observations": [
+      {
+        "reaction_id": "200531",
+        "source_tsv_line": "65961",
+        "kd_nM": " 2.0e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200532",
+        "source_tsv_line": "65962",
+        "kd_nM": " 2.5e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200533",
+        "source_tsv_line": "65963",
+        "kd_nM": " 3.0e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200534",
+        "source_tsv_line": "65964",
+        "kd_nM": " 4.2e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200535",
+        "source_tsv_line": "65965",
+        "kd_nM": " 5.4e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200544",
+        "source_tsv_line": "65974",
+        "kd_nM": " 8.6e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200545",
+        "source_tsv_line": "65975",
+        "kd_nM": " 6.0e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200546",
+        "source_tsv_line": "65976",
+        "kd_nM": " 9.3e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      },
+      {
+        "reaction_id": "200547",
+        "source_tsv_line": "65977",
+        "kd_nM": " 6.1e+3",
+        "pmid": "21914812",
+        "article_doi": "10.1074/jbc.M111.290619",
+        "assay_keys": [
+          "5657_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "31773",
+    "raw_sequence_sha256": "78503b2780c806cedc8e36c2322c0983ee65bd3ff7402ac75223d532d1213345",
+    "observations": [
+      {
+        "reaction_id": "200678",
+        "source_tsv_line": "66108",
+        "kd_nM": " 4.6e+3",
+        "pmid": "20889498",
+        "article_doi": "10.1074/jbc.M110.164293",
+        "assay_keys": [
+          "5668_1"
+        ]
+      },
+      {
+        "reaction_id": "200855",
+        "source_tsv_line": "66285",
+        "kd_nM": " 3.3e+2",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "92532",
+    "raw_sequence_sha256": "b5a6e07b61d17a466fd7ace50856a90a4b6680c4fa976dba28b2a55aed06106e",
+    "observations": [
+      {
+        "reaction_id": "200752",
+        "source_tsv_line": "66182",
+        "kd_nM": " 1.06e+4",
+        "pmid": "20962348",
+        "article_doi": "10.1074/jbc.M110.181594",
+        "assay_keys": [
+          "5673_1"
+        ]
+      },
+      {
+        "reaction_id": "200753",
+        "source_tsv_line": "66183",
+        "kd_nM": " 1.10e+4",
+        "pmid": "20962348",
+        "article_doi": "10.1074/jbc.M110.181594",
+        "assay_keys": [
+          "5673_1"
+        ]
+      },
+      {
+        "reaction_id": "200754",
+        "source_tsv_line": "66184",
+        "kd_nM": " 3.33e+4",
+        "pmid": "20962348",
+        "article_doi": "10.1074/jbc.M110.181594",
+        "assay_keys": [
+          "5673_1"
+        ]
+      },
+      {
+        "reaction_id": "200755",
+        "source_tsv_line": "66185",
+        "kd_nM": " 1.437e+5",
+        "pmid": "20962348",
+        "article_doi": "10.1074/jbc.M110.181594",
+        "assay_keys": [
+          "5673_1"
+        ]
+      },
+      {
+        "reaction_id": "200756",
+        "source_tsv_line": "66186",
+        "kd_nM": " 3.638e+5",
+        "pmid": "20962348",
+        "article_doi": "10.1074/jbc.M110.181594",
+        "assay_keys": [
+          "5673_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "92569",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200838",
+        "source_tsv_line": "66268",
+        "kd_nM": " 1.08e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200845",
+        "source_tsv_line": "66275",
+        "kd_nM": " 4.9e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "92570",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200839",
+        "source_tsv_line": "66269",
+        "kd_nM": " 4.8e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200846",
+        "source_tsv_line": "66276",
+        "kd_nM": " 3.26e+4",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "92571",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200840",
+        "source_tsv_line": "66270",
+        "kd_nM": " 1.34e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200847",
+        "source_tsv_line": "66277",
+        "kd_nM": " 7.02e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "92572",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200841",
+        "source_tsv_line": "66271",
+        "kd_nM": " 5.52e+4",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200848",
+        "source_tsv_line": "66278",
+        "kd_nM": " 2.504e+6",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "10999",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200842",
+        "source_tsv_line": "66272",
+        "kd_nM": " 9.990e+6",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200849",
+        "source_tsv_line": "66279",
+        "kd_nM": " 9.997e+6",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "31773",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200843",
+        "source_tsv_line": "66273",
+        "kd_nM": " 1.93e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200850",
+        "source_tsv_line": "66280",
+        "kd_nM": " 4.5e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "31774",
+    "raw_sequence_sha256": "40c2d64ea0d4cbbb18b0220c876e2e8537587f4beeb0159b46b0d6103b1e83b2",
+    "observations": [
+      {
+        "reaction_id": "200844",
+        "source_tsv_line": "66274",
+        "kd_nM": " 1.33e+4",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      },
+      {
+        "reaction_id": "200851",
+        "source_tsv_line": "66281",
+        "kd_nM": " 6.1e+3",
+        "pmid": "19605350",
+        "article_doi": "10.1074/jbc.M109.017632",
+        "assay_keys": [
+          "5678_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "92685",
+    "raw_sequence_sha256": "5a85ff49095e74867e71119eeb994a5c9a53f925f67bf4778daea26503a01844",
+    "observations": [
+      {
+        "reaction_id": "201104",
+        "source_tsv_line": "66534",
+        "kd_nM": " 1.46e+4",
+        "pmid": "3549712",
+        "article_doi": "",
+        "assay_keys": [
+          "5698_1"
+        ]
+      },
+      {
+        "reaction_id": "201119",
+        "source_tsv_line": "66549",
+        "kd_nM": " 3.43e+5",
+        "pmid": "3549712",
+        "article_doi": "",
+        "assay_keys": [
+          "5698_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "10759",
+    "raw_sequence_sha256": "3bb208c70fae5e918193c5890270882dd259665df276ae2365dcc3d887a67944",
+    "observations": [
+      {
+        "reaction_id": "201531",
+        "source_tsv_line": "66891",
+        "kd_nM": " 458",
+        "pmid": "20701394",
+        "article_doi": "10.1021/bi1006354",
+        "assay_keys": [
+          "5724_1"
+        ]
+      },
+      {
+        "reaction_id": "201534",
+        "source_tsv_line": "66894",
+        "kd_nM": " 3850",
+        "pmid": "20701394",
+        "article_doi": "10.1021/bi1006354",
+        "assay_keys": [
+          "5724_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "82070",
+    "raw_sequence_sha256": "3bb208c70fae5e918193c5890270882dd259665df276ae2365dcc3d887a67944",
+    "observations": [
+      {
+        "reaction_id": "201532",
+        "source_tsv_line": "66892",
+        "kd_nM": " 40.7",
+        "pmid": "20701394",
+        "article_doi": "10.1021/bi1006354",
+        "assay_keys": [
+          "5724_1"
+        ]
+      },
+      {
+        "reaction_id": "201535",
+        "source_tsv_line": "66895",
+        "kd_nM": " 310",
+        "pmid": "20701394",
+        "article_doi": "10.1021/bi1006354",
+        "assay_keys": [
+          "5724_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50143314",
+    "raw_sequence_sha256": "3bb208c70fae5e918193c5890270882dd259665df276ae2365dcc3d887a67944",
+    "observations": [
+      {
+        "reaction_id": "201533",
+        "source_tsv_line": "66893",
+        "kd_nM": " 0.0835",
+        "pmid": "20701394",
+        "article_doi": "10.1021/bi1006354",
+        "assay_keys": [
+          "5724_1"
+        ]
+      },
+      {
+        "reaction_id": "201536",
+        "source_tsv_line": "66896",
+        "kd_nM": " 2.67",
+        "pmid": "20701394",
+        "article_doi": "10.1021/bi1006354",
+        "assay_keys": [
+          "5724_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "104065",
+    "raw_sequence_sha256": "12bb6deb5f960ef3ae9001e0c74e5b707dcfa02cf027ef1750b9d21e4e2744a1",
+    "observations": [
+      {
+        "reaction_id": "222245",
+        "source_tsv_line": "68530",
+        "kd_nM": " 300",
+        "pmid": "24070067",
+        "article_doi": "10.1021/cb400407c",
+        "assay_keys": [
+          "6014_1"
+        ]
+      },
+      {
+        "reaction_id": "222246",
+        "source_tsv_line": "68531",
+        "kd_nM": " 79",
+        "pmid": "24070067",
+        "article_doi": "10.1021/cb400407c",
+        "assay_keys": [
+          "6014_1"
+        ]
+      },
+      {
+        "reaction_id": "222247",
+        "source_tsv_line": "68532",
+        "kd_nM": " 280",
+        "pmid": "24070067",
+        "article_doi": "10.1021/cb400407c",
+        "assay_keys": [
+          "6014_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "104066",
+    "raw_sequence_sha256": "12bb6deb5f960ef3ae9001e0c74e5b707dcfa02cf027ef1750b9d21e4e2744a1",
+    "observations": [
+      {
+        "reaction_id": "222251",
+        "source_tsv_line": "68536",
+        "kd_nM": " 1500",
+        "pmid": "24070067",
+        "article_doi": "10.1021/cb400407c",
+        "assay_keys": [
+          "6014_1"
+        ]
+      },
+      {
+        "reaction_id": "222252",
+        "source_tsv_line": "68537",
+        "kd_nM": " 320",
+        "pmid": "24070067",
+        "article_doi": "10.1021/cb400407c",
+        "assay_keys": [
+          "6014_1"
+        ]
+      },
+      {
+        "reaction_id": "222253",
+        "source_tsv_line": "68538",
+        "kd_nM": " 1500",
+        "pmid": "24070067",
+        "article_doi": "10.1021/cb400407c",
+        "assay_keys": [
+          "6014_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "109206",
+    "raw_sequence_sha256": "7192d652f813d4d86f957b1edb7729c8adb429515fb591d7f4c6937a9d54dec2",
+    "observations": [
+      {
+        "reaction_id": "229542",
+        "source_tsv_line": "69100",
+        "kd_nM": " 0.273",
+        "pmid": "24403173",
+        "article_doi": "10.1002/cbic.201300613",
+        "assay_keys": [
+          "6109_3"
+        ]
+      },
+      {
+        "reaction_id": "229549",
+        "source_tsv_line": "69107",
+        "kd_nM": " 0.527",
+        "pmid": "24403173",
+        "article_doi": "10.1002/cbic.201300613",
+        "assay_keys": [
+          "6109_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "109207",
+    "raw_sequence_sha256": "7192d652f813d4d86f957b1edb7729c8adb429515fb591d7f4c6937a9d54dec2",
+    "observations": [
+      {
+        "reaction_id": "229543",
+        "source_tsv_line": "69101",
+        "kd_nM": " 5.20",
+        "pmid": "24403173",
+        "article_doi": "10.1002/cbic.201300613",
+        "assay_keys": [
+          "6109_3"
+        ]
+      },
+      {
+        "reaction_id": "229550",
+        "source_tsv_line": "69108",
+        "kd_nM": " 4.34",
+        "pmid": "24403173",
+        "article_doi": "10.1002/cbic.201300613",
+        "assay_keys": [
+          "6109_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "109208",
+    "raw_sequence_sha256": "7192d652f813d4d86f957b1edb7729c8adb429515fb591d7f4c6937a9d54dec2",
+    "observations": [
+      {
+        "reaction_id": "229544",
+        "source_tsv_line": "69102",
+        "kd_nM": " 0.2",
+        "pmid": "24403173",
+        "article_doi": "10.1002/cbic.201300613",
+        "assay_keys": [
+          "6109_3"
+        ]
+      },
+      {
+        "reaction_id": "229551",
+        "source_tsv_line": "69109",
+        "kd_nM": " 0.544",
+        "pmid": "24403173",
+        "article_doi": "10.1002/cbic.201300613",
+        "assay_keys": [
+          "6109_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "119125",
+    "raw_sequence_sha256": "d98b2269ed529294b838f8aa92181c343c8be8aaa38704c019ad61866028ee6d",
+    "observations": [
+      {
+        "reaction_id": "245777",
+        "source_tsv_line": "69792",
+        "kd_nM": " 1.5e+3",
+        "pmid": "23746300",
+        "article_doi": "10.1021/bi4005396",
+        "assay_keys": [
+          "6236_2"
+        ]
+      },
+      {
+        "reaction_id": "245778",
+        "source_tsv_line": "69793",
+        "kd_nM": " 1.31e+4",
+        "pmid": "23746300",
+        "article_doi": "10.1021/bi4005396",
+        "assay_keys": [
+          "6236_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "119126",
+    "raw_sequence_sha256": "d98b2269ed529294b838f8aa92181c343c8be8aaa38704c019ad61866028ee6d",
+    "observations": [
+      {
+        "reaction_id": "245779",
+        "source_tsv_line": "69794",
+        "kd_nM": " 4e+2",
+        "pmid": "23746300",
+        "article_doi": "10.1021/bi4005396",
+        "assay_keys": [
+          "6236_2"
+        ]
+      },
+      {
+        "reaction_id": "245780",
+        "source_tsv_line": "69795",
+        "kd_nM": " 7.3e+3",
+        "pmid": "23746300",
+        "article_doi": "10.1021/bi4005396",
+        "assay_keys": [
+          "6236_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "19130",
+    "raw_sequence_sha256": "4602a348ca21f49c27d1dfd706dbfb54f20ab49a7de362ece550dbb1dd236c87",
+    "observations": [
+      {
+        "reaction_id": "246982",
+        "source_tsv_line": "69817",
+        "kd_nM": " 4.9e+2",
+        "pmid": "24079912",
+        "article_doi": "10.1021/bi400740x",
+        "assay_keys": [
+          "6266_2"
+        ]
+      },
+      {
+        "reaction_id": "246983",
+        "source_tsv_line": "69818",
+        "kd_nM": " 3.9e+2",
+        "pmid": "24079912",
+        "article_doi": "10.1021/bi400740x",
+        "assay_keys": [
+          "6266_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "19149",
+    "raw_sequence_sha256": "4602a348ca21f49c27d1dfd706dbfb54f20ab49a7de362ece550dbb1dd236c87",
+    "observations": [
+      {
+        "reaction_id": "246984",
+        "source_tsv_line": "69819",
+        "kd_nM": " 6.8e+3",
+        "pmid": "24079912",
+        "article_doi": "10.1021/bi400740x",
+        "assay_keys": [
+          "6266_2"
+        ]
+      },
+      {
+        "reaction_id": "246985",
+        "source_tsv_line": "69820",
+        "kd_nM": " 1.2e+3",
+        "pmid": "24079912",
+        "article_doi": "10.1021/bi400740x",
+        "assay_keys": [
+          "6266_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "103302",
+    "raw_sequence_sha256": "1670aefbe2d9baf3412d23252180a37554c5647a0ad5cb1fbd06bb18417aee49",
+    "observations": [
+      {
+        "reaction_id": "250145",
+        "source_tsv_line": "69967",
+        "kd_nM": " 233",
+        "pmid": "25195011",
+        "article_doi": "10.1038/nchembio.1629",
+        "assay_keys": [
+          "6309_2"
+        ]
+      },
+      {
+        "reaction_id": "250147",
+        "source_tsv_line": "69969",
+        "kd_nM": " 300",
+        "pmid": "25195011",
+        "article_doi": "10.1038/nchembio.1629",
+        "assay_keys": [
+          "6309_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "130379",
+    "raw_sequence_sha256": "e7b25f0d8c2140fbbaafe07c1e86c5b8c8a4a63cddc969e512bbeafd22c3e207",
+    "observations": [
+      {
+        "reaction_id": "262179",
+        "source_tsv_line": "70474",
+        "kd_nM": " 3.3e+2",
+        "pmid": "25007099",
+        "article_doi": "10.1021/bi5004519",
+        "assay_keys": [
+          "6460_2"
+        ]
+      },
+      {
+        "reaction_id": "262180",
+        "source_tsv_line": "70475",
+        "kd_nM": " 1.3e+4",
+        "pmid": "25007099",
+        "article_doi": "10.1021/bi5004519",
+        "assay_keys": [
+          "6460_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "154570",
+    "raw_sequence_sha256": "48bbaecb588757453895e5361c3477683556433826039fe35654f3f0effafced",
+    "observations": [
+      {
+        "reaction_id": "296629",
+        "source_tsv_line": "72034",
+        "kd_nM": " 2.77e+3",
+        "pmid": "25636004",
+        "article_doi": "10.1021/cb500820b",
+        "assay_keys": [
+          "6854_1"
+        ]
+      },
+      {
+        "reaction_id": "296630",
+        "source_tsv_line": "72035",
+        "kd_nM": " 3.7e+2",
+        "pmid": "25636004",
+        "article_doi": "10.1021/cb500820b",
+        "assay_keys": [
+          "6854_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "163657",
+    "raw_sequence_sha256": "f1aefe532ff750beda0af155e8a3c525c8d66786424d05470326737734f3f4cf",
+    "observations": [
+      {
+        "reaction_id": "306725",
+        "source_tsv_line": "72211",
+        "kd_nM": " 4.1e+4",
+        "pmid": "26214585",
+        "article_doi": "10.1021/acschembio.5b00370",
+        "assay_keys": [
+          "6984_1"
+        ]
+      },
+      {
+        "reaction_id": "306742",
+        "source_tsv_line": "72228",
+        "kd_nM": " 4.3e+4",
+        "pmid": "26214585",
+        "article_doi": "10.1021/acschembio.5b00370",
+        "assay_keys": [
+          "6984_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "185670",
+    "raw_sequence_sha256": "efdae649a3bc351b6be69fd9d726d73761a93e81c99f4e05101d79f078295ab4",
+    "observations": [
+      {
+        "reaction_id": "334875",
+        "source_tsv_line": "73881",
+        "kd_nM": " 2.2",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_1"
+        ]
+      },
+      {
+        "reaction_id": "334887",
+        "source_tsv_line": "73893",
+        "kd_nM": " 1.8",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_4"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "185671",
+    "raw_sequence_sha256": "efdae649a3bc351b6be69fd9d726d73761a93e81c99f4e05101d79f078295ab4",
+    "observations": [
+      {
+        "reaction_id": "334876",
+        "source_tsv_line": "73882",
+        "kd_nM": " 2.9",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_1"
+        ]
+      },
+      {
+        "reaction_id": "334888",
+        "source_tsv_line": "73894",
+        "kd_nM": " 2.0",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_4"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "13530",
+    "raw_sequence_sha256": "efdae649a3bc351b6be69fd9d726d73761a93e81c99f4e05101d79f078295ab4",
+    "observations": [
+      {
+        "reaction_id": "334879",
+        "source_tsv_line": "73885",
+        "kd_nM": " 1.5",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_1"
+        ]
+      },
+      {
+        "reaction_id": "334889",
+        "source_tsv_line": "73895",
+        "kd_nM": " 24",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_4"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50237710",
+    "raw_sequence_sha256": "efdae649a3bc351b6be69fd9d726d73761a93e81c99f4e05101d79f078295ab4",
+    "observations": [
+      {
+        "reaction_id": "334880",
+        "source_tsv_line": "73886",
+        "kd_nM": " 11",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_1"
+        ]
+      },
+      {
+        "reaction_id": "334890",
+        "source_tsv_line": "73896",
+        "kd_nM": " 15",
+        "pmid": "26895387",
+        "article_doi": "10.1021/acschembio.5b01018",
+        "assay_keys": [
+          "7269_4"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "189380",
+    "raw_sequence_sha256": "0f99982b545e61cc6fa4ca70be1e2f0f503d3e26f44fdb3067dd3c6905bb2788",
+    "observations": [
+      {
+        "reaction_id": "339343",
+        "source_tsv_line": "74078",
+        "kd_nM": " 1.75e+3",
+        "pmid": "26808391",
+        "article_doi": "10.1111/cbdd.12728",
+        "assay_keys": [
+          "7325_1"
+        ]
+      },
+      {
+        "reaction_id": "339344",
+        "source_tsv_line": "74079",
+        "kd_nM": " 5e+2",
+        "pmid": "26808391",
+        "article_doi": "10.1111/cbdd.12728",
+        "assay_keys": [
+          "7325_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "171272",
+    "raw_sequence_sha256": "381e9979403cb60d8b30735aeb9c132b797db412929278be160906c42c6b3523",
+    "observations": [
+      {
+        "reaction_id": "361448",
+        "source_tsv_line": "75996",
+        "kd_nM": " 6.03",
+        "pmid": "27775713",
+        "article_doi": "10.1038/nchembio.2208",
+        "assay_keys": [
+          "7581_6"
+        ]
+      },
+      {
+        "reaction_id": "361449",
+        "source_tsv_line": "75997",
+        "kd_nM": " 6.55",
+        "pmid": "27775713",
+        "article_doi": "10.1038/nchembio.2208",
+        "assay_keys": [
+          "7581_5"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "205431",
+    "raw_sequence_sha256": "7772c2640312283ecb713a7f52e9ffee3c33c9196e69fccdaf0767e26884c8f4",
+    "observations": [
+      {
+        "reaction_id": "363912",
+        "source_tsv_line": "76050",
+        "kd_nM": " 0.01",
+        "pmid": "27775715",
+        "article_doi": "10.1038/nchembio.2209",
+        "assay_keys": [
+          "7602_3"
+        ]
+      },
+      {
+        "reaction_id": "363979",
+        "source_tsv_line": "76117",
+        "kd_nM": " 16.7",
+        "pmid": "27775715",
+        "article_doi": "10.1038/nchembio.2209",
+        "assay_keys": [
+          "7602_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "20192",
+    "raw_sequence_sha256": "a76b140e4841252780b7d7e1d69f487e599b0e4aa46a7ca5c3c5dc745372ed3d",
+    "observations": [
+      {
+        "reaction_id": "370897",
+        "source_tsv_line": "76505",
+        "kd_nM": " 1.749e+5",
+        "pmid": "27990801",
+        "article_doi": "10.1021/acs.biochem.6b01019",
+        "assay_keys": [
+          "7675_1"
+        ]
+      },
+      {
+        "reaction_id": "370898",
+        "source_tsv_line": "76506",
+        "kd_nM": " 201600",
+        "pmid": "27990801",
+        "article_doi": "10.1021/acs.biochem.6b01019",
+        "assay_keys": [
+          "7675_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "209868",
+    "raw_sequence_sha256": "f343ec4b3ed720c3901407308f9a4afd2ad6f74c3466b2f3ee302246fd44f2ed",
+    "observations": [
+      {
+        "reaction_id": "373996",
+        "source_tsv_line": "76714",
+        "kd_nM": " 720",
+        "pmid": "23737523",
+        "article_doi": "10.1074/jbc.M112.442335",
+        "assay_keys": [
+          "7709_1"
+        ]
+      },
+      {
+        "reaction_id": "373997",
+        "source_tsv_line": "76715",
+        "kd_nM": " 1680",
+        "pmid": "23737523",
+        "article_doi": "10.1074/jbc.M112.442335",
+        "assay_keys": [
+          "7709_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "209868",
+    "raw_sequence_sha256": "61891a85c1320dee80ac57dd96cda9e4b351b2e8a5ca72054d22013761c64b75",
+    "observations": [
+      {
+        "reaction_id": "374895",
+        "source_tsv_line": "76731",
+        "kd_nM": " 1.3e+2",
+        "pmid": "23955344",
+        "article_doi": "10.1074/jbc.M113.505503",
+        "assay_keys": [
+          "7724_1"
+        ]
+      },
+      {
+        "reaction_id": "374896",
+        "source_tsv_line": "76732",
+        "kd_nM": " 1.6e+2",
+        "pmid": "23955344",
+        "article_doi": "10.1074/jbc.M113.505503",
+        "assay_keys": [
+          "7724_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "209868",
+    "raw_sequence_sha256": "931545d31871b0e3e000e7f9aacedb730c541554f0e32d9cd6ac5308bc5f36e6",
+    "observations": [
+      {
+        "reaction_id": "374898",
+        "source_tsv_line": "76734",
+        "kd_nM": " 3.7e+2",
+        "pmid": "23955344",
+        "article_doi": "10.1074/jbc.M113.505503",
+        "assay_keys": [
+          "7724_1"
+        ]
+      },
+      {
+        "reaction_id": "374899",
+        "source_tsv_line": "76735",
+        "kd_nM": " 6.2e+2",
+        "pmid": "23955344",
+        "article_doi": "10.1074/jbc.M113.505503",
+        "assay_keys": [
+          "7724_1"
+        ]
+      },
+      {
+        "reaction_id": "374903",
+        "source_tsv_line": "76739",
+        "kd_nM": " 2.4e+2",
+        "pmid": "23955344",
+        "article_doi": "10.1074/jbc.M113.505503",
+        "assay_keys": [
+          "7724_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "214800",
+    "raw_sequence_sha256": "53c522ec59a08d77d893f7fb0a43739cdc368f3e9553955b73ec78232ba46ccf",
+    "observations": [
+      {
+        "reaction_id": "377563",
+        "source_tsv_line": "77368",
+        "kd_nM": " 0.403",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377575",
+        "source_tsv_line": "77380",
+        "kd_nM": " 0.555",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377595",
+        "source_tsv_line": "77400",
+        "kd_nM": " 0.44",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "214800",
+    "raw_sequence_sha256": "e5a12a2eaf35a924c2b5487dcd736544e110119577eea8ed525423ce21b0366a",
+    "observations": [
+      {
+        "reaction_id": "377564",
+        "source_tsv_line": "77369",
+        "kd_nM": " 0.484",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377596",
+        "source_tsv_line": "77401",
+        "kd_nM": " 0.47",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "214800",
+    "raw_sequence_sha256": "c6ab67349a810b37ba2f83c7990450a4ab1efc4fa024c82f4943e41df332a9c6",
+    "observations": [
+      {
+        "reaction_id": "377568",
+        "source_tsv_line": "77373",
+        "kd_nM": " 0.751",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377597",
+        "source_tsv_line": "77402",
+        "kd_nM": " 1.11",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "214800",
+    "raw_sequence_sha256": "11a2f30226bb40cf56698086337dbfe8d6309c54d2eb13cbb20cfca98dad3a68",
+    "observations": [
+      {
+        "reaction_id": "377578",
+        "source_tsv_line": "77383",
+        "kd_nM": " 0.556",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377598",
+        "source_tsv_line": "77403",
+        "kd_nM": " 1.15",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "214800",
+    "raw_sequence_sha256": "c167d44285dab2ada9f3dbce0a48545da3e2d10da09b9a367a3acb2b99a546bf",
+    "observations": [
+      {
+        "reaction_id": "377581",
+        "source_tsv_line": "77386",
+        "kd_nM": " 0.548",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377599",
+        "source_tsv_line": "77404",
+        "kd_nM": " 1.02",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "214800",
+    "raw_sequence_sha256": "4be14a5f24aca52bb8f31feac9faf877b44e395df5cdad1bf4f41b71e4002d2f",
+    "observations": [
+      {
+        "reaction_id": "377584",
+        "source_tsv_line": "77389",
+        "kd_nM": " 0.462",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_1"
+        ]
+      },
+      {
+        "reaction_id": "377600",
+        "source_tsv_line": "77405",
+        "kd_nM": " 0.64",
+        "pmid": "24133207",
+        "article_doi": "10.1074/jbc.M113.503714",
+        "assay_keys": [
+          "7767_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "218809",
+    "raw_sequence_sha256": "4536ed754a4424914c25f4a8028eecab5303109432d3ddce68ea7f89a2258c51",
+    "observations": [
+      {
+        "reaction_id": "382496",
+        "source_tsv_line": "77545",
+        "kd_nM": " 1.35e+3",
+        "pmid": "28094913",
+        "article_doi": "10.1021/acschembio.6b00782",
+        "assay_keys": [
+          "7802_1"
+        ]
+      },
+      {
+        "reaction_id": "382497",
+        "source_tsv_line": "77546",
+        "kd_nM": " 1.5e+3",
+        "pmid": "28094913",
+        "article_doi": "10.1021/acschembio.6b00782",
+        "assay_keys": [
+          "7802_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "218811",
+    "raw_sequence_sha256": "2c32b872d2ff4c1f7b7880c871c7f45b0a54e5e608e3b6fd967b325cada0dd3a",
+    "observations": [
+      {
+        "reaction_id": "382500",
+        "source_tsv_line": "77549",
+        "kd_nM": " 1.2e+3",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_1"
+        ]
+      },
+      {
+        "reaction_id": "382505",
+        "source_tsv_line": "77554",
+        "kd_nM": " 1.0e+3",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "218812",
+    "raw_sequence_sha256": "2c32b872d2ff4c1f7b7880c871c7f45b0a54e5e608e3b6fd967b325cada0dd3a",
+    "observations": [
+      {
+        "reaction_id": "382501",
+        "source_tsv_line": "77550",
+        "kd_nM": " 1.6e+3",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_1"
+        ]
+      },
+      {
+        "reaction_id": "382506",
+        "source_tsv_line": "77555",
+        "kd_nM": " 2.8e+3",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "218813",
+    "raw_sequence_sha256": "2c32b872d2ff4c1f7b7880c871c7f45b0a54e5e608e3b6fd967b325cada0dd3a",
+    "observations": [
+      {
+        "reaction_id": "382502",
+        "source_tsv_line": "77551",
+        "kd_nM": " 2.1e+3",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_1"
+        ]
+      },
+      {
+        "reaction_id": "382507",
+        "source_tsv_line": "77556",
+        "kd_nM": " 1.9e+3",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "218814",
+    "raw_sequence_sha256": "2c32b872d2ff4c1f7b7880c871c7f45b0a54e5e608e3b6fd967b325cada0dd3a",
+    "observations": [
+      {
+        "reaction_id": "382503",
+        "source_tsv_line": "77552",
+        "kd_nM": " 1.8e+4",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_1"
+        ]
+      },
+      {
+        "reaction_id": "382508",
+        "source_tsv_line": "77557",
+        "kd_nM": " 1.76e+4",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "218815",
+    "raw_sequence_sha256": "2c32b872d2ff4c1f7b7880c871c7f45b0a54e5e608e3b6fd967b325cada0dd3a",
+    "observations": [
+      {
+        "reaction_id": "382504",
+        "source_tsv_line": "77553",
+        "kd_nM": " 4.2e+4",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_1"
+        ]
+      },
+      {
+        "reaction_id": "382509",
+        "source_tsv_line": "77558",
+        "kd_nM": " 4.15e+4",
+        "pmid": "28032980",
+        "article_doi": "10.1021/acschembio.6b00646",
+        "assay_keys": [
+          "7803_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "223990",
+    "raw_sequence_sha256": "19bf4d35c09a705eefcffbf85574f208b154372fcbdf0519405d877a535991e7",
+    "observations": [
+      {
+        "reaction_id": "391203",
+        "source_tsv_line": "79006",
+        "kd_nM": " 1.6e+4",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      },
+      {
+        "reaction_id": "391204",
+        "source_tsv_line": "79007",
+        "kd_nM": " 4.3e+4",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "223990",
+    "raw_sequence_sha256": "9796e4a195066b95cb46d4fbb869f06afddbe3672b9e1f789fa4e3e5c9560e0c",
+    "observations": [
+      {
+        "reaction_id": "391208",
+        "source_tsv_line": "79011",
+        "kd_nM": " 14",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      },
+      {
+        "reaction_id": "391209",
+        "source_tsv_line": "79012",
+        "kd_nM": " 82",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "223991",
+    "raw_sequence_sha256": "9796e4a195066b95cb46d4fbb869f06afddbe3672b9e1f789fa4e3e5c9560e0c",
+    "observations": [
+      {
+        "reaction_id": "391210",
+        "source_tsv_line": "79013",
+        "kd_nM": " 5.9e+2",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      },
+      {
+        "reaction_id": "391211",
+        "source_tsv_line": "79014",
+        "kd_nM": " 2.99e+3",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "223992",
+    "raw_sequence_sha256": "9796e4a195066b95cb46d4fbb869f06afddbe3672b9e1f789fa4e3e5c9560e0c",
+    "observations": [
+      {
+        "reaction_id": "391212",
+        "source_tsv_line": "79015",
+        "kd_nM": " 6.6e+2",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      },
+      {
+        "reaction_id": "391213",
+        "source_tsv_line": "79016",
+        "kd_nM": " 3.27e+3",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "223993",
+    "raw_sequence_sha256": "9796e4a195066b95cb46d4fbb869f06afddbe3672b9e1f789fa4e3e5c9560e0c",
+    "observations": [
+      {
+        "reaction_id": "391214",
+        "source_tsv_line": "79017",
+        "kd_nM": " 36",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      },
+      {
+        "reaction_id": "391215",
+        "source_tsv_line": "79018",
+        "kd_nM": " 166",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "223990",
+    "raw_sequence_sha256": "a88b80dc9745da7cc614df45d0ba8cefbe6c6b1056adfe52757637061d8abb8c",
+    "observations": [
+      {
+        "reaction_id": "391216",
+        "source_tsv_line": "79019",
+        "kd_nM": " 2.1e+4",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      },
+      {
+        "reaction_id": "391217",
+        "source_tsv_line": "79020",
+        "kd_nM": " 1.29e+5",
+        "pmid": "28166391",
+        "article_doi": "10.1002/cbic.201600673",
+        "assay_keys": [
+          "7926_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "224008",
+    "raw_sequence_sha256": "cc59675d9c946b51339cdbaf21f7cf6894def15f11d9c2b45d135e3cb764fcf4",
+    "observations": [
+      {
+        "reaction_id": "391235",
+        "source_tsv_line": "79038",
+        "kd_nM": " 0.14",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_1"
+        ]
+      },
+      {
+        "reaction_id": "391236",
+        "source_tsv_line": "79039",
+        "kd_nM": " 0.019",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "224009",
+    "raw_sequence_sha256": "cc59675d9c946b51339cdbaf21f7cf6894def15f11d9c2b45d135e3cb764fcf4",
+    "observations": [
+      {
+        "reaction_id": "391237",
+        "source_tsv_line": "79040",
+        "kd_nM": " 0.50",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_1"
+        ]
+      },
+      {
+        "reaction_id": "391238",
+        "source_tsv_line": "79041",
+        "kd_nM": " 0.12",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_1"
+        ]
+      },
+      {
+        "reaction_id": "391245",
+        "source_tsv_line": "79048",
+        "kd_nM": " 0.100",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "224010",
+    "raw_sequence_sha256": "cc59675d9c946b51339cdbaf21f7cf6894def15f11d9c2b45d135e3cb764fcf4",
+    "observations": [
+      {
+        "reaction_id": "391239",
+        "source_tsv_line": "79042",
+        "kd_nM": " 11",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_1"
+        ]
+      },
+      {
+        "reaction_id": "391246",
+        "source_tsv_line": "79049",
+        "kd_nM": " 2.84",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "224011",
+    "raw_sequence_sha256": "cc59675d9c946b51339cdbaf21f7cf6894def15f11d9c2b45d135e3cb764fcf4",
+    "observations": [
+      {
+        "reaction_id": "391240",
+        "source_tsv_line": "79043",
+        "kd_nM": " 8.4",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_1"
+        ]
+      },
+      {
+        "reaction_id": "391247",
+        "source_tsv_line": "79050",
+        "kd_nM": " 14.9",
+        "pmid": "28181383",
+        "article_doi": "10.1002/cbic.201600697",
+        "assay_keys": [
+          "7928_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "226118",
+    "raw_sequence_sha256": "1aca8281d6e00ffe780ba33a168c92f1df566dd9f6fd26e9365fd972d25e81e1",
+    "observations": [
+      {
+        "reaction_id": "395830",
+        "source_tsv_line": "79227",
+        "kd_nM": " 51",
+        "pmid": "28355052",
+        "article_doi": "10.1021/acs.biochem.6b01267",
+        "assay_keys": [
+          "7968_1"
+        ]
+      },
+      {
+        "reaction_id": "395831",
+        "source_tsv_line": "79228",
+        "kd_nM": " 108",
+        "pmid": "28355052",
+        "article_doi": "10.1021/acs.biochem.6b01267",
+        "assay_keys": [
+          "7968_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "243799475439d52f50bf81f42433164faa08000ca1e85899fcc973c0835bd4c8",
+    "observations": [
+      {
+        "reaction_id": "397506",
+        "source_tsv_line": "79539",
+        "kd_nM": " 14.5",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397517",
+        "source_tsv_line": "79550",
+        "kd_nM": " 1.0",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397528",
+        "source_tsv_line": "79561",
+        "kd_nM": " 105.7",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "a978f5cf0c1059b776e06429e8bb3e0448bc33b83ad2954a433f345d3a6e4c31",
+    "observations": [
+      {
+        "reaction_id": "397507",
+        "source_tsv_line": "79540",
+        "kd_nM": " 834.7",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397518",
+        "source_tsv_line": "79551",
+        "kd_nM": " 13.7",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "fea1a70892bf2fdf3910d65dafa6c5afceb3a729b48d9f733def97d17aa4a924",
+    "observations": [
+      {
+        "reaction_id": "397508",
+        "source_tsv_line": "79541",
+        "kd_nM": " 229.3",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397519",
+        "source_tsv_line": "79552",
+        "kd_nM": " 3.64",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397529",
+        "source_tsv_line": "79562",
+        "kd_nM": " 174.1",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "592514834c53179bfe4646b4eea88d4ab162c385113916f1d092345bb00d928f",
+    "observations": [
+      {
+        "reaction_id": "397509",
+        "source_tsv_line": "79542",
+        "kd_nM": " 85.3",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397520",
+        "source_tsv_line": "79553",
+        "kd_nM": " 2.14",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397530",
+        "source_tsv_line": "79563",
+        "kd_nM": " 42.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "1469985037a466d0d6fd23cfff495eac7a5507b084e1c08fcba875b886f74ac6",
+    "observations": [
+      {
+        "reaction_id": "397510",
+        "source_tsv_line": "79543",
+        "kd_nM": " 474.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397521",
+        "source_tsv_line": "79554",
+        "kd_nM": " 10.5",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "996f65bc753001b7a0dfccdc99ab2d9f448152a70c63b5906ee3d5fa30c7f6fe",
+    "observations": [
+      {
+        "reaction_id": "397511",
+        "source_tsv_line": "79544",
+        "kd_nM": " 11.4",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397522",
+        "source_tsv_line": "79555",
+        "kd_nM": " 1.0",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397531",
+        "source_tsv_line": "79564",
+        "kd_nM": " 61.3",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "1f09f8225410848ca61a43186f439b441fe7e8c6eee21673f3ba7044d58496fe",
+    "observations": [
+      {
+        "reaction_id": "397512",
+        "source_tsv_line": "79545",
+        "kd_nM": " 447.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397523",
+        "source_tsv_line": "79556",
+        "kd_nM": " 8.6",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "e51ed4b172063900e62b66338eeafcf78cc3a832b027109e4c27de68daf279bb",
+    "observations": [
+      {
+        "reaction_id": "397513",
+        "source_tsv_line": "79546",
+        "kd_nM": " 56.6",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397524",
+        "source_tsv_line": "79557",
+        "kd_nM": " 1.0",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397532",
+        "source_tsv_line": "79565",
+        "kd_nM": " 44.0",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "b871402eee2cc48ebb74648c872745ccc633ba665652ec2b7a1c915abe043899",
+    "observations": [
+      {
+        "reaction_id": "397514",
+        "source_tsv_line": "79547",
+        "kd_nM": " 15.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397525",
+        "source_tsv_line": "79558",
+        "kd_nM": " 1.1",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397533",
+        "source_tsv_line": "79566",
+        "kd_nM": " 16.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "ee5bfc88619640a6b7376120a0c6d60b0d871a81be631751156df1891789297d",
+    "observations": [
+      {
+        "reaction_id": "397515",
+        "source_tsv_line": "79548",
+        "kd_nM": " 414.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397526",
+        "source_tsv_line": "79559",
+        "kd_nM": " 2.4",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      },
+      {
+        "reaction_id": "397534",
+        "source_tsv_line": "79567",
+        "kd_nM": " 112.0",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "50365262",
+    "raw_sequence_sha256": "9f308b74f5e67e88fcc99dab754a0f8d3cb2d61b09e46be9e4f1e9f8dd878a6b",
+    "observations": [
+      {
+        "reaction_id": "397516",
+        "source_tsv_line": "79549",
+        "kd_nM": " 267.8",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_3"
+        ]
+      },
+      {
+        "reaction_id": "397527",
+        "source_tsv_line": "79560",
+        "kd_nM": " 9.7",
+        "pmid": "24497639",
+        "article_doi": "10.1074/jbc.M113.523019",
+        "assay_keys": [
+          "7994_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "228845",
+    "raw_sequence_sha256": "350a8495e5930c84d9173ab112a46f0cb30e5ae654805aeae25f484b3bef97cb",
+    "observations": [
+      {
+        "reaction_id": "399906",
+        "source_tsv_line": "79698",
+        "kd_nM": " 4e+2",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      },
+      {
+        "reaction_id": "399908",
+        "source_tsv_line": "79700",
+        "kd_nM": " 1.0e+3",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      },
+      {
+        "reaction_id": "399910",
+        "source_tsv_line": "79702",
+        "kd_nM": " 1.0e+3",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      },
+      {
+        "reaction_id": "399912",
+        "source_tsv_line": "79704",
+        "kd_nM": " 4.7e+3",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "228845",
+    "raw_sequence_sha256": "12149f17e9d680708f4248bf9518cb8a7b28f34e98b60fb34058b6bd3a4786bb",
+    "observations": [
+      {
+        "reaction_id": "399907",
+        "source_tsv_line": "79699",
+        "kd_nM": " 4e+2",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      },
+      {
+        "reaction_id": "399909",
+        "source_tsv_line": "79701",
+        "kd_nM": " 6e+2",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      },
+      {
+        "reaction_id": "399911",
+        "source_tsv_line": "79703",
+        "kd_nM": " 6e+2",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      },
+      {
+        "reaction_id": "399913",
+        "source_tsv_line": "79705",
+        "kd_nM": " 2.4e+3",
+        "pmid": "28376304",
+        "article_doi": "10.1021/acs.biochem.7b00078",
+        "assay_keys": [
+          "8026_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "231625",
+    "raw_sequence_sha256": "b20be7ee95830ff251bb99ae3870357ee922752b5c5da97018d92ae7e8ad19d2",
+    "observations": [
+      {
+        "reaction_id": "404283",
+        "source_tsv_line": "79726",
+        "kd_nM": " 2.0e+3",
+        "pmid": "24755226",
+        "article_doi": "10.1074/jbc.M114.566729",
+        "assay_keys": [
+          "8052_2"
+        ]
+      },
+      {
+        "reaction_id": "404284",
+        "source_tsv_line": "79727",
+        "kd_nM": " 6.1e+3",
+        "pmid": "24755226",
+        "article_doi": "10.1074/jbc.M114.566729",
+        "assay_keys": [
+          "8052_2"
+        ]
+      },
+      {
+        "reaction_id": "404285",
+        "source_tsv_line": "79728",
+        "kd_nM": " 8.0e+2",
+        "pmid": "24755226",
+        "article_doi": "10.1074/jbc.M114.566729",
+        "assay_keys": [
+          "8052_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "231639",
+    "raw_sequence_sha256": "5f82b0395c4c6abf61ba8684beacf04e89e591b23d1a79671ffbd32e4a003172",
+    "observations": [
+      {
+        "reaction_id": "404318",
+        "source_tsv_line": "79761",
+        "kd_nM": " 146",
+        "pmid": "24860094",
+        "article_doi": "10.1074/jbc.M114.571737",
+        "assay_keys": [
+          "8057_1"
+        ]
+      },
+      {
+        "reaction_id": "404319",
+        "source_tsv_line": "79762",
+        "kd_nM": " 74",
+        "pmid": "24860094",
+        "article_doi": "10.1074/jbc.M114.571737",
+        "assay_keys": [
+          "8057_1"
+        ]
+      },
+      {
+        "reaction_id": "404320",
+        "source_tsv_line": "79763",
+        "kd_nM": " 162",
+        "pmid": "24860094",
+        "article_doi": "10.1074/jbc.M114.571737",
+        "assay_keys": [
+          "8057_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "231642",
+    "raw_sequence_sha256": "5f82b0395c4c6abf61ba8684beacf04e89e591b23d1a79671ffbd32e4a003172",
+    "observations": [
+      {
+        "reaction_id": "404323",
+        "source_tsv_line": "79766",
+        "kd_nM": " 7.9",
+        "pmid": "24860094",
+        "article_doi": "10.1074/jbc.M114.571737",
+        "assay_keys": [
+          "8057_1"
+        ]
+      },
+      {
+        "reaction_id": "404324",
+        "source_tsv_line": "79767",
+        "kd_nM": " 9.4",
+        "pmid": "24860094",
+        "article_doi": "10.1074/jbc.M114.571737",
+        "assay_keys": [
+          "8057_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "231681",
+    "raw_sequence_sha256": "1e5a3dad76e74e2612b859f3b036b0d9cb00474fa9dc124c6cbe95cc3e10d603",
+    "observations": [
+      {
+        "reaction_id": "404399",
+        "source_tsv_line": "79842",
+        "kd_nM": " 52",
+        "pmid": "28481076",
+        "article_doi": "10.1021/acs.biochem.7b00152",
+        "assay_keys": [
+          "8064_1"
+        ]
+      },
+      {
+        "reaction_id": "404403",
+        "source_tsv_line": "79846",
+        "kd_nM": " 1.3e+2",
+        "pmid": "28481076",
+        "article_doi": "10.1021/acs.biochem.7b00152",
+        "assay_keys": [
+          "8064_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "231681",
+    "raw_sequence_sha256": "2f05adac92a6ee291b4e9902153b4ae1cea48e162bd9b62d1994945f7c48cd89",
+    "observations": [
+      {
+        "reaction_id": "404401",
+        "source_tsv_line": "79844",
+        "kd_nM": " 1.5e+2",
+        "pmid": "28481076",
+        "article_doi": "10.1021/acs.biochem.7b00152",
+        "assay_keys": [
+          "8064_1"
+        ]
+      },
+      {
+        "reaction_id": "404404",
+        "source_tsv_line": "79847",
+        "kd_nM": " 1.9e+3",
+        "pmid": "28481076",
+        "article_doi": "10.1021/acs.biochem.7b00152",
+        "assay_keys": [
+          "8064_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "231681",
+    "raw_sequence_sha256": "aad34a5752b6a7fe2e8ba44f7c26e0809d2ed6875d26d809d5be8c7f6f02f6a0",
+    "observations": [
+      {
+        "reaction_id": "404402",
+        "source_tsv_line": "79845",
+        "kd_nM": " 27",
+        "pmid": "28481076",
+        "article_doi": "10.1021/acs.biochem.7b00152",
+        "assay_keys": [
+          "8064_1"
+        ]
+      },
+      {
+        "reaction_id": "404405",
+        "source_tsv_line": "79848",
+        "kd_nM": " 4.1e+3",
+        "pmid": "28481076",
+        "article_doi": "10.1021/acs.biochem.7b00152",
+        "assay_keys": [
+          "8064_1"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "496847",
+    "raw_sequence_sha256": "edbd5d8a5deb16bfd31ff3029c7897b816b752cb26cd0dcf23d089dcdd841586",
+    "observations": [
+      {
+        "reaction_id": "1033847",
+        "source_tsv_line": "86740",
+        "kd_nM": " 1790",
+        "pmid": "34665619",
+        "article_doi": "10.1021/acs.jmedchem.1c01307",
+        "assay_keys": [
+          "9878_2"
+        ]
+      },
+      {
+        "reaction_id": "1033849",
+        "source_tsv_line": "86742",
+        "kd_nM": " 741",
+        "pmid": "34665619",
+        "article_doi": "10.1021/acs.jmedchem.1c01307",
+        "assay_keys": [
+          "9878_2"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "648358",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370142",
+        "source_tsv_line": "91874",
+        "kd_nM": " 119000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370143",
+        "source_tsv_line": "91875",
+        "kd_nM": " 97000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "648363",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370153",
+        "source_tsv_line": "91885",
+        "kd_nM": " 363000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370154",
+        "source_tsv_line": "91886",
+        "kd_nM": " 355000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "648364",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370156",
+        "source_tsv_line": "91888",
+        "kd_nM": " 21000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370157",
+        "source_tsv_line": "91889",
+        "kd_nM": " 20000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "648368",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370166",
+        "source_tsv_line": "91898",
+        "kd_nM": " 10000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370167",
+        "source_tsv_line": "91899",
+        "kd_nM": " 11000",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "582097",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370198",
+        "source_tsv_line": "91930",
+        "kd_nM": " 13",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370199",
+        "source_tsv_line": "91931",
+        "kd_nM": " 10.00",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "648382",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370202",
+        "source_tsv_line": "91934",
+        "kd_nM": " 16",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370203",
+        "source_tsv_line": "91935",
+        "kd_nM": " 12",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "582323",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370212",
+        "source_tsv_line": "91944",
+        "kd_nM": " 28",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370213",
+        "source_tsv_line": "91945",
+        "kd_nM": " 29",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "582342",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370222",
+        "source_tsv_line": "91954",
+        "kd_nM": " 9.00",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370223",
+        "source_tsv_line": "91955",
+        "kd_nM": " 6.00",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "582343",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370224",
+        "source_tsv_line": "91956",
+        "kd_nM": " 11",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370225",
+        "source_tsv_line": "91957",
+        "kd_nM": " 10.00",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "582242",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370236",
+        "source_tsv_line": "91968",
+        "kd_nM": " 44",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370237",
+        "source_tsv_line": "91969",
+        "kd_nM": " 47",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  },
+  {
+    "raw_ligand_id": "536422",
+    "raw_sequence_sha256": "9d56c4584ba2780eb84e9f3ee9577bbafcf06b62d981efd8b3934833b45778bd",
+    "observations": [
+      {
+        "reaction_id": "1370250",
+        "source_tsv_line": "91982",
+        "kd_nM": " 5.00",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_2"
+        ]
+      },
+      {
+        "reaction_id": "1370251",
+        "source_tsv_line": "91983",
+        "kd_nM": " 6.00",
+        "pmid": "36793435",
+        "article_doi": "",
+        "assay_keys": [
+          "11791_3"
+        ]
+      }
+    ],
+    "decision": "measurement_difference_requires_context_not_automatic_conflict"
+  }
+]

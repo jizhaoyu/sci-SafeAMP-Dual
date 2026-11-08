@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-10-06T12:52:51.684145+00:00",
+  "status": "davis_baselines_verified_and_accepted",
+  "protocol_id": "protocol-dti-01",
+  "verdict": "PASS",
+  "inputs": {
+    "run_dir": "b42b42254d59b25274ce84f4a6ebf3619cdf8ea43c8251988eddc21759520cbe",
+    "protocol": "420a452adfee9e01a10809bf216d2c6b3c973bc72c5e23880da93ca9d91a8746"
+  },
+  "outputs": {
+    "verification.json": "8338dd6b58e56091829655a18e635f3610855cff82d54e7e2c76d59e0966b925",
+    "audit_report.md": "3055656637c8b8a83545c04a9e88f6ccb2d8050b0af1a350911b06e3635289a9"
+  }
+}

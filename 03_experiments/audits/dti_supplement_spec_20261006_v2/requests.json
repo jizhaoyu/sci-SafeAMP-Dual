@@ -1,0 +1,37 @@
+[
+  {
+    "filename": "bet_supplement_2.pdf",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5117811/bin/NIHMS807910-supplement-2.pdf",
+    "role": "exact_XML_named_supplement_public_repository_route_candidate",
+    "pmid": "27775715",
+    "license_note": "Derived instance route uses exact filename in acquired original XML. Validate actual document and identity; failure is not permission to bypass access controls."
+  },
+  {
+    "filename": "bet_supplement_1.docx",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/5117811/bin/NIHMS807910-supplement-1.docx",
+    "role": "exact_XML_named_supplement_public_repository_route_candidate",
+    "pmid": "27775715",
+    "license_note": "Prior supplement ZIP contains a zero-byte placeholder, not a usable DOCX. Validate bytes and actual document before review."
+  },
+  {
+    "filename": "nos_supplement.pdf",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/4139154/bin/bi500561h_si_001.pdf",
+    "role": "exact_XML_named_supplement_public_repository_route_candidate",
+    "pmid": "25089924",
+    "license_note": "Exact acquired XML filename; read original terms, no redistribution approval inferred."
+  },
+  {
+    "filename": "rada_supplements.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC3594973/supplementaryFiles",
+    "role": "actual_mutant_and_assay_supplement_candidate",
+    "pmid": "23344974",
+    "license_note": "Read actual documents and publication license before evidence approval."
+  },
+  {
+    "filename": "hdac6_supplements.zip",
+    "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC4990478/supplementaryFiles",
+    "role": "original_XML_confirmed_PMCID_supplement_candidate",
+    "pmid": "27454933",
+    "license_note": "Use only if PMCID agrees with bound source metadata; no article identity approval inferred."
+  }
+]

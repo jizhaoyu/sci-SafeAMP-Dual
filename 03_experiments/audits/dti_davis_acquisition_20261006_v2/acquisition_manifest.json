@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-06T12:41:15.911604+00:00",
+  "producer": "02_code/acquire_dti_davis.py",
+  "producer_sha256": "42438c5d1567d2091766935c041c39989d9a1df014a69d7ef0319e73ceaff627",
+  "inputs": {
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_primary_batch_review_20261006_v2\\state.json": "95a64d87c1a7e370dd40bc8dc84aaaaee0e60b29ff8204d1a23411140e9946c5",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_primary_batch_review_20261006_v2\\original_source_identity_review.json": "1094a73e9b1f9aef81dbcafe1573889e2a7fa42a0a1a5e14e4b27f8624263360",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_primary_batch_review_20261006_v2\\record_decisions.json": "9de23dd378b2c6bee72b31ed1ce27a31e5b3aadd984cbc2663d36b06af6d103e",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_primary_batch_review_20261006_v2\\report.md": "ab04ad515c9d7951883e3609bc24abf0d646f78435c62fe0b50ff2a5ed288c5f",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_primary_batch_review_20261006_v2\\summary.json": "f793638768589885076afc144813f73330f70af402c6d93a35c49d607732c413",
+    "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_primary_batch_review_20261006_v2\\verification.json": "28e6f5e16c18ae3b3af6c2a02d60d909af0f4abff2f0d9711cd50cc9ca3d5ca1"
+  },
+  "records": [
+    {
+      "filename": "davis.csv",
+      "url": "https://dataverse.harvard.edu/api/access/datafile/5219748?format=original",
+      "source_dataverse": "https://doi.org/10.7910/DVN/21LKWG",
+      "file_id": 5219748,
+      "bytes": 21222080,
+      "md5": "6c7949b81aea69e9d816db88602d771e",
+      "sha256": "d54e81d2b6172f5ea71dacc4d7615adaee1cfbabcefccc7f2b46c7c48c19a373",
+      "official_md5_matches": true,
+      "status": "acquired_verified_checksum_match",
+      "role": "official_davis_benchmark_original_dti_csv"
+    }
+  ],
+  "training_ready": false,
+  "observations_released": 0,
+  "model_fit_calls": 0
+}

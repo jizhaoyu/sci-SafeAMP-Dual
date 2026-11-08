@@ -1,0 +1,174 @@
+{
+  "version": "dti_davis_rigorous_20261009_v1",
+  "timestamp": "2026-10-09",
+  "inner_cv_protocol": "5-Fold GroupKFold by drug entity (zero inner pair leakage)",
+  "meta_weights": {
+    "ridge_alpha10": 0.1496,
+    "ridge_alpha50": 0.0,
+    "hist_gradient_boosting": 0.8209,
+    "random_forest": 0.0
+  },
+  "meta_intercept": 0.2084,
+  "models": {
+    "ridge_alpha10": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.6849,
+          "mae": 0.44,
+          "pearson_r": 0.5719,
+          "spearman_rho": 0.5288,
+          "concordance_index": 0.7931
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8202,
+          "mae": 0.5715,
+          "pearson_r": 0.3375,
+          "spearman_rho": 0.3457,
+          "concordance_index": 0.6941
+        },
+        "cold_target_test": {
+          "rmse": 0.6666,
+          "mae": 0.4607,
+          "pearson_r": 0.4245,
+          "spearman_rho": 0.3551,
+          "concordance_index": 0.7105
+        },
+        "cold_drug_test": {
+          "rmse": 0.7984,
+          "mae": 0.5446,
+          "pearson_r": 0.4991,
+          "spearman_rho": 0.5063,
+          "concordance_index": 0.7639
+        }
+      }
+    },
+    "ridge_alpha50": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.695,
+          "mae": 0.4451,
+          "pearson_r": 0.5541,
+          "spearman_rho": 0.5157,
+          "concordance_index": 0.7851
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.804,
+          "mae": 0.5525,
+          "pearson_r": 0.3806,
+          "spearman_rho": 0.3844,
+          "concordance_index": 0.7157
+        },
+        "cold_target_test": {
+          "rmse": 0.6499,
+          "mae": 0.4398,
+          "pearson_r": 0.4482,
+          "spearman_rho": 0.3751,
+          "concordance_index": 0.7225
+        },
+        "cold_drug_test": {
+          "rmse": 0.8072,
+          "mae": 0.5505,
+          "pearson_r": 0.4825,
+          "spearman_rho": 0.4928,
+          "concordance_index": 0.756
+        }
+      }
+    },
+    "hist_gradient_boosting": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.4453,
+          "mae": 0.2744,
+          "pearson_r": 0.8582,
+          "spearman_rho": 0.6984,
+          "concordance_index": 0.9011
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8986,
+          "mae": 0.6033,
+          "pearson_r": 0.11,
+          "spearman_rho": 0.1552,
+          "concordance_index": 0.5861
+        },
+        "cold_target_test": {
+          "rmse": 0.6287,
+          "mae": 0.4015,
+          "pearson_r": 0.501,
+          "spearman_rho": 0.4258,
+          "concordance_index": 0.753
+        },
+        "cold_drug_test": {
+          "rmse": 0.8597,
+          "mae": 0.5468,
+          "pearson_r": 0.3723,
+          "spearman_rho": 0.3578,
+          "concordance_index": 0.6838
+        }
+      }
+    },
+    "random_forest": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.4274,
+          "mae": 0.2701,
+          "pearson_r": 0.8758,
+          "spearman_rho": 0.6849,
+          "concordance_index": 0.8935
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.9126,
+          "mae": 0.6432,
+          "pearson_r": 0.1161,
+          "spearman_rho": 0.0822,
+          "concordance_index": 0.546
+        },
+        "cold_target_test": {
+          "rmse": 0.6243,
+          "mae": 0.4106,
+          "pearson_r": 0.5097,
+          "spearman_rho": 0.446,
+          "concordance_index": 0.7651
+        },
+        "cold_drug_test": {
+          "rmse": 0.9055,
+          "mae": 0.5971,
+          "pearson_r": 0.3003,
+          "spearman_rho": 0.2297,
+          "concordance_index": 0.6181
+        }
+      }
+    },
+    "stacked_ensemble": {
+      "domains": {
+        "train_block": {
+          "rmse": 0.4795,
+          "mae": 0.3239,
+          "pearson_r": 0.8423,
+          "spearman_rho": 0.6874,
+          "concordance_index": 0.8934
+        },
+        "strict_dual_cold_test": {
+          "rmse": 0.8743,
+          "mae": 0.6188,
+          "pearson_r": 0.1596,
+          "spearman_rho": 0.2281,
+          "concordance_index": 0.6265
+        },
+        "cold_target_test": {
+          "rmse": 0.6332,
+          "mae": 0.4359,
+          "pearson_r": 0.5002,
+          "spearman_rho": 0.4221,
+          "concordance_index": 0.7508
+        },
+        "cold_drug_test": {
+          "rmse": 0.833,
+          "mae": 0.5619,
+          "pearson_r": 0.4088,
+          "spearman_rho": 0.4288,
+          "concordance_index": 0.7217
+        }
+      }
+    }
+  }
+}

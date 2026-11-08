@@ -1,0 +1,10 @@
+{
+  "drug_feature_type": "Morgan Fingerprint (r=2, 2048-dim) + 8-dim Global PhysChem Descriptors",
+  "drug_dim": 2056,
+  "target_feature_type": "AAC (20) + Global PhysChem (8) + Segmented CTD (24) + Kinase Motifs (16) + Conjoint Dipeptides (32)",
+  "target_dim": 100,
+  "total_concatenated_dim": 2156,
+  "num_drugs": 68,
+  "num_targets": 379,
+  "total_pairs": 25772
+}

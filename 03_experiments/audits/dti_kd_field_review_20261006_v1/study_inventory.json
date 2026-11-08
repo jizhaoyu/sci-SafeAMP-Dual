@@ -1,0 +1,1568 @@
+{
+  "doi:10.1002/cbic.200500089": {
+    "rows": 22,
+    "single_chain_complete_fields": 22,
+    "pmids": [
+      "16175541"
+    ]
+  },
+  "doi:10.1002/cbic.200800704": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "19226504"
+    ]
+  },
+  "doi:10.1002/cbic.200900537": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "19827080"
+    ]
+  },
+  "doi:10.1002/cbic.200900721": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "20373302"
+    ]
+  },
+  "doi:10.1002/cbic.201000339": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "20665773"
+    ]
+  },
+  "doi:10.1002/cbic.201000413": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "21337480"
+    ]
+  },
+  "doi:10.1002/cbic.201200521": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "23344974"
+    ]
+  },
+  "doi:10.1002/cbic.201200524": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "23129539"
+    ]
+  },
+  "doi:10.1002/cbic.201300613": {
+    "rows": 6,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "24403173"
+    ]
+  },
+  "doi:10.1002/cbic.201402512": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "25382253"
+    ]
+  },
+  "doi:10.1002/cbic.201402579": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "25619419"
+    ]
+  },
+  "doi:10.1002/cbic.201402673": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "25676607"
+    ]
+  },
+  "doi:10.1002/cbic.201600673": {
+    "rows": 18,
+    "single_chain_complete_fields": 18,
+    "pmids": [
+      "28166391"
+    ]
+  },
+  "doi:10.1002/cbic.201600697": {
+    "rows": 13,
+    "single_chain_complete_fields": 13,
+    "pmids": [
+      "28181383"
+    ]
+  },
+  "doi:10.1002/pro.5560071201": {
+    "rows": 11,
+    "single_chain_complete_fields": 11,
+    "pmids": [
+      "9865942"
+    ]
+  },
+  "doi:10.1006/jmbi.2000.4032": {
+    "rows": 25,
+    "single_chain_complete_fields": 25,
+    "pmids": [
+      "10964567"
+    ]
+  },
+  "doi:10.1016/S1074-5521(02)00125-4": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "11983334"
+    ]
+  },
+  "doi:10.1016/j.ab.2009.08.013": {
+    "rows": 12,
+    "single_chain_complete_fields": 0,
+    "pmids": [
+      "19682971"
+    ]
+  },
+  "doi:10.1016/j.bioorg.2006.11.002": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "17174378"
+    ]
+  },
+  "doi:10.1016/j.bioorg.2007.03.001": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "17512966"
+    ]
+  },
+  "doi:10.1016/j.bioorg.2014.03.008": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "24755374"
+    ]
+  },
+  "doi:10.1016/j.bioorg.2016.11.003": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "27881238"
+    ]
+  },
+  "doi:10.1016/j.bioorg.2017.02.006": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "28236449"
+    ]
+  },
+  "doi:10.1016/j.bioorg.2017.05.004": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "28525735"
+    ]
+  },
+  "doi:10.1016/j.bmc.2005.09.050": {
+    "rows": 55,
+    "single_chain_complete_fields": 55,
+    "pmids": [
+      "16242339"
+    ]
+  },
+  "doi:10.1016/j.bmc.2006.07.028": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "16899369"
+    ]
+  },
+  "doi:10.1016/j.bmc.2007.01.044": {
+    "rows": 11,
+    "single_chain_complete_fields": 11,
+    "pmids": [
+      "17296300"
+    ]
+  },
+  "doi:10.1016/j.bmc.2007.02.010": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "17336535"
+    ]
+  },
+  "doi:10.1016/j.bmcl.2004.11.010": {
+    "rows": 18,
+    "single_chain_complete_fields": 18,
+    "pmids": [
+      "15664855"
+    ]
+  },
+  "doi:10.1016/j.bmcl.2008.06.070": {
+    "rows": 17,
+    "single_chain_complete_fields": 17,
+    "pmids": [
+      "18621524"
+    ]
+  },
+  "doi:10.1016/j.ccr.2006.12.017": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "17349580"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2004.10.013": {
+    "rows": 15,
+    "single_chain_complete_fields": 15,
+    "pmids": [
+      "15664516"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2004.11.007": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "15664518"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2005.07.009": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "16183021"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2006.06.007": {
+    "rows": 21,
+    "single_chain_complete_fields": 21,
+    "pmids": [
+      "16931332"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2007.10.011": {
+    "rows": 34,
+    "single_chain_complete_fields": 34,
+    "pmids": [
+      "18022567"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2007.12.013": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "18291323"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2010.01.008": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "20189109"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2010.02.007": {
+    "rows": 24,
+    "single_chain_complete_fields": 24,
+    "pmids": [
+      "20338520"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2011.02.011": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "21513882"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2011.05.010": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "21802008"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2015.10.013": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "26670081"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2016.06.006": {
+    "rows": 16,
+    "single_chain_complete_fields": 16,
+    "pmids": [
+      "27427228"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2016.06.017": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "27693059"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2016.10.008": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "27840070"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2016.11.013": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "28042046"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2016.12.011": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "28089757"
+    ]
+  },
+  "doi:10.1016/j.chembiol.2017.01.006": {
+    "rows": 13,
+    "single_chain_complete_fields": 13,
+    "pmids": [
+      "28196613"
+    ]
+  },
+  "doi:10.1016/s1074-5521(97)90194-0": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "9224565"
+    ]
+  },
+  "doi:10.1016/s1074-5521(98)90083-7": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "9479476"
+    ]
+  },
+  "doi:10.1016/s1074-5521(98)90168-5": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "9653548"
+    ]
+  },
+  "doi:10.1016/s1097-2765(05)00089-4": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "11090628"
+    ]
+  },
+  "doi:10.1021/acs.biochem.5b00431": {
+    "rows": 24,
+    "single_chain_complete_fields": 24,
+    "pmids": [
+      "26062720"
+    ]
+  },
+  "doi:10.1021/acs.biochem.5b01325": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "26744768"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b00638": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "27603793"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b00954": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "28169518"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01019": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "27990801"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01020": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "28165218"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01025": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "27959494"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01152": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "28221775"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01160": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "28080034"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01267": {
+    "rows": 5,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "28355052"
+    ]
+  },
+  "doi:10.1021/acs.biochem.6b01308": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "28157283"
+    ]
+  },
+  "doi:10.1021/acs.biochem.7b00041": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "28387506"
+    ]
+  },
+  "doi:10.1021/acs.biochem.7b00078": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "28376304"
+    ]
+  },
+  "doi:10.1021/acs.biochem.7b00152": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "28481076"
+    ]
+  },
+  "doi:10.1021/acs.jmedchem.1c01307": {
+    "rows": 84,
+    "single_chain_complete_fields": 84,
+    "pmids": [
+      "34665619"
+    ]
+  },
+  "doi:10.1021/acschembio.5b00291": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "26172575"
+    ]
+  },
+  "doi:10.1021/acschembio.5b00370": {
+    "rows": 17,
+    "single_chain_complete_fields": 17,
+    "pmids": [
+      "26214585"
+    ]
+  },
+  "doi:10.1021/acschembio.5b00398": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "26158339"
+    ]
+  },
+  "doi:10.1021/acschembio.5b00839": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "26598975"
+    ]
+  },
+  "doi:10.1021/acschembio.5b01018": {
+    "rows": 24,
+    "single_chain_complete_fields": 24,
+    "pmids": [
+      "26895387"
+    ]
+  },
+  "doi:10.1021/acschembio.5b01063": {
+    "rows": 29,
+    "single_chain_complete_fields": 29,
+    "pmids": [
+      "26863403"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00156": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "27082157"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00555": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "27428792"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00596": {
+    "rows": 24,
+    "single_chain_complete_fields": 24,
+    "pmids": [
+      "27709883"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00646": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "28032980"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00666": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "27588426"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00709": {
+    "rows": 27,
+    "single_chain_complete_fields": 27,
+    "pmids": [
+      "27768280"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00720": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "27748579"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00747": {
+    "rows": 24,
+    "single_chain_complete_fields": 24,
+    "pmids": [
+      "27959508"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00782": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "28094913"
+    ]
+  },
+  "doi:10.1021/acschembio.6b00962": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "28026162"
+    ]
+  },
+  "doi:10.1021/acschembio.7b00062": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "28287700"
+    ]
+  },
+  "doi:10.1021/acschembio.7b00091": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "28314097"
+    ]
+  },
+  "doi:10.1021/bi000930v": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "11148027"
+    ]
+  },
+  "doi:10.1021/bi00405a032": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "3284585"
+    ]
+  },
+  "doi:10.1021/bi00421a012": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "3069127"
+    ]
+  },
+  "doi:10.1021/bi030031h": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "12731874"
+    ]
+  },
+  "doi:10.1021/bi047692e": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "15865431"
+    ]
+  },
+  "doi:10.1021/bi1005283": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "20718440"
+    ]
+  },
+  "doi:10.1021/bi1006354": {
+    "rows": 11,
+    "single_chain_complete_fields": 11,
+    "pmids": [
+      "20701394"
+    ]
+  },
+  "doi:10.1021/bi1017182": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "21275368"
+    ]
+  },
+  "doi:10.1021/bi300261p": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "22482720"
+    ]
+  },
+  "doi:10.1021/bi300514j": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "22938723"
+    ]
+  },
+  "doi:10.1021/bi4005396": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "23746300"
+    ]
+  },
+  "doi:10.1021/bi400740x": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "24079912"
+    ]
+  },
+  "doi:10.1021/bi5004519": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "25007099"
+    ]
+  },
+  "doi:10.1021/bi500561h": {
+    "rows": 19,
+    "single_chain_complete_fields": 19,
+    "pmids": [
+      "25089924"
+    ]
+  },
+  "doi:10.1021/bi500887n": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "25380506"
+    ]
+  },
+  "doi:10.1021/bi500959t": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "25379648"
+    ]
+  },
+  "doi:10.1021/bi7018282": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "18177053"
+    ]
+  },
+  "doi:10.1021/bi9005896": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "19425594"
+    ]
+  },
+  "doi:10.1021/cb200508b": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "22248356"
+    ]
+  },
+  "doi:10.1021/cb300671s": {
+    "rows": 15,
+    "single_chain_complete_fields": 15,
+    "pmids": [
+      "23369356"
+    ]
+  },
+  "doi:10.1021/cb400075f": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "23496828"
+    ]
+  },
+  "doi:10.1021/cb4002552": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "23755875"
+    ]
+  },
+  "doi:10.1021/cb400371r": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "23719508"
+    ]
+  },
+  "doi:10.1021/cb400407c": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "24070067"
+    ]
+  },
+  "doi:10.1021/cb500355c": {
+    "rows": 15,
+    "single_chain_complete_fields": 15,
+    "pmids": [
+      "24959717"
+    ]
+  },
+  "doi:10.1021/cb5005178": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "25144524"
+    ]
+  },
+  "doi:10.1021/cb500820b": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "25636004"
+    ]
+  },
+  "doi:10.1021/cb500917m": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "25746232"
+    ]
+  },
+  "doi:10.1021/cb500956g": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "25590533"
+    ]
+  },
+  "doi:10.1021/cb600311v": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "17168554"
+    ]
+  },
+  "doi:10.1021/cb700025j": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "17465519"
+    ]
+  },
+  "doi:10.1021/cb700166z": {
+    "rows": 56,
+    "single_chain_complete_fields": 56,
+    "pmids": [
+      "18030989"
+    ]
+  },
+  "doi:10.1021/cb800162x": {
+    "rows": 12,
+    "single_chain_complete_fields": 12,
+    "pmids": [
+      "18785742"
+    ]
+  },
+  "doi:10.1021/cc0501561": {
+    "rows": 16,
+    "single_chain_complete_fields": 16,
+    "pmids": [
+      "16677001"
+    ]
+  },
+  "doi:10.1021/cc700189b": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "18341296"
+    ]
+  },
+  "doi:10.1021/ja011034p": {
+    "rows": 11,
+    "single_chain_complete_fields": 11,
+    "pmids": [
+      "11572683"
+    ]
+  },
+  "doi:10.1021/ja057257n": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "16506782"
+    ]
+  },
+  "doi:10.1021/jm0205696": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "12747781"
+    ]
+  },
+  "doi:10.1021/jm030120s": {
+    "rows": 18,
+    "single_chain_complete_fields": 18,
+    "pmids": [
+      "14561086"
+    ]
+  },
+  "doi:10.1021/jm030121k": {
+    "rows": 27,
+    "single_chain_complete_fields": 27,
+    "pmids": [
+      "14561087"
+    ]
+  },
+  "doi:10.1021/jm040037k": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "15317454"
+    ]
+  },
+  "doi:10.1021/jm049137g": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "15715460"
+    ]
+  },
+  "doi:10.1021/jm050921q": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "16686530"
+    ]
+  },
+  "doi:10.1021/jm061465o": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "17927164"
+    ]
+  },
+  "doi:10.1021/jm070332f": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "18266313"
+    ]
+  },
+  "doi:10.1021/jm0704550": {
+    "rows": 17,
+    "single_chain_complete_fields": 17,
+    "pmids": [
+      "17927165"
+    ]
+  },
+  "doi:10.1021/jm070487n": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "17649988"
+    ]
+  },
+  "doi:10.1021/jm101625x": {
+    "rows": 18,
+    "single_chain_complete_fields": 18,
+    "pmids": [
+      "21526763"
+    ]
+  },
+  "doi:10.1021/jm201734r": {
+    "rows": 39,
+    "single_chain_complete_fields": 39,
+    "pmids": [
+      "22417091"
+    ]
+  },
+  "doi:10.1021/jm701185v": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "18307292"
+    ]
+  },
+  "doi:10.1021/jm701187w": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "18307293"
+    ]
+  },
+  "doi:10.1021/jm701266y": {
+    "rows": 9,
+    "single_chain_complete_fields": 9,
+    "pmids": [
+      "18318467"
+    ]
+  },
+  "doi:10.1021/jm800571m": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "18855373"
+    ]
+  },
+  "doi:10.1021/jm800797n": {
+    "rows": 31,
+    "single_chain_complete_fields": 31,
+    "pmids": [
+      "19143565"
+    ]
+  },
+  "doi:10.1021/jm8011849": {
+    "rows": 24,
+    "single_chain_complete_fields": 24,
+    "pmids": [
+      "19371038"
+    ]
+  },
+  "doi:10.1021/jm801475n": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "19320487"
+    ]
+  },
+  "doi:10.1021/jm801627a": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "19256508"
+    ]
+  },
+  "doi:10.1021/jm801643b": {
+    "rows": 13,
+    "single_chain_complete_fields": 13,
+    "pmids": [
+      "19354253"
+    ]
+  },
+  "doi:10.1021/jm900128w": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "19438227"
+    ]
+  },
+  "doi:10.1021/jm9002928": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "19462975"
+    ]
+  },
+  "doi:10.1021/jm900448m": {
+    "rows": 2,
+    "single_chain_complete_fields": 0,
+    "pmids": [
+      "19572550"
+    ]
+  },
+  "doi:10.1021/jm900472s": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "19555126"
+    ]
+  },
+  "doi:10.1038/nchembio.1081": {
+    "rows": 4,
+    "single_chain_complete_fields": 0,
+    "pmids": [
+      "23023261"
+    ]
+  },
+  "doi:10.1038/nchembio.1246": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "23603658"
+    ]
+  },
+  "doi:10.1038/nchembio.162": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "19396179"
+    ]
+  },
+  "doi:10.1038/nchembio.1629": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "25195011"
+    ]
+  },
+  "doi:10.1038/nchembio.2134": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "27454933"
+    ]
+  },
+  "doi:10.1038/nchembio.2208": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "27775713"
+    ]
+  },
+  "doi:10.1038/nchembio.2209": {
+    "rows": 32,
+    "single_chain_complete_fields": 32,
+    "pmids": [
+      "27775715"
+    ]
+  },
+  "doi:10.1038/nchembio.2304": {
+    "rows": 2,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "28135235"
+    ]
+  },
+  "doi:10.1038/nchembio.2306": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "28135237"
+    ]
+  },
+  "doi:10.1038/nchembio.481": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "21113169"
+    ]
+  },
+  "doi:10.1038/nsb770": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "11896401"
+    ]
+  },
+  "doi:10.1038/sj.bjp.0706048": {
+    "rows": 73,
+    "single_chain_complete_fields": 73,
+    "pmids": [
+      "15655528"
+    ]
+  },
+  "doi:10.1073/pnas.0504952102": {
+    "rows": 70,
+    "single_chain_complete_fields": 70,
+    "pmids": [
+      "16046538"
+    ]
+  },
+  "doi:10.1073/pnas.0709662105": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "18227510"
+    ]
+  },
+  "doi:10.1074/jbc.M109.017632": {
+    "rows": 18,
+    "single_chain_complete_fields": 18,
+    "pmids": [
+      "19605350"
+    ]
+  },
+  "doi:10.1074/jbc.M109.067967": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "20061381"
+    ]
+  },
+  "doi:10.1074/jbc.M110.109017": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "20463018"
+    ]
+  },
+  "doi:10.1074/jbc.M110.110403": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "20498372"
+    ]
+  },
+  "doi:10.1074/jbc.M110.164293": {
+    "rows": 23,
+    "single_chain_complete_fields": 23,
+    "pmids": [
+      "20889498"
+    ]
+  },
+  "doi:10.1074/jbc.M110.181594": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "20962348"
+    ]
+  },
+  "doi:10.1074/jbc.M111.274068": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "21984832"
+    ]
+  },
+  "doi:10.1074/jbc.M111.290619": {
+    "rows": 27,
+    "single_chain_complete_fields": 27,
+    "pmids": [
+      "21914812"
+    ]
+  },
+  "doi:10.1074/jbc.M112.399303": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "24194520"
+    ]
+  },
+  "doi:10.1074/jbc.M112.414516": {
+    "rows": 17,
+    "single_chain_complete_fields": 17,
+    "pmids": [
+      "23306195"
+    ]
+  },
+  "doi:10.1074/jbc.M112.442335": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "23737523"
+    ]
+  },
+  "doi:10.1074/jbc.M113.479303": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "23864660"
+    ]
+  },
+  "doi:10.1074/jbc.M113.479717": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "23828198"
+    ]
+  },
+  "doi:10.1074/jbc.M113.487777": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "23884422"
+    ]
+  },
+  "doi:10.1074/jbc.M113.489153": {
+    "rows": 18,
+    "single_chain_complete_fields": 18,
+    "pmids": [
+      "24092756"
+    ]
+  },
+  "doi:10.1074/jbc.M113.490441": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "24036119"
+    ]
+  },
+  "doi:10.1074/jbc.M113.490706": {
+    "rows": 10,
+    "single_chain_complete_fields": 10,
+    "pmids": [
+      "23897821"
+    ]
+  },
+  "doi:10.1074/jbc.M113.493569": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "23940047"
+    ]
+  },
+  "doi:10.1074/jbc.M113.493767": {
+    "rows": 9,
+    "single_chain_complete_fields": 9,
+    "pmids": [
+      "24022489"
+    ]
+  },
+  "doi:10.1074/jbc.M113.497990": {
+    "rows": 9,
+    "single_chain_complete_fields": 9,
+    "pmids": [
+      "24047900"
+    ]
+  },
+  "doi:10.1074/jbc.M113.501353": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "24003232"
+    ]
+  },
+  "doi:10.1074/jbc.M113.502971": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "24062308"
+    ]
+  },
+  "doi:10.1074/jbc.M113.503714": {
+    "rows": 22,
+    "single_chain_complete_fields": 22,
+    "pmids": [
+      "24133207"
+    ]
+  },
+  "doi:10.1074/jbc.M113.505503": {
+    "rows": 9,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "23955344"
+    ]
+  },
+  "doi:10.1074/jbc.M113.507756": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "24194519"
+    ]
+  },
+  "doi:10.1074/jbc.M113.510743": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "24257746"
+    ]
+  },
+  "doi:10.1074/jbc.M113.511436": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "24108128"
+    ]
+  },
+  "doi:10.1074/jbc.M113.514646": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "24692551"
+    ]
+  },
+  "doi:10.1074/jbc.M113.515668": {
+    "rows": 26,
+    "single_chain_complete_fields": 26,
+    "pmids": [
+      "24121503"
+    ]
+  },
+  "doi:10.1074/jbc.M113.519421": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "24327656"
+    ]
+  },
+  "doi:10.1074/jbc.M113.521708": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "24634219"
+    ]
+  },
+  "doi:10.1074/jbc.M113.523019": {
+    "rows": 38,
+    "single_chain_complete_fields": 38,
+    "pmids": [
+      "24497639"
+    ]
+  },
+  "doi:10.1074/jbc.M113.523183": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "24634223"
+    ]
+  },
+  "doi:10.1074/jbc.M113.528695": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "24648521"
+    ]
+  },
+  "doi:10.1074/jbc.M113.533885": {
+    "rows": 14,
+    "single_chain_complete_fields": 14,
+    "pmids": [
+      "24356970"
+    ]
+  },
+  "doi:10.1074/jbc.M113.534859": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "24523409"
+    ]
+  },
+  "doi:10.1074/jbc.M114.553248": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "24962584"
+    ]
+  },
+  "doi:10.1074/jbc.M114.555052": {
+    "rows": 5,
+    "single_chain_complete_fields": 5,
+    "pmids": [
+      "24798337"
+    ]
+  },
+  "doi:10.1074/jbc.M114.556480": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "24891505"
+    ]
+  },
+  "doi:10.1074/jbc.M114.559062": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "24644281"
+    ]
+  },
+  "doi:10.1074/jbc.M114.564278": {
+    "rows": 14,
+    "single_chain_complete_fields": 14,
+    "pmids": [
+      "24742680"
+    ]
+  },
+  "doi:10.1074/jbc.M114.566729": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "24755226"
+    ]
+  },
+  "doi:10.1074/jbc.M114.569707": {
+    "rows": 1,
+    "single_chain_complete_fields": 1,
+    "pmids": [
+      "24719329"
+    ]
+  },
+  "doi:10.1074/jbc.M114.571216": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "24742681"
+    ]
+  },
+  "doi:10.1074/jbc.M114.571737": {
+    "rows": 7,
+    "single_chain_complete_fields": 7,
+    "pmids": [
+      "24860094"
+    ]
+  },
+  "doi:10.1074/jbc.M707463200": {
+    "rows": 4,
+    "single_chain_complete_fields": 4,
+    "pmids": [
+      "18263588"
+    ]
+  },
+  "doi:10.1080/14756360802316971": {
+    "rows": 16,
+    "single_chain_complete_fields": 16,
+    "pmids": [
+      "18825527"
+    ]
+  },
+  "doi:10.1111/cbdd.12050": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "22978415"
+    ]
+  },
+  "doi:10.1111/cbdd.12161": {
+    "rows": 6,
+    "single_chain_complete_fields": 6,
+    "pmids": [
+      "23659711"
+    ]
+  },
+  "doi:10.1111/cbdd.12728": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "26808391"
+    ]
+  },
+  "doi:10.1111/cbdd.12801": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "27282729"
+    ]
+  },
+  "doi:10.1111/j.1747-0285.2007.00535.x": {
+    "rows": 2,
+    "single_chain_complete_fields": 2,
+    "pmids": [
+      "17630989"
+    ]
+  },
+  "doi:10.1111/j.1747-0285.2008.00719.x": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "19012568"
+    ]
+  },
+  "doi:10.1111/j.1747-0285.2010.01010.x": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "20626411"
+    ]
+  },
+  "doi:10.1128/AAC.00311-07": {
+    "rows": 15,
+    "single_chain_complete_fields": 15,
+    "pmids": [
+      "17846131"
+    ]
+  },
+  "doi:10.1186/1471-2091-12-59": {
+    "rows": 9,
+    "single_chain_complete_fields": 9,
+    "pmids": [
+      "22087650"
+    ]
+  },
+  "doi:10.3109/14756366.2012.680063": {
+    "rows": 3,
+    "single_chain_complete_fields": 3,
+    "pmids": [
+      "22524677"
+    ]
+  },
+  "doi:10.3109/14756366.2012.757223": {
+    "rows": 215,
+    "single_chain_complete_fields": 215,
+    "pmids": [
+      "23356363"
+    ]
+  },
+  "missing_source": {
+    "rows": 12,
+    "single_chain_complete_fields": 0,
+    "pmids": []
+  },
+  "pmid:2547766": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "2547766"
+    ]
+  },
+  "pmid:3009454": {
+    "rows": 8,
+    "single_chain_complete_fields": 8,
+    "pmids": [
+      "3009454"
+    ]
+  },
+  "pmid:3549712": {
+    "rows": 22,
+    "single_chain_complete_fields": 22,
+    "pmids": [
+      "3549712"
+    ]
+  },
+  "pmid:36793435": {
+    "rows": 102,
+    "single_chain_complete_fields": 102,
+    "pmids": [
+      "36793435"
+    ]
+  }
+}

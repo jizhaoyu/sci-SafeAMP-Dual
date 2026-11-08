@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-10-06T12:44:50.098072+00:00",
+  "research_direction": "DTI",
+  "benchmark": "DAVIS",
+  "endpoint": "Kd",
+  "status": "davis_isolation_proven_feasible_ready_for_protocol_freeze",
+  "training_ready": false,
+  "protocol_status": "not_frozen",
+  "observations_released": 0,
+  "model_fit_calls": 0,
+  "total_pairs": 25772,
+  "dual_cold_test_pairs": 975,
+  "cold_drug_cross_leakage": 0.37962964177131653,
+  "cold_target_cross_leakage": 0.3993231952190399,
+  "predecessor": "D:\\桌面文件\\sci\\03_experiments\\audits\\dti_davis_field_review_20261006_v1\\state.json",
+  "outputs": {
+    "fold_memberships.json": "f74409e6d62f20fbb9ee9481cda4120c9fa4fa704d2817461ca595f8ada1b500",
+    "isolation_audit.json": "758fc7b7039f60e5c84be32236022f453a40679aec602d34cb03776c865c89f5",
+    "report.md": "6d1fe0b3ecaaa74697b1d48521df94151daf6077717d59bde3ad9ea7ca1d3fb2"
+  }
+}
